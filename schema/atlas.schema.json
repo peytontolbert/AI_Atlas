@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/ai-dependency-atlas.schema.json",
+  "title": "AI Dependency Atlas",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "meta",
+    "layers",
+    "nodes",
+    "references"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "version",
+        "updated",
+        "status",
+        "scope_statement",
+        "reading_instruction",
+        "editorial_note",
+        "completeness_contract",
+        "known_exclusions",
+        "stats"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 10
+        },
+        "version": {
+          "type": "string",
+          "minLength": 3
+        },
+        "updated": {
+          "type": "string",
+          "format": "date"
+        },
+        "status": {
+          "type": "string",
+          "minLength": 8
+        },
+        "scope_statement": {
+          "type": "string",
+          "minLength": 100
+        },
+        "reading_instruction": {
+          "type": "string",
+          "minLength": 80
+        },
+        "completeness_contract": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "string",
+            "minLength": 40
+          }
+        },
+        "known_exclusions": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "type": "string",
+            "minLength": 20
+          }
+        },
+        "stats": {
+          "type": "object",
+          "required": [
+            "nodes",
+            "typed_edges",
+            "references",
+            "layers",
+            "unique_definitions",
+            "boilerplate_definitions",
+            "max_dependency_depth",
+            "terminal_nodes",
+            "non_system_terminal_nodes",
+            "curated_nodes",
+            "graph_derived_context_nodes",
+            "layer_counts",
+            "relation_counts"
+          ],
+          "properties": {
+            "nodes": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "typed_edges": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "references": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "layers": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "unique_definitions": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "boilerplate_definitions": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "max_dependency_depth": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "terminal_nodes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "non_system_terminal_nodes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "layer_counts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "relation_counts": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "curated_nodes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "graph_derived_context_nodes": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": true
+        },
+        "editorial_note": {
+          "type": "string",
+          "minLength": 120
+        }
+      }
+    },
+    "layers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "subtitle",
+          "order"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 3
+          },
+          "subtitle": {
+            "type": "string",
+            "minLength": 20
+          },
+          "order": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "strength",
+        "rationale"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "enum": [
+            "requires",
+            "uses",
+            "represents_with",
+            "optimizes_for",
+            "trained_under",
+            "specializes",
+            "composes",
+            "adapts",
+            "retrieves_from",
+            "searches_with",
+            "verifies_with",
+            "evaluates_or_constrains",
+            "operationalizes",
+            "applies"
+          ]
+        },
+        "strength": {
+          "enum": [
+            "core",
+            "common",
+            "optional"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 35
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "layer",
+        "tags",
+        "aliases",
+        "definition",
+        "why_it_matters",
+        "examples",
+        "limitations",
+        "editorial_status",
+        "maturity",
+        "terminal",
+        "terminal_reason",
+        "reference_ids",
+        "dependencies"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 2
+        },
+        "layer": {
+          "$ref": "#/$defs/id"
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "aliases": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 65
+        },
+        "why_it_matters": {
+          "type": "string",
+          "minLength": 45
+        },
+        "examples": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 35
+          }
+        },
+        "maturity": {
+          "enum": [
+            "foundational",
+            "historical",
+            "established",
+            "active",
+            "emerging"
+          ]
+        },
+        "terminal": {
+          "type": "boolean"
+        },
+        "terminal_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reference_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "dependencies": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/edge"
+          }
+        },
+        "editorial_status": {
+          "enum": [
+            "curated",
+            "definition_curated_context_graph_derived"
+          ]
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "authors",
+        "year",
+        "url"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "authors": {
+          "type": "string",
+          "minLength": 2
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1800,
+          "maximum": 2100
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  }
+}

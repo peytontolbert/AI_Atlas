@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="A scope-declared, validated dependency atlas of artificial intelligence." />
+<title>The Dependency Atlas of Artificial Intelligence</title>
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#050505;--bg2:#0b0b0b;--panel:#101010;--panel2:#151515;--panel3:#0e0e0e;
+  --line:#2a2a2a;--line2:#1b1b1b;--text:#f5f5f5;--muted:#b5b5b5;--faint:#7f7f7f;
+  --cyan:#f5f5f5;--blue:#e5e5e5;--violet:#cfcfcf;--pink:#d9d9d9;--gold:#f5f5f5;
+  --green:#c7c7c7;--red:#8a8a8a;--orange:#f5f5f5;--shadow:0 22px 70px rgba(0,0,0,.46);
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:radial-gradient(1200px 800px at 88% -18%,rgba(255,255,255,.08),transparent 58%),linear-gradient(180deg,var(--bg),#020202 72%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input,select{font:inherit}button{color:inherit}a{color:#f5f5f5;text-decoration:none}a:hover{text-decoration:underline}
+.app{min-height:100vh}.topbar{position:sticky;top:0;z-index:80;background:rgba(3,3,3,.97);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.14);box-shadow:0 10px 45px rgba(0,0,0,.28)}
+.header{max-width:1960px;margin:0 auto;padding:17px 22px 10px;display:grid;grid-template-columns:minmax(350px,1fr) auto;gap:18px;align-items:start}
+.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);font-weight:850;margin-bottom:6px}.title-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h1{font-size:32px;letter-spacing:0;margin:0;line-height:1.04}.status-pill{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);color:#f5f5f5;border-radius:999px;padding:5px 8px;font-size:9px;letter-spacing:.08em;text-transform:uppercase;font-weight:800}
+.subtitle{color:var(--muted);max-width:1080px;font-size:12.5px;line-height:1.55;margin-top:6px}.stats{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.stat{border:1px solid var(--line);background:linear-gradient(180deg,#121212,#0d0d0d);padding:8px 10px;border-radius:10px;min-width:82px;text-align:center}.stat b{display:block;font-size:15px}.stat span{display:block;color:var(--muted);font-size:8px;letter-spacing:.11em;text-transform:uppercase;margin-top:2px}
+.controls{max-width:1960px;margin:0 auto;padding:0 22px 13px;display:grid;gap:8px}.control-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.group-label{color:#8b8b8b;font-size:9px;letter-spacing:.16em;text-transform:uppercase;font-weight:850;margin-right:2px}.segment{display:inline-flex;border:1px solid var(--line);background:#0b0b0b;border-radius:10px;overflow:hidden}.segment button{border:0;background:transparent;padding:8px 12px;font-size:11px;color:#b9b9b9;cursor:pointer}.segment button.active{background:rgba(255,255,255,.08);color:#f0f0f0}
+.control-btn,.preset-btn{border:1px solid var(--line);background:linear-gradient(180deg,#111111,#0c0c0c);border-radius:9px;padding:7px 10px;font-size:10.5px;color:#f0f0f0;cursor:pointer;transition:.15s}.control-btn:hover,.preset-btn:hover{border-color:#5c5c5c;transform:translateY(-1px)}.control-btn.accent{border-color:rgba(255,255,255,.2);color:#ececec}.preset-btn[data-kind="compare"]{border-style:dashed}
+.search-wrap{position:relative;flex:1;min-width:230px;max-width:460px}.search-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);opacity:.46;font-size:13px}.search{width:100%;border:1px solid var(--line);background:#0b0b0b;color:var(--text);border-radius:10px;padding:9px 12px 9px 32px;outline:none;font-size:11px}.search:focus{border-color:#cfcfcf;box-shadow:0 0 0 3px rgba(255,255,255,.08)}
+select{border:1px solid var(--line);background:#0b0b0b;color:#d7d7d7;border-radius:9px;padding:8px 28px 8px 10px;font-size:10px;outline:none}.toggle{display:inline-flex;align-items:center;gap:6px;color:#a8a8a8;font-size:10px;cursor:pointer;user-select:none}.toggle input{accent-color:var(--orange)}
+.shell{max-width:1960px;margin:0 auto;padding:16px 22px 26px;display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:15px;align-items:start}.map-card,.inspector{min-width:0;border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,#101010,#080808);border-radius:var(--radius);box-shadow:var(--shadow)}
+.map-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 13px;border-bottom:1px solid var(--line2);color:var(--muted);font-size:10px}.map-toolbar strong{color:#f0f0f0}.summary-action{display:none;border:1px solid var(--line);background:#111;color:#f5f5f5;border-radius:8px;min-height:34px;padding:0 10px;font-size:10px;font-weight:750;cursor:pointer}.map-actions{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.zoom-controls{display:none;align-items:center;gap:4px}.zoom-btn{border:1px solid var(--line);background:#111;color:#f5f5f5;border-radius:8px;min-height:34px;min-width:34px;padding:0 9px;font-size:10px;font-weight:750;cursor:pointer}.zoom-readout{min-width:42px;text-align:center;color:#bdbdbd;font-size:10px}.map-scroll{height:calc(100vh - 270px);min-height:540px;overflow:auto;position:relative;scrollbar-color:#3a3a3a #0b0b0b}.map-inner{position:relative;min-width:940px;padding:5px 0 14px}.edge-layer{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:visible}.edge{fill:none;stroke-width:1.25;opacity:.3;vector-effect:non-scaling-stroke}.edge.direct{stroke-width:2.2;opacity:.82}.edge.ancestor{stroke:var(--blue)}.edge.descendant{stroke:var(--green)}.edge.a{stroke:var(--blue)}.edge.b{stroke:var(--pink)}.edge.shared{stroke:var(--gold);stroke-width:2;opacity:.82}
+.layer{position:relative;z-index:2;display:grid;grid-template-columns:190px minmax(0,1fr);gap:12px;padding:13px 14px;border-bottom:1px solid rgba(255,255,255,.08);transition:.18s}.layer:last-child{border-bottom:0}.layer.hidden-layer{display:none}.layer-meta{padding-top:3px;position:sticky;left:0;align-self:start}.layer-index{font-size:8.5px;letter-spacing:.17em;text-transform:uppercase;color:#8d8d8d;font-weight:850}.layer-title{font-size:11.5px;font-weight:820;margin-top:4px;line-height:1.25;color:#f1f1f1}.layer-subtitle{font-size:8.7px;color:#a9a9a9;line-height:1.42;margin-top:4px}.layer-count{font-size:8.7px;color:#777777;margin-top:5px}.nodes{display:flex;gap:6px;flex-wrap:wrap;align-content:flex-start}
+.node{position:relative;border:1px solid #262626;background:linear-gradient(180deg,#121212,#0d0d0d);border-radius:9px;padding:7px 9px;min-height:32px;font-size:10.4px;font-weight:690;letter-spacing:0;line-height:1.18;cursor:pointer;transition:transform .12s,border-color .12s,background .12s,opacity .12s,box-shadow .12s;text-align:left}.node:hover{transform:translateY(-1px);border-color:#666666;background:#171717;z-index:6}.node .dot{width:5px;height:5px;border-radius:50%;display:inline-block;background:#6c6c6c;margin-right:6px;vertical-align:1px}.node .maturity-mark{width:4px;height:4px;border-radius:50%;display:inline-block;margin-left:6px;opacity:.85}.node .maturity-mark.emerging{background:var(--violet)}.node .maturity-mark.active{background:var(--cyan)}.node .maturity-mark.established{background:#6d6d6d}
+.node.hidden-by-filter{display:none}.node.search-dim{opacity:.17}.node.search-hit{box-shadow:0 0 0 1px rgba(255,255,255,.45),0 0 18px rgba(255,255,255,.08)}.node.inactive{opacity:.12;filter:saturate(.4)}.node.selected{border-color:#f4f4f4;background:linear-gradient(180deg,#242424,#161616);box-shadow:0 0 0 2px rgba(255,255,255,.08),0 0 24px rgba(255,255,255,.14)}.node.ancestor{border-color:rgba(255,255,255,.38);background:rgba(34,34,34,.9);color:#f5f5f5}.node.ancestor .dot{background:var(--blue)}.node.descendant{border-color:rgba(255,255,255,.3);background:rgba(22,22,22,.92);color:#f5f5f5}.node.descendant .dot{background:var(--green)}.node.comp-a{border-color:rgba(255,255,255,.34);background:rgba(30,30,30,.94)}.node.comp-a .dot{background:var(--blue)}.node.comp-b{border-color:rgba(255,255,255,.34);background:rgba(24,24,24,.94)}.node.comp-b .dot{background:var(--pink)}.node.shared{border-color:rgba(255,255,255,.8);background:rgba(42,42,42,.96);color:#f5f5f5;box-shadow:0 0 16px rgba(255,255,255,.09)}.node.shared .dot{background:var(--gold)}.node.sel-a{box-shadow:0 0 0 2px rgba(255,255,255,.34),0 0 22px rgba(255,255,255,.16)}.node.sel-b{box-shadow:0 0 0 2px rgba(255,255,255,.22),0 0 22px rgba(255,255,255,.12)}
+.inspector{position:sticky;top:205px;max-height:calc(100vh - 226px);overflow:auto;scrollbar-color:#3a3a3a #0a0a0a}.inspector-head{padding:14px 15px 12px;border-bottom:1px solid var(--line2)}.inspector-kicker{font-size:8.5px;letter-spacing:.17em;text-transform:uppercase;color:#8d8d8d;font-weight:850}.inspector h2{font-size:19px;line-height:1.16;letter-spacing:0;margin:6px 0 6px}.inspector p{font-size:10.5px;line-height:1.6;color:#b5b5b5;margin:0}.badges{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}.badge{font-size:7.7px;text-transform:uppercase;letter-spacing:.08em;padding:4px 6px;border-radius:999px;border:1px solid #292929;color:#c7c7c7;background:#0a0a0a}.badge.emerging{color:#efefef;border-color:rgba(255,255,255,.24)}.badge.active{color:#ededed;border-color:rgba(255,255,255,.32)}.badge.terminal{color:#f1f1f1;border-color:rgba(255,255,255,.26)}
+.inspector-body{padding:12px 15px 17px}.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:12px}.metric{border:1px solid #262626;background:#0a0a0a;border-radius:9px;padding:8px;text-align:center}.metric b{font-size:15px;display:block}.metric span{font-size:7.5px;color:#8a8a8a;text-transform:uppercase;letter-spacing:.09em}.section-title{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:#8d8d8d;font-weight:850;margin:13px 0 7px}.prose{font-size:10.5px;line-height:1.62;color:#b5b5b5}.mini-list{margin:0;padding-left:17px;color:#bcbcbc;font-size:10px;line-height:1.55}.mini-list li+li{margin-top:4px}.chip-list{display:flex;flex-wrap:wrap;gap:5px}.chip{border:1px solid #2a2a2a;background:#0b0b0b;color:#cfcfcf;border-radius:7px;font-size:8.7px;padding:5px 7px;cursor:pointer;text-align:left}.chip:hover{border-color:#5c5c5c;color:#fff}.dep-list{display:grid;gap:6px}.dep-card{border:1px solid #2a2a2a;background:#0b0b0b;border-radius:9px;padding:8px}.dep-top{display:flex;gap:6px;align-items:center;justify-content:space-between}.dep-link{border:0;background:transparent;color:#eeeeee;padding:0;cursor:pointer;text-align:left;font-size:9.8px;font-weight:750}.dep-link:hover{color:white}.edge-badges{display:flex;gap:4px;flex-wrap:wrap}.edge-badge{font-size:7px;padding:3px 5px;border:1px solid #2b2b2b;border-radius:999px;color:#a8a8a8;text-transform:uppercase;letter-spacing:.06em}.edge-rationale{font-size:8.7px;line-height:1.45;color:#8a8a8a;margin-top:5px}.refs-list{display:grid;gap:6px}.ref-card{display:block;border:1px solid #262626;background:#0b0b0b;border-radius:8px;padding:7px 8px}.ref-title{font-size:9.3px;color:#f4f4f4;font-weight:720}.ref-meta{font-size:8px;color:#8f8f8f;margin-top:2px}.empty{padding:20px 5px;color:#8a8a8a;font-size:10.5px;line-height:1.65}.compare-pick{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}.pick-btn{border:1px solid var(--line);background:#0b0b0b;padding:7px 8px;border-radius:8px;font-size:9px;cursor:pointer}.pick-btn.active.a{border-color:#f0f0f0;color:#f0f0f0}.pick-btn.active.b{border-color:#eaeaea;color:#e8e8e8}.scope-callout{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:10px;padding:10px;margin-bottom:11px}.scope-callout strong{font-size:10px;color:#f5f5f5}.scope-callout p{font-size:9px;margin-top:5px}
+.legend{display:flex;gap:11px;flex-wrap:wrap;align-items:center}.legend-item{display:inline-flex;align-items:center;gap:5px;font-size:8.5px;color:#8d8d8d}.legend-swatch{width:8px;height:8px;border-radius:3px;border:1px solid currentColor}.footer{max-width:1960px;margin:0 auto;padding:0 22px 30px;color:#8f8f8f;font-size:9.5px;line-height:1.6}.footer-grid{border-top:1px solid var(--line2);padding-top:14px;display:grid;grid-template-columns:1.2fr 1fr;gap:22px}
+.modal-backdrop{position:fixed;inset:0;background:rgba(1,3,7,.74);backdrop-filter:blur(6px);z-index:120;display:none;align-items:center;justify-content:center;padding:20px}.modal-backdrop.open{display:flex}.modal{width:min(820px,96vw);max-height:90vh;overflow:auto;border:1px solid rgba(255,255,255,.2);background:linear-gradient(180deg,#0f0f0f,#090909);border-radius:16px;box-shadow:0 30px 100px rgba(0,0,0,.58)}.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;padding:17px 18px 13px;border-bottom:1px solid var(--line2)}.modal-head h2{margin:0;font-size:21px}.modal-close{border:1px solid var(--line);background:#0a0a0a;border-radius:8px;padding:6px 9px;cursor:pointer}.modal-body{padding:16px 18px 20px}.modal-body h3{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8d8d8d;margin:16px 0 8px}.contract-list{margin:0;padding-left:20px;color:#bcbcbc;font-size:10.5px;line-height:1.62}.contract-list li+li{margin-top:5px}.validation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.validation-item{border:1px solid #262626;background:#0a0a0a;border-radius:9px;padding:9px;text-align:center}.validation-item b{display:block;font-size:17px;color:#f4f4f4}.validation-item span{font-size:7.5px;color:#8a8a8a;text-transform:uppercase;letter-spacing:.08em}.toast{position:fixed;right:18px;bottom:18px;background:#111111;border:1px solid #555555;padding:10px 12px;border-radius:9px;box-shadow:var(--shadow);font-size:10px;color:#f4f4f4;opacity:0;transform:translateY(8px);pointer-events:none;transition:.2s;z-index:150}.toast.show{opacity:1;transform:none}
+@media(max-width:1180px){.shell{grid-template-columns:1fr}.inspector{position:relative;top:auto;max-height:none}.map-scroll{height:65vh}.header{grid-template-columns:1fr}.stats{justify-content:flex-start}}
+@media(max-width:720px){body{background:#050505}.topbar{position:relative;box-shadow:none}.header,.controls,.shell,.footer{padding-left:12px;padding-right:12px}.header{padding-top:14px;padding-bottom:8px;gap:10px}.eyebrow{font-size:9px}.title-row{gap:8px}h1{font-size:24px;line-height:1.08}.status-pill{font-size:8px;max-width:100%}.subtitle{font-size:11.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;justify-content:stretch}.stat{min-width:0;padding:7px 8px}.controls{padding-bottom:10px;gap:8px}.control-row{gap:6px}.control-row#presets{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:3px}.control-row#presets::-webkit-scrollbar{display:none}.control-row#presets .group-label{position:sticky;left:0;z-index:3;background:#050505;padding-right:8px}.group-label{margin-right:0}.search-wrap{min-width:100%;max-width:none;flex-basis:100%}.search{min-height:44px;font-size:12px;padding-top:10px;padding-bottom:10px}.segment{min-height:42px}.segment button{min-height:42px;flex:1;padding:0 10px;white-space:nowrap}.control-btn,.preset-btn,select{min-height:42px;padding:0 12px;white-space:nowrap}.shell{padding-top:10px;gap:12px}.map-card,.inspector{border-radius:10px}.map-toolbar{position:sticky;top:0;z-index:20;align-items:flex-start;flex-direction:column;background:#0b0b0b;padding:10px}#map-summary{line-height:1.5}.map-actions{width:100%;align-items:flex-start;flex-direction:column}.zoom-controls{display:flex;flex-wrap:wrap;max-width:100%}.summary-action{display:inline-flex;align-items:center;justify-content:center;margin:8px 0 0 0}.legend{gap:8px}.map-scroll{height:auto;min-height:0;max-height:none;overflow-x:auto;overflow-y:visible;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}.map-inner{min-width:680px;padding:4px 0 10px}.layer{grid-template-columns:132px minmax(0,1fr);gap:8px;padding:10px 8px}.layer-meta{position:sticky;left:0;z-index:5;background:linear-gradient(90deg,#101010 78%,rgba(16,16,16,0));padding:4px 10px 4px 0}.layer-title{font-size:10.5px}.layer-subtitle{display:none}.layer-count{font-size:8px}.nodes{gap:7px}.node{min-height:44px;max-width:188px;padding:10px 10px;font-size:11.5px;line-height:1.2}.inspector{position:relative;top:auto;max-height:none;scroll-margin-top:10px}.inspector-head{padding:16px 14px 12px}.inspector h2{font-size:20px}.inspector p,.prose,.mini-list{font-size:12px}.badge,.edge-badge{font-size:8.5px}.chip{min-height:36px;font-size:10.5px}.dep-link,.ref-title{font-size:11px}.metric-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.validation-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}.modal-backdrop{align-items:flex-end;padding:0}.modal{width:100%;max-height:90vh;border-radius:14px 14px 0 0}}
+@media print{.topbar,.inspector,.modal-backdrop,.toast{display:none!important}.shell{display:block;padding:0}.map-scroll{height:auto;overflow:visible}.map-card{box-shadow:none}.map-inner{min-width:0}.footer{padding-top:16px}.node{break-inside:avoid}.edge-layer{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="header">
+      <div>
+        <div class="eyebrow">Validated family-level ontology</div>
+        <div class="title-row"><h1 id="title">The Dependency Atlas of Artificial Intelligence</h1><span class="status-pill" id="status-pill">scope-complete draft</span></div>
+        <div class="subtitle" id="subtitle"></div>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="controls">
+      <div class="control-row">
+        <span class="group-label">Mode</span>
+        <div class="segment"><button id="mode-explore" class="active">Explore</button><button id="mode-compare">Compare</button></div>
+        <span class="group-label" style="margin-left:8px">Trace</span>
+        <div class="segment"><button id="trace-full" class="active">Full lineage</button><button id="trace-direct">Direct only</button></div>
+        <label class="toggle"><input id="focus-lineage" type="checkbox" /> focus lineage</label>
+        <button class="control-btn" id="orientation-btn">Systems ↑ / foundations ↓</button>
+        <button class="control-btn accent" id="scope-btn">Scope & validation</button>
+        <button class="control-btn" id="export-btn">Export JSON</button>
+        <button class="control-btn" id="reset-btn">Reset</button>
+      </div>
+      <div class="control-row">
+        <span class="group-label">Find</span>
+        <div class="search-wrap"><span class="search-icon">⌕</span><input class="search" id="search" placeholder="Search concepts, aliases, definitions, tags…" /></div>
+        <select id="layer-filter"><option value="">All layers</option></select>
+        <select id="tag-filter"><option value="">All domains</option></select>
+        <select id="maturity-filter"><option value="">All maturity</option><option value="foundational">Foundational</option><option value="historical">Historical</option><option value="established">Established</option><option value="active">Active</option><option value="emerging">Emerging</option></select>
+      </div>
+      <div class="control-row" id="presets">
+        <span class="group-label">Traces</span>
+        <button class="preset-btn" data-id="transformer">Transformers</button>
+        <button class="preset-btn" data-id="cnn">CNNs</button>
+        <button class="preset-btn" data-id="snn">SNNs</button>
+        <button class="preset-btn" data-id="rnn">RNNs</button>
+        <button class="preset-btn" data-id="diffusion_model">Diffusion</button>
+        <button class="preset-btn" data-id="agent_loop">Agents</button>
+        <button class="preset-btn" data-id="rlvr">RLVR / post-training</button>
+        <button class="preset-btn" data-id="formal_agent_verification">Agent assurance</button>
+        <button class="preset-btn" data-kind="compare" data-a="cnn" data-b="transformer">CNN vs Transformer</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="shell">
+    <section class="map-card">
+      <div class="map-toolbar">
+        <div id="map-summary"><strong>Explore:</strong> select a concept to trace its prerequisites and consumers.</div>
+        <div class="map-actions"><div class="legend"><span class="legend-item" style="color:#f0f0f0"><span class="legend-swatch"></span>prerequisite</span><span class="legend-item" style="color:var(--green)"><span class="legend-swatch"></span>consumer</span><span class="legend-item" style="color:var(--gold)"><span class="legend-swatch"></span>shared</span></div><div class="zoom-controls" aria-label="Atlas zoom controls"><button class="zoom-btn" data-zoom="fit">Fit</button><button class="zoom-btn" data-zoom="out">−</button><span class="zoom-readout" id="zoom-readout">100%</span><button class="zoom-btn" data-zoom="in">+</button><button class="zoom-btn" data-zoom="reset">100%</button></div></div>
+      </div>
+      <div class="map-scroll" id="map-scroll"><div class="map-inner" id="map-inner"><svg class="edge-layer" id="edge-layer"></svg><div id="layers"></div></div></div>
+    </section>
+    <aside class="inspector" id="inspector"></aside>
+  </main>
+
+  <footer class="footer"><div class="footer-grid"><div id="footer-scope"></div><div id="footer-validation"></div></div></footer>
+</div>
+
+<div class="modal-backdrop" id="scope-modal" role="dialog" aria-modal="true" aria-labelledby="scope-title">
+  <div class="modal">
+    <div class="modal-head"><div><div class="eyebrow">Completeness is a declared contract</div><h2 id="scope-title">Scope, exclusions & validation</h2></div><button class="modal-close" id="scope-close">Close</button></div>
+    <div class="modal-body" id="scope-body"></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script id="atlas-data" type="application/json">__ATLAS_JSON__</script>
+<script>
+const DATA=JSON.parse(document.getElementById('atlas-data').textContent);
+const nodeById=new Map(DATA.nodes.map(n=>[n.id,n]));
+const layerById=new Map(DATA.layers.map(l=>[l.id,l]));
+const refById=new Map(DATA.references.map(r=>[r.id,r]));
+const children=new Map(DATA.nodes.map(n=>[n.id,new Set()]));
+for(const n of DATA.nodes)for(const e of n.dependencies)(children.get(e.id)||new Set()).add(n.id);
+const state={mode:'explore',selected:null,a:null,b:null,compareTarget:'a',direct:false,reverse:true,focus:false,search:'',layer:'',tag:'',maturity:'',atlasZoom:1};
+const isNarrow=()=>window.matchMedia('(max-width:720px)').matches;
+const els={
+ title:document.getElementById('title'),subtitle:document.getElementById('subtitle'),status:document.getElementById('status-pill'),stats:document.getElementById('stats'),
+ layers:document.getElementById('layers'),inner:document.getElementById('map-inner'),scroll:document.getElementById('map-scroll'),edges:document.getElementById('edge-layer'),inspector:document.getElementById('inspector'),summary:document.getElementById('map-summary'),
+ search:document.getElementById('search'),layerFilter:document.getElementById('layer-filter'),tagFilter:document.getElementById('tag-filter'),maturityFilter:document.getElementById('maturity-filter'),focus:document.getElementById('focus-lineage'),orientation:document.getElementById('orientation-btn'),
+ scopeModal:document.getElementById('scope-modal'),scopeBody:document.getElementById('scope-body'),toast:document.getElementById('toast'),zoomReadout:document.getElementById('zoom-readout')
+};
+const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+const union=(...sets)=>new Set(sets.flatMap(s=>[...s]));
+function ancestors(id,direct=false){const out=new Set();const q=[id];while(q.length){const x=q.shift();const n=nodeById.get(x);if(!n)continue;for(const e of n.dependencies){if(!out.has(e.id)){out.add(e.id);if(!direct)q.push(e.id)}}}return out}
+function descendants(id,direct=false){const out=new Set();const q=[id];while(q.length){const x=q.shift();for(const c of children.get(x)||[]){if(!out.has(c)){out.add(c);if(!direct)q.push(c)}}}return out}
+function activeSets(){
+ if(state.mode==='explore'&&state.selected){const anc=ancestors(state.selected,state.direct),des=descendants(state.selected,state.direct);return{anc,des,all:union(anc,des,new Set([state.selected]))}}
+ if(state.mode==='compare'){
+  const aa=state.a?ancestors(state.a,state.direct):new Set(),ad=state.a?descendants(state.a,state.direct):new Set();
+  const ba=state.b?ancestors(state.b,state.direct):new Set(),bd=state.b?descendants(state.b,state.direct):new Set();
+  const la=union(aa,ad,state.a?new Set([state.a]):new Set()),lb=union(ba,bd,state.b?new Set([state.b]):new Set());
+  return{aa,ad,ba,bd,la,lb,shared:new Set([...aa].filter(x=>ba.has(x))),all:union(la,lb)};
+ }
+ return{all:new Set()};
+}
+
+function clampZoom(x){return Math.min(1.4,Math.max(.45,x))}
+function applyAtlasZoom(){
+ const z=isNarrow()?state.atlasZoom:1;els.inner.style.zoom=z;els.zoomReadout.textContent=`${Math.round(z*100)}%`;requestAnimationFrame(drawEdges);
+}
+function fitAtlasZoom(){
+ const available=Math.max(280,Math.min(document.documentElement.clientWidth,window.innerWidth)-28);const natural=680;state.atlasZoom=clampZoom(available/natural);applyAtlasZoom();
+}
+function setAtlasZoom(action){
+ if(action==='fit'){fitAtlasZoom();return}if(action==='reset')state.atlasZoom=1;else if(action==='in')state.atlasZoom=clampZoom(state.atlasZoom+.12);else if(action==='out')state.atlasZoom=clampZoom(state.atlasZoom-.12);applyAtlasZoom();
+}
+function orderedLayers(){const x=[...DATA.layers].sort((a,b)=>a.order-b.order);return state.reverse?x.reverse():x}
+function nodeHtml(n){return `<button class="node" id="node-${n.id}" data-id="${n.id}" title="${esc(n.definition)}"><span class="dot"></span>${esc(n.label)}<span class="maturity-mark ${esc(n.maturity)}"></span></button>`}
+function renderMap(){
+ els.inner.style.zoom=isNarrow()?state.atlasZoom:1;
+ els.layers.innerHTML=orderedLayers().map(l=>{const ns=DATA.nodes.filter(n=>n.layer===l.id);return `<section class="layer" data-layer="${l.id}"><div class="layer-meta"><div class="layer-index">Layer ${String(l.order+1).padStart(2,'0')}</div><div class="layer-title">${esc(l.title)}</div><div class="layer-subtitle">${esc(l.subtitle)}</div><div class="layer-count">${ns.length} concepts</div></div><div class="nodes">${ns.map(nodeHtml).join('')}</div></section>`}).join('');
+ document.querySelectorAll('.node').forEach(b=>b.addEventListener('click',()=>selectNode(b.dataset.id)));
+ applyState();
+}
+function matchesFilter(n){
+ if(state.layer&&n.layer!==state.layer)return false;if(state.tag&&!n.tags.includes(state.tag))return false;if(state.maturity&&n.maturity!==state.maturity)return false;return true;
+}
+function applyState(){
+ const sets=activeSets();const q=state.search.trim().toLowerCase();
+ for(const n of DATA.nodes){const el=document.getElementById(`node-${n.id}`);if(!el)continue;el.className='node';el.classList.toggle('hidden-by-filter',!matchesFilter(n));
+  const hay=[n.label,n.id,n.definition,n.why_it_matters,...n.tags,...n.aliases].join(' ').toLowerCase();if(q){el.classList.toggle('search-hit',hay.includes(q));el.classList.toggle('search-dim',!hay.includes(q));}
+  if(state.mode==='explore'&&state.selected){if(n.id===state.selected)el.classList.add('selected');else if(sets.anc.has(n.id))el.classList.add('ancestor');else if(sets.des.has(n.id))el.classList.add('descendant');else if(state.focus)el.classList.add('inactive');}
+  if(state.mode==='compare'){
+    if(n.id===state.a)el.classList.add('sel-a');if(n.id===state.b)el.classList.add('sel-b');
+    if(sets.shared?.has(n.id))el.classList.add('shared');else if(sets.la?.has(n.id))el.classList.add('comp-a');else if(sets.lb?.has(n.id))el.classList.add('comp-b');else if(state.focus&&(state.a||state.b))el.classList.add('inactive');
+  }
+ }
+ document.querySelectorAll('.layer').forEach(layer=>{const hidden=state.layer&&layer.dataset.layer!==state.layer;layer.classList.toggle('hidden-layer',!!hidden)});
+ renderInspector();updateSummary();applyAtlasZoom();
+}
+function selectNode(id){
+ if(state.mode==='explore'){state.selected=id;}else{state[state.compareTarget]=id;state.compareTarget=state.compareTarget==='a'?'b':'a';}
+ applyState();
+}
+function setMode(mode){state.mode=mode;document.getElementById('mode-explore').classList.toggle('active',mode==='explore');document.getElementById('mode-compare').classList.toggle('active',mode==='compare');applyState()}
+function updateSummary(){
+ const sets=activeSets();if(state.mode==='explore'&&state.selected){const n=nodeById.get(state.selected);els.summary.innerHTML=`<strong>${esc(n.label)}:</strong> ${sets.anc.size} prerequisite concepts · ${sets.des.size} downstream concepts · ${state.direct?'direct':'full'} trace.<button class="summary-action" data-detail>Details</button>`;return}
+ if(state.mode==='compare'){const a=state.a&&nodeById.get(state.a),b=state.b&&nodeById.get(state.b);els.summary.innerHTML=`<strong>Compare:</strong> ${a?esc(a.label):'choose A'} ↔ ${b?esc(b.label):'choose B'}${a&&b?` · ${sets.shared.size} shared prerequisite concepts`:''}.`;return}
+ els.summary.innerHTML='<strong>Explore:</strong> select a concept to trace its prerequisites and consumers.';
+}
+function scrollNodeIntoMap(id,behavior='smooth'){const el=document.getElementById(`node-${id}`);if(!el)return;const r=el.getBoundingClientRect(),sr=els.scroll.getBoundingClientRect();const top=els.scroll.scrollTop+(r.top-sr.top)-(sr.height-r.height)/2;els.scroll.scrollTo({top:Math.max(0,top),behavior});}
+function chips(ids){const list=[...ids].slice(0,70);if(!list.length)return '<span class="empty">None declared in this scope.</span>';return list.map(id=>`<button class="chip" data-jump="${id}">${esc(nodeById.get(id)?.label||id)}</button>`).join('')+(ids.size>70?`<span class="badge">+${ids.size-70} more</span>`:'')}
+function bindInspector(){els.inspector.querySelectorAll('[data-jump]').forEach(x=>x.addEventListener('click',()=>{if(state.mode==='compare'){state[state.compareTarget]=x.dataset.jump}else state.selected=x.dataset.jump;applyState();scrollNodeIntoMap(x.dataset.jump)}));els.inspector.querySelectorAll('[data-pick]').forEach(x=>x.addEventListener('click',()=>{state.compareTarget=x.dataset.pick;renderInspector()}))}
+function refsHtml(n){return n.reference_ids.map(id=>{const r=refById.get(id);return r?`<a class="ref-card" href="${esc(r.url)}" target="_blank" rel="noreferrer"><div class="ref-title">${esc(r.title)}</div><div class="ref-meta">${esc(r.authors)} · ${r.year}</div></a>`:''}).join('')}
+function renderInspector(){
+ if(state.mode==='explore'){
+  if(!state.selected){els.inspector.innerHTML=`<div class="inspector-head"><div class="inspector-kicker">Atlas overview</div><h2>Choose any concept</h2><p>Trace the complete prerequisite substrate downward and the systems or methods it enables upward. Every node has a unique concept definition, typed dependency edges, and reference pointers; supporting context is explicitly labeled as manually curated or graph-derived.</p></div><div class="inspector-body"><div class="scope-callout"><strong>${esc(DATA.meta.status)}</strong><p>${esc(DATA.meta.scope_statement)}</p></div><div class="metric-grid"><div class="metric"><b>${DATA.meta.stats.nodes}</b><span>concepts</span></div><div class="metric"><b>${DATA.meta.stats.typed_edges}</b><span>typed edges</span></div><div class="metric"><b>${DATA.meta.stats.references}</b><span>references</span></div></div><div class="section-title">Reading model</div><div class="prose">${esc(DATA.meta.reading_instruction)}</div><div class="section-title">Content guarantees</div><ul class="mini-list">${DATA.meta.completeness_contract.slice(0,3).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`;return}
+  const n=nodeById.get(state.selected),sets=activeSets(),directChildren=children.get(n.id)||new Set();
+  const depCards=n.dependencies.map(e=>{const d=nodeById.get(e.id);return `<div class="dep-card"><div class="dep-top"><button class="dep-link" data-jump="${e.id}">${esc(d.label)}</button><span class="edge-badges"><span class="edge-badge">${esc(e.type.replaceAll('_',' '))}</span><span class="edge-badge">${esc(e.strength)}</span></span></div><div class="edge-rationale">${esc(e.rationale)}</div></div>`}).join('')||'<span class="empty">Root concept: no declared prerequisites.</span>';
+  els.inspector.innerHTML=`<div class="inspector-head"><div class="inspector-kicker">${esc(layerById.get(n.layer).title)}</div><h2>${esc(n.label)}</h2><p>${esc(n.definition)}</p><div class="badges"><span class="badge ${n.maturity}">${esc(n.maturity)}</span><span class="badge" title="Editorial provenance of the supporting context">${n.editorial_status==='curated'?'curated context':'graph-derived context'}</span>${n.terminal?'<span class="badge terminal">terminal system</span>':''}${n.aliases.map(a=>`<span class="badge">${esc(a)}</span>`).join('')}</div><div class="badges">${n.tags.map(t=>`<span class="badge">${esc(t)}</span>`).join('')}</div></div><div class="inspector-body"><div class="metric-grid"><div class="metric"><b>${sets.anc.size}</b><span>substrate</span></div><div class="metric"><b>${n.dependencies.length}</b><span>direct deps</span></div><div class="metric"><b>${sets.des.size}</b><span>downstream</span></div></div><div class="section-title">Why it matters</div><div class="prose">${esc(n.why_it_matters)}</div><div class="section-title">Examples / downstream uses</div><ul class="mini-list">${n.examples.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><div class="section-title">Limitations</div><ul class="mini-list">${n.limitations.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><div class="section-title">Typed direct prerequisites</div><div class="dep-list">${depCards}</div><div class="section-title">Directly enables</div><div class="chip-list">${chips(directChildren)}</div><div class="section-title">Full prerequisite substrate</div><div class="chip-list">${chips(sets.anc)}</div><div class="section-title">All downstream consumers</div><div class="chip-list">${chips(sets.des)}</div><div class="section-title">References</div><div class="refs-list">${refsHtml(n)}</div></div>`;
+ }else{
+  const a=state.a&&nodeById.get(state.a),b=state.b&&nodeById.get(state.b),sets=activeSets();const aa=sets.aa||new Set(),ba=sets.ba||new Set(),shared=sets.shared||new Set();const denom=union(aa,ba).size,j=denom?Math.round(shared.size/denom*100):0;
+  els.inspector.innerHTML=`<div class="inspector-head"><div class="inspector-kicker">Compare mode</div><h2>${a?esc(a.label):'Choose A'} <span style="color:#bdbdbd">↔</span> ${b?esc(b.label):'Choose B'}</h2><p>Compare dependency substrate rather than surface labels. Shared prerequisite concepts appear in gold.</p><div class="compare-pick"><button class="pick-btn a ${state.compareTarget==='a'?'active':''}" data-pick="a">Next click sets A</button><button class="pick-btn b ${state.compareTarget==='b'?'active':''}" data-pick="b">Next click sets B</button></div></div><div class="inspector-body"><div class="metric-grid"><div class="metric"><b>${aa.size}</b><span>A substrate</span></div><div class="metric"><b>${shared.size}</b><span>shared</span></div><div class="metric"><b>${j}%</b><span>Jaccard</span></div></div>${a?`<div class="section-title" style="color:#f0f0f0">A · ${esc(a.label)}</div><div class="prose">${esc(a.definition)}</div>`:''}${b?`<div class="section-title" style="color:#eaeaea">B · ${esc(b.label)}</div><div class="prose">${esc(b.definition)}</div>`:''}<div class="section-title">Shared prerequisite substrate</div><div class="chip-list">${chips(shared)}</div>${a&&b?`<div class="section-title">Unique to A substrate</div><div class="chip-list">${chips(new Set([...aa].filter(x=>!ba.has(x))))}</div><div class="section-title">Unique to B substrate</div><div class="chip-list">${chips(new Set([...ba].filter(x=>!aa.has(x))))}</div>`:''}</div>`;
+ }
+ bindInspector();
+}
+function edgeClass(source,target,sets){
+ if(state.mode==='explore'){if(target===state.selected||sets.anc?.has(source)&&sets.anc?.has(target)||source===state.selected&&sets.anc?.has(target))return'ancestor';return'descendant'}
+ const a=sets.la?.has(source)&&sets.la?.has(target),b=sets.lb?.has(source)&&sets.lb?.has(target);return a&&b?'shared':a?'a':'b';
+}
+function drawEdges(){
+ const sets=activeSets();els.edges.innerHTML='';if((state.mode==='explore'&&!state.selected)||(state.mode==='compare'&&!state.a&&!state.b))return;
+ const active=sets.all||new Set();const innerRect=els.inner.getBoundingClientRect();const paths=[];let count=0;
+ for(const n of DATA.nodes){if(!active.has(n.id))continue;const source=document.getElementById(`node-${n.id}`);if(!source||source.classList.contains('hidden-by-filter'))continue;for(const e of n.dependencies){if(!active.has(e.id))continue;const target=document.getElementById(`node-${e.id}`);if(!target||target.classList.contains('hidden-by-filter'))continue;if(count++>700)break;const sr=source.getBoundingClientRect(),tr=target.getBoundingClientRect();const sx=sr.left-innerRect.left+sr.width/2,sy=sr.top-innerRect.top+sr.height/2,tx=tr.left-innerRect.left+tr.width/2,ty=tr.top-innerRect.top+tr.height/2;const mid=(sy+ty)/2;const direct=(n.id===state.selected||e.id===state.selected||n.id===state.a||n.id===state.b||e.id===state.a||e.id===state.b)?' direct':'';paths.push(`<path class="edge ${edgeClass(n.id,e.id,sets)}${direct}" d="M ${sx.toFixed(1)} ${sy.toFixed(1)} C ${sx.toFixed(1)} ${mid.toFixed(1)}, ${tx.toFixed(1)} ${mid.toFixed(1)}, ${tx.toFixed(1)} ${ty.toFixed(1)}"/>`)} }
+ els.edges.setAttribute('width',els.inner.scrollWidth);els.edges.setAttribute('height',els.inner.scrollHeight);els.edges.setAttribute('viewBox',`0 0 ${els.inner.scrollWidth} ${els.inner.scrollHeight}`);els.edges.innerHTML=paths.join('');
+}
+function populateControls(){
+ for(const l of [...DATA.layers].sort((a,b)=>a.order-b.order))els.layerFilter.insertAdjacentHTML('beforeend',`<option value="${l.id}">${esc(l.title)}</option>`);
+ const tags=[...new Set(DATA.nodes.flatMap(n=>n.tags))].sort();for(const t of tags)els.tagFilter.insertAdjacentHTML('beforeend',`<option value="${esc(t)}">${esc(t)}</option>`);
+}
+function showScope(){const s=DATA.meta.stats;els.scopeBody.innerHTML=`<p class="prose">${esc(DATA.meta.scope_statement)}</p><h3>Validated coverage</h3><div class="validation-grid"><div class="validation-item"><b>${s.nodes}</b><span>rich nodes</span></div><div class="validation-item"><b>${s.typed_edges}</b><span>typed edges</span></div><div class="validation-item"><b>${s.boilerplate_definitions}</b><span>boilerplate</span></div><div class="validation-item"><b>${s.non_system_terminal_nodes}</b><span>unconsumed reusable</span></div><div class="validation-item"><b>100%</b><span>reference coverage</span></div><div class="validation-item"><b>100%</b><span>rich schema</span></div><div class="validation-item"><b>${s.references}</b><span>references</span></div><div class="validation-item"><b>${s.max_dependency_depth}</b><span>max depth</span></div><div class="validation-item"><b>${s.curated_nodes}</b><span>curated context</span></div><div class="validation-item"><b>${s.graph_derived_context_nodes}</b><span>graph-derived context</span></div></div><h3>Editorial status</h3><p class="prose">${esc(DATA.meta.editorial_note)}</p><h3>Completeness contract</h3><ol class="contract-list">${DATA.meta.completeness_contract.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><h3>Known exclusions</h3><ul class="contract-list">${DATA.meta.known_exclusions.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><h3>Reading semantics</h3><p class="prose">${esc(DATA.meta.reading_instruction)}</p>`;els.scopeModal.classList.add('open')}
+function toast(msg){els.toast.textContent=msg;els.toast.classList.add('show');setTimeout(()=>els.toast.classList.remove('show'),1800)}
+function reset(){Object.assign(state,{selected:null,a:null,b:null,compareTarget:'a',direct:false,focus:false,search:'',layer:'',tag:'',maturity:''});els.search.value='';els.layerFilter.value='';els.tagFilter.value='';els.maturityFilter.value='';els.focus.checked=false;document.getElementById('trace-full').classList.add('active');document.getElementById('trace-direct').classList.remove('active');setMode('explore')}
+function init(){
+ els.title.textContent=DATA.meta.title;els.status.textContent=DATA.meta.status;els.subtitle.textContent=DATA.meta.scope_statement;const s=DATA.meta.stats;els.stats.innerHTML=`<div class="stat"><b>${s.nodes}</b><span>concepts</span></div><div class="stat"><b>${s.typed_edges}</b><span>typed edges</span></div><div class="stat"><b>${s.references}</b><span>references</span></div><div class="stat"><b>${s.boilerplate_definitions}</b><span>boilerplate</span></div>`;
+ populateControls();renderMap();if(isNarrow())fitAtlasZoom();document.getElementById('footer-scope').innerHTML=`<strong style="color:#bdbdbd">Scope:</strong> ${esc(DATA.meta.scope_statement)}<br><strong style="color:#bdbdbd">Updated:</strong> ${esc(DATA.meta.updated)} · ${esc(DATA.meta.version)}`;document.getElementById('footer-validation').innerHTML=`<strong style="color:#bdbdbd">Build contract:</strong> schema-valid DAG, typed edges, unique definitions, references, declared exclusions, and reproducible statistics. Same-layer edges are allowed for specialization and composition.<br><strong style="color:#bdbdbd">Editorial disclosure:</strong> ${esc(DATA.meta.editorial_note)}`;
+ document.getElementById('mode-explore').onclick=()=>setMode('explore');document.getElementById('mode-compare').onclick=()=>setMode('compare');
+ document.getElementById('trace-full').onclick=()=>{state.direct=false;document.getElementById('trace-full').classList.add('active');document.getElementById('trace-direct').classList.remove('active');applyState()};document.getElementById('trace-direct').onclick=()=>{state.direct=true;document.getElementById('trace-direct').classList.add('active');document.getElementById('trace-full').classList.remove('active');applyState()};
+ els.focus.onchange=e=>{state.focus=e.target.checked;applyState()};els.search.oninput=e=>{state.search=e.target.value;applyState()};els.layerFilter.onchange=e=>{state.layer=e.target.value;applyState()};els.tagFilter.onchange=e=>{state.tag=e.target.value;applyState()};els.maturityFilter.onchange=e=>{state.maturity=e.target.value;applyState()};
+ els.orientation.onclick=()=>{state.reverse=!state.reverse;els.orientation.textContent=state.reverse?'Systems ↑ / foundations ↓':'Foundations ↑ / systems ↓';renderMap()};document.getElementById('reset-btn').onclick=reset;document.getElementById('scope-btn').onclick=showScope;document.getElementById('scope-close').onclick=()=>els.scopeModal.classList.remove('open');els.scopeModal.onclick=e=>{if(e.target===els.scopeModal)els.scopeModal.classList.remove('open')};
+ document.getElementById('export-btn').onclick=()=>{const blob=new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ai_dependency_atlas_v2_data.json';a.click();URL.revokeObjectURL(a.href);toast('JSON export created')};
+ document.getElementById('presets').onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.kind==='compare'){state.a=b.dataset.a;state.b=b.dataset.b;setMode('compare')}else if(b.dataset.id){state.selected=b.dataset.id;setMode('explore');scrollNodeIntoMap(b.dataset.id)}};document.querySelector('.map-toolbar').onclick=e=>{const z=e.target.closest('[data-zoom]');if(z){setAtlasZoom(z.dataset.zoom);return}if(e.target.closest('[data-detail]'))els.inspector.scrollIntoView({behavior:'smooth',block:'start'})};
+ window.addEventListener('resize',()=>{if(isNarrow())fitAtlasZoom();else applyAtlasZoom()});window.addEventListener('scroll',()=>{if(isNarrow())requestAnimationFrame(drawEdges)},{passive:true});els.scroll.addEventListener('scroll',()=>requestAnimationFrame(drawEdges),{passive:true});document.addEventListener('keydown',e=>{if(e.key==='Escape')els.scopeModal.classList.remove('open')});
+}
+init();
+</script>
+</body>
+</html>
