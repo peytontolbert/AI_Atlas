@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Atlas Universe</title>
+  <style>
+    :root { --bg:#101418; --panel:#171d23; --ink:#f4efe7; --muted:#a9b4bd; --line:#2c3945; --accent:#ffb703; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:radial-gradient(circle at 20% 10%, #243949 0, transparent 34%), linear-gradient(135deg,#101418,#18232d 55%,#111418); color:var(--ink); font:14px/1.4 Georgia, 'Times New Roman', serif; overflow:hidden; }
+    header { position:fixed; inset:0 0 auto 0; z-index:2; display:flex; gap:16px; align-items:center; padding:14px 18px; background:rgba(16,20,24,.82); border-bottom:1px solid var(--line); backdrop-filter:blur(12px); }
+    h1 { margin:0; font-size:20px; letter-spacing:.04em; }
+    .controls { display:flex; gap:10px; align-items:center; margin-left:auto; }
+    input, select, button { background:#0f1419; color:var(--ink); border:1px solid var(--line); border-radius:999px; padding:8px 12px; }
+    button { cursor:pointer; }
+    #stage { width:100vw; height:100vh; display:block; }
+    #side { position:fixed; right:18px; top:76px; width:min(380px, calc(100vw - 36px)); max-height:calc(100vh - 96px); overflow:auto; z-index:3; background:rgba(23,29,35,.92); border:1px solid var(--line); border-radius:18px; padding:16px; box-shadow:0 24px 80px rgba(0,0,0,.35); }
+    #side h2 { margin:0 0 8px; font-size:18px; }
+    #side p { color:var(--muted); }
+    .badge { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:3px 8px; color:var(--muted); margin:0 6px 6px 0; }
+    .hidden { display:none; }
+    .hint { color:var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Atlas Universe</h1>
+    <span class="hint" id="stats"></span>
+    <div class="controls">
+      <input id="q" placeholder="Search concepts...">
+      <select id="layer"><option value="">All layers</option></select>
+      <button id="reset">Reset</button>
+    </div>
+  </header>
+  <canvas id="stage"></canvas>
+  <aside id="side"><h2>Navigate the universe</h2><p>Drag to pan, wheel to zoom, click a concept to inspect dependencies and downstream consumers.</p></aside>
+  <script type="application/json" id="universe-nodes">__UNIVERSE_NODES__</script>
+  <script type="application/json" id="universe-edges">__UNIVERSE_EDGES__</script>
+  <script>
+    const nodes = JSON.parse(document.getElementById('universe-nodes').textContent);
+    const edges = JSON.parse(document.getElementById('universe-edges').textContent);
+    const byId = new Map(nodes.map(n => [n.node_id, n]));
+    const dependents = new Map(), dependencies = new Map();
+    for (const e of edges) { if (!dependencies.has(e.src)) dependencies.set(e.src, []); dependencies.get(e.src).push(e.dst); if (!dependents.has(e.dst)) dependents.set(e.dst, []); dependents.get(e.dst).push(e.src); }
+    const layers = [...new Set(nodes.map(n => n.layer))];
+    const layerSelect = document.getElementById('layer');
+    for (const l of layers) { const o=document.createElement('option'); o.value=l; o.textContent=l; layerSelect.appendChild(o); }
+    document.getElementById('stats').textContent = `${nodes.length} concepts / ${edges.length} dependency edges`;
+    const canvas = document.getElementById('stage'), ctx = canvas.getContext('2d');
+    let scale = 12, ox = innerWidth/2, oy = innerHeight/2, drag = null, selected = null, query = '', layer = '';
+    function resize(){ canvas.width=innerWidth*devicePixelRatio; canvas.height=innerHeight*devicePixelRatio; canvas.style.width=innerWidth+'px'; canvas.style.height=innerHeight+'px'; ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0); draw(); }
+    function screen(n){ return {x: ox + n.x*scale, y: oy + (n.y + n.z*.45)*scale}; }
+    function visible(n){ return (!layer || n.layer===layer) && (!query || (n.label+' '+n.node_id+' '+n.layer).toLowerCase().includes(query)); }
+    function draw(){ ctx.clearRect(0,0,innerWidth,innerHeight); ctx.lineWidth=1; for(const e of edges){ const a=byId.get(e.src), b=byId.get(e.dst); if(!a||!b||!visible(a)||!visible(b)) continue; const A=screen(a), B=screen(b); const hot=selected&&(e.src===selected.node_id||e.dst===selected.node_id); ctx.strokeStyle=hot?'rgba(255,183,3,.75)':'rgba(170,185,196,.10)'; ctx.beginPath(); ctx.moveTo(A.x,A.y); ctx.lineTo(B.x,B.y); ctx.stroke(); } for(const n of nodes){ if(!visible(n)) continue; const p=screen(n); const hot=selected&&n.node_id===selected.node_id; ctx.beginPath(); ctx.fillStyle=hot?'#fff':n.color; ctx.arc(p.x,p.y,(hot?1.8:1)*Math.max(3, Math.min(10,n.size))*Math.sqrt(scale/12),0,Math.PI*2); ctx.fill(); if(hot || scale>16){ ctx.fillStyle='#f4efe7'; ctx.font='12px Georgia'; ctx.fillText(n.label,p.x+8,p.y-8); } } }
+    function nearest(x,y){ let best=null, bd=Infinity; for(const n of nodes){ if(!visible(n)) continue; const p=screen(n), d=(p.x-x)**2+(p.y-y)**2; if(d<bd){bd=d; best=n;} } return bd<400?best:null; }
+    function inspect(n){ selected=n; const data=JSON.parse(n.node_json||'{}'); const deps=(dependencies.get(n.node_id)||[]).map(id=>byId.get(id)?.label||id); const downs=(dependents.get(n.node_id)||[]).map(id=>byId.get(id)?.label||id); document.getElementById('side').innerHTML=`<h2>${n.label}</h2><div><span class="badge">${n.layer}</span><span class="badge">${n.node_id}</span></div><p>${data.definition||''}</p><h3>Dependencies</h3><p>${deps.slice(0,20).join('<br>')||'None'}</p><h3>Downstream</h3><p>${downs.slice(0,20).join('<br>')||'None'}</p>`; draw(); }
+    canvas.addEventListener('mousedown', e => drag={x:e.clientX,y:e.clientY,ox,oy});
+    canvas.addEventListener('mousemove', e => { if(drag){ ox=drag.ox+e.clientX-drag.x; oy=drag.oy+e.clientY-drag.y; draw(); } });
+    addEventListener('mouseup',()=>drag=null);
+    canvas.addEventListener('click', e => { const n=nearest(e.clientX,e.clientY); if(n) inspect(n); });
+    canvas.addEventListener('wheel', e => { e.preventDefault(); const prev=scale; scale=Math.max(2,Math.min(40,scale*(e.deltaY<0?1.12:.88))); ox=e.clientX-(e.clientX-ox)*(scale/prev); oy=e.clientY-(e.clientY-oy)*(scale/prev); draw(); }, {passive:false});
+    document.getElementById('q').addEventListener('input', e=>{query=e.target.value.toLowerCase().trim(); draw();});
+    layerSelect.addEventListener('change', e=>{layer=e.target.value; draw();});
+    document.getElementById('reset').addEventListener('click',()=>{scale=12; ox=innerWidth/2; oy=innerHeight/2; selected=null; query=''; layer=''; document.getElementById('q').value=''; layerSelect.value=''; draw();});
+    addEventListener('resize', resize); resize();
+  </script>
+</body>
+</html>

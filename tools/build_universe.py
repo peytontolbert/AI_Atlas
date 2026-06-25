@@ -17,6 +17,19 @@ def compact_json(value: Any) -> str:
     return json.dumps(value, ensure_ascii=True, sort_keys=True, separators=(",", ":"))
 
 
+def safe_embedded_json(rows: list[dict[str, Any]]) -> str:
+    return json.dumps(rows, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+
+
+def write_universe_html(root: Path, output_dir: Path, nodes: list[dict[str, Any]], edges: list[dict[str, Any]]) -> None:
+    template_path = root / "universe.template.html"
+    if not template_path.is_file():
+        return
+    template = template_path.read_text(encoding="utf-8")
+    html = template.replace("__UNIVERSE_NODES__", safe_embedded_json(nodes)).replace("__UNIVERSE_EDGES__", safe_embedded_json(edges))
+    (output_dir / "index.html").write_text(html, encoding="utf-8")
+
+
 def write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as handle:
@@ -54,7 +67,8 @@ def build(root: Path, output_dir: Path) -> dict[str, Any]:
     universe_edges = [{"src": str(edge.get("node_id") or ""), "dst": str(edge.get("dependency_id") or ""), "type": str(edge.get("type") or ""), "weight": 1.0 if edge.get("strength") == "core" else 0.6 if edge.get("strength") == "common" else 0.3, "edge_json": compact_json(edge)} for edge in edges]
     write_jsonl(output_dir / "nodes.jsonl", universe_nodes)
     write_jsonl(output_dir / "edges.jsonl", universe_edges)
-    manifest = {"built_at": int(time.time()), "node_count": len(universe_nodes), "edge_count": len(universe_edges), "layers": LAYER_ORDER, "nodes_path": "nodes.jsonl", "edges_path": "edges.jsonl"}
+    write_universe_html(root, output_dir, universe_nodes, universe_edges)
+    manifest = {"built_at": int(time.time()), "node_count": len(universe_nodes), "edge_count": len(universe_edges), "layers": LAYER_ORDER, "nodes_path": "nodes.jsonl", "edges_path": "edges.jsonl", "html_path": "index.html"}
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return manifest

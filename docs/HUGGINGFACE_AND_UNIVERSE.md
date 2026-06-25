@@ -46,6 +46,7 @@ exports/universe/
 exports/huggingface/ai_atlas_dataset_v1/
 ├── README.md
 ├── manifest.json
+├── index.html
 ├── jsonl/
 │   ├── nodes.jsonl
 │   ├── edges.jsonl
@@ -88,7 +89,7 @@ The exporter calls `huggingface_hub` with `repo_type="dataset"` and uploads the 
 | `exports/_universe/edges.jsonl` | `exports/universe/edges.jsonl` |
 | `exports/_universe/manifest.json` | `exports/universe/manifest.json` |
 
-A viewer can consume `universe_nodes` and `universe_edges` directly from the Hugging Face parquet files or the local JSONL files.
+`make universe` also writes `exports/universe/index.html`, a standalone interactive webpage with embedded universe data. A separate viewer can also consume `universe_nodes` and `universe_edges` directly from the Hugging Face parquet files or the local JSONL files.
 
 ## Design Rule
 

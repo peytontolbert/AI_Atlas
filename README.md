@@ -124,7 +124,7 @@ To push the generated dataset folder:
 HF_DATASET_ID=PeytonT/ai_atlas PYTHON=python make hf-dataset-push
 ```
 
-See [`docs/HUGGINGFACE_AND_UNIVERSE.md`](docs/HUGGINGFACE_AND_UNIVERSE.md) for the dataset configs and the interactive-universe layout.
+`make universe` also writes a standalone interactive page at `exports/universe/index.html`. See [`docs/HUGGINGFACE_AND_UNIVERSE.md`](docs/HUGGINGFACE_AND_UNIVERSE.md) for the dataset configs and the interactive-universe layout.
 
 ## Repository layout
 
