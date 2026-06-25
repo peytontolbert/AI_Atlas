@@ -92,6 +92,13 @@ For each layer, a completeness audit must include:
 - reviewer sign-off;
 - update date.
 
+
+## Audit Commands
+
+- `make source-audit` recompiles ledgers and verifies that every sentence and edge has an audit record.
+- `make source-audit-strict` additionally fails while any sentence or edge is `ambiguous` or `unsupported`.
+- `make strict-blockers` writes `dist/strict_blocker_report.json` and `dist/strict_blocker_report.md`, grouping the remaining strict blockers by pattern, layer, field, and node.
+
 ## Required Audit Artifacts
 
 Before upgrading the project claim, add these files or equivalent structured data:

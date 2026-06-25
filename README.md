@@ -138,6 +138,8 @@ ai_dependency_atlas/
     ├── ai_dependency_atlas_v2_data.json
     ├── validation_report.{json,md}
     ├── content_audit_report.{json,md}
+    ├── source_audit_report.{json,md}
+    ├── strict_blocker_report.{json,md}
     ├── browser_smoke_report.json
     ├── ai_dependency_atlas_v2_preview.png
     └── build_manifest.json
@@ -170,7 +172,7 @@ Strength is separately labeled `core`, `common`, or `optional`. Same-layer edges
 
 References are pointers to relevant primary papers, standards, surveys, or foundational textbooks. Every node has at least one reference pointer, but a pointer is **not** a sentence-level citation audit. Broad foundational sources are deliberately reused across related concepts. Node-specific sourcing is an editorial expansion target documented by the content audit.
 
-For the stricter standard required to make a sentence-level fact-checking claim, see [`docs/SOURCE_AUDIT.md`](docs/SOURCE_AUDIT.md). For the roadmap toward bounded exhaustive coverage, see [`docs/EXHAUSTIVENESS_ROADMAP.md`](docs/EXHAUSTIVENESS_ROADMAP.md).
+For the stricter standard required to make a sentence-level fact-checking claim, see [`docs/SOURCE_AUDIT.md`](docs/SOURCE_AUDIT.md). Run `make source-audit` for audit-record coverage and `make strict-blockers` for the remaining ambiguous/unsupported records that block a strict fact-checking claim. For the roadmap toward bounded exhaustive coverage, see [`docs/EXHAUSTIVENESS_ROADMAP.md`](docs/EXHAUSTIVENESS_ROADMAP.md).
 
 ## Contribution standard
 
