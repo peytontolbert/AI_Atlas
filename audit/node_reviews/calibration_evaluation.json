@@ -1,4 +1,7 @@
 {
+  "node_id": "calibration_evaluation",
+  "reviewer": "codex",
+  "review_date": "2026-06-25",
   "sentence_reviews": [
     {
       "unit_id": "7bc4391ccba6cf48",
@@ -6,181 +9,166 @@
       "field": "definition",
       "text": "Calibration and risk evaluation test whether predicted probabilities, abstention scores, intervals, or confidence estimates match observed correctness and harm.",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
-      "evidence_location": "PML covers probabilistic prediction, uncertainty, calibration-related evaluation, and risk/loss; NIST AI RMF covers risk measurement, monitoring, and impact evaluation.",
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim."
+      "verdict": "verified",
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "unit_id": "b1f9a151bd559916",
+      "unit_id": "f10a94708a4f9eca",
       "node_id": "calibration_evaluation",
       "field": "why_it_matters",
-      "text": "The role of Calibration, uncertainty & risk evaluation is to connect Calibration, uncertainty & risk objectives, Benchmarks, test suites & task metrics to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Medical imaging & clinical decision support, Tabular predictive analytics & decision support.",
+      "text": "Calibration and risk evaluation test whether confidence estimates, abstention behavior, and risk scores remain reliable enough for the intended deployment decision.",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
-      "evidence_location": "PML covers probabilistic prediction, uncertainty, calibration-related evaluation, and risk/loss; NIST AI RMF covers risk measurement, monitoring, and impact evaluation.",
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Downstream/substrate phrasing is atlas graph terminology."
+      "verdict": "supported_by_synthesis",
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "unit_id": "de4614fb4f0094a9",
+      "unit_id": "c1de6cb5a4a1029a",
       "node_id": "calibration_evaluation",
       "field": "examples[1]",
-      "text": "substrate for Time-series forecasting, anomaly & fraud detection",
+      "text": "reliability diagrams",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
-      "evidence_location": "PML covers probabilistic prediction, uncertainty, calibration-related evaluation, and risk/loss; NIST AI RMF covers risk measurement, monitoring, and impact evaluation.",
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Downstream/substrate phrasing is atlas graph terminology."
+      "verdict": "verified",
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "unit_id": "3a1be1be10ae4315",
+      "unit_id": "15d51b34726d2778",
       "node_id": "calibration_evaluation",
       "field": "examples[2]",
-      "text": "substrate for Medical imaging & clinical decision support",
+      "text": "expected calibration error reporting",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
-      "evidence_location": "PML covers probabilistic prediction, uncertainty, calibration-related evaluation, and risk/loss; NIST AI RMF covers risk measurement, monitoring, and impact evaluation.",
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Downstream/substrate phrasing is atlas graph terminology."
+      "verdict": "verified",
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "unit_id": "33ff4f4a2e611dfb",
+      "unit_id": "ccffdf896cd756f3",
       "node_id": "calibration_evaluation",
       "field": "examples[3]",
-      "text": "substrate for Tabular predictive analytics & decision support",
+      "text": "coverage and abstention-risk analysis",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
-      "evidence_location": "PML covers probabilistic prediction, uncertainty, calibration-related evaluation, and risk/loss; NIST AI RMF covers risk measurement, monitoring, and impact evaluation.",
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Downstream/substrate phrasing is atlas graph terminology."
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "unit_id": "86fb340e2ebcdff3",
+      "unit_id": "b329f41bd92cd040",
       "node_id": "calibration_evaluation",
       "field": "limitations[1]",
-      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Calibration, uncertainty & risk objectives, Benchmarks, test suites & task metrics.",
+      "text": "A model can appear calibrated on one sample or score bucket while failing under distribution shift, subgroup differences, or changed decision thresholds.",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
-      "evidence_location": "PML covers probabilistic prediction, uncertainty, calibration-related evaluation, and risk/loss; NIST AI RMF covers risk measurement, monitoring, and impact evaluation.",
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source."
+      "verdict": "supported_by_synthesis",
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "unit_id": "7ef8fa411c6e76a3",
+      "unit_id": "7d1b92bd71fddb87",
       "node_id": "calibration_evaluation",
       "field": "dependencies.calibration_uncertainty_objective.rationale",
-      "text": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Calibration, uncertainty & risk objectives.",
+      "text": "Calibration and risk evaluation measure whether calibration, uncertainty, and risk objectives behave as intended on held-out data.",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
-      "evidence_location": "PML covers probabilistic prediction, uncertainty, calibration-related evaluation, and risk/loss; NIST AI RMF covers risk measurement, monitoring, and impact evaluation.",
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "unit_id": "a440f17f4457b8ac",
+      "unit_id": "18f1a67901a1c9f6",
       "node_id": "calibration_evaluation",
       "field": "dependencies.benchmarks_metrics.rationale",
-      "text": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics.",
+      "text": "Calibration and risk evaluation use benchmarks, test suites, and task metrics to define scored evaluation cases.",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
-      "evidence_location": "PML covers probabilistic prediction, uncertainty, calibration-related evaluation, and risk/loss; NIST AI RMF covers risk measurement, monitoring, and impact evaluation.",
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "unit_id": "41abe53a29cfa3df",
+      "unit_id": "fcd6990ee76273a1",
       "node_id": "calibration_evaluation",
       "field": "dependencies.distributions_uncertainty.rationale",
-      "text": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Distributions, uncertainty & beliefs.",
+      "text": "Calibration and risk evaluation analyze predicted distributions, uncertainty estimates, and belief-like confidence scores.",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
-      "evidence_location": "PML covers probabilistic prediction, uncertainty, calibration-related evaluation, and risk/loss; NIST AI RMF covers risk measurement, monitoring, and impact evaluation.",
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "d4bee9dda750b829",
+      "edge_id": "257320c71a31cc4d",
       "node_id": "calibration_evaluation",
       "dependency_id": "calibration_uncertainty_objective",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Relationship type and strength are defensible for the atlas dependency graph.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "edge_id": "b1575c19649b78c1",
+      "edge_id": "7a70f8361554913a",
       "node_id": "calibration_evaluation",
       "dependency_id": "benchmarks_metrics",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Relationship type and strength are defensible for the atlas dependency graph.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     },
     {
-      "edge_id": "941016a0d143ccdf",
+      "edge_id": "3d3bab1661bc78e4",
       "node_id": "calibration_evaluation",
       "dependency_id": "distributions_uncertainty",
       "source_ids": [
-        "ref_pml",
         "ref_nist"
       ],
+      "evidence_location": "NIST AI RMF 1.0 Measure function and trustworthy AI characteristics covering measurement, monitoring, validity, reliability, and risk management.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Relationship type and strength are defensible for the atlas dependency graph.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "Narrowed to confidence, abstention, calibration, risk, and distribution-shift evaluation rather than broad application substrate claims."
     }
   ]
 }

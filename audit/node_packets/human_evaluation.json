@@ -13,14 +13,14 @@
     ],
     "aliases": [],
     "definition": "Human evaluation measures quality, preference, usefulness, risk, or experience through controlled studies, rubrics, pairwise comparisons, and expert review.",
-    "why_it_matters": "The role of Human evaluation & preference studies is to connect Statistics & experimental design, Preference learning to downstream capabilities including LLM-as-judge & automated critique, Fairness, bias & subgroup analysis, Safety policies, constitutional constraints & alignment.",
+    "why_it_matters": "Human evaluation supplies direct judgments of quality, preference, usability, and risk when automatic metrics are incomplete or misaligned.",
     "examples": [
-      "substrate for LLM-as-judge & automated critique",
-      "substrate for Fairness, bias & subgroup analysis",
-      "substrate for Safety policies, constitutional constraints & alignment"
+      "pairwise response preference studies",
+      "expert rubric review",
+      "user-experience and harm-rating studies"
     ],
     "limitations": [
-      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Preference learning."
+      "Human ratings can be noisy, biased, expensive, and sensitive to rubric design, sampling, annotator expertise, and aggregation choices."
     ],
     "editorial_status": "definition_curated_context_graph_derived",
     "maturity": "established",
@@ -34,19 +34,19 @@
         "id": "statistics",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Statistics & experimental design."
+        "rationale": "Human evaluation uses statistics and experimental design to sample tasks, compare systems, and aggregate judgments."
       },
       {
         "id": "preference_learning",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Preference learning."
+        "rationale": "Preference studies produce comparisons and rankings that can feed preference-learning workflows."
       },
       {
         "id": "supervision_signals",
         "type": "evaluates_or_constrains",
         "strength": "common",
-        "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Labels, targets, rewards & preferences."
+        "rationale": "Human evaluation often records labels, targets, ratings, rewards, or preferences as supervision signals."
       }
     ]
   },
@@ -58,78 +58,78 @@
       "text": "Human evaluation measures quality, preference, usefulness, risk, or experience through controlled studies, rubrics, pairwise comparisons, and expert review."
     },
     {
-      "unit_id": "75ae8f5e9326c0d7",
+      "unit_id": "4cf80833fadfac97",
       "node_id": "human_evaluation",
       "field": "why_it_matters",
-      "text": "The role of Human evaluation & preference studies is to connect Statistics & experimental design, Preference learning to downstream capabilities including LLM-as-judge & automated critique, Fairness, bias & subgroup analysis, Safety policies, constitutional constraints & alignment."
+      "text": "Human evaluation supplies direct judgments of quality, preference, usability, and risk when automatic metrics are incomplete or misaligned."
     },
     {
-      "unit_id": "e8b26fabb9a933ac",
+      "unit_id": "fcd97c584dc69b53",
       "node_id": "human_evaluation",
       "field": "examples[1]",
-      "text": "substrate for LLM-as-judge & automated critique"
+      "text": "pairwise response preference studies"
     },
     {
-      "unit_id": "02b66c7858af866d",
+      "unit_id": "054d8efa37346b7d",
       "node_id": "human_evaluation",
       "field": "examples[2]",
-      "text": "substrate for Fairness, bias & subgroup analysis"
+      "text": "expert rubric review"
     },
     {
-      "unit_id": "7e42b1357094f081",
+      "unit_id": "69e2a253c6935ab5",
       "node_id": "human_evaluation",
       "field": "examples[3]",
-      "text": "substrate for Safety policies, constitutional constraints & alignment"
+      "text": "user-experience and harm-rating studies"
     },
     {
-      "unit_id": "705b4e5caa39ec16",
+      "unit_id": "742dcf6945e9f3c9",
       "node_id": "human_evaluation",
       "field": "limitations[1]",
-      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Preference learning."
+      "text": "Human ratings can be noisy, biased, expensive, and sensitive to rubric design, sampling, annotator expertise, and aggregation choices."
     },
     {
-      "unit_id": "08b2b121885b6faa",
+      "unit_id": "74f6f4c0172793d9",
       "node_id": "human_evaluation",
       "field": "dependencies.statistics.rationale",
-      "text": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Statistics & experimental design."
+      "text": "Human evaluation uses statistics and experimental design to sample tasks, compare systems, and aggregate judgments."
     },
     {
-      "unit_id": "47484e820ecd2671",
+      "unit_id": "117eec641beec2da",
       "node_id": "human_evaluation",
       "field": "dependencies.preference_learning.rationale",
-      "text": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Preference learning."
+      "text": "Preference studies produce comparisons and rankings that can feed preference-learning workflows."
     },
     {
-      "unit_id": "fe4121a3b1e3e302",
+      "unit_id": "362afc854716841e",
       "node_id": "human_evaluation",
       "field": "dependencies.supervision_signals.rationale",
-      "text": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Labels, targets, rewards & preferences."
+      "text": "Human evaluation often records labels, targets, ratings, rewards, or preferences as supervision signals."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "d914c91c0ec05555",
+      "edge_id": "b5063c1e40fb0199",
       "node_id": "human_evaluation",
       "dependency_id": "statistics",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Statistics & experimental design."
+      "rationale": "Human evaluation uses statistics and experimental design to sample tasks, compare systems, and aggregate judgments."
     },
     {
-      "edge_id": "cc064448cd600533",
+      "edge_id": "80be109e1f11d30c",
       "node_id": "human_evaluation",
       "dependency_id": "preference_learning",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Preference learning."
+      "rationale": "Preference studies produce comparisons and rankings that can feed preference-learning workflows."
     },
     {
-      "edge_id": "4e077e25894f949d",
+      "edge_id": "428b3797a4bf952f",
       "node_id": "human_evaluation",
       "dependency_id": "supervision_signals",
       "type": "evaluates_or_constrains",
       "strength": "common",
-      "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Labels, targets, rewards & preferences."
+      "rationale": "Human evaluation often records labels, targets, ratings, rewards, or preferences as supervision signals."
     }
   ],
   "candidate_references": {

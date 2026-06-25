@@ -20,8 +20,8 @@ All concept definitions are concept-specific and unique under normalization. The
 
 | Pattern | Count |
 |---|---:|
-| Role summaries beginning with `The role of …` | 262 |
-| Nodes containing a `substrate for …` example | 262 |
+| Role summaries beginning with `The role of …` | 257 |
+| Nodes containing a `substrate for …` example | 257 |
 | Nodes using graph-derived baseline context | 278 |
 
 ## Field-length distribution
@@ -29,8 +29,8 @@ All concept definitions are concept-specific and unique under normalization. The
 | Field | Minimum | Median | Mean | Maximum |
 |---|---:|---:|---:|---:|
 | definition | 72 | 143.5 | 133.23 | 188 |
-| why it matters | 79 | 232.0 | 222.03 | 348 |
-| edge rationale | 74 | 129 | 129.03 | 189 |
+| why it matters | 79 | 231.0 | 220.04 | 348 |
+| edge rationale | 74 | 128 | 128.8 | 189 |
 
 ## Reference usage
 

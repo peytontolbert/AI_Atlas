@@ -1,4 +1,7 @@
 {
+  "node_id": "llm_as_judge",
+  "reviewer": "codex",
+  "review_date": "2026-06-25",
   "sentence_reviews": [
     {
       "unit_id": "aaeedfa66507a066",
@@ -9,163 +12,175 @@
         "ref_llmjudge",
         "ref_nist"
       ],
-      "evidence_location": "LLM-as-judge survey covers model-based judging, scoring, comparison, critique, rubrics, human agreement, and judge biases; NIST AI RMF covers measurement, monitoring, risk, and test/evaluation practices; Transformer paper supports transformer architecture as model substrate.",
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim."
+      "verdict": "verified",
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     },
     {
-      "unit_id": "3168e923149538f0",
+      "unit_id": "1944f4ac214a81e6",
       "node_id": "llm_as_judge",
       "field": "why_it_matters",
-      "text": "The role of LLM-as-judge & automated critique is to connect Decoder-only causal transformers, Human evaluation & preference studies to downstream capabilities including Observability, tracing & evaluation harnesses.",
+      "text": "LLM-as-judge methods can scale rubric-based scoring and critique, but they still need calibration against human judgments and checks for bias or instability.",
       "source_ids": [
-        "ref_transformer",
-        "ref_llmjudge"
+        "ref_llmjudge",
+        "ref_nist"
       ],
-      "evidence_location": "LLM-as-judge survey covers model-based judging, scoring, comparison, critique, rubrics, human agreement, and judge biases; NIST AI RMF covers measurement, monitoring, risk, and test/evaluation practices; Transformer paper supports transformer architecture as model substrate.",
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Downstream/substrate phrasing is atlas graph terminology."
+      "verdict": "verified",
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     },
     {
-      "unit_id": "c4606b8dc069bdea",
+      "unit_id": "60c903302c41dc84",
       "node_id": "llm_as_judge",
       "field": "examples[1]",
-      "text": "substrate for Observability, tracing & evaluation harnesses",
+      "text": "pairwise answer comparison by a judge model",
       "source_ids": [
         "ref_llmjudge",
         "ref_nist"
       ],
-      "evidence_location": "LLM-as-judge survey covers model-based judging, scoring, comparison, critique, rubrics, human agreement, and judge biases; NIST AI RMF covers measurement, monitoring, risk, and test/evaluation practices; Transformer paper supports transformer architecture as model substrate.",
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Downstream/substrate phrasing is atlas graph terminology."
+      "verdict": "verified",
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     },
     {
-      "unit_id": "10ac05545dc63993",
+      "unit_id": "a710f7b4b186e4c4",
       "node_id": "llm_as_judge",
       "field": "examples[2]",
-      "text": "combined with Decoder-only causal transformers",
+      "text": "rubric-based critique of generated outputs",
       "source_ids": [
-        "ref_transformer",
-        "ref_llmjudge"
+        "ref_llmjudge",
+        "ref_nist"
       ],
-      "evidence_location": "LLM-as-judge survey covers model-based judging, scoring, comparison, critique, rubrics, human agreement, and judge biases; NIST AI RMF covers measurement, monitoring, risk, and test/evaluation practices; Transformer paper supports transformer architecture as model substrate.",
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
+    },
+    {
+      "unit_id": "441b5ce2455330d0",
+      "node_id": "llm_as_judge",
+      "field": "examples[3]",
+      "text": "automated labeling followed by human calibration",
+      "source_ids": [
+        "ref_llmjudge",
+        "ref_nist"
+      ],
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Downstream/substrate phrasing is atlas graph terminology."
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     },
     {
-      "unit_id": "87cfc094b4f0c17f",
+      "unit_id": "a776fb87665f59c5",
       "node_id": "llm_as_judge",
       "field": "limitations[1]",
-      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Decoder-only causal transformers, Human evaluation & preference studies.",
+      "text": "Judge models can inherit model biases, favor familiar style over correctness, and disagree with humans when prompts, rubrics, or domains shift.",
       "source_ids": [
-        "ref_transformer",
-        "ref_llmjudge"
+        "ref_llmjudge",
+        "ref_nist"
       ],
-      "evidence_location": "LLM-as-judge survey covers model-based judging, scoring, comparison, critique, rubrics, human agreement, and judge biases; NIST AI RMF covers measurement, monitoring, risk, and test/evaluation practices; Transformer paper supports transformer architecture as model substrate.",
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source."
+      "verdict": "verified",
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     },
     {
-      "unit_id": "4f5d2e9bc070647f",
+      "unit_id": "2e30bad4691be296",
       "node_id": "llm_as_judge",
       "field": "dependencies.human_evaluation.rationale",
-      "text": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Human evaluation & preference studies.",
+      "text": "LLM-as-judge methods are commonly calibrated, validated, or compared against human evaluation and preference studies.",
       "source_ids": [
         "ref_llmjudge",
         "ref_nist"
       ],
-      "evidence_location": "LLM-as-judge survey covers model-based judging, scoring, comparison, critique, rubrics, human agreement, and judge biases; NIST AI RMF covers measurement, monitoring, risk, and test/evaluation practices; Transformer paper supports transformer architecture as model substrate.",
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     },
     {
-      "unit_id": "95e0b63770d81060",
+      "unit_id": "88549a5c3178f0b5",
       "node_id": "llm_as_judge",
       "field": "dependencies.benchmarks_metrics.rationale",
-      "text": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics.",
+      "text": "LLM-as-judge evaluations commonly use benchmark tasks, rubrics, or task metrics to structure judge prompts and compare outputs.",
       "source_ids": [
         "ref_llmjudge",
         "ref_nist"
       ],
-      "evidence_location": "LLM-as-judge survey covers model-based judging, scoring, comparison, critique, rubrics, human agreement, and judge biases; NIST AI RMF covers measurement, monitoring, risk, and test/evaluation practices; Transformer paper supports transformer architecture as model substrate.",
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     },
     {
-      "unit_id": "3d31a660c73344c9",
+      "unit_id": "c5dbc6bc76dceeae",
       "node_id": "llm_as_judge",
       "field": "dependencies.transformer.rationale",
-      "text": "LLM-as-judge systems require a broad transformer-based judge model, not a system-layer LLM aggregate.",
+      "text": "Most current LLM-as-judge systems use transformer language models as the judge or critique model.",
       "source_ids": [
-        "ref_transformer",
-        "ref_llmjudge"
+        "ref_llmjudge",
+        "ref_nist"
       ],
-      "evidence_location": "LLM-as-judge survey covers model-based judging, scoring, comparison, critique, rubrics, human agreement, and judge biases; NIST AI RMF covers measurement, monitoring, risk, and test/evaluation practices; Transformer paper supports transformer architecture as model substrate.",
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "25fd80ec4b481c0c",
+      "edge_id": "397c705be49599e1",
       "node_id": "llm_as_judge",
       "dependency_id": "human_evaluation",
       "source_ids": [
         "ref_llmjudge",
         "ref_nist"
       ],
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Relationship type and strength are defensible for the atlas dependency graph.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     },
     {
-      "edge_id": "c8d7b2ed866b5de2",
+      "edge_id": "d9e0cca54d7d2e20",
       "node_id": "llm_as_judge",
       "dependency_id": "benchmarks_metrics",
       "source_ids": [
         "ref_llmjudge",
         "ref_nist"
       ],
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Relationship type and strength are defensible for the atlas dependency graph.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     },
     {
-      "edge_id": "deb85363ba845a88",
+      "edge_id": "051248b3fcf0a9f1",
       "node_id": "llm_as_judge",
       "dependency_id": "transformer",
       "source_ids": [
-        "ref_transformer",
-        "ref_llmjudge"
+        "ref_llmjudge",
+        "ref_nist"
       ],
+      "evidence_location": "Gu et al. 2024 survey abstract and scope: LLMs used as evaluators, reliability, consistency, bias mitigation, benchmarks, and human/expert evaluation comparison; NIST AI RMF evaluation and risk-management framing.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Relationship type and strength are defensible for the atlas dependency graph.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "Narrowed to judge scoring, critique, calibration, and bias/instability limitations supported by LLM-as-judge survey framing."
     }
   ]
 }

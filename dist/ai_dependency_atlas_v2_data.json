@@ -12215,14 +12215,14 @@
       ],
       "aliases": [],
       "definition": "Benchmarks and task metrics define datasets, protocols, scoring rules, baselines, uncertainty, and reporting conventions for comparable evaluation.",
-      "why_it_matters": "The role of Benchmarks, test suites & task metrics is to connect Datasets, sampling & splits, Statistics & experimental design to downstream capabilities including LLM-as-judge & automated critique, Calibration, uncertainty & risk evaluation, Robustness, distribution shift & OOD evaluation.",
+      "why_it_matters": "Benchmarks, test suites, and task metrics make model behavior comparable across systems, versions, datasets, and risk controls.",
       "examples": [
-        "substrate for LLM-as-judge & automated critique",
-        "substrate for Calibration, uncertainty & risk evaluation",
-        "substrate for Robustness, distribution shift & OOD evaluation"
+        "rubric-scored task suites",
+        "held-out regression tests",
+        "reported baseline and uncertainty metrics"
       ],
       "limitations": [
-        "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Datasets, sampling & splits, Statistics & experimental design."
+        "A benchmark can overfit to public examples, miss deployment-specific harms, or reward a proxy that diverges from the intended behavior."
       ],
       "editorial_status": "definition_curated_context_graph_derived",
       "maturity": "established",
@@ -12236,19 +12236,19 @@
           "id": "datasets_sampling",
           "type": "evaluates_or_constrains",
           "strength": "core",
-          "rationale": "Benchmarks, test suites & task metrics measures, constrains, audits, or governs behavior using Datasets, sampling & splits."
+          "rationale": "Benchmarks and task metrics use datasets, sampling, and train-test splits to define comparable evaluation cases."
         },
         {
           "id": "statistics",
           "type": "evaluates_or_constrains",
           "strength": "core",
-          "rationale": "Benchmarks, test suites & task metrics measures, constrains, audits, or governs behavior using Statistics & experimental design."
+          "rationale": "Benchmark reports use statistics and experimental design to estimate performance, uncertainty, and comparisons."
         },
         {
           "id": "supervision_signals",
           "type": "evaluates_or_constrains",
           "strength": "common",
-          "rationale": "Benchmarks, test suites & task metrics measures, constrains, audits, or governs behavior using Labels, targets, rewards & preferences."
+          "rationale": "Many benchmarks depend on labels, targets, rewards, or preference judgments as scoring signals."
         }
       ]
     },
@@ -12262,14 +12262,14 @@
       ],
       "aliases": [],
       "definition": "Human evaluation measures quality, preference, usefulness, risk, or experience through controlled studies, rubrics, pairwise comparisons, and expert review.",
-      "why_it_matters": "The role of Human evaluation & preference studies is to connect Statistics & experimental design, Preference learning to downstream capabilities including LLM-as-judge & automated critique, Fairness, bias & subgroup analysis, Safety policies, constitutional constraints & alignment.",
+      "why_it_matters": "Human evaluation supplies direct judgments of quality, preference, usability, and risk when automatic metrics are incomplete or misaligned.",
       "examples": [
-        "substrate for LLM-as-judge & automated critique",
-        "substrate for Fairness, bias & subgroup analysis",
-        "substrate for Safety policies, constitutional constraints & alignment"
+        "pairwise response preference studies",
+        "expert rubric review",
+        "user-experience and harm-rating studies"
       ],
       "limitations": [
-        "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Preference learning."
+        "Human ratings can be noisy, biased, expensive, and sensitive to rubric design, sampling, annotator expertise, and aggregation choices."
       ],
       "editorial_status": "definition_curated_context_graph_derived",
       "maturity": "established",
@@ -12283,19 +12283,19 @@
           "id": "statistics",
           "type": "evaluates_or_constrains",
           "strength": "core",
-          "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Statistics & experimental design."
+          "rationale": "Human evaluation uses statistics and experimental design to sample tasks, compare systems, and aggregate judgments."
         },
         {
           "id": "preference_learning",
           "type": "evaluates_or_constrains",
           "strength": "core",
-          "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Preference learning."
+          "rationale": "Preference studies produce comparisons and rankings that can feed preference-learning workflows."
         },
         {
           "id": "supervision_signals",
           "type": "evaluates_or_constrains",
           "strength": "common",
-          "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Labels, targets, rewards & preferences."
+          "rationale": "Human evaluation often records labels, targets, ratings, rewards, or preferences as supervision signals."
         }
       ]
     },
@@ -12310,13 +12310,14 @@
       ],
       "aliases": [],
       "definition": "LLM-as-judge uses a model to score, compare, critique, or classify outputs under a rubric, often calibrated against human labels and bias checks.",
-      "why_it_matters": "The role of LLM-as-judge & automated critique is to connect Decoder-only causal transformers, Human evaluation & preference studies to downstream capabilities including Observability, tracing & evaluation harnesses.",
+      "why_it_matters": "LLM-as-judge methods can scale rubric-based scoring and critique, but they still need calibration against human judgments and checks for bias or instability.",
       "examples": [
-        "substrate for Observability, tracing & evaluation harnesses",
-        "combined with Decoder-only causal transformers"
+        "pairwise answer comparison by a judge model",
+        "rubric-based critique of generated outputs",
+        "automated labeling followed by human calibration"
       ],
       "limitations": [
-        "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Decoder-only causal transformers, Human evaluation & preference studies."
+        "Judge models can inherit model biases, favor familiar style over correctness, and disagree with humans when prompts, rubrics, or domains shift."
       ],
       "editorial_status": "definition_curated_context_graph_derived",
       "maturity": "active",
@@ -12331,19 +12332,19 @@
           "id": "human_evaluation",
           "type": "evaluates_or_constrains",
           "strength": "core",
-          "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+          "rationale": "LLM-as-judge methods are commonly calibrated, validated, or compared against human evaluation and preference studies."
         },
         {
           "id": "benchmarks_metrics",
           "type": "evaluates_or_constrains",
           "strength": "common",
-          "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+          "rationale": "LLM-as-judge evaluations commonly use benchmark tasks, rubrics, or task metrics to structure judge prompts and compare outputs."
         },
         {
           "id": "transformer",
           "type": "uses",
           "strength": "core",
-          "rationale": "LLM-as-judge systems require a broad transformer-based judge model, not a system-layer LLM aggregate."
+          "rationale": "Most current LLM-as-judge systems use transformer language models as the judge or critique model."
         }
       ]
     },
@@ -12357,14 +12358,14 @@
       ],
       "aliases": [],
       "definition": "Calibration and risk evaluation test whether predicted probabilities, abstention scores, intervals, or confidence estimates match observed correctness and harm.",
-      "why_it_matters": "The role of Calibration, uncertainty & risk evaluation is to connect Calibration, uncertainty & risk objectives, Benchmarks, test suites & task metrics to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Medical imaging & clinical decision support, Tabular predictive analytics & decision support.",
+      "why_it_matters": "Calibration and risk evaluation test whether confidence estimates, abstention behavior, and risk scores remain reliable enough for the intended deployment decision.",
       "examples": [
-        "substrate for Time-series forecasting, anomaly & fraud detection",
-        "substrate for Medical imaging & clinical decision support",
-        "substrate for Tabular predictive analytics & decision support"
+        "reliability diagrams",
+        "expected calibration error reporting",
+        "coverage and abstention-risk analysis"
       ],
       "limitations": [
-        "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Calibration, uncertainty & risk objectives, Benchmarks, test suites & task metrics."
+        "A model can appear calibrated on one sample or score bucket while failing under distribution shift, subgroup differences, or changed decision thresholds."
       ],
       "editorial_status": "definition_curated_context_graph_derived",
       "maturity": "established",
@@ -12378,19 +12379,19 @@
           "id": "calibration_uncertainty_objective",
           "type": "evaluates_or_constrains",
           "strength": "core",
-          "rationale": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Calibration, uncertainty & risk objectives."
+          "rationale": "Calibration and risk evaluation measure whether calibration, uncertainty, and risk objectives behave as intended on held-out data."
         },
         {
           "id": "benchmarks_metrics",
           "type": "evaluates_or_constrains",
           "strength": "core",
-          "rationale": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+          "rationale": "Calibration and risk evaluation use benchmarks, test suites, and task metrics to define scored evaluation cases."
         },
         {
           "id": "distributions_uncertainty",
           "type": "evaluates_or_constrains",
           "strength": "common",
-          "rationale": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Distributions, uncertainty & beliefs."
+          "rationale": "Calibration and risk evaluation analyze predicted distributions, uncertainty estimates, and belief-like confidence scores."
         }
       ]
     },
@@ -12881,13 +12882,14 @@
       ],
       "aliases": [],
       "definition": "Evaluation-driven development makes tests, risk thresholds, regression suites, and release gates part of the iterative model and application lifecycle.",
-      "why_it_matters": "The role of Evaluation-driven development & release gates is to connect Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling to downstream capabilities including Observability, tracing & evaluation harnesses, Model registry, versioning & MLOps / LLMOps.",
+      "why_it_matters": "Evaluation-driven development uses test evidence, risk thresholds, and regression results to decide whether a model or AI application should advance, roll back, or require more review.",
       "examples": [
-        "substrate for Observability, tracing & evaluation harnesses",
-        "substrate for Model registry, versioning & MLOps / LLMOps"
+        "pre-release evaluation gates",
+        "regression dashboards for model changes",
+        "risk-threshold signoff workflows"
       ],
       "limitations": [
-        "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling."
+        "Release gates can miss novel failures when the test suite, threat model, or monitored metric does not cover the deployment context."
       ],
       "editorial_status": "definition_curated_context_graph_derived",
       "maturity": "established",
@@ -12901,25 +12903,25 @@
           "id": "benchmarks_metrics",
           "type": "evaluates_or_constrains",
           "strength": "core",
-          "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+          "rationale": "Evaluation-driven development uses benchmarks, tests, and task metrics as evidence for release or rollback decisions."
         },
         {
           "id": "red_teaming",
           "type": "evaluates_or_constrains",
           "strength": "core",
-          "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Red teaming, abuse testing & threat modeling."
+          "rationale": "Evaluation-driven release gates use red-team and threat-model findings to decide whether residual risk is acceptable."
         },
         {
           "id": "human_evaluation",
           "type": "evaluates_or_constrains",
           "strength": "common",
-          "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+          "rationale": "Evaluation-driven development can include human evaluation and preference studies when automated metrics do not capture quality or risk."
         },
         {
           "id": "repro_monitoring",
           "type": "evaluates_or_constrains",
           "strength": "common",
-          "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+          "rationale": "Evaluation-driven release processes use reproducibility checks, drift monitoring, and operational signals after deployment."
         }
       ]
     },

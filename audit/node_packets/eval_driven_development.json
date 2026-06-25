@@ -13,13 +13,14 @@
     ],
     "aliases": [],
     "definition": "Evaluation-driven development makes tests, risk thresholds, regression suites, and release gates part of the iterative model and application lifecycle.",
-    "why_it_matters": "The role of Evaluation-driven development & release gates is to connect Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling to downstream capabilities including Observability, tracing & evaluation harnesses, Model registry, versioning & MLOps / LLMOps.",
+    "why_it_matters": "Evaluation-driven development uses test evidence, risk thresholds, and regression results to decide whether a model or AI application should advance, roll back, or require more review.",
     "examples": [
-      "substrate for Observability, tracing & evaluation harnesses",
-      "substrate for Model registry, versioning & MLOps / LLMOps"
+      "pre-release evaluation gates",
+      "regression dashboards for model changes",
+      "risk-threshold signoff workflows"
     ],
     "limitations": [
-      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling."
+      "Release gates can miss novel failures when the test suite, threat model, or monitored metric does not cover the deployment context."
     ],
     "editorial_status": "definition_curated_context_graph_derived",
     "maturity": "established",
@@ -33,25 +34,25 @@
         "id": "benchmarks_metrics",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+        "rationale": "Evaluation-driven development uses benchmarks, tests, and task metrics as evidence for release or rollback decisions."
       },
       {
         "id": "red_teaming",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Red teaming, abuse testing & threat modeling."
+        "rationale": "Evaluation-driven release gates use red-team and threat-model findings to decide whether residual risk is acceptable."
       },
       {
         "id": "human_evaluation",
         "type": "evaluates_or_constrains",
         "strength": "common",
-        "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+        "rationale": "Evaluation-driven development can include human evaluation and preference studies when automated metrics do not capture quality or risk."
       },
       {
         "id": "repro_monitoring",
         "type": "evaluates_or_constrains",
         "strength": "common",
-        "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+        "rationale": "Evaluation-driven release processes use reproducibility checks, drift monitoring, and operational signals after deployment."
       }
     ]
   },
@@ -63,86 +64,92 @@
       "text": "Evaluation-driven development makes tests, risk thresholds, regression suites, and release gates part of the iterative model and application lifecycle."
     },
     {
-      "unit_id": "6a9596e0376e5aca",
+      "unit_id": "58941ef8687e27a5",
       "node_id": "eval_driven_development",
       "field": "why_it_matters",
-      "text": "The role of Evaluation-driven development & release gates is to connect Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling to downstream capabilities including Observability, tracing & evaluation harnesses, Model registry, versioning & MLOps / LLMOps."
+      "text": "Evaluation-driven development uses test evidence, risk thresholds, and regression results to decide whether a model or AI application should advance, roll back, or require more review."
     },
     {
-      "unit_id": "1939a75c1f09fe8b",
+      "unit_id": "6e8ca961ea907309",
       "node_id": "eval_driven_development",
       "field": "examples[1]",
-      "text": "substrate for Observability, tracing & evaluation harnesses"
+      "text": "pre-release evaluation gates"
     },
     {
-      "unit_id": "227d0836cbcb30c6",
+      "unit_id": "a5784748d01f846e",
       "node_id": "eval_driven_development",
       "field": "examples[2]",
-      "text": "substrate for Model registry, versioning & MLOps / LLMOps"
+      "text": "regression dashboards for model changes"
     },
     {
-      "unit_id": "17ee72f56d3052b5",
+      "unit_id": "d7032080578aa649",
+      "node_id": "eval_driven_development",
+      "field": "examples[3]",
+      "text": "risk-threshold signoff workflows"
+    },
+    {
+      "unit_id": "ba4e22aadafdb772",
       "node_id": "eval_driven_development",
       "field": "limitations[1]",
-      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling."
+      "text": "Release gates can miss novel failures when the test suite, threat model, or monitored metric does not cover the deployment context."
     },
     {
-      "unit_id": "6f218088f208f883",
+      "unit_id": "5f3af7da8e69eae6",
       "node_id": "eval_driven_development",
       "field": "dependencies.benchmarks_metrics.rationale",
-      "text": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      "text": "Evaluation-driven development uses benchmarks, tests, and task metrics as evidence for release or rollback decisions."
     },
     {
-      "unit_id": "97456f70480b8694",
+      "unit_id": "9ec0e67b16990866",
       "node_id": "eval_driven_development",
       "field": "dependencies.red_teaming.rationale",
-      "text": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Red teaming, abuse testing & threat modeling."
+      "text": "Evaluation-driven release gates use red-team and threat-model findings to decide whether residual risk is acceptable."
     },
     {
-      "unit_id": "b8ed65ffc5e622ab",
+      "unit_id": "d59dcb0eb63232ca",
       "node_id": "eval_driven_development",
       "field": "dependencies.human_evaluation.rationale",
-      "text": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      "text": "Evaluation-driven development can include human evaluation and preference studies when automated metrics do not capture quality or risk."
     },
     {
-      "unit_id": "2a7cef51138ac1c3",
+      "unit_id": "5de9edd0405d7576",
       "node_id": "eval_driven_development",
       "field": "dependencies.repro_monitoring.rationale",
-      "text": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+      "text": "Evaluation-driven release processes use reproducibility checks, drift monitoring, and operational signals after deployment."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "b019d50a032578a7",
+      "edge_id": "92704b00a83623ef",
       "node_id": "eval_driven_development",
       "dependency_id": "benchmarks_metrics",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      "rationale": "Evaluation-driven development uses benchmarks, tests, and task metrics as evidence for release or rollback decisions."
     },
     {
-      "edge_id": "5523f51d25d422e1",
+      "edge_id": "08959c7f36e9abfc",
       "node_id": "eval_driven_development",
       "dependency_id": "red_teaming",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Red teaming, abuse testing & threat modeling."
+      "rationale": "Evaluation-driven release gates use red-team and threat-model findings to decide whether residual risk is acceptable."
     },
     {
-      "edge_id": "a14f8e28303eb883",
+      "edge_id": "14e25485d4cee616",
       "node_id": "eval_driven_development",
       "dependency_id": "human_evaluation",
       "type": "evaluates_or_constrains",
       "strength": "common",
-      "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      "rationale": "Evaluation-driven development can include human evaluation and preference studies when automated metrics do not capture quality or risk."
     },
     {
-      "edge_id": "bb9bd3230e652794",
+      "edge_id": "4a0a6bcb4c164a9b",
       "node_id": "eval_driven_development",
       "dependency_id": "repro_monitoring",
       "type": "evaluates_or_constrains",
       "strength": "common",
-      "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+      "rationale": "Evaluation-driven release processes use reproducibility checks, drift monitoring, and operational signals after deployment."
     }
   ],
   "candidate_references": {

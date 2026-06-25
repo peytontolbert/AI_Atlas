@@ -14,13 +14,14 @@
     ],
     "aliases": [],
     "definition": "LLM-as-judge uses a model to score, compare, critique, or classify outputs under a rubric, often calibrated against human labels and bias checks.",
-    "why_it_matters": "The role of LLM-as-judge & automated critique is to connect Decoder-only causal transformers, Human evaluation & preference studies to downstream capabilities including Observability, tracing & evaluation harnesses.",
+    "why_it_matters": "LLM-as-judge methods can scale rubric-based scoring and critique, but they still need calibration against human judgments and checks for bias or instability.",
     "examples": [
-      "substrate for Observability, tracing & evaluation harnesses",
-      "combined with Decoder-only causal transformers"
+      "pairwise answer comparison by a judge model",
+      "rubric-based critique of generated outputs",
+      "automated labeling followed by human calibration"
     ],
     "limitations": [
-      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Decoder-only causal transformers, Human evaluation & preference studies."
+      "Judge models can inherit model biases, favor familiar style over correctness, and disagree with humans when prompts, rubrics, or domains shift."
     ],
     "editorial_status": "definition_curated_context_graph_derived",
     "maturity": "active",
@@ -35,19 +36,19 @@
         "id": "human_evaluation",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+        "rationale": "LLM-as-judge methods are commonly calibrated, validated, or compared against human evaluation and preference studies."
       },
       {
         "id": "benchmarks_metrics",
         "type": "evaluates_or_constrains",
         "strength": "common",
-        "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+        "rationale": "LLM-as-judge evaluations commonly use benchmark tasks, rubrics, or task metrics to structure judge prompts and compare outputs."
       },
       {
         "id": "transformer",
         "type": "uses",
         "strength": "core",
-        "rationale": "LLM-as-judge systems require a broad transformer-based judge model, not a system-layer LLM aggregate."
+        "rationale": "Most current LLM-as-judge systems use transformer language models as the judge or critique model."
       }
     ]
   },
@@ -59,72 +60,78 @@
       "text": "LLM-as-judge uses a model to score, compare, critique, or classify outputs under a rubric, often calibrated against human labels and bias checks."
     },
     {
-      "unit_id": "3168e923149538f0",
+      "unit_id": "1944f4ac214a81e6",
       "node_id": "llm_as_judge",
       "field": "why_it_matters",
-      "text": "The role of LLM-as-judge & automated critique is to connect Decoder-only causal transformers, Human evaluation & preference studies to downstream capabilities including Observability, tracing & evaluation harnesses."
+      "text": "LLM-as-judge methods can scale rubric-based scoring and critique, but they still need calibration against human judgments and checks for bias or instability."
     },
     {
-      "unit_id": "c4606b8dc069bdea",
+      "unit_id": "60c903302c41dc84",
       "node_id": "llm_as_judge",
       "field": "examples[1]",
-      "text": "substrate for Observability, tracing & evaluation harnesses"
+      "text": "pairwise answer comparison by a judge model"
     },
     {
-      "unit_id": "10ac05545dc63993",
+      "unit_id": "a710f7b4b186e4c4",
       "node_id": "llm_as_judge",
       "field": "examples[2]",
-      "text": "combined with Decoder-only causal transformers"
+      "text": "rubric-based critique of generated outputs"
     },
     {
-      "unit_id": "87cfc094b4f0c17f",
+      "unit_id": "441b5ce2455330d0",
+      "node_id": "llm_as_judge",
+      "field": "examples[3]",
+      "text": "automated labeling followed by human calibration"
+    },
+    {
+      "unit_id": "a776fb87665f59c5",
       "node_id": "llm_as_judge",
       "field": "limitations[1]",
-      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Decoder-only causal transformers, Human evaluation & preference studies."
+      "text": "Judge models can inherit model biases, favor familiar style over correctness, and disagree with humans when prompts, rubrics, or domains shift."
     },
     {
-      "unit_id": "4f5d2e9bc070647f",
+      "unit_id": "2e30bad4691be296",
       "node_id": "llm_as_judge",
       "field": "dependencies.human_evaluation.rationale",
-      "text": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      "text": "LLM-as-judge methods are commonly calibrated, validated, or compared against human evaluation and preference studies."
     },
     {
-      "unit_id": "95e0b63770d81060",
+      "unit_id": "88549a5c3178f0b5",
       "node_id": "llm_as_judge",
       "field": "dependencies.benchmarks_metrics.rationale",
-      "text": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      "text": "LLM-as-judge evaluations commonly use benchmark tasks, rubrics, or task metrics to structure judge prompts and compare outputs."
     },
     {
-      "unit_id": "3d31a660c73344c9",
+      "unit_id": "c5dbc6bc76dceeae",
       "node_id": "llm_as_judge",
       "field": "dependencies.transformer.rationale",
-      "text": "LLM-as-judge systems require a broad transformer-based judge model, not a system-layer LLM aggregate."
+      "text": "Most current LLM-as-judge systems use transformer language models as the judge or critique model."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "25fd80ec4b481c0c",
+      "edge_id": "397c705be49599e1",
       "node_id": "llm_as_judge",
       "dependency_id": "human_evaluation",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      "rationale": "LLM-as-judge methods are commonly calibrated, validated, or compared against human evaluation and preference studies."
     },
     {
-      "edge_id": "c8d7b2ed866b5de2",
+      "edge_id": "d9e0cca54d7d2e20",
       "node_id": "llm_as_judge",
       "dependency_id": "benchmarks_metrics",
       "type": "evaluates_or_constrains",
       "strength": "common",
-      "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      "rationale": "LLM-as-judge evaluations commonly use benchmark tasks, rubrics, or task metrics to structure judge prompts and compare outputs."
     },
     {
-      "edge_id": "deb85363ba845a88",
+      "edge_id": "051248b3fcf0a9f1",
       "node_id": "llm_as_judge",
       "dependency_id": "transformer",
       "type": "uses",
       "strength": "core",
-      "rationale": "LLM-as-judge systems require a broad transformer-based judge model, not a system-layer LLM aggregate."
+      "rationale": "Most current LLM-as-judge systems use transformer language models as the judge or critique model."
     }
   ],
   "candidate_references": {
