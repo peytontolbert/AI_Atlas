@@ -1,0 +1,201 @@
+{
+  "node_id": "encoder_only_transformer",
+  "label": "Encoder-only bidirectional transformers",
+  "layer": "model",
+  "editorial_status": "curated",
+  "node": {
+    "id": "encoder_only_transformer",
+    "label": "Encoder-only bidirectional transformers",
+    "layer": "model",
+    "tags": [
+      "model",
+      "transformer",
+      "language",
+      "representation"
+    ],
+    "aliases": [
+      "BERT-style encoder"
+    ],
+    "definition": "Encoder-only transformers use bidirectional self-attention to contextualize an entire input for representation learning, classification, retrieval, and token-level prediction.",
+    "why_it_matters": "They separate contextual understanding from autoregressive generation and remain central to embedding and discriminative NLP systems.",
+    "examples": [
+      "masked-language encoders",
+      "bi-encoders for retrieval",
+      "token classifiers"
+    ],
+    "limitations": [
+      "They do not natively generate long outputs autoregressively and usually need task-specific heads or a separate decoder."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_bert"
+    ],
+    "dependencies": [
+      {
+        "id": "transformer",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Encoder-only bidirectional transformers extends or specializes the architecture family Transformers."
+      },
+      {
+        "id": "masked_prediction",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Encoder-only bidirectional transformers is learned, selected, or evaluated using the objective family Masked prediction objectives."
+      },
+      {
+        "id": "masking",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Encoder-only bidirectional transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
+      },
+      {
+        "id": "embeddings",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Encoder-only bidirectional transformers consumes, emits, or organizes information using Embeddings & distributed representations."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "af3ad8eafc2620af",
+      "node_id": "encoder_only_transformer",
+      "field": "definition",
+      "text": "Encoder-only transformers use bidirectional self-attention to contextualize an entire input for representation learning, classification, retrieval, and token-level prediction."
+    },
+    {
+      "unit_id": "01d078964820dd66",
+      "node_id": "encoder_only_transformer",
+      "field": "why_it_matters",
+      "text": "They separate contextual understanding from autoregressive generation and remain central to embedding and discriminative NLP systems."
+    },
+    {
+      "unit_id": "a545f182ee1cf017",
+      "node_id": "encoder_only_transformer",
+      "field": "examples[1]",
+      "text": "masked-language encoders"
+    },
+    {
+      "unit_id": "3d2c79af189992c6",
+      "node_id": "encoder_only_transformer",
+      "field": "examples[2]",
+      "text": "bi-encoders for retrieval"
+    },
+    {
+      "unit_id": "918132a8a1ffb6ff",
+      "node_id": "encoder_only_transformer",
+      "field": "examples[3]",
+      "text": "token classifiers"
+    },
+    {
+      "unit_id": "9eb867792c5d2e81",
+      "node_id": "encoder_only_transformer",
+      "field": "limitations[1]",
+      "text": "They do not natively generate long outputs autoregressively and usually need task-specific heads or a separate decoder."
+    },
+    {
+      "unit_id": "cce5e19063655df4",
+      "node_id": "encoder_only_transformer",
+      "field": "dependencies.transformer.rationale",
+      "text": "Encoder-only bidirectional transformers extends or specializes the architecture family Transformers."
+    },
+    {
+      "unit_id": "5c191e284ad61f24",
+      "node_id": "encoder_only_transformer",
+      "field": "dependencies.masked_prediction.rationale",
+      "text": "Encoder-only bidirectional transformers is learned, selected, or evaluated using the objective family Masked prediction objectives."
+    },
+    {
+      "unit_id": "8465ff0714356981",
+      "node_id": "encoder_only_transformer",
+      "field": "dependencies.masking.rationale",
+      "text": "Encoder-only bidirectional transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
+    },
+    {
+      "unit_id": "b7a12795d794d328",
+      "node_id": "encoder_only_transformer",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Encoder-only bidirectional transformers consumes, emits, or organizes information using Embeddings & distributed representations."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "14aca642bb3273eb",
+      "node_id": "encoder_only_transformer",
+      "dependency_id": "transformer",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Encoder-only bidirectional transformers extends or specializes the architecture family Transformers."
+    },
+    {
+      "edge_id": "a4bd4ebd130f4384",
+      "node_id": "encoder_only_transformer",
+      "dependency_id": "masked_prediction",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Encoder-only bidirectional transformers is learned, selected, or evaluated using the objective family Masked prediction objectives."
+    },
+    {
+      "edge_id": "cb8ca6baaff2f365",
+      "node_id": "encoder_only_transformer",
+      "dependency_id": "masking",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Encoder-only bidirectional transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
+    },
+    {
+      "edge_id": "5c4fdd0bfdc61fbb",
+      "node_id": "encoder_only_transformer",
+      "dependency_id": "embeddings",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Encoder-only bidirectional transformers consumes, emits, or organizes information using Embeddings & distributed representations."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_bert": {
+        "id": "ref_bert",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers",
+        "authors": "Devlin et al.",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1810.04805"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/encoder_only_transformer.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "node_id": "svm_kernel_models",
+  "label": "Support vector & kernel machines",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "svm_kernel_models",
+    "label": "Support vector & kernel machines",
+    "layer": "model",
+    "tags": [
+      "model",
+      "classical"
+    ],
+    "aliases": [],
+    "definition": "Support-vector machines maximize a separating margin; kernel variants obtain nonlinear boundaries through similarity functions that act as implicit feature maps.",
+    "why_it_matters": "The role of Support vector & kernel machines is to connect Kernels & implicit feature maps, Margin, ranking & metric objectives to downstream capabilities including Tabular predictive analytics & decision support.",
+    "examples": [
+      "substrate for Tabular predictive analytics & decision support",
+      "combined with Kernels & implicit feature maps"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Kernels & implicit feature maps, Margin, ranking & metric objectives."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "kernel_methods",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Support vector & kernel machines is assembled in part from the mechanism or model component Kernels & implicit feature maps."
+      },
+      {
+        "id": "margin_ranking_metric",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Support vector & kernel machines is learned, selected, or evaluated using the objective family Margin, ranking & metric objectives."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Support vector & kernel machines follows the learning setup expressed by Supervised learning."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "4a1b0b2607c77985",
+      "node_id": "svm_kernel_models",
+      "field": "definition",
+      "text": "Support-vector machines maximize a separating margin; kernel variants obtain nonlinear boundaries through similarity functions that act as implicit feature maps."
+    },
+    {
+      "unit_id": "4515bc793f97d2d8",
+      "node_id": "svm_kernel_models",
+      "field": "why_it_matters",
+      "text": "The role of Support vector & kernel machines is to connect Kernels & implicit feature maps, Margin, ranking & metric objectives to downstream capabilities including Tabular predictive analytics & decision support."
+    },
+    {
+      "unit_id": "0c75037d974a8c2a",
+      "node_id": "svm_kernel_models",
+      "field": "examples[1]",
+      "text": "substrate for Tabular predictive analytics & decision support"
+    },
+    {
+      "unit_id": "6658468c4c2b33f6",
+      "node_id": "svm_kernel_models",
+      "field": "examples[2]",
+      "text": "combined with Kernels & implicit feature maps"
+    },
+    {
+      "unit_id": "6fcce4eb8adbd39d",
+      "node_id": "svm_kernel_models",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Kernels & implicit feature maps, Margin, ranking & metric objectives."
+    },
+    {
+      "unit_id": "d5736147f92ca73d",
+      "node_id": "svm_kernel_models",
+      "field": "dependencies.kernel_methods.rationale",
+      "text": "Support vector & kernel machines is assembled in part from the mechanism or model component Kernels & implicit feature maps."
+    },
+    {
+      "unit_id": "f8bea404f542c561",
+      "node_id": "svm_kernel_models",
+      "field": "dependencies.margin_ranking_metric.rationale",
+      "text": "Support vector & kernel machines is learned, selected, or evaluated using the objective family Margin, ranking & metric objectives."
+    },
+    {
+      "unit_id": "7d921d8b91c54398",
+      "node_id": "svm_kernel_models",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Support vector & kernel machines follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "c7b92f42b2e7631e",
+      "node_id": "svm_kernel_models",
+      "dependency_id": "kernel_methods",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Support vector & kernel machines is assembled in part from the mechanism or model component Kernels & implicit feature maps."
+    },
+    {
+      "edge_id": "d89be5d713248910",
+      "node_id": "svm_kernel_models",
+      "dependency_id": "margin_ranking_metric",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Support vector & kernel machines is learned, selected, or evaluated using the objective family Margin, ranking & metric objectives."
+    },
+    {
+      "edge_id": "7074d4454429202f",
+      "node_id": "svm_kernel_models",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Support vector & kernel machines follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/svm_kernel_models.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

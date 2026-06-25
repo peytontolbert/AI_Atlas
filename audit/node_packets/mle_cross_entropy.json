@@ -1,0 +1,211 @@
+{
+  "node_id": "mle_cross_entropy",
+  "label": "Maximum likelihood & cross-entropy",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "mle_cross_entropy",
+    "label": "Maximum likelihood & cross-entropy",
+    "layer": "objective",
+    "tags": [
+      "objective",
+      "core"
+    ],
+    "aliases": [],
+    "definition": "Parameters are chosen to assign high probability to observed targets or data.",
+    "why_it_matters": "The role of Maximum likelihood & cross-entropy is to connect Probability theory, Information theory to downstream capabilities including Linear models & generalized linear models, Hidden Markov models & CRFs, Matrix factorization & topic models.",
+    "examples": [
+      "substrate for Linear models & generalized linear models",
+      "substrate for Hidden Markov models & CRFs",
+      "substrate for Matrix factorization & topic models"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Probability theory, Information theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Maximum likelihood & cross-entropy uses Probability theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "information_theory",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Maximum likelihood & cross-entropy uses Information theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Maximum likelihood & cross-entropy uses Supervised learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "generative_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Maximum likelihood & cross-entropy uses Generative modeling as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "2c968fe166fb3710",
+      "node_id": "mle_cross_entropy",
+      "field": "definition",
+      "text": "Parameters are chosen to assign high probability to observed targets or data."
+    },
+    {
+      "unit_id": "eb41f8786ea1dc37",
+      "node_id": "mle_cross_entropy",
+      "field": "why_it_matters",
+      "text": "The role of Maximum likelihood & cross-entropy is to connect Probability theory, Information theory to downstream capabilities including Linear models & generalized linear models, Hidden Markov models & CRFs, Matrix factorization & topic models."
+    },
+    {
+      "unit_id": "85464b477ef5acfb",
+      "node_id": "mle_cross_entropy",
+      "field": "examples[1]",
+      "text": "substrate for Linear models & generalized linear models"
+    },
+    {
+      "unit_id": "eedee764347ea518",
+      "node_id": "mle_cross_entropy",
+      "field": "examples[2]",
+      "text": "substrate for Hidden Markov models & CRFs"
+    },
+    {
+      "unit_id": "b3a3cfcb48f50ca2",
+      "node_id": "mle_cross_entropy",
+      "field": "examples[3]",
+      "text": "substrate for Matrix factorization & topic models"
+    },
+    {
+      "unit_id": "b55e139553dd2a4b",
+      "node_id": "mle_cross_entropy",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Probability theory, Information theory."
+    },
+    {
+      "unit_id": "1f59a16a571bceed",
+      "node_id": "mle_cross_entropy",
+      "field": "dependencies.probability.rationale",
+      "text": "Maximum likelihood & cross-entropy uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "b05e618d20c87c7d",
+      "node_id": "mle_cross_entropy",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Maximum likelihood & cross-entropy uses Information theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "af68b21584245e5c",
+      "node_id": "mle_cross_entropy",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Maximum likelihood & cross-entropy uses Supervised learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "66e22f09f089e5f1",
+      "node_id": "mle_cross_entropy",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "Maximum likelihood & cross-entropy uses Generative modeling as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "3a219a18c5e975a1",
+      "node_id": "mle_cross_entropy",
+      "dependency_id": "probability",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Maximum likelihood & cross-entropy uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "cf418ebd53f64386",
+      "node_id": "mle_cross_entropy",
+      "dependency_id": "information_theory",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Maximum likelihood & cross-entropy uses Information theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "64855b65b3614125",
+      "node_id": "mle_cross_entropy",
+      "dependency_id": "supervised_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Maximum likelihood & cross-entropy uses Supervised learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "41d4eb64917e7798",
+      "node_id": "mle_cross_entropy",
+      "dependency_id": "generative_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Maximum likelihood & cross-entropy uses Generative modeling as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      },
+      "ref_gan": {
+        "id": "ref_gan",
+        "title": "Generative Adversarial Nets",
+        "authors": "Goodfellow et al.",
+        "year": 2014,
+        "url": "https://arxiv.org/abs/1406.2661"
+      },
+      "ref_vae": {
+        "id": "ref_vae",
+        "title": "Auto-Encoding Variational Bayes",
+        "authors": "Kingma & Welling",
+        "year": 2013,
+        "url": "https://arxiv.org/abs/1312.6114"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/mle_cross_entropy.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

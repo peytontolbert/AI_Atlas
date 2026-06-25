@@ -1,0 +1,143 @@
+{
+  "node_id": "optimization",
+  "label": "Optimization theory",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "optimization",
+    "label": "Optimization theory",
+    "layer": "foundation",
+    "tags": [
+      "math",
+      "training"
+    ],
+    "aliases": [],
+    "definition": "Convex and non-convex optimization frame learning as the search for parameters or policies that minimize an objective.",
+    "why_it_matters": "The role of Optimization theory is to connect Calculus & automatic differentiation theory, Linear algebra to downstream capabilities including Dynamical systems & control theory, Game theory & decision theory, Sparse coding & compositional representations.",
+    "examples": [
+      "substrate for Dynamical systems & control theory",
+      "substrate for Game theory & decision theory",
+      "substrate for Sparse coding & compositional representations"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Calculus & automatic differentiation theory, Linear algebra."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "calculus",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Optimization theory rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+      },
+      {
+        "id": "linear_algebra",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Optimization theory rests on the formal or computational capabilities supplied by Linear algebra."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "804e43d4ac197064",
+      "node_id": "optimization",
+      "field": "definition",
+      "text": "Convex and non-convex optimization frame learning as the search for parameters or policies that minimize an objective."
+    },
+    {
+      "unit_id": "63e7a89f8b5ddcb8",
+      "node_id": "optimization",
+      "field": "why_it_matters",
+      "text": "The role of Optimization theory is to connect Calculus & automatic differentiation theory, Linear algebra to downstream capabilities including Dynamical systems & control theory, Game theory & decision theory, Sparse coding & compositional representations."
+    },
+    {
+      "unit_id": "00fc392b93afeee3",
+      "node_id": "optimization",
+      "field": "examples[1]",
+      "text": "substrate for Dynamical systems & control theory"
+    },
+    {
+      "unit_id": "2f4e42ac01d045c5",
+      "node_id": "optimization",
+      "field": "examples[2]",
+      "text": "substrate for Game theory & decision theory"
+    },
+    {
+      "unit_id": "f66f9e5e41142f5b",
+      "node_id": "optimization",
+      "field": "examples[3]",
+      "text": "substrate for Sparse coding & compositional representations"
+    },
+    {
+      "unit_id": "0439735918c673f0",
+      "node_id": "optimization",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Calculus & automatic differentiation theory, Linear algebra."
+    },
+    {
+      "unit_id": "ddf91f99a7675e60",
+      "node_id": "optimization",
+      "field": "dependencies.calculus.rationale",
+      "text": "Optimization theory rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+    },
+    {
+      "unit_id": "605ff961595991ed",
+      "node_id": "optimization",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Optimization theory rests on the formal or computational capabilities supplied by Linear algebra."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ce2c075639c5c1ed",
+      "node_id": "optimization",
+      "dependency_id": "calculus",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Optimization theory rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+    },
+    {
+      "edge_id": "ac13a95d15b3cb27",
+      "node_id": "optimization",
+      "dependency_id": "linear_algebra",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Optimization theory rests on the formal or computational capabilities supplied by Linear algebra."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/optimization.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

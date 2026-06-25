@@ -1,0 +1,101 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "5abff377abc28302",
+      "node_id": "probability",
+      "field": "definition",
+      "text": "Random variables, distributions, conditional dependence, and expectation provide the language of uncertainty and generative modeling.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://aima.cs.berkeley.edu/newchap20.pdf",
+        "url:https://en.wikipedia.org/wiki/Probability_theory",
+        "url:https://en.wikipedia.org/wiki/Generative_model"
+      ],
+      "evidence_location": "AIMA newchap20.pdf, Section 20.1 'Statistical Learning' (lines 19-21, 34-37, 42-55, 59-63); Probability theory - Wikipedia, introductory definition and 'Treatment' / 'Probability theory' sections (lines 259-263, 283-287); Generative model - Wikipedia, 'Definition' (lines 152-159, 171-174).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited sources directly support random variables, distributions, conditional probability/independence, expectation, and generative modeling as probabilistic concepts. No single source states the full sentence verbatim, so this is an atlas synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "10fa7893b37d0bf2",
+      "node_id": "probability",
+      "field": "why_it_matters",
+      "text": "The role of Probability theory is to connect lower-level principles to downstream capabilities including Statistics & experimental design, Information theory, Signal processing & harmonic analysis.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://aima.cs.berkeley.edu/newchap20.pdf",
+        "url:https://en.wikipedia.org/wiki/Probability_theory",
+        "url:https://en.wikipedia.org/wiki/Stochastic_process"
+      ],
+      "evidence_location": "Probability theory - Wikipedia, lines 259-263; AIMA newchap20.pdf, lines 147-163; Stochastic process - Wikipedia, lines 283-284.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources directly support probability as a foundation for statistics, and they support links to information-theoretic reasoning and signal-processing applications through stochastic processes. The exact 'connect lower-level principles to downstream capabilities' wording is editorial synthesis."
+    },
+    {
+      "unit_id": "233a07b35fa4aa26",
+      "node_id": "probability",
+      "field": "examples[1]",
+      "text": "substrate for Statistics & experimental design",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Probability_theory"
+      ],
+      "evidence_location": "Probability theory - Wikipedia, line 263 ('As a mathematical foundation for statistics...'); AIMA newchap20.pdf, lines 157-163 (maximum-likelihood learning common in statistics).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The foundation-for-statistics relation is directly supported; 'substrate for' and the experimental-design extension are atlas phrasing, not source wording."
+    },
+    {
+      "unit_id": "833e39df5fd45ac5",
+      "node_id": "probability",
+      "field": "examples[2]",
+      "text": "substrate for Information theory",
+      "source_ids": [
+        "ref_aima",
+        "url:https://aima.cs.berkeley.edu/newchap20.pdf",
+        "url:https://en.wikipedia.org/wiki/Stochastic_process"
+      ],
+      "evidence_location": "AIMA newchap20.pdf, lines 147-156 (connection between probability, information encoding, and compression); Stochastic process - Wikipedia, line 284 (applications include information theory).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited text supports the probability/information-theoretic link, but the exact 'substrate for' wording is a synthesis."
+    },
+    {
+      "unit_id": "d7507c99fed85100",
+      "node_id": "probability",
+      "field": "examples[3]",
+      "text": "substrate for Signal processing & harmonic analysis",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Stochastic_process",
+        "url:https://en.wikipedia.org/wiki/Probability_theory"
+      ],
+      "evidence_location": "Stochastic process - Wikipedia, lines 283-284 (applications include signal processing); Probability theory - Wikipedia, lines 261-263 (random variables, stochastic processes, and quantitative analysis).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support signal-processing applications of stochastic processes, but they do not directly support harmonic analysis or the stronger 'substrate for' phrasing. Narrowing would make this safer."
+    },
+    {
+      "unit_id": "2d54bc264533e916",
+      "node_id": "probability",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://aima.cs.berkeley.edu/newchap20.pdf",
+        "url:https://en.wikipedia.org/wiki/Probability_theory"
+      ],
+      "evidence_location": "AIMA newchap20.pdf, lines 61-63, 115-118, 130-137, 157-163; Probability theory - Wikipedia, lines 259-263.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA explicitly discusses i.i.d. assumptions, priors, approximation, and large-data caveats; the empirical-mismatch warning is a reasonable synthesis but not quoted verbatim."
+    }
+  ],
+  "edge_reviews": []
+}

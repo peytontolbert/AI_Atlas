@@ -1,0 +1,178 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "51eab69a974aafde",
+      "node_id": "memory_read_write",
+      "field": "definition",
+      "text": "Content- or address-based operations store and retrieve structured state inside a differentiable model.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning supports broad recurrent, memory, and representation-learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition is consistent with differentiable memory systems, but a neural Turing machine/memory-network source would be needed for verified."
+    },
+    {
+      "unit_id": "40c4d045bf77143d",
+      "node_id": "memory_read_write",
+      "field": "why_it_matters",
+      "text": "The role of Differentiable memory read/write is to connect Recurrence & feedback state, Embeddings & distributed representations to downstream capabilities including LSTMs & GRUs, xLSTM & linear-recurrent hybrids, Energy-based, Hopfield & Boltzmann models.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited source supports recurrent and representation-learning background, but not the complete downstream list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "LSTM/GRU support is plausible; xLSTM and the energy-model grouping need more specific evidence."
+    },
+    {
+      "unit_id": "33f6628a82603baf",
+      "node_id": "memory_read_write",
+      "field": "examples[1]",
+      "text": "substrate for LSTMs & GRUs",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers recurrent networks including gated recurrent architectures.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "LSTM/GRU state updates can be interpreted as differentiable memory operations, but the atlas wording is a synthesis."
+    },
+    {
+      "unit_id": "094394d1f0d7b9a6",
+      "node_id": "memory_read_write",
+      "field": "examples[2]",
+      "text": "substrate for xLSTM & linear-recurrent hybrids",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited source predates xLSTM-style systems.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "A recent xLSTM or linear-recurrent hybrid source is required."
+    },
+    {
+      "unit_id": "e4301d5dc3b36618",
+      "node_id": "memory_read_write",
+      "field": "examples[3]",
+      "text": "substrate for Energy-based, Hopfield & Boltzmann models",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers energy-based and Boltzmann-machine background, but not necessarily differentiable read/write as their substrate.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The relationship to Hopfield-style associative memory is plausible, but the broader category needs narrower wording or citations."
+    },
+    {
+      "unit_id": "4f4f465c03cb2533",
+      "node_id": "memory_read_write",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Recurrence & feedback state, Embeddings & distributed representations.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The packet source supports broad recurrent and representation-learning background but not the generic limitation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependencies are plausible; the limitation wording is not directly sourced."
+    },
+    {
+      "unit_id": "ae1280b72ea3000f",
+      "node_id": "memory_read_write",
+      "field": "dependencies.recurrence.rationale",
+      "text": "Differentiable memory read/write is assembled in part from the mechanism or model component Recurrence & feedback state.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning supports recurrent state and gated recurrent network background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relationship is defensible for internal stateful memory mechanisms."
+    },
+    {
+      "unit_id": "83bc314dcc4d1af0",
+      "node_id": "memory_read_write",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Differentiable memory read/write uses Embeddings & distributed representations as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support distributed representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Differentiable memory commonly stores vector representations, but direct support should cite a memory-augmented neural-network source."
+    },
+    {
+      "unit_id": "f74a99546fb2f99d",
+      "node_id": "memory_read_write",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Differentiable memory read/write uses Algorithms & data structures as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources provide broad algorithmic and neural-model background, not a direct differentiable-memory data-structure claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Some differentiable memory systems mimic addressable data structures, but this dependency is not universal or directly sourced."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "1dfd1b775d1893e8",
+      "node_id": "memory_read_write",
+      "dependency_id": "recurrence",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Stateful differentiable memory often relies on recurrent updates; core strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a1d83c11778d40df",
+      "node_id": "memory_read_write",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Vector/distributed representations are a defensible core ingredient for differentiable memory.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "dab162e0bb0a515d",
+      "node_id": "memory_read_write",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Algorithmic data structures are relevant to addressable memory, but the edge needs a specific differentiable-memory citation.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

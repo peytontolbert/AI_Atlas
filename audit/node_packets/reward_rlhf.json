@@ -1,0 +1,261 @@
+{
+  "node_id": "reward_rlhf",
+  "label": "Reward-model training, RLHF & RLAIF",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "reward_rlhf",
+    "label": "Reward-model training, RLHF & RLAIF",
+    "layer": "training",
+    "tags": [
+      "training",
+      "alignment",
+      "rl"
+    ],
+    "aliases": [
+      "RLHF"
+    ],
+    "definition": "Reward-model-based RLHF fits a preference predictor and optimizes a policy against it, usually with a divergence penalty limiting drift from a reference model.",
+    "why_it_matters": "The role of Reward-model training, RLHF & RLAIF is to connect Reward modeling, Policy-gradient & actor–critic objectives to downstream capabilities including Conversational assistants & chatbots.",
+    "examples": [
+      "substrate for Conversational assistants & chatbots",
+      "combined with Reward modeling"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Reward modeling, Policy-gradient & actor–critic objectives."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_rlhf"
+    ],
+    "dependencies": [
+      {
+        "id": "reward_modeling",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Reward modeling."
+      },
+      {
+        "id": "policy_actor_critic",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+      },
+      {
+        "id": "sft_instruction",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reward-model training, RLHF & RLAIF uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "preference_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reward-model training, RLHF & RLAIF uses Preference learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "process_reward_models",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Process supervision & step-level reward models."
+      },
+      {
+        "id": "outcome_verifiers",
+        "type": "optimizes_for",
+        "strength": "optional",
+        "rationale": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "48459615b36a47bd",
+      "node_id": "reward_rlhf",
+      "field": "definition",
+      "text": "Reward-model-based RLHF fits a preference predictor and optimizes a policy against it, usually with a divergence penalty limiting drift from a reference model."
+    },
+    {
+      "unit_id": "409f4ac21f0ae3e5",
+      "node_id": "reward_rlhf",
+      "field": "why_it_matters",
+      "text": "The role of Reward-model training, RLHF & RLAIF is to connect Reward modeling, Policy-gradient & actor–critic objectives to downstream capabilities including Conversational assistants & chatbots."
+    },
+    {
+      "unit_id": "3cdf2e3140762126",
+      "node_id": "reward_rlhf",
+      "field": "examples[1]",
+      "text": "substrate for Conversational assistants & chatbots"
+    },
+    {
+      "unit_id": "a15c3efc92ba71a6",
+      "node_id": "reward_rlhf",
+      "field": "examples[2]",
+      "text": "combined with Reward modeling"
+    },
+    {
+      "unit_id": "c06f05d27c9a0a18",
+      "node_id": "reward_rlhf",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Reward modeling, Policy-gradient & actor–critic objectives."
+    },
+    {
+      "unit_id": "bcdd5e5b2e8ca7bf",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.reward_modeling.rationale",
+      "text": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Reward modeling."
+    },
+    {
+      "unit_id": "169a08c9a25986b4",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.policy_actor_critic.rationale",
+      "text": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+    },
+    {
+      "unit_id": "79e6af8ed9ed082c",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "Reward-model training, RLHF & RLAIF uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "a4f128f7f83c55cf",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.preference_learning.rationale",
+      "text": "Reward-model training, RLHF & RLAIF uses Preference learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "eea40a0510796ea8",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.process_reward_models.rationale",
+      "text": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Process supervision & step-level reward models."
+    },
+    {
+      "unit_id": "1a3e1d27a395b2a0",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.outcome_verifiers.rationale",
+      "text": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "2b3ca73638b8cff2",
+      "node_id": "reward_rlhf",
+      "dependency_id": "reward_modeling",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Reward modeling."
+    },
+    {
+      "edge_id": "0eeed6f11d54a916",
+      "node_id": "reward_rlhf",
+      "dependency_id": "policy_actor_critic",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+    },
+    {
+      "edge_id": "efb4ad4ec2e42c29",
+      "node_id": "reward_rlhf",
+      "dependency_id": "sft_instruction",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reward-model training, RLHF & RLAIF uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "c9605c63e2cd79ca",
+      "node_id": "reward_rlhf",
+      "dependency_id": "preference_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reward-model training, RLHF & RLAIF uses Preference learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "fc53f9e859cf94d2",
+      "node_id": "reward_rlhf",
+      "dependency_id": "process_reward_models",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Process supervision & step-level reward models."
+    },
+    {
+      "edge_id": "daaa4320ca329d50",
+      "node_id": "reward_rlhf",
+      "dependency_id": "outcome_verifiers",
+      "type": "optimizes_for",
+      "strength": "optional",
+      "rationale": "Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_rlhf": {
+        "id": "ref_rlhf",
+        "title": "Training language models to follow instructions with human feedback",
+        "authors": "Ouyang et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.02155"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_dpo": {
+        "id": "ref_dpo",
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.18290"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      },
+      "ref_rlhf": {
+        "id": "ref_rlhf",
+        "title": "Training language models to follow instructions with human feedback",
+        "authors": "Ouyang et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.02155"
+      },
+      "ref_rlvr": {
+        "id": "ref_rlvr",
+        "title": "Reinforcement Learning with Verifiable Rewards: A Survey",
+        "authors": "Liu et al.",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2506.14245"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/reward_rlhf.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

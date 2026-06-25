@@ -1,0 +1,123 @@
+{
+  "node_id": "statistics",
+  "label": "Statistics & experimental design",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "statistics",
+    "label": "Statistics & experimental design",
+    "layer": "foundation",
+    "tags": [
+      "math",
+      "evaluation"
+    ],
+    "aliases": [],
+    "definition": "Estimation, hypothesis testing, sampling, and experimental design connect finite observations to general claims.",
+    "why_it_matters": "The role of Statistics & experimental design is to connect Probability theory to downstream capabilities including Causal inference, Databases & information retrieval, Datasets, sampling & splits.",
+    "examples": [
+      "substrate for Causal inference",
+      "substrate for Databases & information retrieval",
+      "substrate for Datasets, sampling & splits"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Statistics & experimental design rests on the formal or computational capabilities supplied by Probability theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e2c23e5472bb9cd8",
+      "node_id": "statistics",
+      "field": "definition",
+      "text": "Estimation, hypothesis testing, sampling, and experimental design connect finite observations to general claims."
+    },
+    {
+      "unit_id": "3f12d9359b6bb62e",
+      "node_id": "statistics",
+      "field": "why_it_matters",
+      "text": "The role of Statistics & experimental design is to connect Probability theory to downstream capabilities including Causal inference, Databases & information retrieval, Datasets, sampling & splits."
+    },
+    {
+      "unit_id": "764ff0db9932139f",
+      "node_id": "statistics",
+      "field": "examples[1]",
+      "text": "substrate for Causal inference"
+    },
+    {
+      "unit_id": "68d029f02f934593",
+      "node_id": "statistics",
+      "field": "examples[2]",
+      "text": "substrate for Databases & information retrieval"
+    },
+    {
+      "unit_id": "0226655681db6603",
+      "node_id": "statistics",
+      "field": "examples[3]",
+      "text": "substrate for Datasets, sampling & splits"
+    },
+    {
+      "unit_id": "bdb5cab618eab646",
+      "node_id": "statistics",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory."
+    },
+    {
+      "unit_id": "2b33807c285cd267",
+      "node_id": "statistics",
+      "field": "dependencies.probability.rationale",
+      "text": "Statistics & experimental design rests on the formal or computational capabilities supplied by Probability theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "d30a9e3917161503",
+      "node_id": "statistics",
+      "dependency_id": "probability",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Statistics & experimental design rests on the formal or computational capabilities supplied by Probability theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/statistics.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

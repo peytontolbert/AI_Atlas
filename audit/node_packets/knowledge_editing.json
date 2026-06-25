@@ -1,0 +1,163 @@
+{
+  "node_id": "knowledge_editing",
+  "label": "Knowledge editing & memory consolidation",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "knowledge_editing",
+    "label": "Knowledge editing & memory consolidation",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "adaptation"
+    ],
+    "aliases": [],
+    "definition": "Knowledge editing changes selected factual or behavioral associations in parameters or external memory while attempting to preserve unrelated capabilities.",
+    "why_it_matters": "The role of Knowledge editing & memory consolidation is to connect Parametric memory, Continual learning & test-time adaptation pipelines to downstream capabilities including Memory lifecycle, forgetting & consolidation.",
+    "examples": [
+      "substrate for Memory lifecycle, forgetting & consolidation",
+      "combined with Parametric memory"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Parametric memory, Continual learning & test-time adaptation pipelines."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "parametric_memory",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Knowledge editing & memory consolidation stores, selects, or obtains information through Parametric memory."
+      },
+      {
+        "id": "continual_testtime_adaptation",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Knowledge editing & memory consolidation uses Continual learning & test-time adaptation pipelines as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "causal_inference",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Knowledge editing & memory consolidation uses Causal inference as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a244eac4846b7008",
+      "node_id": "knowledge_editing",
+      "field": "definition",
+      "text": "Knowledge editing changes selected factual or behavioral associations in parameters or external memory while attempting to preserve unrelated capabilities."
+    },
+    {
+      "unit_id": "ddbe462d3e418436",
+      "node_id": "knowledge_editing",
+      "field": "why_it_matters",
+      "text": "The role of Knowledge editing & memory consolidation is to connect Parametric memory, Continual learning & test-time adaptation pipelines to downstream capabilities including Memory lifecycle, forgetting & consolidation."
+    },
+    {
+      "unit_id": "cc55ca9fce76cd27",
+      "node_id": "knowledge_editing",
+      "field": "examples[1]",
+      "text": "substrate for Memory lifecycle, forgetting & consolidation"
+    },
+    {
+      "unit_id": "ec99b871d4ace2ee",
+      "node_id": "knowledge_editing",
+      "field": "examples[2]",
+      "text": "combined with Parametric memory"
+    },
+    {
+      "unit_id": "20459280f1e90195",
+      "node_id": "knowledge_editing",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Parametric memory, Continual learning & test-time adaptation pipelines."
+    },
+    {
+      "unit_id": "5733c670524a654d",
+      "node_id": "knowledge_editing",
+      "field": "dependencies.parametric_memory.rationale",
+      "text": "Knowledge editing & memory consolidation stores, selects, or obtains information through Parametric memory."
+    },
+    {
+      "unit_id": "809a3515d952b070",
+      "node_id": "knowledge_editing",
+      "field": "dependencies.continual_testtime_adaptation.rationale",
+      "text": "Knowledge editing & memory consolidation uses Continual learning & test-time adaptation pipelines as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "59b94215d08057f4",
+      "node_id": "knowledge_editing",
+      "field": "dependencies.causal_inference.rationale",
+      "text": "Knowledge editing & memory consolidation uses Causal inference as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ed90b094e5d16473",
+      "node_id": "knowledge_editing",
+      "dependency_id": "parametric_memory",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Knowledge editing & memory consolidation stores, selects, or obtains information through Parametric memory."
+    },
+    {
+      "edge_id": "d9a4e0bd59f7ab77",
+      "node_id": "knowledge_editing",
+      "dependency_id": "continual_testtime_adaptation",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Knowledge editing & memory consolidation uses Continual learning & test-time adaptation pipelines as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4eb93f810633c426",
+      "node_id": "knowledge_editing",
+      "dependency_id": "causal_inference",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Knowledge editing & memory consolidation uses Causal inference as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/knowledge_editing.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "b9be224ac3d418eb",
+      "node_id": "parallel_inference",
+      "field": "definition",
+      "text": "Parallel inference partitions tensors, layers, sequence positions, requests, or experts across multiple devices and coordinates the required communication.",
+      "source_ids": ["ref_megatron"],
+      "evidence_location": "Megatron-LM directly supports tensor and pipeline model parallelism for large language models, but not every listed partitioning mode such as requests, sequence positions, or experts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Definition is broadly plausible but should add sources for sequence/request/expert parallel inference or narrow to model parallelism."
+    },
+    {
+      "unit_id": "05d568450a578be8",
+      "node_id": "parallel_inference",
+      "field": "why_it_matters",
+      "text": "The role of Tensor, pipeline, sequence & expert parallel inference is to connect Model servers & inference runtimes, Distributed systems & networking to downstream capabilities including Large language models.",
+      "source_ids": ["ref_megatron", "ref_ddia", "ref_aima"],
+      "evidence_location": "The sources support model parallelism and broad distributed systems context, but the downstream atlas linkage is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Defensible as graph synthesis; not directly stated by the cited sources."
+    },
+    {
+      "unit_id": "3ce27daea7b2919e",
+      "node_id": "parallel_inference",
+      "field": "examples[1]",
+      "text": "substrate for Large language models",
+      "source_ids": ["ref_megatron"],
+      "evidence_location": "Megatron-LM uses model parallelism to train multi-billion-parameter language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source is training-focused, but supports the broader role of parallelism as a substrate for large language models."
+    },
+    {
+      "unit_id": "07c705bc69083275",
+      "node_id": "parallel_inference",
+      "field": "examples[2]",
+      "text": "combined with Model servers & inference runtimes",
+      "source_ids": ["ref_megatron"],
+      "evidence_location": "Megatron-LM supports model-parallel execution concepts, but not model-serving integration specifically.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs an inference-serving source for the exact example."
+    },
+    {
+      "unit_id": "6389af300478cee1",
+      "node_id": "parallel_inference",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Distributed systems & networking.",
+      "source_ids": ["ref_megatron", "ref_ddia"],
+      "evidence_location": "Distributed systems sources support operational failure concerns generally; the full list and dependency sentence are atlas-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Concurrency and cost are plausible; security, versioning, observability, and numerical behavior need more direct evidence."
+    },
+    {
+      "unit_id": "31d9d5f263f9ec4c",
+      "node_id": "parallel_inference",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Tensor, pipeline, sequence & expert parallel inference turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_megatron"],
+      "evidence_location": "The source supports model parallelism for scaling large models, not the model-serving operationalization wording.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core relationship is plausible; exact rationale is graph-template wording."
+    },
+    {
+      "unit_id": "7ae6e0f942e958da",
+      "node_id": "parallel_inference",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Tensor, pipeline, sequence & expert parallel inference turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_megatron", "ref_ddia"],
+      "evidence_location": "Model parallelism requires multi-device communication; DDIA supports distributed systems concerns broadly.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship type and core strength are defensible, though the integrity-preserving phrasing is overbroad."
+    },
+    {
+      "unit_id": "6aaeea3ea4503334",
+      "node_id": "parallel_inference",
+      "field": "dependencies.moe_model.rationale",
+      "text": "Tensor, pipeline, sequence & expert parallel inference turns Mixture-of-experts models into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_megatron", "ref_moe"],
+      "evidence_location": "MoE and model-parallel sources jointly support expert and scaling concepts, but not this exact operationalization claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common dependency is plausible; direct evidence for inference-specific expert parallelism would improve it."
+    },
+    {
+      "unit_id": "397d67a8de7e1cbd",
+      "node_id": "parallel_inference",
+      "field": "dependencies.checkpoint_composition.rationale",
+      "text": "Tensor, pipeline, sequence & expert parallel inference turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_lora", "ref_modelmerge", "ref_megatron"],
+      "evidence_location": "Sources support adapters/model composition and model parallelism separately; they do not directly establish this dependency.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependency may be true for serving composed checkpoints, but the cited evidence is indirect."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "607024399f8c7ef2",
+      "node_id": "parallel_inference",
+      "dependency_id": "model_serving",
+      "source_ids": ["ref_megatron"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Parallel inference is a serving scalability mechanism, but direct serving-runtime evidence is missing.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a6f9f0dca84cc567",
+      "node_id": "parallel_inference",
+      "dependency_id": "distributed_systems",
+      "source_ids": ["ref_megatron", "ref_ddia"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Multi-device partitioning and communication make distributed systems a core dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "1933076b13a2406d",
+      "node_id": "parallel_inference",
+      "dependency_id": "moe_model",
+      "source_ids": ["ref_moe", "ref_megatron"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Expert parallelism is relevant to MoE scaling, but this packet lacks a direct expert-parallel inference source.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ecdc0f080129ee70",
+      "node_id": "parallel_inference",
+      "dependency_id": "checkpoint_composition",
+      "source_ids": ["ref_lora", "ref_modelmerge", "ref_megatron"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The relationship is plausible in composed model serving but not established by the cited sources.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

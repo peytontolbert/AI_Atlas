@@ -1,0 +1,201 @@
+{
+  "node_id": "decoder_only_transformer",
+  "label": "Decoder-only causal transformers",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "decoder_only_transformer",
+    "label": "Decoder-only causal transformers",
+    "layer": "model",
+    "tags": [
+      "model",
+      "transformer",
+      "language"
+    ],
+    "aliases": [
+      "causal transformer",
+      "GPT-style decoder"
+    ],
+    "definition": "A decoder-only transformer predicts each next token from a causally masked context, enabling scalable autoregressive pretraining, continuation, and instruction following.",
+    "why_it_matters": "The role of Decoder-only causal transformers is to connect Transformers, Causal, masked & structured masking to downstream capabilities including Retrieval-augmented generation, Chain-of-thought & latent reasoning, Program synthesis & code search.",
+    "examples": [
+      "substrate for Retrieval-augmented generation",
+      "substrate for Chain-of-thought & latent reasoning",
+      "substrate for Program synthesis & code search"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Causal, masked & structured masking."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_transformer"
+    ],
+    "dependencies": [
+      {
+        "id": "transformer",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Decoder-only causal transformers extends or specializes the architecture family Transformers."
+      },
+      {
+        "id": "masking",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Decoder-only causal transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
+      },
+      {
+        "id": "autoregressive_decoding",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Decoder-only causal transformers is assembled in part from the mechanism or model component Autoregressive decoding."
+      },
+      {
+        "id": "autoregressive_objective",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Decoder-only causal transformers is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "2364222ff542c108",
+      "node_id": "decoder_only_transformer",
+      "field": "definition",
+      "text": "A decoder-only transformer predicts each next token from a causally masked context, enabling scalable autoregressive pretraining, continuation, and instruction following."
+    },
+    {
+      "unit_id": "1234b1fc04548f21",
+      "node_id": "decoder_only_transformer",
+      "field": "why_it_matters",
+      "text": "The role of Decoder-only causal transformers is to connect Transformers, Causal, masked & structured masking to downstream capabilities including Retrieval-augmented generation, Chain-of-thought & latent reasoning, Program synthesis & code search."
+    },
+    {
+      "unit_id": "9332440c09c58a88",
+      "node_id": "decoder_only_transformer",
+      "field": "examples[1]",
+      "text": "substrate for Retrieval-augmented generation"
+    },
+    {
+      "unit_id": "97dae30ae4371f4d",
+      "node_id": "decoder_only_transformer",
+      "field": "examples[2]",
+      "text": "substrate for Chain-of-thought & latent reasoning"
+    },
+    {
+      "unit_id": "079ab584245c1d49",
+      "node_id": "decoder_only_transformer",
+      "field": "examples[3]",
+      "text": "substrate for Program synthesis & code search"
+    },
+    {
+      "unit_id": "eacd639ad2060c0c",
+      "node_id": "decoder_only_transformer",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Causal, masked & structured masking."
+    },
+    {
+      "unit_id": "8241ce122051ff69",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.transformer.rationale",
+      "text": "Decoder-only causal transformers extends or specializes the architecture family Transformers."
+    },
+    {
+      "unit_id": "57e4ba904fb59245",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.masking.rationale",
+      "text": "Decoder-only causal transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
+    },
+    {
+      "unit_id": "0b4b4a77b5c4cbd5",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "Decoder-only causal transformers is assembled in part from the mechanism or model component Autoregressive decoding."
+    },
+    {
+      "unit_id": "96ee11ae350ecbee",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.autoregressive_objective.rationale",
+      "text": "Decoder-only causal transformers is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "3c62bfcec3fb6e32",
+      "node_id": "decoder_only_transformer",
+      "dependency_id": "transformer",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Decoder-only causal transformers extends or specializes the architecture family Transformers."
+    },
+    {
+      "edge_id": "2b4f7727665e9a0a",
+      "node_id": "decoder_only_transformer",
+      "dependency_id": "masking",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Decoder-only causal transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
+    },
+    {
+      "edge_id": "4a2513724bed8458",
+      "node_id": "decoder_only_transformer",
+      "dependency_id": "autoregressive_decoding",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Decoder-only causal transformers is assembled in part from the mechanism or model component Autoregressive decoding."
+    },
+    {
+      "edge_id": "c405ee7a589f00fe",
+      "node_id": "decoder_only_transformer",
+      "dependency_id": "autoregressive_objective",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Decoder-only causal transformers is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/decoder_only_transformer.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "node_id": "mixture_of_depths",
+  "label": "Mixture-of-Depths",
+  "layer": "model",
+  "editorial_status": "curated",
+  "node": {
+    "id": "mixture_of_depths",
+    "label": "Mixture-of-Depths",
+    "layer": "model",
+    "tags": [
+      "transformer",
+      "conditional-compute",
+      "efficiency"
+    ],
+    "aliases": [
+      "MoD"
+    ],
+    "definition": "Mixture-of-Depths routes only a budgeted subset of tokens through selected transformer layers, dynamically allocating depth while keeping aggregate compute predictable.",
+    "why_it_matters": "It introduces conditional computation along network depth rather than only across experts or sequence positions.",
+    "examples": [
+      "top-k token routing per layer",
+      "budgeted multimodal token processing"
+    ],
+    "limitations": [
+      "Skipped tokens can lose critical updates, routing is difficult to optimize, and realized speedups depend on kernels."
+    ],
+    "editorial_status": "curated",
+    "maturity": "emerging",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_mod"
+    ],
+    "dependencies": [
+      {
+        "id": "transformer",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Mixture-of-Depths extends or specializes the architecture family Transformers."
+      },
+      {
+        "id": "adaptive_depth_early_exit",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Mixture-of-Depths is assembled in part from the mechanism or model component Adaptive depth, early exit & token skipping."
+      },
+      {
+        "id": "routing_moe",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Mixture-of-Depths is assembled in part from the mechanism or model component Routing, conditional computation & mixture-of-experts."
+      },
+      {
+        "id": "gating",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Mixture-of-Depths is assembled in part from the mechanism or model component Gating & multiplicative control."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3cfb7893256f3e6d",
+      "node_id": "mixture_of_depths",
+      "field": "definition",
+      "text": "Mixture-of-Depths routes only a budgeted subset of tokens through selected transformer layers, dynamically allocating depth while keeping aggregate compute predictable."
+    },
+    {
+      "unit_id": "ad401927b93a99ee",
+      "node_id": "mixture_of_depths",
+      "field": "why_it_matters",
+      "text": "It introduces conditional computation along network depth rather than only across experts or sequence positions."
+    },
+    {
+      "unit_id": "21578c026684f71e",
+      "node_id": "mixture_of_depths",
+      "field": "examples[1]",
+      "text": "top-k token routing per layer"
+    },
+    {
+      "unit_id": "8c556575a031a939",
+      "node_id": "mixture_of_depths",
+      "field": "examples[2]",
+      "text": "budgeted multimodal token processing"
+    },
+    {
+      "unit_id": "b7ed12008be940ad",
+      "node_id": "mixture_of_depths",
+      "field": "limitations[1]",
+      "text": "Skipped tokens can lose critical updates, routing is difficult to optimize, and realized speedups depend on kernels."
+    },
+    {
+      "unit_id": "03c8320a19136eef",
+      "node_id": "mixture_of_depths",
+      "field": "dependencies.transformer.rationale",
+      "text": "Mixture-of-Depths extends or specializes the architecture family Transformers."
+    },
+    {
+      "unit_id": "52bbd3ddcb42ab96",
+      "node_id": "mixture_of_depths",
+      "field": "dependencies.adaptive_depth_early_exit.rationale",
+      "text": "Mixture-of-Depths is assembled in part from the mechanism or model component Adaptive depth, early exit & token skipping."
+    },
+    {
+      "unit_id": "7be64e673255bcdf",
+      "node_id": "mixture_of_depths",
+      "field": "dependencies.routing_moe.rationale",
+      "text": "Mixture-of-Depths is assembled in part from the mechanism or model component Routing, conditional computation & mixture-of-experts."
+    },
+    {
+      "unit_id": "214d574efb7fa262",
+      "node_id": "mixture_of_depths",
+      "field": "dependencies.gating.rationale",
+      "text": "Mixture-of-Depths is assembled in part from the mechanism or model component Gating & multiplicative control."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "06a722b5306bd9ce",
+      "node_id": "mixture_of_depths",
+      "dependency_id": "transformer",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Mixture-of-Depths extends or specializes the architecture family Transformers."
+    },
+    {
+      "edge_id": "e5cd93e847f83629",
+      "node_id": "mixture_of_depths",
+      "dependency_id": "adaptive_depth_early_exit",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Mixture-of-Depths is assembled in part from the mechanism or model component Adaptive depth, early exit & token skipping."
+    },
+    {
+      "edge_id": "ddc85521e1c53910",
+      "node_id": "mixture_of_depths",
+      "dependency_id": "routing_moe",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Mixture-of-Depths is assembled in part from the mechanism or model component Routing, conditional computation & mixture-of-experts."
+    },
+    {
+      "edge_id": "adaa212908625b85",
+      "node_id": "mixture_of_depths",
+      "dependency_id": "gating",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Mixture-of-Depths is assembled in part from the mechanism or model component Gating & multiplicative control."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_mod": {
+        "id": "ref_mod",
+        "title": "Mixture-of-Depths: Dynamically Allocating Compute in Transformer-Based Language Models",
+        "authors": "Raposo et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2404.02258"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_mod": {
+        "id": "ref_mod",
+        "title": "Mixture-of-Depths: Dynamically Allocating Compute in Transformer-Based Language Models",
+        "authors": "Raposo et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2404.02258"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/mixture_of_depths.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

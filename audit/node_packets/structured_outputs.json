@@ -1,0 +1,201 @@
+{
+  "node_id": "structured_outputs",
+  "label": "Structured outputs & typed action generation",
+  "layer": "reasoning",
+  "editorial_status": "curated",
+  "node": {
+    "id": "structured_outputs",
+    "label": "Structured outputs & typed action generation",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "agents",
+      "structured-output"
+    ],
+    "aliases": [
+      "JSON mode",
+      "schema-constrained output"
+    ],
+    "definition": "Structured-output generation produces typed records, tool calls, plans, code, or commands that downstream software can parse and validate deterministically.",
+    "why_it_matters": "It forms the contract boundary between probabilistic models and reliable software execution.",
+    "examples": [
+      "JSON tool arguments",
+      "typed workflow plans",
+      "database query objects"
+    ],
+    "limitations": [
+      "Valid structure can still contain incorrect, unsafe, unauthorized, or semantically inconsistent values."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_structured"
+    ],
+    "dependencies": [
+      {
+        "id": "grammar_constrained_decoding",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Structured outputs & typed action generation uses Grammar- and schema-constrained decoding as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "structured_output_validation",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Structured outputs & typed action generation uses Structured-output parsing, validation & repair as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "tool_use_function_calling",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Structured outputs & typed action generation uses Tool use & function calling as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "schemas_grammars_constraints",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Structured outputs & typed action generation uses Schemas, grammars & formal output languages as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c2229cdbbf837adf",
+      "node_id": "structured_outputs",
+      "field": "definition",
+      "text": "Structured-output generation produces typed records, tool calls, plans, code, or commands that downstream software can parse and validate deterministically."
+    },
+    {
+      "unit_id": "df9cf1406fc4541d",
+      "node_id": "structured_outputs",
+      "field": "why_it_matters",
+      "text": "It forms the contract boundary between probabilistic models and reliable software execution."
+    },
+    {
+      "unit_id": "a45957067674bcbe",
+      "node_id": "structured_outputs",
+      "field": "examples[1]",
+      "text": "JSON tool arguments"
+    },
+    {
+      "unit_id": "7469434ffb6bbd66",
+      "node_id": "structured_outputs",
+      "field": "examples[2]",
+      "text": "typed workflow plans"
+    },
+    {
+      "unit_id": "390ac452055b9457",
+      "node_id": "structured_outputs",
+      "field": "examples[3]",
+      "text": "database query objects"
+    },
+    {
+      "unit_id": "631118886665fd66",
+      "node_id": "structured_outputs",
+      "field": "limitations[1]",
+      "text": "Valid structure can still contain incorrect, unsafe, unauthorized, or semantically inconsistent values."
+    },
+    {
+      "unit_id": "9486a25247dcbe9b",
+      "node_id": "structured_outputs",
+      "field": "dependencies.grammar_constrained_decoding.rationale",
+      "text": "Structured outputs & typed action generation uses Grammar- and schema-constrained decoding as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "7d00261f42eae2ba",
+      "node_id": "structured_outputs",
+      "field": "dependencies.structured_output_validation.rationale",
+      "text": "Structured outputs & typed action generation uses Structured-output parsing, validation & repair as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "8dbc0996716ac3e2",
+      "node_id": "structured_outputs",
+      "field": "dependencies.tool_use_function_calling.rationale",
+      "text": "Structured outputs & typed action generation uses Tool use & function calling as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "5e03e906b44b3bb6",
+      "node_id": "structured_outputs",
+      "field": "dependencies.schemas_grammars_constraints.rationale",
+      "text": "Structured outputs & typed action generation uses Schemas, grammars & formal output languages as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "d313608c952197fd",
+      "node_id": "structured_outputs",
+      "dependency_id": "grammar_constrained_decoding",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Structured outputs & typed action generation uses Grammar- and schema-constrained decoding as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "b26f6df18640997d",
+      "node_id": "structured_outputs",
+      "dependency_id": "structured_output_validation",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Structured outputs & typed action generation uses Structured-output parsing, validation & repair as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "f93124f6359427f2",
+      "node_id": "structured_outputs",
+      "dependency_id": "tool_use_function_calling",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Structured outputs & typed action generation uses Tool use & function calling as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "e1592bad37caa8f8",
+      "node_id": "structured_outputs",
+      "dependency_id": "schemas_grammars_constraints",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Structured outputs & typed action generation uses Schemas, grammars & formal output languages as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_structured": {
+        "id": "ref_structured",
+        "title": "A Survey of Structured Output Generation from LLMs",
+        "authors": "survey authors",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2501.10868"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_react": {
+        "id": "ref_react",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.03629"
+      },
+      "ref_structured": {
+        "id": "ref_structured",
+        "title": "A Survey of Structured Output Generation from LLMs",
+        "authors": "survey authors",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2501.10868"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/structured_outputs.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

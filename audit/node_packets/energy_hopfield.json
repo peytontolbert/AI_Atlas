@@ -1,0 +1,165 @@
+{
+  "node_id": "energy_hopfield",
+  "label": "Energy-based, Hopfield & Boltzmann models",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "energy_hopfield",
+    "label": "Energy-based, Hopfield & Boltzmann models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "energy",
+      "memory"
+    ],
+    "aliases": [],
+    "definition": "Energy-based, Hopfield, and Boltzmann models assign scalar compatibility to configurations and perform recall or generation by moving toward lower-energy states.",
+    "why_it_matters": "The role of Energy-based, Hopfield & Boltzmann models is to connect Energy-based objectives, Recurrence & feedback state to downstream capabilities including Time-series forecasting, anomaly & fraud detection.",
+    "examples": [
+      "substrate for Time-series forecasting, anomaly & fraud detection",
+      "combined with Energy-based objectives"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Energy-based objectives, Recurrence & feedback state."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "energy_objective",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Energy-based, Hopfield & Boltzmann models is learned, selected, or evaluated using the objective family Energy-based objectives."
+      },
+      {
+        "id": "recurrence",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Recurrence & feedback state."
+      },
+      {
+        "id": "memory_read_write",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Differentiable memory read/write."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "96cff9130152deb1",
+      "node_id": "energy_hopfield",
+      "field": "definition",
+      "text": "Energy-based, Hopfield, and Boltzmann models assign scalar compatibility to configurations and perform recall or generation by moving toward lower-energy states."
+    },
+    {
+      "unit_id": "c5fa0d4ed0d007b5",
+      "node_id": "energy_hopfield",
+      "field": "why_it_matters",
+      "text": "The role of Energy-based, Hopfield & Boltzmann models is to connect Energy-based objectives, Recurrence & feedback state to downstream capabilities including Time-series forecasting, anomaly & fraud detection."
+    },
+    {
+      "unit_id": "6b547a82e8e2825b",
+      "node_id": "energy_hopfield",
+      "field": "examples[1]",
+      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+    },
+    {
+      "unit_id": "94e18609df75a33a",
+      "node_id": "energy_hopfield",
+      "field": "examples[2]",
+      "text": "combined with Energy-based objectives"
+    },
+    {
+      "unit_id": "4f79a354c5541c87",
+      "node_id": "energy_hopfield",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Energy-based objectives, Recurrence & feedback state."
+    },
+    {
+      "unit_id": "007708e023cbe3b4",
+      "node_id": "energy_hopfield",
+      "field": "dependencies.energy_objective.rationale",
+      "text": "Energy-based, Hopfield & Boltzmann models is learned, selected, or evaluated using the objective family Energy-based objectives."
+    },
+    {
+      "unit_id": "5ce1516d51089580",
+      "node_id": "energy_hopfield",
+      "field": "dependencies.recurrence.rationale",
+      "text": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Recurrence & feedback state."
+    },
+    {
+      "unit_id": "7fb6807b8d65c524",
+      "node_id": "energy_hopfield",
+      "field": "dependencies.memory_read_write.rationale",
+      "text": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Differentiable memory read/write."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "9ceee84ab7821430",
+      "node_id": "energy_hopfield",
+      "dependency_id": "energy_objective",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Energy-based, Hopfield & Boltzmann models is learned, selected, or evaluated using the objective family Energy-based objectives."
+    },
+    {
+      "edge_id": "7f12d61df4f998a4",
+      "node_id": "energy_hopfield",
+      "dependency_id": "recurrence",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Recurrence & feedback state."
+    },
+    {
+      "edge_id": "82eb0d424141a6e5",
+      "node_id": "energy_hopfield",
+      "dependency_id": "memory_read_write",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Differentiable memory read/write."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/energy_hopfield.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

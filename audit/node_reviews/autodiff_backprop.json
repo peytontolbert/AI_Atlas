@@ -1,0 +1,162 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "4c5a4d9bb794cabf",
+      "node_id": "autodiff_backprop",
+      "field": "definition",
+      "text": "Gradients are propagated through composed computation graphs to assign credit to parameters.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 6.5 'Back-Propagation and Other Differentiation Algorithms' and Chapter 8 optimization for training deep models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Backpropagation through computational graphs and gradients with respect to parameters are directly covered; 'assign credit' is standard explanatory phrasing rather than exact source wording."
+    },
+    {
+      "unit_id": "8f62007496b713df",
+      "node_id": "autodiff_backprop",
+      "field": "why_it_matters",
+      "text": "The role of Automatic differentiation & backpropagation is to connect Calculus & automatic differentiation theory, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Distributed, mixed-precision & memory-efficient training.",
+      "source_ids": ["ref_dlbook", "ref_aima"],
+      "evidence_location": "Deep Learning, Chapter 6.5 computational graphs/backpropagation and Chapter 8 optimization; AIMA Appendix B languages/algorithms and Appendix A mathematical background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Calculus/computation-graph dependencies are supported, but the specific AST/bytecode/IR and distributed mixed-precision downstream claim is broader than the inspected packet sources."
+    },
+    {
+      "unit_id": "97ec0488c7453cb1",
+      "node_id": "autodiff_backprop",
+      "field": "examples[1]",
+      "text": "substrate for Distributed, mixed-precision & memory-efficient training",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapters 6.5 and 8 on backpropagation and optimization; Chapter 12 applied methodology/scalability context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Backpropagation is a prerequisite for training neural networks, but distributed, mixed-precision, and memory-efficient training are not directly established by the cited packet source."
+    },
+    {
+      "unit_id": "fdae22b021e4b4de",
+      "node_id": "autodiff_backprop",
+      "field": "examples[2]",
+      "text": "combined with Calculus & automatic differentiation theory",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 6.5 on computational graphs, chain rule, and backpropagation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The chain rule and gradients provide direct support for the calculus/automatic-differentiation connection; the phrase is atlas synthesis."
+    },
+    {
+      "unit_id": "d12ce410a9193c20",
+      "node_id": "autodiff_backprop",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Calculus & automatic differentiation theory, Programs, ASTs, bytecode & intermediate representations.",
+      "source_ids": ["ref_dlbook", "ref_aima"],
+      "evidence_location": "Deep Learning, Chapters 5, 6, 8, and 11 on generalization, hyperparameters, optimization, and methodology; AIMA Appendix A/B mathematical and algorithmic background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Hyperparameter, optimization, and mathematical-dependency context is supported. Data quality, compute budget, random variation, evaluation contamination, and AST/bytecode/IR are generic atlas limitations not directly evidenced here."
+    },
+    {
+      "unit_id": "24d92c55307c0385",
+      "node_id": "autodiff_backprop",
+      "field": "dependencies.calculus.rationale",
+      "text": "Automatic differentiation & backpropagation uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 6.5 on chain rule, gradients, and backpropagation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is directly grounded in gradients and the chain rule; the reusable-ingredient phrasing is synthesized."
+    },
+    {
+      "unit_id": "429ed5a8f0cad173",
+      "node_id": "autodiff_backprop",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Automatic differentiation & backpropagation uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook", "ref_aima"],
+      "evidence_location": "Deep Learning, Chapter 6.5 computational graphs; AIMA Appendix B notes on languages and algorithms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Computation graphs and algorithms are supported, but ASTs, bytecode, and intermediate representations are not directly connected to backpropagation by the cited evidence."
+    },
+    {
+      "unit_id": "bb1c8c131f46016a",
+      "node_id": "autodiff_backprop",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Automatic differentiation & backpropagation uses Affine transforms & dense layers as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 6 on feedforward networks and Chapter 6.5 on backpropagation through computational graphs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Backpropagation is commonly applied to affine/dense layers, but it does not require them as an ingredient; the edge direction and necessity are overstated."
+    },
+    {
+      "unit_id": "19280bc9ddf30ebb",
+      "node_id": "autodiff_backprop",
+      "field": "dependencies.optimization.rationale",
+      "text": "Automatic differentiation & backpropagation uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8 optimization for training deep models and Chapter 6.5 backpropagation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Backpropagation supplies gradients used by optimization methods in training; the exact rationale wording is synthesized."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "e4f24dbf1ac4b901",
+      "node_id": "autodiff_backprop",
+      "dependency_id": "calculus",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gradients and the chain rule make calculus a core prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "097ec3ba7e826f21",
+      "node_id": "autodiff_backprop",
+      "dependency_id": "programs_ast_ir",
+      "source_ids": ["ref_dlbook", "ref_aima"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Computation graphs and algorithmic representations are relevant, but AST/bytecode/IR as a core dependency is not directly supported by the inspected evidence.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "748df0d682a983a3",
+      "node_id": "autodiff_backprop",
+      "dependency_id": "affine_dense",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Affine/dense layers are common operands of backpropagation, but backpropagation is more general. A 'common' strength is plausible, but the dependency direction is weak.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9030a7d06e00c01b",
+      "node_id": "autodiff_backprop",
+      "dependency_id": "optimization",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Backpropagation is used to compute gradients for optimization in neural-network training; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

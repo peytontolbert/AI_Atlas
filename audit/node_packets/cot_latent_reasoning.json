@@ -1,0 +1,184 @@
+{
+  "node_id": "cot_latent_reasoning",
+  "label": "Chain-of-thought & latent reasoning",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "cot_latent_reasoning",
+    "label": "Chain-of-thought & latent reasoning",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "language"
+    ],
+    "aliases": [],
+    "definition": "Intermediate computation is expanded in tokens, hidden states, or recurrent steps before committing to an answer.",
+    "why_it_matters": "The role of Chain-of-thought & latent reasoning is to connect Decoder-only causal transformers, Autoregressive decoding to downstream capabilities including Self-consistency & best-of-N inference, Task decomposition & hierarchical reasoning, ReAct-style reasoning and acting.",
+    "examples": [
+      "substrate for Self-consistency & best-of-N inference",
+      "substrate for Task decomposition & hierarchical reasoning",
+      "substrate for ReAct-style reasoning and acting"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Autoregressive decoding."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "decoder_only_transformer",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Chain-of-thought & latent reasoning uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "autoregressive_decoding",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Chain-of-thought & latent reasoning uses Autoregressive decoding as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "incontext_testtime_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Chain-of-thought & latent reasoning uses In-context & test-time learning as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c2ef9c936a659158",
+      "node_id": "cot_latent_reasoning",
+      "field": "definition",
+      "text": "Intermediate computation is expanded in tokens, hidden states, or recurrent steps before committing to an answer."
+    },
+    {
+      "unit_id": "87ff2127387a7449",
+      "node_id": "cot_latent_reasoning",
+      "field": "why_it_matters",
+      "text": "The role of Chain-of-thought & latent reasoning is to connect Decoder-only causal transformers, Autoregressive decoding to downstream capabilities including Self-consistency & best-of-N inference, Task decomposition & hierarchical reasoning, ReAct-style reasoning and acting."
+    },
+    {
+      "unit_id": "2601e1f8e19265ab",
+      "node_id": "cot_latent_reasoning",
+      "field": "examples[1]",
+      "text": "substrate for Self-consistency & best-of-N inference"
+    },
+    {
+      "unit_id": "91928063d425655d",
+      "node_id": "cot_latent_reasoning",
+      "field": "examples[2]",
+      "text": "substrate for Task decomposition & hierarchical reasoning"
+    },
+    {
+      "unit_id": "6a91e72b93ef85ac",
+      "node_id": "cot_latent_reasoning",
+      "field": "examples[3]",
+      "text": "substrate for ReAct-style reasoning and acting"
+    },
+    {
+      "unit_id": "6f7dfdb92bf337fe",
+      "node_id": "cot_latent_reasoning",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Autoregressive decoding."
+    },
+    {
+      "unit_id": "995717054c8e9720",
+      "node_id": "cot_latent_reasoning",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "Chain-of-thought & latent reasoning uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "00bb9f7cbeea16a1",
+      "node_id": "cot_latent_reasoning",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "Chain-of-thought & latent reasoning uses Autoregressive decoding as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "ef8b1c99fc843c95",
+      "node_id": "cot_latent_reasoning",
+      "field": "dependencies.incontext_testtime_learning.rationale",
+      "text": "Chain-of-thought & latent reasoning uses In-context & test-time learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "2d0c35f042074eee",
+      "node_id": "cot_latent_reasoning",
+      "dependency_id": "decoder_only_transformer",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Chain-of-thought & latent reasoning uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "e72d0e0dad7a30a6",
+      "node_id": "cot_latent_reasoning",
+      "dependency_id": "autoregressive_decoding",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Chain-of-thought & latent reasoning uses Autoregressive decoding as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "16e6193ec00dc1ee",
+      "node_id": "cot_latent_reasoning",
+      "dependency_id": "incontext_testtime_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Chain-of-thought & latent reasoning uses In-context & test-time learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_testtime": {
+        "id": "ref_testtime",
+        "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+        "authors": "Snell et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2408.03314"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/cot_latent_reasoning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

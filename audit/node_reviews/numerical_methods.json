@@ -1,0 +1,160 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "bba05e0e590e7a78",
+      "node_id": "numerical_methods",
+      "field": "definition",
+      "text": "Stable approximation, floating-point arithmetic, iterative solvers, and discretization make mathematical models computable.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Numerical_analysis",
+        "url:https://en.wikipedia.org/wiki/Finite_difference_method",
+        "url:https://en.wikipedia.org/wiki/Numerical_linear_algebra"
+      ],
+      "evidence_location": "Numerical analysis lead and areas of study (lines 237-242, 247-250); Finite difference method (lines 303-304); Numerical linear algebra (lines 137-139, 228).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support approximation, floating-point arithmetic, iterative methods, and discretization as core numerical-analysis ideas. 'make mathematical models computable' is a synthesis rather than a verbatim source claim."
+    },
+    {
+      "unit_id": "3c07db3679f0b109",
+      "node_id": "numerical_methods",
+      "field": "why_it_matters",
+      "text": "The role of Numerical analysis is to connect Calculus & automatic differentiation theory, Linear algebra to downstream capabilities including Differential equations, Scalars, vectors, matrices & tensors, Bayesian & approximate inference.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Numerical_analysis",
+        "url:https://en.wikipedia.org/wiki/Numerical_linear_algebra",
+        "url:https://en.wikipedia.org/wiki/Probabilistic_numerics",
+        "url:https://en.wikipedia.org/wiki/Automatic_differentiation"
+      ],
+      "evidence_location": "Numerical analysis lead and areas of study (lines 237-242, 247-250); Numerical linear algebra (lines 137-141, 228, 302-304); Probabilistic numerics (lines 118-120); Automatic differentiation (lines 149-159).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source set supports calculus-related differentiation/integration, linear algebra, differential equations, and Bayesian inference as major touchpoints. 'automatic differentiation theory' is not directly sourced, so this should remain a broad synthesis."
+    },
+    {
+      "unit_id": "6fd69fcdb0c37649",
+      "node_id": "numerical_methods",
+      "field": "examples[1]",
+      "text": "substrate for Differential equations",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Numerical_analysis",
+        "url:https://en.wikipedia.org/wiki/Finite_difference_method"
+      ],
+      "evidence_location": "Numerical analysis areas of study and applications (lines 239, 247-250, 394-397); Finite difference method (lines 303-304).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Numerical analysis explicitly covers differential equations, and finite-difference methods are a standard discretization technique for them. The 'substrate for' phrasing is interpretive."
+    },
+    {
+      "unit_id": "251b10e73fe360dc",
+      "node_id": "numerical_methods",
+      "field": "examples[2]",
+      "text": "substrate for Scalars, vectors, matrices & tensors",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Numerical_linear_algebra",
+        "url:https://arxiv.org/abs/2002.01387"
+      ],
+      "evidence_location": "Numerical linear algebra (lines 137-141, 228, 302-304); Randomized numerical linear algebra abstract (lines 38-39).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Vectors and matrices are directly supported; tensors are not directly evidenced in the inspected sources. Narrowing the example to vectors and matrices would make it better supported."
+    },
+    {
+      "unit_id": "7eced5e9b259e7b4",
+      "node_id": "numerical_methods",
+      "field": "examples[3]",
+      "text": "substrate for Bayesian & approximate inference",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Probabilistic_numerics"
+      ],
+      "evidence_location": "Probabilistic numerics introduction (lines 118-120).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source directly links numerical algorithms to probabilistic inference, often Bayesian inference. The 'substrate for' framing is a synthesis."
+    },
+    {
+      "unit_id": "aaf50fec2bc10c99",
+      "node_id": "numerical_methods",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Calculus & automatic differentiation theory, Linear algebra.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Numerical_analysis",
+        "url:https://en.wikipedia.org/wiki/Automatic_differentiation"
+      ],
+      "evidence_location": "Numerical analysis key concepts and error discussion (lines 311-321, 329, 396-397); Automatic differentiation introduction and comparison with numerical differentiation (lines 149-159).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support approximation, truncation, discretization, and stability limits, but the 'mismatched empirical setting' phrasing is broader than the evidence. The dependency clause is plausible but still a synthesis."
+    },
+    {
+      "unit_id": "b27461dd53cac174",
+      "node_id": "numerical_methods",
+      "field": "dependencies.calculus.rationale",
+      "text": "Numerical analysis rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Numerical_analysis",
+        "url:https://en.wikipedia.org/wiki/Automatic_differentiation"
+      ],
+      "evidence_location": "Numerical analysis areas of study and applications (lines 237-242, 247-250, 396-397); Automatic differentiation introduction and discussion of chain rule / finite differences (lines 149-159, 173-205).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Calculus is clearly implicated by differentiation, integration, and differential-equation methods. The automatic-differentiation portion is only indirectly supported."
+    },
+    {
+      "unit_id": "394c1269545dbd76",
+      "node_id": "numerical_methods",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Numerical analysis rests on the formal or computational capabilities supplied by Linear algebra.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Numerical_analysis",
+        "url:https://en.wikipedia.org/wiki/Numerical_linear_algebra",
+        "url:https://arxiv.org/abs/2002.01387"
+      ],
+      "evidence_location": "Numerical analysis areas of study and applications (lines 239, 247-250, 396-397); Numerical linear algebra (lines 137-141, 228, 302-304); Randomized numerical linear algebra abstract (lines 38-39).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is well supported by matrix operations, linear systems, and numerical linear algebra. The rationale is still a synthesis rather than an exact source quote."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "692cbadaa4622bb4",
+      "node_id": "numerical_methods",
+      "dependency_id": "calculus",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Numerical_analysis",
+        "url:https://en.wikipedia.org/wiki/Automatic_differentiation"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The direction is correct and the dependency is core to numerical analysis through differentiation, integration, and differential equations. The exact rationale wording is broader than the inspected sources.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "41e952174af79c18",
+      "node_id": "numerical_methods",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Numerical_linear_algebra",
+        "url:https://en.wikipedia.org/wiki/Numerical_analysis",
+        "url:https://arxiv.org/abs/2002.01387"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Matrix computations, linear systems, and numerical linear algebra directly support the dependency. The relation type and core strength are defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

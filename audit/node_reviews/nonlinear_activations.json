@@ -1,0 +1,152 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "6a72a16f374e4085",
+      "node_id": "nonlinear_activations",
+      "field": "definition",
+      "text": "Elementwise or gated nonlinearities let stacked layers approximate nonlinear functions.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers deep feedforward networks, affine transformations followed by nonlinear activation functions, differentiability/backpropagation, and gradient-based learning; AIMA/PML provide calculus and neural-network background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "5ceaeb6b9a35b632",
+      "node_id": "nonlinear_activations",
+      "field": "why_it_matters",
+      "text": "The role of Nonlinear activations is to connect Calculus & automatic differentiation theory, Affine transforms & dense layers to downstream capabilities including Boolean circuits & differentiable logic gates, Gating & multiplicative control, Perceptrons & single-layer neural classifiers.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning covers deep feedforward networks, affine transformations followed by nonlinear activation functions, differentiability/backpropagation, and gradient-based learning; AIMA/PML provide calculus and neural-network background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "e9ef8b032a2e4ec9",
+      "node_id": "nonlinear_activations",
+      "field": "examples[1]",
+      "text": "substrate for Boolean circuits & differentiable logic gates",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers deep feedforward networks, affine transformations followed by nonlinear activation functions, differentiability/backpropagation, and gradient-based learning; AIMA/PML provide calculus and neural-network background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "967e6071d6f9f14c",
+      "node_id": "nonlinear_activations",
+      "field": "examples[2]",
+      "text": "substrate for Gating & multiplicative control",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers deep feedforward networks, affine transformations followed by nonlinear activation functions, differentiability/backpropagation, and gradient-based learning; AIMA/PML provide calculus and neural-network background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "9232975b8f57fa91",
+      "node_id": "nonlinear_activations",
+      "field": "examples[3]",
+      "text": "substrate for Perceptrons & single-layer neural classifiers",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers deep feedforward networks, affine transformations followed by nonlinear activation functions, differentiability/backpropagation, and gradient-based learning; AIMA/PML provide calculus and neural-network background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "02b05ee136645f43",
+      "node_id": "nonlinear_activations",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Calculus & automatic differentiation theory, Affine transforms & dense layers.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning covers deep feedforward networks, affine transformations followed by nonlinear activation functions, differentiability/backpropagation, and gradient-based learning; AIMA/PML provide calculus and neural-network background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "5099905726260e15",
+      "node_id": "nonlinear_activations",
+      "field": "dependencies.calculus.rationale",
+      "text": "Nonlinear activations uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning covers deep feedforward networks, affine transformations followed by nonlinear activation functions, differentiability/backpropagation, and gradient-based learning; AIMA/PML provide calculus and neural-network background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "710d8b5464abab9a",
+      "node_id": "nonlinear_activations",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Nonlinear activations is assembled in part from the mechanism or model component Affine transforms & dense layers.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning covers deep feedforward networks, affine transformations followed by nonlinear activation functions, differentiability/backpropagation, and gradient-based learning; AIMA/PML provide calculus and neural-network background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "1cb432d46c534494",
+      "node_id": "nonlinear_activations",
+      "dependency_id": "calculus",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "81dbbce399cab62b",
+      "node_id": "nonlinear_activations",
+      "dependency_id": "affine_dense",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "node_id": "signal_processing",
+  "label": "Signal processing & harmonic analysis",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "signal_processing",
+    "label": "Signal processing & harmonic analysis",
+    "layer": "foundation",
+    "tags": [
+      "signals",
+      "vision",
+      "audio"
+    ],
+    "aliases": [],
+    "definition": "Sampling, filtering, spectra, Fourier analysis, and wavelets characterize structured signals across time and space.",
+    "why_it_matters": "The role of Signal processing & harmonic analysis is to connect Linear algebra, Calculus & automatic differentiation theory to downstream capabilities including Neuroscience & cognitive science, Sequences, events & time series, Images, video & spatial grids.",
+    "examples": [
+      "substrate for Neuroscience & cognitive science",
+      "substrate for Sequences, events & time series",
+      "substrate for Images, video & spatial grids"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Linear algebra, Calculus & automatic differentiation theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "linear_algebra",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Linear algebra."
+      },
+      {
+        "id": "calculus",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+      },
+      {
+        "id": "probability",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Probability theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e870ae5768c4636e",
+      "node_id": "signal_processing",
+      "field": "definition",
+      "text": "Sampling, filtering, spectra, Fourier analysis, and wavelets characterize structured signals across time and space."
+    },
+    {
+      "unit_id": "59c007349fa503fd",
+      "node_id": "signal_processing",
+      "field": "why_it_matters",
+      "text": "The role of Signal processing & harmonic analysis is to connect Linear algebra, Calculus & automatic differentiation theory to downstream capabilities including Neuroscience & cognitive science, Sequences, events & time series, Images, video & spatial grids."
+    },
+    {
+      "unit_id": "9a3eb621fe5d4d7d",
+      "node_id": "signal_processing",
+      "field": "examples[1]",
+      "text": "substrate for Neuroscience & cognitive science"
+    },
+    {
+      "unit_id": "2389969c8aff4d90",
+      "node_id": "signal_processing",
+      "field": "examples[2]",
+      "text": "substrate for Sequences, events & time series"
+    },
+    {
+      "unit_id": "2b1355a147463fdc",
+      "node_id": "signal_processing",
+      "field": "examples[3]",
+      "text": "substrate for Images, video & spatial grids"
+    },
+    {
+      "unit_id": "e850d4c7f4bbae9e",
+      "node_id": "signal_processing",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Linear algebra, Calculus & automatic differentiation theory."
+    },
+    {
+      "unit_id": "a1150e138941ecd8",
+      "node_id": "signal_processing",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Linear algebra."
+    },
+    {
+      "unit_id": "3ffbf171df34456e",
+      "node_id": "signal_processing",
+      "field": "dependencies.calculus.rationale",
+      "text": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+    },
+    {
+      "unit_id": "0d6e95c6f1dea5e2",
+      "node_id": "signal_processing",
+      "field": "dependencies.probability.rationale",
+      "text": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Probability theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "8f197c78ef8a5b35",
+      "node_id": "signal_processing",
+      "dependency_id": "linear_algebra",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Linear algebra."
+    },
+    {
+      "edge_id": "1d97f68eea15b8b5",
+      "node_id": "signal_processing",
+      "dependency_id": "calculus",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+    },
+    {
+      "edge_id": "267608c499b9c317",
+      "node_id": "signal_processing",
+      "dependency_id": "probability",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Probability theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/signal_processing.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

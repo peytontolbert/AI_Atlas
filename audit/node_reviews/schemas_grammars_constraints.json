@@ -1,0 +1,184 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "c617ed9b310c76f2",
+      "node_id": "schemas_grammars_constraints",
+      "field": "definition",
+      "text": "Schemas, grammars, and formal languages represent allowable structure for JSON, SQL, code, tool calls, plans, or domain records.",
+      "source_ids": [
+        "ref_aima",
+        "ref_structured"
+      ],
+      "evidence_location": "Structured-output survey on constrained/structured generation; AIMA formal languages/planning/logic context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The structured-output source supports schemas/grammars as constraints for output formats. The list of JSON, SQL, code, tool calls, plans, and domain records is synthesized."
+    },
+    {
+      "unit_id": "39cb21d9ed7c9a05",
+      "node_id": "schemas_grammars_constraints",
+      "field": "why_it_matters",
+      "text": "They give generators a machine-checkable contract instead of relying solely on prose format instructions.",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "Structured-output survey discussion of constrained decoding/structured generation and format compliance.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source supports machine-checkable structure and constrained generation, while 'contract' versus prose instructions is synthesized wording."
+    },
+    {
+      "unit_id": "ae322d69931b6e25",
+      "node_id": "schemas_grammars_constraints",
+      "field": "examples[1]",
+      "text": "JSON Schema",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "Structured-output survey examples of schema-constrained/JSON output generation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "JSON Schema is a direct example of a schema formalism for allowable JSON structure."
+    },
+    {
+      "unit_id": "acf44fe0c5ce4194",
+      "node_id": "schemas_grammars_constraints",
+      "field": "examples[2]",
+      "text": "context-free grammars",
+      "source_ids": [
+        "ref_aima",
+        "ref_structured"
+      ],
+      "evidence_location": "AIMA formal language context; structured-output survey discusses grammar-constrained generation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Context-free grammars are formal grammars used to specify allowable syntax."
+    },
+    {
+      "unit_id": "b202406aabc04ae7",
+      "node_id": "schemas_grammars_constraints",
+      "field": "examples[3]",
+      "text": "typed function signatures",
+      "source_ids": [
+        "ref_structured",
+        "ref_aima"
+      ],
+      "evidence_location": "Structured-output survey/tool-call schema context; AIMA programming/type-related formalism context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Typed function signatures are a plausible formal interface constraint, though the exact phrase is not confirmed directly from the packet sources."
+    },
+    {
+      "unit_id": "069267acadf6187c",
+      "node_id": "schemas_grammars_constraints",
+      "field": "limitations[1]",
+      "text": "Syntactic validity does not ensure semantic correctness, safe values, authorization, or successful execution.",
+      "source_ids": [
+        "ref_structured",
+        "ref_nist"
+      ],
+      "evidence_location": "Structured-output survey on format/structure compliance limits; NIST AI RMF for safety/risk considerations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The distinction between syntax/format validity and semantic/safety correctness is supported conceptually, but the combined list is synthesized."
+    },
+    {
+      "unit_id": "18b9538eb4f04a67",
+      "node_id": "schemas_grammars_constraints",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Schemas, grammars & formal output languages rests on the formal or computational capabilities supplied by Discrete mathematics & logic.",
+      "source_ids": [
+        "ref_aima",
+        "ref_structured"
+      ],
+      "evidence_location": "AIMA formal language/logic context; structured-output survey grammar/schema constraints.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Formal grammars and constraints are discrete symbolic/logical structures."
+    },
+    {
+      "unit_id": "a1479f47741af50c",
+      "node_id": "schemas_grammars_constraints",
+      "field": "dependencies.programming_languages_types.rationale",
+      "text": "Schemas, grammars & formal output languages rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems.",
+      "source_ids": [
+        "ref_structured",
+        "ref_aima"
+      ],
+      "evidence_location": "Structured-output survey on code/tool-call/output constraints; AIMA programming and formal language context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Grammars, formal languages, and typed signatures align with programming language/type-system concepts."
+    },
+    {
+      "unit_id": "9c10903b1ef52fa6",
+      "node_id": "schemas_grammars_constraints",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Schemas, grammars & formal output languages consumes, emits, or organizes information using Tokens, vocabularies & symbolic units.",
+      "source_ids": [
+        "ref_structured",
+        "ref_aima"
+      ],
+      "evidence_location": "Structured-output survey constrained decoding context; AIMA formal-language context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Formal languages and constrained decoding operate over tokens/symbols, though the exact rationale is graph-derived."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "3bbfce89877cd414",
+      "node_id": "schemas_grammars_constraints",
+      "dependency_id": "discrete_math_logic",
+      "source_ids": [
+        "ref_aima",
+        "ref_structured"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Schemas, grammars, constraints, and formal languages are discrete symbolic/logical constructs; requires/core is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b306af0ad874de43",
+      "node_id": "schemas_grammars_constraints",
+      "dependency_id": "programming_languages_types",
+      "source_ids": [
+        "ref_structured",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Formal output languages, grammars, and typed tool/function interfaces are closely tied to programming-language and type-system concepts.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "7bf5cf324fc0d778",
+      "node_id": "schemas_grammars_constraints",
+      "dependency_id": "tokens_vocab",
+      "source_ids": [
+        "ref_structured",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Grammars and constrained generation organize token/symbol sequences; represents_with/common is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

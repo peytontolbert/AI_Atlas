@@ -1,0 +1,206 @@
+{
+  "node_id": "runtime_assurance",
+  "label": "Runtime assurance, monitors & safety envelopes",
+  "layer": "alignment",
+  "editorial_status": "curated",
+  "node": {
+    "id": "runtime_assurance",
+    "label": "Runtime assurance, monitors & safety envelopes",
+    "layer": "alignment",
+    "tags": [
+      "safety",
+      "agents",
+      "robotics"
+    ],
+    "aliases": [],
+    "definition": "Runtime assurance monitors a deployed system and blocks, overrides, degrades, or transfers control when behavior approaches a defined safety boundary.",
+    "why_it_matters": "It provides protection when correctness cannot be fully established before deployment.",
+    "examples": [
+      "robot safety shields",
+      "tool-call policy monitors",
+      "fallback controllers"
+    ],
+    "limitations": [
+      "Monitors can miss unmodeled hazards, trigger too late, or become a single point of failure."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_formalml",
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "formal_agent_verification",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Runtime assurance, monitors & safety envelopes measures, constrains, audits, or governs behavior using Formal verification of agents & plans."
+      },
+      {
+        "id": "human_loop_sandbox",
+        "type": "verifies_with",
+        "strength": "core",
+        "rationale": "Runtime assurance, monitors & safety envelopes checks candidate behavior or artifacts against evidence or constraints from Human-in-the-loop, permissions & sandboxing."
+      },
+      {
+        "id": "repro_monitoring",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Runtime assurance, monitors & safety envelopes measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Runtime assurance, monitors & safety envelopes measures, constrains, audits, or governs behavior using Dynamical systems & control theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "8397000307757419",
+      "node_id": "runtime_assurance",
+      "field": "definition",
+      "text": "Runtime assurance monitors a deployed system and blocks, overrides, degrades, or transfers control when behavior approaches a defined safety boundary."
+    },
+    {
+      "unit_id": "37af147877518c4c",
+      "node_id": "runtime_assurance",
+      "field": "why_it_matters",
+      "text": "It provides protection when correctness cannot be fully established before deployment."
+    },
+    {
+      "unit_id": "f99abaa079636b79",
+      "node_id": "runtime_assurance",
+      "field": "examples[1]",
+      "text": "robot safety shields"
+    },
+    {
+      "unit_id": "23f10dc017f48641",
+      "node_id": "runtime_assurance",
+      "field": "examples[2]",
+      "text": "tool-call policy monitors"
+    },
+    {
+      "unit_id": "7eff856a7c987832",
+      "node_id": "runtime_assurance",
+      "field": "examples[3]",
+      "text": "fallback controllers"
+    },
+    {
+      "unit_id": "60ac90eb0510c929",
+      "node_id": "runtime_assurance",
+      "field": "limitations[1]",
+      "text": "Monitors can miss unmodeled hazards, trigger too late, or become a single point of failure."
+    },
+    {
+      "unit_id": "ec241fdd8b9ca956",
+      "node_id": "runtime_assurance",
+      "field": "dependencies.formal_agent_verification.rationale",
+      "text": "Runtime assurance, monitors & safety envelopes measures, constrains, audits, or governs behavior using Formal verification of agents & plans."
+    },
+    {
+      "unit_id": "a55584e6c2823671",
+      "node_id": "runtime_assurance",
+      "field": "dependencies.human_loop_sandbox.rationale",
+      "text": "Runtime assurance, monitors & safety envelopes checks candidate behavior or artifacts against evidence or constraints from Human-in-the-loop, permissions & sandboxing."
+    },
+    {
+      "unit_id": "60bff2104ea06bc9",
+      "node_id": "runtime_assurance",
+      "field": "dependencies.repro_monitoring.rationale",
+      "text": "Runtime assurance, monitors & safety envelopes measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+    },
+    {
+      "unit_id": "2da1ba8c12fe27f9",
+      "node_id": "runtime_assurance",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Runtime assurance, monitors & safety envelopes measures, constrains, audits, or governs behavior using Dynamical systems & control theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "8ab01abe00166341",
+      "node_id": "runtime_assurance",
+      "dependency_id": "formal_agent_verification",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Runtime assurance, monitors & safety envelopes measures, constrains, audits, or governs behavior using Formal verification of agents & plans."
+    },
+    {
+      "edge_id": "f6107d14dc964505",
+      "node_id": "runtime_assurance",
+      "dependency_id": "human_loop_sandbox",
+      "type": "verifies_with",
+      "strength": "core",
+      "rationale": "Runtime assurance, monitors & safety envelopes checks candidate behavior or artifacts against evidence or constraints from Human-in-the-loop, permissions & sandboxing."
+    },
+    {
+      "edge_id": "df5775acbd16792e",
+      "node_id": "runtime_assurance",
+      "dependency_id": "repro_monitoring",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Runtime assurance, monitors & safety envelopes measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+    },
+    {
+      "edge_id": "cc96214f0fdb2c90",
+      "node_id": "runtime_assurance",
+      "dependency_id": "dynamical_control",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Runtime assurance, monitors & safety envelopes measures, constrains, audits, or governs behavior using Dynamical systems & control theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_formalml": {
+        "id": "ref_formalml",
+        "title": "Formal Methods for Machine Learning: A Survey",
+        "authors": "Seshia, Sadigh & Sastry",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2104.02466"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_formalml": {
+        "id": "ref_formalml",
+        "title": "Formal Methods for Machine Learning: A Survey",
+        "authors": "Seshia, Sadigh & Sastry",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2104.02466"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/runtime_assurance.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

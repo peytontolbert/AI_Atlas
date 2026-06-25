@@ -1,0 +1,138 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "b452a700589f4f25",
+      "node_id": "bellman_td",
+      "field": "definition",
+      "text": "Predicted value is matched to reward plus discounted future value; it operationally connects Reinforcement learning and Dynamical systems & control theory.",
+      "source_ids": ["ref_rlbook", "ref_aima"],
+      "evidence_location": "Sutton & Barto RL book, Bellman equations and temporal-difference learning chapters; AIMA Chapter 22 reinforcement learning and Chapter 26 planning/control.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The Bellman/TD target is directly supported; the explicit bridge to dynamical systems/control is a synthesis across RL and control sources."
+    },
+    {
+      "unit_id": "04dea614683299d4",
+      "node_id": "bellman_td",
+      "field": "why_it_matters",
+      "text": "The role of Bellman, temporal-difference & value objectives is to connect Reinforcement learning, Dynamical systems & control theory to downstream capabilities including Policy-gradient & actor–critic objectives.",
+      "source_ids": ["ref_rlbook", "ref_aima"],
+      "evidence_location": "Sutton & Barto RL book, value functions, TD learning, and actor-critic methods; AIMA RL and planning/control chapters.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "RL/value/actor-critic links are supported; the graph-role language is synthesized."
+    },
+    {
+      "unit_id": "226edadb3afd80b6",
+      "node_id": "bellman_td",
+      "field": "examples[1]",
+      "text": "substrate for Policy-gradient & actor–critic objectives",
+      "source_ids": ["ref_rlbook"],
+      "evidence_location": "Sutton & Barto RL book, actor-critic methods use learned value functions/critics alongside policy updates.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Actor-critic methods directly use value/critic estimates, supporting the substrate relation."
+    },
+    {
+      "unit_id": "9f7336870528c52f",
+      "node_id": "bellman_td",
+      "field": "examples[2]",
+      "text": "combined with Reinforcement learning",
+      "source_ids": ["ref_rlbook", "ref_aima"],
+      "evidence_location": "Sutton & Barto RL book, Bellman/TD learning as central RL material; AIMA Chapter 22 reinforcement learning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Bellman and TD objectives are directly part of reinforcement learning."
+    },
+    {
+      "unit_id": "ea45cc54d83af707",
+      "node_id": "bellman_td",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Reinforcement learning, Dynamical systems & control theory.",
+      "source_ids": ["ref_rlbook", "ref_aima"],
+      "evidence_location": "Sutton & Barto RL book, value-function/TD objective material; AIMA RL and planning/control chapters.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependencies are supported, but the generic objective-mismatch limitation is not directly evidenced."
+    },
+    {
+      "unit_id": "47f5abcd04e1e5e8",
+      "node_id": "bellman_td",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Bellman, temporal-difference & value objectives uses Reinforcement learning as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_rlbook", "ref_aima"],
+      "evidence_location": "Sutton & Barto RL book, Bellman equations, value functions, and TD learning; AIMA Chapter 22 reinforcement learning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited sources directly place Bellman/TD/value objectives inside RL."
+    },
+    {
+      "unit_id": "5a346c7f3e04b708",
+      "node_id": "bellman_td",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Bellman, temporal-difference & value objectives uses Dynamical systems & control theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_rlbook", "ref_aima"],
+      "evidence_location": "AIMA planning/control chapter and RL chapter; Sutton & Barto sequential decision/value-function material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Control/sequential-dynamics context supports the dependency, but the exact atlas rationale is synthesized."
+    },
+    {
+      "unit_id": "a1dbded9179e548b",
+      "node_id": "bellman_td",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Bellman, temporal-difference & value objectives uses Game theory & decision theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_aima", "ref_rlbook"],
+      "evidence_location": "AIMA decision-making and game-theory chapters plus reinforcement learning chapter; Sutton & Barto RL sequential decision material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Decision-theoretic support is plausible; game theory is not directly necessary for Bellman/TD objectives and is broader than the cited evidence."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "334e2ed4a0638b08",
+      "node_id": "bellman_td",
+      "dependency_id": "reinforcement_learning",
+      "source_ids": ["ref_rlbook", "ref_aima"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Bellman/TD/value objectives are central RL topics; core strength is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "422765fa015a6c29",
+      "node_id": "bellman_td",
+      "dependency_id": "dynamical_control",
+      "source_ids": ["ref_rlbook", "ref_aima"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sequential dynamics/control context supports the edge; core strength is defensible but not directly stated as a dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4cf06f1197fa3830",
+      "node_id": "bellman_td",
+      "dependency_id": "game_decision_theory",
+      "source_ids": ["ref_aima", "ref_rlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Decision theory is relevant to value objectives, but game theory is only broadly related; common strength is plausible but not strongly sourced.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

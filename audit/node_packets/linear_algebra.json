@@ -1,0 +1,93 @@
+{
+  "node_id": "linear_algebra",
+  "label": "Linear algebra",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "linear_algebra",
+    "label": "Linear algebra",
+    "layer": "foundation",
+    "tags": [
+      "math",
+      "core"
+    ],
+    "aliases": [],
+    "definition": "Vectors, matrices, tensor contractions, eigensystems, and linear maps form the numerical language of modern machine learning.",
+    "why_it_matters": "The role of Linear algebra is to connect lower-level principles to downstream capabilities including Optimization theory, Numerical analysis, Dynamical systems & control theory.",
+    "examples": [
+      "substrate for Optimization theory",
+      "substrate for Numerical analysis",
+      "substrate for Dynamical systems & control theory"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": []
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d0ca30dcbae2d968",
+      "node_id": "linear_algebra",
+      "field": "definition",
+      "text": "Vectors, matrices, tensor contractions, eigensystems, and linear maps form the numerical language of modern machine learning."
+    },
+    {
+      "unit_id": "374e8bc347fc0097",
+      "node_id": "linear_algebra",
+      "field": "why_it_matters",
+      "text": "The role of Linear algebra is to connect lower-level principles to downstream capabilities including Optimization theory, Numerical analysis, Dynamical systems & control theory."
+    },
+    {
+      "unit_id": "83902d54c58372cb",
+      "node_id": "linear_algebra",
+      "field": "examples[1]",
+      "text": "substrate for Optimization theory"
+    },
+    {
+      "unit_id": "28ef448d6434affd",
+      "node_id": "linear_algebra",
+      "field": "examples[2]",
+      "text": "substrate for Numerical analysis"
+    },
+    {
+      "unit_id": "94482c8356a14bb6",
+      "node_id": "linear_algebra",
+      "field": "examples[3]",
+      "text": "substrate for Dynamical systems & control theory"
+    },
+    {
+      "unit_id": "4009a111bc967997",
+      "node_id": "linear_algebra",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting."
+    }
+  ],
+  "edge_units": [],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {}
+  },
+  "review_output_path": "audit/node_reviews/linear_algebra.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

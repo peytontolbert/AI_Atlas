@@ -1,0 +1,216 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "a4309eddcd88877f",
+      "node_id": "memory_lifecycle",
+      "field": "definition",
+      "text": "Memory lifecycle policies decide what to record, summarize, validate, retain, merge, expire, forget, or delete across repeated interactions.",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "AIMA and NIST support memory/AI risk-management concerns including retention/privacy in broad terms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The lifecycle policy list is plausible, but a dedicated memory lifecycle source would make it direct."
+    },
+    {
+      "unit_id": "e00028884c90f404",
+      "node_id": "memory_lifecycle",
+      "field": "why_it_matters",
+      "text": "Persistent memory needs explicit freshness, privacy, conflict, and capacity rules rather than unbounded accumulation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "AIMA and NIST support the need to manage persistence, privacy, conflicts, and risk rather than accumulating unchecked state.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "This is a policy/design synthesis rather than a directly quoted claim."
+    },
+    {
+      "unit_id": "e2424cf85342ffb8",
+      "node_id": "memory_lifecycle",
+      "field": "examples[1]",
+      "text": "time-to-live episodic memories",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "e5cdbe6a0671eabe",
+      "node_id": "memory_lifecycle",
+      "field": "examples[2]",
+      "text": "conflict-aware consolidation",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "0ff5e4f44ba8caed",
+      "node_id": "memory_lifecycle",
+      "field": "examples[3]",
+      "text": "user-requested forgetting",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "1e97886c6806b747",
+      "node_id": "memory_lifecycle",
+      "field": "limitations[1]",
+      "text": "Deleting derived influence is difficult, stale memories can persist, and consolidation may erase minority or recent evidence.",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "AIMA/NIST support privacy, persistence, and risk-management concerns; consolidation side effects are broader synthesis.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Forgetting/deletion difficulty and stale-memory risk are plausible; direct lifecycle evidence would strengthen the claim."
+    },
+    {
+      "unit_id": "8754b5444ac77cb1",
+      "node_id": "memory_lifecycle",
+      "field": "dependencies.episodic_memory.rationale",
+      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Episodic memory.",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "The packet references support episodic_memory or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "bad440b65f86eec5",
+      "node_id": "memory_lifecycle",
+      "field": "dependencies.semantic_memory.rationale",
+      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Semantic memory.",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "The packet references support semantic_memory or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "427617c66fd3dcc1",
+      "node_id": "memory_lifecycle",
+      "field": "dependencies.knowledge_editing.rationale",
+      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Knowledge editing & memory consolidation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "The packet references support knowledge_editing or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "8746bd87297100a6",
+      "node_id": "memory_lifecycle",
+      "field": "dependencies.provenance_citations.rationale",
+      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Provenance, citations & evidence tracking.",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "evidence_location": "The packet references support provenance_citations or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "2422786556770420",
+      "node_id": "memory_lifecycle",
+      "dependency_id": "episodic_memory",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4e24b143822ca2be",
+      "node_id": "memory_lifecycle",
+      "dependency_id": "semantic_memory",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "3b407ba7f8b82653",
+      "node_id": "memory_lifecycle",
+      "dependency_id": "knowledge_editing",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Knowledge editing can implement memory lifecycle changes, but \u201cretrieves_from\u201d is not the right relationship type.",
+      "relationship_type_supported": false,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0fd3a7273a7b0958",
+      "node_id": "memory_lifecycle",
+      "dependency_id": "provenance_citations",
+      "source_ids": [
+        "ref_aima",
+        "ref_nist"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Provenance supports lifecycle decisions; \u201cretrieves_from\u201d is not ideal relationship wording.",
+      "relationship_type_supported": false,
+      "strength_supported": true
+    }
+  ]
+}

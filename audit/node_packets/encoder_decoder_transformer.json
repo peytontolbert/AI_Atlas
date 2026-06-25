@@ -1,0 +1,184 @@
+{
+  "node_id": "encoder_decoder_transformer",
+  "label": "Encoder–decoder transformers",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "encoder_decoder_transformer",
+    "label": "Encoder–decoder transformers",
+    "layer": "model",
+    "tags": [
+      "model",
+      "transformer",
+      "sequence"
+    ],
+    "aliases": [],
+    "definition": "An encoder–decoder transformer builds a bidirectional source representation and generates a target sequence through cross-attention and causal decoding.",
+    "why_it_matters": "The role of Encoder–decoder transformers is to connect Transformers, Cross-attention & co-attention to downstream capabilities including Speech recognition & spoken-language understanding.",
+    "examples": [
+      "substrate for Speech recognition & spoken-language understanding",
+      "combined with Transformers"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Cross-attention & co-attention."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_transformer"
+    ],
+    "dependencies": [
+      {
+        "id": "transformer",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Encoder–decoder transformers extends or specializes the architecture family Transformers."
+      },
+      {
+        "id": "cross_attention",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Encoder–decoder transformers is assembled in part from the mechanism or model component Cross-attention & co-attention."
+      },
+      {
+        "id": "masking",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Encoder–decoder transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
+      },
+      {
+        "id": "autoregressive_decoding",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Encoder–decoder transformers is assembled in part from the mechanism or model component Autoregressive decoding."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d89a334a1431e709",
+      "node_id": "encoder_decoder_transformer",
+      "field": "definition",
+      "text": "An encoder–decoder transformer builds a bidirectional source representation and generates a target sequence through cross-attention and causal decoding."
+    },
+    {
+      "unit_id": "cea4e0f585b99f14",
+      "node_id": "encoder_decoder_transformer",
+      "field": "why_it_matters",
+      "text": "The role of Encoder–decoder transformers is to connect Transformers, Cross-attention & co-attention to downstream capabilities including Speech recognition & spoken-language understanding."
+    },
+    {
+      "unit_id": "ddcec8862fedf5eb",
+      "node_id": "encoder_decoder_transformer",
+      "field": "examples[1]",
+      "text": "substrate for Speech recognition & spoken-language understanding"
+    },
+    {
+      "unit_id": "38c58aeff8bdbcb4",
+      "node_id": "encoder_decoder_transformer",
+      "field": "examples[2]",
+      "text": "combined with Transformers"
+    },
+    {
+      "unit_id": "3000a31f38b19048",
+      "node_id": "encoder_decoder_transformer",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Cross-attention & co-attention."
+    },
+    {
+      "unit_id": "a514608399e5a2e1",
+      "node_id": "encoder_decoder_transformer",
+      "field": "dependencies.transformer.rationale",
+      "text": "Encoder–decoder transformers extends or specializes the architecture family Transformers."
+    },
+    {
+      "unit_id": "8891384f2aef189d",
+      "node_id": "encoder_decoder_transformer",
+      "field": "dependencies.cross_attention.rationale",
+      "text": "Encoder–decoder transformers is assembled in part from the mechanism or model component Cross-attention & co-attention."
+    },
+    {
+      "unit_id": "b514ee3481a13ed5",
+      "node_id": "encoder_decoder_transformer",
+      "field": "dependencies.masking.rationale",
+      "text": "Encoder–decoder transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
+    },
+    {
+      "unit_id": "8e3ad3a55f4b0cf0",
+      "node_id": "encoder_decoder_transformer",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "Encoder–decoder transformers is assembled in part from the mechanism or model component Autoregressive decoding."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "e5dc7c2ac62ed84c",
+      "node_id": "encoder_decoder_transformer",
+      "dependency_id": "transformer",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Encoder–decoder transformers extends or specializes the architecture family Transformers."
+    },
+    {
+      "edge_id": "f633ba1acc9b618b",
+      "node_id": "encoder_decoder_transformer",
+      "dependency_id": "cross_attention",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Encoder–decoder transformers is assembled in part from the mechanism or model component Cross-attention & co-attention."
+    },
+    {
+      "edge_id": "3af6b7bdf1ae96a7",
+      "node_id": "encoder_decoder_transformer",
+      "dependency_id": "masking",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Encoder–decoder transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
+    },
+    {
+      "edge_id": "9a244323afcab7d1",
+      "node_id": "encoder_decoder_transformer",
+      "dependency_id": "autoregressive_decoding",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Encoder–decoder transformers is assembled in part from the mechanism or model component Autoregressive decoding."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/encoder_decoder_transformer.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "node_id": "gpu_kernels",
+  "label": "CUDA, ROCm, Triton & custom kernels",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "gpu_kernels",
+    "label": "CUDA, ROCm, Triton & custom kernels",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "hardware",
+      "performance"
+    ],
+    "aliases": [],
+    "definition": "CUDA, ROCm, Triton, and custom kernels map tensor operations onto accelerator threads, memory tiles, vector units, and communication primitives.",
+    "why_it_matters": "The role of CUDA, ROCm, Triton & custom kernels is to connect GPUs, TPUs & AI accelerators, Algorithms & data structures to downstream capabilities including Graph compilers, runtimes & operator fusion.",
+    "examples": [
+      "substrate for Graph compilers, runtimes & operator fusion",
+      "combined with GPUs, TPUs & AI accelerators"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include GPUs, TPUs & AI accelerators, Algorithms & data structures."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_cuda_guide",
+      "ref_rocm"
+    ],
+    "dependencies": [
+      {
+        "id": "accelerators",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "CUDA, ROCm, Triton & custom kernels turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "CUDA, ROCm, Triton & custom kernels turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "tensors",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "CUDA, ROCm, Triton & custom kernels turns Scalars, vectors, matrices & tensors into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "fde8c45810d417b5",
+      "node_id": "gpu_kernels",
+      "field": "definition",
+      "text": "CUDA, ROCm, Triton, and custom kernels map tensor operations onto accelerator threads, memory tiles, vector units, and communication primitives."
+    },
+    {
+      "unit_id": "0464f34dc107f7e1",
+      "node_id": "gpu_kernels",
+      "field": "why_it_matters",
+      "text": "The role of CUDA, ROCm, Triton & custom kernels is to connect GPUs, TPUs & AI accelerators, Algorithms & data structures to downstream capabilities including Graph compilers, runtimes & operator fusion."
+    },
+    {
+      "unit_id": "a64f7d3b3f20e320",
+      "node_id": "gpu_kernels",
+      "field": "examples[1]",
+      "text": "substrate for Graph compilers, runtimes & operator fusion"
+    },
+    {
+      "unit_id": "6c3a9189976de0b2",
+      "node_id": "gpu_kernels",
+      "field": "examples[2]",
+      "text": "combined with GPUs, TPUs & AI accelerators"
+    },
+    {
+      "unit_id": "e124c5aafe5dce8a",
+      "node_id": "gpu_kernels",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include GPUs, TPUs & AI accelerators, Algorithms & data structures."
+    },
+    {
+      "unit_id": "39d2bbde675d9fc2",
+      "node_id": "gpu_kernels",
+      "field": "dependencies.accelerators.rationale",
+      "text": "CUDA, ROCm, Triton & custom kernels turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "84a1f8096caa3209",
+      "node_id": "gpu_kernels",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "CUDA, ROCm, Triton & custom kernels turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "7f5186b8f875fddf",
+      "node_id": "gpu_kernels",
+      "field": "dependencies.tensors.rationale",
+      "text": "CUDA, ROCm, Triton & custom kernels turns Scalars, vectors, matrices & tensors into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "15442d1bb8263db6",
+      "node_id": "gpu_kernels",
+      "dependency_id": "accelerators",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "CUDA, ROCm, Triton & custom kernels turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "7a6b023fbd5cf7e7",
+      "node_id": "gpu_kernels",
+      "dependency_id": "algorithms_data_structures",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "CUDA, ROCm, Triton & custom kernels turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "71bd8243bd18f7f2",
+      "node_id": "gpu_kernels",
+      "dependency_id": "tensors",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "CUDA, ROCm, Triton & custom kernels turns Scalars, vectors, matrices & tensors into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_cuda_guide": {
+        "id": "ref_cuda_guide",
+        "title": "NVIDIA CUDA C Programming Guide",
+        "authors": "NVIDIA",
+        "year": 2024,
+        "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html"
+      },
+      "ref_rocm": {
+        "id": "ref_rocm",
+        "title": "ROCm Documentation",
+        "authors": "AMD",
+        "year": 2026,
+        "url": "https://rocm.docs.amd.com/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_cuda_guide": {
+        "id": "ref_cuda_guide",
+        "title": "NVIDIA CUDA C Programming Guide",
+        "authors": "NVIDIA",
+        "year": 2024,
+        "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_tpu": {
+        "id": "ref_tpu",
+        "title": "In-Datacenter Performance Analysis of a Tensor Processing Unit",
+        "authors": "Jouppi et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1704.04760"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/gpu_kernels.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

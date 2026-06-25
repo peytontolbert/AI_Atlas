@@ -1,0 +1,186 @@
+{
+  "node_id": "mlp",
+  "label": "Multilayer perceptrons",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "mlp",
+    "label": "Multilayer perceptrons",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural"
+    ],
+    "aliases": [
+      "feed-forward neural network",
+      "FFN"
+    ],
+    "definition": "A multilayer perceptron stacks affine transformations and nonlinear activations to learn general nonlinear mappings over fixed-size feature vectors.",
+    "why_it_matters": "The role of Multilayer perceptrons is to connect Affine transforms & dense layers, Nonlinear activations to downstream capabilities including Neural fields & radiance-field models.",
+    "examples": [
+      "substrate for Neural fields & radiance-field models",
+      "combined with Affine transforms & dense layers"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Affine transforms & dense layers, Nonlinear activations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "affine_dense",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Multilayer perceptrons is assembled in part from the mechanism or model component Affine transforms & dense layers."
+      },
+      {
+        "id": "nonlinear_activations",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Multilayer perceptrons is assembled in part from the mechanism or model component Nonlinear activations."
+      },
+      {
+        "id": "residual_connections",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Multilayer perceptrons is assembled in part from the mechanism or model component Residual, skip & highway connections."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Multilayer perceptrons follows the learning setup expressed by Supervised learning."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "efdda7a3a644aab8",
+      "node_id": "mlp",
+      "field": "definition",
+      "text": "A multilayer perceptron stacks affine transformations and nonlinear activations to learn general nonlinear mappings over fixed-size feature vectors."
+    },
+    {
+      "unit_id": "e8ada3771fe79904",
+      "node_id": "mlp",
+      "field": "why_it_matters",
+      "text": "The role of Multilayer perceptrons is to connect Affine transforms & dense layers, Nonlinear activations to downstream capabilities including Neural fields & radiance-field models."
+    },
+    {
+      "unit_id": "2e71ae26d435923a",
+      "node_id": "mlp",
+      "field": "examples[1]",
+      "text": "substrate for Neural fields & radiance-field models"
+    },
+    {
+      "unit_id": "0c182519cdf7cde0",
+      "node_id": "mlp",
+      "field": "examples[2]",
+      "text": "combined with Affine transforms & dense layers"
+    },
+    {
+      "unit_id": "c6b8e80bc9a4aed0",
+      "node_id": "mlp",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Affine transforms & dense layers, Nonlinear activations."
+    },
+    {
+      "unit_id": "654c0fe40a55389c",
+      "node_id": "mlp",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Multilayer perceptrons is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "unit_id": "98edb96dc8a8fd65",
+      "node_id": "mlp",
+      "field": "dependencies.nonlinear_activations.rationale",
+      "text": "Multilayer perceptrons is assembled in part from the mechanism or model component Nonlinear activations."
+    },
+    {
+      "unit_id": "f9c3669f68582869",
+      "node_id": "mlp",
+      "field": "dependencies.residual_connections.rationale",
+      "text": "Multilayer perceptrons is assembled in part from the mechanism or model component Residual, skip & highway connections."
+    },
+    {
+      "unit_id": "1b7fa83fd759b6f4",
+      "node_id": "mlp",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Multilayer perceptrons follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "600b3d5882e05933",
+      "node_id": "mlp",
+      "dependency_id": "affine_dense",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Multilayer perceptrons is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "edge_id": "865a505d2636c831",
+      "node_id": "mlp",
+      "dependency_id": "nonlinear_activations",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Multilayer perceptrons is assembled in part from the mechanism or model component Nonlinear activations."
+    },
+    {
+      "edge_id": "8f3d2a43ce498745",
+      "node_id": "mlp",
+      "dependency_id": "residual_connections",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Multilayer perceptrons is assembled in part from the mechanism or model component Residual, skip & highway connections."
+    },
+    {
+      "edge_id": "e76eeb6ca5b8acdd",
+      "node_id": "mlp",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Multilayer perceptrons follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/mlp.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

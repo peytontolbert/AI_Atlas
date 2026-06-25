@@ -1,0 +1,164 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "461aa1ccf4b109d4",
+      "node_id": "databases_ir",
+      "field": "definition",
+      "text": "Storage, indexing, ranking, query processing, and transactions make external knowledge accessible at scale.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://db-book.com/toc-dir/toc.pdf",
+        "url:https://nlp.stanford.edu/IR-book/"
+      ],
+      "evidence_location": "Database System Concepts 7e table of contents: storage management and indexing chapters 12-14, query processing and optimization chapters 15-16, transaction management chapters 17-19, parallel/distributed storage and query processing chapters 21-22 (PDF lines 141-254 and 269-294); Introduction to Information Retrieval companion site: chapters on indexes, scoring/ranking, evaluation, web crawling and indexes (lines 27-50); AIMA contents.html: storage and retrieval in first-order inference (lines 239-252) and nearest-neighbor/k-d tree/locality-sensitive hashing topics (lines 518-522).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The inspected sources support the listed components: storage, indexing, query processing, transactions, and ranking/retrieval. The phrase 'make external knowledge accessible at scale' is a defensible synthesis across database and IR systems rather than a directly stated claim."
+    },
+    {
+      "unit_id": "eefcfe6d637772d2",
+      "node_id": "databases_ir",
+      "field": "why_it_matters",
+      "text": "The role of Databases & information retrieval is to connect Algorithms & data structures, Statistics & experimental design to downstream capabilities including Datasets, sampling & splits, Knowledge graphs, ontologies & schemas, External retrieval & ranking.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://db-book.com/toc-dir/toc.pdf",
+        "url:https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html"
+      ],
+      "evidence_location": "AIMA contents.html: search algorithms/data structures (lines 68-101), database semantics and storage/retrieval in logic (lines 216-252), semantic networks/description logics (lines 264-278), and statistical/probabilistic learning topics (lines 542-560); Database System Concepts 7e table of contents: textual data, big data storage, graph databases, statistics for query optimization, storage/indexing/query/transaction chapters (PDF lines 97-140 and 141-254); Introduction to Information Retrieval HTML edition: indexes, scoring, evaluation, probabilistic IR, web crawling/indexes (lines 88-193 and 279-300).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support many component connections among algorithms, statistics, databases, knowledge representation, and retrieval/ranking. The exact atlas role statement and named downstream set are graph-derived and not directly asserted by the inspected evidence; 'sampling & splits' is especially indirect."
+    },
+    {
+      "unit_id": "4e72f4edb217043a",
+      "node_id": "databases_ir",
+      "field": "examples[1]",
+      "text": "substrate for Datasets, sampling & splits",
+      "source_ids": [
+        "url:https://db-book.com/toc-dir/toc.pdf",
+        "ref_aima"
+      ],
+      "evidence_location": "Database System Concepts 7e table of contents: database applications, data model/schema/query languages, big data storage systems, streaming data, and data analytics/data warehousing (PDF lines 1-37 and 121-140); AIMA contents.html: data collection, assessment, and management in ML systems (lines 533-539).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The evidence supports databases as infrastructure for storing and managing data, including large data and analytics settings. It does not directly support 'sampling & splits,' so the example should be narrowed or backed by a data-management-for-ML source."
+    },
+    {
+      "unit_id": "fe6008bbc3d592fa",
+      "node_id": "databases_ir",
+      "field": "examples[2]",
+      "text": "substrate for Knowledge graphs, ontologies & schemas",
+      "source_ids": [
+        "ref_aima",
+        "url:https://db-book.com/toc-dir/toc.pdf"
+      ],
+      "evidence_location": "AIMA contents.html: database semantics in first-order logic (line 217), assertions and queries in first-order logic (lines 218-231), knowledge engineering and vocabulary/encoding/querying steps (lines 223-232), semantic networks and description logics (lines 264-278); Database System Concepts 7e table of contents: database schema, E-R design, semi-structured data, XML, and graph databases (PDF lines 15-24, 60-96, 97-106, 121-132, and 347-351).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support overlap between database schemas/querying, graph databases, knowledge representation, semantic networks, and description logics. The compact 'substrate for' wording is atlas synthesis rather than an exact source statement."
+    },
+    {
+      "unit_id": "d4da9521c7293b30",
+      "node_id": "databases_ir",
+      "field": "examples[3]",
+      "text": "substrate for External retrieval & ranking",
+      "source_ids": [
+        "url:https://nlp.stanford.edu/IR-book/",
+        "url:https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html",
+        "ref_aima"
+      ],
+      "evidence_location": "Introduction to Information Retrieval companion site: book scope and table of contents covering Boolean retrieval, index construction/compression, scoring, computing scores in a search system, evaluation, probabilistic IR, web search, crawling, and indexes (lines 4-19 and 27-50); HTML edition: chapters on scoring, efficient scoring and ranking, components of an IR system, probabilistic IR, web search, and web crawling/indexes (lines 107-193 and 279-300); AIMA contents.html: storage and retrieval in first-order inference (lines 239-252).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The inspected IR source directly covers retrieval, indexing, scoring, ranking, and search-system components. The exact 'substrate for External retrieval & ranking' phrase is an atlas abstraction, so synthesis is more appropriate than verified."
+    },
+    {
+      "unit_id": "14e8e0486c0006a5",
+      "node_id": "databases_ir",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Algorithms & data structures, Statistics & experimental design.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://db-book.com/toc-dir/toc.pdf",
+        "url:https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html"
+      ],
+      "evidence_location": "AIMA contents.html: problem formulation, measuring performance, model selection/generalization, data collection/assessment/management, and statistical learning topics (lines 68-79 and 503-560); Database System Concepts 7e table of contents: relational algebra, database design/functional dependencies, estimating statistics for query optimization, and transaction isolation/atomicity (PDF lines 15-24, 79-96, 193-205, and 206-220); Introduction to Information Retrieval HTML edition: evaluation, relevance assessment, and system/user utility topics (lines 143-155).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support formal abstractions, evaluation concerns, and algorithmic/statistical components. They do not directly state the empirical-mismatch warning, and the direct-dependency sentence is graph-derived."
+    },
+    {
+      "unit_id": "cdea61f5f125d7e5",
+      "node_id": "databases_ir",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Databases & information retrieval rests on the formal or computational capabilities supplied by Algorithms & data structures.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://db-book.com/toc-dir/toc.pdf",
+        "url:https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html"
+      ],
+      "evidence_location": "AIMA contents.html: search algorithms/data structures and performance measurement (lines 68-101), storage/retrieval and efficient matching in first-order inference (lines 239-247), nearest-neighbor search, k-d trees, and locality-sensitive hashing (lines 518-522); Database System Concepts 7e table of contents: indexing, sorting, query processing, query optimization, parallel sort/join/query plans, and advanced indexing (PDF lines 165-205, 280-294, and 310-320); Introduction to Information Retrieval HTML edition: inverted indexes, postings lists, dictionaries, index construction/compression, scoring, efficient ranking, and web indexes (lines 53-142 and 290-300).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The inspected sources support algorithms and data structures as central machinery for database and IR indexing, query processing, scoring, and search. The exact 'rests on capabilities supplied by' wording remains atlas synthesis."
+    },
+    {
+      "unit_id": "8aac4cbd92814180",
+      "node_id": "databases_ir",
+      "field": "dependencies.statistics.rationale",
+      "text": "Databases & information retrieval rests on the formal or computational capabilities supplied by Statistics & experimental design.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://db-book.com/toc-dir/toc.pdf",
+        "url:https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html"
+      ],
+      "evidence_location": "AIMA contents.html: model selection, generalization, data collection/assessment/management, statistical learning, and probabilistic models (lines 503-560); Database System Concepts 7e table of contents: estimating statistics of expression results for query optimization and data analytics/data mining topics (PDF lines 133-140 and 193-205); Introduction to Information Retrieval HTML edition: statistical properties of terms, term weighting/scoring, evaluation of ranked results, relevance assessment, probabilistic IR, probability ranking principle, probability estimates, and Bayesian network approaches (lines 96-124, 143-155, and 179-193).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The evidence supports statistics as important for IR scoring/evaluation/probabilistic models and for database query optimization/analytics. The claim says the whole database/IR area 'rests on' statistics, which is broader than the inspected evidence, especially for core transaction and storage topics."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "d0d8906a2cc4dd35",
+      "node_id": "databases_ir",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": [
+        "ref_aima",
+        "url:https://db-book.com/toc-dir/toc.pdf",
+        "url:https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Database and IR systems use algorithms and data structures for indexing, sorting, query execution/optimization, retrieval, scoring, and nearest-neighbor search. The dependency direction from databases/IR to algorithms/data structures is defensible; the evidence supports 'requires' and 'core' as a synthesis rather than as a single-source assertion.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "78b2bfe264f7e641",
+      "node_id": "databases_ir",
+      "dependency_id": "statistics",
+      "source_ids": [
+        "ref_aima",
+        "url:https://db-book.com/toc-dir/toc.pdf",
+        "url:https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Statistics is well supported for IR evaluation, probabilistic ranking, term statistics, database query optimization estimates, and analytics. The dependency is plausible as a common prerequisite for ranking/evaluation/optimization, but 'requires' over the combined database/IR node is broader than the evidence because storage, transactions, and basic query processing are not primarily statistical.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

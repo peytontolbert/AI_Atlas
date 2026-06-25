@@ -1,0 +1,198 @@
+{
+  "node_id": "model_merging",
+  "label": "Model merging & weight-space composition",
+  "layer": "training",
+  "editorial_status": "curated",
+  "node": {
+    "id": "model_merging",
+    "label": "Model merging & weight-space composition",
+    "layer": "training",
+    "tags": [
+      "training",
+      "adaptation",
+      "composition"
+    ],
+    "aliases": [],
+    "definition": "Model merging combines compatible checkpoints or parameter deltas in weight space to obtain a new model without conventional joint retraining.",
+    "why_it_matters": "It offers a low-cost route to combine specialized capabilities, ensembling effects, or independently fine-tuned variants.",
+    "examples": [
+      "checkpoint averaging",
+      "task-vector merging",
+      "adapter fusion"
+    ],
+    "limitations": [
+      "Parameter alignment, interference, tokenizer mismatch, and evaluation across merged capabilities remain difficult."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_modelmerge"
+    ],
+    "dependencies": [
+      {
+        "id": "sft_instruction",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Model merging & weight-space composition uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "peft_lora",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Model merging & weight-space composition uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "linear_algebra",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Model merging & weight-space composition uses Linear algebra as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Model merging & weight-space composition uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "1a370a4e357d9b2a",
+      "node_id": "model_merging",
+      "field": "definition",
+      "text": "Model merging combines compatible checkpoints or parameter deltas in weight space to obtain a new model without conventional joint retraining."
+    },
+    {
+      "unit_id": "0e15dc8fce4a80a9",
+      "node_id": "model_merging",
+      "field": "why_it_matters",
+      "text": "It offers a low-cost route to combine specialized capabilities, ensembling effects, or independently fine-tuned variants."
+    },
+    {
+      "unit_id": "c81ea6c95481050c",
+      "node_id": "model_merging",
+      "field": "examples[1]",
+      "text": "checkpoint averaging"
+    },
+    {
+      "unit_id": "8874e5bb532df82b",
+      "node_id": "model_merging",
+      "field": "examples[2]",
+      "text": "task-vector merging"
+    },
+    {
+      "unit_id": "c3680212e165c081",
+      "node_id": "model_merging",
+      "field": "examples[3]",
+      "text": "adapter fusion"
+    },
+    {
+      "unit_id": "b9eccb0fe10c38e2",
+      "node_id": "model_merging",
+      "field": "limitations[1]",
+      "text": "Parameter alignment, interference, tokenizer mismatch, and evaluation across merged capabilities remain difficult."
+    },
+    {
+      "unit_id": "c3366db9c4b81f1a",
+      "node_id": "model_merging",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "Model merging & weight-space composition uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "366898dd6dd420fa",
+      "node_id": "model_merging",
+      "field": "dependencies.peft_lora.rationale",
+      "text": "Model merging & weight-space composition uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "edfb0252305a7a14",
+      "node_id": "model_merging",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Model merging & weight-space composition uses Linear algebra as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "db1519e95c4ff0e2",
+      "node_id": "model_merging",
+      "field": "dependencies.optimization.rationale",
+      "text": "Model merging & weight-space composition uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "93960a630881f92c",
+      "node_id": "model_merging",
+      "dependency_id": "sft_instruction",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Model merging & weight-space composition uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "8b44f74632337a27",
+      "node_id": "model_merging",
+      "dependency_id": "peft_lora",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Model merging & weight-space composition uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4b0df8e974e3a385",
+      "node_id": "model_merging",
+      "dependency_id": "linear_algebra",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Model merging & weight-space composition uses Linear algebra as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4140fc250f9fcdc5",
+      "node_id": "model_merging",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Model merging & weight-space composition uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_modelmerge": {
+        "id": "ref_modelmerge",
+        "title": "Model Soups: Averaging Weights of Multiple Fine-tuned Models Improves Accuracy without Increasing Inference Time",
+        "authors": "Wortsman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.05482"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_lora": {
+        "id": "ref_lora",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "authors": "Hu et al.",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2106.09685"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/model_merging.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

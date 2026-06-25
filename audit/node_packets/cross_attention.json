@@ -1,0 +1,151 @@
+{
+  "node_id": "cross_attention",
+  "label": "Cross-attention & co-attention",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "cross_attention",
+    "label": "Cross-attention & co-attention",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "multimodal",
+      "retrieval"
+    ],
+    "aliases": [],
+    "definition": "Queries from one stream attend to keys and values from another stream or memory source.",
+    "why_it_matters": "The role of Cross-attention & co-attention is to connect Self-attention, Multimodal, simulated & streaming data to downstream capabilities including Encoder–decoder transformers, Vision Transformers & Perceiver-style latent models, Multimodal foundation models.",
+    "examples": [
+      "substrate for Encoder–decoder transformers",
+      "substrate for Vision Transformers & Perceiver-style latent models",
+      "substrate for Multimodal foundation models"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Self-attention, Multimodal, simulated & streaming data."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "self_attention",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Cross-attention & co-attention is assembled in part from the mechanism or model component Self-attention."
+      },
+      {
+        "id": "multimodal_simulated_streams",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Cross-attention & co-attention uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "346033fe99506221",
+      "node_id": "cross_attention",
+      "field": "definition",
+      "text": "Queries from one stream attend to keys and values from another stream or memory source."
+    },
+    {
+      "unit_id": "ac91df85355b45dd",
+      "node_id": "cross_attention",
+      "field": "why_it_matters",
+      "text": "The role of Cross-attention & co-attention is to connect Self-attention, Multimodal, simulated & streaming data to downstream capabilities including Encoder–decoder transformers, Vision Transformers & Perceiver-style latent models, Multimodal foundation models."
+    },
+    {
+      "unit_id": "3c00e21d0f5bf646",
+      "node_id": "cross_attention",
+      "field": "examples[1]",
+      "text": "substrate for Encoder–decoder transformers"
+    },
+    {
+      "unit_id": "0ea6eaf2b79ec5bd",
+      "node_id": "cross_attention",
+      "field": "examples[2]",
+      "text": "substrate for Vision Transformers & Perceiver-style latent models"
+    },
+    {
+      "unit_id": "063ee22555b6bb15",
+      "node_id": "cross_attention",
+      "field": "examples[3]",
+      "text": "substrate for Multimodal foundation models"
+    },
+    {
+      "unit_id": "c36304d1fb55ad9a",
+      "node_id": "cross_attention",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Self-attention, Multimodal, simulated & streaming data."
+    },
+    {
+      "unit_id": "88254073c51eb3d0",
+      "node_id": "cross_attention",
+      "field": "dependencies.self_attention.rationale",
+      "text": "Cross-attention & co-attention is assembled in part from the mechanism or model component Self-attention."
+    },
+    {
+      "unit_id": "ed42970042287d7f",
+      "node_id": "cross_attention",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Cross-attention & co-attention uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "86c2dc68c27f9e43",
+      "node_id": "cross_attention",
+      "dependency_id": "self_attention",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Cross-attention & co-attention is assembled in part from the mechanism or model component Self-attention."
+    },
+    {
+      "edge_id": "022327e6bac32e4c",
+      "node_id": "cross_attention",
+      "dependency_id": "multimodal_simulated_streams",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Cross-attention & co-attention uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/cross_attention.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

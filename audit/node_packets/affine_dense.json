@@ -1,0 +1,170 @@
+{
+  "node_id": "affine_dense",
+  "label": "Affine transforms & dense layers",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "affine_dense",
+    "label": "Affine transforms & dense layers",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "neural"
+    ],
+    "aliases": [],
+    "definition": "Learned linear maps mix features and channels and form the backbone of most neural blocks.",
+    "why_it_matters": "The role of Affine transforms & dense layers is to connect Scalars, vectors, matrices & tensors, Linear algebra to downstream capabilities including Nonlinear activations, Residual, skip & highway connections, Gating & multiplicative control.",
+    "examples": [
+      "substrate for Nonlinear activations",
+      "substrate for Residual, skip & highway connections",
+      "substrate for Gating & multiplicative control"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Scalars, vectors, matrices & tensors, Linear algebra."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "tensors",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Affine transforms & dense layers uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "linear_algebra",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Affine transforms & dense layers uses Linear algebra as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Affine transforms & dense layers uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a8e07fbdf58e8507",
+      "node_id": "affine_dense",
+      "field": "definition",
+      "text": "Learned linear maps mix features and channels and form the backbone of most neural blocks."
+    },
+    {
+      "unit_id": "fe2e6861e3bd6674",
+      "node_id": "affine_dense",
+      "field": "why_it_matters",
+      "text": "The role of Affine transforms & dense layers is to connect Scalars, vectors, matrices & tensors, Linear algebra to downstream capabilities including Nonlinear activations, Residual, skip & highway connections, Gating & multiplicative control."
+    },
+    {
+      "unit_id": "f1fbc753a8a9aae1",
+      "node_id": "affine_dense",
+      "field": "examples[1]",
+      "text": "substrate for Nonlinear activations"
+    },
+    {
+      "unit_id": "100838f594d07298",
+      "node_id": "affine_dense",
+      "field": "examples[2]",
+      "text": "substrate for Residual, skip & highway connections"
+    },
+    {
+      "unit_id": "b52c5e14cf872bc3",
+      "node_id": "affine_dense",
+      "field": "examples[3]",
+      "text": "substrate for Gating & multiplicative control"
+    },
+    {
+      "unit_id": "3aa3eda12a41d3ce",
+      "node_id": "affine_dense",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Scalars, vectors, matrices & tensors, Linear algebra."
+    },
+    {
+      "unit_id": "36cb1081a103ebd3",
+      "node_id": "affine_dense",
+      "field": "dependencies.tensors.rationale",
+      "text": "Affine transforms & dense layers uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "7c9e98be307f65f0",
+      "node_id": "affine_dense",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Affine transforms & dense layers uses Linear algebra as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "4e89bee9631031f9",
+      "node_id": "affine_dense",
+      "field": "dependencies.optimization.rationale",
+      "text": "Affine transforms & dense layers uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "bda47f2c1a72d609",
+      "node_id": "affine_dense",
+      "dependency_id": "tensors",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Affine transforms & dense layers uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "63cd5589bb3e5203",
+      "node_id": "affine_dense",
+      "dependency_id": "linear_algebra",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Affine transforms & dense layers uses Linear algebra as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "fa7fa7ea522c7795",
+      "node_id": "affine_dense",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Affine transforms & dense layers uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/affine_dense.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

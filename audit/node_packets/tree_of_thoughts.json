@@ -1,0 +1,193 @@
+{
+  "node_id": "tree_of_thoughts",
+  "label": "Tree-of-Thought & branch-and-evaluate reasoning",
+  "layer": "reasoning",
+  "editorial_status": "curated",
+  "node": {
+    "id": "tree_of_thoughts",
+    "label": "Tree-of-Thought & branch-and-evaluate reasoning",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "search",
+      "planning"
+    ],
+    "aliases": [
+      "ToT"
+    ],
+    "definition": "Tree-of-Thought methods branch from intermediate reasoning states, evaluate partial solutions, and backtrack or continue search rather than following one chain.",
+    "why_it_matters": "They make deliberation explicit when a problem benefits from alternatives, lookahead, and recovery from early mistakes.",
+    "examples": [
+      "branching puzzle search",
+      "plan alternatives",
+      "candidate proof states"
+    ],
+    "limitations": [
+      "Branching grows rapidly, state evaluation can be unreliable, and thought representations are difficult to canonicalize."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_tot"
+    ],
+    "dependencies": [
+      {
+        "id": "graph_astar_search",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Graph search, BFS/DFS & A*."
+      },
+      {
+        "id": "cot_latent_reasoning",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Chain-of-thought & latent reasoning."
+      },
+      {
+        "id": "reflection_verifier",
+        "type": "searches_with",
+        "strength": "common",
+        "rationale": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops."
+      },
+      {
+        "id": "test_time_compute",
+        "type": "searches_with",
+        "strength": "common",
+        "rationale": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Test-time compute scaling."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c4057694f1a5bf60",
+      "node_id": "tree_of_thoughts",
+      "field": "definition",
+      "text": "Tree-of-Thought methods branch from intermediate reasoning states, evaluate partial solutions, and backtrack or continue search rather than following one chain."
+    },
+    {
+      "unit_id": "d74b66b64d5317b8",
+      "node_id": "tree_of_thoughts",
+      "field": "why_it_matters",
+      "text": "They make deliberation explicit when a problem benefits from alternatives, lookahead, and recovery from early mistakes."
+    },
+    {
+      "unit_id": "56e6bcf5babd5548",
+      "node_id": "tree_of_thoughts",
+      "field": "examples[1]",
+      "text": "branching puzzle search"
+    },
+    {
+      "unit_id": "9d5a32107b5c6bd2",
+      "node_id": "tree_of_thoughts",
+      "field": "examples[2]",
+      "text": "plan alternatives"
+    },
+    {
+      "unit_id": "6fc8e485a3a34d45",
+      "node_id": "tree_of_thoughts",
+      "field": "examples[3]",
+      "text": "candidate proof states"
+    },
+    {
+      "unit_id": "9158b7a298057cfa",
+      "node_id": "tree_of_thoughts",
+      "field": "limitations[1]",
+      "text": "Branching grows rapidly, state evaluation can be unreliable, and thought representations are difficult to canonicalize."
+    },
+    {
+      "unit_id": "b4b514096b7fa3ce",
+      "node_id": "tree_of_thoughts",
+      "field": "dependencies.graph_astar_search.rationale",
+      "text": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Graph search, BFS/DFS & A*."
+    },
+    {
+      "unit_id": "0b4c987c569e4df2",
+      "node_id": "tree_of_thoughts",
+      "field": "dependencies.cot_latent_reasoning.rationale",
+      "text": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Chain-of-thought & latent reasoning."
+    },
+    {
+      "unit_id": "f875fd031b5c572f",
+      "node_id": "tree_of_thoughts",
+      "field": "dependencies.reflection_verifier.rationale",
+      "text": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops."
+    },
+    {
+      "unit_id": "50c2faa6c582c597",
+      "node_id": "tree_of_thoughts",
+      "field": "dependencies.test_time_compute.rationale",
+      "text": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Test-time compute scaling."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "440390fe4896cfd3",
+      "node_id": "tree_of_thoughts",
+      "dependency_id": "graph_astar_search",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Graph search, BFS/DFS & A*."
+    },
+    {
+      "edge_id": "5ad5c57908a720bc",
+      "node_id": "tree_of_thoughts",
+      "dependency_id": "cot_latent_reasoning",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Chain-of-thought & latent reasoning."
+    },
+    {
+      "edge_id": "400297a04a380cc7",
+      "node_id": "tree_of_thoughts",
+      "dependency_id": "reflection_verifier",
+      "type": "searches_with",
+      "strength": "common",
+      "rationale": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops."
+    },
+    {
+      "edge_id": "e70524a11a503f07",
+      "node_id": "tree_of_thoughts",
+      "dependency_id": "test_time_compute",
+      "type": "searches_with",
+      "strength": "common",
+      "rationale": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Test-time compute scaling."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_tot": {
+        "id": "ref_tot",
+        "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+        "authors": "Yao et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.10601"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_testtime": {
+        "id": "ref_testtime",
+        "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+        "authors": "Snell et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2408.03314"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/tree_of_thoughts.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

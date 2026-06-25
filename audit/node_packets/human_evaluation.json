@@ -1,0 +1,184 @@
+{
+  "node_id": "human_evaluation",
+  "label": "Human evaluation & preference studies",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "human_evaluation",
+    "label": "Human evaluation & preference studies",
+    "layer": "alignment",
+    "tags": [
+      "evaluation",
+      "alignment"
+    ],
+    "aliases": [],
+    "definition": "Human evaluation measures quality, preference, usefulness, risk, or experience through controlled studies, rubrics, pairwise comparisons, and expert review.",
+    "why_it_matters": "The role of Human evaluation & preference studies is to connect Statistics & experimental design, Preference learning to downstream capabilities including LLM-as-judge & automated critique, Fairness, bias & subgroup analysis, Safety policies, constitutional constraints & alignment.",
+    "examples": [
+      "substrate for LLM-as-judge & automated critique",
+      "substrate for Fairness, bias & subgroup analysis",
+      "substrate for Safety policies, constitutional constraints & alignment"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Preference learning."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "statistics",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Statistics & experimental design."
+      },
+      {
+        "id": "preference_learning",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Preference learning."
+      },
+      {
+        "id": "supervision_signals",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Labels, targets, rewards & preferences."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "6dd448b7f628c537",
+      "node_id": "human_evaluation",
+      "field": "definition",
+      "text": "Human evaluation measures quality, preference, usefulness, risk, or experience through controlled studies, rubrics, pairwise comparisons, and expert review."
+    },
+    {
+      "unit_id": "75ae8f5e9326c0d7",
+      "node_id": "human_evaluation",
+      "field": "why_it_matters",
+      "text": "The role of Human evaluation & preference studies is to connect Statistics & experimental design, Preference learning to downstream capabilities including LLM-as-judge & automated critique, Fairness, bias & subgroup analysis, Safety policies, constitutional constraints & alignment."
+    },
+    {
+      "unit_id": "e8b26fabb9a933ac",
+      "node_id": "human_evaluation",
+      "field": "examples[1]",
+      "text": "substrate for LLM-as-judge & automated critique"
+    },
+    {
+      "unit_id": "02b66c7858af866d",
+      "node_id": "human_evaluation",
+      "field": "examples[2]",
+      "text": "substrate for Fairness, bias & subgroup analysis"
+    },
+    {
+      "unit_id": "7e42b1357094f081",
+      "node_id": "human_evaluation",
+      "field": "examples[3]",
+      "text": "substrate for Safety policies, constitutional constraints & alignment"
+    },
+    {
+      "unit_id": "705b4e5caa39ec16",
+      "node_id": "human_evaluation",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Preference learning."
+    },
+    {
+      "unit_id": "08b2b121885b6faa",
+      "node_id": "human_evaluation",
+      "field": "dependencies.statistics.rationale",
+      "text": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Statistics & experimental design."
+    },
+    {
+      "unit_id": "47484e820ecd2671",
+      "node_id": "human_evaluation",
+      "field": "dependencies.preference_learning.rationale",
+      "text": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Preference learning."
+    },
+    {
+      "unit_id": "fe4121a3b1e3e302",
+      "node_id": "human_evaluation",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Labels, targets, rewards & preferences."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "d914c91c0ec05555",
+      "node_id": "human_evaluation",
+      "dependency_id": "statistics",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Statistics & experimental design."
+    },
+    {
+      "edge_id": "cc064448cd600533",
+      "node_id": "human_evaluation",
+      "dependency_id": "preference_learning",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Preference learning."
+    },
+    {
+      "edge_id": "4e077e25894f949d",
+      "node_id": "human_evaluation",
+      "dependency_id": "supervision_signals",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Human evaluation & preference studies measures, constrains, audits, or governs behavior using Labels, targets, rewards & preferences."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dpo": {
+        "id": "ref_dpo",
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.18290"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlhf": {
+        "id": "ref_rlhf",
+        "title": "Training language models to follow instructions with human feedback",
+        "authors": "Ouyang et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.02155"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/human_evaluation.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

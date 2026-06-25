@@ -1,0 +1,171 @@
+{
+  "node_id": "differentiable_sampling",
+  "label": "Reparameterization & differentiable sampling",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "differentiable_sampling",
+    "label": "Reparameterization & differentiable sampling",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "probabilistic",
+      "generative"
+    ],
+    "aliases": [],
+    "definition": "Random sampling is reformulated so gradients can pass through stochastic latent variables.",
+    "why_it_matters": "The role of Reparameterization & differentiable sampling is to connect Probability theory, Latent variables & hidden state to downstream capabilities including Continuous normalizing flows & learned vector fields, Variational autoencoders, Diffusion & score-based models.",
+    "examples": [
+      "substrate for Continuous normalizing flows & learned vector fields",
+      "substrate for Variational autoencoders",
+      "substrate for Diffusion & score-based models"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Probability theory, Latent variables & hidden state."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Reparameterization & differentiable sampling uses Probability theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "latent_variables",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Reparameterization & differentiable sampling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "calculus",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reparameterization & differentiable sampling uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e6cdc33f1759dc2a",
+      "node_id": "differentiable_sampling",
+      "field": "definition",
+      "text": "Random sampling is reformulated so gradients can pass through stochastic latent variables."
+    },
+    {
+      "unit_id": "ba84db6047919656",
+      "node_id": "differentiable_sampling",
+      "field": "why_it_matters",
+      "text": "The role of Reparameterization & differentiable sampling is to connect Probability theory, Latent variables & hidden state to downstream capabilities including Continuous normalizing flows & learned vector fields, Variational autoencoders, Diffusion & score-based models."
+    },
+    {
+      "unit_id": "3ec0a8d336288cf6",
+      "node_id": "differentiable_sampling",
+      "field": "examples[1]",
+      "text": "substrate for Continuous normalizing flows & learned vector fields"
+    },
+    {
+      "unit_id": "aac8c6d3125daad5",
+      "node_id": "differentiable_sampling",
+      "field": "examples[2]",
+      "text": "substrate for Variational autoencoders"
+    },
+    {
+      "unit_id": "5347f143217c517a",
+      "node_id": "differentiable_sampling",
+      "field": "examples[3]",
+      "text": "substrate for Diffusion & score-based models"
+    },
+    {
+      "unit_id": "0d334996b2ee1f4e",
+      "node_id": "differentiable_sampling",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Probability theory, Latent variables & hidden state."
+    },
+    {
+      "unit_id": "2e73952806be6fc2",
+      "node_id": "differentiable_sampling",
+      "field": "dependencies.probability.rationale",
+      "text": "Reparameterization & differentiable sampling uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "865e7dcadd9de37c",
+      "node_id": "differentiable_sampling",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "Reparameterization & differentiable sampling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "71de52769e2420a7",
+      "node_id": "differentiable_sampling",
+      "field": "dependencies.calculus.rationale",
+      "text": "Reparameterization & differentiable sampling uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "640d7cb549379b7b",
+      "node_id": "differentiable_sampling",
+      "dependency_id": "probability",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Reparameterization & differentiable sampling uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "5321056ed6b94548",
+      "node_id": "differentiable_sampling",
+      "dependency_id": "latent_variables",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Reparameterization & differentiable sampling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "ef6d5c381955b21a",
+      "node_id": "differentiable_sampling",
+      "dependency_id": "calculus",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reparameterization & differentiable sampling uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/differentiable_sampling.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

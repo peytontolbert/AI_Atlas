@@ -1,0 +1,172 @@
+{
+  "node_id": "llm_as_judge",
+  "label": "LLM-as-judge & automated critique",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "llm_as_judge",
+    "label": "LLM-as-judge & automated critique",
+    "layer": "alignment",
+    "tags": [
+      "evaluation",
+      "alignment",
+      "agents"
+    ],
+    "aliases": [],
+    "definition": "LLM-as-judge uses a model to score, compare, critique, or classify outputs under a rubric, often calibrated against human labels and bias checks.",
+    "why_it_matters": "The role of LLM-as-judge & automated critique is to connect Decoder-only causal transformers, Human evaluation & preference studies to downstream capabilities including Observability, tracing & evaluation harnesses.",
+    "examples": [
+      "substrate for Observability, tracing & evaluation harnesses",
+      "combined with Decoder-only causal transformers"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Decoder-only causal transformers, Human evaluation & preference studies."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist",
+      "ref_llmjudge"
+    ],
+    "dependencies": [
+      {
+        "id": "human_evaluation",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      },
+      {
+        "id": "benchmarks_metrics",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      },
+      {
+        "id": "transformer",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "LLM-as-judge systems require a broad transformer-based judge model, not a system-layer LLM aggregate."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "aaeedfa66507a066",
+      "node_id": "llm_as_judge",
+      "field": "definition",
+      "text": "LLM-as-judge uses a model to score, compare, critique, or classify outputs under a rubric, often calibrated against human labels and bias checks."
+    },
+    {
+      "unit_id": "3168e923149538f0",
+      "node_id": "llm_as_judge",
+      "field": "why_it_matters",
+      "text": "The role of LLM-as-judge & automated critique is to connect Decoder-only causal transformers, Human evaluation & preference studies to downstream capabilities including Observability, tracing & evaluation harnesses."
+    },
+    {
+      "unit_id": "c4606b8dc069bdea",
+      "node_id": "llm_as_judge",
+      "field": "examples[1]",
+      "text": "substrate for Observability, tracing & evaluation harnesses"
+    },
+    {
+      "unit_id": "10ac05545dc63993",
+      "node_id": "llm_as_judge",
+      "field": "examples[2]",
+      "text": "combined with Decoder-only causal transformers"
+    },
+    {
+      "unit_id": "87cfc094b4f0c17f",
+      "node_id": "llm_as_judge",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Decoder-only causal transformers, Human evaluation & preference studies."
+    },
+    {
+      "unit_id": "4f5d2e9bc070647f",
+      "node_id": "llm_as_judge",
+      "field": "dependencies.human_evaluation.rationale",
+      "text": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    },
+    {
+      "unit_id": "95e0b63770d81060",
+      "node_id": "llm_as_judge",
+      "field": "dependencies.benchmarks_metrics.rationale",
+      "text": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "unit_id": "3d31a660c73344c9",
+      "node_id": "llm_as_judge",
+      "field": "dependencies.transformer.rationale",
+      "text": "LLM-as-judge systems require a broad transformer-based judge model, not a system-layer LLM aggregate."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "25fd80ec4b481c0c",
+      "node_id": "llm_as_judge",
+      "dependency_id": "human_evaluation",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    },
+    {
+      "edge_id": "c8d7b2ed866b5de2",
+      "node_id": "llm_as_judge",
+      "dependency_id": "benchmarks_metrics",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "LLM-as-judge & automated critique measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "edge_id": "deb85363ba845a88",
+      "node_id": "llm_as_judge",
+      "dependency_id": "transformer",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "LLM-as-judge systems require a broad transformer-based judge model, not a system-layer LLM aggregate."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      "ref_llmjudge": {
+        "id": "ref_llmjudge",
+        "title": "A Survey on LLM-as-a-Judge",
+        "authors": "Gu et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2411.15594"
+      }
+    },
+    "dependency_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/llm_as_judge.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

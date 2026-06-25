@@ -1,0 +1,171 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "1eb3a313f2a0b5d4",
+      "node_id": "batching_scheduling",
+      "field": "definition",
+      "text": "Batching and admission control combine requests, assign accelerator time, enforce priorities, and balance latency, throughput, fairness, and memory pressure.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "evidence_location": "DDIA supports batching, scheduling, backpressure/load, and distributed service tradeoffs; accelerator memory pressure and GPU scheduling are synthesized beyond the cited source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core scheduling/batching concept is supported; GPU-specific details need an inference serving or GPU scheduler source."
+    },
+    {
+      "unit_id": "65bd0ff93034332e",
+      "node_id": "batching_scheduling",
+      "field": "why_it_matters",
+      "text": "The role of Batching, admission control & GPU scheduling is to connect Model servers & inference runtimes, Distributed systems & networking to downstream capabilities including Paged attention & KV-memory management, Fault tolerance, security, energy & cost optimization.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
+    },
+    {
+      "unit_id": "865b21b69e7d3a92",
+      "node_id": "batching_scheduling",
+      "field": "examples[1]",
+      "text": "substrate for Paged attention & KV-memory management",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "ea499caf21b0cb01",
+      "node_id": "batching_scheduling",
+      "field": "examples[2]",
+      "text": "substrate for Fault tolerance, security, energy & cost optimization",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "36826e45b15e7241",
+      "node_id": "batching_scheduling",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Distributed systems & networking.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+    },
+    {
+      "unit_id": "95a5c82621b97b49",
+      "node_id": "batching_scheduling",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Batching, admission control & GPU scheduling turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "8ff6b848c58f2b9b",
+      "node_id": "batching_scheduling",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Batching, admission control & GPU scheduling turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "d888f89dc4cd3472",
+      "node_id": "batching_scheduling",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Batching, admission control & GPU scheduling turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "e807594624173351",
+      "node_id": "batching_scheduling",
+      "dependency_id": "model_serving",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c4a6c2393f8728d2",
+      "node_id": "batching_scheduling",
+      "dependency_id": "distributed_systems",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "67364f8b8b87f274",
+      "node_id": "batching_scheduling",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

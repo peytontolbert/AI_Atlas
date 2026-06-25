@@ -1,0 +1,152 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "346033fe99506221",
+      "node_id": "cross_attention",
+      "field": "definition",
+      "text": "Queries from one stream attend to keys and values from another stream or memory source.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "ac91df85355b45dd",
+      "node_id": "cross_attention",
+      "field": "why_it_matters",
+      "text": "The role of Cross-attention & co-attention is to connect Self-attention, Multimodal, simulated & streaming data to downstream capabilities including Encoder\u2013decoder transformers, Vision Transformers & Perceiver-style latent models, Multimodal foundation models.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "3c00e21d0f5bf646",
+      "node_id": "cross_attention",
+      "field": "examples[1]",
+      "text": "substrate for Encoder\u2013decoder transformers",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "0ea6eaf2b79ec5bd",
+      "node_id": "cross_attention",
+      "field": "examples[2]",
+      "text": "substrate for Vision Transformers & Perceiver-style latent models",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "063ee22555b6bb15",
+      "node_id": "cross_attention",
+      "field": "examples[3]",
+      "text": "substrate for Multimodal foundation models",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "c36304d1fb55ad9a",
+      "node_id": "cross_attention",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Self-attention, Multimodal, simulated & streaming data.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "88254073c51eb3d0",
+      "node_id": "cross_attention",
+      "field": "dependencies.self_attention.rationale",
+      "text": "Cross-attention & co-attention is assembled in part from the mechanism or model component Self-attention.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "ed42970042287d7f",
+      "node_id": "cross_attention",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Cross-attention & co-attention uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "86c2dc68c27f9e43",
+      "node_id": "cross_attention",
+      "dependency_id": "self_attention",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "022327e6bac32e4c",
+      "node_id": "cross_attention",
+      "dependency_id": "multimodal_simulated_streams",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

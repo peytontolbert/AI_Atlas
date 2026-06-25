@@ -1,0 +1,216 @@
+{
+  "node_id": "rlvr",
+  "label": "Reinforcement learning with verifiable rewards (RLVR)",
+  "layer": "training",
+  "editorial_status": "curated",
+  "node": {
+    "id": "rlvr",
+    "label": "Reinforcement learning with verifiable rewards (RLVR)",
+    "layer": "training",
+    "tags": [
+      "training",
+      "rl",
+      "reasoning",
+      "verification"
+    ],
+    "aliases": [
+      "RLVR"
+    ],
+    "definition": "RLVR improves a policy using rewards computed by deterministic or highly reliable verifiers such as tests, exact answers, simulators, or proof kernels.",
+    "why_it_matters": "It scales post-training feedback in domains where correctness can be checked automatically.",
+    "examples": [
+      "math-answer verification",
+      "unit-test-driven code RL",
+      "formal-proof reward"
+    ],
+    "limitations": [
+      "Verifiable endpoints can reward shortcuts, reduce solution diversity, or omit qualities that are difficult to formalize."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_rlvr",
+      "ref_grpo"
+    ],
+    "dependencies": [
+      {
+        "id": "reinforcement_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Reinforcement learning with verifiable rewards (RLVR) uses Reinforcement learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "outcome_verifiers",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Reinforcement learning with verifiable rewards (RLVR) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards."
+      },
+      {
+        "id": "grpo",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reinforcement learning with verifiable rewards (RLVR) uses Group Relative Policy Optimization (GRPO) as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "augmentation_synthetic",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reinforcement learning with verifiable rewards (RLVR) uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "bade3d3afc665b33",
+      "node_id": "rlvr",
+      "field": "definition",
+      "text": "RLVR improves a policy using rewards computed by deterministic or highly reliable verifiers such as tests, exact answers, simulators, or proof kernels."
+    },
+    {
+      "unit_id": "515e26e2a4c21cd8",
+      "node_id": "rlvr",
+      "field": "why_it_matters",
+      "text": "It scales post-training feedback in domains where correctness can be checked automatically."
+    },
+    {
+      "unit_id": "62d6234ca6352bb3",
+      "node_id": "rlvr",
+      "field": "examples[1]",
+      "text": "math-answer verification"
+    },
+    {
+      "unit_id": "5b5b37f11735fdb9",
+      "node_id": "rlvr",
+      "field": "examples[2]",
+      "text": "unit-test-driven code RL"
+    },
+    {
+      "unit_id": "ae4fc74b68c72a37",
+      "node_id": "rlvr",
+      "field": "examples[3]",
+      "text": "formal-proof reward"
+    },
+    {
+      "unit_id": "9a613408bffc29fd",
+      "node_id": "rlvr",
+      "field": "limitations[1]",
+      "text": "Verifiable endpoints can reward shortcuts, reduce solution diversity, or omit qualities that are difficult to formalize."
+    },
+    {
+      "unit_id": "59e409ff26a9103a",
+      "node_id": "rlvr",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Reinforcement learning with verifiable rewards (RLVR) uses Reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "72d9b201ceab1eaa",
+      "node_id": "rlvr",
+      "field": "dependencies.outcome_verifiers.rationale",
+      "text": "Reinforcement learning with verifiable rewards (RLVR) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards."
+    },
+    {
+      "unit_id": "e93b33120ef8e7aa",
+      "node_id": "rlvr",
+      "field": "dependencies.grpo.rationale",
+      "text": "Reinforcement learning with verifiable rewards (RLVR) uses Group Relative Policy Optimization (GRPO) as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "dacc5b9e97cbb0ca",
+      "node_id": "rlvr",
+      "field": "dependencies.augmentation_synthetic.rationale",
+      "text": "Reinforcement learning with verifiable rewards (RLVR) uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "0fe633b3f597c5a2",
+      "node_id": "rlvr",
+      "dependency_id": "reinforcement_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Reinforcement learning with verifiable rewards (RLVR) uses Reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "d673b1e3139c49b9",
+      "node_id": "rlvr",
+      "dependency_id": "outcome_verifiers",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Reinforcement learning with verifiable rewards (RLVR) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards."
+    },
+    {
+      "edge_id": "827bbdacb74507f8",
+      "node_id": "rlvr",
+      "dependency_id": "grpo",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reinforcement learning with verifiable rewards (RLVR) uses Group Relative Policy Optimization (GRPO) as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "2d8b7ffed8786eb1",
+      "node_id": "rlvr",
+      "dependency_id": "augmentation_synthetic",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reinforcement learning with verifiable rewards (RLVR) uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_rlvr": {
+        "id": "ref_rlvr",
+        "title": "Reinforcement Learning with Verifiable Rewards: A Survey",
+        "authors": "Liu et al.",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2506.14245"
+      },
+      "ref_grpo": {
+        "id": "ref_grpo",
+        "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+        "authors": "Shao et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2402.03300"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_grpo": {
+        "id": "ref_grpo",
+        "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+        "authors": "Shao et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2402.03300"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      },
+      "ref_rlvr": {
+        "id": "ref_rlvr",
+        "title": "Reinforcement Learning with Verifiable Rewards: A Survey",
+        "authors": "Liu et al.",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2506.14245"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/rlvr.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

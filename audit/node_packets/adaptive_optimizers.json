@@ -1,0 +1,163 @@
+{
+  "node_id": "adaptive_optimizers",
+  "label": "Adam, Adafactor & adaptive optimizers",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "adaptive_optimizers",
+    "label": "Adam, Adafactor & adaptive optimizers",
+    "layer": "training",
+    "tags": [
+      "training",
+      "optimization"
+    ],
+    "aliases": [],
+    "definition": "Adaptive optimizers such as AdaGrad, RMSProp, Adam, and Adafactor rescale parameter updates using running first- and second-moment statistics.",
+    "why_it_matters": "The role of Adam, Adafactor & adaptive optimizers is to connect SGD, momentum & stochastic optimization, Statistics & experimental design to downstream capabilities including Learning-rate schedules, warmup & stabilization.",
+    "examples": [
+      "substrate for Learning-rate schedules, warmup & stabilization",
+      "combined with SGD, momentum & stochastic optimization"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include SGD, momentum & stochastic optimization, Statistics & experimental design."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "sgd_variants",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Adam, Adafactor & adaptive optimizers uses SGD, momentum & stochastic optimization as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "statistics",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Adam, Adafactor & adaptive optimizers uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "numerical_methods",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Adam, Adafactor & adaptive optimizers uses Numerical analysis as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "0e7b8dcd733293e9",
+      "node_id": "adaptive_optimizers",
+      "field": "definition",
+      "text": "Adaptive optimizers such as AdaGrad, RMSProp, Adam, and Adafactor rescale parameter updates using running first- and second-moment statistics."
+    },
+    {
+      "unit_id": "491d1a450d7b696b",
+      "node_id": "adaptive_optimizers",
+      "field": "why_it_matters",
+      "text": "The role of Adam, Adafactor & adaptive optimizers is to connect SGD, momentum & stochastic optimization, Statistics & experimental design to downstream capabilities including Learning-rate schedules, warmup & stabilization."
+    },
+    {
+      "unit_id": "ed6e37d4cfc6a7cf",
+      "node_id": "adaptive_optimizers",
+      "field": "examples[1]",
+      "text": "substrate for Learning-rate schedules, warmup & stabilization"
+    },
+    {
+      "unit_id": "047cc8c24972d027",
+      "node_id": "adaptive_optimizers",
+      "field": "examples[2]",
+      "text": "combined with SGD, momentum & stochastic optimization"
+    },
+    {
+      "unit_id": "bc44d75c83cdbdef",
+      "node_id": "adaptive_optimizers",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include SGD, momentum & stochastic optimization, Statistics & experimental design."
+    },
+    {
+      "unit_id": "597360d9f03405cf",
+      "node_id": "adaptive_optimizers",
+      "field": "dependencies.sgd_variants.rationale",
+      "text": "Adam, Adafactor & adaptive optimizers uses SGD, momentum & stochastic optimization as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "6403e29b5a1f62db",
+      "node_id": "adaptive_optimizers",
+      "field": "dependencies.statistics.rationale",
+      "text": "Adam, Adafactor & adaptive optimizers uses Statistics & experimental design as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "56c23256e01bd685",
+      "node_id": "adaptive_optimizers",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "Adam, Adafactor & adaptive optimizers uses Numerical analysis as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6591152473ef0dfe",
+      "node_id": "adaptive_optimizers",
+      "dependency_id": "sgd_variants",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Adam, Adafactor & adaptive optimizers uses SGD, momentum & stochastic optimization as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4cf2a04617eafea8",
+      "node_id": "adaptive_optimizers",
+      "dependency_id": "statistics",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Adam, Adafactor & adaptive optimizers uses Statistics & experimental design as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "0d52d0477b6b1536",
+      "node_id": "adaptive_optimizers",
+      "dependency_id": "numerical_methods",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Adam, Adafactor & adaptive optimizers uses Numerical analysis as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/adaptive_optimizers.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

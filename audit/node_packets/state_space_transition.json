@@ -1,0 +1,191 @@
+{
+  "node_id": "state_space_transition",
+  "label": "State-space transitions",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "state_space_transition",
+    "label": "State-space transitions",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "sequence",
+      "dynamics"
+    ],
+    "aliases": [],
+    "definition": "Latent state evolves according to learned transition and observation operators.",
+    "why_it_matters": "The role of State-space transitions is to connect Differential equations, Dynamical systems & control theory to downstream capabilities including Selective state-space scan, Structured state-space models (S4 family), Selective state-space models (Mamba family).",
+    "examples": [
+      "substrate for Selective state-space scan",
+      "substrate for Structured state-space models (S4 family)",
+      "substrate for Selective state-space models (Mamba family)"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Differential equations, Dynamical systems & control theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "differential_equations",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "State-space transitions uses Differential equations as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "State-space transitions uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "State-space transitions uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "linear_algebra",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "State-space transitions uses Linear algebra as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "8d6160e410729288",
+      "node_id": "state_space_transition",
+      "field": "definition",
+      "text": "Latent state evolves according to learned transition and observation operators."
+    },
+    {
+      "unit_id": "b0720ebb3729ab71",
+      "node_id": "state_space_transition",
+      "field": "why_it_matters",
+      "text": "The role of State-space transitions is to connect Differential equations, Dynamical systems & control theory to downstream capabilities including Selective state-space scan, Structured state-space models (S4 family), Selective state-space models (Mamba family)."
+    },
+    {
+      "unit_id": "383194e68295b114",
+      "node_id": "state_space_transition",
+      "field": "examples[1]",
+      "text": "substrate for Selective state-space scan"
+    },
+    {
+      "unit_id": "c7ad46a08419b3a4",
+      "node_id": "state_space_transition",
+      "field": "examples[2]",
+      "text": "substrate for Structured state-space models (S4 family)"
+    },
+    {
+      "unit_id": "b834acf48c9d68cc",
+      "node_id": "state_space_transition",
+      "field": "examples[3]",
+      "text": "substrate for Selective state-space models (Mamba family)"
+    },
+    {
+      "unit_id": "14c22c2c97df8543",
+      "node_id": "state_space_transition",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Differential equations, Dynamical systems & control theory."
+    },
+    {
+      "unit_id": "7a9d22872522cd96",
+      "node_id": "state_space_transition",
+      "field": "dependencies.differential_equations.rationale",
+      "text": "State-space transitions uses Differential equations as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "54b5490b62230719",
+      "node_id": "state_space_transition",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "State-space transitions uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "dab190f4eae239cf",
+      "node_id": "state_space_transition",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "State-space transitions uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "76ecc2f873126b78",
+      "node_id": "state_space_transition",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "State-space transitions uses Linear algebra as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "5f0b35e4c7ec832c",
+      "node_id": "state_space_transition",
+      "dependency_id": "differential_equations",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "State-space transitions uses Differential equations as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "7eb90f1fb9ea2d11",
+      "node_id": "state_space_transition",
+      "dependency_id": "dynamical_control",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "State-space transitions uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "65139a876e72555a",
+      "node_id": "state_space_transition",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "State-space transitions uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "04517532bc5963a8",
+      "node_id": "state_space_transition",
+      "dependency_id": "linear_algebra",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "State-space transitions uses Linear algebra as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/state_space_transition.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

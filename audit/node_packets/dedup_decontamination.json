@@ -1,0 +1,171 @@
+{
+  "node_id": "dedup_decontamination",
+  "label": "Deduplication, contamination control & provenance",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "dedup_decontamination",
+    "label": "Deduplication, contamination control & provenance",
+    "layer": "training",
+    "tags": [
+      "training",
+      "data",
+      "evaluation"
+    ],
+    "aliases": [],
+    "definition": "Deduplication and decontamination remove repeated or benchmark-overlapping examples while retaining provenance needed to audit corpus composition.",
+    "why_it_matters": "The role of Deduplication, contamination control & provenance is to connect Data collection, curation & filtering, Embeddings & distributed representations to downstream capabilities including Large language models.",
+    "examples": [
+      "substrate for Large language models",
+      "combined with Data collection, curation & filtering"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Data collection, curation & filtering, Embeddings & distributed representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "data_curation",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Deduplication, contamination control & provenance uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "embeddings",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Deduplication, contamination control & provenance uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "databases_ir",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Deduplication, contamination control & provenance uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "8b552b1453fac2d4",
+      "node_id": "dedup_decontamination",
+      "field": "definition",
+      "text": "Deduplication and decontamination remove repeated or benchmark-overlapping examples while retaining provenance needed to audit corpus composition."
+    },
+    {
+      "unit_id": "0dcfa83b7186622e",
+      "node_id": "dedup_decontamination",
+      "field": "why_it_matters",
+      "text": "The role of Deduplication, contamination control & provenance is to connect Data collection, curation & filtering, Embeddings & distributed representations to downstream capabilities including Large language models."
+    },
+    {
+      "unit_id": "8b1ebe433e12f415",
+      "node_id": "dedup_decontamination",
+      "field": "examples[1]",
+      "text": "substrate for Large language models"
+    },
+    {
+      "unit_id": "caca3111466d1956",
+      "node_id": "dedup_decontamination",
+      "field": "examples[2]",
+      "text": "combined with Data collection, curation & filtering"
+    },
+    {
+      "unit_id": "90138afeeb74395a",
+      "node_id": "dedup_decontamination",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Data collection, curation & filtering, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "fd168b6a201b9af0",
+      "node_id": "dedup_decontamination",
+      "field": "dependencies.data_curation.rationale",
+      "text": "Deduplication, contamination control & provenance uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "83e6985c00c5bad9",
+      "node_id": "dedup_decontamination",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Deduplication, contamination control & provenance uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "4e50d547538131ff",
+      "node_id": "dedup_decontamination",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Deduplication, contamination control & provenance uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "054c9fda83ae9432",
+      "node_id": "dedup_decontamination",
+      "dependency_id": "data_curation",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Deduplication, contamination control & provenance uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "787ef005be225ebf",
+      "node_id": "dedup_decontamination",
+      "dependency_id": "embeddings",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Deduplication, contamination control & provenance uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "985b8ffea1774f9d",
+      "node_id": "dedup_decontamination",
+      "dependency_id": "databases_ir",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Deduplication, contamination control & provenance uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/dedup_decontamination.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

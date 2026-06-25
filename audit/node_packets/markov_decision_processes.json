@@ -1,0 +1,184 @@
+{
+  "node_id": "markov_decision_processes",
+  "label": "Markov chains, MDPs, POMDPs & belief states",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "markov_decision_processes",
+    "label": "Markov chains, MDPs, POMDPs & belief states",
+    "layer": "representation",
+    "tags": [
+      "probabilistic",
+      "rl",
+      "decision"
+    ],
+    "aliases": [],
+    "definition": "Markovian state, transition, action, observation, and belief representations formalize sequential uncertainty and control.",
+    "why_it_matters": "The role of Markov chains, MDPs, POMDPs & belief states is to connect Probability theory, Sequences, events & time series to downstream capabilities including Reinforcement learning.",
+    "examples": [
+      "substrate for Reinforcement learning",
+      "combined with Probability theory"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Probability theory, Sequences, events & time series."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Probability theory."
+      },
+      {
+        "id": "sequences_time",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Markov chains, MDPs, POMDPs & belief states consumes, emits, or organizes information using Sequences, events & time series."
+      },
+      {
+        "id": "game_decision_theory",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Game theory & decision theory."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "7bae64f3551d19a4",
+      "node_id": "markov_decision_processes",
+      "field": "definition",
+      "text": "Markovian state, transition, action, observation, and belief representations formalize sequential uncertainty and control."
+    },
+    {
+      "unit_id": "83a19352a44386ca",
+      "node_id": "markov_decision_processes",
+      "field": "why_it_matters",
+      "text": "The role of Markov chains, MDPs, POMDPs & belief states is to connect Probability theory, Sequences, events & time series to downstream capabilities including Reinforcement learning."
+    },
+    {
+      "unit_id": "36b93dfd57e5471b",
+      "node_id": "markov_decision_processes",
+      "field": "examples[1]",
+      "text": "substrate for Reinforcement learning"
+    },
+    {
+      "unit_id": "814f31343b17f636",
+      "node_id": "markov_decision_processes",
+      "field": "examples[2]",
+      "text": "combined with Probability theory"
+    },
+    {
+      "unit_id": "1f02a899a3d6601a",
+      "node_id": "markov_decision_processes",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Probability theory, Sequences, events & time series."
+    },
+    {
+      "unit_id": "03c6411335d9889b",
+      "node_id": "markov_decision_processes",
+      "field": "dependencies.probability.rationale",
+      "text": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "unit_id": "3963e0f778ecea4c",
+      "node_id": "markov_decision_processes",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Markov chains, MDPs, POMDPs & belief states consumes, emits, or organizes information using Sequences, events & time series."
+    },
+    {
+      "unit_id": "51f01b665371c1ac",
+      "node_id": "markov_decision_processes",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Game theory & decision theory."
+    },
+    {
+      "unit_id": "000315767c5956d4",
+      "node_id": "markov_decision_processes",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "65499b4cc059232b",
+      "node_id": "markov_decision_processes",
+      "dependency_id": "probability",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "edge_id": "5be9dd8bcd00a3ce",
+      "node_id": "markov_decision_processes",
+      "dependency_id": "sequences_time",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Markov chains, MDPs, POMDPs & belief states consumes, emits, or organizes information using Sequences, events & time series."
+    },
+    {
+      "edge_id": "8b65b2013bf65175",
+      "node_id": "markov_decision_processes",
+      "dependency_id": "game_decision_theory",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Game theory & decision theory."
+    },
+    {
+      "edge_id": "05686853ffb5ca00",
+      "node_id": "markov_decision_processes",
+      "dependency_id": "dynamical_control",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/markov_decision_processes.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

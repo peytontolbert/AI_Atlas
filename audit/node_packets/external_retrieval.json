@@ -1,0 +1,190 @@
+{
+  "node_id": "external_retrieval",
+  "label": "External retrieval & ranking",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "external_retrieval",
+    "label": "External retrieval & ranking",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "retrieval"
+    ],
+    "aliases": [],
+    "definition": "Relevant records, documents, examples, or tools are selected from an external collection.",
+    "why_it_matters": "The role of External retrieval & ranking is to connect Databases & information retrieval, Embeddings & distributed representations to downstream capabilities including Episodic memory, Sparse lexical retrieval, Dense vector retrieval.",
+    "examples": [
+      "substrate for Episodic memory",
+      "substrate for Sparse lexical retrieval",
+      "substrate for Dense vector retrieval"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Databases & information retrieval, Embeddings & distributed representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "databases_ir",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "External retrieval & ranking uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "embeddings",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "External retrieval & ranking uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "External retrieval & ranking uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "margin_ranking_metric",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "External retrieval & ranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a9020b6dbd952b84",
+      "node_id": "external_retrieval",
+      "field": "definition",
+      "text": "Relevant records, documents, examples, or tools are selected from an external collection."
+    },
+    {
+      "unit_id": "2fb1c580d7ed8822",
+      "node_id": "external_retrieval",
+      "field": "why_it_matters",
+      "text": "The role of External retrieval & ranking is to connect Databases & information retrieval, Embeddings & distributed representations to downstream capabilities including Episodic memory, Sparse lexical retrieval, Dense vector retrieval."
+    },
+    {
+      "unit_id": "722b136dd30cb5b9",
+      "node_id": "external_retrieval",
+      "field": "examples[1]",
+      "text": "substrate for Episodic memory"
+    },
+    {
+      "unit_id": "96c423a33f2e4f4d",
+      "node_id": "external_retrieval",
+      "field": "examples[2]",
+      "text": "substrate for Sparse lexical retrieval"
+    },
+    {
+      "unit_id": "2d6e62a4207afd9e",
+      "node_id": "external_retrieval",
+      "field": "examples[3]",
+      "text": "substrate for Dense vector retrieval"
+    },
+    {
+      "unit_id": "d47ddadb4fc0c109",
+      "node_id": "external_retrieval",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Databases & information retrieval, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "13e977c78665824a",
+      "node_id": "external_retrieval",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "External retrieval & ranking uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "d1b56954f00e918e",
+      "node_id": "external_retrieval",
+      "field": "dependencies.embeddings.rationale",
+      "text": "External retrieval & ranking uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "edbe2d7466b0f772",
+      "node_id": "external_retrieval",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "External retrieval & ranking uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "e200526917b6ec81",
+      "node_id": "external_retrieval",
+      "field": "dependencies.margin_ranking_metric.rationale",
+      "text": "External retrieval & ranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "e6c3885bdab5025f",
+      "node_id": "external_retrieval",
+      "dependency_id": "databases_ir",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "External retrieval & ranking uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "82b3c2b6ce58e443",
+      "node_id": "external_retrieval",
+      "dependency_id": "embeddings",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "External retrieval & ranking uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "3fd10b1f6adb9051",
+      "node_id": "external_retrieval",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "External retrieval & ranking uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "968819bd9c15fd3a",
+      "node_id": "external_retrieval",
+      "dependency_id": "margin_ranking_metric",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "External retrieval & ranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/external_retrieval.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

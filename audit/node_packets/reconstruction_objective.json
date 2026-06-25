@@ -1,0 +1,191 @@
+{
+  "node_id": "reconstruction_objective",
+  "label": "Reconstruction objectives",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "reconstruction_objective",
+    "label": "Reconstruction objectives",
+    "layer": "objective",
+    "tags": [
+      "objective",
+      "representation"
+    ],
+    "aliases": [],
+    "definition": "An encoder or latent representation is trained to preserve enough information to rebuild an input.",
+    "why_it_matters": "The role of Reconstruction objectives is to connect Unsupervised learning, Generative modeling to downstream capabilities including Autoencoders, VQ-VAE & learned discrete tokenizers.",
+    "examples": [
+      "substrate for Autoencoders",
+      "substrate for VQ-VAE & learned discrete tokenizers"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Unsupervised learning, Generative modeling."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "unsupervised_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Reconstruction objectives uses Unsupervised learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "generative_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Reconstruction objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "tensors",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reconstruction objectives uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "0929ac90c3872fd2",
+      "node_id": "reconstruction_objective",
+      "field": "definition",
+      "text": "An encoder or latent representation is trained to preserve enough information to rebuild an input."
+    },
+    {
+      "unit_id": "72386cc45cb4c87f",
+      "node_id": "reconstruction_objective",
+      "field": "why_it_matters",
+      "text": "The role of Reconstruction objectives is to connect Unsupervised learning, Generative modeling to downstream capabilities including Autoencoders, VQ-VAE & learned discrete tokenizers."
+    },
+    {
+      "unit_id": "18be82d6575a8aac",
+      "node_id": "reconstruction_objective",
+      "field": "examples[1]",
+      "text": "substrate for Autoencoders"
+    },
+    {
+      "unit_id": "887e3329f8de7b44",
+      "node_id": "reconstruction_objective",
+      "field": "examples[2]",
+      "text": "substrate for VQ-VAE & learned discrete tokenizers"
+    },
+    {
+      "unit_id": "588bf812e686cc4c",
+      "node_id": "reconstruction_objective",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Unsupervised learning, Generative modeling."
+    },
+    {
+      "unit_id": "6541861ec2113069",
+      "node_id": "reconstruction_objective",
+      "field": "dependencies.unsupervised_learning.rationale",
+      "text": "Reconstruction objectives uses Unsupervised learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "984533651fe81e86",
+      "node_id": "reconstruction_objective",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "Reconstruction objectives uses Generative modeling as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f2c657453e415dc4",
+      "node_id": "reconstruction_objective",
+      "field": "dependencies.tensors.rationale",
+      "text": "Reconstruction objectives uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "a86e0361a8f232e6",
+      "node_id": "reconstruction_objective",
+      "dependency_id": "unsupervised_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Reconstruction objectives uses Unsupervised learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "e9392cf10973e341",
+      "node_id": "reconstruction_objective",
+      "dependency_id": "generative_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Reconstruction objectives uses Generative modeling as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "0f8821b0f4337631",
+      "node_id": "reconstruction_objective",
+      "dependency_id": "tensors",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reconstruction objectives uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      },
+      "ref_gan": {
+        "id": "ref_gan",
+        "title": "Generative Adversarial Nets",
+        "authors": "Goodfellow et al.",
+        "year": 2014,
+        "url": "https://arxiv.org/abs/1406.2661"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_vae": {
+        "id": "ref_vae",
+        "title": "Auto-Encoding Variational Bayes",
+        "authors": "Kingma & Welling",
+        "year": 2013,
+        "url": "https://arxiv.org/abs/1312.6114"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/reconstruction_objective.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

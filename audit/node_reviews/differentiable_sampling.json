@@ -1,0 +1,180 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "e6cdc33f1759dc2a",
+      "node_id": "differentiable_sampling",
+      "field": "definition",
+      "text": "Random sampling is reformulated so gradients can pass through stochastic latent variables.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning and PML support latent-variable models, variational inference, and reparameterization-style gradient estimators.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is standard for reparameterization, but direct verification would require a VAE/reparameterization source."
+    },
+    {
+      "unit_id": "ba84db6047919656",
+      "node_id": "differentiable_sampling",
+      "field": "why_it_matters",
+      "text": "The role of Reparameterization & differentiable sampling is to connect Probability theory, Latent variables & hidden state to downstream capabilities including Continuous normalizing flows & learned vector fields, Variational autoencoders, Diffusion & score-based models.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support probability, latent variables, and variational models, but not the full downstream list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "VAE support is strong; flows and diffusion/score-based models need more specific sources."
+    },
+    {
+      "unit_id": "3ec0a8d336288cf6",
+      "node_id": "differentiable_sampling",
+      "field": "examples[1]",
+      "text": "substrate for Continuous normalizing flows & learned vector fields",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources provide related probability/modeling background but do not directly establish continuous normalizing flows.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Normalizing-flow and CNF-specific sources are needed."
+    },
+    {
+      "unit_id": "aac8c6d3125daad5",
+      "node_id": "differentiable_sampling",
+      "field": "examples[2]",
+      "text": "substrate for Variational autoencoders",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support variational autoencoders and reparameterization background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Reparameterized differentiable sampling is central to VAEs, though a VAE paper would verify directly."
+    },
+    {
+      "unit_id": "5347f143217c517a",
+      "node_id": "differentiable_sampling",
+      "field": "examples[3]",
+      "text": "substrate for Diffusion & score-based models",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources provide probabilistic/generative background, not direct diffusion or score-based model evidence.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Diffusion and score-based modeling need specific citations."
+    },
+    {
+      "unit_id": "0d334996b2ee1f4e",
+      "node_id": "differentiable_sampling",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Probability theory, Latent variables & hidden state.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support probability and latent-variable dependencies but not the generic limitation statement.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependencies are plausible; the limitation wording is not directly sourced."
+    },
+    {
+      "unit_id": "2e73952806be6fc2",
+      "node_id": "differentiable_sampling",
+      "field": "dependencies.probability.rationale",
+      "text": "Reparameterization & differentiable sampling uses Probability theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML supports probability and stochastic latent-variable modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sampling and stochastic latent variables directly rely on probability."
+    },
+    {
+      "unit_id": "865e7dcadd9de37c",
+      "node_id": "differentiable_sampling",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "Reparameterization & differentiable sampling uses Latent variables & hidden state as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML supports latent-variable model background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The node definition explicitly concerns stochastic latent variables."
+    },
+    {
+      "unit_id": "71de52769e2420a7",
+      "node_id": "differentiable_sampling",
+      "field": "dependencies.calculus.rationale",
+      "text": "Reparameterization & differentiable sampling uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning supports gradient-based optimization and automatic differentiation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Differentiating through reparameterized samples relies on calculus/autodiff."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "640d7cb549379b7b",
+      "node_id": "differentiable_sampling",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Probability theory is core to stochastic sampling.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "5321056ed6b94548",
+      "node_id": "differentiable_sampling",
+      "dependency_id": "latent_variables",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Latent variables are central to the node definition; core strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ef6d5c381955b21a",
+      "node_id": "differentiable_sampling",
+      "dependency_id": "calculus",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Autodiff/calculus supports gradient flow through reparameterized samples; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

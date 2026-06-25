@@ -1,0 +1,170 @@
+{
+  "node_id": "gaussian_processes",
+  "label": "Gaussian processes",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "gaussian_processes",
+    "label": "Gaussian processes",
+    "layer": "model",
+    "tags": [
+      "model",
+      "probabilistic"
+    ],
+    "aliases": [],
+    "definition": "A Gaussian process places a probability distribution over functions and uses a kernel to couple observations, interpolate predictions, and quantify posterior uncertainty.",
+    "why_it_matters": "The role of Gaussian processes is to connect Kernels & implicit feature maps, Bayesian & approximate inference to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Scientific ML, simulators & digital twins, Weather, climate & geospatial forecasting.",
+    "examples": [
+      "substrate for Time-series forecasting, anomaly & fraud detection",
+      "substrate for Scientific ML, simulators & digital twins",
+      "substrate for Weather, climate & geospatial forecasting"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Kernels & implicit feature maps, Bayesian & approximate inference."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "kernel_methods",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Gaussian processes is assembled in part from the mechanism or model component Kernels & implicit feature maps."
+      },
+      {
+        "id": "bayesian_approx_inference",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Gaussian processes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      },
+      {
+        "id": "distributions_uncertainty",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Gaussian processes consumes, emits, or organizes information using Distributions, uncertainty & beliefs."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "492d4280f8c24803",
+      "node_id": "gaussian_processes",
+      "field": "definition",
+      "text": "A Gaussian process places a probability distribution over functions and uses a kernel to couple observations, interpolate predictions, and quantify posterior uncertainty."
+    },
+    {
+      "unit_id": "571de7faf729507d",
+      "node_id": "gaussian_processes",
+      "field": "why_it_matters",
+      "text": "The role of Gaussian processes is to connect Kernels & implicit feature maps, Bayesian & approximate inference to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Scientific ML, simulators & digital twins, Weather, climate & geospatial forecasting."
+    },
+    {
+      "unit_id": "9efda90b55a74adf",
+      "node_id": "gaussian_processes",
+      "field": "examples[1]",
+      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+    },
+    {
+      "unit_id": "245b25345f21e465",
+      "node_id": "gaussian_processes",
+      "field": "examples[2]",
+      "text": "substrate for Scientific ML, simulators & digital twins"
+    },
+    {
+      "unit_id": "c4dcd866fac616be",
+      "node_id": "gaussian_processes",
+      "field": "examples[3]",
+      "text": "substrate for Weather, climate & geospatial forecasting"
+    },
+    {
+      "unit_id": "9af4ce35c2e2cfeb",
+      "node_id": "gaussian_processes",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Kernels & implicit feature maps, Bayesian & approximate inference."
+    },
+    {
+      "unit_id": "f0d1cbdd5b6ffedb",
+      "node_id": "gaussian_processes",
+      "field": "dependencies.kernel_methods.rationale",
+      "text": "Gaussian processes is assembled in part from the mechanism or model component Kernels & implicit feature maps."
+    },
+    {
+      "unit_id": "46f1e10d7db9df36",
+      "node_id": "gaussian_processes",
+      "field": "dependencies.bayesian_approx_inference.rationale",
+      "text": "Gaussian processes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "unit_id": "dbcd692255368389",
+      "node_id": "gaussian_processes",
+      "field": "dependencies.distributions_uncertainty.rationale",
+      "text": "Gaussian processes consumes, emits, or organizes information using Distributions, uncertainty & beliefs."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "833278289b3f23ec",
+      "node_id": "gaussian_processes",
+      "dependency_id": "kernel_methods",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Gaussian processes is assembled in part from the mechanism or model component Kernels & implicit feature maps."
+    },
+    {
+      "edge_id": "42ccc1afa451383d",
+      "node_id": "gaussian_processes",
+      "dependency_id": "bayesian_approx_inference",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Gaussian processes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "edge_id": "8cf9bdce2febf99b",
+      "node_id": "gaussian_processes",
+      "dependency_id": "distributions_uncertainty",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Gaussian processes consumes, emits, or organizes information using Distributions, uncertainty & beliefs."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/gaussian_processes.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "node_id": "accelerators",
+  "label": "GPUs, TPUs & AI accelerators",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "accelerators",
+    "label": "GPUs, TPUs & AI accelerators",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "hardware"
+    ],
+    "aliases": [],
+    "definition": "GPUs, TPUs, NPUs, and other AI accelerators execute dense, sparse, tensor, or event-driven operations with specialized memory hierarchies and interconnects.",
+    "why_it_matters": "The role of GPUs, TPUs & AI accelerators is to connect Linear algebra, Numerical analysis to downstream capabilities including CUDA, ROCm, Triton & custom kernels, Quantized inference & compressed deployment, Edge, on-device & neuromorphic deployment.",
+    "examples": [
+      "substrate for CUDA, ROCm, Triton & custom kernels",
+      "substrate for Quantized inference & compressed deployment",
+      "substrate for Edge, on-device & neuromorphic deployment"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Linear algebra, Numerical analysis."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_tpu",
+      "ref_cuda_guide"
+    ],
+    "dependencies": [
+      {
+        "id": "linear_algebra",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "GPUs, TPUs & AI accelerators turns Linear algebra into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "numerical_methods",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "GPUs, TPUs & AI accelerators turns Numerical analysis into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "distributed_systems",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "GPUs, TPUs & AI accelerators turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "0d5c3cea3dcd8612",
+      "node_id": "accelerators",
+      "field": "definition",
+      "text": "GPUs, TPUs, NPUs, and other AI accelerators execute dense, sparse, tensor, or event-driven operations with specialized memory hierarchies and interconnects."
+    },
+    {
+      "unit_id": "c77a3e52f127df34",
+      "node_id": "accelerators",
+      "field": "why_it_matters",
+      "text": "The role of GPUs, TPUs & AI accelerators is to connect Linear algebra, Numerical analysis to downstream capabilities including CUDA, ROCm, Triton & custom kernels, Quantized inference & compressed deployment, Edge, on-device & neuromorphic deployment."
+    },
+    {
+      "unit_id": "6ec1d2a4eaba2c01",
+      "node_id": "accelerators",
+      "field": "examples[1]",
+      "text": "substrate for CUDA, ROCm, Triton & custom kernels"
+    },
+    {
+      "unit_id": "abeaeaa9f4e47ddc",
+      "node_id": "accelerators",
+      "field": "examples[2]",
+      "text": "substrate for Quantized inference & compressed deployment"
+    },
+    {
+      "unit_id": "baffb394dadc0261",
+      "node_id": "accelerators",
+      "field": "examples[3]",
+      "text": "substrate for Edge, on-device & neuromorphic deployment"
+    },
+    {
+      "unit_id": "9c66d894701267c5",
+      "node_id": "accelerators",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Linear algebra, Numerical analysis."
+    },
+    {
+      "unit_id": "d47e693943bddea7",
+      "node_id": "accelerators",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "GPUs, TPUs & AI accelerators turns Linear algebra into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "7b4d16fd7efad4f0",
+      "node_id": "accelerators",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "GPUs, TPUs & AI accelerators turns Numerical analysis into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "6607f3eddd5eb964",
+      "node_id": "accelerators",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "GPUs, TPUs & AI accelerators turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "00847cfd7bc6aa36",
+      "node_id": "accelerators",
+      "dependency_id": "linear_algebra",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "GPUs, TPUs & AI accelerators turns Linear algebra into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "7850f81da46a8481",
+      "node_id": "accelerators",
+      "dependency_id": "numerical_methods",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "GPUs, TPUs & AI accelerators turns Numerical analysis into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "cf68a214ffe73378",
+      "node_id": "accelerators",
+      "dependency_id": "distributed_systems",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "GPUs, TPUs & AI accelerators turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_tpu": {
+        "id": "ref_tpu",
+        "title": "In-Datacenter Performance Analysis of a Tensor Processing Unit",
+        "authors": "Jouppi et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1704.04760"
+      },
+      "ref_cuda_guide": {
+        "id": "ref_cuda_guide",
+        "title": "NVIDIA CUDA C Programming Guide",
+        "authors": "NVIDIA",
+        "year": 2024,
+        "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/accelerators.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

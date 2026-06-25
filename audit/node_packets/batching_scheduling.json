@@ -1,0 +1,164 @@
+{
+  "node_id": "batching_scheduling",
+  "label": "Batching, admission control & GPU scheduling",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "batching_scheduling",
+    "label": "Batching, admission control & GPU scheduling",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "serving",
+      "performance"
+    ],
+    "aliases": [],
+    "definition": "Batching and admission control combine requests, assign accelerator time, enforce priorities, and balance latency, throughput, fairness, and memory pressure.",
+    "why_it_matters": "The role of Batching, admission control & GPU scheduling is to connect Model servers & inference runtimes, Distributed systems & networking to downstream capabilities including Paged attention & KV-memory management, Fault tolerance, security, energy & cost optimization.",
+    "examples": [
+      "substrate for Paged attention & KV-memory management",
+      "substrate for Fault tolerance, security, energy & cost optimization"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Distributed systems & networking."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_ddia"
+    ],
+    "dependencies": [
+      {
+        "id": "model_serving",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Batching, admission control & GPU scheduling turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "distributed_systems",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Batching, admission control & GPU scheduling turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Batching, admission control & GPU scheduling turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "1eb3a313f2a0b5d4",
+      "node_id": "batching_scheduling",
+      "field": "definition",
+      "text": "Batching and admission control combine requests, assign accelerator time, enforce priorities, and balance latency, throughput, fairness, and memory pressure."
+    },
+    {
+      "unit_id": "65bd0ff93034332e",
+      "node_id": "batching_scheduling",
+      "field": "why_it_matters",
+      "text": "The role of Batching, admission control & GPU scheduling is to connect Model servers & inference runtimes, Distributed systems & networking to downstream capabilities including Paged attention & KV-memory management, Fault tolerance, security, energy & cost optimization."
+    },
+    {
+      "unit_id": "865b21b69e7d3a92",
+      "node_id": "batching_scheduling",
+      "field": "examples[1]",
+      "text": "substrate for Paged attention & KV-memory management"
+    },
+    {
+      "unit_id": "ea499caf21b0cb01",
+      "node_id": "batching_scheduling",
+      "field": "examples[2]",
+      "text": "substrate for Fault tolerance, security, energy & cost optimization"
+    },
+    {
+      "unit_id": "36826e45b15e7241",
+      "node_id": "batching_scheduling",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Distributed systems & networking."
+    },
+    {
+      "unit_id": "95a5c82621b97b49",
+      "node_id": "batching_scheduling",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Batching, admission control & GPU scheduling turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "8ff6b848c58f2b9b",
+      "node_id": "batching_scheduling",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Batching, admission control & GPU scheduling turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "d888f89dc4cd3472",
+      "node_id": "batching_scheduling",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Batching, admission control & GPU scheduling turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "e807594624173351",
+      "node_id": "batching_scheduling",
+      "dependency_id": "model_serving",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Batching, admission control & GPU scheduling turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "c4a6c2393f8728d2",
+      "node_id": "batching_scheduling",
+      "dependency_id": "distributed_systems",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Batching, admission control & GPU scheduling turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "67364f8b8b87f274",
+      "node_id": "batching_scheduling",
+      "dependency_id": "algorithms_data_structures",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Batching, admission control & GPU scheduling turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/batching_scheduling.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

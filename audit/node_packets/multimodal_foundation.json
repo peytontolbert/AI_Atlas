@@ -1,0 +1,219 @@
+{
+  "node_id": "multimodal_foundation",
+  "label": "Multimodal foundation models",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "multimodal_foundation",
+    "label": "Multimodal foundation models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "multimodal",
+      "foundation-models"
+    ],
+    "aliases": [],
+    "definition": "A multimodal foundation model aligns and jointly processes text, images, audio, video, or actions through shared token spaces and cross-modal interaction.",
+    "why_it_matters": "The role of Multimodal foundation models is to connect Transformers, Cross-attention & co-attention to downstream capabilities including Multimodal assistants & vision-language systems, Browser, desktop & computer-use agents, Robotics & embodied AI.",
+    "examples": [
+      "substrate for Multimodal assistants & vision-language systems",
+      "substrate for Browser, desktop & computer-use agents",
+      "substrate for Robotics & embodied AI"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Cross-attention & co-attention."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "transformer",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Multimodal foundation models extends or specializes the architecture family Transformers."
+      },
+      {
+        "id": "cross_attention",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Multimodal foundation models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+      },
+      {
+        "id": "contrastive_objective",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Multimodal foundation models is learned, selected, or evaluated using the objective family Contrastive and mutual-information objectives."
+      },
+      {
+        "id": "multimodal_simulated_streams",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Multimodal foundation models consumes, emits, or organizes information using Multimodal, simulated & streaming data."
+      },
+      {
+        "id": "vqvae_tokenizer",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Multimodal foundation models extends or specializes the architecture family VQ-VAE & learned discrete tokenizers."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "8405b2bd63152932",
+      "node_id": "multimodal_foundation",
+      "field": "definition",
+      "text": "A multimodal foundation model aligns and jointly processes text, images, audio, video, or actions through shared token spaces and cross-modal interaction."
+    },
+    {
+      "unit_id": "e9fba64a815a950a",
+      "node_id": "multimodal_foundation",
+      "field": "why_it_matters",
+      "text": "The role of Multimodal foundation models is to connect Transformers, Cross-attention & co-attention to downstream capabilities including Multimodal assistants & vision-language systems, Browser, desktop & computer-use agents, Robotics & embodied AI."
+    },
+    {
+      "unit_id": "8f71abf2f2b26b76",
+      "node_id": "multimodal_foundation",
+      "field": "examples[1]",
+      "text": "substrate for Multimodal assistants & vision-language systems"
+    },
+    {
+      "unit_id": "ccb82a4e339bda53",
+      "node_id": "multimodal_foundation",
+      "field": "examples[2]",
+      "text": "substrate for Browser, desktop & computer-use agents"
+    },
+    {
+      "unit_id": "f639b5c3c84579bf",
+      "node_id": "multimodal_foundation",
+      "field": "examples[3]",
+      "text": "substrate for Robotics & embodied AI"
+    },
+    {
+      "unit_id": "a696631c2945ef93",
+      "node_id": "multimodal_foundation",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Cross-attention & co-attention."
+    },
+    {
+      "unit_id": "694a758a47c6c1b4",
+      "node_id": "multimodal_foundation",
+      "field": "dependencies.transformer.rationale",
+      "text": "Multimodal foundation models extends or specializes the architecture family Transformers."
+    },
+    {
+      "unit_id": "695040584d11204b",
+      "node_id": "multimodal_foundation",
+      "field": "dependencies.cross_attention.rationale",
+      "text": "Multimodal foundation models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+    },
+    {
+      "unit_id": "682148705514ef28",
+      "node_id": "multimodal_foundation",
+      "field": "dependencies.contrastive_objective.rationale",
+      "text": "Multimodal foundation models is learned, selected, or evaluated using the objective family Contrastive and mutual-information objectives."
+    },
+    {
+      "unit_id": "2618b6102fbbb267",
+      "node_id": "multimodal_foundation",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Multimodal foundation models consumes, emits, or organizes information using Multimodal, simulated & streaming data."
+    },
+    {
+      "unit_id": "235b33518a5d1de5",
+      "node_id": "multimodal_foundation",
+      "field": "dependencies.vqvae_tokenizer.rationale",
+      "text": "Multimodal foundation models extends or specializes the architecture family VQ-VAE & learned discrete tokenizers."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "460b270e09cf78c9",
+      "node_id": "multimodal_foundation",
+      "dependency_id": "transformer",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Multimodal foundation models extends or specializes the architecture family Transformers."
+    },
+    {
+      "edge_id": "0420911b1790193a",
+      "node_id": "multimodal_foundation",
+      "dependency_id": "cross_attention",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Multimodal foundation models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+    },
+    {
+      "edge_id": "3f7e2c9a61a274bb",
+      "node_id": "multimodal_foundation",
+      "dependency_id": "contrastive_objective",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Multimodal foundation models is learned, selected, or evaluated using the objective family Contrastive and mutual-information objectives."
+    },
+    {
+      "edge_id": "3d41f19996457fca",
+      "node_id": "multimodal_foundation",
+      "dependency_id": "multimodal_simulated_streams",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Multimodal foundation models consumes, emits, or organizes information using Multimodal, simulated & streaming data."
+    },
+    {
+      "edge_id": "ba3c4c9259d101a6",
+      "node_id": "multimodal_foundation",
+      "dependency_id": "vqvae_tokenizer",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Multimodal foundation models extends or specializes the architecture family VQ-VAE & learned discrete tokenizers."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/multimodal_foundation.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

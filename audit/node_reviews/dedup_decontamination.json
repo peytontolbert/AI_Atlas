@@ -1,0 +1,138 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "8b552b1453fac2d4",
+      "node_id": "dedup_decontamination",
+      "field": "definition",
+      "text": "Deduplication and decontamination remove repeated or benchmark-overlapping examples while retaining provenance needed to audit corpus composition.",
+      "source_ids": ["ref_dlbook", "ref_aima", "ref_pml"],
+      "evidence_location": "Deep Learning dataset and methodology context; AIMA data collection/assessment/management; PML data and preprocessing topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The packet sources support data management generally but do not directly support deduplication, benchmark decontamination, or provenance auditing."
+    },
+    {
+      "unit_id": "0dcfa83b7186622e",
+      "node_id": "dedup_decontamination",
+      "field": "why_it_matters",
+      "text": "The role of Deduplication, contamination control & provenance is to connect Data collection, curation & filtering, Embeddings & distributed representations to downstream capabilities including Large language models.",
+      "source_ids": ["ref_dlbook", "ref_aima", "ref_pml"],
+      "evidence_location": "AIMA data management and language-model topics; PML word embeddings/language models; Deep Learning dataset and representation-learning context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Data curation, embeddings, and language models are all relevant in the sources, but the specific dedup/decontamination/provenance-to-LLM relationship is not directly evidenced."
+    },
+    {
+      "unit_id": "8b1ebe433e12f415",
+      "node_id": "dedup_decontamination",
+      "field": "examples[1]",
+      "text": "substrate for Large language models",
+      "source_ids": ["ref_dlbook", "ref_aima"],
+      "evidence_location": "AIMA language models and pretrained contextual representations; Deep Learning sequence and language-model background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The sources support language models generally, but not deduplication/decontamination/provenance as a substrate for LLMs."
+    },
+    {
+      "unit_id": "caca3111466d1956",
+      "node_id": "dedup_decontamination",
+      "field": "examples[2]",
+      "text": "combined with Data collection, curation & filtering",
+      "source_ids": ["ref_aima", "ref_pml"],
+      "evidence_location": "AIMA data collection/assessment/management; PML data and preprocessing topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Deduplication and contamination control are data-curation activities, but this is inferred from general data-management evidence rather than directly stated."
+    },
+    {
+      "unit_id": "90138afeeb74395a",
+      "node_id": "dedup_decontamination",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Data collection, curation & filtering, Embeddings & distributed representations.",
+      "source_ids": ["ref_dlbook", "ref_aima", "ref_pml"],
+      "evidence_location": "AIMA/PML data management and preprocessing; PML/AIMA embeddings and word-representation topics; Deep Learning methodology context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Data quality and embedding relevance are partly supported. The generic limitations and direct dependency list are broader than the cited evidence."
+    },
+    {
+      "unit_id": "fd168b6a201b9af0",
+      "node_id": "dedup_decontamination",
+      "field": "dependencies.data_curation.rationale",
+      "text": "Deduplication, contamination control & provenance uses Data collection, curation & filtering as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_aima", "ref_pml"],
+      "evidence_location": "AIMA data collection/assessment/management; PML data and preprocessing topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Deduplication and decontamination are defensible curation/filtering operations, though the source support is general."
+    },
+    {
+      "unit_id": "83e6985c00c5bad9",
+      "node_id": "dedup_decontamination",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Deduplication, contamination control & provenance uses Embeddings & distributed representations as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook", "ref_pml", "ref_aima"],
+      "evidence_location": "PML and AIMA word embeddings/vector representations; Deep Learning representation-learning context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Embeddings can support semantic duplicate detection, but the cited packet sources do not directly connect embeddings to deduplication/provenance."
+    },
+    {
+      "unit_id": "4e50d547538131ff",
+      "node_id": "dedup_decontamination",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Deduplication, contamination control & provenance uses Databases & information retrieval as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_aima"],
+      "evidence_location": "AIMA data collection/assessment/management and information-retrieval/search-related topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Data management and retrieval are plausibly relevant, but direct support for this specific dependency is weak."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "054c9fda83ae9432",
+      "node_id": "dedup_decontamination",
+      "dependency_id": "data_curation",
+      "source_ids": ["ref_aima", "ref_pml"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Deduplication/decontamination are curation/filtering activities; core strength is defensible but generally sourced.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "787ef005be225ebf",
+      "node_id": "dedup_decontamination",
+      "dependency_id": "embeddings",
+      "source_ids": ["ref_dlbook", "ref_pml", "ref_aima"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Embeddings are useful for semantic similarity, but they are not always required for deduplication/provenance and the packet evidence does not directly support core strength.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "985b8ffea1774f9d",
+      "node_id": "dedup_decontamination",
+      "dependency_id": "databases_ir",
+      "source_ids": ["ref_aima"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Databases/IR are plausible implementation supports for corpus search and matching, but direct source support is weak. Common strength is plausible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

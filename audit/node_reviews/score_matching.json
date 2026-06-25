@@ -1,0 +1,138 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "13c64477ff5c6a26",
+      "node_id": "score_matching",
+      "field": "definition",
+      "text": "The model learns gradients of log density, often from noise-corrupted data.",
+      "source_ids": ["ref_pml", "ref_diffusion"],
+      "evidence_location": "Murphy PML, score matching/denoising score material; Ho et al. DDPM paper, denoising diffusion training with noise-corrupted data.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The gradient-of-log-density and denoising/corruption pieces are supported across sources, but the exact sentence combines them."
+    },
+    {
+      "unit_id": "785743b9e1636d82",
+      "node_id": "score_matching",
+      "field": "why_it_matters",
+      "text": "The role of Score matching & denoising score objectives is to connect Generative modeling, Probability theory to downstream capabilities including Denoising diffusion & stochastic corruption, Diffusion & score-based models.",
+      "source_ids": ["ref_pml", "ref_diffusion"],
+      "evidence_location": "Murphy PML score/probabilistic modeling material; Ho et al. DDPM abstract and method on diffusion probabilistic models and denoising objectives.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited sources support probability/generative links and diffusion/denoising downstream use; graph-role wording is synthesized."
+    },
+    {
+      "unit_id": "683bafcf81b8d70d",
+      "node_id": "score_matching",
+      "field": "examples[1]",
+      "text": "substrate for Denoising diffusion & stochastic corruption",
+      "source_ids": ["ref_diffusion", "ref_pml"],
+      "evidence_location": "Ho et al. DDPM paper on forward noising and learned denoising reverse process; Murphy PML score/denoising material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The denoising/noise-corruption objective is directly supported."
+    },
+    {
+      "unit_id": "9482259ea5af91de",
+      "node_id": "score_matching",
+      "field": "examples[2]",
+      "text": "substrate for Diffusion & score-based models",
+      "source_ids": ["ref_diffusion", "ref_pml"],
+      "evidence_location": "Ho et al. DDPM paper on diffusion probabilistic models; Murphy PML score-based generative modeling material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Diffusion support is direct; the broader score-based model label is supported by synthesis with PML."
+    },
+    {
+      "unit_id": "54fd218d18745f47",
+      "node_id": "score_matching",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Probability theory.",
+      "source_ids": ["ref_pml", "ref_diffusion"],
+      "evidence_location": "Murphy PML score/probabilistic modeling material; Ho et al. DDPM training objective and variational-bound discussion.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependencies are supported, but the generic objective-mismatch limitation is not directly stated in the cited sources."
+    },
+    {
+      "unit_id": "36701623cddefa9a",
+      "node_id": "score_matching",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "Score matching & denoising score objectives uses Generative modeling as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_pml", "ref_diffusion"],
+      "evidence_location": "Murphy PML score-based generative modeling material; Ho et al. DDPM as a generative diffusion model.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited sources directly place these objectives in generative modeling."
+    },
+    {
+      "unit_id": "76ce9630c25a253a",
+      "node_id": "score_matching",
+      "field": "dependencies.probability.rationale",
+      "text": "Score matching & denoising score objectives uses Probability theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_pml", "ref_diffusion"],
+      "evidence_location": "Murphy PML on log density scores; Ho et al. DDPM on diffusion probabilistic models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Log density gradients and diffusion probabilistic models directly support the probability dependency."
+    },
+    {
+      "unit_id": "e56c3f56aa3ffe7e",
+      "node_id": "score_matching",
+      "field": "dependencies.calculus.rationale",
+      "text": "Score matching & denoising score objectives uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_pml"],
+      "evidence_location": "Murphy PML score matching material, where the score is the gradient of log density.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gradients directly imply calculus, but automatic differentiation is not directly evidenced by the packet source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "70fca52a498508a3",
+      "node_id": "score_matching",
+      "dependency_id": "generative_learning",
+      "source_ids": ["ref_pml", "ref_diffusion"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Score/denoising objectives are used for generative diffusion models; core strength is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "80cfa389d0b5bb16",
+      "node_id": "score_matching",
+      "dependency_id": "probability",
+      "source_ids": ["ref_pml", "ref_diffusion"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Scores are gradients of log densities and DDPMs are probabilistic models; core strength is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "95eb5e009cc204b6",
+      "node_id": "score_matching",
+      "dependency_id": "calculus",
+      "source_ids": ["ref_pml"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gradient-based definition supports a calculus dependency; common strength is appropriate.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

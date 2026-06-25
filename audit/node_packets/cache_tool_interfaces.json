@@ -1,0 +1,191 @@
+{
+  "node_id": "cache_tool_interfaces",
+  "label": "Caches, APIs & tool interfaces",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "cache_tool_interfaces",
+    "label": "Caches, APIs & tool interfaces",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "systems",
+      "agents"
+    ],
+    "aliases": [],
+    "definition": "Reusable state, external functions, services, and interfaces extend computation beyond model parameters.",
+    "why_it_matters": "The role of Caches, APIs & tool interfaces is to connect Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including KV cache & recurrent inference state, External databases, APIs & live tools, Code execution, interpreters & sandboxes.",
+    "examples": [
+      "substrate for KV cache & recurrent inference state",
+      "substrate for External databases, APIs & live tools",
+      "substrate for Code execution, interpreters & sandboxes"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "algorithms_data_structures",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Caches, APIs & tool interfaces uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "programs_ast_ir",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Caches, APIs & tool interfaces uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "databases_ir",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Caches, APIs & tool interfaces uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "distributed_systems",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Caches, APIs & tool interfaces uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "4c5bba9f6fbe45b7",
+      "node_id": "cache_tool_interfaces",
+      "field": "definition",
+      "text": "Reusable state, external functions, services, and interfaces extend computation beyond model parameters."
+    },
+    {
+      "unit_id": "1ce301a0af9ffb80",
+      "node_id": "cache_tool_interfaces",
+      "field": "why_it_matters",
+      "text": "The role of Caches, APIs & tool interfaces is to connect Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including KV cache & recurrent inference state, External databases, APIs & live tools, Code execution, interpreters & sandboxes."
+    },
+    {
+      "unit_id": "7eae1f1cbe08758c",
+      "node_id": "cache_tool_interfaces",
+      "field": "examples[1]",
+      "text": "substrate for KV cache & recurrent inference state"
+    },
+    {
+      "unit_id": "5abe0d2e38b80e3b",
+      "node_id": "cache_tool_interfaces",
+      "field": "examples[2]",
+      "text": "substrate for External databases, APIs & live tools"
+    },
+    {
+      "unit_id": "d148c4925a234579",
+      "node_id": "cache_tool_interfaces",
+      "field": "examples[3]",
+      "text": "substrate for Code execution, interpreters & sandboxes"
+    },
+    {
+      "unit_id": "4b0177d3199727f4",
+      "node_id": "cache_tool_interfaces",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations."
+    },
+    {
+      "unit_id": "94be5498ff09d082",
+      "node_id": "cache_tool_interfaces",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Caches, APIs & tool interfaces uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "38874f6334996883",
+      "node_id": "cache_tool_interfaces",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Caches, APIs & tool interfaces uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "9ac4c542fd2cc809",
+      "node_id": "cache_tool_interfaces",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Caches, APIs & tool interfaces uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "97f66b9f55aea7d5",
+      "node_id": "cache_tool_interfaces",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Caches, APIs & tool interfaces uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "39d292a1b92bcff8",
+      "node_id": "cache_tool_interfaces",
+      "dependency_id": "algorithms_data_structures",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Caches, APIs & tool interfaces uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "35d841b778dfcc37",
+      "node_id": "cache_tool_interfaces",
+      "dependency_id": "programs_ast_ir",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Caches, APIs & tool interfaces uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "378a2f41724bf75a",
+      "node_id": "cache_tool_interfaces",
+      "dependency_id": "databases_ir",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Caches, APIs & tool interfaces uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "9ff3712030298734",
+      "node_id": "cache_tool_interfaces",
+      "dependency_id": "distributed_systems",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Caches, APIs & tool interfaces uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/cache_tool_interfaces.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

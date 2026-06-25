@@ -1,0 +1,206 @@
+{
+  "node_id": "best_of_n_verifier",
+  "label": "Best-of-N & verifier-guided selection",
+  "layer": "reasoning",
+  "editorial_status": "curated",
+  "node": {
+    "id": "best_of_n_verifier",
+    "label": "Best-of-N & verifier-guided selection",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "search",
+      "verification"
+    ],
+    "aliases": [],
+    "definition": "Best-of-N and verifier-guided selection generate multiple candidates and choose one with an outcome, process, preference, test, or learned quality scorer.",
+    "why_it_matters": "It converts sampling diversity into accuracy gains when the selector is more reliable than any single generation.",
+    "examples": [
+      "reward-ranked math solutions",
+      "test-ranked code patches",
+      "judge-selected responses"
+    ],
+    "limitations": [
+      "Selection can overfit verifier quirks, consume substantial compute, and discard diverse correct solutions."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_testtime",
+      "ref_rlvr"
+    ],
+    "dependencies": [
+      {
+        "id": "self_consistency",
+        "type": "verifies_with",
+        "strength": "core",
+        "rationale": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Self-consistency & best-of-N inference."
+      },
+      {
+        "id": "outcome_verifiers",
+        "type": "verifies_with",
+        "strength": "core",
+        "rationale": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Outcome verifiers & executable rewards."
+      },
+      {
+        "id": "process_reward_models",
+        "type": "verifies_with",
+        "strength": "common",
+        "rationale": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Process supervision & step-level reward models."
+      },
+      {
+        "id": "test_time_compute",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Test-time compute scaling."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b41a2e4850d243d7",
+      "node_id": "best_of_n_verifier",
+      "field": "definition",
+      "text": "Best-of-N and verifier-guided selection generate multiple candidates and choose one with an outcome, process, preference, test, or learned quality scorer."
+    },
+    {
+      "unit_id": "243cb3a70190aa64",
+      "node_id": "best_of_n_verifier",
+      "field": "why_it_matters",
+      "text": "It converts sampling diversity into accuracy gains when the selector is more reliable than any single generation."
+    },
+    {
+      "unit_id": "b7bc5c8c19d4f895",
+      "node_id": "best_of_n_verifier",
+      "field": "examples[1]",
+      "text": "reward-ranked math solutions"
+    },
+    {
+      "unit_id": "045cfcaab7b92fbb",
+      "node_id": "best_of_n_verifier",
+      "field": "examples[2]",
+      "text": "test-ranked code patches"
+    },
+    {
+      "unit_id": "29bcc50f25c663fd",
+      "node_id": "best_of_n_verifier",
+      "field": "examples[3]",
+      "text": "judge-selected responses"
+    },
+    {
+      "unit_id": "e7e594c600563693",
+      "node_id": "best_of_n_verifier",
+      "field": "limitations[1]",
+      "text": "Selection can overfit verifier quirks, consume substantial compute, and discard diverse correct solutions."
+    },
+    {
+      "unit_id": "00c9a852214cb05f",
+      "node_id": "best_of_n_verifier",
+      "field": "dependencies.self_consistency.rationale",
+      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Self-consistency & best-of-N inference."
+    },
+    {
+      "unit_id": "d6f3b34583b62b88",
+      "node_id": "best_of_n_verifier",
+      "field": "dependencies.outcome_verifiers.rationale",
+      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Outcome verifiers & executable rewards."
+    },
+    {
+      "unit_id": "9aeebe5b26124cd0",
+      "node_id": "best_of_n_verifier",
+      "field": "dependencies.process_reward_models.rationale",
+      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Process supervision & step-level reward models."
+    },
+    {
+      "unit_id": "26eaa535fd40f3a7",
+      "node_id": "best_of_n_verifier",
+      "field": "dependencies.test_time_compute.rationale",
+      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Test-time compute scaling."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "01e4147a4f818f39",
+      "node_id": "best_of_n_verifier",
+      "dependency_id": "self_consistency",
+      "type": "verifies_with",
+      "strength": "core",
+      "rationale": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Self-consistency & best-of-N inference."
+    },
+    {
+      "edge_id": "d9ba35765632294f",
+      "node_id": "best_of_n_verifier",
+      "dependency_id": "outcome_verifiers",
+      "type": "verifies_with",
+      "strength": "core",
+      "rationale": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Outcome verifiers & executable rewards."
+    },
+    {
+      "edge_id": "2e9e5855a7bd5e56",
+      "node_id": "best_of_n_verifier",
+      "dependency_id": "process_reward_models",
+      "type": "verifies_with",
+      "strength": "common",
+      "rationale": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Process supervision & step-level reward models."
+    },
+    {
+      "edge_id": "ad0265fc30c36269",
+      "node_id": "best_of_n_verifier",
+      "dependency_id": "test_time_compute",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Test-time compute scaling."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_testtime": {
+        "id": "ref_testtime",
+        "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+        "authors": "Snell et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2408.03314"
+      },
+      "ref_rlvr": {
+        "id": "ref_rlvr",
+        "title": "Reinforcement Learning with Verifiable Rewards: A Survey",
+        "authors": "Liu et al.",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2506.14245"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_rlvr": {
+        "id": "ref_rlvr",
+        "title": "Reinforcement Learning with Verifiable Rewards: A Survey",
+        "authors": "Liu et al.",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2506.14245"
+      },
+      "ref_testtime": {
+        "id": "ref_testtime",
+        "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+        "authors": "Snell et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2408.03314"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/best_of_n_verifier.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

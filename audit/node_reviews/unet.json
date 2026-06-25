@@ -1,0 +1,171 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "f7e7cb6112804f83",
+      "node_id": "unet",
+      "field": "definition",
+      "text": "A U-Net pairs a contracting encoder with an expanding decoder and cross-scale skip connections, preserving fine spatial detail for dense prediction or generation.",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Ronneberger et al. U-Net paper for contracting/expanding paths and skip connections; Deep Learning convolutional-network context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited node/reference evidence directly supports the architecture description at this level of specificity."
+    },
+    {
+      "unit_id": "963202636664fba4",
+      "node_id": "unet",
+      "field": "why_it_matters",
+      "text": "The role of U-Nets & encoder\u2013decoder convnets is to connect Convolutional neural networks, Residual, skip & highway connections to downstream capabilities including Diffusion & score-based models, Image generation, editing & design.",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Ronneberger et al. U-Net paper for contracting/expanding paths and skip connections; Deep Learning convolutional-network context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
+    },
+    {
+      "unit_id": "34fecc22384b33ef",
+      "node_id": "unet",
+      "field": "examples[1]",
+      "text": "substrate for Diffusion & score-based models",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Ronneberger et al. U-Net paper for contracting/expanding paths and skip connections; Deep Learning convolutional-network context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
+    },
+    {
+      "unit_id": "7c7eefc617fa83f4",
+      "node_id": "unet",
+      "field": "examples[2]",
+      "text": "substrate for Image generation, editing & design",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Ronneberger et al. U-Net paper for contracting/expanding paths and skip connections; Deep Learning convolutional-network context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
+    },
+    {
+      "unit_id": "c3e8afbf76b9daab",
+      "node_id": "unet",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Convolutional neural networks, Residual, skip & highway connections.",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Ronneberger et al. U-Net paper for contracting/expanding paths and skip connections; Deep Learning convolutional-network context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+    },
+    {
+      "unit_id": "d8cf1dd436716502",
+      "node_id": "unet",
+      "field": "dependencies.cnn.rationale",
+      "text": "U-Nets & encoder\u2013decoder convnets extends or specializes the architecture family Convolutional neural networks.",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Ronneberger et al. U-Net paper for contracting/expanding paths and skip connections; Deep Learning convolutional-network context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "418649de2767a035",
+      "node_id": "unet",
+      "field": "dependencies.residual_connections.rationale",
+      "text": "U-Nets & encoder\u2013decoder convnets is assembled in part from the mechanism or model component Residual, skip & highway connections.",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Ronneberger et al. U-Net paper for contracting/expanding paths and skip connections; Deep Learning convolutional-network context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "96382e64653a351e",
+      "node_id": "unet",
+      "field": "dependencies.resampling_patchification.rationale",
+      "text": "U-Nets & encoder\u2013decoder convnets is assembled in part from the mechanism or model component Striding, pooling, patchification & up/downsampling.",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Ronneberger et al. U-Net paper for contracting/expanding paths and skip connections; Deep Learning convolutional-network context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "6dd4e99fe85f27f4",
+      "node_id": "unet",
+      "dependency_id": "cnn",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "537825e0cf965406",
+      "node_id": "unet",
+      "dependency_id": "residual_connections",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c1699a53f1eee25f",
+      "node_id": "unet",
+      "dependency_id": "resampling_patchification",
+      "source_ids": [
+        "ref_unet",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

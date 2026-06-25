@@ -1,0 +1,123 @@
+{
+  "node_id": "algorithms_data_structures",
+  "label": "Algorithms & data structures",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "algorithms_data_structures",
+    "label": "Algorithms & data structures",
+    "layer": "foundation",
+    "tags": [
+      "computer-science",
+      "core"
+    ],
+    "aliases": [],
+    "definition": "Search, sorting, indexing, dynamic programming, graphs, and data organization determine computational behavior and efficiency.",
+    "why_it_matters": "The role of Algorithms & data structures is to connect Discrete mathematics & logic to downstream capabilities including Complexity & computability, Programming languages, compilers & type systems, Databases & information retrieval.",
+    "examples": [
+      "substrate for Complexity & computability",
+      "substrate for Programming languages, compilers & type systems",
+      "substrate for Databases & information retrieval"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Discrete mathematics & logic."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "discrete_math_logic",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Algorithms & data structures rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d2d32d9260299de0",
+      "node_id": "algorithms_data_structures",
+      "field": "definition",
+      "text": "Search, sorting, indexing, dynamic programming, graphs, and data organization determine computational behavior and efficiency."
+    },
+    {
+      "unit_id": "686792a051b817c0",
+      "node_id": "algorithms_data_structures",
+      "field": "why_it_matters",
+      "text": "The role of Algorithms & data structures is to connect Discrete mathematics & logic to downstream capabilities including Complexity & computability, Programming languages, compilers & type systems, Databases & information retrieval."
+    },
+    {
+      "unit_id": "fc1a986ad9090865",
+      "node_id": "algorithms_data_structures",
+      "field": "examples[1]",
+      "text": "substrate for Complexity & computability"
+    },
+    {
+      "unit_id": "bb2b3e5bb5708bfb",
+      "node_id": "algorithms_data_structures",
+      "field": "examples[2]",
+      "text": "substrate for Programming languages, compilers & type systems"
+    },
+    {
+      "unit_id": "017a69da9ffef693",
+      "node_id": "algorithms_data_structures",
+      "field": "examples[3]",
+      "text": "substrate for Databases & information retrieval"
+    },
+    {
+      "unit_id": "a9b5754cec929798",
+      "node_id": "algorithms_data_structures",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Discrete mathematics & logic."
+    },
+    {
+      "unit_id": "3218a9570ba8c832",
+      "node_id": "algorithms_data_structures",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Algorithms & data structures rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "42cc37e755090d79",
+      "node_id": "algorithms_data_structures",
+      "dependency_id": "discrete_math_logic",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Algorithms & data structures rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/algorithms_data_structures.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

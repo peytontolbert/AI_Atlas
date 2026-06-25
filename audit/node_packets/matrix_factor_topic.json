@@ -1,0 +1,184 @@
+{
+  "node_id": "matrix_factor_topic",
+  "label": "Matrix factorization & topic models",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "matrix_factor_topic",
+    "label": "Matrix factorization & topic models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "classical",
+      "retrieval"
+    ],
+    "aliases": [],
+    "definition": "Matrix factorization and topic models explain sparse user–item, word–document, or other observations through a smaller set of latent factors.",
+    "why_it_matters": "The role of Matrix factorization & topic models is to connect Linear algebra, Latent variables & hidden state to downstream capabilities including Recommendation, ranking & personalization.",
+    "examples": [
+      "substrate for Recommendation, ranking & personalization",
+      "combined with Linear algebra"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Linear algebra, Latent variables & hidden state."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "linear_algebra",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Matrix factorization & topic models rests on the formal or computational capabilities supplied by Linear algebra."
+      },
+      {
+        "id": "latent_variables",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Matrix factorization & topic models consumes, emits, or organizes information using Latent variables & hidden state."
+      },
+      {
+        "id": "unsupervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Matrix factorization & topic models follows the learning setup expressed by Unsupervised learning."
+      },
+      {
+        "id": "mle_cross_entropy",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Matrix factorization & topic models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "ea262cc5c2451fec",
+      "node_id": "matrix_factor_topic",
+      "field": "definition",
+      "text": "Matrix factorization and topic models explain sparse user–item, word–document, or other observations through a smaller set of latent factors."
+    },
+    {
+      "unit_id": "717a6e4f3a1fef71",
+      "node_id": "matrix_factor_topic",
+      "field": "why_it_matters",
+      "text": "The role of Matrix factorization & topic models is to connect Linear algebra, Latent variables & hidden state to downstream capabilities including Recommendation, ranking & personalization."
+    },
+    {
+      "unit_id": "66c3880114497abb",
+      "node_id": "matrix_factor_topic",
+      "field": "examples[1]",
+      "text": "substrate for Recommendation, ranking & personalization"
+    },
+    {
+      "unit_id": "e391fa8de72d5e6b",
+      "node_id": "matrix_factor_topic",
+      "field": "examples[2]",
+      "text": "combined with Linear algebra"
+    },
+    {
+      "unit_id": "ec7877e437b73d3b",
+      "node_id": "matrix_factor_topic",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Linear algebra, Latent variables & hidden state."
+    },
+    {
+      "unit_id": "9f9ed8c405b4e714",
+      "node_id": "matrix_factor_topic",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Matrix factorization & topic models rests on the formal or computational capabilities supplied by Linear algebra."
+    },
+    {
+      "unit_id": "470629a51481065c",
+      "node_id": "matrix_factor_topic",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "Matrix factorization & topic models consumes, emits, or organizes information using Latent variables & hidden state."
+    },
+    {
+      "unit_id": "d0da90ea44500716",
+      "node_id": "matrix_factor_topic",
+      "field": "dependencies.unsupervised_learning.rationale",
+      "text": "Matrix factorization & topic models follows the learning setup expressed by Unsupervised learning."
+    },
+    {
+      "unit_id": "0aadc48820929863",
+      "node_id": "matrix_factor_topic",
+      "field": "dependencies.mle_cross_entropy.rationale",
+      "text": "Matrix factorization & topic models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "3fc11eeac15c155f",
+      "node_id": "matrix_factor_topic",
+      "dependency_id": "linear_algebra",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Matrix factorization & topic models rests on the formal or computational capabilities supplied by Linear algebra."
+    },
+    {
+      "edge_id": "3227355978d8b143",
+      "node_id": "matrix_factor_topic",
+      "dependency_id": "latent_variables",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Matrix factorization & topic models consumes, emits, or organizes information using Latent variables & hidden state."
+    },
+    {
+      "edge_id": "44c38c387d4a6611",
+      "node_id": "matrix_factor_topic",
+      "dependency_id": "unsupervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Matrix factorization & topic models follows the learning setup expressed by Unsupervised learning."
+    },
+    {
+      "edge_id": "7688bc7e436dd518",
+      "node_id": "matrix_factor_topic",
+      "dependency_id": "mle_cross_entropy",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Matrix factorization & topic models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/matrix_factor_topic.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

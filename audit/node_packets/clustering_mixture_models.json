@@ -1,0 +1,163 @@
+{
+  "node_id": "clustering_mixture_models",
+  "label": "k-means, mixture models & clustering",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "clustering_mixture_models",
+    "label": "k-means, mixture models & clustering",
+    "layer": "model",
+    "tags": [
+      "model",
+      "classical"
+    ],
+    "aliases": [],
+    "definition": "Clustering and mixture models divide observations into latent groups using distance, density, or probabilistic component assignments without task labels.",
+    "why_it_matters": "The role of k-means, mixture models & clustering is to connect Unsupervised learning, Embeddings & distributed representations to downstream capabilities including Recommendation, ranking & personalization.",
+    "examples": [
+      "substrate for Recommendation, ranking & personalization",
+      "combined with Unsupervised learning"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Unsupervised learning, Embeddings & distributed representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "unsupervised_learning",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "k-means, mixture models & clustering follows the learning setup expressed by Unsupervised learning."
+      },
+      {
+        "id": "embeddings",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "k-means, mixture models & clustering consumes, emits, or organizes information using Embeddings & distributed representations."
+      },
+      {
+        "id": "mcmc_em_message_passing",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "k-means, mixture models & clustering is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "dfa5f16cf594bd1b",
+      "node_id": "clustering_mixture_models",
+      "field": "definition",
+      "text": "Clustering and mixture models divide observations into latent groups using distance, density, or probabilistic component assignments without task labels."
+    },
+    {
+      "unit_id": "acf12f2323da71ab",
+      "node_id": "clustering_mixture_models",
+      "field": "why_it_matters",
+      "text": "The role of k-means, mixture models & clustering is to connect Unsupervised learning, Embeddings & distributed representations to downstream capabilities including Recommendation, ranking & personalization."
+    },
+    {
+      "unit_id": "7f92260fc600d656",
+      "node_id": "clustering_mixture_models",
+      "field": "examples[1]",
+      "text": "substrate for Recommendation, ranking & personalization"
+    },
+    {
+      "unit_id": "1d3a72fa711503df",
+      "node_id": "clustering_mixture_models",
+      "field": "examples[2]",
+      "text": "combined with Unsupervised learning"
+    },
+    {
+      "unit_id": "ee448223050523d1",
+      "node_id": "clustering_mixture_models",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Unsupervised learning, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "5af063652d95ff03",
+      "node_id": "clustering_mixture_models",
+      "field": "dependencies.unsupervised_learning.rationale",
+      "text": "k-means, mixture models & clustering follows the learning setup expressed by Unsupervised learning."
+    },
+    {
+      "unit_id": "138ab8dc32cf9fed",
+      "node_id": "clustering_mixture_models",
+      "field": "dependencies.embeddings.rationale",
+      "text": "k-means, mixture models & clustering consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "0ea0bb7c303ae36a",
+      "node_id": "clustering_mixture_models",
+      "field": "dependencies.mcmc_em_message_passing.rationale",
+      "text": "k-means, mixture models & clustering is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "2b9d7435979cb341",
+      "node_id": "clustering_mixture_models",
+      "dependency_id": "unsupervised_learning",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "k-means, mixture models & clustering follows the learning setup expressed by Unsupervised learning."
+    },
+    {
+      "edge_id": "5e050b942d77e864",
+      "node_id": "clustering_mixture_models",
+      "dependency_id": "embeddings",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "k-means, mixture models & clustering consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "edge_id": "c85f0ebc3501e9f8",
+      "node_id": "clustering_mixture_models",
+      "dependency_id": "mcmc_em_message_passing",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "k-means, mixture models & clustering is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/clustering_mixture_models.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

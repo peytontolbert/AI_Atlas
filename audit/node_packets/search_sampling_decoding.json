@@ -1,0 +1,164 @@
+{
+  "node_id": "search_sampling_decoding",
+  "label": "Search, sampling & decoding procedures",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "search_sampling_decoding",
+    "label": "Search, sampling & decoding procedures",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "search",
+      "generation"
+    ],
+    "aliases": [],
+    "definition": "Candidate outputs or action trajectories are explored, scored, and selected beyond a single greedy pass.",
+    "why_it_matters": "The role of Search, sampling & decoding procedures is to connect Algorithms & data structures, Game theory & decision theory to downstream capabilities including Self-consistency & best-of-N inference, Beam search & constrained decoding, Test-time compute scaling.",
+    "examples": [
+      "substrate for Self-consistency & best-of-N inference",
+      "substrate for Beam search & constrained decoding",
+      "substrate for Test-time compute scaling"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Algorithms & data structures, Game theory & decision theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "algorithms_data_structures",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Search, sampling & decoding procedures uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "game_decision_theory",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Search, sampling & decoding procedures uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "probability",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Search, sampling & decoding procedures uses Probability theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "575ceb96bcbca3bf",
+      "node_id": "search_sampling_decoding",
+      "field": "definition",
+      "text": "Candidate outputs or action trajectories are explored, scored, and selected beyond a single greedy pass."
+    },
+    {
+      "unit_id": "1acab0342155bf10",
+      "node_id": "search_sampling_decoding",
+      "field": "why_it_matters",
+      "text": "The role of Search, sampling & decoding procedures is to connect Algorithms & data structures, Game theory & decision theory to downstream capabilities including Self-consistency & best-of-N inference, Beam search & constrained decoding, Test-time compute scaling."
+    },
+    {
+      "unit_id": "8e268008d775730a",
+      "node_id": "search_sampling_decoding",
+      "field": "examples[1]",
+      "text": "substrate for Self-consistency & best-of-N inference"
+    },
+    {
+      "unit_id": "8d8aae8851732816",
+      "node_id": "search_sampling_decoding",
+      "field": "examples[2]",
+      "text": "substrate for Beam search & constrained decoding"
+    },
+    {
+      "unit_id": "353daba7d3ec7813",
+      "node_id": "search_sampling_decoding",
+      "field": "examples[3]",
+      "text": "substrate for Test-time compute scaling"
+    },
+    {
+      "unit_id": "c038aa786450d2c8",
+      "node_id": "search_sampling_decoding",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Algorithms & data structures, Game theory & decision theory."
+    },
+    {
+      "unit_id": "4b4be1a8f85df0d6",
+      "node_id": "search_sampling_decoding",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Search, sampling & decoding procedures uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "4fa492784a52724d",
+      "node_id": "search_sampling_decoding",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Search, sampling & decoding procedures uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "a7be4b1755fac659",
+      "node_id": "search_sampling_decoding",
+      "field": "dependencies.probability.rationale",
+      "text": "Search, sampling & decoding procedures uses Probability theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "5737ff03f9fee4ab",
+      "node_id": "search_sampling_decoding",
+      "dependency_id": "algorithms_data_structures",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Search, sampling & decoding procedures uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "60cd2a99c20b89c2",
+      "node_id": "search_sampling_decoding",
+      "dependency_id": "game_decision_theory",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Search, sampling & decoding procedures uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "0921daa04620678f",
+      "node_id": "search_sampling_decoding",
+      "dependency_id": "probability",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Search, sampling & decoding procedures uses Probability theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/search_sampling_decoding.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

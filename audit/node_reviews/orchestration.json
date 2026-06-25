@@ -1,0 +1,230 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "2deaca31f6355b9d",
+      "node_id": "orchestration",
+      "field": "definition",
+      "text": "Workflow and cluster orchestration allocate resources, schedule jobs, express dependencies, retry failures, and coordinate multi-stage ML pipelines.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "DDIA supports distributed jobs, coordination, failures, and dependencies; ML pipeline coordination is synthesized from systems and ML references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "A workflow scheduler or cluster orchestrator source would be needed for exact verification."
+    },
+    {
+      "unit_id": "d91821ab330e46db",
+      "node_id": "orchestration",
+      "field": "why_it_matters",
+      "text": "The role of Workflow, cluster & job orchestration is to connect Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Model registry, versioning & MLOps / LLMOps, Multi-agent systems & organizational intelligence, Simulation farms, digital environments & scenario generation.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
+    },
+    {
+      "unit_id": "ecee936ceaff76be",
+      "node_id": "orchestration",
+      "field": "examples[1]",
+      "text": "substrate for Model registry, versioning & MLOps / LLMOps",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "51324430d775c9fc",
+      "node_id": "orchestration",
+      "field": "examples[2]",
+      "text": "substrate for Multi-agent systems & organizational intelligence",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "63f9bd6d0a8209a8",
+      "node_id": "orchestration",
+      "field": "examples[3]",
+      "text": "substrate for Simulation farms, digital environments & scenario generation",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "04f66853a9fe164e",
+      "node_id": "orchestration",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+    },
+    {
+      "unit_id": "31aecf8057756bc7",
+      "node_id": "orchestration",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Workflow, cluster & job orchestration turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "b1947cc59e99880b",
+      "node_id": "orchestration",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Workflow, cluster & job orchestration turns Programs, ASTs, bytecode & intermediate representations into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "4e7aac96ed5ac2ff",
+      "node_id": "orchestration",
+      "field": "dependencies.storage_checkpoints.rationale",
+      "text": "Workflow, cluster & job orchestration turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "cdcd40a820e216a3",
+      "node_id": "orchestration",
+      "field": "dependencies.data_pipelines.rationale",
+      "text": "Workflow, cluster & job orchestration turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "004c42a2c1260546",
+      "node_id": "orchestration",
+      "dependency_id": "distributed_systems",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "980e5f597265eea6",
+      "node_id": "orchestration",
+      "dependency_id": "programs_ast_ir",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible but not adequately supported by the cited sources at this wording or strength.",
+      "relationship_type_supported": false,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "945dedc2c492faba",
+      "node_id": "orchestration",
+      "dependency_id": "storage_checkpoints",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9b7402a35a8f014e",
+      "node_id": "orchestration",
+      "dependency_id": "data_pipelines",
+      "source_ids": [
+        "ref_ddia",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

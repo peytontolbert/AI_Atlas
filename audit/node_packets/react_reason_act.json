@@ -1,0 +1,163 @@
+{
+  "node_id": "react_reason_act",
+  "label": "ReAct-style reasoning and acting",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "react_reason_act",
+    "label": "ReAct-style reasoning and acting",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "agents"
+    ],
+    "aliases": [],
+    "definition": "Reasoning traces and environment actions are interleaved so the model can update plans using observations from tools.",
+    "why_it_matters": "The role of ReAct-style reasoning and acting is to connect Chain-of-thought & latent reasoning, Tool use & function calling to downstream capabilities including Observe–plan–act agent loops.",
+    "examples": [
+      "substrate for Observe–plan–act agent loops",
+      "combined with Chain-of-thought & latent reasoning"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Tool use & function calling."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "cot_latent_reasoning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "ReAct-style reasoning and acting uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "tool_use_function_calling",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "ReAct-style reasoning and acting uses Tool use & function calling as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "external_data_tools",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "ReAct-style reasoning and acting stores, selects, or obtains information through External databases, APIs & live tools."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c30003df454655b0",
+      "node_id": "react_reason_act",
+      "field": "definition",
+      "text": "Reasoning traces and environment actions are interleaved so the model can update plans using observations from tools."
+    },
+    {
+      "unit_id": "20223e662825fc01",
+      "node_id": "react_reason_act",
+      "field": "why_it_matters",
+      "text": "The role of ReAct-style reasoning and acting is to connect Chain-of-thought & latent reasoning, Tool use & function calling to downstream capabilities including Observe–plan–act agent loops."
+    },
+    {
+      "unit_id": "baf0c5846d0a7ab2",
+      "node_id": "react_reason_act",
+      "field": "examples[1]",
+      "text": "substrate for Observe–plan–act agent loops"
+    },
+    {
+      "unit_id": "84b4965bbeeb029f",
+      "node_id": "react_reason_act",
+      "field": "examples[2]",
+      "text": "combined with Chain-of-thought & latent reasoning"
+    },
+    {
+      "unit_id": "c8620c56af325877",
+      "node_id": "react_reason_act",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Tool use & function calling."
+    },
+    {
+      "unit_id": "a69a0d9e0a598844",
+      "node_id": "react_reason_act",
+      "field": "dependencies.cot_latent_reasoning.rationale",
+      "text": "ReAct-style reasoning and acting uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "aad034d4f83cc227",
+      "node_id": "react_reason_act",
+      "field": "dependencies.tool_use_function_calling.rationale",
+      "text": "ReAct-style reasoning and acting uses Tool use & function calling as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f23d9595fdc92b2c",
+      "node_id": "react_reason_act",
+      "field": "dependencies.external_data_tools.rationale",
+      "text": "ReAct-style reasoning and acting stores, selects, or obtains information through External databases, APIs & live tools."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "9d5a7bc0c9c64039",
+      "node_id": "react_reason_act",
+      "dependency_id": "cot_latent_reasoning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "ReAct-style reasoning and acting uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "32224aa06742e46c",
+      "node_id": "react_reason_act",
+      "dependency_id": "tool_use_function_calling",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "ReAct-style reasoning and acting uses Tool use & function calling as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "d7b6de76deac32b4",
+      "node_id": "react_reason_act",
+      "dependency_id": "external_data_tools",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "ReAct-style reasoning and acting stores, selects, or obtains information through External databases, APIs & live tools."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_react": {
+        "id": "ref_react",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.03629"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/react_reason_act.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

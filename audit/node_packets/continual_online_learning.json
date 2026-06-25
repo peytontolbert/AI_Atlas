@@ -1,0 +1,163 @@
+{
+  "node_id": "continual_online_learning",
+  "label": "Continual & online learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "continual_online_learning",
+    "label": "Continual & online learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "adaptation"
+    ],
+    "aliases": [],
+    "definition": "Models update over a stream while balancing plasticity, stability, and catastrophic forgetting.",
+    "why_it_matters": "The role of Continual & online learning is to connect Sequences, events & time series, Multimodal, simulated & streaming data to downstream capabilities including Continual learning & test-time adaptation pipelines, Procedural memory & skills.",
+    "examples": [
+      "substrate for Continual learning & test-time adaptation pipelines",
+      "substrate for Procedural memory & skills"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Sequences, events & time series, Multimodal, simulated & streaming data."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Continual & online learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "multimodal_simulated_streams",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Continual & online learning uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Continual & online learning uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "09c55dba73f3dd73",
+      "node_id": "continual_online_learning",
+      "field": "definition",
+      "text": "Models update over a stream while balancing plasticity, stability, and catastrophic forgetting."
+    },
+    {
+      "unit_id": "ef67fd0e46198e9b",
+      "node_id": "continual_online_learning",
+      "field": "why_it_matters",
+      "text": "The role of Continual & online learning is to connect Sequences, events & time series, Multimodal, simulated & streaming data to downstream capabilities including Continual learning & test-time adaptation pipelines, Procedural memory & skills."
+    },
+    {
+      "unit_id": "90d64633d3cd2e65",
+      "node_id": "continual_online_learning",
+      "field": "examples[1]",
+      "text": "substrate for Continual learning & test-time adaptation pipelines"
+    },
+    {
+      "unit_id": "f5a8a82b1c5096f3",
+      "node_id": "continual_online_learning",
+      "field": "examples[2]",
+      "text": "substrate for Procedural memory & skills"
+    },
+    {
+      "unit_id": "8e4ca2ccdae82f16",
+      "node_id": "continual_online_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Sequences, events & time series, Multimodal, simulated & streaming data."
+    },
+    {
+      "unit_id": "9ef8b453b0215e84",
+      "node_id": "continual_online_learning",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Continual & online learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "6da8a14a951d37e2",
+      "node_id": "continual_online_learning",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Continual & online learning uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f261b8e6eb5308c5",
+      "node_id": "continual_online_learning",
+      "field": "dependencies.optimization.rationale",
+      "text": "Continual & online learning uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "57c6b5f9b50737c5",
+      "node_id": "continual_online_learning",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Continual & online learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "46494e5a0cf46539",
+      "node_id": "continual_online_learning",
+      "dependency_id": "multimodal_simulated_streams",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Continual & online learning uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "d6b2adcaf4130928",
+      "node_id": "continual_online_learning",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Continual & online learning uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/continual_online_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "node_id": "elbo_variational",
+  "label": "ELBO & variational objectives",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "elbo_variational",
+    "label": "ELBO & variational objectives",
+    "layer": "objective",
+    "tags": [
+      "objective",
+      "probabilistic"
+    ],
+    "aliases": [],
+    "definition": "A tractable lower bound balances data fit against divergence between approximate and prior distributions.",
+    "why_it_matters": "The role of ELBO & variational objectives is to connect Generative modeling, Latent variables & hidden state to downstream capabilities including Variational autoencoders.",
+    "examples": [
+      "substrate for Variational autoencoders",
+      "combined with Generative modeling"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Latent variables & hidden state."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "generative_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "ELBO & variational objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "latent_variables",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "ELBO & variational objectives uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "probability",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "ELBO & variational objectives uses Probability theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "ELBO & variational objectives uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e1b09e3bd27d7c72",
+      "node_id": "elbo_variational",
+      "field": "definition",
+      "text": "A tractable lower bound balances data fit against divergence between approximate and prior distributions."
+    },
+    {
+      "unit_id": "ed55ea5badead412",
+      "node_id": "elbo_variational",
+      "field": "why_it_matters",
+      "text": "The role of ELBO & variational objectives is to connect Generative modeling, Latent variables & hidden state to downstream capabilities including Variational autoencoders."
+    },
+    {
+      "unit_id": "7619b9ce75471279",
+      "node_id": "elbo_variational",
+      "field": "examples[1]",
+      "text": "substrate for Variational autoencoders"
+    },
+    {
+      "unit_id": "d47f345af2ee1db4",
+      "node_id": "elbo_variational",
+      "field": "examples[2]",
+      "text": "combined with Generative modeling"
+    },
+    {
+      "unit_id": "93d9d92c9596b606",
+      "node_id": "elbo_variational",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Latent variables & hidden state."
+    },
+    {
+      "unit_id": "d8a1e16a6d1ae0a8",
+      "node_id": "elbo_variational",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "ELBO & variational objectives uses Generative modeling as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "9bb810039561bec0",
+      "node_id": "elbo_variational",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "ELBO & variational objectives uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "5fc3995e2b0ea4d8",
+      "node_id": "elbo_variational",
+      "field": "dependencies.probability.rationale",
+      "text": "ELBO & variational objectives uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "0a6d7dd215c0161e",
+      "node_id": "elbo_variational",
+      "field": "dependencies.optimization.rationale",
+      "text": "ELBO & variational objectives uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "17e0968aa3dd5d7c",
+      "node_id": "elbo_variational",
+      "dependency_id": "generative_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "ELBO & variational objectives uses Generative modeling as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "28477156c316674e",
+      "node_id": "elbo_variational",
+      "dependency_id": "latent_variables",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "ELBO & variational objectives uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "b1c25419d86020b2",
+      "node_id": "elbo_variational",
+      "dependency_id": "probability",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "ELBO & variational objectives uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "0ec79b4f3bb719c4",
+      "node_id": "elbo_variational",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "ELBO & variational objectives uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      },
+      "ref_gan": {
+        "id": "ref_gan",
+        "title": "Generative Adversarial Nets",
+        "authors": "Goodfellow et al.",
+        "year": 2014,
+        "url": "https://arxiv.org/abs/1406.2661"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_vae": {
+        "id": "ref_vae",
+        "title": "Auto-Encoding Variational Bayes",
+        "authors": "Kingma & Welling",
+        "year": 2013,
+        "url": "https://arxiv.org/abs/1312.6114"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/elbo_variational.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

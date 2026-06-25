@@ -1,0 +1,148 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "3961e3003b70c108",
+      "node_id": "programs_ast_ir",
+      "field": "definition",
+      "text": "Executable and analyzable program structures support code generation, verification, and tool use.",
+      "source_ids": [
+        "ref_aima",
+        "ref_formalml"
+      ],
+      "evidence_location": "AIMA programming/agent/tool reasoning context; Formal Methods for ML survey for verification context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Program structures are clearly executable/analyzable, and verification is supported by formal-methods context. Code generation and tool use need more specific sources for exact verification."
+    },
+    {
+      "unit_id": "9b09ddb2a4bf5e20",
+      "node_id": "programs_ast_ir",
+      "field": "why_it_matters",
+      "text": "The role of Programs, ASTs, bytecode & intermediate representations is to connect Programming languages, compilers & type systems, Algorithms & data structures to downstream capabilities including Neuro-symbolic & physics-informed learning, Boolean circuits & differentiable logic gates, Constraint propagation, logic & program execution.",
+      "source_ids": [
+        "ref_aima",
+        "ref_formalml"
+      ],
+      "evidence_location": "AIMA algorithmic/problem-solving and logic material; Formal Methods for ML survey for program/verification context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency side is plausible, but several downstream capabilities are graph-derived and not directly evidenced by the cited references."
+    },
+    {
+      "unit_id": "cd3b36d948b529d9",
+      "node_id": "programs_ast_ir",
+      "field": "examples[1]",
+      "text": "substrate for Neuro-symbolic & physics-informed learning",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA supports symbolic reasoning/program-like representations generally, but not the full neuro-symbolic and physics-informed claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The cited packet sources do not directly support this specific downstream relationship."
+    },
+    {
+      "unit_id": "1b48f2c6a6b35e06",
+      "node_id": "programs_ast_ir",
+      "field": "examples[2]",
+      "text": "substrate for Boolean circuits & differentiable logic gates",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA logic material is related but does not directly support differentiable logic gates as a downstream use of ASTs/IR.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "A specific source on circuits or differentiable logic would be needed."
+    },
+    {
+      "unit_id": "8ce407267b8fefc8",
+      "node_id": "programs_ast_ir",
+      "field": "examples[3]",
+      "text": "substrate for Constraint propagation, logic & program execution",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA constraint satisfaction, logic, and program execution related material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Program representations are relevant to program execution and logic/constraint machinery; 'substrate for' is synthesized."
+    },
+    {
+      "unit_id": "723ee4e4b02f450e",
+      "node_id": "programs_ast_ir",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Programming languages, compilers & type systems, Algorithms & data structures.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA is relevant to algorithms and representations, but does not directly support the generic limitation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "This is generic generated limitation text and not directly evidenced for programs/ASTs/IR."
+    },
+    {
+      "unit_id": "8fbc3c55f6fd37f2",
+      "node_id": "programs_ast_ir",
+      "field": "dependencies.programming_languages_types.rationale",
+      "text": "Programs, ASTs, bytecode & intermediate representations rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems.",
+      "source_ids": [
+        "ref_formalml"
+      ],
+      "evidence_location": "Formal-methods and program-analysis context requires programming-language and type/semantics formalisms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "ASTs, bytecode, and IRs are directly programming-language/compiler constructs."
+    },
+    {
+      "unit_id": "887f05d64bbe7f79",
+      "node_id": "programs_ast_ir",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Programs, ASTs, bytecode & intermediate representations rests on the formal or computational capabilities supplied by Algorithms & data structures.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA algorithmic problem solving and data-structure context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Program representations use data structures and algorithms for analysis/compilation, though the packet source is general rather than specific."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "13a89ced03fe2e8f",
+      "node_id": "programs_ast_ir",
+      "dependency_id": "programming_languages_types",
+      "source_ids": [
+        "ref_formalml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Programs, ASTs, bytecode, and IRs are compiler/programming-language artifacts; requires/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "82f16c52288b68cb",
+      "node_id": "programs_ast_ir",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Algorithms and data structures are common prerequisites for analyzing and executing program representations, but the cited source is broad.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

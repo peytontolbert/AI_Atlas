@@ -1,0 +1,199 @@
+{
+  "node_id": "graph_of_thoughts",
+  "label": "Graph-of-Thought & non-linear deliberation",
+  "layer": "reasoning",
+  "editorial_status": "curated",
+  "node": {
+    "id": "graph_of_thoughts",
+    "label": "Graph-of-Thought & non-linear deliberation",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "search",
+      "graph"
+    ],
+    "aliases": [],
+    "definition": "Graph-of-Thought methods represent reasoning states as a graph so branches can merge, share evidence, revisit conclusions, or combine partial solutions.",
+    "why_it_matters": "They capture synthesis and dependency patterns that a strict chain or tree cannot represent efficiently.",
+    "examples": [
+      "merging independent subproofs",
+      "argument graphs",
+      "multi-agent evidence synthesis"
+    ],
+    "limitations": [
+      "Graph construction and credit assignment are difficult, and unconstrained merging can compound inconsistent assumptions."
+    ],
+    "editorial_status": "curated",
+    "maturity": "emerging",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_tot",
+      "ref_got"
+    ],
+    "dependencies": [
+      {
+        "id": "tree_of_thoughts",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Tree-of-Thought & branch-and-evaluate reasoning."
+      },
+      {
+        "id": "graph_theory",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Graph theory."
+      },
+      {
+        "id": "multiagent_coordination",
+        "type": "searches_with",
+        "strength": "common",
+        "rationale": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Multi-agent coordination, debate & markets."
+      },
+      {
+        "id": "reflection_verifier",
+        "type": "searches_with",
+        "strength": "common",
+        "rationale": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "7d5c83a045f4ce64",
+      "node_id": "graph_of_thoughts",
+      "field": "definition",
+      "text": "Graph-of-Thought methods represent reasoning states as a graph so branches can merge, share evidence, revisit conclusions, or combine partial solutions."
+    },
+    {
+      "unit_id": "7d9d12b24d80533f",
+      "node_id": "graph_of_thoughts",
+      "field": "why_it_matters",
+      "text": "They capture synthesis and dependency patterns that a strict chain or tree cannot represent efficiently."
+    },
+    {
+      "unit_id": "52951a87741faae7",
+      "node_id": "graph_of_thoughts",
+      "field": "examples[1]",
+      "text": "merging independent subproofs"
+    },
+    {
+      "unit_id": "27847b0ccfe20b41",
+      "node_id": "graph_of_thoughts",
+      "field": "examples[2]",
+      "text": "argument graphs"
+    },
+    {
+      "unit_id": "fe3065740ab7822a",
+      "node_id": "graph_of_thoughts",
+      "field": "examples[3]",
+      "text": "multi-agent evidence synthesis"
+    },
+    {
+      "unit_id": "844153bdf257b640",
+      "node_id": "graph_of_thoughts",
+      "field": "limitations[1]",
+      "text": "Graph construction and credit assignment are difficult, and unconstrained merging can compound inconsistent assumptions."
+    },
+    {
+      "unit_id": "1ddb46255964d3fc",
+      "node_id": "graph_of_thoughts",
+      "field": "dependencies.tree_of_thoughts.rationale",
+      "text": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Tree-of-Thought & branch-and-evaluate reasoning."
+    },
+    {
+      "unit_id": "8b16b2f8a19ed09a",
+      "node_id": "graph_of_thoughts",
+      "field": "dependencies.graph_theory.rationale",
+      "text": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Graph theory."
+    },
+    {
+      "unit_id": "f6ea36fbdd5251ab",
+      "node_id": "graph_of_thoughts",
+      "field": "dependencies.multiagent_coordination.rationale",
+      "text": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Multi-agent coordination, debate & markets."
+    },
+    {
+      "unit_id": "c12ce58400b75612",
+      "node_id": "graph_of_thoughts",
+      "field": "dependencies.reflection_verifier.rationale",
+      "text": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "2c4264e5db8a2028",
+      "node_id": "graph_of_thoughts",
+      "dependency_id": "tree_of_thoughts",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Tree-of-Thought & branch-and-evaluate reasoning."
+    },
+    {
+      "edge_id": "35514ef9122ec319",
+      "node_id": "graph_of_thoughts",
+      "dependency_id": "graph_theory",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Graph theory."
+    },
+    {
+      "edge_id": "6982c541699c012e",
+      "node_id": "graph_of_thoughts",
+      "dependency_id": "multiagent_coordination",
+      "type": "searches_with",
+      "strength": "common",
+      "rationale": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Multi-agent coordination, debate & markets."
+    },
+    {
+      "edge_id": "b71988dd0174faea",
+      "node_id": "graph_of_thoughts",
+      "dependency_id": "reflection_verifier",
+      "type": "searches_with",
+      "strength": "common",
+      "rationale": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_tot": {
+        "id": "ref_tot",
+        "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+        "authors": "Yao et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.10601"
+      },
+      "ref_got": {
+        "id": "ref_got",
+        "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+        "authors": "Besta et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2308.09687"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_tot": {
+        "id": "ref_tot",
+        "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+        "authors": "Yao et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.10601"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/graph_of_thoughts.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

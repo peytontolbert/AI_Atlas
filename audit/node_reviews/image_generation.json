@@ -1,0 +1,328 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "674dc372e5c12006",
+      "node_id": "image_generation",
+      "field": "definition",
+      "text": "Image-generation systems synthesize or edit visual content from text, images, masks, layouts, identities, depth, or other conditioning signals.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The node cites broad AI background rather than a source that directly defines this modern system boundary.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The claim is plausible, but needs a system-specific source for exact verification."
+    },
+    {
+      "unit_id": "bb23076f442d3c6c",
+      "node_id": "image_generation",
+      "field": "why_it_matters",
+      "text": "This system is an application boundary where technical capability, evidence, safety controls, economics, and user workflow must succeed together.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The upstream/downstream role is inferred from the dependency graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Useful graph synthesis, not directly established as an exact claim by the cited sources."
+    },
+    {
+      "unit_id": "69e612ef38ae7e12",
+      "node_id": "image_generation",
+      "field": "examples[1]",
+      "text": "workflows combining Image generation, editing & design with Diffusion & score-based models",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "4ac2cfc767922349",
+      "node_id": "image_generation",
+      "field": "examples[2]",
+      "text": "workflows combining Image generation, editing & design with Normalizing, rectified & flow-matching models",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "f105bc203befcb4c",
+      "node_id": "image_generation",
+      "field": "examples[3]",
+      "text": "workflows combining Image generation, editing & design with U-Nets & encoder\u2013decoder convnets",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "b5d866f878b1df79",
+      "node_id": "image_generation",
+      "field": "limitations[1]",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Diffusion & score-based models, Normalizing, rectified & flow-matching models.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+    },
+    {
+      "unit_id": "d8002fb32afff666",
+      "node_id": "image_generation",
+      "field": "terminal_reason",
+      "text": "end-system leaf",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The cited packet references support the broad concept, but this wording is partly graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conservative audit: support is conceptual rather than an exact quote from the packet references."
+    },
+    {
+      "unit_id": "738284d7d73dfddf",
+      "node_id": "image_generation",
+      "field": "dependencies.diffusion_model.rationale",
+      "text": "Image generation, editing & design integrates Diffusion & score-based models as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "2b2eab0915b6c4f4",
+      "node_id": "image_generation",
+      "field": "dependencies.flow_based_model.rationale",
+      "text": "Image generation, editing & design integrates Normalizing, rectified & flow-matching models as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "5f61f0dcb30fa95a",
+      "node_id": "image_generation",
+      "field": "dependencies.unet.rationale",
+      "text": "Image generation, editing & design integrates U-Nets & encoder\u2013decoder convnets as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "b4ceb3a4f863da6b",
+      "node_id": "image_generation",
+      "field": "dependencies.quantized_inference.rationale",
+      "text": "Image generation, editing & design integrates Quantized inference & compressed deployment as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "29b9af98e0251f6e",
+      "node_id": "image_generation",
+      "field": "dependencies.gan.rationale",
+      "text": "Image generation, editing & design integrates Generative adversarial networks as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "de2e398d6ef80e35",
+      "node_id": "image_generation",
+      "field": "dependencies.output_watermarking.rationale",
+      "text": "Image generation, editing & design integrates Generation-time watermarking as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "d3ba4921f7ed634d",
+      "node_id": "image_generation",
+      "field": "dependencies.content_provenance.rationale",
+      "text": "Image generation, editing & design integrates Content credentials, signing & provenance as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "22685c143f8ebf50",
+      "node_id": "image_generation",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Image generation, editing & design integrates Model servers & inference runtimes as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "0be59a80e817f5da",
+      "node_id": "image_generation",
+      "dependency_id": "diffusion_model",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "db0d1b02b300dd5a",
+      "node_id": "image_generation",
+      "dependency_id": "flow_based_model",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ba359a6eb4657981",
+      "node_id": "image_generation",
+      "dependency_id": "unet",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ccee3c19947eaf03",
+      "node_id": "image_generation",
+      "dependency_id": "quantized_inference",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "eba0919eede28142",
+      "node_id": "image_generation",
+      "dependency_id": "gan",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "29d63e1ae8ba618e",
+      "node_id": "image_generation",
+      "dependency_id": "output_watermarking",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "5e4991d6baa71254",
+      "node_id": "image_generation",
+      "dependency_id": "content_provenance",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "1954c83649019093",
+      "node_id": "image_generation",
+      "dependency_id": "model_serving",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "1a370a4e357d9b2a",
+      "node_id": "model_merging",
+      "field": "definition",
+      "text": "Model merging combines compatible checkpoints or parameter deltas in weight space to obtain a new model without conventional joint retraining.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Model soups directly supports checkpoint averaging without extra inference cost, but compatible parameter deltas and broad weight-space composition go beyond the cited node source."
+    },
+    {
+      "unit_id": "0e15dc8fce4a80a9",
+      "node_id": "model_merging",
+      "field": "why_it_matters",
+      "text": "It offers a low-cost route to combine specialized capabilities, ensembling effects, or independently fine-tuned variants.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Combining fine-tuned checkpoints cheaply is supported; specialized capabilities and ensembling effects are broader synthesis."
+    },
+    {
+      "unit_id": "c81ea6c95481050c",
+      "node_id": "model_merging",
+      "field": "examples[1]",
+      "text": "checkpoint averaging",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Checkpoint/weight averaging is directly supported by Model Soups."
+    },
+    {
+      "unit_id": "8874e5bb532df82b",
+      "node_id": "model_merging",
+      "field": "examples[2]",
+      "text": "task-vector merging",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "Task-vector merging is not supported by the cited Model Soups/LoRA sources in this packet."
+    },
+    {
+      "unit_id": "c3680212e165c081",
+      "node_id": "model_merging",
+      "field": "examples[3]",
+      "text": "adapter fusion",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Adapter fusion is related to PEFT/adapters but is not directly supported by the cited LoRA paper alone."
+    },
+    {
+      "unit_id": "b9eccb0fe10c38e2",
+      "node_id": "model_merging",
+      "field": "limitations[1]",
+      "text": "Parameter alignment, interference, tokenizer mismatch, and evaluation across merged capabilities remain difficult.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Interference/alignment concerns are plausible, but tokenizer mismatch and evaluation across merged capabilities are not directly supported by the packet sources."
+    },
+    {
+      "unit_id": "c3366db9c4b81f1a",
+      "node_id": "model_merging",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "Model merging & weight-space composition uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Model soups average fine-tuned checkpoints; SFT/instruction tuning is a plausible source of variants, but not definitional."
+    },
+    {
+      "unit_id": "366898dd6dd420fa",
+      "node_id": "model_merging",
+      "field": "dependencies.peft_lora.rationale",
+      "text": "Model merging & weight-space composition uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Adapters/LoRA can be merged or composed, but Model Soups does not require PEFT and LoRA does not establish this edge alone."
+    },
+    {
+      "unit_id": "edfb0252305a7a14",
+      "node_id": "model_merging",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Model merging & weight-space composition uses Linear algebra as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Weight averaging and parameter deltas rely on vector-space operations."
+    },
+    {
+      "unit_id": "db1519e95c4ff0e2",
+      "node_id": "model_merging",
+      "field": "dependencies.optimization.rationale",
+      "text": "Model merging & weight-space composition uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Wortsman et al. support weight averaging/model soups across fine-tuned checkpoints; LoRA supports adapter-style parameter-efficient deltas, but the packet lacks a broader model-merging survey.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Optimization produces source checkpoints, but model merging itself is not clearly an optimization-theory method in the cited evidence."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "93960a630881f92c",
+      "node_id": "model_merging",
+      "dependency_id": "sft_instruction",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Fine-tuned variants are inputs to merging, but SFT as core is stronger than supported.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "8b44f74632337a27",
+      "node_id": "model_merging",
+      "dependency_id": "peft_lora",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "PEFT/LoRA is related to parameter deltas, but not a core dependency of model merging generally.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "4b0df8e974e3a385",
+      "node_id": "model_merging",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Averaging and deltas are linear algebra operations; common strength is reasonable.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4140fc250f9fcdc5",
+      "node_id": "model_merging",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Optimization is upstream of checkpoints but not directly a common ingredient of the merge operation.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

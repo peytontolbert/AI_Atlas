@@ -1,0 +1,281 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "f67bf9e52d5c3794",
+      "node_id": "multimodal_simulated_streams",
+      "field": "definition",
+      "text": "Aligned modalities, simulators, and live streams provide richer context and interactive experience.",
+      "source_ids": [
+        "ref_pml",
+        "ref_domainrand",
+        "ref_sim2real",
+        "ref_rt2"
+      ],
+      "evidence_location": "PML multimodal/data context; domain randomization and sim-to-real references for simulation data; RT-2 reference for vision-language-action grounding.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support simulation and multimodal grounding, but 'live streams' and 'richer context and interactive experience' are broad claims not directly evidenced."
+    },
+    {
+      "unit_id": "516b7b38e61ae6c5",
+      "node_id": "multimodal_simulated_streams",
+      "field": "why_it_matters",
+      "text": "The role of Multimodal, simulated & streaming data is to connect Datasets, sampling & splits, Images, video & spatial grids to downstream capabilities including Model-based reinforcement learning, Continual & online learning, Neuro-symbolic & physics-informed learning.",
+      "source_ids": [
+        "ref_pml",
+        "ref_dreamer",
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Dreamer/world-model reference for model-based RL; domain-randomization and sim-to-real references for simulated data; PML data/representation context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Model-based RL and simulation links are supported. Continual/online learning and neuro-symbolic/physics-informed learning are not directly supported by the packet sources."
+    },
+    {
+      "unit_id": "816fcedf7ecafcf7",
+      "node_id": "multimodal_simulated_streams",
+      "field": "examples[1]",
+      "text": "substrate for Model-based reinforcement learning",
+      "source_ids": [
+        "ref_dreamer",
+        "ref_sim2real",
+        "ref_domainrand"
+      ],
+      "evidence_location": "Dreamer learns world models from data for control; sim-to-real/domain-randomization references support simulated data in RL/robotics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Simulated and multimodal data can support model-based RL. 'Substrate for' is synthesized wording."
+    },
+    {
+      "unit_id": "a7d96282e4516587",
+      "node_id": "multimodal_simulated_streams",
+      "field": "examples[2]",
+      "text": "substrate for Continual & online learning",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML provides general learning-from-data context, but packet evidence does not directly connect multimodal/simulated/streaming data to continual and online learning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Streaming data is plausibly relevant to online learning, but a direct source is needed for this exact claim."
+    },
+    {
+      "unit_id": "a893ece00890fdc0",
+      "node_id": "multimodal_simulated_streams",
+      "field": "examples[3]",
+      "text": "substrate for Neuro-symbolic & physics-informed learning",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Simulation references support synthetic/simulated environments but do not directly address neuro-symbolic or physics-informed learning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The cited candidate sources do not support the exact downstream capability claim."
+    },
+    {
+      "unit_id": "95f2d57ee99a6b54",
+      "node_id": "multimodal_simulated_streams",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Datasets, sampling & splits, Images, video & spatial grids.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML is relevant to data and representations but does not directly support this generic limitation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The limitation text is generic and is not supported exactly by the packet sources."
+    },
+    {
+      "unit_id": "df42f4377a6b48cf",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Datasets, sampling & splits.",
+      "source_ids": [
+        "ref_pml",
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "PML data/sampling context; domain-randomization and sim-to-real references use simulation-generated datasets.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relation to datasets and sampling is defensible for multimodal/simulated data."
+    },
+    {
+      "unit_id": "f225225e1fe6525f",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Images, video & spatial grids.",
+      "source_ids": [
+        "ref_rt2",
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "RT-2 vision-language-action reference and robotics simulation references use visual/spatial observations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Images/video/spatial observations are common modalities in simulated and multimodal learning, but not universal."
+    },
+    {
+      "unit_id": "522fac18ea1a3e76",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.audio_signals.rationale",
+      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Waveforms, audio & spectrograms.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML general multimodal/data context; packet candidate sources do not specifically support audio waveforms or spectrograms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Audio is a modality, but the packet evidence does not specifically justify this dependency."
+    },
+    {
+      "unit_id": "885f6ad6732a42d6",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Tokens, vocabularies & symbolic units.",
+      "source_ids": [
+        "ref_rt2",
+        "ref_pml"
+      ],
+      "evidence_location": "RT-2 connects vision-language-action data; PML language/representation context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Language tokens can be one modality, but tokens/vocabularies are not intrinsic to all multimodal, simulated, or streaming data."
+    },
+    {
+      "unit_id": "1bf1ddce87822896",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Distributed systems & networking.",
+      "source_ids": [
+        "ref_ddia"
+      ],
+      "evidence_location": "DDIA covers distributed data systems and streaming data infrastructure.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Distributed systems are relevant for large-scale streaming/multimodal data infrastructure, but not required for the data type itself."
+    },
+    {
+      "unit_id": "31f507c6d4b34195",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Dynamical systems & control theory.",
+      "source_ids": [
+        "ref_sim2real",
+        "ref_domainrand",
+        "ref_dreamer"
+      ],
+      "evidence_location": "Robotics simulation/sim-to-real and model-based control references involve dynamics/control settings.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dynamics/control is relevant for robotics simulation and model-based RL, but optional rather than inherent to all multimodal or streaming data."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "39b9d2c5c3555a4c",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "datasets_sampling",
+      "source_ids": [
+        "ref_pml",
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Multimodal/simulated/streaming data is organized as datasets or streams; represents_with/core is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "d37f385afb79d8d7",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "spatial_grids",
+      "source_ids": [
+        "ref_rt2",
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Visual/spatial data is a common but not universal modality; common represents_with is appropriate.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "abbe1324609a1161",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "audio_signals",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Audio is a possible modality, but the cited evidence does not establish it as common for this node.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "7cb0ef1525d84a95",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "tokens_vocab",
+      "source_ids": [
+        "ref_rt2",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Tokens are relevant for language modalities but not all multimodal/simulated/streaming data.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "2c3ea52ba08fc81c",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "distributed_systems",
+      "source_ids": [
+        "ref_ddia"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Distributed systems can support data infrastructure, but they are not a required conceptual dependency for all such data.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "616eaa7ae7d596ab",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "dynamical_control",
+      "source_ids": [
+        "ref_sim2real",
+        "ref_domainrand",
+        "ref_dreamer"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dynamics/control is relevant to robotics simulation and model-based RL; optional strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

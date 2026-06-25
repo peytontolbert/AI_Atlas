@@ -1,0 +1,170 @@
+{
+  "node_id": "self_consistency",
+  "label": "Self-consistency & best-of-N inference",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "self_consistency",
+    "label": "Self-consistency & best-of-N inference",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "inference-scaling"
+    ],
+    "aliases": [],
+    "definition": "Self-consistency samples multiple reasoning trajectories and aggregates their answers, using diversity to reduce dependence on one brittle chain.",
+    "why_it_matters": "The role of Self-consistency & best-of-N inference is to connect Chain-of-thought & latent reasoning, Recursive partitioning & ensembling to downstream capabilities including Reflection, critique, verifier & repair loops, Test-time compute scaling, Best-of-N & verifier-guided selection.",
+    "examples": [
+      "substrate for Reflection, critique, verifier & repair loops",
+      "substrate for Test-time compute scaling",
+      "substrate for Best-of-N & verifier-guided selection"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Recursive partitioning & ensembling."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "cot_latent_reasoning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Self-consistency & best-of-N inference uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "recursive_partition_ensemble",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Self-consistency & best-of-N inference uses Recursive partitioning & ensembling as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "search_sampling_decoding",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Self-consistency & best-of-N inference uses Search, sampling & decoding procedures as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3572864131c514fd",
+      "node_id": "self_consistency",
+      "field": "definition",
+      "text": "Self-consistency samples multiple reasoning trajectories and aggregates their answers, using diversity to reduce dependence on one brittle chain."
+    },
+    {
+      "unit_id": "76d50a2c49531a7d",
+      "node_id": "self_consistency",
+      "field": "why_it_matters",
+      "text": "The role of Self-consistency & best-of-N inference is to connect Chain-of-thought & latent reasoning, Recursive partitioning & ensembling to downstream capabilities including Reflection, critique, verifier & repair loops, Test-time compute scaling, Best-of-N & verifier-guided selection."
+    },
+    {
+      "unit_id": "52b0622b9cfc5ab6",
+      "node_id": "self_consistency",
+      "field": "examples[1]",
+      "text": "substrate for Reflection, critique, verifier & repair loops"
+    },
+    {
+      "unit_id": "68641283d531d760",
+      "node_id": "self_consistency",
+      "field": "examples[2]",
+      "text": "substrate for Test-time compute scaling"
+    },
+    {
+      "unit_id": "c6bb973fdd7bf692",
+      "node_id": "self_consistency",
+      "field": "examples[3]",
+      "text": "substrate for Best-of-N & verifier-guided selection"
+    },
+    {
+      "unit_id": "e78e92a757e5eebd",
+      "node_id": "self_consistency",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Recursive partitioning & ensembling."
+    },
+    {
+      "unit_id": "4a4be7936b5f9593",
+      "node_id": "self_consistency",
+      "field": "dependencies.cot_latent_reasoning.rationale",
+      "text": "Self-consistency & best-of-N inference uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "191fe0453dcfff8f",
+      "node_id": "self_consistency",
+      "field": "dependencies.recursive_partition_ensemble.rationale",
+      "text": "Self-consistency & best-of-N inference uses Recursive partitioning & ensembling as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "84fd0483fffbbd4e",
+      "node_id": "self_consistency",
+      "field": "dependencies.search_sampling_decoding.rationale",
+      "text": "Self-consistency & best-of-N inference uses Search, sampling & decoding procedures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "841ffa3c167bdfdf",
+      "node_id": "self_consistency",
+      "dependency_id": "cot_latent_reasoning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Self-consistency & best-of-N inference uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "14db8e3428fff14e",
+      "node_id": "self_consistency",
+      "dependency_id": "recursive_partition_ensemble",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Self-consistency & best-of-N inference uses Recursive partitioning & ensembling as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "35b1a03afe1025b3",
+      "node_id": "self_consistency",
+      "dependency_id": "search_sampling_decoding",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Self-consistency & best-of-N inference uses Search, sampling & decoding procedures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/self_consistency.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

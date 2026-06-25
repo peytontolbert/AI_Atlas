@@ -1,0 +1,171 @@
+{
+  "node_id": "theorem_symbolic",
+  "label": "Theorem proving & symbolic deduction",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "theorem_symbolic",
+    "label": "Theorem proving & symbolic deduction",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "symbolic",
+      "math"
+    ],
+    "aliases": [],
+    "definition": "Theorem provers derive conclusions from axioms and inference rules, producing proofs or proof obligations that a trusted kernel can check.",
+    "why_it_matters": "The role of Theorem proving & symbolic deduction is to connect Constraint satisfaction, SAT & SMT solving, Neuro-symbolic models to downstream capabilities including Automated theorem proving & mathematical AI.",
+    "examples": [
+      "substrate for Automated theorem proving & mathematical AI",
+      "combined with Constraint satisfaction, SAT & SMT solving"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Constraint satisfaction, SAT & SMT solving, Neuro-symbolic models."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "constraint_sat_smt",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Theorem proving & symbolic deduction uses Constraint satisfaction, SAT & SMT solving as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "neurosymbolic_system_model",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Theorem proving & symbolic deduction uses Neuro-symbolic models as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "programs_ast_ir",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Theorem proving & symbolic deduction uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e0ac62038209392a",
+      "node_id": "theorem_symbolic",
+      "field": "definition",
+      "text": "Theorem provers derive conclusions from axioms and inference rules, producing proofs or proof obligations that a trusted kernel can check."
+    },
+    {
+      "unit_id": "2c7ba394e66759b4",
+      "node_id": "theorem_symbolic",
+      "field": "why_it_matters",
+      "text": "The role of Theorem proving & symbolic deduction is to connect Constraint satisfaction, SAT & SMT solving, Neuro-symbolic models to downstream capabilities including Automated theorem proving & mathematical AI."
+    },
+    {
+      "unit_id": "d4867748f75cfc82",
+      "node_id": "theorem_symbolic",
+      "field": "examples[1]",
+      "text": "substrate for Automated theorem proving & mathematical AI"
+    },
+    {
+      "unit_id": "c98345c63490bd60",
+      "node_id": "theorem_symbolic",
+      "field": "examples[2]",
+      "text": "combined with Constraint satisfaction, SAT & SMT solving"
+    },
+    {
+      "unit_id": "8599710a30800ed9",
+      "node_id": "theorem_symbolic",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Constraint satisfaction, SAT & SMT solving, Neuro-symbolic models."
+    },
+    {
+      "unit_id": "62a8e266479777bf",
+      "node_id": "theorem_symbolic",
+      "field": "dependencies.constraint_sat_smt.rationale",
+      "text": "Theorem proving & symbolic deduction uses Constraint satisfaction, SAT & SMT solving as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "36f528ce69919eb2",
+      "node_id": "theorem_symbolic",
+      "field": "dependencies.neurosymbolic_system_model.rationale",
+      "text": "Theorem proving & symbolic deduction uses Neuro-symbolic models as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "826fa06fe3eccb9d",
+      "node_id": "theorem_symbolic",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Theorem proving & symbolic deduction uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "53d1e741507c861c",
+      "node_id": "theorem_symbolic",
+      "dependency_id": "constraint_sat_smt",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Theorem proving & symbolic deduction uses Constraint satisfaction, SAT & SMT solving as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "fe467289ef9b1125",
+      "node_id": "theorem_symbolic",
+      "dependency_id": "neurosymbolic_system_model",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Theorem proving & symbolic deduction uses Neuro-symbolic models as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "38601f0b757e393f",
+      "node_id": "theorem_symbolic",
+      "dependency_id": "programs_ast_ir",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Theorem proving & symbolic deduction uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/theorem_symbolic.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

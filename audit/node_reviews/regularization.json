@@ -1,0 +1,138 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "07153bc9e158fc97",
+      "node_id": "regularization",
+      "field": "definition",
+      "text": "Regularization constrains effective model capacity through penalties, dropout, noise, early stopping, label smoothing, or restrictions on learned functions.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 7 'Regularization for Deep Learning', including parameter norm penalties, early stopping, noise robustness, dropout, and other regularization strategies.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Most listed mechanisms are supported by the regularization chapter, but label smoothing is not clearly supported by the cited source and the sentence combines multiple mechanisms into one broad capacity claim."
+    },
+    {
+      "unit_id": "a4c9e084937af3ce",
+      "node_id": "regularization",
+      "field": "why_it_matters",
+      "text": "The role of Regularization, dropout & weight decay is to connect Statistics & experimental design, Optimization theory to downstream capabilities including Large-scale pretraining.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapters 5, 7, and 8 on generalization, regularization, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Statistics/generalization and optimization connections are supported. Experimental design and large-scale pretraining are not directly established by the inspected evidence."
+    },
+    {
+      "unit_id": "9f02322bac16f1df",
+      "node_id": "regularization",
+      "field": "examples[1]",
+      "text": "substrate for Large-scale pretraining",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 7 regularization and Chapter 11 practical methodology.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The packet source supports regularization in neural-network training, but not large-scale pretraining as a downstream capability."
+    },
+    {
+      "unit_id": "7851ff65dbab2825",
+      "node_id": "regularization",
+      "field": "examples[2]",
+      "text": "combined with Statistics & experimental design",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 5 machine learning basics and Chapter 7 regularization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Statistical generalization is directly relevant, but experimental design is not directly evidenced."
+    },
+    {
+      "unit_id": "92840ac7a683328a",
+      "node_id": "regularization",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Statistics & experimental design, Optimization theory.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapters 5, 7, 8, and 11 on generalization, regularization, optimization, hyperparameters, and methodology.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Hyperparameter and optimization context is supported. Data quality, compute budget, random variation, evaluation contamination, and experimental design are generic limitations not directly supported here."
+    },
+    {
+      "unit_id": "f7e88190077e349d",
+      "node_id": "regularization",
+      "field": "dependencies.statistics.rationale",
+      "text": "Regularization, dropout & weight decay uses Statistics & experimental design as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapters 5 and 7 on statistical learning/generalization and regularization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Regularization is tied to statistical generalization, but experimental design is not directly supported as an ingredient."
+    },
+    {
+      "unit_id": "22d3241d5d2b3d5b",
+      "node_id": "regularization",
+      "field": "dependencies.optimization.rationale",
+      "text": "Regularization, dropout & weight decay uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 7 parameter penalties/dropout and Chapter 8 optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Regularization changes training objectives or procedures optimized during learning; exact wording is synthesized."
+    },
+    {
+      "unit_id": "476742579fc47f07",
+      "node_id": "regularization",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Regularization, dropout & weight decay uses Supervised learning as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapters 5 and 7 on supervised learning/generalization settings and regularization methods.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Regularization is heavily discussed in supervised learning contexts, but it is not limited to supervised learning and does not necessarily use it as an ingredient."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "d53390bd45b4e173",
+      "node_id": "regularization",
+      "dependency_id": "statistics",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Statistical generalization supports the edge, but experimental design is not directly evidenced as core.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "c28438abd4919143",
+      "node_id": "regularization",
+      "dependency_id": "optimization",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Regularization is typically implemented through objective penalties or training procedures, making optimization a defensible core dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9203595acddda9ab",
+      "node_id": "regularization",
+      "dependency_id": "supervised_learning",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Supervised learning is a common context for regularization, but not a conceptual prerequisite. Common strength is plausible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

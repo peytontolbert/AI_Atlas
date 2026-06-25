@@ -1,0 +1,191 @@
+{
+  "node_id": "gnn",
+  "label": "Graph neural networks",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "gnn",
+    "label": "Graph neural networks",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "graph"
+    ],
+    "aliases": [],
+    "definition": "A graph neural network repeatedly aggregates messages from neighboring nodes or edges to learn representations that respect relational structure.",
+    "why_it_matters": "The role of Graph neural networks is to connect Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data to downstream capabilities including Graph transformers, Drug discovery, protein & molecular design, Computer vision, perception & scene understanding.",
+    "examples": [
+      "substrate for Graph transformers",
+      "substrate for Drug discovery, protein & molecular design",
+      "substrate for Computer vision, perception & scene understanding"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_gnn"
+    ],
+    "dependencies": [
+      {
+        "id": "message_passing",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Graph neural networks is assembled in part from the mechanism or model component Message passing & neighborhood aggregation."
+      },
+      {
+        "id": "graphs_hypergraphs",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Graph neural networks consumes, emits, or organizes information using Graphs, hypergraphs & relational data."
+      },
+      {
+        "id": "pooling",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Graph neural networks is assembled in part from the mechanism or model component Pooling & local aggregation."
+      },
+      {
+        "id": "equivariance_invariance",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Graph neural networks is assembled in part from the mechanism or model component Equivariance, invariance & geometric priors."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "8757f371c0a7f521",
+      "node_id": "gnn",
+      "field": "definition",
+      "text": "A graph neural network repeatedly aggregates messages from neighboring nodes or edges to learn representations that respect relational structure."
+    },
+    {
+      "unit_id": "fba4fa2fa2bd32a4",
+      "node_id": "gnn",
+      "field": "why_it_matters",
+      "text": "The role of Graph neural networks is to connect Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data to downstream capabilities including Graph transformers, Drug discovery, protein & molecular design, Computer vision, perception & scene understanding."
+    },
+    {
+      "unit_id": "7207892851368780",
+      "node_id": "gnn",
+      "field": "examples[1]",
+      "text": "substrate for Graph transformers"
+    },
+    {
+      "unit_id": "de35390eff19a153",
+      "node_id": "gnn",
+      "field": "examples[2]",
+      "text": "substrate for Drug discovery, protein & molecular design"
+    },
+    {
+      "unit_id": "49da03f0b99288c9",
+      "node_id": "gnn",
+      "field": "examples[3]",
+      "text": "substrate for Computer vision, perception & scene understanding"
+    },
+    {
+      "unit_id": "8c5c4fb427eeee48",
+      "node_id": "gnn",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data."
+    },
+    {
+      "unit_id": "cc6e4895597a50ac",
+      "node_id": "gnn",
+      "field": "dependencies.message_passing.rationale",
+      "text": "Graph neural networks is assembled in part from the mechanism or model component Message passing & neighborhood aggregation."
+    },
+    {
+      "unit_id": "3912955f9205d7c9",
+      "node_id": "gnn",
+      "field": "dependencies.graphs_hypergraphs.rationale",
+      "text": "Graph neural networks consumes, emits, or organizes information using Graphs, hypergraphs & relational data."
+    },
+    {
+      "unit_id": "607213827ef4dcd5",
+      "node_id": "gnn",
+      "field": "dependencies.pooling.rationale",
+      "text": "Graph neural networks is assembled in part from the mechanism or model component Pooling & local aggregation."
+    },
+    {
+      "unit_id": "7a0c674754012cce",
+      "node_id": "gnn",
+      "field": "dependencies.equivariance_invariance.rationale",
+      "text": "Graph neural networks is assembled in part from the mechanism or model component Equivariance, invariance & geometric priors."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "eb36284c4eac4a97",
+      "node_id": "gnn",
+      "dependency_id": "message_passing",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Graph neural networks is assembled in part from the mechanism or model component Message passing & neighborhood aggregation."
+    },
+    {
+      "edge_id": "fd2f17f12d6d6c83",
+      "node_id": "gnn",
+      "dependency_id": "graphs_hypergraphs",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Graph neural networks consumes, emits, or organizes information using Graphs, hypergraphs & relational data."
+    },
+    {
+      "edge_id": "304e5f4c1b05bc69",
+      "node_id": "gnn",
+      "dependency_id": "pooling",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Graph neural networks is assembled in part from the mechanism or model component Pooling & local aggregation."
+    },
+    {
+      "edge_id": "79f299096626434f",
+      "node_id": "gnn",
+      "dependency_id": "equivariance_invariance",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Graph neural networks is assembled in part from the mechanism or model component Equivariance, invariance & geometric priors."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_gnn": {
+        "id": "ref_gnn",
+        "title": "Relational inductive biases, deep learning, and graph networks",
+        "authors": "Battaglia et al.",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1806.01261"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/gnn.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

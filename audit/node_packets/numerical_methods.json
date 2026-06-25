@@ -1,0 +1,143 @@
+{
+  "node_id": "numerical_methods",
+  "label": "Numerical analysis",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "numerical_methods",
+    "label": "Numerical analysis",
+    "layer": "foundation",
+    "tags": [
+      "math",
+      "systems"
+    ],
+    "aliases": [],
+    "definition": "Stable approximation, floating-point arithmetic, iterative solvers, and discretization make mathematical models computable.",
+    "why_it_matters": "The role of Numerical analysis is to connect Calculus & automatic differentiation theory, Linear algebra to downstream capabilities including Differential equations, Scalars, vectors, matrices & tensors, Bayesian & approximate inference.",
+    "examples": [
+      "substrate for Differential equations",
+      "substrate for Scalars, vectors, matrices & tensors",
+      "substrate for Bayesian & approximate inference"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Calculus & automatic differentiation theory, Linear algebra."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "calculus",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Numerical analysis rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+      },
+      {
+        "id": "linear_algebra",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Numerical analysis rests on the formal or computational capabilities supplied by Linear algebra."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "bba05e0e590e7a78",
+      "node_id": "numerical_methods",
+      "field": "definition",
+      "text": "Stable approximation, floating-point arithmetic, iterative solvers, and discretization make mathematical models computable."
+    },
+    {
+      "unit_id": "3c07db3679f0b109",
+      "node_id": "numerical_methods",
+      "field": "why_it_matters",
+      "text": "The role of Numerical analysis is to connect Calculus & automatic differentiation theory, Linear algebra to downstream capabilities including Differential equations, Scalars, vectors, matrices & tensors, Bayesian & approximate inference."
+    },
+    {
+      "unit_id": "6fd69fcdb0c37649",
+      "node_id": "numerical_methods",
+      "field": "examples[1]",
+      "text": "substrate for Differential equations"
+    },
+    {
+      "unit_id": "251b10e73fe360dc",
+      "node_id": "numerical_methods",
+      "field": "examples[2]",
+      "text": "substrate for Scalars, vectors, matrices & tensors"
+    },
+    {
+      "unit_id": "7eced5e9b259e7b4",
+      "node_id": "numerical_methods",
+      "field": "examples[3]",
+      "text": "substrate for Bayesian & approximate inference"
+    },
+    {
+      "unit_id": "aaf50fec2bc10c99",
+      "node_id": "numerical_methods",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Calculus & automatic differentiation theory, Linear algebra."
+    },
+    {
+      "unit_id": "b27461dd53cac174",
+      "node_id": "numerical_methods",
+      "field": "dependencies.calculus.rationale",
+      "text": "Numerical analysis rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+    },
+    {
+      "unit_id": "394c1269545dbd76",
+      "node_id": "numerical_methods",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Numerical analysis rests on the formal or computational capabilities supplied by Linear algebra."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "692cbadaa4622bb4",
+      "node_id": "numerical_methods",
+      "dependency_id": "calculus",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Numerical analysis rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+    },
+    {
+      "edge_id": "41e952174af79c18",
+      "node_id": "numerical_methods",
+      "dependency_id": "linear_algebra",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Numerical analysis rests on the formal or computational capabilities supplied by Linear algebra."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/numerical_methods.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

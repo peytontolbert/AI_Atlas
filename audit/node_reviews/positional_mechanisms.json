@@ -1,0 +1,163 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "98c6af35a4519080",
+      "node_id": "positional_mechanisms",
+      "field": "definition",
+      "text": "Order or geometric relationships are injected into attention and sequence models.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning supports broad sequence-model and representation-learning background, but not the specific RoPE/ALiBi/relative-position grouping.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The claim is plausible, but exact support for relative position, RoPE, ALiBi, and coordinate mechanisms requires more specific citations."
+    },
+    {
+      "unit_id": "b3d4c109ea4fa272",
+      "node_id": "positional_mechanisms",
+      "field": "why_it_matters",
+      "text": "The role of Relative position, RoPE, ALiBi & coordinate mechanisms is to connect Positional, temporal & coordinate encodings, Self-attention to downstream capabilities including Transformers, Graph transformers.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited packet source supports general sequence modeling, not the full downstream graph-transformer claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The exact downstream list and named mechanisms need source support beyond the broad textbook citation."
+    },
+    {
+      "unit_id": "35e1158cdf42d760",
+      "node_id": "positional_mechanisms",
+      "field": "examples[1]",
+      "text": "substrate for Transformers",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The packet source gives broad neural sequence-model context; transformer-specific positional mechanism evidence is indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Transformers commonly use positional information, but a transformer paper would be stronger direct evidence."
+    },
+    {
+      "unit_id": "8c002d984207fe80",
+      "node_id": "positional_mechanisms",
+      "field": "examples[2]",
+      "text": "substrate for Graph transformers",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited packet sources support broad representation and geometry/probabilistic background, not graph-transformer positional mechanisms specifically.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "A graph-transformer positional/structural encoding source is needed for direct support."
+    },
+    {
+      "unit_id": "b11854ce87b00ae0",
+      "node_id": "positional_mechanisms",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Positional, temporal & coordinate encodings, Self-attention.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The packet source supports broad modeling background but not the generic implementation/scale/hardware limitation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency list is plausible; the limitation is generic and source-light."
+    },
+    {
+      "unit_id": "d2616a9f50c416dd",
+      "node_id": "positional_mechanisms",
+      "field": "dependencies.positional_encodings.rationale",
+      "text": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Positional, temporal & coordinate encodings as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited source supports broad positional/sequence representation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Defensible by definition, but direct evidence should cite positional encoding and relative-position mechanism sources."
+    },
+    {
+      "unit_id": "27dc56305a6bee92",
+      "node_id": "positional_mechanisms",
+      "field": "dependencies.self_attention.rationale",
+      "text": "Relative position, RoPE, ALiBi & coordinate mechanisms is assembled in part from the mechanism or model component Self-attention.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning provides broad sequence-model background, but does not directly cover all listed attention-position mechanisms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relationship is defensible for attention-position mechanisms, but the exact claim is broader than the cited source."
+    },
+    {
+      "unit_id": "9b1a0c670cc8fb40",
+      "node_id": "positional_mechanisms",
+      "field": "dependencies.geometry_topology.rationale",
+      "text": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Geometry, topology & symmetry as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources provide nearby representation and mathematical background, not a direct topology/symmetry edge for these mechanisms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Geometry is plausible for coordinate mechanisms, but topology/symmetry broadens the claim beyond direct evidence."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "9e5dec9f89a7c151",
+      "node_id": "positional_mechanisms",
+      "dependency_id": "positional_encodings",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relationship is definitional, but the cited source is broad.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "58e843a2e25a90ec",
+      "node_id": "positional_mechanisms",
+      "dependency_id": "self_attention",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relationship is defensible for attention-position mechanisms, though direct source support is absent.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "18e126646bccf1a5",
+      "node_id": "positional_mechanisms",
+      "dependency_id": "geometry_topology",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Geometry is relevant to coordinate/relative position, and common strength is defensible; topology/symmetry aspects need narrower evidence.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

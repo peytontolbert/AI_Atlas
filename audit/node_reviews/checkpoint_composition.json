@@ -1,0 +1,174 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "e5aed651eb5e240e",
+      "node_id": "checkpoint_composition",
+      "field": "definition",
+      "text": "Checkpoint composition assembles a runtime model from base weights, adapters, experts, heads, tokenizers, and configuration components under explicit compatibility rules.",
+      "source_ids": ["ref_lora", "ref_modelmerge", "ref_ddia"],
+      "evidence_location": "LoRA and Model Soups support adapters and weight composition; they do not cover experts, heads, tokenizers, or explicit compatibility rules as a full runtime model assembly system.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Add a model packaging/composition runtime source for exact definition."
+    },
+    {
+      "unit_id": "fb505907706667a9",
+      "node_id": "checkpoint_composition",
+      "field": "why_it_matters",
+      "text": "It makes specialized model construction modular, auditable, and reproducible across deployments.",
+      "source_ids": ["ref_lora", "ref_modelmerge", "ref_ddia"],
+      "evidence_location": "Adapter and model merging sources support modular specialization; audit/reproducibility across deployments is operational synthesis.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible but needs registry/provenance evidence for audit and reproducibility."
+    },
+    {
+      "unit_id": "5e9572baf880a03a",
+      "node_id": "checkpoint_composition",
+      "field": "examples[1]",
+      "text": "base model plus LoRA stack",
+      "source_ids": ["ref_lora"],
+      "evidence_location": "LoRA directly supports adapting a pretrained base model with low-rank adaptation modules.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Directly aligned conceptually; 'stack' is an implementation detail not explicitly verified."
+    },
+    {
+      "unit_id": "39e7c25e27cba9a3",
+      "node_id": "checkpoint_composition",
+      "field": "examples[2]",
+      "text": "expert routing across domains",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "The available packet sources do not directly support expert routing across domains.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "Needs a mixture-of-experts/routing source."
+    },
+    {
+      "unit_id": "58fa75d9f18cf3ce",
+      "node_id": "checkpoint_composition",
+      "field": "examples[3]",
+      "text": "modular multimodal heads",
+      "source_ids": ["ref_lora", "ref_modelmerge"],
+      "evidence_location": "Adapter/merging sources support modular parameters, but not multimodal heads specifically.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a multimodal model composition source."
+    },
+    {
+      "unit_id": "c2a08a96e6bb7d52",
+      "node_id": "checkpoint_composition",
+      "field": "limitations[1]",
+      "text": "Version skew, preprocessing differences, licenses, and memory duplication can break nominal compatibility.",
+      "source_ids": ["ref_ddia", "ref_lora", "ref_modelmerge"],
+      "evidence_location": "Sources support operational/versioning and model-composition concerns broadly; license and preprocessing compatibility are not directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Plausible limitation but under-sourced."
+    },
+    {
+      "unit_id": "f1e8d833185b1bf8",
+      "node_id": "checkpoint_composition",
+      "field": "dependencies.model_merging.rationale",
+      "text": "Checkpoint, adapter & expert composition turns Model merging & weight-space composition into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_modelmerge"],
+      "evidence_location": "Model Soups supports weight averaging/model merging concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core dependency is well supported conceptually."
+    },
+    {
+      "unit_id": "19dc53beb08225a2",
+      "node_id": "checkpoint_composition",
+      "field": "dependencies.routing_moe.rationale",
+      "text": "Checkpoint, adapter & expert composition turns Routing, conditional computation & mixture-of-experts into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Packet references do not directly support MoE routing as a checkpoint-composition dependency.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs an MoE/routing source for core strength."
+    },
+    {
+      "unit_id": "a60fc4d0fd4856cf",
+      "node_id": "checkpoint_composition",
+      "field": "dependencies.storage_checkpoints.rationale",
+      "text": "Checkpoint, adapter & expert composition turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_ddia"],
+      "evidence_location": "DDIA supports storage/sharding concepts; checkpoint-specific composition is synthesized.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common dependency is plausible."
+    },
+    {
+      "unit_id": "be38c5296fd40b2f",
+      "node_id": "checkpoint_composition",
+      "field": "dependencies.task_arithmetic.rationale",
+      "text": "Checkpoint, adapter & expert composition turns Task vectors & parameter arithmetic into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_modelmerge"],
+      "evidence_location": "Model merging supports weight-space combination broadly, but not task vectors/parameter arithmetic specifically.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a task-arithmetic source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "bc8337665946424b",
+      "node_id": "checkpoint_composition",
+      "dependency_id": "model_merging",
+      "source_ids": ["ref_modelmerge"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Model merging is central to checkpoint composition.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8850415e9dc7d5be",
+      "node_id": "checkpoint_composition",
+      "dependency_id": "routing_moe",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Expert composition suggests MoE relevance, but packet evidence does not support core strength.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "83566af4ce89af66",
+      "node_id": "checkpoint_composition",
+      "dependency_id": "storage_checkpoints",
+      "source_ids": ["ref_ddia"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Stored checkpoints and sharded artifacts are plausible common infrastructure dependencies.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9d455ae692d0167e",
+      "node_id": "checkpoint_composition",
+      "dependency_id": "task_arithmetic",
+      "source_ids": ["ref_modelmerge"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Weight-space composition is related, but task arithmetic is not directly cited.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

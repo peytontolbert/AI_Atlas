@@ -1,0 +1,178 @@
+{
+  "node_id": "recurrence",
+  "label": "Recurrence & feedback state",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "recurrence",
+    "label": "Recurrence & feedback state",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "sequence",
+      "memory"
+    ],
+    "aliases": [],
+    "definition": "A state is repeatedly updated as inputs arrive, enabling temporal dependence and iterative computation.",
+    "why_it_matters": "The role of Recurrence & feedback state is to connect Sequences, events & time series, Gating & multiplicative control to downstream capabilities including Differentiable memory read/write, Recurrent neural networks, Energy-based, Hopfield & Boltzmann models.",
+    "examples": [
+      "substrate for Differentiable memory read/write",
+      "substrate for Recurrent neural networks",
+      "substrate for Energy-based, Hopfield & Boltzmann models"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Sequences, events & time series, Gating & multiplicative control."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Recurrence & feedback state uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "gating",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Recurrence & feedback state is assembled in part from the mechanism or model component Gating & multiplicative control."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Recurrence & feedback state uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "6ec6b34b8ef06879",
+      "node_id": "recurrence",
+      "field": "definition",
+      "text": "A state is repeatedly updated as inputs arrive, enabling temporal dependence and iterative computation."
+    },
+    {
+      "unit_id": "9461e36098dbbef3",
+      "node_id": "recurrence",
+      "field": "why_it_matters",
+      "text": "The role of Recurrence & feedback state is to connect Sequences, events & time series, Gating & multiplicative control to downstream capabilities including Differentiable memory read/write, Recurrent neural networks, Energy-based, Hopfield & Boltzmann models."
+    },
+    {
+      "unit_id": "aa007239febcb1d3",
+      "node_id": "recurrence",
+      "field": "examples[1]",
+      "text": "substrate for Differentiable memory read/write"
+    },
+    {
+      "unit_id": "6253d01dc315eda6",
+      "node_id": "recurrence",
+      "field": "examples[2]",
+      "text": "substrate for Recurrent neural networks"
+    },
+    {
+      "unit_id": "423324af1cbd9a12",
+      "node_id": "recurrence",
+      "field": "examples[3]",
+      "text": "substrate for Energy-based, Hopfield & Boltzmann models"
+    },
+    {
+      "unit_id": "6112ec7f7635876d",
+      "node_id": "recurrence",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Sequences, events & time series, Gating & multiplicative control."
+    },
+    {
+      "unit_id": "4fe5e6bd376456ba",
+      "node_id": "recurrence",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Recurrence & feedback state uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "75271917e0d13603",
+      "node_id": "recurrence",
+      "field": "dependencies.gating.rationale",
+      "text": "Recurrence & feedback state is assembled in part from the mechanism or model component Gating & multiplicative control."
+    },
+    {
+      "unit_id": "3d4b300c462e60be",
+      "node_id": "recurrence",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Recurrence & feedback state uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "543e6cc649cb2f1d",
+      "node_id": "recurrence",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Recurrence & feedback state uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "da91d0d7dd753fb0",
+      "node_id": "recurrence",
+      "dependency_id": "gating",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Recurrence & feedback state is assembled in part from the mechanism or model component Gating & multiplicative control."
+    },
+    {
+      "edge_id": "0b7f0abc920412d2",
+      "node_id": "recurrence",
+      "dependency_id": "dynamical_control",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Recurrence & feedback state uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/recurrence.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

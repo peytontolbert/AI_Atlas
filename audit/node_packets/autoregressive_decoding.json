@@ -1,0 +1,170 @@
+{
+  "node_id": "autoregressive_decoding",
+  "label": "Autoregressive decoding",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "autoregressive_decoding",
+    "label": "Autoregressive decoding",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "generation"
+    ],
+    "aliases": [],
+    "definition": "Outputs are generated step by step, conditioning each decision on prior outputs.",
+    "why_it_matters": "The role of Autoregressive decoding is to connect Autoregressive / next-step prediction, Sequences, events & time series to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Chain-of-thought & latent reasoning.",
+    "examples": [
+      "substrate for Encoder–decoder transformers",
+      "substrate for Decoder-only causal transformers",
+      "substrate for Chain-of-thought & latent reasoning"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Autoregressive / next-step prediction, Sequences, events & time series."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "autoregressive_objective",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Autoregressive decoding uses Autoregressive / next-step prediction as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Autoregressive decoding uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "probability",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Autoregressive decoding uses Probability theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "44fe9b7fd9a12ec8",
+      "node_id": "autoregressive_decoding",
+      "field": "definition",
+      "text": "Outputs are generated step by step, conditioning each decision on prior outputs."
+    },
+    {
+      "unit_id": "1e8b84265f1fe3c8",
+      "node_id": "autoregressive_decoding",
+      "field": "why_it_matters",
+      "text": "The role of Autoregressive decoding is to connect Autoregressive / next-step prediction, Sequences, events & time series to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Chain-of-thought & latent reasoning."
+    },
+    {
+      "unit_id": "ed79b3e40b40f3de",
+      "node_id": "autoregressive_decoding",
+      "field": "examples[1]",
+      "text": "substrate for Encoder–decoder transformers"
+    },
+    {
+      "unit_id": "a0c217e11a2640fd",
+      "node_id": "autoregressive_decoding",
+      "field": "examples[2]",
+      "text": "substrate for Decoder-only causal transformers"
+    },
+    {
+      "unit_id": "651b0fdceee87ea3",
+      "node_id": "autoregressive_decoding",
+      "field": "examples[3]",
+      "text": "substrate for Chain-of-thought & latent reasoning"
+    },
+    {
+      "unit_id": "24dbcb3690619b2b",
+      "node_id": "autoregressive_decoding",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Autoregressive / next-step prediction, Sequences, events & time series."
+    },
+    {
+      "unit_id": "33ee353118a88220",
+      "node_id": "autoregressive_decoding",
+      "field": "dependencies.autoregressive_objective.rationale",
+      "text": "Autoregressive decoding uses Autoregressive / next-step prediction as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "36a8f56624dc2fd5",
+      "node_id": "autoregressive_decoding",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Autoregressive decoding uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "e6f5694234749055",
+      "node_id": "autoregressive_decoding",
+      "field": "dependencies.probability.rationale",
+      "text": "Autoregressive decoding uses Probability theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "1781752c7d1b3dde",
+      "node_id": "autoregressive_decoding",
+      "dependency_id": "autoregressive_objective",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Autoregressive decoding uses Autoregressive / next-step prediction as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "cf80853c38e5b3bd",
+      "node_id": "autoregressive_decoding",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Autoregressive decoding uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "571291445e970723",
+      "node_id": "autoregressive_decoding",
+      "dependency_id": "probability",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Autoregressive decoding uses Probability theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/autoregressive_decoding.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

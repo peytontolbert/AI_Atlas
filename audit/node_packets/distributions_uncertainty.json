@@ -1,0 +1,143 @@
+{
+  "node_id": "distributions_uncertainty",
+  "label": "Distributions, uncertainty & beliefs",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "distributions_uncertainty",
+    "label": "Distributions, uncertainty & beliefs",
+    "layer": "representation",
+    "tags": [
+      "probabilistic",
+      "safety"
+    ],
+    "aliases": [],
+    "definition": "Predictive distributions and belief states express uncertainty rather than only point estimates.",
+    "why_it_matters": "The role of Distributions, uncertainty & beliefs is to connect Probability theory, Statistics & experimental design to downstream capabilities including Contrastive learning, Generative modeling, Calibration, uncertainty & risk objectives.",
+    "examples": [
+      "substrate for Contrastive learning",
+      "substrate for Generative modeling",
+      "substrate for Calibration, uncertainty & risk objectives"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Probability theory, Statistics & experimental design."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Distributions, uncertainty & beliefs rests on the formal or computational capabilities supplied by Probability theory."
+      },
+      {
+        "id": "statistics",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Distributions, uncertainty & beliefs rests on the formal or computational capabilities supplied by Statistics & experimental design."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "7a543cfef39f1594",
+      "node_id": "distributions_uncertainty",
+      "field": "definition",
+      "text": "Predictive distributions and belief states express uncertainty rather than only point estimates."
+    },
+    {
+      "unit_id": "837039741e509ffa",
+      "node_id": "distributions_uncertainty",
+      "field": "why_it_matters",
+      "text": "The role of Distributions, uncertainty & beliefs is to connect Probability theory, Statistics & experimental design to downstream capabilities including Contrastive learning, Generative modeling, Calibration, uncertainty & risk objectives."
+    },
+    {
+      "unit_id": "2d243df27e05b51f",
+      "node_id": "distributions_uncertainty",
+      "field": "examples[1]",
+      "text": "substrate for Contrastive learning"
+    },
+    {
+      "unit_id": "86c314fac88faaa1",
+      "node_id": "distributions_uncertainty",
+      "field": "examples[2]",
+      "text": "substrate for Generative modeling"
+    },
+    {
+      "unit_id": "7bb56ad6236782ed",
+      "node_id": "distributions_uncertainty",
+      "field": "examples[3]",
+      "text": "substrate for Calibration, uncertainty & risk objectives"
+    },
+    {
+      "unit_id": "b39abdfd7889a0b3",
+      "node_id": "distributions_uncertainty",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Probability theory, Statistics & experimental design."
+    },
+    {
+      "unit_id": "f57e239ab2db4258",
+      "node_id": "distributions_uncertainty",
+      "field": "dependencies.probability.rationale",
+      "text": "Distributions, uncertainty & beliefs rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "unit_id": "7720a1108ab4e872",
+      "node_id": "distributions_uncertainty",
+      "field": "dependencies.statistics.rationale",
+      "text": "Distributions, uncertainty & beliefs rests on the formal or computational capabilities supplied by Statistics & experimental design."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "cd3d5abe668a8e30",
+      "node_id": "distributions_uncertainty",
+      "dependency_id": "probability",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Distributions, uncertainty & beliefs rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "edge_id": "eef776b483d52738",
+      "node_id": "distributions_uncertainty",
+      "dependency_id": "statistics",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Distributions, uncertainty & beliefs rests on the formal or computational capabilities supplied by Statistics & experimental design."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/distributions_uncertainty.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

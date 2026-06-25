@@ -1,0 +1,171 @@
+{
+  "node_id": "structured_output_validation",
+  "label": "Structured-output parsing, validation & repair",
+  "layer": "reasoning",
+  "editorial_status": "curated",
+  "node": {
+    "id": "structured_output_validation",
+    "label": "Structured-output parsing, validation & repair",
+    "layer": "reasoning",
+    "tags": [
+      "structured-output",
+      "verification",
+      "agents"
+    ],
+    "aliases": [],
+    "definition": "Structured-output pipelines parse generated artifacts, validate schema and semantic constraints, and retry, repair, or escalate outputs that fail.",
+    "why_it_matters": "They convert probabilistic text generation into a bounded interface suitable for downstream software.",
+    "examples": [
+      "JSON validation and retry",
+      "tool-argument type checking",
+      "SQL dry-run and repair"
+    ],
+    "limitations": [
+      "Repair loops can mask systematic model errors and still require explicit semantic, authorization, and side-effect checks."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_structured"
+    ],
+    "dependencies": [
+      {
+        "id": "schemas_grammars_constraints",
+        "type": "verifies_with",
+        "strength": "core",
+        "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Schemas, grammars & formal output languages."
+      },
+      {
+        "id": "code_execution",
+        "type": "verifies_with",
+        "strength": "core",
+        "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+      },
+      {
+        "id": "reflection_verifier",
+        "type": "verifies_with",
+        "strength": "common",
+        "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Reflection, critique, verifier & repair loops."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "0cf5343b59f830a2",
+      "node_id": "structured_output_validation",
+      "field": "definition",
+      "text": "Structured-output pipelines parse generated artifacts, validate schema and semantic constraints, and retry, repair, or escalate outputs that fail."
+    },
+    {
+      "unit_id": "fdb562fd43551c46",
+      "node_id": "structured_output_validation",
+      "field": "why_it_matters",
+      "text": "They convert probabilistic text generation into a bounded interface suitable for downstream software."
+    },
+    {
+      "unit_id": "e31c82a80419a2a8",
+      "node_id": "structured_output_validation",
+      "field": "examples[1]",
+      "text": "JSON validation and retry"
+    },
+    {
+      "unit_id": "76b8613ea4a18c93",
+      "node_id": "structured_output_validation",
+      "field": "examples[2]",
+      "text": "tool-argument type checking"
+    },
+    {
+      "unit_id": "b32e0197b9fb3761",
+      "node_id": "structured_output_validation",
+      "field": "examples[3]",
+      "text": "SQL dry-run and repair"
+    },
+    {
+      "unit_id": "94952bb4c6177223",
+      "node_id": "structured_output_validation",
+      "field": "limitations[1]",
+      "text": "Repair loops can mask systematic model errors and still require explicit semantic, authorization, and side-effect checks."
+    },
+    {
+      "unit_id": "b46a1b63a759a342",
+      "node_id": "structured_output_validation",
+      "field": "dependencies.schemas_grammars_constraints.rationale",
+      "text": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Schemas, grammars & formal output languages."
+    },
+    {
+      "unit_id": "9b09a31a19dfb789",
+      "node_id": "structured_output_validation",
+      "field": "dependencies.code_execution.rationale",
+      "text": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+    },
+    {
+      "unit_id": "1abd50f38c3691fb",
+      "node_id": "structured_output_validation",
+      "field": "dependencies.reflection_verifier.rationale",
+      "text": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Reflection, critique, verifier & repair loops."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "d2d8e63c821996b2",
+      "node_id": "structured_output_validation",
+      "dependency_id": "schemas_grammars_constraints",
+      "type": "verifies_with",
+      "strength": "core",
+      "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Schemas, grammars & formal output languages."
+    },
+    {
+      "edge_id": "8db74679a8bbec0e",
+      "node_id": "structured_output_validation",
+      "dependency_id": "code_execution",
+      "type": "verifies_with",
+      "strength": "core",
+      "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+    },
+    {
+      "edge_id": "79f529e2183dae6b",
+      "node_id": "structured_output_validation",
+      "dependency_id": "reflection_verifier",
+      "type": "verifies_with",
+      "strength": "common",
+      "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Reflection, critique, verifier & repair loops."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_structured": {
+        "id": "ref_structured",
+        "title": "A Survey of Structured Output Generation from LLMs",
+        "authors": "survey authors",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2501.10868"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_structured": {
+        "id": "ref_structured",
+        "title": "A Survey of Structured Output Generation from LLMs",
+        "authors": "survey authors",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2501.10868"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/structured_output_validation.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "node_id": "peft_lora",
+  "label": "Parameter-efficient tuning, adapters & LoRA",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "peft_lora",
+    "label": "Parameter-efficient tuning, adapters & LoRA",
+    "layer": "training",
+    "tags": [
+      "training",
+      "adaptation",
+      "efficiency"
+    ],
+    "aliases": [
+      "PEFT",
+      "LoRA"
+    ],
+    "definition": "Parameter-efficient fine-tuning adapts a frozen or mostly frozen model through small trainable modules; LoRA learns low-rank updates to selected weight matrices.",
+    "why_it_matters": "The role of Parameter-efficient tuning, adapters & LoRA is to connect Supervised fine-tuning & instruction tuning, Linear algebra to downstream capabilities including Large language models, Code models, copilots & repository intelligence, Model merging & weight-space composition.",
+    "examples": [
+      "substrate for Large language models",
+      "substrate for Code models, copilots & repository intelligence",
+      "substrate for Model merging & weight-space composition"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised fine-tuning & instruction tuning, Linear algebra."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_lora"
+    ],
+    "dependencies": [
+      {
+        "id": "sft_instruction",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Parameter-efficient tuning, adapters & LoRA uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "linear_algebra",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Parameter-efficient tuning, adapters & LoRA uses Linear algebra as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "affine_dense",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Parameter-efficient tuning, adapters & LoRA uses Affine transforms & dense layers as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b510f4576eb76955",
+      "node_id": "peft_lora",
+      "field": "definition",
+      "text": "Parameter-efficient fine-tuning adapts a frozen or mostly frozen model through small trainable modules; LoRA learns low-rank updates to selected weight matrices."
+    },
+    {
+      "unit_id": "cd4bb3cb58a64bfc",
+      "node_id": "peft_lora",
+      "field": "why_it_matters",
+      "text": "The role of Parameter-efficient tuning, adapters & LoRA is to connect Supervised fine-tuning & instruction tuning, Linear algebra to downstream capabilities including Large language models, Code models, copilots & repository intelligence, Model merging & weight-space composition."
+    },
+    {
+      "unit_id": "f97851d334d35bf1",
+      "node_id": "peft_lora",
+      "field": "examples[1]",
+      "text": "substrate for Large language models"
+    },
+    {
+      "unit_id": "365b98bef87b53ca",
+      "node_id": "peft_lora",
+      "field": "examples[2]",
+      "text": "substrate for Code models, copilots & repository intelligence"
+    },
+    {
+      "unit_id": "cc6b480ad0ec9777",
+      "node_id": "peft_lora",
+      "field": "examples[3]",
+      "text": "substrate for Model merging & weight-space composition"
+    },
+    {
+      "unit_id": "840377b1bb7c888a",
+      "node_id": "peft_lora",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised fine-tuning & instruction tuning, Linear algebra."
+    },
+    {
+      "unit_id": "3433ea4f822e21b9",
+      "node_id": "peft_lora",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "Parameter-efficient tuning, adapters & LoRA uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "38bbfd2c2d91a36d",
+      "node_id": "peft_lora",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Parameter-efficient tuning, adapters & LoRA uses Linear algebra as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "1c78fa62582e58ca",
+      "node_id": "peft_lora",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Parameter-efficient tuning, adapters & LoRA uses Affine transforms & dense layers as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "879599709fa156fa",
+      "node_id": "peft_lora",
+      "dependency_id": "sft_instruction",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Parameter-efficient tuning, adapters & LoRA uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "c8082c683cbbf117",
+      "node_id": "peft_lora",
+      "dependency_id": "linear_algebra",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Parameter-efficient tuning, adapters & LoRA uses Linear algebra as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "06e7ddc27eb1034d",
+      "node_id": "peft_lora",
+      "dependency_id": "affine_dense",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Parameter-efficient tuning, adapters & LoRA uses Affine transforms & dense layers as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_lora": {
+        "id": "ref_lora",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "authors": "Hu et al.",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2106.09685"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/peft_lora.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

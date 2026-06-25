@@ -1,0 +1,184 @@
+{
+  "node_id": "automl_paradigm",
+  "label": "AutoML & automated model design",
+  "layer": "paradigm",
+  "editorial_status": "curated",
+  "node": {
+    "id": "automl_paradigm",
+    "label": "AutoML & automated model design",
+    "layer": "paradigm",
+    "tags": [
+      "automl",
+      "search",
+      "training"
+    ],
+    "aliases": [],
+    "definition": "AutoML treats preprocessing, model choice, hyperparameters, data policy, or architecture as a design space optimized by an automated controller.",
+    "why_it_matters": "It replaces ad hoc trial-and-error with reproducible search under a declared objective, budget, and constraint set.",
+    "examples": [
+      "hyperparameter optimization",
+      "pipeline search",
+      "hardware-aware architecture design"
+    ],
+    "limitations": [
+      "Results are limited by the search space, proxy metric, compute budget, and validation leakage."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nas"
+    ],
+    "dependencies": [
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "AutoML & automated model design uses Optimization theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "active_curriculum_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "AutoML & automated model design follows the learning setup expressed by Active learning & curriculum learning."
+      },
+      {
+        "id": "evolutionary_population_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "AutoML & automated model design follows the learning setup expressed by Evolutionary, swarm & population-based learning."
+      },
+      {
+        "id": "meta_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "AutoML & automated model design follows the learning setup expressed by Meta-learning."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "9e83ab36f01228fa",
+      "node_id": "automl_paradigm",
+      "field": "definition",
+      "text": "AutoML treats preprocessing, model choice, hyperparameters, data policy, or architecture as a design space optimized by an automated controller."
+    },
+    {
+      "unit_id": "755c26c83f4db914",
+      "node_id": "automl_paradigm",
+      "field": "why_it_matters",
+      "text": "It replaces ad hoc trial-and-error with reproducible search under a declared objective, budget, and constraint set."
+    },
+    {
+      "unit_id": "6e8b2f8661f22a93",
+      "node_id": "automl_paradigm",
+      "field": "examples[1]",
+      "text": "hyperparameter optimization"
+    },
+    {
+      "unit_id": "b203b0e062efbfea",
+      "node_id": "automl_paradigm",
+      "field": "examples[2]",
+      "text": "pipeline search"
+    },
+    {
+      "unit_id": "3170b0ca8042e8a7",
+      "node_id": "automl_paradigm",
+      "field": "examples[3]",
+      "text": "hardware-aware architecture design"
+    },
+    {
+      "unit_id": "967df588d6438321",
+      "node_id": "automl_paradigm",
+      "field": "limitations[1]",
+      "text": "Results are limited by the search space, proxy metric, compute budget, and validation leakage."
+    },
+    {
+      "unit_id": "ed76669096337404",
+      "node_id": "automl_paradigm",
+      "field": "dependencies.optimization.rationale",
+      "text": "AutoML & automated model design uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f0c20d26089c5a51",
+      "node_id": "automl_paradigm",
+      "field": "dependencies.active_curriculum_learning.rationale",
+      "text": "AutoML & automated model design follows the learning setup expressed by Active learning & curriculum learning."
+    },
+    {
+      "unit_id": "bcc17b074de99b6d",
+      "node_id": "automl_paradigm",
+      "field": "dependencies.evolutionary_population_learning.rationale",
+      "text": "AutoML & automated model design follows the learning setup expressed by Evolutionary, swarm & population-based learning."
+    },
+    {
+      "unit_id": "1933572113166764",
+      "node_id": "automl_paradigm",
+      "field": "dependencies.meta_learning.rationale",
+      "text": "AutoML & automated model design follows the learning setup expressed by Meta-learning."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "8470ab4d659167d9",
+      "node_id": "automl_paradigm",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "AutoML & automated model design uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "3cc36a092e97c5fa",
+      "node_id": "automl_paradigm",
+      "dependency_id": "active_curriculum_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "AutoML & automated model design follows the learning setup expressed by Active learning & curriculum learning."
+    },
+    {
+      "edge_id": "836e7ff6af281c87",
+      "node_id": "automl_paradigm",
+      "dependency_id": "evolutionary_population_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "AutoML & automated model design follows the learning setup expressed by Evolutionary, swarm & population-based learning."
+    },
+    {
+      "edge_id": "91ceec6ef2b1a7e1",
+      "node_id": "automl_paradigm",
+      "dependency_id": "meta_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "AutoML & automated model design follows the learning setup expressed by Meta-learning."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nas": {
+        "id": "ref_nas",
+        "title": "Neural Architecture Search: A Survey",
+        "authors": "Elsken, Metzen & Hutter",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1808.05377"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/automl_paradigm.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

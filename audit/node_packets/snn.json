@@ -1,0 +1,164 @@
+{
+  "node_id": "snn",
+  "label": "Spiking neural networks",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "snn",
+    "label": "Spiking neural networks",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "neuromorphic"
+    ],
+    "aliases": [],
+    "definition": "A spiking neural network communicates with discrete events and evolving membrane states, supporting temporally precise and potentially energy-efficient computation.",
+    "why_it_matters": "The role of Spiking neural networks is to connect Spiking neurons & temporal coding, Recurrence & feedback state to downstream capabilities including Edge, on-device & neuromorphic deployment, Neuromorphic, sensor & edge intelligence.",
+    "examples": [
+      "substrate for Edge, on-device & neuromorphic deployment",
+      "substrate for Neuromorphic, sensor & edge intelligence"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Spiking neurons & temporal coding, Recurrence & feedback state."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "spiking_temporal_dynamics",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Spiking neural networks is assembled in part from the mechanism or model component Spiking neurons & temporal coding."
+      },
+      {
+        "id": "recurrence",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Spiking neural networks is assembled in part from the mechanism or model component Recurrence & feedback state."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Spiking neural networks rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c8cbf73b6e122b55",
+      "node_id": "snn",
+      "field": "definition",
+      "text": "A spiking neural network communicates with discrete events and evolving membrane states, supporting temporally precise and potentially energy-efficient computation."
+    },
+    {
+      "unit_id": "b87f42cb77940c06",
+      "node_id": "snn",
+      "field": "why_it_matters",
+      "text": "The role of Spiking neural networks is to connect Spiking neurons & temporal coding, Recurrence & feedback state to downstream capabilities including Edge, on-device & neuromorphic deployment, Neuromorphic, sensor & edge intelligence."
+    },
+    {
+      "unit_id": "be027f8c80df0f16",
+      "node_id": "snn",
+      "field": "examples[1]",
+      "text": "substrate for Edge, on-device & neuromorphic deployment"
+    },
+    {
+      "unit_id": "bdd9961a5c476230",
+      "node_id": "snn",
+      "field": "examples[2]",
+      "text": "substrate for Neuromorphic, sensor & edge intelligence"
+    },
+    {
+      "unit_id": "646aea9eb2bd6da3",
+      "node_id": "snn",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Spiking neurons & temporal coding, Recurrence & feedback state."
+    },
+    {
+      "unit_id": "0852dd2acde54af1",
+      "node_id": "snn",
+      "field": "dependencies.spiking_temporal_dynamics.rationale",
+      "text": "Spiking neural networks is assembled in part from the mechanism or model component Spiking neurons & temporal coding."
+    },
+    {
+      "unit_id": "5f3f792e8f23602d",
+      "node_id": "snn",
+      "field": "dependencies.recurrence.rationale",
+      "text": "Spiking neural networks is assembled in part from the mechanism or model component Recurrence & feedback state."
+    },
+    {
+      "unit_id": "727cb9b358c8e474",
+      "node_id": "snn",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Spiking neural networks rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6ee0aaf691421bc0",
+      "node_id": "snn",
+      "dependency_id": "spiking_temporal_dynamics",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Spiking neural networks is assembled in part from the mechanism or model component Spiking neurons & temporal coding."
+    },
+    {
+      "edge_id": "5bad8b4416bb75cb",
+      "node_id": "snn",
+      "dependency_id": "recurrence",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Spiking neural networks is assembled in part from the mechanism or model component Recurrence & feedback state."
+    },
+    {
+      "edge_id": "0aedc726e1c784f5",
+      "node_id": "snn",
+      "dependency_id": "dynamical_control",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Spiking neural networks rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/snn.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

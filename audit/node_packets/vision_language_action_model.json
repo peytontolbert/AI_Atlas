@@ -1,0 +1,224 @@
+{
+  "node_id": "vision_language_action_model",
+  "label": "Vision–language–action models",
+  "layer": "model",
+  "editorial_status": "curated",
+  "node": {
+    "id": "vision_language_action_model",
+    "label": "Vision–language–action models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "multimodal",
+      "robotics",
+      "agents"
+    ],
+    "aliases": [
+      "VLA model"
+    ],
+    "definition": "Vision–language–action models map visual observations and language instructions to temporally grounded actions or action tokens for embodied control.",
+    "why_it_matters": "They connect foundation-model perception and instruction following directly to physical or simulated behavior.",
+    "examples": [
+      "robot manipulation policies",
+      "screen-action prediction",
+      "navigation from language"
+    ],
+    "limitations": [
+      "Action data are expensive, embodiment shifts are severe, and mistakes can create real physical consequences."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_react",
+      "ref_sim2real",
+      "ref_rt2"
+    ],
+    "dependencies": [
+      {
+        "id": "multimodal_foundation",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Vision–language–action models extends or specializes the architecture family Multimodal foundation models."
+      },
+      {
+        "id": "world_model",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Vision–language–action models extends or specializes the architecture family Latent world models & predictive dynamics."
+      },
+      {
+        "id": "policy_actor_critic",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Vision–language–action models is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+      },
+      {
+        "id": "sequences_time",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Vision–language–action models consumes, emits, or organizes information using Sequences, events & time series."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "6f7c020c58ca1cea",
+      "node_id": "vision_language_action_model",
+      "field": "definition",
+      "text": "Vision–language–action models map visual observations and language instructions to temporally grounded actions or action tokens for embodied control."
+    },
+    {
+      "unit_id": "3a164939da9fd651",
+      "node_id": "vision_language_action_model",
+      "field": "why_it_matters",
+      "text": "They connect foundation-model perception and instruction following directly to physical or simulated behavior."
+    },
+    {
+      "unit_id": "4db6e0180f8d16d0",
+      "node_id": "vision_language_action_model",
+      "field": "examples[1]",
+      "text": "robot manipulation policies"
+    },
+    {
+      "unit_id": "995a00b43cb59fd0",
+      "node_id": "vision_language_action_model",
+      "field": "examples[2]",
+      "text": "screen-action prediction"
+    },
+    {
+      "unit_id": "8eacce2f9ff946bb",
+      "node_id": "vision_language_action_model",
+      "field": "examples[3]",
+      "text": "navigation from language"
+    },
+    {
+      "unit_id": "a0143028ebf18357",
+      "node_id": "vision_language_action_model",
+      "field": "limitations[1]",
+      "text": "Action data are expensive, embodiment shifts are severe, and mistakes can create real physical consequences."
+    },
+    {
+      "unit_id": "3b124e7194fe0400",
+      "node_id": "vision_language_action_model",
+      "field": "dependencies.multimodal_foundation.rationale",
+      "text": "Vision–language–action models extends or specializes the architecture family Multimodal foundation models."
+    },
+    {
+      "unit_id": "8d0e31bcd8f84b46",
+      "node_id": "vision_language_action_model",
+      "field": "dependencies.world_model.rationale",
+      "text": "Vision–language–action models extends or specializes the architecture family Latent world models & predictive dynamics."
+    },
+    {
+      "unit_id": "47254388f27aca65",
+      "node_id": "vision_language_action_model",
+      "field": "dependencies.policy_actor_critic.rationale",
+      "text": "Vision–language–action models is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+    },
+    {
+      "unit_id": "59af2c7f430e02f6",
+      "node_id": "vision_language_action_model",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Vision–language–action models consumes, emits, or organizes information using Sequences, events & time series."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "c1b2080c38194271",
+      "node_id": "vision_language_action_model",
+      "dependency_id": "multimodal_foundation",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Vision–language–action models extends or specializes the architecture family Multimodal foundation models."
+    },
+    {
+      "edge_id": "07268234c630f39a",
+      "node_id": "vision_language_action_model",
+      "dependency_id": "world_model",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Vision–language–action models extends or specializes the architecture family Latent world models & predictive dynamics."
+    },
+    {
+      "edge_id": "7ffc907ca4496fad",
+      "node_id": "vision_language_action_model",
+      "dependency_id": "policy_actor_critic",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Vision–language–action models is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+    },
+    {
+      "edge_id": "88cc5422a96f906c",
+      "node_id": "vision_language_action_model",
+      "dependency_id": "sequences_time",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Vision–language–action models consumes, emits, or organizes information using Sequences, events & time series."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_react": {
+        "id": "ref_react",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.03629"
+      },
+      "ref_sim2real": {
+        "id": "ref_sim2real",
+        "title": "Sim-to-Real Transfer in Deep Reinforcement Learning for Robotics: a Survey",
+        "authors": "Zhao, Queralta & Westerlund",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2009.13303"
+      },
+      "ref_rt2": {
+        "id": "ref_rt2",
+        "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+        "authors": "Brohan et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2307.15818"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_dreamer": {
+        "id": "ref_dreamer",
+        "title": "Mastering Diverse Domains through World Models",
+        "authors": "Hafner et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2301.04104"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/vision_language_action_model.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

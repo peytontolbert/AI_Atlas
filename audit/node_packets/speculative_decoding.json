@@ -1,0 +1,171 @@
+{
+  "node_id": "speculative_decoding",
+  "label": "Speculative, parallel & assisted decoding",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "speculative_decoding",
+    "label": "Speculative, parallel & assisted decoding",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "serving",
+      "generation"
+    ],
+    "aliases": [],
+    "definition": "Speculative and assisted decoding propose multiple future tokens with a cheaper process and verify them in parallel with the target model.",
+    "why_it_matters": "The role of Speculative, parallel & assisted decoding is to connect Model servers & inference runtimes, Autoregressive decoding to downstream capabilities including Large language models, Conversational assistants & chatbots.",
+    "examples": [
+      "substrate for Large language models",
+      "substrate for Conversational assistants & chatbots"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Autoregressive decoding."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_speculative_sampling"
+    ],
+    "dependencies": [
+      {
+        "id": "model_serving",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Speculative, parallel & assisted decoding turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "autoregressive_decoding",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Speculative, parallel & assisted decoding turns Autoregressive decoding into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "decoder_only_transformer",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Speculative, parallel & assisted decoding turns Decoder-only causal transformers into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "24446d3fc9befff7",
+      "node_id": "speculative_decoding",
+      "field": "definition",
+      "text": "Speculative and assisted decoding propose multiple future tokens with a cheaper process and verify them in parallel with the target model."
+    },
+    {
+      "unit_id": "2d71277bbc229601",
+      "node_id": "speculative_decoding",
+      "field": "why_it_matters",
+      "text": "The role of Speculative, parallel & assisted decoding is to connect Model servers & inference runtimes, Autoregressive decoding to downstream capabilities including Large language models, Conversational assistants & chatbots."
+    },
+    {
+      "unit_id": "6e93c152f5fc7517",
+      "node_id": "speculative_decoding",
+      "field": "examples[1]",
+      "text": "substrate for Large language models"
+    },
+    {
+      "unit_id": "ac22a154b2d67b21",
+      "node_id": "speculative_decoding",
+      "field": "examples[2]",
+      "text": "substrate for Conversational assistants & chatbots"
+    },
+    {
+      "unit_id": "c488a1f1f8c97fa7",
+      "node_id": "speculative_decoding",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Autoregressive decoding."
+    },
+    {
+      "unit_id": "798cbad1c06a9320",
+      "node_id": "speculative_decoding",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Speculative, parallel & assisted decoding turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "87545de566f5a033",
+      "node_id": "speculative_decoding",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "Speculative, parallel & assisted decoding turns Autoregressive decoding into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "64e7b173f6d37f9e",
+      "node_id": "speculative_decoding",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "Speculative, parallel & assisted decoding turns Decoder-only causal transformers into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ee2798deb43f67a1",
+      "node_id": "speculative_decoding",
+      "dependency_id": "model_serving",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Speculative, parallel & assisted decoding turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "968d0e15b5c72d74",
+      "node_id": "speculative_decoding",
+      "dependency_id": "autoregressive_decoding",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Speculative, parallel & assisted decoding turns Autoregressive decoding into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "8a1e51408f8624bb",
+      "node_id": "speculative_decoding",
+      "dependency_id": "decoder_only_transformer",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Speculative, parallel & assisted decoding turns Decoder-only causal transformers into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_speculative_sampling": {
+        "id": "ref_speculative_sampling",
+        "title": "Accelerating Large Language Model Decoding with Speculative Sampling",
+        "authors": "Chen et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2302.01318"
+      }
+    },
+    "dependency_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/speculative_decoding.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

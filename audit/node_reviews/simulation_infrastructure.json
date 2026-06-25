@@ -1,0 +1,174 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "1b88b29cc57d8ffe",
+      "node_id": "simulation_infrastructure",
+      "field": "definition",
+      "text": "Simulation infrastructure runs many reproducible environments, scenarios, agents, and sensor models for training, evaluation, and synthetic-data generation.",
+      "source_ids": ["ref_digital_twin_ai", "ref_scenario_generation"],
+      "evidence_location": "Digital twin and scenario generation surveys support simulated environments/scenarios and AI use cases; reproducibility and sensor models are plausible but not fully exact.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Good conceptual support from packet sources."
+    },
+    {
+      "unit_id": "7bd8c12063b8e022",
+      "node_id": "simulation_infrastructure",
+      "field": "why_it_matters",
+      "text": "It supplies the interaction volume and controlled counterfactuals needed by embodied, game, and operational AI.",
+      "source_ids": ["ref_digital_twin_ai", "ref_scenario_generation", "ref_aima"],
+      "evidence_location": "Sources support simulation/scenario generation for AI and autonomous driving; game and operational AI are broader extrapolations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Defensible synthesis; exact downstream categories are atlas-derived."
+    },
+    {
+      "unit_id": "e345318a61fccd52",
+      "node_id": "simulation_infrastructure",
+      "field": "examples[1]",
+      "text": "parallel robot simulators",
+      "source_ids": ["ref_digital_twin_ai", "ref_ddia"],
+      "evidence_location": "Digital twin AI supports simulation; distributed systems source supports parallel operational infrastructure. Robot simulator specifics are indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible example, not directly verified."
+    },
+    {
+      "unit_id": "37d45fbf3e851f6c",
+      "node_id": "simulation_infrastructure",
+      "field": "examples[2]",
+      "text": "traffic scenario farms",
+      "source_ids": ["ref_scenario_generation"],
+      "evidence_location": "Scenario generation survey for autonomous driving supports traffic scenarios.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Strong conceptual fit; 'farms' as scaling infrastructure is synthesized."
+    },
+    {
+      "unit_id": "7f16af58f0e4a316",
+      "node_id": "simulation_infrastructure",
+      "field": "examples[3]",
+      "text": "wargame experiment grids",
+      "source_ids": ["ref_aima", "ref_ddia"],
+      "evidence_location": "Available packet references do not directly support wargame experiment grids.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "Needs a wargaming/simulation experimentation source."
+    },
+    {
+      "unit_id": "809c9e27ce187c55",
+      "node_id": "simulation_infrastructure",
+      "field": "limitations[1]",
+      "text": "Fidelity, scenario coverage, determinism, and compute cost determine whether simulated conclusions transfer.",
+      "source_ids": ["ref_digital_twin_ai", "ref_scenario_generation"],
+      "evidence_location": "Simulation/digital twin and scenario-generation sources support fidelity and scenario coverage concerns; determinism and compute cost are plausible operational additions.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Well supported as synthesis, but not exact phrase-level verification."
+    },
+    {
+      "unit_id": "9b9a1cca3020c4de",
+      "node_id": "simulation_infrastructure",
+      "field": "dependencies.orchestration.rationale",
+      "text": "Simulation farms, digital environments & scenario generation turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_ddia", "ref_digital_twin_ai"],
+      "evidence_location": "Large-scale simulation implies orchestration; DDIA supports distributed operational concerns.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core dependency is plausible; exact operationalizes wording is templated."
+    },
+    {
+      "unit_id": "fc395995654d0941",
+      "node_id": "simulation_infrastructure",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Simulation farms, digital environments & scenario generation turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_ddia", "ref_digital_twin_ai"],
+      "evidence_location": "Simulation farms and digital environments at scale plausibly require distributed systems; DDIA supports distributed systems foundations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core dependency is defensible."
+    },
+    {
+      "unit_id": "a509dd8d5868d228",
+      "node_id": "simulation_infrastructure",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Simulation farms, digital environments & scenario generation turns Multimodal, simulated & streaming data into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_digital_twin_ai", "ref_scenario_generation"],
+      "evidence_location": "Digital twin and scenario sources support simulated environments and data; multimodal/streaming specifics are not fully direct.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common dependency is plausible."
+    },
+    {
+      "unit_id": "e9aa32c979abe4a8",
+      "node_id": "simulation_infrastructure",
+      "field": "dependencies.augmentation_synthetic.rationale",
+      "text": "Simulation farms, digital environments & scenario generation turns Data augmentation & synthetic-data generation into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_scenario_generation", "ref_dlbook"],
+      "evidence_location": "Scenario generation supports synthetic scenario/data generation; augmentation linkage is broader but plausible.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common dependency is defensible."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "c537de4b71dcd05b",
+      "node_id": "simulation_infrastructure",
+      "dependency_id": "orchestration",
+      "source_ids": ["ref_ddia", "ref_digital_twin_ai"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Simulation farms plausibly require workflow and cluster orchestration.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "fd8d8cdb8c9413ed",
+      "node_id": "simulation_infrastructure",
+      "dependency_id": "distributed_systems",
+      "source_ids": ["ref_ddia", "ref_digital_twin_ai"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Distributed systems are a plausible core substrate for simulation farms.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "33390703aca684ca",
+      "node_id": "simulation_infrastructure",
+      "dependency_id": "multimodal_simulated_streams",
+      "source_ids": ["ref_digital_twin_ai", "ref_scenario_generation"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Simulated streams are plausibly produced by simulation infrastructure.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0ee153ef7b404d81",
+      "node_id": "simulation_infrastructure",
+      "dependency_id": "augmentation_synthetic",
+      "source_ids": ["ref_scenario_generation", "ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Scenario generation and simulation are plausible synthetic-data generators.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

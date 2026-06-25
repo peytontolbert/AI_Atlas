@@ -1,0 +1,373 @@
+{
+  "node_id": "code_assistants",
+  "label": "Code models, copilots & repository intelligence",
+  "layer": "system",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "code_assistants",
+    "label": "Code models, copilots & repository intelligence",
+    "layer": "system",
+    "tags": [
+      "system",
+      "code",
+      "assistants"
+    ],
+    "aliases": [],
+    "definition": "Code assistants model repositories, programming languages, tests, builds, and developer intent to explain, generate, review, or transform software.",
+    "why_it_matters": "The role of Code models, copilots & repository intelligence is to connect Large language models, Program synthesis & code search to downstream capabilities including Autonomous software-engineering agents.",
+    "examples": [
+      "substrate for Autonomous software-engineering agents",
+      "combined with Large language models"
+    ],
+    "limitations": [
+      "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Large language models, Program synthesis & code search."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "llms",
+        "type": "applies",
+        "strength": "core",
+        "rationale": "Code models, copilots & repository intelligence integrates Large language models as part of an end-to-end application boundary."
+      },
+      {
+        "id": "program_synthesis",
+        "type": "applies",
+        "strength": "core",
+        "rationale": "Code models, copilots & repository intelligence integrates Program synthesis & code search as part of an end-to-end application boundary."
+      },
+      {
+        "id": "code_execution",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Code models, copilots & repository intelligence integrates Code execution, interpreters & sandboxes as part of an end-to-end application boundary."
+      },
+      {
+        "id": "rag",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Code models, copilots & repository intelligence integrates Retrieval-augmented generation as part of an end-to-end application boundary."
+      },
+      {
+        "id": "programs_ast_ir",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Code models, copilots & repository intelligence integrates Programs, ASTs, bytecode & intermediate representations as part of an end-to-end application boundary."
+      },
+      {
+        "id": "graph_rag",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Code models, copilots & repository intelligence integrates Graph RAG & structured retrieval as part of an end-to-end application boundary."
+      },
+      {
+        "id": "beam_search",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Code models, copilots & repository intelligence integrates Beam search & constrained decoding as part of an end-to-end application boundary."
+      },
+      {
+        "id": "grammar_constrained_decoding",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Code models, copilots & repository intelligence integrates Grammar- and schema-constrained decoding as part of an end-to-end application boundary."
+      },
+      {
+        "id": "structured_outputs",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Code models, copilots & repository intelligence integrates Structured outputs & typed action generation as part of an end-to-end application boundary."
+      },
+      {
+        "id": "peft_lora",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Code models, copilots & repository intelligence integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary."
+      },
+      {
+        "id": "formal_agent_verification",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Code models, copilots & repository intelligence integrates Formal verification of agents & plans as part of an end-to-end application boundary."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "ba3c347c783e0f38",
+      "node_id": "code_assistants",
+      "field": "definition",
+      "text": "Code assistants model repositories, programming languages, tests, builds, and developer intent to explain, generate, review, or transform software."
+    },
+    {
+      "unit_id": "5c68a5c6162d9373",
+      "node_id": "code_assistants",
+      "field": "why_it_matters",
+      "text": "The role of Code models, copilots & repository intelligence is to connect Large language models, Program synthesis & code search to downstream capabilities including Autonomous software-engineering agents."
+    },
+    {
+      "unit_id": "6a386928ad8d7504",
+      "node_id": "code_assistants",
+      "field": "examples[1]",
+      "text": "substrate for Autonomous software-engineering agents"
+    },
+    {
+      "unit_id": "96135966f094bc5b",
+      "node_id": "code_assistants",
+      "field": "examples[2]",
+      "text": "combined with Large language models"
+    },
+    {
+      "unit_id": "4781f1ec1c37a4d8",
+      "node_id": "code_assistants",
+      "field": "limitations[1]",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Large language models, Program synthesis & code search."
+    },
+    {
+      "unit_id": "427a90e670c78d8e",
+      "node_id": "code_assistants",
+      "field": "dependencies.llms.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Large language models as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "0197226383415e38",
+      "node_id": "code_assistants",
+      "field": "dependencies.program_synthesis.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Program synthesis & code search as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "30d770a2ca4268ed",
+      "node_id": "code_assistants",
+      "field": "dependencies.code_execution.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Code execution, interpreters & sandboxes as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "f835f593b0a7d95b",
+      "node_id": "code_assistants",
+      "field": "dependencies.rag.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Retrieval-augmented generation as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "91f2e15b15eda653",
+      "node_id": "code_assistants",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Programs, ASTs, bytecode & intermediate representations as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "202e0cb2aefdc460",
+      "node_id": "code_assistants",
+      "field": "dependencies.graph_rag.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Graph RAG & structured retrieval as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "fbf923c607cbef2d",
+      "node_id": "code_assistants",
+      "field": "dependencies.beam_search.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Beam search & constrained decoding as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "694567bda714460e",
+      "node_id": "code_assistants",
+      "field": "dependencies.grammar_constrained_decoding.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Grammar- and schema-constrained decoding as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "153eb7bcee6b733b",
+      "node_id": "code_assistants",
+      "field": "dependencies.structured_outputs.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Structured outputs & typed action generation as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "47b754d38e06e44d",
+      "node_id": "code_assistants",
+      "field": "dependencies.peft_lora.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "852ef8c476433690",
+      "node_id": "code_assistants",
+      "field": "dependencies.formal_agent_verification.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Formal verification of agents & plans as part of an end-to-end application boundary."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "9502fa6e9c70b11d",
+      "node_id": "code_assistants",
+      "dependency_id": "llms",
+      "type": "applies",
+      "strength": "core",
+      "rationale": "Code models, copilots & repository intelligence integrates Large language models as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "529ea9c5adcc0913",
+      "node_id": "code_assistants",
+      "dependency_id": "program_synthesis",
+      "type": "applies",
+      "strength": "core",
+      "rationale": "Code models, copilots & repository intelligence integrates Program synthesis & code search as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "8db25e5f83b5fde5",
+      "node_id": "code_assistants",
+      "dependency_id": "code_execution",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Code models, copilots & repository intelligence integrates Code execution, interpreters & sandboxes as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "4065c720a6e0b001",
+      "node_id": "code_assistants",
+      "dependency_id": "rag",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Code models, copilots & repository intelligence integrates Retrieval-augmented generation as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "5829255d0ec474df",
+      "node_id": "code_assistants",
+      "dependency_id": "programs_ast_ir",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Code models, copilots & repository intelligence integrates Programs, ASTs, bytecode & intermediate representations as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "c03e57f0d5bfc76b",
+      "node_id": "code_assistants",
+      "dependency_id": "graph_rag",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Code models, copilots & repository intelligence integrates Graph RAG & structured retrieval as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "ee3c41d418ae6717",
+      "node_id": "code_assistants",
+      "dependency_id": "beam_search",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Code models, copilots & repository intelligence integrates Beam search & constrained decoding as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "f7a4e07430b1e5dc",
+      "node_id": "code_assistants",
+      "dependency_id": "grammar_constrained_decoding",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Code models, copilots & repository intelligence integrates Grammar- and schema-constrained decoding as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "c1b5d2f29349e316",
+      "node_id": "code_assistants",
+      "dependency_id": "structured_outputs",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Code models, copilots & repository intelligence integrates Structured outputs & typed action generation as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "0433250c3c2c795f",
+      "node_id": "code_assistants",
+      "dependency_id": "peft_lora",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Code models, copilots & repository intelligence integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "ee95ebcfe740ea91",
+      "node_id": "code_assistants",
+      "dependency_id": "formal_agent_verification",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Code models, copilots & repository intelligence integrates Formal verification of agents & plans as part of an end-to-end application boundary."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_chinchilla": {
+        "id": "ref_chinchilla",
+        "title": "Training Compute-Optimal Large Language Models",
+        "authors": "Hoffmann et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.15556"
+      },
+      "ref_formalml": {
+        "id": "ref_formalml",
+        "title": "Formal Methods for Machine Learning: A Survey",
+        "authors": "Seshia, Sadigh & Sastry",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2104.02466"
+      },
+      "ref_lora": {
+        "id": "ref_lora",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "authors": "Hu et al.",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2106.09685"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rag": {
+        "id": "ref_rag",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "authors": "Lewis et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2005.11401"
+      },
+      "ref_scaling": {
+        "id": "ref_scaling",
+        "title": "Scaling Laws for Neural Language Models",
+        "authors": "Kaplan et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2001.08361"
+      },
+      "ref_structured": {
+        "id": "ref_structured",
+        "title": "A Survey of Structured Output Generation from LLMs",
+        "authors": "survey authors",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2501.10868"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/code_assistants.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

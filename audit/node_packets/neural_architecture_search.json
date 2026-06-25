@@ -1,0 +1,201 @@
+{
+  "node_id": "neural_architecture_search",
+  "label": "Neural architecture search",
+  "layer": "training",
+  "editorial_status": "curated",
+  "node": {
+    "id": "neural_architecture_search",
+    "label": "Neural architecture search",
+    "layer": "training",
+    "tags": [
+      "training",
+      "automl",
+      "architecture",
+      "efficiency"
+    ],
+    "aliases": [
+      "NAS"
+    ],
+    "definition": "Neural architecture search optimizes network topology, operations, width, depth, routing, or hardware placement with evolutionary, reinforcement, differentiable, or surrogate-based search.",
+    "why_it_matters": "It can discover architectures tuned to accuracy, latency, memory, energy, or device constraints.",
+    "examples": [
+      "cell-based search",
+      "hardware-aware supernet search",
+      "differentiable architecture search"
+    ],
+    "limitations": [
+      "Search is expensive, proxy tasks can mislead, and reported gains may depend on narrow spaces or evaluation leakage."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nas"
+    ],
+    "dependencies": [
+      {
+        "id": "automl_paradigm",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Neural architecture search uses AutoML & automated model design as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "evolutionary_population_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Neural architecture search uses Evolutionary, swarm & population-based learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "reinforcement_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Neural architecture search uses Reinforcement learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Neural architecture search uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "2d22b5b968e40d66",
+      "node_id": "neural_architecture_search",
+      "field": "definition",
+      "text": "Neural architecture search optimizes network topology, operations, width, depth, routing, or hardware placement with evolutionary, reinforcement, differentiable, or surrogate-based search."
+    },
+    {
+      "unit_id": "1cb50cecf6f7fb10",
+      "node_id": "neural_architecture_search",
+      "field": "why_it_matters",
+      "text": "It can discover architectures tuned to accuracy, latency, memory, energy, or device constraints."
+    },
+    {
+      "unit_id": "5ca16eac228ba689",
+      "node_id": "neural_architecture_search",
+      "field": "examples[1]",
+      "text": "cell-based search"
+    },
+    {
+      "unit_id": "f61c656e2fa0d46a",
+      "node_id": "neural_architecture_search",
+      "field": "examples[2]",
+      "text": "hardware-aware supernet search"
+    },
+    {
+      "unit_id": "1dd5abe742a08c5f",
+      "node_id": "neural_architecture_search",
+      "field": "examples[3]",
+      "text": "differentiable architecture search"
+    },
+    {
+      "unit_id": "2d6efb3b1bc36cd5",
+      "node_id": "neural_architecture_search",
+      "field": "limitations[1]",
+      "text": "Search is expensive, proxy tasks can mislead, and reported gains may depend on narrow spaces or evaluation leakage."
+    },
+    {
+      "unit_id": "8ca711b26117ff97",
+      "node_id": "neural_architecture_search",
+      "field": "dependencies.automl_paradigm.rationale",
+      "text": "Neural architecture search uses AutoML & automated model design as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "df2aced7909fc5b1",
+      "node_id": "neural_architecture_search",
+      "field": "dependencies.evolutionary_population_learning.rationale",
+      "text": "Neural architecture search uses Evolutionary, swarm & population-based learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "348c1051e6ea79c3",
+      "node_id": "neural_architecture_search",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Neural architecture search uses Reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "664af04a4b8f3509",
+      "node_id": "neural_architecture_search",
+      "field": "dependencies.optimization.rationale",
+      "text": "Neural architecture search uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "9aef1ab64c844229",
+      "node_id": "neural_architecture_search",
+      "dependency_id": "automl_paradigm",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Neural architecture search uses AutoML & automated model design as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "a0bc41965061efb3",
+      "node_id": "neural_architecture_search",
+      "dependency_id": "evolutionary_population_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Neural architecture search uses Evolutionary, swarm & population-based learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "76de480f0cc12a5d",
+      "node_id": "neural_architecture_search",
+      "dependency_id": "reinforcement_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Neural architecture search uses Reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "ac003625a7c301aa",
+      "node_id": "neural_architecture_search",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Neural architecture search uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nas": {
+        "id": "ref_nas",
+        "title": "Neural Architecture Search: A Survey",
+        "authors": "Elsken, Metzen & Hutter",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1808.05377"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_nas": {
+        "id": "ref_nas",
+        "title": "Neural Architecture Search: A Survey",
+        "authors": "Elsken, Metzen & Hutter",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1808.05377"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/neural_architecture_search.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "node_id": "sgd_variants",
+  "label": "SGD, momentum & stochastic optimization",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "sgd_variants",
+    "label": "SGD, momentum & stochastic optimization",
+    "layer": "training",
+    "tags": [
+      "training",
+      "optimization"
+    ],
+    "aliases": [],
+    "definition": "Stochastic gradient descent estimates gradients from minibatches; momentum and related variants accumulate update direction to reduce noise and accelerate consistent descent.",
+    "why_it_matters": "The role of SGD, momentum & stochastic optimization is to connect Optimization theory, Calculus & automatic differentiation theory to downstream capabilities including Adam, Adafactor & adaptive optimizers.",
+    "examples": [
+      "substrate for Adam, Adafactor & adaptive optimizers",
+      "combined with Optimization theory"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Optimization theory, Calculus & automatic differentiation theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "SGD, momentum & stochastic optimization uses Optimization theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "calculus",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "SGD, momentum & stochastic optimization uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "SGD, momentum & stochastic optimization uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "75c48706a172ed58",
+      "node_id": "sgd_variants",
+      "field": "definition",
+      "text": "Stochastic gradient descent estimates gradients from minibatches; momentum and related variants accumulate update direction to reduce noise and accelerate consistent descent."
+    },
+    {
+      "unit_id": "a873a77703a6949e",
+      "node_id": "sgd_variants",
+      "field": "why_it_matters",
+      "text": "The role of SGD, momentum & stochastic optimization is to connect Optimization theory, Calculus & automatic differentiation theory to downstream capabilities including Adam, Adafactor & adaptive optimizers."
+    },
+    {
+      "unit_id": "f9a700b61fe3c841",
+      "node_id": "sgd_variants",
+      "field": "examples[1]",
+      "text": "substrate for Adam, Adafactor & adaptive optimizers"
+    },
+    {
+      "unit_id": "b5a921fca5a74c1d",
+      "node_id": "sgd_variants",
+      "field": "examples[2]",
+      "text": "combined with Optimization theory"
+    },
+    {
+      "unit_id": "b5573d3e3ded72f4",
+      "node_id": "sgd_variants",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Optimization theory, Calculus & automatic differentiation theory."
+    },
+    {
+      "unit_id": "e973171a84564383",
+      "node_id": "sgd_variants",
+      "field": "dependencies.optimization.rationale",
+      "text": "SGD, momentum & stochastic optimization uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "e50e3efa697a7868",
+      "node_id": "sgd_variants",
+      "field": "dependencies.calculus.rationale",
+      "text": "SGD, momentum & stochastic optimization uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "1e62566636699471",
+      "node_id": "sgd_variants",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "SGD, momentum & stochastic optimization uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "1d5ee9ab8745e326",
+      "node_id": "sgd_variants",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "SGD, momentum & stochastic optimization uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "ca445bb0ddb5e2e0",
+      "node_id": "sgd_variants",
+      "dependency_id": "calculus",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "SGD, momentum & stochastic optimization uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "fddbe623355d221e",
+      "node_id": "sgd_variants",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "SGD, momentum & stochastic optimization uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/sgd_variants.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

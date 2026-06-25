@@ -1,0 +1,176 @@
+{
+  "node_id": "eval_driven_development",
+  "label": "Evaluation-driven development & release gates",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "eval_driven_development",
+    "label": "Evaluation-driven development & release gates",
+    "layer": "alignment",
+    "tags": [
+      "evaluation",
+      "systems"
+    ],
+    "aliases": [],
+    "definition": "Evaluation-driven development makes tests, risk thresholds, regression suites, and release gates part of the iterative model and application lifecycle.",
+    "why_it_matters": "The role of Evaluation-driven development & release gates is to connect Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling to downstream capabilities including Observability, tracing & evaluation harnesses, Model registry, versioning & MLOps / LLMOps.",
+    "examples": [
+      "substrate for Observability, tracing & evaluation harnesses",
+      "substrate for Model registry, versioning & MLOps / LLMOps"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "benchmarks_metrics",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      },
+      {
+        "id": "red_teaming",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Red teaming, abuse testing & threat modeling."
+      },
+      {
+        "id": "human_evaluation",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      },
+      {
+        "id": "repro_monitoring",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e20bd4004c9fcc14",
+      "node_id": "eval_driven_development",
+      "field": "definition",
+      "text": "Evaluation-driven development makes tests, risk thresholds, regression suites, and release gates part of the iterative model and application lifecycle."
+    },
+    {
+      "unit_id": "6a9596e0376e5aca",
+      "node_id": "eval_driven_development",
+      "field": "why_it_matters",
+      "text": "The role of Evaluation-driven development & release gates is to connect Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling to downstream capabilities including Observability, tracing & evaluation harnesses, Model registry, versioning & MLOps / LLMOps."
+    },
+    {
+      "unit_id": "1939a75c1f09fe8b",
+      "node_id": "eval_driven_development",
+      "field": "examples[1]",
+      "text": "substrate for Observability, tracing & evaluation harnesses"
+    },
+    {
+      "unit_id": "227d0836cbcb30c6",
+      "node_id": "eval_driven_development",
+      "field": "examples[2]",
+      "text": "substrate for Model registry, versioning & MLOps / LLMOps"
+    },
+    {
+      "unit_id": "17ee72f56d3052b5",
+      "node_id": "eval_driven_development",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Benchmarks, test suites & task metrics, Red teaming, abuse testing & threat modeling."
+    },
+    {
+      "unit_id": "6f218088f208f883",
+      "node_id": "eval_driven_development",
+      "field": "dependencies.benchmarks_metrics.rationale",
+      "text": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "unit_id": "97456f70480b8694",
+      "node_id": "eval_driven_development",
+      "field": "dependencies.red_teaming.rationale",
+      "text": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Red teaming, abuse testing & threat modeling."
+    },
+    {
+      "unit_id": "b8ed65ffc5e622ab",
+      "node_id": "eval_driven_development",
+      "field": "dependencies.human_evaluation.rationale",
+      "text": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    },
+    {
+      "unit_id": "2a7cef51138ac1c3",
+      "node_id": "eval_driven_development",
+      "field": "dependencies.repro_monitoring.rationale",
+      "text": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "b019d50a032578a7",
+      "node_id": "eval_driven_development",
+      "dependency_id": "benchmarks_metrics",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "edge_id": "5523f51d25d422e1",
+      "node_id": "eval_driven_development",
+      "dependency_id": "red_teaming",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Red teaming, abuse testing & threat modeling."
+    },
+    {
+      "edge_id": "a14f8e28303eb883",
+      "node_id": "eval_driven_development",
+      "dependency_id": "human_evaluation",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    },
+    {
+      "edge_id": "bb9bd3230e652794",
+      "node_id": "eval_driven_development",
+      "dependency_id": "repro_monitoring",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Evaluation-driven development & release gates measures, constrains, audits, or governs behavior using Reproducibility, drift & continuous monitoring."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/eval_driven_development.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

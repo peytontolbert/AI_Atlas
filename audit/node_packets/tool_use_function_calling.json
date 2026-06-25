@@ -1,0 +1,205 @@
+{
+  "node_id": "tool_use_function_calling",
+  "label": "Tool use & function calling",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "tool_use_function_calling",
+    "label": "Tool use & function calling",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "agents",
+      "tools"
+    ],
+    "aliases": [],
+    "definition": "Tool-use systems select a callable capability, generate typed arguments, execute it, observe the result, and incorporate that evidence into subsequent reasoning.",
+    "why_it_matters": "The role of Tool use & function calling is to connect Decoder-only causal transformers, Caches, APIs & tool interfaces to downstream capabilities including ReAct-style reasoning and acting, Observe–plan–act agent loops, Multimodal assistants & vision-language systems.",
+    "examples": [
+      "substrate for ReAct-style reasoning and acting",
+      "substrate for Observe–plan–act agent loops",
+      "substrate for Multimodal assistants & vision-language systems"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Caches, APIs & tool interfaces."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_react"
+    ],
+    "dependencies": [
+      {
+        "id": "decoder_only_transformer",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Tool use & function calling uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "cache_tool_interfaces",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Tool use & function calling uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "external_data_tools",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "Tool use & function calling stores, selects, or obtains information through External databases, APIs & live tools."
+      },
+      {
+        "id": "programs_ast_ir",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Tool use & function calling uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d7696792fa6df6b6",
+      "node_id": "tool_use_function_calling",
+      "field": "definition",
+      "text": "Tool-use systems select a callable capability, generate typed arguments, execute it, observe the result, and incorporate that evidence into subsequent reasoning."
+    },
+    {
+      "unit_id": "feb72c2b48ed1596",
+      "node_id": "tool_use_function_calling",
+      "field": "why_it_matters",
+      "text": "The role of Tool use & function calling is to connect Decoder-only causal transformers, Caches, APIs & tool interfaces to downstream capabilities including ReAct-style reasoning and acting, Observe–plan–act agent loops, Multimodal assistants & vision-language systems."
+    },
+    {
+      "unit_id": "5a9b149689373396",
+      "node_id": "tool_use_function_calling",
+      "field": "examples[1]",
+      "text": "substrate for ReAct-style reasoning and acting"
+    },
+    {
+      "unit_id": "6c6a71f19f3ce9d1",
+      "node_id": "tool_use_function_calling",
+      "field": "examples[2]",
+      "text": "substrate for Observe–plan–act agent loops"
+    },
+    {
+      "unit_id": "eb431f927d7cca3a",
+      "node_id": "tool_use_function_calling",
+      "field": "examples[3]",
+      "text": "substrate for Multimodal assistants & vision-language systems"
+    },
+    {
+      "unit_id": "43530e1b53ebd76d",
+      "node_id": "tool_use_function_calling",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Caches, APIs & tool interfaces."
+    },
+    {
+      "unit_id": "babdecf13786b28f",
+      "node_id": "tool_use_function_calling",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "Tool use & function calling uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "9be442e1eec19cdb",
+      "node_id": "tool_use_function_calling",
+      "field": "dependencies.cache_tool_interfaces.rationale",
+      "text": "Tool use & function calling uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "4451c78399b4a5f5",
+      "node_id": "tool_use_function_calling",
+      "field": "dependencies.external_data_tools.rationale",
+      "text": "Tool use & function calling stores, selects, or obtains information through External databases, APIs & live tools."
+    },
+    {
+      "unit_id": "08f53c8a0897af9d",
+      "node_id": "tool_use_function_calling",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Tool use & function calling uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "59819af1dbcf7ad5",
+      "node_id": "tool_use_function_calling",
+      "dependency_id": "decoder_only_transformer",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Tool use & function calling uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "51c0a67eda9433ac",
+      "node_id": "tool_use_function_calling",
+      "dependency_id": "cache_tool_interfaces",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Tool use & function calling uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "3826eebc0e379b32",
+      "node_id": "tool_use_function_calling",
+      "dependency_id": "external_data_tools",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "Tool use & function calling stores, selects, or obtains information through External databases, APIs & live tools."
+    },
+    {
+      "edge_id": "6f2c9dc83e185834",
+      "node_id": "tool_use_function_calling",
+      "dependency_id": "programs_ast_ir",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Tool use & function calling uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_react": {
+        "id": "ref_react",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.03629"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/tool_use_function_calling.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

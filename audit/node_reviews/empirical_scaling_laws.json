@@ -1,0 +1,236 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "57efa08699c3ebcb",
+      "node_id": "empirical_scaling_laws",
+      "field": "definition",
+      "text": "Empirical scaling laws fit predictable relationships between loss or capability and model size, data, training compute, or inference compute.",
+      "source_ids": [
+        "ref_scaling",
+        "ref_chinchilla",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2203.15556",
+        "url:https://arxiv.org/abs/2401.00448"
+      ],
+      "evidence_location": "Kaplan et al. arXiv abstract lines 41-43; Hoffmann et al. arXiv abstract lines 39-42; Sardana et al. arXiv abstract",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Kaplan directly supports loss scaling with model size, dataset size, and training compute. Hoffmann supports model size, tokens, compute budgets, downstream tasks, and inference compute implications. Sardana et al. support including inference demand/cost in scaling-law analysis. Capability is less directly supported than loss."
+    },
+    {
+      "unit_id": "d37b7140b848e207",
+      "node_id": "empirical_scaling_laws",
+      "field": "why_it_matters",
+      "text": "They make expensive model development partly forecastable and turn scaling into an explicit resource-allocation problem.",
+      "source_ids": [
+        "ref_scaling",
+        "ref_chinchilla",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2203.15556"
+      ],
+      "evidence_location": "Kaplan et al. arXiv abstract lines 41-43; Hoffmann et al. arXiv abstract lines 39-42",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Kaplan explicitly supports determining optimal allocation of a fixed compute budget; Hoffmann explicitly investigates optimal model size and tokens under a compute budget. Forecastability is a synthesis from predictable scaling relationships."
+    },
+    {
+      "unit_id": "3547a460b7ab3481",
+      "node_id": "empirical_scaling_laws",
+      "field": "examples[1]",
+      "text": "parameter–data–compute curves",
+      "source_ids": [
+        "ref_scaling",
+        "ref_chinchilla",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2203.15556"
+      ],
+      "evidence_location": "Kaplan et al. arXiv abstract lines 41-43; Hoffmann et al. arXiv abstract lines 39-41",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited abstracts directly describe relationships among model size/parameters, dataset size/tokens, and compute budgets."
+    },
+    {
+      "unit_id": "0f7c7b31c159457d",
+      "node_id": "empirical_scaling_laws",
+      "field": "examples[2]",
+      "text": "loss extrapolation",
+      "source_ids": [
+        "ref_scaling",
+        "url:https://arxiv.org/abs/2001.08361"
+      ],
+      "evidence_location": "Kaplan et al. arXiv abstract lines 41-43",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Kaplan directly supports cross-entropy loss scaling relationships and trends over many orders of magnitude. The word extrapolation is not used in the inspected abstract, but it is a reasonable synthesis from predictive scaling relationships."
+    },
+    {
+      "unit_id": "0cd088d15849cd7b",
+      "node_id": "empirical_scaling_laws",
+      "field": "examples[3]",
+      "text": "test-time compute curves",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2401.00448"
+      ],
+      "evidence_location": "Sardana et al. arXiv abstract",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The inspected source supports accounting for inference demand/cost and model quality, but the exact phrase test-time compute curves is not directly stated in the inspected abstract."
+    },
+    {
+      "unit_id": "d269bb2f54bce3a3",
+      "node_id": "empirical_scaling_laws",
+      "field": "limitations[1]",
+      "text": "Fits can break across architectures, data regimes, objectives, or task metrics and are not universal physical laws.",
+      "source_ids": [
+        "ref_scaling",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2605.08541",
+        "url:https://arxiv.org/abs/2401.00448"
+      ],
+      "evidence_location": "Kaplan et al. arXiv abstract lines 41-43; Kricheli et al. arXiv abstract; Sardana et al. arXiv abstract",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Kaplan notes architectural details have minimal effects only within a wide range, while later work identifies extrapolation degradation and coefficient-fitting issues under specific data-collection regimes. The 'not universal physical laws' phrase is interpretive but well supported by the empirical/fitted nature of the work."
+    },
+    {
+      "unit_id": "86e53b247d11bdaf",
+      "node_id": "empirical_scaling_laws",
+      "field": "dependencies.statistics.rationale",
+      "text": "Empirical scaling laws rests on the formal or computational capabilities supplied by Statistics & experimental design.",
+      "source_ids": [
+        "ref_scaling",
+        "ref_chinchilla",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2203.15556"
+      ],
+      "evidence_location": "Kaplan et al. arXiv abstract lines 41-43; Hoffmann et al. arXiv abstract lines 39-42",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Empirical fits and relationships over experiments require statistical modeling and experimental design, although the exact dependency wording is not directly stated."
+    },
+    {
+      "unit_id": "4444fd47089fae52",
+      "node_id": "empirical_scaling_laws",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Empirical scaling laws rests on the formal or computational capabilities supplied by Information theory.",
+      "source_ids": [
+        "ref_scaling",
+        "url:https://arxiv.org/abs/2001.08361"
+      ],
+      "evidence_location": "Kaplan et al. arXiv abstract lines 41-43",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Kaplan uses cross-entropy loss, which is information-theoretic, but the inspected evidence does not directly establish information theory as a core dependency for empirical scaling laws."
+    },
+    {
+      "unit_id": "688aa90104e08cb5",
+      "node_id": "empirical_scaling_laws",
+      "field": "dependencies.optimization.rationale",
+      "text": "Empirical scaling laws rests on the formal or computational capabilities supplied by Optimization theory.",
+      "source_ids": [
+        "ref_scaling",
+        "ref_chinchilla",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2203.15556"
+      ],
+      "evidence_location": "Kaplan et al. arXiv abstract lines 41-43; Hoffmann et al. arXiv abstract lines 39-42",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources explicitly discuss optimal allocation of fixed compute budgets and compute-optimal model/data scaling. The dependency on optimization theory is defensible as common rather than necessarily core."
+    },
+    {
+      "unit_id": "bdde230688ef3062",
+      "node_id": "empirical_scaling_laws",
+      "field": "dependencies.complexity_computability.rationale",
+      "text": "Empirical scaling laws rests on the formal or computational capabilities supplied by Complexity & computability.",
+      "source_ids": [
+        "ref_scaling",
+        "ref_chinchilla",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2203.15556"
+      ],
+      "evidence_location": "Kaplan et al. arXiv abstract lines 41-43; Hoffmann et al. arXiv abstract lines 39-42",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support compute budgets and training compute, but not computability, and only indirectly support complexity. A narrower dependency on compute/resource modeling would be better supported."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "ce846159a8fe6d00",
+      "node_id": "empirical_scaling_laws",
+      "dependency_id": "statistics",
+      "source_ids": [
+        "ref_scaling",
+        "ref_chinchilla",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2203.15556"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Empirical fitting of loss/data/model/compute relationships makes statistics and experimental design a defensible core prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4b22814cdf26290d",
+      "node_id": "empirical_scaling_laws",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "ref_scaling",
+        "url:https://arxiv.org/abs/2001.08361"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Cross-entropy loss supports an information-theory connection, but the inspected evidence does not justify information theory as a core dependency for all empirical scaling laws.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "ca0853d0e354533b",
+      "node_id": "empirical_scaling_laws",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "ref_scaling",
+        "ref_chinchilla",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2203.15556"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Optimal allocation and compute-optimal training support optimization as a common dependency. The relationship and strength are defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "1946f9b5ec5efc5f",
+      "node_id": "empirical_scaling_laws",
+      "dependency_id": "complexity_computability",
+      "source_ids": [
+        "ref_scaling",
+        "ref_chinchilla",
+        "url:https://arxiv.org/abs/2001.08361",
+        "url:https://arxiv.org/abs/2203.15556"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Compute-resource modeling is supported, but the dependency label includes computability, which is not supported by the inspected sources. Common strength is only partially defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

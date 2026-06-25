@@ -1,0 +1,170 @@
+{
+  "node_id": "mcmc_em_message_passing",
+  "label": "MCMC, EM & probabilistic message passing",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "mcmc_em_message_passing",
+    "label": "MCMC, EM & probabilistic message passing",
+    "layer": "objective",
+    "tags": [
+      "inference",
+      "probabilistic"
+    ],
+    "aliases": [],
+    "definition": "Sampling, alternating latent-variable estimation, and local factor updates approximate difficult inference problems.",
+    "why_it_matters": "The role of MCMC, EM & probabilistic message passing is to connect Bayesian & approximate inference, Graph theory to downstream capabilities including k-means, mixture models & clustering, Hidden Markov models & CRFs, Bayesian networks, MRFs & factor graphs.",
+    "examples": [
+      "substrate for k-means, mixture models & clustering",
+      "substrate for Hidden Markov models & CRFs",
+      "substrate for Bayesian networks, MRFs & factor graphs"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Bayesian & approximate inference, Graph theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "bayesian_approx_inference",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "MCMC, EM & probabilistic message passing is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      },
+      {
+        "id": "graph_theory",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "MCMC, EM & probabilistic message passing uses Graph theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "MCMC, EM & probabilistic message passing uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "ed5dfae4ae2f5036",
+      "node_id": "mcmc_em_message_passing",
+      "field": "definition",
+      "text": "Sampling, alternating latent-variable estimation, and local factor updates approximate difficult inference problems."
+    },
+    {
+      "unit_id": "7fe27284d5544453",
+      "node_id": "mcmc_em_message_passing",
+      "field": "why_it_matters",
+      "text": "The role of MCMC, EM & probabilistic message passing is to connect Bayesian & approximate inference, Graph theory to downstream capabilities including k-means, mixture models & clustering, Hidden Markov models & CRFs, Bayesian networks, MRFs & factor graphs."
+    },
+    {
+      "unit_id": "e91c1b3614446a5a",
+      "node_id": "mcmc_em_message_passing",
+      "field": "examples[1]",
+      "text": "substrate for k-means, mixture models & clustering"
+    },
+    {
+      "unit_id": "0e302de0ae80ebfb",
+      "node_id": "mcmc_em_message_passing",
+      "field": "examples[2]",
+      "text": "substrate for Hidden Markov models & CRFs"
+    },
+    {
+      "unit_id": "7e995cdfb9d216c1",
+      "node_id": "mcmc_em_message_passing",
+      "field": "examples[3]",
+      "text": "substrate for Bayesian networks, MRFs & factor graphs"
+    },
+    {
+      "unit_id": "83caf7b56f20d2e1",
+      "node_id": "mcmc_em_message_passing",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Bayesian & approximate inference, Graph theory."
+    },
+    {
+      "unit_id": "ae0bedfb97a4c618",
+      "node_id": "mcmc_em_message_passing",
+      "field": "dependencies.bayesian_approx_inference.rationale",
+      "text": "MCMC, EM & probabilistic message passing is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "unit_id": "8de4e0f221ecb7c8",
+      "node_id": "mcmc_em_message_passing",
+      "field": "dependencies.graph_theory.rationale",
+      "text": "MCMC, EM & probabilistic message passing uses Graph theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "108a3abcea121047",
+      "node_id": "mcmc_em_message_passing",
+      "field": "dependencies.optimization.rationale",
+      "text": "MCMC, EM & probabilistic message passing uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "43f82ac3144daf86",
+      "node_id": "mcmc_em_message_passing",
+      "dependency_id": "bayesian_approx_inference",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "MCMC, EM & probabilistic message passing is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "edge_id": "12d683799fc4b335",
+      "node_id": "mcmc_em_message_passing",
+      "dependency_id": "graph_theory",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "MCMC, EM & probabilistic message passing uses Graph theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "afade8680b06aa89",
+      "node_id": "mcmc_em_message_passing",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "MCMC, EM & probabilistic message passing uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/mcmc_em_message_passing.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,838 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "c820055a4c001533",
+      "node_id": "llms",
+      "field": "definition",
+      "text": "Large language models are high-capacity sequence models pretrained to predict or reconstruct language and adapted for generation, reasoning, retrieval, and tool use.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "Transformer, scaling-law, and compute-optimal LLM sources directly support high-capacity pretrained language models and adaptation/use contexts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The definition is broad and matches established LLM literature."
+    },
+    {
+      "unit_id": "4d3b6144ed41c6af",
+      "node_id": "llms",
+      "field": "why_it_matters",
+      "text": "The role of Large language models is to connect Decoder-only causal transformers, Large-scale pretraining to downstream capabilities including Conversational assistants & chatbots, Code models, copilots & repository intelligence, Automated theorem proving & mathematical AI.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The upstream/downstream role is inferred from the dependency graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Useful graph synthesis, not directly established as an exact claim by the cited sources."
+    },
+    {
+      "unit_id": "7333335d9f8a0587",
+      "node_id": "llms",
+      "field": "examples[1]",
+      "text": "substrate for Conversational assistants & chatbots",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "b33a4a1336de3072",
+      "node_id": "llms",
+      "field": "examples[2]",
+      "text": "substrate for Code models, copilots & repository intelligence",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "8b0782a486ebaadd",
+      "node_id": "llms",
+      "field": "examples[3]",
+      "text": "substrate for Automated theorem proving & mathematical AI",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "c2f509488c013ae8",
+      "node_id": "llms",
+      "field": "limitations[1]",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Decoder-only causal transformers, Large-scale pretraining.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+    },
+    {
+      "unit_id": "2e8c80218c449121",
+      "node_id": "llms",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "Large language models integrates Decoder-only causal transformers as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "45082f1aa1d68fd1",
+      "node_id": "llms",
+      "field": "dependencies.pretraining.rationale",
+      "text": "Large language models integrates Large-scale pretraining as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "e8eefd305b1537e4",
+      "node_id": "llms",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "Large language models integrates Supervised fine-tuning & instruction tuning as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "2a2654193012a135",
+      "node_id": "llms",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Large language models integrates Model servers & inference runtimes as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "6b9989cb85df3380",
+      "node_id": "llms",
+      "field": "dependencies.empirical_scaling_laws.rationale",
+      "text": "Large language models integrates Empirical scaling laws as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "10f6a05b8bddce02",
+      "node_id": "llms",
+      "field": "dependencies.compute_optimal_training.rationale",
+      "text": "Large language models integrates Compute-optimal scaling & training allocation as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "5b65c133a797a24e",
+      "node_id": "llms",
+      "field": "dependencies.data_curation.rationale",
+      "text": "Large language models integrates Data collection, curation & filtering as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "1231ba7c5fef9cb4",
+      "node_id": "llms",
+      "field": "dependencies.dedup_decontamination.rationale",
+      "text": "Large language models integrates Deduplication, contamination control & provenance as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "c2148cc70cc43ec4",
+      "node_id": "llms",
+      "field": "dependencies.tokenization_serialization.rationale",
+      "text": "Large language models integrates Tokenization, serialization & packing as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "62b930015a575e7b",
+      "node_id": "llms",
+      "field": "dependencies.distributed_mixed_precision.rationale",
+      "text": "Large language models integrates Distributed, mixed-precision & memory-efficient training as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "f9ade400fc59fd38",
+      "node_id": "llms",
+      "field": "dependencies.peft_lora.rationale",
+      "text": "Large language models integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "a76f7d14f0bcf257",
+      "node_id": "llms",
+      "field": "dependencies.dpo_posttraining.rationale",
+      "text": "Large language models integrates Direct and online preference optimization as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "e278535bc69375ad",
+      "node_id": "llms",
+      "field": "dependencies.grpo.rationale",
+      "text": "Large language models integrates Group Relative Policy Optimization (GRPO) as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "5e7b5bea31988500",
+      "node_id": "llms",
+      "field": "dependencies.paged_attention.rationale",
+      "text": "Large language models integrates Paged attention & KV-memory management as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "a69ced8b74f1d1d2",
+      "node_id": "llms",
+      "field": "dependencies.speculative_decoding.rationale",
+      "text": "Large language models integrates Speculative, parallel & assisted decoding as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "c4a4af810806e823",
+      "node_id": "llms",
+      "field": "dependencies.mixture_of_depths.rationale",
+      "text": "Large language models integrates Mixture-of-Depths as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "8017d9caf1dcdc88",
+      "node_id": "llms",
+      "field": "dependencies.hybrid_transformer_ssm.rationale",
+      "text": "Large language models integrates Transformer\u2013SSM & recurrent hybrid models as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "244125326f4136fe",
+      "node_id": "llms",
+      "field": "dependencies.diffusion_language_model.rationale",
+      "text": "Large language models integrates Diffusion and masked-generative language models as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "722b30cc6d64635b",
+      "node_id": "llms",
+      "field": "dependencies.neural_architecture_search.rationale",
+      "text": "Large language models integrates Neural architecture search as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "948c15e7a528ad70",
+      "node_id": "llms",
+      "field": "dependencies.parallel_inference.rationale",
+      "text": "Large language models integrates Tensor, pipeline, sequence & expert parallel inference as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "83a92585cca72bbe",
+      "node_id": "llms",
+      "field": "dependencies.registry_mlops.rationale",
+      "text": "Large language models integrates Model registry, versioning & MLOps / LLMOps as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "52b7cfa99cd4fccd",
+      "node_id": "llms",
+      "field": "dependencies.fault_energy_ops.rationale",
+      "text": "Large language models integrates Fault tolerance, security, energy & cost optimization as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "93b44c5c72080a42",
+      "node_id": "llms",
+      "field": "dependencies.structured_decoding_runtime.rationale",
+      "text": "Large language models integrates Structured-decoding runtimes as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "6f8604b4df3b3743",
+      "node_id": "llms",
+      "dependency_id": "decoder_only_transformer",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b340086fea826389",
+      "node_id": "llms",
+      "dependency_id": "pretraining",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "de9f0949977381ec",
+      "node_id": "llms",
+      "dependency_id": "sft_instruction",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "f3470206373b48aa",
+      "node_id": "llms",
+      "dependency_id": "model_serving",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "f3029b0ce3b8e976",
+      "node_id": "llms",
+      "dependency_id": "empirical_scaling_laws",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0e571e9104e8bab7",
+      "node_id": "llms",
+      "dependency_id": "compute_optimal_training",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "273f4154c5132baf",
+      "node_id": "llms",
+      "dependency_id": "data_curation",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "56dec8ca529ae799",
+      "node_id": "llms",
+      "dependency_id": "dedup_decontamination",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "89d35c3f2a1fe12e",
+      "node_id": "llms",
+      "dependency_id": "tokenization_serialization",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "738bf2baaa0af7ee",
+      "node_id": "llms",
+      "dependency_id": "distributed_mixed_precision",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "bec66fc40ece6da7",
+      "node_id": "llms",
+      "dependency_id": "peft_lora",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "6a38940610316732",
+      "node_id": "llms",
+      "dependency_id": "dpo_posttraining",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a57cd16579b9931c",
+      "node_id": "llms",
+      "dependency_id": "grpo",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "f1828267390ce331",
+      "node_id": "llms",
+      "dependency_id": "paged_attention",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8c1e2008bfe8d802",
+      "node_id": "llms",
+      "dependency_id": "speculative_decoding",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "3ca234cf7ab8d288",
+      "node_id": "llms",
+      "dependency_id": "mixture_of_depths",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "1fbaf9839c08936a",
+      "node_id": "llms",
+      "dependency_id": "hybrid_transformer_ssm",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "ce6955553fe5c325",
+      "node_id": "llms",
+      "dependency_id": "diffusion_language_model",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "0866705cbea9fd7e",
+      "node_id": "llms",
+      "dependency_id": "neural_architecture_search",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "da98f0be96181168",
+      "node_id": "llms",
+      "dependency_id": "parallel_inference",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "49f89ece0cf7ebbc",
+      "node_id": "llms",
+      "dependency_id": "registry_mlops",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "caac61042d80d05f",
+      "node_id": "llms",
+      "dependency_id": "fault_energy_ops",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "3bdd0d8c720128a6",
+      "node_id": "llms",
+      "dependency_id": "structured_decoding_runtime",
+      "source_ids": [
+        "ref_transformer",
+        "ref_scaling",
+        "ref_chinchilla"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

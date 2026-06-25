@@ -1,0 +1,162 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "21152c3f5c8706cc",
+      "node_id": "flow_matching",
+      "field": "definition",
+      "text": "A vector field is learned to transport samples from a simple base distribution to data along probability paths.",
+      "source_ids": ["ref_flow"],
+      "evidence_location": "Lipman et al. Flow Matching paper, abstract and method: learns continuous normalizing flow vector fields over probability paths from simple/noise distributions to data.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The definition closely matches the cited paper's framing."
+    },
+    {
+      "unit_id": "30bf764b0b1d9e31",
+      "node_id": "flow_matching",
+      "field": "why_it_matters",
+      "text": "The role of Flow matching & transport objectives is to connect Generative modeling, Differential equations to downstream capabilities including Continuous normalizing flows & learned vector fields, Normalizing, rectified & flow-matching models.",
+      "source_ids": ["ref_flow"],
+      "evidence_location": "Lipman et al. Flow Matching paper, abstract and introduction on CNFs, vector fields, probability paths, and generative modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Generative modeling, vector fields, and CNFs are supported; rectified-flow/downstream graph wording is broader synthesis."
+    },
+    {
+      "unit_id": "6094e1070c6ef5bc",
+      "node_id": "flow_matching",
+      "field": "examples[1]",
+      "text": "substrate for Continuous normalizing flows & learned vector fields",
+      "source_ids": ["ref_flow"],
+      "evidence_location": "Lipman et al. Flow Matching paper, training continuous normalizing flows via learned vector fields.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly supports CNFs and learned vector fields."
+    },
+    {
+      "unit_id": "fd94e7d17e178973",
+      "node_id": "flow_matching",
+      "field": "examples[2]",
+      "text": "substrate for Normalizing, rectified & flow-matching models",
+      "source_ids": ["ref_flow"],
+      "evidence_location": "Lipman et al. Flow Matching paper, flow matching for continuous normalizing flows and probability paths.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Normalizing and flow-matching models are supported; rectified-flow models are not directly established by the cited packet source."
+    },
+    {
+      "unit_id": "340aed169d77b8f1",
+      "node_id": "flow_matching",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Differential equations.",
+      "source_ids": ["ref_flow"],
+      "evidence_location": "Lipman et al. Flow Matching paper, regression objective for training CNFs and probability-path/vector-field formulation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependencies are supported, but the objective-mismatch limitation is generic and not directly supported by the cited source."
+    },
+    {
+      "unit_id": "984518887e572937",
+      "node_id": "flow_matching",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "Flow matching & transport objectives uses Generative modeling as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_flow"],
+      "evidence_location": "Lipman et al. Flow Matching paper title, abstract, and experiments frame the method for generative modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The paper directly identifies flow matching as a generative modeling method."
+    },
+    {
+      "unit_id": "68814fa9dd786a21",
+      "node_id": "flow_matching",
+      "field": "dependencies.differential_equations.rationale",
+      "text": "Flow matching & transport objectives uses Differential equations as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_flow"],
+      "evidence_location": "Lipman et al. Flow Matching paper, continuous normalizing flows defined through vector fields/ODE dynamics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Continuous flows via vector fields directly support the differential-equations dependency."
+    },
+    {
+      "unit_id": "53909a85cc147fb7",
+      "node_id": "flow_matching",
+      "field": "dependencies.probability.rationale",
+      "text": "Flow matching & transport objectives uses Probability theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_flow"],
+      "evidence_location": "Lipman et al. Flow Matching paper, probability paths between noise/base and data distributions.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Probability paths and distributions directly support this dependency."
+    },
+    {
+      "unit_id": "00a59a5f2fbcae9e",
+      "node_id": "flow_matching",
+      "field": "dependencies.optimization.rationale",
+      "text": "Flow matching & transport objectives uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_flow"],
+      "evidence_location": "Lipman et al. Flow Matching paper, objective for fitting vector fields by regression.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited paper directly describes optimizing/training the flow-matching objective."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "542ddd8f1ad38b27",
+      "node_id": "flow_matching",
+      "dependency_id": "generative_learning",
+      "source_ids": ["ref_flow"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Flow matching is explicitly for generative modeling; core strength is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "25d17da8bd9ca98e",
+      "node_id": "flow_matching",
+      "dependency_id": "differential_equations",
+      "source_ids": ["ref_flow"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The CNF/vector-field formulation supports a core differential-equations dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c990d2c11f244c54",
+      "node_id": "flow_matching",
+      "dependency_id": "probability",
+      "source_ids": ["ref_flow"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Probability paths and distributions are directly supported; common strength is defensible relative to generative/differential-equation core.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9eb594f0d40c947c",
+      "node_id": "flow_matching",
+      "dependency_id": "optimization",
+      "source_ids": ["ref_flow"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Training by a regression objective supports the optimization edge; common strength is appropriate.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

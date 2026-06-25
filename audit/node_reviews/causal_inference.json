@@ -1,0 +1,189 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "d008c8709bb00727",
+      "node_id": "causal_inference",
+      "field": "definition",
+      "text": "Structural causal models, interventions, counterfactuals, and confounding distinguish correlation from causal effect.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Causal_model",
+        "url:https://en.wikipedia.org/wiki/Causal_inference",
+        "url:https://en.wikipedia.org/wiki/Rubin_causal_model"
+      ],
+      "evidence_location": "Causal model page definition, ladder of causation, and counterfactuals sections; Causal inference page definition and concerns about correlative results; Rubin causal model page conclusion",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The inspected sources support structural equations/models, interventions, counterfactual or potential-outcome reasoning, assumptions, and the distinction between correlation/association and causation. The sentence is a compact synthesis."
+    },
+    {
+      "unit_id": "a5ab08316929f4df",
+      "node_id": "causal_inference",
+      "field": "why_it_matters",
+      "text": "The role of Causal inference is to connect Probability theory, Statistics & experimental design to downstream capabilities including Causal representation learning, Knowledge editing & memory consolidation, Fairness, bias & subgroup analysis.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Causal_inference",
+        "url:https://en.wikipedia.org/wiki/Causal_model"
+      ],
+      "evidence_location": "AIMA contents.html lines 543-560 and 745-749; Causal inference page definition, approaches, and framework sections; Causal model page applications and ladder sections",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support causal inference as statistical/probabilistic and relevant to machine learning and bias/fairness-adjacent analysis. They do not directly support the graph-derived downstream list, especially knowledge editing and memory consolidation."
+    },
+    {
+      "unit_id": "083178d010fc77a1",
+      "node_id": "causal_inference",
+      "field": "examples[1]",
+      "text": "substrate for Causal representation learning",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Causal_model"
+      ],
+      "evidence_location": "Causal model page applications section mentioning machine learning and causal models",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Causal models are connected to machine learning, but the inspected evidence does not directly establish causal representation learning as a downstream capability of causal inference."
+    },
+    {
+      "unit_id": "dd5e0486669a9eca",
+      "node_id": "causal_inference",
+      "field": "examples[2]",
+      "text": "substrate for Knowledge editing & memory consolidation",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html lines 264-278 and 543-560",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The inspected evidence supports knowledge representation and probabilistic/statistical learning, but it does not connect causal inference to knowledge editing or memory consolidation."
+    },
+    {
+      "unit_id": "cbfd0dae1ef4240e",
+      "node_id": "causal_inference",
+      "field": "examples[3]",
+      "text": "substrate for Fairness, bias & subgroup analysis",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Causal_inference"
+      ],
+      "evidence_location": "AIMA contents.html lines 745-749; Causal inference page definition and concerns about misuse of regression/correlative results",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support fairness/bias as AI topics and causal inference as a way to avoid confusing correlation with cause. They do not directly establish the named downstream relationship."
+    },
+    {
+      "unit_id": "2375a3c67d030993",
+      "node_id": "causal_inference",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory, Statistics & experimental design.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Causal_inference",
+        "url:https://en.wikipedia.org/wiki/Rubin_causal_model",
+        "ref_aima"
+      ],
+      "evidence_location": "Causal inference page concerns and common frameworks sections; Rubin causal model conclusion; AIMA contents.html lines 543-560 and 768-774",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support assumptions and statistical/probabilistic dependencies. The broad warning about mathematically valid results being irrelevant in mismatched empirical settings is plausible but not directly stated in the inspected evidence."
+    },
+    {
+      "unit_id": "b315303d270ddc22",
+      "node_id": "causal_inference",
+      "field": "dependencies.probability.rationale",
+      "text": "Causal inference rests on the formal or computational capabilities supplied by Probability theory.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Causal_model",
+        "url:https://en.wikipedia.org/wiki/Causal_inference",
+        "ref_aima"
+      ],
+      "evidence_location": "Causal model page association and do-calculus sections; Causal inference page see-also/common frameworks; AIMA contents.html lines 543-560 and 773-774",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The evidence connects causal inference to probabilities, observational data, statistical learning, and probabilistic models. The exact dependency wording is atlas synthesis."
+    },
+    {
+      "unit_id": "2f70d6fac75fb798",
+      "node_id": "causal_inference",
+      "field": "dependencies.statistics.rationale",
+      "text": "Causal inference rests on the formal or computational capabilities supplied by Statistics & experimental design.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Causal_inference",
+        "url:https://en.wikipedia.org/wiki/Rubin_causal_model"
+      ],
+      "evidence_location": "Causal inference page approaches and experimental/random assignment discussion; Rubin causal model conclusion and further reading",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support causal inference as tied to randomized/observational study design, statistical methods, and assumptions for estimating causal effects."
+    },
+    {
+      "unit_id": "97ec6ea3cdd0d432",
+      "node_id": "causal_inference",
+      "field": "dependencies.graph_theory.rationale",
+      "text": "Causal inference rests on the formal or computational capabilities supplied by Graph theory.",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Do-calculus",
+        "url:https://en.wikipedia.org/wiki/Causal_inference"
+      ],
+      "evidence_location": "Do-calculus page definition and purpose section; Causal inference page common frameworks section",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The inspected sources support causal graphs and DAG-based graphical criteria in do-calculus, but graph theory is not universal to all causal-inference frameworks. Common strength is more defensible than core."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "a3355342f2e431c6",
+      "node_id": "causal_inference",
+      "dependency_id": "probability",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Causal_model",
+        "url:https://en.wikipedia.org/wiki/Causal_inference",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Probability is central to associations, observational probabilities, and probabilistic/statistical causal methods. The edge direction and requires relationship are defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9cff15deeedef106",
+      "node_id": "causal_inference",
+      "dependency_id": "statistics",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Causal_inference",
+        "url:https://en.wikipedia.org/wiki/Rubin_causal_model"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Causal inference relies heavily on statistical inference, study design, randomized assignment, and assumptions for estimating counterfactuals. Core strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "32ced6bd8c855314",
+      "node_id": "causal_inference",
+      "dependency_id": "graph_theory",
+      "source_ids": [
+        "url:https://en.wikipedia.org/wiki/Do-calculus",
+        "url:https://en.wikipedia.org/wiki/Causal_inference"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Graphical causal models and do-calculus use DAGs and graphical criteria, but not all causal inference is graph-based. The common strength is appropriate.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

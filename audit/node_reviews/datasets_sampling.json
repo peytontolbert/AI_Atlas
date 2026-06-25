@@ -1,0 +1,181 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "1ad3bed5a4a4322e",
+      "node_id": "datasets_sampling",
+      "field": "definition",
+      "text": "Examples, populations, sampling schemes, train/validation/test splits, and provenance determine what a model can learn and how it is measured.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 1.5 'Data', preprocessing and missing data, overfitting/generalization, and regularizer selection using validation sets / cross-validation (lines 7-20 and 123-130); AIMA contents.html: developing ML systems, data collection/assessment/management, model selection and training (lines 532-538).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support data, preprocessing, missingness, validation, cross-validation, and data management as central to learning and evaluation. Provenance is not directly named in the inspected passages."
+    },
+    {
+      "unit_id": "78d13f8d3bc827f3",
+      "node_id": "datasets_sampling",
+      "field": "why_it_matters",
+      "text": "The role of Datasets, sampling & splits is to connect Probability theory, Statistics & experimental design to downstream capabilities including Multimodal, simulated & streaming data, Supervised learning, Unsupervised learning.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: probability chapters, statistics chapter, data section, supervised and unsupervised learning sections (lines 26-147 and 2-15); AIMA contents.html: supervised learning, data collection/assessment/management, and unsupervised learning entries (lines 495-538 and 584-590).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The probability/statistics and supervised/unsupervised portions are supported, but multimodal, simulated, and streaming data plus experimental design are not directly established in the inspected locations."
+    },
+    {
+      "unit_id": "b8a37f55b479e660",
+      "node_id": "datasets_sampling",
+      "field": "examples[1]",
+      "text": "substrate for Multimodal, simulated & streaming data",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 1.5 'Data', image/text datasets, preprocessing, and missing data (lines 15-20).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The source supports datasets and common modalities such as images and text, but not the full multimodal/simulated/streaming phrase."
+    },
+    {
+      "unit_id": "831fed0966c9e326",
+      "node_id": "datasets_sampling",
+      "field": "examples[2]",
+      "text": "substrate for Supervised learning",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 1.2 'Supervised learning' and data section (lines 3-20); AIMA contents.html: Chapter 19.2 'Supervised Learning' and learning decision trees from examples (lines 495-503).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Supervised learning from examples and data is directly supported, though 'substrate for' is atlas wording."
+    },
+    {
+      "unit_id": "6de101a9d0281eb6",
+      "node_id": "datasets_sampling",
+      "field": "examples[3]",
+      "text": "substrate for Unsupervised learning",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 1.3 'Unsupervised learning' and Chapter 21 clustering (lines 9-13 and 648-670); AIMA contents.html: Chapter 21.7.1 'Unsupervised learning' (lines 584-590).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support unsupervised learning as operating on data/examples. The substrate phrase is a synthesis."
+    },
+    {
+      "unit_id": "f28fefaa09bed0ce",
+      "node_id": "datasets_sampling",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Probability theory, Statistics & experimental design.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: preprocessing discrete/text data, missing data, probability, statistics, cross-validation, and caveats (lines 18-24 and 26-147); AIMA contents.html: fairness and bias plus data collection/assessment/management (lines 745-749 and 532-538).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support preprocessing, missing data, bias as an AI concern, probability, and statistics. The invariance and experimental-design clauses are not directly supported by the inspected evidence."
+    },
+    {
+      "unit_id": "086a4022155941bc",
+      "node_id": "datasets_sampling",
+      "field": "dependencies.probability.rationale",
+      "text": "Datasets, sampling & splits rests on the formal or computational capabilities supplied by Probability theory.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: probability chapters, random variables, independence, distributions, and Monte Carlo approximation (lines 26-72); AIMA contents.html: Appendix A.3 'Probability Distributions' (lines 768-775).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sampling and dataset reasoning naturally use probability; the exact rationale wording is synthesis."
+    },
+    {
+      "unit_id": "c9d1bfa3b12b8054",
+      "node_id": "datasets_sampling",
+      "field": "dependencies.statistics.rationale",
+      "text": "Datasets, sampling & splits rests on the formal or computational capabilities supplied by Statistics & experimental design.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 4 'Statistics', sampling distributions, bootstrap, confidence intervals, regularization with validation set, and cross-validation (lines 106-147).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The statistics and validation/cross-validation pieces are directly supported. Experimental design is only implicit."
+    },
+    {
+      "unit_id": "544afc2d959f0609",
+      "node_id": "datasets_sampling",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Datasets, sampling & splits rests on the formal or computational capabilities supplied by Databases & information retrieval.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: developing ML systems, especially data collection, assessment, and management (lines 532-538), and nearest-neighbor / locality-sensitive hashing entries (lines 518-524).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The evidence supports data management and retrieval-like methods as relevant, but not as a required formal dependency for datasets/splits."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "3cc9823423a66e9b",
+      "node_id": "datasets_sampling",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sampling and train/test population reasoning depend on probability concepts such as random variables, distributions, and uncertainty.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "813df95e8c4c837c",
+      "node_id": "datasets_sampling",
+      "dependency_id": "statistics",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Statistics is directly tied to estimation, sampling distributions, validation, and cross-validation, so the required/core edge is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b7ac8e90d626ee0f",
+      "node_id": "datasets_sampling",
+      "dependency_id": "databases_ir",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Data management is relevant to datasets, but the inspected evidence does not make databases/IR a conceptual prerequisite. The 'common' strength is more defensible than 'core'.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "99a35ffe7038931f",
+      "node_id": "efficient_attention",
+      "field": "definition",
+      "text": "Approximations or structured sparsity reduce the memory and compute cost of all-pairs attention.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning provides broad background for attention and neural network computation, but it is not a specific source for sparse, local, linear, or recurrent attention variants.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The claim is technically plausible, but the cited packet source is too broad to directly support the exact efficient-attention mechanism wording."
+    },
+    {
+      "unit_id": "e6823fad660785cb",
+      "node_id": "efficient_attention",
+      "field": "why_it_matters",
+      "text": "The role of Sparse, local, linear & recurrent attention is to connect Self-attention, Algorithms & data structures to downstream capabilities including xLSTM & linear-recurrent hybrids, Long-context attention, compression & summarization memory, Paged attention & KV-memory management.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited packet source provides broad neural-network background, not direct evidence for the listed downstream systems.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The downstream list mixes newer systems and graph-taxonomy language that should be backed by more specific sources."
+    },
+    {
+      "unit_id": "948f9310150b80cf",
+      "node_id": "efficient_attention",
+      "field": "examples[1]",
+      "text": "substrate for xLSTM & linear-recurrent hybrids",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited packet source predates xLSTM-style systems and does not directly establish this downstream relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This may be defensible as atlas taxonomy, but it is not directly supported by the cited source."
+    },
+    {
+      "unit_id": "38839609c6486db6",
+      "node_id": "efficient_attention",
+      "field": "examples[2]",
+      "text": "substrate for Long-context attention, compression & summarization memory",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited packet source gives broad background but not direct support for this long-context downstream category.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The relationship is plausible, but the exact broad downstream category needs a more specific citation."
+    },
+    {
+      "unit_id": "cdb6d03777455730",
+      "node_id": "efficient_attention",
+      "field": "examples[3]",
+      "text": "substrate for Paged attention & KV-memory management",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited packet source predates paged-attention systems and does not directly support the example.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "A paged-attention or KV-cache management source is needed for direct support."
+    },
+    {
+      "unit_id": "41dc51cf99ebe93b",
+      "node_id": "efficient_attention",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Self-attention, Algorithms & data structures.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning supports broad implementation and model-component background, but not the exact workload/hardware caveat.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency list is plausible, but the limitation wording is generic and not directly established by the cited packet source."
+    },
+    {
+      "unit_id": "96bd351999e65a7d",
+      "node_id": "efficient_attention",
+      "field": "dependencies.self_attention.rationale",
+      "text": "Sparse, local, linear & recurrent attention is assembled in part from the mechanism or model component Self-attention.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning provides background for attention mechanisms and neural sequence models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge rationale is defensible because these variants modify or approximate self-attention, but the source is broad rather than exact."
+    },
+    {
+      "unit_id": "317fdd51e5231650",
+      "node_id": "efficient_attention",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Sparse, local, linear & recurrent attention uses Algorithms & data structures as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet lists Deep Learning and AIMA as broad background for neural computation and algorithmic/data-structure concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Defensible as a synthesis for efficient implementations, but the core strength is not directly established by a mechanism-specific source."
+    },
+    {
+      "unit_id": "c82c32d71f844601",
+      "node_id": "efficient_attention",
+      "field": "dependencies.complexity_computability.rationale",
+      "text": "Sparse, local, linear & recurrent attention uses Complexity & computability as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources provide broad background for computational cost and algorithm analysis, not a direct efficient-attention edge.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relationship is defensible because the node is defined by computational savings; direct evidence would require a specific efficient-attention paper or survey."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "d68ad68768b9e62e",
+      "node_id": "efficient_attention",
+      "dependency_id": "self_attention",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Efficient attention variants are technically modifications of attention, but packet evidence is broad.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2e0c66f6d8a47527",
+      "node_id": "efficient_attention",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relationship type is defensible, but core strength should have a more specific efficient-attention source.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "f4c8eddf9e1717ca",
+      "node_id": "efficient_attention",
+      "dependency_id": "complexity_computability",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Computational complexity is directly relevant to efficient attention, and common strength is defensible from the node definition.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

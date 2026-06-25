@@ -1,0 +1,178 @@
+{
+  "node_id": "repro_monitoring",
+  "label": "Reproducibility, drift & continuous monitoring",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "repro_monitoring",
+    "label": "Reproducibility, drift & continuous monitoring",
+    "layer": "alignment",
+    "tags": [
+      "evaluation",
+      "monitoring",
+      "systems"
+    ],
+    "aliases": [],
+    "definition": "Reproducibility and continuous monitoring track versions, seeds, data, metrics, drift, incidents, and operational health across experiments and deployments.",
+    "why_it_matters": "The role of Reproducibility, drift & continuous monitoring is to connect Checkpointing, recovery & experiment state, Benchmarks, test suites & task metrics to downstream capabilities including Evaluation-driven development & release gates, Observability, tracing & evaluation harnesses, Model registry, versioning & MLOps / LLMOps.",
+    "examples": [
+      "substrate for Evaluation-driven development & release gates",
+      "substrate for Observability, tracing & evaluation harnesses",
+      "substrate for Model registry, versioning & MLOps / LLMOps"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Checkpointing, recovery & experiment state, Benchmarks, test suites & task metrics."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "checkpoint_recovery",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Reproducibility, drift & continuous monitoring measures, constrains, audits, or governs behavior using Checkpointing, recovery & experiment state."
+      },
+      {
+        "id": "benchmarks_metrics",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Reproducibility, drift & continuous monitoring measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      },
+      {
+        "id": "distributed_systems",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Reproducibility, drift & continuous monitoring measures, constrains, audits, or governs behavior using Distributed systems & networking."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "f1cfc855cee3a068",
+      "node_id": "repro_monitoring",
+      "field": "definition",
+      "text": "Reproducibility and continuous monitoring track versions, seeds, data, metrics, drift, incidents, and operational health across experiments and deployments."
+    },
+    {
+      "unit_id": "a725257f243411e1",
+      "node_id": "repro_monitoring",
+      "field": "why_it_matters",
+      "text": "The role of Reproducibility, drift & continuous monitoring is to connect Checkpointing, recovery & experiment state, Benchmarks, test suites & task metrics to downstream capabilities including Evaluation-driven development & release gates, Observability, tracing & evaluation harnesses, Model registry, versioning & MLOps / LLMOps."
+    },
+    {
+      "unit_id": "cd8790c47004ef2d",
+      "node_id": "repro_monitoring",
+      "field": "examples[1]",
+      "text": "substrate for Evaluation-driven development & release gates"
+    },
+    {
+      "unit_id": "bad5099c23b3ce60",
+      "node_id": "repro_monitoring",
+      "field": "examples[2]",
+      "text": "substrate for Observability, tracing & evaluation harnesses"
+    },
+    {
+      "unit_id": "c17fb8d7b507f066",
+      "node_id": "repro_monitoring",
+      "field": "examples[3]",
+      "text": "substrate for Model registry, versioning & MLOps / LLMOps"
+    },
+    {
+      "unit_id": "746cf0072e0018b4",
+      "node_id": "repro_monitoring",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Checkpointing, recovery & experiment state, Benchmarks, test suites & task metrics."
+    },
+    {
+      "unit_id": "6c1273865e0d012a",
+      "node_id": "repro_monitoring",
+      "field": "dependencies.checkpoint_recovery.rationale",
+      "text": "Reproducibility, drift & continuous monitoring measures, constrains, audits, or governs behavior using Checkpointing, recovery & experiment state."
+    },
+    {
+      "unit_id": "08175e3bb185f6ea",
+      "node_id": "repro_monitoring",
+      "field": "dependencies.benchmarks_metrics.rationale",
+      "text": "Reproducibility, drift & continuous monitoring measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "unit_id": "38d0d298eb16447c",
+      "node_id": "repro_monitoring",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Reproducibility, drift & continuous monitoring measures, constrains, audits, or governs behavior using Distributed systems & networking."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "206928bc304e26c7",
+      "node_id": "repro_monitoring",
+      "dependency_id": "checkpoint_recovery",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Reproducibility, drift & continuous monitoring measures, constrains, audits, or governs behavior using Checkpointing, recovery & experiment state."
+    },
+    {
+      "edge_id": "4973cec49c34b1c8",
+      "node_id": "repro_monitoring",
+      "dependency_id": "benchmarks_metrics",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Reproducibility, drift & continuous monitoring measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "edge_id": "f94b47859143fec7",
+      "node_id": "repro_monitoring",
+      "dependency_id": "distributed_systems",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Reproducibility, drift & continuous monitoring measures, constrains, audits, or governs behavior using Distributed systems & networking."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/repro_monitoring.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "2e2a77ac501943c5",
+      "node_id": "api_tool_gateway",
+      "field": "definition",
+      "text": "API gateways and tool registries authenticate requests, describe callable capabilities, validate arguments, enforce policy, and route agents to external services.",
+      "source_ids": ["ref_ddia", "ref_structured", "ref_nist"],
+      "evidence_location": "DDIA supports service/data-system routing and operations broadly; structured-output and NIST references support argument schemas and governance, but not this exact gateway/tool-registry definition.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Definition is defensible from multiple sources, but a direct API gateway or agent tool-use source would be better."
+    },
+    {
+      "unit_id": "1387f612b95e9f43",
+      "node_id": "api_tool_gateway",
+      "field": "why_it_matters",
+      "text": "The role of API gateways, tool registries & secure connectors is to connect Caches, APIs & tool interfaces, External databases, APIs & live tools to downstream capabilities including Conversational assistants & chatbots.",
+      "source_ids": ["ref_ddia", "ref_aima"],
+      "evidence_location": "Sources support external systems/tools broadly; downstream chatbot linkage is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible atlas positioning, not directly sourced."
+    },
+    {
+      "unit_id": "03e097a542cdd308",
+      "node_id": "api_tool_gateway",
+      "field": "examples[1]",
+      "text": "substrate for Conversational assistants & chatbots",
+      "source_ids": ["ref_aima", "ref_structured"],
+      "evidence_location": "Tool/action schema sources are relevant to assistants, but the exact substrate claim is not directly supported.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a direct agent tool-use or assistant connector citation."
+    },
+    {
+      "unit_id": "0819ea14c158015e",
+      "node_id": "api_tool_gateway",
+      "field": "examples[2]",
+      "text": "combined with Caches, APIs & tool interfaces",
+      "source_ids": ["ref_ddia"],
+      "evidence_location": "DDIA supports caches and service interfaces generally, but not AI tool gateways specifically.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible infrastructure composition."
+    },
+    {
+      "unit_id": "9167f940d53fd06c",
+      "node_id": "api_tool_gateway",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Caches, APIs & tool interfaces, External databases, APIs & live tools.",
+      "source_ids": ["ref_ddia", "ref_nist"],
+      "evidence_location": "DDIA and NIST support operational and security concerns generally; numerical behavior is not specific to gateways.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Generic limitation template is only partially applicable."
+    },
+    {
+      "unit_id": "967357c043e3965e",
+      "node_id": "api_tool_gateway",
+      "field": "dependencies.cache_tool_interfaces.rationale",
+      "text": "API gateways, tool registries & secure connectors turns Caches, APIs & tool interfaces into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_ddia"],
+      "evidence_location": "DDIA supports caches and service interfaces as operational infrastructure.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core dependency is defensible; exact wording is templated."
+    },
+    {
+      "unit_id": "7ace8f281ac8af7e",
+      "node_id": "api_tool_gateway",
+      "field": "dependencies.external_data_tools.rationale",
+      "text": "API gateways, tool registries & secure connectors turns External databases, APIs & live tools into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_ddia", "ref_aima"],
+      "evidence_location": "Sources support databases/APIs and external tools conceptually.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core relationship is plausible for connector infrastructure."
+    },
+    {
+      "unit_id": "c52f84b251ae8916",
+      "node_id": "api_tool_gateway",
+      "field": "dependencies.privacy_governance.rationale",
+      "text": "API gateways, tool registries & secure connectors turns Privacy, governance, licensing & audit into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_nist"],
+      "evidence_location": "NIST supports governance and risk controls; gateway operationalization is indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common dependency is defensible but not directly verified."
+    },
+    {
+      "unit_id": "3ea7c85a21e598ed",
+      "node_id": "api_tool_gateway",
+      "field": "dependencies.structured_outputs.rationale",
+      "text": "API gateways, tool registries & secure connectors turns Structured outputs & typed action generation into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_structured"],
+      "evidence_location": "Structured-output survey supports schemas and typed generation; gateway serving integration is a synthesis.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common dependency is plausible for typed tool calls."
+    },
+    {
+      "unit_id": "eb3e42b0442b1ae3",
+      "node_id": "api_tool_gateway",
+      "field": "dependencies.cryptographic_signing.rationale",
+      "text": "API gateways, tool registries & secure connectors turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_c2pa", "ref_ddia"],
+      "evidence_location": "C2PA supports signatures/provenance; DDIA supports service operations, but gateway linkage is indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common dependency is plausible for integrity-preserving connectors."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "0577421bc58587f2",
+      "node_id": "api_tool_gateway",
+      "dependency_id": "cache_tool_interfaces",
+      "source_ids": ["ref_ddia"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gateway behavior naturally builds on API/tool interface infrastructure.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "27d2e9073d1e6b24",
+      "node_id": "api_tool_gateway",
+      "dependency_id": "external_data_tools",
+      "source_ids": ["ref_ddia", "ref_aima"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Routing to external APIs and live tools is central to the node.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "052672cdcd6e77bd",
+      "node_id": "api_tool_gateway",
+      "dependency_id": "privacy_governance",
+      "source_ids": ["ref_nist"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Policy enforcement and audit make governance a plausible common dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "53b3f4cccc4e11e1",
+      "node_id": "api_tool_gateway",
+      "dependency_id": "structured_outputs",
+      "source_ids": ["ref_structured"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Typed action generation is relevant to tool registries and argument validation.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "f1158f78d86f44d2",
+      "node_id": "api_tool_gateway",
+      "dependency_id": "cryptographic_signing",
+      "source_ids": ["ref_c2pa", "ref_ddia"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Signing and tamper-evident logging are plausible integrity mechanisms for secure connectors.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

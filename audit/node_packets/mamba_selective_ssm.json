@@ -1,0 +1,214 @@
+{
+  "node_id": "mamba_selective_ssm",
+  "label": "Selective state-space models (Mamba family)",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "mamba_selective_ssm",
+    "label": "Selective state-space models (Mamba family)",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "ssm",
+      "sequence"
+    ],
+    "aliases": [
+      "Mamba"
+    ],
+    "definition": "Input-selective state-space blocks combine recurrent linear-time scaling with content-dependent propagation.",
+    "why_it_matters": "The role of Selective state-space models (Mamba family) is to connect Selective state-space scan, State-space transitions to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Transformer–SSM & recurrent hybrid models.",
+    "examples": [
+      "substrate for Time-series forecasting, anomaly & fraud detection",
+      "substrate for Transformer–SSM & recurrent hybrid models"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Selective state-space scan, State-space transitions."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_mamba"
+    ],
+    "dependencies": [
+      {
+        "id": "selective_scan",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Selective state-space scan."
+      },
+      {
+        "id": "state_space_transition",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component State-space transitions."
+      },
+      {
+        "id": "gating",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Gating & multiplicative control."
+      },
+      {
+        "id": "normalization",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Normalization & standardization."
+      },
+      {
+        "id": "structured_ssm",
+        "type": "specializes",
+        "strength": "common",
+        "rationale": "Selective state-space models (Mamba family) extends or specializes the architecture family Structured state-space models (S4 family)."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "1aca41dee40fef45",
+      "node_id": "mamba_selective_ssm",
+      "field": "definition",
+      "text": "Input-selective state-space blocks combine recurrent linear-time scaling with content-dependent propagation."
+    },
+    {
+      "unit_id": "6dcb486eda2c4300",
+      "node_id": "mamba_selective_ssm",
+      "field": "why_it_matters",
+      "text": "The role of Selective state-space models (Mamba family) is to connect Selective state-space scan, State-space transitions to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Transformer–SSM & recurrent hybrid models."
+    },
+    {
+      "unit_id": "e416137b79c5d17e",
+      "node_id": "mamba_selective_ssm",
+      "field": "examples[1]",
+      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+    },
+    {
+      "unit_id": "c33b47e22de0fd48",
+      "node_id": "mamba_selective_ssm",
+      "field": "examples[2]",
+      "text": "substrate for Transformer–SSM & recurrent hybrid models"
+    },
+    {
+      "unit_id": "1ca0eddd407da58e",
+      "node_id": "mamba_selective_ssm",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Selective state-space scan, State-space transitions."
+    },
+    {
+      "unit_id": "1d4d8eb178f53cfb",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.selective_scan.rationale",
+      "text": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Selective state-space scan."
+    },
+    {
+      "unit_id": "67f8376494f875ad",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.state_space_transition.rationale",
+      "text": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "unit_id": "154c94a70f5c0779",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.gating.rationale",
+      "text": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Gating & multiplicative control."
+    },
+    {
+      "unit_id": "ef67cd99691db58e",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.normalization.rationale",
+      "text": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Normalization & standardization."
+    },
+    {
+      "unit_id": "6ad4ed40a8dc4731",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.structured_ssm.rationale",
+      "text": "Selective state-space models (Mamba family) extends or specializes the architecture family Structured state-space models (S4 family)."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "57499f5d754770a3",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "selective_scan",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Selective state-space scan."
+    },
+    {
+      "edge_id": "622737860901b664",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "state_space_transition",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "edge_id": "9d8b69a2b0ad2df6",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "gating",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Gating & multiplicative control."
+    },
+    {
+      "edge_id": "2d5a5f1c852eb292",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "normalization",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Normalization & standardization."
+    },
+    {
+      "edge_id": "e80cdaf63c8b1732",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "structured_ssm",
+      "type": "specializes",
+      "strength": "common",
+      "rationale": "Selective state-space models (Mamba family) extends or specializes the architecture family Structured state-space models (S4 family)."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_mamba": {
+        "id": "ref_mamba",
+        "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+        "authors": "Gu & Dao",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2312.00752"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_mamba": {
+        "id": "ref_mamba",
+        "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+        "authors": "Gu & Dao",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2312.00752"
+      },
+      "ref_s4": {
+        "id": "ref_s4",
+        "title": "Efficiently Modeling Long Sequences with Structured State Spaces",
+        "authors": "Gu, Goel & Ré",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2111.00396"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/mamba_selective_ssm.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

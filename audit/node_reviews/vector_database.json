@@ -1,0 +1,171 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "ceb447865a5086c2",
+      "node_id": "vector_database",
+      "field": "definition",
+      "text": "A vector database stores embeddings with metadata and supports approximate-nearest-neighbor indexing, filtering, updates, replication, and retrieval at operational scale.",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "evidence_location": "The ANN source supports approximate nearest-neighbor indexing; operational database features such as updates, replication, and filtering need a vector-database systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Narrow to ANN indexes or add an operational vector database citation."
+    },
+    {
+      "unit_id": "ac6f6935a398ffdd",
+      "node_id": "vector_database",
+      "field": "why_it_matters",
+      "text": "The role of Vector databases & ANN indexes is to connect Dense vector retrieval, Databases & information retrieval to downstream capabilities including Vector-search and retrieval services.",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
+    },
+    {
+      "unit_id": "8f66fd66fc596881",
+      "node_id": "vector_database",
+      "field": "examples[1]",
+      "text": "substrate for Vector-search and retrieval services",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "524650df09e355f3",
+      "node_id": "vector_database",
+      "field": "examples[2]",
+      "text": "combined with Dense vector retrieval",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "0e50411752921b41",
+      "node_id": "vector_database",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Dense vector retrieval, Databases & information retrieval.",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "9d7846c92e1b2d6f",
+      "node_id": "vector_database",
+      "field": "dependencies.dense_retrieval.rationale",
+      "text": "Vector databases & ANN indexes stores, selects, or obtains information through Dense vector retrieval.",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet references support dense_retrieval or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "84261e74584b57cc",
+      "node_id": "vector_database",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Vector databases & ANN indexes uses Databases & information retrieval as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet references support databases_ir or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "a3ac715ac231da54",
+      "node_id": "vector_database",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Vector databases & ANN indexes uses Distributed systems & networking as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet references support distributed_systems or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "fd57f5b21f6e1a79",
+      "node_id": "vector_database",
+      "dependency_id": "dense_retrieval",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "120947a066fe52ad",
+      "node_id": "vector_database",
+      "dependency_id": "databases_ir",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8edb340ca4fd56d5",
+      "node_id": "vector_database",
+      "dependency_id": "distributed_systems",
+      "source_ids": [
+        "ref_ann",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Operational vector databases commonly use distributed systems concerns; direct citation would strengthen it.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

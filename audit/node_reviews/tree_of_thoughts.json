@@ -1,0 +1,202 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "c4057694f1a5bf60",
+      "node_id": "tree_of_thoughts",
+      "field": "definition",
+      "text": "Tree-of-Thought methods branch from intermediate reasoning states, evaluate partial solutions, and backtrack or continue search rather than following one chain.",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The abstract directly supports branching over intermediate thoughts, evaluating choices, lookahead, and backtracking rather than one left-to-right chain."
+    },
+    {
+      "unit_id": "d74b66b64d5317b8",
+      "node_id": "tree_of_thoughts",
+      "field": "why_it_matters",
+      "text": "They make deliberation explicit when a problem benefits from alternatives, lookahead, and recovery from early mistakes.",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Exploration, lookahead, and initial-decision recovery are directly supported."
+    },
+    {
+      "unit_id": "56e6bcf5babd5548",
+      "node_id": "tree_of_thoughts",
+      "field": "examples[1]",
+      "text": "branching puzzle search",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Game of 24 and Mini Crosswords support branching puzzle/search examples."
+    },
+    {
+      "unit_id": "9d5a32107b5c6bd2",
+      "node_id": "tree_of_thoughts",
+      "field": "examples[2]",
+      "text": "plan alternatives",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Planning/search tasks and multiple reasoning paths support plan alternatives."
+    },
+    {
+      "unit_id": "6fc8e485a3a34d45",
+      "node_id": "tree_of_thoughts",
+      "field": "examples[3]",
+      "text": "candidate proof states",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Candidate proof states are plausible for branch-and-evaluate reasoning but not directly in the cited ToT abstract."
+    },
+    {
+      "unit_id": "9158b7a298057cfa",
+      "node_id": "tree_of_thoughts",
+      "field": "limitations[1]",
+      "text": "Branching grows rapidly, state evaluation can be unreliable, and thought representations are difficult to canonicalize.",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Branching/search cost and evaluation reliability are natural implications of the ToT method, though not stated exactly in the abstract."
+    },
+    {
+      "unit_id": "b4b514096b7fa3ce",
+      "node_id": "tree_of_thoughts",
+      "field": "dependencies.graph_astar_search.rationale",
+      "text": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Graph search, BFS/DFS & A*.",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source explicitly frames ToT around exploration/search, lookahead, and backtracking."
+    },
+    {
+      "unit_id": "0b4c987c569e4df2",
+      "node_id": "tree_of_thoughts",
+      "field": "dependencies.cot_latent_reasoning.rationale",
+      "text": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Chain-of-thought & latent reasoning.",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "ToT is explicitly presented as a generalization of Chain of Thought."
+    },
+    {
+      "unit_id": "f875fd031b5c572f",
+      "node_id": "tree_of_thoughts",
+      "field": "dependencies.reflection_verifier.rationale",
+      "text": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops.",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Self-evaluating choices is directly stated."
+    },
+    {
+      "unit_id": "50c2faa6c582c597",
+      "node_id": "tree_of_thoughts",
+      "field": "dependencies.test_time_compute.rationale",
+      "text": "Tree-of-Thought & branch-and-evaluate reasoning explores alternatives using the state, scoring, or search process in Test-time compute scaling.",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "evidence_location": "Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "ToT spends additional inference search/evaluation compute; test-time compute label comes from broader synthesis."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "440390fe4896cfd3",
+      "node_id": "tree_of_thoughts",
+      "dependency_id": "graph_astar_search",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Search over alternatives is core to ToT.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "5ad5c57908a720bc",
+      "node_id": "tree_of_thoughts",
+      "dependency_id": "cot_latent_reasoning",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "ToT generalizes Chain of Thought.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "400297a04a380cc7",
+      "node_id": "tree_of_thoughts",
+      "dependency_id": "reflection_verifier",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Self-evaluation of choices is directly supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "e70524a11a503f07",
+      "node_id": "tree_of_thoughts",
+      "dependency_id": "test_time_compute",
+      "source_ids": [
+        "ref_tot"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "ToT is an inference-time deliberation/search method.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

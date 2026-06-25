@@ -1,0 +1,272 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "364bbf6117071f4c",
+      "node_id": "speech_recognition",
+      "field": "definition",
+      "text": "Speech-recognition systems transform acoustic signals into text, timestamps, speakers, intents, or semantic representations under varied noise and accents.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The cited AI and dependency background sources support speech-recognition as mapping acoustic signals to linguistic/semantic outputs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Direct support is conceptual; the exact list of outputs and robustness conditions is a synthesis."
+    },
+    {
+      "unit_id": "fc9bbe0c4d44f1b1",
+      "node_id": "speech_recognition",
+      "field": "why_it_matters",
+      "text": "This system is an application boundary where technical capability, evidence, safety controls, economics, and user workflow must succeed together.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The upstream/downstream role is inferred from the dependency graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Useful graph synthesis, not directly established as an exact claim by the cited sources."
+    },
+    {
+      "unit_id": "d19492c14bb73493",
+      "node_id": "speech_recognition",
+      "field": "examples[1]",
+      "text": "workflows combining Speech recognition & spoken-language understanding with Encoder\u2013decoder transformers",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "b55ea104bef30836",
+      "node_id": "speech_recognition",
+      "field": "examples[2]",
+      "text": "workflows combining Speech recognition & spoken-language understanding with Waveforms, audio & spectrograms",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "ce4444861ffd454e",
+      "node_id": "speech_recognition",
+      "field": "examples[3]",
+      "text": "workflows combining Speech recognition & spoken-language understanding with Large-scale pretraining",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "fd59a14cf53cf2df",
+      "node_id": "speech_recognition",
+      "field": "limitations[1]",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Encoder\u2013decoder transformers, Waveforms, audio & spectrograms.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+    },
+    {
+      "unit_id": "efad79230148c953",
+      "node_id": "speech_recognition",
+      "field": "terminal_reason",
+      "text": "end-system leaf",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The cited packet references support the broad concept, but this wording is partly graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conservative audit: support is conceptual rather than an exact quote from the packet references."
+    },
+    {
+      "unit_id": "b906165e0647c2c8",
+      "node_id": "speech_recognition",
+      "field": "dependencies.encoder_decoder_transformer.rationale",
+      "text": "Speech recognition & spoken-language understanding integrates Encoder\u2013decoder transformers as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "927f5ee61b924782",
+      "node_id": "speech_recognition",
+      "field": "dependencies.audio_signals.rationale",
+      "text": "Speech recognition & spoken-language understanding integrates Waveforms, audio & spectrograms as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "18e7a393dd6e79ed",
+      "node_id": "speech_recognition",
+      "field": "dependencies.pretraining.rationale",
+      "text": "Speech recognition & spoken-language understanding integrates Large-scale pretraining as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "085b4b525fc354c5",
+      "node_id": "speech_recognition",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Speech recognition & spoken-language understanding integrates Model servers & inference runtimes as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "3ff7b5fd9176d500",
+      "node_id": "speech_recognition",
+      "field": "dependencies.beam_search.rationale",
+      "text": "Speech recognition & spoken-language understanding integrates Beam search & constrained decoding as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "4453a99a43ab687d",
+      "node_id": "speech_recognition",
+      "field": "dependencies.encoder_only_transformer.rationale",
+      "text": "Speech recognition & spoken-language understanding integrates Encoder-only bidirectional transformers as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "3d4add47c25f658e",
+      "node_id": "speech_recognition",
+      "dependency_id": "encoder_decoder_transformer",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c700d5705b111070",
+      "node_id": "speech_recognition",
+      "dependency_id": "audio_signals",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c39d34e4fb48d6d8",
+      "node_id": "speech_recognition",
+      "dependency_id": "pretraining",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "57235fb064732386",
+      "node_id": "speech_recognition",
+      "dependency_id": "model_serving",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "a764339eb42287dc",
+      "node_id": "speech_recognition",
+      "dependency_id": "beam_search",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "678156299ef5de94",
+      "node_id": "speech_recognition",
+      "dependency_id": "encoder_only_transformer",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

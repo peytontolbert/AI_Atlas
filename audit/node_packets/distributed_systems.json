@@ -1,0 +1,143 @@
+{
+  "node_id": "distributed_systems",
+  "label": "Distributed systems & networking",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "distributed_systems",
+    "label": "Distributed systems & networking",
+    "layer": "foundation",
+    "tags": [
+      "systems",
+      "infrastructure"
+    ],
+    "aliases": [],
+    "definition": "Coordination, communication, consistency, scheduling, and fault tolerance enable large-scale training and serving.",
+    "why_it_matters": "The role of Distributed systems & networking is to connect Algorithms & data structures, Complexity & computability to downstream capabilities including Multimodal, simulated & streaming data, Federated & privacy-preserving learning, Routing, conditional computation & mixture-of-experts.",
+    "examples": [
+      "substrate for Multimodal, simulated & streaming data",
+      "substrate for Federated & privacy-preserving learning",
+      "substrate for Routing, conditional computation & mixture-of-experts"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Algorithms & data structures, Complexity & computability."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "algorithms_data_structures",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Distributed systems & networking rests on the formal or computational capabilities supplied by Algorithms & data structures."
+      },
+      {
+        "id": "complexity_computability",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Distributed systems & networking rests on the formal or computational capabilities supplied by Complexity & computability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "11cfc1c32eba3bfe",
+      "node_id": "distributed_systems",
+      "field": "definition",
+      "text": "Coordination, communication, consistency, scheduling, and fault tolerance enable large-scale training and serving."
+    },
+    {
+      "unit_id": "4052fa82dedd5f37",
+      "node_id": "distributed_systems",
+      "field": "why_it_matters",
+      "text": "The role of Distributed systems & networking is to connect Algorithms & data structures, Complexity & computability to downstream capabilities including Multimodal, simulated & streaming data, Federated & privacy-preserving learning, Routing, conditional computation & mixture-of-experts."
+    },
+    {
+      "unit_id": "d304b82d2688c74e",
+      "node_id": "distributed_systems",
+      "field": "examples[1]",
+      "text": "substrate for Multimodal, simulated & streaming data"
+    },
+    {
+      "unit_id": "3d505485b17d044c",
+      "node_id": "distributed_systems",
+      "field": "examples[2]",
+      "text": "substrate for Federated & privacy-preserving learning"
+    },
+    {
+      "unit_id": "859fb55c85be858a",
+      "node_id": "distributed_systems",
+      "field": "examples[3]",
+      "text": "substrate for Routing, conditional computation & mixture-of-experts"
+    },
+    {
+      "unit_id": "e759acb98e1d4388",
+      "node_id": "distributed_systems",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Algorithms & data structures, Complexity & computability."
+    },
+    {
+      "unit_id": "c5add226d9ef685b",
+      "node_id": "distributed_systems",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Distributed systems & networking rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    },
+    {
+      "unit_id": "a12f030a17aa0cc8",
+      "node_id": "distributed_systems",
+      "field": "dependencies.complexity_computability.rationale",
+      "text": "Distributed systems & networking rests on the formal or computational capabilities supplied by Complexity & computability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "b0df3aa60f83e733",
+      "node_id": "distributed_systems",
+      "dependency_id": "algorithms_data_structures",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Distributed systems & networking rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    },
+    {
+      "edge_id": "666e8e164bc76f78",
+      "node_id": "distributed_systems",
+      "dependency_id": "complexity_computability",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Distributed systems & networking rests on the formal or computational capabilities supplied by Complexity & computability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/distributed_systems.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

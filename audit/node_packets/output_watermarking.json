@@ -1,0 +1,178 @@
+{
+  "node_id": "output_watermarking",
+  "label": "Generation-time watermarking",
+  "layer": "alignment",
+  "editorial_status": "curated",
+  "node": {
+    "id": "output_watermarking",
+    "label": "Generation-time watermarking",
+    "layer": "alignment",
+    "tags": [
+      "provenance",
+      "security",
+      "generative"
+    ],
+    "aliases": [],
+    "definition": "Generation-time watermarking modifies sampling or output structure to embed a statistically detectable signal associated with an AI generator.",
+    "why_it_matters": "It can support origin claims, synthetic-data filtering, and forensic analysis without trusting a generic AI-content classifier.",
+    "examples": [
+      "green-list token watermarks",
+      "watermarked code generation",
+      "text provenance signals"
+    ],
+    "limitations": [
+      "Paraphrasing, editing, translation, collusion, and distribution shift can weaken detection or create false accusations."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_watermark"
+    ],
+    "dependencies": [
+      {
+        "id": "autoregressive_decoding",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Generation-time watermarking measures, constrains, audits, or governs behavior using Autoregressive decoding."
+      },
+      {
+        "id": "information_theory",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Generation-time watermarking measures, constrains, audits, or governs behavior using Information theory."
+      },
+      {
+        "id": "adversarial_security_eval",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Generation-time watermarking measures, constrains, audits, or governs behavior using Adversarial robustness & security testing."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c05465b71cd22a83",
+      "node_id": "output_watermarking",
+      "field": "definition",
+      "text": "Generation-time watermarking modifies sampling or output structure to embed a statistically detectable signal associated with an AI generator."
+    },
+    {
+      "unit_id": "e7a3cfe56c53dca7",
+      "node_id": "output_watermarking",
+      "field": "why_it_matters",
+      "text": "It can support origin claims, synthetic-data filtering, and forensic analysis without trusting a generic AI-content classifier."
+    },
+    {
+      "unit_id": "293d71bf6ee1f343",
+      "node_id": "output_watermarking",
+      "field": "examples[1]",
+      "text": "green-list token watermarks"
+    },
+    {
+      "unit_id": "5d01a8fad4e904f0",
+      "node_id": "output_watermarking",
+      "field": "examples[2]",
+      "text": "watermarked code generation"
+    },
+    {
+      "unit_id": "dbaff3462b168edc",
+      "node_id": "output_watermarking",
+      "field": "examples[3]",
+      "text": "text provenance signals"
+    },
+    {
+      "unit_id": "4e0521fc3ca453d1",
+      "node_id": "output_watermarking",
+      "field": "limitations[1]",
+      "text": "Paraphrasing, editing, translation, collusion, and distribution shift can weaken detection or create false accusations."
+    },
+    {
+      "unit_id": "501d4758c8fc46b7",
+      "node_id": "output_watermarking",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "Generation-time watermarking measures, constrains, audits, or governs behavior using Autoregressive decoding."
+    },
+    {
+      "unit_id": "079a27af0542ab4f",
+      "node_id": "output_watermarking",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Generation-time watermarking measures, constrains, audits, or governs behavior using Information theory."
+    },
+    {
+      "unit_id": "b7c3a8710425f9f5",
+      "node_id": "output_watermarking",
+      "field": "dependencies.adversarial_security_eval.rationale",
+      "text": "Generation-time watermarking measures, constrains, audits, or governs behavior using Adversarial robustness & security testing."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "5986e1c64ddd332e",
+      "node_id": "output_watermarking",
+      "dependency_id": "autoregressive_decoding",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Generation-time watermarking measures, constrains, audits, or governs behavior using Autoregressive decoding."
+    },
+    {
+      "edge_id": "016dcbe6945f981a",
+      "node_id": "output_watermarking",
+      "dependency_id": "information_theory",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Generation-time watermarking measures, constrains, audits, or governs behavior using Information theory."
+    },
+    {
+      "edge_id": "2026923279f454f5",
+      "node_id": "output_watermarking",
+      "dependency_id": "adversarial_security_eval",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Generation-time watermarking measures, constrains, audits, or governs behavior using Adversarial robustness & security testing."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_watermark": {
+        "id": "ref_watermark",
+        "title": "A Watermark for Large Language Models",
+        "authors": "Kirchenbauer et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2301.10226"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/output_watermarking.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

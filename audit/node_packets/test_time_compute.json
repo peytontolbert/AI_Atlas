@@ -1,0 +1,201 @@
+{
+  "node_id": "test_time_compute",
+  "label": "Test-time compute scaling",
+  "layer": "reasoning",
+  "editorial_status": "curated",
+  "node": {
+    "id": "test_time_compute",
+    "label": "Test-time compute scaling",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "inference-scaling",
+      "search"
+    ],
+    "aliases": [
+      "inference-time scaling",
+      "test-time scaling"
+    ],
+    "definition": "Test-time compute scaling spends additional inference effort on sampling, search, verification, revision, tools, or longer deliberation instead of changing model weights.",
+    "why_it_matters": "It creates a second scaling axis in which difficult instances receive more computation than easy ones.",
+    "examples": [
+      "adaptive reasoning budgets",
+      "iterative critique",
+      "search with learned verifiers"
+    ],
+    "limitations": [
+      "Extra tokens do not guarantee better reasoning, latency and cost rise quickly, and stopping rules can be poorly calibrated."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_testtime"
+    ],
+    "dependencies": [
+      {
+        "id": "search_sampling_decoding",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Search, sampling & decoding procedures."
+      },
+      {
+        "id": "self_consistency",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Self-consistency & best-of-N inference."
+      },
+      {
+        "id": "reflection_verifier",
+        "type": "searches_with",
+        "strength": "common",
+        "rationale": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops."
+      },
+      {
+        "id": "calibration_uncertainty_objective",
+        "type": "searches_with",
+        "strength": "common",
+        "rationale": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Calibration, uncertainty & risk objectives."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "dace77c20b5529fa",
+      "node_id": "test_time_compute",
+      "field": "definition",
+      "text": "Test-time compute scaling spends additional inference effort on sampling, search, verification, revision, tools, or longer deliberation instead of changing model weights."
+    },
+    {
+      "unit_id": "b88c78017828cbb7",
+      "node_id": "test_time_compute",
+      "field": "why_it_matters",
+      "text": "It creates a second scaling axis in which difficult instances receive more computation than easy ones."
+    },
+    {
+      "unit_id": "0f115a9f1330d1b6",
+      "node_id": "test_time_compute",
+      "field": "examples[1]",
+      "text": "adaptive reasoning budgets"
+    },
+    {
+      "unit_id": "be544ebca3191d6a",
+      "node_id": "test_time_compute",
+      "field": "examples[2]",
+      "text": "iterative critique"
+    },
+    {
+      "unit_id": "bbdf333e17f973f6",
+      "node_id": "test_time_compute",
+      "field": "examples[3]",
+      "text": "search with learned verifiers"
+    },
+    {
+      "unit_id": "7c6bcddbb4e97c90",
+      "node_id": "test_time_compute",
+      "field": "limitations[1]",
+      "text": "Extra tokens do not guarantee better reasoning, latency and cost rise quickly, and stopping rules can be poorly calibrated."
+    },
+    {
+      "unit_id": "405297469715bba8",
+      "node_id": "test_time_compute",
+      "field": "dependencies.search_sampling_decoding.rationale",
+      "text": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Search, sampling & decoding procedures."
+    },
+    {
+      "unit_id": "b41737832cfd6288",
+      "node_id": "test_time_compute",
+      "field": "dependencies.self_consistency.rationale",
+      "text": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Self-consistency & best-of-N inference."
+    },
+    {
+      "unit_id": "04c6980918e3e137",
+      "node_id": "test_time_compute",
+      "field": "dependencies.reflection_verifier.rationale",
+      "text": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops."
+    },
+    {
+      "unit_id": "7184c537189dd5f7",
+      "node_id": "test_time_compute",
+      "field": "dependencies.calibration_uncertainty_objective.rationale",
+      "text": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Calibration, uncertainty & risk objectives."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "db7b7a1a8746f3e8",
+      "node_id": "test_time_compute",
+      "dependency_id": "search_sampling_decoding",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Search, sampling & decoding procedures."
+    },
+    {
+      "edge_id": "d33718a067594970",
+      "node_id": "test_time_compute",
+      "dependency_id": "self_consistency",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Self-consistency & best-of-N inference."
+    },
+    {
+      "edge_id": "6defb107a0c85cae",
+      "node_id": "test_time_compute",
+      "dependency_id": "reflection_verifier",
+      "type": "searches_with",
+      "strength": "common",
+      "rationale": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops."
+    },
+    {
+      "edge_id": "062d43c1b62e4154",
+      "node_id": "test_time_compute",
+      "dependency_id": "calibration_uncertainty_objective",
+      "type": "searches_with",
+      "strength": "common",
+      "rationale": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Calibration, uncertainty & risk objectives."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_testtime": {
+        "id": "ref_testtime",
+        "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+        "authors": "Snell et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2408.03314"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/test_time_compute.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

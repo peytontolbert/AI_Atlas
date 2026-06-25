@@ -1,0 +1,171 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "a244eac4846b7008",
+      "node_id": "knowledge_editing",
+      "field": "definition",
+      "text": "Knowledge editing changes selected factual or behavioral associations in parameters or external memory while attempting to preserve unrelated capabilities.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "evidence_location": "AIMA and Deep Learning support learning and knowledge representation broadly, but not model editing that preserves unrelated behavior.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a model editing source such as ROME/MEMIT or knowledge-editing survey."
+    },
+    {
+      "unit_id": "ddbe462d3e418436",
+      "node_id": "knowledge_editing",
+      "field": "why_it_matters",
+      "text": "The role of Knowledge editing & memory consolidation is to connect Parametric memory, Continual learning & test-time adaptation pipelines to downstream capabilities including Memory lifecycle, forgetting & consolidation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
+    },
+    {
+      "unit_id": "cc55ca9fce76cd27",
+      "node_id": "knowledge_editing",
+      "field": "examples[1]",
+      "text": "substrate for Memory lifecycle, forgetting & consolidation",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "ec99b871d4ace2ee",
+      "node_id": "knowledge_editing",
+      "field": "examples[2]",
+      "text": "combined with Parametric memory",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "20459280f1e90195",
+      "node_id": "knowledge_editing",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Parametric memory, Continual learning & test-time adaptation pipelines.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "5733c670524a654d",
+      "node_id": "knowledge_editing",
+      "field": "dependencies.parametric_memory.rationale",
+      "text": "Knowledge editing & memory consolidation stores, selects, or obtains information through Parametric memory.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "evidence_location": "The packet references support parametric_memory or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "809a3515d952b070",
+      "node_id": "knowledge_editing",
+      "field": "dependencies.continual_testtime_adaptation.rationale",
+      "text": "Knowledge editing & memory consolidation uses Continual learning & test-time adaptation pipelines as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "evidence_location": "The packet references support continual_testtime_adaptation or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "59b94215d08057f4",
+      "node_id": "knowledge_editing",
+      "field": "dependencies.causal_inference.rationale",
+      "text": "Knowledge editing & memory consolidation uses Causal inference as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "evidence_location": "The packet references support causal_inference or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "ed90b094e5d16473",
+      "node_id": "knowledge_editing",
+      "dependency_id": "parametric_memory",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Knowledge editing modifies or uses parametric memory, but \u201cretrieves_from\u201d is not the right relationship type.",
+      "relationship_type_supported": false,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "d9a4e0bd59f7ab77",
+      "node_id": "knowledge_editing",
+      "dependency_id": "continual_testtime_adaptation",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4eb93f810633c426",
+      "node_id": "knowledge_editing",
+      "dependency_id": "causal_inference",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Causal tracing/inference is used in some editing methods, but not a general common dependency from cited sources.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

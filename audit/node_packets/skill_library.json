@@ -1,0 +1,171 @@
+{
+  "node_id": "skill_library",
+  "label": "Skill libraries, workflows & procedural plans",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "skill_library",
+    "label": "Skill libraries, workflows & procedural plans",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "agents",
+      "memory"
+    ],
+    "aliases": [],
+    "definition": "A skill library stores reusable procedures, prompts, programs, policies, and workflows that an agent can retrieve and compose for recurring tasks.",
+    "why_it_matters": "The role of Skill libraries, workflows & procedural plans is to connect Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Autonomous software-engineering agents, Multi-agent systems & organizational intelligence.",
+    "examples": [
+      "substrate for Autonomous software-engineering agents",
+      "substrate for Multi-agent systems & organizational intelligence"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "procedural_memory",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Skill libraries, workflows & procedural plans stores, selects, or obtains information through Procedural memory & skills."
+      },
+      {
+        "id": "programs_ast_ir",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Skill libraries, workflows & procedural plans uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "agent_loop",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Skill libraries, workflows & procedural plans uses Observe–plan–act agent loops as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d97f40575051be77",
+      "node_id": "skill_library",
+      "field": "definition",
+      "text": "A skill library stores reusable procedures, prompts, programs, policies, and workflows that an agent can retrieve and compose for recurring tasks."
+    },
+    {
+      "unit_id": "bff71c32afed7a58",
+      "node_id": "skill_library",
+      "field": "why_it_matters",
+      "text": "The role of Skill libraries, workflows & procedural plans is to connect Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Autonomous software-engineering agents, Multi-agent systems & organizational intelligence."
+    },
+    {
+      "unit_id": "ba6eaf9d06e45fa1",
+      "node_id": "skill_library",
+      "field": "examples[1]",
+      "text": "substrate for Autonomous software-engineering agents"
+    },
+    {
+      "unit_id": "1395c4e47018d089",
+      "node_id": "skill_library",
+      "field": "examples[2]",
+      "text": "substrate for Multi-agent systems & organizational intelligence"
+    },
+    {
+      "unit_id": "8757f568d6ce660f",
+      "node_id": "skill_library",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations."
+    },
+    {
+      "unit_id": "b46ceab25c025a19",
+      "node_id": "skill_library",
+      "field": "dependencies.procedural_memory.rationale",
+      "text": "Skill libraries, workflows & procedural plans stores, selects, or obtains information through Procedural memory & skills."
+    },
+    {
+      "unit_id": "1e5d9295d702c22c",
+      "node_id": "skill_library",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Skill libraries, workflows & procedural plans uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "9dae14f64ad93bfe",
+      "node_id": "skill_library",
+      "field": "dependencies.agent_loop.rationale",
+      "text": "Skill libraries, workflows & procedural plans uses Observe–plan–act agent loops as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "058a2cb24a047dfb",
+      "node_id": "skill_library",
+      "dependency_id": "procedural_memory",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Skill libraries, workflows & procedural plans stores, selects, or obtains information through Procedural memory & skills."
+    },
+    {
+      "edge_id": "136e402e4f1e1e54",
+      "node_id": "skill_library",
+      "dependency_id": "programs_ast_ir",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Skill libraries, workflows & procedural plans uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "8d5331f15be0dc5d",
+      "node_id": "skill_library",
+      "dependency_id": "agent_loop",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Skill libraries, workflows & procedural plans uses Observe–plan–act agent loops as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_react": {
+        "id": "ref_react",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.03629"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/skill_library.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

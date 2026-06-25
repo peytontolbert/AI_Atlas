@@ -1,0 +1,197 @@
+{
+  "node_id": "linear_glm",
+  "label": "Linear models & generalized linear models",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "linear_glm",
+    "label": "Linear models & generalized linear models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "classical"
+    ],
+    "aliases": [],
+    "definition": "Linear and generalized linear models predict through a weighted sum of features, optionally passed through a link function chosen for the target distribution.",
+    "why_it_matters": "The role of Linear models & generalized linear models is to connect Affine transforms & dense layers, Maximum likelihood & cross-entropy to downstream capabilities including Recommendation, ranking & personalization, Medical imaging & clinical decision support, Tabular predictive analytics & decision support.",
+    "examples": [
+      "substrate for Recommendation, ranking & personalization",
+      "substrate for Medical imaging & clinical decision support",
+      "substrate for Tabular predictive analytics & decision support"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Affine transforms & dense layers, Maximum likelihood & cross-entropy."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "affine_dense",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Linear models & generalized linear models is assembled in part from the mechanism or model component Affine transforms & dense layers."
+      },
+      {
+        "id": "mle_cross_entropy",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Linear models & generalized linear models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+      },
+      {
+        "id": "regression_losses",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Linear models & generalized linear models is learned, selected, or evaluated using the objective family Regression losses (MSE, MAE, robust)."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Linear models & generalized linear models follows the learning setup expressed by Supervised learning."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "09b0d81cb691cb42",
+      "node_id": "linear_glm",
+      "field": "definition",
+      "text": "Linear and generalized linear models predict through a weighted sum of features, optionally passed through a link function chosen for the target distribution."
+    },
+    {
+      "unit_id": "4331bab6f8eeb04c",
+      "node_id": "linear_glm",
+      "field": "why_it_matters",
+      "text": "The role of Linear models & generalized linear models is to connect Affine transforms & dense layers, Maximum likelihood & cross-entropy to downstream capabilities including Recommendation, ranking & personalization, Medical imaging & clinical decision support, Tabular predictive analytics & decision support."
+    },
+    {
+      "unit_id": "bc6c7f93a11d96b9",
+      "node_id": "linear_glm",
+      "field": "examples[1]",
+      "text": "substrate for Recommendation, ranking & personalization"
+    },
+    {
+      "unit_id": "3f6541ee768b2b23",
+      "node_id": "linear_glm",
+      "field": "examples[2]",
+      "text": "substrate for Medical imaging & clinical decision support"
+    },
+    {
+      "unit_id": "91149a0794558327",
+      "node_id": "linear_glm",
+      "field": "examples[3]",
+      "text": "substrate for Tabular predictive analytics & decision support"
+    },
+    {
+      "unit_id": "ce74ed819cb6d5c5",
+      "node_id": "linear_glm",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Affine transforms & dense layers, Maximum likelihood & cross-entropy."
+    },
+    {
+      "unit_id": "65a2698739c8930a",
+      "node_id": "linear_glm",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Linear models & generalized linear models is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "unit_id": "e90be969c27a07f1",
+      "node_id": "linear_glm",
+      "field": "dependencies.mle_cross_entropy.rationale",
+      "text": "Linear models & generalized linear models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+    },
+    {
+      "unit_id": "190dcc35094a0f18",
+      "node_id": "linear_glm",
+      "field": "dependencies.regression_losses.rationale",
+      "text": "Linear models & generalized linear models is learned, selected, or evaluated using the objective family Regression losses (MSE, MAE, robust)."
+    },
+    {
+      "unit_id": "e43656e05cd1036f",
+      "node_id": "linear_glm",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Linear models & generalized linear models follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "540b5ed4fbaa9e11",
+      "node_id": "linear_glm",
+      "dependency_id": "affine_dense",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Linear models & generalized linear models is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "edge_id": "49711104e144ac93",
+      "node_id": "linear_glm",
+      "dependency_id": "mle_cross_entropy",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Linear models & generalized linear models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+    },
+    {
+      "edge_id": "350a525801709536",
+      "node_id": "linear_glm",
+      "dependency_id": "regression_losses",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Linear models & generalized linear models is learned, selected, or evaluated using the objective family Regression losses (MSE, MAE, robust)."
+    },
+    {
+      "edge_id": "154a5cce7d9e5e26",
+      "node_id": "linear_glm",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Linear models & generalized linear models follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/linear_glm.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

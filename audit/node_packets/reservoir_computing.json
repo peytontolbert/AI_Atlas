@@ -1,0 +1,164 @@
+{
+  "node_id": "reservoir_computing",
+  "label": "Reservoir computing (ESN / LSM)",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "reservoir_computing",
+    "label": "Reservoir computing (ESN / LSM)",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "sequence"
+    ],
+    "aliases": [],
+    "definition": "Reservoir computing drives a fixed recurrent dynamical system with input and trains only a lightweight readout from its rich transient state.",
+    "why_it_matters": "The role of Reservoir computing (ESN / LSM) is to connect Recurrence & feedback state, Dynamical systems & control theory to downstream capabilities including Neuromorphic, sensor & edge intelligence.",
+    "examples": [
+      "substrate for Neuromorphic, sensor & edge intelligence",
+      "combined with Recurrence & feedback state"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Recurrence & feedback state, Dynamical systems & control theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "recurrence",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Reservoir computing (ESN / LSM) is assembled in part from the mechanism or model component Recurrence & feedback state."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Reservoir computing (ESN / LSM) rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Reservoir computing (ESN / LSM) follows the learning setup expressed by Supervised learning."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "9e02b88cc0b3dde1",
+      "node_id": "reservoir_computing",
+      "field": "definition",
+      "text": "Reservoir computing drives a fixed recurrent dynamical system with input and trains only a lightweight readout from its rich transient state."
+    },
+    {
+      "unit_id": "58fbd1622f2bc706",
+      "node_id": "reservoir_computing",
+      "field": "why_it_matters",
+      "text": "The role of Reservoir computing (ESN / LSM) is to connect Recurrence & feedback state, Dynamical systems & control theory to downstream capabilities including Neuromorphic, sensor & edge intelligence."
+    },
+    {
+      "unit_id": "bbaa0b3ef878dfa8",
+      "node_id": "reservoir_computing",
+      "field": "examples[1]",
+      "text": "substrate for Neuromorphic, sensor & edge intelligence"
+    },
+    {
+      "unit_id": "9cd73f3ad245cd66",
+      "node_id": "reservoir_computing",
+      "field": "examples[2]",
+      "text": "combined with Recurrence & feedback state"
+    },
+    {
+      "unit_id": "4b8394043bc020fd",
+      "node_id": "reservoir_computing",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Recurrence & feedback state, Dynamical systems & control theory."
+    },
+    {
+      "unit_id": "bf84596a3236c620",
+      "node_id": "reservoir_computing",
+      "field": "dependencies.recurrence.rationale",
+      "text": "Reservoir computing (ESN / LSM) is assembled in part from the mechanism or model component Recurrence & feedback state."
+    },
+    {
+      "unit_id": "87839da630edbbce",
+      "node_id": "reservoir_computing",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Reservoir computing (ESN / LSM) rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    },
+    {
+      "unit_id": "0e5a494181859f13",
+      "node_id": "reservoir_computing",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Reservoir computing (ESN / LSM) follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "3b8531a9f534fbc4",
+      "node_id": "reservoir_computing",
+      "dependency_id": "recurrence",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Reservoir computing (ESN / LSM) is assembled in part from the mechanism or model component Recurrence & feedback state."
+    },
+    {
+      "edge_id": "b80a63ea3fbffee8",
+      "node_id": "reservoir_computing",
+      "dependency_id": "dynamical_control",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Reservoir computing (ESN / LSM) rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    },
+    {
+      "edge_id": "75d88358dd8427bf",
+      "node_id": "reservoir_computing",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Reservoir computing (ESN / LSM) follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/reservoir_computing.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

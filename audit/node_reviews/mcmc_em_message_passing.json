@@ -1,0 +1,174 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "ed5dfae4ae2f5036",
+      "node_id": "mcmc_em_message_passing",
+      "field": "definition",
+      "text": "Sampling, alternating latent-variable estimation, and local factor updates approximate difficult inference problems.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 71, 101-104, and 293-296 list Monte Carlo approximation, probabilistic graphical model inference/learning, and the EM algorithm including EM for GMMs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The parts are supported across the source, but the single combined definition is a synthesis."
+    },
+    {
+      "unit_id": "7fe27284d5544453",
+      "node_id": "mcmc_em_message_passing",
+      "field": "why_it_matters",
+      "text": "The role of MCMC, EM & probabilistic message passing is to connect Bayesian & approximate inference, Graph theory to downstream capabilities including k-means, mixture models & clustering, Hidden Markov models & CRFs, Bayesian networks, MRFs & factor graphs.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 101-104 cover probabilistic graphical models; lines 293-296 cover EM; lines 648-665 cover clustering, k-means, and mixture models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The source supports EM, clustering, mixture models, and graphical models, but the inspected evidence does not directly show HMMs/CRFs or the full dependency chain."
+    },
+    {
+      "unit_id": "e91c1b3614446a5a",
+      "node_id": "mcmc_em_message_passing",
+      "field": "examples[1]",
+      "text": "substrate for k-means, mixture models & clustering",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 648-665 list clustering, k-means clustering, clustering using mixture models, and mixtures of Gaussians/Bernoullis; lines 293-296 list EM and EM for GMMs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "EM is directly tied to Gaussian mixture models, and the clustering chapter covers k-means and mixtures."
+    },
+    {
+      "unit_id": "0e302de0ae80ebfb",
+      "node_id": "mcmc_em_message_passing",
+      "field": "examples[2]",
+      "text": "substrate for Hidden Markov models & CRFs",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 463-470 list sequence models and sequence generation/classification/translation; lines 101-104 list probabilistic graphical model inference and learning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "HMMs and CRFs are standard message-passing examples, but the inspected source excerpts do not explicitly name them."
+    },
+    {
+      "unit_id": "7e995cdfb9d216c1",
+      "node_id": "mcmc_em_message_passing",
+      "field": "examples[3]",
+      "text": "substrate for Bayesian networks, MRFs & factor graphs",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 101-104 list probabilistic graphical model representation, inference, and learning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Probabilistic graphical-model inference supports the claim broadly, though the specific labels Bayesian networks, MRFs, and factor graphs are not all visible in the inspected excerpt."
+    },
+    {
+      "unit_id": "83caf7b56f20d2e1",
+      "node_id": "mcmc_em_message_passing",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Bayesian & approximate inference, Graph theory.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 116-119 list empirical risk minimization and surrogate loss; lines 101-104 list graphical models; lines 131-139 list Bayesian statistics and computational issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The surrogate-loss and dependency ingredients are supported, but the behavioral-failure warning is not directly evidenced."
+    },
+    {
+      "unit_id": "ae0bedfb97a4c618",
+      "node_id": "mcmc_em_message_passing",
+      "field": "dependencies.bayesian_approx_inference.rationale",
+      "text": "MCMC, EM & probabilistic message passing is learned, selected, or evaluated using the objective family Bayesian & approximate inference.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 71, 101-104, 131-139, and 293-296 list Monte Carlo approximation, probabilistic graphical model inference, Bayesian machine learning, computational issues, and EM.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "These methods are approximate inference methods; the 'learned, selected, or evaluated' wording is less direct than a simple uses relation."
+    },
+    {
+      "unit_id": "8de4e0f221ecb7c8",
+      "node_id": "mcmc_em_message_passing",
+      "field": "dependencies.graph_theory.rationale",
+      "text": "MCMC, EM & probabilistic message passing uses Graph theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 101-104 list probabilistic graphical model representation, inference, and learning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Message passing in probabilistic graphical models directly rests on graph-structured representations."
+    },
+    {
+      "unit_id": "108a3abcea121047",
+      "node_id": "mcmc_em_message_passing",
+      "field": "dependencies.optimization.rationale",
+      "text": "MCMC, EM & probabilistic message passing uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 260-296 list optimization methods, bound optimization, and the EM algorithm.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "EM is directly optimization-related; MCMC and message passing are broader inference procedures, so common strength is more defensible than a universal core dependency."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "43f82ac3144daf86",
+      "node_id": "mcmc_em_message_passing",
+      "dependency_id": "bayesian_approx_inference",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "MCMC, EM, and message passing are approximate/probabilistic inference techniques; core strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "12d683799fc4b335",
+      "node_id": "mcmc_em_message_passing",
+      "dependency_id": "graph_theory",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Probabilistic graphical model representation and inference directly support a graph-theory dependency for message passing; core strength is supported for this grouped node.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "afade8680b06aa89",
+      "node_id": "mcmc_em_message_passing",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "EM is presented under bound optimization; optimization is a common but not universal dependency across the grouped methods.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

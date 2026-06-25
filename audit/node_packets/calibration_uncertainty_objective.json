@@ -1,0 +1,170 @@
+{
+  "node_id": "calibration_uncertainty_objective",
+  "label": "Calibration, uncertainty & risk objectives",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "calibration_uncertainty_objective",
+    "label": "Calibration, uncertainty & risk objectives",
+    "layer": "objective",
+    "tags": [
+      "objective",
+      "safety"
+    ],
+    "aliases": [],
+    "definition": "Training or post-processing aligns confidence with empirical correctness and asymmetric decision risk.",
+    "why_it_matters": "The role of Calibration, uncertainty & risk objectives is to connect Distributions, uncertainty & beliefs, Statistics & experimental design to downstream capabilities including Knowledge distillation, pruning & sparsification, Calibration, uncertainty & risk evaluation, Adaptive depth, early exit & token skipping.",
+    "examples": [
+      "substrate for Knowledge distillation, pruning & sparsification",
+      "substrate for Calibration, uncertainty & risk evaluation",
+      "substrate for Adaptive depth, early exit & token skipping"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Distributions, uncertainty & beliefs, Statistics & experimental design."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "distributions_uncertainty",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Calibration, uncertainty & risk objectives uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "statistics",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Calibration, uncertainty & risk objectives uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Calibration, uncertainty & risk objectives uses Supervised learning as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "1d93d4d0220caebb",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "definition",
+      "text": "Training or post-processing aligns confidence with empirical correctness and asymmetric decision risk."
+    },
+    {
+      "unit_id": "07bc12f1b41d9f14",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "why_it_matters",
+      "text": "The role of Calibration, uncertainty & risk objectives is to connect Distributions, uncertainty & beliefs, Statistics & experimental design to downstream capabilities including Knowledge distillation, pruning & sparsification, Calibration, uncertainty & risk evaluation, Adaptive depth, early exit & token skipping."
+    },
+    {
+      "unit_id": "5ebd8b5117012c75",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "examples[1]",
+      "text": "substrate for Knowledge distillation, pruning & sparsification"
+    },
+    {
+      "unit_id": "1bd6b79d4075d4bb",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "examples[2]",
+      "text": "substrate for Calibration, uncertainty & risk evaluation"
+    },
+    {
+      "unit_id": "2e3bcda3a60eb98f",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "examples[3]",
+      "text": "substrate for Adaptive depth, early exit & token skipping"
+    },
+    {
+      "unit_id": "c5f9b48f093bd148",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Distributions, uncertainty & beliefs, Statistics & experimental design."
+    },
+    {
+      "unit_id": "e3784581f108b625",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "dependencies.distributions_uncertainty.rationale",
+      "text": "Calibration, uncertainty & risk objectives uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "b63ac97488432eaf",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "dependencies.statistics.rationale",
+      "text": "Calibration, uncertainty & risk objectives uses Statistics & experimental design as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f8a64ac5dd21fe34",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Calibration, uncertainty & risk objectives uses Supervised learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "7c9c2c17f63b2d17",
+      "node_id": "calibration_uncertainty_objective",
+      "dependency_id": "distributions_uncertainty",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Calibration, uncertainty & risk objectives uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "b9d95bd6d8278d34",
+      "node_id": "calibration_uncertainty_objective",
+      "dependency_id": "statistics",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Calibration, uncertainty & risk objectives uses Statistics & experimental design as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "3de2102ec9b2c16a",
+      "node_id": "calibration_uncertainty_objective",
+      "dependency_id": "supervised_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Calibration, uncertainty & risk objectives uses Supervised learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/calibration_uncertainty_objective.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

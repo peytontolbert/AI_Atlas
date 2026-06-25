@@ -1,0 +1,170 @@
+{
+  "node_id": "robustness_ood",
+  "label": "Robustness, distribution shift & OOD evaluation",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "robustness_ood",
+    "label": "Robustness, distribution shift & OOD evaluation",
+    "layer": "alignment",
+    "tags": [
+      "evaluation",
+      "robustness"
+    ],
+    "aliases": [],
+    "definition": "Robustness and out-of-distribution evaluation stress a model under corruptions, subgroup shifts, unseen domains, adversarial inputs, and changing deployment conditions.",
+    "why_it_matters": "The role of Robustness, distribution shift & OOD evaluation is to connect Probability theory, Benchmarks, test suites & task metrics to downstream capabilities including Adversarial robustness & security testing, Formal verification of models.",
+    "examples": [
+      "substrate for Adversarial robustness & security testing",
+      "substrate for Formal verification of models"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Probability theory, Benchmarks, test suites & task metrics."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Probability theory."
+      },
+      {
+        "id": "benchmarks_metrics",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      },
+      {
+        "id": "augmentation_synthetic",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Data augmentation & synthetic-data generation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3850791ebfdb9dd3",
+      "node_id": "robustness_ood",
+      "field": "definition",
+      "text": "Robustness and out-of-distribution evaluation stress a model under corruptions, subgroup shifts, unseen domains, adversarial inputs, and changing deployment conditions."
+    },
+    {
+      "unit_id": "6cefba8f69472634",
+      "node_id": "robustness_ood",
+      "field": "why_it_matters",
+      "text": "The role of Robustness, distribution shift & OOD evaluation is to connect Probability theory, Benchmarks, test suites & task metrics to downstream capabilities including Adversarial robustness & security testing, Formal verification of models."
+    },
+    {
+      "unit_id": "b88dcb4cddb3edae",
+      "node_id": "robustness_ood",
+      "field": "examples[1]",
+      "text": "substrate for Adversarial robustness & security testing"
+    },
+    {
+      "unit_id": "1accd43462a34dff",
+      "node_id": "robustness_ood",
+      "field": "examples[2]",
+      "text": "substrate for Formal verification of models"
+    },
+    {
+      "unit_id": "4652a2717d5bd724",
+      "node_id": "robustness_ood",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Probability theory, Benchmarks, test suites & task metrics."
+    },
+    {
+      "unit_id": "6d2bc65617d940e5",
+      "node_id": "robustness_ood",
+      "field": "dependencies.probability.rationale",
+      "text": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Probability theory."
+    },
+    {
+      "unit_id": "ca66d709e3d24a11",
+      "node_id": "robustness_ood",
+      "field": "dependencies.benchmarks_metrics.rationale",
+      "text": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "unit_id": "581db60d38b17a21",
+      "node_id": "robustness_ood",
+      "field": "dependencies.augmentation_synthetic.rationale",
+      "text": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Data augmentation & synthetic-data generation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "835fff5351ef7750",
+      "node_id": "robustness_ood",
+      "dependency_id": "probability",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Probability theory."
+    },
+    {
+      "edge_id": "c35406f2414423e9",
+      "node_id": "robustness_ood",
+      "dependency_id": "benchmarks_metrics",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "edge_id": "cf77b70af0a5aa25",
+      "node_id": "robustness_ood",
+      "dependency_id": "augmentation_synthetic",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Data augmentation & synthetic-data generation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/robustness_ood.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

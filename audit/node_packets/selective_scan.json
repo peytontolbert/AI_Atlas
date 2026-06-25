@@ -1,0 +1,164 @@
+{
+  "node_id": "selective_scan",
+  "label": "Selective state-space scan",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "selective_scan",
+    "label": "Selective state-space scan",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "sequence",
+      "ssm"
+    ],
+    "aliases": [],
+    "definition": "Input-dependent state-space parameters selectively propagate or forget information while preserving linear-time scans.",
+    "why_it_matters": "The role of Selective state-space scan is to connect State-space transitions, Gating & multiplicative control to downstream capabilities including Selective state-space models (Mamba family).",
+    "examples": [
+      "substrate for Selective state-space models (Mamba family)",
+      "combined with State-space transitions"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include State-space transitions, Gating & multiplicative control."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_mamba"
+    ],
+    "dependencies": [
+      {
+        "id": "state_space_transition",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Selective state-space scan is assembled in part from the mechanism or model component State-space transitions."
+      },
+      {
+        "id": "gating",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Selective state-space scan is assembled in part from the mechanism or model component Gating & multiplicative control."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Selective state-space scan uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "def5f82bc0798755",
+      "node_id": "selective_scan",
+      "field": "definition",
+      "text": "Input-dependent state-space parameters selectively propagate or forget information while preserving linear-time scans."
+    },
+    {
+      "unit_id": "2a4c086d99ffd9e2",
+      "node_id": "selective_scan",
+      "field": "why_it_matters",
+      "text": "The role of Selective state-space scan is to connect State-space transitions, Gating & multiplicative control to downstream capabilities including Selective state-space models (Mamba family)."
+    },
+    {
+      "unit_id": "6b1b035e463ababe",
+      "node_id": "selective_scan",
+      "field": "examples[1]",
+      "text": "substrate for Selective state-space models (Mamba family)"
+    },
+    {
+      "unit_id": "eca63e9ea395ebc8",
+      "node_id": "selective_scan",
+      "field": "examples[2]",
+      "text": "combined with State-space transitions"
+    },
+    {
+      "unit_id": "8ba71bd01bc29172",
+      "node_id": "selective_scan",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include State-space transitions, Gating & multiplicative control."
+    },
+    {
+      "unit_id": "504467be9a805cbd",
+      "node_id": "selective_scan",
+      "field": "dependencies.state_space_transition.rationale",
+      "text": "Selective state-space scan is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "unit_id": "8f9a77328f50a293",
+      "node_id": "selective_scan",
+      "field": "dependencies.gating.rationale",
+      "text": "Selective state-space scan is assembled in part from the mechanism or model component Gating & multiplicative control."
+    },
+    {
+      "unit_id": "8c392763fd5a8473",
+      "node_id": "selective_scan",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Selective state-space scan uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "0272a5e2c92d9e5a",
+      "node_id": "selective_scan",
+      "dependency_id": "state_space_transition",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Selective state-space scan is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "edge_id": "5348404104142986",
+      "node_id": "selective_scan",
+      "dependency_id": "gating",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Selective state-space scan is assembled in part from the mechanism or model component Gating & multiplicative control."
+    },
+    {
+      "edge_id": "167b4301faaa209c",
+      "node_id": "selective_scan",
+      "dependency_id": "algorithms_data_structures",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Selective state-space scan uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_mamba": {
+        "id": "ref_mamba",
+        "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+        "authors": "Gu & Dao",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2312.00752"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/selective_scan.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "node_id": "edge_neuromorphic",
+  "label": "Neuromorphic, sensor & edge intelligence",
+  "layer": "system",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "edge_neuromorphic",
+    "label": "Neuromorphic, sensor & edge intelligence",
+    "layer": "system",
+    "tags": [
+      "system",
+      "edge",
+      "neuromorphic"
+    ],
+    "aliases": [],
+    "definition": "Edge and neuromorphic intelligence performs sensing, inference, adaptation, or control on constrained devices using efficient conventional or event-driven hardware.",
+    "why_it_matters": "This system is an application boundary where technical capability, evidence, safety controls, economics, and user workflow must succeed together.",
+    "examples": [
+      "workflows combining Neuromorphic, sensor & edge intelligence with Spiking neural networks",
+      "workflows combining Neuromorphic, sensor & edge intelligence with Edge, on-device & neuromorphic deployment",
+      "workflows combining Neuromorphic, sensor & edge intelligence with Spiking neurons & temporal coding"
+    ],
+    "limitations": [
+      "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Spiking neural networks, Edge, on-device & neuromorphic deployment."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": true,
+    "terminal_reason": "end-system leaf",
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "snn",
+        "type": "applies",
+        "strength": "core",
+        "rationale": "Neuromorphic, sensor & edge intelligence integrates Spiking neural networks as part of an end-to-end application boundary."
+      },
+      {
+        "id": "edge_ondevice",
+        "type": "applies",
+        "strength": "core",
+        "rationale": "Neuromorphic, sensor & edge intelligence integrates Edge, on-device & neuromorphic deployment as part of an end-to-end application boundary."
+      },
+      {
+        "id": "spiking_temporal_dynamics",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Neuromorphic, sensor & edge intelligence integrates Spiking neurons & temporal coding as part of an end-to-end application boundary."
+      },
+      {
+        "id": "reservoir_computing",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Neuromorphic, sensor & edge intelligence integrates Reservoir computing (ESN / LSM) as part of an end-to-end application boundary."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "435e144079e942d0",
+      "node_id": "edge_neuromorphic",
+      "field": "definition",
+      "text": "Edge and neuromorphic intelligence performs sensing, inference, adaptation, or control on constrained devices using efficient conventional or event-driven hardware."
+    },
+    {
+      "unit_id": "cd7e671ddde9be67",
+      "node_id": "edge_neuromorphic",
+      "field": "why_it_matters",
+      "text": "This system is an application boundary where technical capability, evidence, safety controls, economics, and user workflow must succeed together."
+    },
+    {
+      "unit_id": "f3600c9b815b0aa8",
+      "node_id": "edge_neuromorphic",
+      "field": "examples[1]",
+      "text": "workflows combining Neuromorphic, sensor & edge intelligence with Spiking neural networks"
+    },
+    {
+      "unit_id": "223416c85e4b1c04",
+      "node_id": "edge_neuromorphic",
+      "field": "examples[2]",
+      "text": "workflows combining Neuromorphic, sensor & edge intelligence with Edge, on-device & neuromorphic deployment"
+    },
+    {
+      "unit_id": "401fbef7343808e2",
+      "node_id": "edge_neuromorphic",
+      "field": "examples[3]",
+      "text": "workflows combining Neuromorphic, sensor & edge intelligence with Spiking neurons & temporal coding"
+    },
+    {
+      "unit_id": "2e2476bfac19b796",
+      "node_id": "edge_neuromorphic",
+      "field": "limitations[1]",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Spiking neural networks, Edge, on-device & neuromorphic deployment."
+    },
+    {
+      "unit_id": "7758bac93d1e67c6",
+      "node_id": "edge_neuromorphic",
+      "field": "terminal_reason",
+      "text": "end-system leaf"
+    },
+    {
+      "unit_id": "5c8c5706d17698bf",
+      "node_id": "edge_neuromorphic",
+      "field": "dependencies.snn.rationale",
+      "text": "Neuromorphic, sensor & edge intelligence integrates Spiking neural networks as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "967ea982800352cb",
+      "node_id": "edge_neuromorphic",
+      "field": "dependencies.edge_ondevice.rationale",
+      "text": "Neuromorphic, sensor & edge intelligence integrates Edge, on-device & neuromorphic deployment as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "6563444402d2ad03",
+      "node_id": "edge_neuromorphic",
+      "field": "dependencies.spiking_temporal_dynamics.rationale",
+      "text": "Neuromorphic, sensor & edge intelligence integrates Spiking neurons & temporal coding as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "89775233d1104f9d",
+      "node_id": "edge_neuromorphic",
+      "field": "dependencies.reservoir_computing.rationale",
+      "text": "Neuromorphic, sensor & edge intelligence integrates Reservoir computing (ESN / LSM) as part of an end-to-end application boundary."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "0f166cccc11e9db1",
+      "node_id": "edge_neuromorphic",
+      "dependency_id": "snn",
+      "type": "applies",
+      "strength": "core",
+      "rationale": "Neuromorphic, sensor & edge intelligence integrates Spiking neural networks as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "728fd9e6497902c7",
+      "node_id": "edge_neuromorphic",
+      "dependency_id": "edge_ondevice",
+      "type": "applies",
+      "strength": "core",
+      "rationale": "Neuromorphic, sensor & edge intelligence integrates Edge, on-device & neuromorphic deployment as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "08169e46de7a991b",
+      "node_id": "edge_neuromorphic",
+      "dependency_id": "spiking_temporal_dynamics",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Neuromorphic, sensor & edge intelligence integrates Spiking neurons & temporal coding as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "7db70289f51aaeb2",
+      "node_id": "edge_neuromorphic",
+      "dependency_id": "reservoir_computing",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Neuromorphic, sensor & edge intelligence integrates Reservoir computing (ESN / LSM) as part of an end-to-end application boundary."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/edge_neuromorphic.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

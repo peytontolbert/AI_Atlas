@@ -1,0 +1,198 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "0d5c3cea3dcd8612",
+      "node_id": "accelerators",
+      "field": "definition",
+      "text": "GPUs, TPUs, NPUs, and other AI accelerators execute dense, sparse, tensor, or event-driven operations with specialized memory hierarchies and interconnects.",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "evidence_location": "TPU and CUDA references directly support specialized accelerator hardware, memory hierarchy, parallel execution, and tensor-oriented computation; event-driven NPUs are broader than the cited sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Dense/tensor accelerator parts are well supported; sparse and event-driven operation are plausible but not directly covered by the cited references."
+    },
+    {
+      "unit_id": "c77a3e52f127df34",
+      "node_id": "accelerators",
+      "field": "why_it_matters",
+      "text": "The role of GPUs, TPUs & AI accelerators is to connect Linear algebra, Numerical analysis to downstream capabilities including CUDA, ROCm, Triton & custom kernels, Quantized inference & compressed deployment, Edge, on-device & neuromorphic deployment.",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
+    },
+    {
+      "unit_id": "6ec1d2a4eaba2c01",
+      "node_id": "accelerators",
+      "field": "examples[1]",
+      "text": "substrate for CUDA, ROCm, Triton & custom kernels",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "abeaeaa9f4e47ddc",
+      "node_id": "accelerators",
+      "field": "examples[2]",
+      "text": "substrate for Quantized inference & compressed deployment",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "baffb394dadc0261",
+      "node_id": "accelerators",
+      "field": "examples[3]",
+      "text": "substrate for Edge, on-device & neuromorphic deployment",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "9c66d894701267c5",
+      "node_id": "accelerators",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Linear algebra, Numerical analysis.",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+    },
+    {
+      "unit_id": "d47e693943bddea7",
+      "node_id": "accelerators",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "GPUs, TPUs & AI accelerators turns Linear algebra into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "7b4d16fd7efad4f0",
+      "node_id": "accelerators",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "GPUs, TPUs & AI accelerators turns Numerical analysis into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "6607f3eddd5eb964",
+      "node_id": "accelerators",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "GPUs, TPUs & AI accelerators turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "00847cfd7bc6aa36",
+      "node_id": "accelerators",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "7850f81da46a8481",
+      "node_id": "accelerators",
+      "dependency_id": "numerical_methods",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "cf68a214ffe73378",
+      "node_id": "accelerators",
+      "dependency_id": "distributed_systems",
+      "source_ids": [
+        "ref_tpu",
+        "ref_cuda_guide",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible but not adequately supported by the cited sources at this wording or strength.",
+      "relationship_type_supported": false,
+      "strength_supported": false
+    }
+  ]
+}

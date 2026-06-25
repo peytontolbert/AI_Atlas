@@ -1,0 +1,171 @@
+{
+  "node_id": "knowledge_graphs",
+  "label": "Knowledge graphs, ontologies & schemas",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "knowledge_graphs",
+    "label": "Knowledge graphs, ontologies & schemas",
+    "layer": "representation",
+    "tags": [
+      "knowledge",
+      "graph",
+      "symbolic"
+    ],
+    "aliases": [],
+    "definition": "Explicit entities, relations, types, and constraints represent structured world knowledge.",
+    "why_it_matters": "The role of Knowledge graphs, ontologies & schemas is to connect Graphs, hypergraphs & relational data, Databases & information retrieval to downstream capabilities including Neuro-symbolic & physics-informed learning, Expert systems, production rules & rule engines, Neuro-symbolic models.",
+    "examples": [
+      "substrate for Neuro-symbolic & physics-informed learning",
+      "substrate for Expert systems, production rules & rule engines",
+      "substrate for Neuro-symbolic models"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Graphs, hypergraphs & relational data, Databases & information retrieval."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "graphs_hypergraphs",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Knowledge graphs, ontologies & schemas consumes, emits, or organizes information using Graphs, hypergraphs & relational data."
+      },
+      {
+        "id": "databases_ir",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Knowledge graphs, ontologies & schemas rests on the formal or computational capabilities supplied by Databases & information retrieval."
+      },
+      {
+        "id": "discrete_math_logic",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Knowledge graphs, ontologies & schemas rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d6d7f5ffe62fe4a9",
+      "node_id": "knowledge_graphs",
+      "field": "definition",
+      "text": "Explicit entities, relations, types, and constraints represent structured world knowledge."
+    },
+    {
+      "unit_id": "594683150068a149",
+      "node_id": "knowledge_graphs",
+      "field": "why_it_matters",
+      "text": "The role of Knowledge graphs, ontologies & schemas is to connect Graphs, hypergraphs & relational data, Databases & information retrieval to downstream capabilities including Neuro-symbolic & physics-informed learning, Expert systems, production rules & rule engines, Neuro-symbolic models."
+    },
+    {
+      "unit_id": "0acc482cc9adc678",
+      "node_id": "knowledge_graphs",
+      "field": "examples[1]",
+      "text": "substrate for Neuro-symbolic & physics-informed learning"
+    },
+    {
+      "unit_id": "09e7875a020fbfdf",
+      "node_id": "knowledge_graphs",
+      "field": "examples[2]",
+      "text": "substrate for Expert systems, production rules & rule engines"
+    },
+    {
+      "unit_id": "23710121e31708b5",
+      "node_id": "knowledge_graphs",
+      "field": "examples[3]",
+      "text": "substrate for Neuro-symbolic models"
+    },
+    {
+      "unit_id": "d13f8811680e9753",
+      "node_id": "knowledge_graphs",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Graphs, hypergraphs & relational data, Databases & information retrieval."
+    },
+    {
+      "unit_id": "d3b2b134b1664c3f",
+      "node_id": "knowledge_graphs",
+      "field": "dependencies.graphs_hypergraphs.rationale",
+      "text": "Knowledge graphs, ontologies & schemas consumes, emits, or organizes information using Graphs, hypergraphs & relational data."
+    },
+    {
+      "unit_id": "68042a38f64c1ce5",
+      "node_id": "knowledge_graphs",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Knowledge graphs, ontologies & schemas rests on the formal or computational capabilities supplied by Databases & information retrieval."
+    },
+    {
+      "unit_id": "721ba8c10342a5f6",
+      "node_id": "knowledge_graphs",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Knowledge graphs, ontologies & schemas rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "fbf4751632d109bd",
+      "node_id": "knowledge_graphs",
+      "dependency_id": "graphs_hypergraphs",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Knowledge graphs, ontologies & schemas consumes, emits, or organizes information using Graphs, hypergraphs & relational data."
+    },
+    {
+      "edge_id": "2741ff3c16986c1f",
+      "node_id": "knowledge_graphs",
+      "dependency_id": "databases_ir",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Knowledge graphs, ontologies & schemas rests on the formal or computational capabilities supplied by Databases & information retrieval."
+    },
+    {
+      "edge_id": "0dd9287aa011f7ae",
+      "node_id": "knowledge_graphs",
+      "dependency_id": "discrete_math_logic",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Knowledge graphs, ontologies & schemas rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/knowledge_graphs.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

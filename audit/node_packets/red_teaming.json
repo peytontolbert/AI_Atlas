@@ -1,0 +1,163 @@
+{
+  "node_id": "red_teaming",
+  "label": "Red teaming, abuse testing & threat modeling",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "red_teaming",
+    "label": "Red teaming, abuse testing & threat modeling",
+    "layer": "alignment",
+    "tags": [
+      "alignment",
+      "security"
+    ],
+    "aliases": [],
+    "definition": "Red teaming uses threat models and adversarial operators to discover harmful capabilities, unsafe interactions, and bypasses before and after release.",
+    "why_it_matters": "The role of Red teaming, abuse testing & threat modeling is to connect Adversarial robustness & security testing, Observe–plan–act agent loops to downstream capabilities including Evaluation-driven development & release gates.",
+    "examples": [
+      "substrate for Evaluation-driven development & release gates",
+      "combined with Adversarial robustness & security testing"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Adversarial robustness & security testing, Observe–plan–act agent loops."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "adversarial_security_eval",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Red teaming, abuse testing & threat modeling measures, constrains, audits, or governs behavior using Adversarial robustness & security testing."
+      },
+      {
+        "id": "agent_loop",
+        "type": "verifies_with",
+        "strength": "core",
+        "rationale": "Red teaming, abuse testing & threat modeling checks candidate behavior or artifacts against evidence or constraints from Observe–plan–act agent loops."
+      },
+      {
+        "id": "benchmarks_metrics",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Red teaming, abuse testing & threat modeling measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "be704729c026b3cc",
+      "node_id": "red_teaming",
+      "field": "definition",
+      "text": "Red teaming uses threat models and adversarial operators to discover harmful capabilities, unsafe interactions, and bypasses before and after release."
+    },
+    {
+      "unit_id": "1eb67b370cdd9069",
+      "node_id": "red_teaming",
+      "field": "why_it_matters",
+      "text": "The role of Red teaming, abuse testing & threat modeling is to connect Adversarial robustness & security testing, Observe–plan–act agent loops to downstream capabilities including Evaluation-driven development & release gates."
+    },
+    {
+      "unit_id": "c03e10b6c5a72163",
+      "node_id": "red_teaming",
+      "field": "examples[1]",
+      "text": "substrate for Evaluation-driven development & release gates"
+    },
+    {
+      "unit_id": "12a14cd12bf4e7fb",
+      "node_id": "red_teaming",
+      "field": "examples[2]",
+      "text": "combined with Adversarial robustness & security testing"
+    },
+    {
+      "unit_id": "fbf6d38b6bcad423",
+      "node_id": "red_teaming",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Adversarial robustness & security testing, Observe–plan–act agent loops."
+    },
+    {
+      "unit_id": "543828c635505040",
+      "node_id": "red_teaming",
+      "field": "dependencies.adversarial_security_eval.rationale",
+      "text": "Red teaming, abuse testing & threat modeling measures, constrains, audits, or governs behavior using Adversarial robustness & security testing."
+    },
+    {
+      "unit_id": "aed93b35cb2f7721",
+      "node_id": "red_teaming",
+      "field": "dependencies.agent_loop.rationale",
+      "text": "Red teaming, abuse testing & threat modeling checks candidate behavior or artifacts against evidence or constraints from Observe–plan–act agent loops."
+    },
+    {
+      "unit_id": "9315918421e2fcee",
+      "node_id": "red_teaming",
+      "field": "dependencies.benchmarks_metrics.rationale",
+      "text": "Red teaming, abuse testing & threat modeling measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "0511f742147e9f58",
+      "node_id": "red_teaming",
+      "dependency_id": "adversarial_security_eval",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Red teaming, abuse testing & threat modeling measures, constrains, audits, or governs behavior using Adversarial robustness & security testing."
+    },
+    {
+      "edge_id": "cb8b2d8d9bfc2229",
+      "node_id": "red_teaming",
+      "dependency_id": "agent_loop",
+      "type": "verifies_with",
+      "strength": "core",
+      "rationale": "Red teaming, abuse testing & threat modeling checks candidate behavior or artifacts against evidence or constraints from Observe–plan–act agent loops."
+    },
+    {
+      "edge_id": "badedb60c0efe667",
+      "node_id": "red_teaming",
+      "dependency_id": "benchmarks_metrics",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Red teaming, abuse testing & threat modeling measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      "ref_react": {
+        "id": "ref_react",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.03629"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/red_teaming.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

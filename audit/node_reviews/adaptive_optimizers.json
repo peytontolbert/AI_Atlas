@@ -1,0 +1,138 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "0e7b8dcd733293e9",
+      "node_id": "adaptive_optimizers",
+      "field": "definition",
+      "text": "Adaptive optimizers such as AdaGrad, RMSProp, Adam, and Adafactor rescale parameter updates using running first- and second-moment statistics.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.5 adaptive learning rates, including AdaGrad, RMSProp, and Adam.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "AdaGrad, RMSProp, and Adam are supported as adaptive methods; Adafactor postdates the textbook and is not directly supported. AdaGrad/RMSProp do not all use both first- and second-moment statistics in the same way."
+    },
+    {
+      "unit_id": "491d1a450d7b696b",
+      "node_id": "adaptive_optimizers",
+      "field": "why_it_matters",
+      "text": "The role of Adam, Adafactor & adaptive optimizers is to connect SGD, momentum & stochastic optimization, Statistics & experimental design to downstream capabilities including Learning-rate schedules, warmup & stabilization.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8 optimization, momentum, adaptive learning-rate methods, and strategies for optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The SGD/momentum and learning-rate/adaptive optimizer connection is supported. Statistics/experimental design, Adafactor, and warmup/stabilization are not directly established by the cited packet source."
+    },
+    {
+      "unit_id": "ed6e37d4cfc6a7cf",
+      "node_id": "adaptive_optimizers",
+      "field": "examples[1]",
+      "text": "substrate for Learning-rate schedules, warmup & stabilization",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.5 adaptive learning rates and Chapter 8 optimization strategies.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Adaptive learning rates and optimization strategies are supported, but warmup and the full stabilization category are not directly evidenced."
+    },
+    {
+      "unit_id": "047cc8c24972d027",
+      "node_id": "adaptive_optimizers",
+      "field": "examples[2]",
+      "text": "combined with SGD, momentum & stochastic optimization",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.3 momentum and Chapter 8.5 adaptive learning-rate algorithms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Adaptive methods are presented in the context of stochastic gradient optimization and momentum-like methods; the wording is synthesized."
+    },
+    {
+      "unit_id": "bc44d75c83cdbdef",
+      "node_id": "adaptive_optimizers",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include SGD, momentum & stochastic optimization, Statistics & experimental design.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapters 5, 8, and 11 on generalization, optimization, hyperparameters, and methodology.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Hyperparameter and optimization sensitivity are supported. Data quality, compute budget, random variation, evaluation contamination, and the statistics/experimental-design dependency are not directly established for this node."
+    },
+    {
+      "unit_id": "597360d9f03405cf",
+      "node_id": "adaptive_optimizers",
+      "field": "dependencies.sgd_variants.rationale",
+      "text": "Adam, Adafactor & adaptive optimizers uses SGD, momentum & stochastic optimization as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.5 adaptive learning rates in the broader stochastic optimization chapter.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Adaptive optimizers are variants of gradient-based stochastic optimization; Adafactor remains unsupported by this source."
+    },
+    {
+      "unit_id": "6403e29b5a1f62db",
+      "node_id": "adaptive_optimizers",
+      "field": "dependencies.statistics.rationale",
+      "text": "Adam, Adafactor & adaptive optimizers uses Statistics & experimental design as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.5 descriptions of accumulated squared gradients and moment estimates.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Running averages/moment-like quantities are statistical in flavor, but experimental design is not directly supported as an ingredient."
+    },
+    {
+      "unit_id": "56c23256e01bd685",
+      "node_id": "adaptive_optimizers",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "Adam, Adafactor & adaptive optimizers uses Numerical analysis as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8 optimization algorithms and numerical issues in training.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Optimization algorithms for parameter updates involve numerical computation; the exact numerical-analysis dependency is synthesized."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "6591152473ef0dfe",
+      "node_id": "adaptive_optimizers",
+      "dependency_id": "sgd_variants",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Adaptive optimizers build on stochastic gradient optimization; core strength is defensible, though Adafactor is not in the cited source.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4cf2a04617eafea8",
+      "node_id": "adaptive_optimizers",
+      "dependency_id": "statistics",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Moment/accumulator estimates support a statistics connection, but experimental design is not shown as a core dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "0d52d0477b6b1536",
+      "node_id": "adaptive_optimizers",
+      "dependency_id": "numerical_methods",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Adaptive parameter updates are numerical optimization procedures; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

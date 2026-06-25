@@ -1,0 +1,158 @@
+{
+  "node_id": "unet",
+  "label": "U-Nets & encoder–decoder convnets",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "unet",
+    "label": "U-Nets & encoder–decoder convnets",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "vision",
+      "generative"
+    ],
+    "aliases": [],
+    "definition": "A U-Net pairs a contracting encoder with an expanding decoder and cross-scale skip connections, preserving fine spatial detail for dense prediction or generation.",
+    "why_it_matters": "The role of U-Nets & encoder–decoder convnets is to connect Convolutional neural networks, Residual, skip & highway connections to downstream capabilities including Diffusion & score-based models, Image generation, editing & design.",
+    "examples": [
+      "substrate for Diffusion & score-based models",
+      "substrate for Image generation, editing & design"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Convolutional neural networks, Residual, skip & highway connections."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_unet"
+    ],
+    "dependencies": [
+      {
+        "id": "cnn",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "U-Nets & encoder–decoder convnets extends or specializes the architecture family Convolutional neural networks."
+      },
+      {
+        "id": "residual_connections",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "U-Nets & encoder–decoder convnets is assembled in part from the mechanism or model component Residual, skip & highway connections."
+      },
+      {
+        "id": "resampling_patchification",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "U-Nets & encoder–decoder convnets is assembled in part from the mechanism or model component Striding, pooling, patchification & up/downsampling."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "f7e7cb6112804f83",
+      "node_id": "unet",
+      "field": "definition",
+      "text": "A U-Net pairs a contracting encoder with an expanding decoder and cross-scale skip connections, preserving fine spatial detail for dense prediction or generation."
+    },
+    {
+      "unit_id": "963202636664fba4",
+      "node_id": "unet",
+      "field": "why_it_matters",
+      "text": "The role of U-Nets & encoder–decoder convnets is to connect Convolutional neural networks, Residual, skip & highway connections to downstream capabilities including Diffusion & score-based models, Image generation, editing & design."
+    },
+    {
+      "unit_id": "34fecc22384b33ef",
+      "node_id": "unet",
+      "field": "examples[1]",
+      "text": "substrate for Diffusion & score-based models"
+    },
+    {
+      "unit_id": "7c7eefc617fa83f4",
+      "node_id": "unet",
+      "field": "examples[2]",
+      "text": "substrate for Image generation, editing & design"
+    },
+    {
+      "unit_id": "c3e8afbf76b9daab",
+      "node_id": "unet",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Convolutional neural networks, Residual, skip & highway connections."
+    },
+    {
+      "unit_id": "d8cf1dd436716502",
+      "node_id": "unet",
+      "field": "dependencies.cnn.rationale",
+      "text": "U-Nets & encoder–decoder convnets extends or specializes the architecture family Convolutional neural networks."
+    },
+    {
+      "unit_id": "418649de2767a035",
+      "node_id": "unet",
+      "field": "dependencies.residual_connections.rationale",
+      "text": "U-Nets & encoder–decoder convnets is assembled in part from the mechanism or model component Residual, skip & highway connections."
+    },
+    {
+      "unit_id": "96382e64653a351e",
+      "node_id": "unet",
+      "field": "dependencies.resampling_patchification.rationale",
+      "text": "U-Nets & encoder–decoder convnets is assembled in part from the mechanism or model component Striding, pooling, patchification & up/downsampling."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6dd4e99fe85f27f4",
+      "node_id": "unet",
+      "dependency_id": "cnn",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "U-Nets & encoder–decoder convnets extends or specializes the architecture family Convolutional neural networks."
+    },
+    {
+      "edge_id": "537825e0cf965406",
+      "node_id": "unet",
+      "dependency_id": "residual_connections",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "U-Nets & encoder–decoder convnets is assembled in part from the mechanism or model component Residual, skip & highway connections."
+    },
+    {
+      "edge_id": "c1699a53f1eee25f",
+      "node_id": "unet",
+      "dependency_id": "resampling_patchification",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "U-Nets & encoder–decoder convnets is assembled in part from the mechanism or model component Striding, pooling, patchification & up/downsampling."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_unet": {
+        "id": "ref_unet",
+        "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+        "authors": "Ronneberger et al.",
+        "year": 2015,
+        "url": "https://arxiv.org/abs/1505.04597"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/unet.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

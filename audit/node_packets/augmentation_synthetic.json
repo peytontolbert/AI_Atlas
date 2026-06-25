@@ -1,0 +1,225 @@
+{
+  "node_id": "augmentation_synthetic",
+  "label": "Data augmentation & synthetic-data generation",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "augmentation_synthetic",
+    "label": "Data augmentation & synthetic-data generation",
+    "layer": "training",
+    "tags": [
+      "training",
+      "data"
+    ],
+    "aliases": [],
+    "definition": "Data augmentation and synthetic-data generation expand training variation through transformations, simulation, model generation, or controlled perturbation.",
+    "why_it_matters": "The role of Data augmentation & synthetic-data generation is to connect Datasets, sampling & splits, Multimodal, simulated & streaming data to downstream capabilities including Robustness, distribution shift & OOD evaluation, Reinforcement learning with verifiable rewards (RLVR), Domain randomization & simulation curricula.",
+    "examples": [
+      "substrate for Robustness, distribution shift & OOD evaluation",
+      "substrate for Reinforcement learning with verifiable rewards (RLVR)",
+      "substrate for Domain randomization & simulation curricula"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Multimodal, simulated & streaming data."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Data augmentation & synthetic-data generation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "multimodal_simulated_streams",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Data augmentation & synthetic-data generation uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "equivariance_invariance",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Data augmentation & synthetic-data generation uses Equivariance, invariance & geometric priors as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "generative_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Data augmentation & synthetic-data generation uses Generative modeling as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "7e5f85199542be12",
+      "node_id": "augmentation_synthetic",
+      "field": "definition",
+      "text": "Data augmentation and synthetic-data generation expand training variation through transformations, simulation, model generation, or controlled perturbation."
+    },
+    {
+      "unit_id": "8b5b58c59f1e08c7",
+      "node_id": "augmentation_synthetic",
+      "field": "why_it_matters",
+      "text": "The role of Data augmentation & synthetic-data generation is to connect Datasets, sampling & splits, Multimodal, simulated & streaming data to downstream capabilities including Robustness, distribution shift & OOD evaluation, Reinforcement learning with verifiable rewards (RLVR), Domain randomization & simulation curricula."
+    },
+    {
+      "unit_id": "bba13528230631f8",
+      "node_id": "augmentation_synthetic",
+      "field": "examples[1]",
+      "text": "substrate for Robustness, distribution shift & OOD evaluation"
+    },
+    {
+      "unit_id": "c0409b5ef31673d3",
+      "node_id": "augmentation_synthetic",
+      "field": "examples[2]",
+      "text": "substrate for Reinforcement learning with verifiable rewards (RLVR)"
+    },
+    {
+      "unit_id": "b7613393a05a775d",
+      "node_id": "augmentation_synthetic",
+      "field": "examples[3]",
+      "text": "substrate for Domain randomization & simulation curricula"
+    },
+    {
+      "unit_id": "6936918f0ffe0391",
+      "node_id": "augmentation_synthetic",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Multimodal, simulated & streaming data."
+    },
+    {
+      "unit_id": "7baa3c381face3f3",
+      "node_id": "augmentation_synthetic",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Data augmentation & synthetic-data generation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "3923c90b9eb98b7f",
+      "node_id": "augmentation_synthetic",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Data augmentation & synthetic-data generation uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "3f3291da223f1ccc",
+      "node_id": "augmentation_synthetic",
+      "field": "dependencies.equivariance_invariance.rationale",
+      "text": "Data augmentation & synthetic-data generation uses Equivariance, invariance & geometric priors as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "6e6514ffde5304ea",
+      "node_id": "augmentation_synthetic",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "Data augmentation & synthetic-data generation uses Generative modeling as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "a9a04e8af7721781",
+      "node_id": "augmentation_synthetic",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Data augmentation & synthetic-data generation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "875a34f5a4f93785",
+      "node_id": "augmentation_synthetic",
+      "dependency_id": "multimodal_simulated_streams",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Data augmentation & synthetic-data generation uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "284e15641582ae24",
+      "node_id": "augmentation_synthetic",
+      "dependency_id": "equivariance_invariance",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Data augmentation & synthetic-data generation uses Equivariance, invariance & geometric priors as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "174fa1fcf4134606",
+      "node_id": "augmentation_synthetic",
+      "dependency_id": "generative_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Data augmentation & synthetic-data generation uses Generative modeling as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      },
+      "ref_gan": {
+        "id": "ref_gan",
+        "title": "Generative Adversarial Nets",
+        "authors": "Goodfellow et al.",
+        "year": 2014,
+        "url": "https://arxiv.org/abs/1406.2661"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_vae": {
+        "id": "ref_vae",
+        "title": "Auto-Encoding Variational Bayes",
+        "authors": "Kingma & Welling",
+        "year": 2013,
+        "url": "https://arxiv.org/abs/1312.6114"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/augmentation_synthetic.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

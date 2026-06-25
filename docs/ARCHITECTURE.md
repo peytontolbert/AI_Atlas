@@ -83,6 +83,8 @@ flowchart TD
 
 `tools/audit_content.py` is intentionally different: it reports editorial provenance, graph-derived pattern usage, field-length distributions, reference concentration, and topology. An audit finding is not automatically a build failure because the purpose is to reveal editorial debt rather than hide it.
 
+The current audit is not a sentence-level source audit. The stricter process for that claim is defined in [`SOURCE_AUDIT.md`](SOURCE_AUDIT.md), and the bounded completeness roadmap is defined in [`EXHAUSTIVENESS_ROADMAP.md`](EXHAUSTIVENESS_ROADMAP.md).
+
 ## Determinism
 
 The build contains no current-time stamp. Version and update date come from canonical metadata. `build_manifest.json` hashes:

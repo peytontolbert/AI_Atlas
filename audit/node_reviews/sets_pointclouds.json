@@ -1,0 +1,168 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "6c774fb745d59c74",
+      "node_id": "sets_pointclouds",
+      "field": "definition",
+      "text": "Permutation-invariant or geometric collections represent objects, surfaces, particles, and unordered observations.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: probability sets of related random variables, manifold learning, and geometry of quadratic forms (lines 31-35, 227-235, and 628-638); AIMA contents.html: computer vision, robotics, and mathematical background (lines 49-53, 616-619, and 768-774).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support sets, geometry/manifolds, vision, and robotics context. Point clouds, meshes, permutation invariance, surfaces, and particles are not directly supported."
+    },
+    {
+      "unit_id": "e27cc3c73c7a5e61",
+      "node_id": "sets_pointclouds",
+      "field": "why_it_matters",
+      "text": "The role of Sets, point clouds & meshes is to connect Geometry, topology & symmetry, Probability theory to downstream capabilities including Robotics & embodied AI, Computer vision, perception & scene understanding.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: probability chapters and manifold learning (lines 26-72 and 628-638); AIMA contents.html: computer vision, robotics, and mathematical background (lines 49-53, 616-619, and 768-775).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Probability, manifolds, computer vision, and robotics are supported. Point clouds/meshes, topology/symmetry, embodied AI, and scene understanding are only partially supported."
+    },
+    {
+      "unit_id": "3a961aca4c1c1d38",
+      "node_id": "sets_pointclouds",
+      "field": "examples[1]",
+      "text": "substrate for Robotics & embodied AI",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: Chapter 26 'Robotics' and applications of reinforcement learning to robot control (lines 49-53 and 616-619).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Robotics is directly supported, but sets/point clouds/meshes as its substrate and the embodied-AI label are not directly evidenced."
+    },
+    {
+      "unit_id": "865ceaf5075bcb4e",
+      "node_id": "sets_pointclouds",
+      "field": "examples[2]",
+      "text": "substrate for Computer vision, perception & scene understanding",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: neural networks for images, image segmentation, pose estimation, and manifold learning (lines 433-456 and 628-638); AIMA contents.html: computer vision in communicating, perceiving, and acting (lines 49-53).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Computer vision and perception are supported, while point clouds/meshes and scene understanding are not directly named in the inspected evidence."
+    },
+    {
+      "unit_id": "23d32555ecf25a7d",
+      "node_id": "sets_pointclouds",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Geometry, topology & symmetry, Probability theory.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: probability chapters, manifold learning, and geometry of quadratic forms (lines 26-72, 227-235, and 628-638); AIMA contents.html: fairness/bias and mathematical background (lines 745-749 and 768-775).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Probability and geometry are supported; topology/symmetry and the specific encoding/invariance limitations are not directly supported."
+    },
+    {
+      "unit_id": "5b7898951f0f7dfe",
+      "node_id": "sets_pointclouds",
+      "field": "dependencies.geometry_topology.rationale",
+      "text": "Sets, point clouds & meshes rests on the formal or computational capabilities supplied by Geometry, topology & symmetry.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: geometry of quadratic forms and manifold learning, including 'What are manifolds?' and manifold-learning approaches (lines 227-235 and 628-638).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Geometry/manifold support is present. Topology, symmetry, point clouds, and meshes are not directly supported in the inspected source."
+    },
+    {
+      "unit_id": "147b4cdce28d6369",
+      "node_id": "sets_pointclouds",
+      "field": "dependencies.probability.rationale",
+      "text": "Sets, point clouds & meshes rests on the formal or computational capabilities supplied by Probability theory.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: random variables, sets of related random variables, distributions, Monte Carlo approximation (lines 31-72); AIMA contents.html: Appendix A.3 probability distributions (lines 768-775).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Probability is relevant for unordered observations and sampling, but the inspected sources do not directly tie probability theory to point clouds and meshes."
+    },
+    {
+      "unit_id": "10416e1fa4612961",
+      "node_id": "sets_pointclouds",
+      "field": "dependencies.tensors.rationale",
+      "text": "Sets, point clouds & meshes consumes, emits, or organizes information using Scalars, vectors, matrices & tensors.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: linear algebra vector spaces/matrices/manipulating data matrices and manifold learning (lines 206-259 and 628-638); AIMA contents.html: Appendix A.2 vectors/matrices/linear algebra (lines 768-774).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Vector/matrix representations are supported, but their use for point clouds/meshes is synthesized from the geometry/data context."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "fc29dc19d0ced085",
+      "node_id": "sets_pointclouds",
+      "dependency_id": "geometry_topology",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Geometry/manifold evidence supports the relationship, but topology/symmetry and point-cloud/mesh specifics are not directly evidenced. The core strength is plausible but under-supported.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "6d50dc28821def61",
+      "node_id": "sets_pointclouds",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Probability is relevant for sets of random observations and sampling, but the dependency is not directly established for point clouds/meshes. Common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "e916de774ec4d9d4",
+      "node_id": "sets_pointclouds",
+      "dependency_id": "tensors",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Vector/matrix representations and data matrices support the represents_with/common edge as a practical encoding relation.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

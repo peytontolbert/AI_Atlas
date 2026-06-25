@@ -1,0 +1,150 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "bdf0e66ed596098b",
+      "node_id": "structured_decoding_runtime",
+      "field": "definition",
+      "text": "Structured-decoding runtimes compile grammars or schemas into efficient token filters integrated with a model server’s decoding loop.",
+      "source_ids": ["ref_structured"],
+      "evidence_location": "Structured-output survey supports grammar/schema-constrained generation and token-level constraints; efficient model-server runtime integration is more specific than the citation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Add a runtime implementation source for model-server integration and efficiency."
+    },
+    {
+      "unit_id": "2394c91862c49ec3",
+      "node_id": "structured_decoding_runtime",
+      "field": "why_it_matters",
+      "text": "They make reliable structured generation practical at serving scale instead of relying only on slow application-side retries.",
+      "source_ids": ["ref_structured", "ref_ddia"],
+      "evidence_location": "Structured-output survey supports reliability motivation; DDIA supports serving-scale concerns, but the retry comparison is not directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible but should be backed by runtime benchmark or implementation evidence."
+    },
+    {
+      "unit_id": "675c96bc046ed0b2",
+      "node_id": "structured_decoding_runtime",
+      "field": "examples[1]",
+      "text": "JSON-schema token masks",
+      "source_ids": ["ref_structured"],
+      "evidence_location": "Structured-output survey supports schema-constrained output generation and token constraints.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Concept is supported, though exact implementation phrase is synthesized."
+    },
+    {
+      "unit_id": "362cfcde47b40973",
+      "node_id": "structured_decoding_runtime",
+      "field": "examples[2]",
+      "text": "CFG decoding engines",
+      "source_ids": ["ref_structured"],
+      "evidence_location": "Structured-output survey covers grammar-constrained generation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible example."
+    },
+    {
+      "unit_id": "62e15b93e14f331c",
+      "node_id": "structured_decoding_runtime",
+      "field": "examples[3]",
+      "text": "typed tool-call serving",
+      "source_ids": ["ref_structured"],
+      "evidence_location": "Structured-output survey is relevant to typed outputs, but tool-call serving is not directly established in packet evidence.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a tool-calling or structured serving source."
+    },
+    {
+      "unit_id": "260abb0b81266b6f",
+      "node_id": "structured_decoding_runtime",
+      "field": "limitations[1]",
+      "text": "Grammar compilation, tokenizer interaction, and per-request constraints can reduce throughput or complicate batching.",
+      "source_ids": ["ref_structured", "ref_ddia"],
+      "evidence_location": "Sources support constrained decoding and serving-scale concerns generally; throughput/batching impact is not directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Add benchmark/runtime evidence for performance claims."
+    },
+    {
+      "unit_id": "5cec7d1cad9d3511",
+      "node_id": "structured_decoding_runtime",
+      "field": "dependencies.grammar_constrained_decoding.rationale",
+      "text": "Structured-decoding runtimes turns Grammar- and schema-constrained decoding into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_structured"],
+      "evidence_location": "Structured-output survey supports grammar/schema-constrained decoding.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core dependency is well supported conceptually."
+    },
+    {
+      "unit_id": "5b620a73da988268",
+      "node_id": "structured_decoding_runtime",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Structured-decoding runtimes turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_structured", "ref_ddia"],
+      "evidence_location": "Sources support constrained generation and data-system operations broadly; model serving linkage is synthesized.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core dependency is plausible; needs serving-runtime citation for exact support."
+    },
+    {
+      "unit_id": "9e16937200c44fac",
+      "node_id": "structured_decoding_runtime",
+      "field": "dependencies.compilers_runtimes.rationale",
+      "text": "Structured-decoding runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_structured"],
+      "evidence_location": "The structured-output source supports constrained decoding, not graph compilers or operator fusion.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Compiler/runtime dependency should be narrowed or sourced."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "ed2290d7560d01f1",
+      "node_id": "structured_decoding_runtime",
+      "dependency_id": "grammar_constrained_decoding",
+      "source_ids": ["ref_structured"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Grammar/schema-constrained decoding is central to the runtime.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "f21bfb7877c966db",
+      "node_id": "structured_decoding_runtime",
+      "dependency_id": "model_serving",
+      "source_ids": ["ref_structured", "ref_ddia"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Serving integration is plausible for runtime deployment, but direct evidence is missing.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "93c2f2191259ad25",
+      "node_id": "structured_decoding_runtime",
+      "dependency_id": "compilers_runtimes",
+      "source_ids": ["ref_structured"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Compilation of grammars may justify a runtime dependency, but graph compiler/operator-fusion wording is too broad.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

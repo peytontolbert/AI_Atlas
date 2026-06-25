@@ -1,0 +1,164 @@
+{
+  "node_id": "bayesian_factor_graphs",
+  "label": "Bayesian networks, MRFs & factor graphs",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "bayesian_factor_graphs",
+    "label": "Bayesian networks, MRFs & factor graphs",
+    "layer": "model",
+    "tags": [
+      "model",
+      "probabilistic",
+      "graph"
+    ],
+    "aliases": [],
+    "definition": "Bayesian networks, Markov random fields, and factor graphs factorize a joint distribution into local relationships that support modular probabilistic inference.",
+    "why_it_matters": "The role of Bayesian networks, MRFs & factor graphs is to connect Graph theory, Bayesian & approximate inference to downstream capabilities including Knowledge graphs, semantic search & relational reasoning.",
+    "examples": [
+      "substrate for Knowledge graphs, semantic search & relational reasoning",
+      "combined with Graph theory"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Graph theory, Bayesian & approximate inference."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_koller"
+    ],
+    "dependencies": [
+      {
+        "id": "graph_theory",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Bayesian networks, MRFs & factor graphs rests on the formal or computational capabilities supplied by Graph theory."
+      },
+      {
+        "id": "bayesian_approx_inference",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      },
+      {
+        "id": "mcmc_em_message_passing",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "0937aa37a763cf6e",
+      "node_id": "bayesian_factor_graphs",
+      "field": "definition",
+      "text": "Bayesian networks, Markov random fields, and factor graphs factorize a joint distribution into local relationships that support modular probabilistic inference."
+    },
+    {
+      "unit_id": "8d30080c39feb994",
+      "node_id": "bayesian_factor_graphs",
+      "field": "why_it_matters",
+      "text": "The role of Bayesian networks, MRFs & factor graphs is to connect Graph theory, Bayesian & approximate inference to downstream capabilities including Knowledge graphs, semantic search & relational reasoning."
+    },
+    {
+      "unit_id": "351bdb0f505e7dcb",
+      "node_id": "bayesian_factor_graphs",
+      "field": "examples[1]",
+      "text": "substrate for Knowledge graphs, semantic search & relational reasoning"
+    },
+    {
+      "unit_id": "5451c18425047c2b",
+      "node_id": "bayesian_factor_graphs",
+      "field": "examples[2]",
+      "text": "combined with Graph theory"
+    },
+    {
+      "unit_id": "5768f3d9fff63730",
+      "node_id": "bayesian_factor_graphs",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Graph theory, Bayesian & approximate inference."
+    },
+    {
+      "unit_id": "f1137cf4855c43a8",
+      "node_id": "bayesian_factor_graphs",
+      "field": "dependencies.graph_theory.rationale",
+      "text": "Bayesian networks, MRFs & factor graphs rests on the formal or computational capabilities supplied by Graph theory."
+    },
+    {
+      "unit_id": "7145c8a5560f9a0d",
+      "node_id": "bayesian_factor_graphs",
+      "field": "dependencies.bayesian_approx_inference.rationale",
+      "text": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "unit_id": "415b79abb8255c61",
+      "node_id": "bayesian_factor_graphs",
+      "field": "dependencies.mcmc_em_message_passing.rationale",
+      "text": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "fee195f4b86358a5",
+      "node_id": "bayesian_factor_graphs",
+      "dependency_id": "graph_theory",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Bayesian networks, MRFs & factor graphs rests on the formal or computational capabilities supplied by Graph theory."
+    },
+    {
+      "edge_id": "69b47b68d7062196",
+      "node_id": "bayesian_factor_graphs",
+      "dependency_id": "bayesian_approx_inference",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "edge_id": "6049d7763b68d928",
+      "node_id": "bayesian_factor_graphs",
+      "dependency_id": "mcmc_em_message_passing",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_koller": {
+        "id": "ref_koller",
+        "title": "Probabilistic Graphical Models",
+        "authors": "Koller & Friedman",
+        "year": 2009,
+        "url": "https://mitpress.mit.edu/9780262013192/probabilistic-graphical-models/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/bayesian_factor_graphs.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

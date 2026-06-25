@@ -1,0 +1,191 @@
+{
+  "node_id": "compute_optimal_training",
+  "label": "Compute-optimal scaling & training allocation",
+  "layer": "training",
+  "editorial_status": "curated",
+  "node": {
+    "id": "compute_optimal_training",
+    "label": "Compute-optimal scaling & training allocation",
+    "layer": "training",
+    "tags": [
+      "training",
+      "scaling",
+      "foundation-models"
+    ],
+    "aliases": [],
+    "definition": "Compute-optimal training allocates a finite budget among parameters, tokens, steps, data quality, and hardware so expected performance is maximized.",
+    "why_it_matters": "It avoids expensive undertraining or oversizing and makes scaling decisions explicit before a large run begins.",
+    "examples": [
+      "Chinchilla-style parameter–token allocation",
+      "budget-aware data mixtures"
+    ],
+    "limitations": [
+      "Optimal ratios vary with data reuse, architecture, target tasks, objective, and deployment cost."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_chinchilla"
+    ],
+    "dependencies": [
+      {
+        "id": "empirical_scaling_laws",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Compute-optimal scaling & training allocation uses Empirical scaling laws as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "data_curation",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Compute-optimal scaling & training allocation uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "pretraining",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Compute-optimal scaling & training allocation uses Large-scale pretraining as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "distributed_mixed_precision",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Compute-optimal scaling & training allocation uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "809955b73188cd64",
+      "node_id": "compute_optimal_training",
+      "field": "definition",
+      "text": "Compute-optimal training allocates a finite budget among parameters, tokens, steps, data quality, and hardware so expected performance is maximized."
+    },
+    {
+      "unit_id": "3fd2cd146d3f2c67",
+      "node_id": "compute_optimal_training",
+      "field": "why_it_matters",
+      "text": "It avoids expensive undertraining or oversizing and makes scaling decisions explicit before a large run begins."
+    },
+    {
+      "unit_id": "4be75a767fd624c0",
+      "node_id": "compute_optimal_training",
+      "field": "examples[1]",
+      "text": "Chinchilla-style parameter–token allocation"
+    },
+    {
+      "unit_id": "a7953330a863f1e0",
+      "node_id": "compute_optimal_training",
+      "field": "examples[2]",
+      "text": "budget-aware data mixtures"
+    },
+    {
+      "unit_id": "4fba26322e0a31f1",
+      "node_id": "compute_optimal_training",
+      "field": "limitations[1]",
+      "text": "Optimal ratios vary with data reuse, architecture, target tasks, objective, and deployment cost."
+    },
+    {
+      "unit_id": "30ffc3dec4141b5c",
+      "node_id": "compute_optimal_training",
+      "field": "dependencies.empirical_scaling_laws.rationale",
+      "text": "Compute-optimal scaling & training allocation uses Empirical scaling laws as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "af1c9b6ee0b0dc75",
+      "node_id": "compute_optimal_training",
+      "field": "dependencies.data_curation.rationale",
+      "text": "Compute-optimal scaling & training allocation uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "dca62c2f796ce1ea",
+      "node_id": "compute_optimal_training",
+      "field": "dependencies.pretraining.rationale",
+      "text": "Compute-optimal scaling & training allocation uses Large-scale pretraining as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "1d1a5d020b9674aa",
+      "node_id": "compute_optimal_training",
+      "field": "dependencies.distributed_mixed_precision.rationale",
+      "text": "Compute-optimal scaling & training allocation uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ea5b1a6c6782ef4f",
+      "node_id": "compute_optimal_training",
+      "dependency_id": "empirical_scaling_laws",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Compute-optimal scaling & training allocation uses Empirical scaling laws as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "0ed75dfd607eaa25",
+      "node_id": "compute_optimal_training",
+      "dependency_id": "data_curation",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Compute-optimal scaling & training allocation uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "7cf1fcac900c19e6",
+      "node_id": "compute_optimal_training",
+      "dependency_id": "pretraining",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Compute-optimal scaling & training allocation uses Large-scale pretraining as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "38d28ea6f711af58",
+      "node_id": "compute_optimal_training",
+      "dependency_id": "distributed_mixed_precision",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Compute-optimal scaling & training allocation uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_chinchilla": {
+        "id": "ref_chinchilla",
+        "title": "Training Compute-Optimal Large Language Models",
+        "authors": "Hoffmann et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.15556"
+      }
+    },
+    "dependency_references": {
+      "ref_chinchilla": {
+        "id": "ref_chinchilla",
+        "title": "Training Compute-Optimal Large Language Models",
+        "authors": "Hoffmann et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.15556"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_scaling": {
+        "id": "ref_scaling",
+        "title": "Scaling Laws for Neural Language Models",
+        "authors": "Kaplan et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2001.08361"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/compute_optimal_training.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

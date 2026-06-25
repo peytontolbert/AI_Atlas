@@ -1,0 +1,118 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "c3a69422b0a15cb2",
+      "node_id": "graph_theory",
+      "field": "definition",
+      "text": "Nodes, edges, paths, spectra, and connectivity support relational learning, search, and structured knowledge.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: Chapter 1.2.2 'Mathematics' (line 28); Chapter 3 'Solving Problems by Searching' (lines 68-101); Chapter 6 'Constraint Satisfaction Problems' (lines 148-170); Chapter 7.4-7.5 'Propositional Logic: A Very Simple Logic' and 'Propositional Theorem Proving' (lines 177-189); Chapter 13.5 'Causal Networks' (lines 356-359); Chapter 15.1 'Relational Probability Models' (lines 384-387); Chapter 20.3 'Learning with Hidden Variables: The EM Algorithm' (lines 553-558).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source supports mathematics, search, logic, causal networks, relational probability models, and EM-based learning, but it does not state the full graph-theory sentence verbatim. 'Spectra' and the broad 'structured knowledge' framing are atlas synthesis."
+    },
+    {
+      "unit_id": "f4ea858584fe93b4",
+      "node_id": "graph_theory",
+      "field": "why_it_matters",
+      "text": "The role of Graph theory is to connect Discrete mathematics & logic to downstream capabilities including Causal inference, Graphs, hypergraphs & relational data, MCMC, EM & probabilistic message passing.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: Chapter 1.2.2 'Mathematics' (line 28); Chapter 13.4.2 'Inference by Markov chain simulation' (lines 345-355); Chapter 13.5 'Causal Networks' (lines 356-359); Chapter 15.1 'Relational Probability Models' (lines 384-387); Chapter 20.3 'Learning with Hidden Variables: The EM Algorithm' (lines 553-558).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA supports discrete mathematics, causal networks, Markov chain simulation, relational probability models, and the EM algorithm. It does not explicitly name graph theory, hypergraphs, or probabilistic message passing here, so the sentence is a defensible synthesis rather than a direct source claim."
+    },
+    {
+      "unit_id": "c5d18a00413e70a5",
+      "node_id": "graph_theory",
+      "field": "examples[1]",
+      "text": "substrate for Causal inference",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: Chapter 13.5 'Causal Networks' (lines 356-359), especially 'Representing actions: do-operator' and 'The back-door criterion'; Chapter 13.4.2 'Inference by Markov chain simulation' (lines 345-355).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source directly covers causal networks and standard causal-inference machinery, but it does not use the exact atlas phrasing 'substrate for'."
+    },
+    {
+      "unit_id": "3d52f11643ad8146",
+      "node_id": "graph_theory",
+      "field": "examples[2]",
+      "text": "substrate for Graphs, hypergraphs & relational data",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: Chapter 15.1 'Relational Probability Models' (lines 384-387); Chapter 16.5 'Decision Networks' (lines 420-427); Chapter 13.2 'The Semantics of Bayesian Networks' (lines 331-336).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The source supports relational and network-based representations, but it does not explicitly discuss graph theory, hypergraphs, or a graph-data substrate in this wording. The example should be narrowed if it is meant as a source claim."
+    },
+    {
+      "unit_id": "fbb900dadd5d651e",
+      "node_id": "graph_theory",
+      "field": "examples[3]",
+      "text": "substrate for MCMC, EM & probabilistic message passing",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: Chapter 13.4.2 'Inference by Markov chain simulation' (lines 345-355); Chapter 20.3 'Learning with Hidden Variables: The EM Algorithm' (lines 553-558); Chapter 13.3.2 'The variable elimination algorithm' (lines 340-343) and 13.4 'Approximate Inference for Bayesian Networks' (lines 345-355).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Markov chain simulation and EM are explicitly supported, and the inference chapters justify the probabilistic-message-passing framing at a high level. The exact combined atlas phrase is still synthesized."
+    },
+    {
+      "unit_id": "86a7b4672e7c56b6",
+      "node_id": "graph_theory",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Discrete mathematics & logic.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: Chapter 1.2.2 'Mathematics' (line 28); Chapter 27.1.1 'The argument from informality' (line 738); Chapter 27.1.3 'The mathematical objection' (lines 736-753); Appendix A: Mathematical Background (lines 768-774).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA supports the general caution that formal mathematics has assumptions and limits, but the empirical-mismatch wording and the dependency clause are atlas-level synthesis."
+    },
+    {
+      "unit_id": "52aff5c255889e76",
+      "node_id": "graph_theory",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Graph theory rests on the formal or computational capabilities supplied by Discrete mathematics & logic.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: Chapter 1.2.2 'Mathematics' (line 28); Chapter 3 'Solving Problems by Searching' (lines 68-101); Chapter 6 'Constraint Satisfaction Problems' (lines 148-170); Chapter 7.4-7.5 'Propositional Logic: A Very Simple Logic' and 'Propositional Theorem Proving' (lines 177-189); Appendix A: Mathematical Background (lines 768-774).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source supports discrete mathematics and logic as foundational material for AI search and reasoning, but it does not state the graph-theory prerequisite relationship verbatim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "2addccb7f16505a3",
+      "node_id": "graph_theory",
+      "dependency_id": "discrete_math_logic",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA clearly treats mathematics and logic as foundations for search, CSPs, and propositional reasoning, so the prerequisite edge is defensible. The rationale wording is still a synthesis rather than a direct source quote.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "node_id": "jepa_model",
+  "label": "Joint-embedding predictive architectures",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "jepa_model",
+    "label": "Joint-embedding predictive architectures",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "world-models",
+      "self-supervised"
+    ],
+    "aliases": [],
+    "definition": "Context encoders predict abstract target embeddings, emphasizing semantic and dynamical structure rather than pixel-perfect reconstruction.",
+    "why_it_matters": "The role of Joint-embedding predictive architectures is to connect Predictive representation learning / JEPA, Embeddings & distributed representations to downstream capabilities including Robotics & embodied AI, Computer vision, perception & scene understanding.",
+    "examples": [
+      "substrate for Robotics & embodied AI",
+      "substrate for Computer vision, perception & scene understanding"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Predictive representation learning / JEPA, Embeddings & distributed representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_jepa"
+    ],
+    "dependencies": [
+      {
+        "id": "predictive_jepa_learning",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "Joint-embedding predictive architectures follows the learning setup expressed by Predictive representation learning / JEPA."
+      },
+      {
+        "id": "embeddings",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Joint-embedding predictive architectures consumes, emits, or organizes information using Embeddings & distributed representations."
+      },
+      {
+        "id": "masking",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Joint-embedding predictive architectures is assembled in part from the mechanism or model component Causal, masked & structured masking."
+      },
+      {
+        "id": "transformer",
+        "type": "specializes",
+        "strength": "common",
+        "rationale": "Joint-embedding predictive architectures extends or specializes the architecture family Transformers."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "9bfdf90d27bad3a1",
+      "node_id": "jepa_model",
+      "field": "definition",
+      "text": "Context encoders predict abstract target embeddings, emphasizing semantic and dynamical structure rather than pixel-perfect reconstruction."
+    },
+    {
+      "unit_id": "7abdc4c87f340c0c",
+      "node_id": "jepa_model",
+      "field": "why_it_matters",
+      "text": "The role of Joint-embedding predictive architectures is to connect Predictive representation learning / JEPA, Embeddings & distributed representations to downstream capabilities including Robotics & embodied AI, Computer vision, perception & scene understanding."
+    },
+    {
+      "unit_id": "4e781ee7a1deb383",
+      "node_id": "jepa_model",
+      "field": "examples[1]",
+      "text": "substrate for Robotics & embodied AI"
+    },
+    {
+      "unit_id": "df4579c0ae9f9b92",
+      "node_id": "jepa_model",
+      "field": "examples[2]",
+      "text": "substrate for Computer vision, perception & scene understanding"
+    },
+    {
+      "unit_id": "3df43127ee49c32e",
+      "node_id": "jepa_model",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Predictive representation learning / JEPA, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "1f7028304fbf8d19",
+      "node_id": "jepa_model",
+      "field": "dependencies.predictive_jepa_learning.rationale",
+      "text": "Joint-embedding predictive architectures follows the learning setup expressed by Predictive representation learning / JEPA."
+    },
+    {
+      "unit_id": "507063abe6f34922",
+      "node_id": "jepa_model",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Joint-embedding predictive architectures consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "191d4d648412f058",
+      "node_id": "jepa_model",
+      "field": "dependencies.masking.rationale",
+      "text": "Joint-embedding predictive architectures is assembled in part from the mechanism or model component Causal, masked & structured masking."
+    },
+    {
+      "unit_id": "d96ec3416fd63d6b",
+      "node_id": "jepa_model",
+      "field": "dependencies.transformer.rationale",
+      "text": "Joint-embedding predictive architectures extends or specializes the architecture family Transformers."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "26f62e0ab536930a",
+      "node_id": "jepa_model",
+      "dependency_id": "predictive_jepa_learning",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "Joint-embedding predictive architectures follows the learning setup expressed by Predictive representation learning / JEPA."
+    },
+    {
+      "edge_id": "b9fd7f3c7150a67f",
+      "node_id": "jepa_model",
+      "dependency_id": "embeddings",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Joint-embedding predictive architectures consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "edge_id": "02d6dbdd2603ffd2",
+      "node_id": "jepa_model",
+      "dependency_id": "masking",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Joint-embedding predictive architectures is assembled in part from the mechanism or model component Causal, masked & structured masking."
+    },
+    {
+      "edge_id": "357dc727c52edf49",
+      "node_id": "jepa_model",
+      "dependency_id": "transformer",
+      "type": "specializes",
+      "strength": "common",
+      "rationale": "Joint-embedding predictive architectures extends or specializes the architecture family Transformers."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_jepa": {
+        "id": "ref_jepa",
+        "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
+        "authors": "Assran et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2301.08243"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_jepa": {
+        "id": "ref_jepa",
+        "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
+        "authors": "Assran et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2301.08243"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/jepa_model.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

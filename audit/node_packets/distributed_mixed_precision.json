@@ -1,0 +1,198 @@
+{
+  "node_id": "distributed_mixed_precision",
+  "label": "Distributed, mixed-precision & memory-efficient training",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "distributed_mixed_precision",
+    "label": "Distributed, mixed-precision & memory-efficient training",
+    "layer": "training",
+    "tags": [
+      "training",
+      "systems",
+      "scaling"
+    ],
+    "aliases": [],
+    "definition": "Distributed and mixed-precision training partition data, parameters, optimizer state, or experts across devices while using reduced numeric precision to save memory and time.",
+    "why_it_matters": "The role of Distributed, mixed-precision & memory-efficient training is to connect Distributed systems & networking, Numerical analysis to downstream capabilities including Checkpointing, recovery & experiment state, Large language models, Scientific ML, simulators & digital twins.",
+    "examples": [
+      "substrate for Checkpointing, recovery & experiment state",
+      "substrate for Large language models",
+      "substrate for Scientific ML, simulators & digital twins"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Numerical analysis."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "distributed_systems",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Distributed, mixed-precision & memory-efficient training uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "numerical_methods",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Distributed, mixed-precision & memory-efficient training uses Numerical analysis as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "autodiff_backprop",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Distributed, mixed-precision & memory-efficient training uses Automatic differentiation & backpropagation as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "moe_model",
+        "type": "adapts",
+        "strength": "common",
+        "rationale": "Distributed, mixed-precision & memory-efficient training changes, compresses, or combines parameters belonging to Mixture-of-experts models."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "054995b614a9eaad",
+      "node_id": "distributed_mixed_precision",
+      "field": "definition",
+      "text": "Distributed and mixed-precision training partition data, parameters, optimizer state, or experts across devices while using reduced numeric precision to save memory and time."
+    },
+    {
+      "unit_id": "327d0c77dbb74247",
+      "node_id": "distributed_mixed_precision",
+      "field": "why_it_matters",
+      "text": "The role of Distributed, mixed-precision & memory-efficient training is to connect Distributed systems & networking, Numerical analysis to downstream capabilities including Checkpointing, recovery & experiment state, Large language models, Scientific ML, simulators & digital twins."
+    },
+    {
+      "unit_id": "9d2b3d5dd7539d7d",
+      "node_id": "distributed_mixed_precision",
+      "field": "examples[1]",
+      "text": "substrate for Checkpointing, recovery & experiment state"
+    },
+    {
+      "unit_id": "4f5b8feb97e65a01",
+      "node_id": "distributed_mixed_precision",
+      "field": "examples[2]",
+      "text": "substrate for Large language models"
+    },
+    {
+      "unit_id": "c9ad9963675367d7",
+      "node_id": "distributed_mixed_precision",
+      "field": "examples[3]",
+      "text": "substrate for Scientific ML, simulators & digital twins"
+    },
+    {
+      "unit_id": "cf31a42b16591974",
+      "node_id": "distributed_mixed_precision",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Numerical analysis."
+    },
+    {
+      "unit_id": "48683a7f1b1eb065",
+      "node_id": "distributed_mixed_precision",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Distributed, mixed-precision & memory-efficient training uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "7619123f2f281a09",
+      "node_id": "distributed_mixed_precision",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "Distributed, mixed-precision & memory-efficient training uses Numerical analysis as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "eaf347fa867e385c",
+      "node_id": "distributed_mixed_precision",
+      "field": "dependencies.autodiff_backprop.rationale",
+      "text": "Distributed, mixed-precision & memory-efficient training uses Automatic differentiation & backpropagation as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "db8b03643b9a2d6a",
+      "node_id": "distributed_mixed_precision",
+      "field": "dependencies.moe_model.rationale",
+      "text": "Distributed, mixed-precision & memory-efficient training changes, compresses, or combines parameters belonging to Mixture-of-experts models."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "f7ad83fcef7a8752",
+      "node_id": "distributed_mixed_precision",
+      "dependency_id": "distributed_systems",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Distributed, mixed-precision & memory-efficient training uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "588f5c7c5be384f9",
+      "node_id": "distributed_mixed_precision",
+      "dependency_id": "numerical_methods",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Distributed, mixed-precision & memory-efficient training uses Numerical analysis as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "9bd5fccc56376d72",
+      "node_id": "distributed_mixed_precision",
+      "dependency_id": "autodiff_backprop",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Distributed, mixed-precision & memory-efficient training uses Automatic differentiation & backpropagation as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4f27c5d839184019",
+      "node_id": "distributed_mixed_precision",
+      "dependency_id": "moe_model",
+      "type": "adapts",
+      "strength": "common",
+      "rationale": "Distributed, mixed-precision & memory-efficient training changes, compresses, or combines parameters belonging to Mixture-of-experts models."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_moe": {
+        "id": "ref_moe",
+        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+        "authors": "Shazeer et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1701.06538"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/distributed_mixed_precision.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

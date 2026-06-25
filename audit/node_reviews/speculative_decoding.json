@@ -1,0 +1,193 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "24446d3fc9befff7",
+      "node_id": "speculative_decoding",
+      "field": "definition",
+      "text": "Speculative and assisted decoding propose multiple future tokens with a cheaper process and verify them in parallel with the target model.",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "evidence_location": "Chen et al. describe speculative sampling using an approximation model to generate candidate tokens and the target model to verify multiple tokens in parallel.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported by the speculative sampling paper."
+    },
+    {
+      "unit_id": "2d71277bbc229601",
+      "node_id": "speculative_decoding",
+      "field": "why_it_matters",
+      "text": "The role of Speculative, parallel & assisted decoding is to connect Model servers & inference runtimes, Autoregressive decoding to downstream capabilities including Large language models, Conversational assistants & chatbots.",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
+    },
+    {
+      "unit_id": "6e93c152f5fc7517",
+      "node_id": "speculative_decoding",
+      "field": "examples[1]",
+      "text": "substrate for Large language models",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "ac22a154b2d67b21",
+      "node_id": "speculative_decoding",
+      "field": "examples[2]",
+      "text": "substrate for Conversational assistants & chatbots",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "c488a1f1f8c97fa7",
+      "node_id": "speculative_decoding",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Autoregressive decoding.",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+    },
+    {
+      "unit_id": "798cbad1c06a9320",
+      "node_id": "speculative_decoding",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Speculative, parallel & assisted decoding turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "87545de566f5a033",
+      "node_id": "speculative_decoding",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "Speculative, parallel & assisted decoding turns Autoregressive decoding into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "evidence_location": "The node-specific source directly supports this dependency as part of the mechanism.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Direct mechanism dependency is supported; the templated operationalizes wording is still broader than the source wording."
+    },
+    {
+      "unit_id": "64e7b173f6d37f9e",
+      "node_id": "speculative_decoding",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "Speculative, parallel & assisted decoding turns Decoder-only causal transformers into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "ee2798deb43f67a1",
+      "node_id": "speculative_decoding",
+      "dependency_id": "model_serving",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "968d0e15b5c72d74",
+      "node_id": "speculative_decoding",
+      "dependency_id": "autoregressive_decoding",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The dependency is directly part of the cited mechanism, though the generic edge type label remains atlas terminology.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8a1e51408f8624bb",
+      "node_id": "speculative_decoding",
+      "dependency_id": "decoder_only_transformer",
+      "source_ids": [
+        "ref_speculative_sampling",
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_ddia"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "b523abccec82f3fb",
+      "node_id": "human_loop_sandbox",
+      "field": "definition",
+      "text": "Human-in-the-loop and sandbox controls bound agent authority through approvals, permissions, quotas, isolated execution, audit logs, and reversible actions.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Approvals/permissions/sandboxes/audit logs are standard safety-control concepts, but no dedicated sandbox or HITL source is in the packet."
+    },
+    {
+      "unit_id": "f1e69b15487e8af2",
+      "node_id": "human_loop_sandbox",
+      "field": "why_it_matters",
+      "text": "The role of Human-in-the-loop, permissions & sandboxing is to connect Observe–plan–act agent loops, Code execution, interpreters & sandboxes to downstream capabilities including Autonomous software-engineering agents, Autonomous research & AI scientist systems, Simulation, operations research & wargaming.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The role is plausible for agent/code-execution systems, but downstream autonomous research and wargaming are not directly sourced."
+    },
+    {
+      "unit_id": "726a616bf7c58542",
+      "node_id": "human_loop_sandbox",
+      "field": "examples[1]",
+      "text": "substrate for Autonomous software-engineering agents",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Human approval and sandboxing are common controls for software agents, but direct evidence is absent."
+    },
+    {
+      "unit_id": "9689ced59f8aafb8",
+      "node_id": "human_loop_sandbox",
+      "field": "examples[2]",
+      "text": "substrate for Autonomous research & AI scientist systems",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Autonomous research systems require a more specific source."
+    },
+    {
+      "unit_id": "1dd62df39b15b568",
+      "node_id": "human_loop_sandbox",
+      "field": "examples[3]",
+      "text": "substrate for Simulation, operations research & wargaming",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Simulation/wargaming as downstream substrate is not directly evidenced."
+    },
+    {
+      "unit_id": "349573a1942f71d2",
+      "node_id": "human_loop_sandbox",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Observe–plan–act agent loops, Code execution, interpreters & sandboxes.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Generic search/self-evaluation limitation is not specific to HITL/sandbox controls."
+    },
+    {
+      "unit_id": "876f16022a9d13f7",
+      "node_id": "human_loop_sandbox",
+      "field": "dependencies.agent_loop.rationale",
+      "text": "Human-in-the-loop, permissions & sandboxing uses Observe–plan–act agent loops as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Controls bound agent-loop authority; uses/core is plausible."
+    },
+    {
+      "unit_id": "f2add401812225ce",
+      "node_id": "human_loop_sandbox",
+      "field": "dependencies.code_execution.rationale",
+      "text": "Human-in-the-loop, permissions & sandboxing uses Code execution, interpreters & sandboxes as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sandboxing directly relates to code execution isolation, though the packet lacks a dedicated source."
+    },
+    {
+      "unit_id": "c92e4e6254b180fa",
+      "node_id": "human_loop_sandbox",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Human-in-the-loop, permissions & sandboxing uses Game theory & decision theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Permissions and quotas may involve incentives/risk tradeoffs, but game/decision theory is not clearly a dependency."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "51bbd9249d537cf2",
+      "node_id": "human_loop_sandbox",
+      "dependency_id": "agent_loop",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "HITL controls are defined around agent authority and actions.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "1d48a7e813168e91",
+      "node_id": "human_loop_sandbox",
+      "dependency_id": "code_execution",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sandboxing is core when execution is involved.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b8178f6825c9ed7a",
+      "node_id": "human_loop_sandbox",
+      "dependency_id": "game_decision_theory",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Decision theory is relevant to risk/authorization, but common dependency strength is only weakly evidenced.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

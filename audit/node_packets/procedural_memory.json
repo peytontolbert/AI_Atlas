@@ -1,0 +1,171 @@
+{
+  "node_id": "procedural_memory",
+  "label": "Procedural memory & skills",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "procedural_memory",
+    "label": "Procedural memory & skills",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "agents",
+      "code"
+    ],
+    "aliases": [],
+    "definition": "Reusable procedures, policies, tools, and routines encode how to perform tasks.",
+    "why_it_matters": "The role of Procedural memory & skills is to connect Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write to downstream capabilities including Skill libraries, workflows & procedural plans.",
+    "examples": [
+      "substrate for Skill libraries, workflows & procedural plans",
+      "combined with Programs, ASTs, bytecode & intermediate representations"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "programs_ast_ir",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Procedural memory & skills stores, selects, or obtains information through Programs, ASTs, bytecode & intermediate representations."
+      },
+      {
+        "id": "memory_read_write",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Procedural memory & skills uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "continual_online_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Procedural memory & skills uses Continual & online learning as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "677b777b94393f32",
+      "node_id": "procedural_memory",
+      "field": "definition",
+      "text": "Reusable procedures, policies, tools, and routines encode how to perform tasks."
+    },
+    {
+      "unit_id": "df78c142769d6d85",
+      "node_id": "procedural_memory",
+      "field": "why_it_matters",
+      "text": "The role of Procedural memory & skills is to connect Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write to downstream capabilities including Skill libraries, workflows & procedural plans."
+    },
+    {
+      "unit_id": "15077af9b76a1a8b",
+      "node_id": "procedural_memory",
+      "field": "examples[1]",
+      "text": "substrate for Skill libraries, workflows & procedural plans"
+    },
+    {
+      "unit_id": "86883e939a0fa6ea",
+      "node_id": "procedural_memory",
+      "field": "examples[2]",
+      "text": "combined with Programs, ASTs, bytecode & intermediate representations"
+    },
+    {
+      "unit_id": "2263c517444c5b88",
+      "node_id": "procedural_memory",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write."
+    },
+    {
+      "unit_id": "a7178b8ff8fc57a8",
+      "node_id": "procedural_memory",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Procedural memory & skills stores, selects, or obtains information through Programs, ASTs, bytecode & intermediate representations."
+    },
+    {
+      "unit_id": "3b5a023e45867efe",
+      "node_id": "procedural_memory",
+      "field": "dependencies.memory_read_write.rationale",
+      "text": "Procedural memory & skills uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "583078386f380af1",
+      "node_id": "procedural_memory",
+      "field": "dependencies.continual_online_learning.rationale",
+      "text": "Procedural memory & skills uses Continual & online learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "73334f8356995f5f",
+      "node_id": "procedural_memory",
+      "dependency_id": "programs_ast_ir",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Procedural memory & skills stores, selects, or obtains information through Programs, ASTs, bytecode & intermediate representations."
+    },
+    {
+      "edge_id": "f5c6a793367ab8f0",
+      "node_id": "procedural_memory",
+      "dependency_id": "memory_read_write",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Procedural memory & skills uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4578932967d2e204",
+      "node_id": "procedural_memory",
+      "dependency_id": "continual_online_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Procedural memory & skills uses Continual & online learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/procedural_memory.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

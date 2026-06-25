@@ -1,0 +1,171 @@
+{
+  "node_id": "positional_mechanisms",
+  "label": "Relative position, RoPE, ALiBi & coordinate mechanisms",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "positional_mechanisms",
+    "label": "Relative position, RoPE, ALiBi & coordinate mechanisms",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "sequence",
+      "transformer"
+    ],
+    "aliases": [],
+    "definition": "Order or geometric relationships are injected into attention and sequence models.",
+    "why_it_matters": "The role of Relative position, RoPE, ALiBi & coordinate mechanisms is to connect Positional, temporal & coordinate encodings, Self-attention to downstream capabilities including Transformers, Graph transformers.",
+    "examples": [
+      "substrate for Transformers",
+      "substrate for Graph transformers"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Positional, temporal & coordinate encodings, Self-attention."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "positional_encodings",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Positional, temporal & coordinate encodings as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "self_attention",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms is assembled in part from the mechanism or model component Self-attention."
+      },
+      {
+        "id": "geometry_topology",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Geometry, topology & symmetry as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "98c6af35a4519080",
+      "node_id": "positional_mechanisms",
+      "field": "definition",
+      "text": "Order or geometric relationships are injected into attention and sequence models."
+    },
+    {
+      "unit_id": "b3d4c109ea4fa272",
+      "node_id": "positional_mechanisms",
+      "field": "why_it_matters",
+      "text": "The role of Relative position, RoPE, ALiBi & coordinate mechanisms is to connect Positional, temporal & coordinate encodings, Self-attention to downstream capabilities including Transformers, Graph transformers."
+    },
+    {
+      "unit_id": "35e1158cdf42d760",
+      "node_id": "positional_mechanisms",
+      "field": "examples[1]",
+      "text": "substrate for Transformers"
+    },
+    {
+      "unit_id": "8c002d984207fe80",
+      "node_id": "positional_mechanisms",
+      "field": "examples[2]",
+      "text": "substrate for Graph transformers"
+    },
+    {
+      "unit_id": "b11854ce87b00ae0",
+      "node_id": "positional_mechanisms",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Positional, temporal & coordinate encodings, Self-attention."
+    },
+    {
+      "unit_id": "d2616a9f50c416dd",
+      "node_id": "positional_mechanisms",
+      "field": "dependencies.positional_encodings.rationale",
+      "text": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Positional, temporal & coordinate encodings as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "27dc56305a6bee92",
+      "node_id": "positional_mechanisms",
+      "field": "dependencies.self_attention.rationale",
+      "text": "Relative position, RoPE, ALiBi & coordinate mechanisms is assembled in part from the mechanism or model component Self-attention."
+    },
+    {
+      "unit_id": "9b1a0c670cc8fb40",
+      "node_id": "positional_mechanisms",
+      "field": "dependencies.geometry_topology.rationale",
+      "text": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Geometry, topology & symmetry as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "9e5dec9f89a7c151",
+      "node_id": "positional_mechanisms",
+      "dependency_id": "positional_encodings",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Positional, temporal & coordinate encodings as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "58e843a2e25a90ec",
+      "node_id": "positional_mechanisms",
+      "dependency_id": "self_attention",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms is assembled in part from the mechanism or model component Self-attention."
+    },
+    {
+      "edge_id": "18e126646bccf1a5",
+      "node_id": "positional_mechanisms",
+      "dependency_id": "geometry_topology",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Geometry, topology & symmetry as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/positional_mechanisms.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

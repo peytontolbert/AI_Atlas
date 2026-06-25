@@ -1,0 +1,171 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "3d72265936325d83",
+      "node_id": "semantic_memory",
+      "field": "definition",
+      "text": "Facts, concepts, and relations are organized independently of a specific episode.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support the concept broadly, though not always this exact node wording.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Direct verification would require a node-specific citation."
+    },
+    {
+      "unit_id": "319115101ffe7f4f",
+      "node_id": "semantic_memory",
+      "field": "why_it_matters",
+      "text": "The role of Semantic memory is to connect Embeddings & distributed representations, Knowledge graphs, ontologies & schemas to downstream capabilities including Memory lifecycle, forgetting & consolidation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
+    },
+    {
+      "unit_id": "b418cbdb568453db",
+      "node_id": "semantic_memory",
+      "field": "examples[1]",
+      "text": "substrate for Memory lifecycle, forgetting & consolidation",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "23f0c1b3b130fca3",
+      "node_id": "semantic_memory",
+      "field": "examples[2]",
+      "text": "combined with Embeddings & distributed representations",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "471bea2b11d25399",
+      "node_id": "semantic_memory",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Embeddings & distributed representations, Knowledge graphs, ontologies & schemas.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "6b59666b4c79edd4",
+      "node_id": "semantic_memory",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Semantic memory stores, selects, or obtains information through Embeddings & distributed representations.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support embeddings or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "b03d987b05d8628b",
+      "node_id": "semantic_memory",
+      "field": "dependencies.knowledge_graphs.rationale",
+      "text": "Semantic memory stores, selects, or obtains information through Knowledge graphs, ontologies & schemas.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support knowledge_graphs or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "74b484a8f82e435e",
+      "node_id": "semantic_memory",
+      "field": "dependencies.parametric_memory.rationale",
+      "text": "Semantic memory stores, selects, or obtains information through Parametric memory.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support parametric_memory or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "a4abfdb6365ec077",
+      "node_id": "semantic_memory",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "46c4a045f9aefe5a",
+      "node_id": "semantic_memory",
+      "dependency_id": "knowledge_graphs",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "452490de36613cf2",
+      "node_id": "semantic_memory",
+      "dependency_id": "parametric_memory",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Models can store semantic facts parametrically; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

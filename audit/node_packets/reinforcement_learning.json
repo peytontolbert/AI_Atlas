@@ -1,0 +1,211 @@
+{
+  "node_id": "reinforcement_learning",
+  "label": "Reinforcement learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "reinforcement_learning",
+    "label": "Reinforcement learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "rl",
+      "agents"
+    ],
+    "aliases": [],
+    "definition": "An agent learns behavior from rewards while interacting with an environment over time.",
+    "why_it_matters": "The role of Reinforcement learning is to connect Game theory & decision theory, Dynamical systems & control theory to downstream capabilities including Model-based reinforcement learning, Imitation & inverse reinforcement learning, Bellman, temporal-difference & value objectives.",
+    "examples": [
+      "substrate for Model-based reinforcement learning",
+      "substrate for Imitation & inverse reinforcement learning",
+      "substrate for Bellman, temporal-difference & value objectives"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Game theory & decision theory, Dynamical systems & control theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_rlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "game_decision_theory",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reinforcement learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reinforcement learning uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "markov_decision_processes",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Reinforcement learning uses Markov chains, MDPs, POMDPs & belief states as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervision_signals",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reinforcement learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Reinforcement learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "705908fc8218408d",
+      "node_id": "reinforcement_learning",
+      "field": "definition",
+      "text": "An agent learns behavior from rewards while interacting with an environment over time."
+    },
+    {
+      "unit_id": "ae2e9014919d63b4",
+      "node_id": "reinforcement_learning",
+      "field": "why_it_matters",
+      "text": "The role of Reinforcement learning is to connect Game theory & decision theory, Dynamical systems & control theory to downstream capabilities including Model-based reinforcement learning, Imitation & inverse reinforcement learning, Bellman, temporal-difference & value objectives."
+    },
+    {
+      "unit_id": "c361cf0402e88559",
+      "node_id": "reinforcement_learning",
+      "field": "examples[1]",
+      "text": "substrate for Model-based reinforcement learning"
+    },
+    {
+      "unit_id": "54b851378033c9a7",
+      "node_id": "reinforcement_learning",
+      "field": "examples[2]",
+      "text": "substrate for Imitation & inverse reinforcement learning"
+    },
+    {
+      "unit_id": "b017d6108bc3ee42",
+      "node_id": "reinforcement_learning",
+      "field": "examples[3]",
+      "text": "substrate for Bellman, temporal-difference & value objectives"
+    },
+    {
+      "unit_id": "93f1341a7f22cb60",
+      "node_id": "reinforcement_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Game theory & decision theory, Dynamical systems & control theory."
+    },
+    {
+      "unit_id": "8cfa18424e2b9a09",
+      "node_id": "reinforcement_learning",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Reinforcement learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "4f38c7e6ee1f14f9",
+      "node_id": "reinforcement_learning",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Reinforcement learning uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "7a585caa1169f69c",
+      "node_id": "reinforcement_learning",
+      "field": "dependencies.markov_decision_processes.rationale",
+      "text": "Reinforcement learning uses Markov chains, MDPs, POMDPs & belief states as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "2b28499e366e0955",
+      "node_id": "reinforcement_learning",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "Reinforcement learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "42c13a6b062f363f",
+      "node_id": "reinforcement_learning",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Reinforcement learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "86f923ed651ea873",
+      "node_id": "reinforcement_learning",
+      "dependency_id": "game_decision_theory",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reinforcement learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "c04e719cf13f2976",
+      "node_id": "reinforcement_learning",
+      "dependency_id": "dynamical_control",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reinforcement learning uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "7e01f9f56652cd09",
+      "node_id": "reinforcement_learning",
+      "dependency_id": "markov_decision_processes",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Reinforcement learning uses Markov chains, MDPs, POMDPs & belief states as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "54d79e0a68c7c5ce",
+      "node_id": "reinforcement_learning",
+      "dependency_id": "supervision_signals",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reinforcement learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "a71bc2fad7d1430c",
+      "node_id": "reinforcement_learning",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Reinforcement learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/reinforcement_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "node_id": "masked_prediction",
+  "label": "Masked prediction objectives",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "masked_prediction",
+    "label": "Masked prediction objectives",
+    "layer": "objective",
+    "tags": [
+      "objective",
+      "self-supervised"
+    ],
+    "aliases": [],
+    "definition": "Hidden portions of an input are predicted from visible context; it operationally connects Self-supervised learning and Tokens, vocabularies & symbolic units.",
+    "why_it_matters": "The role of Masked prediction objectives is to connect Self-supervised learning, Tokens, vocabularies & symbolic units to downstream capabilities including Large-scale pretraining, Encoder-only bidirectional transformers, Diffusion and masked-generative language models.",
+    "examples": [
+      "substrate for Large-scale pretraining",
+      "substrate for Encoder-only bidirectional transformers",
+      "substrate for Diffusion and masked-generative language models"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Self-supervised learning, Tokens, vocabularies & symbolic units."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "self_supervised_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Masked prediction objectives uses Self-supervised learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "tokens_vocab",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Masked prediction objectives uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "spatial_grids",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Masked prediction objectives uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "06f0e273d50182fa",
+      "node_id": "masked_prediction",
+      "field": "definition",
+      "text": "Hidden portions of an input are predicted from visible context; it operationally connects Self-supervised learning and Tokens, vocabularies & symbolic units."
+    },
+    {
+      "unit_id": "c87d60b5570192ab",
+      "node_id": "masked_prediction",
+      "field": "why_it_matters",
+      "text": "The role of Masked prediction objectives is to connect Self-supervised learning, Tokens, vocabularies & symbolic units to downstream capabilities including Large-scale pretraining, Encoder-only bidirectional transformers, Diffusion and masked-generative language models."
+    },
+    {
+      "unit_id": "9b2b36b7aa4535c4",
+      "node_id": "masked_prediction",
+      "field": "examples[1]",
+      "text": "substrate for Large-scale pretraining"
+    },
+    {
+      "unit_id": "5b06eb9396eb723f",
+      "node_id": "masked_prediction",
+      "field": "examples[2]",
+      "text": "substrate for Encoder-only bidirectional transformers"
+    },
+    {
+      "unit_id": "959350a31fd999bc",
+      "node_id": "masked_prediction",
+      "field": "examples[3]",
+      "text": "substrate for Diffusion and masked-generative language models"
+    },
+    {
+      "unit_id": "0f11b063070b1aea",
+      "node_id": "masked_prediction",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Self-supervised learning, Tokens, vocabularies & symbolic units."
+    },
+    {
+      "unit_id": "e23d15658bc0d1d1",
+      "node_id": "masked_prediction",
+      "field": "dependencies.self_supervised_learning.rationale",
+      "text": "Masked prediction objectives uses Self-supervised learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "537440a494244dba",
+      "node_id": "masked_prediction",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Masked prediction objectives uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "0097fd7e53ea4dd0",
+      "node_id": "masked_prediction",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "Masked prediction objectives uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "5f92fd15a0eedba7",
+      "node_id": "masked_prediction",
+      "dependency_id": "self_supervised_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Masked prediction objectives uses Self-supervised learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "9b21c7697708a16b",
+      "node_id": "masked_prediction",
+      "dependency_id": "tokens_vocab",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Masked prediction objectives uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "b53a8a730b526d28",
+      "node_id": "masked_prediction",
+      "dependency_id": "spatial_grids",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Masked prediction objectives uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/masked_prediction.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "node_id": "observability_eval_harness",
+  "label": "Observability, tracing & evaluation harnesses",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "observability_eval_harness",
+    "label": "Observability, tracing & evaluation harnesses",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "monitoring",
+      "evaluation"
+    ],
+    "aliases": [],
+    "definition": "Observability and evaluation harnesses record prompts, traces, tokens, latency, costs, tool calls, outcomes, regressions, and safety signals.",
+    "why_it_matters": "The role of Observability, tracing & evaluation harnesses is to connect Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics to downstream capabilities including Autonomous software-engineering agents, Multi-agent systems & organizational intelligence, Verified and assurance-gated agents.",
+    "examples": [
+      "substrate for Autonomous software-engineering agents",
+      "substrate for Multi-agent systems & organizational intelligence",
+      "substrate for Verified and assurance-gated agents"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_ddia"
+    ],
+    "dependencies": [
+      {
+        "id": "repro_monitoring",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Observability, tracing & evaluation harnesses turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "benchmarks_metrics",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Observability, tracing & evaluation harnesses turns Benchmarks, test suites & task metrics into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "model_serving",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Observability, tracing & evaluation harnesses turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "content_provenance",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Observability, tracing & evaluation harnesses turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "llm_as_judge",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Observability, tracing & evaluation harnesses turns LLM-as-judge & automated critique into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "mechanistic_interpretability",
+        "type": "operationalizes",
+        "strength": "optional",
+        "rationale": "Observability, tracing & evaluation harnesses turns Mechanistic interpretability & circuit analysis into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "eval_driven_development",
+        "type": "operationalizes",
+        "strength": "optional",
+        "rationale": "Observability, tracing & evaluation harnesses turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "444bd90d22ac04ca",
+      "node_id": "observability_eval_harness",
+      "field": "definition",
+      "text": "Observability and evaluation harnesses record prompts, traces, tokens, latency, costs, tool calls, outcomes, regressions, and safety signals."
+    },
+    {
+      "unit_id": "3d80099da5d5b8be",
+      "node_id": "observability_eval_harness",
+      "field": "why_it_matters",
+      "text": "The role of Observability, tracing & evaluation harnesses is to connect Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics to downstream capabilities including Autonomous software-engineering agents, Multi-agent systems & organizational intelligence, Verified and assurance-gated agents."
+    },
+    {
+      "unit_id": "9b2adddfa81dac2c",
+      "node_id": "observability_eval_harness",
+      "field": "examples[1]",
+      "text": "substrate for Autonomous software-engineering agents"
+    },
+    {
+      "unit_id": "94de895ff16bc77b",
+      "node_id": "observability_eval_harness",
+      "field": "examples[2]",
+      "text": "substrate for Multi-agent systems & organizational intelligence"
+    },
+    {
+      "unit_id": "bba2adf9ddf9a8e8",
+      "node_id": "observability_eval_harness",
+      "field": "examples[3]",
+      "text": "substrate for Verified and assurance-gated agents"
+    },
+    {
+      "unit_id": "cb1c9723149f9779",
+      "node_id": "observability_eval_harness",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics."
+    },
+    {
+      "unit_id": "8ae07b8ebe3ceb64",
+      "node_id": "observability_eval_harness",
+      "field": "dependencies.repro_monitoring.rationale",
+      "text": "Observability, tracing & evaluation harnesses turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "5b938fb5ae5ddd2c",
+      "node_id": "observability_eval_harness",
+      "field": "dependencies.benchmarks_metrics.rationale",
+      "text": "Observability, tracing & evaluation harnesses turns Benchmarks, test suites & task metrics into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "3f1e5388dd923cec",
+      "node_id": "observability_eval_harness",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Observability, tracing & evaluation harnesses turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "e48d8fb1c8a072bf",
+      "node_id": "observability_eval_harness",
+      "field": "dependencies.content_provenance.rationale",
+      "text": "Observability, tracing & evaluation harnesses turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "bd66cf1de8340e14",
+      "node_id": "observability_eval_harness",
+      "field": "dependencies.llm_as_judge.rationale",
+      "text": "Observability, tracing & evaluation harnesses turns LLM-as-judge & automated critique into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "b94c1d87440960b4",
+      "node_id": "observability_eval_harness",
+      "field": "dependencies.mechanistic_interpretability.rationale",
+      "text": "Observability, tracing & evaluation harnesses turns Mechanistic interpretability & circuit analysis into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "26ad27904bd9ff4d",
+      "node_id": "observability_eval_harness",
+      "field": "dependencies.eval_driven_development.rationale",
+      "text": "Observability, tracing & evaluation harnesses turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "750362297a25ae2d",
+      "node_id": "observability_eval_harness",
+      "dependency_id": "repro_monitoring",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Observability, tracing & evaluation harnesses turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "37f45a9073a36e34",
+      "node_id": "observability_eval_harness",
+      "dependency_id": "benchmarks_metrics",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Observability, tracing & evaluation harnesses turns Benchmarks, test suites & task metrics into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "c4b18eab399edce9",
+      "node_id": "observability_eval_harness",
+      "dependency_id": "model_serving",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Observability, tracing & evaluation harnesses turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "fa752801aef3a39f",
+      "node_id": "observability_eval_harness",
+      "dependency_id": "content_provenance",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Observability, tracing & evaluation harnesses turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "b208aa8c3a165421",
+      "node_id": "observability_eval_harness",
+      "dependency_id": "llm_as_judge",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Observability, tracing & evaluation harnesses turns LLM-as-judge & automated critique into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "a10795e235f49919",
+      "node_id": "observability_eval_harness",
+      "dependency_id": "mechanistic_interpretability",
+      "type": "operationalizes",
+      "strength": "optional",
+      "rationale": "Observability, tracing & evaluation harnesses turns Mechanistic interpretability & circuit analysis into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "60e33f0b551c4c32",
+      "node_id": "observability_eval_harness",
+      "dependency_id": "eval_driven_development",
+      "type": "operationalizes",
+      "strength": "optional",
+      "rationale": "Observability, tracing & evaluation harnesses turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    },
+    "dependency_references": {
+      "ref_c2pa": {
+        "id": "ref_c2pa",
+        "title": "C2PA Technical Specification",
+        "authors": "Coalition for Content Provenance and Authenticity",
+        "year": 2025,
+        "url": "https://c2pa.org/specifications/specifications/2.2/index.html"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_llmjudge": {
+        "id": "ref_llmjudge",
+        "title": "A Survey on LLM-as-a-Judge",
+        "authors": "Gu et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2411.15594"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/observability_eval_harness.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

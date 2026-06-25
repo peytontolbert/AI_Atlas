@@ -1,0 +1,190 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "a8e07fbdf58e8507",
+      "node_id": "affine_dense",
+      "field": "definition",
+      "text": "Learned linear maps mix features and channels and form the backbone of most neural blocks.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers affine transformations/linear maps, dense feedforward layers, matrix-vector operations, and optimization by gradient-based learning; PML/AIMA provide background on vectors, matrices, linear algebra, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "fe2e6861e3bd6674",
+      "node_id": "affine_dense",
+      "field": "why_it_matters",
+      "text": "The role of Affine transforms & dense layers is to connect Scalars, vectors, matrices & tensors, Linear algebra to downstream capabilities including Nonlinear activations, Residual, skip & highway connections, Gating & multiplicative control.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning covers affine transformations/linear maps, dense feedforward layers, matrix-vector operations, and optimization by gradient-based learning; PML/AIMA provide background on vectors, matrices, linear algebra, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "f1fbc753a8a9aae1",
+      "node_id": "affine_dense",
+      "field": "examples[1]",
+      "text": "substrate for Nonlinear activations",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers affine transformations/linear maps, dense feedforward layers, matrix-vector operations, and optimization by gradient-based learning; PML/AIMA provide background on vectors, matrices, linear algebra, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "100838f594d07298",
+      "node_id": "affine_dense",
+      "field": "examples[2]",
+      "text": "substrate for Residual, skip & highway connections",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers affine transformations/linear maps, dense feedforward layers, matrix-vector operations, and optimization by gradient-based learning; PML/AIMA provide background on vectors, matrices, linear algebra, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "b52c5e14cf872bc3",
+      "node_id": "affine_dense",
+      "field": "examples[3]",
+      "text": "substrate for Gating & multiplicative control",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers affine transformations/linear maps, dense feedforward layers, matrix-vector operations, and optimization by gradient-based learning; PML/AIMA provide background on vectors, matrices, linear algebra, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "3aa3eda12a41d3ce",
+      "node_id": "affine_dense",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Scalars, vectors, matrices & tensors, Linear algebra.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning covers affine transformations/linear maps, dense feedforward layers, matrix-vector operations, and optimization by gradient-based learning; PML/AIMA provide background on vectors, matrices, linear algebra, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "36cb1081a103ebd3",
+      "node_id": "affine_dense",
+      "field": "dependencies.tensors.rationale",
+      "text": "Affine transforms & dense layers uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning covers affine transformations/linear maps, dense feedforward layers, matrix-vector operations, and optimization by gradient-based learning; PML/AIMA provide background on vectors, matrices, linear algebra, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "7c9e98be307f65f0",
+      "node_id": "affine_dense",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Affine transforms & dense layers uses Linear algebra as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning covers affine transformations/linear maps, dense feedforward layers, matrix-vector operations, and optimization by gradient-based learning; PML/AIMA provide background on vectors, matrices, linear algebra, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "4e89bee9631031f9",
+      "node_id": "affine_dense",
+      "field": "dependencies.optimization.rationale",
+      "text": "Affine transforms & dense layers uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning covers affine transformations/linear maps, dense feedforward layers, matrix-vector operations, and optimization by gradient-based learning; PML/AIMA provide background on vectors, matrices, linear algebra, and optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "bda47f2c1a72d609",
+      "node_id": "affine_dense",
+      "dependency_id": "tensors",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "63cd5589bb3e5203",
+      "node_id": "affine_dense",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "fa7fa7ea522c7795",
+      "node_id": "affine_dense",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

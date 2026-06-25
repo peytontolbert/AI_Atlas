@@ -1,0 +1,150 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "233059ef82f5dcc3",
+      "node_id": "reward_modeling",
+      "field": "definition",
+      "text": "Human or synthetic comparisons are converted into a learned scalar estimate of desirability.",
+      "source_ids": ["ref_rlhf", "ref_dpo"],
+      "evidence_location": "Ouyang et al. RLHF paper, reward model trained from human comparisons; Rafailov et al. DPO paper, preference-pair setup contrasting explicit reward modeling with direct optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Human comparisons to scalar reward is directly supported by RLHF; synthetic comparisons are plausible in modern extensions but not directly established by these citations."
+    },
+    {
+      "unit_id": "acdf920194b6f079",
+      "node_id": "reward_modeling",
+      "field": "why_it_matters",
+      "text": "The role of Reward modeling is to connect Preference learning, Supervised learning to downstream capabilities including Preference optimization (RLHF, DPO families), Reward-model training, RLHF & RLAIF, Reflection, critique, verifier & repair loops.",
+      "source_ids": ["ref_rlhf", "ref_dpo", "ref_pml"],
+      "evidence_location": "Ouyang et al. RLHF paper, comparison data, reward-model training, and RL optimization; Rafailov et al. DPO paper, preference optimization; Murphy PML supervised learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Preference/supervised learning and RLHF/DPO links are supported; RLAIF and reflection/verifier loops are not directly supported by the packet sources."
+    },
+    {
+      "unit_id": "4235ec7d24b2bfb4",
+      "node_id": "reward_modeling",
+      "field": "examples[1]",
+      "text": "substrate for Preference optimization (RLHF, DPO families)",
+      "source_ids": ["ref_rlhf", "ref_dpo"],
+      "evidence_location": "Ouyang et al. RLHF paper, reward model used for RL optimization; Rafailov et al. DPO paper, preference optimization motivated as avoiding explicit reward-model fitting.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Reward modeling is directly a substrate for RLHF-style preference optimization; DPO is related but intentionally bypasses explicit reward-model training."
+    },
+    {
+      "unit_id": "3d9dc3273bcd6ae0",
+      "node_id": "reward_modeling",
+      "field": "examples[2]",
+      "text": "substrate for Reward-model training, RLHF & RLAIF",
+      "source_ids": ["ref_rlhf"],
+      "evidence_location": "Ouyang et al. RLHF paper, reward model trained from human comparison data and used in the RLHF pipeline.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Reward-model training and RLHF are directly supported, but RLAIF is not covered by the cited packet source."
+    },
+    {
+      "unit_id": "c74be77bb4be517b",
+      "node_id": "reward_modeling",
+      "field": "examples[3]",
+      "text": "substrate for Reflection, critique, verifier & repair loops",
+      "source_ids": ["ref_rlhf", "ref_pml"],
+      "evidence_location": "Ouyang et al. RLHF paper, reward modeling from comparisons; no packet source directly covers reflection, critique, verifier, or repair loops.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The cited sources do not establish this downstream example."
+    },
+    {
+      "unit_id": "a853e7e7d36a3c0b",
+      "node_id": "reward_modeling",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Preference learning, Supervised learning.",
+      "source_ids": ["ref_rlhf", "ref_dpo", "ref_pml"],
+      "evidence_location": "Ouyang et al. RLHF paper, reward model trained from comparison data; Rafailov et al. DPO paper, preference optimization setup; Murphy PML supervised learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Preference/supervised dependencies are supported, but the generic surrogate-objective failure wording is not directly cited."
+    },
+    {
+      "unit_id": "4dff15ff5cf3bfa4",
+      "node_id": "reward_modeling",
+      "field": "dependencies.preference_learning.rationale",
+      "text": "Reward modeling uses Preference learning as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_rlhf", "ref_dpo"],
+      "evidence_location": "Ouyang et al. RLHF paper, comparison/preference data used to train a reward model; DPO paper, preference-pair framing.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Reward models in RLHF are directly learned from preference/comparison data."
+    },
+    {
+      "unit_id": "76f461d7d91ddf44",
+      "node_id": "reward_modeling",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Reward modeling uses Supervised learning as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_rlhf", "ref_pml"],
+      "evidence_location": "Ouyang et al. RLHF paper, supervised reward model training from labeled comparisons; Murphy PML supervised learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Reward-model fitting from comparison labels is supervised in form; the exact dependency rationale is atlas wording."
+    },
+    {
+      "unit_id": "486fc4bdf4bcf144",
+      "node_id": "reward_modeling",
+      "field": "dependencies.margin_ranking_metric.rationale",
+      "text": "Reward modeling is learned, selected, or evaluated using the objective family Margin, ranking & metric objectives.",
+      "source_ids": ["ref_rlhf", "ref_dpo"],
+      "evidence_location": "Ouyang et al. RLHF paper, reward model trained on ranked/comparison outputs; DPO paper, preference-pair ranking objective context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Ranking/comparison objectives are supported, but the broader margin/metric objective-family label is not directly established."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "b88ab7935851f2d7",
+      "node_id": "reward_modeling",
+      "dependency_id": "preference_learning",
+      "source_ids": ["ref_rlhf", "ref_dpo"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "RLHF reward modeling directly uses human preferences/comparisons; core strength is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ea427a0cc4a35519",
+      "node_id": "reward_modeling",
+      "dependency_id": "supervised_learning",
+      "source_ids": ["ref_rlhf", "ref_pml"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Reward modeling is trained from labeled comparisons; core strength is defensible for standard RLHF reward models.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "fbee5e62460ad28f",
+      "node_id": "reward_modeling",
+      "dependency_id": "margin_ranking_metric",
+      "source_ids": ["ref_rlhf", "ref_dpo"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Ranking/comparison training is supported, but the 'optimizes_for' edge to the broader margin/ranking/metric family is somewhat imprecise.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

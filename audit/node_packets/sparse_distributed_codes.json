@@ -1,0 +1,163 @@
+{
+  "node_id": "sparse_distributed_codes",
+  "label": "Sparse coding & compositional representations",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "sparse_distributed_codes",
+    "label": "Sparse coding & compositional representations",
+    "layer": "representation",
+    "tags": [
+      "representation",
+      "sparse"
+    ],
+    "aliases": [],
+    "definition": "Information is represented by a small active subset of features, improving compression, interpretability, or conditional computation.",
+    "why_it_matters": "The role of Sparse coding & compositional representations is to connect Embeddings & distributed representations, Information theory to downstream capabilities including Mechanistic interpretability & circuit analysis.",
+    "examples": [
+      "substrate for Mechanistic interpretability & circuit analysis",
+      "combined with Embeddings & distributed representations"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Embeddings & distributed representations, Information theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "embeddings",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Sparse coding & compositional representations consumes, emits, or organizes information using Embeddings & distributed representations."
+      },
+      {
+        "id": "information_theory",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Sparse coding & compositional representations rests on the formal or computational capabilities supplied by Information theory."
+      },
+      {
+        "id": "optimization",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Sparse coding & compositional representations rests on the formal or computational capabilities supplied by Optimization theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "0a0bc70491b5ebe0",
+      "node_id": "sparse_distributed_codes",
+      "field": "definition",
+      "text": "Information is represented by a small active subset of features, improving compression, interpretability, or conditional computation."
+    },
+    {
+      "unit_id": "e253affa60eef5fa",
+      "node_id": "sparse_distributed_codes",
+      "field": "why_it_matters",
+      "text": "The role of Sparse coding & compositional representations is to connect Embeddings & distributed representations, Information theory to downstream capabilities including Mechanistic interpretability & circuit analysis."
+    },
+    {
+      "unit_id": "b498112db7c0c139",
+      "node_id": "sparse_distributed_codes",
+      "field": "examples[1]",
+      "text": "substrate for Mechanistic interpretability & circuit analysis"
+    },
+    {
+      "unit_id": "995743020e585ec8",
+      "node_id": "sparse_distributed_codes",
+      "field": "examples[2]",
+      "text": "combined with Embeddings & distributed representations"
+    },
+    {
+      "unit_id": "8d924c77c966352e",
+      "node_id": "sparse_distributed_codes",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Embeddings & distributed representations, Information theory."
+    },
+    {
+      "unit_id": "68d7f4a8a8f0a80c",
+      "node_id": "sparse_distributed_codes",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Sparse coding & compositional representations consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "759aba00d3cb535e",
+      "node_id": "sparse_distributed_codes",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Sparse coding & compositional representations rests on the formal or computational capabilities supplied by Information theory."
+    },
+    {
+      "unit_id": "37ee7a17f0b43373",
+      "node_id": "sparse_distributed_codes",
+      "field": "dependencies.optimization.rationale",
+      "text": "Sparse coding & compositional representations rests on the formal or computational capabilities supplied by Optimization theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "2534d8003320c137",
+      "node_id": "sparse_distributed_codes",
+      "dependency_id": "embeddings",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Sparse coding & compositional representations consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "edge_id": "3dd17a6c192802d4",
+      "node_id": "sparse_distributed_codes",
+      "dependency_id": "information_theory",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Sparse coding & compositional representations rests on the formal or computational capabilities supplied by Information theory."
+    },
+    {
+      "edge_id": "2554cdc55ef3a813",
+      "node_id": "sparse_distributed_codes",
+      "dependency_id": "optimization",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Sparse coding & compositional representations rests on the formal or computational capabilities supplied by Optimization theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/sparse_distributed_codes.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "14a01c66e4857c77",
+      "node_id": "convolution",
+      "field": "definition",
+      "text": "Shared local kernels exploit translation structure and efficiently aggregate nearby information.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "caca3ea1767f0d2b",
+      "node_id": "convolution",
+      "field": "why_it_matters",
+      "text": "The role of Convolution & local filters is to connect Signal processing & harmonic analysis, Images, video & spatial grids to downstream capabilities including Pooling & local aggregation, Striding, pooling, patchification & up/downsampling, Convolutional neural networks.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "6c2a35ba6586de6e",
+      "node_id": "convolution",
+      "field": "examples[1]",
+      "text": "substrate for Pooling & local aggregation",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "2de40dd8f9e0a546",
+      "node_id": "convolution",
+      "field": "examples[2]",
+      "text": "substrate for Striding, pooling, patchification & up/downsampling",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "caa52cf49b8e4ac8",
+      "node_id": "convolution",
+      "field": "examples[3]",
+      "text": "substrate for Convolutional neural networks",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "8d2fb3e64f871a18",
+      "node_id": "convolution",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Signal processing & harmonic analysis, Images, video & spatial grids.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "3846696971390463",
+      "node_id": "convolution",
+      "field": "dependencies.signal_processing.rationale",
+      "text": "Convolution & local filters uses Signal processing & harmonic analysis as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "fe009d9cb20e1f03",
+      "node_id": "convolution",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "Convolution & local filters uses Images, video & spatial grids as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "b335847ea52a36b5",
+      "node_id": "convolution",
+      "field": "dependencies.tensors.rationale",
+      "text": "Convolution & local filters uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "79f6903a35ad613d",
+      "node_id": "convolution",
+      "dependency_id": "signal_processing",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "1cebd33217c1c677",
+      "node_id": "convolution",
+      "dependency_id": "spatial_grids",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "dc5f41d243a589b1",
+      "node_id": "convolution",
+      "dependency_id": "tensors",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

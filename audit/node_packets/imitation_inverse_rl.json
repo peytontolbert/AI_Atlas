@@ -1,0 +1,164 @@
+{
+  "node_id": "imitation_inverse_rl",
+  "label": "Imitation & inverse reinforcement learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "imitation_inverse_rl",
+    "label": "Imitation & inverse reinforcement learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "rl",
+      "agents"
+    ],
+    "aliases": [],
+    "definition": "Behavior is learned from demonstrations, or the reward structure explaining demonstrations is inferred.",
+    "why_it_matters": "The role of Imitation & inverse reinforcement learning is to connect Reinforcement learning, Labels, targets, rewards & preferences to downstream capabilities including Robotics & embodied AI.",
+    "examples": [
+      "substrate for Robotics & embodied AI",
+      "combined with Reinforcement learning"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Reinforcement learning, Labels, targets, rewards & preferences."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "reinforcement_learning",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "Imitation & inverse reinforcement learning follows the learning setup expressed by Reinforcement learning."
+      },
+      {
+        "id": "supervision_signals",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Imitation & inverse reinforcement learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Imitation & inverse reinforcement learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "80e3f8ddc65ae772",
+      "node_id": "imitation_inverse_rl",
+      "field": "definition",
+      "text": "Behavior is learned from demonstrations, or the reward structure explaining demonstrations is inferred."
+    },
+    {
+      "unit_id": "3e5a5932440324f5",
+      "node_id": "imitation_inverse_rl",
+      "field": "why_it_matters",
+      "text": "The role of Imitation & inverse reinforcement learning is to connect Reinforcement learning, Labels, targets, rewards & preferences to downstream capabilities including Robotics & embodied AI."
+    },
+    {
+      "unit_id": "09c52f625f0b812d",
+      "node_id": "imitation_inverse_rl",
+      "field": "examples[1]",
+      "text": "substrate for Robotics & embodied AI"
+    },
+    {
+      "unit_id": "9300db9c08bb21e2",
+      "node_id": "imitation_inverse_rl",
+      "field": "examples[2]",
+      "text": "combined with Reinforcement learning"
+    },
+    {
+      "unit_id": "46d92ab35aabab21",
+      "node_id": "imitation_inverse_rl",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Reinforcement learning, Labels, targets, rewards & preferences."
+    },
+    {
+      "unit_id": "338c05a56ba45b00",
+      "node_id": "imitation_inverse_rl",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Imitation & inverse reinforcement learning follows the learning setup expressed by Reinforcement learning."
+    },
+    {
+      "unit_id": "1449b2ae853ab1ac",
+      "node_id": "imitation_inverse_rl",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "Imitation & inverse reinforcement learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "d8d3b7c4dc430c61",
+      "node_id": "imitation_inverse_rl",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Imitation & inverse reinforcement learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "8d3d2d371f59b420",
+      "node_id": "imitation_inverse_rl",
+      "dependency_id": "reinforcement_learning",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "Imitation & inverse reinforcement learning follows the learning setup expressed by Reinforcement learning."
+    },
+    {
+      "edge_id": "68fdfac40f84d1c5",
+      "node_id": "imitation_inverse_rl",
+      "dependency_id": "supervision_signals",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Imitation & inverse reinforcement learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "d1b7116651f768ff",
+      "node_id": "imitation_inverse_rl",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Imitation & inverse reinforcement learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/imitation_inverse_rl.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

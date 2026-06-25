@@ -1,0 +1,163 @@
+{
+  "node_id": "message_passing",
+  "label": "Message passing & neighborhood aggregation",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "message_passing",
+    "label": "Message passing & neighborhood aggregation",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "graph"
+    ],
+    "aliases": [],
+    "definition": "Entities iteratively exchange and aggregate information along relational edges.",
+    "why_it_matters": "The role of Message passing & neighborhood aggregation is to connect Graphs, hypergraphs & relational data, Affine transforms & dense layers to downstream capabilities including Graph neural networks, Graph RAG & structured retrieval.",
+    "examples": [
+      "substrate for Graph neural networks",
+      "substrate for Graph RAG & structured retrieval"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Graphs, hypergraphs & relational data, Affine transforms & dense layers."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "graphs_hypergraphs",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Message passing & neighborhood aggregation uses Graphs, hypergraphs & relational data as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "affine_dense",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Message passing & neighborhood aggregation is assembled in part from the mechanism or model component Affine transforms & dense layers."
+      },
+      {
+        "id": "pooling",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Message passing & neighborhood aggregation is assembled in part from the mechanism or model component Pooling & local aggregation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "ea50955256d3226a",
+      "node_id": "message_passing",
+      "field": "definition",
+      "text": "Entities iteratively exchange and aggregate information along relational edges."
+    },
+    {
+      "unit_id": "472c140c3dbcbcd0",
+      "node_id": "message_passing",
+      "field": "why_it_matters",
+      "text": "The role of Message passing & neighborhood aggregation is to connect Graphs, hypergraphs & relational data, Affine transforms & dense layers to downstream capabilities including Graph neural networks, Graph RAG & structured retrieval."
+    },
+    {
+      "unit_id": "73e4784c8988dfc2",
+      "node_id": "message_passing",
+      "field": "examples[1]",
+      "text": "substrate for Graph neural networks"
+    },
+    {
+      "unit_id": "1433e69474826816",
+      "node_id": "message_passing",
+      "field": "examples[2]",
+      "text": "substrate for Graph RAG & structured retrieval"
+    },
+    {
+      "unit_id": "5c9111313ef03a68",
+      "node_id": "message_passing",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Graphs, hypergraphs & relational data, Affine transforms & dense layers."
+    },
+    {
+      "unit_id": "8d9d3c200c9486b9",
+      "node_id": "message_passing",
+      "field": "dependencies.graphs_hypergraphs.rationale",
+      "text": "Message passing & neighborhood aggregation uses Graphs, hypergraphs & relational data as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "b6da33ea7ecc4a90",
+      "node_id": "message_passing",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Message passing & neighborhood aggregation is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "unit_id": "d7097781e2671530",
+      "node_id": "message_passing",
+      "field": "dependencies.pooling.rationale",
+      "text": "Message passing & neighborhood aggregation is assembled in part from the mechanism or model component Pooling & local aggregation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "9c7b2ec5c668f73a",
+      "node_id": "message_passing",
+      "dependency_id": "graphs_hypergraphs",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Message passing & neighborhood aggregation uses Graphs, hypergraphs & relational data as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "60b9544607c1fa45",
+      "node_id": "message_passing",
+      "dependency_id": "affine_dense",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Message passing & neighborhood aggregation is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "edge_id": "e26d91ca84167e1c",
+      "node_id": "message_passing",
+      "dependency_id": "pooling",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Message passing & neighborhood aggregation is assembled in part from the mechanism or model component Pooling & local aggregation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/message_passing.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

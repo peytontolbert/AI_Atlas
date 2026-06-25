@@ -1,0 +1,176 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "1d93d4d0220caebb",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "definition",
+      "text": "Training or post-processing aligns confidence with empirical correctness and asymmetric decision risk.",
+      "source_ids": [
+        "ref_pml",
+        "url:https://arxiv.org/abs/1706.04599"
+      ],
+      "evidence_location": "PML table of contents lines 148-155 list Bayesian decision theory, classification, regression, and probabilistic prediction problems; lines 162-170 list frequentist decision theory and risk. Guo et al. arXiv abstract page was inspected for modern neural-network calibration and post-processing context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition combines calibration and risk objectives; the cited material supports these components but not as one exact sentence."
+    },
+    {
+      "unit_id": "07bc12f1b41d9f14",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "why_it_matters",
+      "text": "The role of Calibration, uncertainty & risk objectives is to connect Distributions, uncertainty & beliefs, Statistics & experimental design to downstream capabilities including Knowledge distillation, pruning & sparsification, Calibration, uncertainty & risk evaluation, Adaptive depth, early exit & token skipping.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 29-38 cover uncertainty, random variables, and Bayes' rule; lines 106-139 cover statistics; lines 148-170 cover decision theory and risk; lines 421-426 list regularization, sparse DNNs, dropout, and Bayesian neural networks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The upstream uncertainty/statistics/risk pieces are supported, but distillation, pruning, adaptive depth, and early-exit downstream claims are not directly evidenced by the packet source."
+    },
+    {
+      "unit_id": "5ebd8b5117012c75",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "examples[1]",
+      "text": "substrate for Knowledge distillation, pruning & sparsification",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 421-426 list neural-network regularization, sparse DNNs, dropout, and Bayesian neural networks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Sparsification is partly supported; knowledge distillation and the specific calibration-objective dependency are not directly supported by the inspected evidence."
+    },
+    {
+      "unit_id": "1bd6b79d4075d4bb",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "examples[2]",
+      "text": "substrate for Calibration, uncertainty & risk evaluation",
+      "source_ids": [
+        "ref_pml",
+        "url:https://arxiv.org/abs/1706.04599"
+      ],
+      "evidence_location": "PML table of contents lines 148-170 cover Bayesian/frequentist decision theory, probabilistic prediction, and risk; Guo et al. arXiv abstract page was inspected for calibration evaluation of modern neural networks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Evaluation of calibration/risk follows naturally from objectives, but the packet source alone is not an exact statement."
+    },
+    {
+      "unit_id": "2e3bcda3a60eb98f",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "examples[3]",
+      "text": "substrate for Adaptive depth, early exit & token skipping",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 148-155 cover probabilistic prediction and decision theory; no inspected source location directly covered adaptive depth, early exit, or token skipping.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "Confidence/risk objectives are plausibly relevant to early exit, but no adequate inspected evidence supports this exact downstream claim."
+    },
+    {
+      "unit_id": "c5f9b48f093bd148",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Distributions, uncertainty & beliefs, Statistics & experimental design.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 116-119 list empirical risk minimization and surrogate loss; lines 29-38 cover uncertainty and probability; lines 106-139 cover statistics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The surrogate/dependency concepts are supported, but the claim about intended behavior becoming unchanged or worse is broader than the cited evidence."
+    },
+    {
+      "unit_id": "e3784581f108b625",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "dependencies.distributions_uncertainty.rationale",
+      "text": "Calibration, uncertainty & risk objectives uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 29-38 list types of uncertainty, random variables, conditional independence, and Bayes' rule; lines 155-170 list probabilistic prediction and risk.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Calibration and risk objectives directly depend on uncertainty and predictive distributions."
+    },
+    {
+      "unit_id": "b63ac97488432eaf",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "dependencies.statistics.rationale",
+      "text": "Calibration, uncertainty & risk objectives uses Statistics & experimental design as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 106-139 list statistics, estimation, cross-validation, Bayesian statistics, and computational issues; lines 162-170 list risk and empirical risk.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Empirical correctness and risk estimation are statistical."
+    },
+    {
+      "unit_id": "f8a64ac5dd21fe34",
+      "node_id": "calibration_uncertainty_objective",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Calibration, uncertainty & risk objectives uses Supervised learning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 3-8 list supervised learning, classification, regression, and generalization; lines 148-155 list classification, regression, and probabilistic prediction problems in decision theory.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Calibration is often evaluated on supervised predictions, but supervised learning is not inherent to all risk objectives."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "7c9c2c17f63b2d17",
+      "node_id": "calibration_uncertainty_objective",
+      "dependency_id": "distributions_uncertainty",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Predictive confidence, uncertainty, and decision risk require distributions/beliefs; uses/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b9d95bd6d8278d34",
+      "node_id": "calibration_uncertainty_objective",
+      "dependency_id": "statistics",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Empirical correctness and risk estimation are statistical; uses/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "3de2102ec9b2c16a",
+      "node_id": "calibration_uncertainty_objective",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Calibration commonly aligns predicted confidence with labeled correctness in supervised classification; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

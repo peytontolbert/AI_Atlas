@@ -1,0 +1,32 @@
+{
+  "strict": true,
+  "data": "/data/ai_dependency_atlas/data/atlas.json",
+  "sentence_ledger": "/data/ai_dependency_atlas/audit/source_sentence_ledger.jsonl",
+  "edge_ledger": "/data/ai_dependency_atlas/audit/edge_review_ledger.jsonl",
+  "sentence_units": 3023,
+  "audited_sentence_units": 3023,
+  "unaudited_sentence_units": 0,
+  "sentence_coverage_percent": 100.0,
+  "edge_units": 1225,
+  "audited_edge_units": 1225,
+  "unaudited_edge_units": 0,
+  "edge_coverage_percent": 100.0,
+  "sentence_verdicts": {
+    "supported_by_synthesis": 1337,
+    "ambiguous": 1144,
+    "unsupported": 123,
+    "verified": 419
+  },
+  "edge_verdicts": {
+    "supported_by_synthesis": 676,
+    "ambiguous": 304,
+    "verified": 222,
+    "unsupported": 23
+  },
+  "sample_unaudited_sentences": [],
+  "sample_unaudited_edges": [],
+  "errors": [
+    "strict mode: 1267 sentence records are unsupported or ambiguous",
+    "strict mode: 327 edge records are unsupported or ambiguous"
+  ]
+}

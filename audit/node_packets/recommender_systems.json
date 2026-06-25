@@ -1,0 +1,264 @@
+{
+  "node_id": "recommender_systems",
+  "label": "Recommendation, ranking & personalization",
+  "layer": "system",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "recommender_systems",
+    "label": "Recommendation, ranking & personalization",
+    "layer": "system",
+    "tags": [
+      "system",
+      "recommendation",
+      "retrieval"
+    ],
+    "aliases": [],
+    "definition": "Recommender systems retrieve, rank, and diversify items for users or contexts using behavior, content, constraints, and feedback loops.",
+    "why_it_matters": "This system is an application boundary where technical capability, evidence, safety controls, economics, and user workflow must succeed together.",
+    "examples": [
+      "workflows combining Recommendation, ranking & personalization with Matrix factorization & topic models",
+      "workflows combining Recommendation, ranking & personalization with Decision trees, random forests & boosted trees",
+      "workflows combining Recommendation, ranking & personalization with Dense vector retrieval"
+    ],
+    "limitations": [
+      "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Matrix factorization & topic models, Decision trees, random forests & boosted trees."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": true,
+    "terminal_reason": "end-system leaf",
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "matrix_factor_topic",
+        "type": "applies",
+        "strength": "core",
+        "rationale": "Recommendation, ranking & personalization integrates Matrix factorization & topic models as part of an end-to-end application boundary."
+      },
+      {
+        "id": "tree_ensemble_models",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Recommendation, ranking & personalization integrates Decision trees, random forests & boosted trees as part of an end-to-end application boundary."
+      },
+      {
+        "id": "dense_retrieval",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Recommendation, ranking & personalization integrates Dense vector retrieval as part of an end-to-end application boundary."
+      },
+      {
+        "id": "margin_ranking_metric",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Recommendation, ranking & personalization integrates Margin, ranking & metric objectives as part of an end-to-end application boundary."
+      },
+      {
+        "id": "linear_glm",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Recommendation, ranking & personalization integrates Linear models & generalized linear models as part of an end-to-end application boundary."
+      },
+      {
+        "id": "knn_naive_bayes",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Recommendation, ranking & personalization integrates k-NN & Naive Bayes as part of an end-to-end application boundary."
+      },
+      {
+        "id": "clustering_mixture_models",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Recommendation, ranking & personalization integrates k-means, mixture models & clustering as part of an end-to-end application boundary."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c424b0d89976dd58",
+      "node_id": "recommender_systems",
+      "field": "definition",
+      "text": "Recommender systems retrieve, rank, and diversify items for users or contexts using behavior, content, constraints, and feedback loops."
+    },
+    {
+      "unit_id": "2ad5d93725786bde",
+      "node_id": "recommender_systems",
+      "field": "why_it_matters",
+      "text": "This system is an application boundary where technical capability, evidence, safety controls, economics, and user workflow must succeed together."
+    },
+    {
+      "unit_id": "4051008e687cf0bd",
+      "node_id": "recommender_systems",
+      "field": "examples[1]",
+      "text": "workflows combining Recommendation, ranking & personalization with Matrix factorization & topic models"
+    },
+    {
+      "unit_id": "0ae9476e1a9cffe8",
+      "node_id": "recommender_systems",
+      "field": "examples[2]",
+      "text": "workflows combining Recommendation, ranking & personalization with Decision trees, random forests & boosted trees"
+    },
+    {
+      "unit_id": "dca6b4b96d8a8077",
+      "node_id": "recommender_systems",
+      "field": "examples[3]",
+      "text": "workflows combining Recommendation, ranking & personalization with Dense vector retrieval"
+    },
+    {
+      "unit_id": "b013d24ca4e8beed",
+      "node_id": "recommender_systems",
+      "field": "limitations[1]",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Matrix factorization & topic models, Decision trees, random forests & boosted trees."
+    },
+    {
+      "unit_id": "a216a627450b9a75",
+      "node_id": "recommender_systems",
+      "field": "terminal_reason",
+      "text": "end-system leaf"
+    },
+    {
+      "unit_id": "249c9d826e783d8b",
+      "node_id": "recommender_systems",
+      "field": "dependencies.matrix_factor_topic.rationale",
+      "text": "Recommendation, ranking & personalization integrates Matrix factorization & topic models as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "26d10f1a92812168",
+      "node_id": "recommender_systems",
+      "field": "dependencies.tree_ensemble_models.rationale",
+      "text": "Recommendation, ranking & personalization integrates Decision trees, random forests & boosted trees as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "2f7a5703ceaa8d98",
+      "node_id": "recommender_systems",
+      "field": "dependencies.dense_retrieval.rationale",
+      "text": "Recommendation, ranking & personalization integrates Dense vector retrieval as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "307382d8d5d079de",
+      "node_id": "recommender_systems",
+      "field": "dependencies.margin_ranking_metric.rationale",
+      "text": "Recommendation, ranking & personalization integrates Margin, ranking & metric objectives as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "7cad85a9666de89d",
+      "node_id": "recommender_systems",
+      "field": "dependencies.linear_glm.rationale",
+      "text": "Recommendation, ranking & personalization integrates Linear models & generalized linear models as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "b4cbb104acf6164f",
+      "node_id": "recommender_systems",
+      "field": "dependencies.knn_naive_bayes.rationale",
+      "text": "Recommendation, ranking & personalization integrates k-NN & Naive Bayes as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "c6bd9e7fd29dc2e1",
+      "node_id": "recommender_systems",
+      "field": "dependencies.clustering_mixture_models.rationale",
+      "text": "Recommendation, ranking & personalization integrates k-means, mixture models & clustering as part of an end-to-end application boundary."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "dd3e7b674a336436",
+      "node_id": "recommender_systems",
+      "dependency_id": "matrix_factor_topic",
+      "type": "applies",
+      "strength": "core",
+      "rationale": "Recommendation, ranking & personalization integrates Matrix factorization & topic models as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "690d26f0f92ccefe",
+      "node_id": "recommender_systems",
+      "dependency_id": "tree_ensemble_models",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Recommendation, ranking & personalization integrates Decision trees, random forests & boosted trees as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "2082556033e0be0c",
+      "node_id": "recommender_systems",
+      "dependency_id": "dense_retrieval",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Recommendation, ranking & personalization integrates Dense vector retrieval as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "a924d34cb14e74b7",
+      "node_id": "recommender_systems",
+      "dependency_id": "margin_ranking_metric",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Recommendation, ranking & personalization integrates Margin, ranking & metric objectives as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "20612bb1add93b9e",
+      "node_id": "recommender_systems",
+      "dependency_id": "linear_glm",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Recommendation, ranking & personalization integrates Linear models & generalized linear models as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "06537138898073bf",
+      "node_id": "recommender_systems",
+      "dependency_id": "knn_naive_bayes",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Recommendation, ranking & personalization integrates k-NN & Naive Bayes as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "efffe351eb767ca9",
+      "node_id": "recommender_systems",
+      "dependency_id": "clustering_mixture_models",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Recommendation, ranking & personalization integrates k-means, mixture models & clustering as part of an end-to-end application boundary."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/recommender_systems.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

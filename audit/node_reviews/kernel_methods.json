@@ -1,0 +1,165 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "7eaee0bf416377ac",
+      "node_id": "kernel_methods",
+      "field": "definition",
+      "text": "Similarity functions represent high-dimensional features without explicitly constructing them.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers kernel methods and the kernel trick at a broad level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source supports the exact kernel-trick claim."
+    },
+    {
+      "unit_id": "97a98ae5a5a2584c",
+      "node_id": "kernel_methods",
+      "field": "why_it_matters",
+      "text": "The role of Kernels & implicit feature maps is to connect Linear algebra, Probability theory to downstream capabilities including Support vector & kernel machines, Gaussian processes.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning supports kernel machines; AIMA provides broad probability and mathematical AI background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim synthesizes standard kernel-machine and Gaussian-process relationships; direct GP support is broad."
+    },
+    {
+      "unit_id": "b0e1b9c1cede5ece",
+      "node_id": "kernel_methods",
+      "field": "examples[1]",
+      "text": "substrate for Support vector & kernel machines",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning discusses support vector machines and kernel methods.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Kernel methods directly support kernel machines and SVMs."
+    },
+    {
+      "unit_id": "ee05b890c91a484b",
+      "node_id": "kernel_methods",
+      "field": "examples[2]",
+      "text": "substrate for Gaussian processes",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet sources provide broad probability/kernel background; direct GP kernel support is indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gaussian processes are commonly defined by covariance kernels, but a GP-specific source would verify directly."
+    },
+    {
+      "unit_id": "957f79633b865085",
+      "node_id": "kernel_methods",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Linear algebra, Probability theory.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support kernel and mathematical background, but not the generic limitation statement.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependencies are plausible; the limitation needs direct support."
+    },
+    {
+      "unit_id": "90067560756cc34f",
+      "node_id": "kernel_methods",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Kernels & implicit feature maps uses Linear algebra as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support kernel matrices and mathematical AI background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Kernel methods rely on inner products, Gram matrices, and feature spaces."
+    },
+    {
+      "unit_id": "3423b7024dd70c73",
+      "node_id": "kernel_methods",
+      "field": "dependencies.probability.rationale",
+      "text": "Kernels & implicit feature maps uses Probability theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA provides broad probability background; probabilistic kernel models such as Gaussian processes use probability directly.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Probability is common rather than universal across kernel methods."
+    },
+    {
+      "unit_id": "8743b457e8cb262d",
+      "node_id": "kernel_methods",
+      "field": "dependencies.optimization.rationale",
+      "text": "Kernels & implicit feature maps uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The packet source provides broad AI/optimization background; Deep Learning supports optimization in model training.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Kernel machines often require optimization, but the edge is common rather than universal."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "9d5a3c468b07b04d",
+      "node_id": "kernel_methods",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Linear algebra is core to kernels, feature maps, and Gram matrices.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "3cf95377997bd09d",
+      "node_id": "kernel_methods",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Probability is important for probabilistic kernel methods such as Gaussian processes; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c9d9e24ef1f53859",
+      "node_id": "kernel_methods",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Optimization is common in kernel-machine training; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

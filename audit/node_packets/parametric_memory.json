@@ -1,0 +1,170 @@
+{
+  "node_id": "parametric_memory",
+  "label": "Parametric memory",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "parametric_memory",
+    "label": "Parametric memory",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "foundation-models"
+    ],
+    "aliases": [],
+    "definition": "Knowledge is encoded implicitly in learned parameters and recalled through model computation.",
+    "why_it_matters": "The role of Parametric memory is to connect Large-scale pretraining, Transformers to downstream capabilities including Semantic memory, Knowledge editing & memory consolidation.",
+    "examples": [
+      "substrate for Semantic memory",
+      "substrate for Knowledge editing & memory consolidation"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Large-scale pretraining, Transformers."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "pretraining",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Parametric memory uses Large-scale pretraining as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "transformer",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Parametric memory uses Transformers as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "embeddings",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "Parametric memory stores, selects, or obtains information through Embeddings & distributed representations."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "7cc5aca436e7d767",
+      "node_id": "parametric_memory",
+      "field": "definition",
+      "text": "Knowledge is encoded implicitly in learned parameters and recalled through model computation."
+    },
+    {
+      "unit_id": "9463a882a4abc303",
+      "node_id": "parametric_memory",
+      "field": "why_it_matters",
+      "text": "The role of Parametric memory is to connect Large-scale pretraining, Transformers to downstream capabilities including Semantic memory, Knowledge editing & memory consolidation."
+    },
+    {
+      "unit_id": "5d0c5bb57703ce24",
+      "node_id": "parametric_memory",
+      "field": "examples[1]",
+      "text": "substrate for Semantic memory"
+    },
+    {
+      "unit_id": "89786dcceb59e29f",
+      "node_id": "parametric_memory",
+      "field": "examples[2]",
+      "text": "substrate for Knowledge editing & memory consolidation"
+    },
+    {
+      "unit_id": "26ed1ae1b016e233",
+      "node_id": "parametric_memory",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Large-scale pretraining, Transformers."
+    },
+    {
+      "unit_id": "5393749f6c9bd499",
+      "node_id": "parametric_memory",
+      "field": "dependencies.pretraining.rationale",
+      "text": "Parametric memory uses Large-scale pretraining as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "75eba09a6fe7f1fc",
+      "node_id": "parametric_memory",
+      "field": "dependencies.transformer.rationale",
+      "text": "Parametric memory uses Transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "17f9e452b163bf97",
+      "node_id": "parametric_memory",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Parametric memory stores, selects, or obtains information through Embeddings & distributed representations."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "75900ae9652f7231",
+      "node_id": "parametric_memory",
+      "dependency_id": "pretraining",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Parametric memory uses Large-scale pretraining as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "0bd47b2ec45a3a30",
+      "node_id": "parametric_memory",
+      "dependency_id": "transformer",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Parametric memory uses Transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "7eedf9d5d11c90f0",
+      "node_id": "parametric_memory",
+      "dependency_id": "embeddings",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "Parametric memory stores, selects, or obtains information through Embeddings & distributed representations."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/parametric_memory.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

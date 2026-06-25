@@ -1,0 +1,171 @@
+{
+  "node_id": "world_model_rollout",
+  "label": "World-model rollout & imagination",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "world_model_rollout",
+    "label": "World-model rollout & imagination",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "world-models",
+      "rl"
+    ],
+    "aliases": [],
+    "definition": "World-model rollout simulates possible futures in learned latent or observation space so a policy or planner can evaluate actions without immediate real-world interaction.",
+    "why_it_matters": "The role of World-model rollout & imagination is to connect Latent world models & predictive dynamics, Model-based reinforcement learning to downstream capabilities including Robotics & embodied AI.",
+    "examples": [
+      "substrate for Robotics & embodied AI",
+      "combined with Latent world models & predictive dynamics"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Latent world models & predictive dynamics, Model-based reinforcement learning."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "world_model",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "World-model rollout & imagination uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "model_based_rl",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "World-model rollout & imagination uses Model-based reinforcement learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "mcts",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "World-model rollout & imagination uses Monte Carlo tree search as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3b88776c4cf5a71c",
+      "node_id": "world_model_rollout",
+      "field": "definition",
+      "text": "World-model rollout simulates possible futures in learned latent or observation space so a policy or planner can evaluate actions without immediate real-world interaction."
+    },
+    {
+      "unit_id": "ec55a23514a893a8",
+      "node_id": "world_model_rollout",
+      "field": "why_it_matters",
+      "text": "The role of World-model rollout & imagination is to connect Latent world models & predictive dynamics, Model-based reinforcement learning to downstream capabilities including Robotics & embodied AI."
+    },
+    {
+      "unit_id": "94baaceac3c0c0aa",
+      "node_id": "world_model_rollout",
+      "field": "examples[1]",
+      "text": "substrate for Robotics & embodied AI"
+    },
+    {
+      "unit_id": "a2dc4b708c455d03",
+      "node_id": "world_model_rollout",
+      "field": "examples[2]",
+      "text": "combined with Latent world models & predictive dynamics"
+    },
+    {
+      "unit_id": "101dc49b25ff8349",
+      "node_id": "world_model_rollout",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Latent world models & predictive dynamics, Model-based reinforcement learning."
+    },
+    {
+      "unit_id": "13b03fd0c3823e21",
+      "node_id": "world_model_rollout",
+      "field": "dependencies.world_model.rationale",
+      "text": "World-model rollout & imagination uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "b83302112cffe028",
+      "node_id": "world_model_rollout",
+      "field": "dependencies.model_based_rl.rationale",
+      "text": "World-model rollout & imagination uses Model-based reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "4474d3e0bb210588",
+      "node_id": "world_model_rollout",
+      "field": "dependencies.mcts.rationale",
+      "text": "World-model rollout & imagination uses Monte Carlo tree search as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "c86f618a885fe70a",
+      "node_id": "world_model_rollout",
+      "dependency_id": "world_model",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "World-model rollout & imagination uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "6a4bc7a719de029d",
+      "node_id": "world_model_rollout",
+      "dependency_id": "model_based_rl",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "World-model rollout & imagination uses Model-based reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "970e81a53de9a252",
+      "node_id": "world_model_rollout",
+      "dependency_id": "mcts",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "World-model rollout & imagination uses Monte Carlo tree search as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dreamer": {
+        "id": "ref_dreamer",
+        "title": "Mastering Diverse Domains through World Models",
+        "authors": "Hafner et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2301.04104"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/world_model_rollout.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

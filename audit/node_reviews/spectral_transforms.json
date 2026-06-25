@@ -1,0 +1,164 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "d24216e22a0a6b45",
+      "node_id": "spectral_transforms",
+      "field": "definition",
+      "text": "Signals are transformed into frequency or basis domains where global structure can be modeled efficiently.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning provides broad signal-processing and representation-learning background; the packet also lists AIMA as broad mathematical/computational background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition is consistent with Fourier/wavelet/spectral transforms, but a signal-processing source would be needed for verified."
+    },
+    {
+      "unit_id": "4311f0b23f1a3c62",
+      "node_id": "spectral_transforms",
+      "field": "why_it_matters",
+      "text": "The role of Fourier, wavelet & spectral transforms is to connect Signal processing & harmonic analysis, Linear algebra to downstream capabilities including Structured state-space models (S4 family), Neural operators, FNOs & PINNs.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support broad mathematical and ML background, not direct S4/FNO/PINN downstream relationships.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The downstream list needs specific spectral state-space and neural-operator citations."
+    },
+    {
+      "unit_id": "b10b0ab88cb0cb6a",
+      "node_id": "spectral_transforms",
+      "field": "examples[1]",
+      "text": "substrate for Structured state-space models (S4 family)",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources do not directly establish S4-family spectral mechanisms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "A structured state-space/S4 source is needed."
+    },
+    {
+      "unit_id": "a47c4cd51adfbeec",
+      "node_id": "spectral_transforms",
+      "field": "examples[2]",
+      "text": "substrate for Neural operators, FNOs & PINNs",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources do not directly support neural operators, Fourier neural operators, or PINNs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "A Fourier neural operator or neural-operator source is needed for direct support."
+    },
+    {
+      "unit_id": "b87bdbff5f0d092e",
+      "node_id": "spectral_transforms",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Signal processing & harmonic analysis, Linear algebra.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support broad dependency background but not the generic limitation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependencies are plausible; the generic caveat is not directly sourced."
+    },
+    {
+      "unit_id": "ce271a3dd7bc8a96",
+      "node_id": "spectral_transforms",
+      "field": "dependencies.signal_processing.rationale",
+      "text": "Fourier, wavelet & spectral transforms uses Signal processing & harmonic analysis as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited source provides broad signal-processing background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "This dependency is definitional for Fourier, wavelet, and spectral transforms."
+    },
+    {
+      "unit_id": "0d0c2b1ae03baf21",
+      "node_id": "spectral_transforms",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Fourier, wavelet & spectral transforms uses Linear algebra as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA provides broad mathematical/computational background; transforms can be represented as linear operators or basis changes.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Linear algebra is a defensible core dependency, but direct support should cite a linear systems or signal-processing source."
+    },
+    {
+      "unit_id": "5c730b876282f8be",
+      "node_id": "spectral_transforms",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "Fourier, wavelet & spectral transforms uses Numerical analysis as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The packet source provides broad computational background, not direct numerical-transform evidence.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Numerical methods are relevant to implementing transforms; direct evidence would need a numerical analysis source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "762c1b6201151cf5",
+      "node_id": "spectral_transforms",
+      "dependency_id": "signal_processing",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Signal processing/harmonic analysis is a core dependency for spectral transforms.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "6bd4e80e80c1a2a3",
+      "node_id": "spectral_transforms",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Basis changes and linear operators make linear algebra a defensible core dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a226463e64d3798a",
+      "node_id": "spectral_transforms",
+      "dependency_id": "numerical_methods",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Numerical implementation is relevant; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

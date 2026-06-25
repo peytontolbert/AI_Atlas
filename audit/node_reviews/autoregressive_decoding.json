@@ -1,0 +1,182 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "44fe9b7fd9a12ec8",
+      "node_id": "autoregressive_decoding",
+      "field": "definition",
+      "text": "Outputs are generated step by step, conditioning each decision on prior outputs.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning and PML support autoregressive sequence modeling and conditional probabilistic generation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set supports the exact autoregressive decoding claim."
+    },
+    {
+      "unit_id": "1e8b84265f1fe3c8",
+      "node_id": "autoregressive_decoding",
+      "field": "why_it_matters",
+      "text": "The role of Autoregressive decoding is to connect Autoregressive / next-step prediction, Sequences, events & time series to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Chain-of-thought & latent reasoning.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support autoregressive sequence modeling, but not all listed downstream transformer/reasoning capabilities.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Transformer generation is defensible by synthesis; chain-of-thought and latent reasoning need narrower sources."
+    },
+    {
+      "unit_id": "ed79b3e40b40f3de",
+      "node_id": "autoregressive_decoding",
+      "field": "examples[1]",
+      "text": "substrate for Encoder–decoder transformers",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support sequence-to-sequence/autoregressive generation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Autoregressive decoding is used in many encoder-decoder generation systems, but a transformer source would be direct."
+    },
+    {
+      "unit_id": "a0c217e11a2640fd",
+      "node_id": "autoregressive_decoding",
+      "field": "examples[2]",
+      "text": "substrate for Decoder-only causal transformers",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support autoregressive sequence modeling, with transformer-specific support indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relationship is technically sound, but direct verification needs a causal transformer language-model source."
+    },
+    {
+      "unit_id": "651b0fdceee87ea3",
+      "node_id": "autoregressive_decoding",
+      "field": "examples[3]",
+      "text": "substrate for Chain-of-thought & latent reasoning",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet sources do not directly establish chain-of-thought or latent reasoning as downstream capabilities.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Autoregressive generation is relevant, but reasoning-specific citations are needed."
+    },
+    {
+      "unit_id": "24dbcb3690619b2b",
+      "node_id": "autoregressive_decoding",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Autoregressive / next-step prediction, Sequences, events & time series.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support autoregressive and sequence background, but not the generic limitation statement.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependencies are plausible; the generic benefit caveat is not directly sourced."
+    },
+    {
+      "unit_id": "33ee353118a88220",
+      "node_id": "autoregressive_decoding",
+      "field": "dependencies.autoregressive_objective.rationale",
+      "text": "Autoregressive decoding uses Autoregressive / next-step prediction as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support autoregressive factorization and next-step sequence modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "This dependency is essentially definitional for autoregressive decoding."
+    },
+    {
+      "unit_id": "36a8f56624dc2fd5",
+      "node_id": "autoregressive_decoding",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Autoregressive decoding uses Sequences, events & time series as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML supports probabilistic sequence and time-series modeling background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Autoregressive decoding is a sequence-generation mechanism."
+    },
+    {
+      "unit_id": "e6f5694234749055",
+      "node_id": "autoregressive_decoding",
+      "field": "dependencies.probability.rationale",
+      "text": "Autoregressive decoding uses Probability theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML supports conditional probability and autoregressive probabilistic modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Token-by-token conditioning is probabilistic in standard autoregressive decoding."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "1781752c7d1b3dde",
+      "node_id": "autoregressive_decoding",
+      "dependency_id": "autoregressive_objective",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Autoregressive decoding directly depends on next-step conditioning.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "cf80853c38e5b3bd",
+      "node_id": "autoregressive_decoding",
+      "dependency_id": "sequences_time",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The mechanism operates over ordered outputs; core strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "571291445e970723",
+      "node_id": "autoregressive_decoding",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Probability theory supports conditional next-token distributions; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

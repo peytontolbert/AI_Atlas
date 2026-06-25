@@ -1,0 +1,171 @@
+{
+  "node_id": "data_curation",
+  "label": "Data collection, curation & filtering",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "data_curation",
+    "label": "Data collection, curation & filtering",
+    "layer": "training",
+    "tags": [
+      "training",
+      "data",
+      "governance"
+    ],
+    "aliases": [],
+    "definition": "Data curation collects, filters, balances, labels, documents, and governs examples so the training distribution better matches intended capabilities and risks.",
+    "why_it_matters": "The role of Data collection, curation & filtering is to connect Datasets, sampling & splits, Databases & information retrieval to downstream capabilities including Deduplication, contamination control & provenance, Large-scale pretraining, Curricula, data mixtures & sampling schedules.",
+    "examples": [
+      "substrate for Deduplication, contamination control & provenance",
+      "substrate for Large-scale pretraining",
+      "substrate for Curricula, data mixtures & sampling schedules"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Databases & information retrieval."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Data collection, curation & filtering uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "databases_ir",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Data collection, curation & filtering uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "statistics",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Data collection, curation & filtering uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d57aaf98e1cfd333",
+      "node_id": "data_curation",
+      "field": "definition",
+      "text": "Data curation collects, filters, balances, labels, documents, and governs examples so the training distribution better matches intended capabilities and risks."
+    },
+    {
+      "unit_id": "b4ef9af6a675cf6a",
+      "node_id": "data_curation",
+      "field": "why_it_matters",
+      "text": "The role of Data collection, curation & filtering is to connect Datasets, sampling & splits, Databases & information retrieval to downstream capabilities including Deduplication, contamination control & provenance, Large-scale pretraining, Curricula, data mixtures & sampling schedules."
+    },
+    {
+      "unit_id": "4ecde73efb23ff22",
+      "node_id": "data_curation",
+      "field": "examples[1]",
+      "text": "substrate for Deduplication, contamination control & provenance"
+    },
+    {
+      "unit_id": "2516093c7b6de969",
+      "node_id": "data_curation",
+      "field": "examples[2]",
+      "text": "substrate for Large-scale pretraining"
+    },
+    {
+      "unit_id": "425e2f719d27f1e2",
+      "node_id": "data_curation",
+      "field": "examples[3]",
+      "text": "substrate for Curricula, data mixtures & sampling schedules"
+    },
+    {
+      "unit_id": "5e1767b7eeaad134",
+      "node_id": "data_curation",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Databases & information retrieval."
+    },
+    {
+      "unit_id": "552378e2141c0565",
+      "node_id": "data_curation",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Data collection, curation & filtering uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "221ca9ff5598b962",
+      "node_id": "data_curation",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Data collection, curation & filtering uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f5118bcfc2bd8e2a",
+      "node_id": "data_curation",
+      "field": "dependencies.statistics.rationale",
+      "text": "Data collection, curation & filtering uses Statistics & experimental design as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "52af48e98b812f42",
+      "node_id": "data_curation",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Data collection, curation & filtering uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "e07006bc6d181617",
+      "node_id": "data_curation",
+      "dependency_id": "databases_ir",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Data collection, curation & filtering uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "92dfb31216e56fa6",
+      "node_id": "data_curation",
+      "dependency_id": "statistics",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Data collection, curation & filtering uses Statistics & experimental design as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/data_curation.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "node_id": "bellman_td",
+  "label": "Bellman, temporal-difference & value objectives",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "bellman_td",
+    "label": "Bellman, temporal-difference & value objectives",
+    "layer": "objective",
+    "tags": [
+      "objective",
+      "rl"
+    ],
+    "aliases": [],
+    "definition": "Predicted value is matched to reward plus discounted future value; it operationally connects Reinforcement learning and Dynamical systems & control theory.",
+    "why_it_matters": "The role of Bellman, temporal-difference & value objectives is to connect Reinforcement learning, Dynamical systems & control theory to downstream capabilities including Policy-gradient & actor–critic objectives.",
+    "examples": [
+      "substrate for Policy-gradient & actor–critic objectives",
+      "combined with Reinforcement learning"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Reinforcement learning, Dynamical systems & control theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "reinforcement_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Bellman, temporal-difference & value objectives uses Reinforcement learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Bellman, temporal-difference & value objectives uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "game_decision_theory",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Bellman, temporal-difference & value objectives uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b452a700589f4f25",
+      "node_id": "bellman_td",
+      "field": "definition",
+      "text": "Predicted value is matched to reward plus discounted future value; it operationally connects Reinforcement learning and Dynamical systems & control theory."
+    },
+    {
+      "unit_id": "04dea614683299d4",
+      "node_id": "bellman_td",
+      "field": "why_it_matters",
+      "text": "The role of Bellman, temporal-difference & value objectives is to connect Reinforcement learning, Dynamical systems & control theory to downstream capabilities including Policy-gradient & actor–critic objectives."
+    },
+    {
+      "unit_id": "226edadb3afd80b6",
+      "node_id": "bellman_td",
+      "field": "examples[1]",
+      "text": "substrate for Policy-gradient & actor–critic objectives"
+    },
+    {
+      "unit_id": "9f7336870528c52f",
+      "node_id": "bellman_td",
+      "field": "examples[2]",
+      "text": "combined with Reinforcement learning"
+    },
+    {
+      "unit_id": "ea45cc54d83af707",
+      "node_id": "bellman_td",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Reinforcement learning, Dynamical systems & control theory."
+    },
+    {
+      "unit_id": "47f5abcd04e1e5e8",
+      "node_id": "bellman_td",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Bellman, temporal-difference & value objectives uses Reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "5a346c7f3e04b708",
+      "node_id": "bellman_td",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Bellman, temporal-difference & value objectives uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "a1dbded9179e548b",
+      "node_id": "bellman_td",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Bellman, temporal-difference & value objectives uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "334e2ed4a0638b08",
+      "node_id": "bellman_td",
+      "dependency_id": "reinforcement_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Bellman, temporal-difference & value objectives uses Reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "422765fa015a6c29",
+      "node_id": "bellman_td",
+      "dependency_id": "dynamical_control",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Bellman, temporal-difference & value objectives uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4cf06f1197fa3830",
+      "node_id": "bellman_td",
+      "dependency_id": "game_decision_theory",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Bellman, temporal-difference & value objectives uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/bellman_td.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

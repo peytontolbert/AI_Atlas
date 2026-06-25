@@ -1,0 +1,178 @@
+{
+  "node_id": "task_arithmetic",
+  "label": "Task vectors & parameter arithmetic",
+  "layer": "training",
+  "editorial_status": "curated",
+  "node": {
+    "id": "task_arithmetic",
+    "label": "Task vectors & parameter arithmetic",
+    "layer": "training",
+    "tags": [
+      "training",
+      "adaptation",
+      "interpretability"
+    ],
+    "aliases": [],
+    "definition": "Task arithmetic treats fine-tuning deltas as vectors that can be added, subtracted, scaled, projected, or composed to modify model behavior.",
+    "why_it_matters": "It provides a concrete algebra for comparing and combining learned adaptations.",
+    "examples": [
+      "adding a domain skill",
+      "subtracting an unwanted behavior",
+      "orthogonalizing adapters"
+    ],
+    "limitations": [
+      "Weight-space directions are not perfectly linear or independent, so composition can produce destructive interference."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_modelmerge"
+    ],
+    "dependencies": [
+      {
+        "id": "model_merging",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Task vectors & parameter arithmetic uses Model merging & weight-space composition as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "peft_lora",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Task vectors & parameter arithmetic uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "linear_algebra",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Task vectors & parameter arithmetic uses Linear algebra as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "42d266b963f73967",
+      "node_id": "task_arithmetic",
+      "field": "definition",
+      "text": "Task arithmetic treats fine-tuning deltas as vectors that can be added, subtracted, scaled, projected, or composed to modify model behavior."
+    },
+    {
+      "unit_id": "40971c7c925852bf",
+      "node_id": "task_arithmetic",
+      "field": "why_it_matters",
+      "text": "It provides a concrete algebra for comparing and combining learned adaptations."
+    },
+    {
+      "unit_id": "9e38908db711f5e2",
+      "node_id": "task_arithmetic",
+      "field": "examples[1]",
+      "text": "adding a domain skill"
+    },
+    {
+      "unit_id": "daaed7fd24fd3af5",
+      "node_id": "task_arithmetic",
+      "field": "examples[2]",
+      "text": "subtracting an unwanted behavior"
+    },
+    {
+      "unit_id": "414c168cbf7fffc2",
+      "node_id": "task_arithmetic",
+      "field": "examples[3]",
+      "text": "orthogonalizing adapters"
+    },
+    {
+      "unit_id": "cbec3e41518a6858",
+      "node_id": "task_arithmetic",
+      "field": "limitations[1]",
+      "text": "Weight-space directions are not perfectly linear or independent, so composition can produce destructive interference."
+    },
+    {
+      "unit_id": "c4eed9e2dd06453a",
+      "node_id": "task_arithmetic",
+      "field": "dependencies.model_merging.rationale",
+      "text": "Task vectors & parameter arithmetic uses Model merging & weight-space composition as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "7ab0cdcd72f4a922",
+      "node_id": "task_arithmetic",
+      "field": "dependencies.peft_lora.rationale",
+      "text": "Task vectors & parameter arithmetic uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "dcf1f9ee1eec4ca1",
+      "node_id": "task_arithmetic",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Task vectors & parameter arithmetic uses Linear algebra as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ed632c3e1e1a7b30",
+      "node_id": "task_arithmetic",
+      "dependency_id": "model_merging",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Task vectors & parameter arithmetic uses Model merging & weight-space composition as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "d43666050a7c2ffc",
+      "node_id": "task_arithmetic",
+      "dependency_id": "peft_lora",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Task vectors & parameter arithmetic uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "7ee098a3f6789196",
+      "node_id": "task_arithmetic",
+      "dependency_id": "linear_algebra",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Task vectors & parameter arithmetic uses Linear algebra as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_modelmerge": {
+        "id": "ref_modelmerge",
+        "title": "Model Soups: Averaging Weights of Multiple Fine-tuned Models Improves Accuracy without Increasing Inference Time",
+        "authors": "Wortsman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.05482"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_lora": {
+        "id": "ref_lora",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "authors": "Hu et al.",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2106.09685"
+      },
+      "ref_modelmerge": {
+        "id": "ref_modelmerge",
+        "title": "Model Soups: Averaging Weights of Multiple Fine-tuned Models Improves Accuracy without Increasing Inference Time",
+        "authors": "Wortsman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.05482"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/task_arithmetic.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

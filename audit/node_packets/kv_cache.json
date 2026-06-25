@@ -1,0 +1,164 @@
+{
+  "node_id": "kv_cache",
+  "label": "KV cache & recurrent inference state",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "kv_cache",
+    "label": "KV cache & recurrent inference state",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "serving",
+      "sequence"
+    ],
+    "aliases": [],
+    "definition": "Intermediate keys, values, or recurrent state are reused across generation steps to avoid recomputation.",
+    "why_it_matters": "The role of KV cache & recurrent inference state is to connect Caches, APIs & tool interfaces, Transformers to downstream capabilities including Paged attention & KV-memory management.",
+    "examples": [
+      "substrate for Paged attention & KV-memory management",
+      "combined with Caches, APIs & tool interfaces"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Caches, APIs & tool interfaces, Transformers."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "cache_tool_interfaces",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "KV cache & recurrent inference state uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "transformer",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "KV cache & recurrent inference state uses Transformers as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "state_space_transition",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "KV cache & recurrent inference state uses State-space transitions as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a42ac6bfcb1eba95",
+      "node_id": "kv_cache",
+      "field": "definition",
+      "text": "Intermediate keys, values, or recurrent state are reused across generation steps to avoid recomputation."
+    },
+    {
+      "unit_id": "fbb69ef74ba83482",
+      "node_id": "kv_cache",
+      "field": "why_it_matters",
+      "text": "The role of KV cache & recurrent inference state is to connect Caches, APIs & tool interfaces, Transformers to downstream capabilities including Paged attention & KV-memory management."
+    },
+    {
+      "unit_id": "563da189035662d6",
+      "node_id": "kv_cache",
+      "field": "examples[1]",
+      "text": "substrate for Paged attention & KV-memory management"
+    },
+    {
+      "unit_id": "d612afb9f8ae256b",
+      "node_id": "kv_cache",
+      "field": "examples[2]",
+      "text": "combined with Caches, APIs & tool interfaces"
+    },
+    {
+      "unit_id": "1ac99ea4e6bc4f3a",
+      "node_id": "kv_cache",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Caches, APIs & tool interfaces, Transformers."
+    },
+    {
+      "unit_id": "f43c5e70d8508638",
+      "node_id": "kv_cache",
+      "field": "dependencies.cache_tool_interfaces.rationale",
+      "text": "KV cache & recurrent inference state uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "4fc9c71d16c86ce4",
+      "node_id": "kv_cache",
+      "field": "dependencies.transformer.rationale",
+      "text": "KV cache & recurrent inference state uses Transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "513f3fb4762708ce",
+      "node_id": "kv_cache",
+      "field": "dependencies.state_space_transition.rationale",
+      "text": "KV cache & recurrent inference state uses State-space transitions as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "4af6926dba725814",
+      "node_id": "kv_cache",
+      "dependency_id": "cache_tool_interfaces",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "KV cache & recurrent inference state uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "d2f1bfd5715c6c8a",
+      "node_id": "kv_cache",
+      "dependency_id": "transformer",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "KV cache & recurrent inference state uses Transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "9ee2361e3ebbb3a3",
+      "node_id": "kv_cache",
+      "dependency_id": "state_space_transition",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "KV cache & recurrent inference state uses State-space transitions as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/kv_cache.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

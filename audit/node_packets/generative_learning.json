@@ -1,0 +1,222 @@
+{
+  "node_id": "generative_learning",
+  "label": "Generative modeling",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "generative_learning",
+    "label": "Generative modeling",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "generative"
+    ],
+    "aliases": [],
+    "definition": "A model learns a data distribution or transformation process capable of producing new samples.",
+    "why_it_matters": "The role of Generative modeling is to connect Probability theory, Distributions, uncertainty & beliefs to downstream capabilities including Maximum likelihood & cross-entropy, Autoregressive / next-step prediction, Reconstruction objectives.",
+    "examples": [
+      "substrate for Maximum likelihood & cross-entropy",
+      "substrate for Autoregressive / next-step prediction",
+      "substrate for Reconstruction objectives"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Probability theory, Distributions, uncertainty & beliefs."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima",
+      "ref_vae",
+      "ref_gan",
+      "ref_diffusion",
+      "ref_flow"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Generative modeling uses Probability theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "distributions_uncertainty",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Generative modeling uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "latent_variables",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Generative modeling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Generative modeling uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "44a85cc57454f314",
+      "node_id": "generative_learning",
+      "field": "definition",
+      "text": "A model learns a data distribution or transformation process capable of producing new samples."
+    },
+    {
+      "unit_id": "08cc209e30ba0159",
+      "node_id": "generative_learning",
+      "field": "why_it_matters",
+      "text": "The role of Generative modeling is to connect Probability theory, Distributions, uncertainty & beliefs to downstream capabilities including Maximum likelihood & cross-entropy, Autoregressive / next-step prediction, Reconstruction objectives."
+    },
+    {
+      "unit_id": "2b1d2bbf1d1fc40a",
+      "node_id": "generative_learning",
+      "field": "examples[1]",
+      "text": "substrate for Maximum likelihood & cross-entropy"
+    },
+    {
+      "unit_id": "ede8f54797a206ac",
+      "node_id": "generative_learning",
+      "field": "examples[2]",
+      "text": "substrate for Autoregressive / next-step prediction"
+    },
+    {
+      "unit_id": "7c43fb7358c3c4df",
+      "node_id": "generative_learning",
+      "field": "examples[3]",
+      "text": "substrate for Reconstruction objectives"
+    },
+    {
+      "unit_id": "5eee5ad14e4d2d93",
+      "node_id": "generative_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Probability theory, Distributions, uncertainty & beliefs."
+    },
+    {
+      "unit_id": "e63f0478c1c457ed",
+      "node_id": "generative_learning",
+      "field": "dependencies.probability.rationale",
+      "text": "Generative modeling uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "eef8f41cab03e4ea",
+      "node_id": "generative_learning",
+      "field": "dependencies.distributions_uncertainty.rationale",
+      "text": "Generative modeling uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "159c22086d50d490",
+      "node_id": "generative_learning",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "Generative modeling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "d6ee024274351b05",
+      "node_id": "generative_learning",
+      "field": "dependencies.optimization.rationale",
+      "text": "Generative modeling uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "7446db01407dc6ce",
+      "node_id": "generative_learning",
+      "dependency_id": "probability",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Generative modeling uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "82f958ee0aa6826a",
+      "node_id": "generative_learning",
+      "dependency_id": "distributions_uncertainty",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Generative modeling uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "3bee63c265d33c58",
+      "node_id": "generative_learning",
+      "dependency_id": "latent_variables",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Generative modeling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "187dffe3a738e3e4",
+      "node_id": "generative_learning",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Generative modeling uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_vae": {
+        "id": "ref_vae",
+        "title": "Auto-Encoding Variational Bayes",
+        "authors": "Kingma & Welling",
+        "year": 2013,
+        "url": "https://arxiv.org/abs/1312.6114"
+      },
+      "ref_gan": {
+        "id": "ref_gan",
+        "title": "Generative Adversarial Nets",
+        "authors": "Goodfellow et al.",
+        "year": 2014,
+        "url": "https://arxiv.org/abs/1406.2661"
+      },
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/generative_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

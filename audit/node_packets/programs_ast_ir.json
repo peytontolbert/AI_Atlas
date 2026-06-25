@@ -1,0 +1,143 @@
+{
+  "node_id": "programs_ast_ir",
+  "label": "Programs, ASTs, bytecode & intermediate representations",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "programs_ast_ir",
+    "label": "Programs, ASTs, bytecode & intermediate representations",
+    "layer": "representation",
+    "tags": [
+      "code",
+      "symbolic"
+    ],
+    "aliases": [],
+    "definition": "Executable and analyzable program structures support code generation, verification, and tool use.",
+    "why_it_matters": "The role of Programs, ASTs, bytecode & intermediate representations is to connect Programming languages, compilers & type systems, Algorithms & data structures to downstream capabilities including Neuro-symbolic & physics-informed learning, Boolean circuits & differentiable logic gates, Constraint propagation, logic & program execution.",
+    "examples": [
+      "substrate for Neuro-symbolic & physics-informed learning",
+      "substrate for Boolean circuits & differentiable logic gates",
+      "substrate for Constraint propagation, logic & program execution"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Programming languages, compilers & type systems, Algorithms & data structures."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "programming_languages_types",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Programs, ASTs, bytecode & intermediate representations rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Programs, ASTs, bytecode & intermediate representations rests on the formal or computational capabilities supplied by Algorithms & data structures."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3961e3003b70c108",
+      "node_id": "programs_ast_ir",
+      "field": "definition",
+      "text": "Executable and analyzable program structures support code generation, verification, and tool use."
+    },
+    {
+      "unit_id": "9b09ddb2a4bf5e20",
+      "node_id": "programs_ast_ir",
+      "field": "why_it_matters",
+      "text": "The role of Programs, ASTs, bytecode & intermediate representations is to connect Programming languages, compilers & type systems, Algorithms & data structures to downstream capabilities including Neuro-symbolic & physics-informed learning, Boolean circuits & differentiable logic gates, Constraint propagation, logic & program execution."
+    },
+    {
+      "unit_id": "cd3b36d948b529d9",
+      "node_id": "programs_ast_ir",
+      "field": "examples[1]",
+      "text": "substrate for Neuro-symbolic & physics-informed learning"
+    },
+    {
+      "unit_id": "1b48f2c6a6b35e06",
+      "node_id": "programs_ast_ir",
+      "field": "examples[2]",
+      "text": "substrate for Boolean circuits & differentiable logic gates"
+    },
+    {
+      "unit_id": "8ce407267b8fefc8",
+      "node_id": "programs_ast_ir",
+      "field": "examples[3]",
+      "text": "substrate for Constraint propagation, logic & program execution"
+    },
+    {
+      "unit_id": "723ee4e4b02f450e",
+      "node_id": "programs_ast_ir",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Programming languages, compilers & type systems, Algorithms & data structures."
+    },
+    {
+      "unit_id": "8fbc3c55f6fd37f2",
+      "node_id": "programs_ast_ir",
+      "field": "dependencies.programming_languages_types.rationale",
+      "text": "Programs, ASTs, bytecode & intermediate representations rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems."
+    },
+    {
+      "unit_id": "887f05d64bbe7f79",
+      "node_id": "programs_ast_ir",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Programs, ASTs, bytecode & intermediate representations rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "13a89ced03fe2e8f",
+      "node_id": "programs_ast_ir",
+      "dependency_id": "programming_languages_types",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Programs, ASTs, bytecode & intermediate representations rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems."
+    },
+    {
+      "edge_id": "82f16c52288b68cb",
+      "node_id": "programs_ast_ir",
+      "dependency_id": "algorithms_data_structures",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Programs, ASTs, bytecode & intermediate representations rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/programs_ast_ir.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

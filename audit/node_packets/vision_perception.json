@@ -1,0 +1,334 @@
+{
+  "node_id": "vision_perception",
+  "label": "Computer vision, perception & scene understanding",
+  "layer": "system",
+  "editorial_status": "curated",
+  "node": {
+    "id": "vision_perception",
+    "label": "Computer vision, perception & scene understanding",
+    "layer": "system",
+    "tags": [
+      "system",
+      "vision",
+      "multimodal"
+    ],
+    "aliases": [],
+    "definition": "Vision-perception systems detect, classify, segment, track, reconstruct, and reason about objects, scenes, geometry, and events in images or video.",
+    "why_it_matters": "They convert visual sensor data into state estimates usable by people, robots, vehicles, medicine, and scientific workflows.",
+    "examples": [
+      "object detection",
+      "semantic segmentation",
+      "three-dimensional scene understanding"
+    ],
+    "limitations": [
+      "Performance can fail under viewpoint, lighting, occlusion, domain shift, adversarial patterns, or ambiguous ground truth."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook",
+      "ref_transformer"
+    ],
+    "dependencies": [
+      {
+        "id": "cnn",
+        "type": "applies",
+        "strength": "core",
+        "rationale": "Computer vision, perception & scene understanding integrates Convolutional neural networks as part of an end-to-end application boundary."
+      },
+      {
+        "id": "vision_transformer_perceiver",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Computer vision, perception & scene understanding integrates Vision Transformers & Perceiver-style latent models as part of an end-to-end application boundary."
+      },
+      {
+        "id": "gnn",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Computer vision, perception & scene understanding integrates Graph neural networks as part of an end-to-end application boundary."
+      },
+      {
+        "id": "multimodal_foundation",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Computer vision, perception & scene understanding integrates Multimodal foundation models as part of an end-to-end application boundary."
+      },
+      {
+        "id": "calibration_evaluation",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Computer vision, perception & scene understanding integrates Calibration, uncertainty & risk evaluation as part of an end-to-end application boundary."
+      },
+      {
+        "id": "sets_pointclouds",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Computer vision, perception & scene understanding integrates Sets, point clouds & meshes as part of an end-to-end application boundary."
+      },
+      {
+        "id": "resnet_densenet",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Computer vision, perception & scene understanding integrates ResNets & DenseNets as part of an end-to-end application boundary."
+      },
+      {
+        "id": "jepa_model",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Computer vision, perception & scene understanding integrates Joint-embedding predictive architectures as part of an end-to-end application boundary."
+      },
+      {
+        "id": "semi_weak_learning",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Computer vision, perception & scene understanding integrates Semi-supervised & weak supervision as part of an end-to-end application boundary."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d725b423d6dfebd5",
+      "node_id": "vision_perception",
+      "field": "definition",
+      "text": "Vision-perception systems detect, classify, segment, track, reconstruct, and reason about objects, scenes, geometry, and events in images or video."
+    },
+    {
+      "unit_id": "051877f55b9ed794",
+      "node_id": "vision_perception",
+      "field": "why_it_matters",
+      "text": "They convert visual sensor data into state estimates usable by people, robots, vehicles, medicine, and scientific workflows."
+    },
+    {
+      "unit_id": "6ea2b9ad45cc58a6",
+      "node_id": "vision_perception",
+      "field": "examples[1]",
+      "text": "object detection"
+    },
+    {
+      "unit_id": "5afec30bc24ed874",
+      "node_id": "vision_perception",
+      "field": "examples[2]",
+      "text": "semantic segmentation"
+    },
+    {
+      "unit_id": "78c87a6edf23322e",
+      "node_id": "vision_perception",
+      "field": "examples[3]",
+      "text": "three-dimensional scene understanding"
+    },
+    {
+      "unit_id": "371c5797bbeab8f3",
+      "node_id": "vision_perception",
+      "field": "limitations[1]",
+      "text": "Performance can fail under viewpoint, lighting, occlusion, domain shift, adversarial patterns, or ambiguous ground truth."
+    },
+    {
+      "unit_id": "a53abd2488bb5f55",
+      "node_id": "vision_perception",
+      "field": "dependencies.cnn.rationale",
+      "text": "Computer vision, perception & scene understanding integrates Convolutional neural networks as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "53a448a4f9043ded",
+      "node_id": "vision_perception",
+      "field": "dependencies.vision_transformer_perceiver.rationale",
+      "text": "Computer vision, perception & scene understanding integrates Vision Transformers & Perceiver-style latent models as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "a99aaad2280aa5ca",
+      "node_id": "vision_perception",
+      "field": "dependencies.gnn.rationale",
+      "text": "Computer vision, perception & scene understanding integrates Graph neural networks as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "350ccce1882f1f37",
+      "node_id": "vision_perception",
+      "field": "dependencies.multimodal_foundation.rationale",
+      "text": "Computer vision, perception & scene understanding integrates Multimodal foundation models as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "dd3c89a11c3c9c05",
+      "node_id": "vision_perception",
+      "field": "dependencies.calibration_evaluation.rationale",
+      "text": "Computer vision, perception & scene understanding integrates Calibration, uncertainty & risk evaluation as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "1128a80b0e9d2195",
+      "node_id": "vision_perception",
+      "field": "dependencies.sets_pointclouds.rationale",
+      "text": "Computer vision, perception & scene understanding integrates Sets, point clouds & meshes as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "955bd81d3ee16e35",
+      "node_id": "vision_perception",
+      "field": "dependencies.resnet_densenet.rationale",
+      "text": "Computer vision, perception & scene understanding integrates ResNets & DenseNets as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "bb890d37e6b051b5",
+      "node_id": "vision_perception",
+      "field": "dependencies.jepa_model.rationale",
+      "text": "Computer vision, perception & scene understanding integrates Joint-embedding predictive architectures as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "75e9238a3ebce5c6",
+      "node_id": "vision_perception",
+      "field": "dependencies.semi_weak_learning.rationale",
+      "text": "Computer vision, perception & scene understanding integrates Semi-supervised & weak supervision as part of an end-to-end application boundary."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "8615ebf456126df6",
+      "node_id": "vision_perception",
+      "dependency_id": "cnn",
+      "type": "applies",
+      "strength": "core",
+      "rationale": "Computer vision, perception & scene understanding integrates Convolutional neural networks as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "ece8f9703fa7b136",
+      "node_id": "vision_perception",
+      "dependency_id": "vision_transformer_perceiver",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Computer vision, perception & scene understanding integrates Vision Transformers & Perceiver-style latent models as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "39e61f790dd1b3a2",
+      "node_id": "vision_perception",
+      "dependency_id": "gnn",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Computer vision, perception & scene understanding integrates Graph neural networks as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "ce950a65a95df5cb",
+      "node_id": "vision_perception",
+      "dependency_id": "multimodal_foundation",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Computer vision, perception & scene understanding integrates Multimodal foundation models as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "3c574e487a6df27f",
+      "node_id": "vision_perception",
+      "dependency_id": "calibration_evaluation",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Computer vision, perception & scene understanding integrates Calibration, uncertainty & risk evaluation as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "799e1e3adaefd083",
+      "node_id": "vision_perception",
+      "dependency_id": "sets_pointclouds",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Computer vision, perception & scene understanding integrates Sets, point clouds & meshes as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "9ccdad993ad21fbb",
+      "node_id": "vision_perception",
+      "dependency_id": "resnet_densenet",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Computer vision, perception & scene understanding integrates ResNets & DenseNets as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "07d8b943f477c734",
+      "node_id": "vision_perception",
+      "dependency_id": "jepa_model",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Computer vision, perception & scene understanding integrates Joint-embedding predictive architectures as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "452bf65057abd754",
+      "node_id": "vision_perception",
+      "dependency_id": "semi_weak_learning",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Computer vision, perception & scene understanding integrates Semi-supervised & weak supervision as part of an end-to-end application boundary."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_gnn": {
+        "id": "ref_gnn",
+        "title": "Relational inductive biases, deep learning, and graph networks",
+        "authors": "Battaglia et al.",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1806.01261"
+      },
+      "ref_jepa": {
+        "id": "ref_jepa",
+        "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
+        "authors": "Assran et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2301.08243"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_resnet": {
+        "id": "ref_resnet",
+        "title": "Deep Residual Learning for Image Recognition",
+        "authors": "He et al.",
+        "year": 2015,
+        "url": "https://arxiv.org/abs/1512.03385"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/vision_perception.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "0a0bc70491b5ebe0",
+      "node_id": "sparse_distributed_codes",
+      "field": "definition",
+      "text": "Information is represented by a small active subset of features, improving compression, interpretability, or conditional computation.",
+      "source_ids": [
+        "ref_pml",
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "PML/DLbook sparse representation and regularization context; sparsely-gated MoE reference for conditional computation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sparse coding supports small active feature subsets and can aid compression/interpretability; conditional computation is supported by sparse MoE examples. The sentence combines multiple sparse-representation uses."
+    },
+    {
+      "unit_id": "e253affa60eef5fa",
+      "node_id": "sparse_distributed_codes",
+      "field": "why_it_matters",
+      "text": "The role of Sparse coding & compositional representations is to connect Embeddings & distributed representations, Information theory to downstream capabilities including Mechanistic interpretability & circuit analysis.",
+      "source_ids": [
+        "ref_pml",
+        "ref_dlbook"
+      ],
+      "evidence_location": "PML/DLbook representation-learning and sparse coding context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Embeddings and sparse representations are supported. The information-theory and mechanistic-interpretability/circuit-analysis links are plausible but not directly supported by packet sources."
+    },
+    {
+      "unit_id": "b498112db7c0c139",
+      "node_id": "sparse_distributed_codes",
+      "field": "examples[1]",
+      "text": "substrate for Mechanistic interpretability & circuit analysis",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML supports sparse/learned representations generally, but not mechanistic interpretability and circuit analysis specifically.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Sparse features are relevant to interpretability, but exact support for mechanistic circuit analysis needs a specific interpretability source."
+    },
+    {
+      "unit_id": "995743020e585ec8",
+      "node_id": "sparse_distributed_codes",
+      "field": "examples[2]",
+      "text": "combined with Embeddings & distributed representations",
+      "source_ids": [
+        "ref_pml",
+        "ref_dlbook"
+      ],
+      "evidence_location": "PML/DLbook discussions of distributed representations and sparse representations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sparse codes can be treated as distributed representations with few active components; this is synthesized from representation-learning material."
+    },
+    {
+      "unit_id": "8d924c77c966352e",
+      "node_id": "sparse_distributed_codes",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Embeddings & distributed representations, Information theory.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML is relevant to representations but does not directly support the generic limitation sentence.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The limitation text appears generic and is not directly supported for sparse coding by the candidate sources."
+    },
+    {
+      "unit_id": "68d7f4a8a8f0a80c",
+      "node_id": "sparse_distributed_codes",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Sparse coding & compositional representations consumes, emits, or organizes information using Embeddings & distributed representations.",
+      "source_ids": [
+        "ref_pml",
+        "ref_dlbook"
+      ],
+      "evidence_location": "PML/DLbook representation-learning material covering sparse and distributed representations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sparse codes are representation vectors, supporting this represents_with relation."
+    },
+    {
+      "unit_id": "759aba00d3cb535e",
+      "node_id": "sparse_distributed_codes",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Sparse coding & compositional representations rests on the formal or computational capabilities supplied by Information theory.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML includes information-theoretic framing for machine learning, but the packet source does not directly make this a sparse-coding dependency.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Compression links sparse representations to information theory, but the source support is indirect and the dependency may be overstated as core."
+    },
+    {
+      "unit_id": "37ee7a17f0b43373",
+      "node_id": "sparse_distributed_codes",
+      "field": "dependencies.optimization.rationale",
+      "text": "Sparse coding & compositional representations rests on the formal or computational capabilities supplied by Optimization theory.",
+      "source_ids": [
+        "ref_pml",
+        "ref_dlbook"
+      ],
+      "evidence_location": "PML/DLbook discuss learning sparse representations through optimization objectives/regularization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Learning sparse codes commonly requires optimization, although hand-designed sparse representations need not."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "2534d8003320c137",
+      "node_id": "sparse_distributed_codes",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "ref_pml",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sparse codes are a form of vector/distributed representation with few active features; represents_with/core is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "3dd17a6c192802d4",
+      "node_id": "sparse_distributed_codes",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Compression provides an information-theoretic connection, but the packet evidence does not establish information theory as a core prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "2554cdc55ef3a813",
+      "node_id": "sparse_distributed_codes",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "ref_pml",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Optimization is commonly used to learn sparse codes and sparse regularized representations, supporting a common dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

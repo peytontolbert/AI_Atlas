@@ -1,0 +1,216 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "b41a2e4850d243d7",
+      "node_id": "best_of_n_verifier",
+      "field": "definition",
+      "text": "Best-of-N and verifier-guided selection generate multiple candidates and choose one with an outcome, process, preference, test, or learned quality scorer.",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The test-time compute source directly discusses best-of-N baseline and verifier reward models for selecting among candidates."
+    },
+    {
+      "unit_id": "243cb3a70190aa64",
+      "node_id": "best_of_n_verifier",
+      "field": "why_it_matters",
+      "text": "It converts sampling diversity into accuracy gains when the selector is more reliable than any single generation.",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source supports improvements from verifier search and best-of-N comparisons; selector reliability wording is synthesized."
+    },
+    {
+      "unit_id": "b7bc5c8c19d4f895",
+      "node_id": "best_of_n_verifier",
+      "field": "examples[1]",
+      "text": "reward-ranked math solutions",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Reward-ranked solutions are supported by verifier/reward-model framing, though math is not directly established by the inspected abstract."
+    },
+    {
+      "unit_id": "045cfcaab7b92fbb",
+      "node_id": "best_of_n_verifier",
+      "field": "examples[2]",
+      "text": "test-ranked code patches",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Executable test ranking is a plausible outcome-verifier example but not directly in the cited abstract."
+    },
+    {
+      "unit_id": "29bcc50f25c663fd",
+      "node_id": "best_of_n_verifier",
+      "field": "examples[3]",
+      "text": "judge-selected responses",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Judge-selected responses need a judge/model-evaluation source beyond the inspected evidence."
+    },
+    {
+      "unit_id": "e7e594c600563693",
+      "node_id": "best_of_n_verifier",
+      "field": "limitations[1]",
+      "text": "Selection can overfit verifier quirks, consume substantial compute, and discard diverse correct solutions.",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Compute cost and verifier dependence are supported; overfitting verifier quirks and diversity loss are plausible limitations."
+    },
+    {
+      "unit_id": "00c9a852214cb05f",
+      "node_id": "best_of_n_verifier",
+      "field": "dependencies.self_consistency.rationale",
+      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Self-consistency & best-of-N inference.",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Best-of-N is closely related to self-consistency/multiple-sample selection."
+    },
+    {
+      "unit_id": "d6f3b34583b62b88",
+      "node_id": "best_of_n_verifier",
+      "field": "dependencies.outcome_verifiers.rationale",
+      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Outcome verifiers & executable rewards.",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Verifier reward models directly support outcome/verifier selection."
+    },
+    {
+      "unit_id": "9aeebe5b26124cd0",
+      "node_id": "best_of_n_verifier",
+      "field": "dependencies.process_reward_models.rationale",
+      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Process supervision & step-level reward models.",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly names process-based verifier reward models."
+    },
+    {
+      "unit_id": "26eaa535fd40f3a7",
+      "node_id": "best_of_n_verifier",
+      "field": "dependencies.test_time_compute.rationale",
+      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Test-time compute scaling.",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Best-of-N/verifier search is explicitly part of test-time compute scaling in the source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "01e4147a4f818f39",
+      "node_id": "best_of_n_verifier",
+      "dependency_id": "self_consistency",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Multiple-sample selection is core to best-of-N/self-consistency patterns.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "d9ba35765632294f",
+      "node_id": "best_of_n_verifier",
+      "dependency_id": "outcome_verifiers",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Candidate selection by verifier/outcome reward is central.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2e9e5855a7bd5e56",
+      "node_id": "best_of_n_verifier",
+      "dependency_id": "process_reward_models",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Process-based verifier reward models are directly named; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ad0265fc30c36269",
+      "node_id": "best_of_n_verifier",
+      "dependency_id": "test_time_compute",
+      "source_ids": [
+        "ref_testtime",
+        "ref_rlvr"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Best-of-N/verifier selection is a test-time compute mechanism; uses/common is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

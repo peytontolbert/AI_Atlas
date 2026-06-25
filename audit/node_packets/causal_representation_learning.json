@@ -1,0 +1,183 @@
+{
+  "node_id": "causal_representation_learning",
+  "label": "Causal representation learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "causal_representation_learning",
+    "label": "Causal representation learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "causal"
+    ],
+    "aliases": [],
+    "definition": "Representations aim to recover stable causal factors and mechanisms rather than only predictive correlations.",
+    "why_it_matters": "The role of Causal representation learning is to connect Causal inference, Latent variables & hidden state to downstream capabilities including Scientific ML, simulators & digital twins, Medical imaging & clinical decision support.",
+    "examples": [
+      "substrate for Scientific ML, simulators & digital twins",
+      "substrate for Medical imaging & clinical decision support"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Causal inference, Latent variables & hidden state."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "causal_inference",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Causal representation learning uses Causal inference as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "latent_variables",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Causal representation learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Causal representation learning follows the learning setup expressed by Supervised learning."
+      },
+      {
+        "id": "unsupervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Causal representation learning follows the learning setup expressed by Unsupervised learning."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a1da0c7c972f0ffb",
+      "node_id": "causal_representation_learning",
+      "field": "definition",
+      "text": "Representations aim to recover stable causal factors and mechanisms rather than only predictive correlations."
+    },
+    {
+      "unit_id": "d9299051c3ef96a9",
+      "node_id": "causal_representation_learning",
+      "field": "why_it_matters",
+      "text": "The role of Causal representation learning is to connect Causal inference, Latent variables & hidden state to downstream capabilities including Scientific ML, simulators & digital twins, Medical imaging & clinical decision support."
+    },
+    {
+      "unit_id": "ad2105732186ca7b",
+      "node_id": "causal_representation_learning",
+      "field": "examples[1]",
+      "text": "substrate for Scientific ML, simulators & digital twins"
+    },
+    {
+      "unit_id": "1706ebb24f38e5fe",
+      "node_id": "causal_representation_learning",
+      "field": "examples[2]",
+      "text": "substrate for Medical imaging & clinical decision support"
+    },
+    {
+      "unit_id": "f9993933a122b180",
+      "node_id": "causal_representation_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Causal inference, Latent variables & hidden state."
+    },
+    {
+      "unit_id": "e4626117812c90e2",
+      "node_id": "causal_representation_learning",
+      "field": "dependencies.causal_inference.rationale",
+      "text": "Causal representation learning uses Causal inference as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "d0c4c866ba1acd26",
+      "node_id": "causal_representation_learning",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "Causal representation learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "ee49dd91620b4e3f",
+      "node_id": "causal_representation_learning",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Causal representation learning follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "unit_id": "52d22ba8753aa101",
+      "node_id": "causal_representation_learning",
+      "field": "dependencies.unsupervised_learning.rationale",
+      "text": "Causal representation learning follows the learning setup expressed by Unsupervised learning."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6613b532a3c08c94",
+      "node_id": "causal_representation_learning",
+      "dependency_id": "causal_inference",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Causal representation learning uses Causal inference as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "a1639980e2e981e5",
+      "node_id": "causal_representation_learning",
+      "dependency_id": "latent_variables",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Causal representation learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "0f9edf5bb4610666",
+      "node_id": "causal_representation_learning",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Causal representation learning follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "edge_id": "89f29d9a3491abc6",
+      "node_id": "causal_representation_learning",
+      "dependency_id": "unsupervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Causal representation learning follows the learning setup expressed by Unsupervised learning."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/causal_representation_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

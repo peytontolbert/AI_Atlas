@@ -1,0 +1,187 @@
+{
+  "node_id": "structured_ssm",
+  "label": "Structured state-space models (S4 family)",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "structured_ssm",
+    "label": "Structured state-space models (S4 family)",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "ssm",
+      "sequence"
+    ],
+    "aliases": [
+      "S4"
+    ],
+    "definition": "Structured state-space models such as S4 parameterize long-memory linear dynamical systems so sequence convolution or recurrence scales to very long contexts.",
+    "why_it_matters": "The role of Structured state-space models (S4 family) is to connect State-space transitions, Fourier, wavelet & spectral transforms to downstream capabilities including Selective state-space models (Mamba family), Time-series forecasting, anomaly & fraud detection.",
+    "examples": [
+      "substrate for Selective state-space models (Mamba family)",
+      "substrate for Time-series forecasting, anomaly & fraud detection"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include State-space transitions, Fourier, wavelet & spectral transforms."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_s4"
+    ],
+    "dependencies": [
+      {
+        "id": "state_space_transition",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component State-space transitions."
+      },
+      {
+        "id": "spectral_transforms",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Fourier, wavelet & spectral transforms."
+      },
+      {
+        "id": "gating",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Gating & multiplicative control."
+      },
+      {
+        "id": "sequences_time",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Structured state-space models (S4 family) consumes, emits, or organizes information using Sequences, events & time series."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "5f413498237b609c",
+      "node_id": "structured_ssm",
+      "field": "definition",
+      "text": "Structured state-space models such as S4 parameterize long-memory linear dynamical systems so sequence convolution or recurrence scales to very long contexts."
+    },
+    {
+      "unit_id": "109adb5714e7376e",
+      "node_id": "structured_ssm",
+      "field": "why_it_matters",
+      "text": "The role of Structured state-space models (S4 family) is to connect State-space transitions, Fourier, wavelet & spectral transforms to downstream capabilities including Selective state-space models (Mamba family), Time-series forecasting, anomaly & fraud detection."
+    },
+    {
+      "unit_id": "9fecccb6ef865811",
+      "node_id": "structured_ssm",
+      "field": "examples[1]",
+      "text": "substrate for Selective state-space models (Mamba family)"
+    },
+    {
+      "unit_id": "4bafde36f379ef0d",
+      "node_id": "structured_ssm",
+      "field": "examples[2]",
+      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+    },
+    {
+      "unit_id": "56eebfc85fcd04e3",
+      "node_id": "structured_ssm",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include State-space transitions, Fourier, wavelet & spectral transforms."
+    },
+    {
+      "unit_id": "02c679dd7ea7bf87",
+      "node_id": "structured_ssm",
+      "field": "dependencies.state_space_transition.rationale",
+      "text": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "unit_id": "0c375638409f203a",
+      "node_id": "structured_ssm",
+      "field": "dependencies.spectral_transforms.rationale",
+      "text": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Fourier, wavelet & spectral transforms."
+    },
+    {
+      "unit_id": "8d297d2e36a46b74",
+      "node_id": "structured_ssm",
+      "field": "dependencies.gating.rationale",
+      "text": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Gating & multiplicative control."
+    },
+    {
+      "unit_id": "47b39bbb824a4d63",
+      "node_id": "structured_ssm",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Structured state-space models (S4 family) consumes, emits, or organizes information using Sequences, events & time series."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "5a16f3436409bfc9",
+      "node_id": "structured_ssm",
+      "dependency_id": "state_space_transition",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "edge_id": "576ce248186538ec",
+      "node_id": "structured_ssm",
+      "dependency_id": "spectral_transforms",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Fourier, wavelet & spectral transforms."
+    },
+    {
+      "edge_id": "92bfe6347e5081cd",
+      "node_id": "structured_ssm",
+      "dependency_id": "gating",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Gating & multiplicative control."
+    },
+    {
+      "edge_id": "85165f2f9206803e",
+      "node_id": "structured_ssm",
+      "dependency_id": "sequences_time",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Structured state-space models (S4 family) consumes, emits, or organizes information using Sequences, events & time series."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_s4": {
+        "id": "ref_s4",
+        "title": "Efficiently Modeling Long Sequences with Structured State Spaces",
+        "authors": "Gu, Goel & Ré",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2111.00396"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/structured_ssm.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

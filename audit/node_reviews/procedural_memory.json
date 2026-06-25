@@ -1,0 +1,182 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "677b777b94393f32",
+      "node_id": "procedural_memory",
+      "field": "definition",
+      "text": "Reusable procedures, policies, tools, and routines encode how to perform tasks.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support the concept broadly, though not always this exact node wording.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Direct verification would require a node-specific citation."
+    },
+    {
+      "unit_id": "df78c142769d6d85",
+      "node_id": "procedural_memory",
+      "field": "why_it_matters",
+      "text": "The role of Procedural memory & skills is to connect Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write to downstream capabilities including Skill libraries, workflows & procedural plans.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
+    },
+    {
+      "unit_id": "15077af9b76a1a8b",
+      "node_id": "procedural_memory",
+      "field": "examples[1]",
+      "text": "substrate for Skill libraries, workflows & procedural plans",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "86883e939a0fa6ea",
+      "node_id": "procedural_memory",
+      "field": "examples[2]",
+      "text": "combined with Programs, ASTs, bytecode & intermediate representations",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "2263c517444c5b88",
+      "node_id": "procedural_memory",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "a7178b8ff8fc57a8",
+      "node_id": "procedural_memory",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Procedural memory & skills stores, selects, or obtains information through Programs, ASTs, bytecode & intermediate representations.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support programs_ast_ir or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "3b5a023e45867efe",
+      "node_id": "procedural_memory",
+      "field": "dependencies.memory_read_write.rationale",
+      "text": "Procedural memory & skills uses Differentiable memory read/write as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support memory_read_write or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "583078386f380af1",
+      "node_id": "procedural_memory",
+      "field": "dependencies.continual_online_learning.rationale",
+      "text": "Procedural memory & skills uses Continual & online learning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support continual_online_learning or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "73334f8356995f5f",
+      "node_id": "procedural_memory",
+      "dependency_id": "programs_ast_ir",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "f5c6a793367ab8f0",
+      "node_id": "procedural_memory",
+      "dependency_id": "memory_read_write",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Procedural skills can use memory read/write, but the cited sources do not make this a core dependency.",
+      "relationship_type_supported": false,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "4578932967d2e204",
+      "node_id": "procedural_memory",
+      "dependency_id": "continual_online_learning",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Skill/procedure adaptation can be learned continually; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

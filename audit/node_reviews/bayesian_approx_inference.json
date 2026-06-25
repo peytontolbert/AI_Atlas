@@ -1,0 +1,202 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "2063b665a1245779",
+      "node_id": "bayesian_approx_inference",
+      "field": "definition",
+      "text": "Posterior beliefs over hidden variables or parameters are estimated exactly or approximately.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 38-41 lists Bayes' rule and inverse problems; lines 131-139 list Bayesian statistics, Bayesian machine learning, and computational issues; lines 344-346 list approximate posterior prediction.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source supports Bayesian posterior reasoning and approximation, but the exact hidden-variable/parameter wording is synthesized from multiple entries."
+    },
+    {
+      "unit_id": "7e58a94a8268704c",
+      "node_id": "bayesian_approx_inference",
+      "field": "why_it_matters",
+      "text": "The role of Bayesian & approximate inference is to connect Probability theory, Statistics & experimental design to downstream capabilities including MCMC, EM & probabilistic message passing, k-NN & Naive Bayes, Gaussian processes.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 26-38 cover probability and Bayes' rule; lines 106-139 cover statistics and Bayesian machine learning; lines 293-296 cover EM; lines 310-313 cover Naive Bayes; lines 530-539 cover Gaussian processes.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited source supports the named areas, but the graph-connection phrasing is atlas synthesis rather than a direct statement."
+    },
+    {
+      "unit_id": "d23eaa16cfa99ae6",
+      "node_id": "bayesian_approx_inference",
+      "field": "examples[1]",
+      "text": "substrate for MCMC, EM & probabilistic message passing",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 282-296 list constrained optimization, bound optimization, the EM algorithm, and EM for Gaussian mixture models; lines 101-104 list probabilistic graphical model representation, inference, and learning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "EM and graphical-model inference are supported; MCMC is not visible in the inspected TOC excerpt, so this is not exact enough for verified."
+    },
+    {
+      "unit_id": "7c4bad90e221254a",
+      "node_id": "bayesian_approx_inference",
+      "field": "examples[2]",
+      "text": "substrate for k-NN & Naive Bayes",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 310-314 list Naive Bayes classifiers and Bayesian Naive Bayes; lines 506-508 list k nearest neighbor classification.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Naive Bayes is directly Bayesian/probabilistic; k-NN is listed separately as an exemplar method, so treating Bayesian approximate inference as its substrate overstates the evidence."
+    },
+    {
+      "unit_id": "f42588f1d33d24fa",
+      "node_id": "bayesian_approx_inference",
+      "field": "examples[3]",
+      "text": "substrate for Gaussian processes",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 530-539 list Gaussian processes, noisy observations, GP classification, numerical issues, and scaling GPs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gaussian processes are probabilistic Bayesian nonparametric models; the TOC supports the topic but not the exact substrate wording."
+    },
+    {
+      "unit_id": "2306c09e5da61882",
+      "node_id": "bayesian_approx_inference",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Probability theory, Statistics & experimental design.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 116-119 list empirical risk minimization and surrogate loss; lines 26-38 cover probability; lines 106-139 cover statistics and Bayesian machine learning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The source supports surrogate losses and the dependencies, but not the strong claim that optimization can leave intended behavior unchanged or worse."
+    },
+    {
+      "unit_id": "a89ffdab7ac1f691",
+      "node_id": "bayesian_approx_inference",
+      "field": "dependencies.probability.rationale",
+      "text": "Bayesian & approximate inference uses Probability theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 26-38 list probability, random variables, conditional independence, and Bayes' rule.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Bayesian inference directly depends on probability theory."
+    },
+    {
+      "unit_id": "0eb64daa574c08db",
+      "node_id": "bayesian_approx_inference",
+      "field": "dependencies.statistics.rationale",
+      "text": "Bayesian & approximate inference uses Statistics & experimental design as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 106-139 list statistics, estimation, regularization, Bayesian statistics, Bayesian machine learning, and computational issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly places Bayesian inference within statistics and machine learning estimation."
+    },
+    {
+      "unit_id": "ea1e1b85135d9071",
+      "node_id": "bayesian_approx_inference",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "Bayesian & approximate inference uses Latent variables & hidden state as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 98-104 list mixture models and probabilistic graphical model inference; lines 613-619 list factor analysis, probabilistic PCA, and EM for FA/PPCA.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Latent-variable models are common applications of Bayesian approximate inference, but not every Bayesian inference problem uses hidden variables."
+    },
+    {
+      "unit_id": "4af2daad55c5a61f",
+      "node_id": "bayesian_approx_inference",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "Bayesian & approximate inference uses Numerical analysis as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML table of contents lines 139 and 260-296 list computational issues, optimization methods, constrained optimization, and EM; lines 535-539 list GP numerical issues and scaling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Numerical methods are commonly needed for approximate inference, but the inspected source does not state the dependency in exactly these terms."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "c8c3ffe3548d4e38",
+      "node_id": "bayesian_approx_inference",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Bayes' rule and posterior reasoning are probability-theoretic; uses/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "633e48112dbda552",
+      "node_id": "bayesian_approx_inference",
+      "dependency_id": "statistics",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly includes Bayesian statistics and Bayesian machine learning under statistics; uses/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "bc831f29a38b78b6",
+      "node_id": "bayesian_approx_inference",
+      "dependency_id": "latent_variables",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Latent variables are common in approximate inference examples such as mixture models and factor analysis, but not universal; common strength is appropriate.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "7a307feeae3fdbf1",
+      "node_id": "bayesian_approx_inference",
+      "dependency_id": "numerical_methods",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Approximate inference commonly relies on numerical optimization, Monte Carlo, and scalable computation; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

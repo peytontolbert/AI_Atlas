@@ -1,0 +1,163 @@
+{
+  "node_id": "semantic_memory",
+  "label": "Semantic memory",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "semantic_memory",
+    "label": "Semantic memory",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "knowledge"
+    ],
+    "aliases": [],
+    "definition": "Facts, concepts, and relations are organized independently of a specific episode.",
+    "why_it_matters": "The role of Semantic memory is to connect Embeddings & distributed representations, Knowledge graphs, ontologies & schemas to downstream capabilities including Memory lifecycle, forgetting & consolidation.",
+    "examples": [
+      "substrate for Memory lifecycle, forgetting & consolidation",
+      "combined with Embeddings & distributed representations"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Embeddings & distributed representations, Knowledge graphs, ontologies & schemas."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "embeddings",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Semantic memory stores, selects, or obtains information through Embeddings & distributed representations."
+      },
+      {
+        "id": "knowledge_graphs",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Semantic memory stores, selects, or obtains information through Knowledge graphs, ontologies & schemas."
+      },
+      {
+        "id": "parametric_memory",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "Semantic memory stores, selects, or obtains information through Parametric memory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3d72265936325d83",
+      "node_id": "semantic_memory",
+      "field": "definition",
+      "text": "Facts, concepts, and relations are organized independently of a specific episode."
+    },
+    {
+      "unit_id": "319115101ffe7f4f",
+      "node_id": "semantic_memory",
+      "field": "why_it_matters",
+      "text": "The role of Semantic memory is to connect Embeddings & distributed representations, Knowledge graphs, ontologies & schemas to downstream capabilities including Memory lifecycle, forgetting & consolidation."
+    },
+    {
+      "unit_id": "b418cbdb568453db",
+      "node_id": "semantic_memory",
+      "field": "examples[1]",
+      "text": "substrate for Memory lifecycle, forgetting & consolidation"
+    },
+    {
+      "unit_id": "23f0c1b3b130fca3",
+      "node_id": "semantic_memory",
+      "field": "examples[2]",
+      "text": "combined with Embeddings & distributed representations"
+    },
+    {
+      "unit_id": "471bea2b11d25399",
+      "node_id": "semantic_memory",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Embeddings & distributed representations, Knowledge graphs, ontologies & schemas."
+    },
+    {
+      "unit_id": "6b59666b4c79edd4",
+      "node_id": "semantic_memory",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Semantic memory stores, selects, or obtains information through Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "b03d987b05d8628b",
+      "node_id": "semantic_memory",
+      "field": "dependencies.knowledge_graphs.rationale",
+      "text": "Semantic memory stores, selects, or obtains information through Knowledge graphs, ontologies & schemas."
+    },
+    {
+      "unit_id": "74b484a8f82e435e",
+      "node_id": "semantic_memory",
+      "field": "dependencies.parametric_memory.rationale",
+      "text": "Semantic memory stores, selects, or obtains information through Parametric memory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "a4abfdb6365ec077",
+      "node_id": "semantic_memory",
+      "dependency_id": "embeddings",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Semantic memory stores, selects, or obtains information through Embeddings & distributed representations."
+    },
+    {
+      "edge_id": "46c4a045f9aefe5a",
+      "node_id": "semantic_memory",
+      "dependency_id": "knowledge_graphs",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Semantic memory stores, selects, or obtains information through Knowledge graphs, ontologies & schemas."
+    },
+    {
+      "edge_id": "452490de36613cf2",
+      "node_id": "semantic_memory",
+      "dependency_id": "parametric_memory",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "Semantic memory stores, selects, or obtains information through Parametric memory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/semantic_memory.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

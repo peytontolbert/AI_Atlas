@@ -1,0 +1,163 @@
+{
+  "node_id": "adversarial_training_mechanism",
+  "label": "Adversarial examples & adversarial training",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "adversarial_training_mechanism",
+    "label": "Adversarial examples & adversarial training",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "robustness"
+    ],
+    "aliases": [],
+    "definition": "Inputs or opponents are deliberately optimized to expose and reduce model vulnerabilities.",
+    "why_it_matters": "The role of Adversarial examples & adversarial training is to connect Adversarial minimax objectives, Optimization theory to downstream capabilities including Generative adversarial networks, Adversarial robustness & security testing.",
+    "examples": [
+      "substrate for Generative adversarial networks",
+      "substrate for Adversarial robustness & security testing"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Adversarial minimax objectives, Optimization theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "adversarial_minimax",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Adversarial examples & adversarial training uses Adversarial minimax objectives as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Adversarial examples & adversarial training uses Optimization theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Adversarial examples & adversarial training uses Supervised learning as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e3485ce290384be7",
+      "node_id": "adversarial_training_mechanism",
+      "field": "definition",
+      "text": "Inputs or opponents are deliberately optimized to expose and reduce model vulnerabilities."
+    },
+    {
+      "unit_id": "27b3dedc0b7c7cf4",
+      "node_id": "adversarial_training_mechanism",
+      "field": "why_it_matters",
+      "text": "The role of Adversarial examples & adversarial training is to connect Adversarial minimax objectives, Optimization theory to downstream capabilities including Generative adversarial networks, Adversarial robustness & security testing."
+    },
+    {
+      "unit_id": "9615a039c4b9c48b",
+      "node_id": "adversarial_training_mechanism",
+      "field": "examples[1]",
+      "text": "substrate for Generative adversarial networks"
+    },
+    {
+      "unit_id": "de48346290e74a0d",
+      "node_id": "adversarial_training_mechanism",
+      "field": "examples[2]",
+      "text": "substrate for Adversarial robustness & security testing"
+    },
+    {
+      "unit_id": "4624e40151bcb635",
+      "node_id": "adversarial_training_mechanism",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Adversarial minimax objectives, Optimization theory."
+    },
+    {
+      "unit_id": "f8e449b8358979fc",
+      "node_id": "adversarial_training_mechanism",
+      "field": "dependencies.adversarial_minimax.rationale",
+      "text": "Adversarial examples & adversarial training uses Adversarial minimax objectives as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f32d29be25c674e0",
+      "node_id": "adversarial_training_mechanism",
+      "field": "dependencies.optimization.rationale",
+      "text": "Adversarial examples & adversarial training uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "ee7989b6078ec2a6",
+      "node_id": "adversarial_training_mechanism",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Adversarial examples & adversarial training uses Supervised learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "04b86c5262a1532c",
+      "node_id": "adversarial_training_mechanism",
+      "dependency_id": "adversarial_minimax",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Adversarial examples & adversarial training uses Adversarial minimax objectives as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "80dc964568a12568",
+      "node_id": "adversarial_training_mechanism",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Adversarial examples & adversarial training uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "de14a23946bc957d",
+      "node_id": "adversarial_training_mechanism",
+      "dependency_id": "supervised_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Adversarial examples & adversarial training uses Supervised learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/adversarial_training_mechanism.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

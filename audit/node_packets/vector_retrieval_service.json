@@ -1,0 +1,164 @@
+{
+  "node_id": "vector_retrieval_service",
+  "label": "Vector-search and retrieval services",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "vector_retrieval_service",
+    "label": "Vector-search and retrieval services",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "retrieval",
+      "serving"
+    ],
+    "aliases": [],
+    "definition": "A vector-retrieval service operationalizes embedding generation, indexing, metadata filtering, approximate search, reranking, freshness, and access control.",
+    "why_it_matters": "The role of Vector-search and retrieval services is to connect Vector databases & ANN indexes, Hybrid retrieval & reranking to downstream capabilities including Neural search, RAG & question answering.",
+    "examples": [
+      "substrate for Neural search, RAG & question answering",
+      "combined with Vector databases & ANN indexes"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Vector databases & ANN indexes, Hybrid retrieval & reranking."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_ddia"
+    ],
+    "dependencies": [
+      {
+        "id": "vector_database",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Vector-search and retrieval services turns Vector databases & ANN indexes into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "hybrid_reranking",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Vector-search and retrieval services turns Hybrid retrieval & reranking into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "distributed_systems",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Vector-search and retrieval services turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a216d7883769c668",
+      "node_id": "vector_retrieval_service",
+      "field": "definition",
+      "text": "A vector-retrieval service operationalizes embedding generation, indexing, metadata filtering, approximate search, reranking, freshness, and access control."
+    },
+    {
+      "unit_id": "6f8b7a1c5bd8ad91",
+      "node_id": "vector_retrieval_service",
+      "field": "why_it_matters",
+      "text": "The role of Vector-search and retrieval services is to connect Vector databases & ANN indexes, Hybrid retrieval & reranking to downstream capabilities including Neural search, RAG & question answering."
+    },
+    {
+      "unit_id": "7cedf395a9711663",
+      "node_id": "vector_retrieval_service",
+      "field": "examples[1]",
+      "text": "substrate for Neural search, RAG & question answering"
+    },
+    {
+      "unit_id": "17ce6d9d7cb95ddd",
+      "node_id": "vector_retrieval_service",
+      "field": "examples[2]",
+      "text": "combined with Vector databases & ANN indexes"
+    },
+    {
+      "unit_id": "21d75cccf9e0025b",
+      "node_id": "vector_retrieval_service",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Vector databases & ANN indexes, Hybrid retrieval & reranking."
+    },
+    {
+      "unit_id": "90ba88d1e4d8259f",
+      "node_id": "vector_retrieval_service",
+      "field": "dependencies.vector_database.rationale",
+      "text": "Vector-search and retrieval services turns Vector databases & ANN indexes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "a69f41526528da3d",
+      "node_id": "vector_retrieval_service",
+      "field": "dependencies.hybrid_reranking.rationale",
+      "text": "Vector-search and retrieval services turns Hybrid retrieval & reranking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "085c85df963b22f1",
+      "node_id": "vector_retrieval_service",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Vector-search and retrieval services turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "796c849b628b6b3b",
+      "node_id": "vector_retrieval_service",
+      "dependency_id": "vector_database",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Vector-search and retrieval services turns Vector databases & ANN indexes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "598314059814cb2e",
+      "node_id": "vector_retrieval_service",
+      "dependency_id": "hybrid_reranking",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Vector-search and retrieval services turns Hybrid retrieval & reranking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "9e2889329da04fb0",
+      "node_id": "vector_retrieval_service",
+      "dependency_id": "distributed_systems",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Vector-search and retrieval services turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_ann": {
+        "id": "ref_ann",
+        "title": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs",
+        "authors": "Malkov & Yashunin",
+        "year": 2016,
+        "url": "https://arxiv.org/abs/1603.09320"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/vector_retrieval_service.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

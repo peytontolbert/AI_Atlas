@@ -1,0 +1,136 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "2ade0c1678ee3fd6",
+      "node_id": "information_theory",
+      "field": "definition",
+      "text": "Entropy, mutual information, coding, and rate–distortion quantify information, compression, and uncertainty.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+        "url:https://en.wikipedia.org/wiki/Mutual_information",
+        "url:https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_theory"
+      ],
+      "evidence_location": "AIMA newchap20.pdf lines 147-156 on information encoding, bits, and compression; Entropy (information theory) lines 224-230 on uncertainty, information, and lossless compression; Mutual information lines 173-175 on amount of information and dependence; Rate-distortion theory lines 144-150 on lossy compression and minimal bits per symbol.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The inspected sources support each component concept, but no single source states the full sentence verbatim. The wording is a defensible synthesis of the cited material rather than an exact quotation."
+    },
+    {
+      "unit_id": "566b896ee9c1337a",
+      "node_id": "information_theory",
+      "field": "why_it_matters",
+      "text": "The role of Information theory is to connect Probability theory to downstream capabilities including Labels, targets, rewards & preferences, Tokens, vocabularies & symbolic units, Embeddings & distributed representations.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+        "url:https://en.wikipedia.org/wiki/Mutual_information",
+        "url:https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_theory"
+      ],
+      "evidence_location": "AIMA newchap20.pdf lines 147-156; Entropy (information theory) lines 224-230; Mutual information lines 173-175; Rate-distortion theory lines 144-150.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The probability/compression bridge is supported, but the downstream list is graph-derived and not directly established by the inspected sources. This should be narrowed if intended as a factual claim."
+    },
+    {
+      "unit_id": "65f3c4579d0d4193",
+      "node_id": "information_theory",
+      "field": "examples[1]",
+      "text": "substrate for Labels, targets, rewards & preferences",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+        "url:https://en.wikipedia.org/wiki/Mutual_information"
+      ],
+      "evidence_location": "AIMA newchap20.pdf lines 147-156; Entropy (information theory) lines 224-230; Mutual information lines 173-175.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support information-theoretic measures and their use in inference and coding, but they do not directly establish a substrate relation to labels, targets, rewards, or preferences."
+    },
+    {
+      "unit_id": "8e50ac6dca76dbe0",
+      "node_id": "information_theory",
+      "field": "examples[2]",
+      "text": "substrate for Tokens, vocabularies & symbolic units",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+        "url:https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_theory"
+      ],
+      "evidence_location": "AIMA newchap20.pdf lines 147-156; Entropy (information theory) lines 228-230; Rate-distortion theory lines 144-150.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The evidence supports coding and compression as information-theoretic concerns, but not the exact atlas phrasing that information theory is a substrate for tokens, vocabularies, or symbolic units."
+    },
+    {
+      "unit_id": "d6680d1ac99818b9",
+      "node_id": "information_theory",
+      "field": "examples[3]",
+      "text": "substrate for Embeddings & distributed representations",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+        "url:https://en.wikipedia.org/wiki/Mutual_information"
+      ],
+      "evidence_location": "AIMA newchap20.pdf lines 147-156; Entropy (information theory) lines 230-231; Mutual information lines 173-175.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources mention machine learning relevance and information measures, but they do not directly support embeddings or distributed representations as a substrate claim."
+    },
+    {
+      "unit_id": "061cefb745119fcf",
+      "node_id": "information_theory",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+        "url:https://en.wikipedia.org/wiki/Mutual_information"
+      ],
+      "evidence_location": "AIMA newchap20.pdf lines 61-63 on the i.i.d. assumption, lines 115-118 and 157-163 on approximate methods and large-data behavior; Entropy (information theory) lines 224-230; Mutual information lines 173-175.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support the need for assumptions and the sensitivity of results to model conditions, but the exact empirical-mismatch wording and the direct-dependency clause are not stated verbatim."
+    },
+    {
+      "unit_id": "ec499816b1f46f17",
+      "node_id": "information_theory",
+      "field": "dependencies.probability.rationale",
+      "text": "Information theory rests on the formal or computational capabilities supplied by Probability theory.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Mutual_information",
+        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)"
+      ],
+      "evidence_location": "AIMA newchap20.pdf lines 19-22 and 147-156; Mutual information lines 173-175; Entropy (information theory) lines 224-230.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited sources support probability as the formal setting for random variables and mutual information, and AIMA explicitly ties probability to encoding and compression. The rationale is synthesized rather than directly quoted."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "2348a6d1471cde19",
+      "node_id": "information_theory",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Mutual_information",
+        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Probability theory is the correct prerequisite for the standard formulation of information theory, but the atlas rationale is a synthesis of AIMA's probability/encoding discussion and the information-theory definitions. The dependency direction is correct, and the edge strength is defensible as core.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

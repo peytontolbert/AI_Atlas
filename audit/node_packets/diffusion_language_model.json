@@ -1,0 +1,208 @@
+{
+  "node_id": "diffusion_language_model",
+  "label": "Diffusion and masked-generative language models",
+  "layer": "model",
+  "editorial_status": "curated",
+  "node": {
+    "id": "diffusion_language_model",
+    "label": "Diffusion and masked-generative language models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "language",
+      "diffusion",
+      "generation"
+    ],
+    "aliases": [],
+    "definition": "Diffusion and masked-generative language models iteratively refine corrupted or partially masked token states instead of committing to a strictly left-to-right sequence.",
+    "why_it_matters": "They expose parallel refinement, editing, and controllable generation patterns unavailable to ordinary causal decoding.",
+    "examples": [
+      "iterative masked token refinement",
+      "non-autoregressive text generation"
+    ],
+    "limitations": [
+      "Discrete denoising schedules, likelihoods, variable length, and serving efficiency remain challenging."
+    ],
+    "editorial_status": "curated",
+    "maturity": "emerging",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_diffusion",
+      "ref_diffusion_lm",
+      "ref_mdlm"
+    ],
+    "dependencies": [
+      {
+        "id": "diffusion_model",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Diffusion and masked-generative language models extends or specializes the architecture family Diffusion & score-based models."
+      },
+      {
+        "id": "transformer",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Diffusion and masked-generative language models extends or specializes the architecture family Transformers."
+      },
+      {
+        "id": "masked_prediction",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Diffusion and masked-generative language models is learned, selected, or evaluated using the objective family Masked prediction objectives."
+      },
+      {
+        "id": "tokens_vocab",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Diffusion and masked-generative language models consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e8f4b287c58863d0",
+      "node_id": "diffusion_language_model",
+      "field": "definition",
+      "text": "Diffusion and masked-generative language models iteratively refine corrupted or partially masked token states instead of committing to a strictly left-to-right sequence."
+    },
+    {
+      "unit_id": "ba88adea084fa0b5",
+      "node_id": "diffusion_language_model",
+      "field": "why_it_matters",
+      "text": "They expose parallel refinement, editing, and controllable generation patterns unavailable to ordinary causal decoding."
+    },
+    {
+      "unit_id": "35da901b6806277b",
+      "node_id": "diffusion_language_model",
+      "field": "examples[1]",
+      "text": "iterative masked token refinement"
+    },
+    {
+      "unit_id": "93ae3ea5ead413bf",
+      "node_id": "diffusion_language_model",
+      "field": "examples[2]",
+      "text": "non-autoregressive text generation"
+    },
+    {
+      "unit_id": "f5a0e4ce718ce830",
+      "node_id": "diffusion_language_model",
+      "field": "limitations[1]",
+      "text": "Discrete denoising schedules, likelihoods, variable length, and serving efficiency remain challenging."
+    },
+    {
+      "unit_id": "bd878cdc9e26245d",
+      "node_id": "diffusion_language_model",
+      "field": "dependencies.diffusion_model.rationale",
+      "text": "Diffusion and masked-generative language models extends or specializes the architecture family Diffusion & score-based models."
+    },
+    {
+      "unit_id": "978ce7c9b119f510",
+      "node_id": "diffusion_language_model",
+      "field": "dependencies.transformer.rationale",
+      "text": "Diffusion and masked-generative language models extends or specializes the architecture family Transformers."
+    },
+    {
+      "unit_id": "3cc61f4f5da3056d",
+      "node_id": "diffusion_language_model",
+      "field": "dependencies.masked_prediction.rationale",
+      "text": "Diffusion and masked-generative language models is learned, selected, or evaluated using the objective family Masked prediction objectives."
+    },
+    {
+      "unit_id": "5c33b384d6f6b100",
+      "node_id": "diffusion_language_model",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Diffusion and masked-generative language models consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ed804e8d1261ce50",
+      "node_id": "diffusion_language_model",
+      "dependency_id": "diffusion_model",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Diffusion and masked-generative language models extends or specializes the architecture family Diffusion & score-based models."
+    },
+    {
+      "edge_id": "873aa6c44a6d61f4",
+      "node_id": "diffusion_language_model",
+      "dependency_id": "transformer",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Diffusion and masked-generative language models extends or specializes the architecture family Transformers."
+    },
+    {
+      "edge_id": "1f087005e2ea4cc4",
+      "node_id": "diffusion_language_model",
+      "dependency_id": "masked_prediction",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Diffusion and masked-generative language models is learned, selected, or evaluated using the objective family Masked prediction objectives."
+    },
+    {
+      "edge_id": "a16592526cac2c1d",
+      "node_id": "diffusion_language_model",
+      "dependency_id": "tokens_vocab",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Diffusion and masked-generative language models consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_diffusion_lm": {
+        "id": "ref_diffusion_lm",
+        "title": "Diffusion-LM Improves Controllable Text Generation",
+        "authors": "Li et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2205.14217"
+      },
+      "ref_mdlm": {
+        "id": "ref_mdlm",
+        "title": "Simple and Effective Masked Diffusion Language Models",
+        "authors": "Sahoo et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2406.07524"
+      }
+    },
+    "dependency_references": {
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/diffusion_language_model.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

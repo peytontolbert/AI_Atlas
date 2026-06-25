@@ -1,0 +1,448 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "b838b85d7286284a",
+      "node_id": "tabular_predictive_analytics",
+      "field": "definition",
+      "text": "Tabular predictive systems estimate outcomes, risks, categories, or interventions from structured records using classical, probabilistic, and neural models.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "PRML, PML, the deep-learning book, and NIST collectively support structured-record prediction with classical, probabilistic, neural, risk, and decision-support methods."
+    },
+    {
+      "unit_id": "57146a6fcc9580ba",
+      "node_id": "tabular_predictive_analytics",
+      "field": "why_it_matters",
+      "text": "They remain the dominant practical boundary for credit, maintenance, operations, public services, and enterprise decision support.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited sources support tabular predictive methods and risk management, but not the dominance claim across credit, maintenance, operations, public services, and enterprise decision support."
+    },
+    {
+      "unit_id": "26f2621547c5a867",
+      "node_id": "tabular_predictive_analytics",
+      "field": "examples[1]",
+      "text": "risk scoring",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "This workflow example is defensible from the corresponding dependency edge, but is generated as a synthesis rather than directly stated by a source."
+    },
+    {
+      "unit_id": "9b31e21c8ec9276a",
+      "node_id": "tabular_predictive_analytics",
+      "field": "examples[2]",
+      "text": "demand prediction",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "This workflow example is defensible from the corresponding dependency edge, but is generated as a synthesis rather than directly stated by a source."
+    },
+    {
+      "unit_id": "a8134ce58c04e727",
+      "node_id": "tabular_predictive_analytics",
+      "field": "examples[3]",
+      "text": "failure classification",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "This workflow example is defensible from the corresponding dependency edge, but is generated as a synthesis rather than directly stated by a source."
+    },
+    {
+      "unit_id": "877f8dc2a540091b",
+      "node_id": "tabular_predictive_analytics",
+      "field": "limitations[1]",
+      "text": "Leakage, confounding, feedback loops, missing data, subgroup error, and changing business processes can invalidate results.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "PML/PRML and NIST support concerns around missing data, uncertainty, bias, changing context, and evaluation risk; feedback loops and business-process drift are reasonable synthesis."
+    },
+    {
+      "unit_id": "fdf200676c78df6a",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.linear_glm.rationale",
+      "text": "Tabular predictive analytics & decision support integrates Linear models & generalized linear models as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Linear and generalized linear models are core tabular predictive methods in PRML/PML."
+    },
+    {
+      "unit_id": "1c5e3b96f8dd87df",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.knn_naive_bayes.rationale",
+      "text": "Tabular predictive analytics & decision support integrates k-NN & Naive Bayes as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "k-NN and Naive Bayes are standard classical predictive methods for structured features."
+    },
+    {
+      "unit_id": "b73fe1754572a0ee",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.svm_kernel_models.rationale",
+      "text": "Tabular predictive analytics & decision support integrates Support vector & kernel machines as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "SVMs and kernel methods are standard tabular classifiers/regressors; common strength is defensible."
+    },
+    {
+      "unit_id": "14b79f7b4840eb6f",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.tree_ensemble_models.rationale",
+      "text": "Tabular predictive analytics & decision support integrates Decision trees, random forests & boosted trees as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Tree ensembles are common structured-data predictive models."
+    },
+    {
+      "unit_id": "05aa1197e3484830",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.gaussian_processes.rationale",
+      "text": "Tabular predictive analytics & decision support integrates Gaussian processes as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gaussian processes are supported probabilistic predictors, though not universal; common strength is plausible."
+    },
+    {
+      "unit_id": "b20b3d595354df2d",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.calibration_evaluation.rationale",
+      "text": "Tabular predictive analytics & decision support integrates Calibration, uncertainty & risk evaluation as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Risk scoring and decision support require calibration and evaluation; optional strength is supported."
+    },
+    {
+      "unit_id": "667dd7219d4f1c73",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.dimensionality_reduction.rationale",
+      "text": "Tabular predictive analytics & decision support integrates PCA, ICA, NMF & manifold reduction as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Dimensionality reduction is a plausible optional preprocessing/analysis dependency for structured records."
+    },
+    {
+      "unit_id": "8aa45b94c95b393b",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.self_organizing_maps.rationale",
+      "text": "Tabular predictive analytics & decision support integrates Self-organizing maps & competitive learning as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Self-organizing maps can apply to tabular data but are not strongly evidenced by packet sources as a typical dependency."
+    },
+    {
+      "unit_id": "7392c04f75ac7c07",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.perceptron_model.rationale",
+      "text": "Tabular predictive analytics & decision support integrates Perceptrons & single-layer neural classifiers as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Single-layer neural classifiers are classical predictive models, optional in modern tabular systems."
+    },
+    {
+      "unit_id": "9a43c1a5242bf3e9",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.fairness_bias.rationale",
+      "text": "Tabular predictive analytics & decision support integrates Fairness, bias & subgroup analysis as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "evidence_location": "Packet candidate references and dependency rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "NIST and risk decision-support contexts support fairness and subgroup analysis as an optional dependency."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "431c4a4596b562ba",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "linear_glm",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Linear and generalized linear models are core tabular predictive methods in PRML/PML.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4e6172f7d45d56f8",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "knn_naive_bayes",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "k-NN and Naive Bayes are standard classical predictive methods for structured features.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c0d58ca0c241454f",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "svm_kernel_models",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "SVMs and kernel methods are standard tabular classifiers/regressors; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "82687a6b7cea9f6c",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "tree_ensemble_models",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Tree ensembles are common structured-data predictive models.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0bd3c892178422da",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "gaussian_processes",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gaussian processes are supported probabilistic predictors, though not universal; common strength is plausible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "594a2a07970e6650",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "calibration_evaluation",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Risk scoring and decision support require calibration and evaluation; optional strength is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a3ff12223d8b57c5",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "dimensionality_reduction",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Dimensionality reduction is a plausible optional preprocessing/analysis dependency for structured records.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "1a2e94b7b89945ca",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "self_organizing_maps",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Self-organizing maps can apply to tabular data but are not strongly evidenced by packet sources as a typical dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "766b830c2373eb45",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "perceptron_model",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Single-layer neural classifiers are classical predictive models, optional in modern tabular systems.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b14e85b10ad473e6",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "fairness_bias",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_nist",
+        "ref_pml",
+        "ref_prml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "NIST and risk decision-support contexts support fairness and subgroup analysis as an optional dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

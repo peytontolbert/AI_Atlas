@@ -1,0 +1,210 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "76f50a5be52d7d12",
+      "node_id": "edge_ondevice",
+      "field": "definition",
+      "text": "Edge and on-device deployment runs models near sensors or users under strict power, memory, latency, connectivity, privacy, and thermal constraints.",
+      "source_ids": ["ref_gptq", "ref_smoothquant", "ref_tpu", "ref_cuda_guide"],
+      "evidence_location": "Quantization and accelerator references support efficiency constraints; the specific edge/on-device constraint list is not directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Add an edge ML deployment source or narrow to quantization/accelerator constraints."
+    },
+    {
+      "unit_id": "e7033f448a2c800e",
+      "node_id": "edge_ondevice",
+      "field": "why_it_matters",
+      "text": "The role of Edge, on-device & neuromorphic deployment is to connect Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators to downstream capabilities including Robotics & embodied AI, Neuromorphic, sensor & edge intelligence.",
+      "source_ids": ["ref_gptq", "ref_smoothquant", "ref_tpu", "ref_cuda_guide"],
+      "evidence_location": "The sources support quantization and accelerators; downstream robotics and neuromorphic links are atlas-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Defensible graph synthesis, not directly verified."
+    },
+    {
+      "unit_id": "7f56328929aa5d9a",
+      "node_id": "edge_ondevice",
+      "field": "examples[1]",
+      "text": "substrate for Robotics & embodied AI",
+      "source_ids": ["ref_tpu", "ref_cuda_guide"],
+      "evidence_location": "Accelerator references support deployed compute generally, but not robotics/embodied AI specifically.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a robotics edge-deployment citation."
+    },
+    {
+      "unit_id": "e2e00d449bfcb009",
+      "node_id": "edge_ondevice",
+      "field": "examples[2]",
+      "text": "substrate for Neuromorphic, sensor & edge intelligence",
+      "source_ids": ["ref_tpu", "ref_cuda_guide"],
+      "evidence_location": "The packet has accelerator sources but no neuromorphic or sensor-edge source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "SNN dependency is listed but lacks a direct neuromorphic deployment citation in this packet."
+    },
+    {
+      "unit_id": "33351fefcbdaa73f",
+      "node_id": "edge_ondevice",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators.",
+      "source_ids": ["ref_gptq", "ref_smoothquant", "ref_tpu", "ref_cuda_guide", "ref_nist"],
+      "evidence_location": "Sources support some efficiency, numerical, hardware, and risk concerns; the complete generic limitation sentence is template-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency list is graph-derived; security/versioning/observability need direct evidence."
+    },
+    {
+      "unit_id": "1893fd344562957b",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.quantized_inference.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Quantized inference & compressed deployment into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_gptq", "ref_smoothquant"],
+      "evidence_location": "Quantization sources support compression and efficient inference for large models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core dependency is well supported conceptually; exact operationalization wording is templated."
+    },
+    {
+      "unit_id": "35de10d4de40a1f1",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.accelerators.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_tpu", "ref_cuda_guide"],
+      "evidence_location": "Accelerator references support specialized compute for efficient ML workloads.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core relationship is plausible; edge-specific deployment evidence would strengthen it."
+    },
+    {
+      "unit_id": "7b005b0ca668b255",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.snn.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Spiking neural networks into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "The available dependency references do not directly support SNN deployment or neuromorphic operations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "Add an SNN/neuromorphic hardware deployment source."
+    },
+    {
+      "unit_id": "44d40d763bb41563",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.formal_model_verification.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Formal verification of models into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_formalml"],
+      "evidence_location": "Formal ML verification is relevant to deployed model assurance, but the source does not establish edge deployment as its operationalization mechanism.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed to safety-critical deployment if retained."
+    },
+    {
+      "unit_id": "1895731cd2496541",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.runtime_assurance.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Runtime assurance, monitors & safety envelopes into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_nist"],
+      "evidence_location": "NIST supports AI risk management and monitoring broadly; edge deployment linkage is not direct.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a runtime-assurance deployment source for exact support."
+    },
+    {
+      "unit_id": "23b41041590a5420",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.distillation_pruning.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_dlbook", "ref_gptq", "ref_smoothquant"],
+      "evidence_location": "Compression/efficiency sources support deployment motivation, but this packet lacks direct distillation/pruning evidence.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Optional dependency is plausible as a model-compression path for edge deployment."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "7569b25c652ad59e",
+      "node_id": "edge_ondevice",
+      "dependency_id": "quantized_inference",
+      "source_ids": ["ref_gptq", "ref_smoothquant"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Quantized inference is central to constrained deployment.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "dc68e434b85d6f35",
+      "node_id": "edge_ondevice",
+      "dependency_id": "accelerators",
+      "source_ids": ["ref_tpu", "ref_cuda_guide"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Accelerators are a core deployment substrate.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ecda67631574bb71",
+      "node_id": "edge_ondevice",
+      "dependency_id": "snn",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "No adequate packet citation supports SNN as a common dependency here.",
+      "relationship_type_supported": false,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "4961c63409e1c838",
+      "node_id": "edge_ondevice",
+      "dependency_id": "formal_model_verification",
+      "source_ids": ["ref_formalml"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Verification is relevant to safety-critical edge deployments but not shown as a common operational dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "05a04b13dbd18dfa",
+      "node_id": "edge_ondevice",
+      "dependency_id": "runtime_assurance",
+      "source_ids": ["ref_nist"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Risk-management evidence is broad, not edge-specific.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "b844c0076e26a1bb",
+      "node_id": "edge_ondevice",
+      "dependency_id": "distillation_pruning",
+      "source_ids": ["ref_dlbook", "ref_gptq", "ref_smoothquant"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Compression methods are plausible optional enablers for constrained deployment.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

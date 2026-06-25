@@ -1,0 +1,171 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "3bae7bc094d8a578",
+      "node_id": "sparse_retrieval",
+      "field": "definition",
+      "text": "Sparse lexical retrieval ranks documents from token overlap or learned term weights, typically through inverted indexes and relevance scoring such as BM25.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "AIMA supports information retrieval generally, but the packet sources do not directly document BM25/inverted-index sparse retrieval details.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The definition is plausible but should cite an IR/BM25 source for exact verification."
+    },
+    {
+      "unit_id": "b93c22d1af61470e",
+      "node_id": "sparse_retrieval",
+      "field": "why_it_matters",
+      "text": "The role of Sparse lexical retrieval is to connect External retrieval & ranking, Tokens, vocabularies & symbolic units to downstream capabilities including Hybrid retrieval & reranking, External databases, APIs & live tools.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
+    },
+    {
+      "unit_id": "78ba75b701a1f774",
+      "node_id": "sparse_retrieval",
+      "field": "examples[1]",
+      "text": "substrate for Hybrid retrieval & reranking",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "3ff60f0be7f4bb5e",
+      "node_id": "sparse_retrieval",
+      "field": "examples[2]",
+      "text": "substrate for External databases, APIs & live tools",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "f13ea0306591b07f",
+      "node_id": "sparse_retrieval",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include External retrieval & ranking, Tokens, vocabularies & symbolic units.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "0d53f68c86dc752c",
+      "node_id": "sparse_retrieval",
+      "field": "dependencies.external_retrieval.rationale",
+      "text": "Sparse lexical retrieval uses External retrieval & ranking as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support external_retrieval or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "32d4c7c7130aaa8e",
+      "node_id": "sparse_retrieval",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Sparse lexical retrieval stores, selects, or obtains information through Tokens, vocabularies & symbolic units.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support tokens_vocab or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "b6e48bcdb759e14f",
+      "node_id": "sparse_retrieval",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Sparse lexical retrieval uses Databases & information retrieval as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support databases_ir or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "7f3bc85fe804ec0c",
+      "node_id": "sparse_retrieval",
+      "dependency_id": "external_retrieval",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8b11e22e49c6ad33",
+      "node_id": "sparse_retrieval",
+      "dependency_id": "tokens_vocab",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4d6bff8935e4cd5e",
+      "node_id": "sparse_retrieval",
+      "dependency_id": "databases_ir",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sparse retrieval is an information-retrieval/database-indexing mechanism; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "node_id": "vision_transformer_perceiver",
+  "label": "Vision Transformers & Perceiver-style latent models",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "vision_transformer_perceiver",
+    "label": "Vision Transformers & Perceiver-style latent models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "transformer",
+      "vision",
+      "multimodal"
+    ],
+    "aliases": [],
+    "definition": "Vision Transformers tokenize spatial inputs into patches, while Perceiver-style models use a compact latent array to absorb high-dimensional or multimodal observations.",
+    "why_it_matters": "The role of Vision Transformers & Perceiver-style latent models is to connect Transformers, Striding, pooling, patchification & up/downsampling to downstream capabilities including Computer vision, perception & scene understanding.",
+    "examples": [
+      "substrate for Computer vision, perception & scene understanding",
+      "combined with Transformers"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Striding, pooling, patchification & up/downsampling."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "transformer",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Vision Transformers & Perceiver-style latent models extends or specializes the architecture family Transformers."
+      },
+      {
+        "id": "resampling_patchification",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Striding, pooling, patchification & up/downsampling."
+      },
+      {
+        "id": "cross_attention",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+      },
+      {
+        "id": "spatial_grids",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Vision Transformers & Perceiver-style latent models consumes, emits, or organizes information using Images, video & spatial grids."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a6276c74975fd867",
+      "node_id": "vision_transformer_perceiver",
+      "field": "definition",
+      "text": "Vision Transformers tokenize spatial inputs into patches, while Perceiver-style models use a compact latent array to absorb high-dimensional or multimodal observations."
+    },
+    {
+      "unit_id": "6f8cde2fa7b604d4",
+      "node_id": "vision_transformer_perceiver",
+      "field": "why_it_matters",
+      "text": "The role of Vision Transformers & Perceiver-style latent models is to connect Transformers, Striding, pooling, patchification & up/downsampling to downstream capabilities including Computer vision, perception & scene understanding."
+    },
+    {
+      "unit_id": "93bd58e43572e5ca",
+      "node_id": "vision_transformer_perceiver",
+      "field": "examples[1]",
+      "text": "substrate for Computer vision, perception & scene understanding"
+    },
+    {
+      "unit_id": "292d46e96c063bfc",
+      "node_id": "vision_transformer_perceiver",
+      "field": "examples[2]",
+      "text": "combined with Transformers"
+    },
+    {
+      "unit_id": "1eb3189cf1cb7450",
+      "node_id": "vision_transformer_perceiver",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Striding, pooling, patchification & up/downsampling."
+    },
+    {
+      "unit_id": "b5d2520078c63594",
+      "node_id": "vision_transformer_perceiver",
+      "field": "dependencies.transformer.rationale",
+      "text": "Vision Transformers & Perceiver-style latent models extends or specializes the architecture family Transformers."
+    },
+    {
+      "unit_id": "0cc0d5d2dd9a9bb1",
+      "node_id": "vision_transformer_perceiver",
+      "field": "dependencies.resampling_patchification.rationale",
+      "text": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Striding, pooling, patchification & up/downsampling."
+    },
+    {
+      "unit_id": "466d5cb1cf3994e1",
+      "node_id": "vision_transformer_perceiver",
+      "field": "dependencies.cross_attention.rationale",
+      "text": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+    },
+    {
+      "unit_id": "86a5359cdea3d9e5",
+      "node_id": "vision_transformer_perceiver",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "Vision Transformers & Perceiver-style latent models consumes, emits, or organizes information using Images, video & spatial grids."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "4d0f7c1874f29eb4",
+      "node_id": "vision_transformer_perceiver",
+      "dependency_id": "transformer",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Vision Transformers & Perceiver-style latent models extends or specializes the architecture family Transformers."
+    },
+    {
+      "edge_id": "52b897801ba411d3",
+      "node_id": "vision_transformer_perceiver",
+      "dependency_id": "resampling_patchification",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Striding, pooling, patchification & up/downsampling."
+    },
+    {
+      "edge_id": "ea1b1c0541c94d75",
+      "node_id": "vision_transformer_perceiver",
+      "dependency_id": "cross_attention",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+    },
+    {
+      "edge_id": "1acee357ab482c8d",
+      "node_id": "vision_transformer_perceiver",
+      "dependency_id": "spatial_grids",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Vision Transformers & Perceiver-style latent models consumes, emits, or organizes information using Images, video & spatial grids."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/vision_transformer_perceiver.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

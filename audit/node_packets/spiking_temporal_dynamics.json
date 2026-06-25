@@ -1,0 +1,163 @@
+{
+  "node_id": "spiking_temporal_dynamics",
+  "label": "Spiking neurons & temporal coding",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "spiking_temporal_dynamics",
+    "label": "Spiking neurons & temporal coding",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "neuromorphic"
+    ],
+    "aliases": [],
+    "definition": "Sparse events and membrane dynamics encode and process information in continuous or discrete time.",
+    "why_it_matters": "The role of Spiking neurons & temporal coding is to connect Dynamical systems & control theory, Sequences, events & time series to downstream capabilities including Spiking neural networks, Neuromorphic, sensor & edge intelligence.",
+    "examples": [
+      "substrate for Spiking neural networks",
+      "substrate for Neuromorphic, sensor & edge intelligence"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Dynamical systems & control theory, Sequences, events & time series."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "dynamical_control",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Spiking neurons & temporal coding uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Spiking neurons & temporal coding uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "signal_processing",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Spiking neurons & temporal coding uses Signal processing & harmonic analysis as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "5855e9c0c64120a6",
+      "node_id": "spiking_temporal_dynamics",
+      "field": "definition",
+      "text": "Sparse events and membrane dynamics encode and process information in continuous or discrete time."
+    },
+    {
+      "unit_id": "db798c97025263e4",
+      "node_id": "spiking_temporal_dynamics",
+      "field": "why_it_matters",
+      "text": "The role of Spiking neurons & temporal coding is to connect Dynamical systems & control theory, Sequences, events & time series to downstream capabilities including Spiking neural networks, Neuromorphic, sensor & edge intelligence."
+    },
+    {
+      "unit_id": "09182b8706288db2",
+      "node_id": "spiking_temporal_dynamics",
+      "field": "examples[1]",
+      "text": "substrate for Spiking neural networks"
+    },
+    {
+      "unit_id": "4e261988c9478839",
+      "node_id": "spiking_temporal_dynamics",
+      "field": "examples[2]",
+      "text": "substrate for Neuromorphic, sensor & edge intelligence"
+    },
+    {
+      "unit_id": "9766af8fd5ced39e",
+      "node_id": "spiking_temporal_dynamics",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Dynamical systems & control theory, Sequences, events & time series."
+    },
+    {
+      "unit_id": "a0bd2bcb85e75497",
+      "node_id": "spiking_temporal_dynamics",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Spiking neurons & temporal coding uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "a0f7211a1bd01681",
+      "node_id": "spiking_temporal_dynamics",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Spiking neurons & temporal coding uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "338ab0e1d287c1f6",
+      "node_id": "spiking_temporal_dynamics",
+      "field": "dependencies.signal_processing.rationale",
+      "text": "Spiking neurons & temporal coding uses Signal processing & harmonic analysis as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "f5e5f72764efd392",
+      "node_id": "spiking_temporal_dynamics",
+      "dependency_id": "dynamical_control",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Spiking neurons & temporal coding uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "c412e0a54b43ee98",
+      "node_id": "spiking_temporal_dynamics",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Spiking neurons & temporal coding uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4ce8b6cc5a1fc820",
+      "node_id": "spiking_temporal_dynamics",
+      "dependency_id": "signal_processing",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Spiking neurons & temporal coding uses Signal processing & harmonic analysis as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/spiking_temporal_dynamics.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

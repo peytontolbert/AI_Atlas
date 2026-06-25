@@ -1,0 +1,174 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "0cf5343b59f830a2",
+      "node_id": "structured_output_validation",
+      "field": "definition",
+      "text": "Structured-output pipelines parse generated artifacts, validate schema and semantic constraints, and retry, repair, or escalate outputs that fail.",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source supports structured outputs, JSON Schema constraints, and compliance evaluation; retry/repair/escalation and semantic validation are broader pipeline synthesis."
+    },
+    {
+      "unit_id": "fdb562fd43551c46",
+      "node_id": "structured_output_validation",
+      "field": "why_it_matters",
+      "text": "They convert probabilistic text generation into a bounded interface suitable for downstream software.",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source describes structured outputs as critical for modern LM applications and constraint-compliant outputs."
+    },
+    {
+      "unit_id": "e31c82a80419a2a8",
+      "node_id": "structured_output_validation",
+      "field": "examples[1]",
+      "text": "JSON validation and retry",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "JSON Schema validation is directly central."
+    },
+    {
+      "unit_id": "76b8613ea4a18c93",
+      "node_id": "structured_output_validation",
+      "field": "examples[2]",
+      "text": "tool-argument type checking",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Type/constraint checking follows from schema-constrained structured outputs; tool arguments are a specific application."
+    },
+    {
+      "unit_id": "b32e0197b9fb3761",
+      "node_id": "structured_output_validation",
+      "field": "examples[3]",
+      "text": "SQL dry-run and repair",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "SQL dry-run and repair are not directly supported by the cited structured-output benchmark."
+    },
+    {
+      "unit_id": "94952bb4c6177223",
+      "node_id": "structured_output_validation",
+      "field": "limitations[1]",
+      "text": "Repair loops can mask systematic model errors and still require explicit semantic, authorization, and side-effect checks.",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source distinguishes constraint compliance from quality/effectiveness; semantic/authorization/side-effect checks are broader safety synthesis."
+    },
+    {
+      "unit_id": "b46a1b63a759a342",
+      "node_id": "structured_output_validation",
+      "field": "dependencies.schemas_grammars_constraints.rationale",
+      "text": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Schemas, grammars & formal output languages.",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "JSON Schema constraints are directly central."
+    },
+    {
+      "unit_id": "9b09a31a19dfb789",
+      "node_id": "structured_output_validation",
+      "field": "dependencies.code_execution.rationale",
+      "text": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes.",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Validation can include execution/dry-runs, but the cited source focuses on schema/constrained decoding, not code execution."
+    },
+    {
+      "unit_id": "1abd50f38c3691fb",
+      "node_id": "structured_output_validation",
+      "field": "dependencies.reflection_verifier.rationale",
+      "text": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Reflection, critique, verifier & repair loops.",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Repair/retry validation loops are verifier-like, but not directly evidenced by the abstract."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "d2d8e63c821996b2",
+      "node_id": "structured_output_validation",
+      "dependency_id": "schemas_grammars_constraints",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Schema constraints directly support validation; core is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8db74679a8bbec0e",
+      "node_id": "structured_output_validation",
+      "dependency_id": "code_execution",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Execution is useful for semantic checks but not core in the inspected structured-output source.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "79f529e2183dae6b",
+      "node_id": "structured_output_validation",
+      "dependency_id": "reflection_verifier",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Retry/repair validation is a common verifier-loop pattern.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

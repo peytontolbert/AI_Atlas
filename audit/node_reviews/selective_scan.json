@@ -1,0 +1,168 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "def5f82bc0798755",
+      "node_id": "selective_scan",
+      "field": "definition",
+      "text": "Input-dependent state-space parameters selectively propagate or forget information while preserving linear-time scans.",
+      "source_ids": [
+        "ref_mamba"
+      ],
+      "evidence_location": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces introduces selective state spaces, input-dependent parameters, hardware-aware parallel scan, and linear-time sequence modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "2a4c086d99ffd9e2",
+      "node_id": "selective_scan",
+      "field": "why_it_matters",
+      "text": "The role of Selective state-space scan is to connect State-space transitions, Gating & multiplicative control to downstream capabilities including Selective state-space models (Mamba family).",
+      "source_ids": [
+        "ref_mamba",
+        "ref_aima"
+      ],
+      "evidence_location": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces introduces selective state spaces, input-dependent parameters, hardware-aware parallel scan, and linear-time sequence modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "6b1b035e463ababe",
+      "node_id": "selective_scan",
+      "field": "examples[1]",
+      "text": "substrate for Selective state-space models (Mamba family)",
+      "source_ids": [
+        "ref_mamba"
+      ],
+      "evidence_location": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces introduces selective state spaces, input-dependent parameters, hardware-aware parallel scan, and linear-time sequence modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "eca63e9ea395ebc8",
+      "node_id": "selective_scan",
+      "field": "examples[2]",
+      "text": "combined with State-space transitions",
+      "source_ids": [
+        "ref_mamba"
+      ],
+      "evidence_location": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces introduces selective state spaces, input-dependent parameters, hardware-aware parallel scan, and linear-time sequence modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "8ba71bd01bc29172",
+      "node_id": "selective_scan",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include State-space transitions, Gating & multiplicative control.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_aima"
+      ],
+      "evidence_location": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces introduces selective state spaces, input-dependent parameters, hardware-aware parallel scan, and linear-time sequence modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "504467be9a805cbd",
+      "node_id": "selective_scan",
+      "field": "dependencies.state_space_transition.rationale",
+      "text": "Selective state-space scan is assembled in part from the mechanism or model component State-space transitions.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_aima"
+      ],
+      "evidence_location": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces introduces selective state spaces, input-dependent parameters, hardware-aware parallel scan, and linear-time sequence modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "8f9a77328f50a293",
+      "node_id": "selective_scan",
+      "field": "dependencies.gating.rationale",
+      "text": "Selective state-space scan is assembled in part from the mechanism or model component Gating & multiplicative control.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_aima"
+      ],
+      "evidence_location": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces introduces selective state spaces, input-dependent parameters, hardware-aware parallel scan, and linear-time sequence modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "8c392763fd5a8473",
+      "node_id": "selective_scan",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Selective state-space scan uses Algorithms & data structures as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_aima"
+      ],
+      "evidence_location": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces introduces selective state spaces, input-dependent parameters, hardware-aware parallel scan, and linear-time sequence modeling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "0272a5e2c92d9e5a",
+      "node_id": "selective_scan",
+      "dependency_id": "state_space_transition",
+      "source_ids": [
+        "ref_mamba",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "5348404104142986",
+      "node_id": "selective_scan",
+      "dependency_id": "gating",
+      "source_ids": [
+        "ref_mamba",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "167b4301faaa209c",
+      "node_id": "selective_scan",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": [
+        "ref_mamba",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

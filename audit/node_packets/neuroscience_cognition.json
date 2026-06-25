@@ -1,0 +1,157 @@
+{
+  "node_id": "neuroscience_cognition",
+  "label": "Neuroscience & cognitive science",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "neuroscience_cognition",
+    "label": "Neuroscience & cognitive science",
+    "layer": "foundation",
+    "tags": [
+      "biology",
+      "cognition",
+      "neuromorphic"
+    ],
+    "aliases": [],
+    "definition": "Neural coding, plasticity, memory, perception, and cognition provide biological inspiration and comparative models of intelligence.",
+    "why_it_matters": "The role of Neuroscience & cognitive science is to connect Probability theory, Dynamical systems & control theory to downstream capabilities including Perceptron, Hebbian, Oja & spike-timing plasticity.",
+    "examples": [
+      "substrate for Perceptron, Hebbian, Oja & spike-timing plasticity",
+      "combined with Probability theory"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory, Dynamical systems & control theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Probability theory."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+      },
+      {
+        "id": "signal_processing",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "f3b6e7637fd9bd78",
+      "node_id": "neuroscience_cognition",
+      "field": "definition",
+      "text": "Neural coding, plasticity, memory, perception, and cognition provide biological inspiration and comparative models of intelligence."
+    },
+    {
+      "unit_id": "7c443e1cc3b4a6ed",
+      "node_id": "neuroscience_cognition",
+      "field": "why_it_matters",
+      "text": "The role of Neuroscience & cognitive science is to connect Probability theory, Dynamical systems & control theory to downstream capabilities including Perceptron, Hebbian, Oja & spike-timing plasticity."
+    },
+    {
+      "unit_id": "57719e170392b486",
+      "node_id": "neuroscience_cognition",
+      "field": "examples[1]",
+      "text": "substrate for Perceptron, Hebbian, Oja & spike-timing plasticity"
+    },
+    {
+      "unit_id": "7093030be8f3cf05",
+      "node_id": "neuroscience_cognition",
+      "field": "examples[2]",
+      "text": "combined with Probability theory"
+    },
+    {
+      "unit_id": "dd7aa8f2a6418d3d",
+      "node_id": "neuroscience_cognition",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory, Dynamical systems & control theory."
+    },
+    {
+      "unit_id": "4cbdf174160e54c1",
+      "node_id": "neuroscience_cognition",
+      "field": "dependencies.probability.rationale",
+      "text": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "unit_id": "7d277774f6d5ebee",
+      "node_id": "neuroscience_cognition",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    },
+    {
+      "unit_id": "eeef9b0eab341ca8",
+      "node_id": "neuroscience_cognition",
+      "field": "dependencies.signal_processing.rationale",
+      "text": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "8701308aa6fc9160",
+      "node_id": "neuroscience_cognition",
+      "dependency_id": "probability",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "edge_id": "aebc353061c0d36f",
+      "node_id": "neuroscience_cognition",
+      "dependency_id": "dynamical_control",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    },
+    {
+      "edge_id": "61eddfc572739cce",
+      "node_id": "neuroscience_cognition",
+      "dependency_id": "signal_processing",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/neuroscience_cognition.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "node_id": "interpretability",
+  "label": "Feature attribution & interpretability",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "interpretability",
+    "label": "Feature attribution & interpretability",
+    "layer": "alignment",
+    "tags": [
+      "interpretability",
+      "evaluation"
+    ],
+    "aliases": [],
+    "definition": "Interpretability methods attribute predictions or internal representations to input features, examples, concepts, directions, or learned components.",
+    "why_it_matters": "The role of Feature attribution & interpretability is to connect Statistics & experimental design, Embeddings & distributed representations to downstream capabilities including Mechanistic interpretability & circuit analysis.",
+    "examples": [
+      "substrate for Mechanistic interpretability & circuit analysis",
+      "combined with Statistics & experimental design"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Embeddings & distributed representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "statistics",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Feature attribution & interpretability measures, constrains, audits, or governs behavior using Statistics & experimental design."
+      },
+      {
+        "id": "embeddings",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Feature attribution & interpretability measures, constrains, audits, or governs behavior using Embeddings & distributed representations."
+      },
+      {
+        "id": "causal_inference",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Feature attribution & interpretability measures, constrains, audits, or governs behavior using Causal inference."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "14923a47020c9afe",
+      "node_id": "interpretability",
+      "field": "definition",
+      "text": "Interpretability methods attribute predictions or internal representations to input features, examples, concepts, directions, or learned components."
+    },
+    {
+      "unit_id": "0e49e9baddfa230d",
+      "node_id": "interpretability",
+      "field": "why_it_matters",
+      "text": "The role of Feature attribution & interpretability is to connect Statistics & experimental design, Embeddings & distributed representations to downstream capabilities including Mechanistic interpretability & circuit analysis."
+    },
+    {
+      "unit_id": "41bb541ea1de52f7",
+      "node_id": "interpretability",
+      "field": "examples[1]",
+      "text": "substrate for Mechanistic interpretability & circuit analysis"
+    },
+    {
+      "unit_id": "05a4d108dbe515eb",
+      "node_id": "interpretability",
+      "field": "examples[2]",
+      "text": "combined with Statistics & experimental design"
+    },
+    {
+      "unit_id": "ac7c5fff77bcba31",
+      "node_id": "interpretability",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "16a1a9212b16fc6a",
+      "node_id": "interpretability",
+      "field": "dependencies.statistics.rationale",
+      "text": "Feature attribution & interpretability measures, constrains, audits, or governs behavior using Statistics & experimental design."
+    },
+    {
+      "unit_id": "3ff8a63bc616b4d4",
+      "node_id": "interpretability",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Feature attribution & interpretability measures, constrains, audits, or governs behavior using Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "6171784174b18455",
+      "node_id": "interpretability",
+      "field": "dependencies.causal_inference.rationale",
+      "text": "Feature attribution & interpretability measures, constrains, audits, or governs behavior using Causal inference."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "a1ad55c0cd238032",
+      "node_id": "interpretability",
+      "dependency_id": "statistics",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Feature attribution & interpretability measures, constrains, audits, or governs behavior using Statistics & experimental design."
+    },
+    {
+      "edge_id": "9bccbe401b33f6b3",
+      "node_id": "interpretability",
+      "dependency_id": "embeddings",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Feature attribution & interpretability measures, constrains, audits, or governs behavior using Embeddings & distributed representations."
+    },
+    {
+      "edge_id": "a3ac0394b19cd676",
+      "node_id": "interpretability",
+      "dependency_id": "causal_inference",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Feature attribution & interpretability measures, constrains, audits, or governs behavior using Causal inference."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/interpretability.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

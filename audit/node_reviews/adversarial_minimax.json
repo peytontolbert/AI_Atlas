@@ -1,0 +1,138 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "b3bb3fa4b4667fde",
+      "node_id": "adversarial_minimax",
+      "field": "definition",
+      "text": "Competing learners optimize opposing goals, as in generator–discriminator or adversarial robustness games.",
+      "source_ids": ["ref_gan", "ref_aima"],
+      "evidence_location": "Goodfellow et al. GAN abstract and method describe generator/discriminator adversarial training; AIMA game-theory/adversarial-search chapters cover opposing-agent optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Generator-discriminator minimax is directly supported. Adversarial robustness games are plausible but not directly covered by the cited GAN source."
+    },
+    {
+      "unit_id": "786c14a0218f363d",
+      "node_id": "adversarial_minimax",
+      "field": "why_it_matters",
+      "text": "The role of Adversarial minimax objectives is to connect Generative modeling, Game theory & decision theory to downstream capabilities including Adversarial examples & adversarial training, Generative adversarial networks.",
+      "source_ids": ["ref_gan", "ref_aima"],
+      "evidence_location": "Goodfellow et al. GAN paper, minimax generator-discriminator setup; AIMA chapters on adversarial search, games, and decisions.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "GAN and game-theory connections are supported, but adversarial examples/training are not directly evidenced by the packet sources."
+    },
+    {
+      "unit_id": "eeb1b7a9f42e3893",
+      "node_id": "adversarial_minimax",
+      "field": "examples[1]",
+      "text": "substrate for Adversarial examples & adversarial training",
+      "source_ids": ["ref_aima"],
+      "evidence_location": "AIMA adversarial-search/game material; no packet source specifically on adversarial examples or adversarial training was cited.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The relation is plausible for robust optimization, but the cited packet evidence is too broad to verify the adversarial-training example."
+    },
+    {
+      "unit_id": "dfdc55caf6be0509",
+      "node_id": "adversarial_minimax",
+      "field": "examples[2]",
+      "text": "substrate for Generative adversarial networks",
+      "source_ids": ["ref_gan"],
+      "evidence_location": "Goodfellow et al. GAN paper, minimax game between generator and discriminator.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The GAN source directly supports adversarial minimax objectives as the basis of GANs."
+    },
+    {
+      "unit_id": "7f1cfd9078c0fa36",
+      "node_id": "adversarial_minimax",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Game theory & decision theory.",
+      "source_ids": ["ref_gan", "ref_aima"],
+      "evidence_location": "Goodfellow et al. GAN paper on adversarial training objective; AIMA game/decision theory chapters.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependencies are supported, but the surrogate-objective failure mode is generic and not directly established by these citations."
+    },
+    {
+      "unit_id": "a2324c9b53ef9eca",
+      "node_id": "adversarial_minimax",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "Adversarial minimax objectives uses Generative modeling as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_gan"],
+      "evidence_location": "Goodfellow et al. GAN paper, generator learns to model data distribution through adversarial training.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited GAN evidence directly supports the generative-modeling dependency for this objective family."
+    },
+    {
+      "unit_id": "75cdc7acb950f27c",
+      "node_id": "adversarial_minimax",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Adversarial minimax objectives uses Game theory & decision theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_gan", "ref_aima"],
+      "evidence_location": "Goodfellow et al. GAN paper frames training as a minimax game; AIMA game-theory and adversarial-search chapters.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The minimax-game framing directly supports this dependency."
+    },
+    {
+      "unit_id": "37cdc4ad3f882b39",
+      "node_id": "adversarial_minimax",
+      "field": "dependencies.optimization.rationale",
+      "text": "Adversarial minimax objectives uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_gan"],
+      "evidence_location": "Goodfellow et al. GAN paper, minimax objective and training procedure.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The minimax objective directly requires optimization."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "dd947c85c2da13bd",
+      "node_id": "adversarial_minimax",
+      "dependency_id": "generative_learning",
+      "source_ids": ["ref_gan"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "GANs directly support the generative-learning edge and core strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "f96f98a9fac106b5",
+      "node_id": "adversarial_minimax",
+      "dependency_id": "game_decision_theory",
+      "source_ids": ["ref_gan", "ref_aima"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The minimax game framing directly supports a core game/decision-theory dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "12f1e5db93da9962",
+      "node_id": "adversarial_minimax",
+      "dependency_id": "optimization",
+      "source_ids": ["ref_gan"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited objective is optimized during training; common strength is defensible relative to the core generative/game dependencies.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

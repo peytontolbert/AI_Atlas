@@ -1,0 +1,146 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "804e43d4ac197064",
+      "node_id": "optimization",
+      "field": "definition",
+      "text": "Convex and non-convex optimization frame learning as the search for parameters or policies that minimize an objective.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html, Chapter 4 'Search in Complex Environments' / 4.1 'Local Search and Optimization Problems' (lines 103-110); Chapter 5 'Adversarial Search and Games' / 5.1 'Game Theory' and 5.2 'Optimal Decisions in Games' (lines 126-133); Chapter 22 'Reinforcement Learning' (lines 47-48 on the main contents page); Appendix A.2 (lines 768-774).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA supports optimization as search over objective functions and includes policy-focused learning and game-theoretic decision making, but it does not state the full convex/non-convex phrasing or the exact learning formulation in one place."
+    },
+    {
+      "unit_id": "63e7a89f8b5ddcb8",
+      "node_id": "optimization",
+      "field": "why_it_matters",
+      "text": "The role of Optimization theory is to connect Calculus & automatic differentiation theory, Linear algebra to downstream capabilities including Dynamical systems & control theory, Game theory & decision theory, Sparse coding & compositional representations.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html, Chapter 4 'Search in Complex Environments' / 4.1 'Local Search and Optimization Problems' (lines 103-110); Chapter 5 'Adversarial Search and Games' / 5.1 'Game Theory' and 5.2 'Optimal Decisions in Games' (lines 126-133); Chapter 26.5 'Planning and Control' (lines 704-716); Appendix A.2 'Vectors, Matrices, and Linear Algebra' (lines 768-774).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The source clearly supports optimization as a bridge to control and game/decision topics and provides mathematical background context, but it does not directly support the sparse-coding/compositional-representation portion. The sentence should be narrowed if it is meant as a source-level claim."
+    },
+    {
+      "unit_id": "00fc392b93afeee3",
+      "node_id": "optimization",
+      "field": "examples[1]",
+      "text": "substrate for Dynamical systems & control theory",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html, Chapter 1.2.7 'Control theory and cybernetics' (lines 30-34); Chapter 26.5 'Planning and Control' and 26.5.4 'Optimal control' (lines 704-716).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA directly includes control theory and optimal control as relevant AI topics, so the dependency relation is defensible. 'Substrate for' is still an atlas synthesis rather than a verbatim source claim."
+    },
+    {
+      "unit_id": "2f4e42ac01d045c5",
+      "node_id": "optimization",
+      "field": "examples[2]",
+      "text": "substrate for Game theory & decision theory",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html, Chapter 1.2.3 'Economics' (line 29); Chapter 5 'Adversarial Search and Games' / 5.1 'Game Theory' and 5.2 'Optimal Decisions in Games' (lines 126-133); Chapter 17 'Making Complex Decisions' (lines 41-43).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source directly covers game theory and decision-making topics, which makes the substrate relation defensible. The wording is still an editorial synthesis."
+    },
+    {
+      "unit_id": "f66f9e5e41142f5b",
+      "node_id": "optimization",
+      "field": "examples[3]",
+      "text": "substrate for Sparse coding & compositional representations",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html, Appendix A.2 'Vectors, Matrices, and Linear Algebra' (lines 768-774); Chapter 21 'Deep Learning' (lines 46-47).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The source supports optimization-related mathematics and deep learning as a downstream area, but it does not directly name sparse coding or compositional representations. The atlas phrasing is broader than the cited evidence."
+    },
+    {
+      "unit_id": "0439735918c673f0",
+      "node_id": "optimization",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Calculus & automatic differentiation theory, Linear algebra.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html, Chapter 27.1.3 'The mathematical objection' (lines 736-753); Appendix A: Mathematical Background, especially A.2 'Vectors, Matrices, and Linear Algebra' (lines 768-774).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "AIMA supports the general point that mathematical formalisms have limits and that linear algebra is mathematical background, but it does not directly state the empirical-mismatch wording or the dependency clause in this exact form."
+    },
+    {
+      "unit_id": "ddf91f99a7675e60",
+      "node_id": "optimization",
+      "field": "dependencies.calculus.rationale",
+      "text": "Optimization theory rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html, Chapter 4 'Search in Complex Environments' / 4.1 'Local Search and Optimization Problems' (lines 103-110); Chapter 21 'Deep Learning' (lines 44-48); Appendix A.2 (lines 768-774).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited material supports optimization as a mathematical search/learning framework and situates it within the broader mathematical background, but it does not state the calculus dependency verbatim."
+    },
+    {
+      "unit_id": "605ff961595991ed",
+      "node_id": "optimization",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Optimization theory rests on the formal or computational capabilities supplied by Linear algebra.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html, Appendix A.2 'Vectors, Matrices, and Linear Algebra' (lines 768-774); Chapter 4 'Search in Complex Environments' / 4.1 'Local Search and Optimization Problems' (lines 103-110); Chapter 21 'Deep Learning' (lines 44-48).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Linear algebra is directly named as mathematical background, and optimization/deep-learning topics provide the application context. The exact rationale remains a synthesis rather than a direct quotation."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "ce2c075639c5c1ed",
+      "node_id": "optimization",
+      "dependency_id": "calculus",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Optimization relies on calculus-style reasoning for continuous objectives and learning procedures, but AIMA does not state the dependency in this exact wording.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ac13a95d15b3cb27",
+      "node_id": "optimization",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA explicitly treats linear algebra as mathematical background, and that support is sufficient for the dependency edge even though the rationale is editorial synthesis.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

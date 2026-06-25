@@ -1,0 +1,144 @@
+{
+  "node_id": "game_decision_theory",
+  "label": "Game theory & decision theory",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "game_decision_theory",
+    "label": "Game theory & decision theory",
+    "layer": "foundation",
+    "tags": [
+      "decision",
+      "agents",
+      "rl"
+    ],
+    "aliases": [],
+    "definition": "Utilities, rational choice, strategic interaction, and sequential decisions formalize action under uncertainty.",
+    "why_it_matters": "The role of Game theory & decision theory is to connect Probability theory, Optimization theory to downstream capabilities including Labels, targets, rewards & preferences, Markov chains, MDPs, POMDPs & belief states, Reinforcement learning.",
+    "examples": [
+      "substrate for Labels, targets, rewards & preferences",
+      "substrate for Markov chains, MDPs, POMDPs & belief states",
+      "substrate for Reinforcement learning"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory, Optimization theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Game theory & decision theory rests on the formal or computational capabilities supplied by Probability theory."
+      },
+      {
+        "id": "optimization",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Game theory & decision theory rests on the formal or computational capabilities supplied by Optimization theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "329283dfcd00e206",
+      "node_id": "game_decision_theory",
+      "field": "definition",
+      "text": "Utilities, rational choice, strategic interaction, and sequential decisions formalize action under uncertainty."
+    },
+    {
+      "unit_id": "643ff263e8e41752",
+      "node_id": "game_decision_theory",
+      "field": "why_it_matters",
+      "text": "The role of Game theory & decision theory is to connect Probability theory, Optimization theory to downstream capabilities including Labels, targets, rewards & preferences, Markov chains, MDPs, POMDPs & belief states, Reinforcement learning."
+    },
+    {
+      "unit_id": "d8b3f48c6c803ebf",
+      "node_id": "game_decision_theory",
+      "field": "examples[1]",
+      "text": "substrate for Labels, targets, rewards & preferences"
+    },
+    {
+      "unit_id": "db239320b7080655",
+      "node_id": "game_decision_theory",
+      "field": "examples[2]",
+      "text": "substrate for Markov chains, MDPs, POMDPs & belief states"
+    },
+    {
+      "unit_id": "3e44d1f8356b9c1c",
+      "node_id": "game_decision_theory",
+      "field": "examples[3]",
+      "text": "substrate for Reinforcement learning"
+    },
+    {
+      "unit_id": "b97a75985b0868b9",
+      "node_id": "game_decision_theory",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory, Optimization theory."
+    },
+    {
+      "unit_id": "5650231b0fe1c49a",
+      "node_id": "game_decision_theory",
+      "field": "dependencies.probability.rationale",
+      "text": "Game theory & decision theory rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "unit_id": "08814a3ab2eecb02",
+      "node_id": "game_decision_theory",
+      "field": "dependencies.optimization.rationale",
+      "text": "Game theory & decision theory rests on the formal or computational capabilities supplied by Optimization theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "b80de4d6239accd5",
+      "node_id": "game_decision_theory",
+      "dependency_id": "probability",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Game theory & decision theory rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "edge_id": "fed157765decec86",
+      "node_id": "game_decision_theory",
+      "dependency_id": "optimization",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Game theory & decision theory rests on the formal or computational capabilities supplied by Optimization theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/game_decision_theory.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

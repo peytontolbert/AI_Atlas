@@ -1,0 +1,182 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "a42ac6bfcb1eba95",
+      "node_id": "kv_cache",
+      "field": "definition",
+      "text": "Intermediate keys, values, or recurrent state are reused across generation steps to avoid recomputation.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Transformer attention defines keys and values; the cited sources support attention computation but not necessarily implementation-level cache reuse.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "KV cache reuse is technically correct, but a serving/inference source would make it directly verified."
+    },
+    {
+      "unit_id": "fbb69ef74ba83482",
+      "node_id": "kv_cache",
+      "field": "why_it_matters",
+      "text": "The role of KV cache & recurrent inference state is to connect Caches, APIs & tool interfaces, Transformers to downstream capabilities including Paged attention & KV-memory management.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
+    },
+    {
+      "unit_id": "563da189035662d6",
+      "node_id": "kv_cache",
+      "field": "examples[1]",
+      "text": "substrate for Paged attention & KV-memory management",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "d612afb9f8ae256b",
+      "node_id": "kv_cache",
+      "field": "examples[2]",
+      "text": "combined with Caches, APIs & tool interfaces",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "1ac99ea4e6bc4f3a",
+      "node_id": "kv_cache",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Caches, APIs & tool interfaces, Transformers.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "f43c5e70d8508638",
+      "node_id": "kv_cache",
+      "field": "dependencies.cache_tool_interfaces.rationale",
+      "text": "KV cache & recurrent inference state uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet references support cache_tool_interfaces or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "4fc9c71d16c86ce4",
+      "node_id": "kv_cache",
+      "field": "dependencies.transformer.rationale",
+      "text": "KV cache & recurrent inference state uses Transformers as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet references support transformer or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "513f3fb4762708ce",
+      "node_id": "kv_cache",
+      "field": "dependencies.state_space_transition.rationale",
+      "text": "KV cache & recurrent inference state uses State-space transitions as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet references support state_space_transition or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "4af6926dba725814",
+      "node_id": "kv_cache",
+      "dependency_id": "cache_tool_interfaces",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "d2f1bfd5715c6c8a",
+      "node_id": "kv_cache",
+      "dependency_id": "transformer",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9ee2361e3ebbb3a3",
+      "node_id": "kv_cache",
+      "dependency_id": "state_space_transition",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Recurrent inference state in state-space models is a plausible common counterpart to KV cache.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

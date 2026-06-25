@@ -1,0 +1,185 @@
+{
+  "node_id": "vqvae_tokenizer",
+  "label": "VQ-VAE & learned discrete tokenizers",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "vqvae_tokenizer",
+    "label": "VQ-VAE & learned discrete tokenizers",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "generative",
+      "multimodal"
+    ],
+    "aliases": [],
+    "definition": "VQ-VAE maps continuous encoder outputs to entries in a learned discrete codebook, turning images, audio, or other modalities into reusable tokens.",
+    "why_it_matters": "The role of VQ-VAE & learned discrete tokenizers is to connect Autoencoders, Tokens, vocabularies & symbolic units to downstream capabilities including Multimodal foundation models.",
+    "examples": [
+      "substrate for Multimodal foundation models",
+      "combined with Autoencoders"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Autoencoders, Tokens, vocabularies & symbolic units."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "autoencoder",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "VQ-VAE & learned discrete tokenizers extends or specializes the architecture family Autoencoders."
+      },
+      {
+        "id": "tokens_vocab",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+      },
+      {
+        "id": "embeddings",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Embeddings & distributed representations."
+      },
+      {
+        "id": "reconstruction_objective",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "VQ-VAE & learned discrete tokenizers is learned, selected, or evaluated using the objective family Reconstruction objectives."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "efc36a915794f789",
+      "node_id": "vqvae_tokenizer",
+      "field": "definition",
+      "text": "VQ-VAE maps continuous encoder outputs to entries in a learned discrete codebook, turning images, audio, or other modalities into reusable tokens."
+    },
+    {
+      "unit_id": "2d9ff5d766086c64",
+      "node_id": "vqvae_tokenizer",
+      "field": "why_it_matters",
+      "text": "The role of VQ-VAE & learned discrete tokenizers is to connect Autoencoders, Tokens, vocabularies & symbolic units to downstream capabilities including Multimodal foundation models."
+    },
+    {
+      "unit_id": "2a0dee5c1e66cb05",
+      "node_id": "vqvae_tokenizer",
+      "field": "examples[1]",
+      "text": "substrate for Multimodal foundation models"
+    },
+    {
+      "unit_id": "a50df3565c6cda2e",
+      "node_id": "vqvae_tokenizer",
+      "field": "examples[2]",
+      "text": "combined with Autoencoders"
+    },
+    {
+      "unit_id": "1074d1f39d45e61e",
+      "node_id": "vqvae_tokenizer",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Autoencoders, Tokens, vocabularies & symbolic units."
+    },
+    {
+      "unit_id": "491908328f8d38b7",
+      "node_id": "vqvae_tokenizer",
+      "field": "dependencies.autoencoder.rationale",
+      "text": "VQ-VAE & learned discrete tokenizers extends or specializes the architecture family Autoencoders."
+    },
+    {
+      "unit_id": "66a1dc178d145a10",
+      "node_id": "vqvae_tokenizer",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+    },
+    {
+      "unit_id": "9645d853917e4cc2",
+      "node_id": "vqvae_tokenizer",
+      "field": "dependencies.embeddings.rationale",
+      "text": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "419431ca80341f93",
+      "node_id": "vqvae_tokenizer",
+      "field": "dependencies.reconstruction_objective.rationale",
+      "text": "VQ-VAE & learned discrete tokenizers is learned, selected, or evaluated using the objective family Reconstruction objectives."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ccd5b2564f960aa6",
+      "node_id": "vqvae_tokenizer",
+      "dependency_id": "autoencoder",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "VQ-VAE & learned discrete tokenizers extends or specializes the architecture family Autoencoders."
+    },
+    {
+      "edge_id": "7f91201925e8f386",
+      "node_id": "vqvae_tokenizer",
+      "dependency_id": "tokens_vocab",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+    },
+    {
+      "edge_id": "8b75b265d3d895fb",
+      "node_id": "vqvae_tokenizer",
+      "dependency_id": "embeddings",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "edge_id": "f572394f627f0164",
+      "node_id": "vqvae_tokenizer",
+      "dependency_id": "reconstruction_objective",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "VQ-VAE & learned discrete tokenizers is learned, selected, or evaluated using the objective family Reconstruction objectives."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/vqvae_tokenizer.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

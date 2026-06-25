@@ -1,0 +1,200 @@
+{
+  "node_id": "preference_optimization",
+  "label": "Preference optimization (RLHF, DPO families)",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "preference_optimization",
+    "label": "Preference optimization (RLHF, DPO families)",
+    "layer": "objective",
+    "tags": [
+      "objective",
+      "alignment"
+    ],
+    "aliases": [],
+    "definition": "A policy is adjusted toward preferred behavior while controlling deviation from a reference model.",
+    "why_it_matters": "The role of Preference optimization (RLHF, DPO families) is to connect Preference learning, Reward modeling to downstream capabilities including Direct and online preference optimization, Safety policies, constitutional constraints & alignment, Group Relative Policy Optimization (GRPO).",
+    "examples": [
+      "substrate for Direct and online preference optimization",
+      "substrate for Safety policies, constitutional constraints & alignment",
+      "substrate for Group Relative Policy Optimization (GRPO)"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Preference learning, Reward modeling."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml",
+      "ref_dpo",
+      "ref_rlhf"
+    ],
+    "dependencies": [
+      {
+        "id": "preference_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Preference optimization (RLHF, DPO families) uses Preference learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "reward_modeling",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Preference optimization (RLHF, DPO families) is learned, selected, or evaluated using the objective family Reward modeling."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Preference optimization (RLHF, DPO families) uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "42ab4131984d1108",
+      "node_id": "preference_optimization",
+      "field": "definition",
+      "text": "A policy is adjusted toward preferred behavior while controlling deviation from a reference model."
+    },
+    {
+      "unit_id": "fbd50968a1d6132f",
+      "node_id": "preference_optimization",
+      "field": "why_it_matters",
+      "text": "The role of Preference optimization (RLHF, DPO families) is to connect Preference learning, Reward modeling to downstream capabilities including Direct and online preference optimization, Safety policies, constitutional constraints & alignment, Group Relative Policy Optimization (GRPO)."
+    },
+    {
+      "unit_id": "e09f604459e58cef",
+      "node_id": "preference_optimization",
+      "field": "examples[1]",
+      "text": "substrate for Direct and online preference optimization"
+    },
+    {
+      "unit_id": "e7f4a4f4f47ca38e",
+      "node_id": "preference_optimization",
+      "field": "examples[2]",
+      "text": "substrate for Safety policies, constitutional constraints & alignment"
+    },
+    {
+      "unit_id": "040a305dca884459",
+      "node_id": "preference_optimization",
+      "field": "examples[3]",
+      "text": "substrate for Group Relative Policy Optimization (GRPO)"
+    },
+    {
+      "unit_id": "d9b1eff2b0f137f7",
+      "node_id": "preference_optimization",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Preference learning, Reward modeling."
+    },
+    {
+      "unit_id": "533629b72516a916",
+      "node_id": "preference_optimization",
+      "field": "dependencies.preference_learning.rationale",
+      "text": "Preference optimization (RLHF, DPO families) uses Preference learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "c74fa486ae8d1751",
+      "node_id": "preference_optimization",
+      "field": "dependencies.reward_modeling.rationale",
+      "text": "Preference optimization (RLHF, DPO families) is learned, selected, or evaluated using the objective family Reward modeling."
+    },
+    {
+      "unit_id": "0644ca9f82139d2d",
+      "node_id": "preference_optimization",
+      "field": "dependencies.optimization.rationale",
+      "text": "Preference optimization (RLHF, DPO families) uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "eb460204aff29b17",
+      "node_id": "preference_optimization",
+      "dependency_id": "preference_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Preference optimization (RLHF, DPO families) uses Preference learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "ab5ecca694222c31",
+      "node_id": "preference_optimization",
+      "dependency_id": "reward_modeling",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Preference optimization (RLHF, DPO families) is learned, selected, or evaluated using the objective family Reward modeling."
+    },
+    {
+      "edge_id": "d2b9c733ad7c1f72",
+      "node_id": "preference_optimization",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Preference optimization (RLHF, DPO families) uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_dpo": {
+        "id": "ref_dpo",
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.18290"
+      },
+      "ref_rlhf": {
+        "id": "ref_rlhf",
+        "title": "Training language models to follow instructions with human feedback",
+        "authors": "Ouyang et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.02155"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dpo": {
+        "id": "ref_dpo",
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.18290"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlhf": {
+        "id": "ref_rlhf",
+        "title": "Training language models to follow instructions with human feedback",
+        "authors": "Ouyang et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.02155"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/preference_optimization.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "ba3c347c783e0f38",
+      "node_id": "code_assistants",
+      "field": "definition",
+      "text": "Code assistants model repositories, programming languages, tests, builds, and developer intent to explain, generate, review, or transform software.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The node cites broad AI background rather than a source that directly defines this modern system boundary.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The claim is plausible, but needs a system-specific source for exact verification."
+    },
+    {
+      "unit_id": "5c68a5c6162d9373",
+      "node_id": "code_assistants",
+      "field": "why_it_matters",
+      "text": "The role of Code models, copilots & repository intelligence is to connect Large language models, Program synthesis & code search to downstream capabilities including Autonomous software-engineering agents.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The upstream/downstream role is inferred from the dependency graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Useful graph synthesis, not directly established as an exact claim by the cited sources."
+    },
+    {
+      "unit_id": "6a386928ad8d7504",
+      "node_id": "code_assistants",
+      "field": "examples[1]",
+      "text": "substrate for Autonomous software-engineering agents",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "96135966f094bc5b",
+      "node_id": "code_assistants",
+      "field": "examples[2]",
+      "text": "combined with Large language models",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Treat as a plausible downstream or composition example."
+    },
+    {
+      "unit_id": "4781f1ec1c37a4d8",
+      "node_id": "code_assistants",
+      "field": "limitations[1]",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Large language models, Program synthesis & code search.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+    },
+    {
+      "unit_id": "427a90e670c78d8e",
+      "node_id": "code_assistants",
+      "field": "dependencies.llms.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Large language models as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "0197226383415e38",
+      "node_id": "code_assistants",
+      "field": "dependencies.program_synthesis.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Program synthesis & code search as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "30d770a2ca4268ed",
+      "node_id": "code_assistants",
+      "field": "dependencies.code_execution.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Code execution, interpreters & sandboxes as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is central to the node mechanism and is consistent with the packet references.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rationale wording is graph-generated, so this is synthesis rather than direct verification."
+    },
+    {
+      "unit_id": "f835f593b0a7d95b",
+      "node_id": "code_assistants",
+      "field": "dependencies.rag.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Retrieval-augmented generation as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "91f2e15b15eda653",
+      "node_id": "code_assistants",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Programs, ASTs, bytecode & intermediate representations as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "202e0cb2aefdc460",
+      "node_id": "code_assistants",
+      "field": "dependencies.graph_rag.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Graph RAG & structured retrieval as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "fbf923c607cbef2d",
+      "node_id": "code_assistants",
+      "field": "dependencies.beam_search.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Beam search & constrained decoding as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "694567bda714460e",
+      "node_id": "code_assistants",
+      "field": "dependencies.grammar_constrained_decoding.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Grammar- and schema-constrained decoding as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "153eb7bcee6b733b",
+      "node_id": "code_assistants",
+      "field": "dependencies.structured_outputs.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Structured outputs & typed action generation as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "47b754d38e06e44d",
+      "node_id": "code_assistants",
+      "field": "dependencies.peft_lora.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+    },
+    {
+      "unit_id": "852ef8c476433690",
+      "node_id": "code_assistants",
+      "field": "dependencies.formal_agent_verification.rationale",
+      "text": "Code models, copilots & repository intelligence integrates Formal verification of agents & plans as part of an end-to-end application boundary.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "The dependency is a plausible component of the system boundary based on the graph and cited background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Conceptual support only; exact rationale is graph-derived."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "9502fa6e9c70b11d",
+      "node_id": "code_assistants",
+      "dependency_id": "llms",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "529ea9c5adcc0913",
+      "node_id": "code_assistants",
+      "dependency_id": "program_synthesis",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8db25e5f83b5fde5",
+      "node_id": "code_assistants",
+      "dependency_id": "code_execution",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central or strongly typical for the node as defined; support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4065c720a6e0b001",
+      "node_id": "code_assistants",
+      "dependency_id": "rag",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "5829255d0ec474df",
+      "node_id": "code_assistants",
+      "dependency_id": "programs_ast_ir",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c03e57f0d5bfc76b",
+      "node_id": "code_assistants",
+      "dependency_id": "graph_rag",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "ee3c41d418ae6717",
+      "node_id": "code_assistants",
+      "dependency_id": "beam_search",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "f7a4e07430b1e5dc",
+      "node_id": "code_assistants",
+      "dependency_id": "grammar_constrained_decoding",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c1b5d2f29349e316",
+      "node_id": "code_assistants",
+      "dependency_id": "structured_outputs",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0433250c3c2c795f",
+      "node_id": "code_assistants",
+      "dependency_id": "peft_lora",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "ee95ebcfe740ea91",
+      "node_id": "code_assistants",
+      "dependency_id": "formal_agent_verification",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

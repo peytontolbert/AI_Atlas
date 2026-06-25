@@ -1,0 +1,170 @@
+{
+  "node_id": "adversarial_security_eval",
+  "label": "Adversarial robustness & security testing",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "adversarial_security_eval",
+    "label": "Adversarial robustness & security testing",
+    "layer": "alignment",
+    "tags": [
+      "evaluation",
+      "security"
+    ],
+    "aliases": [],
+    "definition": "Adversarial security evaluation probes evasion, extraction, prompt injection, tool abuse, data poisoning, privacy leakage, and supply-chain compromise.",
+    "why_it_matters": "The role of Adversarial robustness & security testing is to connect Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation to downstream capabilities including Red teaming, abuse testing & threat modeling, Fault tolerance, security, energy & cost optimization, Cybersecurity, finance & operational risk AI.",
+    "examples": [
+      "substrate for Red teaming, abuse testing & threat modeling",
+      "substrate for Fault tolerance, security, energy & cost optimization",
+      "substrate for Cybersecurity, finance & operational risk AI"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "adversarial_training_mechanism",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Adversarial examples & adversarial training."
+      },
+      {
+        "id": "robustness_ood",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Robustness, distribution shift & OOD evaluation."
+      },
+      {
+        "id": "cache_tool_interfaces",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Caches, APIs & tool interfaces."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "bb8ce0a12c37c703",
+      "node_id": "adversarial_security_eval",
+      "field": "definition",
+      "text": "Adversarial security evaluation probes evasion, extraction, prompt injection, tool abuse, data poisoning, privacy leakage, and supply-chain compromise."
+    },
+    {
+      "unit_id": "4175bbdc6a7774ac",
+      "node_id": "adversarial_security_eval",
+      "field": "why_it_matters",
+      "text": "The role of Adversarial robustness & security testing is to connect Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation to downstream capabilities including Red teaming, abuse testing & threat modeling, Fault tolerance, security, energy & cost optimization, Cybersecurity, finance & operational risk AI."
+    },
+    {
+      "unit_id": "c445c2160969e4a6",
+      "node_id": "adversarial_security_eval",
+      "field": "examples[1]",
+      "text": "substrate for Red teaming, abuse testing & threat modeling"
+    },
+    {
+      "unit_id": "f23fa4e4fdbadf16",
+      "node_id": "adversarial_security_eval",
+      "field": "examples[2]",
+      "text": "substrate for Fault tolerance, security, energy & cost optimization"
+    },
+    {
+      "unit_id": "95b5c4aaa4077bf3",
+      "node_id": "adversarial_security_eval",
+      "field": "examples[3]",
+      "text": "substrate for Cybersecurity, finance & operational risk AI"
+    },
+    {
+      "unit_id": "7a74e1b0d61f00ad",
+      "node_id": "adversarial_security_eval",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation."
+    },
+    {
+      "unit_id": "6bcca0df3e6eb04d",
+      "node_id": "adversarial_security_eval",
+      "field": "dependencies.adversarial_training_mechanism.rationale",
+      "text": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Adversarial examples & adversarial training."
+    },
+    {
+      "unit_id": "f2abdce804ba0863",
+      "node_id": "adversarial_security_eval",
+      "field": "dependencies.robustness_ood.rationale",
+      "text": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Robustness, distribution shift & OOD evaluation."
+    },
+    {
+      "unit_id": "e86ec9f7c15d65bf",
+      "node_id": "adversarial_security_eval",
+      "field": "dependencies.cache_tool_interfaces.rationale",
+      "text": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Caches, APIs & tool interfaces."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "659a15c3d9298f69",
+      "node_id": "adversarial_security_eval",
+      "dependency_id": "adversarial_training_mechanism",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Adversarial examples & adversarial training."
+    },
+    {
+      "edge_id": "c6eaa76d3cf1373b",
+      "node_id": "adversarial_security_eval",
+      "dependency_id": "robustness_ood",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Robustness, distribution shift & OOD evaluation."
+    },
+    {
+      "edge_id": "9fa106121677d017",
+      "node_id": "adversarial_security_eval",
+      "dependency_id": "cache_tool_interfaces",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Caches, APIs & tool interfaces."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/adversarial_security_eval.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

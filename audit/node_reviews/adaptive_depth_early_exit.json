@@ -1,0 +1,230 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "70ccc22b726a1d75",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "definition",
+      "text": "Adaptive-compute mechanisms choose how many layers, recurrent steps, or token updates an input receives and may stop when a confidence or budget criterion is met.",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
+    },
+    {
+      "unit_id": "e48331f4fb32a990",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "why_it_matters",
+      "text": "They allocate expensive computation to difficult cases rather than applying one fixed depth to every input.",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source(s) directly support the specific claim."
+    },
+    {
+      "unit_id": "66729ba156ff5300",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "examples[1]",
+      "text": "confidence-based early exit",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+    },
+    {
+      "unit_id": "36caf6618fa0209e",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "examples[2]",
+      "text": "layer skipping",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source(s) directly support the specific claim."
+    },
+    {
+      "unit_id": "196c23ea3a752696",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "examples[3]",
+      "text": "adaptive recurrent depth",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+    },
+    {
+      "unit_id": "a36455c5d34d94fa",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "limitations[1]",
+      "text": "Routing errors can under-compute difficult inputs, create irregular hardware utilization, and complicate calibration.",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+    },
+    {
+      "unit_id": "963ba4efd6eed65f",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "dependencies.gating.rationale",
+      "text": "Adaptive depth, early exit & token skipping is assembled in part from the mechanism or model component Gating & multiplicative control.",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source(s) directly support the specific claim."
+    },
+    {
+      "unit_id": "72a53ae1194ec240",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "dependencies.routing_moe.rationale",
+      "text": "Adaptive depth, early exit & token skipping is assembled in part from the mechanism or model component Routing, conditional computation & mixture-of-experts.",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
+    },
+    {
+      "unit_id": "20b661fd1ba53e38",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "dependencies.residual_connections.rationale",
+      "text": "Adaptive depth, early exit & token skipping is assembled in part from the mechanism or model component Residual, skip & highway connections.",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+    },
+    {
+      "unit_id": "d1c21b522d333244",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "dependencies.calibration_uncertainty_objective.rationale",
+      "text": "Adaptive depth, early exit & token skipping uses Calibration, uncertainty & risk objectives as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "289633fcddc1697b",
+      "node_id": "adaptive_depth_early_exit",
+      "dependency_id": "gating",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source(s) directly support the specific claim.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "abc732daffcfcdc4",
+      "node_id": "adaptive_depth_early_exit",
+      "dependency_id": "routing_moe",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "90c227508d432e4c",
+      "node_id": "adaptive_depth_early_exit",
+      "dependency_id": "residual_connections",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "3ab7bac650e852e1",
+      "node_id": "adaptive_depth_early_exit",
+      "dependency_id": "calibration_uncertainty_objective",
+      "source_ids": [
+        "ref_mod",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

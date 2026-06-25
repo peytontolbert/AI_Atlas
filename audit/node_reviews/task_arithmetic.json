@@ -1,0 +1,198 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "42d266b963f73967",
+      "node_id": "task_arithmetic",
+      "field": "definition",
+      "text": "Task arithmetic treats fine-tuning deltas as vectors that can be added, subtracted, scaled, projected, or composed to modify model behavior.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet cites Model Soups and LoRA, which support weight averaging and low-rank adaptation, but not the specific task-vector arithmetic claims.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The cited sources do not directly support task vectors being added, subtracted, scaled, projected, or composed to modify behavior."
+    },
+    {
+      "unit_id": "40971c7c925852bf",
+      "node_id": "task_arithmetic",
+      "field": "why_it_matters",
+      "text": "It provides a concrete algebra for comparing and combining learned adaptations.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet cites Model Soups and LoRA, which support weight averaging and low-rank adaptation, but not the specific task-vector arithmetic claims.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "A concrete algebra for learned adaptations is not directly supported by the cited packet sources."
+    },
+    {
+      "unit_id": "9e38908db711f5e2",
+      "node_id": "task_arithmetic",
+      "field": "examples[1]",
+      "text": "adding a domain skill",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet cites Model Soups and LoRA, which support weight averaging and low-rank adaptation, but not the specific task-vector arithmetic claims.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "Adding a domain skill via task arithmetic is not evidenced by the cited sources."
+    },
+    {
+      "unit_id": "daaed7fd24fd3af5",
+      "node_id": "task_arithmetic",
+      "field": "examples[2]",
+      "text": "subtracting an unwanted behavior",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet cites Model Soups and LoRA, which support weight averaging and low-rank adaptation, but not the specific task-vector arithmetic claims.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "Subtracting unwanted behavior is not evidenced by the cited sources."
+    },
+    {
+      "unit_id": "414c168cbf7fffc2",
+      "node_id": "task_arithmetic",
+      "field": "examples[3]",
+      "text": "orthogonalizing adapters",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet cites Model Soups and LoRA, which support weight averaging and low-rank adaptation, but not the specific task-vector arithmetic claims.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "Orthogonalizing adapters is not evidenced by the cited sources."
+    },
+    {
+      "unit_id": "cbec3e41518a6858",
+      "node_id": "task_arithmetic",
+      "field": "limitations[1]",
+      "text": "Weight-space directions are not perfectly linear or independent, so composition can produce destructive interference.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet cites Model Soups and LoRA, which support weight averaging and low-rank adaptation, but not the specific task-vector arithmetic claims.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Interference is plausible for weight-space composition, but nonlinearity/independence claims need a task-arithmetic-specific source."
+    },
+    {
+      "unit_id": "c4eed9e2dd06453a",
+      "node_id": "task_arithmetic",
+      "field": "dependencies.model_merging.rationale",
+      "text": "Task vectors & parameter arithmetic uses Model merging & weight-space composition as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet cites Model Soups and LoRA, which support weight averaging and low-rank adaptation, but not the specific task-vector arithmetic claims.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Task arithmetic is a form of weight-space composition, but the packet citation supports only nearby model merging."
+    },
+    {
+      "unit_id": "7ab0cdcd72f4a922",
+      "node_id": "task_arithmetic",
+      "field": "dependencies.peft_lora.rationale",
+      "text": "Task vectors & parameter arithmetic uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet cites Model Soups and LoRA, which support weight averaging and low-rank adaptation, but not the specific task-vector arithmetic claims.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Task vectors can be related to adapter/LoRA deltas, but the cited sources do not establish this as core."
+    },
+    {
+      "unit_id": "dcf1f9ee1eec4ca1",
+      "node_id": "task_arithmetic",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Task vectors & parameter arithmetic uses Linear algebra as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet cites Model Soups and LoRA, which support weight averaging and low-rank adaptation, but not the specific task-vector arithmetic claims.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The arithmetic operations described are linear algebraic, though the task-vector method itself is not directly sourced."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "ed632c3e1e1a7b30",
+      "node_id": "task_arithmetic",
+      "dependency_id": "model_merging",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Task arithmetic is naturally categorized under model merging/weight-space composition.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "d43666050a7c2ffc",
+      "node_id": "task_arithmetic",
+      "dependency_id": "peft_lora",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "PEFT/LoRA can provide deltas, but the edge is not directly established by the cited sources.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "7ee098a3f6789196",
+      "node_id": "task_arithmetic",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "ref_modelmerge",
+        "ref_lora",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Vector addition/subtraction/scaling are linear algebra operations.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

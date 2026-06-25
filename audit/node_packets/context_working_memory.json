@@ -1,0 +1,170 @@
+{
+  "node_id": "context_working_memory",
+  "label": "Context windows & working memory",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "context_working_memory",
+    "label": "Context windows & working memory",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "reasoning"
+    ],
+    "aliases": [],
+    "definition": "Temporary information is maintained inside the current sequence, recurrent state, or active workspace.",
+    "why_it_matters": "The role of Context windows & working memory is to connect Sequences, events & time series, Self-attention to downstream capabilities including Long-context attention, compression & summarization memory, Observe–plan–act agent loops, Conversational assistants & chatbots.",
+    "examples": [
+      "substrate for Long-context attention, compression & summarization memory",
+      "substrate for Observe–plan–act agent loops",
+      "substrate for Conversational assistants & chatbots"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sequences, events & time series, Self-attention."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "sequences_time",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Context windows & working memory stores, selects, or obtains information through Sequences, events & time series."
+      },
+      {
+        "id": "self_attention",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Context windows & working memory uses Self-attention as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "memory_read_write",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Context windows & working memory uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "6370a6f242b05730",
+      "node_id": "context_working_memory",
+      "field": "definition",
+      "text": "Temporary information is maintained inside the current sequence, recurrent state, or active workspace."
+    },
+    {
+      "unit_id": "9728235abfb7ee32",
+      "node_id": "context_working_memory",
+      "field": "why_it_matters",
+      "text": "The role of Context windows & working memory is to connect Sequences, events & time series, Self-attention to downstream capabilities including Long-context attention, compression & summarization memory, Observe–plan–act agent loops, Conversational assistants & chatbots."
+    },
+    {
+      "unit_id": "1e17d768a6d90a8f",
+      "node_id": "context_working_memory",
+      "field": "examples[1]",
+      "text": "substrate for Long-context attention, compression & summarization memory"
+    },
+    {
+      "unit_id": "5012ced02c6d122c",
+      "node_id": "context_working_memory",
+      "field": "examples[2]",
+      "text": "substrate for Observe–plan–act agent loops"
+    },
+    {
+      "unit_id": "cb1c54c9810b2cdd",
+      "node_id": "context_working_memory",
+      "field": "examples[3]",
+      "text": "substrate for Conversational assistants & chatbots"
+    },
+    {
+      "unit_id": "a2242e46ca5a2d67",
+      "node_id": "context_working_memory",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sequences, events & time series, Self-attention."
+    },
+    {
+      "unit_id": "0e49b8b2c33dd754",
+      "node_id": "context_working_memory",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Context windows & working memory stores, selects, or obtains information through Sequences, events & time series."
+    },
+    {
+      "unit_id": "084afa7715ed674c",
+      "node_id": "context_working_memory",
+      "field": "dependencies.self_attention.rationale",
+      "text": "Context windows & working memory uses Self-attention as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "6bc4c9d21bed854d",
+      "node_id": "context_working_memory",
+      "field": "dependencies.memory_read_write.rationale",
+      "text": "Context windows & working memory uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ab1f36addb6a931c",
+      "node_id": "context_working_memory",
+      "dependency_id": "sequences_time",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Context windows & working memory stores, selects, or obtains information through Sequences, events & time series."
+    },
+    {
+      "edge_id": "c37fe24a3c47ea05",
+      "node_id": "context_working_memory",
+      "dependency_id": "self_attention",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Context windows & working memory uses Self-attention as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "a4a8fa8d9d29eabb",
+      "node_id": "context_working_memory",
+      "dependency_id": "memory_read_write",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Context windows & working memory uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/context_working_memory.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

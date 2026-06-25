@@ -1,0 +1,208 @@
+{
+  "node_id": "sim_to_real_transfer",
+  "label": "Sim-to-real, real-to-sim & digital transfer",
+  "layer": "paradigm",
+  "editorial_status": "curated",
+  "node": {
+    "id": "sim_to_real_transfer",
+    "label": "Sim-to-real, real-to-sim & digital transfer",
+    "layer": "paradigm",
+    "tags": [
+      "robotics",
+      "simulation",
+      "transfer"
+    ],
+    "aliases": [
+      "sim2real"
+    ],
+    "definition": "Sim-to-real methods train or validate in simulation and transfer behavior to physical systems, often using real-to-sim calibration or residual adaptation to close the reality gap.",
+    "why_it_matters": "They reduce the cost and danger of physical interaction while preserving a route to deployment.",
+    "examples": [
+      "robot manipulation policies",
+      "autonomous-driving scenarios",
+      "digital-twin calibration"
+    ],
+    "limitations": [
+      "Unmodeled dynamics, sensing artifacts, contacts, and rare events can cause severe transfer failure."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_sim2real",
+      "ref_domainrand"
+    ],
+    "dependencies": [
+      {
+        "id": "transfer_multitask_learning",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "Sim-to-real, real-to-sim & digital transfer follows the learning setup expressed by Transfer, multitask & domain adaptation."
+      },
+      {
+        "id": "model_based_rl",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Sim-to-real, real-to-sim & digital transfer follows the learning setup expressed by Model-based reinforcement learning."
+      },
+      {
+        "id": "multimodal_simulated_streams",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Sim-to-real, real-to-sim & digital transfer uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Sim-to-real, real-to-sim & digital transfer uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "0f360d014cfb0716",
+      "node_id": "sim_to_real_transfer",
+      "field": "definition",
+      "text": "Sim-to-real methods train or validate in simulation and transfer behavior to physical systems, often using real-to-sim calibration or residual adaptation to close the reality gap."
+    },
+    {
+      "unit_id": "a99b2ea83d54ba0a",
+      "node_id": "sim_to_real_transfer",
+      "field": "why_it_matters",
+      "text": "They reduce the cost and danger of physical interaction while preserving a route to deployment."
+    },
+    {
+      "unit_id": "045de5578e774f93",
+      "node_id": "sim_to_real_transfer",
+      "field": "examples[1]",
+      "text": "robot manipulation policies"
+    },
+    {
+      "unit_id": "52dd52fb47b2e4b5",
+      "node_id": "sim_to_real_transfer",
+      "field": "examples[2]",
+      "text": "autonomous-driving scenarios"
+    },
+    {
+      "unit_id": "fa3390e7c1b7fe4c",
+      "node_id": "sim_to_real_transfer",
+      "field": "examples[3]",
+      "text": "digital-twin calibration"
+    },
+    {
+      "unit_id": "8b3da6de77d64c15",
+      "node_id": "sim_to_real_transfer",
+      "field": "limitations[1]",
+      "text": "Unmodeled dynamics, sensing artifacts, contacts, and rare events can cause severe transfer failure."
+    },
+    {
+      "unit_id": "ebf38bc87f0ee544",
+      "node_id": "sim_to_real_transfer",
+      "field": "dependencies.transfer_multitask_learning.rationale",
+      "text": "Sim-to-real, real-to-sim & digital transfer follows the learning setup expressed by Transfer, multitask & domain adaptation."
+    },
+    {
+      "unit_id": "ae5dd76e828e6c52",
+      "node_id": "sim_to_real_transfer",
+      "field": "dependencies.model_based_rl.rationale",
+      "text": "Sim-to-real, real-to-sim & digital transfer follows the learning setup expressed by Model-based reinforcement learning."
+    },
+    {
+      "unit_id": "15ecb07ad436153d",
+      "node_id": "sim_to_real_transfer",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Sim-to-real, real-to-sim & digital transfer uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "c6adf7e84628c262",
+      "node_id": "sim_to_real_transfer",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Sim-to-real, real-to-sim & digital transfer uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "acddf6ad281969b4",
+      "node_id": "sim_to_real_transfer",
+      "dependency_id": "transfer_multitask_learning",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "Sim-to-real, real-to-sim & digital transfer follows the learning setup expressed by Transfer, multitask & domain adaptation."
+    },
+    {
+      "edge_id": "ee88025176eace53",
+      "node_id": "sim_to_real_transfer",
+      "dependency_id": "model_based_rl",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Sim-to-real, real-to-sim & digital transfer follows the learning setup expressed by Model-based reinforcement learning."
+    },
+    {
+      "edge_id": "230f6100851abe94",
+      "node_id": "sim_to_real_transfer",
+      "dependency_id": "multimodal_simulated_streams",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Sim-to-real, real-to-sim & digital transfer uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "33d3154f1c300fb7",
+      "node_id": "sim_to_real_transfer",
+      "dependency_id": "dynamical_control",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Sim-to-real, real-to-sim & digital transfer uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_sim2real": {
+        "id": "ref_sim2real",
+        "title": "Sim-to-Real Transfer in Deep Reinforcement Learning for Robotics: a Survey",
+        "authors": "Zhao, Queralta & Westerlund",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2009.13303"
+      },
+      "ref_domainrand": {
+        "id": "ref_domainrand",
+        "title": "Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World",
+        "authors": "Tobin et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1703.06907"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/sim_to_real_transfer.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "af7bd44a43f25b2d",
+      "node_id": "gating",
+      "field": "definition",
+      "text": "Learned gates regulate what information is written, forgotten, routed, or exposed.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "9eacc9b7e74e4824",
+      "node_id": "gating",
+      "field": "why_it_matters",
+      "text": "The role of Gating & multiplicative control is to connect Affine transforms & dense layers, Nonlinear activations to downstream capabilities including Recurrence & feedback state, Selective state-space scan, Routing, conditional computation & mixture-of-experts.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "a43998219e665fc1",
+      "node_id": "gating",
+      "field": "examples[1]",
+      "text": "substrate for Recurrence & feedback state",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "42f155660baec344",
+      "node_id": "gating",
+      "field": "examples[2]",
+      "text": "substrate for Selective state-space scan",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "9f434c69c1cf585f",
+      "node_id": "gating",
+      "field": "examples[3]",
+      "text": "substrate for Routing, conditional computation & mixture-of-experts",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "335edf921d98efa4",
+      "node_id": "gating",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Affine transforms & dense layers, Nonlinear activations.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "2c8d9bee8ee431c6",
+      "node_id": "gating",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Gating & multiplicative control is assembled in part from the mechanism or model component Affine transforms & dense layers.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "a41bba9f42a3b41e",
+      "node_id": "gating",
+      "field": "dependencies.nonlinear_activations.rationale",
+      "text": "Gating & multiplicative control is assembled in part from the mechanism or model component Nonlinear activations.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "26ae11978abc0005",
+      "node_id": "gating",
+      "dependency_id": "affine_dense",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "33fb4bd1250d95f4",
+      "node_id": "gating",
+      "dependency_id": "nonlinear_activations",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

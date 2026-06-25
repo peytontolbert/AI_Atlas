@@ -1,0 +1,197 @@
+{
+  "node_id": "orchestration",
+  "label": "Workflow, cluster & job orchestration",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "orchestration",
+    "label": "Workflow, cluster & job orchestration",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "operations"
+    ],
+    "aliases": [],
+    "definition": "Workflow and cluster orchestration allocate resources, schedule jobs, express dependencies, retry failures, and coordinate multi-stage ML pipelines.",
+    "why_it_matters": "The role of Workflow, cluster & job orchestration is to connect Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Model registry, versioning & MLOps / LLMOps, Multi-agent systems & organizational intelligence, Simulation farms, digital environments & scenario generation.",
+    "examples": [
+      "substrate for Model registry, versioning & MLOps / LLMOps",
+      "substrate for Multi-agent systems & organizational intelligence",
+      "substrate for Simulation farms, digital environments & scenario generation"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_ddia"
+    ],
+    "dependencies": [
+      {
+        "id": "distributed_systems",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Workflow, cluster & job orchestration turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "programs_ast_ir",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Workflow, cluster & job orchestration turns Programs, ASTs, bytecode & intermediate representations into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "storage_checkpoints",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Workflow, cluster & job orchestration turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "data_pipelines",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Workflow, cluster & job orchestration turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "2deaca31f6355b9d",
+      "node_id": "orchestration",
+      "field": "definition",
+      "text": "Workflow and cluster orchestration allocate resources, schedule jobs, express dependencies, retry failures, and coordinate multi-stage ML pipelines."
+    },
+    {
+      "unit_id": "d91821ab330e46db",
+      "node_id": "orchestration",
+      "field": "why_it_matters",
+      "text": "The role of Workflow, cluster & job orchestration is to connect Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Model registry, versioning & MLOps / LLMOps, Multi-agent systems & organizational intelligence, Simulation farms, digital environments & scenario generation."
+    },
+    {
+      "unit_id": "ecee936ceaff76be",
+      "node_id": "orchestration",
+      "field": "examples[1]",
+      "text": "substrate for Model registry, versioning & MLOps / LLMOps"
+    },
+    {
+      "unit_id": "51324430d775c9fc",
+      "node_id": "orchestration",
+      "field": "examples[2]",
+      "text": "substrate for Multi-agent systems & organizational intelligence"
+    },
+    {
+      "unit_id": "63f9bd6d0a8209a8",
+      "node_id": "orchestration",
+      "field": "examples[3]",
+      "text": "substrate for Simulation farms, digital environments & scenario generation"
+    },
+    {
+      "unit_id": "04f66853a9fe164e",
+      "node_id": "orchestration",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations."
+    },
+    {
+      "unit_id": "31aecf8057756bc7",
+      "node_id": "orchestration",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Workflow, cluster & job orchestration turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "b1947cc59e99880b",
+      "node_id": "orchestration",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Workflow, cluster & job orchestration turns Programs, ASTs, bytecode & intermediate representations into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "4e7aac96ed5ac2ff",
+      "node_id": "orchestration",
+      "field": "dependencies.storage_checkpoints.rationale",
+      "text": "Workflow, cluster & job orchestration turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "cdcd40a820e216a3",
+      "node_id": "orchestration",
+      "field": "dependencies.data_pipelines.rationale",
+      "text": "Workflow, cluster & job orchestration turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "004c42a2c1260546",
+      "node_id": "orchestration",
+      "dependency_id": "distributed_systems",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Workflow, cluster & job orchestration turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "980e5f597265eea6",
+      "node_id": "orchestration",
+      "dependency_id": "programs_ast_ir",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Workflow, cluster & job orchestration turns Programs, ASTs, bytecode & intermediate representations into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "945dedc2c492faba",
+      "node_id": "orchestration",
+      "dependency_id": "storage_checkpoints",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Workflow, cluster & job orchestration turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "9b7402a35a8f014e",
+      "node_id": "orchestration",
+      "dependency_id": "data_pipelines",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Workflow, cluster & job orchestration turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/orchestration.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

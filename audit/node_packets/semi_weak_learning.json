@@ -1,0 +1,163 @@
+{
+  "node_id": "semi_weak_learning",
+  "label": "Semi-supervised & weak supervision",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "semi_weak_learning",
+    "label": "Semi-supervised & weak supervision",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "data"
+    ],
+    "aliases": [],
+    "definition": "Limited, noisy, heuristic, or indirect labels are combined with unlabeled data.",
+    "why_it_matters": "The role of Semi-supervised & weak supervision is to connect Supervised learning, Unsupervised learning to downstream capabilities including Medical imaging & clinical decision support, Computer vision, perception & scene understanding.",
+    "examples": [
+      "substrate for Medical imaging & clinical decision support",
+      "substrate for Computer vision, perception & scene understanding"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Unsupervised learning."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "Semi-supervised & weak supervision follows the learning setup expressed by Supervised learning."
+      },
+      {
+        "id": "unsupervised_learning",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "Semi-supervised & weak supervision follows the learning setup expressed by Unsupervised learning."
+      },
+      {
+        "id": "supervision_signals",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Semi-supervised & weak supervision uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "67de0b54da753695",
+      "node_id": "semi_weak_learning",
+      "field": "definition",
+      "text": "Limited, noisy, heuristic, or indirect labels are combined with unlabeled data."
+    },
+    {
+      "unit_id": "3b8a3b5591356073",
+      "node_id": "semi_weak_learning",
+      "field": "why_it_matters",
+      "text": "The role of Semi-supervised & weak supervision is to connect Supervised learning, Unsupervised learning to downstream capabilities including Medical imaging & clinical decision support, Computer vision, perception & scene understanding."
+    },
+    {
+      "unit_id": "68af391048896ed9",
+      "node_id": "semi_weak_learning",
+      "field": "examples[1]",
+      "text": "substrate for Medical imaging & clinical decision support"
+    },
+    {
+      "unit_id": "6ec0e005756f4e09",
+      "node_id": "semi_weak_learning",
+      "field": "examples[2]",
+      "text": "substrate for Computer vision, perception & scene understanding"
+    },
+    {
+      "unit_id": "dd48e42f93864baf",
+      "node_id": "semi_weak_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Unsupervised learning."
+    },
+    {
+      "unit_id": "119330b22479b79e",
+      "node_id": "semi_weak_learning",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Semi-supervised & weak supervision follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "unit_id": "7e73f52e573ace7d",
+      "node_id": "semi_weak_learning",
+      "field": "dependencies.unsupervised_learning.rationale",
+      "text": "Semi-supervised & weak supervision follows the learning setup expressed by Unsupervised learning."
+    },
+    {
+      "unit_id": "96e7d33ad5229ea8",
+      "node_id": "semi_weak_learning",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "Semi-supervised & weak supervision uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "06020db124176090",
+      "node_id": "semi_weak_learning",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "Semi-supervised & weak supervision follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "edge_id": "97cea1ac071da699",
+      "node_id": "semi_weak_learning",
+      "dependency_id": "unsupervised_learning",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "Semi-supervised & weak supervision follows the learning setup expressed by Unsupervised learning."
+    },
+    {
+      "edge_id": "021a160d3a38b641",
+      "node_id": "semi_weak_learning",
+      "dependency_id": "supervision_signals",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Semi-supervised & weak supervision uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/semi_weak_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

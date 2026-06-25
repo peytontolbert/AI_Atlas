@@ -1,0 +1,222 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "3e56cc3f72873c19",
+      "node_id": "self_attention",
+      "field": "definition",
+      "text": "Each position forms content-dependent weighted combinations of other positions in the same sequence.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "bcb0473f2d922c8e",
+      "node_id": "self_attention",
+      "field": "why_it_matters",
+      "text": "The role of Self-attention is to connect Embeddings & distributed representations, Sequences, events & time series to downstream capabilities including Cross-attention & co-attention, Sparse, local, linear & recurrent attention, Relative position, RoPE, ALiBi & coordinate mechanisms.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "ac89c7f6c61ca99a",
+      "node_id": "self_attention",
+      "field": "examples[1]",
+      "text": "substrate for Cross-attention & co-attention",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "edfd08e42bc21fd9",
+      "node_id": "self_attention",
+      "field": "examples[2]",
+      "text": "substrate for Sparse, local, linear & recurrent attention",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "07b6517b01747488",
+      "node_id": "self_attention",
+      "field": "examples[3]",
+      "text": "substrate for Relative position, RoPE, ALiBi & coordinate mechanisms",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "4d17ee812233ccf1",
+      "node_id": "self_attention",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Embeddings & distributed representations, Sequences, events & time series.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "2c9b07e6a06027d1",
+      "node_id": "self_attention",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Self-attention uses Embeddings & distributed representations as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "c9d94cc0a899f27d",
+      "node_id": "self_attention",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Self-attention uses Sequences, events & time series as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "a2eefb6e1f77f0bc",
+      "node_id": "self_attention",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Self-attention is assembled in part from the mechanism or model component Affine transforms & dense layers.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "f76b1413a6cf800c",
+      "node_id": "self_attention",
+      "field": "dependencies.probability.rationale",
+      "text": "Self-attention uses Probability theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer/self-attention references describe queries, keys, values, attention weights, weighted sums over sequence positions, and dense projections; PML/AIMA/DLbook provide embeddings, probability, and sequence background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "b53a3cc303ee6aa3",
+      "node_id": "self_attention",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "23393d9d3f247444",
+      "node_id": "self_attention",
+      "dependency_id": "sequences_time",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "814c3e9c2b525136",
+      "node_id": "self_attention",
+      "dependency_id": "affine_dense",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9f9d8c726788f01e",
+      "node_id": "self_attention",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "node_id": "information_theory",
+  "label": "Information theory",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "information_theory",
+    "label": "Information theory",
+    "layer": "foundation",
+    "tags": [
+      "math",
+      "representation"
+    ],
+    "aliases": [],
+    "definition": "Entropy, mutual information, coding, and rate–distortion quantify information, compression, and uncertainty.",
+    "why_it_matters": "The role of Information theory is to connect Probability theory to downstream capabilities including Labels, targets, rewards & preferences, Tokens, vocabularies & symbolic units, Embeddings & distributed representations.",
+    "examples": [
+      "substrate for Labels, targets, rewards & preferences",
+      "substrate for Tokens, vocabularies & symbolic units",
+      "substrate for Embeddings & distributed representations"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "probability",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Information theory rests on the formal or computational capabilities supplied by Probability theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "2ade0c1678ee3fd6",
+      "node_id": "information_theory",
+      "field": "definition",
+      "text": "Entropy, mutual information, coding, and rate–distortion quantify information, compression, and uncertainty."
+    },
+    {
+      "unit_id": "566b896ee9c1337a",
+      "node_id": "information_theory",
+      "field": "why_it_matters",
+      "text": "The role of Information theory is to connect Probability theory to downstream capabilities including Labels, targets, rewards & preferences, Tokens, vocabularies & symbolic units, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "65f3c4579d0d4193",
+      "node_id": "information_theory",
+      "field": "examples[1]",
+      "text": "substrate for Labels, targets, rewards & preferences"
+    },
+    {
+      "unit_id": "8e50ac6dca76dbe0",
+      "node_id": "information_theory",
+      "field": "examples[2]",
+      "text": "substrate for Tokens, vocabularies & symbolic units"
+    },
+    {
+      "unit_id": "d6680d1ac99818b9",
+      "node_id": "information_theory",
+      "field": "examples[3]",
+      "text": "substrate for Embeddings & distributed representations"
+    },
+    {
+      "unit_id": "061cefb745119fcf",
+      "node_id": "information_theory",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory."
+    },
+    {
+      "unit_id": "ec499816b1f46f17",
+      "node_id": "information_theory",
+      "field": "dependencies.probability.rationale",
+      "text": "Information theory rests on the formal or computational capabilities supplied by Probability theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "2348a6d1471cde19",
+      "node_id": "information_theory",
+      "dependency_id": "probability",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Information theory rests on the formal or computational capabilities supplied by Probability theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/information_theory.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

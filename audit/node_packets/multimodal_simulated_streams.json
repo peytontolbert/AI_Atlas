@@ -1,0 +1,231 @@
+{
+  "node_id": "multimodal_simulated_streams",
+  "label": "Multimodal, simulated & streaming data",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "multimodal_simulated_streams",
+    "label": "Multimodal, simulated & streaming data",
+    "layer": "representation",
+    "tags": [
+      "multimodal",
+      "simulation",
+      "streaming"
+    ],
+    "aliases": [],
+    "definition": "Aligned modalities, simulators, and live streams provide richer context and interactive experience.",
+    "why_it_matters": "The role of Multimodal, simulated & streaming data is to connect Datasets, sampling & splits, Images, video & spatial grids to downstream capabilities including Model-based reinforcement learning, Continual & online learning, Neuro-symbolic & physics-informed learning.",
+    "examples": [
+      "substrate for Model-based reinforcement learning",
+      "substrate for Continual & online learning",
+      "substrate for Neuro-symbolic & physics-informed learning"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Datasets, sampling & splits, Images, video & spatial grids."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "datasets_sampling",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Datasets, sampling & splits."
+      },
+      {
+        "id": "spatial_grids",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Images, video & spatial grids."
+      },
+      {
+        "id": "audio_signals",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Waveforms, audio & spectrograms."
+      },
+      {
+        "id": "tokens_vocab",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+      },
+      {
+        "id": "distributed_systems",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Distributed systems & networking."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "requires",
+        "strength": "optional",
+        "rationale": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "f67bf9e52d5c3794",
+      "node_id": "multimodal_simulated_streams",
+      "field": "definition",
+      "text": "Aligned modalities, simulators, and live streams provide richer context and interactive experience."
+    },
+    {
+      "unit_id": "516b7b38e61ae6c5",
+      "node_id": "multimodal_simulated_streams",
+      "field": "why_it_matters",
+      "text": "The role of Multimodal, simulated & streaming data is to connect Datasets, sampling & splits, Images, video & spatial grids to downstream capabilities including Model-based reinforcement learning, Continual & online learning, Neuro-symbolic & physics-informed learning."
+    },
+    {
+      "unit_id": "816fcedf7ecafcf7",
+      "node_id": "multimodal_simulated_streams",
+      "field": "examples[1]",
+      "text": "substrate for Model-based reinforcement learning"
+    },
+    {
+      "unit_id": "a7d96282e4516587",
+      "node_id": "multimodal_simulated_streams",
+      "field": "examples[2]",
+      "text": "substrate for Continual & online learning"
+    },
+    {
+      "unit_id": "a893ece00890fdc0",
+      "node_id": "multimodal_simulated_streams",
+      "field": "examples[3]",
+      "text": "substrate for Neuro-symbolic & physics-informed learning"
+    },
+    {
+      "unit_id": "95f2d57ee99a6b54",
+      "node_id": "multimodal_simulated_streams",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Datasets, sampling & splits, Images, video & spatial grids."
+    },
+    {
+      "unit_id": "df42f4377a6b48cf",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Datasets, sampling & splits."
+    },
+    {
+      "unit_id": "f225225e1fe6525f",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Images, video & spatial grids."
+    },
+    {
+      "unit_id": "522fac18ea1a3e76",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.audio_signals.rationale",
+      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Waveforms, audio & spectrograms."
+    },
+    {
+      "unit_id": "885f6ad6732a42d6",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+    },
+    {
+      "unit_id": "1bf1ddce87822896",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Distributed systems & networking."
+    },
+    {
+      "unit_id": "31f507c6d4b34195",
+      "node_id": "multimodal_simulated_streams",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "39b9d2c5c3555a4c",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "datasets_sampling",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Datasets, sampling & splits."
+    },
+    {
+      "edge_id": "d37f385afb79d8d7",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "spatial_grids",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Images, video & spatial grids."
+    },
+    {
+      "edge_id": "abbe1324609a1161",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "audio_signals",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Waveforms, audio & spectrograms."
+    },
+    {
+      "edge_id": "7cb0ef1525d84a95",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "tokens_vocab",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+    },
+    {
+      "edge_id": "2c3ea52ba08fc81c",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "distributed_systems",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Distributed systems & networking."
+    },
+    {
+      "edge_id": "616eaa7ae7d596ab",
+      "node_id": "multimodal_simulated_streams",
+      "dependency_id": "dynamical_control",
+      "type": "requires",
+      "strength": "optional",
+      "rationale": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/multimodal_simulated_streams.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

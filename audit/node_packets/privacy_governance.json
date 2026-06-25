@@ -1,0 +1,170 @@
+{
+  "node_id": "privacy_governance",
+  "label": "Privacy, governance, licensing & audit",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "privacy_governance",
+    "label": "Privacy, governance, licensing & audit",
+    "layer": "alignment",
+    "tags": [
+      "governance",
+      "privacy"
+    ],
+    "aliases": [],
+    "definition": "Privacy and governance combine data rights, consent, access control, licensing, retention, audit, risk ownership, and regulatory obligations.",
+    "why_it_matters": "The role of Privacy, governance, licensing & audit is to connect Federated & privacy-preserving learning, Databases & information retrieval to downstream capabilities including API gateways, tool registries & secure connectors, Medical imaging & clinical decision support, Content credentials, signing & provenance.",
+    "examples": [
+      "substrate for API gateways, tool registries & secure connectors",
+      "substrate for Medical imaging & clinical decision support",
+      "substrate for Content credentials, signing & provenance"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Federated & privacy-preserving learning, Databases & information retrieval."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "federated_private_learning",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Privacy, governance, licensing & audit measures, constrains, audits, or governs behavior using Federated & privacy-preserving learning."
+      },
+      {
+        "id": "databases_ir",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Privacy, governance, licensing & audit measures, constrains, audits, or governs behavior using Databases & information retrieval."
+      },
+      {
+        "id": "human_evaluation",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Privacy, governance, licensing & audit measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "0195b1e642bb81ca",
+      "node_id": "privacy_governance",
+      "field": "definition",
+      "text": "Privacy and governance combine data rights, consent, access control, licensing, retention, audit, risk ownership, and regulatory obligations."
+    },
+    {
+      "unit_id": "3e4d10f38e92ee9b",
+      "node_id": "privacy_governance",
+      "field": "why_it_matters",
+      "text": "The role of Privacy, governance, licensing & audit is to connect Federated & privacy-preserving learning, Databases & information retrieval to downstream capabilities including API gateways, tool registries & secure connectors, Medical imaging & clinical decision support, Content credentials, signing & provenance."
+    },
+    {
+      "unit_id": "97cf9c877d8df13c",
+      "node_id": "privacy_governance",
+      "field": "examples[1]",
+      "text": "substrate for API gateways, tool registries & secure connectors"
+    },
+    {
+      "unit_id": "97253338423df062",
+      "node_id": "privacy_governance",
+      "field": "examples[2]",
+      "text": "substrate for Medical imaging & clinical decision support"
+    },
+    {
+      "unit_id": "3e37b96f54690a83",
+      "node_id": "privacy_governance",
+      "field": "examples[3]",
+      "text": "substrate for Content credentials, signing & provenance"
+    },
+    {
+      "unit_id": "6365062aaf7124d9",
+      "node_id": "privacy_governance",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Federated & privacy-preserving learning, Databases & information retrieval."
+    },
+    {
+      "unit_id": "f098a5f1317ee259",
+      "node_id": "privacy_governance",
+      "field": "dependencies.federated_private_learning.rationale",
+      "text": "Privacy, governance, licensing & audit measures, constrains, audits, or governs behavior using Federated & privacy-preserving learning."
+    },
+    {
+      "unit_id": "388308c7e9bd9c95",
+      "node_id": "privacy_governance",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Privacy, governance, licensing & audit measures, constrains, audits, or governs behavior using Databases & information retrieval."
+    },
+    {
+      "unit_id": "c6b64c8259e19218",
+      "node_id": "privacy_governance",
+      "field": "dependencies.human_evaluation.rationale",
+      "text": "Privacy, governance, licensing & audit measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6762f8e425e38cbc",
+      "node_id": "privacy_governance",
+      "dependency_id": "federated_private_learning",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Privacy, governance, licensing & audit measures, constrains, audits, or governs behavior using Federated & privacy-preserving learning."
+    },
+    {
+      "edge_id": "aa06ce78c9f32554",
+      "node_id": "privacy_governance",
+      "dependency_id": "databases_ir",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Privacy, governance, licensing & audit measures, constrains, audits, or governs behavior using Databases & information retrieval."
+    },
+    {
+      "edge_id": "b1a668321881ba81",
+      "node_id": "privacy_governance",
+      "dependency_id": "human_evaluation",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Privacy, governance, licensing & audit measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/privacy_governance.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

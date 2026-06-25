@@ -1,0 +1,163 @@
+{
+  "node_id": "task_decomposition",
+  "label": "Task decomposition & hierarchical reasoning",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "task_decomposition",
+    "label": "Task decomposition & hierarchical reasoning",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "agents"
+    ],
+    "aliases": [],
+    "definition": "Task decomposition breaks a broad objective into ordered or partially ordered subgoals whose outputs, dependencies, and stopping conditions can be managed explicitly.",
+    "why_it_matters": "The role of Task decomposition & hierarchical reasoning is to connect Chain-of-thought & latent reasoning, Graph search, BFS/DFS & A* to downstream capabilities including PDDL, STRIPS & hierarchical task-network planning, Observe–plan–act agent loops.",
+    "examples": [
+      "substrate for PDDL, STRIPS & hierarchical task-network planning",
+      "substrate for Observe–plan–act agent loops"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Graph search, BFS/DFS & A*."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "cot_latent_reasoning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Task decomposition & hierarchical reasoning uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "graph_astar_search",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Task decomposition & hierarchical reasoning uses Graph search, BFS/DFS & A* as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "programs_ast_ir",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Task decomposition & hierarchical reasoning uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "247dbf0e71a149ec",
+      "node_id": "task_decomposition",
+      "field": "definition",
+      "text": "Task decomposition breaks a broad objective into ordered or partially ordered subgoals whose outputs, dependencies, and stopping conditions can be managed explicitly."
+    },
+    {
+      "unit_id": "ff970504ac4989cc",
+      "node_id": "task_decomposition",
+      "field": "why_it_matters",
+      "text": "The role of Task decomposition & hierarchical reasoning is to connect Chain-of-thought & latent reasoning, Graph search, BFS/DFS & A* to downstream capabilities including PDDL, STRIPS & hierarchical task-network planning, Observe–plan–act agent loops."
+    },
+    {
+      "unit_id": "3180c3243b021445",
+      "node_id": "task_decomposition",
+      "field": "examples[1]",
+      "text": "substrate for PDDL, STRIPS & hierarchical task-network planning"
+    },
+    {
+      "unit_id": "f71737cb56f5390c",
+      "node_id": "task_decomposition",
+      "field": "examples[2]",
+      "text": "substrate for Observe–plan–act agent loops"
+    },
+    {
+      "unit_id": "23b0d92f00ece052",
+      "node_id": "task_decomposition",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Graph search, BFS/DFS & A*."
+    },
+    {
+      "unit_id": "bf2eee028d2b425f",
+      "node_id": "task_decomposition",
+      "field": "dependencies.cot_latent_reasoning.rationale",
+      "text": "Task decomposition & hierarchical reasoning uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "c2c58afef0a77c84",
+      "node_id": "task_decomposition",
+      "field": "dependencies.graph_astar_search.rationale",
+      "text": "Task decomposition & hierarchical reasoning uses Graph search, BFS/DFS & A* as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "3c6c4375ed575bae",
+      "node_id": "task_decomposition",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Task decomposition & hierarchical reasoning uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "b8a6cd6927d1e2b1",
+      "node_id": "task_decomposition",
+      "dependency_id": "cot_latent_reasoning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Task decomposition & hierarchical reasoning uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "53c954250ef65781",
+      "node_id": "task_decomposition",
+      "dependency_id": "graph_astar_search",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Task decomposition & hierarchical reasoning uses Graph search, BFS/DFS & A* as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "9d2679acc2292096",
+      "node_id": "task_decomposition",
+      "dependency_id": "programs_ast_ir",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Task decomposition & hierarchical reasoning uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/task_decomposition.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

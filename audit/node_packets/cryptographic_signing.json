@@ -1,0 +1,179 @@
+{
+  "node_id": "cryptographic_signing",
+  "label": "Cryptographic signing & tamper-evident logs",
+  "layer": "infrastructure",
+  "editorial_status": "curated",
+  "node": {
+    "id": "cryptographic_signing",
+    "label": "Cryptographic signing & tamper-evident logs",
+    "layer": "infrastructure",
+    "tags": [
+      "security",
+      "provenance",
+      "infrastructure"
+    ],
+    "aliases": [],
+    "definition": "Cryptographic signatures and append-only logs authenticate artifacts, requests, model versions, and lineage events while making unauthorized modification detectable.",
+    "why_it_matters": "They provide an integrity substrate for provenance, audit, and controlled agent execution.",
+    "examples": [
+      "signed model manifests",
+      "hash-chained trace logs",
+      "artifact attestations"
+    ],
+    "limitations": [
+      "Keys, identities, and trust roots must be managed securely, and signed data can still be false at creation time."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_c2pa",
+      "ref_ddia"
+    ],
+    "dependencies": [
+      {
+        "id": "distributed_systems",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Cryptographic signing & tamper-evident logs turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "content_provenance",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Cryptographic signing & tamper-evident logs turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Cryptographic signing & tamper-evident logs turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "2b82fca37dc332fe",
+      "node_id": "cryptographic_signing",
+      "field": "definition",
+      "text": "Cryptographic signatures and append-only logs authenticate artifacts, requests, model versions, and lineage events while making unauthorized modification detectable."
+    },
+    {
+      "unit_id": "c55b31f473210119",
+      "node_id": "cryptographic_signing",
+      "field": "why_it_matters",
+      "text": "They provide an integrity substrate for provenance, audit, and controlled agent execution."
+    },
+    {
+      "unit_id": "fce96b4acbf4410f",
+      "node_id": "cryptographic_signing",
+      "field": "examples[1]",
+      "text": "signed model manifests"
+    },
+    {
+      "unit_id": "b2d113811ce1a1ed",
+      "node_id": "cryptographic_signing",
+      "field": "examples[2]",
+      "text": "hash-chained trace logs"
+    },
+    {
+      "unit_id": "460e05574396726d",
+      "node_id": "cryptographic_signing",
+      "field": "examples[3]",
+      "text": "artifact attestations"
+    },
+    {
+      "unit_id": "28d5e91c1613e780",
+      "node_id": "cryptographic_signing",
+      "field": "limitations[1]",
+      "text": "Keys, identities, and trust roots must be managed securely, and signed data can still be false at creation time."
+    },
+    {
+      "unit_id": "afc028c79086d501",
+      "node_id": "cryptographic_signing",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Cryptographic signing & tamper-evident logs turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "2f54bef1494874cf",
+      "node_id": "cryptographic_signing",
+      "field": "dependencies.content_provenance.rationale",
+      "text": "Cryptographic signing & tamper-evident logs turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "b7887f7a0d9b450e",
+      "node_id": "cryptographic_signing",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Cryptographic signing & tamper-evident logs turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6631e9202a81e730",
+      "node_id": "cryptographic_signing",
+      "dependency_id": "distributed_systems",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Cryptographic signing & tamper-evident logs turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "755029c3f0e3b5e1",
+      "node_id": "cryptographic_signing",
+      "dependency_id": "content_provenance",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Cryptographic signing & tamper-evident logs turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "49168edfe9d302c3",
+      "node_id": "cryptographic_signing",
+      "dependency_id": "algorithms_data_structures",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Cryptographic signing & tamper-evident logs turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_c2pa": {
+        "id": "ref_c2pa",
+        "title": "C2PA Technical Specification",
+        "authors": "Coalition for Content Provenance and Authenticity",
+        "year": 2025,
+        "url": "https://c2pa.org/specifications/specifications/2.2/index.html"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_c2pa": {
+        "id": "ref_c2pa",
+        "title": "C2PA Technical Specification",
+        "authors": "Coalition for Content Provenance and Authenticity",
+        "year": 2025,
+        "url": "https://c2pa.org/specifications/specifications/2.2/index.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/cryptographic_signing.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

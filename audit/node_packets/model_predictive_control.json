@@ -1,0 +1,166 @@
+{
+  "node_id": "model_predictive_control",
+  "label": "Model-predictive control",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "model_predictive_control",
+    "label": "Model-predictive control",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "control",
+      "robotics"
+    ],
+    "aliases": [
+      "MPC"
+    ],
+    "definition": "Model-predictive control repeatedly optimizes a finite-horizon action sequence under a dynamics model, executes the first action, and replans from new observations.",
+    "why_it_matters": "The role of Model-predictive control is to connect Dynamical systems & control theory, Optimization theory to downstream capabilities including Robotics & embodied AI.",
+    "examples": [
+      "substrate for Robotics & embodied AI",
+      "combined with Dynamical systems & control theory"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Dynamical systems & control theory, Optimization theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "dynamical_control",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Model-predictive control uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Model-predictive control uses Optimization theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "world_model",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Model-predictive control uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "da31ed31c84756b5",
+      "node_id": "model_predictive_control",
+      "field": "definition",
+      "text": "Model-predictive control repeatedly optimizes a finite-horizon action sequence under a dynamics model, executes the first action, and replans from new observations."
+    },
+    {
+      "unit_id": "0c61df88b2ceee40",
+      "node_id": "model_predictive_control",
+      "field": "why_it_matters",
+      "text": "The role of Model-predictive control is to connect Dynamical systems & control theory, Optimization theory to downstream capabilities including Robotics & embodied AI."
+    },
+    {
+      "unit_id": "1e1e1ed17ff88bd8",
+      "node_id": "model_predictive_control",
+      "field": "examples[1]",
+      "text": "substrate for Robotics & embodied AI"
+    },
+    {
+      "unit_id": "07afa2a5dda0bff2",
+      "node_id": "model_predictive_control",
+      "field": "examples[2]",
+      "text": "combined with Dynamical systems & control theory"
+    },
+    {
+      "unit_id": "6905f495add1cb28",
+      "node_id": "model_predictive_control",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Dynamical systems & control theory, Optimization theory."
+    },
+    {
+      "unit_id": "b8be1889e4a381dc",
+      "node_id": "model_predictive_control",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Model-predictive control uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "400acd6a69763dfd",
+      "node_id": "model_predictive_control",
+      "field": "dependencies.optimization.rationale",
+      "text": "Model-predictive control uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "c6726ab96fef7e36",
+      "node_id": "model_predictive_control",
+      "field": "dependencies.world_model.rationale",
+      "text": "Model-predictive control uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "74fc88a98d5a5893",
+      "node_id": "model_predictive_control",
+      "dependency_id": "dynamical_control",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Model-predictive control uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "f3a5fdda9142a1e6",
+      "node_id": "model_predictive_control",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Model-predictive control uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "e8bc08abdef3ce75",
+      "node_id": "model_predictive_control",
+      "dependency_id": "world_model",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Model-predictive control uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dreamer": {
+        "id": "ref_dreamer",
+        "title": "Mastering Diverse Domains through World Models",
+        "authors": "Hafner et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2301.04104"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/model_predictive_control.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

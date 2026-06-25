@@ -1,0 +1,181 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "f63c12eeed30f469",
+      "node_id": "embeddings",
+      "field": "definition",
+      "text": "Learned vectors place semantically or functionally related entities near one another in a continuous space.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: word embeddings, latent semantic indexing, word2vec, GloVe, word analogies, and contextual word embeddings (lines 639-646); AIMA contents.html: word representations, word embeddings, and pretrained contextual representations (lines 628-657).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources directly support vector word representations/embeddings; semantic/functional relatedness and continuous-space neighborhood wording are synthesized from the embedding context."
+    },
+    {
+      "unit_id": "345b7575f6810974",
+      "node_id": "embeddings",
+      "field": "why_it_matters",
+      "text": "The role of Embeddings & distributed representations is to connect Linear algebra, Information theory to downstream capabilities including Positional, temporal & coordinate encodings, Sparse coding & compositional representations, Contrastive learning.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: linear algebra, information theory, word embeddings, sparse autoencoders, and self-supervised/contrastive-adjacent representation learning topics (lines 179-259, 622-646, and 585-587); AIMA contents.html: word representations/embeddings and pretrained contextual representations (lines 628-657).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Linear algebra, information theory, word embeddings, and sparse autoencoders are supported. Positional/coordinate encodings, compositional representations, and contrastive learning are not directly supported by the inspected passages."
+    },
+    {
+      "unit_id": "32107005144790da",
+      "node_id": "embeddings",
+      "field": "examples[1]",
+      "text": "substrate for Positional, temporal & coordinate encodings",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: transformer positional encoding and sequence models (lines 486-490 and 463-478), plus linear algebra vector spaces (lines 206-259).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Positional encoding and vector spaces are supported, but coordinate and temporal encodings as downstream embedding capabilities are not directly established."
+    },
+    {
+      "unit_id": "08fcf05775902308",
+      "node_id": "embeddings",
+      "field": "examples[2]",
+      "text": "substrate for Sparse coding & compositional representations",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: sparse autoencoders and sparse vector machines (lines 622-627 and 551-554), plus word embeddings (lines 639-646).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Sparse representation topics are present, but sparse coding and compositional representations are not directly named or connected to embeddings in the inspected evidence."
+    },
+    {
+      "unit_id": "0cf2abe1bb457dff",
+      "node_id": "embeddings",
+      "field": "examples[3]",
+      "text": "substrate for Contrastive learning",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: self-supervised learning, unsupervised pretraining, matching networks, and word embeddings (lines 9-13, 585-587, 603-605, and 639-646).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The inspected source supports embeddings and self-supervised learning, but does not directly mention contrastive learning."
+    },
+    {
+      "unit_id": "7bb81e7edc41364e",
+      "node_id": "embeddings",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Linear algebra, Information theory.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: linear algebra, information theory, dimensionality reduction, word embeddings, and manifold learning (lines 179-259 and 607-646); AIMA contents.html: fairness/bias and word representations/embeddings (lines 745-749 and 628-657).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Linear algebra, information theory, and embeddings are supported, and bias is a broad AI concern. Encoding information loss and invariance difficulty are not directly supported."
+    },
+    {
+      "unit_id": "9ca5f75107860901",
+      "node_id": "embeddings",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Linear algebra.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 7 'Linear Algebra' and word embeddings (lines 206-259 and 639-646); AIMA contents.html: Appendix A.2 vectors/matrices/linear algebra and word representations/embeddings (lines 768-774 and 628-657).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Embeddings as vectors and linear algebra background support the dependency; exact rationale wording is synthesized."
+    },
+    {
+      "unit_id": "6c352c4b2c32ca9c",
+      "node_id": "embeddings",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Information theory.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: information theory chapter, mutual information, sufficient statistics, and word embeddings (lines 179-205 and 639-646).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Information theory is relevant to representation learning, but the inspected evidence does not directly establish it as a dependency for embeddings."
+    },
+    {
+      "unit_id": "3e30d9eded7cefbb",
+      "node_id": "embeddings",
+      "field": "dependencies.tensors.rationale",
+      "text": "Embeddings & distributed representations consumes, emits, or organizes information using Scalars, vectors, matrices & tensors.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: linear algebra vector spaces/matrices and word embeddings (lines 206-259 and 639-646); AIMA contents.html: vectors/matrices/linear algebra and word representations/embeddings (lines 768-774 and 628-657).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The vector/matrix nature of embeddings is well supported, though the full tensor phrasing is synthesized."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "7896114207487f1f",
+      "node_id": "embeddings",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Embeddings are vector representations, and both sources provide linear-algebra background. Requires/core is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b369ecf8a7003126",
+      "node_id": "embeddings",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Information theory is relevant to representation learning, but the inspected evidence does not show it as a necessary prerequisite for embeddings. Common strength is plausible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c4be6a58e0cc2837",
+      "node_id": "embeddings",
+      "dependency_id": "tensors",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Embeddings are vector-valued representations, so the represents_with/common edge to tensors is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

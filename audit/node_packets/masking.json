@@ -1,0 +1,164 @@
+{
+  "node_id": "masking",
+  "label": "Causal, masked & structured masking",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "masking",
+    "label": "Causal, masked & structured masking",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "self-supervised",
+      "transformer"
+    ],
+    "aliases": [],
+    "definition": "Visibility constraints define which positions or features can interact or must be predicted.",
+    "why_it_matters": "The role of Causal, masked & structured masking is to connect Tokens, vocabularies & symbolic units, Sequences, events & time series to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Joint-embedding predictive architectures.",
+    "examples": [
+      "substrate for Encoder–decoder transformers",
+      "substrate for Decoder-only causal transformers",
+      "substrate for Joint-embedding predictive architectures"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Tokens, vocabularies & symbolic units, Sequences, events & time series."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "tokens_vocab",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Causal, masked & structured masking uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Causal, masked & structured masking uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "spatial_grids",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Causal, masked & structured masking uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "498f6f508554ba65",
+      "node_id": "masking",
+      "field": "definition",
+      "text": "Visibility constraints define which positions or features can interact or must be predicted."
+    },
+    {
+      "unit_id": "212b1d6a3ba1c988",
+      "node_id": "masking",
+      "field": "why_it_matters",
+      "text": "The role of Causal, masked & structured masking is to connect Tokens, vocabularies & symbolic units, Sequences, events & time series to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Joint-embedding predictive architectures."
+    },
+    {
+      "unit_id": "dd91a522bf6f3ec7",
+      "node_id": "masking",
+      "field": "examples[1]",
+      "text": "substrate for Encoder–decoder transformers"
+    },
+    {
+      "unit_id": "6d86bca65cea33ab",
+      "node_id": "masking",
+      "field": "examples[2]",
+      "text": "substrate for Decoder-only causal transformers"
+    },
+    {
+      "unit_id": "f955078d5a4631a8",
+      "node_id": "masking",
+      "field": "examples[3]",
+      "text": "substrate for Joint-embedding predictive architectures"
+    },
+    {
+      "unit_id": "acb5d8f584d770bb",
+      "node_id": "masking",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Tokens, vocabularies & symbolic units, Sequences, events & time series."
+    },
+    {
+      "unit_id": "f0f76548449938a1",
+      "node_id": "masking",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Causal, masked & structured masking uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "8a190be9b41d2bb6",
+      "node_id": "masking",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Causal, masked & structured masking uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f993486658242820",
+      "node_id": "masking",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "Causal, masked & structured masking uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6ccdd9f24ae782ea",
+      "node_id": "masking",
+      "dependency_id": "tokens_vocab",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Causal, masked & structured masking uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "e560faefdf4b9f61",
+      "node_id": "masking",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Causal, masked & structured masking uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "620565476967d964",
+      "node_id": "masking",
+      "dependency_id": "spatial_grids",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Causal, masked & structured masking uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/masking.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

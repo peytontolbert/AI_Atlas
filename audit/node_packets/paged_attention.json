@@ -1,0 +1,171 @@
+{
+  "node_id": "paged_attention",
+  "label": "Paged attention & KV-memory management",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "paged_attention",
+    "label": "Paged attention & KV-memory management",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "serving",
+      "transformer"
+    ],
+    "aliases": [],
+    "definition": "Paged attention manages key–value cache blocks through virtual-memory-like allocation so variable-length generations share accelerator memory efficiently.",
+    "why_it_matters": "The role of Paged attention & KV-memory management is to connect Batching, admission control & GPU scheduling, KV cache & recurrent inference state to downstream capabilities including Large language models, Conversational assistants & chatbots.",
+    "examples": [
+      "substrate for Large language models",
+      "substrate for Conversational assistants & chatbots"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Batching, admission control & GPU scheduling, KV cache & recurrent inference state."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pagedattention"
+    ],
+    "dependencies": [
+      {
+        "id": "batching_scheduling",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Paged attention & KV-memory management turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "kv_cache",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Paged attention & KV-memory management turns KV cache & recurrent inference state into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "efficient_attention",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Paged attention & KV-memory management turns Sparse, local, linear & recurrent attention into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d6deecfa3dff9273",
+      "node_id": "paged_attention",
+      "field": "definition",
+      "text": "Paged attention manages key–value cache blocks through virtual-memory-like allocation so variable-length generations share accelerator memory efficiently."
+    },
+    {
+      "unit_id": "739d18adfa12ea73",
+      "node_id": "paged_attention",
+      "field": "why_it_matters",
+      "text": "The role of Paged attention & KV-memory management is to connect Batching, admission control & GPU scheduling, KV cache & recurrent inference state to downstream capabilities including Large language models, Conversational assistants & chatbots."
+    },
+    {
+      "unit_id": "591a50697eb97b33",
+      "node_id": "paged_attention",
+      "field": "examples[1]",
+      "text": "substrate for Large language models"
+    },
+    {
+      "unit_id": "0a689439d3f43b68",
+      "node_id": "paged_attention",
+      "field": "examples[2]",
+      "text": "substrate for Conversational assistants & chatbots"
+    },
+    {
+      "unit_id": "6f6ee7bdc1af852a",
+      "node_id": "paged_attention",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Batching, admission control & GPU scheduling, KV cache & recurrent inference state."
+    },
+    {
+      "unit_id": "d15b8e53a427b733",
+      "node_id": "paged_attention",
+      "field": "dependencies.batching_scheduling.rationale",
+      "text": "Paged attention & KV-memory management turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "2c9e53ad7dbcb74a",
+      "node_id": "paged_attention",
+      "field": "dependencies.kv_cache.rationale",
+      "text": "Paged attention & KV-memory management turns KV cache & recurrent inference state into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "140346eb09f3283f",
+      "node_id": "paged_attention",
+      "field": "dependencies.efficient_attention.rationale",
+      "text": "Paged attention & KV-memory management turns Sparse, local, linear & recurrent attention into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "eec347b849807f9e",
+      "node_id": "paged_attention",
+      "dependency_id": "batching_scheduling",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Paged attention & KV-memory management turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "816594ce237bc2ad",
+      "node_id": "paged_attention",
+      "dependency_id": "kv_cache",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Paged attention & KV-memory management turns KV cache & recurrent inference state into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "1b1fe20ecf9491fb",
+      "node_id": "paged_attention",
+      "dependency_id": "efficient_attention",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Paged attention & KV-memory management turns Sparse, local, linear & recurrent attention into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pagedattention": {
+        "id": "ref_pagedattention",
+        "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+        "authors": "Kwon et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2309.06180"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/paged_attention.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

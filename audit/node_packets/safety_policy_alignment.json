@@ -1,0 +1,184 @@
+{
+  "node_id": "safety_policy_alignment",
+  "label": "Safety policies, constitutional constraints & alignment",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "safety_policy_alignment",
+    "label": "Safety policies, constitutional constraints & alignment",
+    "layer": "alignment",
+    "tags": [
+      "alignment",
+      "safety"
+    ],
+    "aliases": [],
+    "definition": "Safety and policy alignment shape behavior with written principles, preference data, constraints, classifiers, refusal policies, and escalation rules.",
+    "why_it_matters": "The role of Safety policies, constitutional constraints & alignment is to connect Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization to downstream capabilities including Conversational assistants & chatbots, Browser, desktop & computer-use agents, Autonomous vehicles, drones & navigation.",
+    "examples": [
+      "substrate for Conversational assistants & chatbots",
+      "substrate for Browser, desktop & computer-use agents",
+      "substrate for Autonomous vehicles, drones & navigation"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "preference_optimization",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Preference optimization (RLHF, DPO families)."
+      },
+      {
+        "id": "multiobjective_constraints",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Multi-objective, constrained & Pareto optimization."
+      },
+      {
+        "id": "human_evaluation",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "8fdca18b8ca00549",
+      "node_id": "safety_policy_alignment",
+      "field": "definition",
+      "text": "Safety and policy alignment shape behavior with written principles, preference data, constraints, classifiers, refusal policies, and escalation rules."
+    },
+    {
+      "unit_id": "414516dc7769a236",
+      "node_id": "safety_policy_alignment",
+      "field": "why_it_matters",
+      "text": "The role of Safety policies, constitutional constraints & alignment is to connect Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization to downstream capabilities including Conversational assistants & chatbots, Browser, desktop & computer-use agents, Autonomous vehicles, drones & navigation."
+    },
+    {
+      "unit_id": "3590700a4427a4dc",
+      "node_id": "safety_policy_alignment",
+      "field": "examples[1]",
+      "text": "substrate for Conversational assistants & chatbots"
+    },
+    {
+      "unit_id": "bccadb5acff66a54",
+      "node_id": "safety_policy_alignment",
+      "field": "examples[2]",
+      "text": "substrate for Browser, desktop & computer-use agents"
+    },
+    {
+      "unit_id": "c4a400198be82b4a",
+      "node_id": "safety_policy_alignment",
+      "field": "examples[3]",
+      "text": "substrate for Autonomous vehicles, drones & navigation"
+    },
+    {
+      "unit_id": "d11d165526116f98",
+      "node_id": "safety_policy_alignment",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization."
+    },
+    {
+      "unit_id": "13456fab3a7d9e93",
+      "node_id": "safety_policy_alignment",
+      "field": "dependencies.preference_optimization.rationale",
+      "text": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Preference optimization (RLHF, DPO families)."
+    },
+    {
+      "unit_id": "e0c155604e6333f8",
+      "node_id": "safety_policy_alignment",
+      "field": "dependencies.multiobjective_constraints.rationale",
+      "text": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Multi-objective, constrained & Pareto optimization."
+    },
+    {
+      "unit_id": "365384e2c929bbd2",
+      "node_id": "safety_policy_alignment",
+      "field": "dependencies.human_evaluation.rationale",
+      "text": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "5aae7aa3ed15fbf7",
+      "node_id": "safety_policy_alignment",
+      "dependency_id": "preference_optimization",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Preference optimization (RLHF, DPO families)."
+    },
+    {
+      "edge_id": "79d0c88d5e408199",
+      "node_id": "safety_policy_alignment",
+      "dependency_id": "multiobjective_constraints",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Multi-objective, constrained & Pareto optimization."
+    },
+    {
+      "edge_id": "145002c72bae591e",
+      "node_id": "safety_policy_alignment",
+      "dependency_id": "human_evaluation",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_dpo": {
+        "id": "ref_dpo",
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.18290"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlhf": {
+        "id": "ref_rlhf",
+        "title": "Training language models to follow instructions with human feedback",
+        "authors": "Ouyang et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.02155"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/safety_policy_alignment.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

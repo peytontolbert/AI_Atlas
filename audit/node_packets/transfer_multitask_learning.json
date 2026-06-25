@@ -1,0 +1,163 @@
+{
+  "node_id": "transfer_multitask_learning",
+  "label": "Transfer, multitask & domain adaptation",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "transfer_multitask_learning",
+    "label": "Transfer, multitask & domain adaptation",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "adaptation"
+    ],
+    "aliases": [],
+    "definition": "Knowledge learned in one task, domain, or modality is reused across others.",
+    "why_it_matters": "The role of Transfer, multitask & domain adaptation is to connect Supervised learning, Embeddings & distributed representations to downstream capabilities including Sim-to-real, real-to-sim & digital transfer.",
+    "examples": [
+      "substrate for Sim-to-real, real-to-sim & digital transfer",
+      "combined with Supervised learning"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Embeddings & distributed representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Transfer, multitask & domain adaptation follows the learning setup expressed by Supervised learning."
+      },
+      {
+        "id": "embeddings",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Transfer, multitask & domain adaptation uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Transfer, multitask & domain adaptation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "929f535649fef173",
+      "node_id": "transfer_multitask_learning",
+      "field": "definition",
+      "text": "Knowledge learned in one task, domain, or modality is reused across others."
+    },
+    {
+      "unit_id": "3203a10948e9f0f6",
+      "node_id": "transfer_multitask_learning",
+      "field": "why_it_matters",
+      "text": "The role of Transfer, multitask & domain adaptation is to connect Supervised learning, Embeddings & distributed representations to downstream capabilities including Sim-to-real, real-to-sim & digital transfer."
+    },
+    {
+      "unit_id": "588a991139b81d49",
+      "node_id": "transfer_multitask_learning",
+      "field": "examples[1]",
+      "text": "substrate for Sim-to-real, real-to-sim & digital transfer"
+    },
+    {
+      "unit_id": "feb81664db99b687",
+      "node_id": "transfer_multitask_learning",
+      "field": "examples[2]",
+      "text": "combined with Supervised learning"
+    },
+    {
+      "unit_id": "9bb7fbae98603aa1",
+      "node_id": "transfer_multitask_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "4a4ee33482eb2bae",
+      "node_id": "transfer_multitask_learning",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Transfer, multitask & domain adaptation follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "unit_id": "eed1ceb47dfd3a9b",
+      "node_id": "transfer_multitask_learning",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Transfer, multitask & domain adaptation uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "b772697977cf20b2",
+      "node_id": "transfer_multitask_learning",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Transfer, multitask & domain adaptation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "16561cbc28292f46",
+      "node_id": "transfer_multitask_learning",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Transfer, multitask & domain adaptation follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "edge_id": "3ed13db92bb2dd07",
+      "node_id": "transfer_multitask_learning",
+      "dependency_id": "embeddings",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Transfer, multitask & domain adaptation uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "def088551ffa8981",
+      "node_id": "transfer_multitask_learning",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Transfer, multitask & domain adaptation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/transfer_multitask_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

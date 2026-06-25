@@ -1,0 +1,164 @@
+{
+  "node_id": "quantization_training",
+  "label": "Quantization-aware training & low-precision adaptation",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "quantization_training",
+    "label": "Quantization-aware training & low-precision adaptation",
+    "layer": "training",
+    "tags": [
+      "training",
+      "compression",
+      "systems"
+    ],
+    "aliases": [],
+    "definition": "Quantization-aware training and low-precision adaptation expose a model to restricted numeric formats during optimization so deployment error is reduced.",
+    "why_it_matters": "The role of Quantization-aware training & low-precision adaptation is to connect Scalars, vectors, matrices & tensors, Numerical analysis to downstream capabilities including Quantized inference & compressed deployment.",
+    "examples": [
+      "substrate for Quantized inference & compressed deployment",
+      "combined with Scalars, vectors, matrices & tensors"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Scalars, vectors, matrices & tensors, Numerical analysis."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "tensors",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Quantization-aware training & low-precision adaptation uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "numerical_methods",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Quantization-aware training & low-precision adaptation uses Numerical analysis as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Quantization-aware training & low-precision adaptation uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "44a3bec7c24b3c10",
+      "node_id": "quantization_training",
+      "field": "definition",
+      "text": "Quantization-aware training and low-precision adaptation expose a model to restricted numeric formats during optimization so deployment error is reduced."
+    },
+    {
+      "unit_id": "8bef2fca0c51809e",
+      "node_id": "quantization_training",
+      "field": "why_it_matters",
+      "text": "The role of Quantization-aware training & low-precision adaptation is to connect Scalars, vectors, matrices & tensors, Numerical analysis to downstream capabilities including Quantized inference & compressed deployment."
+    },
+    {
+      "unit_id": "674c24b21e81206e",
+      "node_id": "quantization_training",
+      "field": "examples[1]",
+      "text": "substrate for Quantized inference & compressed deployment"
+    },
+    {
+      "unit_id": "8684a2fc773fd541",
+      "node_id": "quantization_training",
+      "field": "examples[2]",
+      "text": "combined with Scalars, vectors, matrices & tensors"
+    },
+    {
+      "unit_id": "bb7a0d4cd0affbe6",
+      "node_id": "quantization_training",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Scalars, vectors, matrices & tensors, Numerical analysis."
+    },
+    {
+      "unit_id": "c60fb3d03c864cbc",
+      "node_id": "quantization_training",
+      "field": "dependencies.tensors.rationale",
+      "text": "Quantization-aware training & low-precision adaptation uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "e37840c50794779b",
+      "node_id": "quantization_training",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "Quantization-aware training & low-precision adaptation uses Numerical analysis as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "e39617ac6e69ec6f",
+      "node_id": "quantization_training",
+      "field": "dependencies.optimization.rationale",
+      "text": "Quantization-aware training & low-precision adaptation uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "4a840e89642a62aa",
+      "node_id": "quantization_training",
+      "dependency_id": "tensors",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Quantization-aware training & low-precision adaptation uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "33daa07e4783c8a8",
+      "node_id": "quantization_training",
+      "dependency_id": "numerical_methods",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Quantization-aware training & low-precision adaptation uses Numerical analysis as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "c07ab48b186e3512",
+      "node_id": "quantization_training",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Quantization-aware training & low-precision adaptation uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/quantization_training.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

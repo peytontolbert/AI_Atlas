@@ -1,0 +1,93 @@
+{
+  "node_id": "probability",
+  "label": "Probability theory",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "probability",
+    "label": "Probability theory",
+    "layer": "foundation",
+    "tags": [
+      "math",
+      "statistics"
+    ],
+    "aliases": [],
+    "definition": "Random variables, distributions, conditional dependence, and expectation provide the language of uncertainty and generative modeling.",
+    "why_it_matters": "The role of Probability theory is to connect lower-level principles to downstream capabilities including Statistics & experimental design, Information theory, Signal processing & harmonic analysis.",
+    "examples": [
+      "substrate for Statistics & experimental design",
+      "substrate for Information theory",
+      "substrate for Signal processing & harmonic analysis"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": []
+  },
+  "sentence_units": [
+    {
+      "unit_id": "5abff377abc28302",
+      "node_id": "probability",
+      "field": "definition",
+      "text": "Random variables, distributions, conditional dependence, and expectation provide the language of uncertainty and generative modeling."
+    },
+    {
+      "unit_id": "10fa7893b37d0bf2",
+      "node_id": "probability",
+      "field": "why_it_matters",
+      "text": "The role of Probability theory is to connect lower-level principles to downstream capabilities including Statistics & experimental design, Information theory, Signal processing & harmonic analysis."
+    },
+    {
+      "unit_id": "233a07b35fa4aa26",
+      "node_id": "probability",
+      "field": "examples[1]",
+      "text": "substrate for Statistics & experimental design"
+    },
+    {
+      "unit_id": "833e39df5fd45ac5",
+      "node_id": "probability",
+      "field": "examples[2]",
+      "text": "substrate for Information theory"
+    },
+    {
+      "unit_id": "d7507c99fed85100",
+      "node_id": "probability",
+      "field": "examples[3]",
+      "text": "substrate for Signal processing & harmonic analysis"
+    },
+    {
+      "unit_id": "2d54bc264533e916",
+      "node_id": "probability",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting."
+    }
+  ],
+  "edge_units": [],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {}
+  },
+  "review_output_path": "audit/node_reviews/probability.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

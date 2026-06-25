@@ -1,0 +1,143 @@
+{
+  "node_id": "geometry_topology",
+  "label": "Geometry, topology & symmetry",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "geometry_topology",
+    "label": "Geometry, topology & symmetry",
+    "layer": "foundation",
+    "tags": [
+      "math",
+      "geometry"
+    ],
+    "aliases": [],
+    "definition": "Distances, manifolds, transformations, invariants, and topology shape spatial and equivariant representations.",
+    "why_it_matters": "The role of Geometry, topology & symmetry is to connect Linear algebra, Calculus & automatic differentiation theory to downstream capabilities including Images, video & spatial grids, Sets, point clouds & meshes, Positional, temporal & coordinate encodings.",
+    "examples": [
+      "substrate for Images, video & spatial grids",
+      "substrate for Sets, point clouds & meshes",
+      "substrate for Positional, temporal & coordinate encodings"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Linear algebra, Calculus & automatic differentiation theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "linear_algebra",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Geometry, topology & symmetry rests on the formal or computational capabilities supplied by Linear algebra."
+      },
+      {
+        "id": "calculus",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Geometry, topology & symmetry rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "cae133a100a433c4",
+      "node_id": "geometry_topology",
+      "field": "definition",
+      "text": "Distances, manifolds, transformations, invariants, and topology shape spatial and equivariant representations."
+    },
+    {
+      "unit_id": "da89bb39f640e6b0",
+      "node_id": "geometry_topology",
+      "field": "why_it_matters",
+      "text": "The role of Geometry, topology & symmetry is to connect Linear algebra, Calculus & automatic differentiation theory to downstream capabilities including Images, video & spatial grids, Sets, point clouds & meshes, Positional, temporal & coordinate encodings."
+    },
+    {
+      "unit_id": "62efe65f35eb2896",
+      "node_id": "geometry_topology",
+      "field": "examples[1]",
+      "text": "substrate for Images, video & spatial grids"
+    },
+    {
+      "unit_id": "49620327302117ce",
+      "node_id": "geometry_topology",
+      "field": "examples[2]",
+      "text": "substrate for Sets, point clouds & meshes"
+    },
+    {
+      "unit_id": "5a4ea7972d169844",
+      "node_id": "geometry_topology",
+      "field": "examples[3]",
+      "text": "substrate for Positional, temporal & coordinate encodings"
+    },
+    {
+      "unit_id": "21cdd1c381b54903",
+      "node_id": "geometry_topology",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Linear algebra, Calculus & automatic differentiation theory."
+    },
+    {
+      "unit_id": "4dcdbef39660530d",
+      "node_id": "geometry_topology",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Geometry, topology & symmetry rests on the formal or computational capabilities supplied by Linear algebra."
+    },
+    {
+      "unit_id": "e5259812441ceacb",
+      "node_id": "geometry_topology",
+      "field": "dependencies.calculus.rationale",
+      "text": "Geometry, topology & symmetry rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "cb5639bb0dc32b48",
+      "node_id": "geometry_topology",
+      "dependency_id": "linear_algebra",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Geometry, topology & symmetry rests on the formal or computational capabilities supplied by Linear algebra."
+    },
+    {
+      "edge_id": "22e51e8e5c65d9e1",
+      "node_id": "geometry_topology",
+      "dependency_id": "calculus",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Geometry, topology & symmetry rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/geometry_topology.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

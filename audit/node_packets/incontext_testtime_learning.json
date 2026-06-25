@@ -1,0 +1,192 @@
+{
+  "node_id": "incontext_testtime_learning",
+  "label": "In-context & test-time learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "incontext_testtime_learning",
+    "label": "In-context & test-time learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "adaptation",
+      "reasoning"
+    ],
+    "aliases": [],
+    "definition": "Behavior adapts from context, demonstrations, feedback, or computation at inference time without conventional retraining.",
+    "why_it_matters": "The role of In-context & test-time learning is to connect Self-supervised learning, Sequences, events & time series to downstream capabilities including Continual learning & test-time adaptation pipelines, Chain-of-thought & latent reasoning.",
+    "examples": [
+      "substrate for Continual learning & test-time adaptation pipelines",
+      "substrate for Chain-of-thought & latent reasoning"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Self-supervised learning, Sequences, events & time series."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima",
+      "ref_testtime"
+    ],
+    "dependencies": [
+      {
+        "id": "self_supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "In-context & test-time learning follows the learning setup expressed by Self-supervised learning."
+      },
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "In-context & test-time learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "embeddings",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "In-context & test-time learning uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "meta_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "In-context & test-time learning follows the learning setup expressed by Meta-learning."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "368140b5b1913c71",
+      "node_id": "incontext_testtime_learning",
+      "field": "definition",
+      "text": "Behavior adapts from context, demonstrations, feedback, or computation at inference time without conventional retraining."
+    },
+    {
+      "unit_id": "f963b537faa57eb4",
+      "node_id": "incontext_testtime_learning",
+      "field": "why_it_matters",
+      "text": "The role of In-context & test-time learning is to connect Self-supervised learning, Sequences, events & time series to downstream capabilities including Continual learning & test-time adaptation pipelines, Chain-of-thought & latent reasoning."
+    },
+    {
+      "unit_id": "702d2f318fe7e746",
+      "node_id": "incontext_testtime_learning",
+      "field": "examples[1]",
+      "text": "substrate for Continual learning & test-time adaptation pipelines"
+    },
+    {
+      "unit_id": "a65bb2026f0f7a06",
+      "node_id": "incontext_testtime_learning",
+      "field": "examples[2]",
+      "text": "substrate for Chain-of-thought & latent reasoning"
+    },
+    {
+      "unit_id": "cafc3b7564ed77f7",
+      "node_id": "incontext_testtime_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Self-supervised learning, Sequences, events & time series."
+    },
+    {
+      "unit_id": "2abd6a57cdd11779",
+      "node_id": "incontext_testtime_learning",
+      "field": "dependencies.self_supervised_learning.rationale",
+      "text": "In-context & test-time learning follows the learning setup expressed by Self-supervised learning."
+    },
+    {
+      "unit_id": "2e61d954f0f66415",
+      "node_id": "incontext_testtime_learning",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "In-context & test-time learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "60a8e133c235b7f2",
+      "node_id": "incontext_testtime_learning",
+      "field": "dependencies.embeddings.rationale",
+      "text": "In-context & test-time learning uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "a94cffc3d5874732",
+      "node_id": "incontext_testtime_learning",
+      "field": "dependencies.meta_learning.rationale",
+      "text": "In-context & test-time learning follows the learning setup expressed by Meta-learning."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "3975ee096471c155",
+      "node_id": "incontext_testtime_learning",
+      "dependency_id": "self_supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "In-context & test-time learning follows the learning setup expressed by Self-supervised learning."
+    },
+    {
+      "edge_id": "70fe0b573f331838",
+      "node_id": "incontext_testtime_learning",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "In-context & test-time learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "f2bd8e9b041927cc",
+      "node_id": "incontext_testtime_learning",
+      "dependency_id": "embeddings",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "In-context & test-time learning uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "64aa6a1901e0f58c",
+      "node_id": "incontext_testtime_learning",
+      "dependency_id": "meta_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "In-context & test-time learning follows the learning setup expressed by Meta-learning."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_testtime": {
+        "id": "ref_testtime",
+        "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+        "authors": "Snell et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2408.03314"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/incontext_testtime_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

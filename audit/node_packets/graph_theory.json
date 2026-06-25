@@ -1,0 +1,123 @@
+{
+  "node_id": "graph_theory",
+  "label": "Graph theory",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "graph_theory",
+    "label": "Graph theory",
+    "layer": "foundation",
+    "tags": [
+      "math",
+      "graph"
+    ],
+    "aliases": [],
+    "definition": "Nodes, edges, paths, spectra, and connectivity support relational learning, search, and structured knowledge.",
+    "why_it_matters": "The role of Graph theory is to connect Discrete mathematics & logic to downstream capabilities including Causal inference, Graphs, hypergraphs & relational data, MCMC, EM & probabilistic message passing.",
+    "examples": [
+      "substrate for Causal inference",
+      "substrate for Graphs, hypergraphs & relational data",
+      "substrate for MCMC, EM & probabilistic message passing"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Discrete mathematics & logic."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "discrete_math_logic",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Graph theory rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c3a69422b0a15cb2",
+      "node_id": "graph_theory",
+      "field": "definition",
+      "text": "Nodes, edges, paths, spectra, and connectivity support relational learning, search, and structured knowledge."
+    },
+    {
+      "unit_id": "f4ea858584fe93b4",
+      "node_id": "graph_theory",
+      "field": "why_it_matters",
+      "text": "The role of Graph theory is to connect Discrete mathematics & logic to downstream capabilities including Causal inference, Graphs, hypergraphs & relational data, MCMC, EM & probabilistic message passing."
+    },
+    {
+      "unit_id": "c5d18a00413e70a5",
+      "node_id": "graph_theory",
+      "field": "examples[1]",
+      "text": "substrate for Causal inference"
+    },
+    {
+      "unit_id": "3d52f11643ad8146",
+      "node_id": "graph_theory",
+      "field": "examples[2]",
+      "text": "substrate for Graphs, hypergraphs & relational data"
+    },
+    {
+      "unit_id": "fbb900dadd5d651e",
+      "node_id": "graph_theory",
+      "field": "examples[3]",
+      "text": "substrate for MCMC, EM & probabilistic message passing"
+    },
+    {
+      "unit_id": "86a7b4672e7c56b6",
+      "node_id": "graph_theory",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Discrete mathematics & logic."
+    },
+    {
+      "unit_id": "52aff5c255889e76",
+      "node_id": "graph_theory",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Graph theory rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "2addccb7f16505a3",
+      "node_id": "graph_theory",
+      "dependency_id": "discrete_math_logic",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Graph theory rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/graph_theory.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

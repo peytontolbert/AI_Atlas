@@ -1,0 +1,240 @@
+{
+  "node_id": "quantized_inference",
+  "label": "Quantized inference & compressed deployment",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "quantized_inference",
+    "label": "Quantized inference & compressed deployment",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "serving",
+      "compression"
+    ],
+    "aliases": [],
+    "definition": "Quantized inference stores and computes weights or activations in reduced precision, trading numerical fidelity for lower memory, energy, and latency.",
+    "why_it_matters": "The role of Quantized inference & compressed deployment is to connect Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion to downstream capabilities including Edge, on-device & neuromorphic deployment, Image generation, editing & design.",
+    "examples": [
+      "substrate for Edge, on-device & neuromorphic deployment",
+      "substrate for Image generation, editing & design"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_gptq",
+      "ref_smoothquant"
+    ],
+    "dependencies": [
+      {
+        "id": "quantization_training",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Quantized inference & compressed deployment turns Quantization-aware training & low-precision adaptation into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "compilers_runtimes",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Quantized inference & compressed deployment turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "accelerators",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Quantized inference & compressed deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "checkpoint_composition",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Quantized inference & compressed deployment turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "distillation_pruning",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Quantized inference & compressed deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "de8f02ae07fd5742",
+      "node_id": "quantized_inference",
+      "field": "definition",
+      "text": "Quantized inference stores and computes weights or activations in reduced precision, trading numerical fidelity for lower memory, energy, and latency."
+    },
+    {
+      "unit_id": "411ebac6d2169cdc",
+      "node_id": "quantized_inference",
+      "field": "why_it_matters",
+      "text": "The role of Quantized inference & compressed deployment is to connect Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion to downstream capabilities including Edge, on-device & neuromorphic deployment, Image generation, editing & design."
+    },
+    {
+      "unit_id": "30f341e31aed0239",
+      "node_id": "quantized_inference",
+      "field": "examples[1]",
+      "text": "substrate for Edge, on-device & neuromorphic deployment"
+    },
+    {
+      "unit_id": "eb687be318713ece",
+      "node_id": "quantized_inference",
+      "field": "examples[2]",
+      "text": "substrate for Image generation, editing & design"
+    },
+    {
+      "unit_id": "e59399c33bddaff0",
+      "node_id": "quantized_inference",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion."
+    },
+    {
+      "unit_id": "188c3078b4ef13fd",
+      "node_id": "quantized_inference",
+      "field": "dependencies.quantization_training.rationale",
+      "text": "Quantized inference & compressed deployment turns Quantization-aware training & low-precision adaptation into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "a097945834c678d1",
+      "node_id": "quantized_inference",
+      "field": "dependencies.compilers_runtimes.rationale",
+      "text": "Quantized inference & compressed deployment turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "247f997f16376b21",
+      "node_id": "quantized_inference",
+      "field": "dependencies.accelerators.rationale",
+      "text": "Quantized inference & compressed deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "d04b9edd446024f4",
+      "node_id": "quantized_inference",
+      "field": "dependencies.checkpoint_composition.rationale",
+      "text": "Quantized inference & compressed deployment turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "fc74e9f1efc2ea3c",
+      "node_id": "quantized_inference",
+      "field": "dependencies.distillation_pruning.rationale",
+      "text": "Quantized inference & compressed deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "1eedf8fa3a43f0fd",
+      "node_id": "quantized_inference",
+      "dependency_id": "quantization_training",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Quantized inference & compressed deployment turns Quantization-aware training & low-precision adaptation into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "81cfa6e80f96fb10",
+      "node_id": "quantized_inference",
+      "dependency_id": "compilers_runtimes",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Quantized inference & compressed deployment turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "8b206ed1cf13ddd5",
+      "node_id": "quantized_inference",
+      "dependency_id": "accelerators",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Quantized inference & compressed deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "ef0dc4ec5105d1fe",
+      "node_id": "quantized_inference",
+      "dependency_id": "checkpoint_composition",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Quantized inference & compressed deployment turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "11c82e9e41d7ef59",
+      "node_id": "quantized_inference",
+      "dependency_id": "distillation_pruning",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Quantized inference & compressed deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_gptq": {
+        "id": "ref_gptq",
+        "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+        "authors": "Frantar et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.17323"
+      },
+      "ref_smoothquant": {
+        "id": "ref_smoothquant",
+        "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+        "authors": "Xiao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2211.10438"
+      }
+    },
+    "dependency_references": {
+      "ref_cuda_guide": {
+        "id": "ref_cuda_guide",
+        "title": "NVIDIA CUDA C Programming Guide",
+        "authors": "NVIDIA",
+        "year": 2024,
+        "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_lora": {
+        "id": "ref_lora",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "authors": "Hu et al.",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2106.09685"
+      },
+      "ref_modelmerge": {
+        "id": "ref_modelmerge",
+        "title": "Model Soups: Averaging Weights of Multiple Fine-tuned Models Improves Accuracy without Increasing Inference Time",
+        "authors": "Wortsman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.05482"
+      },
+      "ref_tpu": {
+        "id": "ref_tpu",
+        "title": "In-Datacenter Performance Analysis of a Tensor Processing Unit",
+        "authors": "Jouppi et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1704.04760"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/quantized_inference.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

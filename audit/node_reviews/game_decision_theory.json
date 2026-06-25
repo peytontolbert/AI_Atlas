@@ -1,0 +1,150 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "329283dfcd00e206",
+      "node_id": "game_decision_theory",
+      "field": "definition",
+      "text": "Utilities, rational choice, strategic interaction, and sequential decisions formalize action under uncertainty.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Game_theory",
+        "url:https://en.wikipedia.org/wiki/Decision_theory"
+      ],
+      "evidence_location": "AIMA contents.html lines 50-63, 435-457, and 459-477; Game theory page definition and general/applied uses sections; Decision theory page definition section",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA directly lists utility-based agents, sequential decision problems, MDPs/POMDPs, and game theory. The additional pages support game theory as strategic interaction and decision theory as rational choice under uncertainty. The sentence synthesizes these threads rather than matching one source exactly."
+    },
+    {
+      "unit_id": "643ff263e8e41752",
+      "node_id": "game_decision_theory",
+      "field": "why_it_matters",
+      "text": "The role of Game theory & decision theory is to connect Probability theory, Optimization theory to downstream capabilities including Labels, targets, rewards & preferences, Markov chains, MDPs, POMDPs & belief states, Reinforcement learning.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html lines 435-457, 459-477, 598-604, and 721-728",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "AIMA supports decision networks, sequential decision problems, MDPs/POMDPs, game theory, reinforcement learning, and preference learning. The explicit atlas role statement and the full downstream list are graph-derived and not directly established by the inspected evidence."
+    },
+    {
+      "unit_id": "d8b3f48c6c803ebf",
+      "node_id": "game_decision_theory",
+      "field": "examples[1]",
+      "text": "substrate for Labels, targets, rewards & preferences",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html lines 430-432, 436-440, 599-604, and 721-728",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "AIMA supports utilities, rewards, preferences, and learning what humans want, but it does not directly state that game and decision theory are a substrate for the atlas category named here."
+    },
+    {
+      "unit_id": "db239320b7080655",
+      "node_id": "game_decision_theory",
+      "field": "examples[2]",
+      "text": "substrate for Markov chains, MDPs, POMDPs & belief states",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html lines 435-457",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA places MDPs and POMDPs under sequential decision problems and discusses utilities, policies, value iteration, and online algorithms. Markov chains and belief states are not named in the cited lines, so this is synthesis rather than exact verification."
+    },
+    {
+      "unit_id": "3e44d1f8356b9c1c",
+      "node_id": "game_decision_theory",
+      "field": "examples[3]",
+      "text": "substrate for Reinforcement learning",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html lines 598-604 and 717-728",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA covers reinforcement learning immediately after MDP/POMDP decision material and includes rewards, passive reinforcement learning, utility estimation, and robotics reinforcement learning. The 'substrate' wording is atlas synthesis."
+    },
+    {
+      "unit_id": "b97a75985b0868b9",
+      "node_id": "game_decision_theory",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory, Optimization theory.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html lines 423-429, 435-457, 459-477, 737-741, and 768-774",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "AIMA supports probability distributions, complex decisions, sensitivity/robust decisions, and local search/optimization context. It does not directly state the empirical-mismatch warning or the dependency sentence in this exact form."
+    },
+    {
+      "unit_id": "5650231b0fe1c49a",
+      "node_id": "game_decision_theory",
+      "field": "dependencies.probability.rationale",
+      "text": "Game theory & decision theory rests on the formal or computational capabilities supplied by Probability theory.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Decision_theory"
+      ],
+      "evidence_location": "AIMA contents.html lines 423-429, 435-457, 459-477, and 773-774; Decision theory page definition section",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Decision theory is explicitly tied to probability and expected utility, and AIMA places probability background alongside decision networks and sequential decision problems. The 'rests on' wording is graph synthesis."
+    },
+    {
+      "unit_id": "08814a3ab2eecb02",
+      "node_id": "game_decision_theory",
+      "field": "dependencies.optimization.rationale",
+      "text": "Game theory & decision theory rests on the formal or computational capabilities supplied by Optimization theory.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html lines 104-109, 435-457, 468-477, and 715-728",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA supports optimization/search, optimal policies, value iteration, linear programming for MDPs, and computing equilibria. This supports optimization as a core formal dependency, though the sentence is not a direct quote."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "b80de4d6239accd5",
+      "node_id": "game_decision_theory",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_aima",
+        "url:https://en.wikipedia.org/wiki/Decision_theory"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Decision theory under uncertainty and AIMA's decision-network/MDP/POMDP material make probability a defensible core prerequisite. The direction from game/decision theory to probability is correct under the atlas prerequisite convention.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "fed157765decec86",
+      "node_id": "game_decision_theory",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "AIMA supports optimal decisions, value iteration, policy iteration, linear programming for MDPs, and equilibrium computation. Optimization is defensible as core for much of this node, although not every game-theory topic requires optimization in the same way.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

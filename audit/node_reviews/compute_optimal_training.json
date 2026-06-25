@@ -1,0 +1,201 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "809955b73188cd64",
+      "node_id": "compute_optimal_training",
+      "field": "definition",
+      "text": "Compute-optimal training allocates a finite budget among parameters, tokens, steps, data quality, and hardware so expected performance is maximized.",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Chinchilla supports compute-optimal allocation over parameters/tokens/compute, but data quality and hardware are broader than the cited formulation."
+    },
+    {
+      "unit_id": "3fd2cd146d3f2c67",
+      "node_id": "compute_optimal_training",
+      "field": "why_it_matters",
+      "text": "It avoids expensive undertraining or oversizing and makes scaling decisions explicit before a large run begins.",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Chinchilla directly argues many large language models were undertrained and that compute-optimal allocation changes scaling decisions."
+    },
+    {
+      "unit_id": "4be75a767fd624c0",
+      "node_id": "compute_optimal_training",
+      "field": "examples[1]",
+      "text": "Chinchilla-style parameter\u2013token allocation",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Chinchilla is directly about compute-optimal parameter-token allocation."
+    },
+    {
+      "unit_id": "a7953330a863f1e0",
+      "node_id": "compute_optimal_training",
+      "field": "examples[2]",
+      "text": "budget-aware data mixtures",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Budget-aware data mixtures are plausible but not directly supported by the Chinchilla/scaling-law citations."
+    },
+    {
+      "unit_id": "4fba26322e0a31f1",
+      "node_id": "compute_optimal_training",
+      "field": "limitations[1]",
+      "text": "Optimal ratios vary with data reuse, architecture, target tasks, objective, and deployment cost.",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Scaling-law optima vary with modeling assumptions and objective; some listed factors are synthesized beyond the exact source claims."
+    },
+    {
+      "unit_id": "30ffc3dec4141b5c",
+      "node_id": "compute_optimal_training",
+      "field": "dependencies.empirical_scaling_laws.rationale",
+      "text": "Compute-optimal scaling & training allocation uses Empirical scaling laws as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Compute-optimal allocation is derived from empirical scaling-law fits."
+    },
+    {
+      "unit_id": "af1c9b6ee0b0dc75",
+      "node_id": "compute_optimal_training",
+      "field": "dependencies.data_curation.rationale",
+      "text": "Compute-optimal scaling & training allocation uses Data collection, curation & filtering as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Data quantity is central, but data curation/filtering as a core ingredient is broader than the cited source."
+    },
+    {
+      "unit_id": "dca62c2f796ce1ea",
+      "node_id": "compute_optimal_training",
+      "field": "dependencies.pretraining.rationale",
+      "text": "Compute-optimal scaling & training allocation uses Large-scale pretraining as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited work addresses large language model pretraining compute allocation."
+    },
+    {
+      "unit_id": "1d1a5d020b9674aa",
+      "node_id": "compute_optimal_training",
+      "field": "dependencies.distributed_mixed_precision.rationale",
+      "text": "Compute-optimal scaling & training allocation uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Large runs use distributed systems in practice, but compute-optimal allocation does not inherently use mixed precision as a method ingredient."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "ea5b1a6c6782ef4f",
+      "node_id": "compute_optimal_training",
+      "dependency_id": "empirical_scaling_laws",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Empirical scaling laws are the basis for compute-optimal training allocation.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0ed75dfd607eaa25",
+      "node_id": "compute_optimal_training",
+      "dependency_id": "data_curation",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Data budget matters, but curation/filtering is not directly established as core by the cited papers.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "7cf1fcac900c19e6",
+      "node_id": "compute_optimal_training",
+      "dependency_id": "pretraining",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources concern language-model pretraining; common strength is reasonable.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "38d28ea6f711af58",
+      "node_id": "compute_optimal_training",
+      "dependency_id": "distributed_mixed_precision",
+      "source_ids": [
+        "ref_chinchilla",
+        "ref_scaling"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Distributed/mixed precision is an implementation concern, not a directly supported ingredient of the allocation rule.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

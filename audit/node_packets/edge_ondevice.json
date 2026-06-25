@@ -1,0 +1,259 @@
+{
+  "node_id": "edge_ondevice",
+  "label": "Edge, on-device & neuromorphic deployment",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "edge_ondevice",
+    "label": "Edge, on-device & neuromorphic deployment",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "edge",
+      "hardware"
+    ],
+    "aliases": [],
+    "definition": "Edge and on-device deployment runs models near sensors or users under strict power, memory, latency, connectivity, privacy, and thermal constraints.",
+    "why_it_matters": "The role of Edge, on-device & neuromorphic deployment is to connect Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators to downstream capabilities including Robotics & embodied AI, Neuromorphic, sensor & edge intelligence.",
+    "examples": [
+      "substrate for Robotics & embodied AI",
+      "substrate for Neuromorphic, sensor & edge intelligence"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_ddia"
+    ],
+    "dependencies": [
+      {
+        "id": "quantized_inference",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Edge, on-device & neuromorphic deployment turns Quantized inference & compressed deployment into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "accelerators",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Edge, on-device & neuromorphic deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "snn",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Edge, on-device & neuromorphic deployment turns Spiking neural networks into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "formal_model_verification",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Edge, on-device & neuromorphic deployment turns Formal verification of models into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "runtime_assurance",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Edge, on-device & neuromorphic deployment turns Runtime assurance, monitors & safety envelopes into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "distillation_pruning",
+        "type": "operationalizes",
+        "strength": "optional",
+        "rationale": "Edge, on-device & neuromorphic deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "76f50a5be52d7d12",
+      "node_id": "edge_ondevice",
+      "field": "definition",
+      "text": "Edge and on-device deployment runs models near sensors or users under strict power, memory, latency, connectivity, privacy, and thermal constraints."
+    },
+    {
+      "unit_id": "e7033f448a2c800e",
+      "node_id": "edge_ondevice",
+      "field": "why_it_matters",
+      "text": "The role of Edge, on-device & neuromorphic deployment is to connect Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators to downstream capabilities including Robotics & embodied AI, Neuromorphic, sensor & edge intelligence."
+    },
+    {
+      "unit_id": "7f56328929aa5d9a",
+      "node_id": "edge_ondevice",
+      "field": "examples[1]",
+      "text": "substrate for Robotics & embodied AI"
+    },
+    {
+      "unit_id": "e2e00d449bfcb009",
+      "node_id": "edge_ondevice",
+      "field": "examples[2]",
+      "text": "substrate for Neuromorphic, sensor & edge intelligence"
+    },
+    {
+      "unit_id": "33351fefcbdaa73f",
+      "node_id": "edge_ondevice",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators."
+    },
+    {
+      "unit_id": "1893fd344562957b",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.quantized_inference.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Quantized inference & compressed deployment into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "35de10d4de40a1f1",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.accelerators.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "7b005b0ca668b255",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.snn.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Spiking neural networks into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "44d40d763bb41563",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.formal_model_verification.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Formal verification of models into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "1895731cd2496541",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.runtime_assurance.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Runtime assurance, monitors & safety envelopes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "23b41041590a5420",
+      "node_id": "edge_ondevice",
+      "field": "dependencies.distillation_pruning.rationale",
+      "text": "Edge, on-device & neuromorphic deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "7569b25c652ad59e",
+      "node_id": "edge_ondevice",
+      "dependency_id": "quantized_inference",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Edge, on-device & neuromorphic deployment turns Quantized inference & compressed deployment into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "dc68e434b85d6f35",
+      "node_id": "edge_ondevice",
+      "dependency_id": "accelerators",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Edge, on-device & neuromorphic deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "ecda67631574bb71",
+      "node_id": "edge_ondevice",
+      "dependency_id": "snn",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Edge, on-device & neuromorphic deployment turns Spiking neural networks into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "4961c63409e1c838",
+      "node_id": "edge_ondevice",
+      "dependency_id": "formal_model_verification",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Edge, on-device & neuromorphic deployment turns Formal verification of models into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "05a04b13dbd18dfa",
+      "node_id": "edge_ondevice",
+      "dependency_id": "runtime_assurance",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Edge, on-device & neuromorphic deployment turns Runtime assurance, monitors & safety envelopes into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "b844c0076e26a1bb",
+      "node_id": "edge_ondevice",
+      "dependency_id": "distillation_pruning",
+      "type": "operationalizes",
+      "strength": "optional",
+      "rationale": "Edge, on-device & neuromorphic deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    },
+    "dependency_references": {
+      "ref_cuda_guide": {
+        "id": "ref_cuda_guide",
+        "title": "NVIDIA CUDA C Programming Guide",
+        "authors": "NVIDIA",
+        "year": 2024,
+        "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_formalml": {
+        "id": "ref_formalml",
+        "title": "Formal Methods for Machine Learning: A Survey",
+        "authors": "Seshia, Sadigh & Sastry",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2104.02466"
+      },
+      "ref_gptq": {
+        "id": "ref_gptq",
+        "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+        "authors": "Frantar et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.17323"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      "ref_smoothquant": {
+        "id": "ref_smoothquant",
+        "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+        "authors": "Xiao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2211.10438"
+      },
+      "ref_tpu": {
+        "id": "ref_tpu",
+        "title": "In-Datacenter Performance Analysis of a Tensor Processing Unit",
+        "authors": "Jouppi et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1704.04760"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/edge_ondevice.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

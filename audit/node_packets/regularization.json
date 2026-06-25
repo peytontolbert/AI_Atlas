@@ -1,0 +1,156 @@
+{
+  "node_id": "regularization",
+  "label": "Regularization, dropout & weight decay",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "regularization",
+    "label": "Regularization, dropout & weight decay",
+    "layer": "training",
+    "tags": [
+      "training",
+      "generalization"
+    ],
+    "aliases": [],
+    "definition": "Regularization constrains effective model capacity through penalties, dropout, noise, early stopping, label smoothing, or restrictions on learned functions.",
+    "why_it_matters": "The role of Regularization, dropout & weight decay is to connect Statistics & experimental design, Optimization theory to downstream capabilities including Large-scale pretraining.",
+    "examples": [
+      "substrate for Large-scale pretraining",
+      "combined with Statistics & experimental design"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Statistics & experimental design, Optimization theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "statistics",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Regularization, dropout & weight decay uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Regularization, dropout & weight decay uses Optimization theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Regularization, dropout & weight decay uses Supervised learning as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "07153bc9e158fc97",
+      "node_id": "regularization",
+      "field": "definition",
+      "text": "Regularization constrains effective model capacity through penalties, dropout, noise, early stopping, label smoothing, or restrictions on learned functions."
+    },
+    {
+      "unit_id": "a4c9e084937af3ce",
+      "node_id": "regularization",
+      "field": "why_it_matters",
+      "text": "The role of Regularization, dropout & weight decay is to connect Statistics & experimental design, Optimization theory to downstream capabilities including Large-scale pretraining."
+    },
+    {
+      "unit_id": "9f02322bac16f1df",
+      "node_id": "regularization",
+      "field": "examples[1]",
+      "text": "substrate for Large-scale pretraining"
+    },
+    {
+      "unit_id": "7851ff65dbab2825",
+      "node_id": "regularization",
+      "field": "examples[2]",
+      "text": "combined with Statistics & experimental design"
+    },
+    {
+      "unit_id": "92840ac7a683328a",
+      "node_id": "regularization",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Statistics & experimental design, Optimization theory."
+    },
+    {
+      "unit_id": "f7e88190077e349d",
+      "node_id": "regularization",
+      "field": "dependencies.statistics.rationale",
+      "text": "Regularization, dropout & weight decay uses Statistics & experimental design as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "22d3241d5d2b3d5b",
+      "node_id": "regularization",
+      "field": "dependencies.optimization.rationale",
+      "text": "Regularization, dropout & weight decay uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "476742579fc47f07",
+      "node_id": "regularization",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Regularization, dropout & weight decay uses Supervised learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "d53390bd45b4e173",
+      "node_id": "regularization",
+      "dependency_id": "statistics",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Regularization, dropout & weight decay uses Statistics & experimental design as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "c28438abd4919143",
+      "node_id": "regularization",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Regularization, dropout & weight decay uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "9203595acddda9ab",
+      "node_id": "regularization",
+      "dependency_id": "supervised_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Regularization, dropout & weight decay uses Supervised learning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/regularization.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

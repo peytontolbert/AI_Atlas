@@ -1,0 +1,163 @@
+{
+  "node_id": "supervision_signals",
+  "label": "Labels, targets, rewards & preferences",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "supervision_signals",
+    "label": "Labels, targets, rewards & preferences",
+    "layer": "representation",
+    "tags": [
+      "data",
+      "learning-signal"
+    ],
+    "aliases": [],
+    "definition": "External or constructed signals specify desired predictions, actions, rankings, or behavior.",
+    "why_it_matters": "The role of Labels, targets, rewards & preferences is to connect Statistics & experimental design, Game theory & decision theory to downstream capabilities including Supervised learning, Semi-supervised & weak supervision, Reinforcement learning.",
+    "examples": [
+      "substrate for Supervised learning",
+      "substrate for Semi-supervised & weak supervision",
+      "substrate for Reinforcement learning"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Statistics & experimental design, Game theory & decision theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "statistics",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Statistics & experimental design."
+      },
+      {
+        "id": "game_decision_theory",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Game theory & decision theory."
+      },
+      {
+        "id": "information_theory",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Information theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "39bcb9a7d5e73cd2",
+      "node_id": "supervision_signals",
+      "field": "definition",
+      "text": "External or constructed signals specify desired predictions, actions, rankings, or behavior."
+    },
+    {
+      "unit_id": "3a523a4396a0d8d7",
+      "node_id": "supervision_signals",
+      "field": "why_it_matters",
+      "text": "The role of Labels, targets, rewards & preferences is to connect Statistics & experimental design, Game theory & decision theory to downstream capabilities including Supervised learning, Semi-supervised & weak supervision, Reinforcement learning."
+    },
+    {
+      "unit_id": "5e1cf9b5e0fb3593",
+      "node_id": "supervision_signals",
+      "field": "examples[1]",
+      "text": "substrate for Supervised learning"
+    },
+    {
+      "unit_id": "300565fa292f96b5",
+      "node_id": "supervision_signals",
+      "field": "examples[2]",
+      "text": "substrate for Semi-supervised & weak supervision"
+    },
+    {
+      "unit_id": "40e324f6ff3d36ea",
+      "node_id": "supervision_signals",
+      "field": "examples[3]",
+      "text": "substrate for Reinforcement learning"
+    },
+    {
+      "unit_id": "1a92954890a318a2",
+      "node_id": "supervision_signals",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Statistics & experimental design, Game theory & decision theory."
+    },
+    {
+      "unit_id": "b13c5a8e6854796c",
+      "node_id": "supervision_signals",
+      "field": "dependencies.statistics.rationale",
+      "text": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Statistics & experimental design."
+    },
+    {
+      "unit_id": "4d8c915324cad44d",
+      "node_id": "supervision_signals",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Game theory & decision theory."
+    },
+    {
+      "unit_id": "ac932fe3a34265c6",
+      "node_id": "supervision_signals",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Information theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "29357914759b3580",
+      "node_id": "supervision_signals",
+      "dependency_id": "statistics",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Statistics & experimental design."
+    },
+    {
+      "edge_id": "2c74220a7eaf9255",
+      "node_id": "supervision_signals",
+      "dependency_id": "game_decision_theory",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Game theory & decision theory."
+    },
+    {
+      "edge_id": "277a6afa6908e65f",
+      "node_id": "supervision_signals",
+      "dependency_id": "information_theory",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Information theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/supervision_signals.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

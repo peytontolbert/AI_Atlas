@@ -1,0 +1,192 @@
+{
+  "node_id": "memory_lifecycle",
+  "label": "Memory lifecycle, forgetting & consolidation",
+  "layer": "memory",
+  "editorial_status": "curated",
+  "node": {
+    "id": "memory_lifecycle",
+    "label": "Memory lifecycle, forgetting & consolidation",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "agents",
+      "governance"
+    ],
+    "aliases": [],
+    "definition": "Memory lifecycle policies decide what to record, summarize, validate, retain, merge, expire, forget, or delete across repeated interactions.",
+    "why_it_matters": "Persistent memory needs explicit freshness, privacy, conflict, and capacity rules rather than unbounded accumulation.",
+    "examples": [
+      "time-to-live episodic memories",
+      "conflict-aware consolidation",
+      "user-requested forgetting"
+    ],
+    "limitations": [
+      "Deleting derived influence is difficult, stale memories can persist, and consolidation may erase minority or recent evidence."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima",
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "episodic_memory",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Episodic memory."
+      },
+      {
+        "id": "semantic_memory",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Semantic memory."
+      },
+      {
+        "id": "knowledge_editing",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Knowledge editing & memory consolidation."
+      },
+      {
+        "id": "provenance_citations",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Provenance, citations & evidence tracking."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a4309eddcd88877f",
+      "node_id": "memory_lifecycle",
+      "field": "definition",
+      "text": "Memory lifecycle policies decide what to record, summarize, validate, retain, merge, expire, forget, or delete across repeated interactions."
+    },
+    {
+      "unit_id": "e00028884c90f404",
+      "node_id": "memory_lifecycle",
+      "field": "why_it_matters",
+      "text": "Persistent memory needs explicit freshness, privacy, conflict, and capacity rules rather than unbounded accumulation."
+    },
+    {
+      "unit_id": "e2424cf85342ffb8",
+      "node_id": "memory_lifecycle",
+      "field": "examples[1]",
+      "text": "time-to-live episodic memories"
+    },
+    {
+      "unit_id": "e5cdbe6a0671eabe",
+      "node_id": "memory_lifecycle",
+      "field": "examples[2]",
+      "text": "conflict-aware consolidation"
+    },
+    {
+      "unit_id": "0ff5e4f44ba8caed",
+      "node_id": "memory_lifecycle",
+      "field": "examples[3]",
+      "text": "user-requested forgetting"
+    },
+    {
+      "unit_id": "1e97886c6806b747",
+      "node_id": "memory_lifecycle",
+      "field": "limitations[1]",
+      "text": "Deleting derived influence is difficult, stale memories can persist, and consolidation may erase minority or recent evidence."
+    },
+    {
+      "unit_id": "8754b5444ac77cb1",
+      "node_id": "memory_lifecycle",
+      "field": "dependencies.episodic_memory.rationale",
+      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Episodic memory."
+    },
+    {
+      "unit_id": "bad440b65f86eec5",
+      "node_id": "memory_lifecycle",
+      "field": "dependencies.semantic_memory.rationale",
+      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Semantic memory."
+    },
+    {
+      "unit_id": "427617c66fd3dcc1",
+      "node_id": "memory_lifecycle",
+      "field": "dependencies.knowledge_editing.rationale",
+      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Knowledge editing & memory consolidation."
+    },
+    {
+      "unit_id": "8746bd87297100a6",
+      "node_id": "memory_lifecycle",
+      "field": "dependencies.provenance_citations.rationale",
+      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Provenance, citations & evidence tracking."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "2422786556770420",
+      "node_id": "memory_lifecycle",
+      "dependency_id": "episodic_memory",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Episodic memory."
+    },
+    {
+      "edge_id": "4e24b143822ca2be",
+      "node_id": "memory_lifecycle",
+      "dependency_id": "semantic_memory",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Semantic memory."
+    },
+    {
+      "edge_id": "3b407ba7f8b82653",
+      "node_id": "memory_lifecycle",
+      "dependency_id": "knowledge_editing",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Knowledge editing & memory consolidation."
+    },
+    {
+      "edge_id": "0fd3a7273a7b0958",
+      "node_id": "memory_lifecycle",
+      "dependency_id": "provenance_citations",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Provenance, citations & evidence tracking."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/memory_lifecycle.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

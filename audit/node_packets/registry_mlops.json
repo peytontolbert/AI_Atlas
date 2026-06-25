@@ -1,0 +1,265 @@
+{
+  "node_id": "registry_mlops",
+  "label": "Model registry, versioning & MLOps / LLMOps",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "registry_mlops",
+    "label": "Model registry, versioning & MLOps / LLMOps",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "operations",
+      "governance"
+    ],
+    "aliases": [],
+    "definition": "Model registries and MLOps systems version models, adapters, datasets, evaluations, approvals, lineage, deployment targets, and rollback state.",
+    "why_it_matters": "The role of Model registry, versioning & MLOps / LLMOps is to connect Object storage, sharding & checkpoints, Workflow, cluster & job orchestration to downstream capabilities including Large language models.",
+    "examples": [
+      "substrate for Large language models",
+      "combined with Object storage, sharding & checkpoints"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Object storage, sharding & checkpoints, Workflow, cluster & job orchestration."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_ddia"
+    ],
+    "dependencies": [
+      {
+        "id": "storage_checkpoints",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Model registry, versioning & MLOps / LLMOps turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "orchestration",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Model registry, versioning & MLOps / LLMOps turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "repro_monitoring",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Model registry, versioning & MLOps / LLMOps turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "cryptographic_signing",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Model registry, versioning & MLOps / LLMOps turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "checkpoint_composition",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Model registry, versioning & MLOps / LLMOps turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "data_pipelines",
+        "type": "operationalizes",
+        "strength": "optional",
+        "rationale": "Model registry, versioning & MLOps / LLMOps turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "eval_driven_development",
+        "type": "operationalizes",
+        "strength": "optional",
+        "rationale": "Model registry, versioning & MLOps / LLMOps turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b52154d9b14142e5",
+      "node_id": "registry_mlops",
+      "field": "definition",
+      "text": "Model registries and MLOps systems version models, adapters, datasets, evaluations, approvals, lineage, deployment targets, and rollback state."
+    },
+    {
+      "unit_id": "8cce3ff1e275922f",
+      "node_id": "registry_mlops",
+      "field": "why_it_matters",
+      "text": "The role of Model registry, versioning & MLOps / LLMOps is to connect Object storage, sharding & checkpoints, Workflow, cluster & job orchestration to downstream capabilities including Large language models."
+    },
+    {
+      "unit_id": "a12e0b534059e2ad",
+      "node_id": "registry_mlops",
+      "field": "examples[1]",
+      "text": "substrate for Large language models"
+    },
+    {
+      "unit_id": "b311fa60be4b2854",
+      "node_id": "registry_mlops",
+      "field": "examples[2]",
+      "text": "combined with Object storage, sharding & checkpoints"
+    },
+    {
+      "unit_id": "afcab849bf46918f",
+      "node_id": "registry_mlops",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Object storage, sharding & checkpoints, Workflow, cluster & job orchestration."
+    },
+    {
+      "unit_id": "e3d5d526cde85b1b",
+      "node_id": "registry_mlops",
+      "field": "dependencies.storage_checkpoints.rationale",
+      "text": "Model registry, versioning & MLOps / LLMOps turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "5a5646dbec624dcc",
+      "node_id": "registry_mlops",
+      "field": "dependencies.orchestration.rationale",
+      "text": "Model registry, versioning & MLOps / LLMOps turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "9387390103b1729c",
+      "node_id": "registry_mlops",
+      "field": "dependencies.repro_monitoring.rationale",
+      "text": "Model registry, versioning & MLOps / LLMOps turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "3f8f5712f30ab50b",
+      "node_id": "registry_mlops",
+      "field": "dependencies.cryptographic_signing.rationale",
+      "text": "Model registry, versioning & MLOps / LLMOps turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "5448779926a009bd",
+      "node_id": "registry_mlops",
+      "field": "dependencies.checkpoint_composition.rationale",
+      "text": "Model registry, versioning & MLOps / LLMOps turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "eeb767337c7b7f14",
+      "node_id": "registry_mlops",
+      "field": "dependencies.data_pipelines.rationale",
+      "text": "Model registry, versioning & MLOps / LLMOps turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "0b0ed035a6b07633",
+      "node_id": "registry_mlops",
+      "field": "dependencies.eval_driven_development.rationale",
+      "text": "Model registry, versioning & MLOps / LLMOps turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "edfda89b2cde9dfa",
+      "node_id": "registry_mlops",
+      "dependency_id": "storage_checkpoints",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Model registry, versioning & MLOps / LLMOps turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "1ffa7086e2d7472d",
+      "node_id": "registry_mlops",
+      "dependency_id": "orchestration",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Model registry, versioning & MLOps / LLMOps turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "c10d9b6ed26fa06a",
+      "node_id": "registry_mlops",
+      "dependency_id": "repro_monitoring",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Model registry, versioning & MLOps / LLMOps turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "c2e270a1a018314f",
+      "node_id": "registry_mlops",
+      "dependency_id": "cryptographic_signing",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Model registry, versioning & MLOps / LLMOps turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "587490d24a9ade80",
+      "node_id": "registry_mlops",
+      "dependency_id": "checkpoint_composition",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Model registry, versioning & MLOps / LLMOps turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "f285144db9e16550",
+      "node_id": "registry_mlops",
+      "dependency_id": "data_pipelines",
+      "type": "operationalizes",
+      "strength": "optional",
+      "rationale": "Model registry, versioning & MLOps / LLMOps turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "d6f8e7ad2e498e57",
+      "node_id": "registry_mlops",
+      "dependency_id": "eval_driven_development",
+      "type": "operationalizes",
+      "strength": "optional",
+      "rationale": "Model registry, versioning & MLOps / LLMOps turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    },
+    "dependency_references": {
+      "ref_c2pa": {
+        "id": "ref_c2pa",
+        "title": "C2PA Technical Specification",
+        "authors": "Coalition for Content Provenance and Authenticity",
+        "year": 2025,
+        "url": "https://c2pa.org/specifications/specifications/2.2/index.html"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_lora": {
+        "id": "ref_lora",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "authors": "Hu et al.",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2106.09685"
+      },
+      "ref_modelmerge": {
+        "id": "ref_modelmerge",
+        "title": "Model Soups: Averaging Weights of Multiple Fine-tuned Models Improves Accuracy without Increasing Inference Time",
+        "authors": "Wortsman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.05482"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/registry_mlops.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

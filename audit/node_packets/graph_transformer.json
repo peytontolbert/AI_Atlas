@@ -1,0 +1,200 @@
+{
+  "node_id": "graph_transformer",
+  "label": "Graph transformers",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "graph_transformer",
+    "label": "Graph transformers",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "graph",
+      "transformer"
+    ],
+    "aliases": [],
+    "definition": "A graph transformer combines attention with graph topology, structural encodings, or edge features to model long-range interaction over relational data.",
+    "why_it_matters": "The role of Graph transformers is to connect Graph neural networks, Self-attention to downstream capabilities including Drug discovery, protein & molecular design, Knowledge graphs, semantic search & relational reasoning.",
+    "examples": [
+      "substrate for Drug discovery, protein & molecular design",
+      "substrate for Knowledge graphs, semantic search & relational reasoning"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Graph neural networks, Self-attention."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_gnn",
+      "ref_transformer"
+    ],
+    "dependencies": [
+      {
+        "id": "gnn",
+        "type": "specializes",
+        "strength": "common",
+        "rationale": "Graph transformers extends or specializes the architecture family Graph neural networks."
+      },
+      {
+        "id": "self_attention",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Graph transformers is assembled in part from the mechanism or model component Self-attention."
+      },
+      {
+        "id": "positional_mechanisms",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Graph transformers is assembled in part from the mechanism or model component Relative position, RoPE, ALiBi & coordinate mechanisms."
+      },
+      {
+        "id": "transformer",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "Graph transformers are transformer architectures adapted to graph-structured inputs."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "1a6054a6f756f20c",
+      "node_id": "graph_transformer",
+      "field": "definition",
+      "text": "A graph transformer combines attention with graph topology, structural encodings, or edge features to model long-range interaction over relational data."
+    },
+    {
+      "unit_id": "aacd18c8c7a5bd31",
+      "node_id": "graph_transformer",
+      "field": "why_it_matters",
+      "text": "The role of Graph transformers is to connect Graph neural networks, Self-attention to downstream capabilities including Drug discovery, protein & molecular design, Knowledge graphs, semantic search & relational reasoning."
+    },
+    {
+      "unit_id": "adb61cd08dd479ac",
+      "node_id": "graph_transformer",
+      "field": "examples[1]",
+      "text": "substrate for Drug discovery, protein & molecular design"
+    },
+    {
+      "unit_id": "dcb983be9fe7af23",
+      "node_id": "graph_transformer",
+      "field": "examples[2]",
+      "text": "substrate for Knowledge graphs, semantic search & relational reasoning"
+    },
+    {
+      "unit_id": "d7f30312454b9978",
+      "node_id": "graph_transformer",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Graph neural networks, Self-attention."
+    },
+    {
+      "unit_id": "500f0db1002b84c6",
+      "node_id": "graph_transformer",
+      "field": "dependencies.gnn.rationale",
+      "text": "Graph transformers extends or specializes the architecture family Graph neural networks."
+    },
+    {
+      "unit_id": "bd0161f469475d9e",
+      "node_id": "graph_transformer",
+      "field": "dependencies.self_attention.rationale",
+      "text": "Graph transformers is assembled in part from the mechanism or model component Self-attention."
+    },
+    {
+      "unit_id": "462670c1c163829e",
+      "node_id": "graph_transformer",
+      "field": "dependencies.positional_mechanisms.rationale",
+      "text": "Graph transformers is assembled in part from the mechanism or model component Relative position, RoPE, ALiBi & coordinate mechanisms."
+    },
+    {
+      "unit_id": "02cd3833d7650952",
+      "node_id": "graph_transformer",
+      "field": "dependencies.transformer.rationale",
+      "text": "Graph transformers are transformer architectures adapted to graph-structured inputs."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "d5066a2293654bfd",
+      "node_id": "graph_transformer",
+      "dependency_id": "gnn",
+      "type": "specializes",
+      "strength": "common",
+      "rationale": "Graph transformers extends or specializes the architecture family Graph neural networks."
+    },
+    {
+      "edge_id": "bbe9c2a5d4593049",
+      "node_id": "graph_transformer",
+      "dependency_id": "self_attention",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Graph transformers is assembled in part from the mechanism or model component Self-attention."
+    },
+    {
+      "edge_id": "2f3ac8597ee622ba",
+      "node_id": "graph_transformer",
+      "dependency_id": "positional_mechanisms",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Graph transformers is assembled in part from the mechanism or model component Relative position, RoPE, ALiBi & coordinate mechanisms."
+    },
+    {
+      "edge_id": "d4680a596f34a2df",
+      "node_id": "graph_transformer",
+      "dependency_id": "transformer",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "Graph transformers are transformer architectures adapted to graph-structured inputs."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_gnn": {
+        "id": "ref_gnn",
+        "title": "Relational inductive biases, deep learning, and graph networks",
+        "authors": "Battaglia et al.",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1806.01261"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_gnn": {
+        "id": "ref_gnn",
+        "title": "Relational inductive biases, deep learning, and graph networks",
+        "authors": "Battaglia et al.",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1806.01261"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/graph_transformer.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "d6deecfa3dff9273",
+      "node_id": "paged_attention",
+      "field": "definition",
+      "text": "Paged attention manages key\u2013value cache blocks through virtual-memory-like allocation so variable-length generations share accelerator memory efficiently.",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Kwon et al. introduce PagedAttention for LLM serving, using virtual-memory-inspired paging to manage KV-cache blocks and reduce memory waste for variable-length requests.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported by the PagedAttention paper."
+    },
+    {
+      "unit_id": "739d18adfa12ea73",
+      "node_id": "paged_attention",
+      "field": "why_it_matters",
+      "text": "The role of Paged attention & KV-memory management is to connect Batching, admission control & GPU scheduling, KV cache & recurrent inference state to downstream capabilities including Large language models, Conversational assistants & chatbots.",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
+    },
+    {
+      "unit_id": "591a50697eb97b33",
+      "node_id": "paged_attention",
+      "field": "examples[1]",
+      "text": "substrate for Large language models",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "0a689439d3f43b68",
+      "node_id": "paged_attention",
+      "field": "examples[2]",
+      "text": "substrate for Conversational assistants & chatbots",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "6f6ee7bdc1af852a",
+      "node_id": "paged_attention",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Batching, admission control & GPU scheduling, KV cache & recurrent inference state.",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+    },
+    {
+      "unit_id": "d15b8e53a427b733",
+      "node_id": "paged_attention",
+      "field": "dependencies.batching_scheduling.rationale",
+      "text": "Paged attention & KV-memory management turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "2c9e53ad7dbcb74a",
+      "node_id": "paged_attention",
+      "field": "dependencies.kv_cache.rationale",
+      "text": "Paged attention & KV-memory management turns KV cache & recurrent inference state into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The node-specific source directly supports this dependency as part of the mechanism.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Direct mechanism dependency is supported; the templated operationalizes wording is still broader than the source wording."
+    },
+    {
+      "unit_id": "140346eb09f3283f",
+      "node_id": "paged_attention",
+      "field": "dependencies.efficient_attention.rationale",
+      "text": "Paged attention & KV-memory management turns Sparse, local, linear & recurrent attention into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "eec347b849807f9e",
+      "node_id": "paged_attention",
+      "dependency_id": "batching_scheduling",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "816594ce237bc2ad",
+      "node_id": "paged_attention",
+      "dependency_id": "kv_cache",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The dependency is directly part of the cited mechanism, though the generic edge type label remains atlas terminology.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "1b1fe20ecf9491fb",
+      "node_id": "paged_attention",
+      "dependency_id": "efficient_attention",
+      "source_ids": [
+        "ref_pagedattention",
+        "ref_ddia",
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible but not adequately supported by the cited sources at this wording or strength.",
+      "relationship_type_supported": false,
+      "strength_supported": false
+    }
+  ]
+}

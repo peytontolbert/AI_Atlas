@@ -1,0 +1,198 @@
+{
+  "node_id": "model_based_rl",
+  "label": "Model-based reinforcement learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "model_based_rl",
+    "label": "Model-based reinforcement learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "rl",
+      "world-models"
+    ],
+    "aliases": [],
+    "definition": "The agent learns or uses a predictive environment model to evaluate and plan future actions.",
+    "why_it_matters": "The role of Model-based reinforcement learning is to connect Reinforcement learning, Latent variables & hidden state to downstream capabilities including Latent world models & predictive dynamics, World-model rollout & imagination, Game-playing, control & simulation agents.",
+    "examples": [
+      "substrate for Latent world models & predictive dynamics",
+      "substrate for World-model rollout & imagination",
+      "substrate for Game-playing, control & simulation agents"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Reinforcement learning, Latent variables & hidden state."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_rlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "reinforcement_learning",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "Model-based reinforcement learning follows the learning setup expressed by Reinforcement learning."
+      },
+      {
+        "id": "latent_variables",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Model-based reinforcement learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "multimodal_simulated_streams",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Model-based reinforcement learning uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "dynamical_control",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Model-based reinforcement learning uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "eed693e35c6d1b9f",
+      "node_id": "model_based_rl",
+      "field": "definition",
+      "text": "The agent learns or uses a predictive environment model to evaluate and plan future actions."
+    },
+    {
+      "unit_id": "9f25959275ff8683",
+      "node_id": "model_based_rl",
+      "field": "why_it_matters",
+      "text": "The role of Model-based reinforcement learning is to connect Reinforcement learning, Latent variables & hidden state to downstream capabilities including Latent world models & predictive dynamics, World-model rollout & imagination, Game-playing, control & simulation agents."
+    },
+    {
+      "unit_id": "fde90a260a8a16cb",
+      "node_id": "model_based_rl",
+      "field": "examples[1]",
+      "text": "substrate for Latent world models & predictive dynamics"
+    },
+    {
+      "unit_id": "915b33c90df887b1",
+      "node_id": "model_based_rl",
+      "field": "examples[2]",
+      "text": "substrate for World-model rollout & imagination"
+    },
+    {
+      "unit_id": "d88dcf37bdc597be",
+      "node_id": "model_based_rl",
+      "field": "examples[3]",
+      "text": "substrate for Game-playing, control & simulation agents"
+    },
+    {
+      "unit_id": "2552083041636609",
+      "node_id": "model_based_rl",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Reinforcement learning, Latent variables & hidden state."
+    },
+    {
+      "unit_id": "fb532ef9f5804d49",
+      "node_id": "model_based_rl",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Model-based reinforcement learning follows the learning setup expressed by Reinforcement learning."
+    },
+    {
+      "unit_id": "23bf79610d6db162",
+      "node_id": "model_based_rl",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "Model-based reinforcement learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "c57ebd75a8e4c296",
+      "node_id": "model_based_rl",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Model-based reinforcement learning uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "98e37a1dcd8b756c",
+      "node_id": "model_based_rl",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Model-based reinforcement learning uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "f33610a30989efe3",
+      "node_id": "model_based_rl",
+      "dependency_id": "reinforcement_learning",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "Model-based reinforcement learning follows the learning setup expressed by Reinforcement learning."
+    },
+    {
+      "edge_id": "d08c9e02cc114c0a",
+      "node_id": "model_based_rl",
+      "dependency_id": "latent_variables",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Model-based reinforcement learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "0b0508797b7768a9",
+      "node_id": "model_based_rl",
+      "dependency_id": "multimodal_simulated_streams",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Model-based reinforcement learning uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "f9909d851c50f52a",
+      "node_id": "model_based_rl",
+      "dependency_id": "dynamical_control",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Model-based reinforcement learning uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/model_based_rl.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "7bae64f3551d19a4",
+      "node_id": "markov_decision_processes",
+      "field": "definition",
+      "text": "Markovian state, transition, action, observation, and belief representations formalize sequential uncertainty and control.",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Sutton and Barto MDP formalism; AIMA MDP/POMDP and belief-state material; PML state-space/Markov modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "MDPs/POMDPs directly involve states, transitions, actions, observations, and beliefs for sequential decision making under uncertainty. The sentence combines multiple related formalisms."
+    },
+    {
+      "unit_id": "83a19352a44386ca",
+      "node_id": "markov_decision_processes",
+      "field": "why_it_matters",
+      "text": "The role of Markov chains, MDPs, POMDPs & belief states is to connect Probability theory, Sequences, events & time series to downstream capabilities including Reinforcement learning.",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Sutton and Barto formulate RL with MDPs; AIMA and PML cover probabilistic sequential models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The MDP-to-RL connection is directly supported; the probability and sequence dependencies are synthesized from the formalism."
+    },
+    {
+      "unit_id": "36b93dfd57e5471b",
+      "node_id": "markov_decision_processes",
+      "field": "examples[1]",
+      "text": "substrate for Reinforcement learning",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Sutton and Barto use MDPs as the standard formal framework for reinforcement learning; AIMA covers MDPs in decision making.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "MDPs are directly presented as a core formal basis for RL."
+    },
+    {
+      "unit_id": "814f31343b17f636",
+      "node_id": "markov_decision_processes",
+      "field": "examples[2]",
+      "text": "combined with Probability theory",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "MDP transition dynamics and Markov chains are probabilistic constructs in RL/PML treatments.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Transition probabilities and belief states directly use probability theory."
+    },
+    {
+      "unit_id": "1f02a899a3d6601a",
+      "node_id": "markov_decision_processes",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Probability theory, Sequences, events & time series.",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The sources cover MDP/POMDP assumptions but not this generic encoding limitation sentence.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The generic limitation is not directly supported by packet evidence, though Markov assumptions have known limitations."
+    },
+    {
+      "unit_id": "03c6411335d9889b",
+      "node_id": "markov_decision_processes",
+      "field": "dependencies.probability.rationale",
+      "text": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Probability theory.",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "Transition probabilities in MDPs/Markov chains and belief states in POMDPs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The formalism directly uses probability distributions and conditional transitions."
+    },
+    {
+      "unit_id": "3963e0f778ecea4c",
+      "node_id": "markov_decision_processes",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Markov chains, MDPs, POMDPs & belief states consumes, emits, or organizes information using Sequences, events & time series.",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Markov decision processes model time-indexed state/action/reward transitions; PML covers sequential/state-space models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Sequential organization is inherent, though the rationale wording is atlas-generated."
+    },
+    {
+      "unit_id": "51f01b665371c1ac",
+      "node_id": "markov_decision_processes",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Game theory & decision theory.",
+      "source_ids": [
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "AIMA decision-theoretic agent and MDP material; Sutton and Barto sequential decision-making formalism.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Decision theory is strongly relevant to MDPs. Game theory is broader and not necessary for single-agent MDPs, making the combined dependency only partially supported."
+    },
+    {
+      "unit_id": "000315767c5956d4",
+      "node_id": "markov_decision_processes",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Dynamical systems & control theory.",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Sequential control framing in RL and AIMA decision-making material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Control-theoretic framing is relevant for some MDP/POMDP uses, but Markov chains do not generally require dynamical systems/control theory."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "65499b4cc059232b",
+      "node_id": "markov_decision_processes",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Markov chains, MDPs, POMDPs, and belief states directly use probabilities.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "5be9dd8bcd00a3ce",
+      "node_id": "markov_decision_processes",
+      "dependency_id": "sequences_time",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The formalisms organize state/action/observation over time; represents_with/core is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8b65b2013bf65175",
+      "node_id": "markov_decision_processes",
+      "dependency_id": "game_decision_theory",
+      "source_ids": [
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Decision theory is supported; game theory is not generally required for MDPs. The combined dependency label weakens exact support.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "05686853ffb5ca00",
+      "node_id": "markov_decision_processes",
+      "dependency_id": "dynamical_control",
+      "source_ids": [
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Control is relevant to sequential decision processes, but not clearly a common prerequisite for all Markov chains/MDPs/POMDP belief states.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

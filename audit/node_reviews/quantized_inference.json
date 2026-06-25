@@ -1,0 +1,321 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "de8f02ae07fd5742",
+      "node_id": "quantized_inference",
+      "field": "definition",
+      "text": "Quantized inference stores and computes weights or activations in reduced precision, trading numerical fidelity for lower memory, energy, and latency.",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "GPTQ and SmoothQuant directly support post-training low-precision weights/activations for LLM inference with reduced memory/computation and accuracy tradeoffs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported for weights and activations; energy is a reasonable hardware-efficiency implication but less directly evidenced."
+    },
+    {
+      "unit_id": "411ebac6d2169cdc",
+      "node_id": "quantized_inference",
+      "field": "why_it_matters",
+      "text": "The role of Quantized inference & compressed deployment is to connect Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion to downstream capabilities including Edge, on-device & neuromorphic deployment, Image generation, editing & design.",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
+    },
+    {
+      "unit_id": "30f341e31aed0239",
+      "node_id": "quantized_inference",
+      "field": "examples[1]",
+      "text": "substrate for Edge, on-device & neuromorphic deployment",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "eb687be318713ece",
+      "node_id": "quantized_inference",
+      "field": "examples[2]",
+      "text": "substrate for Image generation, editing & design",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "e59399c33bddaff0",
+      "node_id": "quantized_inference",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion.",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+    },
+    {
+      "unit_id": "188c3078b4ef13fd",
+      "node_id": "quantized_inference",
+      "field": "dependencies.quantization_training.rationale",
+      "text": "Quantized inference & compressed deployment turns Quantization-aware training & low-precision adaptation into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "The node-specific source directly supports this dependency as part of the mechanism.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Direct mechanism dependency is supported; the templated operationalizes wording is still broader than the source wording."
+    },
+    {
+      "unit_id": "a097945834c678d1",
+      "node_id": "quantized_inference",
+      "field": "dependencies.compilers_runtimes.rationale",
+      "text": "Quantized inference & compressed deployment turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "247f997f16376b21",
+      "node_id": "quantized_inference",
+      "field": "dependencies.accelerators.rationale",
+      "text": "Quantized inference & compressed deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "d04b9edd446024f4",
+      "node_id": "quantized_inference",
+      "field": "dependencies.checkpoint_composition.rationale",
+      "text": "Quantized inference & compressed deployment turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "fc74e9f1efc2ea3c",
+      "node_id": "quantized_inference",
+      "field": "dependencies.distillation_pruning.rationale",
+      "text": "Quantized inference & compressed deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "1eedf8fa3a43f0fd",
+      "node_id": "quantized_inference",
+      "dependency_id": "quantization_training",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The dependency is directly part of the cited mechanism, though the generic edge type label remains atlas terminology.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "81cfa6e80f96fb10",
+      "node_id": "quantized_inference",
+      "dependency_id": "compilers_runtimes",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8b206ed1cf13ddd5",
+      "node_id": "quantized_inference",
+      "dependency_id": "accelerators",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ef0dc4ec5105d1fe",
+      "node_id": "quantized_inference",
+      "dependency_id": "checkpoint_composition",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible but not adequately supported by the cited sources at this wording or strength.",
+      "relationship_type_supported": false,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "11c82e9e41d7ef59",
+      "node_id": "quantized_inference",
+      "dependency_id": "distillation_pruning",
+      "source_ids": [
+        "ref_gptq",
+        "ref_smoothquant",
+        "ref_cuda_guide",
+        "ref_tpu",
+        "ref_dlbook",
+        "ref_ddia",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

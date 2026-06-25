@@ -1,0 +1,210 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "8e86f3fd8f48582c",
+      "node_id": "process_reward_models",
+      "field": "definition",
+      "text": "Process reward models score intermediate reasoning steps or partial trajectories rather than judging only a final answer.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050"
+      ],
+      "evidence_location": "Let's Verify Step by Step arXiv abstract lines 38-40 contrasts outcome supervision, which provides final-result feedback, with process supervision, which provides feedback for each intermediate reasoning step, and describes step-level human feedback labels.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly supports the distinction between step-level/process feedback and final-result/outcome feedback."
+    },
+    {
+      "unit_id": "8462ed72b1f03f58",
+      "node_id": "process_reward_models",
+      "field": "why_it_matters",
+      "text": "Dense feedback can guide search and learning away from locally plausible but invalid paths.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050",
+        "ref_rlvr"
+      ],
+      "evidence_location": "Let's Verify Step by Step arXiv abstract lines 38-40 says process supervision gives feedback for each intermediate reasoning step and outperforms outcome supervision on MATH. RLVR ar5iv lines 187-190 discuss automatic verification of long CoTs and mitigating verifier errors.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Dense step feedback is supported; 'locally plausible but invalid paths' is interpretive synthesis rather than a direct quote."
+    },
+    {
+      "unit_id": "22a676fb23cdf17d",
+      "node_id": "process_reward_models",
+      "field": "examples[1]",
+      "text": "step-level math verification",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050"
+      ],
+      "evidence_location": "Let's Verify Step by Step arXiv abstract lines 38-40 covers intermediate reasoning-step feedback, MATH dataset performance, and PRM800K step-level feedback labels.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The example is directly supported."
+    },
+    {
+      "unit_id": "4ee406ae8c0b9c99",
+      "node_id": "process_reward_models",
+      "field": "examples[2]",
+      "text": "trajectory scoring",
+      "source_ids": [
+        "ref_rlvr",
+        "url:https://arxiv.org/abs/2502.10581"
+      ],
+      "evidence_location": "RLVR ar5iv lines 64-72 define CoT/final-answer correctness indicators and a binary verifiable reward; Jia et al. search result abstract describes process supervision, outcome supervision, trajectory-level coverage, and advantage functions as process reward models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Trajectory scoring is a reasonable abstraction of process/return-based reward modeling, but the exact phrase is not directly used in the inspected sources."
+    },
+    {
+      "unit_id": "0b003cda7b6ec749",
+      "node_id": "process_reward_models",
+      "field": "examples[3]",
+      "text": "process-supervised search",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050"
+      ],
+      "evidence_location": "Let's Verify Step by Step arXiv abstract lines 38-40 defines process supervision as feedback for each intermediate reasoning step and reports process-supervised math performance.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Process supervision is directly supported; use for search is plausible but not directly established by the abstract."
+    },
+    {
+      "unit_id": "453f4156fae0d296",
+      "node_id": "process_reward_models",
+      "field": "limitations[1]",
+      "text": "Step labels are expensive, verifier errors can be amplified, and locally approved steps can still hide global flaws.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050",
+        "ref_rlvr",
+        "url:https://arxiv.org/abs/2601.17223"
+      ],
+      "evidence_location": "Let's Verify Step by Step arXiv abstract lines 38-40 mentions high human-feedback cost and step-level labels. RLVR ar5iv lines 187-190 says CoT verification at scale is challenging and verifiers are not infallible. VPRM arXiv abstract lines 38-40 says neural judges for CoT steps are vulnerable to opacity, bias, and reward hacking.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Cost and verifier-error concerns are supported; the global-flaw clause is plausible synthesis."
+    },
+    {
+      "unit_id": "a29362810c02f723",
+      "node_id": "process_reward_models",
+      "field": "dependencies.reward_modeling.rationale",
+      "text": "Process supervision & step-level reward models is learned, selected, or evaluated using the objective family Reward modeling.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050"
+      ],
+      "evidence_location": "Let's Verify Step by Step arXiv abstract line 40 describes step-level human feedback labels used to train the best reward model.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source explicitly connects step-level feedback labels to training a reward model."
+    },
+    {
+      "unit_id": "be3d10879479c2f6",
+      "node_id": "process_reward_models",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "Process supervision & step-level reward models uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050"
+      ],
+      "evidence_location": "Let's Verify Step by Step arXiv abstract lines 38-40 describes process supervision as intermediate-step feedback and PRM800K as 800,000 step-level human feedback labels.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Step-level labels/feedback are central to process reward models."
+    },
+    {
+      "unit_id": "3a988f7d7d49f299",
+      "node_id": "process_reward_models",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Process supervision & step-level reward models uses Sequences, events & time series as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_rlvr",
+        "url:https://arxiv.org/abs/2305.20050"
+      ],
+      "evidence_location": "RLVR ar5iv line 17 says an LLM generates a CoT as a sequence of actions; Let's Verify Step by Step arXiv abstract line 38 refers to complex multi-step reasoning and intermediate reasoning steps.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Step-level process supervision operates over ordered reasoning steps or action sequences."
+    },
+    {
+      "unit_id": "6003fff5e1083516",
+      "node_id": "process_reward_models",
+      "field": "dependencies.preference_learning.rationale",
+      "text": "Process supervision & step-level reward models uses Preference learning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050",
+        "ref_rlhf"
+      ],
+      "evidence_location": "Let's Verify Step by Step arXiv abstract lines 38-40 supports step-level human feedback labels. RLHF arXiv page lines 30-33 identify training language models with human feedback as the cited preference-learning source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Human feedback labels are supported, but process reward models do not necessarily require pairwise preference learning; common strength may overstate the dependency."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "09acdc40eb202f5c",
+      "node_id": "process_reward_models",
+      "dependency_id": "reward_modeling",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Step-level labels are used to train a reward model; optimizes_for/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a20c3d4f7d4926f1",
+      "node_id": "process_reward_models",
+      "dependency_id": "supervision_signals",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Process supervision uses intermediate-step feedback labels; uses/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0a5e134f822adf72",
+      "node_id": "process_reward_models",
+      "dependency_id": "sequences_time",
+      "source_ids": [
+        "ref_rlvr",
+        "url:https://arxiv.org/abs/2305.20050"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Intermediate reasoning steps and CoTs as sequences of actions support the uses/common edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "d60e7054c0630232",
+      "node_id": "process_reward_models",
+      "dependency_id": "preference_learning",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2305.20050",
+        "ref_rlhf"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Human feedback is supported, but preference learning specifically is not necessary for all process reward models.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

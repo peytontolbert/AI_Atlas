@@ -1,0 +1,258 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "e94bd181bc1fa1f9",
+      "node_id": "agent_loop",
+      "field": "definition",
+      "text": "An observe–plan–act loop maintains state, selects tools or actions, processes feedback, and iterates until a goal, budget, or safety condition is reached.",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "State/action/feedback iteration is supported across agent/RL/ReAct sources; explicit budgets and safety stop conditions are atlas synthesis."
+    },
+    {
+      "unit_id": "c14495d8eed58e61",
+      "node_id": "agent_loop",
+      "field": "why_it_matters",
+      "text": "The role of Observe–plan–act agent loops is to connect Task decomposition & hierarchical reasoning, Tool use & function calling to downstream capabilities including Reflection, critique, verifier & repair loops, Multi-agent coordination, debate & markets, Skill libraries, workflows & procedural plans.",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Task/action loops and tools are supported, but the full downstream list is graph-derived rather than directly sourced."
+    },
+    {
+      "unit_id": "3f38fc15d16bc398",
+      "node_id": "agent_loop",
+      "field": "examples[1]",
+      "text": "substrate for Reflection, critique, verifier & repair loops",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Iterative trajectories can support reflection/repair, but this downstream role is synthesized."
+    },
+    {
+      "unit_id": "806b15b95d290871",
+      "node_id": "agent_loop",
+      "field": "examples[2]",
+      "text": "substrate for Multi-agent coordination, debate & markets",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Multiagent systems build on multiple agent loops, but the exact downstream relation is not direct evidence."
+    },
+    {
+      "unit_id": "d44ac2041209fb9f",
+      "node_id": "agent_loop",
+      "field": "examples[3]",
+      "text": "substrate for Skill libraries, workflows & procedural plans",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Reusable skills/procedures can be invoked by agent loops, but source support is indirect."
+    },
+    {
+      "unit_id": "ba566c71d81d9b0a",
+      "node_id": "agent_loop",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Task decomposition & hierarchical reasoning, Tool use & function calling.",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Search/action loops can incur cost and errors, but the sentence is generic and not directly stated by the cited sources."
+    },
+    {
+      "unit_id": "7cbc1b2742fe5e24",
+      "node_id": "agent_loop",
+      "field": "dependencies.task_decomposition.rationale",
+      "text": "Observe–plan–act agent loops uses Task decomposition & hierarchical reasoning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Planning/search sources support decomposing tasks into actions/subgoals for agent loops."
+    },
+    {
+      "unit_id": "06347c86dc6ed393",
+      "node_id": "agent_loop",
+      "field": "dependencies.tool_use_function_calling.rationale",
+      "text": "Observe–plan–act agent loops uses Tool use & function calling as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "ReAct directly uses actions to interface with external sources/environments."
+    },
+    {
+      "unit_id": "9f7b90d441b5a24c",
+      "node_id": "agent_loop",
+      "field": "dependencies.context_working_memory.rationale",
+      "text": "Observe–plan–act agent loops stores, selects, or obtains information through Context windows & working memory.",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Maintaining state/history is required by iterative agent loops, though not directly phrased as context windows."
+    },
+    {
+      "unit_id": "274d299479b91620",
+      "node_id": "agent_loop",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Observe–plan–act agent loops uses Reinforcement learning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "RL provides the agent-environment feedback-loop frame; not all observe-plan-act loops are RL."
+    },
+    {
+      "unit_id": "64eaf8fb50f3b85b",
+      "node_id": "agent_loop",
+      "field": "dependencies.react_reason_act.rationale",
+      "text": "Observe–plan–act agent loops uses ReAct-style reasoning and acting as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. Sutton & Barto, Reinforcement Learning: An Introduction, agent-environment interaction framing and feedback/reward-loop concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "ReAct is a concrete reasoning/acting loop example, but not a universal prerequisite."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "11de6b0614e041a5",
+      "node_id": "agent_loop",
+      "dependency_id": "task_decomposition",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Planning/task decomposition is core to plan-act loops.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "1e7e559b4fe76410",
+      "node_id": "agent_loop",
+      "dependency_id": "tool_use_function_calling",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "ReAct directly supports actions/tools in agent-like trajectories.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4943c960f3c25f6b",
+      "node_id": "agent_loop",
+      "dependency_id": "context_working_memory",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "State/history retrieval is common for loops; strength common is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "e4ea445daa1cda54",
+      "node_id": "agent_loop",
+      "dependency_id": "reinforcement_learning",
+      "source_ids": [
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "RL supplies a common agent-environment feedback model, not required for every implementation.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2c4dbe15513c35e2",
+      "node_id": "agent_loop",
+      "dependency_id": "react_reason_act",
+      "source_ids": [
+        "ref_react",
+        "ref_aima",
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "ReAct is a common concrete pattern for such loops.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

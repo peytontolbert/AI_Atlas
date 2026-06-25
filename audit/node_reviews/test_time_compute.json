@@ -1,0 +1,204 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "dace77c20b5529fa",
+      "node_id": "test_time_compute",
+      "field": "definition",
+      "text": "Test-time compute scaling spends additional inference effort on sampling, search, verification, revision, tools, or longer deliberation instead of changing model weights.",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly discusses using more inference/test-time computation, including verifier search and adaptive response updates, without changing pretraining/model parameters."
+    },
+    {
+      "unit_id": "b88c78017828cbb7",
+      "node_id": "test_time_compute",
+      "field": "why_it_matters",
+      "text": "It creates a second scaling axis in which difficult instances receive more computation than easy ones.",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The abstract directly supports adaptive per-prompt compute allocation and difficulty-dependent effectiveness."
+    },
+    {
+      "unit_id": "0f115a9f1330d1b6",
+      "node_id": "test_time_compute",
+      "field": "examples[1]",
+      "text": "adaptive reasoning budgets",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Compute-optimal adaptive allocation per prompt is directly supported."
+    },
+    {
+      "unit_id": "be544ebca3191d6a",
+      "node_id": "test_time_compute",
+      "field": "examples[2]",
+      "text": "iterative critique",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Adaptive response updates are supported, but iterative critique is not directly named."
+    },
+    {
+      "unit_id": "bbdf333e17f973f6",
+      "node_id": "test_time_compute",
+      "field": "examples[3]",
+      "text": "search with learned verifiers",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly names searching against dense, process-based verifier reward models."
+    },
+    {
+      "unit_id": "7c6bcddbb4e97c90",
+      "node_id": "test_time_compute",
+      "field": "limitations[1]",
+      "text": "Extra tokens do not guarantee better reasoning, latency and cost rise quickly, and stopping rules can be poorly calibrated.",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source notes varying effectiveness and negative results; latency/cost and stopping calibration are defensible but not directly stated in the abstract."
+    },
+    {
+      "unit_id": "405297469715bba8",
+      "node_id": "test_time_compute",
+      "field": "dependencies.search_sampling_decoding.rationale",
+      "text": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Search, sampling & decoding procedures.",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Search at inference time is directly named."
+    },
+    {
+      "unit_id": "b41737832cfd6288",
+      "node_id": "test_time_compute",
+      "field": "dependencies.self_consistency.rationale",
+      "text": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Self-consistency & best-of-N inference.",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Best-of-N and sampling diversity are test-time mechanisms, but self-consistency specifically is a synthesis."
+    },
+    {
+      "unit_id": "04c6980918e3e137",
+      "node_id": "test_time_compute",
+      "field": "dependencies.reflection_verifier.rationale",
+      "text": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops.",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Verifier-guided search directly supports verifier loops; reflection/repair wording is broader."
+    },
+    {
+      "unit_id": "7184c537189dd5f7",
+      "node_id": "test_time_compute",
+      "field": "dependencies.calibration_uncertainty_objective.rationale",
+      "text": "Test-time compute scaling explores alternatives using the state, scoring, or search process in Calibration, uncertainty & risk objectives.",
+      "source_ids": [
+        "ref_testtime",
+        "ref_pml"
+      ],
+      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Difficulty-dependent allocation relates to uncertainty/risk, but calibration objectives are not directly discussed."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "db7b7a1a8746f3e8",
+      "node_id": "test_time_compute",
+      "dependency_id": "search_sampling_decoding",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Inference-time search/sampling is central.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "d33718a067594970",
+      "node_id": "test_time_compute",
+      "dependency_id": "self_consistency",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Self-consistency/best-of-N is a core class of test-time sampling selection.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "6defb107a0c85cae",
+      "node_id": "test_time_compute",
+      "dependency_id": "reflection_verifier",
+      "source_ids": [
+        "ref_testtime"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Verifier-guided search is a common test-time compute mechanism.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "062d43c1b62e4154",
+      "node_id": "test_time_compute",
+      "dependency_id": "calibration_uncertainty_objective",
+      "source_ids": [
+        "ref_testtime",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Difficulty-based allocation makes calibration relevant, but direct support is limited.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

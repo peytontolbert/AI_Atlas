@@ -1,0 +1,326 @@
+{
+  "node_id": "image_generation",
+  "label": "Image generation, editing & design",
+  "layer": "system",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "image_generation",
+    "label": "Image generation, editing & design",
+    "layer": "system",
+    "tags": [
+      "system",
+      "generative",
+      "vision"
+    ],
+    "aliases": [],
+    "definition": "Image-generation systems synthesize or edit visual content from text, images, masks, layouts, identities, depth, or other conditioning signals.",
+    "why_it_matters": "This system is an application boundary where technical capability, evidence, safety controls, economics, and user workflow must succeed together.",
+    "examples": [
+      "workflows combining Image generation, editing & design with Diffusion & score-based models",
+      "workflows combining Image generation, editing & design with Normalizing, rectified & flow-matching models",
+      "workflows combining Image generation, editing & design with U-Nets & encoder–decoder convnets"
+    ],
+    "limitations": [
+      "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Diffusion & score-based models, Normalizing, rectified & flow-matching models."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": true,
+    "terminal_reason": "end-system leaf",
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "diffusion_model",
+        "type": "applies",
+        "strength": "core",
+        "rationale": "Image generation, editing & design integrates Diffusion & score-based models as part of an end-to-end application boundary."
+      },
+      {
+        "id": "flow_based_model",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Image generation, editing & design integrates Normalizing, rectified & flow-matching models as part of an end-to-end application boundary."
+      },
+      {
+        "id": "unet",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Image generation, editing & design integrates U-Nets & encoder–decoder convnets as part of an end-to-end application boundary."
+      },
+      {
+        "id": "quantized_inference",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Image generation, editing & design integrates Quantized inference & compressed deployment as part of an end-to-end application boundary."
+      },
+      {
+        "id": "gan",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Image generation, editing & design integrates Generative adversarial networks as part of an end-to-end application boundary."
+      },
+      {
+        "id": "output_watermarking",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Image generation, editing & design integrates Generation-time watermarking as part of an end-to-end application boundary."
+      },
+      {
+        "id": "content_provenance",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Image generation, editing & design integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+      },
+      {
+        "id": "model_serving",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Image generation, editing & design integrates Model servers & inference runtimes as part of an end-to-end application boundary."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "674dc372e5c12006",
+      "node_id": "image_generation",
+      "field": "definition",
+      "text": "Image-generation systems synthesize or edit visual content from text, images, masks, layouts, identities, depth, or other conditioning signals."
+    },
+    {
+      "unit_id": "bb23076f442d3c6c",
+      "node_id": "image_generation",
+      "field": "why_it_matters",
+      "text": "This system is an application boundary where technical capability, evidence, safety controls, economics, and user workflow must succeed together."
+    },
+    {
+      "unit_id": "69e612ef38ae7e12",
+      "node_id": "image_generation",
+      "field": "examples[1]",
+      "text": "workflows combining Image generation, editing & design with Diffusion & score-based models"
+    },
+    {
+      "unit_id": "4ac2cfc767922349",
+      "node_id": "image_generation",
+      "field": "examples[2]",
+      "text": "workflows combining Image generation, editing & design with Normalizing, rectified & flow-matching models"
+    },
+    {
+      "unit_id": "f105bc203befcb4c",
+      "node_id": "image_generation",
+      "field": "examples[3]",
+      "text": "workflows combining Image generation, editing & design with U-Nets & encoder–decoder convnets"
+    },
+    {
+      "unit_id": "b5d866f878b1df79",
+      "node_id": "image_generation",
+      "field": "limitations[1]",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Diffusion & score-based models, Normalizing, rectified & flow-matching models."
+    },
+    {
+      "unit_id": "d8002fb32afff666",
+      "node_id": "image_generation",
+      "field": "terminal_reason",
+      "text": "end-system leaf"
+    },
+    {
+      "unit_id": "738284d7d73dfddf",
+      "node_id": "image_generation",
+      "field": "dependencies.diffusion_model.rationale",
+      "text": "Image generation, editing & design integrates Diffusion & score-based models as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "2b2eab0915b6c4f4",
+      "node_id": "image_generation",
+      "field": "dependencies.flow_based_model.rationale",
+      "text": "Image generation, editing & design integrates Normalizing, rectified & flow-matching models as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "5f61f0dcb30fa95a",
+      "node_id": "image_generation",
+      "field": "dependencies.unet.rationale",
+      "text": "Image generation, editing & design integrates U-Nets & encoder–decoder convnets as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "b4ceb3a4f863da6b",
+      "node_id": "image_generation",
+      "field": "dependencies.quantized_inference.rationale",
+      "text": "Image generation, editing & design integrates Quantized inference & compressed deployment as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "29b9af98e0251f6e",
+      "node_id": "image_generation",
+      "field": "dependencies.gan.rationale",
+      "text": "Image generation, editing & design integrates Generative adversarial networks as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "de2e398d6ef80e35",
+      "node_id": "image_generation",
+      "field": "dependencies.output_watermarking.rationale",
+      "text": "Image generation, editing & design integrates Generation-time watermarking as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "d3ba4921f7ed634d",
+      "node_id": "image_generation",
+      "field": "dependencies.content_provenance.rationale",
+      "text": "Image generation, editing & design integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "22685c143f8ebf50",
+      "node_id": "image_generation",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Image generation, editing & design integrates Model servers & inference runtimes as part of an end-to-end application boundary."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "0be59a80e817f5da",
+      "node_id": "image_generation",
+      "dependency_id": "diffusion_model",
+      "type": "applies",
+      "strength": "core",
+      "rationale": "Image generation, editing & design integrates Diffusion & score-based models as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "db0d1b02b300dd5a",
+      "node_id": "image_generation",
+      "dependency_id": "flow_based_model",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Image generation, editing & design integrates Normalizing, rectified & flow-matching models as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "ba359a6eb4657981",
+      "node_id": "image_generation",
+      "dependency_id": "unet",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Image generation, editing & design integrates U-Nets & encoder–decoder convnets as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "ccee3c19947eaf03",
+      "node_id": "image_generation",
+      "dependency_id": "quantized_inference",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Image generation, editing & design integrates Quantized inference & compressed deployment as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "eba0919eede28142",
+      "node_id": "image_generation",
+      "dependency_id": "gan",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Image generation, editing & design integrates Generative adversarial networks as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "29d63e1ae8ba618e",
+      "node_id": "image_generation",
+      "dependency_id": "output_watermarking",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Image generation, editing & design integrates Generation-time watermarking as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "5e4991d6baa71254",
+      "node_id": "image_generation",
+      "dependency_id": "content_provenance",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Image generation, editing & design integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "1954c83649019093",
+      "node_id": "image_generation",
+      "dependency_id": "model_serving",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Image generation, editing & design integrates Model servers & inference runtimes as part of an end-to-end application boundary."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_c2pa": {
+        "id": "ref_c2pa",
+        "title": "C2PA Technical Specification",
+        "authors": "Coalition for Content Provenance and Authenticity",
+        "year": 2025,
+        "url": "https://c2pa.org/specifications/specifications/2.2/index.html"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      },
+      "ref_gan": {
+        "id": "ref_gan",
+        "title": "Generative Adversarial Nets",
+        "authors": "Goodfellow et al.",
+        "year": 2014,
+        "url": "https://arxiv.org/abs/1406.2661"
+      },
+      "ref_gptq": {
+        "id": "ref_gptq",
+        "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+        "authors": "Frantar et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.17323"
+      },
+      "ref_smoothquant": {
+        "id": "ref_smoothquant",
+        "title": "SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models",
+        "authors": "Xiao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2211.10438"
+      },
+      "ref_unet": {
+        "id": "ref_unet",
+        "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+        "authors": "Ronneberger et al.",
+        "year": 2015,
+        "url": "https://arxiv.org/abs/1505.04597"
+      },
+      "ref_watermark": {
+        "id": "ref_watermark",
+        "title": "A Watermark for Large Language Models",
+        "authors": "Kirchenbauer et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2301.10226"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/image_generation.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

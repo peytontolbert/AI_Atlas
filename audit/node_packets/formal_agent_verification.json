@@ -1,0 +1,198 @@
+{
+  "node_id": "formal_agent_verification",
+  "label": "Formal verification of agents & plans",
+  "layer": "alignment",
+  "editorial_status": "curated",
+  "node": {
+    "id": "formal_agent_verification",
+    "label": "Formal verification of agents & plans",
+    "layer": "alignment",
+    "tags": [
+      "verification",
+      "agents",
+      "formal"
+    ],
+    "aliases": [],
+    "definition": "Formal agent verification checks plans, policies, tool sequences, or generated programs against state, temporal, safety, and authorization specifications.",
+    "why_it_matters": "It adds a machine-checkable control layer between an agent’s proposal and an external side effect.",
+    "examples": [
+      "temporal-logic plan checking",
+      "proof-carrying code generation",
+      "permission-state verification"
+    ],
+    "limitations": [
+      "Open-world observations and underspecified environments make complete verification difficult, so runtime monitoring remains necessary."
+    ],
+    "editorial_status": "curated",
+    "maturity": "emerging",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_formalml"
+    ],
+    "dependencies": [
+      {
+        "id": "formal_methods_specification",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Formal verification of agents & plans measures, constrains, audits, or governs behavior using Formal methods, specifications & proof obligations."
+      },
+      {
+        "id": "pddl_htn_planning",
+        "type": "verifies_with",
+        "strength": "core",
+        "rationale": "Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from PDDL, STRIPS & hierarchical task-network planning."
+      },
+      {
+        "id": "structured_outputs",
+        "type": "verifies_with",
+        "strength": "common",
+        "rationale": "Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from Structured outputs & typed action generation."
+      },
+      {
+        "id": "code_execution",
+        "type": "verifies_with",
+        "strength": "common",
+        "rationale": "Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3004c8a455d1c1e8",
+      "node_id": "formal_agent_verification",
+      "field": "definition",
+      "text": "Formal agent verification checks plans, policies, tool sequences, or generated programs against state, temporal, safety, and authorization specifications."
+    },
+    {
+      "unit_id": "b080d738bad3fa26",
+      "node_id": "formal_agent_verification",
+      "field": "why_it_matters",
+      "text": "It adds a machine-checkable control layer between an agent’s proposal and an external side effect."
+    },
+    {
+      "unit_id": "13c779063a8abc33",
+      "node_id": "formal_agent_verification",
+      "field": "examples[1]",
+      "text": "temporal-logic plan checking"
+    },
+    {
+      "unit_id": "f92c86cc244cf172",
+      "node_id": "formal_agent_verification",
+      "field": "examples[2]",
+      "text": "proof-carrying code generation"
+    },
+    {
+      "unit_id": "8207ab3d09491c05",
+      "node_id": "formal_agent_verification",
+      "field": "examples[3]",
+      "text": "permission-state verification"
+    },
+    {
+      "unit_id": "c244b72211ea5d6d",
+      "node_id": "formal_agent_verification",
+      "field": "limitations[1]",
+      "text": "Open-world observations and underspecified environments make complete verification difficult, so runtime monitoring remains necessary."
+    },
+    {
+      "unit_id": "5297202fb3b61b51",
+      "node_id": "formal_agent_verification",
+      "field": "dependencies.formal_methods_specification.rationale",
+      "text": "Formal verification of agents & plans measures, constrains, audits, or governs behavior using Formal methods, specifications & proof obligations."
+    },
+    {
+      "unit_id": "b85faa092646befd",
+      "node_id": "formal_agent_verification",
+      "field": "dependencies.pddl_htn_planning.rationale",
+      "text": "Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from PDDL, STRIPS & hierarchical task-network planning."
+    },
+    {
+      "unit_id": "324dfa71c27c16ca",
+      "node_id": "formal_agent_verification",
+      "field": "dependencies.structured_outputs.rationale",
+      "text": "Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from Structured outputs & typed action generation."
+    },
+    {
+      "unit_id": "1103294455e6ad5c",
+      "node_id": "formal_agent_verification",
+      "field": "dependencies.code_execution.rationale",
+      "text": "Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "cb5b7688be495267",
+      "node_id": "formal_agent_verification",
+      "dependency_id": "formal_methods_specification",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Formal verification of agents & plans measures, constrains, audits, or governs behavior using Formal methods, specifications & proof obligations."
+    },
+    {
+      "edge_id": "c28aa62558ce27e0",
+      "node_id": "formal_agent_verification",
+      "dependency_id": "pddl_htn_planning",
+      "type": "verifies_with",
+      "strength": "core",
+      "rationale": "Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from PDDL, STRIPS & hierarchical task-network planning."
+    },
+    {
+      "edge_id": "073fdffd08ef4b76",
+      "node_id": "formal_agent_verification",
+      "dependency_id": "structured_outputs",
+      "type": "verifies_with",
+      "strength": "common",
+      "rationale": "Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from Structured outputs & typed action generation."
+    },
+    {
+      "edge_id": "3e807c687337a2fb",
+      "node_id": "formal_agent_verification",
+      "dependency_id": "code_execution",
+      "type": "verifies_with",
+      "strength": "common",
+      "rationale": "Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_formalml": {
+        "id": "ref_formalml",
+        "title": "Formal Methods for Machine Learning: A Survey",
+        "authors": "Seshia, Sadigh & Sastry",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2104.02466"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_formalml": {
+        "id": "ref_formalml",
+        "title": "Formal Methods for Machine Learning: A Survey",
+        "authors": "Seshia, Sadigh & Sastry",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2104.02466"
+      },
+      "ref_structured": {
+        "id": "ref_structured",
+        "title": "A Survey of Structured Output Generation from LLMs",
+        "authors": "survey authors",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2501.10868"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/formal_agent_verification.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

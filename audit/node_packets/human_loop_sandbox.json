@@ -1,0 +1,171 @@
+{
+  "node_id": "human_loop_sandbox",
+  "label": "Human-in-the-loop, permissions & sandboxing",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "human_loop_sandbox",
+    "label": "Human-in-the-loop, permissions & sandboxing",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "agents",
+      "safety"
+    ],
+    "aliases": [],
+    "definition": "Human-in-the-loop and sandbox controls bound agent authority through approvals, permissions, quotas, isolated execution, audit logs, and reversible actions.",
+    "why_it_matters": "The role of Human-in-the-loop, permissions & sandboxing is to connect Observe–plan–act agent loops, Code execution, interpreters & sandboxes to downstream capabilities including Autonomous software-engineering agents, Autonomous research & AI scientist systems, Simulation, operations research & wargaming.",
+    "examples": [
+      "substrate for Autonomous software-engineering agents",
+      "substrate for Autonomous research & AI scientist systems",
+      "substrate for Simulation, operations research & wargaming"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Observe–plan–act agent loops, Code execution, interpreters & sandboxes."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "agent_loop",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Human-in-the-loop, permissions & sandboxing uses Observe–plan–act agent loops as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "code_execution",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Human-in-the-loop, permissions & sandboxing uses Code execution, interpreters & sandboxes as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "game_decision_theory",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Human-in-the-loop, permissions & sandboxing uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b523abccec82f3fb",
+      "node_id": "human_loop_sandbox",
+      "field": "definition",
+      "text": "Human-in-the-loop and sandbox controls bound agent authority through approvals, permissions, quotas, isolated execution, audit logs, and reversible actions."
+    },
+    {
+      "unit_id": "f1e69b15487e8af2",
+      "node_id": "human_loop_sandbox",
+      "field": "why_it_matters",
+      "text": "The role of Human-in-the-loop, permissions & sandboxing is to connect Observe–plan–act agent loops, Code execution, interpreters & sandboxes to downstream capabilities including Autonomous software-engineering agents, Autonomous research & AI scientist systems, Simulation, operations research & wargaming."
+    },
+    {
+      "unit_id": "726a616bf7c58542",
+      "node_id": "human_loop_sandbox",
+      "field": "examples[1]",
+      "text": "substrate for Autonomous software-engineering agents"
+    },
+    {
+      "unit_id": "9689ced59f8aafb8",
+      "node_id": "human_loop_sandbox",
+      "field": "examples[2]",
+      "text": "substrate for Autonomous research & AI scientist systems"
+    },
+    {
+      "unit_id": "1dd62df39b15b568",
+      "node_id": "human_loop_sandbox",
+      "field": "examples[3]",
+      "text": "substrate for Simulation, operations research & wargaming"
+    },
+    {
+      "unit_id": "349573a1942f71d2",
+      "node_id": "human_loop_sandbox",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Observe–plan–act agent loops, Code execution, interpreters & sandboxes."
+    },
+    {
+      "unit_id": "876f16022a9d13f7",
+      "node_id": "human_loop_sandbox",
+      "field": "dependencies.agent_loop.rationale",
+      "text": "Human-in-the-loop, permissions & sandboxing uses Observe–plan–act agent loops as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f2add401812225ce",
+      "node_id": "human_loop_sandbox",
+      "field": "dependencies.code_execution.rationale",
+      "text": "Human-in-the-loop, permissions & sandboxing uses Code execution, interpreters & sandboxes as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "c92e4e6254b180fa",
+      "node_id": "human_loop_sandbox",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Human-in-the-loop, permissions & sandboxing uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "51bbd9249d537cf2",
+      "node_id": "human_loop_sandbox",
+      "dependency_id": "agent_loop",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Human-in-the-loop, permissions & sandboxing uses Observe–plan–act agent loops as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "1d48a7e813168e91",
+      "node_id": "human_loop_sandbox",
+      "dependency_id": "code_execution",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Human-in-the-loop, permissions & sandboxing uses Code execution, interpreters & sandboxes as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "b8178f6825c9ed7a",
+      "node_id": "human_loop_sandbox",
+      "dependency_id": "game_decision_theory",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Human-in-the-loop, permissions & sandboxing uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_react": {
+        "id": "ref_react",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.03629"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/human_loop_sandbox.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

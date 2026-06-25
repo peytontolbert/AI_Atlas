@@ -1,0 +1,164 @@
+{
+  "node_id": "resampling_patchification",
+  "label": "Striding, pooling, patchification & up/downsampling",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "resampling_patchification",
+    "label": "Striding, pooling, patchification & up/downsampling",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "vision",
+      "multiscale"
+    ],
+    "aliases": [],
+    "definition": "Resolution and receptive field are changed by grouping, subsampling, or reconstructing spatial units.",
+    "why_it_matters": "The role of Striding, pooling, patchification & up/downsampling is to connect Images, video & spatial grids, Scalars, vectors, matrices & tensors to downstream capabilities including U-Nets & encoder–decoder convnets, Vision Transformers & Perceiver-style latent models.",
+    "examples": [
+      "substrate for U-Nets & encoder–decoder convnets",
+      "substrate for Vision Transformers & Perceiver-style latent models"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Images, video & spatial grids, Scalars, vectors, matrices & tensors."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "spatial_grids",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Striding, pooling, patchification & up/downsampling uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "tensors",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Striding, pooling, patchification & up/downsampling uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "convolution",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Striding, pooling, patchification & up/downsampling is assembled in part from the mechanism or model component Convolution & local filters."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c5d32aa99605ed97",
+      "node_id": "resampling_patchification",
+      "field": "definition",
+      "text": "Resolution and receptive field are changed by grouping, subsampling, or reconstructing spatial units."
+    },
+    {
+      "unit_id": "e680aebc0a480f0c",
+      "node_id": "resampling_patchification",
+      "field": "why_it_matters",
+      "text": "The role of Striding, pooling, patchification & up/downsampling is to connect Images, video & spatial grids, Scalars, vectors, matrices & tensors to downstream capabilities including U-Nets & encoder–decoder convnets, Vision Transformers & Perceiver-style latent models."
+    },
+    {
+      "unit_id": "707e29aa80d93bd0",
+      "node_id": "resampling_patchification",
+      "field": "examples[1]",
+      "text": "substrate for U-Nets & encoder–decoder convnets"
+    },
+    {
+      "unit_id": "0c0c85102b110815",
+      "node_id": "resampling_patchification",
+      "field": "examples[2]",
+      "text": "substrate for Vision Transformers & Perceiver-style latent models"
+    },
+    {
+      "unit_id": "427b814a7c618895",
+      "node_id": "resampling_patchification",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Images, video & spatial grids, Scalars, vectors, matrices & tensors."
+    },
+    {
+      "unit_id": "65203368ef2801d4",
+      "node_id": "resampling_patchification",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "Striding, pooling, patchification & up/downsampling uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "198cc307dfbe3b8a",
+      "node_id": "resampling_patchification",
+      "field": "dependencies.tensors.rationale",
+      "text": "Striding, pooling, patchification & up/downsampling uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "a37ac877a1b67111",
+      "node_id": "resampling_patchification",
+      "field": "dependencies.convolution.rationale",
+      "text": "Striding, pooling, patchification & up/downsampling is assembled in part from the mechanism or model component Convolution & local filters."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "c41b064213cde3e7",
+      "node_id": "resampling_patchification",
+      "dependency_id": "spatial_grids",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Striding, pooling, patchification & up/downsampling uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "d40e7ee34dc3118c",
+      "node_id": "resampling_patchification",
+      "dependency_id": "tensors",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Striding, pooling, patchification & up/downsampling uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "c4ae85bc600f49a3",
+      "node_id": "resampling_patchification",
+      "dependency_id": "convolution",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Striding, pooling, patchification & up/downsampling is assembled in part from the mechanism or model component Convolution & local filters."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/resampling_patchification.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

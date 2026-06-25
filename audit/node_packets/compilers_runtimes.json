@@ -1,0 +1,177 @@
+{
+  "node_id": "compilers_runtimes",
+  "label": "Graph compilers, runtimes & operator fusion",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "compilers_runtimes",
+    "label": "Graph compilers, runtimes & operator fusion",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "performance"
+    ],
+    "aliases": [],
+    "definition": "Graph compilers and inference runtimes transform model programs through tracing, lowering, scheduling, operator fusion, code generation, and device-specific execution.",
+    "why_it_matters": "The role of Graph compilers, runtimes & operator fusion is to connect Programming languages, compilers & type systems, CUDA, ROCm, Triton & custom kernels to downstream capabilities including Model servers & inference runtimes, Quantized inference & compressed deployment, Structured-decoding runtimes.",
+    "examples": [
+      "substrate for Model servers & inference runtimes",
+      "substrate for Quantized inference & compressed deployment",
+      "substrate for Structured-decoding runtimes"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Programming languages, compilers & type systems, CUDA, ROCm, Triton & custom kernels."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_ddia"
+    ],
+    "dependencies": [
+      {
+        "id": "programming_languages_types",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Graph compilers, runtimes & operator fusion turns Programming languages, compilers & type systems into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "gpu_kernels",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Graph compilers, runtimes & operator fusion turns CUDA, ROCm, Triton & custom kernels into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Graph compilers, runtimes & operator fusion turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "17b0751509affb3c",
+      "node_id": "compilers_runtimes",
+      "field": "definition",
+      "text": "Graph compilers and inference runtimes transform model programs through tracing, lowering, scheduling, operator fusion, code generation, and device-specific execution."
+    },
+    {
+      "unit_id": "725e9e7fc52f1406",
+      "node_id": "compilers_runtimes",
+      "field": "why_it_matters",
+      "text": "The role of Graph compilers, runtimes & operator fusion is to connect Programming languages, compilers & type systems, CUDA, ROCm, Triton & custom kernels to downstream capabilities including Model servers & inference runtimes, Quantized inference & compressed deployment, Structured-decoding runtimes."
+    },
+    {
+      "unit_id": "fe2159e4ff801b46",
+      "node_id": "compilers_runtimes",
+      "field": "examples[1]",
+      "text": "substrate for Model servers & inference runtimes"
+    },
+    {
+      "unit_id": "36a9649b78153eed",
+      "node_id": "compilers_runtimes",
+      "field": "examples[2]",
+      "text": "substrate for Quantized inference & compressed deployment"
+    },
+    {
+      "unit_id": "68cea656ad298213",
+      "node_id": "compilers_runtimes",
+      "field": "examples[3]",
+      "text": "substrate for Structured-decoding runtimes"
+    },
+    {
+      "unit_id": "2f2c7c792917ffd2",
+      "node_id": "compilers_runtimes",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Programming languages, compilers & type systems, CUDA, ROCm, Triton & custom kernels."
+    },
+    {
+      "unit_id": "1c3494184209c661",
+      "node_id": "compilers_runtimes",
+      "field": "dependencies.programming_languages_types.rationale",
+      "text": "Graph compilers, runtimes & operator fusion turns Programming languages, compilers & type systems into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "120aabc55d0e3d0e",
+      "node_id": "compilers_runtimes",
+      "field": "dependencies.gpu_kernels.rationale",
+      "text": "Graph compilers, runtimes & operator fusion turns CUDA, ROCm, Triton & custom kernels into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "fdafa80dd821a537",
+      "node_id": "compilers_runtimes",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Graph compilers, runtimes & operator fusion turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "32f282cc508108d1",
+      "node_id": "compilers_runtimes",
+      "dependency_id": "programming_languages_types",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Graph compilers, runtimes & operator fusion turns Programming languages, compilers & type systems into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "5e7879f6420e7ee0",
+      "node_id": "compilers_runtimes",
+      "dependency_id": "gpu_kernels",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Graph compilers, runtimes & operator fusion turns CUDA, ROCm, Triton & custom kernels into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "a82c3d917226ee4c",
+      "node_id": "compilers_runtimes",
+      "dependency_id": "algorithms_data_structures",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Graph compilers, runtimes & operator fusion turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_cuda_guide": {
+        "id": "ref_cuda_guide",
+        "title": "NVIDIA CUDA C Programming Guide",
+        "authors": "NVIDIA",
+        "year": 2024,
+        "url": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html"
+      },
+      "ref_rocm": {
+        "id": "ref_rocm",
+        "title": "ROCm Documentation",
+        "authors": "AMD",
+        "year": 2026,
+        "url": "https://rocm.docs.amd.com/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/compilers_runtimes.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

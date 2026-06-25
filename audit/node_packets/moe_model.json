@@ -1,0 +1,167 @@
+{
+  "node_id": "moe_model",
+  "label": "Mixture-of-experts models",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "moe_model",
+    "label": "Mixture-of-experts models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "moe",
+      "scaling"
+    ],
+    "aliases": [
+      "MoE"
+    ],
+    "definition": "A mixture-of-experts model routes each input or token through a selected subset of specialized subnetworks, expanding parameter capacity at controlled compute cost.",
+    "why_it_matters": "The role of Mixture-of-experts models is to connect Routing, conditional computation & mixture-of-experts, Affine transforms & dense layers to downstream capabilities including Distributed, mixed-precision & memory-efficient training, Tensor, pipeline, sequence & expert parallel inference.",
+    "examples": [
+      "substrate for Distributed, mixed-precision & memory-efficient training",
+      "substrate for Tensor, pipeline, sequence & expert parallel inference"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Routing, conditional computation & mixture-of-experts, Affine transforms & dense layers."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_moe"
+    ],
+    "dependencies": [
+      {
+        "id": "routing_moe",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Mixture-of-experts models is assembled in part from the mechanism or model component Routing, conditional computation & mixture-of-experts."
+      },
+      {
+        "id": "affine_dense",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Mixture-of-experts models is assembled in part from the mechanism or model component Affine transforms & dense layers."
+      },
+      {
+        "id": "distributed_systems",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Mixture-of-experts models rests on the formal or computational capabilities supplied by Distributed systems & networking."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "6000da6db3d3f1a4",
+      "node_id": "moe_model",
+      "field": "definition",
+      "text": "A mixture-of-experts model routes each input or token through a selected subset of specialized subnetworks, expanding parameter capacity at controlled compute cost."
+    },
+    {
+      "unit_id": "e71ca6932f90e7c9",
+      "node_id": "moe_model",
+      "field": "why_it_matters",
+      "text": "The role of Mixture-of-experts models is to connect Routing, conditional computation & mixture-of-experts, Affine transforms & dense layers to downstream capabilities including Distributed, mixed-precision & memory-efficient training, Tensor, pipeline, sequence & expert parallel inference."
+    },
+    {
+      "unit_id": "c3eef3575efa90cd",
+      "node_id": "moe_model",
+      "field": "examples[1]",
+      "text": "substrate for Distributed, mixed-precision & memory-efficient training"
+    },
+    {
+      "unit_id": "07d168090e6d5867",
+      "node_id": "moe_model",
+      "field": "examples[2]",
+      "text": "substrate for Tensor, pipeline, sequence & expert parallel inference"
+    },
+    {
+      "unit_id": "b8dccb7d5190c0f1",
+      "node_id": "moe_model",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Routing, conditional computation & mixture-of-experts, Affine transforms & dense layers."
+    },
+    {
+      "unit_id": "59475a7fd6a21223",
+      "node_id": "moe_model",
+      "field": "dependencies.routing_moe.rationale",
+      "text": "Mixture-of-experts models is assembled in part from the mechanism or model component Routing, conditional computation & mixture-of-experts."
+    },
+    {
+      "unit_id": "66ed341eb66437a0",
+      "node_id": "moe_model",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Mixture-of-experts models is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "unit_id": "d4c1a34ad8c7d553",
+      "node_id": "moe_model",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Mixture-of-experts models rests on the formal or computational capabilities supplied by Distributed systems & networking."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6e6fa69c65990fb9",
+      "node_id": "moe_model",
+      "dependency_id": "routing_moe",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Mixture-of-experts models is assembled in part from the mechanism or model component Routing, conditional computation & mixture-of-experts."
+    },
+    {
+      "edge_id": "978b23b43ebfdf91",
+      "node_id": "moe_model",
+      "dependency_id": "affine_dense",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Mixture-of-experts models is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "edge_id": "8900147e562879db",
+      "node_id": "moe_model",
+      "dependency_id": "distributed_systems",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Mixture-of-experts models rests on the formal or computational capabilities supplied by Distributed systems & networking."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_moe": {
+        "id": "ref_moe",
+        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+        "authors": "Shazeer et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1701.06538"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/moe_model.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

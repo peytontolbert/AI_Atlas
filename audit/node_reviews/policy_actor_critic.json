@@ -1,0 +1,150 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "4cfcea48f80e21ff",
+      "node_id": "policy_actor_critic",
+      "field": "definition",
+      "text": "Policies are optimized directly, often with a learned value or critic to reduce variance and guide improvement.",
+      "source_ids": ["ref_rlbook"],
+      "evidence_location": "Sutton & Barto RL book, policy-gradient and actor-critic method chapters, including value-function baselines/critics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The definition matches standard policy-gradient and actor-critic material in the cited source."
+    },
+    {
+      "unit_id": "1442cf43b36e0dad",
+      "node_id": "policy_actor_critic",
+      "field": "why_it_matters",
+      "text": "The role of Policy-gradient & actor–critic objectives is to connect Reinforcement learning, Bellman, temporal-difference & value objectives to downstream capabilities including Reward-model training, RLHF & RLAIF, Vision–language–action models, Group Relative Policy Optimization (GRPO).",
+      "source_ids": ["ref_rlbook", "ref_pml"],
+      "evidence_location": "Sutton & Barto RL book, policy-gradient and actor-critic chapters; packet sources do not include direct RLHF, VLA, or GRPO evidence.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The RL and value-objective connections are supported, but several downstream capabilities are not directly supported by the cited packet sources."
+    },
+    {
+      "unit_id": "dbcf3c90750660b7",
+      "node_id": "policy_actor_critic",
+      "field": "examples[1]",
+      "text": "substrate for Reward-model training, RLHF & RLAIF",
+      "source_ids": ["ref_rlbook"],
+      "evidence_location": "Sutton & Barto RL book, policy-gradient/actor-critic methods; no packet source directly covering RLHF/RLAIF reward-model training.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Policy optimization is relevant to RLHF, but the packet does not cite an RLHF/RLAIF source for this node."
+    },
+    {
+      "unit_id": "7bc62e5360c09645",
+      "node_id": "policy_actor_critic",
+      "field": "examples[2]",
+      "text": "substrate for Vision–language–action models",
+      "source_ids": ["ref_rlbook"],
+      "evidence_location": "Sutton & Barto RL book, general policy optimization material; no packet source specifically addresses vision-language-action models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The cited evidence does not directly support the VLA downstream example."
+    },
+    {
+      "unit_id": "dd6f3a0a5bd7a52d",
+      "node_id": "policy_actor_critic",
+      "field": "examples[3]",
+      "text": "substrate for Group Relative Policy Optimization (GRPO)",
+      "source_ids": ["ref_rlbook"],
+      "evidence_location": "Sutton & Barto RL book, policy-gradient methods; no packet source specifically addresses GRPO.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The packet sources do not establish GRPO or its relation to actor-critic objectives."
+    },
+    {
+      "unit_id": "68b5cddc463af0c3",
+      "node_id": "policy_actor_critic",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Reinforcement learning, Bellman, temporal-difference & value objectives.",
+      "source_ids": ["ref_rlbook"],
+      "evidence_location": "Sutton & Barto RL book, policy-gradient and actor-critic objective material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependencies are supported; the generic objective-mismatch limitation is not directly sourced."
+    },
+    {
+      "unit_id": "ff1e34ea8d64d240",
+      "node_id": "policy_actor_critic",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Policy-gradient & actor–critic objectives uses Reinforcement learning as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_rlbook"],
+      "evidence_location": "Sutton & Barto RL book, policy-gradient and actor-critic chapters.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Policy-gradient and actor-critic objectives are directly RL methods."
+    },
+    {
+      "unit_id": "4ecec0f50fb13690",
+      "node_id": "policy_actor_critic",
+      "field": "dependencies.bellman_td.rationale",
+      "text": "Policy-gradient & actor–critic objectives is learned, selected, or evaluated using the objective family Bellman, temporal-difference & value objectives.",
+      "source_ids": ["ref_rlbook"],
+      "evidence_location": "Sutton & Barto RL book, actor-critic methods with critic/value-function learning and TD-style updates.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Actor-critic methods use value/critic estimates, often TD-learned; the exact 'optimizes_for' rationale is atlas wording."
+    },
+    {
+      "unit_id": "7d01c2e361da65f5",
+      "node_id": "policy_actor_critic",
+      "field": "dependencies.optimization.rationale",
+      "text": "Policy-gradient & actor–critic objectives uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_rlbook"],
+      "evidence_location": "Sutton & Barto RL book, policy-gradient optimization methods.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Policy-gradient methods directly optimize policy parameters."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "d56f71304149f1d7",
+      "node_id": "policy_actor_critic",
+      "dependency_id": "reinforcement_learning",
+      "source_ids": ["ref_rlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Policy-gradient and actor-critic methods are core RL methods.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a0e637fa3c36ddc7",
+      "node_id": "policy_actor_critic",
+      "dependency_id": "bellman_td",
+      "source_ids": ["ref_rlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Actor-critic methods commonly use value/TD critics, but 'optimizes_for' is less precise than a uses/evaluated-with relation.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2e450fbcd86074f9",
+      "node_id": "policy_actor_critic",
+      "dependency_id": "optimization",
+      "source_ids": ["ref_rlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Direct policy optimization supports the edge and common strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

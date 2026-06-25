@@ -1,0 +1,183 @@
+{
+  "node_id": "knn_naive_bayes",
+  "label": "k-NN & Naive Bayes",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "knn_naive_bayes",
+    "label": "k-NN & Naive Bayes",
+    "layer": "model",
+    "tags": [
+      "model",
+      "classical"
+    ],
+    "aliases": [],
+    "definition": "k-nearest-neighbor methods predict from nearby stored examples, while Naive Bayes applies Bayes’ rule under class-conditional feature assumptions.",
+    "why_it_matters": "The role of k-NN & Naive Bayes is to connect Datasets, sampling & splits, Embeddings & distributed representations to downstream capabilities including Recommendation, ranking & personalization, Tabular predictive analytics & decision support.",
+    "examples": [
+      "substrate for Recommendation, ranking & personalization",
+      "substrate for Tabular predictive analytics & decision support"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Datasets, sampling & splits, Embeddings & distributed representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "datasets_sampling",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "k-NN & Naive Bayes consumes, emits, or organizes information using Datasets, sampling & splits."
+      },
+      {
+        "id": "embeddings",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "k-NN & Naive Bayes consumes, emits, or organizes information using Embeddings & distributed representations."
+      },
+      {
+        "id": "bayesian_approx_inference",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "k-NN & Naive Bayes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "k-NN & Naive Bayes follows the learning setup expressed by Supervised learning."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "ea7d20d4e7e8d203",
+      "node_id": "knn_naive_bayes",
+      "field": "definition",
+      "text": "k-nearest-neighbor methods predict from nearby stored examples, while Naive Bayes applies Bayes’ rule under class-conditional feature assumptions."
+    },
+    {
+      "unit_id": "4658e0ef4230cdea",
+      "node_id": "knn_naive_bayes",
+      "field": "why_it_matters",
+      "text": "The role of k-NN & Naive Bayes is to connect Datasets, sampling & splits, Embeddings & distributed representations to downstream capabilities including Recommendation, ranking & personalization, Tabular predictive analytics & decision support."
+    },
+    {
+      "unit_id": "de604ff07774fbbc",
+      "node_id": "knn_naive_bayes",
+      "field": "examples[1]",
+      "text": "substrate for Recommendation, ranking & personalization"
+    },
+    {
+      "unit_id": "e04fdfb7faa38afb",
+      "node_id": "knn_naive_bayes",
+      "field": "examples[2]",
+      "text": "substrate for Tabular predictive analytics & decision support"
+    },
+    {
+      "unit_id": "bfb6f4447f2fc94e",
+      "node_id": "knn_naive_bayes",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Datasets, sampling & splits, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "3e327d61f802995d",
+      "node_id": "knn_naive_bayes",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "k-NN & Naive Bayes consumes, emits, or organizes information using Datasets, sampling & splits."
+    },
+    {
+      "unit_id": "aeb571b7fc798b4a",
+      "node_id": "knn_naive_bayes",
+      "field": "dependencies.embeddings.rationale",
+      "text": "k-NN & Naive Bayes consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "5b0f88b388cf6225",
+      "node_id": "knn_naive_bayes",
+      "field": "dependencies.bayesian_approx_inference.rationale",
+      "text": "k-NN & Naive Bayes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "unit_id": "b4fbdfdeace17642",
+      "node_id": "knn_naive_bayes",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "k-NN & Naive Bayes follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "7630008faff54f76",
+      "node_id": "knn_naive_bayes",
+      "dependency_id": "datasets_sampling",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "k-NN & Naive Bayes consumes, emits, or organizes information using Datasets, sampling & splits."
+    },
+    {
+      "edge_id": "3017e24da255b3df",
+      "node_id": "knn_naive_bayes",
+      "dependency_id": "embeddings",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "k-NN & Naive Bayes consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "edge_id": "d664942c26c6ffbc",
+      "node_id": "knn_naive_bayes",
+      "dependency_id": "bayesian_approx_inference",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "k-NN & Naive Bayes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "edge_id": "843ca6c1091a24ee",
+      "node_id": "knn_naive_bayes",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "k-NN & Naive Bayes follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/knn_naive_bayes.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

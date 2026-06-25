@@ -1,0 +1,171 @@
+{
+  "node_id": "long_context_compression",
+  "label": "Long-context attention, compression & summarization memory",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "long_context_compression",
+    "label": "Long-context attention, compression & summarization memory",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "sequence",
+      "efficiency"
+    ],
+    "aliases": [],
+    "definition": "Long-context memory compresses, summarizes, selects, or hierarchically indexes prior tokens so useful information can survive beyond a model’s active window.",
+    "why_it_matters": "The role of Long-context attention, compression & summarization memory is to connect Sparse, local, linear & recurrent attention, Context windows & working memory to downstream capabilities including Neural search, RAG & question answering, Tutoring, translation & knowledge work.",
+    "examples": [
+      "substrate for Neural search, RAG & question answering",
+      "substrate for Tutoring, translation & knowledge work"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sparse, local, linear & recurrent attention, Context windows & working memory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "efficient_attention",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Long-context attention, compression & summarization memory uses Sparse, local, linear & recurrent attention as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "context_working_memory",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Long-context attention, compression & summarization memory stores, selects, or obtains information through Context windows & working memory."
+      },
+      {
+        "id": "embeddings",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "Long-context attention, compression & summarization memory stores, selects, or obtains information through Embeddings & distributed representations."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "029d6b86b98ef84f",
+      "node_id": "long_context_compression",
+      "field": "definition",
+      "text": "Long-context memory compresses, summarizes, selects, or hierarchically indexes prior tokens so useful information can survive beyond a model’s active window."
+    },
+    {
+      "unit_id": "75fddf0ef3789183",
+      "node_id": "long_context_compression",
+      "field": "why_it_matters",
+      "text": "The role of Long-context attention, compression & summarization memory is to connect Sparse, local, linear & recurrent attention, Context windows & working memory to downstream capabilities including Neural search, RAG & question answering, Tutoring, translation & knowledge work."
+    },
+    {
+      "unit_id": "656826d30819a590",
+      "node_id": "long_context_compression",
+      "field": "examples[1]",
+      "text": "substrate for Neural search, RAG & question answering"
+    },
+    {
+      "unit_id": "23a0de248d2da841",
+      "node_id": "long_context_compression",
+      "field": "examples[2]",
+      "text": "substrate for Tutoring, translation & knowledge work"
+    },
+    {
+      "unit_id": "fec41074ed2861c9",
+      "node_id": "long_context_compression",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sparse, local, linear & recurrent attention, Context windows & working memory."
+    },
+    {
+      "unit_id": "bd6d059d28e1f470",
+      "node_id": "long_context_compression",
+      "field": "dependencies.efficient_attention.rationale",
+      "text": "Long-context attention, compression & summarization memory uses Sparse, local, linear & recurrent attention as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "d3f30120921af5bc",
+      "node_id": "long_context_compression",
+      "field": "dependencies.context_working_memory.rationale",
+      "text": "Long-context attention, compression & summarization memory stores, selects, or obtains information through Context windows & working memory."
+    },
+    {
+      "unit_id": "64b480a187bfd7ca",
+      "node_id": "long_context_compression",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Long-context attention, compression & summarization memory stores, selects, or obtains information through Embeddings & distributed representations."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "efd0220b3de0b5b4",
+      "node_id": "long_context_compression",
+      "dependency_id": "efficient_attention",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Long-context attention, compression & summarization memory uses Sparse, local, linear & recurrent attention as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "5f75f66552c62b4e",
+      "node_id": "long_context_compression",
+      "dependency_id": "context_working_memory",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Long-context attention, compression & summarization memory stores, selects, or obtains information through Context windows & working memory."
+    },
+    {
+      "edge_id": "f2cdb70f3d36b28d",
+      "node_id": "long_context_compression",
+      "dependency_id": "embeddings",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "Long-context attention, compression & summarization memory stores, selects, or obtains information through Embeddings & distributed representations."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/long_context_compression.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

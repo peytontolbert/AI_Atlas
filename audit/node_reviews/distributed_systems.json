@@ -1,0 +1,157 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "11cfc1c32eba3bfe",
+      "node_id": "distributed_systems",
+      "field": "definition",
+      "text": "Coordination, communication, consistency, scheduling, and fault tolerance enable large-scale training and serving.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/1902.03305",
+        "url:https://arxiv.org/abs/2106.08545",
+        "ref_aima"
+      ],
+      "evidence_location": "Consistency models survey abstract; Fault-tolerance in Distributed Optimization and Machine Learning abstract; AIMA contents.html lines 459-477 and 768-772",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support consistency, replication, scalability, availability, fault tolerance, communication issues, and distributed machine learning/optimization. Scheduling and serving are not directly covered by the inspected passages, so the definition is synthesis."
+    },
+    {
+      "unit_id": "4052fa82dedd5f37",
+      "node_id": "distributed_systems",
+      "field": "why_it_matters",
+      "text": "The role of Distributed systems & networking is to connect Algorithms & data structures, Complexity & computability to downstream capabilities including Multimodal, simulated & streaming data, Federated & privacy-preserving learning, Routing, conditional computation & mixture-of-experts.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2101.12143",
+        "url:https://arxiv.org/abs/2106.08545"
+      ],
+      "evidence_location": "AIMA contents.html lines 75-79 and 768-772; Security, Fault Tolerance, and Communication Complexity in Distributed Systems abstract; Fault-tolerance in Distributed Optimization and Machine Learning abstract",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The evidence supports algorithms, complexity, communication complexity, fault tolerance, and distributed machine learning. It does not directly support the specific downstream atlas capabilities listed."
+    },
+    {
+      "unit_id": "d304b82d2688c74e",
+      "node_id": "distributed_systems",
+      "field": "examples[1]",
+      "text": "substrate for Multimodal, simulated & streaming data",
+      "source_ids": [
+        "url:https://arxiv.org/abs/1902.03305"
+      ],
+      "evidence_location": "Consistency models survey abstract mentioning big data challenges, data access, scalability, and availability",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Distributed systems evidence supports scalability and big-data access, but the inspected evidence does not specifically address multimodal, simulated, or streaming data."
+    },
+    {
+      "unit_id": "3d505485b17d044c",
+      "node_id": "distributed_systems",
+      "field": "examples[2]",
+      "text": "substrate for Federated & privacy-preserving learning",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2101.12143",
+        "url:https://arxiv.org/abs/2106.08545"
+      ],
+      "evidence_location": "Security, Fault Tolerance, and Communication Complexity in Distributed Systems abstract; Fault-tolerance in Distributed Optimization and Machine Learning abstract",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support private inputs distributed among processors, correctness/privacy despite faults, and distributed machine learning. They do not use the exact term federated learning in the inspected passages, so this remains synthesis."
+    },
+    {
+      "unit_id": "859fb55c85be858a",
+      "node_id": "distributed_systems",
+      "field": "examples[3]",
+      "text": "substrate for Routing, conditional computation & mixture-of-experts",
+      "source_ids": [
+        "url:https://arxiv.org/abs/1902.03305"
+      ],
+      "evidence_location": "Consistency models survey abstract mentioning distributed systems, scalability, availability, and latency",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The inspected distributed-systems evidence does not directly support routing, conditional computation, or mixture-of-experts as downstream capabilities."
+    },
+    {
+      "unit_id": "e759acb98e1d4388",
+      "node_id": "distributed_systems",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Algorithms & data structures, Complexity & computability.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2101.12143",
+        "url:https://arxiv.org/abs/1902.03305"
+      ],
+      "evidence_location": "AIMA contents.html lines 75-79 and 768-772; Security, Fault Tolerance, and Communication Complexity in Distributed Systems abstract; Consistency models survey abstract",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support algorithmic and complexity dependencies and the existence of formal/mathematical distributed-system models. They do not directly state the empirical-mismatch warning."
+    },
+    {
+      "unit_id": "c5add226d9ef685b",
+      "node_id": "distributed_systems",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Distributed systems & networking rests on the formal or computational capabilities supplied by Algorithms & data structures.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2106.08545"
+      ],
+      "evidence_location": "AIMA contents.html lines 75-79; Fault-tolerance in Distributed Optimization and Machine Learning abstract",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Distributed optimization and fault-tolerant distributed algorithms support algorithms as a prerequisite. The exact rationale wording is graph synthesis."
+    },
+    {
+      "unit_id": "a12f030a17aa0cc8",
+      "node_id": "distributed_systems",
+      "field": "dependencies.complexity_computability.rationale",
+      "text": "Distributed systems & networking rests on the formal or computational capabilities supplied by Complexity & computability.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2101.12143"
+      ],
+      "evidence_location": "AIMA contents.html lines 768-772; Security, Fault Tolerance, and Communication Complexity in Distributed Systems abstract",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Communication complexity and computational complexity are directly relevant to distributed-system protocols. Computability itself is not directly supported by the inspected evidence."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "b0df3aa60f83e733",
+      "node_id": "distributed_systems",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2106.08545"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Distributed-system protocols and distributed optimization rely on algorithms and data structures. Core strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "666e8e164bc76f78",
+      "node_id": "distributed_systems",
+      "dependency_id": "complexity_computability",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2101.12143"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Communication and computational complexity are relevant, but the packet evidence does not support computability as strongly as complexity. A narrower dependency label would be easier to defend.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

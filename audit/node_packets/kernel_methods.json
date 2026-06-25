@@ -1,0 +1,156 @@
+{
+  "node_id": "kernel_methods",
+  "label": "Kernels & implicit feature maps",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "kernel_methods",
+    "label": "Kernels & implicit feature maps",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "classical"
+    ],
+    "aliases": [],
+    "definition": "Similarity functions represent high-dimensional features without explicitly constructing them.",
+    "why_it_matters": "The role of Kernels & implicit feature maps is to connect Linear algebra, Probability theory to downstream capabilities including Support vector & kernel machines, Gaussian processes.",
+    "examples": [
+      "substrate for Support vector & kernel machines",
+      "substrate for Gaussian processes"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Linear algebra, Probability theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "linear_algebra",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Kernels & implicit feature maps uses Linear algebra as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "probability",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Kernels & implicit feature maps uses Probability theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Kernels & implicit feature maps uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "7eaee0bf416377ac",
+      "node_id": "kernel_methods",
+      "field": "definition",
+      "text": "Similarity functions represent high-dimensional features without explicitly constructing them."
+    },
+    {
+      "unit_id": "97a98ae5a5a2584c",
+      "node_id": "kernel_methods",
+      "field": "why_it_matters",
+      "text": "The role of Kernels & implicit feature maps is to connect Linear algebra, Probability theory to downstream capabilities including Support vector & kernel machines, Gaussian processes."
+    },
+    {
+      "unit_id": "b0e1b9c1cede5ece",
+      "node_id": "kernel_methods",
+      "field": "examples[1]",
+      "text": "substrate for Support vector & kernel machines"
+    },
+    {
+      "unit_id": "ee05b890c91a484b",
+      "node_id": "kernel_methods",
+      "field": "examples[2]",
+      "text": "substrate for Gaussian processes"
+    },
+    {
+      "unit_id": "957f79633b865085",
+      "node_id": "kernel_methods",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Linear algebra, Probability theory."
+    },
+    {
+      "unit_id": "90067560756cc34f",
+      "node_id": "kernel_methods",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Kernels & implicit feature maps uses Linear algebra as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "3423b7024dd70c73",
+      "node_id": "kernel_methods",
+      "field": "dependencies.probability.rationale",
+      "text": "Kernels & implicit feature maps uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "8743b457e8cb262d",
+      "node_id": "kernel_methods",
+      "field": "dependencies.optimization.rationale",
+      "text": "Kernels & implicit feature maps uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "9d5a3c468b07b04d",
+      "node_id": "kernel_methods",
+      "dependency_id": "linear_algebra",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Kernels & implicit feature maps uses Linear algebra as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "3cf95377997bd09d",
+      "node_id": "kernel_methods",
+      "dependency_id": "probability",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Kernels & implicit feature maps uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "c9d9e24ef1f53859",
+      "node_id": "kernel_methods",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Kernels & implicit feature maps uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/kernel_methods.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

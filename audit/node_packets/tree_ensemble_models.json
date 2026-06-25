@@ -1,0 +1,170 @@
+{
+  "node_id": "tree_ensemble_models",
+  "label": "Decision trees, random forests & boosted trees",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "tree_ensemble_models",
+    "label": "Decision trees, random forests & boosted trees",
+    "layer": "model",
+    "tags": [
+      "model",
+      "classical"
+    ],
+    "aliases": [],
+    "definition": "Decision trees recursively partition feature space; random forests average decorrelated trees, and gradient boosting adds trees that correct earlier residual error.",
+    "why_it_matters": "The role of Decision trees, random forests & boosted trees is to connect Recursive partitioning & ensembling, Supervised learning to downstream capabilities including Recommendation, ranking & personalization, Tabular predictive analytics & decision support.",
+    "examples": [
+      "substrate for Recommendation, ranking & personalization",
+      "substrate for Tabular predictive analytics & decision support"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Recursive partitioning & ensembling, Supervised learning."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "recursive_partition_ensemble",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Decision trees, random forests & boosted trees is assembled in part from the mechanism or model component Recursive partitioning & ensembling."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "Decision trees, random forests & boosted trees follows the learning setup expressed by Supervised learning."
+      },
+      {
+        "id": "regression_losses",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Decision trees, random forests & boosted trees is learned, selected, or evaluated using the objective family Regression losses (MSE, MAE, robust)."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "2916c958c1e76c01",
+      "node_id": "tree_ensemble_models",
+      "field": "definition",
+      "text": "Decision trees recursively partition feature space; random forests average decorrelated trees, and gradient boosting adds trees that correct earlier residual error."
+    },
+    {
+      "unit_id": "0f7cacdddd82e1c1",
+      "node_id": "tree_ensemble_models",
+      "field": "why_it_matters",
+      "text": "The role of Decision trees, random forests & boosted trees is to connect Recursive partitioning & ensembling, Supervised learning to downstream capabilities including Recommendation, ranking & personalization, Tabular predictive analytics & decision support."
+    },
+    {
+      "unit_id": "0f49df7043ed7589",
+      "node_id": "tree_ensemble_models",
+      "field": "examples[1]",
+      "text": "substrate for Recommendation, ranking & personalization"
+    },
+    {
+      "unit_id": "ef75dda025d150b7",
+      "node_id": "tree_ensemble_models",
+      "field": "examples[2]",
+      "text": "substrate for Tabular predictive analytics & decision support"
+    },
+    {
+      "unit_id": "0dccf595437c4a41",
+      "node_id": "tree_ensemble_models",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Recursive partitioning & ensembling, Supervised learning."
+    },
+    {
+      "unit_id": "f84fbf76bd5b4712",
+      "node_id": "tree_ensemble_models",
+      "field": "dependencies.recursive_partition_ensemble.rationale",
+      "text": "Decision trees, random forests & boosted trees is assembled in part from the mechanism or model component Recursive partitioning & ensembling."
+    },
+    {
+      "unit_id": "e28d79ddab07a03d",
+      "node_id": "tree_ensemble_models",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Decision trees, random forests & boosted trees follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "unit_id": "59429303339129e9",
+      "node_id": "tree_ensemble_models",
+      "field": "dependencies.regression_losses.rationale",
+      "text": "Decision trees, random forests & boosted trees is learned, selected, or evaluated using the objective family Regression losses (MSE, MAE, robust)."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "0b477f5ed6e5d56d",
+      "node_id": "tree_ensemble_models",
+      "dependency_id": "recursive_partition_ensemble",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Decision trees, random forests & boosted trees is assembled in part from the mechanism or model component Recursive partitioning & ensembling."
+    },
+    {
+      "edge_id": "71f6286597c78146",
+      "node_id": "tree_ensemble_models",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "Decision trees, random forests & boosted trees follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "edge_id": "5f25328b37d244eb",
+      "node_id": "tree_ensemble_models",
+      "dependency_id": "regression_losses",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Decision trees, random forests & boosted trees is learned, selected, or evaluated using the objective family Regression losses (MSE, MAE, robust)."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/tree_ensemble_models.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

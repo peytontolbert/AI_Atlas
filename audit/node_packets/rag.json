@@ -1,0 +1,200 @@
+{
+  "node_id": "rag",
+  "label": "Retrieval-augmented generation",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "rag",
+    "label": "Retrieval-augmented generation",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "retrieval",
+      "foundation-models"
+    ],
+    "aliases": [
+      "retrieval-augmented generation"
+    ],
+    "definition": "A generator conditions on retrieved non-parametric evidence so knowledge can be updated and attributed externally.",
+    "why_it_matters": "The role of Retrieval-augmented generation is to connect Dense vector retrieval, Hybrid retrieval & reranking to downstream capabilities including Graph RAG & structured retrieval, Provenance, citations & evidence tracking, Multimodal assistants & vision-language systems.",
+    "examples": [
+      "substrate for Graph RAG & structured retrieval",
+      "substrate for Provenance, citations & evidence tracking",
+      "substrate for Multimodal assistants & vision-language systems"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Dense vector retrieval, Hybrid retrieval & reranking."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_rag"
+    ],
+    "dependencies": [
+      {
+        "id": "dense_retrieval",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Retrieval-augmented generation stores, selects, or obtains information through Dense vector retrieval."
+      },
+      {
+        "id": "hybrid_reranking",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Retrieval-augmented generation stores, selects, or obtains information through Hybrid retrieval & reranking."
+      },
+      {
+        "id": "decoder_only_transformer",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Retrieval-augmented generation uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "external_retrieval",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Retrieval-augmented generation uses External retrieval & ranking as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b58d5bfd18a5afcf",
+      "node_id": "rag",
+      "field": "definition",
+      "text": "A generator conditions on retrieved non-parametric evidence so knowledge can be updated and attributed externally."
+    },
+    {
+      "unit_id": "8944bfa37a4b45cc",
+      "node_id": "rag",
+      "field": "why_it_matters",
+      "text": "The role of Retrieval-augmented generation is to connect Dense vector retrieval, Hybrid retrieval & reranking to downstream capabilities including Graph RAG & structured retrieval, Provenance, citations & evidence tracking, Multimodal assistants & vision-language systems."
+    },
+    {
+      "unit_id": "a752df04e518351a",
+      "node_id": "rag",
+      "field": "examples[1]",
+      "text": "substrate for Graph RAG & structured retrieval"
+    },
+    {
+      "unit_id": "fb6bdc16f3f06cb6",
+      "node_id": "rag",
+      "field": "examples[2]",
+      "text": "substrate for Provenance, citations & evidence tracking"
+    },
+    {
+      "unit_id": "49d669190d4f5bd6",
+      "node_id": "rag",
+      "field": "examples[3]",
+      "text": "substrate for Multimodal assistants & vision-language systems"
+    },
+    {
+      "unit_id": "008533c9c2f7de9d",
+      "node_id": "rag",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Dense vector retrieval, Hybrid retrieval & reranking."
+    },
+    {
+      "unit_id": "1982d1dd69f998b3",
+      "node_id": "rag",
+      "field": "dependencies.dense_retrieval.rationale",
+      "text": "Retrieval-augmented generation stores, selects, or obtains information through Dense vector retrieval."
+    },
+    {
+      "unit_id": "733004ac171eaed3",
+      "node_id": "rag",
+      "field": "dependencies.hybrid_reranking.rationale",
+      "text": "Retrieval-augmented generation stores, selects, or obtains information through Hybrid retrieval & reranking."
+    },
+    {
+      "unit_id": "5474584dd4e8a9bf",
+      "node_id": "rag",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "Retrieval-augmented generation uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "4c7e4b828beb97c7",
+      "node_id": "rag",
+      "field": "dependencies.external_retrieval.rationale",
+      "text": "Retrieval-augmented generation uses External retrieval & ranking as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "b7528ae790aa72c1",
+      "node_id": "rag",
+      "dependency_id": "dense_retrieval",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Retrieval-augmented generation stores, selects, or obtains information through Dense vector retrieval."
+    },
+    {
+      "edge_id": "b4d6f27c1b1cae32",
+      "node_id": "rag",
+      "dependency_id": "hybrid_reranking",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Retrieval-augmented generation stores, selects, or obtains information through Hybrid retrieval & reranking."
+    },
+    {
+      "edge_id": "41e651015296d216",
+      "node_id": "rag",
+      "dependency_id": "decoder_only_transformer",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Retrieval-augmented generation uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "3a1077a82cc94019",
+      "node_id": "rag",
+      "dependency_id": "external_retrieval",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Retrieval-augmented generation uses External retrieval & ranking as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_rag": {
+        "id": "ref_rag",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "authors": "Lewis et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2005.11401"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/rag.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

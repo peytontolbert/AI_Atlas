@@ -1,0 +1,143 @@
+{
+  "node_id": "programming_languages_types",
+  "label": "Programming languages, compilers & type systems",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "programming_languages_types",
+    "label": "Programming languages, compilers & type systems",
+    "layer": "foundation",
+    "tags": [
+      "computer-science",
+      "code"
+    ],
+    "aliases": [],
+    "definition": "Syntax, semantics, intermediate representations, compilation, and types structure executable reasoning and software tools.",
+    "why_it_matters": "The role of Programming languages, compilers & type systems is to connect Discrete mathematics & logic, Algorithms & data structures to downstream capabilities including Tokens, vocabularies & symbolic units, Programs, ASTs, bytecode & intermediate representations, Graph compilers, runtimes & operator fusion.",
+    "examples": [
+      "substrate for Tokens, vocabularies & symbolic units",
+      "substrate for Programs, ASTs, bytecode & intermediate representations",
+      "substrate for Graph compilers, runtimes & operator fusion"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Discrete mathematics & logic, Algorithms & data structures."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "discrete_math_logic",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Programming languages, compilers & type systems rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Programming languages, compilers & type systems rests on the formal or computational capabilities supplied by Algorithms & data structures."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "31d75d2754126d53",
+      "node_id": "programming_languages_types",
+      "field": "definition",
+      "text": "Syntax, semantics, intermediate representations, compilation, and types structure executable reasoning and software tools."
+    },
+    {
+      "unit_id": "9f1b7d730aad6fe6",
+      "node_id": "programming_languages_types",
+      "field": "why_it_matters",
+      "text": "The role of Programming languages, compilers & type systems is to connect Discrete mathematics & logic, Algorithms & data structures to downstream capabilities including Tokens, vocabularies & symbolic units, Programs, ASTs, bytecode & intermediate representations, Graph compilers, runtimes & operator fusion."
+    },
+    {
+      "unit_id": "f2f3250ea2aceabc",
+      "node_id": "programming_languages_types",
+      "field": "examples[1]",
+      "text": "substrate for Tokens, vocabularies & symbolic units"
+    },
+    {
+      "unit_id": "328dee03cb04f0cb",
+      "node_id": "programming_languages_types",
+      "field": "examples[2]",
+      "text": "substrate for Programs, ASTs, bytecode & intermediate representations"
+    },
+    {
+      "unit_id": "2598e7ecff6822fc",
+      "node_id": "programming_languages_types",
+      "field": "examples[3]",
+      "text": "substrate for Graph compilers, runtimes & operator fusion"
+    },
+    {
+      "unit_id": "0116e004556ce58d",
+      "node_id": "programming_languages_types",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Discrete mathematics & logic, Algorithms & data structures."
+    },
+    {
+      "unit_id": "5b3a58c6356d9493",
+      "node_id": "programming_languages_types",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Programming languages, compilers & type systems rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    },
+    {
+      "unit_id": "7032ca21328cbd0a",
+      "node_id": "programming_languages_types",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Programming languages, compilers & type systems rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "7ed74115984d5ad5",
+      "node_id": "programming_languages_types",
+      "dependency_id": "discrete_math_logic",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Programming languages, compilers & type systems rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    },
+    {
+      "edge_id": "81c10ae7bd887c30",
+      "node_id": "programming_languages_types",
+      "dependency_id": "algorithms_data_structures",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Programming languages, compilers & type systems rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/programming_languages_types.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

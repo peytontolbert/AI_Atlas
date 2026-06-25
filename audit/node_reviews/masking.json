@@ -1,0 +1,178 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "498f6f508554ba65",
+      "node_id": "masking",
+      "field": "definition",
+      "text": "Visibility constraints define which positions or features can interact or must be predicted.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning supports broad regularization, sequence, and representation-learning background; masking-specific support is indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition is consistent with causal and masked modeling, but direct verification needs masking-specific sources."
+    },
+    {
+      "unit_id": "212b1d6a3ba1c988",
+      "node_id": "masking",
+      "field": "why_it_matters",
+      "text": "The role of Causal, masked & structured masking is to connect Tokens, vocabularies & symbolic units, Sequences, events & time series to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Joint-embedding predictive architectures.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support token/sequence background but not the full downstream transformer and JEPA list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Causal and masked modeling are relevant, but the downstream list needs specific citations."
+    },
+    {
+      "unit_id": "dd91a522bf6f3ec7",
+      "node_id": "masking",
+      "field": "examples[1]",
+      "text": "substrate for Encoder–decoder transformers",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support sequence modeling background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Attention masks are common in encoder-decoder transformers, but the packet source is not direct."
+    },
+    {
+      "unit_id": "6d86bca65cea33ab",
+      "node_id": "masking",
+      "field": "examples[2]",
+      "text": "substrate for Decoder-only causal transformers",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support autoregressive/sequence background, with causal transformer support indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Causal masks are central to decoder-only causal transformers, but a transformer source would verify directly."
+    },
+    {
+      "unit_id": "f955078d5a4631a8",
+      "node_id": "masking",
+      "field": "examples[3]",
+      "text": "substrate for Joint-embedding predictive architectures",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "The cited source does not directly support JEPA masking relationships.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Masked prediction is relevant to JEPA-style systems, but a JEPA source is needed."
+    },
+    {
+      "unit_id": "acb5d8f584d770bb",
+      "node_id": "masking",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Tokens, vocabularies & symbolic units, Sequences, events & time series.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support token and sequence background, not the generic limitation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependencies are plausible; the limitation statement is not directly sourced."
+    },
+    {
+      "unit_id": "f0f76548449938a1",
+      "node_id": "masking",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Causal, masked & structured masking uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML supports symbolic and sequence modeling background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Token masking is a central case, though structured masks may also apply beyond tokens."
+    },
+    {
+      "unit_id": "8a190be9b41d2bb6",
+      "node_id": "masking",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Causal, masked & structured masking uses Sequences, events & time series as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML supports probabilistic sequence and time-series modeling background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Causal masks are sequence-order constraints, making this dependency defensible."
+    },
+    {
+      "unit_id": "f993486658242820",
+      "node_id": "masking",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "Causal, masked & structured masking uses Images, video & spatial grids as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "The cited source provides broad data/modal background but not direct spatial masking evidence.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Spatial masks are common in vision and video, but this common dependency needs a more specific masked-vision source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "6ccdd9f24ae782ea",
+      "node_id": "masking",
+      "dependency_id": "tokens_vocab",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Token masking is a core case of this mechanism.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "e560faefdf4b9f61",
+      "node_id": "masking",
+      "dependency_id": "sequences_time",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Causal masking depends on ordered sequence structure; core strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "620565476967d964",
+      "node_id": "masking",
+      "dependency_id": "spatial_grids",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Structured spatial masks are common, and common strength is defensible though direct source support is absent.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

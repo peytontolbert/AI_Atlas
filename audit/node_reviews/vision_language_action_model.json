@@ -1,0 +1,174 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "6f7c020c58ca1cea",
+      "node_id": "vision_language_action_model",
+      "field": "definition",
+      "text": "Vision–language–action models map visual observations and language instructions to temporally grounded actions or action tokens for embodied control.",
+      "source_ids": ["ref_rt2"],
+      "evidence_location": "RT-2 describes vision-language-action models that co-fine-tune web-scale vision-language models and robotics data, representing robot actions as tokens for robotic control.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited RT-2 source directly supports the vision/language-to-action-token framing."
+    },
+    {
+      "unit_id": "3a164939da9fd651",
+      "node_id": "vision_language_action_model",
+      "field": "why_it_matters",
+      "text": "They connect foundation-model perception and instruction following directly to physical or simulated behavior.",
+      "source_ids": ["ref_rt2", "ref_sim2real"],
+      "evidence_location": "RT-2 connects vision-language model knowledge to robotic control; the sim-to-real survey supports embodied transfer challenges.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The exact wording is synthesized, but the core link from perception/instructions to behavior is supported."
+    },
+    {
+      "unit_id": "4db6e0180f8d16d0",
+      "node_id": "vision_language_action_model",
+      "field": "examples[1]",
+      "text": "robot manipulation policies",
+      "source_ids": ["ref_rt2"],
+      "evidence_location": "RT-2 evaluates robotic control/manipulation tasks using VLA-style action tokens.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported by the cited robotics VLA source."
+    },
+    {
+      "unit_id": "995a00b43cb59fd0",
+      "node_id": "vision_language_action_model",
+      "field": "examples[2]",
+      "text": "screen-action prediction",
+      "source_ids": ["ref_react", "ref_rt2"],
+      "evidence_location": "ReAct covers language-model reasoning and acting, while RT-2 covers VLA action prediction for robots; neither directly verifies screen-action prediction.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The cited sources do not directly support screen-action prediction as a VLA example."
+    },
+    {
+      "unit_id": "8eacce2f9ff946bb",
+      "node_id": "vision_language_action_model",
+      "field": "examples[3]",
+      "text": "navigation from language",
+      "source_ids": ["ref_rt2", "ref_sim2real"],
+      "evidence_location": "The cited sources support embodied AI and robotic control broadly but do not directly establish navigation from language as an example.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Plausible within embodied VLA systems, but the exact example needs a navigation-specific citation."
+    },
+    {
+      "unit_id": "a0143028ebf18357",
+      "node_id": "vision_language_action_model",
+      "field": "limitations[1]",
+      "text": "Action data are expensive, embodiment shifts are severe, and mistakes can create real physical consequences.",
+      "source_ids": ["ref_rt2", "ref_sim2real"],
+      "evidence_location": "RT-2 motivates scarce robot data and transfer from web-scale knowledge; the sim-to-real survey covers embodiment and transfer gaps in robotics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The limitation is well supported by synthesis, though the physical-consequence wording is general robotics safety reasoning."
+    },
+    {
+      "unit_id": "3b124e7194fe0400",
+      "node_id": "vision_language_action_model",
+      "field": "dependencies.multimodal_foundation.rationale",
+      "text": "Vision–language–action models extends or specializes the architecture family Multimodal foundation models.",
+      "source_ids": ["ref_rt2"],
+      "evidence_location": "RT-2 transfers web-scale vision-language model knowledge to robotic control.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relationship is supported for RT-2-like systems, though 'multimodal foundation models' is atlas taxonomy wording."
+    },
+    {
+      "unit_id": "8d0e31bcd8f84b46",
+      "node_id": "vision_language_action_model",
+      "field": "dependencies.world_model.rationale",
+      "text": "Vision–language–action models extends or specializes the architecture family Latent world models & predictive dynamics.",
+      "source_ids": ["ref_dreamer", "ref_rt2"],
+      "evidence_location": "Dreamer supports world-model predictive dynamics; RT-2 supports VLA robotics, but RT-2 is not presented as a latent world model.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Some embodied agents may use world models, but this dependency is not directly established for VLA models generally."
+    },
+    {
+      "unit_id": "47254388f27aca65",
+      "node_id": "vision_language_action_model",
+      "field": "dependencies.policy_actor_critic.rationale",
+      "text": "Vision–language–action models is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives.",
+      "source_ids": ["ref_rlbook", "ref_rt2"],
+      "evidence_location": "Sutton & Barto supports policy-gradient and actor-critic methods; RT-2 is a VLA robotics model but is not primarily described as actor-critic training.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Actor-critic methods are relevant to robotics policies but not directly supported as a common VLA objective here."
+    },
+    {
+      "unit_id": "59af2c7f430e02f6",
+      "node_id": "vision_language_action_model",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Vision–language–action models consumes, emits, or organizes information using Sequences, events & time series.",
+      "source_ids": ["ref_rt2"],
+      "evidence_location": "RT-2 action-token formulation and robotic control tasks support temporally ordered action outputs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sequence/time representation claim is defensible for action-token policies."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "c1b2080c38194271",
+      "node_id": "vision_language_action_model",
+      "dependency_id": "multimodal_foundation",
+      "source_ids": ["ref_rt2"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "RT-2 supports the multimodal foundation-model lineage for VLA models.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "07268234c630f39a",
+      "node_id": "vision_language_action_model",
+      "dependency_id": "world_model",
+      "source_ids": ["ref_dreamer", "ref_rt2"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "World models are relevant to embodied control but are not shown as a common component of VLA models by the cited sources.",
+      "relationship_type_supported": false,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "7ffc907ca4496fad",
+      "node_id": "vision_language_action_model",
+      "dependency_id": "policy_actor_critic",
+      "source_ids": ["ref_rlbook", "ref_rt2"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Policy-gradient/actor-critic methods are relevant background but not established as a common VLA optimization dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "88cc5422a96f906c",
+      "node_id": "vision_language_action_model",
+      "dependency_id": "sequences_time",
+      "source_ids": ["ref_rt2"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Action-token and embodied-control setup supports temporal sequence representation.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

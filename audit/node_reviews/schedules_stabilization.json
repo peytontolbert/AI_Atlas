@@ -1,0 +1,138 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "e1633614986b4c0f",
+      "node_id": "schedules_stabilization",
+      "field": "definition",
+      "text": "Learning-rate schedules, warmup, clipping, initialization, gradient scaling, and related controls keep optimization inside numerically stable regimes.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8 optimization strategies, learning rates, initialization, and gradient clipping/exploding-gradient discussion.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Learning rates, initialization, and clipping are supported as optimization/training controls. Warmup and gradient scaling are not directly supported by the 2016 source, and 'numerically stable regimes' is broad."
+    },
+    {
+      "unit_id": "10c896dc9fbf5b84",
+      "node_id": "schedules_stabilization",
+      "field": "why_it_matters",
+      "text": "The role of Learning-rate schedules, warmup & stabilization is to connect Adam, Adafactor & adaptive optimizers, Normalization & standardization to downstream capabilities including Large-scale pretraining.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8 optimization and Chapter 8.7 batch normalization; Chapter 11 practical methodology.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Optimizer and normalization connections are partially supported. Adafactor, warmup, and large-scale pretraining are not directly supported by the cited textbook."
+    },
+    {
+      "unit_id": "abaa85c3c4c72126",
+      "node_id": "schedules_stabilization",
+      "field": "examples[1]",
+      "text": "substrate for Large-scale pretraining",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 11 practical methodology and Chapter 8 optimization for training deep models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The inspected source predates modern large-scale pretraining practice and does not directly support this downstream claim."
+    },
+    {
+      "unit_id": "437b57819dfd5d1a",
+      "node_id": "schedules_stabilization",
+      "field": "examples[2]",
+      "text": "combined with Adam, Adafactor & adaptive optimizers",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.5 adaptive learning rates and broader learning-rate/optimization discussion.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Adam and adaptive learning-rate context are supported; Adafactor and warmup-specific combination are not."
+    },
+    {
+      "unit_id": "2c674df4962765a8",
+      "node_id": "schedules_stabilization",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Adam, Adafactor & adaptive optimizers, Normalization & standardization.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapters 5, 8, and 11 on generalization, optimization, hyperparameters, and practical methodology.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Hyperparameter and optimization sensitivity are supported. Data quality, compute budget, random variation, evaluation contamination, and Adafactor are not directly supported."
+    },
+    {
+      "unit_id": "8a87f9a1edcd08c9",
+      "node_id": "schedules_stabilization",
+      "field": "dependencies.adaptive_optimizers.rationale",
+      "text": "Learning-rate schedules, warmup & stabilization uses Adam, Adafactor & adaptive optimizers as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.5 adaptive learning rates and optimization strategy sections.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Adaptive learning-rate methods are relevant, but schedules/stabilization do not necessarily use adaptive optimizers, and Adafactor is not sourced."
+    },
+    {
+      "unit_id": "bb232185479f1e29",
+      "node_id": "schedules_stabilization",
+      "field": "dependencies.normalization.rationale",
+      "text": "Learning-rate schedules, warmup & stabilization uses Normalization & standardization as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.7 batch normalization and optimization-stabilization context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Batch normalization is presented as improving optimization/training behavior. The reusable-ingredient phrasing is synthesized."
+    },
+    {
+      "unit_id": "ae2bdf25b4dbbd79",
+      "node_id": "schedules_stabilization",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "Learning-rate schedules, warmup & stabilization uses Numerical analysis as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8 optimization, numerical gradient behavior, and training stability discussion.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Stability controls for iterative optimization are numerical in nature; the exact dependency wording is synthesized."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "bf795c6e1c9ae6a5",
+      "node_id": "schedules_stabilization",
+      "dependency_id": "adaptive_optimizers",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Adaptive learning-rate methods are related, but schedules/warmup/stabilization do not require Adam-like optimizers. Core strength is not well supported.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "30bc2a9d26a31a41",
+      "node_id": "schedules_stabilization",
+      "dependency_id": "normalization",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Normalization is a common stabilization technique for training; core strength is plausible but not exclusive.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0acfe0b72191557d",
+      "node_id": "schedules_stabilization",
+      "dependency_id": "numerical_methods",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Iterative training stability is a numerical optimization issue; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

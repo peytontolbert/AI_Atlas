@@ -1,0 +1,170 @@
+{
+  "node_id": "sparse_retrieval",
+  "label": "Sparse lexical retrieval",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "sparse_retrieval",
+    "label": "Sparse lexical retrieval",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "retrieval"
+    ],
+    "aliases": [],
+    "definition": "Sparse lexical retrieval ranks documents from token overlap or learned term weights, typically through inverted indexes and relevance scoring such as BM25.",
+    "why_it_matters": "The role of Sparse lexical retrieval is to connect External retrieval & ranking, Tokens, vocabularies & symbolic units to downstream capabilities including Hybrid retrieval & reranking, External databases, APIs & live tools.",
+    "examples": [
+      "substrate for Hybrid retrieval & reranking",
+      "substrate for External databases, APIs & live tools"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include External retrieval & ranking, Tokens, vocabularies & symbolic units."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "external_retrieval",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Sparse lexical retrieval uses External retrieval & ranking as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "tokens_vocab",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Sparse lexical retrieval stores, selects, or obtains information through Tokens, vocabularies & symbolic units."
+      },
+      {
+        "id": "databases_ir",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Sparse lexical retrieval uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3bae7bc094d8a578",
+      "node_id": "sparse_retrieval",
+      "field": "definition",
+      "text": "Sparse lexical retrieval ranks documents from token overlap or learned term weights, typically through inverted indexes and relevance scoring such as BM25."
+    },
+    {
+      "unit_id": "b93c22d1af61470e",
+      "node_id": "sparse_retrieval",
+      "field": "why_it_matters",
+      "text": "The role of Sparse lexical retrieval is to connect External retrieval & ranking, Tokens, vocabularies & symbolic units to downstream capabilities including Hybrid retrieval & reranking, External databases, APIs & live tools."
+    },
+    {
+      "unit_id": "78ba75b701a1f774",
+      "node_id": "sparse_retrieval",
+      "field": "examples[1]",
+      "text": "substrate for Hybrid retrieval & reranking"
+    },
+    {
+      "unit_id": "3ff60f0be7f4bb5e",
+      "node_id": "sparse_retrieval",
+      "field": "examples[2]",
+      "text": "substrate for External databases, APIs & live tools"
+    },
+    {
+      "unit_id": "f13ea0306591b07f",
+      "node_id": "sparse_retrieval",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include External retrieval & ranking, Tokens, vocabularies & symbolic units."
+    },
+    {
+      "unit_id": "0d53f68c86dc752c",
+      "node_id": "sparse_retrieval",
+      "field": "dependencies.external_retrieval.rationale",
+      "text": "Sparse lexical retrieval uses External retrieval & ranking as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "32d4c7c7130aaa8e",
+      "node_id": "sparse_retrieval",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Sparse lexical retrieval stores, selects, or obtains information through Tokens, vocabularies & symbolic units."
+    },
+    {
+      "unit_id": "b6e48bcdb759e14f",
+      "node_id": "sparse_retrieval",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Sparse lexical retrieval uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "7f3bc85fe804ec0c",
+      "node_id": "sparse_retrieval",
+      "dependency_id": "external_retrieval",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Sparse lexical retrieval uses External retrieval & ranking as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "8b11e22e49c6ad33",
+      "node_id": "sparse_retrieval",
+      "dependency_id": "tokens_vocab",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Sparse lexical retrieval stores, selects, or obtains information through Tokens, vocabularies & symbolic units."
+    },
+    {
+      "edge_id": "4d6bff8935e4cd5e",
+      "node_id": "sparse_retrieval",
+      "dependency_id": "databases_ir",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Sparse lexical retrieval uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/sparse_retrieval.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

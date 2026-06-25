@@ -1,0 +1,177 @@
+{
+  "node_id": "memory_read_write",
+  "label": "Differentiable memory read/write",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "memory_read_write",
+    "label": "Differentiable memory read/write",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "memory"
+    ],
+    "aliases": [],
+    "definition": "Content- or address-based operations store and retrieve structured state inside a differentiable model.",
+    "why_it_matters": "The role of Differentiable memory read/write is to connect Recurrence & feedback state, Embeddings & distributed representations to downstream capabilities including LSTMs & GRUs, xLSTM & linear-recurrent hybrids, Energy-based, Hopfield & Boltzmann models.",
+    "examples": [
+      "substrate for LSTMs & GRUs",
+      "substrate for xLSTM & linear-recurrent hybrids",
+      "substrate for Energy-based, Hopfield & Boltzmann models"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Recurrence & feedback state, Embeddings & distributed representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "recurrence",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Differentiable memory read/write is assembled in part from the mechanism or model component Recurrence & feedback state."
+      },
+      {
+        "id": "embeddings",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Differentiable memory read/write uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Differentiable memory read/write uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "51eab69a974aafde",
+      "node_id": "memory_read_write",
+      "field": "definition",
+      "text": "Content- or address-based operations store and retrieve structured state inside a differentiable model."
+    },
+    {
+      "unit_id": "40c4d045bf77143d",
+      "node_id": "memory_read_write",
+      "field": "why_it_matters",
+      "text": "The role of Differentiable memory read/write is to connect Recurrence & feedback state, Embeddings & distributed representations to downstream capabilities including LSTMs & GRUs, xLSTM & linear-recurrent hybrids, Energy-based, Hopfield & Boltzmann models."
+    },
+    {
+      "unit_id": "33f6628a82603baf",
+      "node_id": "memory_read_write",
+      "field": "examples[1]",
+      "text": "substrate for LSTMs & GRUs"
+    },
+    {
+      "unit_id": "094394d1f0d7b9a6",
+      "node_id": "memory_read_write",
+      "field": "examples[2]",
+      "text": "substrate for xLSTM & linear-recurrent hybrids"
+    },
+    {
+      "unit_id": "e4301d5dc3b36618",
+      "node_id": "memory_read_write",
+      "field": "examples[3]",
+      "text": "substrate for Energy-based, Hopfield & Boltzmann models"
+    },
+    {
+      "unit_id": "4f4f465c03cb2533",
+      "node_id": "memory_read_write",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Recurrence & feedback state, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "ae1280b72ea3000f",
+      "node_id": "memory_read_write",
+      "field": "dependencies.recurrence.rationale",
+      "text": "Differentiable memory read/write is assembled in part from the mechanism or model component Recurrence & feedback state."
+    },
+    {
+      "unit_id": "83bc314dcc4d1af0",
+      "node_id": "memory_read_write",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Differentiable memory read/write uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f74a99546fb2f99d",
+      "node_id": "memory_read_write",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Differentiable memory read/write uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "1dfd1b775d1893e8",
+      "node_id": "memory_read_write",
+      "dependency_id": "recurrence",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Differentiable memory read/write is assembled in part from the mechanism or model component Recurrence & feedback state."
+    },
+    {
+      "edge_id": "a1d83c11778d40df",
+      "node_id": "memory_read_write",
+      "dependency_id": "embeddings",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Differentiable memory read/write uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "dab162e0bb0a515d",
+      "node_id": "memory_read_write",
+      "dependency_id": "algorithms_data_structures",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Differentiable memory read/write uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/memory_read_write.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

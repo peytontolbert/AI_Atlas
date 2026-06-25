@@ -1,0 +1,207 @@
+{
+  "node_id": "hybrid_transformer_ssm",
+  "label": "Transformer–SSM & recurrent hybrid models",
+  "layer": "model",
+  "editorial_status": "curated",
+  "node": {
+    "id": "hybrid_transformer_ssm",
+    "label": "Transformer–SSM & recurrent hybrid models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "sequence",
+      "hybrid",
+      "efficiency"
+    ],
+    "aliases": [],
+    "definition": "Hybrid sequence models interleave attention with state-space or recurrent blocks to combine content-addressable interaction with linear-time persistent state.",
+    "why_it_matters": "They provide a design continuum between global attention quality and recurrent memory efficiency.",
+    "examples": [
+      "attention–Mamba hybrids",
+      "recurrent–attention language models"
+    ],
+    "limitations": [
+      "Block balance, state handling, parallelism, and fair scaling comparisons remain architecture-specific."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_mamba",
+      "ref_xlstm"
+    ],
+    "dependencies": [
+      {
+        "id": "transformer",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family Transformers."
+      },
+      {
+        "id": "mamba_selective_ssm",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family Selective state-space models (Mamba family)."
+      },
+      {
+        "id": "xlstm_rwkv",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family xLSTM & linear-recurrent hybrids."
+      },
+      {
+        "id": "gating",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Transformer–SSM & recurrent hybrid models is assembled in part from the mechanism or model component Gating & multiplicative control."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b1c4258873b43d5f",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "definition",
+      "text": "Hybrid sequence models interleave attention with state-space or recurrent blocks to combine content-addressable interaction with linear-time persistent state."
+    },
+    {
+      "unit_id": "da70ba305f4ad9ac",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "why_it_matters",
+      "text": "They provide a design continuum between global attention quality and recurrent memory efficiency."
+    },
+    {
+      "unit_id": "eec82241352b2f87",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "examples[1]",
+      "text": "attention–Mamba hybrids"
+    },
+    {
+      "unit_id": "830bb57d1e5a6fc6",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "examples[2]",
+      "text": "recurrent–attention language models"
+    },
+    {
+      "unit_id": "84e3712872fb5b91",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "limitations[1]",
+      "text": "Block balance, state handling, parallelism, and fair scaling comparisons remain architecture-specific."
+    },
+    {
+      "unit_id": "c84e92343ad97dca",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "dependencies.transformer.rationale",
+      "text": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family Transformers."
+    },
+    {
+      "unit_id": "b578aeaba68262a1",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "dependencies.mamba_selective_ssm.rationale",
+      "text": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family Selective state-space models (Mamba family)."
+    },
+    {
+      "unit_id": "0b1f1665d41615f6",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "dependencies.xlstm_rwkv.rationale",
+      "text": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family xLSTM & linear-recurrent hybrids."
+    },
+    {
+      "unit_id": "6e22258983d36ce8",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "dependencies.gating.rationale",
+      "text": "Transformer–SSM & recurrent hybrid models is assembled in part from the mechanism or model component Gating & multiplicative control."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "e20f7a65a6d70785",
+      "node_id": "hybrid_transformer_ssm",
+      "dependency_id": "transformer",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family Transformers."
+    },
+    {
+      "edge_id": "0b9a34d64ec591a3",
+      "node_id": "hybrid_transformer_ssm",
+      "dependency_id": "mamba_selective_ssm",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family Selective state-space models (Mamba family)."
+    },
+    {
+      "edge_id": "955bc64d4250746f",
+      "node_id": "hybrid_transformer_ssm",
+      "dependency_id": "xlstm_rwkv",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family xLSTM & linear-recurrent hybrids."
+    },
+    {
+      "edge_id": "02a738b54bde2dfc",
+      "node_id": "hybrid_transformer_ssm",
+      "dependency_id": "gating",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Transformer–SSM & recurrent hybrid models is assembled in part from the mechanism or model component Gating & multiplicative control."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_mamba": {
+        "id": "ref_mamba",
+        "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+        "authors": "Gu & Dao",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2312.00752"
+      },
+      "ref_xlstm": {
+        "id": "ref_xlstm",
+        "title": "xLSTM: Extended Long Short-Term Memory",
+        "authors": "Beck et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2405.04517"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_mamba": {
+        "id": "ref_mamba",
+        "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+        "authors": "Gu & Dao",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2312.00752"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      "ref_xlstm": {
+        "id": "ref_xlstm",
+        "title": "xLSTM: Extended Long Short-Term Memory",
+        "authors": "Beck et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2405.04517"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/hybrid_transformer_ssm.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

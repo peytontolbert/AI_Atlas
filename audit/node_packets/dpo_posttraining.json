@@ -1,0 +1,213 @@
+{
+  "node_id": "dpo_posttraining",
+  "label": "Direct and online preference optimization",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "dpo_posttraining",
+    "label": "Direct and online preference optimization",
+    "layer": "training",
+    "tags": [
+      "training",
+      "alignment"
+    ],
+    "aliases": [
+      "DPO"
+    ],
+    "definition": "Direct preference optimization and related objectives convert preferred–rejected response pairs into a policy update without an explicit online actor–critic loop.",
+    "why_it_matters": "The role of Direct and online preference optimization is to connect Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning to downstream capabilities including Large language models, Conversational assistants & chatbots.",
+    "examples": [
+      "substrate for Large language models",
+      "substrate for Conversational assistants & chatbots"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dpo"
+    ],
+    "dependencies": [
+      {
+        "id": "preference_optimization",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families)."
+      },
+      {
+        "id": "sft_instruction",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Direct and online preference optimization uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "preference_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Direct and online preference optimization uses Preference learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "process_reward_models",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Process supervision & step-level reward models."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "310e7002a6bd6c41",
+      "node_id": "dpo_posttraining",
+      "field": "definition",
+      "text": "Direct preference optimization and related objectives convert preferred–rejected response pairs into a policy update without an explicit online actor–critic loop."
+    },
+    {
+      "unit_id": "4bd125debdd49bac",
+      "node_id": "dpo_posttraining",
+      "field": "why_it_matters",
+      "text": "The role of Direct and online preference optimization is to connect Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning to downstream capabilities including Large language models, Conversational assistants & chatbots."
+    },
+    {
+      "unit_id": "b6d1bc524027f69e",
+      "node_id": "dpo_posttraining",
+      "field": "examples[1]",
+      "text": "substrate for Large language models"
+    },
+    {
+      "unit_id": "d4143ca2bbb667a7",
+      "node_id": "dpo_posttraining",
+      "field": "examples[2]",
+      "text": "substrate for Conversational assistants & chatbots"
+    },
+    {
+      "unit_id": "7378503abdd12200",
+      "node_id": "dpo_posttraining",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning."
+    },
+    {
+      "unit_id": "08130a6f335801eb",
+      "node_id": "dpo_posttraining",
+      "field": "dependencies.preference_optimization.rationale",
+      "text": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families)."
+    },
+    {
+      "unit_id": "3d1faa1f50978941",
+      "node_id": "dpo_posttraining",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "Direct and online preference optimization uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "c106f93ae195dee8",
+      "node_id": "dpo_posttraining",
+      "field": "dependencies.preference_learning.rationale",
+      "text": "Direct and online preference optimization uses Preference learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "c73c8435d4ca1d04",
+      "node_id": "dpo_posttraining",
+      "field": "dependencies.process_reward_models.rationale",
+      "text": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Process supervision & step-level reward models."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "90951d88ef3f2cb9",
+      "node_id": "dpo_posttraining",
+      "dependency_id": "preference_optimization",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families)."
+    },
+    {
+      "edge_id": "0a32e5b7438fd1b7",
+      "node_id": "dpo_posttraining",
+      "dependency_id": "sft_instruction",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Direct and online preference optimization uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "7b8c18150a18e174",
+      "node_id": "dpo_posttraining",
+      "dependency_id": "preference_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Direct and online preference optimization uses Preference learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "5423b5cf9c2d9fb4",
+      "node_id": "dpo_posttraining",
+      "dependency_id": "process_reward_models",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Process supervision & step-level reward models."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dpo": {
+        "id": "ref_dpo",
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.18290"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_dpo": {
+        "id": "ref_dpo",
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.18290"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlhf": {
+        "id": "ref_rlhf",
+        "title": "Training language models to follow instructions with human feedback",
+        "authors": "Ouyang et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.02155"
+      },
+      "ref_rlvr": {
+        "id": "ref_rlvr",
+        "title": "Reinforcement Learning with Verifiable Rewards: A Survey",
+        "authors": "Liu et al.",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2506.14245"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/dpo_posttraining.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

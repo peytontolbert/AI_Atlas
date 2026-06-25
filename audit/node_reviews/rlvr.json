@@ -1,0 +1,230 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "bade3d3afc665b33",
+      "node_id": "rlvr",
+      "field": "definition",
+      "text": "RLVR improves a policy using rewards computed by deterministic or highly reliable verifiers such as tests, exact answers, simulators, or proof kernels.",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The RLVR survey directly supports RL with automatically checkable/verifiable rewards; examples such as tests, exact answers, simulators, and proof checkers match the survey scope."
+    },
+    {
+      "unit_id": "515e26e2a4c21cd8",
+      "node_id": "rlvr",
+      "field": "why_it_matters",
+      "text": "It scales post-training feedback in domains where correctness can be checked automatically.",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The survey frames verifiable rewards as scalable feedback where correctness can be automatically checked."
+    },
+    {
+      "unit_id": "62d6234ca6352bb3",
+      "node_id": "rlvr",
+      "field": "examples[1]",
+      "text": "math-answer verification",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Math-answer verification is a central RLVR example."
+    },
+    {
+      "unit_id": "5b5b37f11735fdb9",
+      "node_id": "rlvr",
+      "field": "examples[2]",
+      "text": "unit-test-driven code RL",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Code tasks with executable tests are a standard verifiable-reward example."
+    },
+    {
+      "unit_id": "ae4fc74b68c72a37",
+      "node_id": "rlvr",
+      "field": "examples[3]",
+      "text": "formal-proof reward",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Formal proof checking fits verifiable rewards, but the exact wording is synthesized from the broader verifier category."
+    },
+    {
+      "unit_id": "9a613408bffc29fd",
+      "node_id": "rlvr",
+      "field": "limitations[1]",
+      "text": "Verifiable endpoints can reward shortcuts, reduce solution diversity, or omit qualities that are difficult to formalize.",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Shortcut/reward-hacking and omission of non-formalized qualities are known verifier limitations, but the exact compound sentence is synthesized."
+    },
+    {
+      "unit_id": "59e409ff26a9103a",
+      "node_id": "rlvr",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Reinforcement learning with verifiable rewards (RLVR) uses Reinforcement learning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "RLVR is explicitly a reinforcement-learning approach."
+    },
+    {
+      "unit_id": "72d9b201ceab1eaa",
+      "node_id": "rlvr",
+      "field": "dependencies.outcome_verifiers.rationale",
+      "text": "Reinforcement learning with verifiable rewards (RLVR) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards.",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Verifiable outcome rewards are the defining objective/evaluation signal."
+    },
+    {
+      "unit_id": "e93b33120ef8e7aa",
+      "node_id": "rlvr",
+      "field": "dependencies.grpo.rationale",
+      "text": "Reinforcement learning with verifiable rewards (RLVR) uses Group Relative Policy Optimization (GRPO) as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "GRPO is one algorithm used for RLVR-style reasoning, but RLVR does not inherently require GRPO."
+    },
+    {
+      "unit_id": "dacc5b9e97cbb0ca",
+      "node_id": "rlvr",
+      "field": "dependencies.augmentation_synthetic.rationale",
+      "text": "Reinforcement learning with verifiable rewards (RLVR) uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Synthetic data can appear in RLVR pipelines, but it is not clearly a reusable ingredient of RLVR itself from the cited sources."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "0fe633b3f597c5a2",
+      "node_id": "rlvr",
+      "dependency_id": "reinforcement_learning",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Reinforcement learning is definitional for RLVR.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "d673b1e3139c49b9",
+      "node_id": "rlvr",
+      "dependency_id": "outcome_verifiers",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Outcome/verifiable rewards are definitional and core.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "827bbdacb74507f8",
+      "node_id": "rlvr",
+      "dependency_id": "grpo",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "GRPO is a common RLVR optimizer, but not required by the concept.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2d8b7ffed8786eb1",
+      "node_id": "rlvr",
+      "dependency_id": "augmentation_synthetic",
+      "source_ids": [
+        "ref_rlvr",
+        "ref_grpo",
+        "ref_rlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Synthetic data is adjacent but not clearly a common dependency of RLVR from the packet citations.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

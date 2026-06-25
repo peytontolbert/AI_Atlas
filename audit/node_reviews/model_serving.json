@@ -1,0 +1,186 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "494597c343224977",
+      "node_id": "model_serving",
+      "field": "definition",
+      "text": "Model servers expose trained models through batching, scheduling, caching, versioning, routing, and runtime-specific execution interfaces.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "evidence_location": "DDIA supports service/system concerns and Transformer supports model architecture, but the cited sources do not directly document model serving features such as batching, versioning, routing, and inference runtime interfaces.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a model-serving/runtime source for direct support."
+    },
+    {
+      "unit_id": "9883a88d19bea8fa",
+      "node_id": "model_serving",
+      "field": "why_it_matters",
+      "text": "The role of Model servers & inference runtimes is to connect Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints to downstream capabilities including Batching, admission control & GPU scheduling, Speculative, parallel & assisted decoding, Tensor, pipeline, sequence & expert parallel inference.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
+    },
+    {
+      "unit_id": "b8f3ad8b116b67ce",
+      "node_id": "model_serving",
+      "field": "examples[1]",
+      "text": "substrate for Batching, admission control & GPU scheduling",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "d0e38307c243c9a0",
+      "node_id": "model_serving",
+      "field": "examples[2]",
+      "text": "substrate for Speculative, parallel & assisted decoding",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "deb5abcf318b0609",
+      "node_id": "model_serving",
+      "field": "examples[3]",
+      "text": "substrate for Tensor, pipeline, sequence & expert parallel inference",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+    },
+    {
+      "unit_id": "5303391be7d79411",
+      "node_id": "model_serving",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+    },
+    {
+      "unit_id": "bd3604d8f0832512",
+      "node_id": "model_serving",
+      "field": "dependencies.compilers_runtimes.rationale",
+      "text": "Model servers & inference runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "592f762431d88d5c",
+      "node_id": "model_serving",
+      "field": "dependencies.storage_checkpoints.rationale",
+      "text": "Model servers & inference runtimes turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    },
+    {
+      "unit_id": "75982d1720e3c446",
+      "node_id": "model_serving",
+      "field": "dependencies.transformer.rationale",
+      "text": "Model servers & inference runtimes turns Transformers into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "be12143b35a3615a",
+      "node_id": "model_serving",
+      "dependency_id": "compilers_runtimes",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2b7b522ca861381f",
+      "node_id": "model_serving",
+      "dependency_id": "storage_checkpoints",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a701d35193b213ee",
+      "node_id": "model_serving",
+      "dependency_id": "transformer",
+      "source_ids": [
+        "ref_ddia",
+        "ref_transformer"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

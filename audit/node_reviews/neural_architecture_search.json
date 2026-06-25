@@ -1,0 +1,230 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "2d22b5b968e40d66",
+      "node_id": "neural_architecture_search",
+      "field": "definition",
+      "text": "Neural architecture search optimizes network topology, operations, width, depth, routing, or hardware placement with evolutionary, reinforcement, differentiable, or surrogate-based search.",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The NAS survey directly supports optimizing architectures/search spaces with evolutionary, reinforcement-learning, differentiable/gradient, and surrogate/performance-estimation methods."
+    },
+    {
+      "unit_id": "1cb50cecf6f7fb10",
+      "node_id": "neural_architecture_search",
+      "field": "why_it_matters",
+      "text": "It can discover architectures tuned to accuracy, latency, memory, energy, or device constraints.",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The NAS survey covers optimizing architecture for performance and efficiency constraints, including hardware-aware/efficient architecture search."
+    },
+    {
+      "unit_id": "5ca16eac228ba689",
+      "node_id": "neural_architecture_search",
+      "field": "examples[1]",
+      "text": "cell-based search",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Cell-based search spaces are directly covered in NAS literature."
+    },
+    {
+      "unit_id": "f61c656e2fa0d46a",
+      "node_id": "neural_architecture_search",
+      "field": "examples[2]",
+      "text": "hardware-aware supernet search",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Hardware-aware and supernet/one-shot search are covered in NAS literature."
+    },
+    {
+      "unit_id": "1dd5abe742a08c5f",
+      "node_id": "neural_architecture_search",
+      "field": "examples[3]",
+      "text": "differentiable architecture search",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Differentiable/gradient-based architecture search is directly covered."
+    },
+    {
+      "unit_id": "2d6efb3b1bc36cd5",
+      "node_id": "neural_architecture_search",
+      "field": "limitations[1]",
+      "text": "Search is expensive, proxy tasks can mislead, and reported gains may depend on narrow spaces or evaluation leakage.",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "NAS survey literature discusses high cost and proxy/evaluation issues; leakage wording is a broader synthesis."
+    },
+    {
+      "unit_id": "8ca711b26117ff97",
+      "node_id": "neural_architecture_search",
+      "field": "dependencies.automl_paradigm.rationale",
+      "text": "Neural architecture search uses AutoML & automated model design as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "NAS is a major AutoML subfield."
+    },
+    {
+      "unit_id": "df2aced7909fc5b1",
+      "node_id": "neural_architecture_search",
+      "field": "dependencies.evolutionary_population_learning.rationale",
+      "text": "Neural architecture search uses Evolutionary, swarm & population-based learning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Evolutionary search is a core NAS strategy."
+    },
+    {
+      "unit_id": "348c1051e6ea79c3",
+      "node_id": "neural_architecture_search",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Neural architecture search uses Reinforcement learning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Reinforcement learning is a standard NAS search strategy."
+    },
+    {
+      "unit_id": "664af04a4b8f3509",
+      "node_id": "neural_architecture_search",
+      "field": "dependencies.optimization.rationale",
+      "text": "Neural architecture search uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "NAS is an optimization/search problem, though the exact Optimization theory dependency is taxonomic."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "9aef1ab64c844229",
+      "node_id": "neural_architecture_search",
+      "dependency_id": "automl_paradigm",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "NAS is directly situated inside AutoML/automated model design.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a0bc41965061efb3",
+      "node_id": "neural_architecture_search",
+      "dependency_id": "evolutionary_population_learning",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Evolutionary NAS is a core search family.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "76de480f0cc12a5d",
+      "node_id": "neural_architecture_search",
+      "dependency_id": "reinforcement_learning",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "RL-based NAS is a standard, but not exclusive, method family.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ac003625a7c301aa",
+      "node_id": "neural_architecture_search",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "ref_nas",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Architecture search is an optimization problem; common strength is reasonable.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

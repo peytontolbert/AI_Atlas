@@ -1,0 +1,186 @@
+{
+  "node_id": "gan",
+  "label": "Generative adversarial networks",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "gan",
+    "label": "Generative adversarial networks",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "generative"
+    ],
+    "aliases": [
+      "generative adversarial network"
+    ],
+    "definition": "A generative adversarial network trains a generator against a discriminator whose feedback pressures generated samples toward the data distribution.",
+    "why_it_matters": "The role of Generative adversarial networks is to connect Adversarial minimax objectives, Adversarial examples & adversarial training to downstream capabilities including Image generation, editing & design.",
+    "examples": [
+      "substrate for Image generation, editing & design",
+      "combined with Adversarial minimax objectives"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Adversarial minimax objectives, Adversarial examples & adversarial training."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_gan"
+    ],
+    "dependencies": [
+      {
+        "id": "adversarial_minimax",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Generative adversarial networks is learned, selected, or evaluated using the objective family Adversarial minimax objectives."
+      },
+      {
+        "id": "adversarial_training_mechanism",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Generative adversarial networks is assembled in part from the mechanism or model component Adversarial examples & adversarial training."
+      },
+      {
+        "id": "cnn",
+        "type": "specializes",
+        "strength": "common",
+        "rationale": "Generative adversarial networks extends or specializes the architecture family Convolutional neural networks."
+      },
+      {
+        "id": "affine_dense",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Generative adversarial networks is assembled in part from the mechanism or model component Affine transforms & dense layers."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "f9b021ebf25c250f",
+      "node_id": "gan",
+      "field": "definition",
+      "text": "A generative adversarial network trains a generator against a discriminator whose feedback pressures generated samples toward the data distribution."
+    },
+    {
+      "unit_id": "77cdfcf8a849f767",
+      "node_id": "gan",
+      "field": "why_it_matters",
+      "text": "The role of Generative adversarial networks is to connect Adversarial minimax objectives, Adversarial examples & adversarial training to downstream capabilities including Image generation, editing & design."
+    },
+    {
+      "unit_id": "a4f869bdda4fa32c",
+      "node_id": "gan",
+      "field": "examples[1]",
+      "text": "substrate for Image generation, editing & design"
+    },
+    {
+      "unit_id": "317d3502d80e0e5b",
+      "node_id": "gan",
+      "field": "examples[2]",
+      "text": "combined with Adversarial minimax objectives"
+    },
+    {
+      "unit_id": "40ba12cfbb75fb47",
+      "node_id": "gan",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Adversarial minimax objectives, Adversarial examples & adversarial training."
+    },
+    {
+      "unit_id": "a664d0c31e1fc318",
+      "node_id": "gan",
+      "field": "dependencies.adversarial_minimax.rationale",
+      "text": "Generative adversarial networks is learned, selected, or evaluated using the objective family Adversarial minimax objectives."
+    },
+    {
+      "unit_id": "bf3b203cbfe5dded",
+      "node_id": "gan",
+      "field": "dependencies.adversarial_training_mechanism.rationale",
+      "text": "Generative adversarial networks is assembled in part from the mechanism or model component Adversarial examples & adversarial training."
+    },
+    {
+      "unit_id": "6c1e897052a397b4",
+      "node_id": "gan",
+      "field": "dependencies.cnn.rationale",
+      "text": "Generative adversarial networks extends or specializes the architecture family Convolutional neural networks."
+    },
+    {
+      "unit_id": "c02973c4657e3ee5",
+      "node_id": "gan",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Generative adversarial networks is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "1ac45a011bed9706",
+      "node_id": "gan",
+      "dependency_id": "adversarial_minimax",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Generative adversarial networks is learned, selected, or evaluated using the objective family Adversarial minimax objectives."
+    },
+    {
+      "edge_id": "5f4ecbee8d20af53",
+      "node_id": "gan",
+      "dependency_id": "adversarial_training_mechanism",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Generative adversarial networks is assembled in part from the mechanism or model component Adversarial examples & adversarial training."
+    },
+    {
+      "edge_id": "909d798238a641df",
+      "node_id": "gan",
+      "dependency_id": "cnn",
+      "type": "specializes",
+      "strength": "common",
+      "rationale": "Generative adversarial networks extends or specializes the architecture family Convolutional neural networks."
+    },
+    {
+      "edge_id": "23ab37aa21c80f57",
+      "node_id": "gan",
+      "dependency_id": "affine_dense",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Generative adversarial networks is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_gan": {
+        "id": "ref_gan",
+        "title": "Generative Adversarial Nets",
+        "authors": "Goodfellow et al.",
+        "year": 2014,
+        "url": "https://arxiv.org/abs/1406.2661"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/gan.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

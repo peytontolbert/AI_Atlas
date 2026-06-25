@@ -1,0 +1,170 @@
+{
+  "node_id": "calibration_evaluation",
+  "label": "Calibration, uncertainty & risk evaluation",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "calibration_evaluation",
+    "label": "Calibration, uncertainty & risk evaluation",
+    "layer": "alignment",
+    "tags": [
+      "evaluation",
+      "safety"
+    ],
+    "aliases": [],
+    "definition": "Calibration and risk evaluation test whether predicted probabilities, abstention scores, intervals, or confidence estimates match observed correctness and harm.",
+    "why_it_matters": "The role of Calibration, uncertainty & risk evaluation is to connect Calibration, uncertainty & risk objectives, Benchmarks, test suites & task metrics to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Medical imaging & clinical decision support, Tabular predictive analytics & decision support.",
+    "examples": [
+      "substrate for Time-series forecasting, anomaly & fraud detection",
+      "substrate for Medical imaging & clinical decision support",
+      "substrate for Tabular predictive analytics & decision support"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Calibration, uncertainty & risk objectives, Benchmarks, test suites & task metrics."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "calibration_uncertainty_objective",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Calibration, uncertainty & risk objectives."
+      },
+      {
+        "id": "benchmarks_metrics",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      },
+      {
+        "id": "distributions_uncertainty",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Distributions, uncertainty & beliefs."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "7bc4391ccba6cf48",
+      "node_id": "calibration_evaluation",
+      "field": "definition",
+      "text": "Calibration and risk evaluation test whether predicted probabilities, abstention scores, intervals, or confidence estimates match observed correctness and harm."
+    },
+    {
+      "unit_id": "b1f9a151bd559916",
+      "node_id": "calibration_evaluation",
+      "field": "why_it_matters",
+      "text": "The role of Calibration, uncertainty & risk evaluation is to connect Calibration, uncertainty & risk objectives, Benchmarks, test suites & task metrics to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Medical imaging & clinical decision support, Tabular predictive analytics & decision support."
+    },
+    {
+      "unit_id": "de4614fb4f0094a9",
+      "node_id": "calibration_evaluation",
+      "field": "examples[1]",
+      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+    },
+    {
+      "unit_id": "3a1be1be10ae4315",
+      "node_id": "calibration_evaluation",
+      "field": "examples[2]",
+      "text": "substrate for Medical imaging & clinical decision support"
+    },
+    {
+      "unit_id": "33ff4f4a2e611dfb",
+      "node_id": "calibration_evaluation",
+      "field": "examples[3]",
+      "text": "substrate for Tabular predictive analytics & decision support"
+    },
+    {
+      "unit_id": "86fb340e2ebcdff3",
+      "node_id": "calibration_evaluation",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Calibration, uncertainty & risk objectives, Benchmarks, test suites & task metrics."
+    },
+    {
+      "unit_id": "7ef8fa411c6e76a3",
+      "node_id": "calibration_evaluation",
+      "field": "dependencies.calibration_uncertainty_objective.rationale",
+      "text": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Calibration, uncertainty & risk objectives."
+    },
+    {
+      "unit_id": "a440f17f4457b8ac",
+      "node_id": "calibration_evaluation",
+      "field": "dependencies.benchmarks_metrics.rationale",
+      "text": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "unit_id": "41abe53a29cfa3df",
+      "node_id": "calibration_evaluation",
+      "field": "dependencies.distributions_uncertainty.rationale",
+      "text": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Distributions, uncertainty & beliefs."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "d4bee9dda750b829",
+      "node_id": "calibration_evaluation",
+      "dependency_id": "calibration_uncertainty_objective",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Calibration, uncertainty & risk objectives."
+    },
+    {
+      "edge_id": "b1575c19649b78c1",
+      "node_id": "calibration_evaluation",
+      "dependency_id": "benchmarks_metrics",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+    },
+    {
+      "edge_id": "941016a0d143ccdf",
+      "node_id": "calibration_evaluation",
+      "dependency_id": "distributions_uncertainty",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Calibration, uncertainty & risk evaluation measures, constrains, audits, or governs behavior using Distributions, uncertainty & beliefs."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/calibration_evaluation.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

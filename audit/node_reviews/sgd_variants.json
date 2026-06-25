@@ -1,0 +1,138 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "75c48706a172ed58",
+      "node_id": "sgd_variants",
+      "field": "definition",
+      "text": "Stochastic gradient descent estimates gradients from minibatches; momentum and related variants accumulate update direction to reduce noise and accelerate consistent descent.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.1-8.3 on stochastic gradient descent, minibatches, and momentum.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Minibatch gradient estimates and momentum accumulation are directly covered. The noise-reduction/consistent-descent wording is an explanatory synthesis."
+    },
+    {
+      "unit_id": "a873a77703a6949e",
+      "node_id": "sgd_variants",
+      "field": "why_it_matters",
+      "text": "The role of SGD, momentum & stochastic optimization is to connect Optimization theory, Calculus & automatic differentiation theory to downstream capabilities including Adam, Adafactor & adaptive optimizers.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8 optimization, SGD, momentum, and adaptive learning-rate algorithms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source supports SGD/momentum as optimization methods using gradients and places adaptive algorithms in the same optimization family. The graph-bridge wording is synthesized."
+    },
+    {
+      "unit_id": "f9a700b61fe3c841",
+      "node_id": "sgd_variants",
+      "field": "examples[1]",
+      "text": "substrate for Adam, Adafactor & adaptive optimizers",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8.5 adaptive learning rates, including AdaGrad, RMSProp, and Adam.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Adaptive gradient methods are supported as optimization variants, but Adafactor is not covered by the 2016 source and the 'substrate' framing is broader than the evidence."
+    },
+    {
+      "unit_id": "b5a921fca5a74c1d",
+      "node_id": "sgd_variants",
+      "field": "examples[2]",
+      "text": "combined with Optimization theory",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8 'Optimization for Training Deep Models'.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "SGD and momentum are presented as optimization algorithms; the wording is atlas synthesis."
+    },
+    {
+      "unit_id": "b5573d3e3ded72f4",
+      "node_id": "sgd_variants",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Optimization theory, Calculus & automatic differentiation theory.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapters 5, 8, and 11 on generalization, hyperparameters, optimization, and methodology.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Optimization and hyperparameter sensitivity are supported. Data quality, compute budget, random variation, and evaluation contamination are generic limitations not directly supported by this packet source."
+    },
+    {
+      "unit_id": "e973171a84564383",
+      "node_id": "sgd_variants",
+      "field": "dependencies.optimization.rationale",
+      "text": "SGD, momentum & stochastic optimization uses Optimization theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 8 optimization for training deep models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "SGD and momentum are optimization algorithms; exact wording is synthesized."
+    },
+    {
+      "unit_id": "e50e3efa697a7868",
+      "node_id": "sgd_variants",
+      "field": "dependencies.calculus.rationale",
+      "text": "SGD, momentum & stochastic optimization uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapters 6.5 and 8 on gradients/backpropagation and gradient-based optimization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gradient-based updates depend on derivatives; automatic differentiation is part of the training context. The exact phrasing is synthesized."
+    },
+    {
+      "unit_id": "1e62566636699471",
+      "node_id": "sgd_variants",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "SGD, momentum & stochastic optimization uses Datasets, sampling & splits as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook", "ref_pml"],
+      "evidence_location": "Deep Learning, Chapter 8 on minibatch stochastic gradient methods; PML data and validation/cross-validation topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Minibatch stochastic estimates require sampled training examples. Dataset splits are not essential to the update rule, so the rationale is broader than direct evidence."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "1d5ee9ab8745e326",
+      "node_id": "sgd_variants",
+      "dependency_id": "optimization",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "SGD and momentum are core optimization methods for training models.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ca445bb0ddb5e2e0",
+      "node_id": "sgd_variants",
+      "dependency_id": "calculus",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Gradient estimates and derivative-based updates make calculus/autodiff a core dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "fddbe623355d221e",
+      "node_id": "sgd_variants",
+      "dependency_id": "datasets_sampling",
+      "source_ids": ["ref_dlbook", "ref_pml"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Stochastic/minibatch optimization uses sampled training examples; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

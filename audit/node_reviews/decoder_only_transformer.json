@@ -1,0 +1,230 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "2364222ff542c108",
+      "node_id": "decoder_only_transformer",
+      "field": "definition",
+      "text": "A decoder-only transformer predicts each next token from a causally masked context, enabling scalable autoregressive pretraining, continuation, and instruction following.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core mechanism is supported, but the wording adds broad foundation-model/instruction-following implications beyond one direct source."
+    },
+    {
+      "unit_id": "1234b1fc04548f21",
+      "node_id": "decoder_only_transformer",
+      "field": "why_it_matters",
+      "text": "The role of Decoder-only causal transformers is to connect Transformers, Causal, masked & structured masking to downstream capabilities including Retrieval-augmented generation, Chain-of-thought & latent reasoning, Program synthesis & code search.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
+    },
+    {
+      "unit_id": "9332440c09c58a88",
+      "node_id": "decoder_only_transformer",
+      "field": "examples[1]",
+      "text": "substrate for Retrieval-augmented generation",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
+    },
+    {
+      "unit_id": "97dae30ae4371f4d",
+      "node_id": "decoder_only_transformer",
+      "field": "examples[2]",
+      "text": "substrate for Chain-of-thought & latent reasoning",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
+    },
+    {
+      "unit_id": "079ab584245c1d49",
+      "node_id": "decoder_only_transformer",
+      "field": "examples[3]",
+      "text": "substrate for Program synthesis & code search",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
+    },
+    {
+      "unit_id": "eacd639ad2060c0c",
+      "node_id": "decoder_only_transformer",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Causal, masked & structured masking.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+    },
+    {
+      "unit_id": "8241ce122051ff69",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.transformer.rationale",
+      "text": "Decoder-only causal transformers extends or specializes the architecture family Transformers.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "57e4ba904fb59245",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.masking.rationale",
+      "text": "Decoder-only causal transformers is assembled in part from the mechanism or model component Causal, masked & structured masking.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "0b4b4a77b5c4cbd5",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "Decoder-only causal transformers is assembled in part from the mechanism or model component Autoregressive decoding.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
+    },
+    {
+      "unit_id": "96ee11ae350ecbee",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.autoregressive_objective.rationale",
+      "text": "Decoder-only causal transformers is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "3c62bfcec3fb6e32",
+      "node_id": "decoder_only_transformer",
+      "dependency_id": "transformer",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2b4f7727665e9a0a",
+      "node_id": "decoder_only_transformer",
+      "dependency_id": "masking",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4a2513724bed8458",
+      "node_id": "decoder_only_transformer",
+      "dependency_id": "autoregressive_decoding",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "c405ee7a589f00fe",
+      "node_id": "decoder_only_transformer",
+      "dependency_id": "autoregressive_objective",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

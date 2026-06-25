@@ -1,0 +1,246 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "1aca41dee40fef45",
+      "node_id": "mamba_selective_ssm",
+      "field": "definition",
+      "text": "Input-selective state-space blocks combine recurrent linear-time scaling with content-dependent propagation.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited node/reference evidence directly supports the architecture description at this level of specificity."
+    },
+    {
+      "unit_id": "6dcb486eda2c4300",
+      "node_id": "mamba_selective_ssm",
+      "field": "why_it_matters",
+      "text": "The role of Selective state-space models (Mamba family) is to connect Selective state-space scan, State-space transitions to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Transformer\u2013SSM & recurrent hybrid models.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
+    },
+    {
+      "unit_id": "e416137b79c5d17e",
+      "node_id": "mamba_selective_ssm",
+      "field": "examples[1]",
+      "text": "substrate for Time-series forecasting, anomaly & fraud detection",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
+    },
+    {
+      "unit_id": "c33b47e22de0fd48",
+      "node_id": "mamba_selective_ssm",
+      "field": "examples[2]",
+      "text": "substrate for Transformer\u2013SSM & recurrent hybrid models",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
+    },
+    {
+      "unit_id": "1ca0eddd407da58e",
+      "node_id": "mamba_selective_ssm",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Selective state-space scan, State-space transitions.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+    },
+    {
+      "unit_id": "1d4d8eb178f53cfb",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.selective_scan.rationale",
+      "text": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Selective state-space scan.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "67f8376494f875ad",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.state_space_transition.rationale",
+      "text": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component State-space transitions.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "154c94a70f5c0779",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.gating.rationale",
+      "text": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Gating & multiplicative control.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "ef67cd99691db58e",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.normalization.rationale",
+      "text": "Selective state-space models (Mamba family) is assembled in part from the mechanism or model component Normalization & standardization.",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "6ad4ed40a8dc4731",
+      "node_id": "mamba_selective_ssm",
+      "field": "dependencies.structured_ssm.rationale",
+      "text": "Selective state-space models (Mamba family) extends or specializes the architecture family Structured state-space models (S4 family).",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Gu & Dao Mamba paper for selective state spaces, selective scan, gating-like input dependence, normalization, and S4 background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "57499f5d754770a3",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "selective_scan",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "622737860901b664",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "state_space_transition",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9d8b69a2b0ad2df6",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "gating",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2d5a5f1c852eb292",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "normalization",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "e80cdaf63c8b1732",
+      "node_id": "mamba_selective_ssm",
+      "dependency_id": "structured_ssm",
+      "source_ids": [
+        "ref_mamba",
+        "ref_s4",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

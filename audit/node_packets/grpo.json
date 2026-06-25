@@ -1,0 +1,215 @@
+{
+  "node_id": "grpo",
+  "label": "Group Relative Policy Optimization (GRPO)",
+  "layer": "training",
+  "editorial_status": "curated",
+  "node": {
+    "id": "grpo",
+    "label": "Group Relative Policy Optimization (GRPO)",
+    "layer": "training",
+    "tags": [
+      "training",
+      "rl",
+      "reasoning",
+      "post-training"
+    ],
+    "aliases": [
+      "GRPO"
+    ],
+    "definition": "GRPO is a PPO-style policy update that estimates relative advantages from groups of sampled responses instead of learning a separate value model.",
+    "why_it_matters": "It reduces critic-memory overhead and fits reasoning tasks where several candidate completions can share one verifiable reward rule.",
+    "examples": [
+      "mathematical reasoning post-training",
+      "code-generation reinforcement learning"
+    ],
+    "limitations": [
+      "Training depends on within-group reward variation, sampling diversity, clipping stability, and resistance to reward hacking."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_grpo"
+    ],
+    "dependencies": [
+      {
+        "id": "policy_actor_critic",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+      },
+      {
+        "id": "preference_optimization",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families)."
+      },
+      {
+        "id": "outcome_verifiers",
+        "type": "optimizes_for",
+        "strength": "common",
+        "rationale": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards."
+      },
+      {
+        "id": "sft_instruction",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Group Relative Policy Optimization (GRPO) uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "49f8c955cd0ada4d",
+      "node_id": "grpo",
+      "field": "definition",
+      "text": "GRPO is a PPO-style policy update that estimates relative advantages from groups of sampled responses instead of learning a separate value model."
+    },
+    {
+      "unit_id": "6015a2cd70a4ce32",
+      "node_id": "grpo",
+      "field": "why_it_matters",
+      "text": "It reduces critic-memory overhead and fits reasoning tasks where several candidate completions can share one verifiable reward rule."
+    },
+    {
+      "unit_id": "aac420e06d37c31e",
+      "node_id": "grpo",
+      "field": "examples[1]",
+      "text": "mathematical reasoning post-training"
+    },
+    {
+      "unit_id": "949ba7785783a813",
+      "node_id": "grpo",
+      "field": "examples[2]",
+      "text": "code-generation reinforcement learning"
+    },
+    {
+      "unit_id": "ef9ea1f406a9fe1b",
+      "node_id": "grpo",
+      "field": "limitations[1]",
+      "text": "Training depends on within-group reward variation, sampling diversity, clipping stability, and resistance to reward hacking."
+    },
+    {
+      "unit_id": "53b78b68c28aef1a",
+      "node_id": "grpo",
+      "field": "dependencies.policy_actor_critic.rationale",
+      "text": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+    },
+    {
+      "unit_id": "d316f9e9972bb395",
+      "node_id": "grpo",
+      "field": "dependencies.preference_optimization.rationale",
+      "text": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families)."
+    },
+    {
+      "unit_id": "d4f995b7264b7bd7",
+      "node_id": "grpo",
+      "field": "dependencies.outcome_verifiers.rationale",
+      "text": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards."
+    },
+    {
+      "unit_id": "b89cdee84117914c",
+      "node_id": "grpo",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "Group Relative Policy Optimization (GRPO) uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "545f5bf70fa0e862",
+      "node_id": "grpo",
+      "dependency_id": "policy_actor_critic",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+    },
+    {
+      "edge_id": "8268ca8e0c12c32e",
+      "node_id": "grpo",
+      "dependency_id": "preference_optimization",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families)."
+    },
+    {
+      "edge_id": "a3456d92d4113ed9",
+      "node_id": "grpo",
+      "dependency_id": "outcome_verifiers",
+      "type": "optimizes_for",
+      "strength": "common",
+      "rationale": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards."
+    },
+    {
+      "edge_id": "e2a8c8736757afd2",
+      "node_id": "grpo",
+      "dependency_id": "sft_instruction",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Group Relative Policy Optimization (GRPO) uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_grpo": {
+        "id": "ref_grpo",
+        "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+        "authors": "Shao et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2402.03300"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_dpo": {
+        "id": "ref_dpo",
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.18290"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      },
+      "ref_rlhf": {
+        "id": "ref_rlhf",
+        "title": "Training language models to follow instructions with human feedback",
+        "authors": "Ouyang et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.02155"
+      },
+      "ref_rlvr": {
+        "id": "ref_rlvr",
+        "title": "Reinforcement Learning with Verifiable Rewards: A Survey",
+        "authors": "Liu et al.",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2506.14245"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/grpo.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

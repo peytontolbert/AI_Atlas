@@ -1,0 +1,162 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "ab8d0606fe732b29",
+      "node_id": "fault_energy_ops",
+      "field": "definition",
+      "text": "Reliability and cost operations manage failures, replication, quotas, capacity, security, energy, carbon, and economic efficiency across AI workloads.",
+      "source_ids": ["ref_ddia", "ref_nist"],
+      "evidence_location": "DDIA supports failures, replication, capacity, and distributed operations; NIST supports security/risk governance. Energy/carbon and AI workload economics are not directly supported.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Add energy/carbon/cost optimization sources for exact coverage."
+    },
+    {
+      "unit_id": "7b9a1b096a7d727d",
+      "node_id": "fault_energy_ops",
+      "field": "why_it_matters",
+      "text": "The role of Fault tolerance, security, energy & cost optimization is to connect Distributed systems & networking, Adversarial robustness & security testing to downstream capabilities including Large language models.",
+      "source_ids": ["ref_ddia", "ref_nist", "ref_aima"],
+      "evidence_location": "Sources support distributed systems and AI security/risk broadly; downstream LLM linkage is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible atlas positioning, not direct evidence."
+    },
+    {
+      "unit_id": "18e20df401eec9ae",
+      "node_id": "fault_energy_ops",
+      "field": "examples[1]",
+      "text": "substrate for Large language models",
+      "source_ids": ["ref_ddia", "ref_nist"],
+      "evidence_location": "Operational reliability and risk management are relevant to large AI systems, but the exact LLM substrate claim is not sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Defensible but indirect."
+    },
+    {
+      "unit_id": "b9146e47d72eda90",
+      "node_id": "fault_energy_ops",
+      "field": "examples[2]",
+      "text": "combined with Distributed systems & networking",
+      "source_ids": ["ref_ddia"],
+      "evidence_location": "DDIA directly supports fault tolerance and distributed systems concepts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Strong conceptual support, but not exact phrase-level verification."
+    },
+    {
+      "unit_id": "26ffa2011187ec4c",
+      "node_id": "fault_energy_ops",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Adversarial robustness & security testing.",
+      "source_ids": ["ref_ddia", "ref_nist"],
+      "evidence_location": "Sources support operational and security concerns generally; numerical behavior and dependency list are not directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Template wording is broader than available citations."
+    },
+    {
+      "unit_id": "ec72d11bd6dfba70",
+      "node_id": "fault_energy_ops",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Fault tolerance, security, energy & cost optimization turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_ddia"],
+      "evidence_location": "DDIA supports fault tolerance, replication, capacity, and distributed operations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core dependency is defensible."
+    },
+    {
+      "unit_id": "ca85751df1721926",
+      "node_id": "fault_energy_ops",
+      "field": "dependencies.adversarial_security_eval.rationale",
+      "text": "Fault tolerance, security, energy & cost optimization turns Adversarial robustness & security testing into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_nist"],
+      "evidence_location": "NIST supports AI risk/security management broadly; adversarial testing linkage is indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core security relationship is plausible, though exact adversarial-eval dependence needs a direct source."
+    },
+    {
+      "unit_id": "e4a951a4ece2bab2",
+      "node_id": "fault_energy_ops",
+      "field": "dependencies.batching_scheduling.rationale",
+      "text": "Fault tolerance, security, energy & cost optimization turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_ddia"],
+      "evidence_location": "DDIA supports capacity and operational control broadly but not GPU scheduling.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs scheduling/resource-management evidence."
+    },
+    {
+      "unit_id": "1953bcf549d9456f",
+      "node_id": "fault_energy_ops",
+      "field": "dependencies.optimization.rationale",
+      "text": "Fault tolerance, security, energy & cost optimization turns Optimization theory into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_aima"],
+      "evidence_location": "AIMA supports optimization as a general AI concept; the operations linkage is not direct.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common dependency is plausible for cost/energy optimization."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "bd60eb2cbd1f8f11",
+      "node_id": "fault_energy_ops",
+      "dependency_id": "distributed_systems",
+      "source_ids": ["ref_ddia"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Fault tolerance and capacity management are core distributed systems concerns.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "56df77eee35f3663",
+      "node_id": "fault_energy_ops",
+      "dependency_id": "adversarial_security_eval",
+      "source_ids": ["ref_nist"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Security testing is central to the security part of the node, though adversarial-eval evidence is broad.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "1a68cee3895b768d",
+      "node_id": "fault_energy_ops",
+      "dependency_id": "batching_scheduling",
+      "source_ids": ["ref_ddia"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Scheduling relates to cost/capacity operations, but GPU/admission-control support is not directly cited.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "7e453886c512b54e",
+      "node_id": "fault_energy_ops",
+      "dependency_id": "optimization",
+      "source_ids": ["ref_aima"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Optimization theory is a plausible common dependency for cost and energy optimization.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

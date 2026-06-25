@@ -1,0 +1,184 @@
+{
+  "node_id": "probabilistic_programming",
+  "label": "Probabilistic & differentiable programming",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "probabilistic_programming",
+    "label": "Probabilistic & differentiable programming",
+    "layer": "model",
+    "tags": [
+      "model",
+      "probabilistic",
+      "code"
+    ],
+    "aliases": [],
+    "definition": "Probabilistic programming expresses generative assumptions as executable programs and delegates posterior inference to sampling, variational, or differentiable machinery.",
+    "why_it_matters": "The role of Probabilistic & differentiable programming is to connect Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference to downstream capabilities including Scientific ML, simulators & digital twins, Knowledge graphs, semantic search & relational reasoning.",
+    "examples": [
+      "substrate for Scientific ML, simulators & digital twins",
+      "substrate for Knowledge graphs, semantic search & relational reasoning"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "programs_ast_ir",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Probabilistic & differentiable programming consumes, emits, or organizes information using Programs, ASTs, bytecode & intermediate representations."
+      },
+      {
+        "id": "bayesian_approx_inference",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Probabilistic & differentiable programming is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      },
+      {
+        "id": "differentiable_sampling",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
+      },
+      {
+        "id": "constraint_program_execution",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Constraint propagation, logic & program execution."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "221e016ac095f8c7",
+      "node_id": "probabilistic_programming",
+      "field": "definition",
+      "text": "Probabilistic programming expresses generative assumptions as executable programs and delegates posterior inference to sampling, variational, or differentiable machinery."
+    },
+    {
+      "unit_id": "98864f9c5d165414",
+      "node_id": "probabilistic_programming",
+      "field": "why_it_matters",
+      "text": "The role of Probabilistic & differentiable programming is to connect Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference to downstream capabilities including Scientific ML, simulators & digital twins, Knowledge graphs, semantic search & relational reasoning."
+    },
+    {
+      "unit_id": "42b5e159ffa0b7a8",
+      "node_id": "probabilistic_programming",
+      "field": "examples[1]",
+      "text": "substrate for Scientific ML, simulators & digital twins"
+    },
+    {
+      "unit_id": "67d915c4bd8482a4",
+      "node_id": "probabilistic_programming",
+      "field": "examples[2]",
+      "text": "substrate for Knowledge graphs, semantic search & relational reasoning"
+    },
+    {
+      "unit_id": "8525916d68c710d3",
+      "node_id": "probabilistic_programming",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference."
+    },
+    {
+      "unit_id": "f3b3ed386406d756",
+      "node_id": "probabilistic_programming",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "Probabilistic & differentiable programming consumes, emits, or organizes information using Programs, ASTs, bytecode & intermediate representations."
+    },
+    {
+      "unit_id": "c1c8d76f76303b95",
+      "node_id": "probabilistic_programming",
+      "field": "dependencies.bayesian_approx_inference.rationale",
+      "text": "Probabilistic & differentiable programming is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "unit_id": "8b8a420a7b8f2c25",
+      "node_id": "probabilistic_programming",
+      "field": "dependencies.differentiable_sampling.rationale",
+      "text": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
+    },
+    {
+      "unit_id": "d71a67ac0ef588f5",
+      "node_id": "probabilistic_programming",
+      "field": "dependencies.constraint_program_execution.rationale",
+      "text": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Constraint propagation, logic & program execution."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "a4480d911bc1ade2",
+      "node_id": "probabilistic_programming",
+      "dependency_id": "programs_ast_ir",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Probabilistic & differentiable programming consumes, emits, or organizes information using Programs, ASTs, bytecode & intermediate representations."
+    },
+    {
+      "edge_id": "ec4696da2684ab2a",
+      "node_id": "probabilistic_programming",
+      "dependency_id": "bayesian_approx_inference",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Probabilistic & differentiable programming is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+    },
+    {
+      "edge_id": "e5d70da70fac121c",
+      "node_id": "probabilistic_programming",
+      "dependency_id": "differentiable_sampling",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
+    },
+    {
+      "edge_id": "780b661cd1738e35",
+      "node_id": "probabilistic_programming",
+      "dependency_id": "constraint_program_execution",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Constraint propagation, logic & program execution."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/probabilistic_programming.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

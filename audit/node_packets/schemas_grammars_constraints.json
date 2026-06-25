@@ -1,0 +1,179 @@
+{
+  "node_id": "schemas_grammars_constraints",
+  "label": "Schemas, grammars & formal output languages",
+  "layer": "representation",
+  "editorial_status": "curated",
+  "node": {
+    "id": "schemas_grammars_constraints",
+    "label": "Schemas, grammars & formal output languages",
+    "layer": "representation",
+    "tags": [
+      "structured-output",
+      "symbolic",
+      "code"
+    ],
+    "aliases": [],
+    "definition": "Schemas, grammars, and formal languages represent allowable structure for JSON, SQL, code, tool calls, plans, or domain records.",
+    "why_it_matters": "They give generators a machine-checkable contract instead of relying solely on prose format instructions.",
+    "examples": [
+      "JSON Schema",
+      "context-free grammars",
+      "typed function signatures"
+    ],
+    "limitations": [
+      "Syntactic validity does not ensure semantic correctness, safe values, authorization, or successful execution."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima",
+      "ref_structured"
+    ],
+    "dependencies": [
+      {
+        "id": "discrete_math_logic",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Schemas, grammars & formal output languages rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+      },
+      {
+        "id": "programming_languages_types",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Schemas, grammars & formal output languages rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems."
+      },
+      {
+        "id": "tokens_vocab",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Schemas, grammars & formal output languages consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c617ed9b310c76f2",
+      "node_id": "schemas_grammars_constraints",
+      "field": "definition",
+      "text": "Schemas, grammars, and formal languages represent allowable structure for JSON, SQL, code, tool calls, plans, or domain records."
+    },
+    {
+      "unit_id": "39cb21d9ed7c9a05",
+      "node_id": "schemas_grammars_constraints",
+      "field": "why_it_matters",
+      "text": "They give generators a machine-checkable contract instead of relying solely on prose format instructions."
+    },
+    {
+      "unit_id": "ae322d69931b6e25",
+      "node_id": "schemas_grammars_constraints",
+      "field": "examples[1]",
+      "text": "JSON Schema"
+    },
+    {
+      "unit_id": "acf44fe0c5ce4194",
+      "node_id": "schemas_grammars_constraints",
+      "field": "examples[2]",
+      "text": "context-free grammars"
+    },
+    {
+      "unit_id": "b202406aabc04ae7",
+      "node_id": "schemas_grammars_constraints",
+      "field": "examples[3]",
+      "text": "typed function signatures"
+    },
+    {
+      "unit_id": "069267acadf6187c",
+      "node_id": "schemas_grammars_constraints",
+      "field": "limitations[1]",
+      "text": "Syntactic validity does not ensure semantic correctness, safe values, authorization, or successful execution."
+    },
+    {
+      "unit_id": "18b9538eb4f04a67",
+      "node_id": "schemas_grammars_constraints",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Schemas, grammars & formal output languages rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    },
+    {
+      "unit_id": "a1479f47741af50c",
+      "node_id": "schemas_grammars_constraints",
+      "field": "dependencies.programming_languages_types.rationale",
+      "text": "Schemas, grammars & formal output languages rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems."
+    },
+    {
+      "unit_id": "9c10903b1ef52fa6",
+      "node_id": "schemas_grammars_constraints",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Schemas, grammars & formal output languages consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "3bbfce89877cd414",
+      "node_id": "schemas_grammars_constraints",
+      "dependency_id": "discrete_math_logic",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Schemas, grammars & formal output languages rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    },
+    {
+      "edge_id": "b306af0ad874de43",
+      "node_id": "schemas_grammars_constraints",
+      "dependency_id": "programming_languages_types",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Schemas, grammars & formal output languages rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems."
+    },
+    {
+      "edge_id": "7bf5cf324fc0d778",
+      "node_id": "schemas_grammars_constraints",
+      "dependency_id": "tokens_vocab",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Schemas, grammars & formal output languages consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_structured": {
+        "id": "ref_structured",
+        "title": "A Survey of Structured Output Generation from LLMs",
+        "authors": "survey authors",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2501.10868"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/schemas_grammars_constraints.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

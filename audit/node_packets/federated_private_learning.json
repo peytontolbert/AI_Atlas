@@ -1,0 +1,164 @@
+{
+  "node_id": "federated_private_learning",
+  "label": "Federated & privacy-preserving learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "federated_private_learning",
+    "label": "Federated & privacy-preserving learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "privacy",
+      "systems"
+    ],
+    "aliases": [],
+    "definition": "Training is coordinated across separated data holders while limiting raw-data movement or information leakage.",
+    "why_it_matters": "The role of Federated & privacy-preserving learning is to connect Distributed systems & networking, Datasets, sampling & splits to downstream capabilities including Privacy, governance, licensing & audit.",
+    "examples": [
+      "substrate for Privacy, governance, licensing & audit",
+      "combined with Distributed systems & networking"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Distributed systems & networking, Datasets, sampling & splits."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "distributed_systems",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Federated & privacy-preserving learning uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Federated & privacy-preserving learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Federated & privacy-preserving learning follows the learning setup expressed by Supervised learning."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "f81a289cad587267",
+      "node_id": "federated_private_learning",
+      "field": "definition",
+      "text": "Training is coordinated across separated data holders while limiting raw-data movement or information leakage."
+    },
+    {
+      "unit_id": "3e710f7863da5e74",
+      "node_id": "federated_private_learning",
+      "field": "why_it_matters",
+      "text": "The role of Federated & privacy-preserving learning is to connect Distributed systems & networking, Datasets, sampling & splits to downstream capabilities including Privacy, governance, licensing & audit."
+    },
+    {
+      "unit_id": "30f91d0efe4790f2",
+      "node_id": "federated_private_learning",
+      "field": "examples[1]",
+      "text": "substrate for Privacy, governance, licensing & audit"
+    },
+    {
+      "unit_id": "645b3abe1d57ff27",
+      "node_id": "federated_private_learning",
+      "field": "examples[2]",
+      "text": "combined with Distributed systems & networking"
+    },
+    {
+      "unit_id": "271c8c4f7cbcb050",
+      "node_id": "federated_private_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Distributed systems & networking, Datasets, sampling & splits."
+    },
+    {
+      "unit_id": "7e42494332520676",
+      "node_id": "federated_private_learning",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Federated & privacy-preserving learning uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "3112a405d8bcc80b",
+      "node_id": "federated_private_learning",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Federated & privacy-preserving learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "815a06613dee9938",
+      "node_id": "federated_private_learning",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Federated & privacy-preserving learning follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ade6eb4b59f70095",
+      "node_id": "federated_private_learning",
+      "dependency_id": "distributed_systems",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Federated & privacy-preserving learning uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "decf29cd690ef5bd",
+      "node_id": "federated_private_learning",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Federated & privacy-preserving learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "36416921ad9ac40a",
+      "node_id": "federated_private_learning",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Federated & privacy-preserving learning follows the learning setup expressed by Supervised learning."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/federated_private_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

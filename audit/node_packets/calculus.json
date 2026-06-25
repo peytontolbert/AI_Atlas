@@ -1,0 +1,93 @@
+{
+  "node_id": "calculus",
+  "label": "Calculus & automatic differentiation theory",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "calculus",
+    "label": "Calculus & automatic differentiation theory",
+    "layer": "foundation",
+    "tags": [
+      "math",
+      "optimization"
+    ],
+    "aliases": [],
+    "definition": "Derivatives, gradients, Jacobians, chain rules, and automatic differentiation explain how parameter changes affect objectives and computation graphs.",
+    "why_it_matters": "The role of Calculus & automatic differentiation theory is to connect lower-level principles to downstream capabilities including Optimization theory, Numerical analysis, Differential equations.",
+    "examples": [
+      "substrate for Optimization theory",
+      "substrate for Numerical analysis",
+      "substrate for Differential equations"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": []
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e5855eff3bc8b4d1",
+      "node_id": "calculus",
+      "field": "definition",
+      "text": "Derivatives, gradients, Jacobians, chain rules, and automatic differentiation explain how parameter changes affect objectives and computation graphs."
+    },
+    {
+      "unit_id": "914244ac483ad990",
+      "node_id": "calculus",
+      "field": "why_it_matters",
+      "text": "The role of Calculus & automatic differentiation theory is to connect lower-level principles to downstream capabilities including Optimization theory, Numerical analysis, Differential equations."
+    },
+    {
+      "unit_id": "84ffef569833b888",
+      "node_id": "calculus",
+      "field": "examples[1]",
+      "text": "substrate for Optimization theory"
+    },
+    {
+      "unit_id": "9ed4cf54a8a5cdf8",
+      "node_id": "calculus",
+      "field": "examples[2]",
+      "text": "substrate for Numerical analysis"
+    },
+    {
+      "unit_id": "e744bde5001a2c12",
+      "node_id": "calculus",
+      "field": "examples[3]",
+      "text": "substrate for Differential equations"
+    },
+    {
+      "unit_id": "547b7335166eb288",
+      "node_id": "calculus",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting."
+    }
+  ],
+  "edge_units": [],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {}
+  },
+  "review_output_path": "audit/node_reviews/calculus.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "bde2e5edf62ed01d",
+      "node_id": "spatial_grids",
+      "field": "definition",
+      "text": "Regular spatial arrays encode pixels, voxels, fields, maps, and video frames.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: common image datasets and neural networks for images, convolution/pooling/image classification/segmentation (lines 15-17 and 433-456); AIMA contents.html: computer vision and convolutional networks with tensor operations in CNNs (lines 49-53 and 561-575).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support images, pixels implicitly through vision/image networks, CNNs, and spatial vision tasks. Voxels, fields, maps, and video frames are not directly supported in the inspected passages."
+    },
+    {
+      "unit_id": "eb2b94bdf4cf2c4c",
+      "node_id": "spatial_grids",
+      "field": "why_it_matters",
+      "text": "The role of Images, video & spatial grids is to connect Scalars, vectors, matrices & tensors, Signal processing & harmonic analysis to downstream capabilities including Multimodal, simulated & streaming data, Self-supervised learning, Masked prediction objectives.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: image datasets, neural networks for images, convolutional layers, self-supervised learning, and unsupervised pretraining (lines 15-17, 433-462, and 585-587); AIMA contents.html: tensor operations in CNNs and masked language models in NLP pretraining (lines 561-575 and 655-659).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Images, tensors, CNNs, and self-supervised learning are supported. Video/spatial grids, harmonic analysis, multimodal/simulated/streaming data, and masked prediction objectives for images are only partially supported."
+    },
+    {
+      "unit_id": "8c14e56b58dc7ff1",
+      "node_id": "spatial_grids",
+      "field": "examples[1]",
+      "text": "substrate for Multimodal, simulated & streaming data",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: common image datasets, common text datasets, and data preprocessing (lines 15-20).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Image/text data support multimodal data only indirectly, and simulated/streaming data are not established by the inspected evidence."
+    },
+    {
+      "unit_id": "23195e0e3b8e4787",
+      "node_id": "spatial_grids",
+      "field": "examples[2]",
+      "text": "substrate for Self-supervised learning",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: self-supervised learning and unsupervised pretraining sections (lines 9-13 and 582-587), plus neural networks for images (lines 433-462).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source supports self-supervised learning and image modeling, but not the exact substrate wording."
+    },
+    {
+      "unit_id": "071f494a4566d66f",
+      "node_id": "spatial_grids",
+      "field": "examples[3]",
+      "text": "substrate for Masked prediction objectives",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA contents.html: NLP pretraining and transfer learning, including masked language models (lines 655-659), and CNN tensor/image material (lines 561-575).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Masked language models are directly named, but the inspected evidence does not support spatial-grid masked prediction objectives specifically."
+    },
+    {
+      "unit_id": "97887c5e1175b8d0",
+      "node_id": "spatial_grids",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Scalars, vectors, matrices & tensors, Signal processing & harmonic analysis.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: image preprocessing/data, convolution/pooling/image priors/features, and linear algebra (lines 15-20, 433-462, and 206-259); AIMA contents.html: tensor operations in CNNs and fairness/bias (lines 561-575 and 745-749).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The evidence supports tensor/CNN representations and bias as a broader AI concern. The discard-information, invariance, and harmonic-analysis claims are not directly supported."
+    },
+    {
+      "unit_id": "302a212011853496",
+      "node_id": "spatial_grids",
+      "field": "dependencies.tensors.rationale",
+      "text": "Images, video & spatial grids consumes, emits, or organizes information using Scalars, vectors, matrices & tensors.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: image neural networks and linear algebra/matrix data material (lines 433-462 and 206-259); AIMA contents.html: tensor operations in CNNs (lines 561-575).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The image/CNN tensor relation is directly supported, but the video and spatial-grid generalization is synthesized."
+    },
+    {
+      "unit_id": "183602f4c5e55156",
+      "node_id": "spatial_grids",
+      "field": "dependencies.signal_processing.rationale",
+      "text": "Images, video & spatial grids rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: convolutional layers, pooling layers, and image priors/features in neural networks for images (lines 433-462).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Convolution/pooling support signal-processing-adjacent operations, but harmonic analysis is not directly supported by the inspected source."
+    },
+    {
+      "unit_id": "d3514cfe667565d6",
+      "node_id": "spatial_grids",
+      "field": "dependencies.geometry_topology.rationale",
+      "text": "Images, video & spatial grids rests on the formal or computational capabilities supplied by Geometry, topology & symmetry.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: image segmentation, pose estimation, manifolds, and manifold learning (lines 451-456 and 628-638); AIMA contents.html: computer vision and robotics applications (lines 49-53 and 616-619).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Geometry is relevant to vision/spatial tasks, but topology and symmetry are not directly established in the inspected passages."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "62f8d2f3fd9d0fc7",
+      "node_id": "spatial_grids",
+      "dependency_id": "tensors",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "CNN tensor operations and image networks support the represents_with/core edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "686a172da68cf57d",
+      "node_id": "spatial_grids",
+      "dependency_id": "signal_processing",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The source supports convolutional image processing, but not the broader harmonic-analysis foundation. Core strength is plausible but not directly evidenced.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "88362e62bb440449",
+      "node_id": "spatial_grids",
+      "dependency_id": "geometry_topology",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Geometry is relevant to image/spatial tasks; topology and symmetry are less directly supported. Common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

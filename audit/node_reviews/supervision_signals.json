@@ -1,0 +1,181 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "39bcb9a7d5e73cd2",
+      "node_id": "supervision_signals",
+      "field": "definition",
+      "text": "External or constructed signals specify desired predictions, actions, rankings, or behavior.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: supervised learning, classification/regression, ranking losses, active learning, semi/weakly supervised learning, and reinforcement learning (lines 3-14, 515-519, and 588-606); AIMA contents.html: supervised learning, decision/reward material, and reinforcement learning from rewards (lines 495-508 and 599-615).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support labels/examples, losses, ranking, rewards, and preferences/decision signals as learning signals. The exact compact definition is atlas synthesis."
+    },
+    {
+      "unit_id": "3a523a4396a0d8d7",
+      "node_id": "supervision_signals",
+      "field": "why_it_matters",
+      "text": "The role of Labels, targets, rewards & preferences is to connect Statistics & experimental design, Game theory & decision theory to downstream capabilities including Supervised learning, Semi-supervised & weak supervision, Reinforcement learning.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: statistics, decision theory, supervised learning, semi/weakly supervised learning, and reinforcement learning (lines 106-178 and 3-14, 588-606); AIMA contents.html: making decisions, game theory, supervised learning, and reinforcement learning (lines 435-480, 495-508, and 599-615).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Each major component is supported across the inspected sources, but the connector wording is a synthesized atlas role statement."
+    },
+    {
+      "unit_id": "5e1cf9b5e0fb3593",
+      "node_id": "supervision_signals",
+      "field": "examples[1]",
+      "text": "substrate for Supervised learning",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 1.2 'Supervised learning' and classification/regression sections (lines 3-8); AIMA contents.html: Chapter 19.2 'Supervised Learning' (lines 495-503).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Supervised learning is directly supported as learning from labeled examples/tasks. 'Substrate for' is not source wording."
+    },
+    {
+      "unit_id": "300565fa292f96b5",
+      "node_id": "supervision_signals",
+      "field": "examples[2]",
+      "text": "substrate for Semi-supervised & weak supervision",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 19.3 'Semi-supervised learning' and 19.7 'Weakly supervised learning' (lines 588-606).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relevant learning settings are directly named; the substrate relation is a reasonable synthesis."
+    },
+    {
+      "unit_id": "40e324f6ff3d36ea",
+      "node_id": "supervision_signals",
+      "field": "examples[3]",
+      "text": "substrate for Reinforcement learning",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 1.4 'Reinforcement learning' (line 14); AIMA contents.html: Chapter 22.1 'Learning from Rewards' and reward shaping (lines 599-615).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rewards are directly tied to reinforcement learning in AIMA. The exact substrate wording is atlas synthesis."
+    },
+    {
+      "unit_id": "1a92954890a318a2",
+      "node_id": "supervision_signals",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Statistics & experimental design, Game theory & decision theory.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: statistics, decision theory, caveats, and loss/model-selection sections (lines 22-24, 106-178); AIMA contents.html: fairness and bias, game theory, decision making (lines 745-749 and 435-480).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Statistics and game/decision theory are supported, and bias is a relevant AI concern. The encoding-loss and invariance claims are broader than the inspected evidence."
+    },
+    {
+      "unit_id": "b13c5a8e6854796c",
+      "node_id": "supervision_signals",
+      "field": "dependencies.statistics.rationale",
+      "text": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Statistics & experimental design.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: statistics chapter, empirical risk minimization, cross-validation, and supervised learning sections (lines 106-147 and 3-8).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The evidence supports statistical estimation and evaluation around supervised signals. Experimental design is implicit."
+    },
+    {
+      "unit_id": "4d8c915324cad44d",
+      "node_id": "supervision_signals",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Game theory & decision theory.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "PML book1 long TOC: Chapter 5 'Decision Theory' and active learning decision-theoretic approach (lines 148-178 and 596-599); AIMA contents.html: game theory, sequential decisions, MDPs, and rewards (lines 435-480 and 599-615).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Decision and reward material supports the dependency; game theory is more relevant to preferences and multiagent settings than to all supervision signals."
+    },
+    {
+      "unit_id": "ac932fe3a34265c6",
+      "node_id": "supervision_signals",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Information theory.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML book1 long TOC: information theory chapter, entropy/cross entropy/KL/mutual information, and information-theoretic active learning (lines 179-205 and 596-599).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Information-theoretic losses and active learning are relevant, but the evidence does not establish information theory as a general dependency for labels, rewards, and preferences."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "29357914759b3580",
+      "node_id": "supervision_signals",
+      "dependency_id": "statistics",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Statistical estimation, empirical risk, validation, and supervised-learning examples make this required/core edge defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2c74220a7eaf9255",
+      "node_id": "supervision_signals",
+      "dependency_id": "game_decision_theory",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Decision-theory and reward/preference contexts support a common dependency, but not all supervision signals require game theory.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "277a6afa6908e65f",
+      "node_id": "supervision_signals",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Information theory is relevant to entropy, cross-entropy, mutual information, and active learning, but the source support is narrower than the rationale.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

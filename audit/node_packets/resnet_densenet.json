@@ -1,0 +1,157 @@
+{
+  "node_id": "resnet_densenet",
+  "label": "ResNets & DenseNets",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "resnet_densenet",
+    "label": "ResNets & DenseNets",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "vision"
+    ],
+    "aliases": [],
+    "definition": "Residual and densely connected convolutional networks create short information paths across depth, improving gradient flow, optimization, and feature reuse.",
+    "why_it_matters": "The role of ResNets & DenseNets is to connect Convolutional neural networks, Residual, skip & highway connections to downstream capabilities including Medical imaging & clinical decision support, Computer vision, perception & scene understanding.",
+    "examples": [
+      "substrate for Medical imaging & clinical decision support",
+      "substrate for Computer vision, perception & scene understanding"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Convolutional neural networks, Residual, skip & highway connections."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_resnet"
+    ],
+    "dependencies": [
+      {
+        "id": "cnn",
+        "type": "specializes",
+        "strength": "core",
+        "rationale": "ResNets & DenseNets extends or specializes the architecture family Convolutional neural networks."
+      },
+      {
+        "id": "residual_connections",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "ResNets & DenseNets is assembled in part from the mechanism or model component Residual, skip & highway connections."
+      },
+      {
+        "id": "normalization",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "ResNets & DenseNets is assembled in part from the mechanism or model component Normalization & standardization."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "1984a9faa53fea2a",
+      "node_id": "resnet_densenet",
+      "field": "definition",
+      "text": "Residual and densely connected convolutional networks create short information paths across depth, improving gradient flow, optimization, and feature reuse."
+    },
+    {
+      "unit_id": "cbf8e8794cf9318d",
+      "node_id": "resnet_densenet",
+      "field": "why_it_matters",
+      "text": "The role of ResNets & DenseNets is to connect Convolutional neural networks, Residual, skip & highway connections to downstream capabilities including Medical imaging & clinical decision support, Computer vision, perception & scene understanding."
+    },
+    {
+      "unit_id": "d140f415f8ed31d9",
+      "node_id": "resnet_densenet",
+      "field": "examples[1]",
+      "text": "substrate for Medical imaging & clinical decision support"
+    },
+    {
+      "unit_id": "dd9fcdc8cf96feb9",
+      "node_id": "resnet_densenet",
+      "field": "examples[2]",
+      "text": "substrate for Computer vision, perception & scene understanding"
+    },
+    {
+      "unit_id": "a5e1621b92ad23fd",
+      "node_id": "resnet_densenet",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Convolutional neural networks, Residual, skip & highway connections."
+    },
+    {
+      "unit_id": "97ac717f2fc276e2",
+      "node_id": "resnet_densenet",
+      "field": "dependencies.cnn.rationale",
+      "text": "ResNets & DenseNets extends or specializes the architecture family Convolutional neural networks."
+    },
+    {
+      "unit_id": "f8dbb875541c9aa2",
+      "node_id": "resnet_densenet",
+      "field": "dependencies.residual_connections.rationale",
+      "text": "ResNets & DenseNets is assembled in part from the mechanism or model component Residual, skip & highway connections."
+    },
+    {
+      "unit_id": "5d1a3bf69cae13d4",
+      "node_id": "resnet_densenet",
+      "field": "dependencies.normalization.rationale",
+      "text": "ResNets & DenseNets is assembled in part from the mechanism or model component Normalization & standardization."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "93415c7e094001a4",
+      "node_id": "resnet_densenet",
+      "dependency_id": "cnn",
+      "type": "specializes",
+      "strength": "core",
+      "rationale": "ResNets & DenseNets extends or specializes the architecture family Convolutional neural networks."
+    },
+    {
+      "edge_id": "d41f387e672a0250",
+      "node_id": "resnet_densenet",
+      "dependency_id": "residual_connections",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "ResNets & DenseNets is assembled in part from the mechanism or model component Residual, skip & highway connections."
+    },
+    {
+      "edge_id": "bef4d0e651aa545e",
+      "node_id": "resnet_densenet",
+      "dependency_id": "normalization",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "ResNets & DenseNets is assembled in part from the mechanism or model component Normalization & standardization."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_resnet": {
+        "id": "ref_resnet",
+        "title": "Deep Residual Learning for Image Recognition",
+        "authors": "He et al.",
+        "year": 2015,
+        "url": "https://arxiv.org/abs/1512.03385"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/resnet_densenet.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "node_id": "expert_rule_systems",
+  "label": "Expert systems, production rules & rule engines",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "expert_rule_systems",
+    "label": "Expert systems, production rules & rule engines",
+    "layer": "model",
+    "tags": [
+      "model",
+      "symbolic",
+      "classical"
+    ],
+    "aliases": [],
+    "definition": "Expert and production-rule systems apply explicit if–then rules over symbolic facts, separating a curated knowledge base from an inference engine.",
+    "why_it_matters": "The role of Expert systems, production rules & rule engines is to connect Knowledge graphs, ontologies & schemas, Constraint propagation, logic & program execution to downstream capabilities including Knowledge graphs, semantic search & relational reasoning, Verified and assurance-gated agents.",
+    "examples": [
+      "substrate for Knowledge graphs, semantic search & relational reasoning",
+      "substrate for Verified and assurance-gated agents"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Knowledge graphs, ontologies & schemas, Constraint propagation, logic & program execution."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "knowledge_graphs",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Expert systems, production rules & rule engines consumes, emits, or organizes information using Knowledge graphs, ontologies & schemas."
+      },
+      {
+        "id": "constraint_program_execution",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Expert systems, production rules & rule engines is assembled in part from the mechanism or model component Constraint propagation, logic & program execution."
+      },
+      {
+        "id": "boolean_logic_gates",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Expert systems, production rules & rule engines is assembled in part from the mechanism or model component Boolean circuits & differentiable logic gates."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e9c142aedf3e5c90",
+      "node_id": "expert_rule_systems",
+      "field": "definition",
+      "text": "Expert and production-rule systems apply explicit if–then rules over symbolic facts, separating a curated knowledge base from an inference engine."
+    },
+    {
+      "unit_id": "45c8ac6c6c855b53",
+      "node_id": "expert_rule_systems",
+      "field": "why_it_matters",
+      "text": "The role of Expert systems, production rules & rule engines is to connect Knowledge graphs, ontologies & schemas, Constraint propagation, logic & program execution to downstream capabilities including Knowledge graphs, semantic search & relational reasoning, Verified and assurance-gated agents."
+    },
+    {
+      "unit_id": "fd3faf6908f50864",
+      "node_id": "expert_rule_systems",
+      "field": "examples[1]",
+      "text": "substrate for Knowledge graphs, semantic search & relational reasoning"
+    },
+    {
+      "unit_id": "14c8222508656ba3",
+      "node_id": "expert_rule_systems",
+      "field": "examples[2]",
+      "text": "substrate for Verified and assurance-gated agents"
+    },
+    {
+      "unit_id": "4c3e03dc1f7f7334",
+      "node_id": "expert_rule_systems",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Knowledge graphs, ontologies & schemas, Constraint propagation, logic & program execution."
+    },
+    {
+      "unit_id": "8025c45a41ed29e3",
+      "node_id": "expert_rule_systems",
+      "field": "dependencies.knowledge_graphs.rationale",
+      "text": "Expert systems, production rules & rule engines consumes, emits, or organizes information using Knowledge graphs, ontologies & schemas."
+    },
+    {
+      "unit_id": "1cd5e7b0cacdc028",
+      "node_id": "expert_rule_systems",
+      "field": "dependencies.constraint_program_execution.rationale",
+      "text": "Expert systems, production rules & rule engines is assembled in part from the mechanism or model component Constraint propagation, logic & program execution."
+    },
+    {
+      "unit_id": "d6d98618ebaaf6d0",
+      "node_id": "expert_rule_systems",
+      "field": "dependencies.boolean_logic_gates.rationale",
+      "text": "Expert systems, production rules & rule engines is assembled in part from the mechanism or model component Boolean circuits & differentiable logic gates."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "c2b4d454cc1e570c",
+      "node_id": "expert_rule_systems",
+      "dependency_id": "knowledge_graphs",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Expert systems, production rules & rule engines consumes, emits, or organizes information using Knowledge graphs, ontologies & schemas."
+    },
+    {
+      "edge_id": "1d1a1a75a0ea4cc3",
+      "node_id": "expert_rule_systems",
+      "dependency_id": "constraint_program_execution",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Expert systems, production rules & rule engines is assembled in part from the mechanism or model component Constraint propagation, logic & program execution."
+    },
+    {
+      "edge_id": "d45ec31e5b2684ff",
+      "node_id": "expert_rule_systems",
+      "dependency_id": "boolean_logic_gates",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Expert systems, production rules & rule engines is assembled in part from the mechanism or model component Boolean circuits & differentiable logic gates."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/expert_rule_systems.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

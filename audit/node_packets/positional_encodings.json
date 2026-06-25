@@ -1,0 +1,163 @@
+{
+  "node_id": "positional_encodings",
+  "label": "Positional, temporal & coordinate encodings",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "positional_encodings",
+    "label": "Positional, temporal & coordinate encodings",
+    "layer": "representation",
+    "tags": [
+      "sequence",
+      "geometry"
+    ],
+    "aliases": [],
+    "definition": "Coordinates, phases, or learned positions inject order, time, or location into models whose base computation is otherwise permutation-equivariant or location-agnostic.",
+    "why_it_matters": "The role of Positional, temporal & coordinate encodings is to connect Sequences, events & time series, Embeddings & distributed representations to downstream capabilities including Relative position, RoPE, ALiBi & coordinate mechanisms, Neural fields & radiance-field models.",
+    "examples": [
+      "substrate for Relative position, RoPE, ALiBi & coordinate mechanisms",
+      "substrate for Neural fields & radiance-field models"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Sequences, events & time series, Embeddings & distributed representations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "sequences_time",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Positional, temporal & coordinate encodings consumes, emits, or organizes information using Sequences, events & time series."
+      },
+      {
+        "id": "embeddings",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Positional, temporal & coordinate encodings consumes, emits, or organizes information using Embeddings & distributed representations."
+      },
+      {
+        "id": "geometry_topology",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Positional, temporal & coordinate encodings rests on the formal or computational capabilities supplied by Geometry, topology & symmetry."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b7368f1f4c8573be",
+      "node_id": "positional_encodings",
+      "field": "definition",
+      "text": "Coordinates, phases, or learned positions inject order, time, or location into models whose base computation is otherwise permutation-equivariant or location-agnostic."
+    },
+    {
+      "unit_id": "28268779e80c8365",
+      "node_id": "positional_encodings",
+      "field": "why_it_matters",
+      "text": "The role of Positional, temporal & coordinate encodings is to connect Sequences, events & time series, Embeddings & distributed representations to downstream capabilities including Relative position, RoPE, ALiBi & coordinate mechanisms, Neural fields & radiance-field models."
+    },
+    {
+      "unit_id": "15f3ea1ed0f9cca5",
+      "node_id": "positional_encodings",
+      "field": "examples[1]",
+      "text": "substrate for Relative position, RoPE, ALiBi & coordinate mechanisms"
+    },
+    {
+      "unit_id": "beec33eb705f1419",
+      "node_id": "positional_encodings",
+      "field": "examples[2]",
+      "text": "substrate for Neural fields & radiance-field models"
+    },
+    {
+      "unit_id": "3e9f272971bff328",
+      "node_id": "positional_encodings",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Sequences, events & time series, Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "a4fb72adb473744e",
+      "node_id": "positional_encodings",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Positional, temporal & coordinate encodings consumes, emits, or organizes information using Sequences, events & time series."
+    },
+    {
+      "unit_id": "aee6d3b93a5791ee",
+      "node_id": "positional_encodings",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Positional, temporal & coordinate encodings consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "unit_id": "aff9e2a64a04285e",
+      "node_id": "positional_encodings",
+      "field": "dependencies.geometry_topology.rationale",
+      "text": "Positional, temporal & coordinate encodings rests on the formal or computational capabilities supplied by Geometry, topology & symmetry."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "a50cb1ec8071fe09",
+      "node_id": "positional_encodings",
+      "dependency_id": "sequences_time",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Positional, temporal & coordinate encodings consumes, emits, or organizes information using Sequences, events & time series."
+    },
+    {
+      "edge_id": "5280f5eb95f13c63",
+      "node_id": "positional_encodings",
+      "dependency_id": "embeddings",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Positional, temporal & coordinate encodings consumes, emits, or organizes information using Embeddings & distributed representations."
+    },
+    {
+      "edge_id": "4122edb263d01da4",
+      "node_id": "positional_encodings",
+      "dependency_id": "geometry_topology",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Positional, temporal & coordinate encodings rests on the formal or computational capabilities supplied by Geometry, topology & symmetry."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/positional_encodings.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

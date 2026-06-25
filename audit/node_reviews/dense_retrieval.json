@@ -1,0 +1,198 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "a67c326ed32f0ffb",
+      "node_id": "dense_retrieval",
+      "field": "definition",
+      "text": "Dense retrieval embeds queries and candidates into vector space and finds approximate nearest neighbors under a learned similarity function.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning and PML support embeddings and vector similarity background, but not the exact dense-retrieval/ANN formulation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a dense passage retrieval or ANN retrieval source for exact wording."
+    },
+    {
+      "unit_id": "cffd08c8e104d82b",
+      "node_id": "dense_retrieval",
+      "field": "why_it_matters",
+      "text": "The role of Dense vector retrieval is to connect External retrieval & ranking, Embeddings & distributed representations to downstream capabilities including Hybrid retrieval & reranking, Vector databases & ANN indexes, Retrieval-augmented generation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
+    },
+    {
+      "unit_id": "49dd93535115e87f",
+      "node_id": "dense_retrieval",
+      "field": "examples[1]",
+      "text": "substrate for Hybrid retrieval & reranking",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "5dadf57d0af2438c",
+      "node_id": "dense_retrieval",
+      "field": "examples[2]",
+      "text": "substrate for Vector databases & ANN indexes",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "baca01401cdd0825",
+      "node_id": "dense_retrieval",
+      "field": "examples[3]",
+      "text": "substrate for Retrieval-augmented generation",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "792105765766d73d",
+      "node_id": "dense_retrieval",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include External retrieval & ranking, Embeddings & distributed representations.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "379fdff2563310b9",
+      "node_id": "dense_retrieval",
+      "field": "dependencies.external_retrieval.rationale",
+      "text": "Dense vector retrieval uses External retrieval & ranking as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet references support external_retrieval or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "0d15166d3f65c5b1",
+      "node_id": "dense_retrieval",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Dense vector retrieval stores, selects, or obtains information through Embeddings & distributed representations.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet references support embeddings or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "10fb88c3fed4c3ca",
+      "node_id": "dense_retrieval",
+      "field": "dependencies.contrastive_objective.rationale",
+      "text": "Dense vector retrieval uses Contrastive and mutual-information objectives as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "The packet references support contrastive_objective or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "e22ae848c6d36ae4",
+      "node_id": "dense_retrieval",
+      "dependency_id": "external_retrieval",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "e998e0d61ee83158",
+      "node_id": "dense_retrieval",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "33d42e0fc866e60c",
+      "node_id": "dense_retrieval",
+      "dependency_id": "contrastive_objective",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Contrastive objectives are common for learned retrieval embeddings, but not universal.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

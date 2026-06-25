@@ -1,0 +1,170 @@
+{
+  "node_id": "model_serving",
+  "label": "Model servers & inference runtimes",
+  "layer": "infrastructure",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "model_serving",
+    "label": "Model servers & inference runtimes",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "serving"
+    ],
+    "aliases": [],
+    "definition": "Model servers expose trained models through batching, scheduling, caching, versioning, routing, and runtime-specific execution interfaces.",
+    "why_it_matters": "The role of Model servers & inference runtimes is to connect Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints to downstream capabilities including Batching, admission control & GPU scheduling, Speculative, parallel & assisted decoding, Tensor, pipeline, sequence & expert parallel inference.",
+    "examples": [
+      "substrate for Batching, admission control & GPU scheduling",
+      "substrate for Speculative, parallel & assisted decoding",
+      "substrate for Tensor, pipeline, sequence & expert parallel inference"
+    ],
+    "limitations": [
+      "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_ddia"
+    ],
+    "dependencies": [
+      {
+        "id": "compilers_runtimes",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Model servers & inference runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "storage_checkpoints",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Model servers & inference runtimes turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "transformer",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Model servers & inference runtimes turns Transformers into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "494597c343224977",
+      "node_id": "model_serving",
+      "field": "definition",
+      "text": "Model servers expose trained models through batching, scheduling, caching, versioning, routing, and runtime-specific execution interfaces."
+    },
+    {
+      "unit_id": "9883a88d19bea8fa",
+      "node_id": "model_serving",
+      "field": "why_it_matters",
+      "text": "The role of Model servers & inference runtimes is to connect Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints to downstream capabilities including Batching, admission control & GPU scheduling, Speculative, parallel & assisted decoding, Tensor, pipeline, sequence & expert parallel inference."
+    },
+    {
+      "unit_id": "b8f3ad8b116b67ce",
+      "node_id": "model_serving",
+      "field": "examples[1]",
+      "text": "substrate for Batching, admission control & GPU scheduling"
+    },
+    {
+      "unit_id": "d0e38307c243c9a0",
+      "node_id": "model_serving",
+      "field": "examples[2]",
+      "text": "substrate for Speculative, parallel & assisted decoding"
+    },
+    {
+      "unit_id": "deb5abcf318b0609",
+      "node_id": "model_serving",
+      "field": "examples[3]",
+      "text": "substrate for Tensor, pipeline, sequence & expert parallel inference"
+    },
+    {
+      "unit_id": "5303391be7d79411",
+      "node_id": "model_serving",
+      "field": "limitations[1]",
+      "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints."
+    },
+    {
+      "unit_id": "bd3604d8f0832512",
+      "node_id": "model_serving",
+      "field": "dependencies.compilers_runtimes.rationale",
+      "text": "Model servers & inference runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "592f762431d88d5c",
+      "node_id": "model_serving",
+      "field": "dependencies.storage_checkpoints.rationale",
+      "text": "Model servers & inference runtimes turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "75982d1720e3c446",
+      "node_id": "model_serving",
+      "field": "dependencies.transformer.rationale",
+      "text": "Model servers & inference runtimes turns Transformers into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "be12143b35a3615a",
+      "node_id": "model_serving",
+      "dependency_id": "compilers_runtimes",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Model servers & inference runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "2b7b522ca861381f",
+      "node_id": "model_serving",
+      "dependency_id": "storage_checkpoints",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Model servers & inference runtimes turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "a701d35193b213ee",
+      "node_id": "model_serving",
+      "dependency_id": "transformer",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Model servers & inference runtimes turns Transformers into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      }
+    },
+    "dependency_references": {
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/model_serving.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "3d7ee428ae85b21d",
+      "node_id": "domain_randomization",
+      "field": "definition",
+      "text": "Domain randomization varies simulated appearance, dynamics, sensors, delays, objects, and disturbances so a policy learns behavior robust across many plausible worlds.",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The broad list of appearance, dynamics, sensors, delays, objects, and disturbances is plausible, but Tobin et al. alone most directly supports visual/domain parameter randomization."
+    },
+    {
+      "unit_id": "ee8562444362bc24",
+      "node_id": "domain_randomization",
+      "field": "why_it_matters",
+      "text": "It attempts to make the real environment look like one more sample from the training distribution.",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Domain randomization is explicitly motivated by making real observations appear as samples from randomized simulated training domains."
+    },
+    {
+      "unit_id": "962ac7ece895390a",
+      "node_id": "domain_randomization",
+      "field": "examples[1]",
+      "text": "randomized robot physics",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Randomized robot physics is common in sim-to-real surveys, though not the narrow Tobin visual example alone."
+    },
+    {
+      "unit_id": "4d7e46023eb75808",
+      "node_id": "domain_randomization",
+      "field": "examples[2]",
+      "text": "lighting and texture variation",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Lighting and texture variation are directly supported by domain randomization work."
+    },
+    {
+      "unit_id": "9f588cb01ec38cef",
+      "node_id": "domain_randomization",
+      "field": "examples[3]",
+      "text": "sensor-noise curricula",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Sensor-noise curricula are plausible but not directly supported by the main domain-randomization citation."
+    },
+    {
+      "unit_id": "7522d1a222f42df4",
+      "node_id": "domain_randomization",
+      "field": "limitations[1]",
+      "text": "Poor parameter ranges waste capacity or omit the real system, and excessive randomization can suppress useful structure.",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Choosing randomization ranges is a known limitation; the capacity/useful-structure wording is synthesized."
+    },
+    {
+      "unit_id": "a64bff5a2e621f92",
+      "node_id": "domain_randomization",
+      "field": "dependencies.sim_to_real_transfer.rationale",
+      "text": "Domain randomization & simulation curricula uses Sim-to-real, real-to-sim & digital transfer as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Domain randomization is explicitly a sim-to-real transfer method."
+    },
+    {
+      "unit_id": "953263aa7fe39587",
+      "node_id": "domain_randomization",
+      "field": "dependencies.augmentation_synthetic.rationale",
+      "text": "Domain randomization & simulation curricula uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Domain randomization augments simulated/synthetic training data, but the exact dependency wording is taxonomic."
+    },
+    {
+      "unit_id": "3a572640b1c7226e",
+      "node_id": "domain_randomization",
+      "field": "dependencies.curriculum_data_mixtures.rationale",
+      "text": "Domain randomization & simulation curricula uses Curricula, data mixtures & sampling schedules as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Simulation curricula are adjacent, but not inherent to all domain randomization."
+    },
+    {
+      "unit_id": "c803debc9e320a73",
+      "node_id": "domain_randomization",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Domain randomization & simulation curricula uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Simulated streams are related; multimodal/streaming data is broader than directly supported."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "322be29a26d4df9d",
+      "node_id": "domain_randomization",
+      "dependency_id": "sim_to_real_transfer",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Domain randomization is a sim-to-real transfer technique.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "280719aff093655e",
+      "node_id": "domain_randomization",
+      "dependency_id": "augmentation_synthetic",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Randomized simulation acts as synthetic data augmentation; core strength is reasonable.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "7138868f5bad3fcf",
+      "node_id": "domain_randomization",
+      "dependency_id": "curriculum_data_mixtures",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Curricula/schedules can be used but are not a generally supported common dependency.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "ba5f922777117503",
+      "node_id": "domain_randomization",
+      "dependency_id": "multimodal_simulated_streams",
+      "source_ids": [
+        "ref_domainrand",
+        "ref_sim2real"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Simulation data is relevant, but multimodal streaming is broader than the cited support.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

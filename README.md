@@ -90,6 +90,9 @@ Equivalent direct commands:
 python tools/validate_atlas.py
 python tools/audit_content.py
 python tools/build_atlas.py
+python tools/generate_audit_packets.py
+python tools/compile_source_audit_ledgers.py
+python tools/validate_source_audit.py
 python -m unittest discover -s tests -v
 ```
 
@@ -166,6 +169,8 @@ Strength is separately labeled `core`, `common`, or `optional`. Same-layer edges
 ## Source policy
 
 References are pointers to relevant primary papers, standards, surveys, or foundational textbooks. Every node has at least one reference pointer, but a pointer is **not** a sentence-level citation audit. Broad foundational sources are deliberately reused across related concepts. Node-specific sourcing is an editorial expansion target documented by the content audit.
+
+For the stricter standard required to make a sentence-level fact-checking claim, see [`docs/SOURCE_AUDIT.md`](docs/SOURCE_AUDIT.md). For the roadmap toward bounded exhaustive coverage, see [`docs/EXHAUSTIVENESS_ROADMAP.md`](docs/EXHAUSTIVENESS_ROADMAP.md).
 
 ## Contribution standard
 

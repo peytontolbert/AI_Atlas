@@ -1,0 +1,163 @@
+{
+  "node_id": "active_curriculum_learning",
+  "label": "Active learning & curriculum learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "active_curriculum_learning",
+    "label": "Active learning & curriculum learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "data-efficiency"
+    ],
+    "aliases": [],
+    "definition": "The learner chooses informative data or follows an ordered progression from easier to harder experience.",
+    "why_it_matters": "The role of Active learning & curriculum learning is to connect Supervised learning, Datasets, sampling & splits to downstream capabilities including Curricula, data mixtures & sampling schedules, AutoML & automated model design.",
+    "examples": [
+      "substrate for Curricula, data mixtures & sampling schedules",
+      "substrate for AutoML & automated model design"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Datasets, sampling & splits."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "supervised_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Active learning & curriculum learning follows the learning setup expressed by Supervised learning."
+      },
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Active learning & curriculum learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Active learning & curriculum learning uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "174814046384ecd4",
+      "node_id": "active_curriculum_learning",
+      "field": "definition",
+      "text": "The learner chooses informative data or follows an ordered progression from easier to harder experience."
+    },
+    {
+      "unit_id": "e253bfea46886e10",
+      "node_id": "active_curriculum_learning",
+      "field": "why_it_matters",
+      "text": "The role of Active learning & curriculum learning is to connect Supervised learning, Datasets, sampling & splits to downstream capabilities including Curricula, data mixtures & sampling schedules, AutoML & automated model design."
+    },
+    {
+      "unit_id": "eba34cab3ea4d503",
+      "node_id": "active_curriculum_learning",
+      "field": "examples[1]",
+      "text": "substrate for Curricula, data mixtures & sampling schedules"
+    },
+    {
+      "unit_id": "2616b3da403ce159",
+      "node_id": "active_curriculum_learning",
+      "field": "examples[2]",
+      "text": "substrate for AutoML & automated model design"
+    },
+    {
+      "unit_id": "7542a195aaf7df9a",
+      "node_id": "active_curriculum_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Datasets, sampling & splits."
+    },
+    {
+      "unit_id": "242beac63854167f",
+      "node_id": "active_curriculum_learning",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Active learning & curriculum learning follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "unit_id": "e5c5d7d37a104fd2",
+      "node_id": "active_curriculum_learning",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Active learning & curriculum learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "289513399a222660",
+      "node_id": "active_curriculum_learning",
+      "field": "dependencies.optimization.rationale",
+      "text": "Active learning & curriculum learning uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "d1faeaa8b3317c56",
+      "node_id": "active_curriculum_learning",
+      "dependency_id": "supervised_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Active learning & curriculum learning follows the learning setup expressed by Supervised learning."
+    },
+    {
+      "edge_id": "30fbc11b4ed17071",
+      "node_id": "active_curriculum_learning",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Active learning & curriculum learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "1f94b19f551cd9b2",
+      "node_id": "active_curriculum_learning",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Active learning & curriculum learning uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/active_curriculum_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "node_id": "beam_search",
+  "label": "Beam search & constrained decoding",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "beam_search",
+    "label": "Beam search & constrained decoding",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "generation"
+    ],
+    "aliases": [],
+    "definition": "Beam search retains a bounded set of high-scoring partial sequences, optionally applying lexical, grammar, length, or domain constraints during decoding.",
+    "why_it_matters": "The role of Beam search & constrained decoding is to connect Search, sampling & decoding procedures, Autoregressive decoding to downstream capabilities including Code models, copilots & repository intelligence, Speech recognition & spoken-language understanding.",
+    "examples": [
+      "substrate for Code models, copilots & repository intelligence",
+      "substrate for Speech recognition & spoken-language understanding"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Search, sampling & decoding procedures, Autoregressive decoding."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "search_sampling_decoding",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Search, sampling & decoding procedures."
+      },
+      {
+        "id": "autoregressive_decoding",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Autoregressive decoding."
+      },
+      {
+        "id": "constraint_program_execution",
+        "type": "searches_with",
+        "strength": "common",
+        "rationale": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Constraint propagation, logic & program execution."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3186fb71502be768",
+      "node_id": "beam_search",
+      "field": "definition",
+      "text": "Beam search retains a bounded set of high-scoring partial sequences, optionally applying lexical, grammar, length, or domain constraints during decoding."
+    },
+    {
+      "unit_id": "6b6fbaf6732b4bf2",
+      "node_id": "beam_search",
+      "field": "why_it_matters",
+      "text": "The role of Beam search & constrained decoding is to connect Search, sampling & decoding procedures, Autoregressive decoding to downstream capabilities including Code models, copilots & repository intelligence, Speech recognition & spoken-language understanding."
+    },
+    {
+      "unit_id": "8a23660f996d5f4f",
+      "node_id": "beam_search",
+      "field": "examples[1]",
+      "text": "substrate for Code models, copilots & repository intelligence"
+    },
+    {
+      "unit_id": "a660c29f5c9cf226",
+      "node_id": "beam_search",
+      "field": "examples[2]",
+      "text": "substrate for Speech recognition & spoken-language understanding"
+    },
+    {
+      "unit_id": "c11fe2a6a80b7f34",
+      "node_id": "beam_search",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Search, sampling & decoding procedures, Autoregressive decoding."
+    },
+    {
+      "unit_id": "a2a14d8525d2a9ff",
+      "node_id": "beam_search",
+      "field": "dependencies.search_sampling_decoding.rationale",
+      "text": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Search, sampling & decoding procedures."
+    },
+    {
+      "unit_id": "094700ae6b80f36e",
+      "node_id": "beam_search",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Autoregressive decoding."
+    },
+    {
+      "unit_id": "6d639c585e33e07d",
+      "node_id": "beam_search",
+      "field": "dependencies.constraint_program_execution.rationale",
+      "text": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Constraint propagation, logic & program execution."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "92b08d2e7a1115d8",
+      "node_id": "beam_search",
+      "dependency_id": "search_sampling_decoding",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Search, sampling & decoding procedures."
+    },
+    {
+      "edge_id": "84af742a6c862d73",
+      "node_id": "beam_search",
+      "dependency_id": "autoregressive_decoding",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Autoregressive decoding."
+    },
+    {
+      "edge_id": "084a8e6bc8c6c838",
+      "node_id": "beam_search",
+      "dependency_id": "constraint_program_execution",
+      "type": "searches_with",
+      "strength": "common",
+      "rationale": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Constraint propagation, logic & program execution."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/beam_search.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "7e5f85199542be12",
+      "node_id": "augmentation_synthetic",
+      "field": "definition",
+      "text": "Data augmentation and synthetic-data generation expand training variation through transformations, simulation, model generation, or controlled perturbation.",
+      "source_ids": ["ref_dlbook", "ref_gan", "ref_vae", "ref_diffusion", "ref_flow"],
+      "evidence_location": "Deep Learning, Chapter 7.4 dataset augmentation and Chapters 20 on generative models; GAN, VAE, diffusion, and flow-matching papers for model-based generation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Augmentation via transformations and synthetic/model-generated data are supported across the cited sources, though simulation and controlled perturbation are generalized."
+    },
+    {
+      "unit_id": "8b5b58c59f1e08c7",
+      "node_id": "augmentation_synthetic",
+      "field": "why_it_matters",
+      "text": "The role of Data augmentation & synthetic-data generation is to connect Datasets, sampling & splits, Multimodal, simulated & streaming data to downstream capabilities including Robustness, distribution shift & OOD evaluation, Reinforcement learning with verifiable rewards (RLVR), Domain randomization & simulation curricula.",
+      "source_ids": ["ref_dlbook", "ref_aima"],
+      "evidence_location": "Deep Learning, Chapter 7.4 dataset augmentation and generalization context; AIMA learning, robotics, and simulated-environment topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Datasets, augmentation, and robustness/generalization links are supported. Multimodal/streaming data, RLVR, and domain-randomization curricula are not directly supported by the packet evidence."
+    },
+    {
+      "unit_id": "bba13528230631f8",
+      "node_id": "augmentation_synthetic",
+      "field": "examples[1]",
+      "text": "substrate for Robustness, distribution shift & OOD evaluation",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 7.4 dataset augmentation and Chapter 5/7 generalization and regularization context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Augmentation is supported as a regularization/generalization technique. Distribution shift and OOD evaluation are not directly evidenced in the cited source."
+    },
+    {
+      "unit_id": "c0409b5ef31673d3",
+      "node_id": "augmentation_synthetic",
+      "field": "examples[2]",
+      "text": "substrate for Reinforcement learning with verifiable rewards (RLVR)",
+      "source_ids": ["ref_aima"],
+      "evidence_location": "AIMA reinforcement learning and simulated environments/robotics topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "unsupported",
+      "notes": "The inspected packet sources do not support the modern RLVR-specific downstream claim."
+    },
+    {
+      "unit_id": "b7613393a05a775d",
+      "node_id": "augmentation_synthetic",
+      "field": "examples[3]",
+      "text": "substrate for Domain randomization & simulation curricula",
+      "source_ids": ["ref_aima"],
+      "evidence_location": "AIMA robotics, reinforcement learning, and simulation-adjacent planning/control topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Simulation and curricula are broadly relevant to AI/RL, but domain randomization is not directly supported by the cited packet sources."
+    },
+    {
+      "unit_id": "6936918f0ffe0391",
+      "node_id": "augmentation_synthetic",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Multimodal, simulated & streaming data.",
+      "source_ids": ["ref_dlbook", "ref_pml"],
+      "evidence_location": "Deep Learning, Chapters 5, 7, and 11 on data, augmentation, hyperparameters, and methodology; PML data and preprocessing topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Data and hyperparameter sensitivity are supported. Compute budget, random variation, evaluation contamination, and multimodal/simulated/streaming dependencies are broader than cited evidence."
+    },
+    {
+      "unit_id": "7baa3c381face3f3",
+      "node_id": "augmentation_synthetic",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Data augmentation & synthetic-data generation uses Datasets, sampling & splits as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook", "ref_pml"],
+      "evidence_location": "Deep Learning, Chapter 7.4 dataset augmentation; PML data and preprocessing topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Augmentation operates on or supplements datasets, so the dependency is defensible."
+    },
+    {
+      "unit_id": "3923c90b9eb98b7f",
+      "node_id": "augmentation_synthetic",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Data augmentation & synthetic-data generation uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook", "ref_aima"],
+      "evidence_location": "Deep Learning, image/text data and augmentation/generative-model contexts; AIMA robotics/simulation-adjacent topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Multimodal and simulated data can be augmentation sources, but streaming data is not directly supported and the dependency is not always necessary."
+    },
+    {
+      "unit_id": "3f3291da223f1ccc",
+      "node_id": "augmentation_synthetic",
+      "field": "dependencies.equivariance_invariance.rationale",
+      "text": "Data augmentation & synthetic-data generation uses Equivariance, invariance & geometric priors as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook"],
+      "evidence_location": "Deep Learning, Chapter 7.4 dataset augmentation and Chapter 9 convolution/equivariance context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Transformation-based augmentation often encodes invariances; exact dependency wording is synthesized."
+    },
+    {
+      "unit_id": "6e6514ffde5304ea",
+      "node_id": "augmentation_synthetic",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "Data augmentation & synthetic-data generation uses Generative modeling as a reusable ingredient in its defined operation.",
+      "source_ids": ["ref_dlbook", "ref_gan", "ref_vae", "ref_diffusion", "ref_flow"],
+      "evidence_location": "Deep Learning, Chapter 20 generative models; GAN, VAE, diffusion, and flow-matching papers as model-generation sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Synthetic-data generation can use generative models; augmentation more broadly need not."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "a9a04e8af7721781",
+      "node_id": "augmentation_synthetic",
+      "dependency_id": "datasets_sampling",
+      "source_ids": ["ref_dlbook", "ref_pml"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Data augmentation operates on datasets and sampled examples; core strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "875a34f5a4f93785",
+      "node_id": "augmentation_synthetic",
+      "dependency_id": "multimodal_simulated_streams",
+      "source_ids": ["ref_dlbook", "ref_aima"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Simulated/multimodal data are plausible sources, but not a necessary core dependency and streaming data is not directly evidenced.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "284e15641582ae24",
+      "node_id": "augmentation_synthetic",
+      "dependency_id": "equivariance_invariance",
+      "source_ids": ["ref_dlbook"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Transformation-based augmentation often exploits invariance assumptions; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "174fa1fcf4134606",
+      "node_id": "augmentation_synthetic",
+      "dependency_id": "generative_learning",
+      "source_ids": ["ref_dlbook", "ref_gan", "ref_vae", "ref_diffusion", "ref_flow"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Generative models support synthetic-data generation; common strength is appropriate because not all augmentation is generative.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

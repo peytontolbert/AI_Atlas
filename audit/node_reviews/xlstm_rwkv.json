@@ -1,0 +1,214 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "bdcfb2ac25835f4c",
+      "node_id": "xlstm_rwkv",
+      "field": "definition",
+      "text": "Modern gated recurrent architectures scale matrix or exponential memory and linear-time recurrence toward foundation-model regimes.",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core mechanism is supported, but the wording adds broad foundation-model/instruction-following implications beyond one direct source."
+    },
+    {
+      "unit_id": "215ad7569df0a283",
+      "node_id": "xlstm_rwkv",
+      "field": "why_it_matters",
+      "text": "The role of xLSTM & linear-recurrent hybrids is to connect LSTMs & GRUs, Gating & multiplicative control to downstream capabilities including Transformer\u2013SSM & recurrent hybrid models.",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
+    },
+    {
+      "unit_id": "1c320c0863c04404",
+      "node_id": "xlstm_rwkv",
+      "field": "examples[1]",
+      "text": "substrate for Transformer\u2013SSM & recurrent hybrid models",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The downstream substrate claim is plausible but broader than what the packet sources directly establish."
+    },
+    {
+      "unit_id": "64f5ff267bab067b",
+      "node_id": "xlstm_rwkv",
+      "field": "examples[2]",
+      "text": "combined with LSTMs & GRUs",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Combination/specialization is plausible from the architecture lineage, but not a standalone direct claim in the cited source."
+    },
+    {
+      "unit_id": "f5270522c81e32eb",
+      "node_id": "xlstm_rwkv",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include LSTMs & GRUs, Gating & multiplicative control.",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+    },
+    {
+      "unit_id": "99d331a6b8a00f3c",
+      "node_id": "xlstm_rwkv",
+      "field": "dependencies.lstm_gru.rationale",
+      "text": "xLSTM & linear-recurrent hybrids extends or specializes the architecture family LSTMs & GRUs.",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "b1ea9fde8c6b4a33",
+      "node_id": "xlstm_rwkv",
+      "field": "dependencies.gating.rationale",
+      "text": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Gating & multiplicative control.",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "a22d62bcbec71f41",
+      "node_id": "xlstm_rwkv",
+      "field": "dependencies.efficient_attention.rationale",
+      "text": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Sparse, local, linear & recurrent attention.",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
+    },
+    {
+      "unit_id": "717d89640acf8963",
+      "node_id": "xlstm_rwkv",
+      "field": "dependencies.memory_read_write.rationale",
+      "text": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Differentiable memory read/write.",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "003fff359606f4b3",
+      "node_id": "xlstm_rwkv",
+      "dependency_id": "lstm_gru",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "15a69ba24177dfdf",
+      "node_id": "xlstm_rwkv",
+      "dependency_id": "gating",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports this dependency type and the stated strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "3ada61c0cf41bf93",
+      "node_id": "xlstm_rwkv",
+      "dependency_id": "efficient_attention",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "RWKV-like linear recurrent attention makes the connection plausible, but xLSTM is not an attention mechanism; the grouped node makes this edge under-specified.",
+      "relationship_type_supported": false,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "c5e9ab3d5ef4ca15",
+      "node_id": "xlstm_rwkv",
+      "dependency_id": "memory_read_write",
+      "source_ids": [
+        "ref_xlstm",
+        "ref_lstm",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

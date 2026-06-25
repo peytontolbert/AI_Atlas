@@ -1,0 +1,177 @@
+{
+  "node_id": "sft_instruction",
+  "label": "Supervised fine-tuning & instruction tuning",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "sft_instruction",
+    "label": "Supervised fine-tuning & instruction tuning",
+    "layer": "training",
+    "tags": [
+      "training",
+      "alignment"
+    ],
+    "aliases": [],
+    "definition": "Supervised fine-tuning and instruction tuning train models on curated input–response examples so they follow task descriptions and conversational conventions.",
+    "why_it_matters": "The role of Supervised fine-tuning & instruction tuning is to connect Supervised learning, Large-scale pretraining to downstream capabilities including Parameter-efficient tuning, adapters & LoRA, Reward-model training, RLHF & RLAIF, Direct and online preference optimization.",
+    "examples": [
+      "substrate for Parameter-efficient tuning, adapters & LoRA",
+      "substrate for Reward-model training, RLHF & RLAIF",
+      "substrate for Direct and online preference optimization"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised learning, Large-scale pretraining."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "supervised_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Supervised fine-tuning & instruction tuning uses Supervised learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "pretraining",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Supervised fine-tuning & instruction tuning uses Large-scale pretraining as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervision_signals",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Supervised fine-tuning & instruction tuning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3692a34ae1a16911",
+      "node_id": "sft_instruction",
+      "field": "definition",
+      "text": "Supervised fine-tuning and instruction tuning train models on curated input–response examples so they follow task descriptions and conversational conventions."
+    },
+    {
+      "unit_id": "25a5be47cf366a98",
+      "node_id": "sft_instruction",
+      "field": "why_it_matters",
+      "text": "The role of Supervised fine-tuning & instruction tuning is to connect Supervised learning, Large-scale pretraining to downstream capabilities including Parameter-efficient tuning, adapters & LoRA, Reward-model training, RLHF & RLAIF, Direct and online preference optimization."
+    },
+    {
+      "unit_id": "b61f4ced30a6ce99",
+      "node_id": "sft_instruction",
+      "field": "examples[1]",
+      "text": "substrate for Parameter-efficient tuning, adapters & LoRA"
+    },
+    {
+      "unit_id": "4604cd6c3bb5c97a",
+      "node_id": "sft_instruction",
+      "field": "examples[2]",
+      "text": "substrate for Reward-model training, RLHF & RLAIF"
+    },
+    {
+      "unit_id": "f3b6abf315bbffbb",
+      "node_id": "sft_instruction",
+      "field": "examples[3]",
+      "text": "substrate for Direct and online preference optimization"
+    },
+    {
+      "unit_id": "b5b67fb1d2c8a586",
+      "node_id": "sft_instruction",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised learning, Large-scale pretraining."
+    },
+    {
+      "unit_id": "c269473ae24cdc10",
+      "node_id": "sft_instruction",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Supervised fine-tuning & instruction tuning uses Supervised learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "68a316892dc3170c",
+      "node_id": "sft_instruction",
+      "field": "dependencies.pretraining.rationale",
+      "text": "Supervised fine-tuning & instruction tuning uses Large-scale pretraining as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "6be8d1bd65c4705f",
+      "node_id": "sft_instruction",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "Supervised fine-tuning & instruction tuning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "4211ff7a069a0577",
+      "node_id": "sft_instruction",
+      "dependency_id": "supervised_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Supervised fine-tuning & instruction tuning uses Supervised learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "ca8046ac41d63c60",
+      "node_id": "sft_instruction",
+      "dependency_id": "pretraining",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Supervised fine-tuning & instruction tuning uses Large-scale pretraining as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "3a878c5ce047a2af",
+      "node_id": "sft_instruction",
+      "dependency_id": "supervision_signals",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Supervised fine-tuning & instruction tuning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/sft_instruction.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

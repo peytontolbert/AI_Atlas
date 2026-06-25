@@ -1,0 +1,216 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "7d5c83a045f4ce64",
+      "node_id": "graph_of_thoughts",
+      "field": "definition",
+      "text": "Graph-of-Thought methods represent reasoning states as a graph so branches can merge, share evidence, revisit conclusions, or combine partial solutions.",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "GoT directly models LLM thoughts as graph vertices with dependency edges and supports combining/enhancing thoughts."
+    },
+    {
+      "unit_id": "7d9d12b24d80533f",
+      "node_id": "graph_of_thoughts",
+      "field": "why_it_matters",
+      "text": "They capture synthesis and dependency patterns that a strict chain or tree cannot represent efficiently.",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The abstract explicitly contrasts GoT with Chain-of-Thought and Tree of Thoughts and highlights graph dependency/combination advantages."
+    },
+    {
+      "unit_id": "52951a87741faae7",
+      "node_id": "graph_of_thoughts",
+      "field": "examples[1]",
+      "text": "merging independent subproofs",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Combining arbitrary thoughts supports merging sub-results, but subproofs are not directly named."
+    },
+    {
+      "unit_id": "27847b0ccfe20b41",
+      "node_id": "graph_of_thoughts",
+      "field": "examples[2]",
+      "text": "argument graphs",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Thought dependency graphs support argument-graph-like structures, but this exact application is not named."
+    },
+    {
+      "unit_id": "fe3065740ab7822a",
+      "node_id": "graph_of_thoughts",
+      "field": "examples[3]",
+      "text": "multi-agent evidence synthesis",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Multi-agent evidence synthesis is plausible but not directly supported by the GoT abstract."
+    },
+    {
+      "unit_id": "844153bdf257b640",
+      "node_id": "graph_of_thoughts",
+      "field": "limitations[1]",
+      "text": "Graph construction and credit assignment are difficult, and unconstrained merging can compound inconsistent assumptions.",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Complex graph construction and inconsistent merging are plausible risks, but not directly stated in the abstract."
+    },
+    {
+      "unit_id": "1ddb46255964d3fc",
+      "node_id": "graph_of_thoughts",
+      "field": "dependencies.tree_of_thoughts.rationale",
+      "text": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Tree-of-Thought & branch-and-evaluate reasoning.",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source explicitly positions GoT beyond ToT."
+    },
+    {
+      "unit_id": "8b16b2f8a19ed09a",
+      "node_id": "graph_of_thoughts",
+      "field": "dependencies.graph_theory.rationale",
+      "text": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Graph theory.",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly uses arbitrary graph vertices and edges/dependencies."
+    },
+    {
+      "unit_id": "f6ea36fbdd5251ab",
+      "node_id": "graph_of_thoughts",
+      "field": "dependencies.multiagent_coordination.rationale",
+      "text": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Multi-agent coordination, debate & markets.",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "GoT can combine thoughts, but multiagent coordination/debate/markets are not directly sourced."
+    },
+    {
+      "unit_id": "c12ce58400b75612",
+      "node_id": "graph_of_thoughts",
+      "field": "dependencies.reflection_verifier.rationale",
+      "text": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Reflection, critique, verifier & repair loops.",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Feedback loops and enhancing thoughts support verifier/reflection-like operations."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "2c4264e5db8a2028",
+      "node_id": "graph_of_thoughts",
+      "dependency_id": "tree_of_thoughts",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "GoT is explicitly framed relative to ToT; core dependency is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "35514ef9122ec319",
+      "node_id": "graph_of_thoughts",
+      "dependency_id": "graph_theory",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Graph vertices/edges/dependencies are directly central.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "6982c541699c012e",
+      "node_id": "graph_of_thoughts",
+      "dependency_id": "multiagent_coordination",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Multiagent evidence synthesis is plausible but not direct.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b71988dd0174faea",
+      "node_id": "graph_of_thoughts",
+      "dependency_id": "reflection_verifier",
+      "source_ids": [
+        "ref_got",
+        "ref_tot"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Feedback loops and thought enhancement support reflection/verifier as a common mechanism.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

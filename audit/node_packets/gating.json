@@ -1,0 +1,144 @@
+{
+  "node_id": "gating",
+  "label": "Gating & multiplicative control",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "gating",
+    "label": "Gating & multiplicative control",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "sequence",
+      "moe"
+    ],
+    "aliases": [],
+    "definition": "Learned gates regulate what information is written, forgotten, routed, or exposed.",
+    "why_it_matters": "The role of Gating & multiplicative control is to connect Affine transforms & dense layers, Nonlinear activations to downstream capabilities including Recurrence & feedback state, Selective state-space scan, Routing, conditional computation & mixture-of-experts.",
+    "examples": [
+      "substrate for Recurrence & feedback state",
+      "substrate for Selective state-space scan",
+      "substrate for Routing, conditional computation & mixture-of-experts"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Affine transforms & dense layers, Nonlinear activations."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "affine_dense",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Gating & multiplicative control is assembled in part from the mechanism or model component Affine transforms & dense layers."
+      },
+      {
+        "id": "nonlinear_activations",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Gating & multiplicative control is assembled in part from the mechanism or model component Nonlinear activations."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "af7bd44a43f25b2d",
+      "node_id": "gating",
+      "field": "definition",
+      "text": "Learned gates regulate what information is written, forgotten, routed, or exposed."
+    },
+    {
+      "unit_id": "9eacc9b7e74e4824",
+      "node_id": "gating",
+      "field": "why_it_matters",
+      "text": "The role of Gating & multiplicative control is to connect Affine transforms & dense layers, Nonlinear activations to downstream capabilities including Recurrence & feedback state, Selective state-space scan, Routing, conditional computation & mixture-of-experts."
+    },
+    {
+      "unit_id": "a43998219e665fc1",
+      "node_id": "gating",
+      "field": "examples[1]",
+      "text": "substrate for Recurrence & feedback state"
+    },
+    {
+      "unit_id": "42f155660baec344",
+      "node_id": "gating",
+      "field": "examples[2]",
+      "text": "substrate for Selective state-space scan"
+    },
+    {
+      "unit_id": "9f434c69c1cf585f",
+      "node_id": "gating",
+      "field": "examples[3]",
+      "text": "substrate for Routing, conditional computation & mixture-of-experts"
+    },
+    {
+      "unit_id": "335edf921d98efa4",
+      "node_id": "gating",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Affine transforms & dense layers, Nonlinear activations."
+    },
+    {
+      "unit_id": "2c8d9bee8ee431c6",
+      "node_id": "gating",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Gating & multiplicative control is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "unit_id": "a41bba9f42a3b41e",
+      "node_id": "gating",
+      "field": "dependencies.nonlinear_activations.rationale",
+      "text": "Gating & multiplicative control is assembled in part from the mechanism or model component Nonlinear activations."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "26ae11978abc0005",
+      "node_id": "gating",
+      "dependency_id": "affine_dense",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Gating & multiplicative control is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "edge_id": "33fb4bd1250d95f4",
+      "node_id": "gating",
+      "dependency_id": "nonlinear_activations",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Gating & multiplicative control is assembled in part from the mechanism or model component Nonlinear activations."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/gating.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

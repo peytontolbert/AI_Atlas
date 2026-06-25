@@ -1,0 +1,171 @@
+{
+  "node_id": "reflection_verifier",
+  "label": "Reflection, critique, verifier & repair loops",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "reflection_verifier",
+    "label": "Reflection, critique, verifier & repair loops",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "agents",
+      "evaluation"
+    ],
+    "aliases": [],
+    "definition": "Reflection and verifier loops inspect intermediate work, compare it against tests or criteria, and revise, reject, or escalate candidate solutions.",
+    "why_it_matters": "The role of Reflection, critique, verifier & repair loops is to connect Self-consistency & best-of-N inference, Observe–plan–act agent loops to downstream capabilities including Autonomous software-engineering agents, Automated theorem proving & mathematical AI, Test-time compute scaling.",
+    "examples": [
+      "substrate for Autonomous software-engineering agents",
+      "substrate for Automated theorem proving & mathematical AI",
+      "substrate for Test-time compute scaling"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Self-consistency & best-of-N inference, Observe–plan–act agent loops."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "self_consistency",
+        "type": "verifies_with",
+        "strength": "core",
+        "rationale": "Reflection, critique, verifier & repair loops checks candidate behavior or artifacts against evidence or constraints from Self-consistency & best-of-N inference."
+      },
+      {
+        "id": "reward_modeling",
+        "type": "verifies_with",
+        "strength": "common",
+        "rationale": "Reflection, critique, verifier & repair loops checks candidate behavior or artifacts against evidence or constraints from Reward modeling."
+      },
+      {
+        "id": "code_execution",
+        "type": "verifies_with",
+        "strength": "common",
+        "rationale": "Reflection, critique, verifier & repair loops checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "1e34c3c71dd17d06",
+      "node_id": "reflection_verifier",
+      "field": "definition",
+      "text": "Reflection and verifier loops inspect intermediate work, compare it against tests or criteria, and revise, reject, or escalate candidate solutions."
+    },
+    {
+      "unit_id": "262d92a8616b6933",
+      "node_id": "reflection_verifier",
+      "field": "why_it_matters",
+      "text": "The role of Reflection, critique, verifier & repair loops is to connect Self-consistency & best-of-N inference, Observe–plan–act agent loops to downstream capabilities including Autonomous software-engineering agents, Automated theorem proving & mathematical AI, Test-time compute scaling."
+    },
+    {
+      "unit_id": "1a954896a23f1210",
+      "node_id": "reflection_verifier",
+      "field": "examples[1]",
+      "text": "substrate for Autonomous software-engineering agents"
+    },
+    {
+      "unit_id": "2083c3d8c2601c7c",
+      "node_id": "reflection_verifier",
+      "field": "examples[2]",
+      "text": "substrate for Automated theorem proving & mathematical AI"
+    },
+    {
+      "unit_id": "f7644ae158748c7d",
+      "node_id": "reflection_verifier",
+      "field": "examples[3]",
+      "text": "substrate for Test-time compute scaling"
+    },
+    {
+      "unit_id": "37e7ec8e18fc062a",
+      "node_id": "reflection_verifier",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Self-consistency & best-of-N inference, Observe–plan–act agent loops."
+    },
+    {
+      "unit_id": "d7b2c991787f7703",
+      "node_id": "reflection_verifier",
+      "field": "dependencies.self_consistency.rationale",
+      "text": "Reflection, critique, verifier & repair loops checks candidate behavior or artifacts against evidence or constraints from Self-consistency & best-of-N inference."
+    },
+    {
+      "unit_id": "5186486b6090ca4e",
+      "node_id": "reflection_verifier",
+      "field": "dependencies.reward_modeling.rationale",
+      "text": "Reflection, critique, verifier & repair loops checks candidate behavior or artifacts against evidence or constraints from Reward modeling."
+    },
+    {
+      "unit_id": "a60cdeeb66eeba14",
+      "node_id": "reflection_verifier",
+      "field": "dependencies.code_execution.rationale",
+      "text": "Reflection, critique, verifier & repair loops checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "5bbd4adec6a6a27a",
+      "node_id": "reflection_verifier",
+      "dependency_id": "self_consistency",
+      "type": "verifies_with",
+      "strength": "core",
+      "rationale": "Reflection, critique, verifier & repair loops checks candidate behavior or artifacts against evidence or constraints from Self-consistency & best-of-N inference."
+    },
+    {
+      "edge_id": "951253d26fb79915",
+      "node_id": "reflection_verifier",
+      "dependency_id": "reward_modeling",
+      "type": "verifies_with",
+      "strength": "common",
+      "rationale": "Reflection, critique, verifier & repair loops checks candidate behavior or artifacts against evidence or constraints from Reward modeling."
+    },
+    {
+      "edge_id": "4727f46aa2033219",
+      "node_id": "reflection_verifier",
+      "dependency_id": "code_execution",
+      "type": "verifies_with",
+      "strength": "common",
+      "rationale": "Reflection, critique, verifier & repair loops checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/reflection_verifier.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

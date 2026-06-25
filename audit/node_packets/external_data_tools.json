@@ -1,0 +1,191 @@
+{
+  "node_id": "external_data_tools",
+  "label": "External databases, APIs & live tools",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "external_data_tools",
+    "label": "External databases, APIs & live tools",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "agents",
+      "systems"
+    ],
+    "aliases": [],
+    "definition": "External-data tools connect a model or agent to databases, APIs, files, search engines, sensors, and continuously changing operational state.",
+    "why_it_matters": "The role of External databases, APIs & live tools is to connect Caches, APIs & tool interfaces, Databases & information retrieval to downstream capabilities including Tool use & function calling, ReAct-style reasoning and acting, API gateways, tool registries & secure connectors.",
+    "examples": [
+      "substrate for Tool use & function calling",
+      "substrate for ReAct-style reasoning and acting",
+      "substrate for API gateways, tool registries & secure connectors"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Caches, APIs & tool interfaces, Databases & information retrieval."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "cache_tool_interfaces",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "External databases, APIs & live tools uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "databases_ir",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "External databases, APIs & live tools uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "sparse_retrieval",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "External databases, APIs & live tools stores, selects, or obtains information through Sparse lexical retrieval."
+      },
+      {
+        "id": "dense_retrieval",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "External databases, APIs & live tools stores, selects, or obtains information through Dense vector retrieval."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "ac5e3cc4b1880e68",
+      "node_id": "external_data_tools",
+      "field": "definition",
+      "text": "External-data tools connect a model or agent to databases, APIs, files, search engines, sensors, and continuously changing operational state."
+    },
+    {
+      "unit_id": "2dac8c0e3512ce5e",
+      "node_id": "external_data_tools",
+      "field": "why_it_matters",
+      "text": "The role of External databases, APIs & live tools is to connect Caches, APIs & tool interfaces, Databases & information retrieval to downstream capabilities including Tool use & function calling, ReAct-style reasoning and acting, API gateways, tool registries & secure connectors."
+    },
+    {
+      "unit_id": "7cd72eba6f587783",
+      "node_id": "external_data_tools",
+      "field": "examples[1]",
+      "text": "substrate for Tool use & function calling"
+    },
+    {
+      "unit_id": "52e3c75bb8b4a87a",
+      "node_id": "external_data_tools",
+      "field": "examples[2]",
+      "text": "substrate for ReAct-style reasoning and acting"
+    },
+    {
+      "unit_id": "54d1b069393708c6",
+      "node_id": "external_data_tools",
+      "field": "examples[3]",
+      "text": "substrate for API gateways, tool registries & secure connectors"
+    },
+    {
+      "unit_id": "5006caeb97ee8568",
+      "node_id": "external_data_tools",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Caches, APIs & tool interfaces, Databases & information retrieval."
+    },
+    {
+      "unit_id": "a6a64882c70eb41d",
+      "node_id": "external_data_tools",
+      "field": "dependencies.cache_tool_interfaces.rationale",
+      "text": "External databases, APIs & live tools uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "184c94c4e20e90f5",
+      "node_id": "external_data_tools",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "External databases, APIs & live tools uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "46d4c4b1de7adc2b",
+      "node_id": "external_data_tools",
+      "field": "dependencies.sparse_retrieval.rationale",
+      "text": "External databases, APIs & live tools stores, selects, or obtains information through Sparse lexical retrieval."
+    },
+    {
+      "unit_id": "4b18b3f172f0c031",
+      "node_id": "external_data_tools",
+      "field": "dependencies.dense_retrieval.rationale",
+      "text": "External databases, APIs & live tools stores, selects, or obtains information through Dense vector retrieval."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "50e74c266987d47d",
+      "node_id": "external_data_tools",
+      "dependency_id": "cache_tool_interfaces",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "External databases, APIs & live tools uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "9b94b568667250f0",
+      "node_id": "external_data_tools",
+      "dependency_id": "databases_ir",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "External databases, APIs & live tools uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "3e75def68c86a4f8",
+      "node_id": "external_data_tools",
+      "dependency_id": "sparse_retrieval",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "External databases, APIs & live tools stores, selects, or obtains information through Sparse lexical retrieval."
+    },
+    {
+      "edge_id": "d39f6e4302eacfed",
+      "node_id": "external_data_tools",
+      "dependency_id": "dense_retrieval",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "External databases, APIs & live tools stores, selects, or obtains information through Dense vector retrieval."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/external_data_tools.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

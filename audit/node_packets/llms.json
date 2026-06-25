@@ -1,0 +1,708 @@
+{
+  "node_id": "llms",
+  "label": "Large language models",
+  "layer": "system",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "llms",
+    "label": "Large language models",
+    "layer": "system",
+    "tags": [
+      "system",
+      "language",
+      "foundation-models"
+    ],
+    "aliases": [
+      "LLMs"
+    ],
+    "definition": "Large language models are high-capacity sequence models pretrained to predict or reconstruct language and adapted for generation, reasoning, retrieval, and tool use.",
+    "why_it_matters": "The role of Large language models is to connect Decoder-only causal transformers, Large-scale pretraining to downstream capabilities including Conversational assistants & chatbots, Code models, copilots & repository intelligence, Automated theorem proving & mathematical AI.",
+    "examples": [
+      "substrate for Conversational assistants & chatbots",
+      "substrate for Code models, copilots & repository intelligence",
+      "substrate for Automated theorem proving & mathematical AI"
+    ],
+    "limitations": [
+      "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Decoder-only causal transformers, Large-scale pretraining."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_transformer",
+      "ref_scaling",
+      "ref_chinchilla"
+    ],
+    "dependencies": [
+      {
+        "id": "decoder_only_transformer",
+        "type": "applies",
+        "strength": "core",
+        "rationale": "Large language models integrates Decoder-only causal transformers as part of an end-to-end application boundary."
+      },
+      {
+        "id": "pretraining",
+        "type": "applies",
+        "strength": "core",
+        "rationale": "Large language models integrates Large-scale pretraining as part of an end-to-end application boundary."
+      },
+      {
+        "id": "sft_instruction",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Large language models integrates Supervised fine-tuning & instruction tuning as part of an end-to-end application boundary."
+      },
+      {
+        "id": "model_serving",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Large language models integrates Model servers & inference runtimes as part of an end-to-end application boundary."
+      },
+      {
+        "id": "empirical_scaling_laws",
+        "type": "applies",
+        "strength": "common",
+        "rationale": "Large language models integrates Empirical scaling laws as part of an end-to-end application boundary."
+      },
+      {
+        "id": "compute_optimal_training",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Compute-optimal scaling & training allocation as part of an end-to-end application boundary."
+      },
+      {
+        "id": "data_curation",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Data collection, curation & filtering as part of an end-to-end application boundary."
+      },
+      {
+        "id": "dedup_decontamination",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Deduplication, contamination control & provenance as part of an end-to-end application boundary."
+      },
+      {
+        "id": "tokenization_serialization",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Tokenization, serialization & packing as part of an end-to-end application boundary."
+      },
+      {
+        "id": "distributed_mixed_precision",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Distributed, mixed-precision & memory-efficient training as part of an end-to-end application boundary."
+      },
+      {
+        "id": "peft_lora",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary."
+      },
+      {
+        "id": "dpo_posttraining",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Direct and online preference optimization as part of an end-to-end application boundary."
+      },
+      {
+        "id": "grpo",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Group Relative Policy Optimization (GRPO) as part of an end-to-end application boundary."
+      },
+      {
+        "id": "paged_attention",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Paged attention & KV-memory management as part of an end-to-end application boundary."
+      },
+      {
+        "id": "speculative_decoding",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Speculative, parallel & assisted decoding as part of an end-to-end application boundary."
+      },
+      {
+        "id": "mixture_of_depths",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Mixture-of-Depths as part of an end-to-end application boundary."
+      },
+      {
+        "id": "hybrid_transformer_ssm",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Transformer–SSM & recurrent hybrid models as part of an end-to-end application boundary."
+      },
+      {
+        "id": "diffusion_language_model",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Diffusion and masked-generative language models as part of an end-to-end application boundary."
+      },
+      {
+        "id": "neural_architecture_search",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Neural architecture search as part of an end-to-end application boundary."
+      },
+      {
+        "id": "parallel_inference",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Tensor, pipeline, sequence & expert parallel inference as part of an end-to-end application boundary."
+      },
+      {
+        "id": "registry_mlops",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Model registry, versioning & MLOps / LLMOps as part of an end-to-end application boundary."
+      },
+      {
+        "id": "fault_energy_ops",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Fault tolerance, security, energy & cost optimization as part of an end-to-end application boundary."
+      },
+      {
+        "id": "structured_decoding_runtime",
+        "type": "applies",
+        "strength": "optional",
+        "rationale": "Large language models integrates Structured-decoding runtimes as part of an end-to-end application boundary."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c820055a4c001533",
+      "node_id": "llms",
+      "field": "definition",
+      "text": "Large language models are high-capacity sequence models pretrained to predict or reconstruct language and adapted for generation, reasoning, retrieval, and tool use."
+    },
+    {
+      "unit_id": "4d3b6144ed41c6af",
+      "node_id": "llms",
+      "field": "why_it_matters",
+      "text": "The role of Large language models is to connect Decoder-only causal transformers, Large-scale pretraining to downstream capabilities including Conversational assistants & chatbots, Code models, copilots & repository intelligence, Automated theorem proving & mathematical AI."
+    },
+    {
+      "unit_id": "7333335d9f8a0587",
+      "node_id": "llms",
+      "field": "examples[1]",
+      "text": "substrate for Conversational assistants & chatbots"
+    },
+    {
+      "unit_id": "b33a4a1336de3072",
+      "node_id": "llms",
+      "field": "examples[2]",
+      "text": "substrate for Code models, copilots & repository intelligence"
+    },
+    {
+      "unit_id": "8b0782a486ebaadd",
+      "node_id": "llms",
+      "field": "examples[3]",
+      "text": "substrate for Automated theorem proving & mathematical AI"
+    },
+    {
+      "unit_id": "c2f509488c013ae8",
+      "node_id": "llms",
+      "field": "limitations[1]",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Decoder-only causal transformers, Large-scale pretraining."
+    },
+    {
+      "unit_id": "2e8c80218c449121",
+      "node_id": "llms",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "Large language models integrates Decoder-only causal transformers as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "45082f1aa1d68fd1",
+      "node_id": "llms",
+      "field": "dependencies.pretraining.rationale",
+      "text": "Large language models integrates Large-scale pretraining as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "e8eefd305b1537e4",
+      "node_id": "llms",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "Large language models integrates Supervised fine-tuning & instruction tuning as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "2a2654193012a135",
+      "node_id": "llms",
+      "field": "dependencies.model_serving.rationale",
+      "text": "Large language models integrates Model servers & inference runtimes as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "6b9989cb85df3380",
+      "node_id": "llms",
+      "field": "dependencies.empirical_scaling_laws.rationale",
+      "text": "Large language models integrates Empirical scaling laws as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "10f6a05b8bddce02",
+      "node_id": "llms",
+      "field": "dependencies.compute_optimal_training.rationale",
+      "text": "Large language models integrates Compute-optimal scaling & training allocation as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "5b65c133a797a24e",
+      "node_id": "llms",
+      "field": "dependencies.data_curation.rationale",
+      "text": "Large language models integrates Data collection, curation & filtering as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "1231ba7c5fef9cb4",
+      "node_id": "llms",
+      "field": "dependencies.dedup_decontamination.rationale",
+      "text": "Large language models integrates Deduplication, contamination control & provenance as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "c2148cc70cc43ec4",
+      "node_id": "llms",
+      "field": "dependencies.tokenization_serialization.rationale",
+      "text": "Large language models integrates Tokenization, serialization & packing as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "62b930015a575e7b",
+      "node_id": "llms",
+      "field": "dependencies.distributed_mixed_precision.rationale",
+      "text": "Large language models integrates Distributed, mixed-precision & memory-efficient training as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "f9ade400fc59fd38",
+      "node_id": "llms",
+      "field": "dependencies.peft_lora.rationale",
+      "text": "Large language models integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "a76f7d14f0bcf257",
+      "node_id": "llms",
+      "field": "dependencies.dpo_posttraining.rationale",
+      "text": "Large language models integrates Direct and online preference optimization as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "e278535bc69375ad",
+      "node_id": "llms",
+      "field": "dependencies.grpo.rationale",
+      "text": "Large language models integrates Group Relative Policy Optimization (GRPO) as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "5e7b5bea31988500",
+      "node_id": "llms",
+      "field": "dependencies.paged_attention.rationale",
+      "text": "Large language models integrates Paged attention & KV-memory management as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "a69ced8b74f1d1d2",
+      "node_id": "llms",
+      "field": "dependencies.speculative_decoding.rationale",
+      "text": "Large language models integrates Speculative, parallel & assisted decoding as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "c4a4af810806e823",
+      "node_id": "llms",
+      "field": "dependencies.mixture_of_depths.rationale",
+      "text": "Large language models integrates Mixture-of-Depths as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "8017d9caf1dcdc88",
+      "node_id": "llms",
+      "field": "dependencies.hybrid_transformer_ssm.rationale",
+      "text": "Large language models integrates Transformer–SSM & recurrent hybrid models as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "244125326f4136fe",
+      "node_id": "llms",
+      "field": "dependencies.diffusion_language_model.rationale",
+      "text": "Large language models integrates Diffusion and masked-generative language models as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "722b30cc6d64635b",
+      "node_id": "llms",
+      "field": "dependencies.neural_architecture_search.rationale",
+      "text": "Large language models integrates Neural architecture search as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "948c15e7a528ad70",
+      "node_id": "llms",
+      "field": "dependencies.parallel_inference.rationale",
+      "text": "Large language models integrates Tensor, pipeline, sequence & expert parallel inference as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "83a92585cca72bbe",
+      "node_id": "llms",
+      "field": "dependencies.registry_mlops.rationale",
+      "text": "Large language models integrates Model registry, versioning & MLOps / LLMOps as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "52b7cfa99cd4fccd",
+      "node_id": "llms",
+      "field": "dependencies.fault_energy_ops.rationale",
+      "text": "Large language models integrates Fault tolerance, security, energy & cost optimization as part of an end-to-end application boundary."
+    },
+    {
+      "unit_id": "93b44c5c72080a42",
+      "node_id": "llms",
+      "field": "dependencies.structured_decoding_runtime.rationale",
+      "text": "Large language models integrates Structured-decoding runtimes as part of an end-to-end application boundary."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6f8604b4df3b3743",
+      "node_id": "llms",
+      "dependency_id": "decoder_only_transformer",
+      "type": "applies",
+      "strength": "core",
+      "rationale": "Large language models integrates Decoder-only causal transformers as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "b340086fea826389",
+      "node_id": "llms",
+      "dependency_id": "pretraining",
+      "type": "applies",
+      "strength": "core",
+      "rationale": "Large language models integrates Large-scale pretraining as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "de9f0949977381ec",
+      "node_id": "llms",
+      "dependency_id": "sft_instruction",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Large language models integrates Supervised fine-tuning & instruction tuning as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "f3470206373b48aa",
+      "node_id": "llms",
+      "dependency_id": "model_serving",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Large language models integrates Model servers & inference runtimes as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "f3029b0ce3b8e976",
+      "node_id": "llms",
+      "dependency_id": "empirical_scaling_laws",
+      "type": "applies",
+      "strength": "common",
+      "rationale": "Large language models integrates Empirical scaling laws as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "0e571e9104e8bab7",
+      "node_id": "llms",
+      "dependency_id": "compute_optimal_training",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Compute-optimal scaling & training allocation as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "273f4154c5132baf",
+      "node_id": "llms",
+      "dependency_id": "data_curation",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Data collection, curation & filtering as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "56dec8ca529ae799",
+      "node_id": "llms",
+      "dependency_id": "dedup_decontamination",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Deduplication, contamination control & provenance as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "89d35c3f2a1fe12e",
+      "node_id": "llms",
+      "dependency_id": "tokenization_serialization",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Tokenization, serialization & packing as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "738bf2baaa0af7ee",
+      "node_id": "llms",
+      "dependency_id": "distributed_mixed_precision",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Distributed, mixed-precision & memory-efficient training as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "bec66fc40ece6da7",
+      "node_id": "llms",
+      "dependency_id": "peft_lora",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "6a38940610316732",
+      "node_id": "llms",
+      "dependency_id": "dpo_posttraining",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Direct and online preference optimization as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "a57cd16579b9931c",
+      "node_id": "llms",
+      "dependency_id": "grpo",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Group Relative Policy Optimization (GRPO) as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "f1828267390ce331",
+      "node_id": "llms",
+      "dependency_id": "paged_attention",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Paged attention & KV-memory management as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "8c1e2008bfe8d802",
+      "node_id": "llms",
+      "dependency_id": "speculative_decoding",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Speculative, parallel & assisted decoding as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "3ca234cf7ab8d288",
+      "node_id": "llms",
+      "dependency_id": "mixture_of_depths",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Mixture-of-Depths as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "1fbaf9839c08936a",
+      "node_id": "llms",
+      "dependency_id": "hybrid_transformer_ssm",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Transformer–SSM & recurrent hybrid models as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "ce6955553fe5c325",
+      "node_id": "llms",
+      "dependency_id": "diffusion_language_model",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Diffusion and masked-generative language models as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "0866705cbea9fd7e",
+      "node_id": "llms",
+      "dependency_id": "neural_architecture_search",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Neural architecture search as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "da98f0be96181168",
+      "node_id": "llms",
+      "dependency_id": "parallel_inference",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Tensor, pipeline, sequence & expert parallel inference as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "49f89ece0cf7ebbc",
+      "node_id": "llms",
+      "dependency_id": "registry_mlops",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Model registry, versioning & MLOps / LLMOps as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "caac61042d80d05f",
+      "node_id": "llms",
+      "dependency_id": "fault_energy_ops",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Fault tolerance, security, energy & cost optimization as part of an end-to-end application boundary."
+    },
+    {
+      "edge_id": "3bdd0d8c720128a6",
+      "node_id": "llms",
+      "dependency_id": "structured_decoding_runtime",
+      "type": "applies",
+      "strength": "optional",
+      "rationale": "Large language models integrates Structured-decoding runtimes as part of an end-to-end application boundary."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      "ref_scaling": {
+        "id": "ref_scaling",
+        "title": "Scaling Laws for Neural Language Models",
+        "authors": "Kaplan et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2001.08361"
+      },
+      "ref_chinchilla": {
+        "id": "ref_chinchilla",
+        "title": "Training Compute-Optimal Large Language Models",
+        "authors": "Hoffmann et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.15556"
+      }
+    },
+    "dependency_references": {
+      "ref_chinchilla": {
+        "id": "ref_chinchilla",
+        "title": "Training Compute-Optimal Large Language Models",
+        "authors": "Hoffmann et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.15556"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_diffusion_lm": {
+        "id": "ref_diffusion_lm",
+        "title": "Diffusion-LM Improves Controllable Text Generation",
+        "authors": "Li et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2205.14217"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_dpo": {
+        "id": "ref_dpo",
+        "title": "Direct Preference Optimization",
+        "authors": "Rafailov et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2305.18290"
+      },
+      "ref_grpo": {
+        "id": "ref_grpo",
+        "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+        "authors": "Shao et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2402.03300"
+      },
+      "ref_lora": {
+        "id": "ref_lora",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "authors": "Hu et al.",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2106.09685"
+      },
+      "ref_mamba": {
+        "id": "ref_mamba",
+        "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+        "authors": "Gu & Dao",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2312.00752"
+      },
+      "ref_mdlm": {
+        "id": "ref_mdlm",
+        "title": "Simple and Effective Masked Diffusion Language Models",
+        "authors": "Sahoo et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2406.07524"
+      },
+      "ref_megatron": {
+        "id": "ref_megatron",
+        "title": "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism",
+        "authors": "Shoeybi et al.",
+        "year": 2019,
+        "url": "https://arxiv.org/abs/1909.08053"
+      },
+      "ref_mod": {
+        "id": "ref_mod",
+        "title": "Mixture-of-Depths: Dynamically Allocating Compute in Transformer-Based Language Models",
+        "authors": "Raposo et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2404.02258"
+      },
+      "ref_nas": {
+        "id": "ref_nas",
+        "title": "Neural Architecture Search: A Survey",
+        "authors": "Elsken, Metzen & Hutter",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1808.05377"
+      },
+      "ref_pagedattention": {
+        "id": "ref_pagedattention",
+        "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+        "authors": "Kwon et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2309.06180"
+      },
+      "ref_scaling": {
+        "id": "ref_scaling",
+        "title": "Scaling Laws for Neural Language Models",
+        "authors": "Kaplan et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2001.08361"
+      },
+      "ref_speculative_sampling": {
+        "id": "ref_speculative_sampling",
+        "title": "Accelerating Large Language Model Decoding with Speculative Sampling",
+        "authors": "Chen et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2302.01318"
+      },
+      "ref_structured": {
+        "id": "ref_structured",
+        "title": "A Survey of Structured Output Generation from LLMs",
+        "authors": "survey authors",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2501.10868"
+      },
+      "ref_transformer": {
+        "id": "ref_transformer",
+        "title": "Attention Is All You Need",
+        "authors": "Vaswani et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      "ref_xlstm": {
+        "id": "ref_xlstm",
+        "title": "xLSTM: Extended Long Short-Term Memory",
+        "authors": "Beck et al.",
+        "year": 2024,
+        "url": "https://arxiv.org/abs/2405.04517"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/llms.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

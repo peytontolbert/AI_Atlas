@@ -1,0 +1,186 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "be56d9b473937e22",
+      "node_id": "hybrid_reranking",
+      "field": "definition",
+      "text": "Hybrid retrieval fuses lexical and dense candidates, then reranks them with stronger cross-encoders, listwise models, or task-specific scorers.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited broad sources support retrieval and ranking ideas, but not hybrid fusion plus cross-encoder reranking specifically.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a hybrid retrieval or neural reranking citation."
+    },
+    {
+      "unit_id": "69cb63bd790ee9d0",
+      "node_id": "hybrid_reranking",
+      "field": "why_it_matters",
+      "text": "The role of Hybrid retrieval & reranking is to connect Sparse lexical retrieval, Dense vector retrieval to downstream capabilities including Retrieval-augmented generation, Vector-search and retrieval services, Neural search, RAG & question answering.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
+    },
+    {
+      "unit_id": "c77c31aecc11fd6a",
+      "node_id": "hybrid_reranking",
+      "field": "examples[1]",
+      "text": "substrate for Retrieval-augmented generation",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "f2a9c53ad5b3799e",
+      "node_id": "hybrid_reranking",
+      "field": "examples[2]",
+      "text": "substrate for Vector-search and retrieval services",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "142eec24a87a6ce3",
+      "node_id": "hybrid_reranking",
+      "field": "examples[3]",
+      "text": "substrate for Neural search, RAG & question answering",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "5b18d22424ecef7e",
+      "node_id": "hybrid_reranking",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sparse lexical retrieval, Dense vector retrieval.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "7e8f48cd625c1aed",
+      "node_id": "hybrid_reranking",
+      "field": "dependencies.sparse_retrieval.rationale",
+      "text": "Hybrid retrieval & reranking stores, selects, or obtains information through Sparse lexical retrieval.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support sparse_retrieval or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "6cd5837c8ec944da",
+      "node_id": "hybrid_reranking",
+      "field": "dependencies.dense_retrieval.rationale",
+      "text": "Hybrid retrieval & reranking stores, selects, or obtains information through Dense vector retrieval.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support dense_retrieval or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "e6239950c4a59050",
+      "node_id": "hybrid_reranking",
+      "field": "dependencies.margin_ranking_metric.rationale",
+      "text": "Hybrid retrieval & reranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support margin_ranking_metric or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "5100ccf2959ef508",
+      "node_id": "hybrid_reranking",
+      "dependency_id": "sparse_retrieval",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ffc1d54f25ae5dac",
+      "node_id": "hybrid_reranking",
+      "dependency_id": "dense_retrieval",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "d58e68b055328973",
+      "node_id": "hybrid_reranking",
+      "dependency_id": "margin_ranking_metric",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is plausible from the cited concepts and the node definition, but exact edge strength is graph-derived.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -2,7 +2,7 @@ PYTHON ?= python3
 SERVE_HOST ?= 127.0.0.1
 PORT ?= 8088
 
-.PHONY: validate build test smoke serve clean
+.PHONY: validate build test smoke serve audit-packets compile-source-audit source-audit source-audit-strict clean
 
 validate:
 	$(PYTHON) tools/validate_atlas.py
@@ -16,6 +16,18 @@ test: build
 smoke: build
 	$(PYTHON) tools/smoke_test_viewer.py
 
+audit-packets:
+	$(PYTHON) tools/generate_audit_packets.py
+
+compile-source-audit:
+	$(PYTHON) tools/compile_source_audit_ledgers.py
+
+source-audit: compile-source-audit
+	$(PYTHON) tools/validate_source_audit.py
+
+source-audit-strict: compile-source-audit
+	$(PYTHON) tools/validate_source_audit.py --strict
+
 serve: build
 	$(PYTHON) tools/serve_atlas.py --host $(SERVE_HOST) --port $(PORT)
 
@@ -27,5 +39,7 @@ clean:
 	      dist/validation_report.md \
 	      dist/content_audit_report.json \
 	      dist/content_audit_report.md \
+	      dist/source_audit_report.json \
+	      dist/source_audit_report.md \
 	      dist/ai_dependency_atlas_v2_preview.png \
 	      dist/browser_smoke_report.json

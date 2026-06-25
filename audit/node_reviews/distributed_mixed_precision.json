@@ -1,0 +1,216 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "054995b614a9eaad",
+      "node_id": "distributed_mixed_precision",
+      "field": "definition",
+      "text": "Distributed and mixed-precision training partition data, parameters, optimizer state, or experts across devices while using reduced numeric precision to save memory and time.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The concept is plausible, but the cited sources only partially cover the exact combination of distributed partitioning, mixed precision, optimizer state, and experts."
+    },
+    {
+      "unit_id": "327d0c77dbb74247",
+      "node_id": "distributed_mixed_precision",
+      "field": "why_it_matters",
+      "text": "The role of Distributed, mixed-precision & memory-efficient training is to connect Distributed systems & networking, Numerical analysis to downstream capabilities including Checkpointing, recovery & experiment state, Large language models, Scientific ML, simulators & digital twins.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The downstream role is defensible from scaling and MoE context, but not stated directly by the cited references."
+    },
+    {
+      "unit_id": "9d2b3d5dd7539d7d",
+      "node_id": "distributed_mixed_precision",
+      "field": "examples[1]",
+      "text": "substrate for Checkpointing, recovery & experiment state",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Checkpointing is a normal supporting mechanism for distributed training, but the cited sources do not state this exact substrate relationship."
+    },
+    {
+      "unit_id": "4f5b8feb97e65a01",
+      "node_id": "distributed_mixed_precision",
+      "field": "examples[2]",
+      "text": "substrate for Large language models",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Large language model training commonly uses distributed/memory-efficient methods, but the packet source set does not directly evidence the exact example."
+    },
+    {
+      "unit_id": "c9ad9963675367d7",
+      "node_id": "distributed_mixed_precision",
+      "field": "examples[3]",
+      "text": "substrate for Scientific ML, simulators & digital twins",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Scientific ML usage is plausible but not directly supported by the cited references."
+    },
+    {
+      "unit_id": "cf31a42b16591974",
+      "node_id": "distributed_mixed_precision",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Numerical analysis.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The generic sensitivity statement is broadly true for ML training, but evaluation contamination and the exact dependency list are not directly evidenced here."
+    },
+    {
+      "unit_id": "48683a7f1b1eb065",
+      "node_id": "distributed_mixed_precision",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Distributed, mixed-precision & memory-efficient training uses Distributed systems & networking as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Distributed training necessarily relies on distributed systems concepts, though the cited node source is indirect."
+    },
+    {
+      "unit_id": "7619123f2f281a09",
+      "node_id": "distributed_mixed_precision",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "Distributed, mixed-precision & memory-efficient training uses Numerical analysis as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Mixed precision and optimization rely on numerical methods, but the exact dependency wording is synthesized."
+    },
+    {
+      "unit_id": "eaf347fa867e385c",
+      "node_id": "distributed_mixed_precision",
+      "field": "dependencies.autodiff_backprop.rationale",
+      "text": "Distributed, mixed-precision & memory-efficient training uses Automatic differentiation & backpropagation as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Training neural networks depends on backpropagation, but this source set does not state the exact graph edge."
+    },
+    {
+      "unit_id": "db8b03643b9a2d6a",
+      "node_id": "distributed_mixed_precision",
+      "field": "dependencies.moe_model.rationale",
+      "text": "Distributed, mixed-precision & memory-efficient training changes, compresses, or combines parameters belonging to Mixture-of-experts models.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "MoE expert routing is related, but the rationale says the training method changes/compresses/combines MoE parameters, which is narrower than the cited support."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "f7ad83fcef7a8752",
+      "node_id": "distributed_mixed_precision",
+      "dependency_id": "distributed_systems",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Distributed training depends on distributed systems; strength core is reasonable but synthesized from concept rather than directly cited.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "588f5c7c5be384f9",
+      "node_id": "distributed_mixed_precision",
+      "dependency_id": "numerical_methods",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Reduced precision training depends on numerical behavior and stability; core strength is reasonable.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9bd5fccc56376d72",
+      "node_id": "distributed_mixed_precision",
+      "dependency_id": "autodiff_backprop",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Backpropagation is a common ingredient of neural training; common strength is reasonable.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4f27c5d839184019",
+      "node_id": "distributed_mixed_precision",
+      "dependency_id": "moe_model",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_moe"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "MoE is related to expert partitioning, but an adapts relationship is not directly established by the cited source set.",
+      "relationship_type_supported": false,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "node_id": "supervised_learning",
+  "label": "Supervised learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "supervised_learning",
+    "label": "Supervised learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "classical"
+    ],
+    "aliases": [],
+    "definition": "A learner maps inputs to labeled targets using an explicit error signal.",
+    "why_it_matters": "The role of Supervised learning is to connect Datasets, sampling & splits, Labels, targets, rewards & preferences to downstream capabilities including Semi-supervised & weak supervision, Preference learning, Active learning & curriculum learning.",
+    "examples": [
+      "substrate for Semi-supervised & weak supervision",
+      "substrate for Preference learning",
+      "substrate for Active learning & curriculum learning"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Datasets, sampling & splits, Labels, targets, rewards & preferences."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Supervised learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervision_signals",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Supervised learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Supervised learning uses Optimization theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "560981e840d9a6b8",
+      "node_id": "supervised_learning",
+      "field": "definition",
+      "text": "A learner maps inputs to labeled targets using an explicit error signal."
+    },
+    {
+      "unit_id": "f88fbc724bc5cc2f",
+      "node_id": "supervised_learning",
+      "field": "why_it_matters",
+      "text": "The role of Supervised learning is to connect Datasets, sampling & splits, Labels, targets, rewards & preferences to downstream capabilities including Semi-supervised & weak supervision, Preference learning, Active learning & curriculum learning."
+    },
+    {
+      "unit_id": "0683c17fdd701a35",
+      "node_id": "supervised_learning",
+      "field": "examples[1]",
+      "text": "substrate for Semi-supervised & weak supervision"
+    },
+    {
+      "unit_id": "8922b70b691a8194",
+      "node_id": "supervised_learning",
+      "field": "examples[2]",
+      "text": "substrate for Preference learning"
+    },
+    {
+      "unit_id": "3088d8566e139bda",
+      "node_id": "supervised_learning",
+      "field": "examples[3]",
+      "text": "substrate for Active learning & curriculum learning"
+    },
+    {
+      "unit_id": "aaab1e9fe9cf75ac",
+      "node_id": "supervised_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Datasets, sampling & splits, Labels, targets, rewards & preferences."
+    },
+    {
+      "unit_id": "5a83e097105e0c46",
+      "node_id": "supervised_learning",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Supervised learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "d90c6df2b296dbbf",
+      "node_id": "supervised_learning",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "Supervised learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "59f7bd9e53b258e0",
+      "node_id": "supervised_learning",
+      "field": "dependencies.optimization.rationale",
+      "text": "Supervised learning uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "aebf3e4c2602c5c3",
+      "node_id": "supervised_learning",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Supervised learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "a3a5430ad3b73114",
+      "node_id": "supervised_learning",
+      "dependency_id": "supervision_signals",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Supervised learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "b1e6242eac2a9431",
+      "node_id": "supervised_learning",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Supervised learning uses Optimization theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/supervised_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

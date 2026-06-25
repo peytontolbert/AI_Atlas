@@ -1,0 +1,217 @@
+{
+  "node_id": "agent_loop",
+  "label": "Observe–plan–act agent loops",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "agent_loop",
+    "label": "Observe–plan–act agent loops",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "agents"
+    ],
+    "aliases": [],
+    "definition": "An observe–plan–act loop maintains state, selects tools or actions, processes feedback, and iterates until a goal, budget, or safety condition is reached.",
+    "why_it_matters": "The role of Observe–plan–act agent loops is to connect Task decomposition & hierarchical reasoning, Tool use & function calling to downstream capabilities including Reflection, critique, verifier & repair loops, Multi-agent coordination, debate & markets, Skill libraries, workflows & procedural plans.",
+    "examples": [
+      "substrate for Reflection, critique, verifier & repair loops",
+      "substrate for Multi-agent coordination, debate & markets",
+      "substrate for Skill libraries, workflows & procedural plans"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Task decomposition & hierarchical reasoning, Tool use & function calling."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_react"
+    ],
+    "dependencies": [
+      {
+        "id": "task_decomposition",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Observe–plan–act agent loops uses Task decomposition & hierarchical reasoning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "tool_use_function_calling",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Observe–plan–act agent loops uses Tool use & function calling as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "context_working_memory",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "Observe–plan–act agent loops stores, selects, or obtains information through Context windows & working memory."
+      },
+      {
+        "id": "reinforcement_learning",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Observe–plan–act agent loops uses Reinforcement learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "react_reason_act",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Observe–plan–act agent loops uses ReAct-style reasoning and acting as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e94bd181bc1fa1f9",
+      "node_id": "agent_loop",
+      "field": "definition",
+      "text": "An observe–plan–act loop maintains state, selects tools or actions, processes feedback, and iterates until a goal, budget, or safety condition is reached."
+    },
+    {
+      "unit_id": "c14495d8eed58e61",
+      "node_id": "agent_loop",
+      "field": "why_it_matters",
+      "text": "The role of Observe–plan–act agent loops is to connect Task decomposition & hierarchical reasoning, Tool use & function calling to downstream capabilities including Reflection, critique, verifier & repair loops, Multi-agent coordination, debate & markets, Skill libraries, workflows & procedural plans."
+    },
+    {
+      "unit_id": "3f38fc15d16bc398",
+      "node_id": "agent_loop",
+      "field": "examples[1]",
+      "text": "substrate for Reflection, critique, verifier & repair loops"
+    },
+    {
+      "unit_id": "806b15b95d290871",
+      "node_id": "agent_loop",
+      "field": "examples[2]",
+      "text": "substrate for Multi-agent coordination, debate & markets"
+    },
+    {
+      "unit_id": "d44ac2041209fb9f",
+      "node_id": "agent_loop",
+      "field": "examples[3]",
+      "text": "substrate for Skill libraries, workflows & procedural plans"
+    },
+    {
+      "unit_id": "ba566c71d81d9b0a",
+      "node_id": "agent_loop",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Task decomposition & hierarchical reasoning, Tool use & function calling."
+    },
+    {
+      "unit_id": "7cbc1b2742fe5e24",
+      "node_id": "agent_loop",
+      "field": "dependencies.task_decomposition.rationale",
+      "text": "Observe–plan–act agent loops uses Task decomposition & hierarchical reasoning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "06347c86dc6ed393",
+      "node_id": "agent_loop",
+      "field": "dependencies.tool_use_function_calling.rationale",
+      "text": "Observe–plan–act agent loops uses Tool use & function calling as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "9f7b90d441b5a24c",
+      "node_id": "agent_loop",
+      "field": "dependencies.context_working_memory.rationale",
+      "text": "Observe–plan–act agent loops stores, selects, or obtains information through Context windows & working memory."
+    },
+    {
+      "unit_id": "274d299479b91620",
+      "node_id": "agent_loop",
+      "field": "dependencies.reinforcement_learning.rationale",
+      "text": "Observe–plan–act agent loops uses Reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "64eaf8fb50f3b85b",
+      "node_id": "agent_loop",
+      "field": "dependencies.react_reason_act.rationale",
+      "text": "Observe–plan–act agent loops uses ReAct-style reasoning and acting as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "11de6b0614e041a5",
+      "node_id": "agent_loop",
+      "dependency_id": "task_decomposition",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Observe–plan–act agent loops uses Task decomposition & hierarchical reasoning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "1e7e559b4fe76410",
+      "node_id": "agent_loop",
+      "dependency_id": "tool_use_function_calling",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Observe–plan–act agent loops uses Tool use & function calling as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4943c960f3c25f6b",
+      "node_id": "agent_loop",
+      "dependency_id": "context_working_memory",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "Observe–plan–act agent loops stores, selects, or obtains information through Context windows & working memory."
+    },
+    {
+      "edge_id": "e4ea445daa1cda54",
+      "node_id": "agent_loop",
+      "dependency_id": "reinforcement_learning",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Observe–plan–act agent loops uses Reinforcement learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "2c4dbe15513c35e2",
+      "node_id": "agent_loop",
+      "dependency_id": "react_reason_act",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Observe–plan–act agent loops uses ReAct-style reasoning and acting as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_react": {
+        "id": "ref_react",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.03629"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_react": {
+        "id": "ref_react",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "authors": "Yao et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.03629"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/agent_loop.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

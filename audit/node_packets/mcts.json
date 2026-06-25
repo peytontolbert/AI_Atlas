@@ -1,0 +1,159 @@
+{
+  "node_id": "mcts",
+  "label": "Monte Carlo tree search",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "mcts",
+    "label": "Monte Carlo tree search",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "search",
+      "rl"
+    ],
+    "aliases": [
+      "MCTS"
+    ],
+    "definition": "Monte Carlo tree search alternates selection, expansion, simulation, and backup to allocate search effort toward promising actions under uncertainty.",
+    "why_it_matters": "The role of Monte Carlo tree search is to connect Graph search, BFS/DFS & A*, Probability theory to downstream capabilities including World-model rollout & imagination, Game-playing, control & simulation agents.",
+    "examples": [
+      "substrate for World-model rollout & imagination",
+      "substrate for Game-playing, control & simulation agents"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Graph search, BFS/DFS & A*, Probability theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "graph_astar_search",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Graph search, BFS/DFS & A*."
+      },
+      {
+        "id": "probability",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Probability theory."
+      },
+      {
+        "id": "game_decision_theory",
+        "type": "searches_with",
+        "strength": "common",
+        "rationale": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Game theory & decision theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b221359a55661dee",
+      "node_id": "mcts",
+      "field": "definition",
+      "text": "Monte Carlo tree search alternates selection, expansion, simulation, and backup to allocate search effort toward promising actions under uncertainty."
+    },
+    {
+      "unit_id": "a96c4d6b06c55101",
+      "node_id": "mcts",
+      "field": "why_it_matters",
+      "text": "The role of Monte Carlo tree search is to connect Graph search, BFS/DFS & A*, Probability theory to downstream capabilities including World-model rollout & imagination, Game-playing, control & simulation agents."
+    },
+    {
+      "unit_id": "97dc045585e6a757",
+      "node_id": "mcts",
+      "field": "examples[1]",
+      "text": "substrate for World-model rollout & imagination"
+    },
+    {
+      "unit_id": "00feda9986db6aa9",
+      "node_id": "mcts",
+      "field": "examples[2]",
+      "text": "substrate for Game-playing, control & simulation agents"
+    },
+    {
+      "unit_id": "b78a6c6a07fe28ca",
+      "node_id": "mcts",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Graph search, BFS/DFS & A*, Probability theory."
+    },
+    {
+      "unit_id": "2f8973b6d1725526",
+      "node_id": "mcts",
+      "field": "dependencies.graph_astar_search.rationale",
+      "text": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Graph search, BFS/DFS & A*."
+    },
+    {
+      "unit_id": "48ae470f5074c564",
+      "node_id": "mcts",
+      "field": "dependencies.probability.rationale",
+      "text": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Probability theory."
+    },
+    {
+      "unit_id": "75762161d6ca0a22",
+      "node_id": "mcts",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Game theory & decision theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "4ed06fa266dddcdf",
+      "node_id": "mcts",
+      "dependency_id": "graph_astar_search",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Graph search, BFS/DFS & A*."
+    },
+    {
+      "edge_id": "7dfefae15f16e6cf",
+      "node_id": "mcts",
+      "dependency_id": "probability",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Probability theory."
+    },
+    {
+      "edge_id": "6a8303df76469391",
+      "node_id": "mcts",
+      "dependency_id": "game_decision_theory",
+      "type": "searches_with",
+      "strength": "common",
+      "rationale": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Game theory & decision theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/mcts.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

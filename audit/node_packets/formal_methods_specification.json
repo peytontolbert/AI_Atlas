@@ -1,0 +1,164 @@
+{
+  "node_id": "formal_methods_specification",
+  "label": "Formal methods, specifications & proof obligations",
+  "layer": "foundation",
+  "editorial_status": "curated",
+  "node": {
+    "id": "formal_methods_specification",
+    "label": "Formal methods, specifications & proof obligations",
+    "layer": "foundation",
+    "tags": [
+      "formal",
+      "verification",
+      "symbolic"
+    ],
+    "aliases": [],
+    "definition": "Formal methods express desired behavior as mathematical specifications and use proof, model checking, abstract interpretation, or certificates to establish correctness claims.",
+    "why_it_matters": "They distinguish behavior that has merely been sampled in tests from behavior proven under explicit assumptions.",
+    "examples": [
+      "temporal-logic safety properties",
+      "proof obligations for generated code",
+      "robustness specifications"
+    ],
+    "limitations": [
+      "A guarantee is only as sound as its specification, abstraction, solver, and environmental assumptions."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_formalml"
+    ],
+    "dependencies": [
+      {
+        "id": "discrete_math_logic",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+      },
+      {
+        "id": "programming_languages_types",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Algorithms & data structures."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "2495ad6789e02712",
+      "node_id": "formal_methods_specification",
+      "field": "definition",
+      "text": "Formal methods express desired behavior as mathematical specifications and use proof, model checking, abstract interpretation, or certificates to establish correctness claims."
+    },
+    {
+      "unit_id": "23b00408c770c4f2",
+      "node_id": "formal_methods_specification",
+      "field": "why_it_matters",
+      "text": "They distinguish behavior that has merely been sampled in tests from behavior proven under explicit assumptions."
+    },
+    {
+      "unit_id": "bdcece60f7d84274",
+      "node_id": "formal_methods_specification",
+      "field": "examples[1]",
+      "text": "temporal-logic safety properties"
+    },
+    {
+      "unit_id": "2eeb67083344d2c6",
+      "node_id": "formal_methods_specification",
+      "field": "examples[2]",
+      "text": "proof obligations for generated code"
+    },
+    {
+      "unit_id": "bb16f0dc6ed2edce",
+      "node_id": "formal_methods_specification",
+      "field": "examples[3]",
+      "text": "robustness specifications"
+    },
+    {
+      "unit_id": "81dd3b5740638dba",
+      "node_id": "formal_methods_specification",
+      "field": "limitations[1]",
+      "text": "A guarantee is only as sound as its specification, abstraction, solver, and environmental assumptions."
+    },
+    {
+      "unit_id": "90846df7437be072",
+      "node_id": "formal_methods_specification",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    },
+    {
+      "unit_id": "36d0a282d41fcd29",
+      "node_id": "formal_methods_specification",
+      "field": "dependencies.programming_languages_types.rationale",
+      "text": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems."
+    },
+    {
+      "unit_id": "a1707e426f11ba53",
+      "node_id": "formal_methods_specification",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "f78a9602749435e5",
+      "node_id": "formal_methods_specification",
+      "dependency_id": "discrete_math_logic",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    },
+    {
+      "edge_id": "fac30f6bca986f60",
+      "node_id": "formal_methods_specification",
+      "dependency_id": "programming_languages_types",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems."
+    },
+    {
+      "edge_id": "2a0fcdec85416659",
+      "node_id": "formal_methods_specification",
+      "dependency_id": "algorithms_data_structures",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_formalml": {
+        "id": "ref_formalml",
+        "title": "Formal Methods for Machine Learning: A Survey",
+        "authors": "Seshia, Sadigh & Sastry",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2104.02466"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/formal_methods_specification.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

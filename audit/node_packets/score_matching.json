@@ -1,0 +1,185 @@
+{
+  "node_id": "score_matching",
+  "label": "Score matching & denoising score objectives",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "score_matching",
+    "label": "Score matching & denoising score objectives",
+    "layer": "objective",
+    "tags": [
+      "objective",
+      "generative",
+      "diffusion"
+    ],
+    "aliases": [],
+    "definition": "The model learns gradients of log density, often from noise-corrupted data.",
+    "why_it_matters": "The role of Score matching & denoising score objectives is to connect Generative modeling, Probability theory to downstream capabilities including Denoising diffusion & stochastic corruption, Diffusion & score-based models.",
+    "examples": [
+      "substrate for Denoising diffusion & stochastic corruption",
+      "substrate for Diffusion & score-based models"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Probability theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "generative_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Score matching & denoising score objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "probability",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Score matching & denoising score objectives uses Probability theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "calculus",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Score matching & denoising score objectives uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "13c64477ff5c6a26",
+      "node_id": "score_matching",
+      "field": "definition",
+      "text": "The model learns gradients of log density, often from noise-corrupted data."
+    },
+    {
+      "unit_id": "785743b9e1636d82",
+      "node_id": "score_matching",
+      "field": "why_it_matters",
+      "text": "The role of Score matching & denoising score objectives is to connect Generative modeling, Probability theory to downstream capabilities including Denoising diffusion & stochastic corruption, Diffusion & score-based models."
+    },
+    {
+      "unit_id": "683bafcf81b8d70d",
+      "node_id": "score_matching",
+      "field": "examples[1]",
+      "text": "substrate for Denoising diffusion & stochastic corruption"
+    },
+    {
+      "unit_id": "9482259ea5af91de",
+      "node_id": "score_matching",
+      "field": "examples[2]",
+      "text": "substrate for Diffusion & score-based models"
+    },
+    {
+      "unit_id": "54fd218d18745f47",
+      "node_id": "score_matching",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Probability theory."
+    },
+    {
+      "unit_id": "36701623cddefa9a",
+      "node_id": "score_matching",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "Score matching & denoising score objectives uses Generative modeling as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "76ce9630c25a253a",
+      "node_id": "score_matching",
+      "field": "dependencies.probability.rationale",
+      "text": "Score matching & denoising score objectives uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "e56c3f56aa3ffe7e",
+      "node_id": "score_matching",
+      "field": "dependencies.calculus.rationale",
+      "text": "Score matching & denoising score objectives uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "70fca52a498508a3",
+      "node_id": "score_matching",
+      "dependency_id": "generative_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Score matching & denoising score objectives uses Generative modeling as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "80cfa389d0b5bb16",
+      "node_id": "score_matching",
+      "dependency_id": "probability",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Score matching & denoising score objectives uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "95eb5e009cc204b6",
+      "node_id": "score_matching",
+      "dependency_id": "calculus",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Score matching & denoising score objectives uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      },
+      "ref_gan": {
+        "id": "ref_gan",
+        "title": "Generative Adversarial Nets",
+        "authors": "Goodfellow et al.",
+        "year": 2014,
+        "url": "https://arxiv.org/abs/1406.2661"
+      },
+      "ref_vae": {
+        "id": "ref_vae",
+        "title": "Auto-Encoding Variational Bayes",
+        "authors": "Kingma & Welling",
+        "year": 2013,
+        "url": "https://arxiv.org/abs/1312.6114"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/score_matching.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

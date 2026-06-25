@@ -1,0 +1,152 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "c20f3a4c20064270",
+      "node_id": "residual_connections",
+      "field": "definition",
+      "text": "Identity paths preserve information and gradient flow through deep compositions.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "ffebeb85eea9d853",
+      "node_id": "residual_connections",
+      "field": "why_it_matters",
+      "text": "The role of Residual, skip & highway connections is to connect Affine transforms & dense layers, Algorithms & data structures to downstream capabilities including Multilayer perceptrons, ResNets & DenseNets, U-Nets & encoder\u2013decoder convnets.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "a3891f6302e767bb",
+      "node_id": "residual_connections",
+      "field": "examples[1]",
+      "text": "substrate for Multilayer perceptrons",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "c58be26b9cd9e11e",
+      "node_id": "residual_connections",
+      "field": "examples[2]",
+      "text": "substrate for ResNets & DenseNets",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source set directly supports the claim at the level stated."
+    },
+    {
+      "unit_id": "ec4e917b379afd7a",
+      "node_id": "residual_connections",
+      "field": "examples[3]",
+      "text": "substrate for U-Nets & encoder\u2013decoder convnets",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
+    },
+    {
+      "unit_id": "5083ba1fea9d0deb",
+      "node_id": "residual_connections",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Affine transforms & dense layers, Algorithms & data structures.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+    },
+    {
+      "unit_id": "69bf7b77ffc81c08",
+      "node_id": "residual_connections",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Residual, skip & highway connections is assembled in part from the mechanism or model component Affine transforms & dense layers.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "e3e736a1bfc6f853",
+      "node_id": "residual_connections",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Residual, skip & highway connections uses Algorithms & data structures as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "449196a5b949766e",
+      "node_id": "residual_connections",
+      "dependency_id": "affine_dense",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "dd60a33cb3e8bec0",
+      "node_id": "residual_connections",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    }
+  ]
+}

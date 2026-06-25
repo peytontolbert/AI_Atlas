@@ -1,0 +1,165 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "ea50955256d3226a",
+      "node_id": "message_passing",
+      "field": "definition",
+      "text": "Entities iteratively exchange and aggregate information along relational edges.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet sources provide broad neural-network and probabilistic-graph background relevant to relational aggregation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition is consistent with standard message-passing usage, but a GNN/message-passing source would be needed for verified."
+    },
+    {
+      "unit_id": "472c140c3dbcbcd0",
+      "node_id": "message_passing",
+      "field": "why_it_matters",
+      "text": "The role of Message passing & neighborhood aggregation is to connect Graphs, hypergraphs & relational data, Affine transforms & dense layers to downstream capabilities including Graph neural networks, Graph RAG & structured retrieval.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support broad graph and neural-network background, not the complete downstream list.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Graph neural networks are plausible; Graph RAG and structured retrieval need more specific evidence."
+    },
+    {
+      "unit_id": "73e4784c8988dfc2",
+      "node_id": "message_passing",
+      "field": "examples[1]",
+      "text": "substrate for Graph neural networks",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources provide nearby graph and neural model background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Defensible, but direct verification would require a GNN/message-passing reference."
+    },
+    {
+      "unit_id": "1433e69474826816",
+      "node_id": "message_passing",
+      "field": "examples[2]",
+      "text": "substrate for Graph RAG & structured retrieval",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet sources do not directly establish Graph RAG or structured retrieval systems.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This downstream relationship is plausible but requires a Graph RAG or structured retrieval source."
+    },
+    {
+      "unit_id": "5c9111313ef03a68",
+      "node_id": "message_passing",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Graphs, hypergraphs & relational data, Affine transforms & dense layers.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet sources support broad dependency background but not the generic limitation wording.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependencies are plausible; the limitation statement is generic and not directly sourced."
+    },
+    {
+      "unit_id": "8d9d3c200c9486b9",
+      "node_id": "message_passing",
+      "field": "dependencies.graphs_hypergraphs.rationale",
+      "text": "Message passing & neighborhood aggregation uses Graphs, hypergraphs & relational data as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML provides broad probabilistic and graph-model background relevant to relational structures.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The relationship is essentially definitional for message passing, though the cited source is broad."
+    },
+    {
+      "unit_id": "b6da33ea7ecc4a90",
+      "node_id": "message_passing",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Message passing & neighborhood aggregation is assembled in part from the mechanism or model component Affine transforms & dense layers.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning supports dense/affine neural-network components.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common neural message-passing layers use learned affine transforms, but not all message passing requires dense layers."
+    },
+    {
+      "unit_id": "d7097781e2671530",
+      "node_id": "message_passing",
+      "field": "dependencies.pooling.rationale",
+      "text": "Message passing & neighborhood aggregation is assembled in part from the mechanism or model component Pooling & local aggregation.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning supports pooling/local aggregation background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Aggregation is central to the node, but a graph neural network source would provide direct support."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "9c7b2ec5c668f73a",
+      "node_id": "message_passing",
+      "dependency_id": "graphs_hypergraphs",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Message passing depends on relational graph structure; relationship and core strength are defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "60b9544607c1fa45",
+      "node_id": "message_passing",
+      "dependency_id": "affine_dense",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Learned dense transforms are common in neural message passing, but direct evidence is broad.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "e26d91ca84167e1c",
+      "node_id": "message_passing",
+      "dependency_id": "pooling",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Neighborhood aggregation aligns with pooling/local aggregation; common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

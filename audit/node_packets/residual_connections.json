@@ -1,0 +1,150 @@
+{
+  "node_id": "residual_connections",
+  "label": "Residual, skip & highway connections",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "residual_connections",
+    "label": "Residual, skip & highway connections",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "deep-learning"
+    ],
+    "aliases": [],
+    "definition": "Identity paths preserve information and gradient flow through deep compositions.",
+    "why_it_matters": "The role of Residual, skip & highway connections is to connect Affine transforms & dense layers, Algorithms & data structures to downstream capabilities including Multilayer perceptrons, ResNets & DenseNets, U-Nets & encoder–decoder convnets.",
+    "examples": [
+      "substrate for Multilayer perceptrons",
+      "substrate for ResNets & DenseNets",
+      "substrate for U-Nets & encoder–decoder convnets"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Affine transforms & dense layers, Algorithms & data structures."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "affine_dense",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Residual, skip & highway connections is assembled in part from the mechanism or model component Affine transforms & dense layers."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Residual, skip & highway connections uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "c20f3a4c20064270",
+      "node_id": "residual_connections",
+      "field": "definition",
+      "text": "Identity paths preserve information and gradient flow through deep compositions."
+    },
+    {
+      "unit_id": "ffebeb85eea9d853",
+      "node_id": "residual_connections",
+      "field": "why_it_matters",
+      "text": "The role of Residual, skip & highway connections is to connect Affine transforms & dense layers, Algorithms & data structures to downstream capabilities including Multilayer perceptrons, ResNets & DenseNets, U-Nets & encoder–decoder convnets."
+    },
+    {
+      "unit_id": "a3891f6302e767bb",
+      "node_id": "residual_connections",
+      "field": "examples[1]",
+      "text": "substrate for Multilayer perceptrons"
+    },
+    {
+      "unit_id": "c58be26b9cd9e11e",
+      "node_id": "residual_connections",
+      "field": "examples[2]",
+      "text": "substrate for ResNets & DenseNets"
+    },
+    {
+      "unit_id": "ec4e917b379afd7a",
+      "node_id": "residual_connections",
+      "field": "examples[3]",
+      "text": "substrate for U-Nets & encoder–decoder convnets"
+    },
+    {
+      "unit_id": "5083ba1fea9d0deb",
+      "node_id": "residual_connections",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Affine transforms & dense layers, Algorithms & data structures."
+    },
+    {
+      "unit_id": "69bf7b77ffc81c08",
+      "node_id": "residual_connections",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Residual, skip & highway connections is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "unit_id": "e3e736a1bfc6f853",
+      "node_id": "residual_connections",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Residual, skip & highway connections uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "449196a5b949766e",
+      "node_id": "residual_connections",
+      "dependency_id": "affine_dense",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Residual, skip & highway connections is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    },
+    {
+      "edge_id": "dd60a33cb3e8bec0",
+      "node_id": "residual_connections",
+      "dependency_id": "algorithms_data_structures",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Residual, skip & highway connections uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/residual_connections.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

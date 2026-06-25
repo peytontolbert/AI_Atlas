@@ -1,0 +1,143 @@
+{
+  "node_id": "complexity_computability",
+  "label": "Complexity & computability",
+  "layer": "foundation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "complexity_computability",
+    "label": "Complexity & computability",
+    "layer": "foundation",
+    "tags": [
+      "computer-science",
+      "theory"
+    ],
+    "aliases": [],
+    "definition": "Computability and time, space, sample, and communication complexity describe what can be solved and at what cost.",
+    "why_it_matters": "The role of Complexity & computability is to connect Algorithms & data structures, Discrete mathematics & logic to downstream capabilities including Distributed systems & networking, Sparse, local, linear & recurrent attention, Empirical scaling laws.",
+    "examples": [
+      "substrate for Distributed systems & networking",
+      "substrate for Sparse, local, linear & recurrent attention",
+      "substrate for Empirical scaling laws"
+    ],
+    "limitations": [
+      "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Algorithms & data structures, Discrete mathematics & logic."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "algorithms_data_structures",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Complexity & computability rests on the formal or computational capabilities supplied by Algorithms & data structures."
+      },
+      {
+        "id": "discrete_math_logic",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Complexity & computability rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "4eb9e22cb5c3db30",
+      "node_id": "complexity_computability",
+      "field": "definition",
+      "text": "Computability and time, space, sample, and communication complexity describe what can be solved and at what cost."
+    },
+    {
+      "unit_id": "9ee07aaad6268715",
+      "node_id": "complexity_computability",
+      "field": "why_it_matters",
+      "text": "The role of Complexity & computability is to connect Algorithms & data structures, Discrete mathematics & logic to downstream capabilities including Distributed systems & networking, Sparse, local, linear & recurrent attention, Empirical scaling laws."
+    },
+    {
+      "unit_id": "bf40724f36016a7f",
+      "node_id": "complexity_computability",
+      "field": "examples[1]",
+      "text": "substrate for Distributed systems & networking"
+    },
+    {
+      "unit_id": "e1c09e536685d9b3",
+      "node_id": "complexity_computability",
+      "field": "examples[2]",
+      "text": "substrate for Sparse, local, linear & recurrent attention"
+    },
+    {
+      "unit_id": "9313674fe2d5e2e9",
+      "node_id": "complexity_computability",
+      "field": "examples[3]",
+      "text": "substrate for Empirical scaling laws"
+    },
+    {
+      "unit_id": "39b4f3c5a4f0d2eb",
+      "node_id": "complexity_computability",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Algorithms & data structures, Discrete mathematics & logic."
+    },
+    {
+      "unit_id": "9a3780c41728407d",
+      "node_id": "complexity_computability",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Complexity & computability rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    },
+    {
+      "unit_id": "fecd2262a961575c",
+      "node_id": "complexity_computability",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Complexity & computability rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "e47e59f0ed08fb31",
+      "node_id": "complexity_computability",
+      "dependency_id": "algorithms_data_structures",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Complexity & computability rests on the formal or computational capabilities supplied by Algorithms & data structures."
+    },
+    {
+      "edge_id": "9907ff8d27d70643",
+      "node_id": "complexity_computability",
+      "dependency_id": "discrete_math_logic",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Complexity & computability rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/complexity_computability.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

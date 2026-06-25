@@ -1,0 +1,150 @@
+{
+  "node_id": "nonlinear_activations",
+  "label": "Nonlinear activations",
+  "layer": "mechanism",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "nonlinear_activations",
+    "label": "Nonlinear activations",
+    "layer": "mechanism",
+    "tags": [
+      "mechanism",
+      "neural"
+    ],
+    "aliases": [],
+    "definition": "Elementwise or gated nonlinearities let stacked layers approximate nonlinear functions.",
+    "why_it_matters": "The role of Nonlinear activations is to connect Calculus & automatic differentiation theory, Affine transforms & dense layers to downstream capabilities including Boolean circuits & differentiable logic gates, Gating & multiplicative control, Perceptrons & single-layer neural classifiers.",
+    "examples": [
+      "substrate for Boolean circuits & differentiable logic gates",
+      "substrate for Gating & multiplicative control",
+      "substrate for Perceptrons & single-layer neural classifiers"
+    ],
+    "limitations": [
+      "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Calculus & automatic differentiation theory, Affine transforms & dense layers."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "calculus",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Nonlinear activations uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "affine_dense",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Nonlinear activations is assembled in part from the mechanism or model component Affine transforms & dense layers."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "6a72a16f374e4085",
+      "node_id": "nonlinear_activations",
+      "field": "definition",
+      "text": "Elementwise or gated nonlinearities let stacked layers approximate nonlinear functions."
+    },
+    {
+      "unit_id": "5ceaeb6b9a35b632",
+      "node_id": "nonlinear_activations",
+      "field": "why_it_matters",
+      "text": "The role of Nonlinear activations is to connect Calculus & automatic differentiation theory, Affine transforms & dense layers to downstream capabilities including Boolean circuits & differentiable logic gates, Gating & multiplicative control, Perceptrons & single-layer neural classifiers."
+    },
+    {
+      "unit_id": "e9ef8b032a2e4ec9",
+      "node_id": "nonlinear_activations",
+      "field": "examples[1]",
+      "text": "substrate for Boolean circuits & differentiable logic gates"
+    },
+    {
+      "unit_id": "967e6071d6f9f14c",
+      "node_id": "nonlinear_activations",
+      "field": "examples[2]",
+      "text": "substrate for Gating & multiplicative control"
+    },
+    {
+      "unit_id": "9232975b8f57fa91",
+      "node_id": "nonlinear_activations",
+      "field": "examples[3]",
+      "text": "substrate for Perceptrons & single-layer neural classifiers"
+    },
+    {
+      "unit_id": "02b05ee136645f43",
+      "node_id": "nonlinear_activations",
+      "field": "limitations[1]",
+      "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Calculus & automatic differentiation theory, Affine transforms & dense layers."
+    },
+    {
+      "unit_id": "5099905726260e15",
+      "node_id": "nonlinear_activations",
+      "field": "dependencies.calculus.rationale",
+      "text": "Nonlinear activations uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "710d8b5464abab9a",
+      "node_id": "nonlinear_activations",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Nonlinear activations is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "1cb432d46c534494",
+      "node_id": "nonlinear_activations",
+      "dependency_id": "calculus",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Nonlinear activations uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "81dbbce399cab62b",
+      "node_id": "nonlinear_activations",
+      "dependency_id": "affine_dense",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Nonlinear activations is assembled in part from the mechanism or model component Affine transforms & dense layers."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/nonlinear_activations.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

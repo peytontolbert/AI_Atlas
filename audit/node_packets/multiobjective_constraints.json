@@ -1,0 +1,164 @@
+{
+  "node_id": "multiobjective_constraints",
+  "label": "Multi-objective, constrained & Pareto optimization",
+  "layer": "objective",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "multiobjective_constraints",
+    "label": "Multi-objective, constrained & Pareto optimization",
+    "layer": "objective",
+    "tags": [
+      "objective",
+      "alignment",
+      "control"
+    ],
+    "aliases": [],
+    "definition": "Multiple competing goals and hard constraints are optimized jointly rather than collapsed into one unconstrained score.",
+    "why_it_matters": "The role of Multi-objective, constrained & Pareto optimization is to connect Optimization theory, Game theory & decision theory to downstream capabilities including Safety policies, constitutional constraints & alignment.",
+    "examples": [
+      "substrate for Safety policies, constitutional constraints & alignment",
+      "combined with Optimization theory"
+    ],
+    "limitations": [
+      "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Optimization theory, Game theory & decision theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Multi-objective, constrained & Pareto optimization uses Optimization theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "game_decision_theory",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Multi-objective, constrained & Pareto optimization uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "supervision_signals",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Multi-objective, constrained & Pareto optimization uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "02811c3b2cf582dc",
+      "node_id": "multiobjective_constraints",
+      "field": "definition",
+      "text": "Multiple competing goals and hard constraints are optimized jointly rather than collapsed into one unconstrained score."
+    },
+    {
+      "unit_id": "3dca3ddf4272b4f4",
+      "node_id": "multiobjective_constraints",
+      "field": "why_it_matters",
+      "text": "The role of Multi-objective, constrained & Pareto optimization is to connect Optimization theory, Game theory & decision theory to downstream capabilities including Safety policies, constitutional constraints & alignment."
+    },
+    {
+      "unit_id": "921e4f4a461463bc",
+      "node_id": "multiobjective_constraints",
+      "field": "examples[1]",
+      "text": "substrate for Safety policies, constitutional constraints & alignment"
+    },
+    {
+      "unit_id": "c3c9cc527227a76f",
+      "node_id": "multiobjective_constraints",
+      "field": "examples[2]",
+      "text": "combined with Optimization theory"
+    },
+    {
+      "unit_id": "652acc1f423a2a9c",
+      "node_id": "multiobjective_constraints",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Optimization theory, Game theory & decision theory."
+    },
+    {
+      "unit_id": "57d42db52c23a83d",
+      "node_id": "multiobjective_constraints",
+      "field": "dependencies.optimization.rationale",
+      "text": "Multi-objective, constrained & Pareto optimization uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "19f8e5baabb7ebba",
+      "node_id": "multiobjective_constraints",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Multi-objective, constrained & Pareto optimization uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "d82e28337b48156d",
+      "node_id": "multiobjective_constraints",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "Multi-objective, constrained & Pareto optimization uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "7bd654bfdf675d2f",
+      "node_id": "multiobjective_constraints",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Multi-objective, constrained & Pareto optimization uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "a16070e4e6d7a4b7",
+      "node_id": "multiobjective_constraints",
+      "dependency_id": "game_decision_theory",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Multi-objective, constrained & Pareto optimization uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "9d03e7f4e51e3f7a",
+      "node_id": "multiobjective_constraints",
+      "dependency_id": "supervision_signals",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Multi-objective, constrained & Pareto optimization uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/multiobjective_constraints.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

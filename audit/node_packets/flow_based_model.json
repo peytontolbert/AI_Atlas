@@ -1,0 +1,172 @@
+{
+  "node_id": "flow_based_model",
+  "label": "Normalizing, rectified & flow-matching models",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "flow_based_model",
+    "label": "Normalizing, rectified & flow-matching models",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "generative",
+      "flows"
+    ],
+    "aliases": [],
+    "definition": "Normalizing flows use invertible transformations with tractable density; rectified and flow-matching models instead learn continuous transport vector fields.",
+    "why_it_matters": "The role of Normalizing, rectified & flow-matching models is to connect Continuous normalizing flows & learned vector fields, Flow matching & transport objectives to downstream capabilities including Image generation, editing & design, Video generation & simulation synthesis, Weather, climate & geospatial forecasting.",
+    "examples": [
+      "substrate for Image generation, editing & design",
+      "substrate for Video generation & simulation synthesis",
+      "substrate for Weather, climate & geospatial forecasting"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Continuous normalizing flows & learned vector fields, Flow matching & transport objectives."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_flow"
+    ],
+    "dependencies": [
+      {
+        "id": "continuous_flows",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Normalizing, rectified & flow-matching models is assembled in part from the mechanism or model component Continuous normalizing flows & learned vector fields."
+      },
+      {
+        "id": "flow_matching",
+        "type": "optimizes_for",
+        "strength": "core",
+        "rationale": "Normalizing, rectified & flow-matching models is learned, selected, or evaluated using the objective family Flow matching & transport objectives."
+      },
+      {
+        "id": "differentiable_solvers",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Normalizing, rectified & flow-matching models is assembled in part from the mechanism or model component Differentiable ODE/PDE/SDE solvers."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "bc5ecf334d7e3ab1",
+      "node_id": "flow_based_model",
+      "field": "definition",
+      "text": "Normalizing flows use invertible transformations with tractable density; rectified and flow-matching models instead learn continuous transport vector fields."
+    },
+    {
+      "unit_id": "8ec103d7c0020ede",
+      "node_id": "flow_based_model",
+      "field": "why_it_matters",
+      "text": "The role of Normalizing, rectified & flow-matching models is to connect Continuous normalizing flows & learned vector fields, Flow matching & transport objectives to downstream capabilities including Image generation, editing & design, Video generation & simulation synthesis, Weather, climate & geospatial forecasting."
+    },
+    {
+      "unit_id": "be0c69ad40bccefb",
+      "node_id": "flow_based_model",
+      "field": "examples[1]",
+      "text": "substrate for Image generation, editing & design"
+    },
+    {
+      "unit_id": "11af518de5766ce4",
+      "node_id": "flow_based_model",
+      "field": "examples[2]",
+      "text": "substrate for Video generation & simulation synthesis"
+    },
+    {
+      "unit_id": "cc2963ef9aa8dbf6",
+      "node_id": "flow_based_model",
+      "field": "examples[3]",
+      "text": "substrate for Weather, climate & geospatial forecasting"
+    },
+    {
+      "unit_id": "a5e6b7b3aa159d48",
+      "node_id": "flow_based_model",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Continuous normalizing flows & learned vector fields, Flow matching & transport objectives."
+    },
+    {
+      "unit_id": "fddbd36dac30d436",
+      "node_id": "flow_based_model",
+      "field": "dependencies.continuous_flows.rationale",
+      "text": "Normalizing, rectified & flow-matching models is assembled in part from the mechanism or model component Continuous normalizing flows & learned vector fields."
+    },
+    {
+      "unit_id": "4a3948082c1d5786",
+      "node_id": "flow_based_model",
+      "field": "dependencies.flow_matching.rationale",
+      "text": "Normalizing, rectified & flow-matching models is learned, selected, or evaluated using the objective family Flow matching & transport objectives."
+    },
+    {
+      "unit_id": "05cfc32fe6508230",
+      "node_id": "flow_based_model",
+      "field": "dependencies.differentiable_solvers.rationale",
+      "text": "Normalizing, rectified & flow-matching models is assembled in part from the mechanism or model component Differentiable ODE/PDE/SDE solvers."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "cfdf6cbeeed57b97",
+      "node_id": "flow_based_model",
+      "dependency_id": "continuous_flows",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Normalizing, rectified & flow-matching models is assembled in part from the mechanism or model component Continuous normalizing flows & learned vector fields."
+    },
+    {
+      "edge_id": "f4f533529ed32886",
+      "node_id": "flow_based_model",
+      "dependency_id": "flow_matching",
+      "type": "optimizes_for",
+      "strength": "core",
+      "rationale": "Normalizing, rectified & flow-matching models is learned, selected, or evaluated using the objective family Flow matching & transport objectives."
+    },
+    {
+      "edge_id": "bbe8605fcf394cbf",
+      "node_id": "flow_based_model",
+      "dependency_id": "differentiable_solvers",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Normalizing, rectified & flow-matching models is assembled in part from the mechanism or model component Differentiable ODE/PDE/SDE solvers."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/flow_based_model.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

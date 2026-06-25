@@ -1,0 +1,163 @@
+{
+  "node_id": "fairness_bias",
+  "label": "Fairness, bias & subgroup analysis",
+  "layer": "alignment",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "fairness_bias",
+    "label": "Fairness, bias & subgroup analysis",
+    "layer": "alignment",
+    "tags": [
+      "evaluation",
+      "governance"
+    ],
+    "aliases": [],
+    "definition": "Fairness and subgroup analysis measure performance, treatment, representation, and error disparities across protected or operationally meaningful groups.",
+    "why_it_matters": "The role of Fairness, bias & subgroup analysis is to connect Statistics & experimental design, Causal inference to downstream capabilities including Medical imaging & clinical decision support, Tabular predictive analytics & decision support.",
+    "examples": [
+      "substrate for Medical imaging & clinical decision support",
+      "substrate for Tabular predictive analytics & decision support"
+    ],
+    "limitations": [
+      "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Causal inference."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_nist"
+    ],
+    "dependencies": [
+      {
+        "id": "statistics",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Statistics & experimental design."
+      },
+      {
+        "id": "causal_inference",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Causal inference."
+      },
+      {
+        "id": "human_evaluation",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "8359beceec80ca0e",
+      "node_id": "fairness_bias",
+      "field": "definition",
+      "text": "Fairness and subgroup analysis measure performance, treatment, representation, and error disparities across protected or operationally meaningful groups."
+    },
+    {
+      "unit_id": "df2f54b023d76667",
+      "node_id": "fairness_bias",
+      "field": "why_it_matters",
+      "text": "The role of Fairness, bias & subgroup analysis is to connect Statistics & experimental design, Causal inference to downstream capabilities including Medical imaging & clinical decision support, Tabular predictive analytics & decision support."
+    },
+    {
+      "unit_id": "3858a33bf4216b5b",
+      "node_id": "fairness_bias",
+      "field": "examples[1]",
+      "text": "substrate for Medical imaging & clinical decision support"
+    },
+    {
+      "unit_id": "422bed905fc87608",
+      "node_id": "fairness_bias",
+      "field": "examples[2]",
+      "text": "substrate for Tabular predictive analytics & decision support"
+    },
+    {
+      "unit_id": "5399f9bf4249e7de",
+      "node_id": "fairness_bias",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Causal inference."
+    },
+    {
+      "unit_id": "31b2ca4abfdfd4cd",
+      "node_id": "fairness_bias",
+      "field": "dependencies.statistics.rationale",
+      "text": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Statistics & experimental design."
+    },
+    {
+      "unit_id": "b474c411c670aae0",
+      "node_id": "fairness_bias",
+      "field": "dependencies.causal_inference.rationale",
+      "text": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Causal inference."
+    },
+    {
+      "unit_id": "0fdcd059a727842b",
+      "node_id": "fairness_bias",
+      "field": "dependencies.human_evaluation.rationale",
+      "text": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ab638b419dc2cc2a",
+      "node_id": "fairness_bias",
+      "dependency_id": "statistics",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Statistics & experimental design."
+    },
+    {
+      "edge_id": "320ca7ad307a652d",
+      "node_id": "fairness_bias",
+      "dependency_id": "causal_inference",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Causal inference."
+    },
+    {
+      "edge_id": "8745a9098de28c31",
+      "node_id": "fairness_bias",
+      "dependency_id": "human_evaluation",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/fairness_bias.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

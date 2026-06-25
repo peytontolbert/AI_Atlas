@@ -1,0 +1,234 @@
+{
+  "node_id": "world_model",
+  "label": "Latent world models & predictive dynamics",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "world_model",
+    "label": "Latent world models & predictive dynamics",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "world-models",
+      "rl"
+    ],
+    "aliases": [],
+    "definition": "A compact predictive model of environment dynamics supports imagination, planning, and control.",
+    "why_it_matters": "The role of Latent world models & predictive dynamics is to connect Model-based reinforcement learning, Latent variables & hidden state to downstream capabilities including Model-predictive control, World-model rollout & imagination, Game-playing, control & simulation agents.",
+    "examples": [
+      "substrate for Model-predictive control",
+      "substrate for World-model rollout & imagination",
+      "substrate for Game-playing, control & simulation agents"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Model-based reinforcement learning, Latent variables & hidden state."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dreamer"
+    ],
+    "dependencies": [
+      {
+        "id": "model_based_rl",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "Latent world models & predictive dynamics follows the learning setup expressed by Model-based reinforcement learning."
+      },
+      {
+        "id": "latent_variables",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Latent world models & predictive dynamics consumes, emits, or organizes information using Latent variables & hidden state."
+      },
+      {
+        "id": "state_space_transition",
+        "type": "composes",
+        "strength": "common",
+        "rationale": "Latent world models & predictive dynamics is assembled in part from the mechanism or model component State-space transitions."
+      },
+      {
+        "id": "generative_learning",
+        "type": "trained_under",
+        "strength": "common",
+        "rationale": "Latent world models & predictive dynamics follows the learning setup expressed by Generative modeling."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "84681e84b678ce95",
+      "node_id": "world_model",
+      "field": "definition",
+      "text": "A compact predictive model of environment dynamics supports imagination, planning, and control."
+    },
+    {
+      "unit_id": "3a410836b85b17a0",
+      "node_id": "world_model",
+      "field": "why_it_matters",
+      "text": "The role of Latent world models & predictive dynamics is to connect Model-based reinforcement learning, Latent variables & hidden state to downstream capabilities including Model-predictive control, World-model rollout & imagination, Game-playing, control & simulation agents."
+    },
+    {
+      "unit_id": "e395c25fdbab2fa7",
+      "node_id": "world_model",
+      "field": "examples[1]",
+      "text": "substrate for Model-predictive control"
+    },
+    {
+      "unit_id": "4cef06be1ecc5f0b",
+      "node_id": "world_model",
+      "field": "examples[2]",
+      "text": "substrate for World-model rollout & imagination"
+    },
+    {
+      "unit_id": "26954e45a0efe97f",
+      "node_id": "world_model",
+      "field": "examples[3]",
+      "text": "substrate for Game-playing, control & simulation agents"
+    },
+    {
+      "unit_id": "1cdb833b41cef94a",
+      "node_id": "world_model",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Model-based reinforcement learning, Latent variables & hidden state."
+    },
+    {
+      "unit_id": "29fe035b8445d8cf",
+      "node_id": "world_model",
+      "field": "dependencies.model_based_rl.rationale",
+      "text": "Latent world models & predictive dynamics follows the learning setup expressed by Model-based reinforcement learning."
+    },
+    {
+      "unit_id": "9884ec422309b3e7",
+      "node_id": "world_model",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "Latent world models & predictive dynamics consumes, emits, or organizes information using Latent variables & hidden state."
+    },
+    {
+      "unit_id": "ef405c4696c546bd",
+      "node_id": "world_model",
+      "field": "dependencies.state_space_transition.rationale",
+      "text": "Latent world models & predictive dynamics is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "unit_id": "b8b4a4992869701b",
+      "node_id": "world_model",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "Latent world models & predictive dynamics follows the learning setup expressed by Generative modeling."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "bc641b9dfe0cc752",
+      "node_id": "world_model",
+      "dependency_id": "model_based_rl",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "Latent world models & predictive dynamics follows the learning setup expressed by Model-based reinforcement learning."
+    },
+    {
+      "edge_id": "5654f1b50d48884c",
+      "node_id": "world_model",
+      "dependency_id": "latent_variables",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Latent world models & predictive dynamics consumes, emits, or organizes information using Latent variables & hidden state."
+    },
+    {
+      "edge_id": "814d1e37311a2013",
+      "node_id": "world_model",
+      "dependency_id": "state_space_transition",
+      "type": "composes",
+      "strength": "common",
+      "rationale": "Latent world models & predictive dynamics is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "edge_id": "eacb7e18e9b1977c",
+      "node_id": "world_model",
+      "dependency_id": "generative_learning",
+      "type": "trained_under",
+      "strength": "common",
+      "rationale": "Latent world models & predictive dynamics follows the learning setup expressed by Generative modeling."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dreamer": {
+        "id": "ref_dreamer",
+        "title": "Mastering Diverse Domains through World Models",
+        "authors": "Hafner et al.",
+        "year": 2023,
+        "url": "https://arxiv.org/abs/2301.04104"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_diffusion": {
+        "id": "ref_diffusion",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "authors": "Ho, Jain & Abbeel",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2006.11239"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_flow": {
+        "id": "ref_flow",
+        "title": "Flow Matching for Generative Modeling",
+        "authors": "Lipman et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2210.02747"
+      },
+      "ref_gan": {
+        "id": "ref_gan",
+        "title": "Generative Adversarial Nets",
+        "authors": "Goodfellow et al.",
+        "year": 2014,
+        "url": "https://arxiv.org/abs/1406.2661"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rlbook": {
+        "id": "ref_rlbook",
+        "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+        "authors": "Sutton & Barto",
+        "year": 2018,
+        "url": "http://incompleteideas.net/book/the-book-2nd.html"
+      },
+      "ref_vae": {
+        "id": "ref_vae",
+        "title": "Auto-Encoding Variational Bayes",
+        "authors": "Kingma & Welling",
+        "year": 2013,
+        "url": "https://arxiv.org/abs/1312.6114"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/world_model.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

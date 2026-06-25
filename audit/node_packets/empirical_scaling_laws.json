@@ -1,0 +1,192 @@
+{
+  "node_id": "empirical_scaling_laws",
+  "label": "Empirical scaling laws",
+  "layer": "foundation",
+  "editorial_status": "curated",
+  "node": {
+    "id": "empirical_scaling_laws",
+    "label": "Empirical scaling laws",
+    "layer": "foundation",
+    "tags": [
+      "scaling",
+      "foundation-models",
+      "measurement"
+    ],
+    "aliases": [],
+    "definition": "Empirical scaling laws fit predictable relationships between loss or capability and model size, data, training compute, or inference compute.",
+    "why_it_matters": "They make expensive model development partly forecastable and turn scaling into an explicit resource-allocation problem.",
+    "examples": [
+      "parameter–data–compute curves",
+      "loss extrapolation",
+      "test-time compute curves"
+    ],
+    "limitations": [
+      "Fits can break across architectures, data regimes, objectives, or task metrics and are not universal physical laws."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_scaling",
+      "ref_chinchilla"
+    ],
+    "dependencies": [
+      {
+        "id": "statistics",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Empirical scaling laws rests on the formal or computational capabilities supplied by Statistics & experimental design."
+      },
+      {
+        "id": "information_theory",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Empirical scaling laws rests on the formal or computational capabilities supplied by Information theory."
+      },
+      {
+        "id": "optimization",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Empirical scaling laws rests on the formal or computational capabilities supplied by Optimization theory."
+      },
+      {
+        "id": "complexity_computability",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Empirical scaling laws rests on the formal or computational capabilities supplied by Complexity & computability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "57efa08699c3ebcb",
+      "node_id": "empirical_scaling_laws",
+      "field": "definition",
+      "text": "Empirical scaling laws fit predictable relationships between loss or capability and model size, data, training compute, or inference compute."
+    },
+    {
+      "unit_id": "d37b7140b848e207",
+      "node_id": "empirical_scaling_laws",
+      "field": "why_it_matters",
+      "text": "They make expensive model development partly forecastable and turn scaling into an explicit resource-allocation problem."
+    },
+    {
+      "unit_id": "3547a460b7ab3481",
+      "node_id": "empirical_scaling_laws",
+      "field": "examples[1]",
+      "text": "parameter–data–compute curves"
+    },
+    {
+      "unit_id": "0f7c7b31c159457d",
+      "node_id": "empirical_scaling_laws",
+      "field": "examples[2]",
+      "text": "loss extrapolation"
+    },
+    {
+      "unit_id": "0cd088d15849cd7b",
+      "node_id": "empirical_scaling_laws",
+      "field": "examples[3]",
+      "text": "test-time compute curves"
+    },
+    {
+      "unit_id": "d269bb2f54bce3a3",
+      "node_id": "empirical_scaling_laws",
+      "field": "limitations[1]",
+      "text": "Fits can break across architectures, data regimes, objectives, or task metrics and are not universal physical laws."
+    },
+    {
+      "unit_id": "86e53b247d11bdaf",
+      "node_id": "empirical_scaling_laws",
+      "field": "dependencies.statistics.rationale",
+      "text": "Empirical scaling laws rests on the formal or computational capabilities supplied by Statistics & experimental design."
+    },
+    {
+      "unit_id": "4444fd47089fae52",
+      "node_id": "empirical_scaling_laws",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Empirical scaling laws rests on the formal or computational capabilities supplied by Information theory."
+    },
+    {
+      "unit_id": "688aa90104e08cb5",
+      "node_id": "empirical_scaling_laws",
+      "field": "dependencies.optimization.rationale",
+      "text": "Empirical scaling laws rests on the formal or computational capabilities supplied by Optimization theory."
+    },
+    {
+      "unit_id": "bdde230688ef3062",
+      "node_id": "empirical_scaling_laws",
+      "field": "dependencies.complexity_computability.rationale",
+      "text": "Empirical scaling laws rests on the formal or computational capabilities supplied by Complexity & computability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "ce846159a8fe6d00",
+      "node_id": "empirical_scaling_laws",
+      "dependency_id": "statistics",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Empirical scaling laws rests on the formal or computational capabilities supplied by Statistics & experimental design."
+    },
+    {
+      "edge_id": "4b22814cdf26290d",
+      "node_id": "empirical_scaling_laws",
+      "dependency_id": "information_theory",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Empirical scaling laws rests on the formal or computational capabilities supplied by Information theory."
+    },
+    {
+      "edge_id": "ca0853d0e354533b",
+      "node_id": "empirical_scaling_laws",
+      "dependency_id": "optimization",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Empirical scaling laws rests on the formal or computational capabilities supplied by Optimization theory."
+    },
+    {
+      "edge_id": "1946f9b5ec5efc5f",
+      "node_id": "empirical_scaling_laws",
+      "dependency_id": "complexity_computability",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Empirical scaling laws rests on the formal or computational capabilities supplied by Complexity & computability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_scaling": {
+        "id": "ref_scaling",
+        "title": "Scaling Laws for Neural Language Models",
+        "authors": "Kaplan et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2001.08361"
+      },
+      "ref_chinchilla": {
+        "id": "ref_chinchilla",
+        "title": "Training Compute-Optimal Large Language Models",
+        "authors": "Hoffmann et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.15556"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/empirical_scaling_laws.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

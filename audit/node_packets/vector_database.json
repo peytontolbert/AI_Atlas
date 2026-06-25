@@ -1,0 +1,157 @@
+{
+  "node_id": "vector_database",
+  "label": "Vector databases & ANN indexes",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "vector_database",
+    "label": "Vector databases & ANN indexes",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "retrieval",
+      "systems"
+    ],
+    "aliases": [],
+    "definition": "A vector database stores embeddings with metadata and supports approximate-nearest-neighbor indexing, filtering, updates, replication, and retrieval at operational scale.",
+    "why_it_matters": "The role of Vector databases & ANN indexes is to connect Dense vector retrieval, Databases & information retrieval to downstream capabilities including Vector-search and retrieval services.",
+    "examples": [
+      "substrate for Vector-search and retrieval services",
+      "combined with Dense vector retrieval"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Dense vector retrieval, Databases & information retrieval."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_ann"
+    ],
+    "dependencies": [
+      {
+        "id": "dense_retrieval",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Vector databases & ANN indexes stores, selects, or obtains information through Dense vector retrieval."
+      },
+      {
+        "id": "databases_ir",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Vector databases & ANN indexes uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "distributed_systems",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Vector databases & ANN indexes uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "ceb447865a5086c2",
+      "node_id": "vector_database",
+      "field": "definition",
+      "text": "A vector database stores embeddings with metadata and supports approximate-nearest-neighbor indexing, filtering, updates, replication, and retrieval at operational scale."
+    },
+    {
+      "unit_id": "ac6f6935a398ffdd",
+      "node_id": "vector_database",
+      "field": "why_it_matters",
+      "text": "The role of Vector databases & ANN indexes is to connect Dense vector retrieval, Databases & information retrieval to downstream capabilities including Vector-search and retrieval services."
+    },
+    {
+      "unit_id": "8f66fd66fc596881",
+      "node_id": "vector_database",
+      "field": "examples[1]",
+      "text": "substrate for Vector-search and retrieval services"
+    },
+    {
+      "unit_id": "524650df09e355f3",
+      "node_id": "vector_database",
+      "field": "examples[2]",
+      "text": "combined with Dense vector retrieval"
+    },
+    {
+      "unit_id": "0e50411752921b41",
+      "node_id": "vector_database",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Dense vector retrieval, Databases & information retrieval."
+    },
+    {
+      "unit_id": "9d7846c92e1b2d6f",
+      "node_id": "vector_database",
+      "field": "dependencies.dense_retrieval.rationale",
+      "text": "Vector databases & ANN indexes stores, selects, or obtains information through Dense vector retrieval."
+    },
+    {
+      "unit_id": "84261e74584b57cc",
+      "node_id": "vector_database",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Vector databases & ANN indexes uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "a3ac715ac231da54",
+      "node_id": "vector_database",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Vector databases & ANN indexes uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "fd57f5b21f6e1a79",
+      "node_id": "vector_database",
+      "dependency_id": "dense_retrieval",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Vector databases & ANN indexes stores, selects, or obtains information through Dense vector retrieval."
+    },
+    {
+      "edge_id": "120947a066fe52ad",
+      "node_id": "vector_database",
+      "dependency_id": "databases_ir",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Vector databases & ANN indexes uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "8edb340ca4fd56d5",
+      "node_id": "vector_database",
+      "dependency_id": "distributed_systems",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Vector databases & ANN indexes uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_ann": {
+        "id": "ref_ann",
+        "title": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs",
+        "authors": "Malkov & Yashunin",
+        "year": 2016,
+        "url": "https://arxiv.org/abs/1603.09320"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/vector_database.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

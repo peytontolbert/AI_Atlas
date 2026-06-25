@@ -1,0 +1,160 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "a22eb69e3235802e",
+      "node_id": "checkpoint_recovery",
+      "field": "definition",
+      "text": "Checkpointing periodically persists weights, optimizer state, data position, random seeds, and metadata so interrupted or distributed runs can resume reproducibly.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The definition is operationally correct, but the cited source does not directly support all listed persisted items or reproducible distributed resume."
+    },
+    {
+      "unit_id": "698316cec4e3e1be",
+      "node_id": "checkpoint_recovery",
+      "field": "why_it_matters",
+      "text": "The role of Checkpointing, recovery & experiment state is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Reproducibility, drift & continuous monitoring, Object storage, sharding & checkpoints.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The connection to reproducibility and storage is defensible, but the exact downstream graph wording is not directly stated."
+    },
+    {
+      "unit_id": "0465937584705154",
+      "node_id": "checkpoint_recovery",
+      "field": "examples[1]",
+      "text": "substrate for Reproducibility, drift & continuous monitoring",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Checkpointing supports reproducible experiment recovery, but the exact monitoring substrate claim is synthesized."
+    },
+    {
+      "unit_id": "b26385f53ed853c9",
+      "node_id": "checkpoint_recovery",
+      "field": "examples[2]",
+      "text": "substrate for Object storage, sharding & checkpoints",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Checkpointing depends on persisted storage, but object-storage/sharding wording is not directly supported by ref_dlbook."
+    },
+    {
+      "unit_id": "55d53a955f51f492",
+      "node_id": "checkpoint_recovery",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Databases & information retrieval.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The generic sensitivity statement is broadly true, but the exact dependencies and contamination wording are not directly evidenced."
+    },
+    {
+      "unit_id": "49d86a7b22ffe5ce",
+      "node_id": "checkpoint_recovery",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Checkpointing, recovery & experiment state uses Distributed systems & networking as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Distributed recovery requires distributed systems concerns, but the citation is indirect."
+    },
+    {
+      "unit_id": "a5a98d7e287fef95",
+      "node_id": "checkpoint_recovery",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Checkpointing, recovery & experiment state uses Databases & information retrieval as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Persistent experiment state uses storage/database ideas, but information retrieval is not clearly a core ingredient."
+    },
+    {
+      "unit_id": "fed6382e4111ea7f",
+      "node_id": "checkpoint_recovery",
+      "field": "dependencies.distributed_mixed_precision.rationale",
+      "text": "Checkpointing, recovery & experiment state uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Checkpointing is used in distributed/mixed-precision runs, but it does not generally use that training method as an ingredient."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "2ed881e05984f843",
+      "node_id": "checkpoint_recovery",
+      "dependency_id": "distributed_systems",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Distributed checkpoint/restart is a systems dependency; direct source support is indirect.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "efe575945329ffc5",
+      "node_id": "checkpoint_recovery",
+      "dependency_id": "databases_ir",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Storage/database aspects are relevant, but databases and information retrieval as a core dependency is too broad.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "bf3f6fd93375ca77",
+      "node_id": "checkpoint_recovery",
+      "dependency_id": "distributed_mixed_precision",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The direction is questionable: mixed-precision distributed training uses checkpointing more clearly than checkpointing uses it.",
+      "relationship_type_supported": false,
+      "strength_supported": true
+    }
+  ]
+}

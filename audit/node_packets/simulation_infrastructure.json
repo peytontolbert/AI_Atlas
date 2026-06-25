@@ -1,0 +1,213 @@
+{
+  "node_id": "simulation_infrastructure",
+  "label": "Simulation farms, digital environments & scenario generation",
+  "layer": "infrastructure",
+  "editorial_status": "curated",
+  "node": {
+    "id": "simulation_infrastructure",
+    "label": "Simulation farms, digital environments & scenario generation",
+    "layer": "infrastructure",
+    "tags": [
+      "infrastructure",
+      "simulation",
+      "robotics"
+    ],
+    "aliases": [],
+    "definition": "Simulation infrastructure runs many reproducible environments, scenarios, agents, and sensor models for training, evaluation, and synthetic-data generation.",
+    "why_it_matters": "It supplies the interaction volume and controlled counterfactuals needed by embodied, game, and operational AI.",
+    "examples": [
+      "parallel robot simulators",
+      "traffic scenario farms",
+      "wargame experiment grids"
+    ],
+    "limitations": [
+      "Fidelity, scenario coverage, determinism, and compute cost determine whether simulated conclusions transfer."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_digital_twin_ai",
+      "ref_scenario_generation"
+    ],
+    "dependencies": [
+      {
+        "id": "orchestration",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Simulation farms, digital environments & scenario generation turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "distributed_systems",
+        "type": "operationalizes",
+        "strength": "core",
+        "rationale": "Simulation farms, digital environments & scenario generation turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "multimodal_simulated_streams",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Simulation farms, digital environments & scenario generation turns Multimodal, simulated & streaming data into a scalable, deployable, observable, or integrity-preserving capability."
+      },
+      {
+        "id": "augmentation_synthetic",
+        "type": "operationalizes",
+        "strength": "common",
+        "rationale": "Simulation farms, digital environments & scenario generation turns Data augmentation & synthetic-data generation into a scalable, deployable, observable, or integrity-preserving capability."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "1b88b29cc57d8ffe",
+      "node_id": "simulation_infrastructure",
+      "field": "definition",
+      "text": "Simulation infrastructure runs many reproducible environments, scenarios, agents, and sensor models for training, evaluation, and synthetic-data generation."
+    },
+    {
+      "unit_id": "7bd8c12063b8e022",
+      "node_id": "simulation_infrastructure",
+      "field": "why_it_matters",
+      "text": "It supplies the interaction volume and controlled counterfactuals needed by embodied, game, and operational AI."
+    },
+    {
+      "unit_id": "e345318a61fccd52",
+      "node_id": "simulation_infrastructure",
+      "field": "examples[1]",
+      "text": "parallel robot simulators"
+    },
+    {
+      "unit_id": "37d45fbf3e851f6c",
+      "node_id": "simulation_infrastructure",
+      "field": "examples[2]",
+      "text": "traffic scenario farms"
+    },
+    {
+      "unit_id": "7f16af58f0e4a316",
+      "node_id": "simulation_infrastructure",
+      "field": "examples[3]",
+      "text": "wargame experiment grids"
+    },
+    {
+      "unit_id": "809c9e27ce187c55",
+      "node_id": "simulation_infrastructure",
+      "field": "limitations[1]",
+      "text": "Fidelity, scenario coverage, determinism, and compute cost determine whether simulated conclusions transfer."
+    },
+    {
+      "unit_id": "9b9a1cca3020c4de",
+      "node_id": "simulation_infrastructure",
+      "field": "dependencies.orchestration.rationale",
+      "text": "Simulation farms, digital environments & scenario generation turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "fc395995654d0941",
+      "node_id": "simulation_infrastructure",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Simulation farms, digital environments & scenario generation turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "a509dd8d5868d228",
+      "node_id": "simulation_infrastructure",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Simulation farms, digital environments & scenario generation turns Multimodal, simulated & streaming data into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "unit_id": "e9aa32c979abe4a8",
+      "node_id": "simulation_infrastructure",
+      "field": "dependencies.augmentation_synthetic.rationale",
+      "text": "Simulation farms, digital environments & scenario generation turns Data augmentation & synthetic-data generation into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "c537de4b71dcd05b",
+      "node_id": "simulation_infrastructure",
+      "dependency_id": "orchestration",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Simulation farms, digital environments & scenario generation turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "fd8d8cdb8c9413ed",
+      "node_id": "simulation_infrastructure",
+      "dependency_id": "distributed_systems",
+      "type": "operationalizes",
+      "strength": "core",
+      "rationale": "Simulation farms, digital environments & scenario generation turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "33390703aca684ca",
+      "node_id": "simulation_infrastructure",
+      "dependency_id": "multimodal_simulated_streams",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Simulation farms, digital environments & scenario generation turns Multimodal, simulated & streaming data into a scalable, deployable, observable, or integrity-preserving capability."
+    },
+    {
+      "edge_id": "0ee153ef7b404d81",
+      "node_id": "simulation_infrastructure",
+      "dependency_id": "augmentation_synthetic",
+      "type": "operationalizes",
+      "strength": "common",
+      "rationale": "Simulation farms, digital environments & scenario generation turns Data augmentation & synthetic-data generation into a scalable, deployable, observable, or integrity-preserving capability."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_digital_twin_ai": {
+        "id": "ref_digital_twin_ai",
+        "title": "AI Simulation by Digital Twins: Systematic Survey, Reference Framework, and Mapping to a Standardized Architecture",
+        "authors": "Liu & David",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2506.06580"
+      },
+      "ref_scenario_generation": {
+        "id": "ref_scenario_generation",
+        "title": "Foundation Models in Autonomous Driving: A Survey on Scenario Generation and Scenario Analysis",
+        "authors": "Gao et al.",
+        "year": 2025,
+        "url": "https://arxiv.org/abs/2506.11526"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_ddia": {
+        "id": "ref_ddia",
+        "title": "Designing Data-Intensive Applications",
+        "authors": "Martin Kleppmann",
+        "year": 2017,
+        "url": "https://dataintensive.net/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/simulation_infrastructure.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

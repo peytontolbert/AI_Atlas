@@ -1,0 +1,164 @@
+{
+  "node_id": "checkpoint_recovery",
+  "label": "Checkpointing, recovery & experiment state",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "checkpoint_recovery",
+    "label": "Checkpointing, recovery & experiment state",
+    "layer": "training",
+    "tags": [
+      "training",
+      "systems",
+      "reproducibility"
+    ],
+    "aliases": [],
+    "definition": "Checkpointing periodically persists weights, optimizer state, data position, random seeds, and metadata so interrupted or distributed runs can resume reproducibly.",
+    "why_it_matters": "The role of Checkpointing, recovery & experiment state is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Reproducibility, drift & continuous monitoring, Object storage, sharding & checkpoints.",
+    "examples": [
+      "substrate for Reproducibility, drift & continuous monitoring",
+      "substrate for Object storage, sharding & checkpoints"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Databases & information retrieval."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "distributed_systems",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Checkpointing, recovery & experiment state uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "databases_ir",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Checkpointing, recovery & experiment state uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "distributed_mixed_precision",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Checkpointing, recovery & experiment state uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a22eb69e3235802e",
+      "node_id": "checkpoint_recovery",
+      "field": "definition",
+      "text": "Checkpointing periodically persists weights, optimizer state, data position, random seeds, and metadata so interrupted or distributed runs can resume reproducibly."
+    },
+    {
+      "unit_id": "698316cec4e3e1be",
+      "node_id": "checkpoint_recovery",
+      "field": "why_it_matters",
+      "text": "The role of Checkpointing, recovery & experiment state is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Reproducibility, drift & continuous monitoring, Object storage, sharding & checkpoints."
+    },
+    {
+      "unit_id": "0465937584705154",
+      "node_id": "checkpoint_recovery",
+      "field": "examples[1]",
+      "text": "substrate for Reproducibility, drift & continuous monitoring"
+    },
+    {
+      "unit_id": "b26385f53ed853c9",
+      "node_id": "checkpoint_recovery",
+      "field": "examples[2]",
+      "text": "substrate for Object storage, sharding & checkpoints"
+    },
+    {
+      "unit_id": "55d53a955f51f492",
+      "node_id": "checkpoint_recovery",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Databases & information retrieval."
+    },
+    {
+      "unit_id": "49d86a7b22ffe5ce",
+      "node_id": "checkpoint_recovery",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Checkpointing, recovery & experiment state uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "a5a98d7e287fef95",
+      "node_id": "checkpoint_recovery",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Checkpointing, recovery & experiment state uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "fed6382e4111ea7f",
+      "node_id": "checkpoint_recovery",
+      "field": "dependencies.distributed_mixed_precision.rationale",
+      "text": "Checkpointing, recovery & experiment state uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "2ed881e05984f843",
+      "node_id": "checkpoint_recovery",
+      "dependency_id": "distributed_systems",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Checkpointing, recovery & experiment state uses Distributed systems & networking as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "efe575945329ffc5",
+      "node_id": "checkpoint_recovery",
+      "dependency_id": "databases_ir",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Checkpointing, recovery & experiment state uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "bf3f6fd93375ca77",
+      "node_id": "checkpoint_recovery",
+      "dependency_id": "distributed_mixed_precision",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Checkpointing, recovery & experiment state uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/checkpoint_recovery.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

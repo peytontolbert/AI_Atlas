@@ -1,0 +1,163 @@
+{
+  "node_id": "sets_pointclouds",
+  "label": "Sets, point clouds & meshes",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "sets_pointclouds",
+    "label": "Sets, point clouds & meshes",
+    "layer": "representation",
+    "tags": [
+      "geometry",
+      "3d"
+    ],
+    "aliases": [],
+    "definition": "Permutation-invariant or geometric collections represent objects, surfaces, particles, and unordered observations.",
+    "why_it_matters": "The role of Sets, point clouds & meshes is to connect Geometry, topology & symmetry, Probability theory to downstream capabilities including Robotics & embodied AI, Computer vision, perception & scene understanding.",
+    "examples": [
+      "substrate for Robotics & embodied AI",
+      "substrate for Computer vision, perception & scene understanding"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Geometry, topology & symmetry, Probability theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "geometry_topology",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Sets, point clouds & meshes rests on the formal or computational capabilities supplied by Geometry, topology & symmetry."
+      },
+      {
+        "id": "probability",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Sets, point clouds & meshes rests on the formal or computational capabilities supplied by Probability theory."
+      },
+      {
+        "id": "tensors",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Sets, point clouds & meshes consumes, emits, or organizes information using Scalars, vectors, matrices & tensors."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "6c774fb745d59c74",
+      "node_id": "sets_pointclouds",
+      "field": "definition",
+      "text": "Permutation-invariant or geometric collections represent objects, surfaces, particles, and unordered observations."
+    },
+    {
+      "unit_id": "e27cc3c73c7a5e61",
+      "node_id": "sets_pointclouds",
+      "field": "why_it_matters",
+      "text": "The role of Sets, point clouds & meshes is to connect Geometry, topology & symmetry, Probability theory to downstream capabilities including Robotics & embodied AI, Computer vision, perception & scene understanding."
+    },
+    {
+      "unit_id": "3a961aca4c1c1d38",
+      "node_id": "sets_pointclouds",
+      "field": "examples[1]",
+      "text": "substrate for Robotics & embodied AI"
+    },
+    {
+      "unit_id": "865ceaf5075bcb4e",
+      "node_id": "sets_pointclouds",
+      "field": "examples[2]",
+      "text": "substrate for Computer vision, perception & scene understanding"
+    },
+    {
+      "unit_id": "23d32555ecf25a7d",
+      "node_id": "sets_pointclouds",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Geometry, topology & symmetry, Probability theory."
+    },
+    {
+      "unit_id": "5b7898951f0f7dfe",
+      "node_id": "sets_pointclouds",
+      "field": "dependencies.geometry_topology.rationale",
+      "text": "Sets, point clouds & meshes rests on the formal or computational capabilities supplied by Geometry, topology & symmetry."
+    },
+    {
+      "unit_id": "147b4cdce28d6369",
+      "node_id": "sets_pointclouds",
+      "field": "dependencies.probability.rationale",
+      "text": "Sets, point clouds & meshes rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "unit_id": "10416e1fa4612961",
+      "node_id": "sets_pointclouds",
+      "field": "dependencies.tensors.rationale",
+      "text": "Sets, point clouds & meshes consumes, emits, or organizes information using Scalars, vectors, matrices & tensors."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "fc29dc19d0ced085",
+      "node_id": "sets_pointclouds",
+      "dependency_id": "geometry_topology",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Sets, point clouds & meshes rests on the formal or computational capabilities supplied by Geometry, topology & symmetry."
+    },
+    {
+      "edge_id": "6d50dc28821def61",
+      "node_id": "sets_pointclouds",
+      "dependency_id": "probability",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Sets, point clouds & meshes rests on the formal or computational capabilities supplied by Probability theory."
+    },
+    {
+      "edge_id": "e916de774ec4d9d4",
+      "node_id": "sets_pointclouds",
+      "dependency_id": "tensors",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Sets, point clouds & meshes consumes, emits, or organizes information using Scalars, vectors, matrices & tensors."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/sets_pointclouds.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

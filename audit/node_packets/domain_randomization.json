@@ -1,0 +1,207 @@
+{
+  "node_id": "domain_randomization",
+  "label": "Domain randomization & simulation curricula",
+  "layer": "training",
+  "editorial_status": "curated",
+  "node": {
+    "id": "domain_randomization",
+    "label": "Domain randomization & simulation curricula",
+    "layer": "training",
+    "tags": [
+      "training",
+      "simulation",
+      "robotics"
+    ],
+    "aliases": [
+      "DR"
+    ],
+    "definition": "Domain randomization varies simulated appearance, dynamics, sensors, delays, objects, and disturbances so a policy learns behavior robust across many plausible worlds.",
+    "why_it_matters": "It attempts to make the real environment look like one more sample from the training distribution.",
+    "examples": [
+      "randomized robot physics",
+      "lighting and texture variation",
+      "sensor-noise curricula"
+    ],
+    "limitations": [
+      "Poor parameter ranges waste capacity or omit the real system, and excessive randomization can suppress useful structure."
+    ],
+    "editorial_status": "curated",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_domainrand"
+    ],
+    "dependencies": [
+      {
+        "id": "sim_to_real_transfer",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Domain randomization & simulation curricula uses Sim-to-real, real-to-sim & digital transfer as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "augmentation_synthetic",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Domain randomization & simulation curricula uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "curriculum_data_mixtures",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Domain randomization & simulation curricula uses Curricula, data mixtures & sampling schedules as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "multimodal_simulated_streams",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Domain randomization & simulation curricula uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "3d7ee428ae85b21d",
+      "node_id": "domain_randomization",
+      "field": "definition",
+      "text": "Domain randomization varies simulated appearance, dynamics, sensors, delays, objects, and disturbances so a policy learns behavior robust across many plausible worlds."
+    },
+    {
+      "unit_id": "ee8562444362bc24",
+      "node_id": "domain_randomization",
+      "field": "why_it_matters",
+      "text": "It attempts to make the real environment look like one more sample from the training distribution."
+    },
+    {
+      "unit_id": "962ac7ece895390a",
+      "node_id": "domain_randomization",
+      "field": "examples[1]",
+      "text": "randomized robot physics"
+    },
+    {
+      "unit_id": "4d7e46023eb75808",
+      "node_id": "domain_randomization",
+      "field": "examples[2]",
+      "text": "lighting and texture variation"
+    },
+    {
+      "unit_id": "9f588cb01ec38cef",
+      "node_id": "domain_randomization",
+      "field": "examples[3]",
+      "text": "sensor-noise curricula"
+    },
+    {
+      "unit_id": "7522d1a222f42df4",
+      "node_id": "domain_randomization",
+      "field": "limitations[1]",
+      "text": "Poor parameter ranges waste capacity or omit the real system, and excessive randomization can suppress useful structure."
+    },
+    {
+      "unit_id": "a64bff5a2e621f92",
+      "node_id": "domain_randomization",
+      "field": "dependencies.sim_to_real_transfer.rationale",
+      "text": "Domain randomization & simulation curricula uses Sim-to-real, real-to-sim & digital transfer as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "953263aa7fe39587",
+      "node_id": "domain_randomization",
+      "field": "dependencies.augmentation_synthetic.rationale",
+      "text": "Domain randomization & simulation curricula uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "3a572640b1c7226e",
+      "node_id": "domain_randomization",
+      "field": "dependencies.curriculum_data_mixtures.rationale",
+      "text": "Domain randomization & simulation curricula uses Curricula, data mixtures & sampling schedules as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "c803debc9e320a73",
+      "node_id": "domain_randomization",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "Domain randomization & simulation curricula uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "322be29a26d4df9d",
+      "node_id": "domain_randomization",
+      "dependency_id": "sim_to_real_transfer",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Domain randomization & simulation curricula uses Sim-to-real, real-to-sim & digital transfer as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "280719aff093655e",
+      "node_id": "domain_randomization",
+      "dependency_id": "augmentation_synthetic",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Domain randomization & simulation curricula uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "7138868f5bad3fcf",
+      "node_id": "domain_randomization",
+      "dependency_id": "curriculum_data_mixtures",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Domain randomization & simulation curricula uses Curricula, data mixtures & sampling schedules as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "ba5f922777117503",
+      "node_id": "domain_randomization",
+      "dependency_id": "multimodal_simulated_streams",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Domain randomization & simulation curricula uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_domainrand": {
+        "id": "ref_domainrand",
+        "title": "Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World",
+        "authors": "Tobin et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1703.06907"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_domainrand": {
+        "id": "ref_domainrand",
+        "title": "Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World",
+        "authors": "Tobin et al.",
+        "year": 2017,
+        "url": "https://arxiv.org/abs/1703.06907"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_sim2real": {
+        "id": "ref_sim2real",
+        "title": "Sim-to-Real Transfer in Deep Reinforcement Learning for Robotics: a Survey",
+        "authors": "Zhao, Queralta & Westerlund",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2009.13303"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/domain_randomization.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

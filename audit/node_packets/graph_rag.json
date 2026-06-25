@@ -1,0 +1,180 @@
+{
+  "node_id": "graph_rag",
+  "label": "Graph RAG & structured retrieval",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "graph_rag",
+    "label": "Graph RAG & structured retrieval",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "retrieval",
+      "graph"
+    ],
+    "aliases": [
+      "GraphRAG"
+    ],
+    "definition": "Graph RAG retrieves entities, relations, communities, and multi-hop paths from an explicit graph before grounding generation or synthesis.",
+    "why_it_matters": "The role of Graph RAG & structured retrieval is to connect Retrieval-augmented generation, Knowledge graphs, ontologies & schemas to downstream capabilities including Neural search, RAG & question answering, Code models, copilots & repository intelligence, Autonomous research & AI scientist systems.",
+    "examples": [
+      "substrate for Neural search, RAG & question answering",
+      "substrate for Code models, copilots & repository intelligence",
+      "substrate for Autonomous research & AI scientist systems"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Retrieval-augmented generation, Knowledge graphs, ontologies & schemas."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_rag"
+    ],
+    "dependencies": [
+      {
+        "id": "rag",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Graph RAG & structured retrieval stores, selects, or obtains information through Retrieval-augmented generation."
+      },
+      {
+        "id": "knowledge_graphs",
+        "type": "retrieves_from",
+        "strength": "core",
+        "rationale": "Graph RAG & structured retrieval stores, selects, or obtains information through Knowledge graphs, ontologies & schemas."
+      },
+      {
+        "id": "message_passing",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Graph RAG & structured retrieval uses Message passing & neighborhood aggregation as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e0057d6048c35276",
+      "node_id": "graph_rag",
+      "field": "definition",
+      "text": "Graph RAG retrieves entities, relations, communities, and multi-hop paths from an explicit graph before grounding generation or synthesis."
+    },
+    {
+      "unit_id": "e44e27aeab184a95",
+      "node_id": "graph_rag",
+      "field": "why_it_matters",
+      "text": "The role of Graph RAG & structured retrieval is to connect Retrieval-augmented generation, Knowledge graphs, ontologies & schemas to downstream capabilities including Neural search, RAG & question answering, Code models, copilots & repository intelligence, Autonomous research & AI scientist systems."
+    },
+    {
+      "unit_id": "cc369e99059a39bc",
+      "node_id": "graph_rag",
+      "field": "examples[1]",
+      "text": "substrate for Neural search, RAG & question answering"
+    },
+    {
+      "unit_id": "e686921d54b2fce5",
+      "node_id": "graph_rag",
+      "field": "examples[2]",
+      "text": "substrate for Code models, copilots & repository intelligence"
+    },
+    {
+      "unit_id": "3f5f581190ccab92",
+      "node_id": "graph_rag",
+      "field": "examples[3]",
+      "text": "substrate for Autonomous research & AI scientist systems"
+    },
+    {
+      "unit_id": "3933fd32086e6f92",
+      "node_id": "graph_rag",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Retrieval-augmented generation, Knowledge graphs, ontologies & schemas."
+    },
+    {
+      "unit_id": "e7e3074b93fd288b",
+      "node_id": "graph_rag",
+      "field": "dependencies.rag.rationale",
+      "text": "Graph RAG & structured retrieval stores, selects, or obtains information through Retrieval-augmented generation."
+    },
+    {
+      "unit_id": "85c1a8bfc23602db",
+      "node_id": "graph_rag",
+      "field": "dependencies.knowledge_graphs.rationale",
+      "text": "Graph RAG & structured retrieval stores, selects, or obtains information through Knowledge graphs, ontologies & schemas."
+    },
+    {
+      "unit_id": "c0f796b50579082c",
+      "node_id": "graph_rag",
+      "field": "dependencies.message_passing.rationale",
+      "text": "Graph RAG & structured retrieval uses Message passing & neighborhood aggregation as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "1a6ba73286532738",
+      "node_id": "graph_rag",
+      "dependency_id": "rag",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Graph RAG & structured retrieval stores, selects, or obtains information through Retrieval-augmented generation."
+    },
+    {
+      "edge_id": "174594205c7dddc6",
+      "node_id": "graph_rag",
+      "dependency_id": "knowledge_graphs",
+      "type": "retrieves_from",
+      "strength": "core",
+      "rationale": "Graph RAG & structured retrieval stores, selects, or obtains information through Knowledge graphs, ontologies & schemas."
+    },
+    {
+      "edge_id": "994426d3f2140185",
+      "node_id": "graph_rag",
+      "dependency_id": "message_passing",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Graph RAG & structured retrieval uses Message passing & neighborhood aggregation as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_rag": {
+        "id": "ref_rag",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "authors": "Lewis et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2005.11401"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      },
+      "ref_rag": {
+        "id": "ref_rag",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "authors": "Lewis et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2005.11401"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/graph_rag.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

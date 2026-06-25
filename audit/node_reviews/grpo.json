@@ -1,0 +1,227 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "49f8c955cd0ada4d",
+      "node_id": "grpo",
+      "field": "definition",
+      "text": "GRPO is a PPO-style policy update that estimates relative advantages from groups of sampled responses instead of learning a separate value model.",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "DeepSeekMath directly presents GRPO as a PPO-like method estimating group-relative advantages without a separate value model."
+    },
+    {
+      "unit_id": "6015a2cd70a4ce32",
+      "node_id": "grpo",
+      "field": "why_it_matters",
+      "text": "It reduces critic-memory overhead and fits reasoning tasks where several candidate completions can share one verifiable reward rule.",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The critic-memory reduction follows from removing the value model; verifiable grouped reasoning rewards are supported by DeepSeekMath/RLVR but synthesized."
+    },
+    {
+      "unit_id": "aac420e06d37c31e",
+      "node_id": "grpo",
+      "field": "examples[1]",
+      "text": "mathematical reasoning post-training",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "DeepSeekMath applies GRPO to mathematical reasoning."
+    },
+    {
+      "unit_id": "949ba7785783a813",
+      "node_id": "grpo",
+      "field": "examples[2]",
+      "text": "code-generation reinforcement learning",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Code-generation RL is plausible for verifiable rewards, but not directly evidenced by the GRPO node source."
+    },
+    {
+      "unit_id": "ef9ea1f406a9fe1b",
+      "node_id": "grpo",
+      "field": "limitations[1]",
+      "text": "Training depends on within-group reward variation, sampling diversity, clipping stability, and resistance to reward hacking.",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Group reward variation, sampling, clipping, and reward hacking are plausible limitations from the algorithm design and RLVR setting, but not one exact claim."
+    },
+    {
+      "unit_id": "53b78b68c28aef1a",
+      "node_id": "grpo",
+      "field": "dependencies.policy_actor_critic.rationale",
+      "text": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Policy-gradient & actor\u2013critic objectives.",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "GRPO is policy-gradient/PPO-style but specifically avoids a learned critic, so actor-critic wording is only partial."
+    },
+    {
+      "unit_id": "d316f9e9972bb395",
+      "node_id": "grpo",
+      "field": "dependencies.preference_optimization.rationale",
+      "text": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families).",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "GRPO is used in RL-style post-training related to preference/RLHF families, though not DPO specifically."
+    },
+    {
+      "unit_id": "d4f995b7264b7bd7",
+      "node_id": "grpo",
+      "field": "dependencies.outcome_verifiers.rationale",
+      "text": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards.",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "DeepSeekMath/RLVR support verifiable outcome rewards for reasoning; the exact objective-family wording is synthesized."
+    },
+    {
+      "unit_id": "b89cdee84117914c",
+      "node_id": "grpo",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "Group Relative Policy Optimization (GRPO) uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "DeepSeekMath uses supervised/instruction-tuned starting models before RL, but the edge wording is synthesized."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "545f5bf70fa0e862",
+      "node_id": "grpo",
+      "dependency_id": "policy_actor_critic",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Policy-gradient support is clear; actor-critic as core is weakened because GRPO removes the critic/value model.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "8268ca8e0c12c32e",
+      "node_id": "grpo",
+      "dependency_id": "preference_optimization",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "GRPO fits RLHF/post-training optimization families, though this is a taxonomic synthesis.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a3456d92d4113ed9",
+      "node_id": "grpo",
+      "dependency_id": "outcome_verifiers",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "GRPO is commonly paired with verifiable rewards for reasoning; common strength is reasonable.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "e2a8c8736757afd2",
+      "node_id": "grpo",
+      "dependency_id": "sft_instruction",
+      "source_ids": [
+        "ref_grpo",
+        "ref_rlhf",
+        "ref_rlbook",
+        "ref_rlvr"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "SFT initialization is common in the cited post-training pipeline.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "node_id": "formal_model_verification",
+  "label": "Formal verification of models",
+  "layer": "alignment",
+  "editorial_status": "curated",
+  "node": {
+    "id": "formal_model_verification",
+    "label": "Formal verification of models",
+    "layer": "alignment",
+    "tags": [
+      "verification",
+      "safety",
+      "formal"
+    ],
+    "aliases": [
+      "neural-network verification"
+    ],
+    "definition": "Formal model verification proves that a model satisfies a specified property over an input region or abstraction, such as robustness, bounded output, or monotonicity.",
+    "why_it_matters": "It can replace sampled evidence with mathematical guarantees for narrowly defined high-consequence properties.",
+    "examples": [
+      "certified adversarial robustness",
+      "output-bound proofs",
+      "verified neural controllers"
+    ],
+    "limitations": [
+      "Verification scales poorly with model size and nonlinear complexity, and the specified property may omit real hazards."
+    ],
+    "editorial_status": "curated",
+    "maturity": "active",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_formalml"
+    ],
+    "dependencies": [
+      {
+        "id": "formal_methods_specification",
+        "type": "evaluates_or_constrains",
+        "strength": "core",
+        "rationale": "Formal verification of models measures, constrains, audits, or governs behavior using Formal methods, specifications & proof obligations."
+      },
+      {
+        "id": "constraint_sat_smt",
+        "type": "verifies_with",
+        "strength": "core",
+        "rationale": "Formal verification of models checks candidate behavior or artifacts against evidence or constraints from Constraint satisfaction, SAT & SMT solving."
+      },
+      {
+        "id": "robustness_ood",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Formal verification of models measures, constrains, audits, or governs behavior using Robustness, distribution shift & OOD evaluation."
+      },
+      {
+        "id": "causal_ablation",
+        "type": "evaluates_or_constrains",
+        "strength": "common",
+        "rationale": "Formal verification of models measures, constrains, audits, or governs behavior using Ablation, interventions & causal analysis."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "460a05f929e7e85b",
+      "node_id": "formal_model_verification",
+      "field": "definition",
+      "text": "Formal model verification proves that a model satisfies a specified property over an input region or abstraction, such as robustness, bounded output, or monotonicity."
+    },
+    {
+      "unit_id": "8d3d6e4c4dcc71d6",
+      "node_id": "formal_model_verification",
+      "field": "why_it_matters",
+      "text": "It can replace sampled evidence with mathematical guarantees for narrowly defined high-consequence properties."
+    },
+    {
+      "unit_id": "c1e2cbb99ac972e3",
+      "node_id": "formal_model_verification",
+      "field": "examples[1]",
+      "text": "certified adversarial robustness"
+    },
+    {
+      "unit_id": "a59de1652588130d",
+      "node_id": "formal_model_verification",
+      "field": "examples[2]",
+      "text": "output-bound proofs"
+    },
+    {
+      "unit_id": "e11d5140a2a0fdab",
+      "node_id": "formal_model_verification",
+      "field": "examples[3]",
+      "text": "verified neural controllers"
+    },
+    {
+      "unit_id": "ace3fd97648620fd",
+      "node_id": "formal_model_verification",
+      "field": "limitations[1]",
+      "text": "Verification scales poorly with model size and nonlinear complexity, and the specified property may omit real hazards."
+    },
+    {
+      "unit_id": "b6751d60cfc4bd6d",
+      "node_id": "formal_model_verification",
+      "field": "dependencies.formal_methods_specification.rationale",
+      "text": "Formal verification of models measures, constrains, audits, or governs behavior using Formal methods, specifications & proof obligations."
+    },
+    {
+      "unit_id": "9fe44a7a2b13a145",
+      "node_id": "formal_model_verification",
+      "field": "dependencies.constraint_sat_smt.rationale",
+      "text": "Formal verification of models checks candidate behavior or artifacts against evidence or constraints from Constraint satisfaction, SAT & SMT solving."
+    },
+    {
+      "unit_id": "27ed26bb47b2f1fe",
+      "node_id": "formal_model_verification",
+      "field": "dependencies.robustness_ood.rationale",
+      "text": "Formal verification of models measures, constrains, audits, or governs behavior using Robustness, distribution shift & OOD evaluation."
+    },
+    {
+      "unit_id": "383c187087e785da",
+      "node_id": "formal_model_verification",
+      "field": "dependencies.causal_ablation.rationale",
+      "text": "Formal verification of models measures, constrains, audits, or governs behavior using Ablation, interventions & causal analysis."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "1ea750310eb0383e",
+      "node_id": "formal_model_verification",
+      "dependency_id": "formal_methods_specification",
+      "type": "evaluates_or_constrains",
+      "strength": "core",
+      "rationale": "Formal verification of models measures, constrains, audits, or governs behavior using Formal methods, specifications & proof obligations."
+    },
+    {
+      "edge_id": "e6bab6a360d43dc1",
+      "node_id": "formal_model_verification",
+      "dependency_id": "constraint_sat_smt",
+      "type": "verifies_with",
+      "strength": "core",
+      "rationale": "Formal verification of models checks candidate behavior or artifacts against evidence or constraints from Constraint satisfaction, SAT & SMT solving."
+    },
+    {
+      "edge_id": "34622fbb6cbf4b4e",
+      "node_id": "formal_model_verification",
+      "dependency_id": "robustness_ood",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Formal verification of models measures, constrains, audits, or governs behavior using Robustness, distribution shift & OOD evaluation."
+    },
+    {
+      "edge_id": "cb3b98d6b74a4a44",
+      "node_id": "formal_model_verification",
+      "dependency_id": "causal_ablation",
+      "type": "evaluates_or_constrains",
+      "strength": "common",
+      "rationale": "Formal verification of models measures, constrains, audits, or governs behavior using Ablation, interventions & causal analysis."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_formalml": {
+        "id": "ref_formalml",
+        "title": "Formal Methods for Machine Learning: A Survey",
+        "authors": "Seshia, Sadigh & Sastry",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2104.02466"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_formalml": {
+        "id": "ref_formalml",
+        "title": "Formal Methods for Machine Learning: A Survey",
+        "authors": "Seshia, Sadigh & Sastry",
+        "year": 2021,
+        "url": "https://arxiv.org/abs/2104.02466"
+      },
+      "ref_nist": {
+        "id": "ref_nist",
+        "title": "AI Risk Management Framework 1.0",
+        "authors": "NIST",
+        "year": 2023,
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/formal_model_verification.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

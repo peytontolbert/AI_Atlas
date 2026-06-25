@@ -1,0 +1,166 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "89974a5dae312d6c",
+      "node_id": "differential_equations",
+      "field": "definition",
+      "text": "Ordinary, partial, and stochastic differential equations describe continuous change and physical dynamics.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2012.07558",
+        "url:https://arxiv.org/abs/1310.7975",
+        "url:https://arxiv.org/abs/2109.01621"
+      ],
+      "evidence_location": "AIMA preface lines 63-66 and 120-122; arXiv 2012.07558 abstract lines 3-6; arXiv 1310.7975 abstract lines 38-40; arXiv 2109.01621 abstract lines 3-5 and 20-23.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source set supports ODEs and PDEs as tools for modeling change and physical phenomena, and SDEs as models of stochastic dynamical systems. The sentence compresses three equation classes into one claim, so it is not verified against a single exact phrasing."
+    },
+    {
+      "unit_id": "2d7a215bde420436",
+      "node_id": "differential_equations",
+      "field": "why_it_matters",
+      "text": "The role of Differential equations is to connect Calculus & automatic differentiation theory, Numerical analysis to downstream capabilities including Dynamical systems & control theory, Neuro-symbolic & physics-informed learning, Flow matching & transport objectives.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2012.07558",
+        "url:https://arxiv.org/abs/2109.01621",
+        "url:https://arxiv.org/abs/2011.02415",
+        "url:https://arxiv.org/abs/2107.07871",
+        "url:https://arxiv.org/abs/2501.16839",
+        "url:https://arxiv.org/abs/0706.1339",
+        "url:https://arxiv.org/abs/2101.10678"
+      ],
+      "evidence_location": "AIMA preface lines 63-66 and 120-122; arXiv 2012.07558 lines 5-7; arXiv 2109.01621 lines 3-5 and 42-44; arXiv 2011.02415 abstract lines 38-40; arXiv 2107.07871 abstract lines 38-39; arXiv 2501.16839 abstract lines 38-39; arXiv 0706.1339 lines 18-25 and 61-78; arXiv 2101.10678 abstract lines 3-4.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "This is a composite role statement assembled from several application areas. The calculus/automatic-differentiation and numerical-analysis parts are supported indirectly, while the downstream examples are each supported by separate sources. The exact connector language is editorial synthesis, not a verbatim source claim."
+    },
+    {
+      "unit_id": "1391455dcda84138",
+      "node_id": "differential_equations",
+      "field": "examples[1]",
+      "text": "substrate for Dynamical systems & control theory",
+      "source_ids": [
+        "url:https://arxiv.org/abs/0706.1339",
+        "url:https://arxiv.org/abs/2101.10678",
+        "url:https://arxiv.org/abs/2109.01621"
+      ],
+      "evidence_location": "arXiv 0706.1339 lines 7-10 and 18-25; arXiv 2101.10678 abstract lines 3-4; arXiv 2109.01621 lines 20-23.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited sources support differential equations as the state equations or governing equations in control and dynamical-systems settings. 'Substrate for' is an editorial paraphrase rather than an exact source phrase."
+    },
+    {
+      "unit_id": "97e895a1d521fae6",
+      "node_id": "differential_equations",
+      "field": "examples[2]",
+      "text": "substrate for Neuro-symbolic & physics-informed learning",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2011.02415",
+        "url:https://arxiv.org/abs/2107.07871",
+        "url:https://arxiv.org/abs/2109.01621"
+      ],
+      "evidence_location": "arXiv 2011.02415 abstract lines 38-40; arXiv 2107.07871 abstract lines 38-39; arXiv 2109.01621 lines 42-44.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support differential equations as a target for neuro-symbolic solving and physics-informed neural methods. The wording is a higher-level synthesis, not a directly quoted claim."
+    },
+    {
+      "unit_id": "1dd16f644bd67526",
+      "node_id": "differential_equations",
+      "field": "examples[3]",
+      "text": "substrate for Flow matching & transport objectives",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2501.16839"
+      ],
+      "evidence_location": "arXiv 2501.16839 abstract lines 38-39.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The paper directly ties flow matching to an ordinary differential equation and transport plans. 'Transport objectives' is an editorial generalization from the source's transport-plan language."
+    },
+    {
+      "unit_id": "df71725842dbacb7",
+      "node_id": "differential_equations",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Calculus & automatic differentiation theory, Numerical analysis.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2012.07558",
+        "url:https://arxiv.org/abs/2109.01621"
+      ],
+      "evidence_location": "AIMA preface lines 63-66 and 120-122; arXiv 2012.07558 lines 5-7; arXiv 2109.01621 lines 3-5 and 42-44.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The dependency portion is defensible, but the first clause about empirical irrelevance is not stated that directly in the sources. The sentence mixes a general modeling caution with a dependency assertion, so it should be narrowed if sentence-level verification is required."
+    },
+    {
+      "unit_id": "e6ae49c8b3dcc668",
+      "node_id": "differential_equations",
+      "field": "dependencies.calculus.rationale",
+      "text": "Differential equations rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2109.01621"
+      ],
+      "evidence_location": "AIMA preface lines 63-66 and 120-122; arXiv 2109.01621 lines 4-5 and 42-44.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The calculus portion is directly aligned with the textbook's discussion of continuous mathematics and calculus as a prerequisite; automatic differentiation is supported by the SPINODE paper as a computational tool used with differential-equation models. The exact wording is editorial synthesis."
+    },
+    {
+      "unit_id": "cef9ea617b4b882a",
+      "node_id": "differential_equations",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "Differential equations rests on the formal or computational capabilities supplied by Numerical analysis.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2012.07558",
+        "url:https://arxiv.org/abs/2107.07871"
+      ],
+      "evidence_location": "arXiv 2012.07558 lines 5-7; arXiv 2107.07871 abstract lines 38-39.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support numerical methods as the practical means for solving many differential equations and compare modern PINN approaches against classical numerical methods. The phrasing 'rests on' is stronger than either source states verbatim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "0f73af86eb2f826f",
+      "node_id": "differential_equations",
+      "dependency_id": "calculus",
+      "source_ids": [
+        "ref_aima",
+        "url:https://arxiv.org/abs/2109.01621"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge direction is correct, and calculus is a defensible prerequisite for differential equations. The support is synthesized from the textbook's mention of calculus as useful background and the neural-ODE paper's use of automatic differentiation with differential-equation models.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0f5222b8e2d7ff30",
+      "node_id": "differential_equations",
+      "dependency_id": "numerical_methods",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2012.07558",
+        "url:https://arxiv.org/abs/2107.07871"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The edge is well supported: numerical methods are explicitly described as a powerful alternative for solving differential equations, and classical numerical methods are the comparison baseline for PINNs. The core strength is defensible for the atlas convention.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

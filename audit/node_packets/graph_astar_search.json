@@ -1,0 +1,143 @@
+{
+  "node_id": "graph_astar_search",
+  "label": "Graph search, BFS/DFS & A*",
+  "layer": "reasoning",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "graph_astar_search",
+    "label": "Graph search, BFS/DFS & A*",
+    "layer": "reasoning",
+    "tags": [
+      "reasoning",
+      "search"
+    ],
+    "aliases": [],
+    "definition": "Graph search explores state transitions with breadth-first, depth-first, uniform-cost, or heuristic A* strategies while tracking visited states and path cost.",
+    "why_it_matters": "The role of Graph search, BFS/DFS & A* is to connect Algorithms & data structures, Graph theory to downstream capabilities including Monte Carlo tree search, Program synthesis & code search, Task decomposition & hierarchical reasoning.",
+    "examples": [
+      "substrate for Monte Carlo tree search",
+      "substrate for Program synthesis & code search",
+      "substrate for Task decomposition & hierarchical reasoning"
+    ],
+    "limitations": [
+      "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Algorithms & data structures, Graph theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "algorithms_data_structures",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Graph search, BFS/DFS & A* explores alternatives using the state, scoring, or search process in Algorithms & data structures."
+      },
+      {
+        "id": "graph_theory",
+        "type": "searches_with",
+        "strength": "core",
+        "rationale": "Graph search, BFS/DFS & A* explores alternatives using the state, scoring, or search process in Graph theory."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "2697f4a7ed56e3e9",
+      "node_id": "graph_astar_search",
+      "field": "definition",
+      "text": "Graph search explores state transitions with breadth-first, depth-first, uniform-cost, or heuristic A* strategies while tracking visited states and path cost."
+    },
+    {
+      "unit_id": "03e977bb3281a7b0",
+      "node_id": "graph_astar_search",
+      "field": "why_it_matters",
+      "text": "The role of Graph search, BFS/DFS & A* is to connect Algorithms & data structures, Graph theory to downstream capabilities including Monte Carlo tree search, Program synthesis & code search, Task decomposition & hierarchical reasoning."
+    },
+    {
+      "unit_id": "ac5cd6a93461eb1c",
+      "node_id": "graph_astar_search",
+      "field": "examples[1]",
+      "text": "substrate for Monte Carlo tree search"
+    },
+    {
+      "unit_id": "55b0e97a58eff1b3",
+      "node_id": "graph_astar_search",
+      "field": "examples[2]",
+      "text": "substrate for Program synthesis & code search"
+    },
+    {
+      "unit_id": "a8b2b5200332753c",
+      "node_id": "graph_astar_search",
+      "field": "examples[3]",
+      "text": "substrate for Task decomposition & hierarchical reasoning"
+    },
+    {
+      "unit_id": "900d1d02974394f6",
+      "node_id": "graph_astar_search",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Algorithms & data structures, Graph theory."
+    },
+    {
+      "unit_id": "f1a636fbbeea6a60",
+      "node_id": "graph_astar_search",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Graph search, BFS/DFS & A* explores alternatives using the state, scoring, or search process in Algorithms & data structures."
+    },
+    {
+      "unit_id": "1059d45910de6dbd",
+      "node_id": "graph_astar_search",
+      "field": "dependencies.graph_theory.rationale",
+      "text": "Graph search, BFS/DFS & A* explores alternatives using the state, scoring, or search process in Graph theory."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "6ca530549b9bc0fb",
+      "node_id": "graph_astar_search",
+      "dependency_id": "algorithms_data_structures",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Graph search, BFS/DFS & A* explores alternatives using the state, scoring, or search process in Algorithms & data structures."
+    },
+    {
+      "edge_id": "7677443ad7f4cdbc",
+      "node_id": "graph_astar_search",
+      "dependency_id": "graph_theory",
+      "type": "searches_with",
+      "strength": "core",
+      "rationale": "Graph search, BFS/DFS & A* explores alternatives using the state, scoring, or search process in Graph theory."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/graph_astar_search.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

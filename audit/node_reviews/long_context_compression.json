@@ -1,0 +1,182 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "029d6b86b98ef84f",
+      "node_id": "long_context_compression",
+      "field": "definition",
+      "text": "Long-context memory compresses, summarizes, selects, or hierarchically indexes prior tokens so useful information can survive beyond a model\u2019s active window.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support sequence modeling, attention, and representation learning, but not this exact long-context memory compression formulation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Needs a long-context compression/summarization-memory source."
+    },
+    {
+      "unit_id": "75fddf0ef3789183",
+      "node_id": "long_context_compression",
+      "field": "why_it_matters",
+      "text": "The role of Long-context attention, compression & summarization memory is to connect Sparse, local, linear & recurrent attention, Context windows & working memory to downstream capabilities including Neural search, RAG & question answering, Tutoring, translation & knowledge work.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
+    },
+    {
+      "unit_id": "656826d30819a590",
+      "node_id": "long_context_compression",
+      "field": "examples[1]",
+      "text": "substrate for Neural search, RAG & question answering",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "23a0de248d2da841",
+      "node_id": "long_context_compression",
+      "field": "examples[2]",
+      "text": "substrate for Tutoring, translation & knowledge work",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+    },
+    {
+      "unit_id": "fec41074ed2861c9",
+      "node_id": "long_context_compression",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sparse, local, linear & recurrent attention, Context windows & working memory.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "bd6d059d28e1f470",
+      "node_id": "long_context_compression",
+      "field": "dependencies.efficient_attention.rationale",
+      "text": "Long-context attention, compression & summarization memory uses Sparse, local, linear & recurrent attention as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support efficient_attention or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "d3f30120921af5bc",
+      "node_id": "long_context_compression",
+      "field": "dependencies.context_working_memory.rationale",
+      "text": "Long-context attention, compression & summarization memory stores, selects, or obtains information through Context windows & working memory.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support context_working_memory or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "64b480a187bfd7ca",
+      "node_id": "long_context_compression",
+      "field": "dependencies.embeddings.rationale",
+      "text": "Long-context attention, compression & summarization memory stores, selects, or obtains information through Embeddings & distributed representations.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "The packet references support embeddings or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "efd0220b3de0b5b4",
+      "node_id": "long_context_compression",
+      "dependency_id": "efficient_attention",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "5f75f66552c62b4e",
+      "node_id": "long_context_compression",
+      "dependency_id": "context_working_memory",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "f2cdb70f3d36b28d",
+      "node_id": "long_context_compression",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Embedding-based selection or indexing is common but not required.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

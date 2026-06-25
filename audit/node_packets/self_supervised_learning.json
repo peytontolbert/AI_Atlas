@@ -1,0 +1,210 @@
+{
+  "node_id": "self_supervised_learning",
+  "label": "Self-supervised learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "self_supervised_learning",
+    "label": "Self-supervised learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "foundation-models"
+    ],
+    "aliases": [],
+    "definition": "Training targets are constructed from the data itself, such as masked regions, future tokens, or paired views.",
+    "why_it_matters": "The role of Self-supervised learning is to connect Unsupervised learning, Tokens, vocabularies & symbolic units to downstream capabilities including Contrastive learning, Predictive representation learning / JEPA, In-context & test-time learning.",
+    "examples": [
+      "substrate for Contrastive learning",
+      "substrate for Predictive representation learning / JEPA",
+      "substrate for In-context & test-time learning"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Unsupervised learning, Tokens, vocabularies & symbolic units."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "unsupervised_learning",
+        "type": "trained_under",
+        "strength": "core",
+        "rationale": "Self-supervised learning follows the learning setup expressed by Unsupervised learning."
+      },
+      {
+        "id": "tokens_vocab",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Self-supervised learning uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "sequences_time",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Self-supervised learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "spatial_grids",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Self-supervised learning uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Self-supervised learning needs sampled data batches to construct masking, pairing, or prediction targets from the observed data itself."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "78f33360f9aaf407",
+      "node_id": "self_supervised_learning",
+      "field": "definition",
+      "text": "Training targets are constructed from the data itself, such as masked regions, future tokens, or paired views."
+    },
+    {
+      "unit_id": "ee6f602c042f7e8a",
+      "node_id": "self_supervised_learning",
+      "field": "why_it_matters",
+      "text": "The role of Self-supervised learning is to connect Unsupervised learning, Tokens, vocabularies & symbolic units to downstream capabilities including Contrastive learning, Predictive representation learning / JEPA, In-context & test-time learning."
+    },
+    {
+      "unit_id": "83b247977ca8d5dc",
+      "node_id": "self_supervised_learning",
+      "field": "examples[1]",
+      "text": "substrate for Contrastive learning"
+    },
+    {
+      "unit_id": "64d19a226288bf19",
+      "node_id": "self_supervised_learning",
+      "field": "examples[2]",
+      "text": "substrate for Predictive representation learning / JEPA"
+    },
+    {
+      "unit_id": "fff6cd7ec9fecebf",
+      "node_id": "self_supervised_learning",
+      "field": "examples[3]",
+      "text": "substrate for In-context & test-time learning"
+    },
+    {
+      "unit_id": "d821a2977d410eca",
+      "node_id": "self_supervised_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Unsupervised learning, Tokens, vocabularies & symbolic units."
+    },
+    {
+      "unit_id": "f4367649af246494",
+      "node_id": "self_supervised_learning",
+      "field": "dependencies.unsupervised_learning.rationale",
+      "text": "Self-supervised learning follows the learning setup expressed by Unsupervised learning."
+    },
+    {
+      "unit_id": "c854548c923042a0",
+      "node_id": "self_supervised_learning",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Self-supervised learning uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "378d7b5068666256",
+      "node_id": "self_supervised_learning",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Self-supervised learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "d1f9f989d516eb79",
+      "node_id": "self_supervised_learning",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "Self-supervised learning uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "b5bee792a89f876f",
+      "node_id": "self_supervised_learning",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Self-supervised learning needs sampled data batches to construct masking, pairing, or prediction targets from the observed data itself."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "cbbc8c17a91f87a4",
+      "node_id": "self_supervised_learning",
+      "dependency_id": "unsupervised_learning",
+      "type": "trained_under",
+      "strength": "core",
+      "rationale": "Self-supervised learning follows the learning setup expressed by Unsupervised learning."
+    },
+    {
+      "edge_id": "b7d0e3f7d830d1f3",
+      "node_id": "self_supervised_learning",
+      "dependency_id": "tokens_vocab",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Self-supervised learning uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "2b8daacf10839e60",
+      "node_id": "self_supervised_learning",
+      "dependency_id": "sequences_time",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Self-supervised learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "4226500c509cad93",
+      "node_id": "self_supervised_learning",
+      "dependency_id": "spatial_grids",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Self-supervised learning uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "497424501438ed3b",
+      "node_id": "self_supervised_learning",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Self-supervised learning needs sampled data batches to construct masking, pairing, or prediction targets from the observed data itself."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/self_supervised_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

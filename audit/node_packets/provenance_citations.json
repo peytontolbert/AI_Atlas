@@ -1,0 +1,178 @@
+{
+  "node_id": "provenance_citations",
+  "label": "Provenance, citations & evidence tracking",
+  "layer": "memory",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "provenance_citations",
+    "label": "Provenance, citations & evidence tracking",
+    "layer": "memory",
+    "tags": [
+      "memory",
+      "evaluation",
+      "trust"
+    ],
+    "aliases": [],
+    "definition": "Provenance and citation tracking attach claims to source identifiers, retrieved passages, transformations, timestamps, and evidence paths.",
+    "why_it_matters": "The role of Provenance, citations & evidence tracking is to connect External retrieval & ranking, Databases & information retrieval to downstream capabilities including Neural search, RAG & question answering, Memory lifecycle, forgetting & consolidation, Content credentials, signing & provenance.",
+    "examples": [
+      "substrate for Neural search, RAG & question answering",
+      "substrate for Memory lifecycle, forgetting & consolidation",
+      "substrate for Content credentials, signing & provenance"
+    ],
+    "limitations": [
+      "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include External retrieval & ranking, Databases & information retrieval."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "external_retrieval",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Provenance, citations & evidence tracking uses External retrieval & ranking as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "databases_ir",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Provenance, citations & evidence tracking uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "rag",
+        "type": "retrieves_from",
+        "strength": "common",
+        "rationale": "Provenance, citations & evidence tracking stores, selects, or obtains information through Retrieval-augmented generation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "a41a164dcf96a66a",
+      "node_id": "provenance_citations",
+      "field": "definition",
+      "text": "Provenance and citation tracking attach claims to source identifiers, retrieved passages, transformations, timestamps, and evidence paths."
+    },
+    {
+      "unit_id": "700bb608c1a27b23",
+      "node_id": "provenance_citations",
+      "field": "why_it_matters",
+      "text": "The role of Provenance, citations & evidence tracking is to connect External retrieval & ranking, Databases & information retrieval to downstream capabilities including Neural search, RAG & question answering, Memory lifecycle, forgetting & consolidation, Content credentials, signing & provenance."
+    },
+    {
+      "unit_id": "f35651150ba2ebd7",
+      "node_id": "provenance_citations",
+      "field": "examples[1]",
+      "text": "substrate for Neural search, RAG & question answering"
+    },
+    {
+      "unit_id": "e3958e1d5c6c916c",
+      "node_id": "provenance_citations",
+      "field": "examples[2]",
+      "text": "substrate for Memory lifecycle, forgetting & consolidation"
+    },
+    {
+      "unit_id": "5719db37bf2b0c76",
+      "node_id": "provenance_citations",
+      "field": "examples[3]",
+      "text": "substrate for Content credentials, signing & provenance"
+    },
+    {
+      "unit_id": "8d0594550a89cfd3",
+      "node_id": "provenance_citations",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include External retrieval & ranking, Databases & information retrieval."
+    },
+    {
+      "unit_id": "b7c917ffffce5ca0",
+      "node_id": "provenance_citations",
+      "field": "dependencies.external_retrieval.rationale",
+      "text": "Provenance, citations & evidence tracking uses External retrieval & ranking as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "14c989d3085f15b1",
+      "node_id": "provenance_citations",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "Provenance, citations & evidence tracking uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "31da255476a12b50",
+      "node_id": "provenance_citations",
+      "field": "dependencies.rag.rationale",
+      "text": "Provenance, citations & evidence tracking stores, selects, or obtains information through Retrieval-augmented generation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "8a008d0f525aeab8",
+      "node_id": "provenance_citations",
+      "dependency_id": "external_retrieval",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Provenance, citations & evidence tracking uses External retrieval & ranking as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "5589d4a8e15b02c2",
+      "node_id": "provenance_citations",
+      "dependency_id": "databases_ir",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Provenance, citations & evidence tracking uses Databases & information retrieval as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "a8ea002e90302609",
+      "node_id": "provenance_citations",
+      "dependency_id": "rag",
+      "type": "retrieves_from",
+      "strength": "common",
+      "rationale": "Provenance, citations & evidence tracking stores, selects, or obtains information through Retrieval-augmented generation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_rag": {
+        "id": "ref_rag",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "authors": "Lewis et al.",
+        "year": 2020,
+        "url": "https://arxiv.org/abs/2005.11401"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/provenance_citations.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

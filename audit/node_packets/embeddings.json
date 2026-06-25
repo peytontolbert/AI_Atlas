@@ -1,0 +1,170 @@
+{
+  "node_id": "embeddings",
+  "label": "Embeddings & distributed representations",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "embeddings",
+    "label": "Embeddings & distributed representations",
+    "layer": "representation",
+    "tags": [
+      "representation",
+      "retrieval"
+    ],
+    "aliases": [],
+    "definition": "Learned vectors place semantically or functionally related entities near one another in a continuous space.",
+    "why_it_matters": "The role of Embeddings & distributed representations is to connect Linear algebra, Information theory to downstream capabilities including Positional, temporal & coordinate encodings, Sparse coding & compositional representations, Contrastive learning.",
+    "examples": [
+      "substrate for Positional, temporal & coordinate encodings",
+      "substrate for Sparse coding & compositional representations",
+      "substrate for Contrastive learning"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Linear algebra, Information theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "linear_algebra",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Linear algebra."
+      },
+      {
+        "id": "information_theory",
+        "type": "requires",
+        "strength": "common",
+        "rationale": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Information theory."
+      },
+      {
+        "id": "tensors",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Embeddings & distributed representations consumes, emits, or organizes information using Scalars, vectors, matrices & tensors."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "f63c12eeed30f469",
+      "node_id": "embeddings",
+      "field": "definition",
+      "text": "Learned vectors place semantically or functionally related entities near one another in a continuous space."
+    },
+    {
+      "unit_id": "345b7575f6810974",
+      "node_id": "embeddings",
+      "field": "why_it_matters",
+      "text": "The role of Embeddings & distributed representations is to connect Linear algebra, Information theory to downstream capabilities including Positional, temporal & coordinate encodings, Sparse coding & compositional representations, Contrastive learning."
+    },
+    {
+      "unit_id": "32107005144790da",
+      "node_id": "embeddings",
+      "field": "examples[1]",
+      "text": "substrate for Positional, temporal & coordinate encodings"
+    },
+    {
+      "unit_id": "08fcf05775902308",
+      "node_id": "embeddings",
+      "field": "examples[2]",
+      "text": "substrate for Sparse coding & compositional representations"
+    },
+    {
+      "unit_id": "0cf2abe1bb457dff",
+      "node_id": "embeddings",
+      "field": "examples[3]",
+      "text": "substrate for Contrastive learning"
+    },
+    {
+      "unit_id": "7bb81e7edc41364e",
+      "node_id": "embeddings",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Linear algebra, Information theory."
+    },
+    {
+      "unit_id": "9ca5f75107860901",
+      "node_id": "embeddings",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Linear algebra."
+    },
+    {
+      "unit_id": "6c352c4b2c32ca9c",
+      "node_id": "embeddings",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Information theory."
+    },
+    {
+      "unit_id": "3e30d9eded7cefbb",
+      "node_id": "embeddings",
+      "field": "dependencies.tensors.rationale",
+      "text": "Embeddings & distributed representations consumes, emits, or organizes information using Scalars, vectors, matrices & tensors."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "7896114207487f1f",
+      "node_id": "embeddings",
+      "dependency_id": "linear_algebra",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Linear algebra."
+    },
+    {
+      "edge_id": "b369ecf8a7003126",
+      "node_id": "embeddings",
+      "dependency_id": "information_theory",
+      "type": "requires",
+      "strength": "common",
+      "rationale": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Information theory."
+    },
+    {
+      "edge_id": "c4be6a58e0cc2837",
+      "node_id": "embeddings",
+      "dependency_id": "tensors",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Embeddings & distributed representations consumes, emits, or organizes information using Scalars, vectors, matrices & tensors."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/embeddings.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "node_id": "evolutionary_population_learning",
+  "label": "Evolutionary, swarm & population-based learning",
+  "layer": "paradigm",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "evolutionary_population_learning",
+    "label": "Evolutionary, swarm & population-based learning",
+    "layer": "paradigm",
+    "tags": [
+      "learning",
+      "search"
+    ],
+    "aliases": [],
+    "definition": "Populations of candidate solutions are selected, mutated, recombined, or coordinated without gradient requirements.",
+    "why_it_matters": "The role of Evolutionary, swarm & population-based learning is to connect Optimization theory, Probability theory to downstream capabilities including AutoML & automated model design, Neural architecture search.",
+    "examples": [
+      "substrate for AutoML & automated model design",
+      "substrate for Neural architecture search"
+    ],
+    "limitations": [
+      "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Optimization theory, Probability theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_aima"
+    ],
+    "dependencies": [
+      {
+        "id": "optimization",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Evolutionary, swarm & population-based learning uses Optimization theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "probability",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Evolutionary, swarm & population-based learning uses Probability theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "game_decision_theory",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Evolutionary, swarm & population-based learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "b2fe85205f35e3c4",
+      "node_id": "evolutionary_population_learning",
+      "field": "definition",
+      "text": "Populations of candidate solutions are selected, mutated, recombined, or coordinated without gradient requirements."
+    },
+    {
+      "unit_id": "63b0a213ce26e46c",
+      "node_id": "evolutionary_population_learning",
+      "field": "why_it_matters",
+      "text": "The role of Evolutionary, swarm & population-based learning is to connect Optimization theory, Probability theory to downstream capabilities including AutoML & automated model design, Neural architecture search."
+    },
+    {
+      "unit_id": "b37e901f4e482b6b",
+      "node_id": "evolutionary_population_learning",
+      "field": "examples[1]",
+      "text": "substrate for AutoML & automated model design"
+    },
+    {
+      "unit_id": "489c8f0f00a2a53c",
+      "node_id": "evolutionary_population_learning",
+      "field": "examples[2]",
+      "text": "substrate for Neural architecture search"
+    },
+    {
+      "unit_id": "425a0657d8f9b60b",
+      "node_id": "evolutionary_population_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Optimization theory, Probability theory."
+    },
+    {
+      "unit_id": "3539a0726b7bd391",
+      "node_id": "evolutionary_population_learning",
+      "field": "dependencies.optimization.rationale",
+      "text": "Evolutionary, swarm & population-based learning uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "2075ad459dbcd90d",
+      "node_id": "evolutionary_population_learning",
+      "field": "dependencies.probability.rationale",
+      "text": "Evolutionary, swarm & population-based learning uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "6989a3589b82f70a",
+      "node_id": "evolutionary_population_learning",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Evolutionary, swarm & population-based learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "9a931b742c861904",
+      "node_id": "evolutionary_population_learning",
+      "dependency_id": "optimization",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Evolutionary, swarm & population-based learning uses Optimization theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "46def89883c64b66",
+      "node_id": "evolutionary_population_learning",
+      "dependency_id": "probability",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Evolutionary, swarm & population-based learning uses Probability theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "716f3e529739bca7",
+      "node_id": "evolutionary_population_learning",
+      "dependency_id": "game_decision_theory",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Evolutionary, swarm & population-based learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/evolutionary_population_learning.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

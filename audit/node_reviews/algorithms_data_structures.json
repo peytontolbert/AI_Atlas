@@ -1,0 +1,131 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "d2d32d9260299de0",
+      "node_id": "algorithms_data_structures",
+      "field": "definition",
+      "text": "Search, sorting, indexing, dynamic programming, graphs, and data organization determine computational behavior and efficiency.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
+        "url:https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/4e_toc.pdf"
+      ],
+      "evidence_location": "AIMA contents.html: Chapter 3 'Solving Problems by Searching' and 'Search data structures' (lines 68-101); Chapter 19.7 'Nonparametric Models', including k-d trees and locality-sensitive hashing (lines 518-522); Appendix A.1 'Complexity Analysis and O() Notation' (lines 768-772). MIT Press Introduction to Algorithms page: broad range of algorithms, design and analysis, and efficiency-oriented description (lines 185-188). CLRS 4e table of contents: sorting (PDF lines 29-50), data structures and hash tables/search trees (PDF lines 51-72), dynamic programming (PDF lines 73-80), graph algorithms (PDF lines 106-134), and running-time analysis (PDF lines 7-14).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The inspected sources directly cover search, sorting, hash/index-like structures, dynamic programming, graph algorithms, data structures, and efficiency/running-time analysis. The exact phrase 'determine computational behavior and efficiency' is a synthesis rather than a direct source claim."
+    },
+    {
+      "unit_id": "686792a051b817c0",
+      "node_id": "algorithms_data_structures",
+      "field": "why_it_matters",
+      "text": "The role of Algorithms & data structures is to connect Discrete mathematics & logic to downstream capabilities including Complexity & computability, Programming languages, compilers & type systems, Databases & information retrieval.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
+        "url:https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/4e_toc.pdf"
+      ],
+      "evidence_location": "AIMA contents.html: mathematics as an AI foundation (line 28), search algorithms and data structures (lines 68-101), storage and retrieval in first-order inference (lines 239-247), and Appendix B 'Notes on Languages and Algorithms' (lines 776-780). CLRS 4e table of contents: mathematical background in sets, relations, functions, graphs, trees, counting, probability, and matrices (PDF lines 189-209); NP-completeness and polynomial-time topics (PDF lines 177-182); string matching and suffix arrays (PDF lines 167-172). MIT Press Introduction to Algorithms page: algorithms as broad, rigorous, comprehensive design and analysis material (lines 185-188).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support discrete mathematics as background for algorithms and algorithms as connected to complexity and data retrieval/indexing topics. The exact atlas role statement and the named downstream set, especially programming languages, compilers, and type systems, are graph/editorial synthesis rather than directly supported by the inspected passages."
+    },
+    {
+      "unit_id": "fc1a986ad9090865",
+      "node_id": "algorithms_data_structures",
+      "field": "examples[1]",
+      "text": "substrate for Complexity & computability",
+      "source_ids": [
+        "ref_aima",
+        "url:https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/4e_toc.pdf"
+      ],
+      "evidence_location": "AIMA contents.html: Appendix A.1 'Complexity Analysis and O() Notation', including 'NP and inherently hard problems' (lines 768-772). CLRS 4e table of contents: 'Characterizing Running Times' (PDF lines 11-14), 'Analyzing algorithms' (PDF line 9), and 'NP-Completeness' with polynomial time and reducibility (PDF lines 177-182).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources directly support complexity analysis as a core part of algorithm study. 'Computability' is not directly named in the inspected evidence, and 'substrate for' is atlas phrasing, so this is synthesis rather than exact verification."
+    },
+    {
+      "unit_id": "bb2b3e5bb5708bfb",
+      "node_id": "algorithms_data_structures",
+      "field": "examples[2]",
+      "text": "substrate for Programming languages, compilers & type systems",
+      "source_ids": [
+        "ref_aima",
+        "url:https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/"
+      ],
+      "evidence_location": "AIMA contents.html: Appendix B 'Notes on Languages and Algorithms', including BNF and describing algorithms with pseudocode (lines 776-780). MIT Press Introduction to Algorithms page: algorithms described in English and pseudocode designed for readers with programming background (lines 185-188).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support a connection between algorithms, languages, and pseudocode/programming notation, but they do not directly support compilers or type systems as downstream capabilities. This example should be narrowed or supported by a compiler/programming-language source."
+    },
+    {
+      "unit_id": "017a69da9ffef693",
+      "node_id": "algorithms_data_structures",
+      "field": "examples[3]",
+      "text": "substrate for Databases & information retrieval",
+      "source_ids": [
+        "ref_aima",
+        "url:https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/4e_toc.pdf"
+      ],
+      "evidence_location": "AIMA contents.html: first-order inference sections on storage, retrieval, and efficient matching (lines 239-247); nonparametric models with nearest-neighbor search, k-d trees, and locality-sensitive hashing (lines 518-522). CLRS 4e table of contents: hash tables (PDF lines 58-63), B-trees (PDF lines 97-100), and string matching with suffix arrays (PDF lines 167-172).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources support data structures and search/indexing techniques that are central to retrieval-oriented systems. The exact 'substrate for Databases & information retrieval' wording is a synthesis rather than a direct source statement."
+    },
+    {
+      "unit_id": "a9b5754cec929798",
+      "node_id": "algorithms_data_structures",
+      "field": "limitations[1]",
+      "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Discrete mathematics & logic.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
+        "url:https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/4e_toc.pdf"
+      ],
+      "evidence_location": "AIMA contents.html: foundations of AI include mathematics (line 28); search problem formulation (lines 68-72); measuring problem-solving performance (line 79); limits of AI and mathematical objection (lines 736-741); Appendix A.1 complexity analysis (lines 768-772). MIT Press Introduction to Algorithms page: mathematical properties, rigor, and analysis of algorithms (lines 185-188). CLRS 4e table of contents: mathematical background including sets, relations, functions, graphs, trees, counting, probability, and matrices (PDF lines 189-209).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support explicit formal/mathematical assumptions, problem formulation, analysis, and the discrete-math dependency. They do not directly state the empirical-mismatch warning, so that part is broader than the inspected evidence."
+    },
+    {
+      "unit_id": "3218a9570ba8c832",
+      "node_id": "algorithms_data_structures",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Algorithms & data structures rests on the formal or computational capabilities supplied by Discrete mathematics & logic.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
+        "url:https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/4e_toc.pdf"
+      ],
+      "evidence_location": "AIMA contents.html: mathematics as a foundation (line 28), search/data structures and algorithms (lines 68-101), logic and theorem proving (lines 173-199), and mathematical background on complexity analysis (lines 768-772). MIT Press Introduction to Algorithms page: algorithms analyzed through mathematical properties and rigor (lines 185-188). CLRS 4e table of contents: mathematical background in summations, sets, relations, functions, graphs, trees, counting, probability, and matrices (PDF lines 189-209).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The sources strongly support discrete mathematical and logical/formal material as background for algorithm analysis and data structures. The exact 'rests on capabilities supplied by' wording is atlas synthesis."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "42cc37e755090d79",
+      "node_id": "algorithms_data_structures",
+      "dependency_id": "discrete_math_logic",
+      "source_ids": [
+        "ref_aima",
+        "url:https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/",
+        "url:https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/4e_toc.pdf"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency direction is defensible: algorithm/data-structure study uses mathematical background such as sets, relations, functions, graphs, trees, counting, probability, matrices, logic, and complexity analysis. The 'requires' relationship and 'core' strength are supported as curricular synthesis, though the exact rationale is not stated verbatim in one source.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "node_id": "neural_ode_cde",
+  "label": "Neural ODEs, CDEs & SDEs",
+  "layer": "model",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "neural_ode_cde",
+    "label": "Neural ODEs, CDEs & SDEs",
+    "layer": "model",
+    "tags": [
+      "model",
+      "neural",
+      "dynamics"
+    ],
+    "aliases": [],
+    "definition": "Neural ODEs, controlled differential equations, and neural SDEs parameterize continuous-time dynamics and place numerical solvers inside the learned computation.",
+    "why_it_matters": "The role of Neural ODEs, CDEs & SDEs is to connect Differentiable ODE/PDE/SDE solvers, State-space transitions to downstream capabilities including Scientific ML, simulators & digital twins.",
+    "examples": [
+      "substrate for Scientific ML, simulators & digital twins",
+      "combined with Differentiable ODE/PDE/SDE solvers"
+    ],
+    "limitations": [
+      "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Differentiable ODE/PDE/SDE solvers, State-space transitions."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_neuralode"
+    ],
+    "dependencies": [
+      {
+        "id": "differentiable_solvers",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Neural ODEs, CDEs & SDEs is assembled in part from the mechanism or model component Differentiable ODE/PDE/SDE solvers."
+      },
+      {
+        "id": "state_space_transition",
+        "type": "composes",
+        "strength": "core",
+        "rationale": "Neural ODEs, CDEs & SDEs is assembled in part from the mechanism or model component State-space transitions."
+      },
+      {
+        "id": "sequences_time",
+        "type": "represents_with",
+        "strength": "common",
+        "rationale": "Neural ODEs, CDEs & SDEs consumes, emits, or organizes information using Sequences, events & time series."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "ef11137d40f4cffb",
+      "node_id": "neural_ode_cde",
+      "field": "definition",
+      "text": "Neural ODEs, controlled differential equations, and neural SDEs parameterize continuous-time dynamics and place numerical solvers inside the learned computation."
+    },
+    {
+      "unit_id": "1ea57afd48d895e6",
+      "node_id": "neural_ode_cde",
+      "field": "why_it_matters",
+      "text": "The role of Neural ODEs, CDEs & SDEs is to connect Differentiable ODE/PDE/SDE solvers, State-space transitions to downstream capabilities including Scientific ML, simulators & digital twins."
+    },
+    {
+      "unit_id": "e6cd5b1eace81fef",
+      "node_id": "neural_ode_cde",
+      "field": "examples[1]",
+      "text": "substrate for Scientific ML, simulators & digital twins"
+    },
+    {
+      "unit_id": "308019f892ecc48d",
+      "node_id": "neural_ode_cde",
+      "field": "examples[2]",
+      "text": "combined with Differentiable ODE/PDE/SDE solvers"
+    },
+    {
+      "unit_id": "09493165ab22718e",
+      "node_id": "neural_ode_cde",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Differentiable ODE/PDE/SDE solvers, State-space transitions."
+    },
+    {
+      "unit_id": "b03eb5b3c1454bc4",
+      "node_id": "neural_ode_cde",
+      "field": "dependencies.differentiable_solvers.rationale",
+      "text": "Neural ODEs, CDEs & SDEs is assembled in part from the mechanism or model component Differentiable ODE/PDE/SDE solvers."
+    },
+    {
+      "unit_id": "20fe5c3db2cfaa5d",
+      "node_id": "neural_ode_cde",
+      "field": "dependencies.state_space_transition.rationale",
+      "text": "Neural ODEs, CDEs & SDEs is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "unit_id": "aae72b4be5001f1d",
+      "node_id": "neural_ode_cde",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "Neural ODEs, CDEs & SDEs consumes, emits, or organizes information using Sequences, events & time series."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "dcd57aa33d93513e",
+      "node_id": "neural_ode_cde",
+      "dependency_id": "differentiable_solvers",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Neural ODEs, CDEs & SDEs is assembled in part from the mechanism or model component Differentiable ODE/PDE/SDE solvers."
+    },
+    {
+      "edge_id": "92e660ecbc0a72b9",
+      "node_id": "neural_ode_cde",
+      "dependency_id": "state_space_transition",
+      "type": "composes",
+      "strength": "core",
+      "rationale": "Neural ODEs, CDEs & SDEs is assembled in part from the mechanism or model component State-space transitions."
+    },
+    {
+      "edge_id": "45a5d4f8e42d9cd2",
+      "node_id": "neural_ode_cde",
+      "dependency_id": "sequences_time",
+      "type": "represents_with",
+      "strength": "common",
+      "rationale": "Neural ODEs, CDEs & SDEs consumes, emits, or organizes information using Sequences, events & time series."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_neuralode": {
+        "id": "ref_neuralode",
+        "title": "Neural Ordinary Differential Equations",
+        "authors": "Chen et al.",
+        "year": 2018,
+        "url": "https://arxiv.org/abs/1806.07366"
+      }
+    },
+    "dependency_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/neural_ode_cde.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

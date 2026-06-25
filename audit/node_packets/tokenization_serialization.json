@@ -1,0 +1,164 @@
+{
+  "node_id": "tokenization_serialization",
+  "label": "Tokenization, serialization & packing",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "tokenization_serialization",
+    "label": "Tokenization, serialization & packing",
+    "layer": "training",
+    "tags": [
+      "training",
+      "language",
+      "systems"
+    ],
+    "aliases": [],
+    "definition": "Tokenization and serialization convert language, code, images, audio, actions, or records into packed sequences that model runtimes can consume.",
+    "why_it_matters": "The role of Tokenization, serialization & packing is to connect Tokens, vocabularies & symbolic units, Information theory to downstream capabilities including Large language models.",
+    "examples": [
+      "substrate for Large language models",
+      "combined with Tokens, vocabularies & symbolic units"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Tokens, vocabularies & symbolic units, Information theory."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "tokens_vocab",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Tokenization, serialization & packing uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "information_theory",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Tokenization, serialization & packing uses Information theory as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "algorithms_data_structures",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Tokenization, serialization & packing uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "e8fd93a8ecb116cf",
+      "node_id": "tokenization_serialization",
+      "field": "definition",
+      "text": "Tokenization and serialization convert language, code, images, audio, actions, or records into packed sequences that model runtimes can consume."
+    },
+    {
+      "unit_id": "e50a1fc3b6e45942",
+      "node_id": "tokenization_serialization",
+      "field": "why_it_matters",
+      "text": "The role of Tokenization, serialization & packing is to connect Tokens, vocabularies & symbolic units, Information theory to downstream capabilities including Large language models."
+    },
+    {
+      "unit_id": "4c163138eb49ee85",
+      "node_id": "tokenization_serialization",
+      "field": "examples[1]",
+      "text": "substrate for Large language models"
+    },
+    {
+      "unit_id": "a62afb885f349a1b",
+      "node_id": "tokenization_serialization",
+      "field": "examples[2]",
+      "text": "combined with Tokens, vocabularies & symbolic units"
+    },
+    {
+      "unit_id": "06b5a2561d56a8a8",
+      "node_id": "tokenization_serialization",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Tokens, vocabularies & symbolic units, Information theory."
+    },
+    {
+      "unit_id": "85a9bcaa97cab29c",
+      "node_id": "tokenization_serialization",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Tokenization, serialization & packing uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "99e774d402ea33d7",
+      "node_id": "tokenization_serialization",
+      "field": "dependencies.information_theory.rationale",
+      "text": "Tokenization, serialization & packing uses Information theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "f08134235890c6a7",
+      "node_id": "tokenization_serialization",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Tokenization, serialization & packing uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "a59f2ddce870db61",
+      "node_id": "tokenization_serialization",
+      "dependency_id": "tokens_vocab",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Tokenization, serialization & packing uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "498e6d55d715b815",
+      "node_id": "tokenization_serialization",
+      "dependency_id": "information_theory",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Tokenization, serialization & packing uses Information theory as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "c72b3ca8cd939ac9",
+      "node_id": "tokenization_serialization",
+      "dependency_id": "algorithms_data_structures",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Tokenization, serialization & packing uses Algorithms & data structures as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/tokenization_serialization.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

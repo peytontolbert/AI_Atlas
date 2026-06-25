@@ -1,0 +1,150 @@
+{
+  "node_id": "graphs_hypergraphs",
+  "label": "Graphs, hypergraphs & relational data",
+  "layer": "representation",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "graphs_hypergraphs",
+    "label": "Graphs, hypergraphs & relational data",
+    "layer": "representation",
+    "tags": [
+      "graph",
+      "relational"
+    ],
+    "aliases": [],
+    "definition": "Relational structures encode entities, interactions, molecules, networks, and non-Euclidean domains.",
+    "why_it_matters": "The role of Graphs, hypergraphs & relational data is to connect Graph theory, Scalars, vectors, matrices & tensors to downstream capabilities including Knowledge graphs, ontologies & schemas, Message passing & neighborhood aggregation, Graph neural networks.",
+    "examples": [
+      "substrate for Knowledge graphs, ontologies & schemas",
+      "substrate for Message passing & neighborhood aggregation",
+      "substrate for Graph neural networks"
+    ],
+    "limitations": [
+      "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Graph theory, Scalars, vectors, matrices & tensors."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_pml"
+    ],
+    "dependencies": [
+      {
+        "id": "graph_theory",
+        "type": "requires",
+        "strength": "core",
+        "rationale": "Graphs, hypergraphs & relational data rests on the formal or computational capabilities supplied by Graph theory."
+      },
+      {
+        "id": "tensors",
+        "type": "represents_with",
+        "strength": "core",
+        "rationale": "Graphs, hypergraphs & relational data consumes, emits, or organizes information using Scalars, vectors, matrices & tensors."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "577ce80e65f4c456",
+      "node_id": "graphs_hypergraphs",
+      "field": "definition",
+      "text": "Relational structures encode entities, interactions, molecules, networks, and non-Euclidean domains."
+    },
+    {
+      "unit_id": "0d1f54647eaeb64d",
+      "node_id": "graphs_hypergraphs",
+      "field": "why_it_matters",
+      "text": "The role of Graphs, hypergraphs & relational data is to connect Graph theory, Scalars, vectors, matrices & tensors to downstream capabilities including Knowledge graphs, ontologies & schemas, Message passing & neighborhood aggregation, Graph neural networks."
+    },
+    {
+      "unit_id": "ed9c35136a8c22b5",
+      "node_id": "graphs_hypergraphs",
+      "field": "examples[1]",
+      "text": "substrate for Knowledge graphs, ontologies & schemas"
+    },
+    {
+      "unit_id": "dd6b877055113e3b",
+      "node_id": "graphs_hypergraphs",
+      "field": "examples[2]",
+      "text": "substrate for Message passing & neighborhood aggregation"
+    },
+    {
+      "unit_id": "067b5400113fbcb7",
+      "node_id": "graphs_hypergraphs",
+      "field": "examples[3]",
+      "text": "substrate for Graph neural networks"
+    },
+    {
+      "unit_id": "1808a65554b8f466",
+      "node_id": "graphs_hypergraphs",
+      "field": "limitations[1]",
+      "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Graph theory, Scalars, vectors, matrices & tensors."
+    },
+    {
+      "unit_id": "5ca3c6b7d571ffac",
+      "node_id": "graphs_hypergraphs",
+      "field": "dependencies.graph_theory.rationale",
+      "text": "Graphs, hypergraphs & relational data rests on the formal or computational capabilities supplied by Graph theory."
+    },
+    {
+      "unit_id": "d7e1f21738ff9b11",
+      "node_id": "graphs_hypergraphs",
+      "field": "dependencies.tensors.rationale",
+      "text": "Graphs, hypergraphs & relational data consumes, emits, or organizes information using Scalars, vectors, matrices & tensors."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "fd322cc4a67a9821",
+      "node_id": "graphs_hypergraphs",
+      "dependency_id": "graph_theory",
+      "type": "requires",
+      "strength": "core",
+      "rationale": "Graphs, hypergraphs & relational data rests on the formal or computational capabilities supplied by Graph theory."
+    },
+    {
+      "edge_id": "87f9c525efc56bce",
+      "node_id": "graphs_hypergraphs",
+      "dependency_id": "tensors",
+      "type": "represents_with",
+      "strength": "core",
+      "rationale": "Graphs, hypergraphs & relational data consumes, emits, or organizes information using Scalars, vectors, matrices & tensors."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/graphs_hypergraphs.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

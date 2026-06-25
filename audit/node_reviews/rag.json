@@ -1,0 +1,230 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "b58d5bfd18a5afcf",
+      "node_id": "rag",
+      "field": "definition",
+      "text": "A generator conditions on retrieved non-parametric evidence so knowledge can be updated and attributed externally.",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The RAG source directly describes generation conditioned on retrieved non-parametric memory/evidence.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The definition matches the cited RAG mechanism."
+    },
+    {
+      "unit_id": "8944bfa37a4b45cc",
+      "node_id": "rag",
+      "field": "why_it_matters",
+      "text": "The role of Retrieval-augmented generation is to connect Dense vector retrieval, Hybrid retrieval & reranking to downstream capabilities including Graph RAG & structured retrieval, Provenance, citations & evidence tracking, Multimodal assistants & vision-language systems.",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The RAG source supports retrieval feeding generation and attribution to external knowledge; downstream Graph RAG/provenance links are plausible extensions.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Multimodal assistants are not directly established by the cited RAG source."
+    },
+    {
+      "unit_id": "a752df04e518351a",
+      "node_id": "rag",
+      "field": "examples[1]",
+      "text": "substrate for Graph RAG & structured retrieval",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "fb6bdc16f3f06cb6",
+      "node_id": "rag",
+      "field": "examples[2]",
+      "text": "substrate for Provenance, citations & evidence tracking",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "49d669190d4f5bd6",
+      "node_id": "rag",
+      "field": "examples[3]",
+      "text": "substrate for Multimodal assistants & vision-language systems",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
+    },
+    {
+      "unit_id": "008533c9c2f7de9d",
+      "node_id": "rag",
+      "field": "limitations[1]",
+      "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Dense vector retrieval, Hybrid retrieval & reranking.",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+    },
+    {
+      "unit_id": "1982d1dd69f998b3",
+      "node_id": "rag",
+      "field": "dependencies.dense_retrieval.rationale",
+      "text": "Retrieval-augmented generation stores, selects, or obtains information through Dense vector retrieval.",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The packet references support dense_retrieval or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "733004ac171eaed3",
+      "node_id": "rag",
+      "field": "dependencies.hybrid_reranking.rationale",
+      "text": "Retrieval-augmented generation stores, selects, or obtains information through Hybrid retrieval & reranking.",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The packet references support hybrid_reranking or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "5474584dd4e8a9bf",
+      "node_id": "rag",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "Retrieval-augmented generation uses Decoder-only causal transformers as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The packet references support decoder_only_transformer or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "4c7e4b828beb97c7",
+      "node_id": "rag",
+      "field": "dependencies.external_retrieval.rationale",
+      "text": "Retrieval-augmented generation uses External retrieval & ranking as a reusable ingredient in its defined operation.",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "evidence_location": "The packet references support external_retrieval or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "b7528ae790aa72c1",
+      "node_id": "rag",
+      "dependency_id": "dense_retrieval",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b4d6f27c1b1cae32",
+      "node_id": "rag",
+      "dependency_id": "hybrid_reranking",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "RAG can retrieve from hybrid/reranked candidates; core strength is plausible for modern RAG pipelines but not inherent to original RAG.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "41e651015296d216",
+      "node_id": "rag",
+      "dependency_id": "decoder_only_transformer",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "RAG uses a generator, but it need not be decoder-only; common strength is too architecture-specific.",
+      "relationship_type_supported": true,
+      "strength_supported": false
+    },
+    {
+      "edge_id": "3a1077a82cc94019",
+      "node_id": "rag",
+      "dependency_id": "external_retrieval",
+      "source_ids": [
+        "ref_rag",
+        "ref_aima",
+        "ref_transformer"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The dependency is plausible from the cited concepts and the node definition, but exact edge strength is graph-derived.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "2b82fca37dc332fe",
+      "node_id": "cryptographic_signing",
+      "field": "definition",
+      "text": "Cryptographic signatures and append-only logs authenticate artifacts, requests, model versions, and lineage events while making unauthorized modification detectable.",
+      "source_ids": ["ref_c2pa", "ref_ddia"],
+      "evidence_location": "C2PA supports cryptographic signing and provenance assertions for content; DDIA supports logs/immutability concepts. Requests and model versions are extrapolated.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Good conceptual support, but not exact artifact/request/model-version coverage."
+    },
+    {
+      "unit_id": "c55b31f473210119",
+      "node_id": "cryptographic_signing",
+      "field": "why_it_matters",
+      "text": "They provide an integrity substrate for provenance, audit, and controlled agent execution.",
+      "source_ids": ["ref_c2pa", "ref_ddia"],
+      "evidence_location": "C2PA supports provenance/integrity; DDIA supports audit/logging concepts. Controlled agent execution is indirect.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Provenance and audit are supported; agent execution should be sourced separately."
+    },
+    {
+      "unit_id": "fce96b4acbf4410f",
+      "node_id": "cryptographic_signing",
+      "field": "examples[1]",
+      "text": "signed model manifests",
+      "source_ids": ["ref_c2pa"],
+      "evidence_location": "C2PA supports signed manifests/assertions generally, but not model manifests specifically.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible extension of signed content manifests to model artifacts."
+    },
+    {
+      "unit_id": "b2d113811ce1a1ed",
+      "node_id": "cryptographic_signing",
+      "field": "examples[2]",
+      "text": "hash-chained trace logs",
+      "source_ids": ["ref_ddia", "ref_c2pa"],
+      "evidence_location": "Sources support logs and cryptographic integrity concepts; hash-chained trace logs are not directly cited.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible tamper-evident logging example."
+    },
+    {
+      "unit_id": "460e05574396726d",
+      "node_id": "cryptographic_signing",
+      "field": "examples[3]",
+      "text": "artifact attestations",
+      "source_ids": ["ref_c2pa"],
+      "evidence_location": "C2PA supports provenance assertions/signing for content artifacts.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The packet source supports the general concept; exact term attestation may need a supply-chain security source."
+    },
+    {
+      "unit_id": "28d5e91c1613e780",
+      "node_id": "cryptographic_signing",
+      "field": "limitations[1]",
+      "text": "Keys, identities, and trust roots must be managed securely, and signed data can still be false at creation time.",
+      "source_ids": ["ref_c2pa"],
+      "evidence_location": "C2PA relies on signing, identity, and trust infrastructure; signatures authenticate provenance but do not guarantee semantic truth.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Defensible security limitation, though exact phrasing is synthesized."
+    },
+    {
+      "unit_id": "afc028c79086d501",
+      "node_id": "cryptographic_signing",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "Cryptographic signing & tamper-evident logs turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_ddia"],
+      "evidence_location": "DDIA supports distributed logs and data-system integrity concerns broadly.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Core dependency is plausible for distributed tamper-evident logs."
+    },
+    {
+      "unit_id": "2f54bef1494874cf",
+      "node_id": "cryptographic_signing",
+      "field": "dependencies.content_provenance.rationale",
+      "text": "Cryptographic signing & tamper-evident logs turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_c2pa"],
+      "evidence_location": "C2PA directly concerns content provenance, signing, and credentials.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Relationship is strongly supported conceptually; exact operationalizes wording is graph-derived."
+    },
+    {
+      "unit_id": "b7887f7a0d9b450e",
+      "node_id": "cryptographic_signing",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Cryptographic signing & tamper-evident logs turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability.",
+      "source_ids": ["ref_aima", "ref_c2pa"],
+      "evidence_location": "Cryptographic mechanisms rely on algorithms/data structures, but the packet lacks a direct cryptography algorithm source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common dependency is plausible but under-sourced."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "6631e9202a81e730",
+      "node_id": "cryptographic_signing",
+      "dependency_id": "distributed_systems",
+      "source_ids": ["ref_ddia"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Distributed logging and integrity concerns support the edge conceptually.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "755029c3f0e3b5e1",
+      "node_id": "cryptographic_signing",
+      "dependency_id": "content_provenance",
+      "source_ids": ["ref_c2pa"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Signing is central to content provenance and credentials.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "49168edfe9d302c3",
+      "node_id": "cryptographic_signing",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": ["ref_aima", "ref_c2pa"],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Algorithms/data structures are a plausible common dependency, but cryptography-specific evidence would strengthen the edge.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}

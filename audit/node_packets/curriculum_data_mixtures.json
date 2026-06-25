@@ -1,0 +1,197 @@
+{
+  "node_id": "curriculum_data_mixtures",
+  "label": "Curricula, data mixtures & sampling schedules",
+  "layer": "training",
+  "editorial_status": "definition_curated_context_graph_derived",
+  "node": {
+    "id": "curriculum_data_mixtures",
+    "label": "Curricula, data mixtures & sampling schedules",
+    "layer": "training",
+    "tags": [
+      "training",
+      "data"
+    ],
+    "aliases": [],
+    "definition": "Curriculum and mixture schedules control which examples, domains, difficulties, or modalities are sampled at each phase of training.",
+    "why_it_matters": "The role of Curricula, data mixtures & sampling schedules is to connect Active learning & curriculum learning, Data collection, curation & filtering to downstream capabilities including Domain randomization & simulation curricula.",
+    "examples": [
+      "substrate for Domain randomization & simulation curricula",
+      "combined with Active learning & curriculum learning"
+    ],
+    "limitations": [
+      "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Active learning & curriculum learning, Data collection, curation & filtering."
+    ],
+    "editorial_status": "definition_curated_context_graph_derived",
+    "maturity": "established",
+    "terminal": false,
+    "terminal_reason": null,
+    "reference_ids": [
+      "ref_dlbook"
+    ],
+    "dependencies": [
+      {
+        "id": "active_curriculum_learning",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Curricula, data mixtures & sampling schedules uses Active learning & curriculum learning as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "data_curation",
+        "type": "uses",
+        "strength": "core",
+        "rationale": "Curricula, data mixtures & sampling schedules uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "datasets_sampling",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Curricula, data mixtures & sampling schedules uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      },
+      {
+        "id": "compute_optimal_training",
+        "type": "uses",
+        "strength": "common",
+        "rationale": "Curricula, data mixtures & sampling schedules uses Compute-optimal scaling & training allocation as a reusable ingredient in its defined operation."
+      }
+    ]
+  },
+  "sentence_units": [
+    {
+      "unit_id": "d6909506903dde0c",
+      "node_id": "curriculum_data_mixtures",
+      "field": "definition",
+      "text": "Curriculum and mixture schedules control which examples, domains, difficulties, or modalities are sampled at each phase of training."
+    },
+    {
+      "unit_id": "e699cda7f4999394",
+      "node_id": "curriculum_data_mixtures",
+      "field": "why_it_matters",
+      "text": "The role of Curricula, data mixtures & sampling schedules is to connect Active learning & curriculum learning, Data collection, curation & filtering to downstream capabilities including Domain randomization & simulation curricula."
+    },
+    {
+      "unit_id": "ca8ce55f94eeccf7",
+      "node_id": "curriculum_data_mixtures",
+      "field": "examples[1]",
+      "text": "substrate for Domain randomization & simulation curricula"
+    },
+    {
+      "unit_id": "bfd98823bcf8a4ca",
+      "node_id": "curriculum_data_mixtures",
+      "field": "examples[2]",
+      "text": "combined with Active learning & curriculum learning"
+    },
+    {
+      "unit_id": "90e72565753e1b46",
+      "node_id": "curriculum_data_mixtures",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Active learning & curriculum learning, Data collection, curation & filtering."
+    },
+    {
+      "unit_id": "aaf27523fa69cfd5",
+      "node_id": "curriculum_data_mixtures",
+      "field": "dependencies.active_curriculum_learning.rationale",
+      "text": "Curricula, data mixtures & sampling schedules uses Active learning & curriculum learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "0e1c278cf6d6d723",
+      "node_id": "curriculum_data_mixtures",
+      "field": "dependencies.data_curation.rationale",
+      "text": "Curricula, data mixtures & sampling schedules uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "8150aa02ca5be415",
+      "node_id": "curriculum_data_mixtures",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "Curricula, data mixtures & sampling schedules uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "unit_id": "1801fe3423af9169",
+      "node_id": "curriculum_data_mixtures",
+      "field": "dependencies.compute_optimal_training.rationale",
+      "text": "Curricula, data mixtures & sampling schedules uses Compute-optimal scaling & training allocation as a reusable ingredient in its defined operation."
+    }
+  ],
+  "edge_units": [
+    {
+      "edge_id": "5cfa42c8bc2292a4",
+      "node_id": "curriculum_data_mixtures",
+      "dependency_id": "active_curriculum_learning",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Curricula, data mixtures & sampling schedules uses Active learning & curriculum learning as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "b75cbafcd0f18838",
+      "node_id": "curriculum_data_mixtures",
+      "dependency_id": "data_curation",
+      "type": "uses",
+      "strength": "core",
+      "rationale": "Curricula, data mixtures & sampling schedules uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "5c6667497c255788",
+      "node_id": "curriculum_data_mixtures",
+      "dependency_id": "datasets_sampling",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Curricula, data mixtures & sampling schedules uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+    },
+    {
+      "edge_id": "f7a7593d9f92d176",
+      "node_id": "curriculum_data_mixtures",
+      "dependency_id": "compute_optimal_training",
+      "type": "uses",
+      "strength": "common",
+      "rationale": "Curricula, data mixtures & sampling schedules uses Compute-optimal scaling & training allocation as a reusable ingredient in its defined operation."
+    }
+  ],
+  "candidate_references": {
+    "node_references": {
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      }
+    },
+    "dependency_references": {
+      "ref_aima": {
+        "id": "ref_aima",
+        "title": "Artificial Intelligence: A Modern Approach, 4th ed.",
+        "authors": "Russell & Norvig",
+        "year": 2021,
+        "url": "https://aima.cs.berkeley.edu/"
+      },
+      "ref_chinchilla": {
+        "id": "ref_chinchilla",
+        "title": "Training Compute-Optimal Large Language Models",
+        "authors": "Hoffmann et al.",
+        "year": 2022,
+        "url": "https://arxiv.org/abs/2203.15556"
+      },
+      "ref_dlbook": {
+        "id": "ref_dlbook",
+        "title": "Deep Learning",
+        "authors": "Goodfellow, Bengio & Courville",
+        "year": 2016,
+        "url": "https://www.deeplearningbook.org/"
+      },
+      "ref_pml": {
+        "id": "ref_pml",
+        "title": "Probabilistic Machine Learning: An Introduction",
+        "authors": "Kevin Murphy",
+        "year": 2022,
+        "url": "https://probml.github.io/pml-book/book1.html"
+      }
+    }
+  },
+  "review_output_path": "audit/node_reviews/curriculum_data_mixtures.json",
+  "instructions": [
+    "Audit every sentence_unit and edge_unit.",
+    "Use verdicts from docs/SOURCE_AUDIT.md.",
+    "Use source_ids from data/atlas.json references, or url:<URL> for additional sources.",
+    "Do not mark verified unless the evidence location supports the exact claim.",
+    "Write review output to review_output_path only."
+  ]
+}

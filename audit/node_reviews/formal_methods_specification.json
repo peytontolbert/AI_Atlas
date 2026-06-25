@@ -1,0 +1,192 @@
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "2495ad6789e02712",
+      "node_id": "formal_methods_specification",
+      "field": "definition",
+      "text": "Formal methods express desired behavior as mathematical specifications and use proof, model checking, abstract interpretation, or certificates to establish correctness claims.",
+      "source_ids": [
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466"
+      ],
+      "evidence_location": "arXiv:2104.02466 abstract lines 37-41; AIMA contents.html lines 182-193 and 261-262",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited formal-methods survey directly supports rigorous correctness guarantees, abstract interpretation, SMT/optimization/abstract-interpretation verification methods, soundness/precision/scalability limitations, and formal verification. AIMA supports theorem proving and model checking. Certificates are not directly supported by the inspected abstract."
+    },
+    {
+      "unit_id": "23b00408c770c4f2",
+      "node_id": "formal_methods_specification",
+      "field": "why_it_matters",
+      "text": "They distinguish behavior that has merely been sampled in tests from behavior proven under explicit assumptions.",
+      "source_ids": [
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466"
+      ],
+      "evidence_location": "arXiv:2104.02466 abstract lines 37-41",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The survey supports formal methods providing rigorous correctness guarantees and discusses soundness, precision, and scalability. The contrast with sampled tests is a reasonable synthesis, not directly stated in the inspected abstract."
+    },
+    {
+      "unit_id": "bdcece60f7d84274",
+      "node_id": "formal_methods_specification",
+      "field": "examples[1]",
+      "text": "temporal-logic safety properties",
+      "source_ids": [
+        "ref_formalml",
+        "ref_aima"
+      ],
+      "evidence_location": "arXiv:2104.02466 abstract lines 37-41; AIMA contents.html lines 182-193 and 745-752",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support formal methods, model checking, and safety-critical verification, but the inspected passages do not directly mention temporal logic."
+    },
+    {
+      "unit_id": "2eeb67083344d2c6",
+      "node_id": "formal_methods_specification",
+      "field": "examples[2]",
+      "text": "proof obligations for generated code",
+      "source_ids": [
+        "ref_formalml",
+        "ref_aima"
+      ],
+      "evidence_location": "arXiv:2104.02466 abstract lines 37-41; AIMA contents.html lines 182-193 and 776-779",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The sources support proof/model checking and software correctness guarantees, but the inspected passages do not directly mention proof obligations or generated code."
+    },
+    {
+      "unit_id": "bb16f0dc6ed2edce",
+      "node_id": "formal_methods_specification",
+      "field": "examples[3]",
+      "text": "robustness specifications",
+      "source_ids": [
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466"
+      ],
+      "evidence_location": "arXiv:2104.02466 abstract lines 37-41",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The survey supports verification, correctness guarantees, strengths, and limitations for ML systems. The exact phrase 'robustness specifications' is not directly supported by the inspected abstract."
+    },
+    {
+      "unit_id": "81dd3b5740638dba",
+      "node_id": "formal_methods_specification",
+      "field": "limitations[1]",
+      "text": "A guarantee is only as sound as its specification, abstraction, solver, and environmental assumptions.",
+      "source_ids": [
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466"
+      ],
+      "evidence_location": "arXiv:2104.02466 abstract lines 37-41",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "ambiguous",
+      "notes": "The abstract explicitly discusses correctness guarantees and challenges in soundness, precision, scalability, SMT, optimization, and abstract interpretation. It does not directly state specification quality, solver correctness, or environmental assumptions."
+    },
+    {
+      "unit_id": "90846df7437be072",
+      "node_id": "formal_methods_specification",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Discrete mathematics & logic.",
+      "source_ids": [
+        "ref_aima",
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466"
+      ],
+      "evidence_location": "AIMA contents.html lines 173-193; arXiv:2104.02466 subject line 42 and abstract lines 37-41",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Logic, theorem proving, model checking, and logic-in-computer-science classification support this dependency. The wording is synthesized."
+    },
+    {
+      "unit_id": "36d0a282d41fcd29",
+      "node_id": "formal_methods_specification",
+      "field": "dependencies.programming_languages_types.rationale",
+      "text": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems.",
+      "source_ids": [
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466",
+        "ref_aima"
+      ],
+      "evidence_location": "arXiv:2104.02466 line 26 subject area and abstract lines 37-41; AIMA contents.html lines 248-253 and 776-779",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The formal-methods paper is categorized under programming languages and discusses verification of software/ML systems. AIMA supports logic programming and language/algorithm notation."
+    },
+    {
+      "unit_id": "a1707e426f11ba53",
+      "node_id": "formal_methods_specification",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "Formal methods, specifications & proof obligations rests on the formal or computational capabilities supplied by Algorithms & data structures.",
+      "source_ids": [
+        "ref_aima",
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466"
+      ],
+      "evidence_location": "AIMA contents.html lines 75-79 and 182-193; arXiv:2104.02466 abstract lines 37-41",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Model checking, SMT/optimization, abstract interpretation, theorem proving, and algorithms support an algorithmic dependency. The common strength is more defensible than core."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "f78a9602749435e5",
+      "node_id": "formal_methods_specification",
+      "dependency_id": "discrete_math_logic",
+      "source_ids": [
+        "ref_aima",
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Formal methods rely on logic, proofs, theorem proving, and model checking. Core strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "fac30f6bca986f60",
+      "node_id": "formal_methods_specification",
+      "dependency_id": "programming_languages_types",
+      "source_ids": [
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The formal-methods paper is in programming languages and concerns verification of software/ML systems. Core strength is defensible for specifications and proof obligations over software artifacts.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2a0fcdec85416659",
+      "node_id": "formal_methods_specification",
+      "dependency_id": "algorithms_data_structures",
+      "source_ids": [
+        "ref_aima",
+        "ref_formalml",
+        "url:https://arxiv.org/abs/2104.02466"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Verification methods are algorithmic, and the paper mentions SMT, optimization, and abstract interpretation techniques. Common strength is defensible.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ]
+}
