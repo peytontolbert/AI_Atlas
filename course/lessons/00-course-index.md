@@ -1,38 +1,78 @@
 # AI Dependency Atlas Course
 
-This course turns the Dependency Atlas into a guided review path. Each lesson maps one atlas layer to a concrete study goal, review checklist, and small deliverable.
+This course teaches the Dependency Atlas as a dependency-ordered map of AI concepts. It is designed for self-study, classroom use, or team onboarding.
 
-## How to Use This Course
+## Course Outcomes
 
-1. Read the lesson in order.
-2. Review the listed atlas nodes in the interactive viewer or `data/atlas.json`.
-3. Complete the lesson exercise.
-4. Write a short artifact before moving on: notes, code, diagram, eval result, or design memo.
+By the end of the course, learners should be able to:
+
+- Trace an AI system from foundations through representations, objectives, models, training, memory, reasoning, evaluation, infrastructure, and applications.
+- Explain why each layer depends on earlier layers.
+- Choose appropriate model families, objectives, evaluation methods, and deployment patterns for a concrete system.
+- Build a small AI system design brief with explicit evidence, risks, and operational constraints.
+- Use the atlas audit artifacts to distinguish graph structure, sourced facts, synthesis claims, and remaining scope boundaries.
+
+## Format
+
+Each lesson is a teachable module with:
+
+- Learning outcomes.
+- Atlas nodes to review.
+- Lecture plan.
+- Guided discussion prompts.
+- Hands-on lab.
+- Assessment questions.
+- Deliverable and mastery rubric.
+
+Suggested pacing:
+
+- Fast track: 2 weeks, one lesson per weekday plus capstone.
+- Standard track: 6 weeks, two lessons per week plus project time.
+- Deep track: 12 to 14 weeks, one lesson per week with implementation labs.
 
 ## Lesson Sequence
 
 | Lesson | Topic | Primary outcome |
 |---:|---|---|
-| 01 | Mathematical and Computational Foundations | Translate core math into code and debugging checks. |
-| 02 | Data and Representations | Explain how AI systems encode inputs, targets, state, and structure. |
-| 03 | Learning Paradigms | Distinguish supervised, unsupervised, generative, reinforcement, and preference learning. |
-| 04 | Objectives and Statistical Inference | Connect training behavior to losses, inference assumptions, uncertainty, and rewards. |
-| 05 | Computational Primitives and Mechanisms | Trace how dense layers, attention, recurrence, gating, decoding, and tools work. |
-| 06 | Model and Architecture Families | Compare major model families by inductive bias, dependency pattern, and use case. |
-| 07 | Training, Adaptation, and Compression | Review pretraining, fine-tuning, LoRA, data curation, and efficient training. |
-| 08 | Memory, Retrieval, and Knowledge | Build a mental model of retrieval, RAG, provenance, and structured memory. |
-| 09 | Reasoning, Planning, and Agency | Understand agent loops, tool use, search, reflection, code execution, and permissions. |
-| 10 | Alignment, Safety, and Evaluation | Design evals and safety checks that catch regressions and risk. |
-| 11 | Infrastructure and Serving | Explain deployment tradeoffs around latency, throughput, cost, observability, and scale. |
-| 12 | Systems and Applications | Combine prior layers into end-to-end AI systems with clear evidence and boundaries. |
+| 01 | Mathematical and Computational Foundations | Translate core math into code, diagnostics, and scaling checks. |
+| 02 | Data and Representations | Explain how raw information becomes model-readable structure. |
+| 03 | Learning Paradigms | Identify the source of learning signal and interaction pattern. |
+| 04 | Objectives and Statistical Inference | Connect model behavior to losses, rewards, likelihoods, and uncertainty. |
+| 05 | Computational Primitives and Mechanisms | Trace information flow through reusable model and agent mechanisms. |
+| 06 | Model and Architecture Families | Compare model families by inductive bias, data fit, and failure mode. |
+| 07 | Training, Adaptation, and Compression | Design training and adaptation workflows with evaluation and recovery. |
+| 08 | Memory, Retrieval, and Knowledge | Build retrieval, RAG, provenance, and structured memory evaluations. |
+| 09 | Reasoning, Planning, and Agency | Design safe multi-step systems with tools, state, permissions, and verification. |
+| 10 | Alignment, Safety, and Evaluation | Build eval plans that cover quality, safety, robustness, and release gates. |
+| 11 | Infrastructure and Serving | Explain production tradeoffs around latency, throughput, cost, and observability. |
+| 12 | Systems and Applications | Combine all layers into complete system dependency maps. |
 
-## Completion Project
+## Required Artifacts
 
-After Lesson 12, choose one build project from `course/atlas_build_backlog.md`. Create a one-page design brief that includes:
+Learners should produce one artifact per lesson:
 
-- Target behavior.
-- Atlas nodes used.
-- Data and evaluation plan.
-- Safety or failure cases.
-- Deployment constraints.
-- Evidence required to call the project complete.
+- Lesson 01: gradient and shape-check note.
+- Lesson 02: representation comparison table.
+- Lesson 03: learning lifecycle map.
+- Lesson 04: objective comparison memo.
+- Lesson 05: mechanism walkthrough diagram.
+- Lesson 06: architecture selection matrix.
+- Lesson 07: training run card.
+- Lesson 08: retrieval evaluation table.
+- Lesson 09: agent loop design.
+- Lesson 10: evaluation and safety checklist.
+- Lesson 11: serving plan.
+- Lesson 12: system dependency map.
+- Capstone: complete design brief or working prototype report.
+
+## Completion Criteria
+
+A learner completes the course when they can defend a capstone system with:
+
+- At least five atlas layers represented.
+- Valid node references from `data/atlas.json`.
+- Data, objective, model, evaluation, and deployment choices justified.
+- Safety and failure cases documented.
+- Evidence required for release stated explicitly.
+
+See `course/instructor_guide.md`, `course/assessment_rubric.md`, and `course/capstone.md` for teaching support.
