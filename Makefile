@@ -2,7 +2,7 @@ PYTHON ?= python3
 SERVE_HOST ?= 127.0.0.1
 PORT ?= 8088
 
-.PHONY: validate build test smoke serve audit-packets compile-source-audit source-audit source-audit-strict strict-blockers clean
+.PHONY: validate build test smoke serve audit-packets compile-source-audit source-audit source-audit-strict strict-blockers universe hf-dataset hf-dataset-push clean
 
 validate:
 	$(PYTHON) tools/validate_atlas.py
@@ -31,6 +31,15 @@ source-audit-strict: compile-source-audit
 strict-blockers: compile-source-audit
 	$(PYTHON) tools/strict_blocker_report.py
 
+universe:
+	$(PYTHON) tools/build_universe.py
+
+hf-dataset: universe source-audit-strict
+	$(PYTHON) tools/export_hf_dataset.py
+
+hf-dataset-push: universe source-audit-strict
+	$(PYTHON) tools/export_hf_dataset.py --push
+
 serve: build
 	$(PYTHON) tools/serve_atlas.py --host $(SERVE_HOST) --port $(PORT)
 
@@ -48,3 +57,4 @@ clean:
 	      dist/strict_blocker_report.md \
 	      dist/ai_dependency_atlas_v2_preview.png \
 	      dist/browser_smoke_report.json
+	rm -rf exports/universe exports/huggingface/ai_atlas_dataset_v1

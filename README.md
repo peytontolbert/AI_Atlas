@@ -108,6 +108,24 @@ The smoke test verifies rendering, Explore mode, Compare mode, shared-substrate 
 
 The build stops on validation failure. `dist/build_manifest.json` records SHA-256 hashes for all canonical inputs and generated outputs.
 
+## Hugging Face dataset and universe export
+
+Build a layout-ready atlas universe plus a single multi-config Hugging Face dataset:
+
+```bash
+make hf-dataset
+```
+
+This writes JSONL configs for canonical nodes, edges, references, sentence reviews, edge reviews, node packets, course lessons, and universe graph data under `exports/huggingface/ai_atlas_dataset_v1/`. If the selected Python interpreter has `pyarrow`, it also writes parquet copies.
+
+To push the generated dataset folder:
+
+```bash
+HF_DATASET_ID=PeytonT/ai_atlas PYTHON=python make hf-dataset-push
+```
+
+See [`docs/HUGGINGFACE_AND_UNIVERSE.md`](docs/HUGGINGFACE_AND_UNIVERSE.md) for the dataset configs and the interactive-universe layout.
+
 ## Repository layout
 
 ```text
