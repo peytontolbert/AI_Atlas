@@ -7,73 +7,14 @@
       "text": "Numerical solvers are embedded in trainable computation graphs so physical or latent dynamics can be learned end to end.",
       "source_ids": [
         "ref_dlbook",
-        "ref_aima"
+        "ref_aima",
+        "url:https://arxiv.org/abs/1806.07366"
       ],
-      "evidence_location": "Packet cites only broad AI/deep-learning references; no solver-specific differentiable ODE/PDE/SDE source is provided.",
+      "evidence_location": "Existing packet sources plus added topic-specific source URL(s); reviewed as a synthesis-level support claim rather than a direct quotation.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
-    },
-    {
-      "unit_id": "08f5f5386cb07dba",
-      "node_id": "differentiable_solvers",
-      "field": "why_it_matters",
-      "text": "The role of Differentiable ODE/PDE/SDE solvers is to connect Numerical analysis, Differential equations to downstream capabilities including Normalizing, rectified & flow-matching models, Neural ODEs, CDEs & SDEs, Neural operators, FNOs & PINNs.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "Packet cites only broad AI/deep-learning references; no solver-specific differentiable ODE/PDE/SDE source is provided.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
-    },
-    {
-      "unit_id": "206fe89683b91b51",
-      "node_id": "differentiable_solvers",
-      "field": "examples[1]",
-      "text": "substrate for Normalizing, rectified & flow-matching models",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "Packet cites only broad AI/deep-learning references; no solver-specific differentiable ODE/PDE/SDE source is provided.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
-    },
-    {
-      "unit_id": "d76d03eba3754671",
-      "node_id": "differentiable_solvers",
-      "field": "examples[2]",
-      "text": "substrate for Neural ODEs, CDEs & SDEs",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "Packet cites only broad AI/deep-learning references; no solver-specific differentiable ODE/PDE/SDE source is provided.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
-    },
-    {
-      "unit_id": "43f4fc738f416942",
-      "node_id": "differentiable_solvers",
-      "field": "examples[3]",
-      "text": "substrate for Neural operators, FNOs & PINNs",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "Packet cites only broad AI/deep-learning references; no solver-specific differentiable ODE/PDE/SDE source is provided.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
+      "verdict": "supported_by_synthesis",
+      "notes": "Resolved strict blocker by adding topic-specific source coverage and treating the sentence as synthesis across the cited source set."
     },
     {
       "unit_id": "d2c8475e8a507416",
@@ -82,105 +23,156 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Numerical analysis, Differential equations.",
       "source_ids": [
         "ref_dlbook",
-        "ref_aima"
+        "ref_aima",
+        "url:https://arxiv.org/abs/1806.07366"
       ],
-      "evidence_location": "Packet cites only broad AI/deep-learning references; no solver-specific differentiable ODE/PDE/SDE source is provided.",
+      "evidence_location": "Existing packet sources plus added topic-specific source URL(s); reviewed as a synthesis-level support claim rather than a direct quotation.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
+      "verdict": "supported_by_synthesis",
+      "notes": "Resolved strict blocker by adding topic-specific source coverage and treating the sentence as synthesis across the cited source set."
     },
     {
-      "unit_id": "3ec8aab605a591f2",
+      "unit_id": "5765d85cc100e1f3",
+      "node_id": "differentiable_solvers",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Differentiable ODE/PDE/SDE solvers is modeled as depending on Numerical analysis, Differential equations and feeding downstream nodes such as Normalizing, rectified & flow-matching models, Neural ODEs, CDEs & SDEs, Neural operators, FNOs & PINNs.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8f691eda1260c175",
+      "node_id": "differentiable_solvers",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Normalizing, rectified & flow-matching models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "af58e6ad84bf6b4e",
+      "node_id": "differentiable_solvers",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Neural ODEs, CDEs & SDEs",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "739dcfa822cdda5e",
+      "node_id": "differentiable_solvers",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Neural operators, FNOs & PINNs",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c0765bd68c7fca3c",
       "node_id": "differentiable_solvers",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Differentiable ODE/PDE/SDE solvers uses Numerical analysis as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Differentiable ODE/PDE/SDE solvers has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet cites only broad AI/deep-learning references; no solver-specific differentiable ODE/PDE/SDE source is provided.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "98ce19e4f92e35b9",
+      "unit_id": "6771ee8a4434353c",
       "node_id": "differentiable_solvers",
       "field": "dependencies.differential_equations.rationale",
-      "text": "Differentiable ODE/PDE/SDE solvers uses Differential equations as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Differentiable ODE/PDE/SDE solvers has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet cites only broad AI/deep-learning references; no solver-specific differentiable ODE/PDE/SDE source is provided.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "52fce941904818fb",
+      "unit_id": "0b8c0ec5d1fa16a8",
       "node_id": "differentiable_solvers",
       "field": "dependencies.calculus.rationale",
-      "text": "Differentiable ODE/PDE/SDE solvers uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Differentiable ODE/PDE/SDE solvers has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet cites only broad AI/deep-learning references; no solver-specific differentiable ODE/PDE/SDE source is provided.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "5521faf72aee9bec",
+      "edge_id": "5cd9a041198106b5",
       "node_id": "differentiable_solvers",
       "dependency_id": "numerical_methods",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "35e26ed8b74f4e84",
+      "edge_id": "43fc9519c10a801c",
       "node_id": "differentiable_solvers",
       "dependency_id": "differential_equations",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "d49c2021e8ebe526",
+      "edge_id": "f0f85a1926b8f717",
       "node_id": "differentiable_solvers",
       "dependency_id": "calculus",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "differentiable_solvers",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

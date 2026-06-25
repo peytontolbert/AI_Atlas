@@ -1,19 +1,203 @@
 {
   "sentence_reviews": [
-    {"unit_id":"e8f4b287c58863d0","node_id":"diffusion_language_model","field":"definition","text":"Diffusion and masked-generative language models iteratively refine corrupted or partially masked token states instead of committing to a strictly left-to-right sequence.","source_ids":["ref_diffusion_lm","ref_mdlm","ref_diffusion"],"evidence_location":"Li et al. 2022 Diffusion-LM applies diffusion to controllable text generation; Sahoo et al. 2024 MDLM describes masked diffusion language models; Ho et al. 2020 provides denoising diffusion background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Iterative denoising/refinement and masked token states are supported across sources; the contrast with left-to-right generation is synthesized."},
-    {"unit_id":"ba88adea084fa0b5","node_id":"diffusion_language_model","field":"why_it_matters","text":"They expose parallel refinement, editing, and controllable generation patterns unavailable to ordinary causal decoding.","source_ids":["ref_diffusion_lm","ref_mdlm"],"evidence_location":"Diffusion-LM supports controllable text generation; MDLM supports masked diffusion language modeling. Packet evidence does not fully establish editing or 'unavailable' patterns.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Controllable/non-left-to-right generation is supported; editing and 'unavailable' are too strong without more evidence."},
-    {"unit_id":"35da901b6806277b","node_id":"diffusion_language_model","field":"examples[1]","text":"iterative masked token refinement","source_ids":["ref_mdlm","ref_diffusion_lm"],"evidence_location":"MDLM describes masked diffusion language modeling; Diffusion-LM provides iterative diffusion/refinement for text generation.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported by masked diffusion/diffusion language modeling sources."},
-    {"unit_id":"93ae3ea5ead413bf","node_id":"diffusion_language_model","field":"examples[2]","text":"non-autoregressive text generation","source_ids":["ref_diffusion_lm","ref_mdlm"],"evidence_location":"Diffusion and masked diffusion language models generate via denoising/refinement rather than strict left-to-right autoregression.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The non-autoregressive characterization follows from the denoising/masked formulation, but should be cited to explicit text if stricter verification is needed."},
-    {"unit_id":"f5a0e4ce718ce830","node_id":"diffusion_language_model","field":"limitations[1]","text":"Discrete denoising schedules, likelihoods, variable length, and serving efficiency remain challenging.","source_ids":["ref_diffusion_lm","ref_mdlm"],"evidence_location":"Diffusion-LM and MDLM address discrete text diffusion/masked diffusion and language-modeling effectiveness; the exact list of challenges is broader than the packet evidence.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Known challenges are plausible, but the full limitation sentence needs direct support."},
-    {"unit_id":"bd878cdc9e26245d","node_id":"diffusion_language_model","field":"dependencies.diffusion_model.rationale","text":"Diffusion and masked-generative language models extends or specializes the architecture family Diffusion & score-based models.","source_ids":["ref_diffusion","ref_diffusion_lm","ref_mdlm"],"evidence_location":"Ho et al. 2020 defines denoising diffusion probabilistic models; Diffusion-LM and MDLM adapt diffusion/masked diffusion to language.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported for diffusion language models; masked-generative models are included via MDLM."},
-    {"unit_id":"978ce7c9b119f510","node_id":"diffusion_language_model","field":"dependencies.transformer.rationale","text":"Diffusion and masked-generative language models extends or specializes the architecture family Transformers.","source_ids":["ref_mdlm","ref_transformer"],"evidence_location":"MDLM language models are typically transformer-based; packet references include Transformer background, but Diffusion-LM evidence is not solely architectural.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Common in current implementations, but not inherent to the diffusion-language objective."},
-    {"unit_id":"3cc61f4f5da3056d","node_id":"diffusion_language_model","field":"dependencies.masked_prediction.rationale","text":"Diffusion and masked-generative language models is learned, selected, or evaluated using the objective family Masked prediction objectives.","source_ids":["ref_mdlm","ref_diffusion_lm"],"evidence_location":"MDLM directly uses masked diffusion language modeling; Diffusion-LM supports denoising/refinement but not necessarily masked prediction.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Supported for masked diffusion language models; broader diffusion-LM formulations make this common rather than core."},
-    {"unit_id":"5c33b384d6f6b100","node_id":"diffusion_language_model","field":"dependencies.tokens_vocab.rationale","text":"Diffusion and masked-generative language models consumes, emits, or organizes information using Tokens, vocabularies & symbolic units.","source_ids":["ref_diffusion_lm","ref_mdlm"],"evidence_location":"Diffusion-LM and MDLM are language/text generation models operating over token/text states.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported for language models."}
+    {
+      "unit_id": "e8f4b287c58863d0",
+      "node_id": "diffusion_language_model",
+      "field": "definition",
+      "text": "Diffusion and masked-generative language models iteratively refine corrupted or partially masked token states instead of committing to a strictly left-to-right sequence.",
+      "source_ids": [
+        "ref_diffusion_lm",
+        "ref_mdlm",
+        "ref_diffusion"
+      ],
+      "evidence_location": "Li et al. 2022 Diffusion-LM applies diffusion to controllable text generation; Sahoo et al. 2024 MDLM describes masked diffusion language models; Ho et al. 2020 provides denoising diffusion background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Iterative denoising/refinement and masked token states are supported across sources; the contrast with left-to-right generation is synthesized."
+    },
+    {
+      "unit_id": "ba88adea084fa0b5",
+      "node_id": "diffusion_language_model",
+      "field": "why_it_matters",
+      "text": "They expose parallel refinement, editing, and controllable generation patterns unavailable to ordinary causal decoding.",
+      "source_ids": [
+        "ref_diffusion_lm",
+        "ref_mdlm",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "35da901b6806277b",
+      "node_id": "diffusion_language_model",
+      "field": "examples[1]",
+      "text": "iterative masked token refinement",
+      "source_ids": [
+        "ref_mdlm",
+        "ref_diffusion_lm"
+      ],
+      "evidence_location": "MDLM describes masked diffusion language modeling; Diffusion-LM provides iterative diffusion/refinement for text generation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported by masked diffusion/diffusion language modeling sources."
+    },
+    {
+      "unit_id": "93ae3ea5ead413bf",
+      "node_id": "diffusion_language_model",
+      "field": "examples[2]",
+      "text": "non-autoregressive text generation",
+      "source_ids": [
+        "ref_diffusion_lm",
+        "ref_mdlm"
+      ],
+      "evidence_location": "Diffusion and masked diffusion language models generate via denoising/refinement rather than strict left-to-right autoregression.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The non-autoregressive characterization follows from the denoising/masked formulation, but should be cited to explicit text if stricter verification is needed."
+    },
+    {
+      "unit_id": "f5a0e4ce718ce830",
+      "node_id": "diffusion_language_model",
+      "field": "limitations[1]",
+      "text": "Discrete denoising schedules, likelihoods, variable length, and serving efficiency remain challenging.",
+      "source_ids": [
+        "ref_diffusion_lm",
+        "ref_mdlm",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "bd878cdc9e26245d",
+      "node_id": "diffusion_language_model",
+      "field": "dependencies.diffusion_model.rationale",
+      "text": "Diffusion and masked-generative language models extends or specializes the architecture family Diffusion & score-based models.",
+      "source_ids": [
+        "ref_diffusion",
+        "ref_diffusion_lm",
+        "ref_mdlm"
+      ],
+      "evidence_location": "Ho et al. 2020 defines denoising diffusion probabilistic models; Diffusion-LM and MDLM adapt diffusion/masked diffusion to language.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported for diffusion language models; masked-generative models are included via MDLM."
+    },
+    {
+      "unit_id": "5c33b384d6f6b100",
+      "node_id": "diffusion_language_model",
+      "field": "dependencies.tokens_vocab.rationale",
+      "text": "Diffusion and masked-generative language models consumes, emits, or organizes information using Tokens, vocabularies & symbolic units.",
+      "source_ids": [
+        "ref_diffusion_lm",
+        "ref_mdlm"
+      ],
+      "evidence_location": "Diffusion-LM and MDLM are language/text generation models operating over token/text states.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported for language models."
+    },
+    {
+      "unit_id": "aba7559cb3784103",
+      "node_id": "diffusion_language_model",
+      "field": "dependencies.masked_prediction.rationale",
+      "text": "In this atlas graph, Diffusion and masked-generative language models has an `optimizes_for` dependency on Masked prediction objectives because Masked prediction objectives is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "78ba517f3992497e",
+      "node_id": "diffusion_language_model",
+      "field": "dependencies.transformer.rationale",
+      "text": "In this atlas graph, Diffusion and masked-generative language models has a `specializes` dependency on Transformers with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"ed804e8d1261ce50","node_id":"diffusion_language_model","dependency_id":"diffusion_model","source_ids":["ref_diffusion","ref_diffusion_lm","ref_mdlm"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Language diffusion models specialize diffusion/masked diffusion; core strength is supported.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"873aa6c44a6d61f4","node_id":"diffusion_language_model","dependency_id":"transformer","source_ids":["ref_mdlm","ref_transformer"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Transformer implementations are common but not inherent to the model family; core strength is overstated by packet evidence.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"1f087005e2ea4cc4","node_id":"diffusion_language_model","dependency_id":"masked_prediction","source_ids":["ref_mdlm","ref_diffusion_lm"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Masked diffusion supports the optimizes_for relationship; common strength is appropriate.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"a16592526cac2c1d","node_id":"diffusion_language_model","dependency_id":"tokens_vocab","source_ids":["ref_diffusion_lm","ref_mdlm"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Text/token state is inherent to language models; common represents_with edge is supported.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "ed804e8d1261ce50",
+      "node_id": "diffusion_language_model",
+      "dependency_id": "diffusion_model",
+      "source_ids": [
+        "ref_diffusion",
+        "ref_diffusion_lm",
+        "ref_mdlm"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Language diffusion models specialize diffusion/masked diffusion; core strength is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "a16592526cac2c1d",
+      "node_id": "diffusion_language_model",
+      "dependency_id": "tokens_vocab",
+      "source_ids": [
+        "ref_diffusion_lm",
+        "ref_mdlm"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Text/token state is inherent to language models; common represents_with edge is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2f108ed7915df309",
+      "node_id": "diffusion_language_model",
+      "dependency_id": "masked_prediction",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "21ecc22b42aa898f",
+      "node_id": "diffusion_language_model",
+      "dependency_id": "transformer",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "diffusion_language_model",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

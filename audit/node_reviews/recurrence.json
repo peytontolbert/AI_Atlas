@@ -15,64 +15,6 @@
       "notes": "The cited source set directly supports the claim at the level stated."
     },
     {
-      "unit_id": "9461e36098dbbef3",
-      "node_id": "recurrence",
-      "field": "why_it_matters",
-      "text": "The role of Recurrence & feedback state is to connect Sequences, events & time series, Gating & multiplicative control to downstream capabilities including Differentiable memory read/write, Recurrent neural networks, Energy-based, Hopfield & Boltzmann models.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "Deep Learning covers recurrent neural networks as repeated state updates over sequences, gated variants, and temporal dependencies; PML/AIMA provide sequence and dynamical-system background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
-      "unit_id": "aa007239febcb1d3",
-      "node_id": "recurrence",
-      "field": "examples[1]",
-      "text": "substrate for Differentiable memory read/write",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning covers recurrent neural networks as repeated state updates over sequences, gated variants, and temporal dependencies; PML/AIMA provide sequence and dynamical-system background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
-    },
-    {
-      "unit_id": "6253d01dc315eda6",
-      "node_id": "recurrence",
-      "field": "examples[2]",
-      "text": "substrate for Recurrent neural networks",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning covers recurrent neural networks as repeated state updates over sequences, gated variants, and temporal dependencies; PML/AIMA provide sequence and dynamical-system background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated."
-    },
-    {
-      "unit_id": "423324af1cbd9a12",
-      "node_id": "recurrence",
-      "field": "examples[3]",
-      "text": "substrate for Energy-based, Hopfield & Boltzmann models",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning covers recurrent neural networks as repeated state updates over sequences, gated variants, and temporal dependencies; PML/AIMA provide sequence and dynamical-system background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
       "unit_id": "6112ec7f7635876d",
       "node_id": "recurrence",
       "field": "limitations[1]",
@@ -80,29 +22,14 @@
       "source_ids": [
         "ref_dlbook",
         "ref_aima",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning covers recurrent neural networks as repeated state updates over sequences, gated variants, and temporal dependencies; PML/AIMA provide sequence and dynamical-system background.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
-      "unit_id": "4fe5e6bd376456ba",
-      "node_id": "recurrence",
-      "field": "dependencies.sequences_time.rationale",
-      "text": "Recurrence & feedback state uses Sequences, events & time series as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "Deep Learning covers recurrent neural networks as repeated state updates over sequences, gated variants, and temporal dependencies; PML/AIMA provide sequence and dynamical-system background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "75271917e0d13603",
@@ -121,39 +48,91 @@
       "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
     },
     {
-      "unit_id": "3d4b300c462e60be",
+      "unit_id": "50646ab5a8a3f762",
       "node_id": "recurrence",
-      "field": "dependencies.dynamical_control.rationale",
-      "text": "Recurrence & feedback state uses Dynamical systems & control theory as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Recurrence & feedback state is modeled as depending on Sequences, events & time series, Gating & multiplicative control and feeding downstream nodes such as Differentiable memory read/write, Recurrent neural networks, Energy-based, Hopfield & Boltzmann models.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning covers recurrent neural networks as repeated state updates over sequences, gated variants, and temporal dependencies; PML/AIMA provide sequence and dynamical-system background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
-    }
-  ],
-  "edge_reviews": [
-    {
-      "edge_id": "543e6cc649cb2f1d",
-      "node_id": "recurrence",
-      "dependency_id": "sequences_time",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
-      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     },
+    {
+      "unit_id": "aec72e1af706d715",
+      "node_id": "recurrence",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Differentiable memory read/write",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ae962dcffa2c39b0",
+      "node_id": "recurrence",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Recurrent neural networks",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5670845990514965",
+      "node_id": "recurrence",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Energy-based, Hopfield & Boltzmann models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8e33f55e3b4e58b0",
+      "node_id": "recurrence",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "In this atlas graph, Recurrence & feedback state has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "50cb265fb3a6b462",
+      "node_id": "recurrence",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "In this atlas graph, Recurrence & feedback state has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
     {
       "edge_id": "da91d0d7dd753fb0",
       "node_id": "recurrence",
@@ -171,20 +150,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "0b7f0abc920412d2",
+      "edge_id": "7d587cebcd946a2d",
+      "node_id": "recurrence",
+      "dependency_id": "sequences_time",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "547abb9919950102",
       "node_id": "recurrence",
       "dependency_id": "dynamical_control",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "recurrence",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

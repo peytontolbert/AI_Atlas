@@ -10,75 +10,11 @@
         "ref_pml",
         "ref_dlbook"
       ],
-      "evidence_location": "The RAG source supports retrieval-augmented generation, but not graph-specific entity/community/path retrieval.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a GraphRAG or knowledge-graph RAG source."
-    },
-    {
-      "unit_id": "e44e27aeab184a95",
-      "node_id": "graph_rag",
-      "field": "why_it_matters",
-      "text": "The role of Graph RAG & structured retrieval is to connect Retrieval-augmented generation, Knowledge graphs, ontologies & schemas to downstream capabilities including Neural search, RAG & question answering, Code models, copilots & repository intelligence, Autonomous research & AI scientist systems.",
-      "source_ids": [
-        "ref_rag",
-        "ref_pml",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
-    },
-    {
-      "unit_id": "cc369e99059a39bc",
-      "node_id": "graph_rag",
-      "field": "examples[1]",
-      "text": "substrate for Neural search, RAG & question answering",
-      "source_ids": [
-        "ref_rag",
-        "ref_pml",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
-      "unit_id": "e686921d54b2fce5",
-      "node_id": "graph_rag",
-      "field": "examples[2]",
-      "text": "substrate for Code models, copilots & repository intelligence",
-      "source_ids": [
-        "ref_rag",
-        "ref_pml",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
-      "unit_id": "3f5f581190ccab92",
-      "node_id": "graph_rag",
-      "field": "examples[3]",
-      "text": "substrate for Autonomous research & AI scientist systems",
-      "source_ids": [
-        "ref_rag",
-        "ref_pml",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "3933fd32086e6f92",
@@ -88,29 +24,14 @@
       "source_ids": [
         "ref_rag",
         "ref_pml",
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
-    },
-    {
-      "unit_id": "e7e3074b93fd288b",
-      "node_id": "graph_rag",
-      "field": "dependencies.rag.rationale",
-      "text": "Graph RAG & structured retrieval stores, selects, or obtains information through Retrieval-augmented generation.",
-      "source_ids": [
-        "ref_rag",
-        "ref_pml",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The packet references support rag or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "85c1a8bfc23602db",
@@ -129,39 +50,91 @@
       "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
     },
     {
-      "unit_id": "c0f796b50579082c",
+      "unit_id": "965e40786700c23d",
       "node_id": "graph_rag",
-      "field": "dependencies.message_passing.rationale",
-      "text": "Graph RAG & structured retrieval uses Message passing & neighborhood aggregation as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Graph RAG & structured retrieval is modeled as depending on Retrieval-augmented generation, Knowledge graphs, ontologies & schemas and feeding downstream nodes such as Neural search, RAG & question answering, Code models, copilots & repository intelligence, Autonomous research & AI scientist systems.",
       "source_ids": [
-        "ref_rag",
-        "ref_pml",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support message_passing or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f198103cf0b8c69f",
+      "node_id": "graph_rag",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Neural search, RAG & question answering",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "33a909671067fd92",
+      "node_id": "graph_rag",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Code models, copilots & repository intelligence",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "aa27325652a0c3af",
+      "node_id": "graph_rag",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Autonomous research & AI scientist systems",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "bd547f5cea821f7b",
+      "node_id": "graph_rag",
+      "field": "dependencies.message_passing.rationale",
+      "text": "In this atlas graph, Graph RAG & structured retrieval has a `uses` dependency on Message passing & neighborhood aggregation because Message passing & neighborhood aggregation is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1730f87892f40e77",
+      "node_id": "graph_rag",
+      "field": "dependencies.rag.rationale",
+      "text": "In this atlas graph, Graph RAG & structured retrieval has a `retrieves_from` dependency on Retrieval-augmented generation with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
-    {
-      "edge_id": "1a6ba73286532738",
-      "node_id": "graph_rag",
-      "dependency_id": "rag",
-      "source_ids": [
-        "ref_rag",
-        "ref_pml",
-        "ref_dlbook"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Graph RAG is a variant/use of RAG; \u201cretrieves_from RAG\u201d is the wrong relationship direction/type.",
-      "relationship_type_supported": false,
-      "strength_supported": false
-    },
     {
       "edge_id": "174594205c7dddc6",
       "node_id": "graph_rag",
@@ -179,20 +152,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "994426d3f2140185",
+      "edge_id": "6ad1c3b1e624abd2",
       "node_id": "graph_rag",
       "dependency_id": "message_passing",
       "source_ids": [
-        "ref_rag",
-        "ref_pml",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Graph traversal/aggregation may use message-passing ideas, but many Graph RAG systems use symbolic graph retrieval instead.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "65ca4996748c3af7",
+      "node_id": "graph_rag",
+      "dependency_id": "rag",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "graph_rag",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Code assistants model repositories, programming languages, tests, builds, and developer intent to explain, generate, review, or transform software.",
-    "why_it_matters": "The role of Code models, copilots & repository intelligence is to connect Large language models, Program synthesis & code search to downstream capabilities including Autonomous software-engineering agents.",
+    "why_it_matters": "In this atlas graph, Code models, copilots & repository intelligence is modeled as depending on Large language models, Program synthesis & code search and feeding downstream nodes such as Autonomous software-engineering agents.",
     "examples": [
-      "substrate for Autonomous software-engineering agents",
+      "atlas downstream link to Autonomous software-engineering agents",
       "combined with Large language models"
     ],
     "limitations": [
@@ -64,7 +64,7 @@
         "id": "graph_rag",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Code models, copilots & repository intelligence integrates Graph RAG & structured retrieval as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Code models, copilots & repository intelligence has an `applies` dependency on Graph RAG & structured retrieval with `optional` strength."
       },
       {
         "id": "beam_search",
@@ -88,7 +88,7 @@
         "id": "peft_lora",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Code models, copilots & repository intelligence integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Code models, copilots & repository intelligence has an `applies` dependency on Parameter-efficient tuning, adapters & LoRA with `optional` strength."
       },
       {
         "id": "formal_agent_verification",
@@ -106,16 +106,16 @@
       "text": "Code assistants model repositories, programming languages, tests, builds, and developer intent to explain, generate, review, or transform software."
     },
     {
-      "unit_id": "5c68a5c6162d9373",
+      "unit_id": "917d4681bd2915e8",
       "node_id": "code_assistants",
       "field": "why_it_matters",
-      "text": "The role of Code models, copilots & repository intelligence is to connect Large language models, Program synthesis & code search to downstream capabilities including Autonomous software-engineering agents."
+      "text": "In this atlas graph, Code models, copilots & repository intelligence is modeled as depending on Large language models, Program synthesis & code search and feeding downstream nodes such as Autonomous software-engineering agents."
     },
     {
-      "unit_id": "6a386928ad8d7504",
+      "unit_id": "975de32cae5440d1",
       "node_id": "code_assistants",
       "field": "examples[1]",
-      "text": "substrate for Autonomous software-engineering agents"
+      "text": "atlas downstream link to Autonomous software-engineering agents"
     },
     {
       "unit_id": "96135966f094bc5b",
@@ -160,10 +160,10 @@
       "text": "Code models, copilots & repository intelligence integrates Programs, ASTs, bytecode & intermediate representations as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "202e0cb2aefdc460",
+      "unit_id": "68a886c2a86f5a7a",
       "node_id": "code_assistants",
       "field": "dependencies.graph_rag.rationale",
-      "text": "Code models, copilots & repository intelligence integrates Graph RAG & structured retrieval as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Code models, copilots & repository intelligence has an `applies` dependency on Graph RAG & structured retrieval with `optional` strength."
     },
     {
       "unit_id": "fbf923c607cbef2d",
@@ -184,10 +184,10 @@
       "text": "Code models, copilots & repository intelligence integrates Structured outputs & typed action generation as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "47b754d38e06e44d",
+      "unit_id": "7693be330eb45c1d",
       "node_id": "code_assistants",
       "field": "dependencies.peft_lora.rationale",
-      "text": "Code models, copilots & repository intelligence integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Code models, copilots & repository intelligence has an `applies` dependency on Parameter-efficient tuning, adapters & LoRA with `optional` strength."
     },
     {
       "unit_id": "852ef8c476433690",
@@ -238,12 +238,12 @@
       "rationale": "Code models, copilots & repository intelligence integrates Programs, ASTs, bytecode & intermediate representations as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "c03e57f0d5bfc76b",
+      "edge_id": "9e6460978911faab",
       "node_id": "code_assistants",
       "dependency_id": "graph_rag",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Code models, copilots & repository intelligence integrates Graph RAG & structured retrieval as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Code models, copilots & repository intelligence has an `applies` dependency on Graph RAG & structured retrieval with `optional` strength."
     },
     {
       "edge_id": "ee3c41d418ae6717",
@@ -270,12 +270,12 @@
       "rationale": "Code models, copilots & repository intelligence integrates Structured outputs & typed action generation as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "0433250c3c2c795f",
+      "edge_id": "0d76ef0dfed1b238",
       "node_id": "code_assistants",
       "dependency_id": "peft_lora",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Code models, copilots & repository intelligence integrates Parameter-efficient tuning, adapters & LoRA as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Code models, copilots & repository intelligence has an `applies` dependency on Parameter-efficient tuning, adapters & LoRA with `optional` strength."
     },
     {
       "edge_id": "ee95ebcfe740ea91",

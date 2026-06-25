@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Quantized inference stores and computes weights or activations in reduced precision, trading numerical fidelity for lower memory, energy, and latency.",
-    "why_it_matters": "The role of Quantized inference & compressed deployment is to connect Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion to downstream capabilities including Edge, on-device & neuromorphic deployment, Image generation, editing & design.",
+    "why_it_matters": "In this atlas graph, Quantized inference & compressed deployment is modeled as depending on Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion and feeding downstream nodes such as Edge, on-device & neuromorphic deployment, Image generation, editing & design.",
     "examples": [
-      "substrate for Edge, on-device & neuromorphic deployment",
-      "substrate for Image generation, editing & design"
+      "atlas downstream link to Edge, on-device & neuromorphic deployment",
+      "atlas downstream link to Image generation, editing & design"
     ],
     "limitations": [
       "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion."
@@ -35,31 +35,31 @@
         "id": "quantization_training",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Quantized inference & compressed deployment turns Quantization-aware training & low-precision adaptation into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Quantization-aware training & low-precision adaptation because Quantization-aware training & low-precision adaptation is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "compilers_runtimes",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Quantized inference & compressed deployment turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "accelerators",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Quantized inference & compressed deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "checkpoint_composition",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Quantized inference & compressed deployment turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "distillation_pruning",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Quantized inference & compressed deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Knowledge distillation, pruning & sparsification because Knowledge distillation, pruning & sparsification is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -71,22 +71,22 @@
       "text": "Quantized inference stores and computes weights or activations in reduced precision, trading numerical fidelity for lower memory, energy, and latency."
     },
     {
-      "unit_id": "411ebac6d2169cdc",
+      "unit_id": "b2e68c8351bf632c",
       "node_id": "quantized_inference",
       "field": "why_it_matters",
-      "text": "The role of Quantized inference & compressed deployment is to connect Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion to downstream capabilities including Edge, on-device & neuromorphic deployment, Image generation, editing & design."
+      "text": "In this atlas graph, Quantized inference & compressed deployment is modeled as depending on Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion and feeding downstream nodes such as Edge, on-device & neuromorphic deployment, Image generation, editing & design."
     },
     {
-      "unit_id": "30f341e31aed0239",
+      "unit_id": "6e1dc32ccbc092db",
       "node_id": "quantized_inference",
       "field": "examples[1]",
-      "text": "substrate for Edge, on-device & neuromorphic deployment"
+      "text": "atlas downstream link to Edge, on-device & neuromorphic deployment"
     },
     {
-      "unit_id": "eb687be318713ece",
+      "unit_id": "e098197010883e89",
       "node_id": "quantized_inference",
       "field": "examples[2]",
-      "text": "substrate for Image generation, editing & design"
+      "text": "atlas downstream link to Image generation, editing & design"
     },
     {
       "unit_id": "e59399c33bddaff0",
@@ -95,76 +95,76 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion."
     },
     {
-      "unit_id": "188c3078b4ef13fd",
+      "unit_id": "20e61c60496bf471",
       "node_id": "quantized_inference",
       "field": "dependencies.quantization_training.rationale",
-      "text": "Quantized inference & compressed deployment turns Quantization-aware training & low-precision adaptation into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Quantization-aware training & low-precision adaptation because Quantization-aware training & low-precision adaptation is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "a097945834c678d1",
+      "unit_id": "f2bb321e677017b5",
       "node_id": "quantized_inference",
       "field": "dependencies.compilers_runtimes.rationale",
-      "text": "Quantized inference & compressed deployment turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "247f997f16376b21",
+      "unit_id": "80315f9999aa7136",
       "node_id": "quantized_inference",
       "field": "dependencies.accelerators.rationale",
-      "text": "Quantized inference & compressed deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "d04b9edd446024f4",
+      "unit_id": "1e920f7a1e3e9472",
       "node_id": "quantized_inference",
       "field": "dependencies.checkpoint_composition.rationale",
-      "text": "Quantized inference & compressed deployment turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "fc74e9f1efc2ea3c",
+      "unit_id": "368c102934eb276a",
       "node_id": "quantized_inference",
       "field": "dependencies.distillation_pruning.rationale",
-      "text": "Quantized inference & compressed deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Knowledge distillation, pruning & sparsification because Knowledge distillation, pruning & sparsification is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "1eedf8fa3a43f0fd",
+      "edge_id": "d504ed499fced6e4",
       "node_id": "quantized_inference",
       "dependency_id": "quantization_training",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Quantized inference & compressed deployment turns Quantization-aware training & low-precision adaptation into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Quantization-aware training & low-precision adaptation because Quantization-aware training & low-precision adaptation is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "81cfa6e80f96fb10",
+      "edge_id": "8815ccfc638f042a",
       "node_id": "quantized_inference",
       "dependency_id": "compilers_runtimes",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Quantized inference & compressed deployment turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "8b206ed1cf13ddd5",
+      "edge_id": "e155dc284eb30c83",
       "node_id": "quantized_inference",
       "dependency_id": "accelerators",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Quantized inference & compressed deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "ef0dc4ec5105d1fe",
+      "edge_id": "dec2838005fd89a5",
       "node_id": "quantized_inference",
       "dependency_id": "checkpoint_composition",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Quantized inference & compressed deployment turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "11c82e9e41d7ef59",
+      "edge_id": "b866602f14a749cb",
       "node_id": "quantized_inference",
       "dependency_id": "distillation_pruning",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Quantized inference & compressed deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Knowledge distillation, pruning & sparsification because Knowledge distillation, pruning & sparsification is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

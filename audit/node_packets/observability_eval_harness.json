@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Observability and evaluation harnesses record prompts, traces, tokens, latency, costs, tool calls, outcomes, regressions, and safety signals.",
-    "why_it_matters": "The role of Observability, tracing & evaluation harnesses is to connect Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics to downstream capabilities including Autonomous software-engineering agents, Multi-agent systems & organizational intelligence, Verified and assurance-gated agents.",
+    "why_it_matters": "In this atlas graph, Observability, tracing & evaluation harnesses is modeled as depending on Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics and feeding downstream nodes such as Autonomous software-engineering agents, Multi-agent systems & organizational intelligence, Verified and assurance-gated agents.",
     "examples": [
-      "substrate for Autonomous software-engineering agents",
-      "substrate for Multi-agent systems & organizational intelligence",
-      "substrate for Verified and assurance-gated agents"
+      "atlas downstream link to Autonomous software-engineering agents",
+      "atlas downstream link to Multi-agent systems & organizational intelligence",
+      "atlas downstream link to Verified and assurance-gated agents"
     ],
     "limitations": [
       "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics."
@@ -35,43 +35,43 @@
         "id": "repro_monitoring",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Observability, tracing & evaluation harnesses turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Reproducibility, drift & continuous monitoring because Reproducibility, drift & continuous monitoring is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "benchmarks_metrics",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Observability, tracing & evaluation harnesses turns Benchmarks, test suites & task metrics into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Benchmarks, test suites & task metrics because Benchmarks, test suites & task metrics is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "model_serving",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Observability, tracing & evaluation harnesses turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "content_provenance",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Observability, tracing & evaluation harnesses turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Content credentials, signing & provenance because Content credentials, signing & provenance is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "llm_as_judge",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Observability, tracing & evaluation harnesses turns LLM-as-judge & automated critique into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on LLM-as-judge & automated critique because LLM-as-judge & automated critique is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "mechanistic_interpretability",
         "type": "operationalizes",
         "strength": "optional",
-        "rationale": "Observability, tracing & evaluation harnesses turns Mechanistic interpretability & circuit analysis into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Mechanistic interpretability & circuit analysis because Mechanistic interpretability & circuit analysis is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "eval_driven_development",
         "type": "operationalizes",
         "strength": "optional",
-        "rationale": "Observability, tracing & evaluation harnesses turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Evaluation-driven development & release gates because Evaluation-driven development & release gates is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -83,28 +83,28 @@
       "text": "Observability and evaluation harnesses record prompts, traces, tokens, latency, costs, tool calls, outcomes, regressions, and safety signals."
     },
     {
-      "unit_id": "3d80099da5d5b8be",
+      "unit_id": "0c7bb1102d1f0535",
       "node_id": "observability_eval_harness",
       "field": "why_it_matters",
-      "text": "The role of Observability, tracing & evaluation harnesses is to connect Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics to downstream capabilities including Autonomous software-engineering agents, Multi-agent systems & organizational intelligence, Verified and assurance-gated agents."
+      "text": "In this atlas graph, Observability, tracing & evaluation harnesses is modeled as depending on Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics and feeding downstream nodes such as Autonomous software-engineering agents, Multi-agent systems & organizational intelligence, Verified and assurance-gated agents."
     },
     {
-      "unit_id": "9b2adddfa81dac2c",
+      "unit_id": "340fc52feaf9c035",
       "node_id": "observability_eval_harness",
       "field": "examples[1]",
-      "text": "substrate for Autonomous software-engineering agents"
+      "text": "atlas downstream link to Autonomous software-engineering agents"
     },
     {
-      "unit_id": "94de895ff16bc77b",
+      "unit_id": "f16ce73794e96662",
       "node_id": "observability_eval_harness",
       "field": "examples[2]",
-      "text": "substrate for Multi-agent systems & organizational intelligence"
+      "text": "atlas downstream link to Multi-agent systems & organizational intelligence"
     },
     {
-      "unit_id": "bba2adf9ddf9a8e8",
+      "unit_id": "f4ad0ed68b74930e",
       "node_id": "observability_eval_harness",
       "field": "examples[3]",
-      "text": "substrate for Verified and assurance-gated agents"
+      "text": "atlas downstream link to Verified and assurance-gated agents"
     },
     {
       "unit_id": "cb1c9723149f9779",
@@ -113,104 +113,104 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Reproducibility, drift & continuous monitoring, Benchmarks, test suites & task metrics."
     },
     {
-      "unit_id": "8ae07b8ebe3ceb64",
+      "unit_id": "6e817b2e1ddc41cf",
       "node_id": "observability_eval_harness",
       "field": "dependencies.repro_monitoring.rationale",
-      "text": "Observability, tracing & evaluation harnesses turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Reproducibility, drift & continuous monitoring because Reproducibility, drift & continuous monitoring is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "5b938fb5ae5ddd2c",
+      "unit_id": "63e3ad4ccf06866c",
       "node_id": "observability_eval_harness",
       "field": "dependencies.benchmarks_metrics.rationale",
-      "text": "Observability, tracing & evaluation harnesses turns Benchmarks, test suites & task metrics into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Benchmarks, test suites & task metrics because Benchmarks, test suites & task metrics is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "3f1e5388dd923cec",
+      "unit_id": "478c30b9febd9ab3",
       "node_id": "observability_eval_harness",
       "field": "dependencies.model_serving.rationale",
-      "text": "Observability, tracing & evaluation harnesses turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "e48d8fb1c8a072bf",
+      "unit_id": "13409602e9d8ab83",
       "node_id": "observability_eval_harness",
       "field": "dependencies.content_provenance.rationale",
-      "text": "Observability, tracing & evaluation harnesses turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Content credentials, signing & provenance because Content credentials, signing & provenance is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "bd66cf1de8340e14",
+      "unit_id": "92871c7e28806560",
       "node_id": "observability_eval_harness",
       "field": "dependencies.llm_as_judge.rationale",
-      "text": "Observability, tracing & evaluation harnesses turns LLM-as-judge & automated critique into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on LLM-as-judge & automated critique because LLM-as-judge & automated critique is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "b94c1d87440960b4",
+      "unit_id": "d05772060001fd4b",
       "node_id": "observability_eval_harness",
       "field": "dependencies.mechanistic_interpretability.rationale",
-      "text": "Observability, tracing & evaluation harnesses turns Mechanistic interpretability & circuit analysis into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Mechanistic interpretability & circuit analysis because Mechanistic interpretability & circuit analysis is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "26ad27904bd9ff4d",
+      "unit_id": "31bc0087a4d4fcca",
       "node_id": "observability_eval_harness",
       "field": "dependencies.eval_driven_development.rationale",
-      "text": "Observability, tracing & evaluation harnesses turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Evaluation-driven development & release gates because Evaluation-driven development & release gates is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "750362297a25ae2d",
+      "edge_id": "afea3c8dbdc6bfec",
       "node_id": "observability_eval_harness",
       "dependency_id": "repro_monitoring",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Observability, tracing & evaluation harnesses turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Reproducibility, drift & continuous monitoring because Reproducibility, drift & continuous monitoring is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "37f45a9073a36e34",
+      "edge_id": "a7b8c5c5a4c796af",
       "node_id": "observability_eval_harness",
       "dependency_id": "benchmarks_metrics",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Observability, tracing & evaluation harnesses turns Benchmarks, test suites & task metrics into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Benchmarks, test suites & task metrics because Benchmarks, test suites & task metrics is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "c4b18eab399edce9",
+      "edge_id": "4030bef986c454da",
       "node_id": "observability_eval_harness",
       "dependency_id": "model_serving",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Observability, tracing & evaluation harnesses turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "fa752801aef3a39f",
+      "edge_id": "01c5c6d800b322d2",
       "node_id": "observability_eval_harness",
       "dependency_id": "content_provenance",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Observability, tracing & evaluation harnesses turns Content credentials, signing & provenance into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Content credentials, signing & provenance because Content credentials, signing & provenance is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "b208aa8c3a165421",
+      "edge_id": "697d84aeb1c75b77",
       "node_id": "observability_eval_harness",
       "dependency_id": "llm_as_judge",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Observability, tracing & evaluation harnesses turns LLM-as-judge & automated critique into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on LLM-as-judge & automated critique because LLM-as-judge & automated critique is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "a10795e235f49919",
+      "edge_id": "e9f7082a8d0f91bf",
       "node_id": "observability_eval_harness",
       "dependency_id": "mechanistic_interpretability",
       "type": "operationalizes",
       "strength": "optional",
-      "rationale": "Observability, tracing & evaluation harnesses turns Mechanistic interpretability & circuit analysis into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Mechanistic interpretability & circuit analysis because Mechanistic interpretability & circuit analysis is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "60e33f0b551c4c32",
+      "edge_id": "6a0ae9cbf7ffc696",
       "node_id": "observability_eval_harness",
       "dependency_id": "eval_driven_development",
       "type": "operationalizes",
       "strength": "optional",
-      "rationale": "Observability, tracing & evaluation harnesses turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Observability, tracing & evaluation harnesses has an `operationalizes` dependency on Evaluation-driven development & release gates because Evaluation-driven development & release gates is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

@@ -1,19 +1,189 @@
 {
   "sentence_reviews": [
-    {"unit_id":"a1da0c7c972f0ffb","node_id":"causal_representation_learning","field":"definition","text":"Representations aim to recover stable causal factors and mechanisms rather than only predictive correlations.","source_ids":["url:https://arxiv.org/abs/2102.11107"],"evidence_location":"Scholkopf et al. 2021 abstract: causal representation learning as discovery of high-level causal variables from low-level observations; causality helps transfer and generalization.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The inspected source directly supports causal variables and causality beyond standard prediction; 'stable factors and mechanisms' is a synthesis rather than an exact quote."},
-    {"unit_id":"d9299051c3ef96a9","node_id":"causal_representation_learning","field":"why_it_matters","text":"The role of Causal representation learning is to connect Causal inference, Latent variables & hidden state to downstream capabilities including Scientific ML, simulators & digital twins, Medical imaging & clinical decision support.","source_ids":["url:https://arxiv.org/abs/2102.11107","ref_aima"],"evidence_location":"Scholkopf et al. 2021 abstract: relates causal inference to ML, transfer, generalization, high-level causal variables from low-level observations; AIMA contents: probabilistic models, uncertainty, learning, robotics/vision chapters.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The causal inference and latent-variable connection is supported, but the specific downstream capabilities are not directly established by inspected evidence."},
-    {"unit_id":"ad2105732186ca7b","node_id":"causal_representation_learning","field":"examples[1]","text":"substrate for Scientific ML, simulators & digital twins","source_ids":["url:https://arxiv.org/abs/2102.11107"],"evidence_location":"Scholkopf et al. 2021 abstract: causality contributes to ML research, transfer, and generalization; no explicit scientific ML/digital twin example inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Scientific modeling relevance is plausible, but the exact downstream example is broader than the source evidence."},
-    {"unit_id":"1706ebb24f38e5fe","node_id":"causal_representation_learning","field":"examples[2]","text":"substrate for Medical imaging & clinical decision support","source_ids":["url:https://arxiv.org/abs/2102.11107"],"evidence_location":"Scholkopf et al. 2021 abstract: causal inference and ML generally; no medical imaging or clinical decision support passage inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The inspected evidence does not support this domain-specific downstream claim."},
-    {"unit_id":"f9993933a122b180","node_id":"causal_representation_learning","field":"limitations[1]","text":"The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Causal inference, Latent variables & hidden state.","source_ids":["url:https://arxiv.org/abs/2102.11107","ref_aima"],"evidence_location":"Scholkopf et al. 2021 abstract: transfer/generalization and causal variables; AIMA contents: causal/probabilistic learning background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Mismatch with data-generating process is consistent with causal/generalization concerns, but the exact generic limitation is not directly supported."},
-    {"unit_id":"e4626117812c90e2","node_id":"causal_representation_learning","field":"dependencies.causal_inference.rationale","text":"Causal representation learning uses Causal inference as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/2102.11107"],"evidence_location":"Scholkopf et al. 2021 abstract: reviews causal inference concepts and relates them to ML; causal representation learning is a central problem for AI and causality.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported."},
-    {"unit_id":"d0c4c866ba1acd26","node_id":"causal_representation_learning","field":"dependencies.latent_variables.rationale","text":"Causal representation learning uses Latent variables & hidden state as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/2102.11107","ref_pml"],"evidence_location":"Scholkopf et al. 2021 abstract: discovery of high-level causal variables from low-level observations; PML source listed for latent-variable background but not directly inspected beyond packet metadata.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"High-level causal variables from observations support a latent-representation dependency, though the wording uses atlas terminology."},
-    {"unit_id":"ee49dd91620b4e3f","node_id":"causal_representation_learning","field":"dependencies.supervised_learning.rationale","text":"Causal representation learning follows the learning setup expressed by Supervised learning.","source_ids":["url:https://arxiv.org/abs/2102.11107","ref_aima"],"evidence_location":"Scholkopf et al. 2021 abstract: causal representation learning and ML generally; no specific supervised setup inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Supervised signals can be used in some causal representation work, but the field is not inherently supervised."},
-    {"unit_id":"52d22ba8753aa101","node_id":"causal_representation_learning","field":"dependencies.unsupervised_learning.rationale","text":"Causal representation learning follows the learning setup expressed by Unsupervised learning.","source_ids":["url:https://arxiv.org/abs/2102.11107"],"evidence_location":"Scholkopf et al. 2021 abstract: discovery of high-level causal variables from low-level observations; no explicit unsupervised setup inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Discovery from observations makes unsupervised representation learning plausible, but the inspected evidence does not establish the relationship type exactly."}
+    {
+      "unit_id": "a1da0c7c972f0ffb",
+      "node_id": "causal_representation_learning",
+      "field": "definition",
+      "text": "Representations aim to recover stable causal factors and mechanisms rather than only predictive correlations.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2102.11107"
+      ],
+      "evidence_location": "Scholkopf et al. 2021 abstract: causal representation learning as discovery of high-level causal variables from low-level observations; causality helps transfer and generalization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The inspected source directly supports causal variables and causality beyond standard prediction; 'stable factors and mechanisms' is a synthesis rather than an exact quote."
+    },
+    {
+      "unit_id": "f9993933a122b180",
+      "node_id": "causal_representation_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Causal inference, Latent variables & hidden state.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2102.11107",
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "ef61c99a0a08a711",
+      "node_id": "causal_representation_learning",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Causal representation learning is modeled as depending on Causal inference, Latent variables & hidden state and feeding downstream nodes such as Scientific ML, simulators & digital twins, Medical imaging & clinical decision support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "229327178fc17666",
+      "node_id": "causal_representation_learning",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Scientific ML, simulators & digital twins",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e92e5cc02d00cda1",
+      "node_id": "causal_representation_learning",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Medical imaging & clinical decision support",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ed1f51149f0a8add",
+      "node_id": "causal_representation_learning",
+      "field": "dependencies.causal_inference.rationale",
+      "text": "In this atlas graph, Causal representation learning has a `uses` dependency on Causal inference because Causal inference is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "cd4fc2f2cf7c0b6e",
+      "node_id": "causal_representation_learning",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "In this atlas graph, Causal representation learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d9f098bf69848949",
+      "node_id": "causal_representation_learning",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "In this atlas graph, Causal representation learning has a `trained_under` dependency on Supervised learning with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "5e3b68e277d8289c",
+      "node_id": "causal_representation_learning",
+      "field": "dependencies.unsupervised_learning.rationale",
+      "text": "In this atlas graph, Causal representation learning has a `trained_under` dependency on Unsupervised learning with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"6613b532a3c08c94","node_id":"causal_representation_learning","dependency_id":"causal_inference","source_ids":["url:https://arxiv.org/abs/2102.11107"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The source directly frames causal representation learning at the intersection of causality and ML, using causal inference concepts.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"a1639980e2e981e5","node_id":"causal_representation_learning","dependency_id":"latent_variables","source_ids":["url:https://arxiv.org/abs/2102.11107","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Recovering high-level causal variables from low-level observations supports latent-variable dependency and core strength.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"0f9edf5bb4610666","node_id":"causal_representation_learning","dependency_id":"supervised_learning","source_ids":["url:https://arxiv.org/abs/2102.11107","ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Some methods may be supervised, but the inspected evidence does not show supervised learning as the narrow setup for the field.","relationship_type_supported":false,"strength_supported":true},
-    {"edge_id":"89f29d9a3491abc6","node_id":"causal_representation_learning","dependency_id":"unsupervised_learning","source_ids":["url:https://arxiv.org/abs/2102.11107"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Unsupervised discovery is plausible but not directly established as the field's training setup by inspected evidence.","relationship_type_supported":false,"strength_supported":true}
-  ]
+    {
+      "edge_id": "5514e6a4af7a815b",
+      "node_id": "causal_representation_learning",
+      "dependency_id": "causal_inference",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "d838d1eab193ec8f",
+      "node_id": "causal_representation_learning",
+      "dependency_id": "latent_variables",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "e1c13cb89e194eab",
+      "node_id": "causal_representation_learning",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "d44dde18f26aec02",
+      "node_id": "causal_representation_learning",
+      "dependency_id": "unsupervised_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "causal_representation_learning",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

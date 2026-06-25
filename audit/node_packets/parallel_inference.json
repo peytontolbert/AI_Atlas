@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Parallel inference partitions tensors, layers, sequence positions, requests, or experts across multiple devices and coordinates the required communication.",
-    "why_it_matters": "The role of Tensor, pipeline, sequence & expert parallel inference is to connect Model servers & inference runtimes, Distributed systems & networking to downstream capabilities including Large language models.",
+    "why_it_matters": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference is modeled as depending on Model servers & inference runtimes, Distributed systems & networking and feeding downstream nodes such as Large language models.",
     "examples": [
-      "substrate for Large language models",
+      "atlas downstream link to Large language models",
       "combined with Model servers & inference runtimes"
     ],
     "limitations": [
@@ -34,25 +34,25 @@
         "id": "model_serving",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Tensor, pipeline, sequence & expert parallel inference turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "distributed_systems",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Tensor, pipeline, sequence & expert parallel inference turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "moe_model",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Tensor, pipeline, sequence & expert parallel inference turns Mixture-of-experts models into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Mixture-of-experts models because Mixture-of-experts models is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "checkpoint_composition",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Tensor, pipeline, sequence & expert parallel inference turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -64,16 +64,16 @@
       "text": "Parallel inference partitions tensors, layers, sequence positions, requests, or experts across multiple devices and coordinates the required communication."
     },
     {
-      "unit_id": "05d568450a578be8",
+      "unit_id": "4c00d5485234a8ac",
       "node_id": "parallel_inference",
       "field": "why_it_matters",
-      "text": "The role of Tensor, pipeline, sequence & expert parallel inference is to connect Model servers & inference runtimes, Distributed systems & networking to downstream capabilities including Large language models."
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference is modeled as depending on Model servers & inference runtimes, Distributed systems & networking and feeding downstream nodes such as Large language models."
     },
     {
-      "unit_id": "3ce27daea7b2919e",
+      "unit_id": "1908c360bdff8c7a",
       "node_id": "parallel_inference",
       "field": "examples[1]",
-      "text": "substrate for Large language models"
+      "text": "atlas downstream link to Large language models"
     },
     {
       "unit_id": "07c705bc69083275",
@@ -88,62 +88,62 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Distributed systems & networking."
     },
     {
-      "unit_id": "31d9d5f263f9ec4c",
+      "unit_id": "238a73d5ded57dbb",
       "node_id": "parallel_inference",
       "field": "dependencies.model_serving.rationale",
-      "text": "Tensor, pipeline, sequence & expert parallel inference turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "7ae6e0f942e958da",
+      "unit_id": "e390274df07cf212",
       "node_id": "parallel_inference",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Tensor, pipeline, sequence & expert parallel inference turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "6aaeea3ea4503334",
+      "unit_id": "5091fea86ea78c57",
       "node_id": "parallel_inference",
       "field": "dependencies.moe_model.rationale",
-      "text": "Tensor, pipeline, sequence & expert parallel inference turns Mixture-of-experts models into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Mixture-of-experts models because Mixture-of-experts models is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "397d67a8de7e1cbd",
+      "unit_id": "1a1a9b442bb1f7d7",
       "node_id": "parallel_inference",
       "field": "dependencies.checkpoint_composition.rationale",
-      "text": "Tensor, pipeline, sequence & expert parallel inference turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "607024399f8c7ef2",
+      "edge_id": "5cb848185fdb29a5",
       "node_id": "parallel_inference",
       "dependency_id": "model_serving",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Tensor, pipeline, sequence & expert parallel inference turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "a6f9f0dca84cc567",
+      "edge_id": "abf9d8e5f3c573bc",
       "node_id": "parallel_inference",
       "dependency_id": "distributed_systems",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Tensor, pipeline, sequence & expert parallel inference turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "1933076b13a2406d",
+      "edge_id": "ab81fd2b2ce22a8b",
       "node_id": "parallel_inference",
       "dependency_id": "moe_model",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Tensor, pipeline, sequence & expert parallel inference turns Mixture-of-experts models into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Mixture-of-experts models because Mixture-of-experts models is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "ecdc0f080129ee70",
+      "edge_id": "8d82b5901efd165a",
       "node_id": "parallel_inference",
       "dependency_id": "checkpoint_composition",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Tensor, pipeline, sequence & expert parallel inference turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

@@ -1,19 +1,192 @@
 {
   "sentence_reviews": [
-    {"unit_id":"b05fd075982c29f5","node_id":"distillation_pruning","field":"definition","text":"Distillation transfers behavior from a teacher to a smaller student, while pruning removes low-value weights, channels, heads, experts, or activations.","source_ids":["ref_dlbook","url:https://arxiv.org/abs/1503.02531","url:https://arxiv.org/abs/1608.08710"],"evidence_location":"Hinton arXiv abstract lines 42-44 describes compressing knowledge from ensembles into a single easier-to-deploy model; Li arXiv abstract lines 38-41 describes pruning/compressing weights and filters identified as having small effects on output accuracy.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Teacher/student distillation and weight/filter pruning are supported; heads, experts, and activations are broader than the inspected sources."},
-    {"unit_id":"9fe69bbacf876a88","node_id":"distillation_pruning","field":"why_it_matters","text":"The role of Knowledge distillation, pruning & sparsification is to connect Supervised learning, Calibration, uncertainty & risk objectives to downstream capabilities including Quantized inference & compressed deployment, Edge, on-device & neuromorphic deployment.","source_ids":["ref_dlbook","url:https://arxiv.org/abs/1503.02531","url:https://arxiv.org/abs/1608.08710","url:https://arxiv.org/abs/1712.05877"],"evidence_location":"Hinton lines 42-43 supports model compression for deployment; Li lines 38-41 supports reduced computation/storage and inference costs; Jacob lines 41-42 supports efficient on-device quantized inference. Calibration/uncertainty and neuromorphic deployment are not directly evidenced.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Compression/deployment links are supported; calibration/risk and neuromorphic parts need narrower evidence."},
-    {"unit_id":"f2e9e3bfa6e048ac","node_id":"distillation_pruning","field":"examples[1]","text":"substrate for Quantized inference & compressed deployment","source_ids":["url:https://arxiv.org/abs/1503.02531","url:https://arxiv.org/abs/1608.08710","url:https://arxiv.org/abs/1712.05877"],"evidence_location":"Hinton lines 42-43 describes compressed models easier to deploy; Li lines 38-41 describes pruning/compressing to reduce computation/storage/inference costs; Jacob lines 41-42 describes efficient integer-only inference and training to preserve accuracy after quantization.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Compressed deployment is directly supported; quantized inference is adjacent rather than directly caused by distillation/pruning."},
-    {"unit_id":"f677f785e8c33ca6","node_id":"distillation_pruning","field":"examples[2]","text":"substrate for Edge, on-device & neuromorphic deployment","source_ids":["url:https://arxiv.org/abs/1503.02531","url:https://arxiv.org/abs/1608.08710","url:https://arxiv.org/abs/1712.05877"],"evidence_location":"Hinton lines 42-43 discusses deployment to many users and expensive large neural nets; Jacob lines 41-42 explicitly mentions mobile devices and on-device inference; no inspected source supports neuromorphic deployment.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Edge/on-device deployment is supported; neuromorphic is unsupported by inspected evidence."},
-    {"unit_id":"d7e57db9395b3f1e","node_id":"distillation_pruning","field":"limitations[1]","text":"Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised learning, Calibration, uncertainty & risk objectives.","source_ids":["ref_dlbook","url:https://arxiv.org/abs/1503.02531","url:https://arxiv.org/abs/1608.08710"],"evidence_location":"Hinton and Li abstracts support training/retraining compressed models and accuracy preservation, but do not directly support the generic sensitivity or evaluation-contamination wording; calibration/risk is not directly evidenced.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The sentence is mostly generic and overbroad for the inspected sources."},
-    {"unit_id":"a3ba1e41dcbd1e52","node_id":"distillation_pruning","field":"dependencies.supervised_learning.rationale","text":"Knowledge distillation, pruning & sparsification uses Supervised learning as a reusable ingredient in its defined operation.","source_ids":["ref_dlbook","url:https://arxiv.org/abs/1503.02531","url:https://arxiv.org/abs/1608.08710"],"evidence_location":"Hinton lines 42-44 discusses training/compressing models on data and specialist models; Li line 41 describes retraining pruned networks to regain accuracy; supervised learning is a common but not exclusive setup.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Defensible for standard distillation/pruning workflows, but not exclusive."},
-    {"unit_id":"9e643754a1a35402","node_id":"distillation_pruning","field":"dependencies.calibration_uncertainty_objective.rationale","text":"Knowledge distillation, pruning & sparsification is learned, selected, or evaluated using the objective family Calibration, uncertainty & risk objectives.","source_ids":["ref_pml","url:https://arxiv.org/abs/1503.02531"],"evidence_location":"Hinton supports soft prediction/knowledge compression at a high level, but the inspected abstract does not explicitly address calibration, uncertainty, or risk objectives.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Calibration is plausible for distillation but not adequately supported as a core dependency by inspected evidence."},
-    {"unit_id":"4c28d68f517d04de","node_id":"distillation_pruning","field":"dependencies.affine_dense.rationale","text":"Knowledge distillation, pruning & sparsification uses Affine transforms & dense layers as a reusable ingredient in its defined operation.","source_ids":["ref_dlbook","url:https://arxiv.org/abs/1608.08710"],"evidence_location":"Li arXiv abstract lines 38-40 discusses pruning weights, fully connected layers, convolutional layers, filters, feature maps, and dense matrix multiplication libraries.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Dense/affine layers are common targets, but the node is broader than dense layers."},
-    {"unit_id":"c7be548863bc9c67","node_id":"distillation_pruning","field":"dependencies.optimization.rationale","text":"Knowledge distillation, pruning & sparsification uses Optimization theory as a reusable ingredient in its defined operation.","source_ids":["ref_dlbook","url:https://arxiv.org/abs/1503.02531","url:https://arxiv.org/abs/1608.08710"],"evidence_location":"Hinton lines 42-44 and Li line 41 both involve training/retraining compressed/pruned models to preserve or regain accuracy, implying optimization.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Optimization is required by training/retraining, though the exact theory dependency is synthesized."}
+    {
+      "unit_id": "b05fd075982c29f5",
+      "node_id": "distillation_pruning",
+      "field": "definition",
+      "text": "Distillation transfers behavior from a teacher to a smaller student, while pruning removes low-value weights, channels, heads, experts, or activations.",
+      "source_ids": [
+        "ref_dlbook",
+        "url:https://arxiv.org/abs/1503.02531",
+        "url:https://arxiv.org/abs/1608.08710"
+      ],
+      "evidence_location": "Hinton arXiv abstract lines 42-44 describes compressing knowledge from ensembles into a single easier-to-deploy model; Li arXiv abstract lines 38-41 describes pruning/compressing weights and filters identified as having small effects on output accuracy.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Teacher/student distillation and weight/filter pruning are supported; heads, experts, and activations are broader than the inspected sources."
+    },
+    {
+      "unit_id": "d7e57db9395b3f1e",
+      "node_id": "distillation_pruning",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised learning, Calibration, uncertainty & risk objectives.",
+      "source_ids": [
+        "ref_dlbook",
+        "url:https://arxiv.org/abs/1503.02531",
+        "url:https://arxiv.org/abs/1608.08710",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "aee07bc9f686c30d",
+      "node_id": "distillation_pruning",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification is modeled as depending on Supervised learning, Calibration, uncertainty & risk objectives and feeding downstream nodes such as Quantized inference & compressed deployment, Edge, on-device & neuromorphic deployment.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "52333bb182158151",
+      "node_id": "distillation_pruning",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Quantized inference & compressed deployment",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "68fa2cc6a3676980",
+      "node_id": "distillation_pruning",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Edge, on-device & neuromorphic deployment",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8170808f9f20dd05",
+      "node_id": "distillation_pruning",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "88308a198923b291",
+      "node_id": "distillation_pruning",
+      "field": "dependencies.calibration_uncertainty_objective.rationale",
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification has an `optimizes_for` dependency on Calibration, uncertainty & risk objectives because Calibration, uncertainty & risk objectives is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "efad8babda368bc8",
+      "node_id": "distillation_pruning",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Affine transforms & dense layers because Affine transforms & dense layers is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c16aeb0f9173004e",
+      "node_id": "distillation_pruning",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"e2ceb81fb65a07fb","node_id":"distillation_pruning","dependency_id":"supervised_learning","source_ids":["ref_dlbook","url:https://arxiv.org/abs/1503.02531","url:https://arxiv.org/abs/1608.08710"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Supervised/retraining workflows are supported, but not every pruning or sparsification workflow is supervised; core strength is somewhat overstated.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"ef6434a3518fa544","node_id":"distillation_pruning","dependency_id":"calibration_uncertainty_objective","source_ids":["ref_pml","url:https://arxiv.org/abs/1503.02531"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Calibration/uncertainty may relate to distillation but is not directly established as a core optimize-for dependency.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"fce0b95c9e1cee85","node_id":"distillation_pruning","dependency_id":"affine_dense","source_ids":["ref_dlbook","url:https://arxiv.org/abs/1608.08710"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Weights, fully connected layers, and dense matrix multiplication support a common affine/dense dependency.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"b8b252ed5711dedb","node_id":"distillation_pruning","dependency_id":"optimization","source_ids":["ref_dlbook","url:https://arxiv.org/abs/1503.02531","url:https://arxiv.org/abs/1608.08710"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Training/retraining compressed models supports optimization as a common dependency.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "0d7835261f60690d",
+      "node_id": "distillation_pruning",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "eda9f84e065359c0",
+      "node_id": "distillation_pruning",
+      "dependency_id": "calibration_uncertainty_objective",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "c980b9c2344689da",
+      "node_id": "distillation_pruning",
+      "dependency_id": "affine_dense",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "5a7ea1efacc7f456",
+      "node_id": "distillation_pruning",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "distillation_pruning",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

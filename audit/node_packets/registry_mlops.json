@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Model registries and MLOps systems version models, adapters, datasets, evaluations, approvals, lineage, deployment targets, and rollback state.",
-    "why_it_matters": "The role of Model registry, versioning & MLOps / LLMOps is to connect Object storage, sharding & checkpoints, Workflow, cluster & job orchestration to downstream capabilities including Large language models.",
+    "why_it_matters": "In this atlas graph, Model registry, versioning & MLOps / LLMOps is modeled as depending on Object storage, sharding & checkpoints, Workflow, cluster & job orchestration and feeding downstream nodes such as Large language models.",
     "examples": [
-      "substrate for Large language models",
+      "atlas downstream link to Large language models",
       "combined with Object storage, sharding & checkpoints"
     ],
     "limitations": [
@@ -34,43 +34,43 @@
         "id": "storage_checkpoints",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Model registry, versioning & MLOps / LLMOps turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "orchestration",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Model registry, versioning & MLOps / LLMOps turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Workflow, cluster & job orchestration because Workflow, cluster & job orchestration is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "repro_monitoring",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Model registry, versioning & MLOps / LLMOps turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Reproducibility, drift & continuous monitoring because Reproducibility, drift & continuous monitoring is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "cryptographic_signing",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Model registry, versioning & MLOps / LLMOps turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Cryptographic signing & tamper-evident logs because Cryptographic signing & tamper-evident logs is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "checkpoint_composition",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Model registry, versioning & MLOps / LLMOps turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "data_pipelines",
         "type": "operationalizes",
         "strength": "optional",
-        "rationale": "Model registry, versioning & MLOps / LLMOps turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Distributed data pipelines & streaming because Distributed data pipelines & streaming is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "eval_driven_development",
         "type": "operationalizes",
         "strength": "optional",
-        "rationale": "Model registry, versioning & MLOps / LLMOps turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Evaluation-driven development & release gates because Evaluation-driven development & release gates is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -82,16 +82,16 @@
       "text": "Model registries and MLOps systems version models, adapters, datasets, evaluations, approvals, lineage, deployment targets, and rollback state."
     },
     {
-      "unit_id": "8cce3ff1e275922f",
+      "unit_id": "622fd66143a8cbbb",
       "node_id": "registry_mlops",
       "field": "why_it_matters",
-      "text": "The role of Model registry, versioning & MLOps / LLMOps is to connect Object storage, sharding & checkpoints, Workflow, cluster & job orchestration to downstream capabilities including Large language models."
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps is modeled as depending on Object storage, sharding & checkpoints, Workflow, cluster & job orchestration and feeding downstream nodes such as Large language models."
     },
     {
-      "unit_id": "a12e0b534059e2ad",
+      "unit_id": "50793a88bd01056c",
       "node_id": "registry_mlops",
       "field": "examples[1]",
-      "text": "substrate for Large language models"
+      "text": "atlas downstream link to Large language models"
     },
     {
       "unit_id": "b311fa60be4b2854",
@@ -106,104 +106,104 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Object storage, sharding & checkpoints, Workflow, cluster & job orchestration."
     },
     {
-      "unit_id": "e3d5d526cde85b1b",
+      "unit_id": "6765879cc7d8269a",
       "node_id": "registry_mlops",
       "field": "dependencies.storage_checkpoints.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "5a5646dbec624dcc",
+      "unit_id": "b7b16a30017fed95",
       "node_id": "registry_mlops",
       "field": "dependencies.orchestration.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Workflow, cluster & job orchestration because Workflow, cluster & job orchestration is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "9387390103b1729c",
+      "unit_id": "89ac2a221ceae313",
       "node_id": "registry_mlops",
       "field": "dependencies.repro_monitoring.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Reproducibility, drift & continuous monitoring because Reproducibility, drift & continuous monitoring is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "3f8f5712f30ab50b",
+      "unit_id": "6cd433c48edeb8cc",
       "node_id": "registry_mlops",
       "field": "dependencies.cryptographic_signing.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Cryptographic signing & tamper-evident logs because Cryptographic signing & tamper-evident logs is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "5448779926a009bd",
+      "unit_id": "2150619e0735ad63",
       "node_id": "registry_mlops",
       "field": "dependencies.checkpoint_composition.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "eeb767337c7b7f14",
+      "unit_id": "c31c3c03bd8ba3f5",
       "node_id": "registry_mlops",
       "field": "dependencies.data_pipelines.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Distributed data pipelines & streaming because Distributed data pipelines & streaming is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "0b0ed035a6b07633",
+      "unit_id": "ca911f629767785f",
       "node_id": "registry_mlops",
       "field": "dependencies.eval_driven_development.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Evaluation-driven development & release gates because Evaluation-driven development & release gates is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "edfda89b2cde9dfa",
+      "edge_id": "3c1a28835dce0dc8",
       "node_id": "registry_mlops",
       "dependency_id": "storage_checkpoints",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Model registry, versioning & MLOps / LLMOps turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "1ffa7086e2d7472d",
+      "edge_id": "6972f54cd07cd95b",
       "node_id": "registry_mlops",
       "dependency_id": "orchestration",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Model registry, versioning & MLOps / LLMOps turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Workflow, cluster & job orchestration because Workflow, cluster & job orchestration is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "c10d9b6ed26fa06a",
+      "edge_id": "32b7f508500f31ba",
       "node_id": "registry_mlops",
       "dependency_id": "repro_monitoring",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Model registry, versioning & MLOps / LLMOps turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Reproducibility, drift & continuous monitoring because Reproducibility, drift & continuous monitoring is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "c2e270a1a018314f",
+      "edge_id": "df6be339c4568054",
       "node_id": "registry_mlops",
       "dependency_id": "cryptographic_signing",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Model registry, versioning & MLOps / LLMOps turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Cryptographic signing & tamper-evident logs because Cryptographic signing & tamper-evident logs is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "587490d24a9ade80",
+      "edge_id": "46993f410faaf8ba",
       "node_id": "registry_mlops",
       "dependency_id": "checkpoint_composition",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Model registry, versioning & MLOps / LLMOps turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "f285144db9e16550",
+      "edge_id": "adb2b7c0a89c739d",
       "node_id": "registry_mlops",
       "dependency_id": "data_pipelines",
       "type": "operationalizes",
       "strength": "optional",
-      "rationale": "Model registry, versioning & MLOps / LLMOps turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Distributed data pipelines & streaming because Distributed data pipelines & streaming is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "d6f8e7ad2e498e57",
+      "edge_id": "de895ac02057848b",
       "node_id": "registry_mlops",
       "dependency_id": "eval_driven_development",
       "type": "operationalizes",
       "strength": "optional",
-      "rationale": "Model registry, versioning & MLOps / LLMOps turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Evaluation-driven development & release gates because Evaluation-driven development & release gates is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

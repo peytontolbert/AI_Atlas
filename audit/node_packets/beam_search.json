@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Beam search retains a bounded set of high-scoring partial sequences, optionally applying lexical, grammar, length, or domain constraints during decoding.",
-    "why_it_matters": "The role of Beam search & constrained decoding is to connect Search, sampling & decoding procedures, Autoregressive decoding to downstream capabilities including Code models, copilots & repository intelligence, Speech recognition & spoken-language understanding.",
+    "why_it_matters": "In this atlas graph, Beam search & constrained decoding is modeled as depending on Search, sampling & decoding procedures, Autoregressive decoding and feeding downstream nodes such as Code models, copilots & repository intelligence, Speech recognition & spoken-language understanding.",
     "examples": [
-      "substrate for Code models, copilots & repository intelligence",
-      "substrate for Speech recognition & spoken-language understanding"
+      "atlas downstream link to Code models, copilots & repository intelligence",
+      "atlas downstream link to Speech recognition & spoken-language understanding"
     ],
     "limitations": [
       "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Search, sampling & decoding procedures, Autoregressive decoding."
@@ -45,7 +45,7 @@
         "id": "constraint_program_execution",
         "type": "searches_with",
         "strength": "common",
-        "rationale": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Constraint propagation, logic & program execution."
+        "rationale": "In this atlas graph, Beam search & constrained decoding has a `searches_with` dependency on Constraint propagation, logic & program execution with `common` strength."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "Beam search retains a bounded set of high-scoring partial sequences, optionally applying lexical, grammar, length, or domain constraints during decoding."
     },
     {
-      "unit_id": "6b6fbaf6732b4bf2",
+      "unit_id": "d6d4a6c907b59dfd",
       "node_id": "beam_search",
       "field": "why_it_matters",
-      "text": "The role of Beam search & constrained decoding is to connect Search, sampling & decoding procedures, Autoregressive decoding to downstream capabilities including Code models, copilots & repository intelligence, Speech recognition & spoken-language understanding."
+      "text": "In this atlas graph, Beam search & constrained decoding is modeled as depending on Search, sampling & decoding procedures, Autoregressive decoding and feeding downstream nodes such as Code models, copilots & repository intelligence, Speech recognition & spoken-language understanding."
     },
     {
-      "unit_id": "8a23660f996d5f4f",
+      "unit_id": "e371389484e31e1b",
       "node_id": "beam_search",
       "field": "examples[1]",
-      "text": "substrate for Code models, copilots & repository intelligence"
+      "text": "atlas downstream link to Code models, copilots & repository intelligence"
     },
     {
-      "unit_id": "a660c29f5c9cf226",
+      "unit_id": "c88813f20ac8a879",
       "node_id": "beam_search",
       "field": "examples[2]",
-      "text": "substrate for Speech recognition & spoken-language understanding"
+      "text": "atlas downstream link to Speech recognition & spoken-language understanding"
     },
     {
       "unit_id": "c11fe2a6a80b7f34",
@@ -93,10 +93,10 @@
       "text": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Autoregressive decoding."
     },
     {
-      "unit_id": "6d639c585e33e07d",
+      "unit_id": "40485cd60f50b49e",
       "node_id": "beam_search",
       "field": "dependencies.constraint_program_execution.rationale",
-      "text": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Constraint propagation, logic & program execution."
+      "text": "In this atlas graph, Beam search & constrained decoding has a `searches_with` dependency on Constraint propagation, logic & program execution with `common` strength."
     }
   ],
   "edge_units": [
@@ -117,12 +117,12 @@
       "rationale": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Autoregressive decoding."
     },
     {
-      "edge_id": "084a8e6bc8c6c838",
+      "edge_id": "7f4824a73d2f3033",
       "node_id": "beam_search",
       "dependency_id": "constraint_program_execution",
       "type": "searches_with",
       "strength": "common",
-      "rationale": "Beam search & constrained decoding explores alternatives using the state, scoring, or search process in Constraint propagation, logic & program execution."
+      "rationale": "In this atlas graph, Beam search & constrained decoding has a `searches_with` dependency on Constraint propagation, logic & program execution with `common` strength."
     }
   ],
   "candidate_references": {

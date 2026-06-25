@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "External or constructed signals specify desired predictions, actions, rankings, or behavior.",
-    "why_it_matters": "The role of Labels, targets, rewards & preferences is to connect Statistics & experimental design, Game theory & decision theory to downstream capabilities including Supervised learning, Semi-supervised & weak supervision, Reinforcement learning.",
+    "why_it_matters": "In this atlas graph, Labels, targets, rewards & preferences is modeled as depending on Statistics & experimental design, Game theory & decision theory and feeding downstream nodes such as Supervised learning, Semi-supervised & weak supervision, Reinforcement learning.",
     "examples": [
-      "substrate for Supervised learning",
-      "substrate for Semi-supervised & weak supervision",
-      "substrate for Reinforcement learning"
+      "atlas downstream link to Supervised learning",
+      "atlas downstream link to Semi-supervised & weak supervision",
+      "atlas downstream link to Reinforcement learning"
     ],
     "limitations": [
       "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Statistics & experimental design, Game theory & decision theory."
@@ -46,7 +46,7 @@
         "id": "information_theory",
         "type": "requires",
         "strength": "common",
-        "rationale": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Information theory."
+        "rationale": "In this atlas graph, Labels, targets, rewards & preferences has a `requires` dependency on Information theory with `common` strength."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "External or constructed signals specify desired predictions, actions, rankings, or behavior."
     },
     {
-      "unit_id": "3a523a4396a0d8d7",
+      "unit_id": "6cdc440f049ffc73",
       "node_id": "supervision_signals",
       "field": "why_it_matters",
-      "text": "The role of Labels, targets, rewards & preferences is to connect Statistics & experimental design, Game theory & decision theory to downstream capabilities including Supervised learning, Semi-supervised & weak supervision, Reinforcement learning."
+      "text": "In this atlas graph, Labels, targets, rewards & preferences is modeled as depending on Statistics & experimental design, Game theory & decision theory and feeding downstream nodes such as Supervised learning, Semi-supervised & weak supervision, Reinforcement learning."
     },
     {
-      "unit_id": "5e1cf9b5e0fb3593",
+      "unit_id": "c2934f1590cf6956",
       "node_id": "supervision_signals",
       "field": "examples[1]",
-      "text": "substrate for Supervised learning"
+      "text": "atlas downstream link to Supervised learning"
     },
     {
-      "unit_id": "300565fa292f96b5",
+      "unit_id": "ad3dee4643654d7c",
       "node_id": "supervision_signals",
       "field": "examples[2]",
-      "text": "substrate for Semi-supervised & weak supervision"
+      "text": "atlas downstream link to Semi-supervised & weak supervision"
     },
     {
-      "unit_id": "40e324f6ff3d36ea",
+      "unit_id": "2a090059b1595615",
       "node_id": "supervision_signals",
       "field": "examples[3]",
-      "text": "substrate for Reinforcement learning"
+      "text": "atlas downstream link to Reinforcement learning"
     },
     {
       "unit_id": "1a92954890a318a2",
@@ -100,10 +100,10 @@
       "text": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Game theory & decision theory."
     },
     {
-      "unit_id": "ac932fe3a34265c6",
+      "unit_id": "a9975347ac0b3745",
       "node_id": "supervision_signals",
       "field": "dependencies.information_theory.rationale",
-      "text": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Information theory."
+      "text": "In this atlas graph, Labels, targets, rewards & preferences has a `requires` dependency on Information theory with `common` strength."
     }
   ],
   "edge_units": [
@@ -124,12 +124,12 @@
       "rationale": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Game theory & decision theory."
     },
     {
-      "edge_id": "277a6afa6908e65f",
+      "edge_id": "8bbf3e78c12e1ae9",
       "node_id": "supervision_signals",
       "dependency_id": "information_theory",
       "type": "requires",
       "strength": "common",
-      "rationale": "Labels, targets, rewards & preferences rests on the formal or computational capabilities supplied by Information theory."
+      "rationale": "In this atlas graph, Labels, targets, rewards & preferences has a `requires` dependency on Information theory with `common` strength."
     }
   ],
   "candidate_references": {

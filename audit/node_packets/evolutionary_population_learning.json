@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Populations of candidate solutions are selected, mutated, recombined, or coordinated without gradient requirements.",
-    "why_it_matters": "The role of Evolutionary, swarm & population-based learning is to connect Optimization theory, Probability theory to downstream capabilities including AutoML & automated model design, Neural architecture search.",
+    "why_it_matters": "In this atlas graph, Evolutionary, swarm & population-based learning is modeled as depending on Optimization theory, Probability theory and feeding downstream nodes such as AutoML & automated model design, Neural architecture search.",
     "examples": [
-      "substrate for AutoML & automated model design",
-      "substrate for Neural architecture search"
+      "atlas downstream link to AutoML & automated model design",
+      "atlas downstream link to Neural architecture search"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Optimization theory, Probability theory."
@@ -33,19 +33,19 @@
         "id": "optimization",
         "type": "uses",
         "strength": "core",
-        "rationale": "Evolutionary, swarm & population-based learning uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "probability",
         "type": "uses",
         "strength": "core",
-        "rationale": "Evolutionary, swarm & population-based learning uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "game_decision_theory",
         "type": "uses",
         "strength": "common",
-        "rationale": "Evolutionary, swarm & population-based learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "Populations of candidate solutions are selected, mutated, recombined, or coordinated without gradient requirements."
     },
     {
-      "unit_id": "63b0a213ce26e46c",
+      "unit_id": "d6786ad49566be11",
       "node_id": "evolutionary_population_learning",
       "field": "why_it_matters",
-      "text": "The role of Evolutionary, swarm & population-based learning is to connect Optimization theory, Probability theory to downstream capabilities including AutoML & automated model design, Neural architecture search."
+      "text": "In this atlas graph, Evolutionary, swarm & population-based learning is modeled as depending on Optimization theory, Probability theory and feeding downstream nodes such as AutoML & automated model design, Neural architecture search."
     },
     {
-      "unit_id": "b37e901f4e482b6b",
+      "unit_id": "bc4562d7d174c097",
       "node_id": "evolutionary_population_learning",
       "field": "examples[1]",
-      "text": "substrate for AutoML & automated model design"
+      "text": "atlas downstream link to AutoML & automated model design"
     },
     {
-      "unit_id": "489c8f0f00a2a53c",
+      "unit_id": "7643b868c057767c",
       "node_id": "evolutionary_population_learning",
       "field": "examples[2]",
-      "text": "substrate for Neural architecture search"
+      "text": "atlas downstream link to Neural architecture search"
     },
     {
       "unit_id": "425a0657d8f9b60b",
@@ -81,48 +81,48 @@
       "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Optimization theory, Probability theory."
     },
     {
-      "unit_id": "3539a0726b7bd391",
+      "unit_id": "cc672e47bad40429",
       "node_id": "evolutionary_population_learning",
       "field": "dependencies.optimization.rationale",
-      "text": "Evolutionary, swarm & population-based learning uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "2075ad459dbcd90d",
+      "unit_id": "019fd9e4bc96b02f",
       "node_id": "evolutionary_population_learning",
       "field": "dependencies.probability.rationale",
-      "text": "Evolutionary, swarm & population-based learning uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "6989a3589b82f70a",
+      "unit_id": "2e88655b4b523f29",
       "node_id": "evolutionary_population_learning",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Evolutionary, swarm & population-based learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "9a931b742c861904",
+      "edge_id": "51179d6bfd33be14",
       "node_id": "evolutionary_population_learning",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "core",
-      "rationale": "Evolutionary, swarm & population-based learning uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "46def89883c64b66",
+      "edge_id": "bb4fc454b80df493",
       "node_id": "evolutionary_population_learning",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "core",
-      "rationale": "Evolutionary, swarm & population-based learning uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "716f3e529739bca7",
+      "edge_id": "8ac0f48720c19082",
       "node_id": "evolutionary_population_learning",
       "dependency_id": "game_decision_theory",
       "type": "uses",
       "strength": "common",
-      "rationale": "Evolutionary, swarm & population-based learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

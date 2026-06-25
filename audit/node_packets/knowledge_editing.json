@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Knowledge editing changes selected factual or behavioral associations in parameters or external memory while attempting to preserve unrelated capabilities.",
-    "why_it_matters": "The role of Knowledge editing & memory consolidation is to connect Parametric memory, Continual learning & test-time adaptation pipelines to downstream capabilities including Memory lifecycle, forgetting & consolidation.",
+    "why_it_matters": "In this atlas graph, Knowledge editing & memory consolidation is modeled as depending on Parametric memory, Continual learning & test-time adaptation pipelines and feeding downstream nodes such as Memory lifecycle, forgetting & consolidation.",
     "examples": [
-      "substrate for Memory lifecycle, forgetting & consolidation",
+      "atlas downstream link to Memory lifecycle, forgetting & consolidation",
       "combined with Parametric memory"
     ],
     "limitations": [
@@ -33,19 +33,19 @@
         "id": "parametric_memory",
         "type": "retrieves_from",
         "strength": "core",
-        "rationale": "Knowledge editing & memory consolidation stores, selects, or obtains information through Parametric memory."
+        "rationale": "In this atlas graph, Knowledge editing & memory consolidation has a `retrieves_from` dependency on Parametric memory with `core` strength."
       },
       {
         "id": "continual_testtime_adaptation",
         "type": "uses",
         "strength": "core",
-        "rationale": "Knowledge editing & memory consolidation uses Continual learning & test-time adaptation pipelines as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Knowledge editing & memory consolidation has a `uses` dependency on Continual learning & test-time adaptation pipelines because Continual learning & test-time adaptation pipelines is modeled as a reusable ingredient for the node."
       },
       {
         "id": "causal_inference",
         "type": "uses",
         "strength": "common",
-        "rationale": "Knowledge editing & memory consolidation uses Causal inference as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Knowledge editing & memory consolidation has a `uses` dependency on Causal inference because Causal inference is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,16 +57,16 @@
       "text": "Knowledge editing changes selected factual or behavioral associations in parameters or external memory while attempting to preserve unrelated capabilities."
     },
     {
-      "unit_id": "ddbe462d3e418436",
+      "unit_id": "7e2b24ae14317f15",
       "node_id": "knowledge_editing",
       "field": "why_it_matters",
-      "text": "The role of Knowledge editing & memory consolidation is to connect Parametric memory, Continual learning & test-time adaptation pipelines to downstream capabilities including Memory lifecycle, forgetting & consolidation."
+      "text": "In this atlas graph, Knowledge editing & memory consolidation is modeled as depending on Parametric memory, Continual learning & test-time adaptation pipelines and feeding downstream nodes such as Memory lifecycle, forgetting & consolidation."
     },
     {
-      "unit_id": "cc55ca9fce76cd27",
+      "unit_id": "48454261a06ebd17",
       "node_id": "knowledge_editing",
       "field": "examples[1]",
-      "text": "substrate for Memory lifecycle, forgetting & consolidation"
+      "text": "atlas downstream link to Memory lifecycle, forgetting & consolidation"
     },
     {
       "unit_id": "ec99b871d4ace2ee",
@@ -81,48 +81,48 @@
       "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Parametric memory, Continual learning & test-time adaptation pipelines."
     },
     {
-      "unit_id": "5733c670524a654d",
+      "unit_id": "af72d94a68eb3fca",
       "node_id": "knowledge_editing",
       "field": "dependencies.parametric_memory.rationale",
-      "text": "Knowledge editing & memory consolidation stores, selects, or obtains information through Parametric memory."
+      "text": "In this atlas graph, Knowledge editing & memory consolidation has a `retrieves_from` dependency on Parametric memory with `core` strength."
     },
     {
-      "unit_id": "809a3515d952b070",
+      "unit_id": "fb7492675415e4ba",
       "node_id": "knowledge_editing",
       "field": "dependencies.continual_testtime_adaptation.rationale",
-      "text": "Knowledge editing & memory consolidation uses Continual learning & test-time adaptation pipelines as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Knowledge editing & memory consolidation has a `uses` dependency on Continual learning & test-time adaptation pipelines because Continual learning & test-time adaptation pipelines is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "59b94215d08057f4",
+      "unit_id": "66e1db2e1f632e0c",
       "node_id": "knowledge_editing",
       "field": "dependencies.causal_inference.rationale",
-      "text": "Knowledge editing & memory consolidation uses Causal inference as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Knowledge editing & memory consolidation has a `uses` dependency on Causal inference because Causal inference is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "ed90b094e5d16473",
+      "edge_id": "fe5ff8d9d8effc5c",
       "node_id": "knowledge_editing",
       "dependency_id": "parametric_memory",
       "type": "retrieves_from",
       "strength": "core",
-      "rationale": "Knowledge editing & memory consolidation stores, selects, or obtains information through Parametric memory."
+      "rationale": "In this atlas graph, Knowledge editing & memory consolidation has a `retrieves_from` dependency on Parametric memory with `core` strength."
     },
     {
-      "edge_id": "d9a4e0bd59f7ab77",
+      "edge_id": "889eb38a134ba59a",
       "node_id": "knowledge_editing",
       "dependency_id": "continual_testtime_adaptation",
       "type": "uses",
       "strength": "core",
-      "rationale": "Knowledge editing & memory consolidation uses Continual learning & test-time adaptation pipelines as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Knowledge editing & memory consolidation has a `uses` dependency on Continual learning & test-time adaptation pipelines because Continual learning & test-time adaptation pipelines is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "4eb93f810633c426",
+      "edge_id": "863ec37b412461d9",
       "node_id": "knowledge_editing",
       "dependency_id": "causal_inference",
       "type": "uses",
       "strength": "common",
-      "rationale": "Knowledge editing & memory consolidation uses Causal inference as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Knowledge editing & memory consolidation has a `uses` dependency on Causal inference because Causal inference is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

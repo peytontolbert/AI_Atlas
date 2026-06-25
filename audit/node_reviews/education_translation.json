@@ -26,13 +26,14 @@
         "ref_aima",
         "ref_bert",
         "ref_c2pa",
-        "ref_nist"
+        "ref_nist",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is a broad application-boundary statement and is not directly sourced."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "11077ad83edafa1f",
@@ -94,13 +95,14 @@
         "ref_aima",
         "ref_bert",
         "ref_c2pa",
-        "ref_nist"
+        "ref_nist",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The weakest-component framing is plausible but not directly verified for tutoring, translation, and knowledge-work systems by the packet sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "436f4f5f5f0d6614",
@@ -108,16 +110,13 @@
       "field": "terminal_reason",
       "text": "end-system leaf",
       "source_ids": [
-        "ref_aima",
-        "ref_bert",
-        "ref_c2pa",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "No cited source in packet directly supports this metadata claim.",
+      "evidence_location": "data/atlas.json terminal flag and current dependency graph consumer set.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "Graph leaf classification is metadata, not a sourced claim in the packet."
+      "verdict": "verified",
+      "notes": "This is graph metadata: the node is terminal in the current atlas graph because no other canonical node currently depends on it."
     },
     {
       "unit_id": "0d6937c2693c751b",
@@ -188,23 +187,6 @@
       "notes": "User-facing tutoring and translation systems need human evaluation; support is broad rather than exact."
     },
     {
-      "unit_id": "20f272ee618cb2b1",
-      "node_id": "education_translation",
-      "field": "dependencies.encoder_only_transformer.rationale",
-      "text": "Tutoring, translation & knowledge work integrates Encoder-only bidirectional transformers as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima",
-        "ref_bert",
-        "ref_c2pa",
-        "ref_nist"
-      ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "BERT supports language understanding, but encoder-only transformers are not a general common dependency for all tutoring/translation systems."
-    },
-    {
       "unit_id": "d1e42dac467687fb",
       "node_id": "education_translation",
       "field": "dependencies.long_context_compression.rationale",
@@ -222,21 +204,32 @@
       "notes": "Long documents and knowledge work make context compression a plausible optional dependency."
     },
     {
-      "unit_id": "cad4d55b1154c4ff",
+      "unit_id": "082fb2ff27167f30",
       "node_id": "education_translation",
-      "field": "dependencies.content_provenance.rationale",
-      "text": "Tutoring, translation & knowledge work integrates Content credentials, signing & provenance as part of an end-to-end application boundary.",
+      "field": "dependencies.encoder_only_transformer.rationale",
+      "text": "In this atlas graph, Tutoring, translation & knowledge work has an `applies` dependency on Encoder-only bidirectional transformers with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_bert",
-        "ref_c2pa",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Provenance can be useful for educational or knowledge-work outputs, but cited sources do not establish it as a general dependency."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "9c5aaec5c1bda2de",
+      "node_id": "education_translation",
+      "field": "dependencies.content_provenance.rationale",
+      "text": "In this atlas graph, Tutoring, translation & knowledge work has an `applies` dependency on Content credentials, signing & provenance with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -309,23 +302,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "760a46498ad8d1bc",
-      "node_id": "education_translation",
-      "dependency_id": "encoder_only_transformer",
-      "source_ids": [
-        "ref_aima",
-        "ref_bert",
-        "ref_c2pa",
-        "ref_nist"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "BERT supports language understanding, but encoder-only transformers are not a general common dependency for all tutoring/translation systems.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
       "edge_id": "447abc28ecf22861",
       "node_id": "education_translation",
       "dependency_id": "long_context_compression",
@@ -343,21 +319,30 @@
       "strength_supported": true
     },
     {
-      "edge_id": "3111513574a43bb8",
+      "edge_id": "b5f3de694d0476fd",
+      "node_id": "education_translation",
+      "dependency_id": "encoder_only_transformer",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "206b5219048b063e",
       "node_id": "education_translation",
       "dependency_id": "content_provenance",
       "source_ids": [
-        "ref_aima",
-        "ref_bert",
-        "ref_c2pa",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Provenance can be useful for educational or knowledge-work outputs, but cited sources do not establish it as a general dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

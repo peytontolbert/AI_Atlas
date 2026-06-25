@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Input-dependent state-space parameters selectively propagate or forget information while preserving linear-time scans.",
-    "why_it_matters": "The role of Selective state-space scan is to connect State-space transitions, Gating & multiplicative control to downstream capabilities including Selective state-space models (Mamba family).",
+    "why_it_matters": "In this atlas graph, Selective state-space scan is modeled as depending on State-space transitions, Gating & multiplicative control and feeding downstream nodes such as Selective state-space models (Mamba family).",
     "examples": [
-      "substrate for Selective state-space models (Mamba family)",
+      "atlas downstream link to Selective state-space models (Mamba family)",
       "combined with State-space transitions"
     ],
     "limitations": [
@@ -46,7 +46,7 @@
         "id": "algorithms_data_structures",
         "type": "uses",
         "strength": "common",
-        "rationale": "Selective state-space scan uses Algorithms & data structures as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Selective state-space scan has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Input-dependent state-space parameters selectively propagate or forget information while preserving linear-time scans."
     },
     {
-      "unit_id": "2a4c086d99ffd9e2",
+      "unit_id": "98d636361507449b",
       "node_id": "selective_scan",
       "field": "why_it_matters",
-      "text": "The role of Selective state-space scan is to connect State-space transitions, Gating & multiplicative control to downstream capabilities including Selective state-space models (Mamba family)."
+      "text": "In this atlas graph, Selective state-space scan is modeled as depending on State-space transitions, Gating & multiplicative control and feeding downstream nodes such as Selective state-space models (Mamba family)."
     },
     {
-      "unit_id": "6b1b035e463ababe",
+      "unit_id": "08363fc024222082",
       "node_id": "selective_scan",
       "field": "examples[1]",
-      "text": "substrate for Selective state-space models (Mamba family)"
+      "text": "atlas downstream link to Selective state-space models (Mamba family)"
     },
     {
       "unit_id": "eca63e9ea395ebc8",
@@ -94,10 +94,10 @@
       "text": "Selective state-space scan is assembled in part from the mechanism or model component Gating & multiplicative control."
     },
     {
-      "unit_id": "8c392763fd5a8473",
+      "unit_id": "a45acbd0e7861ab5",
       "node_id": "selective_scan",
       "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "Selective state-space scan uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Selective state-space scan has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -118,12 +118,12 @@
       "rationale": "Selective state-space scan is assembled in part from the mechanism or model component Gating & multiplicative control."
     },
     {
-      "edge_id": "167b4301faaa209c",
+      "edge_id": "76a7e85434462d9d",
       "node_id": "selective_scan",
       "dependency_id": "algorithms_data_structures",
       "type": "uses",
       "strength": "common",
-      "rationale": "Selective state-space scan uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Selective state-space scan has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

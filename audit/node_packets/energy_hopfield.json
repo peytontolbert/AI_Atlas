@@ -15,9 +15,9 @@
     ],
     "aliases": [],
     "definition": "Energy-based, Hopfield, and Boltzmann models assign scalar compatibility to configurations and perform recall or generation by moving toward lower-energy states.",
-    "why_it_matters": "The role of Energy-based, Hopfield & Boltzmann models is to connect Energy-based objectives, Recurrence & feedback state to downstream capabilities including Time-series forecasting, anomaly & fraud detection.",
+    "why_it_matters": "In this atlas graph, Energy-based, Hopfield & Boltzmann models is modeled as depending on Energy-based objectives, Recurrence & feedback state and feeding downstream nodes such as Time-series forecasting, anomaly & fraud detection.",
     "examples": [
-      "substrate for Time-series forecasting, anomaly & fraud detection",
+      "atlas downstream link to Time-series forecasting, anomaly & fraud detection",
       "combined with Energy-based objectives"
     ],
     "limitations": [
@@ -35,7 +35,7 @@
         "id": "energy_objective",
         "type": "optimizes_for",
         "strength": "core",
-        "rationale": "Energy-based, Hopfield & Boltzmann models is learned, selected, or evaluated using the objective family Energy-based objectives."
+        "rationale": "In this atlas graph, Energy-based, Hopfield & Boltzmann models has an `optimizes_for` dependency on Energy-based objectives because Energy-based objectives is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "recurrence",
@@ -47,7 +47,7 @@
         "id": "memory_read_write",
         "type": "composes",
         "strength": "common",
-        "rationale": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Differentiable memory read/write."
+        "rationale": "In this atlas graph, Energy-based, Hopfield & Boltzmann models has a `composes` dependency on Differentiable memory read/write with `common` strength."
       }
     ]
   },
@@ -59,16 +59,16 @@
       "text": "Energy-based, Hopfield, and Boltzmann models assign scalar compatibility to configurations and perform recall or generation by moving toward lower-energy states."
     },
     {
-      "unit_id": "c5fa0d4ed0d007b5",
+      "unit_id": "b045b67a250fb530",
       "node_id": "energy_hopfield",
       "field": "why_it_matters",
-      "text": "The role of Energy-based, Hopfield & Boltzmann models is to connect Energy-based objectives, Recurrence & feedback state to downstream capabilities including Time-series forecasting, anomaly & fraud detection."
+      "text": "In this atlas graph, Energy-based, Hopfield & Boltzmann models is modeled as depending on Energy-based objectives, Recurrence & feedback state and feeding downstream nodes such as Time-series forecasting, anomaly & fraud detection."
     },
     {
-      "unit_id": "6b547a82e8e2825b",
+      "unit_id": "4d73f30d34da555e",
       "node_id": "energy_hopfield",
       "field": "examples[1]",
-      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+      "text": "atlas downstream link to Time-series forecasting, anomaly & fraud detection"
     },
     {
       "unit_id": "94e18609df75a33a",
@@ -83,10 +83,10 @@
       "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Energy-based objectives, Recurrence & feedback state."
     },
     {
-      "unit_id": "007708e023cbe3b4",
+      "unit_id": "bab542a8955945a9",
       "node_id": "energy_hopfield",
       "field": "dependencies.energy_objective.rationale",
-      "text": "Energy-based, Hopfield & Boltzmann models is learned, selected, or evaluated using the objective family Energy-based objectives."
+      "text": "In this atlas graph, Energy-based, Hopfield & Boltzmann models has an `optimizes_for` dependency on Energy-based objectives because Energy-based objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "unit_id": "5ce1516d51089580",
@@ -95,20 +95,20 @@
       "text": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Recurrence & feedback state."
     },
     {
-      "unit_id": "7fb6807b8d65c524",
+      "unit_id": "eef3c7e19ce0d06e",
       "node_id": "energy_hopfield",
       "field": "dependencies.memory_read_write.rationale",
-      "text": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Differentiable memory read/write."
+      "text": "In this atlas graph, Energy-based, Hopfield & Boltzmann models has a `composes` dependency on Differentiable memory read/write with `common` strength."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "9ceee84ab7821430",
+      "edge_id": "8ab0eca4aad82a30",
       "node_id": "energy_hopfield",
       "dependency_id": "energy_objective",
       "type": "optimizes_for",
       "strength": "core",
-      "rationale": "Energy-based, Hopfield & Boltzmann models is learned, selected, or evaluated using the objective family Energy-based objectives."
+      "rationale": "In this atlas graph, Energy-based, Hopfield & Boltzmann models has an `optimizes_for` dependency on Energy-based objectives because Energy-based objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "edge_id": "7f12d61df4f998a4",
@@ -119,12 +119,12 @@
       "rationale": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Recurrence & feedback state."
     },
     {
-      "edge_id": "82eb0d424141a6e5",
+      "edge_id": "6e39bc5057160942",
       "node_id": "energy_hopfield",
       "dependency_id": "memory_read_write",
       "type": "composes",
       "strength": "common",
-      "rationale": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Differentiable memory read/write."
+      "rationale": "In this atlas graph, Energy-based, Hopfield & Boltzmann models has a `composes` dependency on Differentiable memory read/write with `common` strength."
     }
   ],
   "candidate_references": {

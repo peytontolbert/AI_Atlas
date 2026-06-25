@@ -1,1 +1,191 @@
-{"sentence_reviews":[{"unit_id":"3fdaeabf5b214572","node_id":"program_synthesis","field":"definition","text":"Program synthesis searches a space of executable programs from specifications, examples, tests, types, natural-language intent, or learned priors.","source_ids":["ref_aima","ref_dlbook","ref_pml","ref_transformer"],"evidence_location":"AIMA search/programming background and ML sequence-modeling/probabilistic-prior evidence; program-synthesis-specific source is not cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The definition is accurate, but the packet sources support it indirectly rather than through a dedicated synthesis reference."},{"unit_id":"770bf2c0d5e96bed","node_id":"program_synthesis","field":"why_it_matters","text":"The role of Program synthesis & code search is to connect Programs, ASTs, bytecode & intermediate representations, Graph search, BFS/DFS & A* to downstream capabilities including Code models, copilots & repository intelligence.","source_ids":["ref_aima","ref_transformer"],"evidence_location":"Search and sequence-modeling background; code-model downstream role is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The dependencies are plausible, but the exact repository-intelligence framing is not directly cited."},{"unit_id":"cf6dbde072072bb9","node_id":"program_synthesis","field":"examples[1]","text":"substrate for Code models, copilots & repository intelligence","source_ids":["ref_transformer","ref_dlbook"],"evidence_location":"Transformer/sequence-modeling background; code-copilot-specific evidence is not cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Program synthesis relates to code assistants, but the packet lacks direct code-model or repository-intelligence sources."},{"unit_id":"a89704fb80e77633","node_id":"program_synthesis","field":"examples[2]","text":"combined with Programs, ASTs, bytecode & intermediate representations","source_ids":["ref_aima"],"evidence_location":"AIMA symbolic/search background; program IR details are not directly cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Program synthesis naturally manipulates program representations, though the source support is indirect."},{"unit_id":"11d00ef1bccf6bed","node_id":"program_synthesis","field":"limitations[1]","text":"Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Graph search, BFS/DFS & A*.","source_ids":["ref_aima"],"evidence_location":"AIMA search complexity and problem-space search background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Search cost is supported; self-evaluation/confident-error language is not directly sourced."},{"unit_id":"18fbf1734315e432","node_id":"program_synthesis","field":"dependencies.programs_ast_ir.rationale","text":"Program synthesis & code search uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"Symbolic representation/search background; program-representation specificity is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"A program-synthesis system must represent candidate programs, but the exact AST/IR phrasing is not directly cited."},{"unit_id":"7721b62148f8b188","node_id":"program_synthesis","field":"dependencies.graph_astar_search.rationale","text":"Program synthesis & code search uses Graph search, BFS/DFS & A* as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA state-space search material.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Search over candidate programs is supported, but BFS/DFS/A* are examples rather than necessary ingredients."},{"unit_id":"ee57ec76fbeb2915","node_id":"program_synthesis","field":"dependencies.decoder_only_transformer.rationale","text":"Program synthesis & code search uses Decoder-only causal transformers as a reusable ingredient in its defined operation.","source_ids":["ref_transformer"],"evidence_location":"Transformer autoregressive sequence modeling evidence.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Modern code generation can use decoder-only transformers, but program synthesis as a field does not require them."},{"unit_id":"9833dbb373a3e71a","node_id":"program_synthesis","field":"dependencies.constraint_program_execution.rationale","text":"Program synthesis & code search uses Constraint propagation, logic & program execution as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA constraint/search and logical reasoning background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Constraint-guided synthesis is plausible, but not universal and not directly sourced as this dependency."}],"edge_reviews":[{"edge_id":"c499a585fa1e65ba","node_id":"program_synthesis","dependency_id":"programs_ast_ir","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Program representation is a core practical dependency, though direct AST/IR evidence is indirect.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"df90030de3d8415c","node_id":"program_synthesis","dependency_id":"graph_astar_search","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Search is core, but BFS/DFS/A* are not the only or necessarily direct mechanisms.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"99343f16604fd397","node_id":"program_synthesis","dependency_id":"decoder_only_transformer","source_ids":["ref_transformer"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Relevant to neural code generation, but not a general dependency of program synthesis.","relationship_type_supported":true,"strength_supported":false},{"edge_id":"d24fd7d0bcea5679","node_id":"program_synthesis","dependency_id":"constraint_program_execution","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Constraint execution is a common synthesis ingredient, but the evidence is indirect.","relationship_type_supported":true,"strength_supported":true}]}
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "3fdaeabf5b214572",
+      "node_id": "program_synthesis",
+      "field": "definition",
+      "text": "Program synthesis searches a space of executable programs from specifications, examples, tests, types, natural-language intent, or learned priors.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "ref_pml",
+        "ref_transformer"
+      ],
+      "evidence_location": "AIMA search/programming background and ML sequence-modeling/probabilistic-prior evidence; program-synthesis-specific source is not cited.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition is accurate, but the packet sources support it indirectly rather than through a dedicated synthesis reference."
+    },
+    {
+      "unit_id": "a89704fb80e77633",
+      "node_id": "program_synthesis",
+      "field": "examples[2]",
+      "text": "combined with Programs, ASTs, bytecode & intermediate representations",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA symbolic/search background; program IR details are not directly cited.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Program synthesis naturally manipulates program representations, though the source support is indirect."
+    },
+    {
+      "unit_id": "11d00ef1bccf6bed",
+      "node_id": "program_synthesis",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Graph search, BFS/DFS & A*.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "81904b113725697d",
+      "node_id": "program_synthesis",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Program synthesis & code search is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Graph search, BFS/DFS & A* and feeding downstream nodes such as Code models, copilots & repository intelligence.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a4f14729a5f29dbb",
+      "node_id": "program_synthesis",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Code models, copilots & repository intelligence",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "09519348abe23b08",
+      "node_id": "program_synthesis",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ec13d9d7ee4f66ec",
+      "node_id": "program_synthesis",
+      "field": "dependencies.graph_astar_search.rationale",
+      "text": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Graph search, BFS/DFS & A* because Graph search, BFS/DFS & A* is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9ef523ff641f59f7",
+      "node_id": "program_synthesis",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a5c1699838423244",
+      "node_id": "program_synthesis",
+      "field": "dependencies.constraint_program_execution.rationale",
+      "text": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Constraint propagation, logic & program execution because Constraint propagation, logic & program execution is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "dfc22a97363cb55b",
+      "node_id": "program_synthesis",
+      "dependency_id": "programs_ast_ir",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "542d51170c88be87",
+      "node_id": "program_synthesis",
+      "dependency_id": "graph_astar_search",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "d4416404b83975ba",
+      "node_id": "program_synthesis",
+      "dependency_id": "decoder_only_transformer",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "cbc6cb39d6bbfc4f",
+      "node_id": "program_synthesis",
+      "dependency_id": "constraint_program_execution",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "program_synthesis",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
+}

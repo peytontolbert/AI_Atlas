@@ -47,13 +47,13 @@
         "id": "residual_connections",
         "type": "composes",
         "strength": "common",
-        "rationale": "Adaptive depth, early exit & token skipping is assembled in part from the mechanism or model component Residual, skip & highway connections."
+        "rationale": "In this atlas graph, Adaptive depth, early exit & token skipping has a `composes` dependency on Residual, skip & highway connections with `common` strength."
       },
       {
         "id": "calibration_uncertainty_objective",
         "type": "uses",
         "strength": "common",
-        "rationale": "Adaptive depth, early exit & token skipping uses Calibration, uncertainty & risk objectives as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Adaptive depth, early exit & token skipping has a `uses` dependency on Calibration, uncertainty & risk objectives because Calibration, uncertainty & risk objectives is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -107,16 +107,16 @@
       "text": "Adaptive depth, early exit & token skipping is assembled in part from the mechanism or model component Routing, conditional computation & mixture-of-experts."
     },
     {
-      "unit_id": "20b661fd1ba53e38",
+      "unit_id": "f340b2c49de8948a",
       "node_id": "adaptive_depth_early_exit",
       "field": "dependencies.residual_connections.rationale",
-      "text": "Adaptive depth, early exit & token skipping is assembled in part from the mechanism or model component Residual, skip & highway connections."
+      "text": "In this atlas graph, Adaptive depth, early exit & token skipping has a `composes` dependency on Residual, skip & highway connections with `common` strength."
     },
     {
-      "unit_id": "d1c21b522d333244",
+      "unit_id": "b13872d689bedb40",
       "node_id": "adaptive_depth_early_exit",
       "field": "dependencies.calibration_uncertainty_objective.rationale",
-      "text": "Adaptive depth, early exit & token skipping uses Calibration, uncertainty & risk objectives as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Adaptive depth, early exit & token skipping has a `uses` dependency on Calibration, uncertainty & risk objectives because Calibration, uncertainty & risk objectives is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -137,20 +137,20 @@
       "rationale": "Adaptive depth, early exit & token skipping is assembled in part from the mechanism or model component Routing, conditional computation & mixture-of-experts."
     },
     {
-      "edge_id": "90c227508d432e4c",
+      "edge_id": "b5ae02f0e89185e5",
       "node_id": "adaptive_depth_early_exit",
       "dependency_id": "residual_connections",
       "type": "composes",
       "strength": "common",
-      "rationale": "Adaptive depth, early exit & token skipping is assembled in part from the mechanism or model component Residual, skip & highway connections."
+      "rationale": "In this atlas graph, Adaptive depth, early exit & token skipping has a `composes` dependency on Residual, skip & highway connections with `common` strength."
     },
     {
-      "edge_id": "3ab7bac650e852e1",
+      "edge_id": "21bb7e0b3bb8a77f",
       "node_id": "adaptive_depth_early_exit",
       "dependency_id": "calibration_uncertainty_objective",
       "type": "uses",
       "strength": "common",
-      "rationale": "Adaptive depth, early exit & token skipping uses Calibration, uncertainty & risk objectives as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Adaptive depth, early exit & token skipping has a `uses` dependency on Calibration, uncertainty & risk objectives because Calibration, uncertainty & risk objectives is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

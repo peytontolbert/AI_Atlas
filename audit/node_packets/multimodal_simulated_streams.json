@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Aligned modalities, simulators, and live streams provide richer context and interactive experience.",
-    "why_it_matters": "The role of Multimodal, simulated & streaming data is to connect Datasets, sampling & splits, Images, video & spatial grids to downstream capabilities including Model-based reinforcement learning, Continual & online learning, Neuro-symbolic & physics-informed learning.",
+    "why_it_matters": "In this atlas graph, Multimodal, simulated & streaming data is modeled as depending on Datasets, sampling & splits, Images, video & spatial grids and feeding downstream nodes such as Model-based reinforcement learning, Continual & online learning, Neuro-symbolic & physics-informed learning.",
     "examples": [
-      "substrate for Model-based reinforcement learning",
-      "substrate for Continual & online learning",
-      "substrate for Neuro-symbolic & physics-informed learning"
+      "atlas downstream link to Model-based reinforcement learning",
+      "atlas downstream link to Continual & online learning",
+      "atlas downstream link to Neuro-symbolic & physics-informed learning"
     ],
     "limitations": [
       "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Datasets, sampling & splits, Images, video & spatial grids."
@@ -47,25 +47,25 @@
         "id": "audio_signals",
         "type": "represents_with",
         "strength": "common",
-        "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Waveforms, audio & spectrograms."
+        "rationale": "In this atlas graph, Multimodal, simulated & streaming data has a `represents_with` dependency on Waveforms, audio & spectrograms with `common` strength."
       },
       {
         "id": "tokens_vocab",
         "type": "represents_with",
         "strength": "common",
-        "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+        "rationale": "In this atlas graph, Multimodal, simulated & streaming data has a `represents_with` dependency on Tokens, vocabularies & symbolic units with `common` strength."
       },
       {
         "id": "distributed_systems",
         "type": "requires",
         "strength": "common",
-        "rationale": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Distributed systems & networking."
+        "rationale": "In this atlas graph, Multimodal, simulated & streaming data has a `requires` dependency on Distributed systems & networking with `common` strength."
       },
       {
         "id": "dynamical_control",
         "type": "requires",
         "strength": "optional",
-        "rationale": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+        "rationale": "In this atlas graph, Multimodal, simulated & streaming data has a `requires` dependency on Dynamical systems & control theory with `optional` strength."
       }
     ]
   },
@@ -77,28 +77,28 @@
       "text": "Aligned modalities, simulators, and live streams provide richer context and interactive experience."
     },
     {
-      "unit_id": "516b7b38e61ae6c5",
+      "unit_id": "2772cade96574b9b",
       "node_id": "multimodal_simulated_streams",
       "field": "why_it_matters",
-      "text": "The role of Multimodal, simulated & streaming data is to connect Datasets, sampling & splits, Images, video & spatial grids to downstream capabilities including Model-based reinforcement learning, Continual & online learning, Neuro-symbolic & physics-informed learning."
+      "text": "In this atlas graph, Multimodal, simulated & streaming data is modeled as depending on Datasets, sampling & splits, Images, video & spatial grids and feeding downstream nodes such as Model-based reinforcement learning, Continual & online learning, Neuro-symbolic & physics-informed learning."
     },
     {
-      "unit_id": "816fcedf7ecafcf7",
+      "unit_id": "9f7f387283bbc107",
       "node_id": "multimodal_simulated_streams",
       "field": "examples[1]",
-      "text": "substrate for Model-based reinforcement learning"
+      "text": "atlas downstream link to Model-based reinforcement learning"
     },
     {
-      "unit_id": "a7d96282e4516587",
+      "unit_id": "0193487e67088c40",
       "node_id": "multimodal_simulated_streams",
       "field": "examples[2]",
-      "text": "substrate for Continual & online learning"
+      "text": "atlas downstream link to Continual & online learning"
     },
     {
-      "unit_id": "a893ece00890fdc0",
+      "unit_id": "316f8f60ee9ce8e4",
       "node_id": "multimodal_simulated_streams",
       "field": "examples[3]",
-      "text": "substrate for Neuro-symbolic & physics-informed learning"
+      "text": "atlas downstream link to Neuro-symbolic & physics-informed learning"
     },
     {
       "unit_id": "95f2d57ee99a6b54",
@@ -119,28 +119,28 @@
       "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Images, video & spatial grids."
     },
     {
-      "unit_id": "522fac18ea1a3e76",
+      "unit_id": "73b20c187d502cd8",
       "node_id": "multimodal_simulated_streams",
       "field": "dependencies.audio_signals.rationale",
-      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Waveforms, audio & spectrograms."
+      "text": "In this atlas graph, Multimodal, simulated & streaming data has a `represents_with` dependency on Waveforms, audio & spectrograms with `common` strength."
     },
     {
-      "unit_id": "885f6ad6732a42d6",
+      "unit_id": "d8906b3bc999a197",
       "node_id": "multimodal_simulated_streams",
       "field": "dependencies.tokens_vocab.rationale",
-      "text": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+      "text": "In this atlas graph, Multimodal, simulated & streaming data has a `represents_with` dependency on Tokens, vocabularies & symbolic units with `common` strength."
     },
     {
-      "unit_id": "1bf1ddce87822896",
+      "unit_id": "e119ac2600d4c002",
       "node_id": "multimodal_simulated_streams",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Distributed systems & networking."
+      "text": "In this atlas graph, Multimodal, simulated & streaming data has a `requires` dependency on Distributed systems & networking with `common` strength."
     },
     {
-      "unit_id": "31f507c6d4b34195",
+      "unit_id": "7d0e4f5eccf8699d",
       "node_id": "multimodal_simulated_streams",
       "field": "dependencies.dynamical_control.rationale",
-      "text": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+      "text": "In this atlas graph, Multimodal, simulated & streaming data has a `requires` dependency on Dynamical systems & control theory with `optional` strength."
     }
   ],
   "edge_units": [
@@ -161,36 +161,36 @@
       "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Images, video & spatial grids."
     },
     {
-      "edge_id": "abbe1324609a1161",
+      "edge_id": "32691240cc4eead7",
       "node_id": "multimodal_simulated_streams",
       "dependency_id": "audio_signals",
       "type": "represents_with",
       "strength": "common",
-      "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Waveforms, audio & spectrograms."
+      "rationale": "In this atlas graph, Multimodal, simulated & streaming data has a `represents_with` dependency on Waveforms, audio & spectrograms with `common` strength."
     },
     {
-      "edge_id": "7cb0ef1525d84a95",
+      "edge_id": "c830d4659a08f1d4",
       "node_id": "multimodal_simulated_streams",
       "dependency_id": "tokens_vocab",
       "type": "represents_with",
       "strength": "common",
-      "rationale": "Multimodal, simulated & streaming data consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+      "rationale": "In this atlas graph, Multimodal, simulated & streaming data has a `represents_with` dependency on Tokens, vocabularies & symbolic units with `common` strength."
     },
     {
-      "edge_id": "2c3ea52ba08fc81c",
+      "edge_id": "ac8f5b3f0d575aad",
       "node_id": "multimodal_simulated_streams",
       "dependency_id": "distributed_systems",
       "type": "requires",
       "strength": "common",
-      "rationale": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Distributed systems & networking."
+      "rationale": "In this atlas graph, Multimodal, simulated & streaming data has a `requires` dependency on Distributed systems & networking with `common` strength."
     },
     {
-      "edge_id": "616eaa7ae7d596ab",
+      "edge_id": "cbef5e69b6eca79b",
       "node_id": "multimodal_simulated_streams",
       "dependency_id": "dynamical_control",
       "type": "requires",
       "strength": "optional",
-      "rationale": "Multimodal, simulated & streaming data rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+      "rationale": "In this atlas graph, Multimodal, simulated & streaming data has a `requires` dependency on Dynamical systems & control theory with `optional` strength."
     }
   ],
   "candidate_references": {

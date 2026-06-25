@@ -1,1 +1,177 @@
-{"sentence_reviews":[{"unit_id":"b5b9c8218011a5c9","node_id":"code_execution","field":"definition","text":"Code-execution environments parse and run generated programs inside interpreters, containers, virtual machines, or restricted sandboxes with observable results.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General computational/program execution background from ML texts; sandbox/container details are not directly cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The claim is technically accurate, but the packet lacks direct sources for interpreters, containers, VMs, or sandboxing."},{"unit_id":"007d1f1b2e92d569","node_id":"code_execution","field":"why_it_matters","text":"The role of Code execution, interpreters & sandboxes is to connect Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces to downstream capabilities including Reflection, critique, verifier & repair loops, Human-in-the-loop, permissions & sandboxing, Code models, copilots & repository intelligence.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General ML/computation background; downstream agent/code-tooling claims are synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The graph role is plausible but not directly supported by the provided sources."},{"unit_id":"35fe544c23da6ed2","node_id":"code_execution","field":"examples[1]","text":"substrate for Reflection, critique, verifier & repair loops","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General ML evaluation/computation background; verifier-loop evidence is not directly cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Execution can provide feedback for repair loops, but the packet lacks direct evidence."},{"unit_id":"1f7d08d91ef7b659","node_id":"code_execution","field":"examples[2]","text":"substrate for Human-in-the-loop, permissions & sandboxing","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General background only; human-in-the-loop and sandbox permission evidence is not cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The cited packet sources do not adequately support this operational/sandboxing claim."},{"unit_id":"978c9701a207d5c0","node_id":"code_execution","field":"examples[3]","text":"substrate for Code models, copilots & repository intelligence","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General ML modeling background; code assistant evidence is not cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Execution feedback is relevant to code assistants, but the packet lacks direct sources for this application."},{"unit_id":"6a76a619ddbb935c","node_id":"code_execution","field":"limitations[1]","text":"Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General computation/evaluation background; cost and verifier claims are synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Repeated execution can add cost, but the full limitation is not directly sourced."},{"unit_id":"17500e5e25ffaf09","node_id":"code_execution","field":"dependencies.programs_ast_ir.rationale","text":"Code execution, interpreters & sandboxes uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General computational representation background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Program execution necessarily uses executable representations, but AST/bytecode/IR specifics are not directly cited."},{"unit_id":"8fb192015b27e852","node_id":"code_execution","field":"dependencies.cache_tool_interfaces.rationale","text":"Code execution, interpreters & sandboxes uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General systems/interface background is not directly present in the packet sources.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"APIs and tool interfaces are plausible for sandboxed execution, but caches are not clearly a core dependency."},{"unit_id":"94401ef28d1237ab","node_id":"code_execution","field":"dependencies.constraint_program_execution.rationale","text":"Code execution, interpreters & sandboxes uses Constraint propagation, logic & program execution as a reusable ingredient in its defined operation.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General program-execution background only.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Program execution is relevant, but constraint propagation and logic are not necessary for ordinary code execution."}],"edge_reviews":[{"edge_id":"c686d408ce0f25ee","node_id":"code_execution","dependency_id":"programs_ast_ir","source_ids":["ref_dlbook","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Executable program representation is core, though cited evidence is indirect.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"758e6ce8c248d98c","node_id":"code_execution","dependency_id":"cache_tool_interfaces","source_ids":["ref_dlbook","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Tool/API interfaces are plausible; cache dependency and core strength are not well supported by the packet sources.","relationship_type_supported":true,"strength_supported":false},{"edge_id":"b45c9d8f9fda4fbb","node_id":"code_execution","dependency_id":"constraint_program_execution","source_ids":["ref_dlbook","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Program execution overlaps with this dependency label, but constraint propagation is not a clear common ingredient.","relationship_type_supported":true,"strength_supported":false}]}
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "b5b9c8218011a5c9",
+      "node_id": "code_execution",
+      "field": "definition",
+      "text": "Code-execution environments parse and run generated programs inside interpreters, containers, virtual machines, or restricted sandboxes with observable results.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "6a76a619ddbb935c",
+      "node_id": "code_execution",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "574e126e2d65ed9e",
+      "node_id": "code_execution",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Code execution, interpreters & sandboxes is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces and feeding downstream nodes such as Reflection, critique, verifier & repair loops, Human-in-the-loop, permissions & sandboxing, Code models, copilots & repository intelligence.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "0d4c8e0dee36f958",
+      "node_id": "code_execution",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Reflection, critique, verifier & repair loops",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "59b925dcf3b21389",
+      "node_id": "code_execution",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Human-in-the-loop, permissions & sandboxing",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8d4911df8ad44db8",
+      "node_id": "code_execution",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Code models, copilots & repository intelligence",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5782123fde1a0133",
+      "node_id": "code_execution",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "20ef5a63803d6dbe",
+      "node_id": "code_execution",
+      "field": "dependencies.cache_tool_interfaces.rationale",
+      "text": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5e3e313bc0944292",
+      "node_id": "code_execution",
+      "field": "dependencies.constraint_program_execution.rationale",
+      "text": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Constraint propagation, logic & program execution because Constraint propagation, logic & program execution is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "8c2c73fbc57bab1b",
+      "node_id": "code_execution",
+      "dependency_id": "programs_ast_ir",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "8cf3a33b901caede",
+      "node_id": "code_execution",
+      "dependency_id": "cache_tool_interfaces",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "9f5feed6968a786e",
+      "node_id": "code_execution",
+      "dependency_id": "constraint_program_execution",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "code_execution",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
+}

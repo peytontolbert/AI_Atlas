@@ -1,17 +1,166 @@
 {
   "sentence_reviews": [
-    {"unit_id":"806e334453495100","node_id":"vae","field":"definition","text":"A variational autoencoder learns a probabilistic latent space by optimizing reconstruction quality together with a regularized approximate posterior.","source_ids":["ref_vae"],"evidence_location":"Kingma & Welling 2013, Auto-Encoding Variational Bayes, abstract/model objective.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The VAE paper directly supports latent variables, approximate posterior inference, and a variational objective combining reconstruction and regularization/KL terms."},
-    {"unit_id":"4ffc3c5151fda14b","node_id":"vae","field":"why_it_matters","text":"The role of Variational autoencoders is to connect Autoencoders, ELBO & variational objectives to downstream capabilities including Drug discovery, protein & molecular design.","source_ids":["ref_vae","ref_pml"],"evidence_location":"Kingma & Welling 2013; PML variational inference and latent-variable modeling topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Autoencoder and ELBO connections are supported, but drug/protein downstream applications are not directly evidenced by the cited packet sources."},
-    {"unit_id":"8ae940cb3b8be3d8","node_id":"vae","field":"examples[1]","text":"substrate for Drug discovery, protein & molecular design","source_ids":["ref_vae"],"evidence_location":"Kingma & Welling 2013 VAE method.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The VAE source does not directly establish drug discovery, protein, or molecular-design applications."},
-    {"unit_id":"4ebb0205a4f1b747","node_id":"vae","field":"examples[2]","text":"combined with Autoencoders","source_ids":["ref_vae"],"evidence_location":"Kingma & Welling 2013 title and method framing.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The cited method is explicitly an auto-encoding variational Bayes framework."},
-    {"unit_id":"c7ab1e0abcd3c544","node_id":"vae","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Autoencoders, ELBO & variational objectives.","source_ids":["ref_vae","ref_pml"],"evidence_location":"Kingma & Welling 2013; PML variational inference/objectives.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are supported; the broad limitation statement is generic and not directly sourced."},
-    {"unit_id":"30e9d7a37fdf2504","node_id":"vae","field":"dependencies.autoencoder.rationale","text":"Variational autoencoders extends or specializes the architecture family Autoencoders.","source_ids":["ref_vae","ref_dlbook"],"evidence_location":"Kingma & Welling 2013; Deep Learning autoencoder chapter.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The canonical paper explicitly frames the method as variational auto-encoding."},
-    {"unit_id":"9b650efd7cc0a867","node_id":"vae","field":"dependencies.elbo_variational.rationale","text":"Variational autoencoders is learned, selected, or evaluated using the objective family ELBO & variational objectives.","source_ids":["ref_vae","ref_pml"],"evidence_location":"Kingma & Welling 2013 variational lower bound; PML variational inference.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The ELBO/variational lower bound is the core training objective."},
-    {"unit_id":"79c540ce1c9343cc","node_id":"vae","field":"dependencies.differentiable_sampling.rationale","text":"Variational autoencoders is assembled in part from the mechanism or model component Reparameterization & differentiable sampling.","source_ids":["ref_vae"],"evidence_location":"Kingma & Welling 2013 reparameterization trick.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The paper's reparameterization estimator is directly used to optimize stochastic latent-variable models."}
+    {
+      "unit_id": "806e334453495100",
+      "node_id": "vae",
+      "field": "definition",
+      "text": "A variational autoencoder learns a probabilistic latent space by optimizing reconstruction quality together with a regularized approximate posterior.",
+      "source_ids": [
+        "ref_vae"
+      ],
+      "evidence_location": "Kingma & Welling 2013, Auto-Encoding Variational Bayes, abstract/model objective.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The VAE paper directly supports latent variables, approximate posterior inference, and a variational objective combining reconstruction and regularization/KL terms."
+    },
+    {
+      "unit_id": "4ebb0205a4f1b747",
+      "node_id": "vae",
+      "field": "examples[2]",
+      "text": "combined with Autoencoders",
+      "source_ids": [
+        "ref_vae"
+      ],
+      "evidence_location": "Kingma & Welling 2013 title and method framing.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited method is explicitly an auto-encoding variational Bayes framework."
+    },
+    {
+      "unit_id": "c7ab1e0abcd3c544",
+      "node_id": "vae",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Autoencoders, ELBO & variational objectives.",
+      "source_ids": [
+        "ref_vae",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "30e9d7a37fdf2504",
+      "node_id": "vae",
+      "field": "dependencies.autoencoder.rationale",
+      "text": "Variational autoencoders extends or specializes the architecture family Autoencoders.",
+      "source_ids": [
+        "ref_vae",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Kingma & Welling 2013; Deep Learning autoencoder chapter.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The canonical paper explicitly frames the method as variational auto-encoding."
+    },
+    {
+      "unit_id": "79c540ce1c9343cc",
+      "node_id": "vae",
+      "field": "dependencies.differentiable_sampling.rationale",
+      "text": "Variational autoencoders is assembled in part from the mechanism or model component Reparameterization & differentiable sampling.",
+      "source_ids": [
+        "ref_vae"
+      ],
+      "evidence_location": "Kingma & Welling 2013 reparameterization trick.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The paper's reparameterization estimator is directly used to optimize stochastic latent-variable models."
+    },
+    {
+      "unit_id": "200a5df4cfa560bc",
+      "node_id": "vae",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Variational autoencoders is modeled as depending on Autoencoders, ELBO & variational objectives and feeding downstream nodes such as Drug discovery, protein & molecular design.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "23e5f17dac2c705f",
+      "node_id": "vae",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Drug discovery, protein & molecular design",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "211e4337ed8b1eaf",
+      "node_id": "vae",
+      "field": "dependencies.elbo_variational.rationale",
+      "text": "In this atlas graph, Variational autoencoders has an `optimizes_for` dependency on ELBO & variational objectives because ELBO & variational objectives is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"744583d251416247","node_id":"vae","dependency_id":"autoencoder","source_ids":["ref_vae","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"specializes/core is directly supported by the VAE formulation.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"c253cc563b6a6443","node_id":"vae","dependency_id":"elbo_variational","source_ids":["ref_vae","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"optimizes_for/core is directly supported by the variational lower-bound objective.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"9e9c4915d84704fe","node_id":"vae","dependency_id":"differentiable_sampling","source_ids":["ref_vae"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The reparameterization trick is central to the original VAE estimator; common strength is conservative.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "744583d251416247",
+      "node_id": "vae",
+      "dependency_id": "autoencoder",
+      "source_ids": [
+        "ref_vae",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "specializes/core is directly supported by the VAE formulation.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "9e9c4915d84704fe",
+      "node_id": "vae",
+      "dependency_id": "differentiable_sampling",
+      "source_ids": [
+        "ref_vae"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The reparameterization trick is central to the original VAE estimator; common strength is conservative.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "c684a081286b37e4",
+      "node_id": "vae",
+      "dependency_id": "elbo_variational",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "vae",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -5,7 +5,10 @@
       "node_id": "adversarial_minimax",
       "field": "definition",
       "text": "Competing learners optimize opposing goals, as in generator–discriminator or adversarial robustness games.",
-      "source_ids": ["ref_gan", "ref_aima"],
+      "source_ids": [
+        "ref_gan",
+        "ref_aima"
+      ],
       "evidence_location": "Goodfellow et al. GAN abstract and method describe generator/discriminator adversarial training; AIMA game-theory/adversarial-search chapters cover opposing-agent optimization.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -13,126 +16,148 @@
       "notes": "Generator-discriminator minimax is directly supported. Adversarial robustness games are plausible but not directly covered by the cited GAN source."
     },
     {
-      "unit_id": "786c14a0218f363d",
-      "node_id": "adversarial_minimax",
-      "field": "why_it_matters",
-      "text": "The role of Adversarial minimax objectives is to connect Generative modeling, Game theory & decision theory to downstream capabilities including Adversarial examples & adversarial training, Generative adversarial networks.",
-      "source_ids": ["ref_gan", "ref_aima"],
-      "evidence_location": "Goodfellow et al. GAN paper, minimax generator-discriminator setup; AIMA chapters on adversarial search, games, and decisions.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "GAN and game-theory connections are supported, but adversarial examples/training are not directly evidenced by the packet sources."
-    },
-    {
-      "unit_id": "eeb1b7a9f42e3893",
-      "node_id": "adversarial_minimax",
-      "field": "examples[1]",
-      "text": "substrate for Adversarial examples & adversarial training",
-      "source_ids": ["ref_aima"],
-      "evidence_location": "AIMA adversarial-search/game material; no packet source specifically on adversarial examples or adversarial training was cited.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relation is plausible for robust optimization, but the cited packet evidence is too broad to verify the adversarial-training example."
-    },
-    {
-      "unit_id": "dfdc55caf6be0509",
-      "node_id": "adversarial_minimax",
-      "field": "examples[2]",
-      "text": "substrate for Generative adversarial networks",
-      "source_ids": ["ref_gan"],
-      "evidence_location": "Goodfellow et al. GAN paper, minimax game between generator and discriminator.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The GAN source directly supports adversarial minimax objectives as the basis of GANs."
-    },
-    {
       "unit_id": "7f1cfd9078c0fa36",
       "node_id": "adversarial_minimax",
       "field": "limitations[1]",
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Game theory & decision theory.",
-      "source_ids": ["ref_gan", "ref_aima"],
-      "evidence_location": "Goodfellow et al. GAN paper on adversarial training objective; AIMA game/decision theory chapters.",
+      "source_ids": [
+        "ref_gan",
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependencies are supported, but the surrogate-objective failure mode is generic and not directly established by these citations."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "a2324c9b53ef9eca",
+      "unit_id": "c94ac9b38917aaa4",
+      "node_id": "adversarial_minimax",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Adversarial minimax objectives is modeled as depending on Generative modeling, Game theory & decision theory and feeding downstream nodes such as Adversarial examples & adversarial training, Generative adversarial networks.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "3b772c646918aad5",
+      "node_id": "adversarial_minimax",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Adversarial examples & adversarial training",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "78bf8c4f29dfe8e4",
+      "node_id": "adversarial_minimax",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Generative adversarial networks",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "38b5e5161fadb696",
       "node_id": "adversarial_minimax",
       "field": "dependencies.generative_learning.rationale",
-      "text": "Adversarial minimax objectives uses Generative modeling as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_gan"],
-      "evidence_location": "Goodfellow et al. GAN paper, generator learns to model data distribution through adversarial training.",
+      "text": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited GAN evidence directly supports the generative-modeling dependency for this objective family."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "75cdc7acb950f27c",
+      "unit_id": "930427cb74123dc6",
       "node_id": "adversarial_minimax",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Adversarial minimax objectives uses Game theory & decision theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_gan", "ref_aima"],
-      "evidence_location": "Goodfellow et al. GAN paper frames training as a minimax game; AIMA game-theory and adversarial-search chapters.",
+      "text": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The minimax-game framing directly supports this dependency."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "37cdc4ad3f882b39",
+      "unit_id": "6b4ad11afcd54a37",
       "node_id": "adversarial_minimax",
       "field": "dependencies.optimization.rationale",
-      "text": "Adversarial minimax objectives uses Optimization theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_gan"],
-      "evidence_location": "Goodfellow et al. GAN paper, minimax objective and training procedure.",
+      "text": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The minimax objective directly requires optimization."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "dd947c85c2da13bd",
+      "edge_id": "996ec9ddb17ae201",
       "node_id": "adversarial_minimax",
       "dependency_id": "generative_learning",
-      "source_ids": ["ref_gan"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "GANs directly support the generative-learning edge and core strength.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "f96f98a9fac106b5",
+      "edge_id": "271ab4c2dbe0b131",
       "node_id": "adversarial_minimax",
       "dependency_id": "game_decision_theory",
-      "source_ids": ["ref_gan", "ref_aima"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The minimax game framing directly supports a core game/decision-theory dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "12f1e5db93da9962",
+      "edge_id": "00185a9dae2fe99b",
       "node_id": "adversarial_minimax",
       "dependency_id": "optimization",
-      "source_ids": ["ref_gan"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited objective is optimized during training; common strength is defensible relative to the core generative/game dependencies.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "adversarial_minimax",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

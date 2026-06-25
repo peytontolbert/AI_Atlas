@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Decision trees recursively partition feature space; random forests average decorrelated trees, and gradient boosting adds trees that correct earlier residual error.",
-    "why_it_matters": "The role of Decision trees, random forests & boosted trees is to connect Recursive partitioning & ensembling, Supervised learning to downstream capabilities including Recommendation, ranking & personalization, Tabular predictive analytics & decision support.",
+    "why_it_matters": "In this atlas graph, Decision trees, random forests & boosted trees is modeled as depending on Recursive partitioning & ensembling, Supervised learning and feeding downstream nodes such as Recommendation, ranking & personalization, Tabular predictive analytics & decision support.",
     "examples": [
-      "substrate for Recommendation, ranking & personalization",
-      "substrate for Tabular predictive analytics & decision support"
+      "atlas downstream link to Recommendation, ranking & personalization",
+      "atlas downstream link to Tabular predictive analytics & decision support"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Recursive partitioning & ensembling, Supervised learning."
@@ -45,7 +45,7 @@
         "id": "regression_losses",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Decision trees, random forests & boosted trees is learned, selected, or evaluated using the objective family Regression losses (MSE, MAE, robust)."
+        "rationale": "In this atlas graph, Decision trees, random forests & boosted trees has an `optimizes_for` dependency on Regression losses (MSE, MAE, robust) because Regression losses (MSE, MAE, robust) is modeled as the objective family for learning, selection, or evaluation."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "Decision trees recursively partition feature space; random forests average decorrelated trees, and gradient boosting adds trees that correct earlier residual error."
     },
     {
-      "unit_id": "0f7cacdddd82e1c1",
+      "unit_id": "b1b505230f3e250e",
       "node_id": "tree_ensemble_models",
       "field": "why_it_matters",
-      "text": "The role of Decision trees, random forests & boosted trees is to connect Recursive partitioning & ensembling, Supervised learning to downstream capabilities including Recommendation, ranking & personalization, Tabular predictive analytics & decision support."
+      "text": "In this atlas graph, Decision trees, random forests & boosted trees is modeled as depending on Recursive partitioning & ensembling, Supervised learning and feeding downstream nodes such as Recommendation, ranking & personalization, Tabular predictive analytics & decision support."
     },
     {
-      "unit_id": "0f49df7043ed7589",
+      "unit_id": "1fccb2be2aa617a9",
       "node_id": "tree_ensemble_models",
       "field": "examples[1]",
-      "text": "substrate for Recommendation, ranking & personalization"
+      "text": "atlas downstream link to Recommendation, ranking & personalization"
     },
     {
-      "unit_id": "ef75dda025d150b7",
+      "unit_id": "291b53a8c958397c",
       "node_id": "tree_ensemble_models",
       "field": "examples[2]",
-      "text": "substrate for Tabular predictive analytics & decision support"
+      "text": "atlas downstream link to Tabular predictive analytics & decision support"
     },
     {
       "unit_id": "0dccf595437c4a41",
@@ -93,10 +93,10 @@
       "text": "Decision trees, random forests & boosted trees follows the learning setup expressed by Supervised learning."
     },
     {
-      "unit_id": "59429303339129e9",
+      "unit_id": "c172806e8c59fbd2",
       "node_id": "tree_ensemble_models",
       "field": "dependencies.regression_losses.rationale",
-      "text": "Decision trees, random forests & boosted trees is learned, selected, or evaluated using the objective family Regression losses (MSE, MAE, robust)."
+      "text": "In this atlas graph, Decision trees, random forests & boosted trees has an `optimizes_for` dependency on Regression losses (MSE, MAE, robust) because Regression losses (MSE, MAE, robust) is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "edge_units": [
@@ -117,12 +117,12 @@
       "rationale": "Decision trees, random forests & boosted trees follows the learning setup expressed by Supervised learning."
     },
     {
-      "edge_id": "5f25328b37d244eb",
+      "edge_id": "809b2587092eb327",
       "node_id": "tree_ensemble_models",
       "dependency_id": "regression_losses",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Decision trees, random forests & boosted trees is learned, selected, or evaluated using the objective family Regression losses (MSE, MAE, robust)."
+      "rationale": "In this atlas graph, Decision trees, random forests & boosted trees has an `optimizes_for` dependency on Regression losses (MSE, MAE, robust) because Regression losses (MSE, MAE, robust) is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "candidate_references": {

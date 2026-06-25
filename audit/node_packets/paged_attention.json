@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Paged attention manages key–value cache blocks through virtual-memory-like allocation so variable-length generations share accelerator memory efficiently.",
-    "why_it_matters": "The role of Paged attention & KV-memory management is to connect Batching, admission control & GPU scheduling, KV cache & recurrent inference state to downstream capabilities including Large language models, Conversational assistants & chatbots.",
+    "why_it_matters": "In this atlas graph, Paged attention & KV-memory management is modeled as depending on Batching, admission control & GPU scheduling, KV cache & recurrent inference state and feeding downstream nodes such as Large language models, Conversational assistants & chatbots.",
     "examples": [
-      "substrate for Large language models",
-      "substrate for Conversational assistants & chatbots"
+      "atlas downstream link to Large language models",
+      "atlas downstream link to Conversational assistants & chatbots"
     ],
     "limitations": [
       "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Batching, admission control & GPU scheduling, KV cache & recurrent inference state."
@@ -34,19 +34,19 @@
         "id": "batching_scheduling",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Paged attention & KV-memory management turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Paged attention & KV-memory management has an `operationalizes` dependency on Batching, admission control & GPU scheduling because Batching, admission control & GPU scheduling is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "kv_cache",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Paged attention & KV-memory management turns KV cache & recurrent inference state into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Paged attention & KV-memory management has an `operationalizes` dependency on KV cache & recurrent inference state because KV cache & recurrent inference state is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "efficient_attention",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Paged attention & KV-memory management turns Sparse, local, linear & recurrent attention into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Paged attention & KV-memory management has an `operationalizes` dependency on Sparse, local, linear & recurrent attention because Sparse, local, linear & recurrent attention is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -58,22 +58,22 @@
       "text": "Paged attention manages key–value cache blocks through virtual-memory-like allocation so variable-length generations share accelerator memory efficiently."
     },
     {
-      "unit_id": "739d18adfa12ea73",
+      "unit_id": "35ceff5530ea5eab",
       "node_id": "paged_attention",
       "field": "why_it_matters",
-      "text": "The role of Paged attention & KV-memory management is to connect Batching, admission control & GPU scheduling, KV cache & recurrent inference state to downstream capabilities including Large language models, Conversational assistants & chatbots."
+      "text": "In this atlas graph, Paged attention & KV-memory management is modeled as depending on Batching, admission control & GPU scheduling, KV cache & recurrent inference state and feeding downstream nodes such as Large language models, Conversational assistants & chatbots."
     },
     {
-      "unit_id": "591a50697eb97b33",
+      "unit_id": "85ceaa7dbd148f22",
       "node_id": "paged_attention",
       "field": "examples[1]",
-      "text": "substrate for Large language models"
+      "text": "atlas downstream link to Large language models"
     },
     {
-      "unit_id": "0a689439d3f43b68",
+      "unit_id": "e0b86c73e49aabff",
       "node_id": "paged_attention",
       "field": "examples[2]",
-      "text": "substrate for Conversational assistants & chatbots"
+      "text": "atlas downstream link to Conversational assistants & chatbots"
     },
     {
       "unit_id": "6f6ee7bdc1af852a",
@@ -82,48 +82,48 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Batching, admission control & GPU scheduling, KV cache & recurrent inference state."
     },
     {
-      "unit_id": "d15b8e53a427b733",
+      "unit_id": "2e0e13ae23c35d1d",
       "node_id": "paged_attention",
       "field": "dependencies.batching_scheduling.rationale",
-      "text": "Paged attention & KV-memory management turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Paged attention & KV-memory management has an `operationalizes` dependency on Batching, admission control & GPU scheduling because Batching, admission control & GPU scheduling is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "2c9e53ad7dbcb74a",
+      "unit_id": "ea89ea85619a418e",
       "node_id": "paged_attention",
       "field": "dependencies.kv_cache.rationale",
-      "text": "Paged attention & KV-memory management turns KV cache & recurrent inference state into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Paged attention & KV-memory management has an `operationalizes` dependency on KV cache & recurrent inference state because KV cache & recurrent inference state is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "140346eb09f3283f",
+      "unit_id": "fdc1618a1b3d6c30",
       "node_id": "paged_attention",
       "field": "dependencies.efficient_attention.rationale",
-      "text": "Paged attention & KV-memory management turns Sparse, local, linear & recurrent attention into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Paged attention & KV-memory management has an `operationalizes` dependency on Sparse, local, linear & recurrent attention because Sparse, local, linear & recurrent attention is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "eec347b849807f9e",
+      "edge_id": "8e0aaa5e00dff052",
       "node_id": "paged_attention",
       "dependency_id": "batching_scheduling",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Paged attention & KV-memory management turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Paged attention & KV-memory management has an `operationalizes` dependency on Batching, admission control & GPU scheduling because Batching, admission control & GPU scheduling is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "816594ce237bc2ad",
+      "edge_id": "0b1a69a6818e9a36",
       "node_id": "paged_attention",
       "dependency_id": "kv_cache",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Paged attention & KV-memory management turns KV cache & recurrent inference state into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Paged attention & KV-memory management has an `operationalizes` dependency on KV cache & recurrent inference state because KV cache & recurrent inference state is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "1b1fe20ecf9491fb",
+      "edge_id": "d622514271024f1c",
       "node_id": "paged_attention",
       "dependency_id": "efficient_attention",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Paged attention & KV-memory management turns Sparse, local, linear & recurrent attention into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Paged attention & KV-memory management has an `operationalizes` dependency on Sparse, local, linear & recurrent attention because Sparse, local, linear & recurrent attention is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

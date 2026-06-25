@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "A graph neural network repeatedly aggregates messages from neighboring nodes or edges to learn representations that respect relational structure.",
-    "why_it_matters": "The role of Graph neural networks is to connect Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data to downstream capabilities including Graph transformers, Drug discovery, protein & molecular design, Computer vision, perception & scene understanding.",
+    "why_it_matters": "In this atlas graph, Graph neural networks is modeled as depending on Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data and feeding downstream nodes such as Graph transformers, Drug discovery, protein & molecular design, Computer vision, perception & scene understanding.",
     "examples": [
-      "substrate for Graph transformers",
-      "substrate for Drug discovery, protein & molecular design",
-      "substrate for Computer vision, perception & scene understanding"
+      "atlas downstream link to Graph transformers",
+      "atlas downstream link to Drug discovery, protein & molecular design",
+      "atlas downstream link to Computer vision, perception & scene understanding"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data."
@@ -47,13 +47,13 @@
         "id": "pooling",
         "type": "composes",
         "strength": "common",
-        "rationale": "Graph neural networks is assembled in part from the mechanism or model component Pooling & local aggregation."
+        "rationale": "In this atlas graph, Graph neural networks has a `composes` dependency on Pooling & local aggregation with `common` strength."
       },
       {
         "id": "equivariance_invariance",
         "type": "composes",
         "strength": "common",
-        "rationale": "Graph neural networks is assembled in part from the mechanism or model component Equivariance, invariance & geometric priors."
+        "rationale": "In this atlas graph, Graph neural networks has a `composes` dependency on Equivariance, invariance & geometric priors with `common` strength."
       }
     ]
   },
@@ -65,28 +65,28 @@
       "text": "A graph neural network repeatedly aggregates messages from neighboring nodes or edges to learn representations that respect relational structure."
     },
     {
-      "unit_id": "fba4fa2fa2bd32a4",
+      "unit_id": "2d100ffbf60eb96b",
       "node_id": "gnn",
       "field": "why_it_matters",
-      "text": "The role of Graph neural networks is to connect Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data to downstream capabilities including Graph transformers, Drug discovery, protein & molecular design, Computer vision, perception & scene understanding."
+      "text": "In this atlas graph, Graph neural networks is modeled as depending on Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data and feeding downstream nodes such as Graph transformers, Drug discovery, protein & molecular design, Computer vision, perception & scene understanding."
     },
     {
-      "unit_id": "7207892851368780",
+      "unit_id": "e7aadb869188598b",
       "node_id": "gnn",
       "field": "examples[1]",
-      "text": "substrate for Graph transformers"
+      "text": "atlas downstream link to Graph transformers"
     },
     {
-      "unit_id": "de35390eff19a153",
+      "unit_id": "1a1a6ab035975eca",
       "node_id": "gnn",
       "field": "examples[2]",
-      "text": "substrate for Drug discovery, protein & molecular design"
+      "text": "atlas downstream link to Drug discovery, protein & molecular design"
     },
     {
-      "unit_id": "49da03f0b99288c9",
+      "unit_id": "9144088a703985e2",
       "node_id": "gnn",
       "field": "examples[3]",
-      "text": "substrate for Computer vision, perception & scene understanding"
+      "text": "atlas downstream link to Computer vision, perception & scene understanding"
     },
     {
       "unit_id": "8c5c4fb427eeee48",
@@ -107,16 +107,16 @@
       "text": "Graph neural networks consumes, emits, or organizes information using Graphs, hypergraphs & relational data."
     },
     {
-      "unit_id": "607213827ef4dcd5",
+      "unit_id": "ac0bf363ce54317a",
       "node_id": "gnn",
       "field": "dependencies.pooling.rationale",
-      "text": "Graph neural networks is assembled in part from the mechanism or model component Pooling & local aggregation."
+      "text": "In this atlas graph, Graph neural networks has a `composes` dependency on Pooling & local aggregation with `common` strength."
     },
     {
-      "unit_id": "7a0c674754012cce",
+      "unit_id": "ff63589bd44da086",
       "node_id": "gnn",
       "field": "dependencies.equivariance_invariance.rationale",
-      "text": "Graph neural networks is assembled in part from the mechanism or model component Equivariance, invariance & geometric priors."
+      "text": "In this atlas graph, Graph neural networks has a `composes` dependency on Equivariance, invariance & geometric priors with `common` strength."
     }
   ],
   "edge_units": [
@@ -137,20 +137,20 @@
       "rationale": "Graph neural networks consumes, emits, or organizes information using Graphs, hypergraphs & relational data."
     },
     {
-      "edge_id": "304e5f4c1b05bc69",
+      "edge_id": "f04cea54c8c2038b",
       "node_id": "gnn",
       "dependency_id": "pooling",
       "type": "composes",
       "strength": "common",
-      "rationale": "Graph neural networks is assembled in part from the mechanism or model component Pooling & local aggregation."
+      "rationale": "In this atlas graph, Graph neural networks has a `composes` dependency on Pooling & local aggregation with `common` strength."
     },
     {
-      "edge_id": "79f299096626434f",
+      "edge_id": "cf3bb38bf3898d34",
       "node_id": "gnn",
       "dependency_id": "equivariance_invariance",
       "type": "composes",
       "strength": "common",
-      "rationale": "Graph neural networks is assembled in part from the mechanism or model component Equivariance, invariance & geometric priors."
+      "rationale": "In this atlas graph, Graph neural networks has a `composes` dependency on Equivariance, invariance & geometric priors with `common` strength."
     }
   ],
   "candidate_references": {

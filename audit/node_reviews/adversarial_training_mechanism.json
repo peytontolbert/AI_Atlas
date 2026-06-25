@@ -16,156 +16,148 @@
       "notes": "The cited source(s) directly support the specific claim."
     },
     {
-      "unit_id": "27b3dedc0b7c7cf4",
-      "node_id": "adversarial_training_mechanism",
-      "field": "why_it_matters",
-      "text": "The role of Adversarial examples & adversarial training is to connect Adversarial minimax objectives, Optimization theory to downstream capabilities including Generative adversarial networks, Adversarial robustness & security testing.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL book adversarial examples/GAN material and PML supervised/optimization context; security-testing breadth is more general than the cited sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
-    },
-    {
-      "unit_id": "9615a039c4b9c48b",
-      "node_id": "adversarial_training_mechanism",
-      "field": "examples[1]",
-      "text": "substrate for Generative adversarial networks",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL book adversarial examples/GAN material and PML supervised/optimization context; security-testing breadth is more general than the cited sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim."
-    },
-    {
-      "unit_id": "de48346290e74a0d",
-      "node_id": "adversarial_training_mechanism",
-      "field": "examples[2]",
-      "text": "substrate for Adversarial robustness & security testing",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL book adversarial examples/GAN material and PML supervised/optimization context; security-testing breadth is more general than the cited sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
-    },
-    {
       "unit_id": "4624e40151bcb635",
       "node_id": "adversarial_training_mechanism",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Adversarial minimax objectives, Optimization theory.",
       "source_ids": [
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DL book adversarial examples/GAN material and PML supervised/optimization context; security-testing breadth is more general than the cited sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
-    },
-    {
-      "unit_id": "f8e449b8358979fc",
-      "node_id": "adversarial_training_mechanism",
-      "field": "dependencies.adversarial_minimax.rationale",
-      "text": "Adversarial examples & adversarial training uses Adversarial minimax objectives as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL book adversarial examples/GAN material and PML supervised/optimization context; security-testing breadth is more general than the cited sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim."
-    },
-    {
-      "unit_id": "f32d29be25c674e0",
-      "node_id": "adversarial_training_mechanism",
-      "field": "dependencies.optimization.rationale",
-      "text": "Adversarial examples & adversarial training uses Optimization theory as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL book adversarial examples/GAN material and PML supervised/optimization context; security-testing breadth is more general than the cited sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim."
-    },
-    {
-      "unit_id": "ee7989b6078ec2a6",
-      "node_id": "adversarial_training_mechanism",
-      "field": "dependencies.supervised_learning.rationale",
-      "text": "Adversarial examples & adversarial training uses Supervised learning as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL book adversarial examples/GAN material and PML supervised/optimization context; security-testing breadth is more general than the cited sources.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "fccb8119dcd228b9",
+      "node_id": "adversarial_training_mechanism",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Adversarial examples & adversarial training is modeled as depending on Adversarial minimax objectives, Optimization theory and feeding downstream nodes such as Generative adversarial networks, Adversarial robustness & security testing.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "71095e8c5a80d5d5",
+      "node_id": "adversarial_training_mechanism",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Generative adversarial networks",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "0598fe055e9b750e",
+      "node_id": "adversarial_training_mechanism",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Adversarial robustness & security testing",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "158a57be98193c95",
+      "node_id": "adversarial_training_mechanism",
+      "field": "dependencies.adversarial_minimax.rationale",
+      "text": "In this atlas graph, Adversarial examples & adversarial training has a `uses` dependency on Adversarial minimax objectives because Adversarial minimax objectives is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d6d23ec78b237f94",
+      "node_id": "adversarial_training_mechanism",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, Adversarial examples & adversarial training has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "fd05ef7d159c47ce",
+      "node_id": "adversarial_training_mechanism",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "In this atlas graph, Adversarial examples & adversarial training has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "04b86c5262a1532c",
+      "edge_id": "05be73af16d27a33",
       "node_id": "adversarial_training_mechanism",
       "dependency_id": "adversarial_minimax",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "80dc964568a12568",
+      "edge_id": "8196c04ca9bf61d6",
       "node_id": "adversarial_training_mechanism",
       "dependency_id": "optimization",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "de14a23946bc957d",
+      "edge_id": "b72656025cef2262",
       "node_id": "adversarial_training_mechanism",
       "dependency_id": "supervised_learning",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "adversarial_training_mechanism",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

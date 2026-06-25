@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Outputs are generated step by step, conditioning each decision on prior outputs.",
-    "why_it_matters": "The role of Autoregressive decoding is to connect Autoregressive / next-step prediction, Sequences, events & time series to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Chain-of-thought & latent reasoning.",
+    "why_it_matters": "In this atlas graph, Autoregressive decoding is modeled as depending on Autoregressive / next-step prediction, Sequences, events & time series and feeding downstream nodes such as Encoder–decoder transformers, Decoder-only causal transformers, Chain-of-thought & latent reasoning.",
     "examples": [
-      "substrate for Encoder–decoder transformers",
-      "substrate for Decoder-only causal transformers",
-      "substrate for Chain-of-thought & latent reasoning"
+      "atlas downstream link to Encoder–decoder transformers",
+      "atlas downstream link to Decoder-only causal transformers",
+      "atlas downstream link to Chain-of-thought & latent reasoning"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Autoregressive / next-step prediction, Sequences, events & time series."
@@ -34,19 +34,19 @@
         "id": "autoregressive_objective",
         "type": "uses",
         "strength": "core",
-        "rationale": "Autoregressive decoding uses Autoregressive / next-step prediction as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as a reusable ingredient for the node."
       },
       {
         "id": "sequences_time",
         "type": "uses",
         "strength": "core",
-        "rationale": "Autoregressive decoding uses Sequences, events & time series as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
       },
       {
         "id": "probability",
         "type": "uses",
         "strength": "common",
-        "rationale": "Autoregressive decoding uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Outputs are generated step by step, conditioning each decision on prior outputs."
     },
     {
-      "unit_id": "1e8b84265f1fe3c8",
+      "unit_id": "ea86562a9dd3a85a",
       "node_id": "autoregressive_decoding",
       "field": "why_it_matters",
-      "text": "The role of Autoregressive decoding is to connect Autoregressive / next-step prediction, Sequences, events & time series to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Chain-of-thought & latent reasoning."
+      "text": "In this atlas graph, Autoregressive decoding is modeled as depending on Autoregressive / next-step prediction, Sequences, events & time series and feeding downstream nodes such as Encoder–decoder transformers, Decoder-only causal transformers, Chain-of-thought & latent reasoning."
     },
     {
-      "unit_id": "ed79b3e40b40f3de",
+      "unit_id": "4baa87505845c6c9",
       "node_id": "autoregressive_decoding",
       "field": "examples[1]",
-      "text": "substrate for Encoder–decoder transformers"
+      "text": "atlas downstream link to Encoder–decoder transformers"
     },
     {
-      "unit_id": "a0c217e11a2640fd",
+      "unit_id": "868dd38c6c3a5631",
       "node_id": "autoregressive_decoding",
       "field": "examples[2]",
-      "text": "substrate for Decoder-only causal transformers"
+      "text": "atlas downstream link to Decoder-only causal transformers"
     },
     {
-      "unit_id": "651b0fdceee87ea3",
+      "unit_id": "4e7619a06c9e1038",
       "node_id": "autoregressive_decoding",
       "field": "examples[3]",
-      "text": "substrate for Chain-of-thought & latent reasoning"
+      "text": "atlas downstream link to Chain-of-thought & latent reasoning"
     },
     {
       "unit_id": "24dbcb3690619b2b",
@@ -88,48 +88,48 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Autoregressive / next-step prediction, Sequences, events & time series."
     },
     {
-      "unit_id": "33ee353118a88220",
+      "unit_id": "3c07648fa8071a70",
       "node_id": "autoregressive_decoding",
       "field": "dependencies.autoregressive_objective.rationale",
-      "text": "Autoregressive decoding uses Autoregressive / next-step prediction as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "36a8f56624dc2fd5",
+      "unit_id": "23385394c4308e11",
       "node_id": "autoregressive_decoding",
       "field": "dependencies.sequences_time.rationale",
-      "text": "Autoregressive decoding uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "e6f5694234749055",
+      "unit_id": "fbd194d96a7ce343",
       "node_id": "autoregressive_decoding",
       "field": "dependencies.probability.rationale",
-      "text": "Autoregressive decoding uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "1781752c7d1b3dde",
+      "edge_id": "4543ed228514e40e",
       "node_id": "autoregressive_decoding",
       "dependency_id": "autoregressive_objective",
       "type": "uses",
       "strength": "core",
-      "rationale": "Autoregressive decoding uses Autoregressive / next-step prediction as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "cf80853c38e5b3bd",
+      "edge_id": "29883c905454a39b",
       "node_id": "autoregressive_decoding",
       "dependency_id": "sequences_time",
       "type": "uses",
       "strength": "core",
-      "rationale": "Autoregressive decoding uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "571291445e970723",
+      "edge_id": "84c3a4cea8c70b30",
       "node_id": "autoregressive_decoding",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "common",
-      "rationale": "Autoregressive decoding uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

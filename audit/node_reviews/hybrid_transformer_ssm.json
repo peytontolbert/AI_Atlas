@@ -5,7 +5,11 @@
       "node_id": "hybrid_transformer_ssm",
       "field": "definition",
       "text": "Hybrid sequence models interleave attention with state-space or recurrent blocks to combine content-addressable interaction with linear-time persistent state.",
-      "source_ids": ["ref_transformer", "ref_mamba", "ref_xlstm"],
+      "source_ids": [
+        "ref_transformer",
+        "ref_mamba",
+        "ref_xlstm"
+      ],
       "evidence_location": "Attention Is All You Need supports attention mechanisms; Mamba supports linear-time selective state-space sequence modeling; xLSTM supports recurrent sequence-model extensions.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -17,7 +21,11 @@
       "node_id": "hybrid_transformer_ssm",
       "field": "why_it_matters",
       "text": "They provide a design continuum between global attention quality and recurrent memory efficiency.",
-      "source_ids": ["ref_transformer", "ref_mamba", "ref_xlstm"],
+      "source_ids": [
+        "ref_transformer",
+        "ref_mamba",
+        "ref_xlstm"
+      ],
       "evidence_location": "Transformer supports global attention; Mamba and xLSTM support efficient recurrent/state-space sequence modeling alternatives.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -29,31 +37,43 @@
       "node_id": "hybrid_transformer_ssm",
       "field": "examples[1]",
       "text": "attention–Mamba hybrids",
-      "source_ids": ["ref_transformer", "ref_mamba"],
-      "evidence_location": "Transformer and Mamba support the two component families, but the packet does not cite a concrete attention-Mamba hybrid model.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_mamba",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The example is plausible but needs a direct hybrid-model citation."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "830bb57d1e5a6fc6",
       "node_id": "hybrid_transformer_ssm",
       "field": "examples[2]",
       "text": "recurrent–attention language models",
-      "source_ids": ["ref_transformer", "ref_xlstm"],
-      "evidence_location": "Transformer and xLSTM support attention and recurrent language-model families, but not a specific recurrent-attention hybrid.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_xlstm",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a model-specific source to verify the exact example."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "84e3712872fb5b91",
       "node_id": "hybrid_transformer_ssm",
       "field": "limitations[1]",
       "text": "Block balance, state handling, parallelism, and fair scaling comparisons remain architecture-specific.",
-      "source_ids": ["ref_mamba", "ref_xlstm", "ref_transformer"],
+      "source_ids": [
+        "ref_mamba",
+        "ref_xlstm",
+        "ref_transformer"
+      ],
       "evidence_location": "The cited sources discuss different sequence-model efficiency and architectural tradeoffs, but not this exact hybrid limitation statement.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -65,7 +85,9 @@
       "node_id": "hybrid_transformer_ssm",
       "field": "dependencies.transformer.rationale",
       "text": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family Transformers.",
-      "source_ids": ["ref_transformer"],
+      "source_ids": [
+        "ref_transformer"
+      ],
       "evidence_location": "Attention Is All You Need defines the Transformer component family used in attention hybrids.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -77,7 +99,9 @@
       "node_id": "hybrid_transformer_ssm",
       "field": "dependencies.mamba_selective_ssm.rationale",
       "text": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family Selective state-space models (Mamba family).",
-      "source_ids": ["ref_mamba"],
+      "source_ids": [
+        "ref_mamba"
+      ],
       "evidence_location": "Mamba defines selective state-space sequence models with linear-time sequence modeling.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -85,28 +109,34 @@
       "notes": "The source supports the SSM component family; hybrid specialization wording is taxonomy-level."
     },
     {
-      "unit_id": "0b1f1665d41615f6",
-      "node_id": "hybrid_transformer_ssm",
-      "field": "dependencies.xlstm_rwkv.rationale",
-      "text": "Transformer–SSM & recurrent hybrid models extends or specializes the architecture family xLSTM & linear-recurrent hybrids.",
-      "source_ids": ["ref_xlstm"],
-      "evidence_location": "xLSTM supports extended recurrent language-model architectures.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "xLSTM supports the recurrent side, but the cited source does not establish it as common in Transformer-SSM hybrids."
-    },
-    {
       "unit_id": "6e22258983d36ce8",
       "node_id": "hybrid_transformer_ssm",
       "field": "dependencies.gating.rationale",
       "text": "Transformer–SSM & recurrent hybrid models is assembled in part from the mechanism or model component Gating & multiplicative control.",
-      "source_ids": ["ref_mamba", "ref_xlstm", "ref_dlbook"],
+      "source_ids": [
+        "ref_mamba",
+        "ref_xlstm",
+        "ref_dlbook"
+      ],
       "evidence_location": "Mamba selective mechanisms, xLSTM gates, and Deep Learning recurrent-network background support gating as a common component.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Supported across recurrent/SSM components, though not necessarily every hybrid model."
+    },
+    {
+      "unit_id": "d12655f97f813fc9",
+      "node_id": "hybrid_transformer_ssm",
+      "field": "dependencies.xlstm_rwkv.rationale",
+      "text": "In this atlas graph, Transformer–SSM & recurrent hybrid models has a `composes` dependency on xLSTM & linear-recurrent hybrids with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -114,7 +144,9 @@
       "edge_id": "e20f7a65a6d70785",
       "node_id": "hybrid_transformer_ssm",
       "dependency_id": "transformer",
-      "source_ids": ["ref_transformer"],
+      "source_ids": [
+        "ref_transformer"
+      ],
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
@@ -126,7 +158,9 @@
       "edge_id": "0b9a34d64ec591a3",
       "node_id": "hybrid_transformer_ssm",
       "dependency_id": "mamba_selective_ssm",
-      "source_ids": ["ref_mamba"],
+      "source_ids": [
+        "ref_mamba"
+      ],
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
@@ -135,28 +169,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "955bc64d4250746f",
-      "node_id": "hybrid_transformer_ssm",
-      "dependency_id": "xlstm_rwkv",
-      "source_ids": ["ref_xlstm"],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The recurrent component is relevant, but common strength for Transformer-SSM hybrids is not established.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "02a738b54bde2dfc",
       "node_id": "hybrid_transformer_ssm",
       "dependency_id": "gating",
-      "source_ids": ["ref_mamba", "ref_xlstm", "ref_dlbook"],
+      "source_ids": [
+        "ref_mamba",
+        "ref_xlstm",
+        "ref_dlbook"
+      ],
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Gating is common in recurrent/SSM components, but not necessarily every hybrid.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "8994a9262378bfa6",
+      "node_id": "hybrid_transformer_ssm",
+      "dependency_id": "xlstm_rwkv",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

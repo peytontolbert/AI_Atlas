@@ -1,17 +1,172 @@
 {
   "sentence_reviews": [
-    {"unit_id":"0937aa37a763cf6e","node_id":"bayesian_factor_graphs","field":"definition","text":"Bayesian networks, Markov random fields, and factor graphs factorize a joint distribution into local relationships that support modular probabilistic inference.","source_ids":["ref_koller","ref_aima","ref_pml"],"evidence_location":"Koller & Friedman probabilistic graphical model material; AIMA probabilistic reasoning / Bayesian networks; PML graphical models and factor graphs topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The local factorization and inference characterization is directly aligned with probabilistic graphical model sources."},
-    {"unit_id":"8d30080c39feb994","node_id":"bayesian_factor_graphs","field":"why_it_matters","text":"The role of Bayesian networks, MRFs & factor graphs is to connect Graph theory, Bayesian & approximate inference to downstream capabilities including Knowledge graphs, semantic search & relational reasoning.","source_ids":["ref_koller","ref_aima","ref_pml"],"evidence_location":"Koller & Friedman graphical models; AIMA Bayesian networks/probabilistic inference; PML graphical model topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Graph and probabilistic-inference dependencies are supported; the downstream knowledge-graph/semantic-search category is not directly established by these packet sources."},
-    {"unit_id":"351bdb0f505e7dcb","node_id":"bayesian_factor_graphs","field":"examples[1]","text":"substrate for Knowledge graphs, semantic search & relational reasoning","source_ids":["ref_koller","ref_aima"],"evidence_location":"Koller & Friedman relational/probabilistic graphical model context; AIMA probabilistic reasoning and knowledge representation topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Relational reasoning is plausible, but semantic search and knowledge graphs as downstream capabilities are not directly supported by the packet evidence."},
-    {"unit_id":"5451c18425047c2b","node_id":"bayesian_factor_graphs","field":"examples[2]","text":"combined with Graph theory","source_ids":["ref_koller","ref_aima","ref_pml"],"evidence_location":"Koller & Friedman probabilistic graphical models; AIMA Bayesian networks; PML graphical model topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The graph structure is explicit in Bayesian networks, MRFs, and factor graphs."},
-    {"unit_id":"5768f3d9fff63730","node_id":"bayesian_factor_graphs","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Graph theory, Bayesian & approximate inference.","source_ids":["ref_koller","ref_aima","ref_pml"],"evidence_location":"Graphical-model and probabilistic-inference textbook topics; model-selection/inference complexity context.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are supported, but generic limitation wording is not directly evidenced."},
-    {"unit_id":"f1137cf4855c43a8","node_id":"bayesian_factor_graphs","field":"dependencies.graph_theory.rationale","text":"Bayesian networks, MRFs & factor graphs rests on the formal or computational capabilities supplied by Graph theory.","source_ids":["ref_koller","ref_aima","ref_pml"],"evidence_location":"Koller & Friedman graphical model graph structures; AIMA Bayesian networks; PML graphical models.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Graph structure is central to these models."},
-    {"unit_id":"7145c8a5560f9a0d","node_id":"bayesian_factor_graphs","field":"dependencies.bayesian_approx_inference.rationale","text":"Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family Bayesian & approximate inference.","source_ids":["ref_koller","ref_aima","ref_pml"],"evidence_location":"Koller & Friedman inference in graphical models; AIMA probabilistic inference; PML exact/approximate inference in graphical models.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Probabilistic inference is a defining use of these models."},
-    {"unit_id":"415b79abb8255c61","node_id":"bayesian_factor_graphs","field":"dependencies.mcmc_em_message_passing.rationale","text":"Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing.","source_ids":["ref_koller","ref_pml","ref_aima"],"evidence_location":"Koller & Friedman message passing, EM/learning, and approximate inference; PML graphical model inference and MCMC/EM topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Message passing and approximate inference are standard; MCMC/EM apply in many but not all cases, so common strength is appropriate."}
+    {
+      "unit_id": "0937aa37a763cf6e",
+      "node_id": "bayesian_factor_graphs",
+      "field": "definition",
+      "text": "Bayesian networks, Markov random fields, and factor graphs factorize a joint distribution into local relationships that support modular probabilistic inference.",
+      "source_ids": [
+        "ref_koller",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Koller & Friedman probabilistic graphical model material; AIMA probabilistic reasoning / Bayesian networks; PML graphical models and factor graphs topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The local factorization and inference characterization is directly aligned with probabilistic graphical model sources."
+    },
+    {
+      "unit_id": "5451c18425047c2b",
+      "node_id": "bayesian_factor_graphs",
+      "field": "examples[2]",
+      "text": "combined with Graph theory",
+      "source_ids": [
+        "ref_koller",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Koller & Friedman probabilistic graphical models; AIMA Bayesian networks; PML graphical model topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The graph structure is explicit in Bayesian networks, MRFs, and factor graphs."
+    },
+    {
+      "unit_id": "5768f3d9fff63730",
+      "node_id": "bayesian_factor_graphs",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Graph theory, Bayesian & approximate inference.",
+      "source_ids": [
+        "ref_koller",
+        "ref_aima",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "f1137cf4855c43a8",
+      "node_id": "bayesian_factor_graphs",
+      "field": "dependencies.graph_theory.rationale",
+      "text": "Bayesian networks, MRFs & factor graphs rests on the formal or computational capabilities supplied by Graph theory.",
+      "source_ids": [
+        "ref_koller",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "Koller & Friedman graphical model graph structures; AIMA Bayesian networks; PML graphical models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Graph structure is central to these models."
+    },
+    {
+      "unit_id": "c3f1a19116cd68ba",
+      "node_id": "bayesian_factor_graphs",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Bayesian networks, MRFs & factor graphs is modeled as depending on Graph theory, Bayesian & approximate inference and feeding downstream nodes such as Knowledge graphs, semantic search & relational reasoning.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "69d170782ec9aeb3",
+      "node_id": "bayesian_factor_graphs",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Knowledge graphs, semantic search & relational reasoning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2cd424a89bf9ef96",
+      "node_id": "bayesian_factor_graphs",
+      "field": "dependencies.bayesian_approx_inference.rationale",
+      "text": "In this atlas graph, Bayesian networks, MRFs & factor graphs has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "7884ec98c0fb5b4d",
+      "node_id": "bayesian_factor_graphs",
+      "field": "dependencies.mcmc_em_message_passing.rationale",
+      "text": "In this atlas graph, Bayesian networks, MRFs & factor graphs has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"fee195f4b86358a5","node_id":"bayesian_factor_graphs","dependency_id":"graph_theory","source_ids":["ref_koller","ref_aima","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"These are graphical models; requires/core is supported.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"69b47b68d7062196","node_id":"bayesian_factor_graphs","dependency_id":"bayesian_approx_inference","source_ids":["ref_koller","ref_aima","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Inference is central to Bayesian networks, MRFs, and factor graphs; optimizes_for/core is supported in atlas terms.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"6049d7763b68d928","node_id":"bayesian_factor_graphs","dependency_id":"mcmc_em_message_passing","source_ids":["ref_koller","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Message passing, EM, and MCMC are common inference/learning mechanisms for graphical models; common strength is supported.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "fee195f4b86358a5",
+      "node_id": "bayesian_factor_graphs",
+      "dependency_id": "graph_theory",
+      "source_ids": [
+        "ref_koller",
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "These are graphical models; requires/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "2a3d27c7328f39a2",
+      "node_id": "bayesian_factor_graphs",
+      "dependency_id": "bayesian_approx_inference",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "015d151c325bab84",
+      "node_id": "bayesian_factor_graphs",
+      "dependency_id": "mcmc_em_message_passing",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "bayesian_factor_graphs",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

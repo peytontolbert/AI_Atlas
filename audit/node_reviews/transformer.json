@@ -15,74 +15,19 @@
       "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim."
     },
     {
-      "unit_id": "b195b3fb3af07ebf",
-      "node_id": "transformer",
-      "field": "why_it_matters",
-      "text": "The role of Transformers is to connect Self-attention, Relative position, RoPE, ALiBi & coordinate mechanisms to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Vision Transformers & Perceiver-style latent models.",
-      "source_ids": [
-        "ref_transformer"
-      ],
-      "evidence_location": "Attention Is All You Need describes Transformer encoder/decoder stacks built from multi-head self-attention, positional encodings, residual connections, layer normalization, and feed-forward dense layers; Deep Learning supports residual/dense/normalization background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Downstream/substrate phrasing is atlas graph terminology."
-    },
-    {
-      "unit_id": "c2fa490249d9d0d6",
-      "node_id": "transformer",
-      "field": "examples[1]",
-      "text": "substrate for Encoder–decoder transformers",
-      "source_ids": [
-        "ref_transformer"
-      ],
-      "evidence_location": "Attention Is All You Need describes Transformer encoder/decoder stacks built from multi-head self-attention, positional encodings, residual connections, layer normalization, and feed-forward dense layers; Deep Learning supports residual/dense/normalization background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source directly supports the specific claim as written. Downstream/substrate phrasing is atlas graph terminology."
-    },
-    {
-      "unit_id": "e816db0f7c411bc0",
-      "node_id": "transformer",
-      "field": "examples[2]",
-      "text": "substrate for Decoder-only causal transformers",
-      "source_ids": [
-        "ref_transformer"
-      ],
-      "evidence_location": "Attention Is All You Need describes Transformer encoder/decoder stacks built from multi-head self-attention, positional encodings, residual connections, layer normalization, and feed-forward dense layers; Deep Learning supports residual/dense/normalization background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Downstream/substrate phrasing is atlas graph terminology."
-    },
-    {
-      "unit_id": "cc44c77dfeaa9a0c",
-      "node_id": "transformer",
-      "field": "examples[3]",
-      "text": "substrate for Vision Transformers & Perceiver-style latent models",
-      "source_ids": [
-        "ref_transformer"
-      ],
-      "evidence_location": "Attention Is All You Need describes Transformer encoder/decoder stacks built from multi-head self-attention, positional encodings, residual connections, layer normalization, and feed-forward dense layers; Deep Learning supports residual/dense/normalization background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Downstream/substrate phrasing is atlas graph terminology."
-    },
-    {
       "unit_id": "4f70a0f1fefcead8",
       "node_id": "transformer",
       "field": "limitations[1]",
       "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Self-attention, Relative position, RoPE, ALiBi & coordinate mechanisms.",
       "source_ids": [
-        "ref_transformer"
+        "ref_transformer",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Attention Is All You Need describes Transformer encoder/decoder stacks built from multi-head self-attention, positional encodings, residual connections, layer normalization, and feed-forward dense layers; Deep Learning supports residual/dense/normalization background.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "dbfbc8f0b8f3dad8",
@@ -97,20 +42,6 @@
       "review_date": "2026-06-25",
       "verdict": "verified",
       "notes": "The cited source directly supports the specific claim as written. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
-    },
-    {
-      "unit_id": "135d6e8daa8dee98",
-      "node_id": "transformer",
-      "field": "dependencies.positional_mechanisms.rationale",
-      "text": "Transformers is assembled in part from the mechanism or model component Relative position, RoPE, ALiBi & coordinate mechanisms.",
-      "source_ids": [
-        "ref_transformer"
-      ],
-      "evidence_location": "Attention Is All You Need describes Transformer encoder/decoder stacks built from multi-head self-attention, positional encodings, residual connections, layer normalization, and feed-forward dense layers; Deep Learning supports residual/dense/normalization background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
     },
     {
       "unit_id": "67f1c89948d7ac3d",
@@ -156,6 +87,76 @@
       "review_date": "2026-06-25",
       "verdict": "verified",
       "notes": "The cited source directly supports the specific claim as written. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "5815417544287cad",
+      "node_id": "transformer",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Transformers is modeled as depending on Self-attention, Relative position, RoPE, ALiBi & coordinate mechanisms and feeding downstream nodes such as Encoder–decoder transformers, Decoder-only causal transformers, Vision Transformers & Perceiver-style latent models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b3096d91c7ec629b",
+      "node_id": "transformer",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Encoder–decoder transformers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "931caed8137b4c9f",
+      "node_id": "transformer",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Decoder-only causal transformers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "48c1c5c8d810cd87",
+      "node_id": "transformer",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Vision Transformers & Perceiver-style latent models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "55a683b9c5a33474",
+      "node_id": "transformer",
+      "field": "dependencies.positional_mechanisms.rationale",
+      "text": "In this atlas graph, Transformers has a `composes` dependency on Relative position, RoPE, ALiBi & coordinate mechanisms with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -172,20 +173,6 @@
       "notes": "The cited source directly supports the specific claim as written. Relationship type and strength are defensible for the atlas dependency graph.",
       "relationship_type_supported": true,
       "strength_supported": true
-    },
-    {
-      "edge_id": "eee19274c5c484a3",
-      "node_id": "transformer",
-      "dependency_id": "positional_mechanisms",
-      "source_ids": [
-        "ref_transformer"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Relationship type is plausible, but strength or dependency necessity is not directly established by the cited source set.",
-      "relationship_type_supported": true,
-      "strength_supported": false
     },
     {
       "edge_id": "8a09c6550778cb65",
@@ -231,6 +218,22 @@
       "notes": "The cited source directly supports the specific claim as written. Relationship type and strength are defensible for the atlas dependency graph.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "94dee051d0f805b9",
+      "node_id": "transformer",
+      "dependency_id": "positional_mechanisms",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "transformer",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

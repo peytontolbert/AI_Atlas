@@ -97,134 +97,117 @@
       "notes": "Shortcut/reward-hacking and omission of non-formalized qualities are known verifier limitations, but the exact compound sentence is synthesized."
     },
     {
-      "unit_id": "59e409ff26a9103a",
+      "unit_id": "5f7e14f1110ab794",
       "node_id": "rlvr",
       "field": "dependencies.reinforcement_learning.rationale",
-      "text": "Reinforcement learning with verifiable rewards (RLVR) uses Reinforcement learning as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Reinforcement learning with verifiable rewards (RLVR) has a `uses` dependency on Reinforcement learning because Reinforcement learning is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_rlvr",
-        "ref_grpo",
-        "ref_rlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "RLVR is explicitly a reinforcement-learning approach."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "72d9b201ceab1eaa",
+      "unit_id": "4c8f32b351ed284a",
       "node_id": "rlvr",
       "field": "dependencies.outcome_verifiers.rationale",
-      "text": "Reinforcement learning with verifiable rewards (RLVR) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards.",
+      "text": "In this atlas graph, Reinforcement learning with verifiable rewards (RLVR) has an `optimizes_for` dependency on Outcome verifiers & executable rewards because Outcome verifiers & executable rewards is modeled as the objective family for learning, selection, or evaluation.",
       "source_ids": [
-        "ref_rlvr",
-        "ref_grpo",
-        "ref_rlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Verifiable outcome rewards are the defining objective/evaluation signal."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "e93b33120ef8e7aa",
+      "unit_id": "63b8124837019c9e",
       "node_id": "rlvr",
       "field": "dependencies.grpo.rationale",
-      "text": "Reinforcement learning with verifiable rewards (RLVR) uses Group Relative Policy Optimization (GRPO) as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Reinforcement learning with verifiable rewards (RLVR) has a `uses` dependency on Group Relative Policy Optimization (GRPO) because Group Relative Policy Optimization (GRPO) is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_rlvr",
-        "ref_grpo",
-        "ref_rlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "GRPO is one algorithm used for RLVR-style reasoning, but RLVR does not inherently require GRPO."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "dacc5b9e97cbb0ca",
+      "unit_id": "16053996f265b383",
       "node_id": "rlvr",
       "field": "dependencies.augmentation_synthetic.rationale",
-      "text": "Reinforcement learning with verifiable rewards (RLVR) uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Reinforcement learning with verifiable rewards (RLVR) has a `uses` dependency on Data augmentation & synthetic-data generation because Data augmentation & synthetic-data generation is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_rlvr",
-        "ref_grpo",
-        "ref_rlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The RLVR survey covers reinforcement learning with verifiable rewards; DeepSeekMath provides a concrete math-reasoning example using GRPO and verifiable answers.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Synthetic data can appear in RLVR pipelines, but it is not clearly a reusable ingredient of RLVR itself from the cited sources."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "0fe633b3f597c5a2",
+      "edge_id": "8b3201fca68337d7",
       "node_id": "rlvr",
       "dependency_id": "reinforcement_learning",
       "source_ids": [
-        "ref_rlvr",
-        "ref_grpo",
-        "ref_rlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Reinforcement learning is definitional for RLVR.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "d673b1e3139c49b9",
+      "edge_id": "4a6393e51d21752b",
       "node_id": "rlvr",
       "dependency_id": "outcome_verifiers",
       "source_ids": [
-        "ref_rlvr",
-        "ref_grpo",
-        "ref_rlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Outcome/verifiable rewards are definitional and core.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "827bbdacb74507f8",
+      "edge_id": "4d2f4802037136db",
       "node_id": "rlvr",
       "dependency_id": "grpo",
       "source_ids": [
-        "ref_rlvr",
-        "ref_grpo",
-        "ref_rlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "GRPO is a common RLVR optimizer, but not required by the concept.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "2d8b7ffed8786eb1",
+      "edge_id": "ab1617161f01fe47",
       "node_id": "rlvr",
       "dependency_id": "augmentation_synthetic",
       "source_ids": [
-        "ref_rlvr",
-        "ref_grpo",
-        "ref_rlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Synthetic data is adjacent but not clearly a common dependency of RLVR from the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "rlvr",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

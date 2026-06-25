@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "A policy is adjusted toward preferred behavior while controlling deviation from a reference model.",
-    "why_it_matters": "The role of Preference optimization (RLHF, DPO families) is to connect Preference learning, Reward modeling to downstream capabilities including Direct and online preference optimization, Safety policies, constitutional constraints & alignment, Group Relative Policy Optimization (GRPO).",
+    "why_it_matters": "In this atlas graph, Preference optimization (RLHF, DPO families) is modeled as depending on Preference learning, Reward modeling and feeding downstream nodes such as Direct and online preference optimization, Safety policies, constitutional constraints & alignment, Group Relative Policy Optimization (GRPO).",
     "examples": [
-      "substrate for Direct and online preference optimization",
-      "substrate for Safety policies, constitutional constraints & alignment",
-      "substrate for Group Relative Policy Optimization (GRPO)"
+      "atlas downstream link to Direct and online preference optimization",
+      "atlas downstream link to Safety policies, constitutional constraints & alignment",
+      "atlas downstream link to Group Relative Policy Optimization (GRPO)"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Preference learning, Reward modeling."
@@ -36,19 +36,19 @@
         "id": "preference_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Preference optimization (RLHF, DPO families) uses Preference learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Preference optimization (RLHF, DPO families) has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "reward_modeling",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Preference optimization (RLHF, DPO families) is learned, selected, or evaluated using the objective family Reward modeling."
+        "rationale": "In this atlas graph, Preference optimization (RLHF, DPO families) has an `optimizes_for` dependency on Reward modeling because Reward modeling is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "Preference optimization (RLHF, DPO families) uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Preference optimization (RLHF, DPO families) has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -60,28 +60,28 @@
       "text": "A policy is adjusted toward preferred behavior while controlling deviation from a reference model."
     },
     {
-      "unit_id": "fbd50968a1d6132f",
+      "unit_id": "3c4a4cf80cac9138",
       "node_id": "preference_optimization",
       "field": "why_it_matters",
-      "text": "The role of Preference optimization (RLHF, DPO families) is to connect Preference learning, Reward modeling to downstream capabilities including Direct and online preference optimization, Safety policies, constitutional constraints & alignment, Group Relative Policy Optimization (GRPO)."
+      "text": "In this atlas graph, Preference optimization (RLHF, DPO families) is modeled as depending on Preference learning, Reward modeling and feeding downstream nodes such as Direct and online preference optimization, Safety policies, constitutional constraints & alignment, Group Relative Policy Optimization (GRPO)."
     },
     {
-      "unit_id": "e09f604459e58cef",
+      "unit_id": "41c318bfeda74436",
       "node_id": "preference_optimization",
       "field": "examples[1]",
-      "text": "substrate for Direct and online preference optimization"
+      "text": "atlas downstream link to Direct and online preference optimization"
     },
     {
-      "unit_id": "e7f4a4f4f47ca38e",
+      "unit_id": "55d767f7e1fe682c",
       "node_id": "preference_optimization",
       "field": "examples[2]",
-      "text": "substrate for Safety policies, constitutional constraints & alignment"
+      "text": "atlas downstream link to Safety policies, constitutional constraints & alignment"
     },
     {
-      "unit_id": "040a305dca884459",
+      "unit_id": "88d24e960da4b38e",
       "node_id": "preference_optimization",
       "field": "examples[3]",
-      "text": "substrate for Group Relative Policy Optimization (GRPO)"
+      "text": "atlas downstream link to Group Relative Policy Optimization (GRPO)"
     },
     {
       "unit_id": "d9b1eff2b0f137f7",
@@ -90,48 +90,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Preference learning, Reward modeling."
     },
     {
-      "unit_id": "533629b72516a916",
+      "unit_id": "f368d29c365d42c1",
       "node_id": "preference_optimization",
       "field": "dependencies.preference_learning.rationale",
-      "text": "Preference optimization (RLHF, DPO families) uses Preference learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Preference optimization (RLHF, DPO families) has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "c74fa486ae8d1751",
+      "unit_id": "e3ad097c6d9ed505",
       "node_id": "preference_optimization",
       "field": "dependencies.reward_modeling.rationale",
-      "text": "Preference optimization (RLHF, DPO families) is learned, selected, or evaluated using the objective family Reward modeling."
+      "text": "In this atlas graph, Preference optimization (RLHF, DPO families) has an `optimizes_for` dependency on Reward modeling because Reward modeling is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "0644ca9f82139d2d",
+      "unit_id": "484c5d6209c95948",
       "node_id": "preference_optimization",
       "field": "dependencies.optimization.rationale",
-      "text": "Preference optimization (RLHF, DPO families) uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Preference optimization (RLHF, DPO families) has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "eb460204aff29b17",
+      "edge_id": "4d90c8e43f3ee633",
       "node_id": "preference_optimization",
       "dependency_id": "preference_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Preference optimization (RLHF, DPO families) uses Preference learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Preference optimization (RLHF, DPO families) has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "ab5ecca694222c31",
+      "edge_id": "98cf042ebe5a6eb3",
       "node_id": "preference_optimization",
       "dependency_id": "reward_modeling",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Preference optimization (RLHF, DPO families) is learned, selected, or evaluated using the objective family Reward modeling."
+      "rationale": "In this atlas graph, Preference optimization (RLHF, DPO families) has an `optimizes_for` dependency on Reward modeling because Reward modeling is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "d2b9c733ad7c1f72",
+      "edge_id": "ac6ec63c57167470",
       "node_id": "preference_optimization",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "Preference optimization (RLHF, DPO families) uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Preference optimization (RLHF, DPO families) has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

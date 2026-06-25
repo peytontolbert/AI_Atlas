@@ -15,11 +15,11 @@
     ],
     "aliases": [],
     "definition": "A multimodal foundation model aligns and jointly processes text, images, audio, video, or actions through shared token spaces and cross-modal interaction.",
-    "why_it_matters": "The role of Multimodal foundation models is to connect Transformers, Cross-attention & co-attention to downstream capabilities including Multimodal assistants & vision-language systems, Browser, desktop & computer-use agents, Robotics & embodied AI.",
+    "why_it_matters": "In this atlas graph, Multimodal foundation models is modeled as depending on Transformers, Cross-attention & co-attention and feeding downstream nodes such as Multimodal assistants & vision-language systems, Browser, desktop & computer-use agents, Robotics & embodied AI.",
     "examples": [
-      "substrate for Multimodal assistants & vision-language systems",
-      "substrate for Browser, desktop & computer-use agents",
-      "substrate for Robotics & embodied AI"
+      "atlas downstream link to Multimodal assistants & vision-language systems",
+      "atlas downstream link to Browser, desktop & computer-use agents",
+      "atlas downstream link to Robotics & embodied AI"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Cross-attention & co-attention."
@@ -42,13 +42,13 @@
         "id": "cross_attention",
         "type": "composes",
         "strength": "core",
-        "rationale": "Multimodal foundation models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+        "rationale": "In this atlas graph, Multimodal foundation models has a `composes` dependency on Cross-attention & co-attention with `core` strength."
       },
       {
         "id": "contrastive_objective",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Multimodal foundation models is learned, selected, or evaluated using the objective family Contrastive and mutual-information objectives."
+        "rationale": "In this atlas graph, Multimodal foundation models has an `optimizes_for` dependency on Contrastive and mutual-information objectives because Contrastive and mutual-information objectives is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "multimodal_simulated_streams",
@@ -60,7 +60,7 @@
         "id": "vqvae_tokenizer",
         "type": "composes",
         "strength": "common",
-        "rationale": "Multimodal foundation models extends or specializes the architecture family VQ-VAE & learned discrete tokenizers."
+        "rationale": "In this atlas graph, Multimodal foundation models has a `composes` dependency on VQ-VAE & learned discrete tokenizers with `common` strength."
       }
     ]
   },
@@ -72,28 +72,28 @@
       "text": "A multimodal foundation model aligns and jointly processes text, images, audio, video, or actions through shared token spaces and cross-modal interaction."
     },
     {
-      "unit_id": "e9fba64a815a950a",
+      "unit_id": "22a67efd2f203eb6",
       "node_id": "multimodal_foundation",
       "field": "why_it_matters",
-      "text": "The role of Multimodal foundation models is to connect Transformers, Cross-attention & co-attention to downstream capabilities including Multimodal assistants & vision-language systems, Browser, desktop & computer-use agents, Robotics & embodied AI."
+      "text": "In this atlas graph, Multimodal foundation models is modeled as depending on Transformers, Cross-attention & co-attention and feeding downstream nodes such as Multimodal assistants & vision-language systems, Browser, desktop & computer-use agents, Robotics & embodied AI."
     },
     {
-      "unit_id": "8f71abf2f2b26b76",
+      "unit_id": "5db13f162ff9a8d6",
       "node_id": "multimodal_foundation",
       "field": "examples[1]",
-      "text": "substrate for Multimodal assistants & vision-language systems"
+      "text": "atlas downstream link to Multimodal assistants & vision-language systems"
     },
     {
-      "unit_id": "ccb82a4e339bda53",
+      "unit_id": "9730da074fc364b6",
       "node_id": "multimodal_foundation",
       "field": "examples[2]",
-      "text": "substrate for Browser, desktop & computer-use agents"
+      "text": "atlas downstream link to Browser, desktop & computer-use agents"
     },
     {
-      "unit_id": "f639b5c3c84579bf",
+      "unit_id": "7bedf8d85a83a4fa",
       "node_id": "multimodal_foundation",
       "field": "examples[3]",
-      "text": "substrate for Robotics & embodied AI"
+      "text": "atlas downstream link to Robotics & embodied AI"
     },
     {
       "unit_id": "a696631c2945ef93",
@@ -108,16 +108,16 @@
       "text": "Multimodal foundation models extends or specializes the architecture family Transformers."
     },
     {
-      "unit_id": "695040584d11204b",
+      "unit_id": "b8c26b4c5cba0d7c",
       "node_id": "multimodal_foundation",
       "field": "dependencies.cross_attention.rationale",
-      "text": "Multimodal foundation models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+      "text": "In this atlas graph, Multimodal foundation models has a `composes` dependency on Cross-attention & co-attention with `core` strength."
     },
     {
-      "unit_id": "682148705514ef28",
+      "unit_id": "6e93e276847e0e02",
       "node_id": "multimodal_foundation",
       "field": "dependencies.contrastive_objective.rationale",
-      "text": "Multimodal foundation models is learned, selected, or evaluated using the objective family Contrastive and mutual-information objectives."
+      "text": "In this atlas graph, Multimodal foundation models has an `optimizes_for` dependency on Contrastive and mutual-information objectives because Contrastive and mutual-information objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "unit_id": "2618b6102fbbb267",
@@ -126,10 +126,10 @@
       "text": "Multimodal foundation models consumes, emits, or organizes information using Multimodal, simulated & streaming data."
     },
     {
-      "unit_id": "235b33518a5d1de5",
+      "unit_id": "e939bf64654d7925",
       "node_id": "multimodal_foundation",
       "field": "dependencies.vqvae_tokenizer.rationale",
-      "text": "Multimodal foundation models extends or specializes the architecture family VQ-VAE & learned discrete tokenizers."
+      "text": "In this atlas graph, Multimodal foundation models has a `composes` dependency on VQ-VAE & learned discrete tokenizers with `common` strength."
     }
   ],
   "edge_units": [
@@ -142,20 +142,20 @@
       "rationale": "Multimodal foundation models extends or specializes the architecture family Transformers."
     },
     {
-      "edge_id": "0420911b1790193a",
+      "edge_id": "a4640694eae76cdc",
       "node_id": "multimodal_foundation",
       "dependency_id": "cross_attention",
       "type": "composes",
       "strength": "core",
-      "rationale": "Multimodal foundation models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+      "rationale": "In this atlas graph, Multimodal foundation models has a `composes` dependency on Cross-attention & co-attention with `core` strength."
     },
     {
-      "edge_id": "3f7e2c9a61a274bb",
+      "edge_id": "72c7cc207879491f",
       "node_id": "multimodal_foundation",
       "dependency_id": "contrastive_objective",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Multimodal foundation models is learned, selected, or evaluated using the objective family Contrastive and mutual-information objectives."
+      "rationale": "In this atlas graph, Multimodal foundation models has an `optimizes_for` dependency on Contrastive and mutual-information objectives because Contrastive and mutual-information objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "edge_id": "3d41f19996457fca",
@@ -166,12 +166,12 @@
       "rationale": "Multimodal foundation models consumes, emits, or organizes information using Multimodal, simulated & streaming data."
     },
     {
-      "edge_id": "ba3c4c9259d101a6",
+      "edge_id": "56769e90a409188e",
       "node_id": "multimodal_foundation",
       "dependency_id": "vqvae_tokenizer",
       "type": "composes",
       "strength": "common",
-      "rationale": "Multimodal foundation models extends or specializes the architecture family VQ-VAE & learned discrete tokenizers."
+      "rationale": "In this atlas graph, Multimodal foundation models has a `composes` dependency on VQ-VAE & learned discrete tokenizers with `common` strength."
     }
   ],
   "candidate_references": {

@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Checkpointing periodically persists weights, optimizer state, data position, random seeds, and metadata so interrupted or distributed runs can resume reproducibly.",
-    "why_it_matters": "The role of Checkpointing, recovery & experiment state is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Reproducibility, drift & continuous monitoring, Object storage, sharding & checkpoints.",
+    "why_it_matters": "In this atlas graph, Checkpointing, recovery & experiment state is modeled as depending on Distributed systems & networking, Databases & information retrieval and feeding downstream nodes such as Reproducibility, drift & continuous monitoring, Object storage, sharding & checkpoints.",
     "examples": [
-      "substrate for Reproducibility, drift & continuous monitoring",
-      "substrate for Object storage, sharding & checkpoints"
+      "atlas downstream link to Reproducibility, drift & continuous monitoring",
+      "atlas downstream link to Object storage, sharding & checkpoints"
     ],
     "limitations": [
       "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Databases & information retrieval."
@@ -34,19 +34,19 @@
         "id": "distributed_systems",
         "type": "uses",
         "strength": "core",
-        "rationale": "Checkpointing, recovery & experiment state uses Distributed systems & networking as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
       },
       {
         "id": "databases_ir",
         "type": "uses",
         "strength": "core",
-        "rationale": "Checkpointing, recovery & experiment state uses Databases & information retrieval as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
       },
       {
         "id": "distributed_mixed_precision",
         "type": "uses",
         "strength": "common",
-        "rationale": "Checkpointing, recovery & experiment state uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Distributed, mixed-precision & memory-efficient training because Distributed, mixed-precision & memory-efficient training is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,22 +58,22 @@
       "text": "Checkpointing periodically persists weights, optimizer state, data position, random seeds, and metadata so interrupted or distributed runs can resume reproducibly."
     },
     {
-      "unit_id": "698316cec4e3e1be",
+      "unit_id": "dc7ca7347b65fd01",
       "node_id": "checkpoint_recovery",
       "field": "why_it_matters",
-      "text": "The role of Checkpointing, recovery & experiment state is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Reproducibility, drift & continuous monitoring, Object storage, sharding & checkpoints."
+      "text": "In this atlas graph, Checkpointing, recovery & experiment state is modeled as depending on Distributed systems & networking, Databases & information retrieval and feeding downstream nodes such as Reproducibility, drift & continuous monitoring, Object storage, sharding & checkpoints."
     },
     {
-      "unit_id": "0465937584705154",
+      "unit_id": "d050ce6b0a2622b0",
       "node_id": "checkpoint_recovery",
       "field": "examples[1]",
-      "text": "substrate for Reproducibility, drift & continuous monitoring"
+      "text": "atlas downstream link to Reproducibility, drift & continuous monitoring"
     },
     {
-      "unit_id": "b26385f53ed853c9",
+      "unit_id": "f49c5c48c09b0295",
       "node_id": "checkpoint_recovery",
       "field": "examples[2]",
-      "text": "substrate for Object storage, sharding & checkpoints"
+      "text": "atlas downstream link to Object storage, sharding & checkpoints"
     },
     {
       "unit_id": "55d53a955f51f492",
@@ -82,48 +82,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Databases & information retrieval."
     },
     {
-      "unit_id": "49d86a7b22ffe5ce",
+      "unit_id": "363b58322902142b",
       "node_id": "checkpoint_recovery",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Checkpointing, recovery & experiment state uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "a5a98d7e287fef95",
+      "unit_id": "05db397547705bed",
       "node_id": "checkpoint_recovery",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Checkpointing, recovery & experiment state uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "fed6382e4111ea7f",
+      "unit_id": "d1c076b42528d23c",
       "node_id": "checkpoint_recovery",
       "field": "dependencies.distributed_mixed_precision.rationale",
-      "text": "Checkpointing, recovery & experiment state uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Distributed, mixed-precision & memory-efficient training because Distributed, mixed-precision & memory-efficient training is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "2ed881e05984f843",
+      "edge_id": "69d722bc93bbe346",
       "node_id": "checkpoint_recovery",
       "dependency_id": "distributed_systems",
       "type": "uses",
       "strength": "core",
-      "rationale": "Checkpointing, recovery & experiment state uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "efe575945329ffc5",
+      "edge_id": "57e7b75478e190bc",
       "node_id": "checkpoint_recovery",
       "dependency_id": "databases_ir",
       "type": "uses",
       "strength": "core",
-      "rationale": "Checkpointing, recovery & experiment state uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "bf3f6fd93375ca77",
+      "edge_id": "97394e40437b2f2b",
       "node_id": "checkpoint_recovery",
       "dependency_id": "distributed_mixed_precision",
       "type": "uses",
       "strength": "common",
-      "rationale": "Checkpointing, recovery & experiment state uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Distributed, mixed-precision & memory-efficient training because Distributed, mixed-precision & memory-efficient training is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

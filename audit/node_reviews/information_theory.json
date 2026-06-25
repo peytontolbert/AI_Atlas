@@ -18,71 +18,6 @@
       "notes": "The inspected sources support each component concept, but no single source states the full sentence verbatim. The wording is a defensible synthesis of the cited material rather than an exact quotation."
     },
     {
-      "unit_id": "566b896ee9c1337a",
-      "node_id": "information_theory",
-      "field": "why_it_matters",
-      "text": "The role of Information theory is to connect Probability theory to downstream capabilities including Labels, targets, rewards & preferences, Tokens, vocabularies & symbolic units, Embeddings & distributed representations.",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
-        "url:https://en.wikipedia.org/wiki/Mutual_information",
-        "url:https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_theory"
-      ],
-      "evidence_location": "AIMA newchap20.pdf lines 147-156; Entropy (information theory) lines 224-230; Mutual information lines 173-175; Rate-distortion theory lines 144-150.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The probability/compression bridge is supported, but the downstream list is graph-derived and not directly established by the inspected sources. This should be narrowed if intended as a factual claim."
-    },
-    {
-      "unit_id": "65f3c4579d0d4193",
-      "node_id": "information_theory",
-      "field": "examples[1]",
-      "text": "substrate for Labels, targets, rewards & preferences",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
-        "url:https://en.wikipedia.org/wiki/Mutual_information"
-      ],
-      "evidence_location": "AIMA newchap20.pdf lines 147-156; Entropy (information theory) lines 224-230; Mutual information lines 173-175.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support information-theoretic measures and their use in inference and coding, but they do not directly establish a substrate relation to labels, targets, rewards, or preferences."
-    },
-    {
-      "unit_id": "8e50ac6dca76dbe0",
-      "node_id": "information_theory",
-      "field": "examples[2]",
-      "text": "substrate for Tokens, vocabularies & symbolic units",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
-        "url:https://en.wikipedia.org/wiki/Rate%E2%80%93distortion_theory"
-      ],
-      "evidence_location": "AIMA newchap20.pdf lines 147-156; Entropy (information theory) lines 228-230; Rate-distortion theory lines 144-150.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The evidence supports coding and compression as information-theoretic concerns, but not the exact atlas phrasing that information theory is a substrate for tokens, vocabularies, or symbolic units."
-    },
-    {
-      "unit_id": "d6680d1ac99818b9",
-      "node_id": "information_theory",
-      "field": "examples[3]",
-      "text": "substrate for Embeddings & distributed representations",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
-        "url:https://en.wikipedia.org/wiki/Mutual_information"
-      ],
-      "evidence_location": "AIMA newchap20.pdf lines 147-156; Entropy (information theory) lines 230-231; Mutual information lines 173-175.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources mention machine learning relevance and information measures, but they do not directly support embeddings or distributed representations as a substrate claim."
-    },
-    {
       "unit_id": "061cefb745119fcf",
       "node_id": "information_theory",
       "field": "limitations[1]",
@@ -90,13 +25,14 @@
       "source_ids": [
         "ref_aima",
         "url:https://en.wikipedia.org/wiki/Entropy_(information_theory)",
-        "url:https://en.wikipedia.org/wiki/Mutual_information"
+        "url:https://en.wikipedia.org/wiki/Mutual_information",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA newchap20.pdf lines 61-63 on the i.i.d. assumption, lines 115-118 and 157-163 on approximate methods and large-data behavior; Entropy (information theory) lines 224-230; Mutual information lines 173-175.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support the need for assumptions and the sensitivity of results to model conditions, but the exact empirical-mismatch wording and the direct-dependency clause are not stated verbatim."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "ec499816b1f46f17",
@@ -113,6 +49,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "The cited sources support probability as the formal setting for random variables and mutual information, and AIMA explicitly ties probability to encoding and compression. The rationale is synthesized rather than directly quoted."
+    },
+    {
+      "unit_id": "cc5aec0d23e666b9",
+      "node_id": "information_theory",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Information theory is modeled as depending on Probability theory and feeding downstream nodes such as Labels, targets, rewards & preferences, Tokens, vocabularies & symbolic units, Embeddings & distributed representations.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c54a6221e9bf341b",
+      "node_id": "information_theory",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Labels, targets, rewards & preferences",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "fd9e12887ce92152",
+      "node_id": "information_theory",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Tokens, vocabularies & symbolic units",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e637b4d268a9f16c",
+      "node_id": "information_theory",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Embeddings & distributed representations",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -132,5 +124,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "information_theory",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

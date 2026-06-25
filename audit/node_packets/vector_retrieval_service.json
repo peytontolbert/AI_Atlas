@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "A vector-retrieval service operationalizes embedding generation, indexing, metadata filtering, approximate search, reranking, freshness, and access control.",
-    "why_it_matters": "The role of Vector-search and retrieval services is to connect Vector databases & ANN indexes, Hybrid retrieval & reranking to downstream capabilities including Neural search, RAG & question answering.",
+    "why_it_matters": "In this atlas graph, Vector-search and retrieval services is modeled as depending on Vector databases & ANN indexes, Hybrid retrieval & reranking and feeding downstream nodes such as Neural search, RAG & question answering.",
     "examples": [
-      "substrate for Neural search, RAG & question answering",
+      "atlas downstream link to Neural search, RAG & question answering",
       "combined with Vector databases & ANN indexes"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "vector_database",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Vector-search and retrieval services turns Vector databases & ANN indexes into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Vector databases & ANN indexes because Vector databases & ANN indexes is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "hybrid_reranking",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Vector-search and retrieval services turns Hybrid retrieval & reranking into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Hybrid retrieval & reranking because Hybrid retrieval & reranking is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "distributed_systems",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Vector-search and retrieval services turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "A vector-retrieval service operationalizes embedding generation, indexing, metadata filtering, approximate search, reranking, freshness, and access control."
     },
     {
-      "unit_id": "6f8b7a1c5bd8ad91",
+      "unit_id": "7bfd4e05d0515931",
       "node_id": "vector_retrieval_service",
       "field": "why_it_matters",
-      "text": "The role of Vector-search and retrieval services is to connect Vector databases & ANN indexes, Hybrid retrieval & reranking to downstream capabilities including Neural search, RAG & question answering."
+      "text": "In this atlas graph, Vector-search and retrieval services is modeled as depending on Vector databases & ANN indexes, Hybrid retrieval & reranking and feeding downstream nodes such as Neural search, RAG & question answering."
     },
     {
-      "unit_id": "7cedf395a9711663",
+      "unit_id": "faf679f261542e05",
       "node_id": "vector_retrieval_service",
       "field": "examples[1]",
-      "text": "substrate for Neural search, RAG & question answering"
+      "text": "atlas downstream link to Neural search, RAG & question answering"
     },
     {
       "unit_id": "17ce6d9d7cb95ddd",
@@ -82,48 +82,48 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Vector databases & ANN indexes, Hybrid retrieval & reranking."
     },
     {
-      "unit_id": "90ba88d1e4d8259f",
+      "unit_id": "93477ca4b77f9934",
       "node_id": "vector_retrieval_service",
       "field": "dependencies.vector_database.rationale",
-      "text": "Vector-search and retrieval services turns Vector databases & ANN indexes into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Vector databases & ANN indexes because Vector databases & ANN indexes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "a69f41526528da3d",
+      "unit_id": "e866a9238ee86f9a",
       "node_id": "vector_retrieval_service",
       "field": "dependencies.hybrid_reranking.rationale",
-      "text": "Vector-search and retrieval services turns Hybrid retrieval & reranking into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Hybrid retrieval & reranking because Hybrid retrieval & reranking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "085c85df963b22f1",
+      "unit_id": "b812a31dd65f600e",
       "node_id": "vector_retrieval_service",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Vector-search and retrieval services turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "796c849b628b6b3b",
+      "edge_id": "ff5dda746f34b6ed",
       "node_id": "vector_retrieval_service",
       "dependency_id": "vector_database",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Vector-search and retrieval services turns Vector databases & ANN indexes into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Vector databases & ANN indexes because Vector databases & ANN indexes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "598314059814cb2e",
+      "edge_id": "5f3eaeaee374c355",
       "node_id": "vector_retrieval_service",
       "dependency_id": "hybrid_reranking",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Vector-search and retrieval services turns Hybrid retrieval & reranking into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Hybrid retrieval & reranking because Hybrid retrieval & reranking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "9e2889329da04fb0",
+      "edge_id": "b1f11b8dcdd360fb",
       "node_id": "vector_retrieval_service",
       "dependency_id": "distributed_systems",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Vector-search and retrieval services turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

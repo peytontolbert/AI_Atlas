@@ -113,22 +113,6 @@
       "notes": "The cited source(s) directly support the specific claim."
     },
     {
-      "unit_id": "22ddd24ac58a5ff4",
-      "node_id": "grammar_constrained_decoding",
-      "field": "dependencies.schemas_grammars_constraints.rationale",
-      "text": "Grammar- and schema-constrained decoding uses Schemas, grammars & formal output languages as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_structured",
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Structured Output Generation survey on constrained/structured decoding; AIMA formal-language/constraint background; DL book autoregressive neural sequence modeling background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim."
-    },
-    {
       "unit_id": "4a459e0573d26428",
       "node_id": "grammar_constrained_decoding",
       "field": "dependencies.masking.rationale",
@@ -159,6 +143,20 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
+    },
+    {
+      "unit_id": "cd3927d4e5d46a55",
+      "node_id": "grammar_constrained_decoding",
+      "field": "dependencies.schemas_grammars_constraints.rationale",
+      "text": "In this atlas graph, Grammar- and schema-constrained decoding has a `uses` dependency on Schemas, grammars & formal output languages because Schemas, grammars & formal output languages is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -166,22 +164,6 @@
       "edge_id": "24d74d5a7370b2ac",
       "node_id": "grammar_constrained_decoding",
       "dependency_id": "autoregressive_decoding",
-      "source_ids": [
-        "ref_structured",
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "a062f93a732953b0",
-      "node_id": "grammar_constrained_decoding",
-      "dependency_id": "schemas_grammars_constraints",
       "source_ids": [
         "ref_structured",
         "ref_aima",
@@ -225,6 +207,22 @@
       "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "8cb2f2ae82c69b97",
+      "node_id": "grammar_constrained_decoding",
+      "dependency_id": "schemas_grammars_constraints",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "grammar_constrained_decoding",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

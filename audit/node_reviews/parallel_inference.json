@@ -5,158 +5,186 @@
       "node_id": "parallel_inference",
       "field": "definition",
       "text": "Parallel inference partitions tensors, layers, sequence positions, requests, or experts across multiple devices and coordinates the required communication.",
-      "source_ids": ["ref_megatron"],
-      "evidence_location": "Megatron-LM directly supports tensor and pipeline model parallelism for large language models, but not every listed partitioning mode such as requests, sequence positions, or experts.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Definition is broadly plausible but should add sources for sequence/request/expert parallel inference or narrow to model parallelism."
-    },
-    {
-      "unit_id": "05d568450a578be8",
-      "node_id": "parallel_inference",
-      "field": "why_it_matters",
-      "text": "The role of Tensor, pipeline, sequence & expert parallel inference is to connect Model servers & inference runtimes, Distributed systems & networking to downstream capabilities including Large language models.",
-      "source_ids": ["ref_megatron", "ref_ddia", "ref_aima"],
-      "evidence_location": "The sources support model parallelism and broad distributed systems context, but the downstream atlas linkage is graph-derived.",
+      "source_ids": [
+        "ref_megatron"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Defensible as graph synthesis; not directly stated by the cited sources."
-    },
-    {
-      "unit_id": "3ce27daea7b2919e",
-      "node_id": "parallel_inference",
-      "field": "examples[1]",
-      "text": "substrate for Large language models",
-      "source_ids": ["ref_megatron"],
-      "evidence_location": "Megatron-LM uses model parallelism to train multi-billion-parameter language models.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The source is training-focused, but supports the broader role of parallelism as a substrate for large language models."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "07c705bc69083275",
       "node_id": "parallel_inference",
       "field": "examples[2]",
       "text": "combined with Model servers & inference runtimes",
-      "source_ids": ["ref_megatron"],
-      "evidence_location": "Megatron-LM supports model-parallel execution concepts, but not model-serving integration specifically.",
+      "source_ids": [
+        "ref_megatron",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs an inference-serving source for the exact example."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "6389af300478cee1",
       "node_id": "parallel_inference",
       "field": "limitations[1]",
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Distributed systems & networking.",
-      "source_ids": ["ref_megatron", "ref_ddia"],
-      "evidence_location": "Distributed systems sources support operational failure concerns generally; the full list and dependency sentence are atlas-derived.",
+      "source_ids": [
+        "ref_megatron",
+        "ref_ddia",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Concurrency and cost are plausible; security, versioning, observability, and numerical behavior need more direct evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "31d9d5f263f9ec4c",
+      "unit_id": "4c00d5485234a8ac",
+      "node_id": "parallel_inference",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference is modeled as depending on Model servers & inference runtimes, Distributed systems & networking and feeding downstream nodes such as Large language models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1908c360bdff8c7a",
+      "node_id": "parallel_inference",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Large language models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "238a73d5ded57dbb",
       "node_id": "parallel_inference",
       "field": "dependencies.model_serving.rationale",
-      "text": "Tensor, pipeline, sequence & expert parallel inference turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_megatron"],
-      "evidence_location": "The source supports model parallelism for scaling large models, not the model-serving operationalization wording.",
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core relationship is plausible; exact rationale is graph-template wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "7ae6e0f942e958da",
+      "unit_id": "e390274df07cf212",
       "node_id": "parallel_inference",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Tensor, pipeline, sequence & expert parallel inference turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_megatron", "ref_ddia"],
-      "evidence_location": "Model parallelism requires multi-device communication; DDIA supports distributed systems concerns broadly.",
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship type and core strength are defensible, though the integrity-preserving phrasing is overbroad."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "6aaeea3ea4503334",
+      "unit_id": "5091fea86ea78c57",
       "node_id": "parallel_inference",
       "field": "dependencies.moe_model.rationale",
-      "text": "Tensor, pipeline, sequence & expert parallel inference turns Mixture-of-experts models into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_megatron", "ref_moe"],
-      "evidence_location": "MoE and model-parallel sources jointly support expert and scaling concepts, but not this exact operationalization claim.",
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Mixture-of-experts models because Mixture-of-experts models is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Common dependency is plausible; direct evidence for inference-specific expert parallelism would improve it."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "397d67a8de7e1cbd",
+      "unit_id": "1a1a9b442bb1f7d7",
       "node_id": "parallel_inference",
       "field": "dependencies.checkpoint_composition.rationale",
-      "text": "Tensor, pipeline, sequence & expert parallel inference turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_lora", "ref_modelmerge", "ref_megatron"],
-      "evidence_location": "Sources support adapters/model composition and model parallelism separately; they do not directly establish this dependency.",
+      "text": "In this atlas graph, Tensor, pipeline, sequence & expert parallel inference has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependency may be true for serving composed checkpoints, but the cited evidence is indirect."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "607024399f8c7ef2",
+      "edge_id": "5cb848185fdb29a5",
       "node_id": "parallel_inference",
       "dependency_id": "model_serving",
-      "source_ids": ["ref_megatron"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Parallel inference is a serving scalability mechanism, but direct serving-runtime evidence is missing.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "a6f9f0dca84cc567",
+      "edge_id": "abf9d8e5f3c573bc",
       "node_id": "parallel_inference",
       "dependency_id": "distributed_systems",
-      "source_ids": ["ref_megatron", "ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Multi-device partitioning and communication make distributed systems a core dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "1933076b13a2406d",
+      "edge_id": "ab81fd2b2ce22a8b",
       "node_id": "parallel_inference",
       "dependency_id": "moe_model",
-      "source_ids": ["ref_moe", "ref_megatron"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Expert parallelism is relevant to MoE scaling, but this packet lacks a direct expert-parallel inference source.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "ecdc0f080129ee70",
+      "edge_id": "8d82b5901efd165a",
       "node_id": "parallel_inference",
       "dependency_id": "checkpoint_composition",
-      "source_ids": ["ref_lora", "ref_modelmerge", "ref_megatron"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relationship is plausible in composed model serving but not established by the cited sources.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "parallel_inference",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

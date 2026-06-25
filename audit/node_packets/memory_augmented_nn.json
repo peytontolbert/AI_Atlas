@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "A memory-augmented neural network couples a controller to differentiable external storage so it can read, write, and manipulate information beyond hidden state.",
-    "why_it_matters": "The role of Memory-augmented neural networks is to connect Differentiable memory read/write, Self-attention to downstream capabilities including Conversational assistants & chatbots, Robotics & embodied AI.",
+    "why_it_matters": "In this atlas graph, Memory-augmented neural networks is modeled as depending on Differentiable memory read/write, Self-attention and feeding downstream nodes such as Conversational assistants & chatbots, Robotics & embodied AI.",
     "examples": [
-      "substrate for Conversational assistants & chatbots",
-      "substrate for Robotics & embodied AI"
+      "atlas downstream link to Conversational assistants & chatbots",
+      "atlas downstream link to Robotics & embodied AI"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Differentiable memory read/write, Self-attention."
@@ -40,7 +40,7 @@
         "id": "self_attention",
         "type": "composes",
         "strength": "common",
-        "rationale": "Memory-augmented neural networks is assembled in part from the mechanism or model component Self-attention."
+        "rationale": "In this atlas graph, Memory-augmented neural networks has a `composes` dependency on Self-attention with `common` strength."
       },
       {
         "id": "recurrence",
@@ -64,22 +64,22 @@
       "text": "A memory-augmented neural network couples a controller to differentiable external storage so it can read, write, and manipulate information beyond hidden state."
     },
     {
-      "unit_id": "1fe803b8e16842c3",
+      "unit_id": "9edf2b0def55307d",
       "node_id": "memory_augmented_nn",
       "field": "why_it_matters",
-      "text": "The role of Memory-augmented neural networks is to connect Differentiable memory read/write, Self-attention to downstream capabilities including Conversational assistants & chatbots, Robotics & embodied AI."
+      "text": "In this atlas graph, Memory-augmented neural networks is modeled as depending on Differentiable memory read/write, Self-attention and feeding downstream nodes such as Conversational assistants & chatbots, Robotics & embodied AI."
     },
     {
-      "unit_id": "f4cced228ecbe659",
+      "unit_id": "7bfebca1fe3cc8c4",
       "node_id": "memory_augmented_nn",
       "field": "examples[1]",
-      "text": "substrate for Conversational assistants & chatbots"
+      "text": "atlas downstream link to Conversational assistants & chatbots"
     },
     {
-      "unit_id": "d2b0dcffa2150485",
+      "unit_id": "3fe0f2168bea811e",
       "node_id": "memory_augmented_nn",
       "field": "examples[2]",
-      "text": "substrate for Robotics & embodied AI"
+      "text": "atlas downstream link to Robotics & embodied AI"
     },
     {
       "unit_id": "c8e855651acdf5b0",
@@ -94,10 +94,10 @@
       "text": "Memory-augmented neural networks is assembled in part from the mechanism or model component Differentiable memory read/write."
     },
     {
-      "unit_id": "09e6d287810b7de1",
+      "unit_id": "ecb69ea9a00e3717",
       "node_id": "memory_augmented_nn",
       "field": "dependencies.self_attention.rationale",
-      "text": "Memory-augmented neural networks is assembled in part from the mechanism or model component Self-attention."
+      "text": "In this atlas graph, Memory-augmented neural networks has a `composes` dependency on Self-attention with `common` strength."
     },
     {
       "unit_id": "db41b4cbe1561bf4",
@@ -122,12 +122,12 @@
       "rationale": "Memory-augmented neural networks is assembled in part from the mechanism or model component Differentiable memory read/write."
     },
     {
-      "edge_id": "925de7dcbda572a6",
+      "edge_id": "5a23f1a57abe58fd",
       "node_id": "memory_augmented_nn",
       "dependency_id": "self_attention",
       "type": "composes",
       "strength": "common",
-      "rationale": "Memory-augmented neural networks is assembled in part from the mechanism or model component Self-attention."
+      "rationale": "In this atlas graph, Memory-augmented neural networks has a `composes` dependency on Self-attention with `common` strength."
     },
     {
       "edge_id": "98ad645f2f9dc126",

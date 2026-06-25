@@ -1,20 +1,202 @@
 {
   "sentence_reviews": [
-    {"unit_id":"2c968fe166fb3710","node_id":"mle_cross_entropy","field":"definition","text":"Parameters are chosen to assign high probability to observed targets or data.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, probability-modeling and maximum-likelihood treatment; book landing page identifies the source as a probabilistic ML textbook, lines 21-29 and endorsements lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Maximum likelihood is exactly the procedure of choosing parameters that make observed data probable."},
-    {"unit_id":"eb41f8786ea1dc37","node_id":"mle_cross_entropy","field":"why_it_matters","text":"The role of Maximum likelihood & cross-entropy is to connect Probability theory, Information theory to downstream capabilities including Linear models & generalized linear models, Hidden Markov models & CRFs, Matrix factorization & topic models.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, broad coverage of probabilistic ML and foundations; landing page lines 45-48 describe statistics, information theory, and traditional/modern ML coverage.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The source supports MLE/cross-entropy as foundational, but the exact graph bridge and downstream list are atlas synthesis."},
-    {"unit_id":"85464b477ef5acfb","node_id":"mle_cross_entropy","field":"examples[1]","text":"substrate for Linear models & generalized linear models","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, supervised/probabilistic models and classical ML coverage; landing page endorsements lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"MLE is a standard training principle for many GLMs, but the 'substrate for' phrasing is graph terminology."},
-    {"unit_id":"eedee764347ea518","node_id":"mle_cross_entropy","field":"examples[2]","text":"substrate for Hidden Markov models & CRFs","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, probabilistic ML framing; landing page lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"HMMs and CRFs use likelihood or conditional likelihood objectives; exact downstream relationship is synthesized."},
-    {"unit_id":"b3a3cfcb48f50ca2","node_id":"mle_cross_entropy","field":"examples[3]","text":"substrate for Matrix factorization & topic models","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, probabilistic ML framing; landing page lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Likelihood objectives support probabilistic matrix factorization and topic models, but the inspected source location does not directly establish this exact example."},
-    {"unit_id":"b55e139553dd2a4b","node_id":"mle_cross_entropy","field":"limitations[1]","text":"A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Probability theory, Information theory.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, foundations include probability and information theory; landing page lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The dependencies are plausible, but the surrogate-objective failure wording is a general caution not directly supported by the inspected source location."},
-    {"unit_id":"1f59a16a571bceed","node_id":"mle_cross_entropy","field":"dependencies.probability.rationale","text":"Maximum likelihood & cross-entropy uses Probability theory as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, probabilistic ML source identification lines 21-29 and foundation description lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Likelihood is a probability of observed data under a parameterized model."},
-    {"unit_id":"b05e618d20c87c7d","node_id":"mle_cross_entropy","field":"dependencies.information_theory.rationale","text":"Maximum likelihood & cross-entropy uses Information theory as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, endorsement notes grounding in information theory, lines 45-46.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Cross-entropy is an information-theoretic quantity; the source supports the foundation but not this exact dependency wording."},
-    {"unit_id":"af68b21584245e5c","node_id":"mle_cross_entropy","field":"dependencies.supervised_learning.rationale","text":"Maximum likelihood & cross-entropy uses Supervised learning as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, ML methods coverage lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Cross-entropy is commonly used in supervised classification, but MLE is broader than supervised learning and does not require it."},
-    {"unit_id":"66e22f09f089e5f1","node_id":"mle_cross_entropy","field":"dependencies.generative_learning.rationale","text":"Maximum likelihood & cross-entropy uses Generative modeling as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, probabilistic ML source identification lines 21-29.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Generative models often use MLE, but MLE does not use generative modeling as an ingredient; direction may be overstated."}
+    {
+      "unit_id": "2c968fe166fb3710",
+      "node_id": "mle_cross_entropy",
+      "field": "definition",
+      "text": "Parameters are chosen to assign high probability to observed targets or data.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "Probabilistic Machine Learning: An Introduction, probability-modeling and maximum-likelihood treatment; book landing page identifies the source as a probabilistic ML textbook, lines 21-29 and endorsements lines 45-48.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Maximum likelihood is exactly the procedure of choosing parameters that make observed data probable."
+    },
+    {
+      "unit_id": "b55e139553dd2a4b",
+      "node_id": "mle_cross_entropy",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Probability theory, Information theory.",
+      "source_ids": [
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "1097c8b839067b04",
+      "node_id": "mle_cross_entropy",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy is modeled as depending on Probability theory, Information theory and feeding downstream nodes such as Linear models & generalized linear models, Hidden Markov models & CRFs, Matrix factorization & topic models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "76553d50aedbc508",
+      "node_id": "mle_cross_entropy",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Linear models & generalized linear models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "eeaca084631a01f3",
+      "node_id": "mle_cross_entropy",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Hidden Markov models & CRFs",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5eef16a2f3f07dc1",
+      "node_id": "mle_cross_entropy",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Matrix factorization & topic models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "33cc561dee700f80",
+      "node_id": "mle_cross_entropy",
+      "field": "dependencies.probability.rationale",
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4e113e6dcda6aebc",
+      "node_id": "mle_cross_entropy",
+      "field": "dependencies.information_theory.rationale",
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Information theory because Information theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "23d9a26279863a31",
+      "node_id": "mle_cross_entropy",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "247f51c9a5762a7f",
+      "node_id": "mle_cross_entropy",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"3a219a18c5e975a1","node_id":"mle_cross_entropy","dependency_id":"probability","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Probability is required to define likelihoods of observed data.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"cf418ebd53f64386","node_id":"mle_cross_entropy","dependency_id":"information_theory","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Cross-entropy is information-theoretic, but maximum likelihood can be stated without information theory.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"64855b65b3614125","node_id":"mle_cross_entropy","dependency_id":"supervised_learning","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The dependency is common for classification loss, not intrinsic to maximum likelihood in general.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"41d4eb64917e7798","node_id":"mle_cross_entropy","dependency_id":"generative_learning","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Generative models commonly depend on likelihood objectives; the reverse direction is not generally required.","relationship_type_supported":false,"strength_supported":false}
-  ]
+    {
+      "edge_id": "c2f174955a273ff8",
+      "node_id": "mle_cross_entropy",
+      "dependency_id": "probability",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "fe8302a0f3f403a5",
+      "node_id": "mle_cross_entropy",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "763149149498eecd",
+      "node_id": "mle_cross_entropy",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "a2a0dbb0037aa747",
+      "node_id": "mle_cross_entropy",
+      "dependency_id": "generative_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "mle_cross_entropy",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

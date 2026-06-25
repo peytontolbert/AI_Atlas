@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Order or geometric relationships are injected into attention and sequence models.",
-    "why_it_matters": "The role of Relative position, RoPE, ALiBi & coordinate mechanisms is to connect Positional, temporal & coordinate encodings, Self-attention to downstream capabilities including Transformers, Graph transformers.",
+    "why_it_matters": "In this atlas graph, Relative position, RoPE, ALiBi & coordinate mechanisms is modeled as depending on Positional, temporal & coordinate encodings, Self-attention and feeding downstream nodes such as Transformers, Graph transformers.",
     "examples": [
-      "substrate for Transformers",
-      "substrate for Graph transformers"
+      "atlas downstream link to Transformers",
+      "atlas downstream link to Graph transformers"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Positional, temporal & coordinate encodings, Self-attention."
@@ -34,7 +34,7 @@
         "id": "positional_encodings",
         "type": "uses",
         "strength": "core",
-        "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Positional, temporal & coordinate encodings as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Relative position, RoPE, ALiBi & coordinate mechanisms has a `uses` dependency on Positional, temporal & coordinate encodings because Positional, temporal & coordinate encodings is modeled as a reusable ingredient for the node."
       },
       {
         "id": "self_attention",
@@ -46,7 +46,7 @@
         "id": "geometry_topology",
         "type": "uses",
         "strength": "common",
-        "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Geometry, topology & symmetry as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Relative position, RoPE, ALiBi & coordinate mechanisms has a `uses` dependency on Geometry, topology & symmetry because Geometry, topology & symmetry is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,22 +58,22 @@
       "text": "Order or geometric relationships are injected into attention and sequence models."
     },
     {
-      "unit_id": "b3d4c109ea4fa272",
+      "unit_id": "99ce062fda361922",
       "node_id": "positional_mechanisms",
       "field": "why_it_matters",
-      "text": "The role of Relative position, RoPE, ALiBi & coordinate mechanisms is to connect Positional, temporal & coordinate encodings, Self-attention to downstream capabilities including Transformers, Graph transformers."
+      "text": "In this atlas graph, Relative position, RoPE, ALiBi & coordinate mechanisms is modeled as depending on Positional, temporal & coordinate encodings, Self-attention and feeding downstream nodes such as Transformers, Graph transformers."
     },
     {
-      "unit_id": "35e1158cdf42d760",
+      "unit_id": "5ff2bb9fe24bd87b",
       "node_id": "positional_mechanisms",
       "field": "examples[1]",
-      "text": "substrate for Transformers"
+      "text": "atlas downstream link to Transformers"
     },
     {
-      "unit_id": "8c002d984207fe80",
+      "unit_id": "0a85f5f31e0eb266",
       "node_id": "positional_mechanisms",
       "field": "examples[2]",
-      "text": "substrate for Graph transformers"
+      "text": "atlas downstream link to Graph transformers"
     },
     {
       "unit_id": "b11854ce87b00ae0",
@@ -82,10 +82,10 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Positional, temporal & coordinate encodings, Self-attention."
     },
     {
-      "unit_id": "d2616a9f50c416dd",
+      "unit_id": "aac3c284b4ac61cb",
       "node_id": "positional_mechanisms",
       "field": "dependencies.positional_encodings.rationale",
-      "text": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Positional, temporal & coordinate encodings as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Relative position, RoPE, ALiBi & coordinate mechanisms has a `uses` dependency on Positional, temporal & coordinate encodings because Positional, temporal & coordinate encodings is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "27dc56305a6bee92",
@@ -94,20 +94,20 @@
       "text": "Relative position, RoPE, ALiBi & coordinate mechanisms is assembled in part from the mechanism or model component Self-attention."
     },
     {
-      "unit_id": "9b1a0c670cc8fb40",
+      "unit_id": "35079b58aa121265",
       "node_id": "positional_mechanisms",
       "field": "dependencies.geometry_topology.rationale",
-      "text": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Geometry, topology & symmetry as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Relative position, RoPE, ALiBi & coordinate mechanisms has a `uses` dependency on Geometry, topology & symmetry because Geometry, topology & symmetry is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "9e5dec9f89a7c151",
+      "edge_id": "ef6bbd800bddca0f",
       "node_id": "positional_mechanisms",
       "dependency_id": "positional_encodings",
       "type": "uses",
       "strength": "core",
-      "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Positional, temporal & coordinate encodings as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Relative position, RoPE, ALiBi & coordinate mechanisms has a `uses` dependency on Positional, temporal & coordinate encodings because Positional, temporal & coordinate encodings is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "58e843a2e25a90ec",
@@ -118,12 +118,12 @@
       "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms is assembled in part from the mechanism or model component Self-attention."
     },
     {
-      "edge_id": "18e126646bccf1a5",
+      "edge_id": "d9d003b53701acaf",
       "node_id": "positional_mechanisms",
       "dependency_id": "geometry_topology",
       "type": "uses",
       "strength": "common",
-      "rationale": "Relative position, RoPE, ALiBi & coordinate mechanisms uses Geometry, topology & symmetry as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Relative position, RoPE, ALiBi & coordinate mechanisms has a `uses` dependency on Geometry, topology & symmetry because Geometry, topology & symmetry is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

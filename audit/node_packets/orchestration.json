@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Workflow and cluster orchestration allocate resources, schedule jobs, express dependencies, retry failures, and coordinate multi-stage ML pipelines.",
-    "why_it_matters": "The role of Workflow, cluster & job orchestration is to connect Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Model registry, versioning & MLOps / LLMOps, Multi-agent systems & organizational intelligence, Simulation farms, digital environments & scenario generation.",
+    "why_it_matters": "In this atlas graph, Workflow, cluster & job orchestration is modeled as depending on Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations and feeding downstream nodes such as Model registry, versioning & MLOps / LLMOps, Multi-agent systems & organizational intelligence, Simulation farms, digital environments & scenario generation.",
     "examples": [
-      "substrate for Model registry, versioning & MLOps / LLMOps",
-      "substrate for Multi-agent systems & organizational intelligence",
-      "substrate for Simulation farms, digital environments & scenario generation"
+      "atlas downstream link to Model registry, versioning & MLOps / LLMOps",
+      "atlas downstream link to Multi-agent systems & organizational intelligence",
+      "atlas downstream link to Simulation farms, digital environments & scenario generation"
     ],
     "limitations": [
       "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations."
@@ -34,25 +34,25 @@
         "id": "distributed_systems",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Workflow, cluster & job orchestration turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "programs_ast_ir",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Workflow, cluster & job orchestration turns Programs, ASTs, bytecode & intermediate representations into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "storage_checkpoints",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Workflow, cluster & job orchestration turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "data_pipelines",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Workflow, cluster & job orchestration turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Distributed data pipelines & streaming because Distributed data pipelines & streaming is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -64,28 +64,28 @@
       "text": "Workflow and cluster orchestration allocate resources, schedule jobs, express dependencies, retry failures, and coordinate multi-stage ML pipelines."
     },
     {
-      "unit_id": "d91821ab330e46db",
+      "unit_id": "c2b19617908b0da3",
       "node_id": "orchestration",
       "field": "why_it_matters",
-      "text": "The role of Workflow, cluster & job orchestration is to connect Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Model registry, versioning & MLOps / LLMOps, Multi-agent systems & organizational intelligence, Simulation farms, digital environments & scenario generation."
+      "text": "In this atlas graph, Workflow, cluster & job orchestration is modeled as depending on Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations and feeding downstream nodes such as Model registry, versioning & MLOps / LLMOps, Multi-agent systems & organizational intelligence, Simulation farms, digital environments & scenario generation."
     },
     {
-      "unit_id": "ecee936ceaff76be",
+      "unit_id": "b60604385910f90f",
       "node_id": "orchestration",
       "field": "examples[1]",
-      "text": "substrate for Model registry, versioning & MLOps / LLMOps"
+      "text": "atlas downstream link to Model registry, versioning & MLOps / LLMOps"
     },
     {
-      "unit_id": "51324430d775c9fc",
+      "unit_id": "40f1e4134ff68866",
       "node_id": "orchestration",
       "field": "examples[2]",
-      "text": "substrate for Multi-agent systems & organizational intelligence"
+      "text": "atlas downstream link to Multi-agent systems & organizational intelligence"
     },
     {
-      "unit_id": "63f9bd6d0a8209a8",
+      "unit_id": "1c123fd0f10bed76",
       "node_id": "orchestration",
       "field": "examples[3]",
-      "text": "substrate for Simulation farms, digital environments & scenario generation"
+      "text": "atlas downstream link to Simulation farms, digital environments & scenario generation"
     },
     {
       "unit_id": "04f66853a9fe164e",
@@ -94,62 +94,62 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Programs, ASTs, bytecode & intermediate representations."
     },
     {
-      "unit_id": "31aecf8057756bc7",
+      "unit_id": "942f767b2e859a43",
       "node_id": "orchestration",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Workflow, cluster & job orchestration turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "b1947cc59e99880b",
+      "unit_id": "eb090ddaa26e0206",
       "node_id": "orchestration",
       "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Workflow, cluster & job orchestration turns Programs, ASTs, bytecode & intermediate representations into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "4e7aac96ed5ac2ff",
+      "unit_id": "0df3f08948f41993",
       "node_id": "orchestration",
       "field": "dependencies.storage_checkpoints.rationale",
-      "text": "Workflow, cluster & job orchestration turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "cdcd40a820e216a3",
+      "unit_id": "0d45be3d33ff3fe6",
       "node_id": "orchestration",
       "field": "dependencies.data_pipelines.rationale",
-      "text": "Workflow, cluster & job orchestration turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Distributed data pipelines & streaming because Distributed data pipelines & streaming is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "004c42a2c1260546",
+      "edge_id": "50988ccc7acde8b2",
       "node_id": "orchestration",
       "dependency_id": "distributed_systems",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Workflow, cluster & job orchestration turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "980e5f597265eea6",
+      "edge_id": "fcc4261dfe3c00ee",
       "node_id": "orchestration",
       "dependency_id": "programs_ast_ir",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Workflow, cluster & job orchestration turns Programs, ASTs, bytecode & intermediate representations into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "945dedc2c492faba",
+      "edge_id": "712bfaa433a097d7",
       "node_id": "orchestration",
       "dependency_id": "storage_checkpoints",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Workflow, cluster & job orchestration turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "9b7402a35a8f014e",
+      "edge_id": "c20e9c6a145de5cf",
       "node_id": "orchestration",
       "dependency_id": "data_pipelines",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Workflow, cluster & job orchestration turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Workflow, cluster & job orchestration has an `operationalizes` dependency on Distributed data pipelines & streaming because Distributed data pipelines & streaming is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

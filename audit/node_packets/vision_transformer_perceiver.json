@@ -15,9 +15,9 @@
     ],
     "aliases": [],
     "definition": "Vision Transformers tokenize spatial inputs into patches, while Perceiver-style models use a compact latent array to absorb high-dimensional or multimodal observations.",
-    "why_it_matters": "The role of Vision Transformers & Perceiver-style latent models is to connect Transformers, Striding, pooling, patchification & up/downsampling to downstream capabilities including Computer vision, perception & scene understanding.",
+    "why_it_matters": "In this atlas graph, Vision Transformers & Perceiver-style latent models is modeled as depending on Transformers, Striding, pooling, patchification & up/downsampling and feeding downstream nodes such as Computer vision, perception & scene understanding.",
     "examples": [
-      "substrate for Computer vision, perception & scene understanding",
+      "atlas downstream link to Computer vision, perception & scene understanding",
       "combined with Transformers"
     ],
     "limitations": [
@@ -47,7 +47,7 @@
         "id": "cross_attention",
         "type": "composes",
         "strength": "common",
-        "rationale": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+        "rationale": "In this atlas graph, Vision Transformers & Perceiver-style latent models has a `composes` dependency on Cross-attention & co-attention with `common` strength."
       },
       {
         "id": "spatial_grids",
@@ -65,16 +65,16 @@
       "text": "Vision Transformers tokenize spatial inputs into patches, while Perceiver-style models use a compact latent array to absorb high-dimensional or multimodal observations."
     },
     {
-      "unit_id": "6f8cde2fa7b604d4",
+      "unit_id": "1e8fce5fdaf1b27c",
       "node_id": "vision_transformer_perceiver",
       "field": "why_it_matters",
-      "text": "The role of Vision Transformers & Perceiver-style latent models is to connect Transformers, Striding, pooling, patchification & up/downsampling to downstream capabilities including Computer vision, perception & scene understanding."
+      "text": "In this atlas graph, Vision Transformers & Perceiver-style latent models is modeled as depending on Transformers, Striding, pooling, patchification & up/downsampling and feeding downstream nodes such as Computer vision, perception & scene understanding."
     },
     {
-      "unit_id": "93bd58e43572e5ca",
+      "unit_id": "7d826526fe91aa9d",
       "node_id": "vision_transformer_perceiver",
       "field": "examples[1]",
-      "text": "substrate for Computer vision, perception & scene understanding"
+      "text": "atlas downstream link to Computer vision, perception & scene understanding"
     },
     {
       "unit_id": "292d46e96c063bfc",
@@ -101,10 +101,10 @@
       "text": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Striding, pooling, patchification & up/downsampling."
     },
     {
-      "unit_id": "466d5cb1cf3994e1",
+      "unit_id": "64740ca354ce8cc5",
       "node_id": "vision_transformer_perceiver",
       "field": "dependencies.cross_attention.rationale",
-      "text": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+      "text": "In this atlas graph, Vision Transformers & Perceiver-style latent models has a `composes` dependency on Cross-attention & co-attention with `common` strength."
     },
     {
       "unit_id": "86a5359cdea3d9e5",
@@ -131,12 +131,12 @@
       "rationale": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Striding, pooling, patchification & up/downsampling."
     },
     {
-      "edge_id": "ea1b1c0541c94d75",
+      "edge_id": "a82d0864b37da77e",
       "node_id": "vision_transformer_perceiver",
       "dependency_id": "cross_attention",
       "type": "composes",
       "strength": "common",
-      "rationale": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Cross-attention & co-attention."
+      "rationale": "In this atlas graph, Vision Transformers & Perceiver-style latent models has a `composes` dependency on Cross-attention & co-attention with `common` strength."
     },
     {
       "edge_id": "1acee357ab482c8d",

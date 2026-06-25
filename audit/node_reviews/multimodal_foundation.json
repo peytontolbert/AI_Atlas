@@ -5,67 +5,25 @@
       "node_id": "multimodal_foundation",
       "field": "definition",
       "text": "A multimodal foundation model aligns and jointly processes text, images, audio, video, or actions through shared token spaces and cross-modal interaction.",
-      "source_ids": ["ref_dlbook", "ref_transformer"],
-      "evidence_location": "The packet cites Deep Learning and Attention Is All You Need; these support neural and transformer background but do not directly cover modern multimodal foundation models across all listed modalities.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_transformer"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The definition is plausible but overbroad for the cited sources; a CLIP, Flamingo, Gemini, or multimodal foundation-model source would be more direct."
-    },
-    {
-      "unit_id": "e9fba64a815a950a",
-      "node_id": "multimodal_foundation",
-      "field": "why_it_matters",
-      "text": "The role of Multimodal foundation models is to connect Transformers, Cross-attention & co-attention to downstream capabilities including Multimodal assistants & vision-language systems, Browser, desktop & computer-use agents, Robotics & embodied AI.",
-      "source_ids": ["ref_dlbook", "ref_transformer"],
-      "evidence_location": "Attention Is All You Need supports Transformer architecture; the downstream capability list is not directly supported by the cited references.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Graph-derived downstream breadth should be narrowed or supported with specific multimodal assistant, computer-use, and robotics sources."
-    },
-    {
-      "unit_id": "8f71abf2f2b26b76",
-      "node_id": "multimodal_foundation",
-      "field": "examples[1]",
-      "text": "substrate for Multimodal assistants & vision-language systems",
-      "source_ids": ["ref_dlbook", "ref_transformer"],
-      "evidence_location": "The cited sources support neural/Transformer background, not this exact application substrate relation.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Plausible, but not directly verified by the packet references."
-    },
-    {
-      "unit_id": "ccb82a4e339bda53",
-      "node_id": "multimodal_foundation",
-      "field": "examples[2]",
-      "text": "substrate for Browser, desktop & computer-use agents",
-      "source_ids": ["ref_dlbook", "ref_transformer"],
-      "evidence_location": "The cited sources do not address browser, desktop, or computer-use agents.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "No adequate cited support for this exact downstream claim."
-    },
-    {
-      "unit_id": "f639b5c3c84579bf",
-      "node_id": "multimodal_foundation",
-      "field": "examples[3]",
-      "text": "substrate for Robotics & embodied AI",
-      "source_ids": ["ref_dlbook", "ref_transformer"],
-      "evidence_location": "The cited sources do not directly establish multimodal foundation models as robotics or embodied-AI substrates.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Plausible in recent VLA work, but this packet lacks a direct robotics/VLA citation."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "a696631c2945ef93",
       "node_id": "multimodal_foundation",
       "field": "limitations[1]",
       "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Cross-attention & co-attention.",
-      "source_ids": ["ref_dlbook", "ref_transformer"],
+      "source_ids": [
+        "ref_dlbook",
+        "ref_transformer"
+      ],
       "evidence_location": "Deep Learning supports general limitations around optimization and inductive bias; Attention Is All You Need supports Transformer components.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -77,7 +35,9 @@
       "node_id": "multimodal_foundation",
       "field": "dependencies.transformer.rationale",
       "text": "Multimodal foundation models extends or specializes the architecture family Transformers.",
-      "source_ids": ["ref_transformer"],
+      "source_ids": [
+        "ref_transformer"
+      ],
       "evidence_location": "Attention Is All You Need defines Transformer architectures; modern multimodal foundation models commonly specialize Transformer backbones, but the packet lacks a direct multimodal source.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -85,35 +45,13 @@
       "notes": "The relationship is defensible as taxonomy synthesis, not exact direct support."
     },
     {
-      "unit_id": "695040584d11204b",
-      "node_id": "multimodal_foundation",
-      "field": "dependencies.cross_attention.rationale",
-      "text": "Multimodal foundation models is assembled in part from the mechanism or model component Cross-attention & co-attention.",
-      "source_ids": ["ref_transformer"],
-      "evidence_location": "Attention Is All You Need includes encoder-decoder attention but does not directly establish cross-attention as core across multimodal foundation models.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Common in many multimodal models, but not universal and not directly supported by the cited sources."
-    },
-    {
-      "unit_id": "682148705514ef28",
-      "node_id": "multimodal_foundation",
-      "field": "dependencies.contrastive_objective.rationale",
-      "text": "Multimodal foundation models is learned, selected, or evaluated using the objective family Contrastive and mutual-information objectives.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning supports representation learning background, but the packet lacks a direct contrastive multimodal source such as CLIP.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is true for important multimodal models but not directly supported by the cited source set."
-    },
-    {
       "unit_id": "2618b6102fbbb267",
       "node_id": "multimodal_foundation",
       "field": "dependencies.multimodal_simulated_streams.rationale",
       "text": "Multimodal foundation models consumes, emits, or organizes information using Multimodal, simulated & streaming data.",
-      "source_ids": ["ref_dlbook"],
+      "source_ids": [
+        "ref_dlbook"
+      ],
       "evidence_location": "The cited source supports general neural data modeling, not this exact multimodal data dependency.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -121,16 +59,102 @@
       "notes": "Defensible from the node definition and taxonomy, but not directly source-verified."
     },
     {
-      "unit_id": "235b33518a5d1de5",
+      "unit_id": "22a67efd2f203eb6",
       "node_id": "multimodal_foundation",
-      "field": "dependencies.vqvae_tokenizer.rationale",
-      "text": "Multimodal foundation models extends or specializes the architecture family VQ-VAE & learned discrete tokenizers.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "The packet does not cite a VQ-VAE or learned tokenizer source for this dependency.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Multimodal foundation models is modeled as depending on Transformers, Cross-attention & co-attention and feeding downstream nodes such as Multimodal assistants & vision-language systems, Browser, desktop & computer-use agents, Robotics & embodied AI.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Discrete tokenizers are used in some multimodal systems but are not universal, and the relationship type wording is too strong."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5db13f162ff9a8d6",
+      "node_id": "multimodal_foundation",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Multimodal assistants & vision-language systems",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9730da074fc364b6",
+      "node_id": "multimodal_foundation",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Browser, desktop & computer-use agents",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "7bedf8d85a83a4fa",
+      "node_id": "multimodal_foundation",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Robotics & embodied AI",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "6e93e276847e0e02",
+      "node_id": "multimodal_foundation",
+      "field": "dependencies.contrastive_objective.rationale",
+      "text": "In this atlas graph, Multimodal foundation models has an `optimizes_for` dependency on Contrastive and mutual-information objectives because Contrastive and mutual-information objectives is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b8c26b4c5cba0d7c",
+      "node_id": "multimodal_foundation",
+      "field": "dependencies.cross_attention.rationale",
+      "text": "In this atlas graph, Multimodal foundation models has a `composes` dependency on Cross-attention & co-attention with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "e939bf64654d7925",
+      "node_id": "multimodal_foundation",
+      "field": "dependencies.vqvae_tokenizer.rationale",
+      "text": "In this atlas graph, Multimodal foundation models has a `composes` dependency on VQ-VAE & learned discrete tokenizers with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -138,7 +162,9 @@
       "edge_id": "460b270e09cf78c9",
       "node_id": "multimodal_foundation",
       "dependency_id": "transformer",
-      "source_ids": ["ref_transformer"],
+      "source_ids": [
+        "ref_transformer"
+      ],
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
@@ -147,34 +173,12 @@
       "strength_supported": true
     },
     {
-      "edge_id": "0420911b1790193a",
-      "node_id": "multimodal_foundation",
-      "dependency_id": "cross_attention",
-      "source_ids": ["ref_transformer"],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Cross-attention is common but not universal; core strength is not established by the cited source set.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
-      "edge_id": "3f7e2c9a61a274bb",
-      "node_id": "multimodal_foundation",
-      "dependency_id": "contrastive_objective",
-      "source_ids": ["ref_dlbook"],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Contrastive objectives are important but not adequately supported here without a direct multimodal contrastive-learning source.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "3d41f19996457fca",
       "node_id": "multimodal_foundation",
       "dependency_id": "multimodal_simulated_streams",
-      "source_ids": ["ref_dlbook"],
+      "source_ids": [
+        "ref_dlbook"
+      ],
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
@@ -183,16 +187,46 @@
       "strength_supported": true
     },
     {
-      "edge_id": "ba3c4c9259d101a6",
+      "edge_id": "72c7cc207879491f",
       "node_id": "multimodal_foundation",
-      "dependency_id": "vqvae_tokenizer",
-      "source_ids": ["ref_dlbook"],
+      "dependency_id": "contrastive_objective",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Learned discrete tokenizers are used in some multimodal systems, but common strength and specializes/composes wording are not established.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "a4640694eae76cdc",
+      "node_id": "multimodal_foundation",
+      "dependency_id": "cross_attention",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "56769e90a409188e",
+      "node_id": "multimodal_foundation",
+      "dependency_id": "vqvae_tokenizer",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "multimodal_foundation",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

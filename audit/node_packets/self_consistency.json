@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Self-consistency samples multiple reasoning trajectories and aggregates their answers, using diversity to reduce dependence on one brittle chain.",
-    "why_it_matters": "The role of Self-consistency & best-of-N inference is to connect Chain-of-thought & latent reasoning, Recursive partitioning & ensembling to downstream capabilities including Reflection, critique, verifier & repair loops, Test-time compute scaling, Best-of-N & verifier-guided selection.",
+    "why_it_matters": "In this atlas graph, Self-consistency & best-of-N inference is modeled as depending on Chain-of-thought & latent reasoning, Recursive partitioning & ensembling and feeding downstream nodes such as Reflection, critique, verifier & repair loops, Test-time compute scaling, Best-of-N & verifier-guided selection.",
     "examples": [
-      "substrate for Reflection, critique, verifier & repair loops",
-      "substrate for Test-time compute scaling",
-      "substrate for Best-of-N & verifier-guided selection"
+      "atlas downstream link to Reflection, critique, verifier & repair loops",
+      "atlas downstream link to Test-time compute scaling",
+      "atlas downstream link to Best-of-N & verifier-guided selection"
     ],
     "limitations": [
       "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Recursive partitioning & ensembling."
@@ -34,19 +34,19 @@
         "id": "cot_latent_reasoning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Self-consistency & best-of-N inference uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Chain-of-thought & latent reasoning because Chain-of-thought & latent reasoning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "recursive_partition_ensemble",
         "type": "uses",
         "strength": "core",
-        "rationale": "Self-consistency & best-of-N inference uses Recursive partitioning & ensembling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Recursive partitioning & ensembling because Recursive partitioning & ensembling is modeled as a reusable ingredient for the node."
       },
       {
         "id": "search_sampling_decoding",
         "type": "uses",
         "strength": "common",
-        "rationale": "Self-consistency & best-of-N inference uses Search, sampling & decoding procedures as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Search, sampling & decoding procedures because Search, sampling & decoding procedures is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Self-consistency samples multiple reasoning trajectories and aggregates their answers, using diversity to reduce dependence on one brittle chain."
     },
     {
-      "unit_id": "76d50a2c49531a7d",
+      "unit_id": "56d25bd459772568",
       "node_id": "self_consistency",
       "field": "why_it_matters",
-      "text": "The role of Self-consistency & best-of-N inference is to connect Chain-of-thought & latent reasoning, Recursive partitioning & ensembling to downstream capabilities including Reflection, critique, verifier & repair loops, Test-time compute scaling, Best-of-N & verifier-guided selection."
+      "text": "In this atlas graph, Self-consistency & best-of-N inference is modeled as depending on Chain-of-thought & latent reasoning, Recursive partitioning & ensembling and feeding downstream nodes such as Reflection, critique, verifier & repair loops, Test-time compute scaling, Best-of-N & verifier-guided selection."
     },
     {
-      "unit_id": "52b0622b9cfc5ab6",
+      "unit_id": "92210bc96aa0aa35",
       "node_id": "self_consistency",
       "field": "examples[1]",
-      "text": "substrate for Reflection, critique, verifier & repair loops"
+      "text": "atlas downstream link to Reflection, critique, verifier & repair loops"
     },
     {
-      "unit_id": "68641283d531d760",
+      "unit_id": "083018100bd43ba2",
       "node_id": "self_consistency",
       "field": "examples[2]",
-      "text": "substrate for Test-time compute scaling"
+      "text": "atlas downstream link to Test-time compute scaling"
     },
     {
-      "unit_id": "c6bb973fdd7bf692",
+      "unit_id": "a4a5d0be97f08298",
       "node_id": "self_consistency",
       "field": "examples[3]",
-      "text": "substrate for Best-of-N & verifier-guided selection"
+      "text": "atlas downstream link to Best-of-N & verifier-guided selection"
     },
     {
       "unit_id": "e78e92a757e5eebd",
@@ -88,48 +88,48 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Recursive partitioning & ensembling."
     },
     {
-      "unit_id": "4a4be7936b5f9593",
+      "unit_id": "dbcf15fc8ff0f0cf",
       "node_id": "self_consistency",
       "field": "dependencies.cot_latent_reasoning.rationale",
-      "text": "Self-consistency & best-of-N inference uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Chain-of-thought & latent reasoning because Chain-of-thought & latent reasoning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "191fe0453dcfff8f",
+      "unit_id": "33c3f079d30b142c",
       "node_id": "self_consistency",
       "field": "dependencies.recursive_partition_ensemble.rationale",
-      "text": "Self-consistency & best-of-N inference uses Recursive partitioning & ensembling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Recursive partitioning & ensembling because Recursive partitioning & ensembling is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "84fd0483fffbbd4e",
+      "unit_id": "4e7b934ee851bcd5",
       "node_id": "self_consistency",
       "field": "dependencies.search_sampling_decoding.rationale",
-      "text": "Self-consistency & best-of-N inference uses Search, sampling & decoding procedures as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Search, sampling & decoding procedures because Search, sampling & decoding procedures is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "841ffa3c167bdfdf",
+      "edge_id": "c6addafcfe7150db",
       "node_id": "self_consistency",
       "dependency_id": "cot_latent_reasoning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Self-consistency & best-of-N inference uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Chain-of-thought & latent reasoning because Chain-of-thought & latent reasoning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "14db8e3428fff14e",
+      "edge_id": "a87d144091d48bcf",
       "node_id": "self_consistency",
       "dependency_id": "recursive_partition_ensemble",
       "type": "uses",
       "strength": "core",
-      "rationale": "Self-consistency & best-of-N inference uses Recursive partitioning & ensembling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Recursive partitioning & ensembling because Recursive partitioning & ensembling is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "35b1a03afe1025b3",
+      "edge_id": "ce1361f48e7eb496",
       "node_id": "self_consistency",
       "dependency_id": "search_sampling_decoding",
       "type": "uses",
       "strength": "common",
-      "rationale": "Self-consistency & best-of-N inference uses Search, sampling & decoding procedures as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Search, sampling & decoding procedures because Search, sampling & decoding procedures is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

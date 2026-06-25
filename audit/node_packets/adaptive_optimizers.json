@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Adaptive optimizers such as AdaGrad, RMSProp, Adam, and Adafactor rescale parameter updates using running first- and second-moment statistics.",
-    "why_it_matters": "The role of Adam, Adafactor & adaptive optimizers is to connect SGD, momentum & stochastic optimization, Statistics & experimental design to downstream capabilities including Learning-rate schedules, warmup & stabilization.",
+    "why_it_matters": "In this atlas graph, Adam, Adafactor & adaptive optimizers is modeled as depending on SGD, momentum & stochastic optimization, Statistics & experimental design and feeding downstream nodes such as Learning-rate schedules, warmup & stabilization.",
     "examples": [
-      "substrate for Learning-rate schedules, warmup & stabilization",
+      "atlas downstream link to Learning-rate schedules, warmup & stabilization",
       "combined with SGD, momentum & stochastic optimization"
     ],
     "limitations": [
@@ -33,19 +33,19 @@
         "id": "sgd_variants",
         "type": "uses",
         "strength": "core",
-        "rationale": "Adam, Adafactor & adaptive optimizers uses SGD, momentum & stochastic optimization as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Adam, Adafactor & adaptive optimizers has a `uses` dependency on SGD, momentum & stochastic optimization because SGD, momentum & stochastic optimization is modeled as a reusable ingredient for the node."
       },
       {
         "id": "statistics",
         "type": "uses",
         "strength": "core",
-        "rationale": "Adam, Adafactor & adaptive optimizers uses Statistics & experimental design as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Adam, Adafactor & adaptive optimizers has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
       },
       {
         "id": "numerical_methods",
         "type": "uses",
         "strength": "common",
-        "rationale": "Adam, Adafactor & adaptive optimizers uses Numerical analysis as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Adam, Adafactor & adaptive optimizers has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,16 +57,16 @@
       "text": "Adaptive optimizers such as AdaGrad, RMSProp, Adam, and Adafactor rescale parameter updates using running first- and second-moment statistics."
     },
     {
-      "unit_id": "491d1a450d7b696b",
+      "unit_id": "f0c659f831c28fd1",
       "node_id": "adaptive_optimizers",
       "field": "why_it_matters",
-      "text": "The role of Adam, Adafactor & adaptive optimizers is to connect SGD, momentum & stochastic optimization, Statistics & experimental design to downstream capabilities including Learning-rate schedules, warmup & stabilization."
+      "text": "In this atlas graph, Adam, Adafactor & adaptive optimizers is modeled as depending on SGD, momentum & stochastic optimization, Statistics & experimental design and feeding downstream nodes such as Learning-rate schedules, warmup & stabilization."
     },
     {
-      "unit_id": "ed6e37d4cfc6a7cf",
+      "unit_id": "f6daceb9bf2b1fe7",
       "node_id": "adaptive_optimizers",
       "field": "examples[1]",
-      "text": "substrate for Learning-rate schedules, warmup & stabilization"
+      "text": "atlas downstream link to Learning-rate schedules, warmup & stabilization"
     },
     {
       "unit_id": "047cc8c24972d027",
@@ -81,48 +81,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include SGD, momentum & stochastic optimization, Statistics & experimental design."
     },
     {
-      "unit_id": "597360d9f03405cf",
+      "unit_id": "77163140012d2c56",
       "node_id": "adaptive_optimizers",
       "field": "dependencies.sgd_variants.rationale",
-      "text": "Adam, Adafactor & adaptive optimizers uses SGD, momentum & stochastic optimization as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Adam, Adafactor & adaptive optimizers has a `uses` dependency on SGD, momentum & stochastic optimization because SGD, momentum & stochastic optimization is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "6403e29b5a1f62db",
+      "unit_id": "fbf8ede3e8cb56f4",
       "node_id": "adaptive_optimizers",
       "field": "dependencies.statistics.rationale",
-      "text": "Adam, Adafactor & adaptive optimizers uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Adam, Adafactor & adaptive optimizers has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "56c23256e01bd685",
+      "unit_id": "9f4475dacd5b8ee8",
       "node_id": "adaptive_optimizers",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Adam, Adafactor & adaptive optimizers uses Numerical analysis as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Adam, Adafactor & adaptive optimizers has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "6591152473ef0dfe",
+      "edge_id": "d996eab467fe7434",
       "node_id": "adaptive_optimizers",
       "dependency_id": "sgd_variants",
       "type": "uses",
       "strength": "core",
-      "rationale": "Adam, Adafactor & adaptive optimizers uses SGD, momentum & stochastic optimization as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Adam, Adafactor & adaptive optimizers has a `uses` dependency on SGD, momentum & stochastic optimization because SGD, momentum & stochastic optimization is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "4cf2a04617eafea8",
+      "edge_id": "947474e0ed75d786",
       "node_id": "adaptive_optimizers",
       "dependency_id": "statistics",
       "type": "uses",
       "strength": "core",
-      "rationale": "Adam, Adafactor & adaptive optimizers uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Adam, Adafactor & adaptive optimizers has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "0d52d0477b6b1536",
+      "edge_id": "bbcff23543c73061",
       "node_id": "adaptive_optimizers",
       "dependency_id": "numerical_methods",
       "type": "uses",
       "strength": "common",
-      "rationale": "Adam, Adafactor & adaptive optimizers uses Numerical analysis as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Adam, Adafactor & adaptive optimizers has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

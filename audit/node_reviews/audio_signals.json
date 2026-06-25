@@ -9,69 +9,11 @@
         "ref_pml",
         "ref_aima"
       ],
-      "evidence_location": "PML book1 long TOC: sequence models and 1d CNNs for sequence classification/generation (lines 463-478); AIMA contents.html: speech recognition and speech synthesis in natural language tasks / communicating, perceiving, and acting (lines 621-642).",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The inspected sources support speech and sequence modeling, but they do not directly mention music, acoustics, sensor streams, or time-frequency representations."
-    },
-    {
-      "unit_id": "06e3fe3102bea6fd",
-      "node_id": "audio_signals",
-      "field": "why_it_matters",
-      "text": "The role of Waveforms, audio & spectrograms is to connect Signal processing & harmonic analysis, Sequences, events & time series to downstream capabilities including Multimodal, simulated & streaming data, Speech recognition & spoken-language understanding, Speech synthesis, voice & music generation.",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "PML book1 long TOC: sequence models and 1d CNNs (lines 463-478); AIMA contents.html: NLP language/speech-related chapter context, natural language tasks, and communicating/perceiving/acting part headings (lines 621-642).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The evidence supports sequence modeling and speech/NLP application context, but signal processing, harmonic analysis, spectrograms, music generation, and multimodal/simulated/streaming data are not directly supported."
-    },
-    {
-      "unit_id": "61a0e98f6cdd2e66",
-      "node_id": "audio_signals",
-      "field": "examples[1]",
-      "text": "substrate for Multimodal, simulated & streaming data",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML book1 long TOC: data section with image and text datasets and preprocessing (lines 15-20), plus sequence models (lines 463-478).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected evidence does not directly support audio signals as a substrate for multimodal, simulated, or streaming data."
-    },
-    {
-      "unit_id": "1e7f13610cb1052a",
-      "node_id": "audio_signals",
-      "field": "examples[2]",
-      "text": "substrate for Speech recognition & spoken-language understanding",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html: Part VI 'Communicating, perceiving, and acting', Chapter 23 natural language processing and natural language tasks (lines 621-642).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The AIMA TOC supports language tasks and communication/perception context, but the inspected headings do not explicitly say audio waveforms or spectrograms are the substrate for speech recognition."
-    },
-    {
-      "unit_id": "872cee71c334ccbf",
-      "node_id": "audio_signals",
-      "field": "examples[3]",
-      "text": "substrate for Speech synthesis, voice & music generation",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "PML book1 long TOC: sequence generation with 1d CNNs, RNNs, LSTMs, and transformers (lines 463-504); AIMA contents.html: natural language tasks and communication/perception context (lines 621-642).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Sequence generation is supported, and speech/language context is present. Voice and music generation are not directly supported by the inspected passages."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "c44f311d0974de7b",
@@ -80,27 +22,14 @@
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Signal processing & harmonic analysis, Sequences, events & time series.",
       "source_ids": [
         "ref_pml",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML book1 long TOC: sequence models and preprocessing data (lines 18-20 and 463-504); AIMA contents.html: fairness and bias plus sequence/probabilistic reasoning over time (lines 745-749 and 361-382).",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sequence dependency and broad bias concern are supported. Harmonic analysis, information loss from audio encodings, and invariance difficulty are not directly supported."
-    },
-    {
-      "unit_id": "873f30e32e472896",
-      "node_id": "audio_signals",
-      "field": "dependencies.signal_processing.rationale",
-      "text": "Waveforms, audio & spectrograms rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis.",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML book1 long TOC: 1d CNNs for sequence classification/generation and sequence models (lines 463-478).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Signal-processing relevance is plausible for waveforms and spectrograms, but the inspected source does not directly cover signal processing or harmonic analysis."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "998c0459aab03a10",
@@ -131,23 +60,79 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "The sources support tensor/vector/matrix representations and sequence models, but not audio tensorization in exact wording."
+    },
+    {
+      "unit_id": "d716ba4b67161c80",
+      "node_id": "audio_signals",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Waveforms, audio & spectrograms is modeled as depending on Signal processing & harmonic analysis, Sequences, events & time series and feeding downstream nodes such as Multimodal, simulated & streaming data, Speech recognition & spoken-language understanding, Speech synthesis, voice & music generation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ef8ccb0f4f07be2f",
+      "node_id": "audio_signals",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Multimodal, simulated & streaming data",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "194e8bd8185a32bb",
+      "node_id": "audio_signals",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Speech recognition & spoken-language understanding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c4cbc59d1e228e55",
+      "node_id": "audio_signals",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Speech synthesis, voice & music generation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8f8f207024870c20",
+      "node_id": "audio_signals",
+      "field": "dependencies.signal_processing.rationale",
+      "text": "In this atlas graph, Waveforms, audio & spectrograms has a `requires` dependency on Signal processing & harmonic analysis with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
-    {
-      "edge_id": "3965819244585290",
-      "node_id": "audio_signals",
-      "dependency_id": "signal_processing",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the cited packet references do not directly evidence signal processing or harmonic analysis for audio.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
     {
       "edge_id": "262c8aa6d78cc2b0",
       "node_id": "audio_signals",
@@ -177,6 +162,22 @@
       "notes": "Vector/matrix/tensor representations are broadly supported for ML sequence models. Common strength is defensible because tensors are representational rather than the audio-domain concept itself.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "2e219f28a23f1721",
+      "node_id": "audio_signals",
+      "dependency_id": "signal_processing",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "audio_signals",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

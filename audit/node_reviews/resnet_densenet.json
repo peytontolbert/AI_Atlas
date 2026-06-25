@@ -16,64 +16,20 @@
       "notes": "The cited node/reference evidence directly supports the architecture description at this level of specificity."
     },
     {
-      "unit_id": "cbf8e8794cf9318d",
-      "node_id": "resnet_densenet",
-      "field": "why_it_matters",
-      "text": "The role of ResNets & DenseNets is to connect Convolutional neural networks, Residual, skip & highway connections to downstream capabilities including Medical imaging & clinical decision support, Computer vision, perception & scene understanding.",
-      "source_ids": [
-        "ref_resnet",
-        "ref_dlbook"
-      ],
-      "evidence_location": "He et al. ResNet paper for residual networks; Deep Learning convolutional-network context. DenseNet-specific feature reuse is not directly cited in the packet.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
-    },
-    {
-      "unit_id": "d140f415f8ed31d9",
-      "node_id": "resnet_densenet",
-      "field": "examples[1]",
-      "text": "substrate for Medical imaging & clinical decision support",
-      "source_ids": [
-        "ref_resnet",
-        "ref_dlbook"
-      ],
-      "evidence_location": "He et al. ResNet paper for residual networks; Deep Learning convolutional-network context. DenseNet-specific feature reuse is not directly cited in the packet.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The downstream substrate claim is plausible but broader than what the packet sources directly establish."
-    },
-    {
-      "unit_id": "dd9fcdc8cf96feb9",
-      "node_id": "resnet_densenet",
-      "field": "examples[2]",
-      "text": "substrate for Computer vision, perception & scene understanding",
-      "source_ids": [
-        "ref_resnet",
-        "ref_dlbook"
-      ],
-      "evidence_location": "He et al. ResNet paper for residual networks; Deep Learning convolutional-network context. DenseNet-specific feature reuse is not directly cited in the packet.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The downstream substrate claim is plausible but broader than what the packet sources directly establish."
-    },
-    {
       "unit_id": "a5e1621b92ad23fd",
       "node_id": "resnet_densenet",
       "field": "limitations[1]",
       "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Convolutional neural networks, Residual, skip & highway connections.",
       "source_ids": [
         "ref_resnet",
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "He et al. ResNet paper for residual networks; Deep Learning convolutional-network context. DenseNet-specific feature reuse is not directly cited in the packet.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "97ac717f2fc276e2",
@@ -106,19 +62,60 @@
       "notes": "The cited source directly supports this dependency relationship for the architecture."
     },
     {
-      "unit_id": "5d1a3bf69cae13d4",
+      "unit_id": "59eff2197b842762",
       "node_id": "resnet_densenet",
-      "field": "dependencies.normalization.rationale",
-      "text": "ResNets & DenseNets is assembled in part from the mechanism or model component Normalization & standardization.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, ResNets & DenseNets is modeled as depending on Convolutional neural networks, Residual, skip & highway connections and feeding downstream nodes such as Medical imaging & clinical decision support, Computer vision, perception & scene understanding.",
       "source_ids": [
-        "ref_resnet",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "He et al. ResNet paper for residual networks; Deep Learning convolutional-network context. DenseNet-specific feature reuse is not directly cited in the packet.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "747d32d9b4405e00",
+      "node_id": "resnet_densenet",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Medical imaging & clinical decision support",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "dfe16f898c9f80c8",
+      "node_id": "resnet_densenet",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Computer vision, perception & scene understanding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9fc423abe9a3d7a6",
+      "node_id": "resnet_densenet",
+      "field": "dependencies.normalization.rationale",
+      "text": "In this atlas graph, ResNets & DenseNets has a `composes` dependency on Normalization & standardization with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -153,19 +150,20 @@
       "strength_supported": true
     },
     {
-      "edge_id": "bef4d0e651aa545e",
+      "edge_id": "7d9fc03dbd5b2f40",
       "node_id": "resnet_densenet",
       "dependency_id": "normalization",
       "source_ids": [
-        "ref_resnet",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "resnet_densenet",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

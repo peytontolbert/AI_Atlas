@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Relative similarity or ordering is optimized instead of only class probability.",
-    "why_it_matters": "The role of Margin, ranking & metric objectives is to connect Supervised learning, Preference learning to downstream capabilities including Reward modeling, External retrieval & ranking, Support vector & kernel machines.",
+    "why_it_matters": "In this atlas graph, Margin, ranking & metric objectives is modeled as depending on Supervised learning, Preference learning and feeding downstream nodes such as Reward modeling, External retrieval & ranking, Support vector & kernel machines.",
     "examples": [
-      "substrate for Reward modeling",
-      "substrate for External retrieval & ranking",
-      "substrate for Support vector & kernel machines"
+      "atlas downstream link to Reward modeling",
+      "atlas downstream link to External retrieval & ranking",
+      "atlas downstream link to Support vector & kernel machines"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Supervised learning, Preference learning."
@@ -34,19 +34,19 @@
         "id": "supervised_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Margin, ranking & metric objectives uses Supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Margin, ranking & metric objectives has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "preference_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Margin, ranking & metric objectives uses Preference learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Margin, ranking & metric objectives has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "embeddings",
         "type": "uses",
         "strength": "common",
-        "rationale": "Margin, ranking & metric objectives uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Margin, ranking & metric objectives has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Relative similarity or ordering is optimized instead of only class probability."
     },
     {
-      "unit_id": "00a7000a5e0adff0",
+      "unit_id": "48cd6da34d49e36c",
       "node_id": "margin_ranking_metric",
       "field": "why_it_matters",
-      "text": "The role of Margin, ranking & metric objectives is to connect Supervised learning, Preference learning to downstream capabilities including Reward modeling, External retrieval & ranking, Support vector & kernel machines."
+      "text": "In this atlas graph, Margin, ranking & metric objectives is modeled as depending on Supervised learning, Preference learning and feeding downstream nodes such as Reward modeling, External retrieval & ranking, Support vector & kernel machines."
     },
     {
-      "unit_id": "be9b2da6d6326281",
+      "unit_id": "366fdd415b85c75a",
       "node_id": "margin_ranking_metric",
       "field": "examples[1]",
-      "text": "substrate for Reward modeling"
+      "text": "atlas downstream link to Reward modeling"
     },
     {
-      "unit_id": "250386a2675844eb",
+      "unit_id": "481ae325a169522e",
       "node_id": "margin_ranking_metric",
       "field": "examples[2]",
-      "text": "substrate for External retrieval & ranking"
+      "text": "atlas downstream link to External retrieval & ranking"
     },
     {
-      "unit_id": "fa3da1310ce73871",
+      "unit_id": "069dcfd13037e5f2",
       "node_id": "margin_ranking_metric",
       "field": "examples[3]",
-      "text": "substrate for Support vector & kernel machines"
+      "text": "atlas downstream link to Support vector & kernel machines"
     },
     {
       "unit_id": "185866ed8d729d57",
@@ -88,48 +88,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Supervised learning, Preference learning."
     },
     {
-      "unit_id": "a9b6d8b70780482b",
+      "unit_id": "34f1926726ec7899",
       "node_id": "margin_ranking_metric",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Margin, ranking & metric objectives uses Supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Margin, ranking & metric objectives has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d13b1fa28f613ad9",
+      "unit_id": "5e2860a5b825f412",
       "node_id": "margin_ranking_metric",
       "field": "dependencies.preference_learning.rationale",
-      "text": "Margin, ranking & metric objectives uses Preference learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Margin, ranking & metric objectives has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "71396357d66e0154",
+      "unit_id": "43c37735b10edacd",
       "node_id": "margin_ranking_metric",
       "field": "dependencies.embeddings.rationale",
-      "text": "Margin, ranking & metric objectives uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Margin, ranking & metric objectives has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "37a040fa6d26b3ac",
+      "edge_id": "4a120f679f4056c2",
       "node_id": "margin_ranking_metric",
       "dependency_id": "supervised_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Margin, ranking & metric objectives uses Supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Margin, ranking & metric objectives has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "5742c50961d135e9",
+      "edge_id": "05897404dc82c199",
       "node_id": "margin_ranking_metric",
       "dependency_id": "preference_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Margin, ranking & metric objectives uses Preference learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Margin, ranking & metric objectives has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "ac755eb6824f5118",
+      "edge_id": "481661882284129b",
       "node_id": "margin_ranking_metric",
       "dependency_id": "embeddings",
       "type": "uses",
       "strength": "common",
-      "rationale": "Margin, ranking & metric objectives uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Margin, ranking & metric objectives has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

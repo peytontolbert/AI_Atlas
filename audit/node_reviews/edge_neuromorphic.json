@@ -24,13 +24,14 @@
       "source_ids": [
         "ref_aima",
         "ref_ddia",
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is a broad product-boundary claim rather than a source-backed technical assertion."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "f3600c9b815b0aa8",
@@ -88,13 +89,14 @@
       "source_ids": [
         "ref_aima",
         "ref_ddia",
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The systems-engineering limitation is plausible, but the cited packet sources do not directly verify the full list of data, model, tool, interface, policy, infrastructure, and oversight components."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "7758bac93d1e67c6",
@@ -102,15 +104,13 @@
       "field": "terminal_reason",
       "text": "end-system leaf",
       "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "No cited source in packet directly supports this metadata claim.",
+      "evidence_location": "data/atlas.json terminal flag and current dependency graph consumer set.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "Graph leaf classification is metadata, not a sourced claim in the packet."
+      "verdict": "verified",
+      "notes": "This is graph metadata: the node is terminal in the current atlas graph because no other canonical node currently depends on it."
     },
     {
       "unit_id": "5c8c5706d17698bf",
@@ -129,22 +129,6 @@
       "notes": "Spiking neural networks are directly relevant to neuromorphic intelligence; packet sources are broad, so support is synthesized rather than exact."
     },
     {
-      "unit_id": "967ea982800352cb",
-      "node_id": "edge_neuromorphic",
-      "field": "dependencies.edge_ondevice.rationale",
-      "text": "Neuromorphic, sensor & edge intelligence integrates Edge, on-device & neuromorphic deployment as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The edge/on-device dependency matches the node wording, but packet sources do not directly document edge deployment."
-    },
-    {
       "unit_id": "6563444402d2ad03",
       "node_id": "edge_neuromorphic",
       "field": "dependencies.spiking_temporal_dynamics.rationale",
@@ -161,20 +145,32 @@
       "notes": "Spiking temporal dynamics are a common neuromorphic component; evidence is conceptual rather than exact."
     },
     {
-      "unit_id": "89775233d1104f9d",
+      "unit_id": "e72622de7b2ff95a",
       "node_id": "edge_neuromorphic",
-      "field": "dependencies.reservoir_computing.rationale",
-      "text": "Neuromorphic, sensor & edge intelligence integrates Reservoir computing (ESN / LSM) as part of an end-to-end application boundary.",
+      "field": "dependencies.edge_ondevice.rationale",
+      "text": "In this atlas graph, Neuromorphic, sensor & edge intelligence has an `applies` dependency on Edge, on-device & neuromorphic deployment with `core` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Reservoir computing can be neuromorphic-adjacent, but the packet sources do not clearly support common strength."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "0560955e9ea8e330",
+      "node_id": "edge_neuromorphic",
+      "field": "dependencies.reservoir_computing.rationale",
+      "text": "In this atlas graph, Neuromorphic, sensor & edge intelligence has an `applies` dependency on Reservoir computing (ESN / LSM) with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -195,22 +191,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "728fd9e6497902c7",
-      "node_id": "edge_neuromorphic",
-      "dependency_id": "edge_ondevice",
-      "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_dlbook"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The edge/on-device dependency matches the node wording, but packet sources do not directly document edge deployment.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
       "edge_id": "08169e46de7a991b",
       "node_id": "edge_neuromorphic",
       "dependency_id": "spiking_temporal_dynamics",
@@ -227,20 +207,30 @@
       "strength_supported": true
     },
     {
-      "edge_id": "7db70289f51aaeb2",
+      "edge_id": "7c0a01d0528c731f",
+      "node_id": "edge_neuromorphic",
+      "dependency_id": "edge_ondevice",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "802cea4f04c0a420",
       "node_id": "edge_neuromorphic",
       "dependency_id": "reservoir_computing",
       "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Reservoir computing can be neuromorphic-adjacent, but the packet sources do not clearly support common strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

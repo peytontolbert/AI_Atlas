@@ -16,9 +16,9 @@
       "FFN"
     ],
     "definition": "A multilayer perceptron stacks affine transformations and nonlinear activations to learn general nonlinear mappings over fixed-size feature vectors.",
-    "why_it_matters": "The role of Multilayer perceptrons is to connect Affine transforms & dense layers, Nonlinear activations to downstream capabilities including Neural fields & radiance-field models.",
+    "why_it_matters": "In this atlas graph, Multilayer perceptrons is modeled as depending on Affine transforms & dense layers, Nonlinear activations and feeding downstream nodes such as Neural fields & radiance-field models.",
     "examples": [
-      "substrate for Neural fields & radiance-field models",
+      "atlas downstream link to Neural fields & radiance-field models",
       "combined with Affine transforms & dense layers"
     ],
     "limitations": [
@@ -48,7 +48,7 @@
         "id": "residual_connections",
         "type": "composes",
         "strength": "common",
-        "rationale": "Multilayer perceptrons is assembled in part from the mechanism or model component Residual, skip & highway connections."
+        "rationale": "In this atlas graph, Multilayer perceptrons has a `composes` dependency on Residual, skip & highway connections with `common` strength."
       },
       {
         "id": "supervised_learning",
@@ -66,16 +66,16 @@
       "text": "A multilayer perceptron stacks affine transformations and nonlinear activations to learn general nonlinear mappings over fixed-size feature vectors."
     },
     {
-      "unit_id": "e8ada3771fe79904",
+      "unit_id": "29787ef4d5c1bfc7",
       "node_id": "mlp",
       "field": "why_it_matters",
-      "text": "The role of Multilayer perceptrons is to connect Affine transforms & dense layers, Nonlinear activations to downstream capabilities including Neural fields & radiance-field models."
+      "text": "In this atlas graph, Multilayer perceptrons is modeled as depending on Affine transforms & dense layers, Nonlinear activations and feeding downstream nodes such as Neural fields & radiance-field models."
     },
     {
-      "unit_id": "2e71ae26d435923a",
+      "unit_id": "2639435a958bdd36",
       "node_id": "mlp",
       "field": "examples[1]",
-      "text": "substrate for Neural fields & radiance-field models"
+      "text": "atlas downstream link to Neural fields & radiance-field models"
     },
     {
       "unit_id": "0c182519cdf7cde0",
@@ -102,10 +102,10 @@
       "text": "Multilayer perceptrons is assembled in part from the mechanism or model component Nonlinear activations."
     },
     {
-      "unit_id": "f9c3669f68582869",
+      "unit_id": "ff97679021d9da2f",
       "node_id": "mlp",
       "field": "dependencies.residual_connections.rationale",
-      "text": "Multilayer perceptrons is assembled in part from the mechanism or model component Residual, skip & highway connections."
+      "text": "In this atlas graph, Multilayer perceptrons has a `composes` dependency on Residual, skip & highway connections with `common` strength."
     },
     {
       "unit_id": "1b7fa83fd759b6f4",
@@ -132,12 +132,12 @@
       "rationale": "Multilayer perceptrons is assembled in part from the mechanism or model component Nonlinear activations."
     },
     {
-      "edge_id": "8f3d2a43ce498745",
+      "edge_id": "ee700f0756820dab",
       "node_id": "mlp",
       "dependency_id": "residual_connections",
       "type": "composes",
       "strength": "common",
-      "rationale": "Multilayer perceptrons is assembled in part from the mechanism or model component Residual, skip & highway connections."
+      "rationale": "In this atlas graph, Multilayer perceptrons has a `composes` dependency on Residual, skip & highway connections with `common` strength."
     },
     {
       "edge_id": "e76eeb6ca5b8acdd",

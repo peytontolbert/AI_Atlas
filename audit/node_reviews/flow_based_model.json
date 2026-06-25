@@ -1,18 +1,180 @@
 {
   "sentence_reviews": [
-    {"unit_id":"bc5ecf334d7e3ab1","node_id":"flow_based_model","field":"definition","text":"Normalizing flows use invertible transformations with tractable density; rectified and flow-matching models instead learn continuous transport vector fields.","source_ids":["ref_flow","ref_dlbook"],"evidence_location":"Deep Learning normalizing-flow background; Lipman et al. 2022 flow matching method.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Normalizing-flow density claims and flow-matching vector-field claims are supported across the two sources; the combined node wording is synthesized."},
-    {"unit_id":"8ec103d7c0020ede","node_id":"flow_based_model","field":"why_it_matters","text":"The role of Normalizing, rectified & flow-matching models is to connect Continuous normalizing flows & learned vector fields, Flow matching & transport objectives to downstream capabilities including Image generation, editing & design, Video generation & simulation synthesis, Weather, climate & geospatial forecasting.","source_ids":["ref_flow","ref_dlbook"],"evidence_location":"Lipman et al. 2022 generative modeling; Deep Learning normalizing flows.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Generative modeling and flow objectives are supported, but video and weather/climate downstream capabilities are not directly evidenced by the packet sources."},
-    {"unit_id":"be0c69ad40bccefb","node_id":"flow_based_model","field":"examples[1]","text":"substrate for Image generation, editing & design","source_ids":["ref_flow","ref_dlbook"],"evidence_location":"Flow Matching for Generative Modeling and normalizing-flow generative modeling background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Image generation is a defensible downstream use of generative flow models; editing/design is broader synthesis."},
-    {"unit_id":"11af518de5766ce4","node_id":"flow_based_model","field":"examples[2]","text":"substrate for Video generation & simulation synthesis","source_ids":["ref_flow"],"evidence_location":"Lipman et al. 2022 generative modeling method.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The packet source does not directly support video generation or simulation synthesis."},
-    {"unit_id":"cc2963ef9aa8dbf6","node_id":"flow_based_model","field":"examples[3]","text":"substrate for Weather, climate & geospatial forecasting","source_ids":["ref_flow"],"evidence_location":"Lipman et al. 2022 flow matching method.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The packet source does not directly support weather, climate, or geospatial forecasting."},
-    {"unit_id":"a5e6b7b3aa159d48","node_id":"flow_based_model","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Continuous normalizing flows & learned vector fields, Flow matching & transport objectives.","source_ids":["ref_flow","ref_dlbook"],"evidence_location":"Lipman et al. 2022; Deep Learning normalizing-flow background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are supported; broad limitation wording is generic and not directly sourced."},
-    {"unit_id":"fddbd36dac30d436","node_id":"flow_based_model","field":"dependencies.continuous_flows.rationale","text":"Normalizing, rectified & flow-matching models is assembled in part from the mechanism or model component Continuous normalizing flows & learned vector fields.","source_ids":["ref_flow","ref_dlbook"],"evidence_location":"Deep Learning normalizing flows; Lipman et al. 2022 learned vector fields.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The combined node covers both invertible flows and continuous vector-field flow matching."},
-    {"unit_id":"4a3948082c1d5786","node_id":"flow_based_model","field":"dependencies.flow_matching.rationale","text":"Normalizing, rectified & flow-matching models is learned, selected, or evaluated using the objective family Flow matching & transport objectives.","source_ids":["ref_flow"],"evidence_location":"Lipman et al. 2022 flow matching objective.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported for the flow-matching part of the combined node."},
-    {"unit_id":"05cfc32fe6508230","node_id":"flow_based_model","field":"dependencies.differentiable_solvers.rationale","text":"Normalizing, rectified & flow-matching models is assembled in part from the mechanism or model component Differentiable ODE/PDE/SDE solvers.","source_ids":["ref_flow"],"evidence_location":"Lipman et al. 2022 continuous-time flow/vector-field formulation.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Continuous transport suggests ODE integration, but the packet evidence does not establish differentiable solvers as a general required component of all listed flow models."}
+    {
+      "unit_id": "bc5ecf334d7e3ab1",
+      "node_id": "flow_based_model",
+      "field": "definition",
+      "text": "Normalizing flows use invertible transformations with tractable density; rectified and flow-matching models instead learn continuous transport vector fields.",
+      "source_ids": [
+        "ref_flow",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning normalizing-flow background; Lipman et al. 2022 flow matching method.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Normalizing-flow density claims and flow-matching vector-field claims are supported across the two sources; the combined node wording is synthesized."
+    },
+    {
+      "unit_id": "a5e6b7b3aa159d48",
+      "node_id": "flow_based_model",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Continuous normalizing flows & learned vector fields, Flow matching & transport objectives.",
+      "source_ids": [
+        "ref_flow",
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "fddbd36dac30d436",
+      "node_id": "flow_based_model",
+      "field": "dependencies.continuous_flows.rationale",
+      "text": "Normalizing, rectified & flow-matching models is assembled in part from the mechanism or model component Continuous normalizing flows & learned vector fields.",
+      "source_ids": [
+        "ref_flow",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning normalizing flows; Lipman et al. 2022 learned vector fields.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The combined node covers both invertible flows and continuous vector-field flow matching."
+    },
+    {
+      "unit_id": "fbfc7cad9a1dfead",
+      "node_id": "flow_based_model",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Normalizing, rectified & flow-matching models is modeled as depending on Continuous normalizing flows & learned vector fields, Flow matching & transport objectives and feeding downstream nodes such as Image generation, editing & design, Video generation & simulation synthesis, Weather, climate & geospatial forecasting.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9c2f24935e3e69bf",
+      "node_id": "flow_based_model",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Image generation, editing & design",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "67248b173642b6e3",
+      "node_id": "flow_based_model",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Video generation & simulation synthesis",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b32511b7112ca95d",
+      "node_id": "flow_based_model",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Weather, climate & geospatial forecasting",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "32af15913049413e",
+      "node_id": "flow_based_model",
+      "field": "dependencies.flow_matching.rationale",
+      "text": "In this atlas graph, Normalizing, rectified & flow-matching models has an `optimizes_for` dependency on Flow matching & transport objectives because Flow matching & transport objectives is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "23e6fb070b10675a",
+      "node_id": "flow_based_model",
+      "field": "dependencies.differentiable_solvers.rationale",
+      "text": "In this atlas graph, Normalizing, rectified & flow-matching models has a `composes` dependency on Differentiable ODE/PDE/SDE solvers with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"cfdf6cbeeed57b97","node_id":"flow_based_model","dependency_id":"continuous_flows","source_ids":["ref_flow","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"composes/core is supported for the combined flow-family node.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"f4f533529ed32886","node_id":"flow_based_model","dependency_id":"flow_matching","source_ids":["ref_flow"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"optimizes_for/core is directly supported for flow-matching models.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"bbe8605fcf394cbf","node_id":"flow_based_model","dependency_id":"differentiable_solvers","source_ids":["ref_flow"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"composes/common is plausible for continuous-time variants, but not all normalizing flows depend on differentiable solvers.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "cfdf6cbeeed57b97",
+      "node_id": "flow_based_model",
+      "dependency_id": "continuous_flows",
+      "source_ids": [
+        "ref_flow",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "composes/core is supported for the combined flow-family node.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "f4797fe40ad04ebf",
+      "node_id": "flow_based_model",
+      "dependency_id": "flow_matching",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "eaee4e3690849ce2",
+      "node_id": "flow_based_model",
+      "dependency_id": "differentiable_solvers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "flow_based_model",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

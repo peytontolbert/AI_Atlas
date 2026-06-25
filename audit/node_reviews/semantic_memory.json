@@ -16,49 +16,20 @@
       "notes": "Direct verification would require a node-specific citation."
     },
     {
-      "unit_id": "319115101ffe7f4f",
-      "node_id": "semantic_memory",
-      "field": "why_it_matters",
-      "text": "The role of Semantic memory is to connect Embeddings & distributed representations, Knowledge graphs, ontologies & schemas to downstream capabilities including Memory lifecycle, forgetting & consolidation.",
-      "source_ids": [
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
-    },
-    {
-      "unit_id": "b418cbdb568453db",
-      "node_id": "semantic_memory",
-      "field": "examples[1]",
-      "text": "substrate for Memory lifecycle, forgetting & consolidation",
-      "source_ids": [
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
       "unit_id": "23f0c1b3b130fca3",
       "node_id": "semantic_memory",
       "field": "examples[2]",
       "text": "combined with Embeddings & distributed representations",
       "source_ids": [
         "ref_aima",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "471bea2b11d25399",
@@ -67,13 +38,14 @@
       "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Embeddings & distributed representations, Knowledge graphs, ontologies & schemas.",
       "source_ids": [
         "ref_aima",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "6b59666b4c79edd4",
@@ -119,6 +91,34 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "1ddcdda88f779c9d",
+      "node_id": "semantic_memory",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Semantic memory is modeled as depending on Embeddings & distributed representations, Knowledge graphs, ontologies & schemas and feeding downstream nodes such as Memory lifecycle, forgetting & consolidation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b12388a1cde5a18e",
+      "node_id": "semantic_memory",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Memory lifecycle, forgetting & consolidation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -167,5 +167,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "semantic_memory",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

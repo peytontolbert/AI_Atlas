@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Training targets are constructed from the data itself, such as masked regions, future tokens, or paired views.",
-    "why_it_matters": "The role of Self-supervised learning is to connect Unsupervised learning, Tokens, vocabularies & symbolic units to downstream capabilities including Contrastive learning, Predictive representation learning / JEPA, In-context & test-time learning.",
+    "why_it_matters": "In this atlas graph, Self-supervised learning is modeled as depending on Unsupervised learning, Tokens, vocabularies & symbolic units and feeding downstream nodes such as Contrastive learning, Predictive representation learning / JEPA, In-context & test-time learning.",
     "examples": [
-      "substrate for Contrastive learning",
-      "substrate for Predictive representation learning / JEPA",
-      "substrate for In-context & test-time learning"
+      "atlas downstream link to Contrastive learning",
+      "atlas downstream link to Predictive representation learning / JEPA",
+      "atlas downstream link to In-context & test-time learning"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Unsupervised learning, Tokens, vocabularies & symbolic units."
@@ -40,19 +40,19 @@
         "id": "tokens_vocab",
         "type": "uses",
         "strength": "common",
-        "rationale": "Self-supervised learning uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Self-supervised learning has a `uses` dependency on Tokens, vocabularies & symbolic units because Tokens, vocabularies & symbolic units is modeled as a reusable ingredient for the node."
       },
       {
         "id": "sequences_time",
         "type": "uses",
         "strength": "common",
-        "rationale": "Self-supervised learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Self-supervised learning has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
       },
       {
         "id": "spatial_grids",
         "type": "uses",
         "strength": "common",
-        "rationale": "Self-supervised learning uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Self-supervised learning has a `uses` dependency on Images, video & spatial grids because Images, video & spatial grids is modeled as a reusable ingredient for the node."
       },
       {
         "id": "datasets_sampling",
@@ -70,28 +70,28 @@
       "text": "Training targets are constructed from the data itself, such as masked regions, future tokens, or paired views."
     },
     {
-      "unit_id": "ee6f602c042f7e8a",
+      "unit_id": "80b4065ac7599e94",
       "node_id": "self_supervised_learning",
       "field": "why_it_matters",
-      "text": "The role of Self-supervised learning is to connect Unsupervised learning, Tokens, vocabularies & symbolic units to downstream capabilities including Contrastive learning, Predictive representation learning / JEPA, In-context & test-time learning."
+      "text": "In this atlas graph, Self-supervised learning is modeled as depending on Unsupervised learning, Tokens, vocabularies & symbolic units and feeding downstream nodes such as Contrastive learning, Predictive representation learning / JEPA, In-context & test-time learning."
     },
     {
-      "unit_id": "83b247977ca8d5dc",
+      "unit_id": "a7070e34b1a69657",
       "node_id": "self_supervised_learning",
       "field": "examples[1]",
-      "text": "substrate for Contrastive learning"
+      "text": "atlas downstream link to Contrastive learning"
     },
     {
-      "unit_id": "64d19a226288bf19",
+      "unit_id": "46cf6c7224f7a66d",
       "node_id": "self_supervised_learning",
       "field": "examples[2]",
-      "text": "substrate for Predictive representation learning / JEPA"
+      "text": "atlas downstream link to Predictive representation learning / JEPA"
     },
     {
-      "unit_id": "fff6cd7ec9fecebf",
+      "unit_id": "e37ec5ef4c3c51fb",
       "node_id": "self_supervised_learning",
       "field": "examples[3]",
-      "text": "substrate for In-context & test-time learning"
+      "text": "atlas downstream link to In-context & test-time learning"
     },
     {
       "unit_id": "d821a2977d410eca",
@@ -106,22 +106,22 @@
       "text": "Self-supervised learning follows the learning setup expressed by Unsupervised learning."
     },
     {
-      "unit_id": "c854548c923042a0",
+      "unit_id": "734225a719cf9d9b",
       "node_id": "self_supervised_learning",
       "field": "dependencies.tokens_vocab.rationale",
-      "text": "Self-supervised learning uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Self-supervised learning has a `uses` dependency on Tokens, vocabularies & symbolic units because Tokens, vocabularies & symbolic units is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "378d7b5068666256",
+      "unit_id": "fdc5419bb96cf198",
       "node_id": "self_supervised_learning",
       "field": "dependencies.sequences_time.rationale",
-      "text": "Self-supervised learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Self-supervised learning has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d1f9f989d516eb79",
+      "unit_id": "1c223eeeaa44318e",
       "node_id": "self_supervised_learning",
       "field": "dependencies.spatial_grids.rationale",
-      "text": "Self-supervised learning uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Self-supervised learning has a `uses` dependency on Images, video & spatial grids because Images, video & spatial grids is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "b5bee792a89f876f",
@@ -140,28 +140,28 @@
       "rationale": "Self-supervised learning follows the learning setup expressed by Unsupervised learning."
     },
     {
-      "edge_id": "b7d0e3f7d830d1f3",
+      "edge_id": "3ae4235765160aa5",
       "node_id": "self_supervised_learning",
       "dependency_id": "tokens_vocab",
       "type": "uses",
       "strength": "common",
-      "rationale": "Self-supervised learning uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Self-supervised learning has a `uses` dependency on Tokens, vocabularies & symbolic units because Tokens, vocabularies & symbolic units is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "2b8daacf10839e60",
+      "edge_id": "4ee93088ae91e46a",
       "node_id": "self_supervised_learning",
       "dependency_id": "sequences_time",
       "type": "uses",
       "strength": "common",
-      "rationale": "Self-supervised learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Self-supervised learning has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "4226500c509cad93",
+      "edge_id": "ed6c39f6da222467",
       "node_id": "self_supervised_learning",
       "dependency_id": "spatial_grids",
       "type": "uses",
       "strength": "common",
-      "rationale": "Self-supervised learning uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Self-supervised learning has a `uses` dependency on Images, video & spatial grids because Images, video & spatial grids is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "497424501438ed3b",

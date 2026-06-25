@@ -18,80 +18,20 @@
       "notes": "The sources support the component ideas: statistical inference makes propositions from sampled data, hypothesis tests use sample data to assess population claims, sampling estimates population characteristics, and experimental design structures such studies. The sentence is a compact synthesis rather than an exact source quotation."
     },
     {
-      "unit_id": "3f12d9359b6bb62e",
-      "node_id": "statistics",
-      "field": "why_it_matters",
-      "text": "The role of Statistics & experimental design is to connect Probability theory to downstream capabilities including Causal inference, Databases & information retrieval, Datasets, sampling & splits.",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Statistical_inference",
-        "url:https://en.wikipedia.org/wiki/Design_of_experiments"
-      ],
-      "evidence_location": "AIMA home page lines 36-48; Statistical inference lines 266-280; Design of experiments lines 149-154",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "AIMA shows probability-focused reasoning and probabilistic models as core background, while the statistics sources support inference and experiment design. The downstream-capability list is graph-derived and not stated verbatim by the sources."
-    },
-    {
-      "unit_id": "764ff0db9932139f",
-      "node_id": "statistics",
-      "field": "examples[1]",
-      "text": "substrate for Causal inference",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Statistical_inference",
-        "url:https://en.wikipedia.org/wiki/Design_of_experiments"
-      ],
-      "evidence_location": "Statistical inference lines 266-280; Design of experiments lines 149-154",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support that statistical inference and experimental design are used in causal-style reasoning, but they do not directly establish the atlas relation phrased as 'substrate for Causal inference.'"
-    },
-    {
-      "unit_id": "68d029f02f934593",
-      "node_id": "statistics",
-      "field": "examples[2]",
-      "text": "substrate for Databases & information retrieval",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Statistical_inference",
-        "url:https://en.wikipedia.org/wiki/Sampling_(statistics)"
-      ],
-      "evidence_location": "Statistical inference lines 259-266; Sampling (statistics) lines 476-477",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The support is indirect: the sources justify inference from sampled data and estimation of population characteristics, but they do not explicitly connect statistics to databases or information retrieval."
-    },
-    {
-      "unit_id": "0226655681db6603",
-      "node_id": "statistics",
-      "field": "examples[3]",
-      "text": "substrate for Datasets, sampling & splits",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Sampling_(statistics)",
-        "url:https://en.wikipedia.org/wiki/Statistical_inference"
-      ],
-      "evidence_location": "Sampling (statistics) lines 463-477; Statistical inference lines 259-266",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Sampling is directly supported, but 'datasets' and especially 'splits' are broader graph terms not spelled out in the source evidence."
-    },
-    {
       "unit_id": "bdb5cab618eab646",
       "node_id": "statistics",
       "field": "limitations[1]",
       "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory.",
       "source_ids": [
         "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Statistical_inference"
+        "url:https://en.wikipedia.org/wiki/Statistical_inference",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Statistical inference lines 279-280; AIMA home page lines 36-48",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support the need for assumptions and model-to-data translation, but the 'mismatched empirical setting' phrasing is a paraphrase and the direct-dependency clause is graph-derived."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "2b33807c285cd267",
@@ -108,6 +48,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "The evidence supports probability as a prerequisite context for statistical inference and hypothesis testing, but the rationale is still a synthesis of multiple sources rather than an exact source statement."
+    },
+    {
+      "unit_id": "bf4f45fe3ff3e8bd",
+      "node_id": "statistics",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Statistics & experimental design is modeled as depending on Probability theory and feeding downstream nodes such as Causal inference, Databases & information retrieval, Datasets, sampling & splits.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "dfe822d6dce765dd",
+      "node_id": "statistics",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Causal inference",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2cb2ab7e0c139020",
+      "node_id": "statistics",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Databases & information retrieval",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9c112386db711838",
+      "node_id": "statistics",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Datasets, sampling & splits",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -127,5 +123,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "statistics",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

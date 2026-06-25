@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Models learn how to adapt, optimize, or infer quickly across tasks rather than mastering only one task.",
-    "why_it_matters": "The role of Meta-learning is to connect Supervised learning, Optimization theory to downstream capabilities including In-context & test-time learning, AutoML & automated model design.",
+    "why_it_matters": "In this atlas graph, Meta-learning is modeled as depending on Supervised learning, Optimization theory and feeding downstream nodes such as In-context & test-time learning, AutoML & automated model design.",
     "examples": [
-      "substrate for In-context & test-time learning",
-      "substrate for AutoML & automated model design"
+      "atlas downstream link to In-context & test-time learning",
+      "atlas downstream link to AutoML & automated model design"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Optimization theory."
@@ -33,19 +33,19 @@
         "id": "supervised_learning",
         "type": "trained_under",
         "strength": "common",
-        "rationale": "Meta-learning follows the learning setup expressed by Supervised learning."
+        "rationale": "In this atlas graph, Meta-learning has a `trained_under` dependency on Supervised learning with `common` strength."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "core",
-        "rationale": "Meta-learning uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Meta-learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "probability",
         "type": "uses",
         "strength": "common",
-        "rationale": "Meta-learning uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Meta-learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "Models learn how to adapt, optimize, or infer quickly across tasks rather than mastering only one task."
     },
     {
-      "unit_id": "cd656325da91b10b",
+      "unit_id": "8cb93a2b9a0c2c36",
       "node_id": "meta_learning",
       "field": "why_it_matters",
-      "text": "The role of Meta-learning is to connect Supervised learning, Optimization theory to downstream capabilities including In-context & test-time learning, AutoML & automated model design."
+      "text": "In this atlas graph, Meta-learning is modeled as depending on Supervised learning, Optimization theory and feeding downstream nodes such as In-context & test-time learning, AutoML & automated model design."
     },
     {
-      "unit_id": "eb317ba79f752449",
+      "unit_id": "692cca8358d55529",
       "node_id": "meta_learning",
       "field": "examples[1]",
-      "text": "substrate for In-context & test-time learning"
+      "text": "atlas downstream link to In-context & test-time learning"
     },
     {
-      "unit_id": "489757c3d28031e9",
+      "unit_id": "5a0939111a530034",
       "node_id": "meta_learning",
       "field": "examples[2]",
-      "text": "substrate for AutoML & automated model design"
+      "text": "atlas downstream link to AutoML & automated model design"
     },
     {
       "unit_id": "6ea36b414e02495e",
@@ -81,48 +81,48 @@
       "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Optimization theory."
     },
     {
-      "unit_id": "73128c394167d2ab",
+      "unit_id": "4892753832dc0433",
       "node_id": "meta_learning",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Meta-learning follows the learning setup expressed by Supervised learning."
+      "text": "In this atlas graph, Meta-learning has a `trained_under` dependency on Supervised learning with `common` strength."
     },
     {
-      "unit_id": "d1b8ed68a186fea5",
+      "unit_id": "e80f0e2a9cd6b043",
       "node_id": "meta_learning",
       "field": "dependencies.optimization.rationale",
-      "text": "Meta-learning uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Meta-learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "42030e36c99662d4",
+      "unit_id": "213a6ede279840a9",
       "node_id": "meta_learning",
       "field": "dependencies.probability.rationale",
-      "text": "Meta-learning uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Meta-learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "ec371a53deea5c52",
+      "edge_id": "ec6292c396f9120c",
       "node_id": "meta_learning",
       "dependency_id": "supervised_learning",
       "type": "trained_under",
       "strength": "common",
-      "rationale": "Meta-learning follows the learning setup expressed by Supervised learning."
+      "rationale": "In this atlas graph, Meta-learning has a `trained_under` dependency on Supervised learning with `common` strength."
     },
     {
-      "edge_id": "d024bf79b8450589",
+      "edge_id": "c435248d1b1981eb",
       "node_id": "meta_learning",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "core",
-      "rationale": "Meta-learning uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Meta-learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "99191d863bce4990",
+      "edge_id": "8cf4f745aa9504f2",
       "node_id": "meta_learning",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "common",
-      "rationale": "Meta-learning uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Meta-learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

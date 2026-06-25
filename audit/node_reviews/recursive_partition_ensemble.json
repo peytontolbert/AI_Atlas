@@ -16,156 +16,148 @@
       "notes": "The cited source(s) directly support the specific claim."
     },
     {
-      "unit_id": "a432b8ef4eabeb5e",
-      "node_id": "recursive_partition_ensemble",
-      "field": "why_it_matters",
-      "text": "The role of Recursive partitioning & ensembling is to connect Algorithms & data structures, Statistics & experimental design to downstream capabilities including Decision trees, random forests & boosted trees, Self-consistency & best-of-N inference.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL/PML tree-model and ensemble material supports decision trees/ensembles; implementation-scale limitation is generic.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
-    },
-    {
-      "unit_id": "15403b7bde765562",
-      "node_id": "recursive_partition_ensemble",
-      "field": "examples[1]",
-      "text": "substrate for Decision trees, random forests & boosted trees",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL/PML tree-model and ensemble material supports decision trees/ensembles; implementation-scale limitation is generic.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim."
-    },
-    {
-      "unit_id": "ad43813c3788ee90",
-      "node_id": "recursive_partition_ensemble",
-      "field": "examples[2]",
-      "text": "substrate for Self-consistency & best-of-N inference",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL/PML tree-model and ensemble material supports decision trees/ensembles; implementation-scale limitation is generic.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim."
-    },
-    {
       "unit_id": "398bbb7f43125ab3",
       "node_id": "recursive_partition_ensemble",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Algorithms & data structures, Statistics & experimental design.",
       "source_ids": [
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DL/PML tree-model and ensemble material supports decision trees/ensembles; implementation-scale limitation is generic.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
-    },
-    {
-      "unit_id": "6933ba4260d8e943",
-      "node_id": "recursive_partition_ensemble",
-      "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "Recursive partitioning & ensembling uses Algorithms & data structures as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL/PML tree-model and ensemble material supports decision trees/ensembles; implementation-scale limitation is generic.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "a0996c26f8d1ed7c",
+      "unit_id": "f0d67784581308aa",
       "node_id": "recursive_partition_ensemble",
-      "field": "dependencies.statistics.rationale",
-      "text": "Recursive partitioning & ensembling uses Statistics & experimental design as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Recursive partitioning & ensembling is modeled as depending on Algorithms & data structures, Statistics & experimental design and feeding downstream nodes such as Decision trees, random forests & boosted trees, Self-consistency & best-of-N inference.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DL/PML tree-model and ensemble material supports decision trees/ensembles; implementation-scale limitation is generic.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
-    },
-    {
-      "unit_id": "d3690d2b79ddf4f2",
-      "node_id": "recursive_partition_ensemble",
-      "field": "dependencies.supervised_learning.rationale",
-      "text": "Recursive partitioning & ensembling uses Supervised learning as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "DL/PML tree-model and ensemble material supports decision trees/ensembles; implementation-scale limitation is generic.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim."
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d3a81f07d80f7efe",
+      "node_id": "recursive_partition_ensemble",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Decision trees, random forests & boosted trees",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "51740c52053ef64d",
+      "node_id": "recursive_partition_ensemble",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Self-consistency & best-of-N inference",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8535e30d6838c8b0",
+      "node_id": "recursive_partition_ensemble",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "In this atlas graph, Recursive partitioning & ensembling has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1731be36b9e7164e",
+      "node_id": "recursive_partition_ensemble",
+      "field": "dependencies.statistics.rationale",
+      "text": "In this atlas graph, Recursive partitioning & ensembling has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "893cab46560f01d1",
+      "node_id": "recursive_partition_ensemble",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "In this atlas graph, Recursive partitioning & ensembling has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "54bc7a68850101f3",
+      "edge_id": "ac8994eac0e15a9f",
       "node_id": "recursive_partition_ensemble",
       "dependency_id": "algorithms_data_structures",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "f04d26811e348704",
-      "node_id": "recursive_partition_ensemble",
-      "dependency_id": "statistics",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "d15a43b680f6cb19",
-      "node_id": "recursive_partition_ensemble",
-      "dependency_id": "supervised_learning",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited source(s) directly support the specific claim.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "ed40850b760b6b22",
+      "node_id": "recursive_partition_ensemble",
+      "dependency_id": "statistics",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "8b71933731a5677c",
+      "node_id": "recursive_partition_ensemble",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "recursive_partition_ensemble",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

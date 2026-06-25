@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "A model learns a data distribution or transformation process capable of producing new samples.",
-    "why_it_matters": "The role of Generative modeling is to connect Probability theory, Distributions, uncertainty & beliefs to downstream capabilities including Maximum likelihood & cross-entropy, Autoregressive / next-step prediction, Reconstruction objectives.",
+    "why_it_matters": "In this atlas graph, Generative modeling is modeled as depending on Probability theory, Distributions, uncertainty & beliefs and feeding downstream nodes such as Maximum likelihood & cross-entropy, Autoregressive / next-step prediction, Reconstruction objectives.",
     "examples": [
-      "substrate for Maximum likelihood & cross-entropy",
-      "substrate for Autoregressive / next-step prediction",
-      "substrate for Reconstruction objectives"
+      "atlas downstream link to Maximum likelihood & cross-entropy",
+      "atlas downstream link to Autoregressive / next-step prediction",
+      "atlas downstream link to Reconstruction objectives"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Probability theory, Distributions, uncertainty & beliefs."
@@ -38,25 +38,25 @@
         "id": "probability",
         "type": "uses",
         "strength": "core",
-        "rationale": "Generative modeling uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Generative modeling has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "distributions_uncertainty",
         "type": "uses",
         "strength": "core",
-        "rationale": "Generative modeling uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Generative modeling has a `uses` dependency on Distributions, uncertainty & beliefs because Distributions, uncertainty & beliefs is modeled as a reusable ingredient for the node."
       },
       {
         "id": "latent_variables",
         "type": "uses",
         "strength": "common",
-        "rationale": "Generative modeling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Generative modeling has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "Generative modeling uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Generative modeling has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -68,28 +68,28 @@
       "text": "A model learns a data distribution or transformation process capable of producing new samples."
     },
     {
-      "unit_id": "08cc209e30ba0159",
+      "unit_id": "1e9fcae05e395f1a",
       "node_id": "generative_learning",
       "field": "why_it_matters",
-      "text": "The role of Generative modeling is to connect Probability theory, Distributions, uncertainty & beliefs to downstream capabilities including Maximum likelihood & cross-entropy, Autoregressive / next-step prediction, Reconstruction objectives."
+      "text": "In this atlas graph, Generative modeling is modeled as depending on Probability theory, Distributions, uncertainty & beliefs and feeding downstream nodes such as Maximum likelihood & cross-entropy, Autoregressive / next-step prediction, Reconstruction objectives."
     },
     {
-      "unit_id": "2b1d2bbf1d1fc40a",
+      "unit_id": "92b3cc2d3322143e",
       "node_id": "generative_learning",
       "field": "examples[1]",
-      "text": "substrate for Maximum likelihood & cross-entropy"
+      "text": "atlas downstream link to Maximum likelihood & cross-entropy"
     },
     {
-      "unit_id": "ede8f54797a206ac",
+      "unit_id": "3edecf1d635d8a62",
       "node_id": "generative_learning",
       "field": "examples[2]",
-      "text": "substrate for Autoregressive / next-step prediction"
+      "text": "atlas downstream link to Autoregressive / next-step prediction"
     },
     {
-      "unit_id": "7c43fb7358c3c4df",
+      "unit_id": "8bee832143ac37da",
       "node_id": "generative_learning",
       "field": "examples[3]",
-      "text": "substrate for Reconstruction objectives"
+      "text": "atlas downstream link to Reconstruction objectives"
     },
     {
       "unit_id": "5eee5ad14e4d2d93",
@@ -98,62 +98,62 @@
       "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Probability theory, Distributions, uncertainty & beliefs."
     },
     {
-      "unit_id": "e63f0478c1c457ed",
+      "unit_id": "8fd3448c6b503a93",
       "node_id": "generative_learning",
       "field": "dependencies.probability.rationale",
-      "text": "Generative modeling uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Generative modeling has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "eef8f41cab03e4ea",
+      "unit_id": "30c754957c37af5b",
       "node_id": "generative_learning",
       "field": "dependencies.distributions_uncertainty.rationale",
-      "text": "Generative modeling uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Generative modeling has a `uses` dependency on Distributions, uncertainty & beliefs because Distributions, uncertainty & beliefs is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "159c22086d50d490",
+      "unit_id": "1fbbd1bd614d9748",
       "node_id": "generative_learning",
       "field": "dependencies.latent_variables.rationale",
-      "text": "Generative modeling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Generative modeling has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d6ee024274351b05",
+      "unit_id": "471004d7c2c6275a",
       "node_id": "generative_learning",
       "field": "dependencies.optimization.rationale",
-      "text": "Generative modeling uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Generative modeling has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "7446db01407dc6ce",
+      "edge_id": "9994f59c23929fe3",
       "node_id": "generative_learning",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "core",
-      "rationale": "Generative modeling uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Generative modeling has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "82f958ee0aa6826a",
+      "edge_id": "d67696bd854b3760",
       "node_id": "generative_learning",
       "dependency_id": "distributions_uncertainty",
       "type": "uses",
       "strength": "core",
-      "rationale": "Generative modeling uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Generative modeling has a `uses` dependency on Distributions, uncertainty & beliefs because Distributions, uncertainty & beliefs is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "3bee63c265d33c58",
+      "edge_id": "a8ddeac882dad3c9",
       "node_id": "generative_learning",
       "dependency_id": "latent_variables",
       "type": "uses",
       "strength": "common",
-      "rationale": "Generative modeling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Generative modeling has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "187dffe3a738e3e4",
+      "edge_id": "82e4b8de29a9ae74",
       "node_id": "generative_learning",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "Generative modeling uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Generative modeling has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

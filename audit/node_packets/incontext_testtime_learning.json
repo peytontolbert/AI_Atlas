@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Behavior adapts from context, demonstrations, feedback, or computation at inference time without conventional retraining.",
-    "why_it_matters": "The role of In-context & test-time learning is to connect Self-supervised learning, Sequences, events & time series to downstream capabilities including Continual learning & test-time adaptation pipelines, Chain-of-thought & latent reasoning.",
+    "why_it_matters": "In this atlas graph, In-context & test-time learning is modeled as depending on Self-supervised learning, Sequences, events & time series and feeding downstream nodes such as Continual learning & test-time adaptation pipelines, Chain-of-thought & latent reasoning.",
     "examples": [
-      "substrate for Continual learning & test-time adaptation pipelines",
-      "substrate for Chain-of-thought & latent reasoning"
+      "atlas downstream link to Continual learning & test-time adaptation pipelines",
+      "atlas downstream link to Chain-of-thought & latent reasoning"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Self-supervised learning, Sequences, events & time series."
@@ -35,25 +35,25 @@
         "id": "self_supervised_learning",
         "type": "trained_under",
         "strength": "common",
-        "rationale": "In-context & test-time learning follows the learning setup expressed by Self-supervised learning."
+        "rationale": "In this atlas graph, In-context & test-time learning has a `trained_under` dependency on Self-supervised learning with `common` strength."
       },
       {
         "id": "sequences_time",
         "type": "uses",
         "strength": "core",
-        "rationale": "In-context & test-time learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, In-context & test-time learning has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
       },
       {
         "id": "embeddings",
         "type": "uses",
         "strength": "common",
-        "rationale": "In-context & test-time learning uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, In-context & test-time learning has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "meta_learning",
         "type": "trained_under",
         "strength": "common",
-        "rationale": "In-context & test-time learning follows the learning setup expressed by Meta-learning."
+        "rationale": "In this atlas graph, In-context & test-time learning has a `trained_under` dependency on Meta-learning with `common` strength."
       }
     ]
   },
@@ -65,22 +65,22 @@
       "text": "Behavior adapts from context, demonstrations, feedback, or computation at inference time without conventional retraining."
     },
     {
-      "unit_id": "f963b537faa57eb4",
+      "unit_id": "9b1ec36e125a1097",
       "node_id": "incontext_testtime_learning",
       "field": "why_it_matters",
-      "text": "The role of In-context & test-time learning is to connect Self-supervised learning, Sequences, events & time series to downstream capabilities including Continual learning & test-time adaptation pipelines, Chain-of-thought & latent reasoning."
+      "text": "In this atlas graph, In-context & test-time learning is modeled as depending on Self-supervised learning, Sequences, events & time series and feeding downstream nodes such as Continual learning & test-time adaptation pipelines, Chain-of-thought & latent reasoning."
     },
     {
-      "unit_id": "702d2f318fe7e746",
+      "unit_id": "bd7a0a067fb00136",
       "node_id": "incontext_testtime_learning",
       "field": "examples[1]",
-      "text": "substrate for Continual learning & test-time adaptation pipelines"
+      "text": "atlas downstream link to Continual learning & test-time adaptation pipelines"
     },
     {
-      "unit_id": "a65bb2026f0f7a06",
+      "unit_id": "e21b14edc46ec2c0",
       "node_id": "incontext_testtime_learning",
       "field": "examples[2]",
-      "text": "substrate for Chain-of-thought & latent reasoning"
+      "text": "atlas downstream link to Chain-of-thought & latent reasoning"
     },
     {
       "unit_id": "cafc3b7564ed77f7",
@@ -89,62 +89,62 @@
       "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Self-supervised learning, Sequences, events & time series."
     },
     {
-      "unit_id": "2abd6a57cdd11779",
+      "unit_id": "0998839f2fc540d7",
       "node_id": "incontext_testtime_learning",
       "field": "dependencies.self_supervised_learning.rationale",
-      "text": "In-context & test-time learning follows the learning setup expressed by Self-supervised learning."
+      "text": "In this atlas graph, In-context & test-time learning has a `trained_under` dependency on Self-supervised learning with `common` strength."
     },
     {
-      "unit_id": "2e61d954f0f66415",
+      "unit_id": "fe00c67c647fdf31",
       "node_id": "incontext_testtime_learning",
       "field": "dependencies.sequences_time.rationale",
-      "text": "In-context & test-time learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, In-context & test-time learning has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "60a8e133c235b7f2",
+      "unit_id": "cd3ad1a95c881de1",
       "node_id": "incontext_testtime_learning",
       "field": "dependencies.embeddings.rationale",
-      "text": "In-context & test-time learning uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, In-context & test-time learning has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "a94cffc3d5874732",
+      "unit_id": "cc308d002f750573",
       "node_id": "incontext_testtime_learning",
       "field": "dependencies.meta_learning.rationale",
-      "text": "In-context & test-time learning follows the learning setup expressed by Meta-learning."
+      "text": "In this atlas graph, In-context & test-time learning has a `trained_under` dependency on Meta-learning with `common` strength."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "3975ee096471c155",
+      "edge_id": "994c9961f083f1de",
       "node_id": "incontext_testtime_learning",
       "dependency_id": "self_supervised_learning",
       "type": "trained_under",
       "strength": "common",
-      "rationale": "In-context & test-time learning follows the learning setup expressed by Self-supervised learning."
+      "rationale": "In this atlas graph, In-context & test-time learning has a `trained_under` dependency on Self-supervised learning with `common` strength."
     },
     {
-      "edge_id": "70fe0b573f331838",
+      "edge_id": "bbc64caaa5f6c50e",
       "node_id": "incontext_testtime_learning",
       "dependency_id": "sequences_time",
       "type": "uses",
       "strength": "core",
-      "rationale": "In-context & test-time learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, In-context & test-time learning has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "f2bd8e9b041927cc",
+      "edge_id": "9599c24efd07bada",
       "node_id": "incontext_testtime_learning",
       "dependency_id": "embeddings",
       "type": "uses",
       "strength": "common",
-      "rationale": "In-context & test-time learning uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, In-context & test-time learning has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "64aa6a1901e0f58c",
+      "edge_id": "7839022e7f445726",
       "node_id": "incontext_testtime_learning",
       "dependency_id": "meta_learning",
       "type": "trained_under",
       "strength": "common",
-      "rationale": "In-context & test-time learning follows the learning setup expressed by Meta-learning."
+      "rationale": "In this atlas graph, In-context & test-time learning has a `trained_under` dependency on Meta-learning with `common` strength."
     }
   ],
   "candidate_references": {

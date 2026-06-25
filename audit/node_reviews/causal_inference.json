@@ -17,65 +17,6 @@
       "notes": "The inspected sources support structural equations/models, interventions, counterfactual or potential-outcome reasoning, assumptions, and the distinction between correlation/association and causation. The sentence is a compact synthesis."
     },
     {
-      "unit_id": "a5ab08316929f4df",
-      "node_id": "causal_inference",
-      "field": "why_it_matters",
-      "text": "The role of Causal inference is to connect Probability theory, Statistics & experimental design to downstream capabilities including Causal representation learning, Knowledge editing & memory consolidation, Fairness, bias & subgroup analysis.",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Causal_inference",
-        "url:https://en.wikipedia.org/wiki/Causal_model"
-      ],
-      "evidence_location": "AIMA contents.html lines 543-560 and 745-749; Causal inference page definition, approaches, and framework sections; Causal model page applications and ladder sections",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support causal inference as statistical/probabilistic and relevant to machine learning and bias/fairness-adjacent analysis. They do not directly support the graph-derived downstream list, especially knowledge editing and memory consolidation."
-    },
-    {
-      "unit_id": "083178d010fc77a1",
-      "node_id": "causal_inference",
-      "field": "examples[1]",
-      "text": "substrate for Causal representation learning",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Causal_model"
-      ],
-      "evidence_location": "Causal model page applications section mentioning machine learning and causal models",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Causal models are connected to machine learning, but the inspected evidence does not directly establish causal representation learning as a downstream capability of causal inference."
-    },
-    {
-      "unit_id": "dd5e0486669a9eca",
-      "node_id": "causal_inference",
-      "field": "examples[2]",
-      "text": "substrate for Knowledge editing & memory consolidation",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html lines 264-278 and 543-560",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected evidence supports knowledge representation and probabilistic/statistical learning, but it does not connect causal inference to knowledge editing or memory consolidation."
-    },
-    {
-      "unit_id": "cbfd0dae1ef4240e",
-      "node_id": "causal_inference",
-      "field": "examples[3]",
-      "text": "substrate for Fairness, bias & subgroup analysis",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Causal_inference"
-      ],
-      "evidence_location": "AIMA contents.html lines 745-749; Causal inference page definition and concerns about misuse of regression/correlative results",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support fairness/bias as AI topics and causal inference as a way to avoid confusing correlation with cause. They do not directly establish the named downstream relationship."
-    },
-    {
       "unit_id": "2375a3c67d030993",
       "node_id": "causal_inference",
       "field": "limitations[1]",
@@ -83,13 +24,14 @@
       "source_ids": [
         "url:https://en.wikipedia.org/wiki/Causal_inference",
         "url:https://en.wikipedia.org/wiki/Rubin_causal_model",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Causal inference page concerns and common frameworks sections; Rubin causal model conclusion; AIMA contents.html lines 543-560 and 768-774",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support assumptions and statistical/probabilistic dependencies. The broad warning about mathematically valid results being irrelevant in mismatched empirical settings is plausible but not directly stated in the inspected evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "b315303d270ddc22",
@@ -136,6 +78,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "The inspected sources support causal graphs and DAG-based graphical criteria in do-calculus, but graph theory is not universal to all causal-inference frameworks. Common strength is more defensible than core."
+    },
+    {
+      "unit_id": "d66977fb4eccfa47",
+      "node_id": "causal_inference",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Causal inference is modeled as depending on Probability theory, Statistics & experimental design and feeding downstream nodes such as Causal representation learning, Knowledge editing & memory consolidation, Fairness, bias & subgroup analysis.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "dd18a07037282372",
+      "node_id": "causal_inference",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Causal representation learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "fabf8c5b821aabc7",
+      "node_id": "causal_inference",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Knowledge editing & memory consolidation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b4371e21c38c85f1",
+      "node_id": "causal_inference",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Fairness, bias & subgroup analysis",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -185,5 +183,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "causal_inference",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

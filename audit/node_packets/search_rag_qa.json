@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Neural search and retrieval-augmented question answering locate evidence, rank it, synthesize an answer, and preserve links between claims and sources.",
-    "why_it_matters": "The role of Neural search, RAG & question answering is to connect Retrieval-augmented generation, Hybrid retrieval & reranking to downstream capabilities including Autonomous research & AI scientist systems, Tutoring, translation & knowledge work.",
+    "why_it_matters": "In this atlas graph, Neural search, RAG & question answering is modeled as depending on Retrieval-augmented generation, Hybrid retrieval & reranking and feeding downstream nodes such as Autonomous research & AI scientist systems, Tutoring, translation & knowledge work.",
     "examples": [
-      "substrate for Autonomous research & AI scientist systems",
-      "substrate for Tutoring, translation & knowledge work"
+      "atlas downstream link to Autonomous research & AI scientist systems",
+      "atlas downstream link to Tutoring, translation & knowledge work"
     ],
     "limitations": [
       "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Retrieval-augmented generation, Hybrid retrieval & reranking."
@@ -64,13 +64,13 @@
         "id": "long_context_compression",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Neural search, RAG & question answering integrates Long-context attention, compression & summarization memory as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Neural search, RAG & question answering has an `applies` dependency on Long-context attention, compression & summarization memory with `optional` strength."
       },
       {
         "id": "external_data_tools",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Neural search, RAG & question answering integrates External databases, APIs & live tools as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Neural search, RAG & question answering has an `applies` dependency on External databases, APIs & live tools with `optional` strength."
       }
     ]
   },
@@ -82,22 +82,22 @@
       "text": "Neural search and retrieval-augmented question answering locate evidence, rank it, synthesize an answer, and preserve links between claims and sources."
     },
     {
-      "unit_id": "ef0c464ed6411ec7",
+      "unit_id": "884af5ebb90ae5c3",
       "node_id": "search_rag_qa",
       "field": "why_it_matters",
-      "text": "The role of Neural search, RAG & question answering is to connect Retrieval-augmented generation, Hybrid retrieval & reranking to downstream capabilities including Autonomous research & AI scientist systems, Tutoring, translation & knowledge work."
+      "text": "In this atlas graph, Neural search, RAG & question answering is modeled as depending on Retrieval-augmented generation, Hybrid retrieval & reranking and feeding downstream nodes such as Autonomous research & AI scientist systems, Tutoring, translation & knowledge work."
     },
     {
-      "unit_id": "c2946b1439e3e166",
+      "unit_id": "be1e49245233ddf8",
       "node_id": "search_rag_qa",
       "field": "examples[1]",
-      "text": "substrate for Autonomous research & AI scientist systems"
+      "text": "atlas downstream link to Autonomous research & AI scientist systems"
     },
     {
-      "unit_id": "9eec3e8cd1968c33",
+      "unit_id": "feebc8a2ac71dbc4",
       "node_id": "search_rag_qa",
       "field": "examples[2]",
-      "text": "substrate for Tutoring, translation & knowledge work"
+      "text": "atlas downstream link to Tutoring, translation & knowledge work"
     },
     {
       "unit_id": "cf3374e802d93d10",
@@ -136,16 +136,16 @@
       "text": "Neural search, RAG & question answering integrates Graph RAG & structured retrieval as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "9cfc3cb44f80e201",
+      "unit_id": "6c6bb5d910757a79",
       "node_id": "search_rag_qa",
       "field": "dependencies.long_context_compression.rationale",
-      "text": "Neural search, RAG & question answering integrates Long-context attention, compression & summarization memory as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Neural search, RAG & question answering has an `applies` dependency on Long-context attention, compression & summarization memory with `optional` strength."
     },
     {
-      "unit_id": "79eca68ac97419b8",
+      "unit_id": "c1c7af693f91ead1",
       "node_id": "search_rag_qa",
       "field": "dependencies.external_data_tools.rationale",
-      "text": "Neural search, RAG & question answering integrates External databases, APIs & live tools as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Neural search, RAG & question answering has an `applies` dependency on External databases, APIs & live tools with `optional` strength."
     }
   ],
   "edge_units": [
@@ -190,20 +190,20 @@
       "rationale": "Neural search, RAG & question answering integrates Graph RAG & structured retrieval as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "48dd4d035c9bc649",
+      "edge_id": "056f8aa7861ff155",
       "node_id": "search_rag_qa",
       "dependency_id": "long_context_compression",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Neural search, RAG & question answering integrates Long-context attention, compression & summarization memory as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Neural search, RAG & question answering has an `applies` dependency on Long-context attention, compression & summarization memory with `optional` strength."
     },
     {
-      "edge_id": "d7f9fb9103186fe7",
+      "edge_id": "9c11fd1a8ffc0832",
       "node_id": "search_rag_qa",
       "dependency_id": "external_data_tools",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Neural search, RAG & question answering integrates External databases, APIs & live tools as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Neural search, RAG & question answering has an `applies` dependency on External databases, APIs & live tools with `optional` strength."
     }
   ],
   "candidate_references": {

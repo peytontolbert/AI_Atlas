@@ -5,7 +5,9 @@
       "node_id": "energy_objective",
       "field": "definition",
       "text": "A scalar energy ranks compatible configurations lower than incompatible ones.",
-      "source_ids": ["ref_pml"],
+      "source_ids": [
+        "ref_pml"
+      ],
       "evidence_location": "Murphy PML, energy-based model discussion: probability models parameterized by an energy function, with lower energy corresponding to more probable/configuration-compatible states.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -13,35 +15,13 @@
       "notes": "The cited source directly supports the low-energy/high-compatibility definition."
     },
     {
-      "unit_id": "aa01159bf21d0d43",
-      "node_id": "energy_objective",
-      "field": "why_it_matters",
-      "text": "The role of Energy-based objectives is to connect Generative modeling, Probability theory to downstream capabilities including Energy-based, Hopfield & Boltzmann models.",
-      "source_ids": ["ref_pml"],
-      "evidence_location": "Murphy PML, energy-based model and probabilistic generative model material, including Boltzmann-style energy formulations.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The probability/generative connection and Boltzmann-style downstream family are supported, but the graph-role wording is atlas synthesis."
-    },
-    {
-      "unit_id": "6a557903a642babc",
-      "node_id": "energy_objective",
-      "field": "examples[1]",
-      "text": "substrate for Energy-based, Hopfield & Boltzmann models",
-      "source_ids": ["ref_pml"],
-      "evidence_location": "Murphy PML, sections discussing energy-based and Boltzmann models.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Energy objectives directly underlie Boltzmann/energy-based models; Hopfield is plausible but not established as directly by the cited packet source."
-    },
-    {
       "unit_id": "f77c61ad15fb50c2",
       "node_id": "energy_objective",
       "field": "examples[2]",
       "text": "combined with Generative modeling",
-      "source_ids": ["ref_pml"],
+      "source_ids": [
+        "ref_pml"
+      ],
       "evidence_location": "Murphy PML, probabilistic generative modeling and energy-based model material.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -53,86 +33,129 @@
       "node_id": "energy_objective",
       "field": "limitations[1]",
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Probability theory.",
-      "source_ids": ["ref_pml"],
-      "evidence_location": "Murphy PML, energy-based/probabilistic model training material; broader model-selection and objective-training context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency clause is supported, but the objective-mismatch limitation is generic and not directly established by the cited energy-model source."
-    },
-    {
-      "unit_id": "f7b89a1b2e8955d2",
-      "node_id": "energy_objective",
-      "field": "dependencies.generative_learning.rationale",
-      "text": "Energy-based objectives uses Generative modeling as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml"],
-      "evidence_location": "Murphy PML, energy-based probabilistic model material in generative-modeling context.",
+      "source_ids": [
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The source supports energy-based generative/probabilistic modeling, though the exact dependency rationale is editorial."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "8e5b9a1009bbe789",
+      "unit_id": "615f71f85fe35d22",
       "node_id": "energy_objective",
-      "field": "dependencies.probability.rationale",
-      "text": "Energy-based objectives uses Probability theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml"],
-      "evidence_location": "Murphy PML, energy functions used to define probability distributions.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Energy-based objectives is modeled as depending on Generative modeling, Probability theory and feeding downstream nodes such as Energy-based, Hopfield & Boltzmann models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The evidence directly supports probability as core to normalized energy-based models."
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "59fe229eccc58c37",
+      "unit_id": "014f9e9609591fa2",
       "node_id": "energy_objective",
-      "field": "dependencies.optimization.rationale",
-      "text": "Energy-based objectives uses Optimization theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml"],
-      "evidence_location": "Murphy PML, energy-based model learning/training objective material.",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Energy-based, Hopfield & Boltzmann models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Energy-based model parameters are learned by optimizing training objectives, but the source does not state the atlas dependency wording verbatim."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8e4f0188e3ba8b99",
+      "node_id": "energy_objective",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "In this atlas graph, Energy-based objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "6be367299a12d02f",
+      "node_id": "energy_objective",
+      "field": "dependencies.probability.rationale",
+      "text": "In this atlas graph, Energy-based objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b705a3fb0a01b9e2",
+      "node_id": "energy_objective",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, Energy-based objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "b1d01bf46d760873",
+      "edge_id": "bc904588aba4939f",
       "node_id": "energy_objective",
       "dependency_id": "generative_learning",
-      "source_ids": ["ref_pml"],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Energy-based objectives are a generative/probabilistic modeling objective family; core strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "fd5d42d6321880b5",
-      "node_id": "energy_objective",
-      "dependency_id": "probability",
-      "source_ids": ["ref_pml"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Energy functions define probability distributions in the cited material.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "5aeff21e1df62651",
+      "edge_id": "0d9492b520573a56",
       "node_id": "energy_objective",
-      "dependency_id": "optimization",
-      "source_ids": ["ref_pml"],
+      "dependency_id": "probability",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Training energy objectives requires optimization; common strength is appropriate because probability/generative modeling are more central.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "1484af0afed42249",
+      "node_id": "energy_objective",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "energy_objective",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

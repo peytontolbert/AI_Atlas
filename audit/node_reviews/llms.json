@@ -17,70 +17,6 @@
       "notes": "The definition is broad and matches established LLM literature."
     },
     {
-      "unit_id": "4d3b6144ed41c6af",
-      "node_id": "llms",
-      "field": "why_it_matters",
-      "text": "The role of Large language models is to connect Decoder-only causal transformers, Large-scale pretraining to downstream capabilities including Conversational assistants & chatbots, Code models, copilots & repository intelligence, Automated theorem proving & mathematical AI.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "evidence_location": "The upstream/downstream role is inferred from the dependency graph and cited background sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Useful graph synthesis, not directly established as an exact claim by the cited sources."
-    },
-    {
-      "unit_id": "7333335d9f8a0587",
-      "node_id": "llms",
-      "field": "examples[1]",
-      "text": "substrate for Conversational assistants & chatbots",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Treat as a plausible downstream or composition example."
-    },
-    {
-      "unit_id": "b33a4a1336de3072",
-      "node_id": "llms",
-      "field": "examples[2]",
-      "text": "substrate for Code models, copilots & repository intelligence",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Treat as a plausible downstream or composition example."
-    },
-    {
-      "unit_id": "8b0782a486ebaadd",
-      "node_id": "llms",
-      "field": "examples[3]",
-      "text": "substrate for Automated theorem proving & mathematical AI",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Treat as a plausible downstream or composition example."
-    },
-    {
       "unit_id": "c2f509488c013ae8",
       "node_id": "llms",
       "field": "limitations[1]",
@@ -88,13 +24,14 @@
       "source_ids": [
         "ref_transformer",
         "ref_scaling",
-        "ref_chinchilla"
+        "ref_chinchilla",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "2e8c80218c449121",
@@ -289,22 +226,6 @@
       "notes": "Conceptual support only; exact rationale is graph-derived."
     },
     {
-      "unit_id": "e278535bc69375ad",
-      "node_id": "llms",
-      "field": "dependencies.grpo.rationale",
-      "text": "Large language models integrates Group Relative Policy Optimization (GRPO) as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
-    },
-    {
       "unit_id": "5e7b5bea31988500",
       "node_id": "llms",
       "field": "dependencies.paged_attention.rationale",
@@ -335,70 +256,6 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Conceptual support only; exact rationale is graph-derived."
-    },
-    {
-      "unit_id": "c4a4af810806e823",
-      "node_id": "llms",
-      "field": "dependencies.mixture_of_depths.rationale",
-      "text": "Large language models integrates Mixture-of-Depths as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
-    },
-    {
-      "unit_id": "8017d9caf1dcdc88",
-      "node_id": "llms",
-      "field": "dependencies.hybrid_transformer_ssm.rationale",
-      "text": "Large language models integrates Transformer\u2013SSM & recurrent hybrid models as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
-    },
-    {
-      "unit_id": "244125326f4136fe",
-      "node_id": "llms",
-      "field": "dependencies.diffusion_language_model.rationale",
-      "text": "Large language models integrates Diffusion and masked-generative language models as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
-    },
-    {
-      "unit_id": "722b30cc6d64635b",
-      "node_id": "llms",
-      "field": "dependencies.neural_architecture_search.rationale",
-      "text": "Large language models integrates Neural architecture search as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
     },
     {
       "unit_id": "948c15e7a528ad70",
@@ -463,6 +320,132 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "97ca91c928d0c8fd",
+      "node_id": "llms",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Large language models is modeled as depending on Decoder-only causal transformers, Large-scale pretraining and feeding downstream nodes such as Conversational assistants & chatbots, Code models, copilots & repository intelligence, Automated theorem proving & mathematical AI.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "77973653979241bc",
+      "node_id": "llms",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Conversational assistants & chatbots",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2f3e11c543ac4aae",
+      "node_id": "llms",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Code models, copilots & repository intelligence",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8728463774d31e53",
+      "node_id": "llms",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Automated theorem proving & mathematical AI",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a6e3d418328b5616",
+      "node_id": "llms",
+      "field": "dependencies.grpo.rationale",
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Group Relative Policy Optimization (GRPO) with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "4e788f1c7181e00c",
+      "node_id": "llms",
+      "field": "dependencies.mixture_of_depths.rationale",
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Mixture-of-Depths with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "6dbd4e03697d9f4e",
+      "node_id": "llms",
+      "field": "dependencies.hybrid_transformer_ssm.rationale",
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Transformer–SSM & recurrent hybrid models with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "0cff456d09e7a3c9",
+      "node_id": "llms",
+      "field": "dependencies.diffusion_language_model.rationale",
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Diffusion and masked-generative language models with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "b598f89483c15e5b",
+      "node_id": "llms",
+      "field": "dependencies.neural_architecture_search.rationale",
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Neural architecture search with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -659,22 +642,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "a57cd16579b9931c",
-      "node_id": "llms",
-      "dependency_id": "grpo",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "f1828267390ce331",
       "node_id": "llms",
       "dependency_id": "paged_attention",
@@ -705,70 +672,6 @@
       "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
       "relationship_type_supported": true,
       "strength_supported": true
-    },
-    {
-      "edge_id": "3ca234cf7ab8d288",
-      "node_id": "llms",
-      "dependency_id": "mixture_of_depths",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
-      "edge_id": "1fbaf9839c08936a",
-      "node_id": "llms",
-      "dependency_id": "hybrid_transformer_ssm",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
-      "edge_id": "ce6955553fe5c325",
-      "node_id": "llms",
-      "dependency_id": "diffusion_language_model",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
-      "edge_id": "0866705cbea9fd7e",
-      "node_id": "llms",
-      "dependency_id": "neural_architecture_search",
-      "source_ids": [
-        "ref_transformer",
-        "ref_scaling",
-        "ref_chinchilla"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
     },
     {
       "edge_id": "da98f0be96181168",
@@ -833,6 +736,74 @@
       "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "924093e031cc55bd",
+      "node_id": "llms",
+      "dependency_id": "grpo",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "2e371fb50b0a6310",
+      "node_id": "llms",
+      "dependency_id": "mixture_of_depths",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "b1ae34f53e31c8ea",
+      "node_id": "llms",
+      "dependency_id": "hybrid_transformer_ssm",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "1ec21a744fc45e64",
+      "node_id": "llms",
+      "dependency_id": "diffusion_language_model",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "fc91567c6ae45868",
+      "node_id": "llms",
+      "dependency_id": "neural_architecture_search",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "llms",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

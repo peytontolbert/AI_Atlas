@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Local summaries reduce resolution, add invariance, or aggregate neighborhoods.",
-    "why_it_matters": "The role of Pooling & local aggregation is to connect Convolution & local filters, Statistics & experimental design to downstream capabilities including Message passing & neighborhood aggregation, Convolutional neural networks, Graph neural networks.",
+    "why_it_matters": "In this atlas graph, Pooling & local aggregation is modeled as depending on Convolution & local filters, Statistics & experimental design and feeding downstream nodes such as Message passing & neighborhood aggregation, Convolutional neural networks, Graph neural networks.",
     "examples": [
-      "substrate for Message passing & neighborhood aggregation",
-      "substrate for Convolutional neural networks",
-      "substrate for Graph neural networks"
+      "atlas downstream link to Message passing & neighborhood aggregation",
+      "atlas downstream link to Convolutional neural networks",
+      "atlas downstream link to Graph neural networks"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Convolution & local filters, Statistics & experimental design."
@@ -41,7 +41,7 @@
         "id": "statistics",
         "type": "uses",
         "strength": "core",
-        "rationale": "Pooling & local aggregation uses Statistics & experimental design as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Pooling & local aggregation has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -53,28 +53,28 @@
       "text": "Local summaries reduce resolution, add invariance, or aggregate neighborhoods."
     },
     {
-      "unit_id": "c907e840a7ec88f4",
+      "unit_id": "51b1703096eb2ad8",
       "node_id": "pooling",
       "field": "why_it_matters",
-      "text": "The role of Pooling & local aggregation is to connect Convolution & local filters, Statistics & experimental design to downstream capabilities including Message passing & neighborhood aggregation, Convolutional neural networks, Graph neural networks."
+      "text": "In this atlas graph, Pooling & local aggregation is modeled as depending on Convolution & local filters, Statistics & experimental design and feeding downstream nodes such as Message passing & neighborhood aggregation, Convolutional neural networks, Graph neural networks."
     },
     {
-      "unit_id": "3c63e23949a9f071",
+      "unit_id": "674714b43fbe9405",
       "node_id": "pooling",
       "field": "examples[1]",
-      "text": "substrate for Message passing & neighborhood aggregation"
+      "text": "atlas downstream link to Message passing & neighborhood aggregation"
     },
     {
-      "unit_id": "160b3de4dcd631c4",
+      "unit_id": "683363ec501750d7",
       "node_id": "pooling",
       "field": "examples[2]",
-      "text": "substrate for Convolutional neural networks"
+      "text": "atlas downstream link to Convolutional neural networks"
     },
     {
-      "unit_id": "5f83db205431ce8a",
+      "unit_id": "a2eb693113bb4916",
       "node_id": "pooling",
       "field": "examples[3]",
-      "text": "substrate for Graph neural networks"
+      "text": "atlas downstream link to Graph neural networks"
     },
     {
       "unit_id": "e9ff31781819b02a",
@@ -89,10 +89,10 @@
       "text": "Pooling & local aggregation is assembled in part from the mechanism or model component Convolution & local filters."
     },
     {
-      "unit_id": "4db41172d08d1cfd",
+      "unit_id": "7eaffdcf26110853",
       "node_id": "pooling",
       "field": "dependencies.statistics.rationale",
-      "text": "Pooling & local aggregation uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Pooling & local aggregation has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -105,12 +105,12 @@
       "rationale": "Pooling & local aggregation is assembled in part from the mechanism or model component Convolution & local filters."
     },
     {
-      "edge_id": "c5b49bdc05fdc489",
+      "edge_id": "861e79014d768ea5",
       "node_id": "pooling",
       "dependency_id": "statistics",
       "type": "uses",
       "strength": "core",
-      "rationale": "Pooling & local aggregation uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Pooling & local aggregation has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Forecasting and anomaly systems model temporal patterns to predict future values, detect deviations, estimate risk, or flag fraud and equipment failure.",
-    "why_it_matters": "The role of Time-series forecasting, anomaly & fraud detection is to connect Selective state-space models (Mamba family), LSTMs & GRUs to downstream capabilities including Autonomous vehicles, drones & navigation, Weather, climate & geospatial forecasting, Cybersecurity, finance & operational risk AI.",
+    "why_it_matters": "In this atlas graph, Time-series forecasting, anomaly & fraud detection is modeled as depending on Selective state-space models (Mamba family), LSTMs & GRUs and feeding downstream nodes such as Autonomous vehicles, drones & navigation, Weather, climate & geospatial forecasting, Cybersecurity, finance & operational risk AI.",
     "examples": [
-      "substrate for Autonomous vehicles, drones & navigation",
-      "substrate for Weather, climate & geospatial forecasting",
-      "substrate for Cybersecurity, finance & operational risk AI"
+      "atlas downstream link to Autonomous vehicles, drones & navigation",
+      "atlas downstream link to Weather, climate & geospatial forecasting",
+      "atlas downstream link to Cybersecurity, finance & operational risk AI"
     ],
     "limitations": [
       "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Selective state-space models (Mamba family), LSTMs & GRUs."
@@ -47,7 +47,7 @@
         "id": "multimodal_simulated_streams",
         "type": "applies",
         "strength": "common",
-        "rationale": "Time-series forecasting, anomaly & fraud detection integrates Multimodal, simulated & streaming data as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Multimodal, simulated & streaming data with `common` strength."
       },
       {
         "id": "calibration_evaluation",
@@ -59,7 +59,7 @@
         "id": "gaussian_processes",
         "type": "applies",
         "strength": "common",
-        "rationale": "Time-series forecasting, anomaly & fraud detection integrates Gaussian processes as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Gaussian processes with `common` strength."
       },
       {
         "id": "hmm_crf",
@@ -71,19 +71,19 @@
         "id": "autoencoder",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Time-series forecasting, anomaly & fraud detection integrates Autoencoders as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Autoencoders with `optional` strength."
       },
       {
         "id": "structured_ssm",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Time-series forecasting, anomaly & fraud detection integrates Structured state-space models (S4 family) as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Structured state-space models (S4 family) with `optional` strength."
       },
       {
         "id": "energy_hopfield",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Time-series forecasting, anomaly & fraud detection integrates Energy-based, Hopfield & Boltzmann models as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Energy-based, Hopfield & Boltzmann models with `optional` strength."
       }
     ]
   },
@@ -95,28 +95,28 @@
       "text": "Forecasting and anomaly systems model temporal patterns to predict future values, detect deviations, estimate risk, or flag fraud and equipment failure."
     },
     {
-      "unit_id": "ecacf3ecf6448263",
+      "unit_id": "3fe010dafa2ed195",
       "node_id": "timeseries_anomaly",
       "field": "why_it_matters",
-      "text": "The role of Time-series forecasting, anomaly & fraud detection is to connect Selective state-space models (Mamba family), LSTMs & GRUs to downstream capabilities including Autonomous vehicles, drones & navigation, Weather, climate & geospatial forecasting, Cybersecurity, finance & operational risk AI."
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection is modeled as depending on Selective state-space models (Mamba family), LSTMs & GRUs and feeding downstream nodes such as Autonomous vehicles, drones & navigation, Weather, climate & geospatial forecasting, Cybersecurity, finance & operational risk AI."
     },
     {
-      "unit_id": "4a295483a6a331fb",
+      "unit_id": "d2b4f0839f08b3b0",
       "node_id": "timeseries_anomaly",
       "field": "examples[1]",
-      "text": "substrate for Autonomous vehicles, drones & navigation"
+      "text": "atlas downstream link to Autonomous vehicles, drones & navigation"
     },
     {
-      "unit_id": "385c3aee965e7aff",
+      "unit_id": "0614247fc0e59608",
       "node_id": "timeseries_anomaly",
       "field": "examples[2]",
-      "text": "substrate for Weather, climate & geospatial forecasting"
+      "text": "atlas downstream link to Weather, climate & geospatial forecasting"
     },
     {
-      "unit_id": "61e2f05fc9ba1fa4",
+      "unit_id": "cc1cfb283bc149e0",
       "node_id": "timeseries_anomaly",
       "field": "examples[3]",
-      "text": "substrate for Cybersecurity, finance & operational risk AI"
+      "text": "atlas downstream link to Cybersecurity, finance & operational risk AI"
     },
     {
       "unit_id": "9b723ab9901885d9",
@@ -137,10 +137,10 @@
       "text": "Time-series forecasting, anomaly & fraud detection integrates LSTMs & GRUs as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "c5d18542d09c7829",
+      "unit_id": "0c16d064f05bdb5d",
       "node_id": "timeseries_anomaly",
       "field": "dependencies.multimodal_simulated_streams.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Multimodal, simulated & streaming data as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Multimodal, simulated & streaming data with `common` strength."
     },
     {
       "unit_id": "c6530700d258bebf",
@@ -149,10 +149,10 @@
       "text": "Time-series forecasting, anomaly & fraud detection integrates Calibration, uncertainty & risk evaluation as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "e2dc86230def8b53",
+      "unit_id": "15d17cbed569831e",
       "node_id": "timeseries_anomaly",
       "field": "dependencies.gaussian_processes.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Gaussian processes as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Gaussian processes with `common` strength."
     },
     {
       "unit_id": "373ddeeda101583d",
@@ -161,22 +161,22 @@
       "text": "Time-series forecasting, anomaly & fraud detection integrates Hidden Markov models & CRFs as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "4f6e52ff35ea4dc4",
+      "unit_id": "c5512e426be64a6e",
       "node_id": "timeseries_anomaly",
       "field": "dependencies.autoencoder.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Autoencoders as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Autoencoders with `optional` strength."
     },
     {
-      "unit_id": "8e1ec0262c3f8893",
+      "unit_id": "5ecf31007f01f4ad",
       "node_id": "timeseries_anomaly",
       "field": "dependencies.structured_ssm.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Structured state-space models (S4 family) as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Structured state-space models (S4 family) with `optional` strength."
     },
     {
-      "unit_id": "f207846bd8959c43",
+      "unit_id": "fc31de41ff210989",
       "node_id": "timeseries_anomaly",
       "field": "dependencies.energy_hopfield.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Energy-based, Hopfield & Boltzmann models as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Energy-based, Hopfield & Boltzmann models with `optional` strength."
     }
   ],
   "edge_units": [
@@ -197,12 +197,12 @@
       "rationale": "Time-series forecasting, anomaly & fraud detection integrates LSTMs & GRUs as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "40f7799221792a28",
+      "edge_id": "320b2d02f89df38a",
       "node_id": "timeseries_anomaly",
       "dependency_id": "multimodal_simulated_streams",
       "type": "applies",
       "strength": "common",
-      "rationale": "Time-series forecasting, anomaly & fraud detection integrates Multimodal, simulated & streaming data as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Multimodal, simulated & streaming data with `common` strength."
     },
     {
       "edge_id": "c8bb075075ff654c",
@@ -213,12 +213,12 @@
       "rationale": "Time-series forecasting, anomaly & fraud detection integrates Calibration, uncertainty & risk evaluation as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "62aa91a4b08aef80",
+      "edge_id": "45e685dedbe1f678",
       "node_id": "timeseries_anomaly",
       "dependency_id": "gaussian_processes",
       "type": "applies",
       "strength": "common",
-      "rationale": "Time-series forecasting, anomaly & fraud detection integrates Gaussian processes as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Gaussian processes with `common` strength."
     },
     {
       "edge_id": "cf864d5a4eed1808",
@@ -229,28 +229,28 @@
       "rationale": "Time-series forecasting, anomaly & fraud detection integrates Hidden Markov models & CRFs as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "aba9953d11eb94cd",
+      "edge_id": "7708410260767eb4",
       "node_id": "timeseries_anomaly",
       "dependency_id": "autoencoder",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Time-series forecasting, anomaly & fraud detection integrates Autoencoders as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Autoencoders with `optional` strength."
     },
     {
-      "edge_id": "c0d0536ad2a5d69c",
+      "edge_id": "27a307bc7b6fb6ba",
       "node_id": "timeseries_anomaly",
       "dependency_id": "structured_ssm",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Time-series forecasting, anomaly & fraud detection integrates Structured state-space models (S4 family) as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Structured state-space models (S4 family) with `optional` strength."
     },
     {
-      "edge_id": "e0c769781923b48c",
+      "edge_id": "f5b41af06a5436dc",
       "node_id": "timeseries_anomaly",
       "dependency_id": "energy_hopfield",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Time-series forecasting, anomaly & fraud detection integrates Energy-based, Hopfield & Boltzmann models as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Energy-based, Hopfield & Boltzmann models with `optional` strength."
     }
   ],
   "candidate_references": {

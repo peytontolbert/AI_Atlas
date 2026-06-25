@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Program synthesis searches a space of executable programs from specifications, examples, tests, types, natural-language intent, or learned priors.",
-    "why_it_matters": "The role of Program synthesis & code search is to connect Programs, ASTs, bytecode & intermediate representations, Graph search, BFS/DFS & A* to downstream capabilities including Code models, copilots & repository intelligence.",
+    "why_it_matters": "In this atlas graph, Program synthesis & code search is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Graph search, BFS/DFS & A* and feeding downstream nodes such as Code models, copilots & repository intelligence.",
     "examples": [
-      "substrate for Code models, copilots & repository intelligence",
+      "atlas downstream link to Code models, copilots & repository intelligence",
       "combined with Programs, ASTs, bytecode & intermediate representations"
     ],
     "limitations": [
@@ -33,25 +33,25 @@
         "id": "programs_ast_ir",
         "type": "uses",
         "strength": "core",
-        "rationale": "Program synthesis & code search uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "graph_astar_search",
         "type": "uses",
         "strength": "core",
-        "rationale": "Program synthesis & code search uses Graph search, BFS/DFS & A* as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Graph search, BFS/DFS & A* because Graph search, BFS/DFS & A* is modeled as a reusable ingredient for the node."
       },
       {
         "id": "decoder_only_transformer",
         "type": "uses",
         "strength": "common",
-        "rationale": "Program synthesis & code search uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
       },
       {
         "id": "constraint_program_execution",
         "type": "uses",
         "strength": "common",
-        "rationale": "Program synthesis & code search uses Constraint propagation, logic & program execution as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Constraint propagation, logic & program execution because Constraint propagation, logic & program execution is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -63,16 +63,16 @@
       "text": "Program synthesis searches a space of executable programs from specifications, examples, tests, types, natural-language intent, or learned priors."
     },
     {
-      "unit_id": "770bf2c0d5e96bed",
+      "unit_id": "81904b113725697d",
       "node_id": "program_synthesis",
       "field": "why_it_matters",
-      "text": "The role of Program synthesis & code search is to connect Programs, ASTs, bytecode & intermediate representations, Graph search, BFS/DFS & A* to downstream capabilities including Code models, copilots & repository intelligence."
+      "text": "In this atlas graph, Program synthesis & code search is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Graph search, BFS/DFS & A* and feeding downstream nodes such as Code models, copilots & repository intelligence."
     },
     {
-      "unit_id": "cf6dbde072072bb9",
+      "unit_id": "a4f14729a5f29dbb",
       "node_id": "program_synthesis",
       "field": "examples[1]",
-      "text": "substrate for Code models, copilots & repository intelligence"
+      "text": "atlas downstream link to Code models, copilots & repository intelligence"
     },
     {
       "unit_id": "a89704fb80e77633",
@@ -87,62 +87,62 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Graph search, BFS/DFS & A*."
     },
     {
-      "unit_id": "18fbf1734315e432",
+      "unit_id": "09519348abe23b08",
       "node_id": "program_synthesis",
       "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Program synthesis & code search uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "7721b62148f8b188",
+      "unit_id": "ec13d9d7ee4f66ec",
       "node_id": "program_synthesis",
       "field": "dependencies.graph_astar_search.rationale",
-      "text": "Program synthesis & code search uses Graph search, BFS/DFS & A* as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Graph search, BFS/DFS & A* because Graph search, BFS/DFS & A* is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "ee57ec76fbeb2915",
+      "unit_id": "9ef523ff641f59f7",
       "node_id": "program_synthesis",
       "field": "dependencies.decoder_only_transformer.rationale",
-      "text": "Program synthesis & code search uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "9833dbb373a3e71a",
+      "unit_id": "a5c1699838423244",
       "node_id": "program_synthesis",
       "field": "dependencies.constraint_program_execution.rationale",
-      "text": "Program synthesis & code search uses Constraint propagation, logic & program execution as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Constraint propagation, logic & program execution because Constraint propagation, logic & program execution is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "c499a585fa1e65ba",
+      "edge_id": "dfc22a97363cb55b",
       "node_id": "program_synthesis",
       "dependency_id": "programs_ast_ir",
       "type": "uses",
       "strength": "core",
-      "rationale": "Program synthesis & code search uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "df90030de3d8415c",
+      "edge_id": "542d51170c88be87",
       "node_id": "program_synthesis",
       "dependency_id": "graph_astar_search",
       "type": "uses",
       "strength": "core",
-      "rationale": "Program synthesis & code search uses Graph search, BFS/DFS & A* as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Graph search, BFS/DFS & A* because Graph search, BFS/DFS & A* is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "99343f16604fd397",
+      "edge_id": "d4416404b83975ba",
       "node_id": "program_synthesis",
       "dependency_id": "decoder_only_transformer",
       "type": "uses",
       "strength": "common",
-      "rationale": "Program synthesis & code search uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "d24fd7d0bcea5679",
+      "edge_id": "cbc6cb39d6bbfc4f",
       "node_id": "program_synthesis",
       "dependency_id": "constraint_program_execution",
       "type": "uses",
       "strength": "common",
-      "rationale": "Program synthesis & code search uses Constraint propagation, logic & program execution as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Program synthesis & code search has a `uses` dependency on Constraint propagation, logic & program execution because Constraint propagation, logic & program execution is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

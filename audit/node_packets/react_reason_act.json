@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Reasoning traces and environment actions are interleaved so the model can update plans using observations from tools.",
-    "why_it_matters": "The role of ReAct-style reasoning and acting is to connect Chain-of-thought & latent reasoning, Tool use & function calling to downstream capabilities including Observe–plan–act agent loops.",
+    "why_it_matters": "In this atlas graph, ReAct-style reasoning and acting is modeled as depending on Chain-of-thought & latent reasoning, Tool use & function calling and feeding downstream nodes such as Observe–plan–act agent loops.",
     "examples": [
-      "substrate for Observe–plan–act agent loops",
+      "atlas downstream link to Observe–plan–act agent loops",
       "combined with Chain-of-thought & latent reasoning"
     ],
     "limitations": [
@@ -33,13 +33,13 @@
         "id": "cot_latent_reasoning",
         "type": "uses",
         "strength": "core",
-        "rationale": "ReAct-style reasoning and acting uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, ReAct-style reasoning and acting has a `uses` dependency on Chain-of-thought & latent reasoning because Chain-of-thought & latent reasoning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "tool_use_function_calling",
         "type": "uses",
         "strength": "core",
-        "rationale": "ReAct-style reasoning and acting uses Tool use & function calling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, ReAct-style reasoning and acting has a `uses` dependency on Tool use & function calling because Tool use & function calling is modeled as a reusable ingredient for the node."
       },
       {
         "id": "external_data_tools",
@@ -57,16 +57,16 @@
       "text": "Reasoning traces and environment actions are interleaved so the model can update plans using observations from tools."
     },
     {
-      "unit_id": "20223e662825fc01",
+      "unit_id": "76f6166e1ec79b67",
       "node_id": "react_reason_act",
       "field": "why_it_matters",
-      "text": "The role of ReAct-style reasoning and acting is to connect Chain-of-thought & latent reasoning, Tool use & function calling to downstream capabilities including Observe–plan–act agent loops."
+      "text": "In this atlas graph, ReAct-style reasoning and acting is modeled as depending on Chain-of-thought & latent reasoning, Tool use & function calling and feeding downstream nodes such as Observe–plan–act agent loops."
     },
     {
-      "unit_id": "baf0c5846d0a7ab2",
+      "unit_id": "68e00ba63b7a78ec",
       "node_id": "react_reason_act",
       "field": "examples[1]",
-      "text": "substrate for Observe–plan–act agent loops"
+      "text": "atlas downstream link to Observe–plan–act agent loops"
     },
     {
       "unit_id": "84b4965bbeeb029f",
@@ -81,16 +81,16 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Tool use & function calling."
     },
     {
-      "unit_id": "a69a0d9e0a598844",
+      "unit_id": "c996779e5a8a443a",
       "node_id": "react_reason_act",
       "field": "dependencies.cot_latent_reasoning.rationale",
-      "text": "ReAct-style reasoning and acting uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, ReAct-style reasoning and acting has a `uses` dependency on Chain-of-thought & latent reasoning because Chain-of-thought & latent reasoning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "aad034d4f83cc227",
+      "unit_id": "cb69a036ac2b3e43",
       "node_id": "react_reason_act",
       "field": "dependencies.tool_use_function_calling.rationale",
-      "text": "ReAct-style reasoning and acting uses Tool use & function calling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, ReAct-style reasoning and acting has a `uses` dependency on Tool use & function calling because Tool use & function calling is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "f23d9595fdc92b2c",
@@ -101,20 +101,20 @@
   ],
   "edge_units": [
     {
-      "edge_id": "9d5a7bc0c9c64039",
+      "edge_id": "62b45850c6f0970b",
       "node_id": "react_reason_act",
       "dependency_id": "cot_latent_reasoning",
       "type": "uses",
       "strength": "core",
-      "rationale": "ReAct-style reasoning and acting uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, ReAct-style reasoning and acting has a `uses` dependency on Chain-of-thought & latent reasoning because Chain-of-thought & latent reasoning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "32224aa06742e46c",
+      "edge_id": "0c40d97c7035500a",
       "node_id": "react_reason_act",
       "dependency_id": "tool_use_function_calling",
       "type": "uses",
       "strength": "core",
-      "rationale": "ReAct-style reasoning and acting uses Tool use & function calling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, ReAct-style reasoning and acting has a `uses` dependency on Tool use & function calling because Tool use & function calling is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "d7b6de76deac32b4",

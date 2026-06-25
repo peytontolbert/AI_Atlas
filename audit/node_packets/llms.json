@@ -16,11 +16,11 @@
       "LLMs"
     ],
     "definition": "Large language models are high-capacity sequence models pretrained to predict or reconstruct language and adapted for generation, reasoning, retrieval, and tool use.",
-    "why_it_matters": "The role of Large language models is to connect Decoder-only causal transformers, Large-scale pretraining to downstream capabilities including Conversational assistants & chatbots, Code models, copilots & repository intelligence, Automated theorem proving & mathematical AI.",
+    "why_it_matters": "In this atlas graph, Large language models is modeled as depending on Decoder-only causal transformers, Large-scale pretraining and feeding downstream nodes such as Conversational assistants & chatbots, Code models, copilots & repository intelligence, Automated theorem proving & mathematical AI.",
     "examples": [
-      "substrate for Conversational assistants & chatbots",
-      "substrate for Code models, copilots & repository intelligence",
-      "substrate for Automated theorem proving & mathematical AI"
+      "atlas downstream link to Conversational assistants & chatbots",
+      "atlas downstream link to Code models, copilots & repository intelligence",
+      "atlas downstream link to Automated theorem proving & mathematical AI"
     ],
     "limitations": [
       "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Decoder-only causal transformers, Large-scale pretraining."
@@ -111,7 +111,7 @@
         "id": "grpo",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Large language models integrates Group Relative Policy Optimization (GRPO) as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Large language models has an `applies` dependency on Group Relative Policy Optimization (GRPO) with `optional` strength."
       },
       {
         "id": "paged_attention",
@@ -129,25 +129,25 @@
         "id": "mixture_of_depths",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Large language models integrates Mixture-of-Depths as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Large language models has an `applies` dependency on Mixture-of-Depths with `optional` strength."
       },
       {
         "id": "hybrid_transformer_ssm",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Large language models integrates Transformer–SSM & recurrent hybrid models as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Large language models has an `applies` dependency on Transformer–SSM & recurrent hybrid models with `optional` strength."
       },
       {
         "id": "diffusion_language_model",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Large language models integrates Diffusion and masked-generative language models as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Large language models has an `applies` dependency on Diffusion and masked-generative language models with `optional` strength."
       },
       {
         "id": "neural_architecture_search",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Large language models integrates Neural architecture search as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Large language models has an `applies` dependency on Neural architecture search with `optional` strength."
       },
       {
         "id": "parallel_inference",
@@ -183,28 +183,28 @@
       "text": "Large language models are high-capacity sequence models pretrained to predict or reconstruct language and adapted for generation, reasoning, retrieval, and tool use."
     },
     {
-      "unit_id": "4d3b6144ed41c6af",
+      "unit_id": "97ca91c928d0c8fd",
       "node_id": "llms",
       "field": "why_it_matters",
-      "text": "The role of Large language models is to connect Decoder-only causal transformers, Large-scale pretraining to downstream capabilities including Conversational assistants & chatbots, Code models, copilots & repository intelligence, Automated theorem proving & mathematical AI."
+      "text": "In this atlas graph, Large language models is modeled as depending on Decoder-only causal transformers, Large-scale pretraining and feeding downstream nodes such as Conversational assistants & chatbots, Code models, copilots & repository intelligence, Automated theorem proving & mathematical AI."
     },
     {
-      "unit_id": "7333335d9f8a0587",
+      "unit_id": "77973653979241bc",
       "node_id": "llms",
       "field": "examples[1]",
-      "text": "substrate for Conversational assistants & chatbots"
+      "text": "atlas downstream link to Conversational assistants & chatbots"
     },
     {
-      "unit_id": "b33a4a1336de3072",
+      "unit_id": "2f3e11c543ac4aae",
       "node_id": "llms",
       "field": "examples[2]",
-      "text": "substrate for Code models, copilots & repository intelligence"
+      "text": "atlas downstream link to Code models, copilots & repository intelligence"
     },
     {
-      "unit_id": "8b0782a486ebaadd",
+      "unit_id": "8728463774d31e53",
       "node_id": "llms",
       "field": "examples[3]",
-      "text": "substrate for Automated theorem proving & mathematical AI"
+      "text": "atlas downstream link to Automated theorem proving & mathematical AI"
     },
     {
       "unit_id": "c2f509488c013ae8",
@@ -285,10 +285,10 @@
       "text": "Large language models integrates Direct and online preference optimization as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "e278535bc69375ad",
+      "unit_id": "a6e3d418328b5616",
       "node_id": "llms",
       "field": "dependencies.grpo.rationale",
-      "text": "Large language models integrates Group Relative Policy Optimization (GRPO) as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Group Relative Policy Optimization (GRPO) with `optional` strength."
     },
     {
       "unit_id": "5e7b5bea31988500",
@@ -303,28 +303,28 @@
       "text": "Large language models integrates Speculative, parallel & assisted decoding as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "c4a4af810806e823",
+      "unit_id": "4e788f1c7181e00c",
       "node_id": "llms",
       "field": "dependencies.mixture_of_depths.rationale",
-      "text": "Large language models integrates Mixture-of-Depths as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Mixture-of-Depths with `optional` strength."
     },
     {
-      "unit_id": "8017d9caf1dcdc88",
+      "unit_id": "6dbd4e03697d9f4e",
       "node_id": "llms",
       "field": "dependencies.hybrid_transformer_ssm.rationale",
-      "text": "Large language models integrates Transformer–SSM & recurrent hybrid models as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Transformer–SSM & recurrent hybrid models with `optional` strength."
     },
     {
-      "unit_id": "244125326f4136fe",
+      "unit_id": "0cff456d09e7a3c9",
       "node_id": "llms",
       "field": "dependencies.diffusion_language_model.rationale",
-      "text": "Large language models integrates Diffusion and masked-generative language models as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Diffusion and masked-generative language models with `optional` strength."
     },
     {
-      "unit_id": "722b30cc6d64635b",
+      "unit_id": "b598f89483c15e5b",
       "node_id": "llms",
       "field": "dependencies.neural_architecture_search.rationale",
-      "text": "Large language models integrates Neural architecture search as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Large language models has an `applies` dependency on Neural architecture search with `optional` strength."
     },
     {
       "unit_id": "948c15e7a528ad70",
@@ -449,12 +449,12 @@
       "rationale": "Large language models integrates Direct and online preference optimization as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "a57cd16579b9931c",
+      "edge_id": "924093e031cc55bd",
       "node_id": "llms",
       "dependency_id": "grpo",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Large language models integrates Group Relative Policy Optimization (GRPO) as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Large language models has an `applies` dependency on Group Relative Policy Optimization (GRPO) with `optional` strength."
     },
     {
       "edge_id": "f1828267390ce331",
@@ -473,36 +473,36 @@
       "rationale": "Large language models integrates Speculative, parallel & assisted decoding as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "3ca234cf7ab8d288",
+      "edge_id": "2e371fb50b0a6310",
       "node_id": "llms",
       "dependency_id": "mixture_of_depths",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Large language models integrates Mixture-of-Depths as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Large language models has an `applies` dependency on Mixture-of-Depths with `optional` strength."
     },
     {
-      "edge_id": "1fbaf9839c08936a",
+      "edge_id": "b1ae34f53e31c8ea",
       "node_id": "llms",
       "dependency_id": "hybrid_transformer_ssm",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Large language models integrates Transformer–SSM & recurrent hybrid models as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Large language models has an `applies` dependency on Transformer–SSM & recurrent hybrid models with `optional` strength."
     },
     {
-      "edge_id": "ce6955553fe5c325",
+      "edge_id": "1ec21a744fc45e64",
       "node_id": "llms",
       "dependency_id": "diffusion_language_model",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Large language models integrates Diffusion and masked-generative language models as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Large language models has an `applies` dependency on Diffusion and masked-generative language models with `optional` strength."
     },
     {
-      "edge_id": "0866705cbea9fd7e",
+      "edge_id": "fc91567c6ae45868",
       "node_id": "llms",
       "dependency_id": "neural_architecture_search",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Large language models integrates Neural architecture search as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Large language models has an `applies` dependency on Neural architecture search with `optional` strength."
     },
     {
       "edge_id": "da98f0be96181168",

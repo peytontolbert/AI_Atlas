@@ -1,19 +1,194 @@
 {
   "sentence_reviews": [
-    {"unit_id":"efdda7a3a644aab8","node_id":"mlp","field":"definition","text":"A multilayer perceptron stacks affine transformations and nonlinear activations to learn general nonlinear mappings over fixed-size feature vectors.","source_ids":["ref_dlbook","ref_aima"],"evidence_location":"Deep Learning, Ch. 6 deep feedforward networks / MLPs; AIMA neural network learning topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Stacked affine layers and nonlinear activations are directly supported; 'general nonlinear mappings' is a concise synthesis."},
-    {"unit_id":"e8ada3771fe79904","node_id":"mlp","field":"why_it_matters","text":"The role of Multilayer perceptrons is to connect Affine transforms & dense layers, Nonlinear activations to downstream capabilities including Neural fields & radiance-field models.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning feedforward/MLP chapters and neural network building-block material; no direct neural-field/radiance-field evidence in packet citations.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Affine and activation dependencies are supported; neural fields/radiance-field downstream claim is not directly supported by ref_dlbook."},
-    {"unit_id":"2e71ae26d435923a","node_id":"mlp","field":"examples[1]","text":"substrate for Neural fields & radiance-field models","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning MLP/feedforward network material; no direct NeRF/neural-field source in packet.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"MLPs are used in neural fields/NeRFs, but the packet citations do not directly support that specific downstream category."},
-    {"unit_id":"0c182519cdf7cde0","node_id":"mlp","field":"examples[2]","text":"combined with Affine transforms & dense layers","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning, Ch. 6 feedforward networks constructed from affine transformations and nonlinear activations.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Dense affine layers are directly part of MLPs."},
-    {"unit_id":"c6b8e80bc9a4aed0","node_id":"mlp","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Affine transforms & dense layers, Nonlinear activations.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning feedforward networks, capacity/generalization, and optimization chapters.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are supported; generic limitation wording is broader than cited evidence."},
-    {"unit_id":"654c0fe40a55389c","node_id":"mlp","field":"dependencies.affine_dense.rationale","text":"Multilayer perceptrons is assembled in part from the mechanism or model component Affine transforms & dense layers.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning, Ch. 6 feedforward network layers.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"MLPs are stacks of dense affine layers."},
-    {"unit_id":"98edb96dc8a8fd65","node_id":"mlp","field":"dependencies.nonlinear_activations.rationale","text":"Multilayer perceptrons is assembled in part from the mechanism or model component Nonlinear activations.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning, Ch. 6 activation functions in feedforward networks.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Nonlinear activations are core MLP components."},
-    {"unit_id":"f9c3669f68582869","node_id":"mlp","field":"dependencies.residual_connections.rationale","text":"Multilayer perceptrons is assembled in part from the mechanism or model component Residual, skip & highway connections.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning residual/skip connection discussion in deep network optimization context.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Residual/skip connections can be added to MLP-like networks, but they are not defining components of MLPs."},
-    {"unit_id":"1b7fa83fd759b6f4","node_id":"mlp","field":"dependencies.supervised_learning.rationale","text":"Multilayer perceptrons follows the learning setup expressed by Supervised learning.","source_ids":["ref_dlbook","ref_aima"],"evidence_location":"Deep Learning supervised feedforward network examples; AIMA neural-network learning topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"MLPs are commonly trained under supervised learning, though they are also used in self-supervised and unsupervised systems."}
+    {
+      "unit_id": "efdda7a3a644aab8",
+      "node_id": "mlp",
+      "field": "definition",
+      "text": "A multilayer perceptron stacks affine transformations and nonlinear activations to learn general nonlinear mappings over fixed-size feature vectors.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning, Ch. 6 deep feedforward networks / MLPs; AIMA neural network learning topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Stacked affine layers and nonlinear activations are directly supported; 'general nonlinear mappings' is a concise synthesis."
+    },
+    {
+      "unit_id": "0c182519cdf7cde0",
+      "node_id": "mlp",
+      "field": "examples[2]",
+      "text": "combined with Affine transforms & dense layers",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning, Ch. 6 feedforward networks constructed from affine transformations and nonlinear activations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Dense affine layers are directly part of MLPs."
+    },
+    {
+      "unit_id": "c6b8e80bc9a4aed0",
+      "node_id": "mlp",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Affine transforms & dense layers, Nonlinear activations.",
+      "source_ids": [
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "654c0fe40a55389c",
+      "node_id": "mlp",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Multilayer perceptrons is assembled in part from the mechanism or model component Affine transforms & dense layers.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning, Ch. 6 feedforward network layers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "MLPs are stacks of dense affine layers."
+    },
+    {
+      "unit_id": "98edb96dc8a8fd65",
+      "node_id": "mlp",
+      "field": "dependencies.nonlinear_activations.rationale",
+      "text": "Multilayer perceptrons is assembled in part from the mechanism or model component Nonlinear activations.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning, Ch. 6 activation functions in feedforward networks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Nonlinear activations are core MLP components."
+    },
+    {
+      "unit_id": "1b7fa83fd759b6f4",
+      "node_id": "mlp",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Multilayer perceptrons follows the learning setup expressed by Supervised learning.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning supervised feedforward network examples; AIMA neural-network learning topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "MLPs are commonly trained under supervised learning, though they are also used in self-supervised and unsupervised systems."
+    },
+    {
+      "unit_id": "29787ef4d5c1bfc7",
+      "node_id": "mlp",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Multilayer perceptrons is modeled as depending on Affine transforms & dense layers, Nonlinear activations and feeding downstream nodes such as Neural fields & radiance-field models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2639435a958bdd36",
+      "node_id": "mlp",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Neural fields & radiance-field models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ff97679021d9da2f",
+      "node_id": "mlp",
+      "field": "dependencies.residual_connections.rationale",
+      "text": "In this atlas graph, Multilayer perceptrons has a `composes` dependency on Residual, skip & highway connections with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"600b3d5882e05933","node_id":"mlp","dependency_id":"affine_dense","source_ids":["ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Dense affine layers are core MLP components; composes/core is supported.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"865a505d2636c831","node_id":"mlp","dependency_id":"nonlinear_activations","source_ids":["ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Nonlinear activations are core MLP components; composes/core is supported.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"8f3d2a43ce498745","node_id":"mlp","dependency_id":"residual_connections","source_ids":["ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Residual/skip connections can be used in deep MLP variants but are not generally part of an MLP definition; common strength is not fully supported.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"e76eeb6ca5b8acdd","node_id":"mlp","dependency_id":"supervised_learning","source_ids":["ref_dlbook","ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"MLPs are commonly supervised predictors, but not exclusively; trained_under/common is supported.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "600b3d5882e05933",
+      "node_id": "mlp",
+      "dependency_id": "affine_dense",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Dense affine layers are core MLP components; composes/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "865a505d2636c831",
+      "node_id": "mlp",
+      "dependency_id": "nonlinear_activations",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Nonlinear activations are core MLP components; composes/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "e76eeb6ca5b8acdd",
+      "node_id": "mlp",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "MLPs are commonly supervised predictors, but not exclusively; trained_under/common is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "ee700f0756820dab",
+      "node_id": "mlp",
+      "dependency_id": "residual_connections",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "mlp",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

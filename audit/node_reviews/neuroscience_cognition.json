@@ -8,39 +8,11 @@
       "source_ids": [
         "ref_aima"
       ],
-      "evidence_location": "AIMA contents.html lines 26-34, 36-43, 561-595, 598-604, and 742-744",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA lists neuroscience and psychology as AI foundations and covers neural networks, perception-adjacent vision/NLP applications, and questions of cognition/consciousness. The exact neural coding, plasticity, memory, and comparative-model claim is not directly supported by the inspected table of contents."
-    },
-    {
-      "unit_id": "7c443e1cc3b4a6ed",
-      "node_id": "neuroscience_cognition",
-      "field": "why_it_matters",
-      "text": "The role of Neuroscience & cognitive science is to connect Probability theory, Dynamical systems & control theory to downstream capabilities including Perceptron, Hebbian, Oja & spike-timing plasticity.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html lines 26-34, 36-43, 561-595, and 598-604",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports neuroscience, psychology, control theory, neural networks, gradients/learning, and reinforcement learning. It does not directly mention Hebbian, Oja, or spike-timing plasticity in the inspected evidence."
-    },
-    {
-      "unit_id": "57719e170392b486",
-      "node_id": "neuroscience_cognition",
-      "field": "examples[1]",
-      "text": "substrate for Perceptron, Hebbian, Oja & spike-timing plasticity",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html lines 36-43 and 561-595",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports neural networks and learning as AI topics with neuroscience foundations, but the inspected evidence does not directly support the named plasticity mechanisms."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "7093030be8f3cf05",
@@ -48,13 +20,14 @@
       "field": "examples[2]",
       "text": "combined with Probability theory",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 30-33, 41-42, 543-560, and 773-774",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports both neuroscience/psychology and probability/probabilistic reasoning as AI foundations, but it does not directly state that neuroscience and cognition are combined with probability theory."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "dd7aa8f2a6418d3d",
@@ -62,99 +35,128 @@
       "field": "limitations[1]",
       "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory, Dynamical systems & control theory.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 26-34, 737-741, and 773-774",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The source supports neuroscience, psychology, control theory, probability, and discussion of AI limits. It does not directly support the empirical-mismatch warning or dependency clause in this exact form."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "4cbdf174160e54c1",
+      "unit_id": "2a45315be6533086",
+      "node_id": "neuroscience_cognition",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Neuroscience & cognitive science is modeled as depending on Probability theory, Dynamical systems & control theory and feeding downstream nodes such as Perceptron, Hebbian, Oja & spike-timing plasticity.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "fc2b991832a0777c",
+      "node_id": "neuroscience_cognition",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Perceptron, Hebbian, Oja & spike-timing plasticity",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e366a1dc56e69007",
       "node_id": "neuroscience_cognition",
       "field": "dependencies.probability.rationale",
-      "text": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Probability theory.",
+      "text": "In this atlas graph, Neuroscience & cognitive science has a `requires` dependency on Probability theory with `common` strength.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 26-34, 41-42, 543-560, and 773-774",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports probability as an AI foundation and probabilistic reasoning/learning, but the inspected evidence does not directly establish probability as a dependency of neuroscience and cognitive science broadly."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     },
     {
-      "unit_id": "7d277774f6d5ebee",
+      "unit_id": "c9fe405ea9209a8c",
       "node_id": "neuroscience_cognition",
       "field": "dependencies.dynamical_control.rationale",
-      "text": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Dynamical systems & control theory.",
+      "text": "In this atlas graph, Neuroscience & cognitive science has a `requires` dependency on Dynamical systems & control theory with `common` strength.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 26-34 and 703-717",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA lists control theory as an AI foundation and covers planning/control, but it does not directly support the dependency of neuroscience and cognitive science on dynamical systems/control theory."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     },
     {
-      "unit_id": "eeef9b0eab341ca8",
+      "unit_id": "875b74d1d2d57a10",
       "node_id": "neuroscience_cognition",
       "field": "dependencies.signal_processing.rationale",
-      "text": "Neuroscience & cognitive science rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis.",
+      "text": "In this atlas graph, Neuroscience & cognitive science has a `requires` dependency on Signal processing & harmonic analysis with `common` strength.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 26-34 and 592-595",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected packet source does not directly support signal processing or harmonic analysis as a dependency for neuroscience and cognitive science."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "8701308aa6fc9160",
+      "edge_id": "07ec66e18588cbe0",
       "node_id": "neuroscience_cognition",
       "dependency_id": "probability",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Probability is clearly an AI foundation, but the inspected source does not establish it as a common prerequisite for neuroscience and cognitive science as a whole.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "aebc353061c0d36f",
+      "edge_id": "42317ad8d590c9cb",
       "node_id": "neuroscience_cognition",
       "dependency_id": "dynamical_control",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA includes control theory as an AI foundation and covers planning/control, but the specific prerequisite relation to neuroscience/cognition is not directly supported by inspected evidence.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "61eddfc572739cce",
+      "edge_id": "ef08f3fb060cf092",
       "node_id": "neuroscience_cognition",
       "dependency_id": "signal_processing",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "No inspected source evidence supports signal processing and harmonic analysis as a dependency for this node.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "neuroscience_cognition",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

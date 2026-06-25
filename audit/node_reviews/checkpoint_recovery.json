@@ -8,53 +8,11 @@
       "source_ids": [
         "ref_dlbook"
       ],
-      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The definition is operationally correct, but the cited source does not directly support all listed persisted items or reproducible distributed resume."
-    },
-    {
-      "unit_id": "698316cec4e3e1be",
-      "node_id": "checkpoint_recovery",
-      "field": "why_it_matters",
-      "text": "The role of Checkpointing, recovery & experiment state is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Reproducibility, drift & continuous monitoring, Object storage, sharding & checkpoints.",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The connection to reproducibility and storage is defensible, but the exact downstream graph wording is not directly stated."
-    },
-    {
-      "unit_id": "0465937584705154",
-      "node_id": "checkpoint_recovery",
-      "field": "examples[1]",
-      "text": "substrate for Reproducibility, drift & continuous monitoring",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Checkpointing supports reproducible experiment recovery, but the exact monitoring substrate claim is synthesized."
-    },
-    {
-      "unit_id": "b26385f53ed853c9",
-      "node_id": "checkpoint_recovery",
-      "field": "examples[2]",
-      "text": "substrate for Object storage, sharding & checkpoints",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Checkpointing depends on persisted storage, but object-storage/sharding wording is not directly supported by ref_dlbook."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "55d53a955f51f492",
@@ -62,99 +20,142 @@
       "field": "limitations[1]",
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Databases & information retrieval.",
       "source_ids": [
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The generic sensitivity statement is broadly true, but the exact dependencies and contamination wording are not directly evidenced."
-    },
-    {
-      "unit_id": "49d86a7b22ffe5ce",
-      "node_id": "checkpoint_recovery",
-      "field": "dependencies.distributed_systems.rationale",
-      "text": "Checkpointing, recovery & experiment state uses Distributed systems & networking as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Distributed recovery requires distributed systems concerns, but the citation is indirect."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "a5a98d7e287fef95",
+      "unit_id": "dc7ca7347b65fd01",
+      "node_id": "checkpoint_recovery",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Checkpointing, recovery & experiment state is modeled as depending on Distributed systems & networking, Databases & information retrieval and feeding downstream nodes such as Reproducibility, drift & continuous monitoring, Object storage, sharding & checkpoints.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d050ce6b0a2622b0",
+      "node_id": "checkpoint_recovery",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Reproducibility, drift & continuous monitoring",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f49c5c48c09b0295",
+      "node_id": "checkpoint_recovery",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Object storage, sharding & checkpoints",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "363b58322902142b",
+      "node_id": "checkpoint_recovery",
+      "field": "dependencies.distributed_systems.rationale",
+      "text": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "05db397547705bed",
       "node_id": "checkpoint_recovery",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Checkpointing, recovery & experiment state uses Databases & information retrieval as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Persistent experiment state uses storage/database ideas, but information retrieval is not clearly a core ingredient."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "fed6382e4111ea7f",
+      "unit_id": "d1c076b42528d23c",
       "node_id": "checkpoint_recovery",
       "field": "dependencies.distributed_mixed_precision.rationale",
-      "text": "Checkpointing, recovery & experiment state uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Checkpointing, recovery & experiment state has a `uses` dependency on Distributed, mixed-precision & memory-efficient training because Distributed, mixed-precision & memory-efficient training is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning discusses training state and optimization foundations, but the packet lacks a dedicated checkpointing/reproducibility systems source.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Checkpointing is used in distributed/mixed-precision runs, but it does not generally use that training method as an ingredient."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "2ed881e05984f843",
+      "edge_id": "69d722bc93bbe346",
       "node_id": "checkpoint_recovery",
       "dependency_id": "distributed_systems",
       "source_ids": [
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Distributed checkpoint/restart is a systems dependency; direct source support is indirect.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "efe575945329ffc5",
+      "edge_id": "57e7b75478e190bc",
       "node_id": "checkpoint_recovery",
       "dependency_id": "databases_ir",
       "source_ids": [
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Storage/database aspects are relevant, but databases and information retrieval as a core dependency is too broad.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "bf3f6fd93375ca77",
+      "edge_id": "97394e40437b2f2b",
       "node_id": "checkpoint_recovery",
       "dependency_id": "distributed_mixed_precision",
       "source_ids": [
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The direction is questionable: mixed-precision distributed training uses checkpointing more clearly than checkpointing uses it.",
-      "relationship_type_supported": false,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "checkpoint_recovery",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

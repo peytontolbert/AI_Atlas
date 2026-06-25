@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Temporary information is maintained inside the current sequence, recurrent state, or active workspace.",
-    "why_it_matters": "The role of Context windows & working memory is to connect Sequences, events & time series, Self-attention to downstream capabilities including Long-context attention, compression & summarization memory, Observe–plan–act agent loops, Conversational assistants & chatbots.",
+    "why_it_matters": "In this atlas graph, Context windows & working memory is modeled as depending on Sequences, events & time series, Self-attention and feeding downstream nodes such as Long-context attention, compression & summarization memory, Observe–plan–act agent loops, Conversational assistants & chatbots.",
     "examples": [
-      "substrate for Long-context attention, compression & summarization memory",
-      "substrate for Observe–plan–act agent loops",
-      "substrate for Conversational assistants & chatbots"
+      "atlas downstream link to Long-context attention, compression & summarization memory",
+      "atlas downstream link to Observe–plan–act agent loops",
+      "atlas downstream link to Conversational assistants & chatbots"
     ],
     "limitations": [
       "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sequences, events & time series, Self-attention."
@@ -40,13 +40,13 @@
         "id": "self_attention",
         "type": "uses",
         "strength": "core",
-        "rationale": "Context windows & working memory uses Self-attention as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Context windows & working memory has a `uses` dependency on Self-attention because Self-attention is modeled as a reusable ingredient for the node."
       },
       {
         "id": "memory_read_write",
         "type": "uses",
         "strength": "common",
-        "rationale": "Context windows & working memory uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Context windows & working memory has a `uses` dependency on Differentiable memory read/write because Differentiable memory read/write is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Temporary information is maintained inside the current sequence, recurrent state, or active workspace."
     },
     {
-      "unit_id": "9728235abfb7ee32",
+      "unit_id": "b4189837ecb67d26",
       "node_id": "context_working_memory",
       "field": "why_it_matters",
-      "text": "The role of Context windows & working memory is to connect Sequences, events & time series, Self-attention to downstream capabilities including Long-context attention, compression & summarization memory, Observe–plan–act agent loops, Conversational assistants & chatbots."
+      "text": "In this atlas graph, Context windows & working memory is modeled as depending on Sequences, events & time series, Self-attention and feeding downstream nodes such as Long-context attention, compression & summarization memory, Observe–plan–act agent loops, Conversational assistants & chatbots."
     },
     {
-      "unit_id": "1e17d768a6d90a8f",
+      "unit_id": "d721780f0424bb1e",
       "node_id": "context_working_memory",
       "field": "examples[1]",
-      "text": "substrate for Long-context attention, compression & summarization memory"
+      "text": "atlas downstream link to Long-context attention, compression & summarization memory"
     },
     {
-      "unit_id": "5012ced02c6d122c",
+      "unit_id": "d4d75e32b396a736",
       "node_id": "context_working_memory",
       "field": "examples[2]",
-      "text": "substrate for Observe–plan–act agent loops"
+      "text": "atlas downstream link to Observe–plan–act agent loops"
     },
     {
-      "unit_id": "cb1c54c9810b2cdd",
+      "unit_id": "0645d164389cc390",
       "node_id": "context_working_memory",
       "field": "examples[3]",
-      "text": "substrate for Conversational assistants & chatbots"
+      "text": "atlas downstream link to Conversational assistants & chatbots"
     },
     {
       "unit_id": "a2242e46ca5a2d67",
@@ -94,16 +94,16 @@
       "text": "Context windows & working memory stores, selects, or obtains information through Sequences, events & time series."
     },
     {
-      "unit_id": "084afa7715ed674c",
+      "unit_id": "00b60e2eeddef9f2",
       "node_id": "context_working_memory",
       "field": "dependencies.self_attention.rationale",
-      "text": "Context windows & working memory uses Self-attention as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Context windows & working memory has a `uses` dependency on Self-attention because Self-attention is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "6bc4c9d21bed854d",
+      "unit_id": "9aa7d3a3a352b23a",
       "node_id": "context_working_memory",
       "field": "dependencies.memory_read_write.rationale",
-      "text": "Context windows & working memory uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Context windows & working memory has a `uses` dependency on Differentiable memory read/write because Differentiable memory read/write is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -116,20 +116,20 @@
       "rationale": "Context windows & working memory stores, selects, or obtains information through Sequences, events & time series."
     },
     {
-      "edge_id": "c37fe24a3c47ea05",
+      "edge_id": "c5d171527e5bb87a",
       "node_id": "context_working_memory",
       "dependency_id": "self_attention",
       "type": "uses",
       "strength": "core",
-      "rationale": "Context windows & working memory uses Self-attention as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Context windows & working memory has a `uses` dependency on Self-attention because Self-attention is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "a4a8fa8d9d29eabb",
+      "edge_id": "aedbed427ee41c77",
       "node_id": "context_working_memory",
       "dependency_id": "memory_read_write",
       "type": "uses",
       "strength": "common",
-      "rationale": "Context windows & working memory uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Context windows & working memory has a `uses` dependency on Differentiable memory read/write because Differentiable memory read/write is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

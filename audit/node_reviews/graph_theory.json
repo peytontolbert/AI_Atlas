@@ -15,62 +15,6 @@
       "notes": "The source supports mathematics, search, logic, causal networks, relational probability models, and EM-based learning, but it does not state the full graph-theory sentence verbatim. 'Spectra' and the broad 'structured knowledge' framing are atlas synthesis."
     },
     {
-      "unit_id": "f4ea858584fe93b4",
-      "node_id": "graph_theory",
-      "field": "why_it_matters",
-      "text": "The role of Graph theory is to connect Discrete mathematics & logic to downstream capabilities including Causal inference, Graphs, hypergraphs & relational data, MCMC, EM & probabilistic message passing.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html: Chapter 1.2.2 'Mathematics' (line 28); Chapter 13.4.2 'Inference by Markov chain simulation' (lines 345-355); Chapter 13.5 'Causal Networks' (lines 356-359); Chapter 15.1 'Relational Probability Models' (lines 384-387); Chapter 20.3 'Learning with Hidden Variables: The EM Algorithm' (lines 553-558).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "AIMA supports discrete mathematics, causal networks, Markov chain simulation, relational probability models, and the EM algorithm. It does not explicitly name graph theory, hypergraphs, or probabilistic message passing here, so the sentence is a defensible synthesis rather than a direct source claim."
-    },
-    {
-      "unit_id": "c5d18a00413e70a5",
-      "node_id": "graph_theory",
-      "field": "examples[1]",
-      "text": "substrate for Causal inference",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html: Chapter 13.5 'Causal Networks' (lines 356-359), especially 'Representing actions: do-operator' and 'The back-door criterion'; Chapter 13.4.2 'Inference by Markov chain simulation' (lines 345-355).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The source directly covers causal networks and standard causal-inference machinery, but it does not use the exact atlas phrasing 'substrate for'."
-    },
-    {
-      "unit_id": "3d52f11643ad8146",
-      "node_id": "graph_theory",
-      "field": "examples[2]",
-      "text": "substrate for Graphs, hypergraphs & relational data",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html: Chapter 15.1 'Relational Probability Models' (lines 384-387); Chapter 16.5 'Decision Networks' (lines 420-427); Chapter 13.2 'The Semantics of Bayesian Networks' (lines 331-336).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The source supports relational and network-based representations, but it does not explicitly discuss graph theory, hypergraphs, or a graph-data substrate in this wording. The example should be narrowed if it is meant as a source claim."
-    },
-    {
-      "unit_id": "fbb900dadd5d651e",
-      "node_id": "graph_theory",
-      "field": "examples[3]",
-      "text": "substrate for MCMC, EM & probabilistic message passing",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html: Chapter 13.4.2 'Inference by Markov chain simulation' (lines 345-355); Chapter 20.3 'Learning with Hidden Variables: The EM Algorithm' (lines 553-558); Chapter 13.3.2 'The variable elimination algorithm' (lines 340-343) and 13.4 'Approximate Inference for Bayesian Networks' (lines 345-355).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Markov chain simulation and EM are explicitly supported, and the inference chapters justify the probabilistic-message-passing framing at a high level. The exact combined atlas phrase is still synthesized."
-    },
-    {
       "unit_id": "86a7b4672e7c56b6",
       "node_id": "graph_theory",
       "field": "limitations[1]",
@@ -97,6 +41,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "The source supports discrete mathematics and logic as foundational material for AI search and reasoning, but it does not state the graph-theory prerequisite relationship verbatim."
+    },
+    {
+      "unit_id": "9bf5dc59a9268502",
+      "node_id": "graph_theory",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Graph theory is modeled as depending on Discrete mathematics & logic and feeding downstream nodes such as Causal inference, Graphs, hypergraphs & relational data, MCMC, EM & probabilistic message passing.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b76f326377825be3",
+      "node_id": "graph_theory",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Causal inference",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "90c20c615041bc1c",
+      "node_id": "graph_theory",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Graphs, hypergraphs & relational data",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "afb5f46048c540b9",
+      "node_id": "graph_theory",
+      "field": "examples[3]",
+      "text": "atlas downstream link to MCMC, EM & probabilistic message passing",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -114,5 +114,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "graph_theory",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

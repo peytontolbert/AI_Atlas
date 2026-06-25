@@ -17,70 +17,6 @@
       "notes": "Core mechanism is supported, but the wording adds broad foundation-model/instruction-following implications beyond one direct source."
     },
     {
-      "unit_id": "1234b1fc04548f21",
-      "node_id": "decoder_only_transformer",
-      "field": "why_it_matters",
-      "text": "The role of Decoder-only causal transformers is to connect Transformers, Causal, masked & structured masking to downstream capabilities including Retrieval-augmented generation, Chain-of-thought & latent reasoning, Program synthesis & code search.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
-    },
-    {
-      "unit_id": "9332440c09c58a88",
-      "node_id": "decoder_only_transformer",
-      "field": "examples[1]",
-      "text": "substrate for Retrieval-augmented generation",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
-    },
-    {
-      "unit_id": "97dae30ae4371f4d",
-      "node_id": "decoder_only_transformer",
-      "field": "examples[2]",
-      "text": "substrate for Chain-of-thought & latent reasoning",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
-    },
-    {
-      "unit_id": "079ab584245c1d49",
-      "node_id": "decoder_only_transformer",
-      "field": "examples[3]",
-      "text": "substrate for Program synthesis & code search",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
-    },
-    {
       "unit_id": "eacd639ad2060c0c",
       "node_id": "decoder_only_transformer",
       "field": "limitations[1]",
@@ -88,13 +24,14 @@
       "source_ids": [
         "ref_transformer",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "8241ce122051ff69",
@@ -129,36 +66,88 @@
       "notes": "The cited source directly supports this dependency relationship for the architecture."
     },
     {
-      "unit_id": "0b4b4a77b5c4cbd5",
+      "unit_id": "b69481802a355ec2",
       "node_id": "decoder_only_transformer",
-      "field": "dependencies.autoregressive_decoding.rationale",
-      "text": "Decoder-only causal transformers is assembled in part from the mechanism or model component Autoregressive decoding.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Decoder-only causal transformers is modeled as depending on Transformers, Causal, masked & structured masking and feeding downstream nodes such as Retrieval-augmented generation, Chain-of-thought & latent reasoning, Program synthesis & code search.",
       "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
-    },
-    {
-      "unit_id": "96ee11ae350ecbee",
-      "node_id": "decoder_only_transformer",
-      "field": "dependencies.autoregressive_objective.rationale",
-      "text": "Decoder-only causal transformers is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Vaswani et al. Transformer decoder/masked self-attention; Deep Learning/PML autoregressive modeling context.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited source directly supports this dependency relationship for the architecture."
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c43b7fb8056daa1c",
+      "node_id": "decoder_only_transformer",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Retrieval-augmented generation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "94ae11fc255da9f1",
+      "node_id": "decoder_only_transformer",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Chain-of-thought & latent reasoning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2a5802ea7838b680",
+      "node_id": "decoder_only_transformer",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Program synthesis & code search",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e8f5e9d507f4ec72",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.autoregressive_objective.rationale",
+      "text": "In this atlas graph, Decoder-only causal transformers has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1803e85c850e1adf",
+      "node_id": "decoder_only_transformer",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "In this atlas graph, Decoder-only causal transformers has a `composes` dependency on Autoregressive decoding with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -195,36 +184,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "4a2513724bed8458",
-      "node_id": "decoder_only_transformer",
-      "dependency_id": "autoregressive_decoding",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
-      "edge_id": "c405ee7a589f00fe",
+      "edge_id": "7125d5bbadf98679",
       "node_id": "decoder_only_transformer",
       "dependency_id": "autoregressive_objective",
       "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited source directly supports this dependency type and the stated strength.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "13e28344be96e9bd",
+      "node_id": "decoder_only_transformer",
+      "dependency_id": "autoregressive_decoding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "decoder_only_transformer",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

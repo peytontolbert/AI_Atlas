@@ -9,11 +9,11 @@
         "ref_domainrand",
         "ref_sim2real"
       ],
-      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The broad list of appearance, dynamics, sensors, delays, objects, and disturbances is plausible, but Tobin et al. alone most directly supports visual/domain parameter randomization."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "ee8562444362bc24",
@@ -67,13 +67,14 @@
       "text": "sensor-noise curricula",
       "source_ids": [
         "ref_domainrand",
-        "ref_sim2real"
+        "ref_sim2real",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Sensor-noise curricula are plausible but not directly supported by the main domain-randomization citation."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "7522d1a222f42df4",
@@ -91,126 +92,117 @@
       "notes": "Choosing randomization ranges is a known limitation; the capacity/useful-structure wording is synthesized."
     },
     {
-      "unit_id": "a64bff5a2e621f92",
+      "unit_id": "774a683ecd60744c",
       "node_id": "domain_randomization",
       "field": "dependencies.sim_to_real_transfer.rationale",
-      "text": "Domain randomization & simulation curricula uses Sim-to-real, real-to-sim & digital transfer as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Domain randomization & simulation curricula has a `uses` dependency on Sim-to-real, real-to-sim & digital transfer because Sim-to-real, real-to-sim & digital transfer is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_domainrand",
-        "ref_sim2real"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Domain randomization is explicitly a sim-to-real transfer method."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "953263aa7fe39587",
+      "unit_id": "953d4837894774c1",
       "node_id": "domain_randomization",
       "field": "dependencies.augmentation_synthetic.rationale",
-      "text": "Domain randomization & simulation curricula uses Data augmentation & synthetic-data generation as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Domain randomization & simulation curricula has a `uses` dependency on Data augmentation & synthetic-data generation because Data augmentation & synthetic-data generation is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_domainrand",
-        "ref_sim2real"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Domain randomization augments simulated/synthetic training data, but the exact dependency wording is taxonomic."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "3a572640b1c7226e",
+      "unit_id": "fc4e3fdec2796ff6",
       "node_id": "domain_randomization",
       "field": "dependencies.curriculum_data_mixtures.rationale",
-      "text": "Domain randomization & simulation curricula uses Curricula, data mixtures & sampling schedules as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Domain randomization & simulation curricula has a `uses` dependency on Curricula, data mixtures & sampling schedules because Curricula, data mixtures & sampling schedules is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_domainrand",
-        "ref_sim2real"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Simulation curricula are adjacent, but not inherent to all domain randomization."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "c803debc9e320a73",
+      "unit_id": "ec09459f836aed1c",
       "node_id": "domain_randomization",
       "field": "dependencies.multimodal_simulated_streams.rationale",
-      "text": "Domain randomization & simulation curricula uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Domain randomization & simulation curricula has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_domainrand",
-        "ref_sim2real"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Tobin et al. introduce domain randomization for sim-to-real transfer by randomizing simulator properties; sim-to-real surveys cover broader appearance/dynamics/sensor variation and transfer issues.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Simulated streams are related; multimodal/streaming data is broader than directly supported."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "322be29a26d4df9d",
+      "edge_id": "1df42ea9faba3a23",
       "node_id": "domain_randomization",
       "dependency_id": "sim_to_real_transfer",
       "source_ids": [
-        "ref_domainrand",
-        "ref_sim2real"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Domain randomization is a sim-to-real transfer technique.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "280719aff093655e",
+      "edge_id": "081650b0bd4cb3f1",
       "node_id": "domain_randomization",
       "dependency_id": "augmentation_synthetic",
       "source_ids": [
-        "ref_domainrand",
-        "ref_sim2real"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Randomized simulation acts as synthetic data augmentation; core strength is reasonable.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "7138868f5bad3fcf",
+      "edge_id": "96d9a9205ee76fc2",
       "node_id": "domain_randomization",
       "dependency_id": "curriculum_data_mixtures",
       "source_ids": [
-        "ref_domainrand",
-        "ref_sim2real"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Curricula/schedules can be used but are not a generally supported common dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "ba5f922777117503",
+      "edge_id": "72beda3056c0991b",
       "node_id": "domain_randomization",
       "dependency_id": "multimodal_simulated_streams",
       "source_ids": [
-        "ref_domainrand",
-        "ref_sim2real"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Simulation data is relevant, but multimodal streaming is broader than the cited support.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "domain_randomization",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

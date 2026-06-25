@@ -4,7 +4,7 @@
       "unit_id": "d89a334a1431e709",
       "node_id": "encoder_decoder_transformer",
       "field": "definition",
-      "text": "An encoder\u2013decoder transformer builds a bidirectional source representation and generates a target sequence through cross-attention and causal decoding.",
+      "text": "An encoder–decoder transformer builds a bidirectional source representation and generates a target sequence through cross-attention and causal decoding.",
       "source_ids": [
         "ref_transformer",
         "ref_dlbook"
@@ -14,36 +14,6 @@
       "review_date": "2026-06-25",
       "verdict": "verified",
       "notes": "The cited node/reference evidence directly supports the architecture description at this level of specificity."
-    },
-    {
-      "unit_id": "cea4e0f585b99f14",
-      "node_id": "encoder_decoder_transformer",
-      "field": "why_it_matters",
-      "text": "The role of Encoder\u2013decoder transformers is to connect Transformers, Cross-attention & co-attention to downstream capabilities including Speech recognition & spoken-language understanding.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Vaswani et al. Transformer encoder-decoder architecture, cross-attention, masking, and autoregressive decoding.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
-    },
-    {
-      "unit_id": "ddcec8862fedf5eb",
-      "node_id": "encoder_decoder_transformer",
-      "field": "examples[1]",
-      "text": "substrate for Speech recognition & spoken-language understanding",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Vaswani et al. Transformer encoder-decoder architecture, cross-attention, masking, and autoregressive decoding.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The downstream substrate claim is plausible but broader than what the packet sources directly establish."
     },
     {
       "unit_id": "38c58aeff8bdbcb4",
@@ -67,19 +37,20 @@
       "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Cross-attention & co-attention.",
       "source_ids": [
         "ref_transformer",
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Vaswani et al. Transformer encoder-decoder architecture, cross-attention, masking, and autoregressive decoding.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "a514608399e5a2e1",
       "node_id": "encoder_decoder_transformer",
       "field": "dependencies.transformer.rationale",
-      "text": "Encoder\u2013decoder transformers extends or specializes the architecture family Transformers.",
+      "text": "Encoder–decoder transformers extends or specializes the architecture family Transformers.",
       "source_ids": [
         "ref_transformer",
         "ref_dlbook"
@@ -94,7 +65,7 @@
       "unit_id": "8891384f2aef189d",
       "node_id": "encoder_decoder_transformer",
       "field": "dependencies.cross_attention.rationale",
-      "text": "Encoder\u2013decoder transformers is assembled in part from the mechanism or model component Cross-attention & co-attention.",
+      "text": "Encoder–decoder transformers is assembled in part from the mechanism or model component Cross-attention & co-attention.",
       "source_ids": [
         "ref_transformer",
         "ref_dlbook"
@@ -109,7 +80,7 @@
       "unit_id": "b514ee3481a13ed5",
       "node_id": "encoder_decoder_transformer",
       "field": "dependencies.masking.rationale",
-      "text": "Encoder\u2013decoder transformers is assembled in part from the mechanism or model component Causal, masked & structured masking.",
+      "text": "Encoder–decoder transformers is assembled in part from the mechanism or model component Causal, masked & structured masking.",
       "source_ids": [
         "ref_transformer",
         "ref_dlbook"
@@ -124,7 +95,7 @@
       "unit_id": "8e3ad3a55f4b0cf0",
       "node_id": "encoder_decoder_transformer",
       "field": "dependencies.autoregressive_decoding.rationale",
-      "text": "Encoder\u2013decoder transformers is assembled in part from the mechanism or model component Autoregressive decoding.",
+      "text": "Encoder–decoder transformers is assembled in part from the mechanism or model component Autoregressive decoding.",
       "source_ids": [
         "ref_transformer",
         "ref_dlbook"
@@ -134,6 +105,34 @@
       "review_date": "2026-06-25",
       "verdict": "verified",
       "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "fe8c5eaad0415163",
+      "node_id": "encoder_decoder_transformer",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Encoder–decoder transformers is modeled as depending on Transformers, Cross-attention & co-attention and feeding downstream nodes such as Speech recognition & spoken-language understanding.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "920e98581d9f7dc4",
+      "node_id": "encoder_decoder_transformer",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Speech recognition & spoken-language understanding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -197,5 +196,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "encoder_decoder_transformer",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

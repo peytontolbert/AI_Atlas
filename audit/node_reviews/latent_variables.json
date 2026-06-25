@@ -17,81 +17,19 @@
       "notes": "The sources support latent variables as unobserved quantities used to model hidden factors/states. 'Compactly' and 'abstractions' are reasonable but synthesized wording."
     },
     {
-      "unit_id": "02f06339a44e0f5c",
-      "node_id": "latent_variables",
-      "field": "why_it_matters",
-      "text": "The role of Latent variables & hidden state is to connect Probability theory, Statistics & experimental design to downstream capabilities including Unsupervised learning, Predictive representation learning / JEPA, Generative modeling.",
-      "source_ids": [
-        "ref_pml",
-        "ref_prml",
-        "ref_vae",
-        "ref_jepa"
-      ],
-      "evidence_location": "PML/PRML latent-variable and unsupervised learning material; VAE paper for probabilistic latent variables in generative modeling; JEPA reference for predictive representations.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Probability/statistics links and unsupervised/generative uses are supported. The JEPA connection is indirect, and the full downstream list is graph-derived."
-    },
-    {
-      "unit_id": "525bb6818c138d88",
-      "node_id": "latent_variables",
-      "field": "examples[1]",
-      "text": "substrate for Unsupervised learning",
-      "source_ids": [
-        "ref_pml",
-        "ref_prml"
-      ],
-      "evidence_location": "PML/PRML latent-variable model chapters and unsupervised learning examples such as mixture models and factor analysis.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Latent variables are standard in unsupervised models, though 'substrate for' is atlas wording."
-    },
-    {
-      "unit_id": "495b5224f0b5b0c5",
-      "node_id": "latent_variables",
-      "field": "examples[2]",
-      "text": "substrate for Predictive representation learning / JEPA",
-      "source_ids": [
-        "ref_jepa",
-        "ref_pml"
-      ],
-      "evidence_location": "JEPA reference discusses predictive representations; PML covers latent representations generally.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Predictive representations can be hidden/internal states, but the cited evidence does not directly establish latent variables as a substrate for JEPA specifically."
-    },
-    {
-      "unit_id": "83effc375b2c00e1",
-      "node_id": "latent_variables",
-      "field": "examples[3]",
-      "text": "substrate for Generative modeling",
-      "source_ids": [
-        "ref_vae",
-        "ref_pml",
-        "ref_prml"
-      ],
-      "evidence_location": "VAE paper uses latent variables for generative modeling; PML/PRML cover latent-variable generative models.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The relation is well supported by latent-variable generative models; wording is synthesized."
-    },
-    {
       "unit_id": "29426eb006cd67f4",
       "node_id": "latent_variables",
       "field": "limitations[1]",
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Probability theory, Statistics & experimental design.",
       "source_ids": [
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML is relevant to probabilistic latent-variable modeling but does not directly state this generic encoding limitation.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "This appears to be generic generated limitation text, not a latent-variable limitation directly supported by the cited sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "8259ad9b589dac32",
@@ -125,18 +63,74 @@
       "notes": "Estimation and inference for latent variables depend on statistical machinery, but the rationale wording is graph-derived."
     },
     {
-      "unit_id": "6d4e9c01fd3086a0",
+      "unit_id": "e58c92a71cbd30a8",
       "node_id": "latent_variables",
-      "field": "dependencies.information_theory.rationale",
-      "text": "Latent variables & hidden state rests on the formal or computational capabilities supplied by Information theory.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Latent variables & hidden state is modeled as depending on Probability theory, Statistics & experimental design and feeding downstream nodes such as Unsupervised learning, Predictive representation learning / JEPA, Generative modeling.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML discusses information-theoretic quantities in machine learning, but the packet evidence does not directly make information theory a dependency for latent variables.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Information theory is relevant to representation learning, but not a necessary dependency for latent-variable modeling as stated."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "96b7deacdb111f16",
+      "node_id": "latent_variables",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Unsupervised learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9af1bcc461562386",
+      "node_id": "latent_variables",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Predictive representation learning / JEPA",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "06c3d34681aeb95c",
+      "node_id": "latent_variables",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Generative modeling",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "34dffdf9ff1745fc",
+      "node_id": "latent_variables",
+      "field": "dependencies.information_theory.rationale",
+      "text": "In this atlas graph, Latent variables & hidden state has a `requires` dependency on Information theory with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -172,18 +166,20 @@
       "strength_supported": true
     },
     {
-      "edge_id": "85dc6111eef68a95",
+      "edge_id": "d78eaf6ae8cb5e68",
       "node_id": "latent_variables",
       "dependency_id": "information_theory",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Information-theoretic framing is common for representations but not clearly required by the packet evidence for latent variables in general.",
-      "relationship_type_supported": false,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "latent_variables",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

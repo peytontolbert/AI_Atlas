@@ -1,19 +1,193 @@
 {
   "sentence_reviews": [
-    {"unit_id":"221e016ac095f8c7","node_id":"probabilistic_programming","field":"definition","text":"Probabilistic programming expresses generative assumptions as executable programs and delegates posterior inference to sampling, variational, or differentiable machinery.","source_ids":["ref_pml","ref_dlbook"],"evidence_location":"PML covers probabilistic models, Bayesian inference, MCMC, and variational inference; Deep Learning covers differentiable computation. Packet lacks a dedicated probabilistic-programming source.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The definition is standard and defensible from PML inference topics, but not directly verified by a cited PPL-specific source."},
-    {"unit_id":"98864f9c5d165414","node_id":"probabilistic_programming","field":"why_it_matters","text":"The role of Probabilistic & differentiable programming is to connect Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference to downstream capabilities including Scientific ML, simulators & digital twins, Knowledge graphs, semantic search & relational reasoning.","source_ids":["ref_pml","ref_dlbook"],"evidence_location":"PML supports Bayesian/approximate inference; packet sources do not directly support AST/IR, digital twins, or knowledge graph downstream claims.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Bayesian inference connection is supported; most graph-role/downstream wording is not directly evidenced."},
-    {"unit_id":"42b5e159ffa0b7a8","node_id":"probabilistic_programming","field":"examples[1]","text":"substrate for Scientific ML, simulators & digital twins","source_ids":["ref_pml"],"evidence_location":"PML supports probabilistic modeling and inference but not the exact scientific-ML/simulator/digital-twin downstream claim in the inspected packet.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"PPL is plausibly useful for simulators/scientific modeling, but direct evidence is absent."},
-    {"unit_id":"67d915c4bd8482a4","node_id":"probabilistic_programming","field":"examples[2]","text":"substrate for Knowledge graphs, semantic search & relational reasoning","source_ids":["ref_pml"],"evidence_location":"PML inference topics do not directly support knowledge graphs, semantic search, or relational reasoning as downstream of PPL.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The packet needs a relational/probabilistic logic or knowledge-graph source for this claim."},
-    {"unit_id":"8525916d68c710d3","node_id":"probabilistic_programming","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference.","source_ids":["ref_pml","ref_dlbook"],"evidence_location":"PML supports inference dependencies; no cited source directly states the generic limitation or program/AST/IR dependency.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Bayesian inference dependency is supported; limitation and AST/IR wording are only partially supported."},
-    {"unit_id":"f3b3ed386406d756","node_id":"probabilistic_programming","field":"dependencies.programs_ast_ir.rationale","text":"Probabilistic & differentiable programming consumes, emits, or organizes information using Programs, ASTs, bytecode & intermediate representations.","source_ids":["ref_pml"],"evidence_location":"PML covers probabilistic models/inference but the packet lacks a specific source on program representations or AST/IR for probabilistic programming.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Executable programs are inherent to probabilistic programming, but AST/bytecode/IR is not directly supported by packet evidence."},
-    {"unit_id":"c1c8d76f76303b95","node_id":"probabilistic_programming","field":"dependencies.bayesian_approx_inference.rationale","text":"Probabilistic & differentiable programming is learned, selected, or evaluated using the objective family Bayesian & approximate inference.","source_ids":["ref_pml"],"evidence_location":"PML covers Bayesian inference, approximate inference, MCMC, and variational methods.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Posterior inference is central to probabilistic programming."},
-    {"unit_id":"8b8a420a7b8f2c25","node_id":"probabilistic_programming","field":"dependencies.differentiable_sampling.rationale","text":"Probabilistic & differentiable programming is assembled in part from the mechanism or model component Reparameterization & differentiable sampling.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning and PML support differentiable computation, reparameterization, and variational inference generally.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Common in differentiable PPL/variational methods, but not required for all probabilistic programming."},
-    {"unit_id":"d71a67ac0ef588f5","node_id":"probabilistic_programming","field":"dependencies.constraint_program_execution.rationale","text":"Probabilistic & differentiable programming is assembled in part from the mechanism or model component Constraint propagation, logic & program execution.","source_ids":["ref_pml","ref_aima"],"evidence_location":"PML supports probabilistic inference; AIMA supports logic/constraint/program-like reasoning, but no inspected source directly ties constraint propagation to PPL.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Program execution is relevant; constraint propagation/logic is not generally required."}
+    {
+      "unit_id": "221e016ac095f8c7",
+      "node_id": "probabilistic_programming",
+      "field": "definition",
+      "text": "Probabilistic programming expresses generative assumptions as executable programs and delegates posterior inference to sampling, variational, or differentiable machinery.",
+      "source_ids": [
+        "ref_pml",
+        "ref_dlbook"
+      ],
+      "evidence_location": "PML covers probabilistic models, Bayesian inference, MCMC, and variational inference; Deep Learning covers differentiable computation. Packet lacks a dedicated probabilistic-programming source.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition is standard and defensible from PML inference topics, but not directly verified by a cited PPL-specific source."
+    },
+    {
+      "unit_id": "8525916d68c710d3",
+      "node_id": "probabilistic_programming",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference.",
+      "source_ids": [
+        "ref_pml",
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "8b8a420a7b8f2c25",
+      "node_id": "probabilistic_programming",
+      "field": "dependencies.differentiable_sampling.rationale",
+      "text": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Reparameterization & differentiable sampling.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning and PML support differentiable computation, reparameterization, and variational inference generally.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Common in differentiable PPL/variational methods, but not required for all probabilistic programming."
+    },
+    {
+      "unit_id": "c94c1171f33a46f5",
+      "node_id": "probabilistic_programming",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Probabilistic & differentiable programming is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference and feeding downstream nodes such as Scientific ML, simulators & digital twins, Knowledge graphs, semantic search & relational reasoning.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ee5b7bce402dc0c2",
+      "node_id": "probabilistic_programming",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Scientific ML, simulators & digital twins",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "780eb86fa962abe6",
+      "node_id": "probabilistic_programming",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Knowledge graphs, semantic search & relational reasoning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "076557ad03e222b6",
+      "node_id": "probabilistic_programming",
+      "field": "dependencies.bayesian_approx_inference.rationale",
+      "text": "In this atlas graph, Probabilistic & differentiable programming has an `uses` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "232fdffc313b2a68",
+      "node_id": "probabilistic_programming",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "In this atlas graph, Probabilistic & differentiable programming has a `represents_with` dependency on Programs, ASTs, bytecode & intermediate representations with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "571754f2fb9c622f",
+      "node_id": "probabilistic_programming",
+      "field": "dependencies.constraint_program_execution.rationale",
+      "text": "In this atlas graph, Probabilistic & differentiable programming has a `composes` dependency on Constraint propagation, logic & program execution with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"a4480d911bc1ade2","node_id":"probabilistic_programming","dependency_id":"programs_ast_ir","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Programs are inherent to the paradigm, but AST/bytecode/IR details are not directly cited; core strength is plausible but under-sourced.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"ec4696da2684ab2a","node_id":"probabilistic_programming","dependency_id":"bayesian_approx_inference","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Bayesian and approximate posterior inference directly supports a core uses edge.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"e5d70da70fac121c","node_id":"probabilistic_programming","dependency_id":"differentiable_sampling","source_ids":["ref_dlbook","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Differentiable sampling is common for differentiable/variational implementations, but not universal, so common strength is appropriate.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"780b661cd1738e35","node_id":"probabilistic_programming","dependency_id":"constraint_program_execution","source_ids":["ref_pml","ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Program execution is relevant, but constraint propagation/logic is not generally evidenced for PPL; relationship is only partially supported.","relationship_type_supported":true,"strength_supported":false}
-  ]
+    {
+      "edge_id": "e5d70da70fac121c",
+      "node_id": "probabilistic_programming",
+      "dependency_id": "differentiable_sampling",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Differentiable sampling is common for differentiable/variational implementations, but not universal, so common strength is appropriate.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "4a7b63ce661a13a7",
+      "node_id": "probabilistic_programming",
+      "dependency_id": "bayesian_approx_inference",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "abcdee48c82ba1aa",
+      "node_id": "probabilistic_programming",
+      "dependency_id": "programs_ast_ir",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "de0339e020fc4171",
+      "node_id": "probabilistic_programming",
+      "dependency_id": "constraint_program_execution",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "probabilistic_programming",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

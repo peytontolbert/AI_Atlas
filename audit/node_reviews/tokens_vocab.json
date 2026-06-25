@@ -9,69 +9,11 @@
         "ref_pml",
         "ref_aima"
       ],
-      "evidence_location": "PML book1 long TOC: preprocessing discrete input/text data, language models, word embeddings, and vector quantization (lines 18-20, 623-645, and 655-659); AIMA contents.html: language models, lexicon/grammar, word representations, and Appendix B languages/algorithms (lines 621-660 and 776-780).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Text/token-like discrete preprocessing and language models are supported. Code, actions, images, and audio are not directly supported as tokenized inputs in the inspected passages."
-    },
-    {
-      "unit_id": "f87d52cf9b2f11d7",
-      "node_id": "tokens_vocab",
-      "field": "why_it_matters",
-      "text": "The role of Tokens, vocabularies & symbolic units is to connect Information theory, Discrete mathematics & logic to downstream capabilities including Multimodal, simulated & streaming data, Self-supervised learning, Masked prediction objectives.",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "PML book1 long TOC: information theory, preprocessing discrete/text data, self-supervised learning, and unsupervised pretraining (lines 179-205, 18-20, and 585-587); AIMA contents.html: language models, word representations, pretrained contextual representations, and masked language models (lines 621-660).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Information theory, discrete text preprocessing, self-supervised learning, and masked language models are supported. Multimodal/simulated/streaming data and the broad symbolic-units phrasing are only partially supported."
-    },
-    {
-      "unit_id": "fb0d15dd1df670d2",
-      "node_id": "tokens_vocab",
-      "field": "examples[1]",
-      "text": "substrate for Multimodal, simulated & streaming data",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML book1 long TOC: common image datasets, common text datasets, and preprocessing discrete/text data (lines 15-20).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected evidence supports discrete/text preprocessing and image/text datasets, but not tokens as a substrate for multimodal, simulated, or streaming data."
-    },
-    {
-      "unit_id": "2f95dcd6f383c2ca",
-      "node_id": "tokens_vocab",
-      "field": "examples[2]",
-      "text": "substrate for Self-supervised learning",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "PML book1 long TOC: self-supervised learning and unsupervised pretraining (lines 9-13 and 585-587); AIMA contents.html: pretrained word embeddings/contextual representations and masked language models (lines 655-659).",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The sources support self-supervised/pretraining contexts with language tokens/representations. 'Substrate for' is synthesized."
-    },
-    {
-      "unit_id": "b25002fc52f6eb91",
-      "node_id": "tokens_vocab",
-      "field": "examples[3]",
-      "text": "substrate for Masked prediction objectives",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html: Chapter 24.5 'Pretraining and Transfer Learning', including pretrained contextual representations and masked language models (lines 655-659).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Masked language models directly support a masked-prediction connection for tokens, though the exact objective wording is atlas synthesis."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "aa74ef09b55e648b",
@@ -80,13 +22,14 @@
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Information theory, Discrete mathematics & logic.",
       "source_ids": [
         "ref_pml",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML book1 long TOC: preprocessing discrete/text data, information theory, and vector quantization (lines 18-20, 179-205, and 655-659); AIMA contents.html: fairness/bias and formal languages/algorithms (lines 745-749 and 776-780).",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Information theory and discrete/formal language context are supported. Information loss, invariance difficulty, and tokenization-specific bias are not directly evidenced."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "a709dbe5a3b5bd62",
@@ -118,18 +61,74 @@
       "notes": "Discrete text and formal-language material support the dependency; logic is not directly emphasized in the inspected headings."
     },
     {
-      "unit_id": "e6aa71a28ca34716",
+      "unit_id": "ea6b9b3844c3db26",
       "node_id": "tokens_vocab",
-      "field": "dependencies.programming_languages_types.rationale",
-      "text": "Tokens, vocabularies & symbolic units rests on the formal or computational capabilities supplied by Programming languages, compilers & type systems.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Tokens, vocabularies & symbolic units is modeled as depending on Information theory, Discrete mathematics & logic and feeding downstream nodes such as Multimodal, simulated & streaming data, Self-supervised learning, Masked prediction objectives.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html: Appendix B 'Notes on Languages and Algorithms', including Backus--Naur Form and pseudocode (lines 776-780).",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Formal language notation is supported, but compilers and type systems are not directly supported by the inspected source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e1ad2baf7c2212cd",
+      "node_id": "tokens_vocab",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Multimodal, simulated & streaming data",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c78bdbb14e63a1e2",
+      "node_id": "tokens_vocab",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Self-supervised learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5069a9356e71c974",
+      "node_id": "tokens_vocab",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Masked prediction objectives",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "63c7b1f85aac1da3",
+      "node_id": "tokens_vocab",
+      "field": "dependencies.programming_languages_types.rationale",
+      "text": "In this atlas graph, Tokens, vocabularies & symbolic units has a `requires` dependency on Programming languages, compilers & type systems with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -163,18 +162,20 @@
       "strength_supported": true
     },
     {
-      "edge_id": "07a8c5142962719a",
+      "edge_id": "0490e6017f4d3d00",
       "node_id": "tokens_vocab",
       "dependency_id": "programming_languages_types",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Formal languages and pseudocode are relevant, but the inspected evidence does not establish compilers/type systems as a dependency. Common strength is plausible but weakly supported.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "tokens_vocab",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

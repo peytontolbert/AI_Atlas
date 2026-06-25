@@ -1,1 +1,163 @@
-{"sentence_reviews":[{"unit_id":"da31ed31c84756b5","node_id":"model_predictive_control","field":"definition","text":"Model-predictive control repeatedly optimizes a finite-horizon action sequence under a dynamics model, executes the first action, and replans from new observations.","source_ids":["ref_aima","ref_dreamer"],"evidence_location":"AIMA sequential decision/control background and Dreamer world-model control context; MPC-specific definition is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The definition is standard for MPC, but the packet lacks a dedicated MPC reference."},{"unit_id":"0c61df88b2ceee40","node_id":"model_predictive_control","field":"why_it_matters","text":"The role of Model-predictive control is to connect Dynamical systems & control theory, Optimization theory to downstream capabilities including Robotics & embodied AI.","source_ids":["ref_aima","ref_dreamer"],"evidence_location":"Sequential decision/control and model-based RL/control evidence; robotics role is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Control and optimization links are supported; the robotics downstream framing is not directly stated in the packet."},{"unit_id":"1e1e1ed17ff88bd8","node_id":"model_predictive_control","field":"examples[1]","text":"substrate for Robotics & embodied AI","source_ids":["ref_aima","ref_dreamer"],"evidence_location":"AIMA control/agents and Dreamer embodied-control benchmark context.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"MPC is a plausible robotics substrate, but the packet evidence is indirect."},{"unit_id":"07afa2a5dda0bff2","node_id":"model_predictive_control","field":"examples[2]","text":"combined with Dynamical systems & control theory","source_ids":["ref_aima"],"evidence_location":"AIMA control and sequential decision-making material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"MPC directly relies on dynamics/control concepts."},{"unit_id":"6905f495add1cb28","node_id":"model_predictive_control","field":"limitations[1]","text":"Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Dynamical systems & control theory, Optimization theory.","source_ids":["ref_aima","ref_dreamer"],"evidence_location":"Planning/control optimization cost and model-based rollout background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Repeated planning/optimization cost is supported; confident-error/verifier wording is broader than cited evidence."},{"unit_id":"b8be1889e4a381dc","node_id":"model_predictive_control","field":"dependencies.dynamical_control.rationale","text":"Model-predictive control uses Dynamical systems & control theory as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA control/sequential decision background.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"A dynamics model and control objective are central to MPC."},{"unit_id":"400acd6a69763dfd","node_id":"model_predictive_control","field":"dependencies.optimization.rationale","text":"Model-predictive control uses Optimization theory as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA planning/decision optimization background.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Finite-horizon action optimization is central to MPC."},{"unit_id":"c6726ab96fef7e36","node_id":"model_predictive_control","field":"dependencies.world_model.rationale","text":"Model-predictive control uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation.","source_ids":["ref_dreamer","ref_aima"],"evidence_location":"Dreamer learned world-model control and AIMA dynamics/planning background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"MPC requires a predictive dynamics model, but not necessarily a latent learned world model."}],"edge_reviews":[{"edge_id":"74fc88a98d5a5893","node_id":"model_predictive_control","dependency_id":"dynamical_control","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Dynamics and control are core to MPC.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"f3a5fdda9142a1e6","node_id":"model_predictive_control","dependency_id":"optimization","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"MPC directly optimizes finite-horizon action sequences.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"e8bc08abdef3ce75","node_id":"model_predictive_control","dependency_id":"world_model","source_ids":["ref_dreamer","ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"A predictive model is common/necessary, but a latent world-model dependency is narrower than MPC generally.","relationship_type_supported":true,"strength_supported":true}]}
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "da31ed31c84756b5",
+      "node_id": "model_predictive_control",
+      "field": "definition",
+      "text": "Model-predictive control repeatedly optimizes a finite-horizon action sequence under a dynamics model, executes the first action, and replans from new observations.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dreamer"
+      ],
+      "evidence_location": "AIMA sequential decision/control background and Dreamer world-model control context; MPC-specific definition is synthesized.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition is standard for MPC, but the packet lacks a dedicated MPC reference."
+    },
+    {
+      "unit_id": "07afa2a5dda0bff2",
+      "node_id": "model_predictive_control",
+      "field": "examples[2]",
+      "text": "combined with Dynamical systems & control theory",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA control and sequential decision-making material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "MPC directly relies on dynamics/control concepts."
+    },
+    {
+      "unit_id": "6905f495add1cb28",
+      "node_id": "model_predictive_control",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Dynamical systems & control theory, Optimization theory.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dreamer",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "e745c7998af25572",
+      "node_id": "model_predictive_control",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Model-predictive control is modeled as depending on Dynamical systems & control theory, Optimization theory and feeding downstream nodes such as Robotics & embodied AI.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8b524dfd105d4d56",
+      "node_id": "model_predictive_control",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Robotics & embodied AI",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c746e52b0b4d78bb",
+      "node_id": "model_predictive_control",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "In this atlas graph, Model-predictive control has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ea300a00764f12ac",
+      "node_id": "model_predictive_control",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, Model-predictive control has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9745ef143e7b4c72",
+      "node_id": "model_predictive_control",
+      "field": "dependencies.world_model.rationale",
+      "text": "In this atlas graph, Model-predictive control has a `uses` dependency on Latent world models & predictive dynamics because Latent world models & predictive dynamics is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "9308c035ffde0aac",
+      "node_id": "model_predictive_control",
+      "dependency_id": "dynamical_control",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "83ff5428890e96ed",
+      "node_id": "model_predictive_control",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "1bdabb78a161f14c",
+      "node_id": "model_predictive_control",
+      "dependency_id": "world_model",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "model_predictive_control",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
+}

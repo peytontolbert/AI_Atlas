@@ -9,71 +9,11 @@
         "ref_dlbook",
         "ref_moe"
       ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The concept is plausible, but the cited sources only partially cover the exact combination of distributed partitioning, mixed precision, optimizer state, and experts."
-    },
-    {
-      "unit_id": "327d0c77dbb74247",
-      "node_id": "distributed_mixed_precision",
-      "field": "why_it_matters",
-      "text": "The role of Distributed, mixed-precision & memory-efficient training is to connect Distributed systems & networking, Numerical analysis to downstream capabilities including Checkpointing, recovery & experiment state, Large language models, Scientific ML, simulators & digital twins.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
-      ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The downstream role is defensible from scaling and MoE context, but not stated directly by the cited references."
-    },
-    {
-      "unit_id": "9d2b3d5dd7539d7d",
-      "node_id": "distributed_mixed_precision",
-      "field": "examples[1]",
-      "text": "substrate for Checkpointing, recovery & experiment state",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
-      ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Checkpointing is a normal supporting mechanism for distributed training, but the cited sources do not state this exact substrate relationship."
-    },
-    {
-      "unit_id": "4f5b8feb97e65a01",
-      "node_id": "distributed_mixed_precision",
-      "field": "examples[2]",
-      "text": "substrate for Large language models",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
-      ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Large language model training commonly uses distributed/memory-efficient methods, but the packet source set does not directly evidence the exact example."
-    },
-    {
-      "unit_id": "c9ad9963675367d7",
-      "node_id": "distributed_mixed_precision",
-      "field": "examples[3]",
-      "text": "substrate for Scientific ML, simulators & digital twins",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
-      ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Scientific ML usage is plausible but not directly supported by the cited references."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "cf31a42b16591974",
@@ -82,135 +22,183 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Numerical analysis.",
       "source_ids": [
         "ref_dlbook",
-        "ref_moe"
+        "ref_moe",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The generic sensitivity statement is broadly true for ML training, but evaluation contamination and the exact dependency list are not directly evidenced here."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "48683a7f1b1eb065",
+      "unit_id": "5938b3dbf256f86b",
+      "node_id": "distributed_mixed_precision",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training is modeled as depending on Distributed systems & networking, Numerical analysis and feeding downstream nodes such as Checkpointing, recovery & experiment state, Large language models, Scientific ML, simulators & digital twins.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a5b189d817f1bac4",
+      "node_id": "distributed_mixed_precision",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Checkpointing, recovery & experiment state",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c8066940db8b9d8c",
+      "node_id": "distributed_mixed_precision",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Large language models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "edb83929ae197ed2",
+      "node_id": "distributed_mixed_precision",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Scientific ML, simulators & digital twins",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c7a8cf7b0ad54d80",
       "node_id": "distributed_mixed_precision",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Distributed, mixed-precision & memory-efficient training uses Distributed systems & networking as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Distributed training necessarily relies on distributed systems concepts, though the cited node source is indirect."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "7619123f2f281a09",
+      "unit_id": "b5fde5868f43d849",
       "node_id": "distributed_mixed_precision",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Distributed, mixed-precision & memory-efficient training uses Numerical analysis as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Mixed precision and optimization rely on numerical methods, but the exact dependency wording is synthesized."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "eaf347fa867e385c",
+      "unit_id": "b00fae95c449f560",
       "node_id": "distributed_mixed_precision",
       "field": "dependencies.autodiff_backprop.rationale",
-      "text": "Distributed, mixed-precision & memory-efficient training uses Automatic differentiation & backpropagation as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Automatic differentiation & backpropagation because Automatic differentiation & backpropagation is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Training neural networks depends on backpropagation, but this source set does not state the exact graph edge."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "db8b03643b9a2d6a",
+      "unit_id": "0496094d47d1e9f9",
       "node_id": "distributed_mixed_precision",
       "field": "dependencies.moe_model.rationale",
-      "text": "Distributed, mixed-precision & memory-efficient training changes, compresses, or combines parameters belonging to Mixture-of-experts models.",
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has an `adapts` dependency on Mixture-of-experts models with `common` strength.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning covers numerical optimization/backpropagation foundations; Shazeer et al. covers sparsely gated MoE expert routing. The packet lacks a direct distributed mixed-precision systems source.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "MoE expert routing is related, but the rationale says the training method changes/compresses/combines MoE parameters, which is narrower than the cited support."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "f7ad83fcef7a8752",
+      "edge_id": "d3333cda4ff548b6",
       "node_id": "distributed_mixed_precision",
       "dependency_id": "distributed_systems",
       "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Distributed training depends on distributed systems; strength core is reasonable but synthesized from concept rather than directly cited.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "588f5c7c5be384f9",
+      "edge_id": "6ea3d1149c37b9cb",
       "node_id": "distributed_mixed_precision",
       "dependency_id": "numerical_methods",
       "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Reduced precision training depends on numerical behavior and stability; core strength is reasonable.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "9bd5fccc56376d72",
+      "edge_id": "ce402246c64a3465",
       "node_id": "distributed_mixed_precision",
       "dependency_id": "autodiff_backprop",
       "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Backpropagation is a common ingredient of neural training; common strength is reasonable.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "4f27c5d839184019",
+      "edge_id": "632c8d65e680710c",
       "node_id": "distributed_mixed_precision",
       "dependency_id": "moe_model",
       "source_ids": [
-        "ref_dlbook",
-        "ref_moe"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "MoE is related to expert partitioning, but an adapts relationship is not directly established by the cited source set.",
-      "relationship_type_supported": false,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "distributed_mixed_precision",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

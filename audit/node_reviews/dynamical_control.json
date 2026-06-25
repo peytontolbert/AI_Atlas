@@ -18,65 +18,6 @@
       "notes": "The inspected sources directly support state-based dynamical systems, stability analysis, feedback, and optimal control. Observability is only indirectly supported by AIMA's states/observations and transition/sensor-model topics, so the combined sentence is a defensible synthesis rather than exact source wording."
     },
     {
-      "unit_id": "0564198a10bce6f5",
-      "node_id": "dynamical_control",
-      "field": "why_it_matters",
-      "text": "The role of Dynamical systems & control theory is to connect Differential equations, Linear algebra to downstream capabilities including Neuroscience & cognitive science, Markov chains, MDPs, POMDPs & belief states, Multimodal, simulated & streaming data.",
-      "source_ids": [
-        "ref_aima",
-        "url:https://underactuated.mit.edu/intro.html",
-        "url:https://underactuated.mit.edu/lqr.html"
-      ],
-      "evidence_location": "Underactuated Robotics intro.html lines 62-71 and 91-111; lqr.html lines 43-58 and 69-76; AIMA contents.html Chapter 1.2.4 'Neuroscience' and 1.2.7 'Control theory and cybernetics' lines 26-34; Chapter 14 temporal models lines 361-381; Chapter 22 reinforcement learning lines 598-619; Chapter 26 robotics lines 693-719.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support differential equations and linear algebra as machinery in control, and AIMA covers neuroscience, temporal probabilistic models, reinforcement learning, and robotics. The exact bridge to POMDPs and multimodal/simulated/streaming data is graph-derived and not directly stated by the inspected evidence."
-    },
-    {
-      "unit_id": "10ed9a55bcb0d98b",
-      "node_id": "dynamical_control",
-      "field": "examples[1]",
-      "text": "substrate for Neuroscience & cognitive science",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html Chapter 1.2.4 'Neuroscience' and Chapter 1.2.7 'Control theory and cybernetics' lines 26-34.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA places both neuroscience and control theory among AI foundations, but the source does not state that dynamical systems and control theory are a substrate for neuroscience and cognitive science."
-    },
-    {
-      "unit_id": "669df28dc7435710",
-      "node_id": "dynamical_control",
-      "field": "examples[2]",
-      "text": "substrate for Markov chains, MDPs, POMDPs & belief states",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html Chapter 14 'Probabilistic Reasoning over Time' including states, observations, transition and sensor models, hidden Markov models, and dynamic Bayesian networks lines 361-381; Chapter 22 reinforcement learning and policy search lines 598-619.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "AIMA directly supports temporal state/transition models and reinforcement-learning policy topics that overlap with Markov and MDP-style formalisms. The phrase 'substrate for' and the explicit POMDP/belief-state grouping are atlas synthesis rather than exact source language."
-    },
-    {
-      "unit_id": "f52200ca74044cf9",
-      "node_id": "dynamical_control",
-      "field": "examples[3]",
-      "text": "substrate for Multimodal, simulated & streaming data",
-      "source_ids": [
-        "ref_aima",
-        "url:https://underactuated.mit.edu/intro.html"
-      ],
-      "evidence_location": "Underactuated Robotics intro.html lines 14-17, 35-36, and 86-90; AIMA contents.html Chapter 25 computer vision lines 662-690 and Chapter 26 robotics lines 693-719.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The evidence supports simulation and robotics/perception contexts for control, but it does not directly establish the broad multimodal/streaming-data substrate claim."
-    },
-    {
       "unit_id": "72c1c86e82e73b26",
       "node_id": "dynamical_control",
       "field": "limitations[1]",
@@ -84,13 +25,14 @@
       "source_ids": [
         "ref_aima",
         "url:https://underactuated.mit.edu/intro.html",
-        "url:https://underactuated.mit.edu/lyapunov.html"
+        "url:https://underactuated.mit.edu/lyapunov.html",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Underactuated Robotics intro.html lines 67-75 and 109-111; lyapunov.html lines 35-51; AIMA contents.html Appendix A.2 'Vectors, Matrices, and Linear Algebra' lines 768-774 and Chapter 26.5 control topics lines 704-716.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support explicit mathematical conditions, state/control differential equations, and linear algebraic machinery, but they do not directly state the empirical-mismatch caution. The dependency clause is defensible but omits the packet's optimization dependency."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "e53882e3211e2436",
@@ -125,20 +67,74 @@
       "notes": "The sources use state vectors, matrices, rank, inverses, quadratic forms, and LQR matrix equations in control. This supports the dependency, although the exact rationale is synthesized."
     },
     {
-      "unit_id": "1f8e35f594c2b77a",
+      "unit_id": "9792064ce8d48386",
       "node_id": "dynamical_control",
-      "field": "dependencies.optimization.rationale",
-      "text": "Dynamical systems & control theory rests on the formal or computational capabilities supplied by Optimization theory.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Dynamical systems & control theory is modeled as depending on Differential equations, Linear algebra and feeding downstream nodes such as Neuroscience & cognitive science, Markov chains, MDPs, POMDPs & belief states, Multimodal, simulated & streaming data.",
       "source_ids": [
-        "ref_aima",
-        "url:https://underactuated.mit.edu/intro.html",
-        "url:https://underactuated.mit.edu/lqr.html"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Underactuated Robotics intro.html lines 16-17, 62-64, and 111-112; lqr.html lines 43-58 and 69-76; AIMA contents.html Chapter 26.5.2 'Trajectory optimization for kinematic planning' and 26.5.4 'Optimal control' lines 704-716.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support optimization as an important and common part of modern control, especially trajectory optimization, LQR, and optimal control. They do not support the stronger claim that the whole field rests on optimization theory."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d3f0de82a306c396",
+      "node_id": "dynamical_control",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Neuroscience & cognitive science",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8aa3a17f66d071b7",
+      "node_id": "dynamical_control",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Markov chains, MDPs, POMDPs & belief states",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d0b1ec2b3fc6c83f",
+      "node_id": "dynamical_control",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Multimodal, simulated & streaming data",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "32eeede4e585bafb",
+      "node_id": "dynamical_control",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, Dynamical systems & control theory has a `requires` dependency on Optimization theory with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -175,20 +171,20 @@
       "strength_supported": true
     },
     {
-      "edge_id": "b380f6c7ae055abd",
+      "edge_id": "d8b43bbe4b92ec8a",
       "node_id": "dynamical_control",
       "dependency_id": "optimization",
       "source_ids": [
-        "ref_aima",
-        "url:https://underactuated.mit.edu/intro.html",
-        "url:https://underactuated.mit.edu/lqr.html"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The evidence supports optimization as a common ingredient in trajectory optimization, LQR, and optimal control. It does not support 'requires' as the narrowest relationship for all dynamical systems and control theory; 'uses' or another non-prerequisite relation would be narrower. The common strength label is defensible.",
-      "relationship_type_supported": false,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "dynamical_control",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

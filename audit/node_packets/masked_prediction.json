@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Hidden portions of an input are predicted from visible context; it operationally connects Self-supervised learning and Tokens, vocabularies & symbolic units.",
-    "why_it_matters": "The role of Masked prediction objectives is to connect Self-supervised learning, Tokens, vocabularies & symbolic units to downstream capabilities including Large-scale pretraining, Encoder-only bidirectional transformers, Diffusion and masked-generative language models.",
+    "why_it_matters": "In this atlas graph, Masked prediction objectives is modeled as depending on Self-supervised learning, Tokens, vocabularies & symbolic units and feeding downstream nodes such as Large-scale pretraining, Encoder-only bidirectional transformers, Diffusion and masked-generative language models.",
     "examples": [
-      "substrate for Large-scale pretraining",
-      "substrate for Encoder-only bidirectional transformers",
-      "substrate for Diffusion and masked-generative language models"
+      "atlas downstream link to Large-scale pretraining",
+      "atlas downstream link to Encoder-only bidirectional transformers",
+      "atlas downstream link to Diffusion and masked-generative language models"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Self-supervised learning, Tokens, vocabularies & symbolic units."
@@ -34,19 +34,19 @@
         "id": "self_supervised_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Masked prediction objectives uses Self-supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Masked prediction objectives has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "tokens_vocab",
         "type": "uses",
         "strength": "core",
-        "rationale": "Masked prediction objectives uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Masked prediction objectives has a `uses` dependency on Tokens, vocabularies & symbolic units because Tokens, vocabularies & symbolic units is modeled as a reusable ingredient for the node."
       },
       {
         "id": "spatial_grids",
         "type": "uses",
         "strength": "common",
-        "rationale": "Masked prediction objectives uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Masked prediction objectives has a `uses` dependency on Images, video & spatial grids because Images, video & spatial grids is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Hidden portions of an input are predicted from visible context; it operationally connects Self-supervised learning and Tokens, vocabularies & symbolic units."
     },
     {
-      "unit_id": "c87d60b5570192ab",
+      "unit_id": "9a8fc80f12f06d1c",
       "node_id": "masked_prediction",
       "field": "why_it_matters",
-      "text": "The role of Masked prediction objectives is to connect Self-supervised learning, Tokens, vocabularies & symbolic units to downstream capabilities including Large-scale pretraining, Encoder-only bidirectional transformers, Diffusion and masked-generative language models."
+      "text": "In this atlas graph, Masked prediction objectives is modeled as depending on Self-supervised learning, Tokens, vocabularies & symbolic units and feeding downstream nodes such as Large-scale pretraining, Encoder-only bidirectional transformers, Diffusion and masked-generative language models."
     },
     {
-      "unit_id": "9b2b36b7aa4535c4",
+      "unit_id": "4758cb4e89624ce3",
       "node_id": "masked_prediction",
       "field": "examples[1]",
-      "text": "substrate for Large-scale pretraining"
+      "text": "atlas downstream link to Large-scale pretraining"
     },
     {
-      "unit_id": "5b06eb9396eb723f",
+      "unit_id": "cdab799f59402470",
       "node_id": "masked_prediction",
       "field": "examples[2]",
-      "text": "substrate for Encoder-only bidirectional transformers"
+      "text": "atlas downstream link to Encoder-only bidirectional transformers"
     },
     {
-      "unit_id": "959350a31fd999bc",
+      "unit_id": "fc0dd86a229ba825",
       "node_id": "masked_prediction",
       "field": "examples[3]",
-      "text": "substrate for Diffusion and masked-generative language models"
+      "text": "atlas downstream link to Diffusion and masked-generative language models"
     },
     {
       "unit_id": "0f11b063070b1aea",
@@ -88,48 +88,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Self-supervised learning, Tokens, vocabularies & symbolic units."
     },
     {
-      "unit_id": "e23d15658bc0d1d1",
+      "unit_id": "4f7bf9a9eb892c8b",
       "node_id": "masked_prediction",
       "field": "dependencies.self_supervised_learning.rationale",
-      "text": "Masked prediction objectives uses Self-supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Masked prediction objectives has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "537440a494244dba",
+      "unit_id": "743db67eb3008646",
       "node_id": "masked_prediction",
       "field": "dependencies.tokens_vocab.rationale",
-      "text": "Masked prediction objectives uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Masked prediction objectives has a `uses` dependency on Tokens, vocabularies & symbolic units because Tokens, vocabularies & symbolic units is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "0097fd7e53ea4dd0",
+      "unit_id": "3a64661ee93698a7",
       "node_id": "masked_prediction",
       "field": "dependencies.spatial_grids.rationale",
-      "text": "Masked prediction objectives uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Masked prediction objectives has a `uses` dependency on Images, video & spatial grids because Images, video & spatial grids is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "5f92fd15a0eedba7",
+      "edge_id": "762caca98ee86fe6",
       "node_id": "masked_prediction",
       "dependency_id": "self_supervised_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Masked prediction objectives uses Self-supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Masked prediction objectives has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "9b21c7697708a16b",
+      "edge_id": "8957a0dc87c878cf",
       "node_id": "masked_prediction",
       "dependency_id": "tokens_vocab",
       "type": "uses",
       "strength": "core",
-      "rationale": "Masked prediction objectives uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Masked prediction objectives has a `uses` dependency on Tokens, vocabularies & symbolic units because Tokens, vocabularies & symbolic units is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "b53a8a730b526d28",
+      "edge_id": "7b8c0b6a7c80bf3a",
       "node_id": "masked_prediction",
       "dependency_id": "spatial_grids",
       "type": "uses",
       "strength": "common",
-      "rationale": "Masked prediction objectives uses Images, video & spatial grids as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Masked prediction objectives has a `uses` dependency on Images, video & spatial grids because Images, video & spatial grids is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

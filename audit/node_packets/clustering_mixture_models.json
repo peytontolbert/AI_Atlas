@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Clustering and mixture models divide observations into latent groups using distance, density, or probabilistic component assignments without task labels.",
-    "why_it_matters": "The role of k-means, mixture models & clustering is to connect Unsupervised learning, Embeddings & distributed representations to downstream capabilities including Recommendation, ranking & personalization.",
+    "why_it_matters": "In this atlas graph, k-means, mixture models & clustering is modeled as depending on Unsupervised learning, Embeddings & distributed representations and feeding downstream nodes such as Recommendation, ranking & personalization.",
     "examples": [
-      "substrate for Recommendation, ranking & personalization",
+      "atlas downstream link to Recommendation, ranking & personalization",
       "combined with Unsupervised learning"
     ],
     "limitations": [
@@ -39,13 +39,13 @@
         "id": "embeddings",
         "type": "represents_with",
         "strength": "core",
-        "rationale": "k-means, mixture models & clustering consumes, emits, or organizes information using Embeddings & distributed representations."
+        "rationale": "In this atlas graph, k-means, mixture models & clustering has a `represents_with` dependency on Embeddings & distributed representations with `core` strength."
       },
       {
         "id": "mcmc_em_message_passing",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "k-means, mixture models & clustering is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+        "rationale": "In this atlas graph, k-means, mixture models & clustering has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation."
       }
     ]
   },
@@ -57,16 +57,16 @@
       "text": "Clustering and mixture models divide observations into latent groups using distance, density, or probabilistic component assignments without task labels."
     },
     {
-      "unit_id": "acf12f2323da71ab",
+      "unit_id": "1b1268b424d9fea8",
       "node_id": "clustering_mixture_models",
       "field": "why_it_matters",
-      "text": "The role of k-means, mixture models & clustering is to connect Unsupervised learning, Embeddings & distributed representations to downstream capabilities including Recommendation, ranking & personalization."
+      "text": "In this atlas graph, k-means, mixture models & clustering is modeled as depending on Unsupervised learning, Embeddings & distributed representations and feeding downstream nodes such as Recommendation, ranking & personalization."
     },
     {
-      "unit_id": "7f92260fc600d656",
+      "unit_id": "18281eac61c34a66",
       "node_id": "clustering_mixture_models",
       "field": "examples[1]",
-      "text": "substrate for Recommendation, ranking & personalization"
+      "text": "atlas downstream link to Recommendation, ranking & personalization"
     },
     {
       "unit_id": "1d3a72fa711503df",
@@ -87,16 +87,16 @@
       "text": "k-means, mixture models & clustering follows the learning setup expressed by Unsupervised learning."
     },
     {
-      "unit_id": "138ab8dc32cf9fed",
+      "unit_id": "74ee9d9fc04a97c7",
       "node_id": "clustering_mixture_models",
       "field": "dependencies.embeddings.rationale",
-      "text": "k-means, mixture models & clustering consumes, emits, or organizes information using Embeddings & distributed representations."
+      "text": "In this atlas graph, k-means, mixture models & clustering has a `represents_with` dependency on Embeddings & distributed representations with `core` strength."
     },
     {
-      "unit_id": "0ea0bb7c303ae36a",
+      "unit_id": "f85e91343e8683e6",
       "node_id": "clustering_mixture_models",
       "field": "dependencies.mcmc_em_message_passing.rationale",
-      "text": "k-means, mixture models & clustering is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+      "text": "In this atlas graph, k-means, mixture models & clustering has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "edge_units": [
@@ -109,20 +109,20 @@
       "rationale": "k-means, mixture models & clustering follows the learning setup expressed by Unsupervised learning."
     },
     {
-      "edge_id": "5e050b942d77e864",
+      "edge_id": "0360ca89dd58660a",
       "node_id": "clustering_mixture_models",
       "dependency_id": "embeddings",
       "type": "represents_with",
       "strength": "core",
-      "rationale": "k-means, mixture models & clustering consumes, emits, or organizes information using Embeddings & distributed representations."
+      "rationale": "In this atlas graph, k-means, mixture models & clustering has a `represents_with` dependency on Embeddings & distributed representations with `core` strength."
     },
     {
-      "edge_id": "c85f0ebc3501e9f8",
+      "edge_id": "3247b355207a1d7b",
       "node_id": "clustering_mixture_models",
       "dependency_id": "mcmc_em_message_passing",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "k-means, mixture models & clustering is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+      "rationale": "In this atlas graph, k-means, mixture models & clustering has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "candidate_references": {

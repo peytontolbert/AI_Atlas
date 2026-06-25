@@ -15,11 +15,11 @@
     ],
     "aliases": [],
     "definition": "Diffusion and score-based models learn to reverse a staged corruption process, synthesizing samples by iterative denoising or integration of a learned score field.",
-    "why_it_matters": "The role of Diffusion & score-based models is to connect Denoising diffusion & stochastic corruption, Score matching & denoising score objectives to downstream capabilities including Image generation, editing & design, Video generation & simulation synthesis, Speech synthesis, voice & music generation.",
+    "why_it_matters": "In this atlas graph, Diffusion & score-based models is modeled as depending on Denoising diffusion & stochastic corruption, Score matching & denoising score objectives and feeding downstream nodes such as Image generation, editing & design, Video generation & simulation synthesis, Speech synthesis, voice & music generation.",
     "examples": [
-      "substrate for Image generation, editing & design",
-      "substrate for Video generation & simulation synthesis",
-      "substrate for Speech synthesis, voice & music generation"
+      "atlas downstream link to Image generation, editing & design",
+      "atlas downstream link to Video generation & simulation synthesis",
+      "atlas downstream link to Speech synthesis, voice & music generation"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Denoising diffusion & stochastic corruption, Score matching & denoising score objectives."
@@ -42,19 +42,19 @@
         "id": "score_matching",
         "type": "optimizes_for",
         "strength": "core",
-        "rationale": "Diffusion & score-based models is learned, selected, or evaluated using the objective family Score matching & denoising score objectives."
+        "rationale": "In this atlas graph, Diffusion & score-based models has an `optimizes_for` dependency on Score matching & denoising score objectives because Score matching & denoising score objectives is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "unet",
         "type": "specializes",
         "strength": "common",
-        "rationale": "Diffusion & score-based models extends or specializes the architecture family U-Nets & encoder–decoder convnets."
+        "rationale": "In this atlas graph, Diffusion & score-based models has a `specializes` dependency on U-Nets & encoder–decoder convnets with `common` strength."
       },
       {
         "id": "differentiable_sampling",
         "type": "composes",
         "strength": "common",
-        "rationale": "Diffusion & score-based models is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
+        "rationale": "In this atlas graph, Diffusion & score-based models has a `composes` dependency on Reparameterization & differentiable sampling with `common` strength."
       }
     ]
   },
@@ -66,28 +66,28 @@
       "text": "Diffusion and score-based models learn to reverse a staged corruption process, synthesizing samples by iterative denoising or integration of a learned score field."
     },
     {
-      "unit_id": "8c4f90724d17b1c3",
+      "unit_id": "237a81048ad97b1b",
       "node_id": "diffusion_model",
       "field": "why_it_matters",
-      "text": "The role of Diffusion & score-based models is to connect Denoising diffusion & stochastic corruption, Score matching & denoising score objectives to downstream capabilities including Image generation, editing & design, Video generation & simulation synthesis, Speech synthesis, voice & music generation."
+      "text": "In this atlas graph, Diffusion & score-based models is modeled as depending on Denoising diffusion & stochastic corruption, Score matching & denoising score objectives and feeding downstream nodes such as Image generation, editing & design, Video generation & simulation synthesis, Speech synthesis, voice & music generation."
     },
     {
-      "unit_id": "1c02f15b48991b37",
+      "unit_id": "eb53c81b2fa9c05d",
       "node_id": "diffusion_model",
       "field": "examples[1]",
-      "text": "substrate for Image generation, editing & design"
+      "text": "atlas downstream link to Image generation, editing & design"
     },
     {
-      "unit_id": "e65716f798809b57",
+      "unit_id": "ba4bb9fec23ebe40",
       "node_id": "diffusion_model",
       "field": "examples[2]",
-      "text": "substrate for Video generation & simulation synthesis"
+      "text": "atlas downstream link to Video generation & simulation synthesis"
     },
     {
-      "unit_id": "6dd809257aa69cc2",
+      "unit_id": "ef913b6cc7348307",
       "node_id": "diffusion_model",
       "field": "examples[3]",
-      "text": "substrate for Speech synthesis, voice & music generation"
+      "text": "atlas downstream link to Speech synthesis, voice & music generation"
     },
     {
       "unit_id": "b2604d1d7eecf938",
@@ -102,22 +102,22 @@
       "text": "Diffusion & score-based models is assembled in part from the mechanism or model component Denoising diffusion & stochastic corruption."
     },
     {
-      "unit_id": "b5853d54c8a58d10",
+      "unit_id": "525a25f4eba61441",
       "node_id": "diffusion_model",
       "field": "dependencies.score_matching.rationale",
-      "text": "Diffusion & score-based models is learned, selected, or evaluated using the objective family Score matching & denoising score objectives."
+      "text": "In this atlas graph, Diffusion & score-based models has an `optimizes_for` dependency on Score matching & denoising score objectives because Score matching & denoising score objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "d01c15242dd030ce",
+      "unit_id": "e347871440be295a",
       "node_id": "diffusion_model",
       "field": "dependencies.unet.rationale",
-      "text": "Diffusion & score-based models extends or specializes the architecture family U-Nets & encoder–decoder convnets."
+      "text": "In this atlas graph, Diffusion & score-based models has a `specializes` dependency on U-Nets & encoder–decoder convnets with `common` strength."
     },
     {
-      "unit_id": "dd93084f77f89681",
+      "unit_id": "c554657329e92b68",
       "node_id": "diffusion_model",
       "field": "dependencies.differentiable_sampling.rationale",
-      "text": "Diffusion & score-based models is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
+      "text": "In this atlas graph, Diffusion & score-based models has a `composes` dependency on Reparameterization & differentiable sampling with `common` strength."
     }
   ],
   "edge_units": [
@@ -130,28 +130,28 @@
       "rationale": "Diffusion & score-based models is assembled in part from the mechanism or model component Denoising diffusion & stochastic corruption."
     },
     {
-      "edge_id": "1daaa07a49f9edd0",
+      "edge_id": "3f87c88c2f375199",
       "node_id": "diffusion_model",
       "dependency_id": "score_matching",
       "type": "optimizes_for",
       "strength": "core",
-      "rationale": "Diffusion & score-based models is learned, selected, or evaluated using the objective family Score matching & denoising score objectives."
+      "rationale": "In this atlas graph, Diffusion & score-based models has an `optimizes_for` dependency on Score matching & denoising score objectives because Score matching & denoising score objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "8969b7487ed55b86",
+      "edge_id": "1d2692964823a8d2",
       "node_id": "diffusion_model",
       "dependency_id": "unet",
       "type": "specializes",
       "strength": "common",
-      "rationale": "Diffusion & score-based models extends or specializes the architecture family U-Nets & encoder–decoder convnets."
+      "rationale": "In this atlas graph, Diffusion & score-based models has a `specializes` dependency on U-Nets & encoder–decoder convnets with `common` strength."
     },
     {
-      "edge_id": "78445e79d3cf6727",
+      "edge_id": "7bf4fdb8222de839",
       "node_id": "diffusion_model",
       "dependency_id": "differentiable_sampling",
       "type": "composes",
       "strength": "common",
-      "rationale": "Diffusion & score-based models is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
+      "rationale": "In this atlas graph, Diffusion & score-based models has a `composes` dependency on Reparameterization & differentiable sampling with `common` strength."
     }
   ],
   "candidate_references": {

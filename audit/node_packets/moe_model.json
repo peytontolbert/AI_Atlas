@@ -17,10 +17,10 @@
       "MoE"
     ],
     "definition": "A mixture-of-experts model routes each input or token through a selected subset of specialized subnetworks, expanding parameter capacity at controlled compute cost.",
-    "why_it_matters": "The role of Mixture-of-experts models is to connect Routing, conditional computation & mixture-of-experts, Affine transforms & dense layers to downstream capabilities including Distributed, mixed-precision & memory-efficient training, Tensor, pipeline, sequence & expert parallel inference.",
+    "why_it_matters": "In this atlas graph, Mixture-of-experts models is modeled as depending on Routing, conditional computation & mixture-of-experts, Affine transforms & dense layers and feeding downstream nodes such as Distributed, mixed-precision & memory-efficient training, Tensor, pipeline, sequence & expert parallel inference.",
     "examples": [
-      "substrate for Distributed, mixed-precision & memory-efficient training",
-      "substrate for Tensor, pipeline, sequence & expert parallel inference"
+      "atlas downstream link to Distributed, mixed-precision & memory-efficient training",
+      "atlas downstream link to Tensor, pipeline, sequence & expert parallel inference"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Routing, conditional computation & mixture-of-experts, Affine transforms & dense layers."
@@ -61,22 +61,22 @@
       "text": "A mixture-of-experts model routes each input or token through a selected subset of specialized subnetworks, expanding parameter capacity at controlled compute cost."
     },
     {
-      "unit_id": "e71ca6932f90e7c9",
+      "unit_id": "609e2727bbc8df27",
       "node_id": "moe_model",
       "field": "why_it_matters",
-      "text": "The role of Mixture-of-experts models is to connect Routing, conditional computation & mixture-of-experts, Affine transforms & dense layers to downstream capabilities including Distributed, mixed-precision & memory-efficient training, Tensor, pipeline, sequence & expert parallel inference."
+      "text": "In this atlas graph, Mixture-of-experts models is modeled as depending on Routing, conditional computation & mixture-of-experts, Affine transforms & dense layers and feeding downstream nodes such as Distributed, mixed-precision & memory-efficient training, Tensor, pipeline, sequence & expert parallel inference."
     },
     {
-      "unit_id": "c3eef3575efa90cd",
+      "unit_id": "f0d9374a5d799f32",
       "node_id": "moe_model",
       "field": "examples[1]",
-      "text": "substrate for Distributed, mixed-precision & memory-efficient training"
+      "text": "atlas downstream link to Distributed, mixed-precision & memory-efficient training"
     },
     {
-      "unit_id": "07d168090e6d5867",
+      "unit_id": "b24345993fe50f10",
       "node_id": "moe_model",
       "field": "examples[2]",
-      "text": "substrate for Tensor, pipeline, sequence & expert parallel inference"
+      "text": "atlas downstream link to Tensor, pipeline, sequence & expert parallel inference"
     },
     {
       "unit_id": "b8dccb7d5190c0f1",

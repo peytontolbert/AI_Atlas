@@ -1,18 +1,176 @@
 {
   "sentence_reviews": [
-    {"unit_id":"b510f4576eb76955","node_id":"peft_lora","field":"definition","text":"Parameter-efficient fine-tuning adapts a frozen or mostly frozen model through small trainable modules; LoRA learns low-rank updates to selected weight matrices.","source_ids":["ref_lora"],"evidence_location":"LoRA arXiv abstract lines 42-44 says LoRA freezes pretrained model weights and injects trainable rank-decomposition matrices into Transformer layers, greatly reducing trainable parameters for downstream tasks.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The LoRA-specific part is directly supported; small trainable modules is a fair generalization from injected trainable matrices."},
-    {"unit_id":"cd4bb3cb58a64bfc","node_id":"peft_lora","field":"why_it_matters","text":"The role of Parameter-efficient tuning, adapters & LoRA is to connect Supervised fine-tuning & instruction tuning, Linear algebra to downstream capabilities including Large language models, Code models, copilots & repository intelligence, Model merging & weight-space composition.","source_ids":["ref_lora","ref_dlbook"],"evidence_location":"LoRA arXiv abstract lines 42-44 supports adaptation of pretrained LLMs using rank-decomposition matrices and experiments on GPT-style models; code models and model merging are not directly covered in the inspected evidence.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"LLM adaptation and linear algebra are supported; code/repository and model-merging downstream claims need narrower sources."},
-    {"unit_id":"f97851d334d35bf1","node_id":"peft_lora","field":"examples[1]","text":"substrate for Large language models","source_ids":["ref_lora"],"evidence_location":"LoRA arXiv title and abstract lines 42-44 address low-rank adaptation of large language models, including GPT-3 and other language models.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported."},
-    {"unit_id":"365b98bef87b53ca","node_id":"peft_lora","field":"examples[2]","text":"substrate for Code models, copilots & repository intelligence","source_ids":["ref_lora"],"evidence_location":"LoRA arXiv abstract lines 42-44 supports LLM adaptation broadly, but does not mention code models, copilots, or repository intelligence.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"No inspected source supports this downstream example."},
-    {"unit_id":"cc6b480ad0ec9777","node_id":"peft_lora","field":"examples[3]","text":"substrate for Model merging & weight-space composition","source_ids":["ref_lora"],"evidence_location":"LoRA arXiv abstract lines 42-44 supports low-rank adaptation matrices but does not discuss model merging or weight-space composition.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"LoRA adapters can be composed in practice, but the inspected packet source does not directly support this downstream edge."},
-    {"unit_id":"840377b1bb7c888a","node_id":"peft_lora","field":"limitations[1]","text":"Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised fine-tuning & instruction tuning, Linear algebra.","source_ids":["ref_lora","ref_dlbook"],"evidence_location":"LoRA arXiv abstract lines 42-44 supports rank-decomposition matrices, trainable parameters, and downstream-task adaptation; it does not directly state the generic sensitivity/contamination limitation.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are partly supported; generic limitations require stronger sourcing."},
-    {"unit_id":"3433ea4f822e21b9","node_id":"peft_lora","field":"dependencies.sft_instruction.rationale","text":"Parameter-efficient tuning, adapters & LoRA uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation.","source_ids":["ref_lora","url:https://arxiv.org/abs/2203.02155"],"evidence_location":"LoRA lines 42-44 describes adaptation/fine-tuning for downstream tasks; Ouyang lines 38-40 supports supervised instruction fine-tuning as an LLM adaptation stage.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"PEFT/LoRA can implement supervised fine-tuning, but LoRA is not limited to instruction tuning."},
-    {"unit_id":"38bbfd2c2d91a36d","node_id":"peft_lora","field":"dependencies.linear_algebra.rationale","text":"Parameter-efficient tuning, adapters & LoRA uses Linear algebra as a reusable ingredient in its defined operation.","source_ids":["ref_lora","ref_dlbook"],"evidence_location":"LoRA arXiv abstract line 43 describes trainable rank-decomposition matrices, directly invoking matrix factorization/linear algebra.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported."},
-    {"unit_id":"1c78fa62582e58ca","node_id":"peft_lora","field":"dependencies.affine_dense.rationale","text":"Parameter-efficient tuning, adapters & LoRA uses Affine transforms & dense layers as a reusable ingredient in its defined operation.","source_ids":["ref_lora","ref_dlbook"],"evidence_location":"LoRA arXiv abstract line 43 says trainable rank-decomposition matrices are injected into each layer of the Transformer architecture; the abstract does not explicitly name affine/dense layers.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"LoRA commonly modifies linear weight matrices; the inspected abstract supports layers and matrices, not the exact atlas label."}
+    {
+      "unit_id": "b510f4576eb76955",
+      "node_id": "peft_lora",
+      "field": "definition",
+      "text": "Parameter-efficient fine-tuning adapts a frozen or mostly frozen model through small trainable modules; LoRA learns low-rank updates to selected weight matrices.",
+      "source_ids": [
+        "ref_lora"
+      ],
+      "evidence_location": "LoRA arXiv abstract lines 42-44 says LoRA freezes pretrained model weights and injects trainable rank-decomposition matrices into Transformer layers, greatly reducing trainable parameters for downstream tasks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The LoRA-specific part is directly supported; small trainable modules is a fair generalization from injected trainable matrices."
+    },
+    {
+      "unit_id": "840377b1bb7c888a",
+      "node_id": "peft_lora",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised fine-tuning & instruction tuning, Linear algebra.",
+      "source_ids": [
+        "ref_lora",
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "5983aa04997daf0d",
+      "node_id": "peft_lora",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA is modeled as depending on Supervised fine-tuning & instruction tuning, Linear algebra and feeding downstream nodes such as Large language models, Code models, copilots & repository intelligence, Model merging & weight-space composition.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "52947612ee504452",
+      "node_id": "peft_lora",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Large language models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5333e1e4b68e4ebc",
+      "node_id": "peft_lora",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Code models, copilots & repository intelligence",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1fd50c0143e7c6b1",
+      "node_id": "peft_lora",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Model merging & weight-space composition",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "efdf2db27f557c86",
+      "node_id": "peft_lora",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "89f19154a6aeb1d3",
+      "node_id": "peft_lora",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "30ad8efd76aef482",
+      "node_id": "peft_lora",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Affine transforms & dense layers because Affine transforms & dense layers is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"879599709fa156fa","node_id":"peft_lora","dependency_id":"sft_instruction","source_ids":["ref_lora","url:https://arxiv.org/abs/2203.02155"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"LoRA supports parameter-efficient downstream fine-tuning; using it specifically for instruction tuning is common but not inherent, so core strength is somewhat broad.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"c8082c683cbbf117","node_id":"peft_lora","dependency_id":"linear_algebra","source_ids":["ref_lora","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Rank-decomposition matrices directly support a core linear algebra dependency.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"06e7ddc27eb1034d","node_id":"peft_lora","dependency_id":"affine_dense","source_ids":["ref_lora","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Transformer layer matrices make affine/dense layers a defensible common dependency, though the abstract does not name affine transforms.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "44f993f69f8f3445",
+      "node_id": "peft_lora",
+      "dependency_id": "sft_instruction",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "d731bb973778dbfd",
+      "node_id": "peft_lora",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "f63701d56f98516c",
+      "node_id": "peft_lora",
+      "dependency_id": "affine_dense",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "peft_lora",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

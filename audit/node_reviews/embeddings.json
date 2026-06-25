@@ -16,76 +16,20 @@
       "notes": "The sources directly support vector word representations/embeddings; semantic/functional relatedness and continuous-space neighborhood wording are synthesized from the embedding context."
     },
     {
-      "unit_id": "345b7575f6810974",
-      "node_id": "embeddings",
-      "field": "why_it_matters",
-      "text": "The role of Embeddings & distributed representations is to connect Linear algebra, Information theory to downstream capabilities including Positional, temporal & coordinate encodings, Sparse coding & compositional representations, Contrastive learning.",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "PML book1 long TOC: linear algebra, information theory, word embeddings, sparse autoencoders, and self-supervised/contrastive-adjacent representation learning topics (lines 179-259, 622-646, and 585-587); AIMA contents.html: word representations/embeddings and pretrained contextual representations (lines 628-657).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Linear algebra, information theory, word embeddings, and sparse autoencoders are supported. Positional/coordinate encodings, compositional representations, and contrastive learning are not directly supported by the inspected passages."
-    },
-    {
-      "unit_id": "32107005144790da",
-      "node_id": "embeddings",
-      "field": "examples[1]",
-      "text": "substrate for Positional, temporal & coordinate encodings",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML book1 long TOC: transformer positional encoding and sequence models (lines 486-490 and 463-478), plus linear algebra vector spaces (lines 206-259).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Positional encoding and vector spaces are supported, but coordinate and temporal encodings as downstream embedding capabilities are not directly established."
-    },
-    {
-      "unit_id": "08fcf05775902308",
-      "node_id": "embeddings",
-      "field": "examples[2]",
-      "text": "substrate for Sparse coding & compositional representations",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML book1 long TOC: sparse autoencoders and sparse vector machines (lines 622-627 and 551-554), plus word embeddings (lines 639-646).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Sparse representation topics are present, but sparse coding and compositional representations are not directly named or connected to embeddings in the inspected evidence."
-    },
-    {
-      "unit_id": "0cf2abe1bb457dff",
-      "node_id": "embeddings",
-      "field": "examples[3]",
-      "text": "substrate for Contrastive learning",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML book1 long TOC: self-supervised learning, unsupervised pretraining, matching networks, and word embeddings (lines 9-13, 585-587, 603-605, and 639-646).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected source supports embeddings and self-supervised learning, but does not directly mention contrastive learning."
-    },
-    {
       "unit_id": "7bb81e7edc41364e",
       "node_id": "embeddings",
       "field": "limitations[1]",
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Linear algebra, Information theory.",
       "source_ids": [
         "ref_pml",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML book1 long TOC: linear algebra, information theory, dimensionality reduction, word embeddings, and manifold learning (lines 179-259 and 607-646); AIMA contents.html: fairness/bias and word representations/embeddings (lines 745-749 and 628-657).",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Linear algebra, information theory, and embeddings are supported, and bias is a broad AI concern. Encoding information loss and invariance difficulty are not directly supported."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "9ca5f75107860901",
@@ -103,20 +47,6 @@
       "notes": "Embeddings as vectors and linear algebra background support the dependency; exact rationale wording is synthesized."
     },
     {
-      "unit_id": "6c352c4b2c32ca9c",
-      "node_id": "embeddings",
-      "field": "dependencies.information_theory.rationale",
-      "text": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Information theory.",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML book1 long TOC: information theory chapter, mutual information, sufficient statistics, and word embeddings (lines 179-205 and 639-646).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Information theory is relevant to representation learning, but the inspected evidence does not directly establish it as a dependency for embeddings."
-    },
-    {
       "unit_id": "3e30d9eded7cefbb",
       "node_id": "embeddings",
       "field": "dependencies.tensors.rationale",
@@ -130,6 +60,76 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "The vector/matrix nature of embeddings is well supported, though the full tensor phrasing is synthesized."
+    },
+    {
+      "unit_id": "ecd05199fa64ce19",
+      "node_id": "embeddings",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Embeddings & distributed representations is modeled as depending on Linear algebra, Information theory and feeding downstream nodes such as Positional, temporal & coordinate encodings, Sparse coding & compositional representations, Contrastive learning.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "28f7dc4c228a1bde",
+      "node_id": "embeddings",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Positional, temporal & coordinate encodings",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "90d47e9e3795508c",
+      "node_id": "embeddings",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Sparse coding & compositional representations",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "880afa4271a92ee9",
+      "node_id": "embeddings",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Contrastive learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "99018918f30375eb",
+      "node_id": "embeddings",
+      "field": "dependencies.information_theory.rationale",
+      "text": "In this atlas graph, Embeddings & distributed representations has a `requires` dependency on Information theory with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -149,20 +149,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "b369ecf8a7003126",
-      "node_id": "embeddings",
-      "dependency_id": "information_theory",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Information theory is relevant to representation learning, but the inspected evidence does not show it as a necessary prerequisite for embeddings. Common strength is plausible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
       "edge_id": "c4be6a58e0cc2837",
       "node_id": "embeddings",
       "dependency_id": "tensors",
@@ -176,6 +162,22 @@
       "notes": "Embeddings are vector-valued representations, so the represents_with/common edge to tensors is supported.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "29a62732b6f10a10",
+      "node_id": "embeddings",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "embeddings",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

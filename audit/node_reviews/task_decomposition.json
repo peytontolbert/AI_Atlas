@@ -1,1 +1,161 @@
-{"sentence_reviews":[{"unit_id":"247dbf0e71a149ec","node_id":"task_decomposition","field":"definition","text":"Task decomposition breaks a broad objective into ordered or partially ordered subgoals whose outputs, dependencies, and stopping conditions can be managed explicitly.","source_ids":["ref_aima"],"evidence_location":"AIMA problem solving, planning, and hierarchical decomposition material.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The cited source supports decomposition and planning structure; outputs and stopping-condition wording is synthesized."},{"unit_id":"ff970504ac4989cc","node_id":"task_decomposition","field":"why_it_matters","text":"The role of Task decomposition & hierarchical reasoning is to connect Chain-of-thought & latent reasoning, Graph search, BFS/DFS & A* to downstream capabilities including PDDL, STRIPS & hierarchical task-network planning, Observe–plan–act agent loops.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA planning/search/agent material and general probabilistic-modeling background; chain-of-thought connection is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The planning and search role is supported, but the LLM chain-of-thought and observe-plan-act framing is not directly stated."},{"unit_id":"3180c3243b021445","node_id":"task_decomposition","field":"examples[1]","text":"substrate for PDDL, STRIPS & hierarchical task-network planning","source_ids":["ref_aima"],"evidence_location":"AIMA classical and hierarchical planning material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Planning formalisms directly use goals, subgoals, and decomposition."},{"unit_id":"f71737cb56f5390c","node_id":"task_decomposition","field":"examples[2]","text":"substrate for Observe–plan–act agent loops","source_ids":["ref_aima"],"evidence_location":"AIMA agent and planning material.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Planning agents support the claim, but the exact observe-plan-act wording is ontology synthesis."},{"unit_id":"23b0d92f00ece052","node_id":"task_decomposition","field":"limitations[1]","text":"Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Graph search, BFS/DFS & A*.","source_ids":["ref_aima"],"evidence_location":"AIMA search/planning complexity material.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Search cost is supported; self-evaluation/confident-error and chain-of-thought dependency are broader than the cited evidence."},{"unit_id":"bf2eee028d2b425f","node_id":"task_decomposition","field":"dependencies.cot_latent_reasoning.rationale","text":"Task decomposition & hierarchical reasoning uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA reasoning/planning background; chain-of-thought-specific evidence is not cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"LLM task decomposition may use chain-of-thought, but hierarchical reasoning in general does not require it."},{"unit_id":"c2c58afef0a77c84","node_id":"task_decomposition","field":"dependencies.graph_astar_search.rationale","text":"Task decomposition & hierarchical reasoning uses Graph search, BFS/DFS & A* as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA search and planning material.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Task planning often uses search over states/subtasks, though BFS/DFS/A* are examples rather than always required."},{"unit_id":"3c6c4375ed575bae","node_id":"task_decomposition","field":"dependencies.programs_ast_ir.rationale","text":"Task decomposition & hierarchical reasoning uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA symbolic representation/planning background; program/AST-specific evidence is not cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The packet sources do not support programs/AST/IR as a reusable ingredient for task decomposition in general."}],"edge_reviews":[{"edge_id":"b8a6cd6927d1e2b1","node_id":"task_decomposition","dependency_id":"cot_latent_reasoning","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Plausible for LLM implementations, but not a core dependency of task decomposition generally.","relationship_type_supported":true,"strength_supported":false},{"edge_id":"53c954250ef65781","node_id":"task_decomposition","dependency_id":"graph_astar_search","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Search is central to many planning/decomposition methods; exact dependency label is broader than direct evidence.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"9d2679acc2292096","node_id":"task_decomposition","dependency_id":"programs_ast_ir","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The cited evidence does not support programs/AST/IR as a common dependency.","relationship_type_supported":false,"strength_supported":false}]}
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "247dbf0e71a149ec",
+      "node_id": "task_decomposition",
+      "field": "definition",
+      "text": "Task decomposition breaks a broad objective into ordered or partially ordered subgoals whose outputs, dependencies, and stopping conditions can be managed explicitly.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA problem solving, planning, and hierarchical decomposition material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited source supports decomposition and planning structure; outputs and stopping-condition wording is synthesized."
+    },
+    {
+      "unit_id": "23b0d92f00ece052",
+      "node_id": "task_decomposition",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Graph search, BFS/DFS & A*.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "6efa21d4f0329a63",
+      "node_id": "task_decomposition",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Task decomposition & hierarchical reasoning is modeled as depending on Chain-of-thought & latent reasoning, Graph search, BFS/DFS & A* and feeding downstream nodes such as PDDL, STRIPS & hierarchical task-network planning, Observe–plan–act agent loops.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "727fc839c821f26b",
+      "node_id": "task_decomposition",
+      "field": "examples[1]",
+      "text": "atlas downstream link to PDDL, STRIPS & hierarchical task-network planning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "afa6b10d2c8e2d0f",
+      "node_id": "task_decomposition",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Observe–plan–act agent loops",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a01d641e1ece398e",
+      "node_id": "task_decomposition",
+      "field": "dependencies.cot_latent_reasoning.rationale",
+      "text": "In this atlas graph, Task decomposition & hierarchical reasoning has a `uses` dependency on Chain-of-thought & latent reasoning because Chain-of-thought & latent reasoning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "3c86d38a93de2ea8",
+      "node_id": "task_decomposition",
+      "field": "dependencies.graph_astar_search.rationale",
+      "text": "In this atlas graph, Task decomposition & hierarchical reasoning has a `uses` dependency on Graph search, BFS/DFS & A* because Graph search, BFS/DFS & A* is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8cd944a405cd10af",
+      "node_id": "task_decomposition",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "In this atlas graph, Task decomposition & hierarchical reasoning has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "007fe3e71cc3a7d0",
+      "node_id": "task_decomposition",
+      "dependency_id": "cot_latent_reasoning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "04f2b9d5a9be73d6",
+      "node_id": "task_decomposition",
+      "dependency_id": "graph_astar_search",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "e82787b2d8dc395a",
+      "node_id": "task_decomposition",
+      "dependency_id": "programs_ast_ir",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "task_decomposition",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
+}

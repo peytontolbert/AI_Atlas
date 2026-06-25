@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Regularization constrains effective model capacity through penalties, dropout, noise, early stopping, label smoothing, or restrictions on learned functions.",
-    "why_it_matters": "The role of Regularization, dropout & weight decay is to connect Statistics & experimental design, Optimization theory to downstream capabilities including Large-scale pretraining.",
+    "why_it_matters": "In this atlas graph, Regularization, dropout & weight decay is modeled as depending on Statistics & experimental design, Optimization theory and feeding downstream nodes such as Large-scale pretraining.",
     "examples": [
-      "substrate for Large-scale pretraining",
+      "atlas downstream link to Large-scale pretraining",
       "combined with Statistics & experimental design"
     ],
     "limitations": [
@@ -33,19 +33,19 @@
         "id": "statistics",
         "type": "uses",
         "strength": "core",
-        "rationale": "Regularization, dropout & weight decay uses Statistics & experimental design as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Regularization, dropout & weight decay has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "core",
-        "rationale": "Regularization, dropout & weight decay uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Regularization, dropout & weight decay has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "supervised_learning",
         "type": "uses",
         "strength": "common",
-        "rationale": "Regularization, dropout & weight decay uses Supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Regularization, dropout & weight decay has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,16 +57,16 @@
       "text": "Regularization constrains effective model capacity through penalties, dropout, noise, early stopping, label smoothing, or restrictions on learned functions."
     },
     {
-      "unit_id": "a4c9e084937af3ce",
+      "unit_id": "7146d8473974af01",
       "node_id": "regularization",
       "field": "why_it_matters",
-      "text": "The role of Regularization, dropout & weight decay is to connect Statistics & experimental design, Optimization theory to downstream capabilities including Large-scale pretraining."
+      "text": "In this atlas graph, Regularization, dropout & weight decay is modeled as depending on Statistics & experimental design, Optimization theory and feeding downstream nodes such as Large-scale pretraining."
     },
     {
-      "unit_id": "9f02322bac16f1df",
+      "unit_id": "24f1fedc1c83edda",
       "node_id": "regularization",
       "field": "examples[1]",
-      "text": "substrate for Large-scale pretraining"
+      "text": "atlas downstream link to Large-scale pretraining"
     },
     {
       "unit_id": "7851ff65dbab2825",
@@ -81,48 +81,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Statistics & experimental design, Optimization theory."
     },
     {
-      "unit_id": "f7e88190077e349d",
+      "unit_id": "977bf7859fde32a7",
       "node_id": "regularization",
       "field": "dependencies.statistics.rationale",
-      "text": "Regularization, dropout & weight decay uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Regularization, dropout & weight decay has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "22d3241d5d2b3d5b",
+      "unit_id": "afc19c450ccab1ad",
       "node_id": "regularization",
       "field": "dependencies.optimization.rationale",
-      "text": "Regularization, dropout & weight decay uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Regularization, dropout & weight decay has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "476742579fc47f07",
+      "unit_id": "74d796130cf9751c",
       "node_id": "regularization",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Regularization, dropout & weight decay uses Supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Regularization, dropout & weight decay has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "d53390bd45b4e173",
+      "edge_id": "a1419539db82110c",
       "node_id": "regularization",
       "dependency_id": "statistics",
       "type": "uses",
       "strength": "core",
-      "rationale": "Regularization, dropout & weight decay uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Regularization, dropout & weight decay has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "c28438abd4919143",
+      "edge_id": "592433f22a392bbf",
       "node_id": "regularization",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "core",
-      "rationale": "Regularization, dropout & weight decay uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Regularization, dropout & weight decay has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "9203595acddda9ab",
+      "edge_id": "24794e79f72254af",
       "node_id": "regularization",
       "dependency_id": "supervised_learning",
       "type": "uses",
       "strength": "common",
-      "rationale": "Regularization, dropout & weight decay uses Supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Regularization, dropout & weight decay has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

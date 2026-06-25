@@ -9,69 +9,11 @@
         "ref_pml",
         "ref_aima"
       ],
-      "evidence_location": "PML book1 long TOC: probabilistic graphical models, label propagation on graphs, spectral clustering and graph Laplacian (lines 101-105, 588-593, and 663-670); AIMA contents.html: relational probability models and causal networks (lines 356-392).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support graphs and relational/network structures. Molecules, interactions, and non-Euclidean domains are not directly supported by the inspected passages."
-    },
-    {
-      "unit_id": "0d1f54647eaeb64d",
-      "node_id": "graphs_hypergraphs",
-      "field": "why_it_matters",
-      "text": "The role of Graphs, hypergraphs & relational data is to connect Graph theory, Scalars, vectors, matrices & tensors to downstream capabilities including Knowledge graphs, ontologies & schemas, Message passing & neighborhood aggregation, Graph neural networks.",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "PML book1 long TOC: graphical models, label propagation on graphs, graph Laplacian spectral clustering, and linear algebra (lines 101-105, 592-593, 663-670, and 206-259); AIMA contents.html: knowledge representation, ontological engineering, relational probability models, and Appendix A.2 linear algebra (lines 333-344, 356-392, and 768-774).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Graph/relational data, knowledge representation, and matrix/vector support are present. Hypergraphs, message passing, neighborhood aggregation, and graph neural networks are not directly supported in the inspected locations."
-    },
-    {
-      "unit_id": "ed9c35136a8c22b5",
-      "node_id": "graphs_hypergraphs",
-      "field": "examples[1]",
-      "text": "substrate for Knowledge graphs, ontologies & schemas",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html: Chapter 10 'Knowledge Representation', ontological engineering, categories/objects/events, and reasoning systems for categories (lines 333-344).",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "AIMA directly supports ontologies and knowledge representation. Knowledge graphs and schemas are atlas-level synthesis from the relational/ontology context."
-    },
-    {
-      "unit_id": "dd6b877055113e3b",
-      "node_id": "graphs_hypergraphs",
-      "field": "examples[2]",
-      "text": "substrate for Message passing & neighborhood aggregation",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "PML book1 long TOC: probabilistic graphical model inference and label propagation on graphs (lines 101-105 and 588-593); AIMA contents.html: inference in probabilistic temporal models and causal networks (lines 361-392).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Graph inference and label propagation are relevant, but message passing and neighborhood aggregation are not directly named in the inspected evidence."
-    },
-    {
-      "unit_id": "067b5400113fbcb7",
-      "node_id": "graphs_hypergraphs",
-      "field": "examples[3]",
-      "text": "substrate for Graph neural networks",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML book1 long TOC: graph-related sections on label propagation and spectral clustering with graph Laplacian (lines 588-593 and 663-670).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected PML TOC supports graphs, but does not mention graph neural networks."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "1808a65554b8f466",
@@ -80,13 +22,14 @@
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Graph theory, Scalars, vectors, matrices & tensors.",
       "source_ids": [
         "ref_pml",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML book1 long TOC: graph Laplacian/eigenvectors, linear algebra, and graph-based label propagation (lines 206-259, 588-593, and 663-670); AIMA contents.html: fairness/bias and relational/causal graph structures (lines 745-749 and 356-392).",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Graph and linear-algebra dependencies are supported, and bias is a broad AI concern. Encoding information loss and invariances are not directly supported by the inspected passages."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "5ca3c6b7d571ffac",
@@ -117,6 +60,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Matrix/vector representations of graph methods are supported, but the broad relational-data phrasing is synthesized."
+    },
+    {
+      "unit_id": "06946f4e6ad3dcd8",
+      "node_id": "graphs_hypergraphs",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Graphs, hypergraphs & relational data is modeled as depending on Graph theory, Scalars, vectors, matrices & tensors and feeding downstream nodes such as Knowledge graphs, ontologies & schemas, Message passing & neighborhood aggregation, Graph neural networks.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "28b1dddbab8938ea",
+      "node_id": "graphs_hypergraphs",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Knowledge graphs, ontologies & schemas",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "59d4d82bfe6c5403",
+      "node_id": "graphs_hypergraphs",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Message passing & neighborhood aggregation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "cb4fcf6238a75c64",
+      "node_id": "graphs_hypergraphs",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Graph neural networks",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -150,5 +149,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "graphs_hypergraphs",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

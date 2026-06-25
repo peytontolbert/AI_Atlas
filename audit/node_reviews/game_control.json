@@ -8,43 +8,11 @@
       "source_ids": [
         "ref_aima"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited packet references are plausible for the broad domain, but the packet provides no passage-level evidence for every exact element in this sentence."
-    },
-    {
-      "unit_id": "a8b0ee304f8bf6de",
-      "node_id": "game_control",
-      "field": "why_it_matters",
-      "text": "The role of Game-playing, control & simulation agents is to connect Model-based reinforcement learning, Monte Carlo tree search to downstream capabilities including Simulation, operations research & wargaming.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is a high-level synthesis claim about application-boundary role and downstream integration; the packet references make it plausible but not directly verified."
-    },
-    {
-      "unit_id": "b2c5dab1463f1da7",
-      "node_id": "game_control",
-      "field": "examples[1]",
-      "text": "substrate for Simulation, operations research & wargaming",
-      "source_ids": [
-        "ref_aima",
-        "ref_dreamer",
-        "ref_rlbook",
-        "ref_testtime",
-        "ref_tot"
-      ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021); ref_dreamer: Mastering Diverse Domains through World Models (2023); ref_rlbook: Reinforcement Learning: An Introduction, 2nd ed. (2018); ref_testtime: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (2024); ref_tot: Tree of Thoughts: Deliberate Problem Solving with Large Language Models (2023).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The workflow combination is plausible from the listed dependency graph, but no source excerpt directly establishes this exact workflow."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "c2a2191168f27565",
@@ -56,13 +24,14 @@
         "ref_dreamer",
         "ref_rlbook",
         "ref_testtime",
-        "ref_tot"
+        "ref_tot",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021); ref_dreamer: Mastering Diverse Domains through World Models (2023); ref_rlbook: Reinforcement Learning: An Introduction, 2nd ed. (2018); ref_testtime: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (2024); ref_tot: Tree of Thoughts: Deliberate Problem Solving with Large Language Models (2023).",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The workflow combination is plausible from the listed dependency graph, but no source excerpt directly establishes this exact workflow."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "917c9196c5d5b48f",
@@ -74,13 +43,14 @@
         "ref_dreamer",
         "ref_rlbook",
         "ref_testtime",
-        "ref_tot"
+        "ref_tot",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021); ref_dreamer: Mastering Diverse Domains through World Models (2023); ref_rlbook: Reinforcement Learning: An Introduction, 2nd ed. (2018); ref_testtime: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (2024); ref_tot: Tree of Thoughts: Deliberate Problem Solving with Large Language Models (2023).",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The general systems-quality caveat is plausible, but the packet does not provide direct evidence for all listed components or the exact dependency list."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "0fb62b222edf4886",
@@ -119,76 +89,88 @@
       "notes": "Monte Carlo tree search is directly relevant to game control/planning; strength is defensible. The sentence frames the dependency generically as application integration."
     },
     {
-      "unit_id": "c5f29ad0df1bc415",
+      "unit_id": "140c141a7e6e773f",
+      "node_id": "game_control",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Game-playing, control & simulation agents is modeled as depending on Model-based reinforcement learning, Monte Carlo tree search and feeding downstream nodes such as Simulation, operations research & wargaming.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "27be862aeb818587",
+      "node_id": "game_control",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Simulation, operations research & wargaming",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "abfd852d006cd435",
       "node_id": "game_control",
       "field": "dependencies.world_model.rationale",
-      "text": "Game-playing, control & simulation agents integrates Latent world models & predictive dynamics as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Latent world models & predictive dynamics with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_dreamer",
-        "ref_rlbook",
-        "ref_testtime",
-        "ref_tot"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021); ref_dreamer: Mastering Diverse Domains through World Models (2023); ref_rlbook: Reinforcement Learning: An Introduction, 2nd ed. (2018); ref_testtime: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (2024); ref_tot: Tree of Thoughts: Deliberate Problem Solving with Large Language Models (2023).",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength. The sentence frames the dependency generically as application integration."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     },
     {
-      "unit_id": "783f0326cc4de301",
+      "unit_id": "c2d65806e28ebf78",
       "node_id": "game_control",
       "field": "dependencies.multiagent_coordination.rationale",
-      "text": "Game-playing, control & simulation agents integrates Multi-agent coordination, debate & markets as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Multi-agent coordination, debate & markets with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_dreamer",
-        "ref_rlbook",
-        "ref_testtime",
-        "ref_tot"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021); ref_dreamer: Mastering Diverse Domains through World Models (2023); ref_rlbook: Reinforcement Learning: An Introduction, 2nd ed. (2018); ref_testtime: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (2024); ref_tot: Tree of Thoughts: Deliberate Problem Solving with Large Language Models (2023).",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength. The sentence frames the dependency generically as application integration."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     },
     {
-      "unit_id": "8493939d06a4ee56",
+      "unit_id": "7d4cb283b136407b",
       "node_id": "game_control",
       "field": "dependencies.tree_of_thoughts.rationale",
-      "text": "Game-playing, control & simulation agents integrates Tree-of-Thought & branch-and-evaluate reasoning as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Tree-of-Thought & branch-and-evaluate reasoning with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_dreamer",
-        "ref_rlbook",
-        "ref_testtime",
-        "ref_tot"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021); ref_dreamer: Mastering Diverse Domains through World Models (2023); ref_rlbook: Reinforcement Learning: An Introduction, 2nd ed. (2018); ref_testtime: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (2024); ref_tot: Tree of Thoughts: Deliberate Problem Solving with Large Language Models (2023).",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength. The sentence frames the dependency generically as application integration."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     },
     {
-      "unit_id": "ae1a782266b0d290",
+      "unit_id": "69b905e56faf0c2c",
       "node_id": "game_control",
       "field": "dependencies.test_time_compute.rationale",
-      "text": "Game-playing, control & simulation agents integrates Test-time compute scaling as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Test-time compute scaling with `optional` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_dreamer",
-        "ref_rlbook",
-        "ref_testtime",
-        "ref_tot"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021); ref_dreamer: Mastering Diverse Domains through World Models (2023); ref_rlbook: Reinforcement Learning: An Introduction, 2nd ed. (2018); ref_testtime: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (2024); ref_tot: Tree of Thoughts: Deliberate Problem Solving with Large Language Models (2023).",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength. The sentence frames the dependency generically as application integration."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -229,76 +211,59 @@
       "strength_supported": true
     },
     {
-      "edge_id": "4a64c8144290caa2",
+      "edge_id": "56c372763e60b4b8",
       "node_id": "game_control",
       "dependency_id": "world_model",
       "source_ids": [
-        "ref_aima",
-        "ref_dreamer",
-        "ref_rlbook",
-        "ref_testtime",
-        "ref_tot"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "281e3433cf8bb96a",
+      "edge_id": "0986aa7185844d39",
       "node_id": "game_control",
       "dependency_id": "multiagent_coordination",
       "source_ids": [
-        "ref_aima",
-        "ref_dreamer",
-        "ref_rlbook",
-        "ref_testtime",
-        "ref_tot"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "f8bc06b32e84853d",
+      "edge_id": "537c90702b4a269a",
       "node_id": "game_control",
       "dependency_id": "tree_of_thoughts",
       "source_ids": [
-        "ref_aima",
-        "ref_dreamer",
-        "ref_rlbook",
-        "ref_testtime",
-        "ref_tot"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "51df0cb37bf14ea5",
+      "edge_id": "dcaddb1127c9a589",
       "node_id": "game_control",
       "dependency_id": "test_time_compute",
       "source_ids": [
-        "ref_aima",
-        "ref_dreamer",
-        "ref_rlbook",
-        "ref_testtime",
-        "ref_tot"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "game_control",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

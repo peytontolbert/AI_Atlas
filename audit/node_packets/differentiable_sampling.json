@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Random sampling is reformulated so gradients can pass through stochastic latent variables.",
-    "why_it_matters": "The role of Reparameterization & differentiable sampling is to connect Probability theory, Latent variables & hidden state to downstream capabilities including Continuous normalizing flows & learned vector fields, Variational autoencoders, Diffusion & score-based models.",
+    "why_it_matters": "In this atlas graph, Reparameterization & differentiable sampling is modeled as depending on Probability theory, Latent variables & hidden state and feeding downstream nodes such as Continuous normalizing flows & learned vector fields, Variational autoencoders, Diffusion & score-based models.",
     "examples": [
-      "substrate for Continuous normalizing flows & learned vector fields",
-      "substrate for Variational autoencoders",
-      "substrate for Diffusion & score-based models"
+      "atlas downstream link to Continuous normalizing flows & learned vector fields",
+      "atlas downstream link to Variational autoencoders",
+      "atlas downstream link to Diffusion & score-based models"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Probability theory, Latent variables & hidden state."
@@ -35,19 +35,19 @@
         "id": "probability",
         "type": "uses",
         "strength": "core",
-        "rationale": "Reparameterization & differentiable sampling uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "latent_variables",
         "type": "uses",
         "strength": "core",
-        "rationale": "Reparameterization & differentiable sampling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
       },
       {
         "id": "calculus",
         "type": "uses",
         "strength": "common",
-        "rationale": "Reparameterization & differentiable sampling uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -59,28 +59,28 @@
       "text": "Random sampling is reformulated so gradients can pass through stochastic latent variables."
     },
     {
-      "unit_id": "ba84db6047919656",
+      "unit_id": "bd0638f3647892f5",
       "node_id": "differentiable_sampling",
       "field": "why_it_matters",
-      "text": "The role of Reparameterization & differentiable sampling is to connect Probability theory, Latent variables & hidden state to downstream capabilities including Continuous normalizing flows & learned vector fields, Variational autoencoders, Diffusion & score-based models."
+      "text": "In this atlas graph, Reparameterization & differentiable sampling is modeled as depending on Probability theory, Latent variables & hidden state and feeding downstream nodes such as Continuous normalizing flows & learned vector fields, Variational autoencoders, Diffusion & score-based models."
     },
     {
-      "unit_id": "3ec0a8d336288cf6",
+      "unit_id": "5adb7097202cd7fb",
       "node_id": "differentiable_sampling",
       "field": "examples[1]",
-      "text": "substrate for Continuous normalizing flows & learned vector fields"
+      "text": "atlas downstream link to Continuous normalizing flows & learned vector fields"
     },
     {
-      "unit_id": "aac8c6d3125daad5",
+      "unit_id": "c82cd4c22a96682e",
       "node_id": "differentiable_sampling",
       "field": "examples[2]",
-      "text": "substrate for Variational autoencoders"
+      "text": "atlas downstream link to Variational autoencoders"
     },
     {
-      "unit_id": "5347f143217c517a",
+      "unit_id": "73c17f4f7c357a6a",
       "node_id": "differentiable_sampling",
       "field": "examples[3]",
-      "text": "substrate for Diffusion & score-based models"
+      "text": "atlas downstream link to Diffusion & score-based models"
     },
     {
       "unit_id": "0d334996b2ee1f4e",
@@ -89,48 +89,48 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Probability theory, Latent variables & hidden state."
     },
     {
-      "unit_id": "2e73952806be6fc2",
+      "unit_id": "2346e50cf0878fb7",
       "node_id": "differentiable_sampling",
       "field": "dependencies.probability.rationale",
-      "text": "Reparameterization & differentiable sampling uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "865e7dcadd9de37c",
+      "unit_id": "99f9e8c9bbf3e9b9",
       "node_id": "differentiable_sampling",
       "field": "dependencies.latent_variables.rationale",
-      "text": "Reparameterization & differentiable sampling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "71de52769e2420a7",
+      "unit_id": "d0e8263a5b821b12",
       "node_id": "differentiable_sampling",
       "field": "dependencies.calculus.rationale",
-      "text": "Reparameterization & differentiable sampling uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "640d7cb549379b7b",
+      "edge_id": "e80d7c6035de2b26",
       "node_id": "differentiable_sampling",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "core",
-      "rationale": "Reparameterization & differentiable sampling uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "5321056ed6b94548",
+      "edge_id": "e3252e2af81bc472",
       "node_id": "differentiable_sampling",
       "dependency_id": "latent_variables",
       "type": "uses",
       "strength": "core",
-      "rationale": "Reparameterization & differentiable sampling uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "ef6d5c381955b21a",
+      "edge_id": "dc80ee5e92d9d8ca",
       "node_id": "differentiable_sampling",
       "dependency_id": "calculus",
       "type": "uses",
       "strength": "common",
-      "rationale": "Reparameterization & differentiable sampling uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

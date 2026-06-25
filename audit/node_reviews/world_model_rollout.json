@@ -1,1 +1,166 @@
-{"sentence_reviews":[{"unit_id":"3b88776c4cf5a71c","node_id":"world_model_rollout","field":"definition","text":"World-model rollout simulates possible futures in learned latent or observation space so a policy or planner can evaluate actions without immediate real-world interaction.","source_ids":["ref_dreamer","ref_rlbook","ref_aima"],"evidence_location":"Dreamer learned world-model rollouts, RL model-based planning background, and AIMA simulation/planning material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The cited sources directly support model-based simulated futures for action evaluation."},{"unit_id":"ec55a23514a893a8","node_id":"world_model_rollout","field":"why_it_matters","text":"The role of World-model rollout & imagination is to connect Latent world models & predictive dynamics, Model-based reinforcement learning to downstream capabilities including Robotics & embodied AI.","source_ids":["ref_dreamer","ref_rlbook","ref_aima"],"evidence_location":"Dreamer world-model control, RL model-based planning, and agent/control background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The dependencies are strongly supported; the robotics/embodied-AI downstream role is synthesized from control benchmarks and agent settings."},{"unit_id":"94baaceac3c0c0aa","node_id":"world_model_rollout","field":"examples[1]","text":"substrate for Robotics & embodied AI","source_ids":["ref_dreamer","ref_aima"],"evidence_location":"Dreamer embodied-control context and AIMA agents/control background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"World models support embodied control, but the packet evidence is not a direct robotics survey."},{"unit_id":"a2dc4b708c455d03","node_id":"world_model_rollout","field":"examples[2]","text":"combined with Latent world models & predictive dynamics","source_ids":["ref_dreamer","ref_rlbook"],"evidence_location":"Dreamer latent world model and RL model-based prediction material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Rollout directly combines with learned predictive/world models."},{"unit_id":"101dc49b25ff8349","node_id":"world_model_rollout","field":"limitations[1]","text":"Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Latent world models & predictive dynamics, Model-based reinforcement learning.","source_ids":["ref_dreamer","ref_rlbook","ref_aima"],"evidence_location":"Model-based rollout/planning cost and model-error background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Planning cost and model-error risk are supported; self-evaluation/confident-error wording is broader than the cited sources."},{"unit_id":"13b03fd0c3823e21","node_id":"world_model_rollout","field":"dependencies.world_model.rationale","text":"World-model rollout & imagination uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation.","source_ids":["ref_dreamer","ref_rlbook"],"evidence_location":"Dreamer world-model rollout and model-based RL dynamics material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Predictive/world models are core to the node."},{"unit_id":"b83302112cffe028","node_id":"world_model_rollout","field":"dependencies.model_based_rl.rationale","text":"World-model rollout & imagination uses Model-based reinforcement learning as a reusable ingredient in its defined operation.","source_ids":["ref_rlbook","ref_dreamer"],"evidence_location":"RL model-based planning and Dreamer model-based control material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Rollouts over a model are directly part of model-based RL planning/control."},{"unit_id":"4474d3e0bb210588","node_id":"world_model_rollout","field":"dependencies.mcts.rationale","text":"World-model rollout & imagination uses Monte Carlo tree search as a reusable ingredient in its defined operation.","source_ids":["ref_aima","ref_rlbook"],"evidence_location":"AIMA MCTS and RL planning/rollout background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"MCTS can use model rollouts, but world-model rollout does not generally require MCTS."}],"edge_reviews":[{"edge_id":"c86f618a885fe70a","node_id":"world_model_rollout","dependency_id":"world_model","source_ids":["ref_dreamer","ref_rlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"A predictive world model is core to simulated rollout/imagination.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"6a4bc7a719de029d","node_id":"world_model_rollout","dependency_id":"model_based_rl","source_ids":["ref_rlbook","ref_dreamer"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Model-based RL directly uses learned/known models for planning and rollout.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"970e81a53de9a252","node_id":"world_model_rollout","dependency_id":"mcts","source_ids":["ref_aima","ref_rlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"MCTS is a possible rollout/search consumer, but not a common dependency of world-model rollout itself.","relationship_type_supported":true,"strength_supported":false}]}
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "3b88776c4cf5a71c",
+      "node_id": "world_model_rollout",
+      "field": "definition",
+      "text": "World-model rollout simulates possible futures in learned latent or observation space so a policy or planner can evaluate actions without immediate real-world interaction.",
+      "source_ids": [
+        "ref_dreamer",
+        "ref_rlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Dreamer learned world-model rollouts, RL model-based planning background, and AIMA simulation/planning material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited sources directly support model-based simulated futures for action evaluation."
+    },
+    {
+      "unit_id": "a2dc4b708c455d03",
+      "node_id": "world_model_rollout",
+      "field": "examples[2]",
+      "text": "combined with Latent world models & predictive dynamics",
+      "source_ids": [
+        "ref_dreamer",
+        "ref_rlbook"
+      ],
+      "evidence_location": "Dreamer latent world model and RL model-based prediction material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Rollout directly combines with learned predictive/world models."
+    },
+    {
+      "unit_id": "101dc49b25ff8349",
+      "node_id": "world_model_rollout",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Latent world models & predictive dynamics, Model-based reinforcement learning.",
+      "source_ids": [
+        "ref_dreamer",
+        "ref_rlbook",
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "04689e60fe32ebf3",
+      "node_id": "world_model_rollout",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, World-model rollout & imagination is modeled as depending on Latent world models & predictive dynamics, Model-based reinforcement learning and feeding downstream nodes such as Robotics & embodied AI.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ebc33bb313f4d3b2",
+      "node_id": "world_model_rollout",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Robotics & embodied AI",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "430ee42f4eb8e641",
+      "node_id": "world_model_rollout",
+      "field": "dependencies.world_model.rationale",
+      "text": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Latent world models & predictive dynamics because Latent world models & predictive dynamics is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "caaa8164f6052a66",
+      "node_id": "world_model_rollout",
+      "field": "dependencies.model_based_rl.rationale",
+      "text": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Model-based reinforcement learning because Model-based reinforcement learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "873141a356788aa0",
+      "node_id": "world_model_rollout",
+      "field": "dependencies.mcts.rationale",
+      "text": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Monte Carlo tree search because Monte Carlo tree search is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "e4a6eb9299523efa",
+      "node_id": "world_model_rollout",
+      "dependency_id": "world_model",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "ea747521fdb36030",
+      "node_id": "world_model_rollout",
+      "dependency_id": "model_based_rl",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "2f6bb252b6b18c62",
+      "node_id": "world_model_rollout",
+      "dependency_id": "mcts",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "world_model_rollout",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
+}

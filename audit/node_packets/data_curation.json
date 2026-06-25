@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Data curation collects, filters, balances, labels, documents, and governs examples so the training distribution better matches intended capabilities and risks.",
-    "why_it_matters": "The role of Data collection, curation & filtering is to connect Datasets, sampling & splits, Databases & information retrieval to downstream capabilities including Deduplication, contamination control & provenance, Large-scale pretraining, Curricula, data mixtures & sampling schedules.",
+    "why_it_matters": "In this atlas graph, Data collection, curation & filtering is modeled as depending on Datasets, sampling & splits, Databases & information retrieval and feeding downstream nodes such as Deduplication, contamination control & provenance, Large-scale pretraining, Curricula, data mixtures & sampling schedules.",
     "examples": [
-      "substrate for Deduplication, contamination control & provenance",
-      "substrate for Large-scale pretraining",
-      "substrate for Curricula, data mixtures & sampling schedules"
+      "atlas downstream link to Deduplication, contamination control & provenance",
+      "atlas downstream link to Large-scale pretraining",
+      "atlas downstream link to Curricula, data mixtures & sampling schedules"
     ],
     "limitations": [
       "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Databases & information retrieval."
@@ -35,19 +35,19 @@
         "id": "datasets_sampling",
         "type": "uses",
         "strength": "core",
-        "rationale": "Data collection, curation & filtering uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
       },
       {
         "id": "databases_ir",
         "type": "uses",
         "strength": "core",
-        "rationale": "Data collection, curation & filtering uses Databases & information retrieval as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
       },
       {
         "id": "statistics",
         "type": "uses",
         "strength": "common",
-        "rationale": "Data collection, curation & filtering uses Statistics & experimental design as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -59,28 +59,28 @@
       "text": "Data curation collects, filters, balances, labels, documents, and governs examples so the training distribution better matches intended capabilities and risks."
     },
     {
-      "unit_id": "b4ef9af6a675cf6a",
+      "unit_id": "5fd942c9b01a3757",
       "node_id": "data_curation",
       "field": "why_it_matters",
-      "text": "The role of Data collection, curation & filtering is to connect Datasets, sampling & splits, Databases & information retrieval to downstream capabilities including Deduplication, contamination control & provenance, Large-scale pretraining, Curricula, data mixtures & sampling schedules."
+      "text": "In this atlas graph, Data collection, curation & filtering is modeled as depending on Datasets, sampling & splits, Databases & information retrieval and feeding downstream nodes such as Deduplication, contamination control & provenance, Large-scale pretraining, Curricula, data mixtures & sampling schedules."
     },
     {
-      "unit_id": "4ecde73efb23ff22",
+      "unit_id": "dd449d99a30661e6",
       "node_id": "data_curation",
       "field": "examples[1]",
-      "text": "substrate for Deduplication, contamination control & provenance"
+      "text": "atlas downstream link to Deduplication, contamination control & provenance"
     },
     {
-      "unit_id": "2516093c7b6de969",
+      "unit_id": "2f47c4490dd6c5eb",
       "node_id": "data_curation",
       "field": "examples[2]",
-      "text": "substrate for Large-scale pretraining"
+      "text": "atlas downstream link to Large-scale pretraining"
     },
     {
-      "unit_id": "425e2f719d27f1e2",
+      "unit_id": "96d665deaf0b2417",
       "node_id": "data_curation",
       "field": "examples[3]",
-      "text": "substrate for Curricula, data mixtures & sampling schedules"
+      "text": "atlas downstream link to Curricula, data mixtures & sampling schedules"
     },
     {
       "unit_id": "5e1767b7eeaad134",
@@ -89,48 +89,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Databases & information retrieval."
     },
     {
-      "unit_id": "552378e2141c0565",
+      "unit_id": "69b495a4f8e7d969",
       "node_id": "data_curation",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "Data collection, curation & filtering uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "221ca9ff5598b962",
+      "unit_id": "11b6078ce8a46a4f",
       "node_id": "data_curation",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Data collection, curation & filtering uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "f5118bcfc2bd8e2a",
+      "unit_id": "5e87010884c645c8",
       "node_id": "data_curation",
       "field": "dependencies.statistics.rationale",
-      "text": "Data collection, curation & filtering uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "52af48e98b812f42",
+      "edge_id": "8d9a0c4b76086089",
       "node_id": "data_curation",
       "dependency_id": "datasets_sampling",
       "type": "uses",
       "strength": "core",
-      "rationale": "Data collection, curation & filtering uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "e07006bc6d181617",
+      "edge_id": "9228855caacf3fad",
       "node_id": "data_curation",
       "dependency_id": "databases_ir",
       "type": "uses",
       "strength": "core",
-      "rationale": "Data collection, curation & filtering uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "92dfb31216e56fa6",
+      "edge_id": "24c3913ee479ea01",
       "node_id": "data_curation",
       "dependency_id": "statistics",
       "type": "uses",
       "strength": "common",
-      "rationale": "Data collection, curation & filtering uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

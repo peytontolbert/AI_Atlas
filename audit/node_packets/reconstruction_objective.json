@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "An encoder or latent representation is trained to preserve enough information to rebuild an input.",
-    "why_it_matters": "The role of Reconstruction objectives is to connect Unsupervised learning, Generative modeling to downstream capabilities including Autoencoders, VQ-VAE & learned discrete tokenizers.",
+    "why_it_matters": "In this atlas graph, Reconstruction objectives is modeled as depending on Unsupervised learning, Generative modeling and feeding downstream nodes such as Autoencoders, VQ-VAE & learned discrete tokenizers.",
     "examples": [
-      "substrate for Autoencoders",
-      "substrate for VQ-VAE & learned discrete tokenizers"
+      "atlas downstream link to Autoencoders",
+      "atlas downstream link to VQ-VAE & learned discrete tokenizers"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Unsupervised learning, Generative modeling."
@@ -33,19 +33,19 @@
         "id": "unsupervised_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Reconstruction objectives uses Unsupervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Reconstruction objectives has a `uses` dependency on Unsupervised learning because Unsupervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "generative_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Reconstruction objectives uses Generative modeling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Reconstruction objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
       },
       {
         "id": "tensors",
         "type": "uses",
         "strength": "common",
-        "rationale": "Reconstruction objectives uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Reconstruction objectives has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "An encoder or latent representation is trained to preserve enough information to rebuild an input."
     },
     {
-      "unit_id": "72386cc45cb4c87f",
+      "unit_id": "a436553dec64c343",
       "node_id": "reconstruction_objective",
       "field": "why_it_matters",
-      "text": "The role of Reconstruction objectives is to connect Unsupervised learning, Generative modeling to downstream capabilities including Autoencoders, VQ-VAE & learned discrete tokenizers."
+      "text": "In this atlas graph, Reconstruction objectives is modeled as depending on Unsupervised learning, Generative modeling and feeding downstream nodes such as Autoencoders, VQ-VAE & learned discrete tokenizers."
     },
     {
-      "unit_id": "18be82d6575a8aac",
+      "unit_id": "f107460f0bd7cfcf",
       "node_id": "reconstruction_objective",
       "field": "examples[1]",
-      "text": "substrate for Autoencoders"
+      "text": "atlas downstream link to Autoencoders"
     },
     {
-      "unit_id": "887e3329f8de7b44",
+      "unit_id": "1b70df21fbc81f05",
       "node_id": "reconstruction_objective",
       "field": "examples[2]",
-      "text": "substrate for VQ-VAE & learned discrete tokenizers"
+      "text": "atlas downstream link to VQ-VAE & learned discrete tokenizers"
     },
     {
       "unit_id": "588bf812e686cc4c",
@@ -81,48 +81,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Unsupervised learning, Generative modeling."
     },
     {
-      "unit_id": "6541861ec2113069",
+      "unit_id": "dc074be89cf72957",
       "node_id": "reconstruction_objective",
       "field": "dependencies.unsupervised_learning.rationale",
-      "text": "Reconstruction objectives uses Unsupervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Reconstruction objectives has a `uses` dependency on Unsupervised learning because Unsupervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "984533651fe81e86",
+      "unit_id": "4074e3b33e6aa3f6",
       "node_id": "reconstruction_objective",
       "field": "dependencies.generative_learning.rationale",
-      "text": "Reconstruction objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Reconstruction objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "f2c657453e415dc4",
+      "unit_id": "13cd473889a8b5e0",
       "node_id": "reconstruction_objective",
       "field": "dependencies.tensors.rationale",
-      "text": "Reconstruction objectives uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Reconstruction objectives has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "a86e0361a8f232e6",
+      "edge_id": "870ce411ea6fc788",
       "node_id": "reconstruction_objective",
       "dependency_id": "unsupervised_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Reconstruction objectives uses Unsupervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Reconstruction objectives has a `uses` dependency on Unsupervised learning because Unsupervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "e9392cf10973e341",
+      "edge_id": "a8e0eb9046be6e89",
       "node_id": "reconstruction_objective",
       "dependency_id": "generative_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Reconstruction objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Reconstruction objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "0f8821b0f4337631",
+      "edge_id": "daa6516b8fdd0f52",
       "node_id": "reconstruction_objective",
       "dependency_id": "tensors",
       "type": "uses",
       "strength": "common",
-      "rationale": "Reconstruction objectives uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Reconstruction objectives has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

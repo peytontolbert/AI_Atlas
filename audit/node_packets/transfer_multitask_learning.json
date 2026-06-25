@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Knowledge learned in one task, domain, or modality is reused across others.",
-    "why_it_matters": "The role of Transfer, multitask & domain adaptation is to connect Supervised learning, Embeddings & distributed representations to downstream capabilities including Sim-to-real, real-to-sim & digital transfer.",
+    "why_it_matters": "In this atlas graph, Transfer, multitask & domain adaptation is modeled as depending on Supervised learning, Embeddings & distributed representations and feeding downstream nodes such as Sim-to-real, real-to-sim & digital transfer.",
     "examples": [
-      "substrate for Sim-to-real, real-to-sim & digital transfer",
+      "atlas downstream link to Sim-to-real, real-to-sim & digital transfer",
       "combined with Supervised learning"
     ],
     "limitations": [
@@ -33,19 +33,19 @@
         "id": "supervised_learning",
         "type": "trained_under",
         "strength": "common",
-        "rationale": "Transfer, multitask & domain adaptation follows the learning setup expressed by Supervised learning."
+        "rationale": "In this atlas graph, Transfer, multitask & domain adaptation has a `trained_under` dependency on Supervised learning with `common` strength."
       },
       {
         "id": "embeddings",
         "type": "uses",
         "strength": "core",
-        "rationale": "Transfer, multitask & domain adaptation uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Transfer, multitask & domain adaptation has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "datasets_sampling",
         "type": "uses",
         "strength": "common",
-        "rationale": "Transfer, multitask & domain adaptation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Transfer, multitask & domain adaptation has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,16 +57,16 @@
       "text": "Knowledge learned in one task, domain, or modality is reused across others."
     },
     {
-      "unit_id": "3203a10948e9f0f6",
+      "unit_id": "dff0f6d7b6488db9",
       "node_id": "transfer_multitask_learning",
       "field": "why_it_matters",
-      "text": "The role of Transfer, multitask & domain adaptation is to connect Supervised learning, Embeddings & distributed representations to downstream capabilities including Sim-to-real, real-to-sim & digital transfer."
+      "text": "In this atlas graph, Transfer, multitask & domain adaptation is modeled as depending on Supervised learning, Embeddings & distributed representations and feeding downstream nodes such as Sim-to-real, real-to-sim & digital transfer."
     },
     {
-      "unit_id": "588a991139b81d49",
+      "unit_id": "8634f2320bef0c30",
       "node_id": "transfer_multitask_learning",
       "field": "examples[1]",
-      "text": "substrate for Sim-to-real, real-to-sim & digital transfer"
+      "text": "atlas downstream link to Sim-to-real, real-to-sim & digital transfer"
     },
     {
       "unit_id": "feb81664db99b687",
@@ -81,48 +81,48 @@
       "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Embeddings & distributed representations."
     },
     {
-      "unit_id": "4a4ee33482eb2bae",
+      "unit_id": "2db18c51327da58f",
       "node_id": "transfer_multitask_learning",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Transfer, multitask & domain adaptation follows the learning setup expressed by Supervised learning."
+      "text": "In this atlas graph, Transfer, multitask & domain adaptation has a `trained_under` dependency on Supervised learning with `common` strength."
     },
     {
-      "unit_id": "eed1ceb47dfd3a9b",
+      "unit_id": "4c189ff5c139f193",
       "node_id": "transfer_multitask_learning",
       "field": "dependencies.embeddings.rationale",
-      "text": "Transfer, multitask & domain adaptation uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Transfer, multitask & domain adaptation has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "b772697977cf20b2",
+      "unit_id": "63e766456a625f8e",
       "node_id": "transfer_multitask_learning",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "Transfer, multitask & domain adaptation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Transfer, multitask & domain adaptation has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "16561cbc28292f46",
+      "edge_id": "b548fcf006484148",
       "node_id": "transfer_multitask_learning",
       "dependency_id": "supervised_learning",
       "type": "trained_under",
       "strength": "common",
-      "rationale": "Transfer, multitask & domain adaptation follows the learning setup expressed by Supervised learning."
+      "rationale": "In this atlas graph, Transfer, multitask & domain adaptation has a `trained_under` dependency on Supervised learning with `common` strength."
     },
     {
-      "edge_id": "3ed13db92bb2dd07",
+      "edge_id": "02796b004d04be8e",
       "node_id": "transfer_multitask_learning",
       "dependency_id": "embeddings",
       "type": "uses",
       "strength": "core",
-      "rationale": "Transfer, multitask & domain adaptation uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Transfer, multitask & domain adaptation has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "def088551ffa8981",
+      "edge_id": "a9d4b06067309856",
       "node_id": "transfer_multitask_learning",
       "dependency_id": "datasets_sampling",
       "type": "uses",
       "strength": "common",
-      "rationale": "Transfer, multitask & domain adaptation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Transfer, multitask & domain adaptation has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

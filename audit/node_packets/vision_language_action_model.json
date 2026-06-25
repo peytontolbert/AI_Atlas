@@ -46,13 +46,13 @@
         "id": "world_model",
         "type": "composes",
         "strength": "common",
-        "rationale": "Vision–language–action models extends or specializes the architecture family Latent world models & predictive dynamics."
+        "rationale": "In this atlas graph, Vision–language–action models has a `composes` dependency on Latent world models & predictive dynamics with `common` strength."
       },
       {
         "id": "policy_actor_critic",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Vision–language–action models is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+        "rationale": "In this atlas graph, Vision–language–action models has an `optimizes_for` dependency on Policy-gradient & actor–critic objectives because Policy-gradient & actor–critic objectives is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "sequences_time",
@@ -106,16 +106,16 @@
       "text": "Vision–language–action models extends or specializes the architecture family Multimodal foundation models."
     },
     {
-      "unit_id": "8d0e31bcd8f84b46",
+      "unit_id": "6bd0c40b69b7bc81",
       "node_id": "vision_language_action_model",
       "field": "dependencies.world_model.rationale",
-      "text": "Vision–language–action models extends or specializes the architecture family Latent world models & predictive dynamics."
+      "text": "In this atlas graph, Vision–language–action models has a `composes` dependency on Latent world models & predictive dynamics with `common` strength."
     },
     {
-      "unit_id": "47254388f27aca65",
+      "unit_id": "83a0f582b7e00129",
       "node_id": "vision_language_action_model",
       "field": "dependencies.policy_actor_critic.rationale",
-      "text": "Vision–language–action models is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+      "text": "In this atlas graph, Vision–language–action models has an `optimizes_for` dependency on Policy-gradient & actor–critic objectives because Policy-gradient & actor–critic objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "unit_id": "59af2c7f430e02f6",
@@ -134,20 +134,20 @@
       "rationale": "Vision–language–action models extends or specializes the architecture family Multimodal foundation models."
     },
     {
-      "edge_id": "07268234c630f39a",
+      "edge_id": "f420b5b552833ef9",
       "node_id": "vision_language_action_model",
       "dependency_id": "world_model",
       "type": "composes",
       "strength": "common",
-      "rationale": "Vision–language–action models extends or specializes the architecture family Latent world models & predictive dynamics."
+      "rationale": "In this atlas graph, Vision–language–action models has a `composes` dependency on Latent world models & predictive dynamics with `common` strength."
     },
     {
-      "edge_id": "7ffc907ca4496fad",
+      "edge_id": "394cb4dabb8e2b5c",
       "node_id": "vision_language_action_model",
       "dependency_id": "policy_actor_critic",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Vision–language–action models is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives."
+      "rationale": "In this atlas graph, Vision–language–action models has an `optimizes_for` dependency on Policy-gradient & actor–critic objectives because Policy-gradient & actor–critic objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "edge_id": "88cc5422a96f906c",

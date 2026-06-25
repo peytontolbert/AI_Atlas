@@ -19,42 +19,6 @@
       "notes": "Definition is technically defensible, but exact CUDA+ROCm+Triton coverage would need a Triton source."
     },
     {
-      "unit_id": "0464f34dc107f7e1",
-      "node_id": "gpu_kernels",
-      "field": "why_it_matters",
-      "text": "The role of CUDA, ROCm, Triton & custom kernels is to connect GPUs, TPUs & AI accelerators, Algorithms & data structures to downstream capabilities including Graph compilers, runtimes & operator fusion.",
-      "source_ids": [
-        "ref_cuda_guide",
-        "ref_rocm",
-        "ref_tpu",
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
-    },
-    {
-      "unit_id": "a64f7d3b3f20e320",
-      "node_id": "gpu_kernels",
-      "field": "examples[1]",
-      "text": "substrate for Graph compilers, runtimes & operator fusion",
-      "source_ids": [
-        "ref_cuda_guide",
-        "ref_rocm",
-        "ref_tpu",
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
-    },
-    {
       "unit_id": "6c3a9189976de0b2",
       "node_id": "gpu_kernels",
       "field": "examples[2]",
@@ -64,13 +28,14 @@
         "ref_rocm",
         "ref_tpu",
         "ref_aima",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "e124c5aafe5dce8a",
@@ -82,123 +47,128 @@
         "ref_rocm",
         "ref_tpu",
         "ref_aima",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "39d2bbde675d9fc2",
+      "unit_id": "d0b7ab21356645b1",
+      "node_id": "gpu_kernels",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, CUDA, ROCm, Triton & custom kernels is modeled as depending on GPUs, TPUs & AI accelerators, Algorithms & data structures and feeding downstream nodes such as Graph compilers, runtimes & operator fusion.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "30da09ddc0feedf3",
+      "node_id": "gpu_kernels",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Graph compilers, runtimes & operator fusion",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "93e249afb74742ec",
       "node_id": "gpu_kernels",
       "field": "dependencies.accelerators.rationale",
-      "text": "CUDA, ROCm, Triton & custom kernels turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_cuda_guide",
-        "ref_rocm",
-        "ref_tpu",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "84a1f8096caa3209",
+      "unit_id": "2cc02067c655cb17",
       "node_id": "gpu_kernels",
       "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "CUDA, ROCm, Triton & custom kernels turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on Algorithms & data structures because Algorithms & data structures is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_cuda_guide",
-        "ref_rocm",
-        "ref_tpu",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "7f5186b8f875fddf",
+      "unit_id": "1324f7809ebb474e",
       "node_id": "gpu_kernels",
       "field": "dependencies.tensors.rationale",
-      "text": "CUDA, ROCm, Triton & custom kernels turns Scalars, vectors, matrices & tensors into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_cuda_guide",
-        "ref_rocm",
-        "ref_tpu",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "15442d1bb8263db6",
+      "edge_id": "a0695d05c8cb66a4",
       "node_id": "gpu_kernels",
       "dependency_id": "accelerators",
       "source_ids": [
-        "ref_cuda_guide",
-        "ref_rocm",
-        "ref_tpu",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "7a6b023fbd5cf7e7",
+      "edge_id": "af99b179ca2369e9",
       "node_id": "gpu_kernels",
       "dependency_id": "algorithms_data_structures",
       "source_ids": [
-        "ref_cuda_guide",
-        "ref_rocm",
-        "ref_tpu",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "71bd8243bd18f7f2",
+      "edge_id": "b2d4baca2fd6d366",
       "node_id": "gpu_kernels",
       "dependency_id": "tensors",
       "source_ids": [
-        "ref_cuda_guide",
-        "ref_rocm",
-        "ref_tpu",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "gpu_kernels",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

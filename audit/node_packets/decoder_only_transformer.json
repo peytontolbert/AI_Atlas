@@ -17,11 +17,11 @@
       "GPT-style decoder"
     ],
     "definition": "A decoder-only transformer predicts each next token from a causally masked context, enabling scalable autoregressive pretraining, continuation, and instruction following.",
-    "why_it_matters": "The role of Decoder-only causal transformers is to connect Transformers, Causal, masked & structured masking to downstream capabilities including Retrieval-augmented generation, Chain-of-thought & latent reasoning, Program synthesis & code search.",
+    "why_it_matters": "In this atlas graph, Decoder-only causal transformers is modeled as depending on Transformers, Causal, masked & structured masking and feeding downstream nodes such as Retrieval-augmented generation, Chain-of-thought & latent reasoning, Program synthesis & code search.",
     "examples": [
-      "substrate for Retrieval-augmented generation",
-      "substrate for Chain-of-thought & latent reasoning",
-      "substrate for Program synthesis & code search"
+      "atlas downstream link to Retrieval-augmented generation",
+      "atlas downstream link to Chain-of-thought & latent reasoning",
+      "atlas downstream link to Program synthesis & code search"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Transformers, Causal, masked & structured masking."
@@ -50,13 +50,13 @@
         "id": "autoregressive_decoding",
         "type": "composes",
         "strength": "common",
-        "rationale": "Decoder-only causal transformers is assembled in part from the mechanism or model component Autoregressive decoding."
+        "rationale": "In this atlas graph, Decoder-only causal transformers has a `composes` dependency on Autoregressive decoding with `common` strength."
       },
       {
         "id": "autoregressive_objective",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Decoder-only causal transformers is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+        "rationale": "In this atlas graph, Decoder-only causal transformers has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation."
       }
     ]
   },
@@ -68,28 +68,28 @@
       "text": "A decoder-only transformer predicts each next token from a causally masked context, enabling scalable autoregressive pretraining, continuation, and instruction following."
     },
     {
-      "unit_id": "1234b1fc04548f21",
+      "unit_id": "b69481802a355ec2",
       "node_id": "decoder_only_transformer",
       "field": "why_it_matters",
-      "text": "The role of Decoder-only causal transformers is to connect Transformers, Causal, masked & structured masking to downstream capabilities including Retrieval-augmented generation, Chain-of-thought & latent reasoning, Program synthesis & code search."
+      "text": "In this atlas graph, Decoder-only causal transformers is modeled as depending on Transformers, Causal, masked & structured masking and feeding downstream nodes such as Retrieval-augmented generation, Chain-of-thought & latent reasoning, Program synthesis & code search."
     },
     {
-      "unit_id": "9332440c09c58a88",
+      "unit_id": "c43b7fb8056daa1c",
       "node_id": "decoder_only_transformer",
       "field": "examples[1]",
-      "text": "substrate for Retrieval-augmented generation"
+      "text": "atlas downstream link to Retrieval-augmented generation"
     },
     {
-      "unit_id": "97dae30ae4371f4d",
+      "unit_id": "94ae11fc255da9f1",
       "node_id": "decoder_only_transformer",
       "field": "examples[2]",
-      "text": "substrate for Chain-of-thought & latent reasoning"
+      "text": "atlas downstream link to Chain-of-thought & latent reasoning"
     },
     {
-      "unit_id": "079ab584245c1d49",
+      "unit_id": "2a5802ea7838b680",
       "node_id": "decoder_only_transformer",
       "field": "examples[3]",
-      "text": "substrate for Program synthesis & code search"
+      "text": "atlas downstream link to Program synthesis & code search"
     },
     {
       "unit_id": "eacd639ad2060c0c",
@@ -110,16 +110,16 @@
       "text": "Decoder-only causal transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
     },
     {
-      "unit_id": "0b4b4a77b5c4cbd5",
+      "unit_id": "1803e85c850e1adf",
       "node_id": "decoder_only_transformer",
       "field": "dependencies.autoregressive_decoding.rationale",
-      "text": "Decoder-only causal transformers is assembled in part from the mechanism or model component Autoregressive decoding."
+      "text": "In this atlas graph, Decoder-only causal transformers has a `composes` dependency on Autoregressive decoding with `common` strength."
     },
     {
-      "unit_id": "96ee11ae350ecbee",
+      "unit_id": "e8f5e9d507f4ec72",
       "node_id": "decoder_only_transformer",
       "field": "dependencies.autoregressive_objective.rationale",
-      "text": "Decoder-only causal transformers is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+      "text": "In this atlas graph, Decoder-only causal transformers has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "edge_units": [
@@ -140,20 +140,20 @@
       "rationale": "Decoder-only causal transformers is assembled in part from the mechanism or model component Causal, masked & structured masking."
     },
     {
-      "edge_id": "4a2513724bed8458",
+      "edge_id": "13e28344be96e9bd",
       "node_id": "decoder_only_transformer",
       "dependency_id": "autoregressive_decoding",
       "type": "composes",
       "strength": "common",
-      "rationale": "Decoder-only causal transformers is assembled in part from the mechanism or model component Autoregressive decoding."
+      "rationale": "In this atlas graph, Decoder-only causal transformers has a `composes` dependency on Autoregressive decoding with `common` strength."
     },
     {
-      "edge_id": "c405ee7a589f00fe",
+      "edge_id": "7125d5bbadf98679",
       "node_id": "decoder_only_transformer",
       "dependency_id": "autoregressive_objective",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Decoder-only causal transformers is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+      "rationale": "In this atlas graph, Decoder-only causal transformers has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "candidate_references": {

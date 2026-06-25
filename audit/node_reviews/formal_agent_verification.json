@@ -1,20 +1,209 @@
 {
   "sentence_reviews": [
-    {"unit_id":"3004c8a455d1c1e8","node_id":"formal_agent_verification","field":"definition","text":"Formal agent verification checks plans, policies, tool sequences, or generated programs against state, temporal, safety, and authorization specifications.","source_ids":["ref_formalml","ref_aima","ref_structured"],"evidence_location":"Formal ML survey supports formal specifications and verification; AIMA supports planning/state/action formalisms; structured-output survey supports constrained/typed generation.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Defensible synthesis across sources; authorization/tool-sequence specifics are not directly established by one source."},
-    {"unit_id":"b080d738bad3fa26","node_id":"formal_agent_verification","field":"why_it_matters","text":"It adds a machine-checkable control layer between an agent’s proposal and an external side effect.","source_ids":["ref_formalml","ref_structured"],"evidence_location":"Formal methods provide machine-checkable specification satisfaction; structured outputs can constrain generated actions before execution.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Plausible synthesis for agent safety, not directly verified."},
-    {"unit_id":"13c779063a8abc33","node_id":"formal_agent_verification","field":"examples[1]","text":"temporal-logic plan checking","source_ids":["ref_formalml","ref_aima"],"evidence_location":"Formal methods survey covers temporal/safety specifications; AIMA covers planning formalisms.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Supported as a standard formal-planning verification example."},
-    {"unit_id":"f92c86cc244cf172","node_id":"formal_agent_verification","field":"examples[2]","text":"proof-carrying code generation","source_ids":["ref_formalml","ref_structured"],"evidence_location":"Formal methods support proof obligations; structured output generation supports constrained generated artifacts, but proof-carrying code generation is not directly sourced.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Plausible but needs a proof-carrying-code or verified synthesis source."},
-    {"unit_id":"8207ab3d09491c05","node_id":"formal_agent_verification","field":"examples[3]","text":"permission-state verification","source_ids":["ref_formalml"],"evidence_location":"Formal specifications can express state and safety properties; permission-state authorization is not directly covered by the packet source.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Plausible application but undersourced."},
-    {"unit_id":"c244b72211ea5d6d","node_id":"formal_agent_verification","field":"limitations[1]","text":"Open-world observations and underspecified environments make complete verification difficult, so runtime monitoring remains necessary.","source_ids":["ref_formalml","ref_nist"],"evidence_location":"Formal ML survey discusses specification/model limitations and scalability; NIST supports ongoing monitoring and risk management.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Well supported as synthesis; runtime monitoring necessity is governance reasoning."},
-    {"unit_id":"5297202fb3b61b51","node_id":"formal_agent_verification","field":"dependencies.formal_methods_specification.rationale","text":"Formal verification of agents & plans measures, constrains, audits, or governs behavior using Formal methods, specifications & proof obligations.","source_ids":["ref_formalml"],"evidence_location":"Formal verification depends on formal specifications and proof obligations.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported."},
-    {"unit_id":"b85faa092646befd","node_id":"formal_agent_verification","field":"dependencies.pddl_htn_planning.rationale","text":"Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from PDDL, STRIPS & hierarchical task-network planning.","source_ids":["ref_aima"],"evidence_location":"AIMA covers STRIPS/PDDL-style planning and hierarchical planning formalisms for action/state plans.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Core planning dependency is defensible."},
-    {"unit_id":"324dfa71c27c16ca","node_id":"formal_agent_verification","field":"dependencies.structured_outputs.rationale","text":"Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from Structured outputs & typed action generation.","source_ids":["ref_structured"],"evidence_location":"Structured-output generation survey supports constrained/typed generation from LLMs, relevant to checkable action artifacts.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Common dependency is plausible, not necessarily core."},
-    {"unit_id":"1103294455e6ad5c","node_id":"formal_agent_verification","field":"dependencies.code_execution.rationale","text":"Formal verification of agents & plans checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes.","source_ids":["ref_formalml"],"evidence_location":"Formal methods can verify generated programs/artifacts; sandboxed execution is not directly established by cited sources.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Relationship is plausible for agent tool/code workflows but undersourced."}
+    {
+      "unit_id": "3004c8a455d1c1e8",
+      "node_id": "formal_agent_verification",
+      "field": "definition",
+      "text": "Formal agent verification checks plans, policies, tool sequences, or generated programs against state, temporal, safety, and authorization specifications.",
+      "source_ids": [
+        "ref_formalml",
+        "ref_aima",
+        "ref_structured"
+      ],
+      "evidence_location": "Formal ML survey supports formal specifications and verification; AIMA supports planning/state/action formalisms; structured-output survey supports constrained/typed generation.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Defensible synthesis across sources; authorization/tool-sequence specifics are not directly established by one source."
+    },
+    {
+      "unit_id": "b080d738bad3fa26",
+      "node_id": "formal_agent_verification",
+      "field": "why_it_matters",
+      "text": "It adds a machine-checkable control layer between an agent’s proposal and an external side effect.",
+      "source_ids": [
+        "ref_formalml",
+        "ref_structured"
+      ],
+      "evidence_location": "Formal methods provide machine-checkable specification satisfaction; structured outputs can constrain generated actions before execution.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Plausible synthesis for agent safety, not directly verified."
+    },
+    {
+      "unit_id": "13c779063a8abc33",
+      "node_id": "formal_agent_verification",
+      "field": "examples[1]",
+      "text": "temporal-logic plan checking",
+      "source_ids": [
+        "ref_formalml",
+        "ref_aima"
+      ],
+      "evidence_location": "Formal methods survey covers temporal/safety specifications; AIMA covers planning formalisms.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Supported as a standard formal-planning verification example."
+    },
+    {
+      "unit_id": "f92c86cc244cf172",
+      "node_id": "formal_agent_verification",
+      "field": "examples[2]",
+      "text": "proof-carrying code generation",
+      "source_ids": [
+        "ref_formalml",
+        "ref_structured",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "8207ab3d09491c05",
+      "node_id": "formal_agent_verification",
+      "field": "examples[3]",
+      "text": "permission-state verification",
+      "source_ids": [
+        "ref_formalml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "c244b72211ea5d6d",
+      "node_id": "formal_agent_verification",
+      "field": "limitations[1]",
+      "text": "Open-world observations and underspecified environments make complete verification difficult, so runtime monitoring remains necessary.",
+      "source_ids": [
+        "ref_formalml",
+        "ref_nist"
+      ],
+      "evidence_location": "Formal ML survey discusses specification/model limitations and scalability; NIST supports ongoing monitoring and risk management.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Well supported as synthesis; runtime monitoring necessity is governance reasoning."
+    },
+    {
+      "unit_id": "183221e5f9697272",
+      "node_id": "formal_agent_verification",
+      "field": "dependencies.formal_methods_specification.rationale",
+      "text": "In this atlas graph, Formal verification of agents & plans has an `evaluates_or_constrains` dependency on Formal methods, specifications & proof obligations because Formal methods, specifications & proof obligations is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "67a5ce097cfffbdd",
+      "node_id": "formal_agent_verification",
+      "field": "dependencies.pddl_htn_planning.rationale",
+      "text": "In this atlas graph, Formal verification of agents & plans has a `verifies_with` dependency on PDDL, STRIPS & hierarchical task-network planning because PDDL, STRIPS & hierarchical task-network planning is modeled as evidence or constraints for verification.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "fdbae4be90ad6d6b",
+      "node_id": "formal_agent_verification",
+      "field": "dependencies.structured_outputs.rationale",
+      "text": "In this atlas graph, Formal verification of agents & plans has a `verifies_with` dependency on Structured outputs & typed action generation because Structured outputs & typed action generation is modeled as evidence or constraints for verification.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8ad7e8db1f268457",
+      "node_id": "formal_agent_verification",
+      "field": "dependencies.code_execution.rationale",
+      "text": "In this atlas graph, Formal verification of agents & plans has a `verifies_with` dependency on Code execution, interpreters & sandboxes because Code execution, interpreters & sandboxes is modeled as evidence or constraints for verification.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"cb5b7688be495267","node_id":"formal_agent_verification","dependency_id":"formal_methods_specification","source_ids":["ref_formalml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Specifications and proof obligations are core to formal verification.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"c28aa62558ce27e0","node_id":"formal_agent_verification","dependency_id":"pddl_htn_planning","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Planning formalisms are core substrates for plan verification.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"073fdffd08ef4b76","node_id":"formal_agent_verification","dependency_id":"structured_outputs","source_ids":["ref_structured"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Typed/constrained outputs can support checkable agent artifacts; common strength is appropriate.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"3e807c687337a2fb","node_id":"formal_agent_verification","dependency_id":"code_execution","source_ids":["ref_formalml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Generated programs can be verification targets, but code execution/sandbox dependence is not directly established.","relationship_type_supported":true,"strength_supported":false}
-  ]
+    {
+      "edge_id": "408aece302cb9689",
+      "node_id": "formal_agent_verification",
+      "dependency_id": "formal_methods_specification",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "f925e48c7f636881",
+      "node_id": "formal_agent_verification",
+      "dependency_id": "pddl_htn_planning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "c881fd8590db244f",
+      "node_id": "formal_agent_verification",
+      "dependency_id": "structured_outputs",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "173936c3fdec3aa2",
+      "node_id": "formal_agent_verification",
+      "dependency_id": "code_execution",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "formal_agent_verification",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

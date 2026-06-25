@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Only selected experts or branches process each input, increasing capacity without proportional per-token compute.",
-    "why_it_matters": "The role of Routing, conditional computation & mixture-of-experts is to connect Gating & multiplicative control, Affine transforms & dense layers to downstream capabilities including Mixture-of-experts models, Adaptive depth, early exit & token skipping, Mixture-of-Depths.",
+    "why_it_matters": "In this atlas graph, Routing, conditional computation & mixture-of-experts is modeled as depending on Gating & multiplicative control, Affine transforms & dense layers and feeding downstream nodes such as Mixture-of-experts models, Adaptive depth, early exit & token skipping, Mixture-of-Depths.",
     "examples": [
-      "substrate for Mixture-of-experts models",
-      "substrate for Adaptive depth, early exit & token skipping",
-      "substrate for Mixture-of-Depths"
+      "atlas downstream link to Mixture-of-experts models",
+      "atlas downstream link to Adaptive depth, early exit & token skipping",
+      "atlas downstream link to Mixture-of-Depths"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Gating & multiplicative control, Affine transforms & dense layers."
@@ -47,7 +47,7 @@
         "id": "distributed_systems",
         "type": "uses",
         "strength": "common",
-        "rationale": "Routing, conditional computation & mixture-of-experts uses Distributed systems & networking as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Routing, conditional computation & mixture-of-experts has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -59,28 +59,28 @@
       "text": "Only selected experts or branches process each input, increasing capacity without proportional per-token compute."
     },
     {
-      "unit_id": "3271667184d6227a",
+      "unit_id": "335eb2cf83db15c3",
       "node_id": "routing_moe",
       "field": "why_it_matters",
-      "text": "The role of Routing, conditional computation & mixture-of-experts is to connect Gating & multiplicative control, Affine transforms & dense layers to downstream capabilities including Mixture-of-experts models, Adaptive depth, early exit & token skipping, Mixture-of-Depths."
+      "text": "In this atlas graph, Routing, conditional computation & mixture-of-experts is modeled as depending on Gating & multiplicative control, Affine transforms & dense layers and feeding downstream nodes such as Mixture-of-experts models, Adaptive depth, early exit & token skipping, Mixture-of-Depths."
     },
     {
-      "unit_id": "4d69c62df98ae27a",
+      "unit_id": "5fe5fe2e54df8ddc",
       "node_id": "routing_moe",
       "field": "examples[1]",
-      "text": "substrate for Mixture-of-experts models"
+      "text": "atlas downstream link to Mixture-of-experts models"
     },
     {
-      "unit_id": "bd39ad17aa187cb5",
+      "unit_id": "5fe931ebd6c1b394",
       "node_id": "routing_moe",
       "field": "examples[2]",
-      "text": "substrate for Adaptive depth, early exit & token skipping"
+      "text": "atlas downstream link to Adaptive depth, early exit & token skipping"
     },
     {
-      "unit_id": "42a682649ea4d2cc",
+      "unit_id": "0b055b1ee62e5182",
       "node_id": "routing_moe",
       "field": "examples[3]",
-      "text": "substrate for Mixture-of-Depths"
+      "text": "atlas downstream link to Mixture-of-Depths"
     },
     {
       "unit_id": "15f3876aa1987c34",
@@ -101,10 +101,10 @@
       "text": "Routing, conditional computation & mixture-of-experts is assembled in part from the mechanism or model component Affine transforms & dense layers."
     },
     {
-      "unit_id": "f91874ff9bcabfd9",
+      "unit_id": "d91ba276299e5054",
       "node_id": "routing_moe",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Routing, conditional computation & mixture-of-experts uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Routing, conditional computation & mixture-of-experts has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -125,12 +125,12 @@
       "rationale": "Routing, conditional computation & mixture-of-experts is assembled in part from the mechanism or model component Affine transforms & dense layers."
     },
     {
-      "edge_id": "2bce109a9dd85c26",
+      "edge_id": "14067ef5a924b478",
       "node_id": "routing_moe",
       "dependency_id": "distributed_systems",
       "type": "uses",
       "strength": "common",
-      "rationale": "Routing, conditional computation & mixture-of-experts uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Routing, conditional computation & mixture-of-experts has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

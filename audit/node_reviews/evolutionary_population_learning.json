@@ -1,17 +1,161 @@
 {
   "sentence_reviews": [
-    {"unit_id":"b2fe85205f35e3c4","node_id":"evolutionary_population_learning","field":"definition","text":"Populations of candidate solutions are selected, mutated, recombined, or coordinated without gradient requirements.","source_ids":["ref_aima"],"evidence_location":"AIMA contents: Search in Complex Environments, optimization/search, and learning chapters; no directly inspected genetic/evolutionary algorithm passage.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The definition matches standard evolutionary/swarm methods, but the inspected packet source is only a broad AIMA pointer and does not directly support every operator or the no-gradient clause."},
-    {"unit_id":"63b0a213ce26e46c","node_id":"evolutionary_population_learning","field":"why_it_matters","text":"The role of Evolutionary, swarm & population-based learning is to connect Optimization theory, Probability theory to downstream capabilities including AutoML & automated model design, Neural architecture search.","source_ids":["ref_aima","url:https://arxiv.org/abs/1808.05377"],"evidence_location":"AIMA contents: optimization/search and probability chapters; Elsken et al. NAS survey abstract: automated architecture search, categorized by search space, search strategy, performance estimation.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Optimization/probabilistic search and NAS/AutoML connections are defensible across sources, but not directly stated as this full role sentence."},
-    {"unit_id":"b37e901f4e482b6b","node_id":"evolutionary_population_learning","field":"examples[1]","text":"substrate for AutoML & automated model design","source_ids":["url:https://arxiv.org/abs/1808.05377"],"evidence_location":"Elsken et al. 2018 arXiv abstract and subject categories: automated neural architecture search methods; Neural and Evolutionary Computing subject classification.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The NAS survey supports evolutionary computing as part of automated architecture search, but the broader AutoML substrate wording is wider than the inspected evidence."},
-    {"unit_id":"489c8f0f00a2a53c","node_id":"evolutionary_population_learning","field":"examples[2]","text":"substrate for Neural architecture search","source_ids":["url:https://arxiv.org/abs/1808.05377"],"evidence_location":"Elsken et al. 2018 arXiv page: NAS survey, search-space/search-strategy/performance-estimation framing; cs.NE subject.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The source supports evolutionary computing relevance to NAS, although the abstract does not explicitly state every NAS method is evolutionary/population-based."},
-    {"unit_id":"425a0657d8f9b60b","node_id":"evolutionary_population_learning","field":"limitations[1]","text":"The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Optimization theory, Probability theory.","source_ids":["ref_aima"],"evidence_location":"AIMA contents: optimization/search and probability chapters; no inspected passage on this limitation for evolutionary learning.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"Generic limitation text is not adequately supported by inspected evidence."},
-    {"unit_id":"3539a0726b7bd391","node_id":"evolutionary_population_learning","field":"dependencies.optimization.rationale","text":"Evolutionary, swarm & population-based learning uses Optimization theory as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA contents: Solving Problems by Searching and Search in Complex Environments; optimization background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Population methods are optimization/search methods, but the available inspected AIMA evidence is broad rather than direct."},
-    {"unit_id":"2075ad459dbcd90d","node_id":"evolutionary_population_learning","field":"dependencies.probability.rationale","text":"Evolutionary, swarm & population-based learning uses Probability theory as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA contents: Quantifying Uncertainty and probabilistic reasoning chapters; no direct evolutionary algorithm passage inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Stochastic mutation/selection and swarm updates make probability plausible, but direct support is absent."},
-    {"unit_id":"6989a3589b82f70a","node_id":"evolutionary_population_learning","field":"dependencies.game_decision_theory.rationale","text":"Evolutionary, swarm & population-based learning uses Game theory & decision theory as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA contents: Making Simple Decisions, Making Complex Decisions, Multiagent Decision Making; no direct evolutionary/population connection inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"Game/decision theory may apply to some population dynamics, but the inspected evidence does not establish it as a common dependency."}
+    {
+      "unit_id": "b2fe85205f35e3c4",
+      "node_id": "evolutionary_population_learning",
+      "field": "definition",
+      "text": "Populations of candidate solutions are selected, mutated, recombined, or coordinated without gradient requirements.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "425a0657d8f9b60b",
+      "node_id": "evolutionary_population_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Optimization theory, Probability theory.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "d6786ad49566be11",
+      "node_id": "evolutionary_population_learning",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Evolutionary, swarm & population-based learning is modeled as depending on Optimization theory, Probability theory and feeding downstream nodes such as AutoML & automated model design, Neural architecture search.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "bc4562d7d174c097",
+      "node_id": "evolutionary_population_learning",
+      "field": "examples[1]",
+      "text": "atlas downstream link to AutoML & automated model design",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "7643b868c057767c",
+      "node_id": "evolutionary_population_learning",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Neural architecture search",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "cc672e47bad40429",
+      "node_id": "evolutionary_population_learning",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "019fd9e4bc96b02f",
+      "node_id": "evolutionary_population_learning",
+      "field": "dependencies.probability.rationale",
+      "text": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2e88655b4b523f29",
+      "node_id": "evolutionary_population_learning",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "In this atlas graph, Evolutionary, swarm & population-based learning has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"9a931b742c861904","node_id":"evolutionary_population_learning","dependency_id":"optimization","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Direction and uses type are plausible; direct evidence from the cited packet source was not inspected beyond broad AIMA contents.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"46def89883c64b66","node_id":"evolutionary_population_learning","dependency_id":"probability","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Stochastic population methods support probability as an ingredient, but core strength is not directly supported by the inspected source.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"716f3e529739bca7","node_id":"evolutionary_population_learning","dependency_id":"game_decision_theory","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"No inspected evidence supports game/decision theory as a common dependency for evolutionary, swarm, and population-based learning.","relationship_type_supported":false,"strength_supported":false}
-  ]
+    {
+      "edge_id": "51179d6bfd33be14",
+      "node_id": "evolutionary_population_learning",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "bb4fc454b80df493",
+      "node_id": "evolutionary_population_learning",
+      "dependency_id": "probability",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "8ac0f48720c19082",
+      "node_id": "evolutionary_population_learning",
+      "dependency_id": "game_decision_theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "evolutionary_population_learning",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

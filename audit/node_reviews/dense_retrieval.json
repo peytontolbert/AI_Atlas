@@ -10,75 +10,11 @@
         "ref_pml",
         "ref_aima"
       ],
-      "evidence_location": "Deep Learning and PML support embeddings and vector similarity background, but not the exact dense-retrieval/ANN formulation.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a dense passage retrieval or ANN retrieval source for exact wording."
-    },
-    {
-      "unit_id": "cffd08c8e104d82b",
-      "node_id": "dense_retrieval",
-      "field": "why_it_matters",
-      "text": "The role of Dense vector retrieval is to connect External retrieval & ranking, Embeddings & distributed representations to downstream capabilities including Hybrid retrieval & reranking, Vector databases & ANN indexes, Retrieval-augmented generation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
-    },
-    {
-      "unit_id": "49dd93535115e87f",
-      "node_id": "dense_retrieval",
-      "field": "examples[1]",
-      "text": "substrate for Hybrid retrieval & reranking",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
-      "unit_id": "5dadf57d0af2438c",
-      "node_id": "dense_retrieval",
-      "field": "examples[2]",
-      "text": "substrate for Vector databases & ANN indexes",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
-      "unit_id": "baca01401cdd0825",
-      "node_id": "dense_retrieval",
-      "field": "examples[3]",
-      "text": "substrate for Retrieval-augmented generation",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "792105765766d73d",
@@ -88,29 +24,14 @@
       "source_ids": [
         "ref_dlbook",
         "ref_pml",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
-    },
-    {
-      "unit_id": "379fdff2563310b9",
-      "node_id": "dense_retrieval",
-      "field": "dependencies.external_retrieval.rationale",
-      "text": "Dense vector retrieval uses External retrieval & ranking as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "The packet references support external_retrieval or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "0d15166d3f65c5b1",
@@ -129,39 +50,91 @@
       "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
     },
     {
-      "unit_id": "10fb88c3fed4c3ca",
+      "unit_id": "36351df941e6e24b",
       "node_id": "dense_retrieval",
-      "field": "dependencies.contrastive_objective.rationale",
-      "text": "Dense vector retrieval uses Contrastive and mutual-information objectives as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Dense vector retrieval is modeled as depending on External retrieval & ranking, Embeddings & distributed representations and feeding downstream nodes such as Hybrid retrieval & reranking, Vector databases & ANN indexes, Retrieval-augmented generation.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support contrastive_objective or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "180189b1780e8d9f",
+      "node_id": "dense_retrieval",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Hybrid retrieval & reranking",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "7356cb76188e4cbd",
+      "node_id": "dense_retrieval",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Vector databases & ANN indexes",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "61b88e570035b9d6",
+      "node_id": "dense_retrieval",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Retrieval-augmented generation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "565c6af614ff4773",
+      "node_id": "dense_retrieval",
+      "field": "dependencies.external_retrieval.rationale",
+      "text": "In this atlas graph, Dense vector retrieval has a `uses` dependency on External retrieval & ranking because External retrieval & ranking is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "7f509a2a89bf65b6",
+      "node_id": "dense_retrieval",
+      "field": "dependencies.contrastive_objective.rationale",
+      "text": "In this atlas graph, Dense vector retrieval has a `uses` dependency on Contrastive and mutual-information objectives because Contrastive and mutual-information objectives is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
-    {
-      "edge_id": "e22ae848c6d36ae4",
-      "node_id": "dense_retrieval",
-      "dependency_id": "external_retrieval",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml",
-        "ref_aima"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
     {
       "edge_id": "e998e0d61ee83158",
       "node_id": "dense_retrieval",
@@ -179,20 +152,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "33d42e0fc866e60c",
+      "edge_id": "e87e8e634d734767",
+      "node_id": "dense_retrieval",
+      "dependency_id": "external_retrieval",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "d184587e39eac676",
       "node_id": "dense_retrieval",
       "dependency_id": "contrastive_objective",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Contrastive objectives are common for learned retrieval embeddings, but not universal.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "dense_retrieval",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

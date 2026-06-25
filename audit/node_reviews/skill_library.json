@@ -16,64 +16,20 @@
       "notes": "Reusable procedures/programs/workflows are defensible from procedural memory and planning/tool-use concepts; prompts as stored skills are modern synthesis."
     },
     {
-      "unit_id": "bff71c32afed7a58",
-      "node_id": "skill_library",
-      "field": "why_it_matters",
-      "text": "The role of Skill libraries, workflows & procedural plans is to connect Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Autonomous software-engineering agents, Multi-agent systems & organizational intelligence.",
-      "source_ids": [
-        "ref_aima",
-        "ref_react"
-      ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA planning/procedural-action topics support reusable procedures and plans at a textbook level.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Procedural memory and programs are relevant, but downstream software/multiagent roles are graph-derived."
-    },
-    {
-      "unit_id": "ba6eaf9d06e45fa1",
-      "node_id": "skill_library",
-      "field": "examples[1]",
-      "text": "substrate for Autonomous software-engineering agents",
-      "source_ids": [
-        "ref_aima",
-        "ref_react"
-      ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA planning/procedural-action topics support reusable procedures and plans at a textbook level.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Software agents can retrieve procedures/programs, but the cited sources do not directly cover autonomous software agents."
-    },
-    {
-      "unit_id": "1395c4e47018d089",
-      "node_id": "skill_library",
-      "field": "examples[2]",
-      "text": "substrate for Multi-agent systems & organizational intelligence",
-      "source_ids": [
-        "ref_aima",
-        "ref_react"
-      ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA planning/procedural-action topics support reusable procedures and plans at a textbook level.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The multiagent organizational downstream role is plausible but not directly sourced."
-    },
-    {
       "unit_id": "8757f568d6ce660f",
       "node_id": "skill_library",
       "field": "limitations[1]",
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations.",
       "source_ids": [
         "ref_aima",
-        "ref_react"
+        "ref_react",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA planning/procedural-action topics support reusable procedures and plans at a textbook level.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Generic search/self-evaluation limitation is not specific to skill libraries in inspected evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "b46ceab25c025a19",
@@ -91,34 +47,74 @@
       "notes": "Skill storage/retrieval maps to procedural memory concepts."
     },
     {
-      "unit_id": "1e5d9295d702c22c",
+      "unit_id": "c2d063e9a0146ee5",
       "node_id": "skill_library",
-      "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Skill libraries, workflows & procedural plans uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Skill libraries, workflows & procedural plans is modeled as depending on Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations and feeding downstream nodes such as Autonomous software-engineering agents, Multi-agent systems & organizational intelligence.",
       "source_ids": [
-        "ref_aima",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA planning/procedural-action topics support reusable procedures and plans at a textbook level.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Programs/workflows are reusable procedural artifacts; AST/IR wording is more specific than evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "9dae14f64ad93bfe",
+      "unit_id": "9cf8925d894b83eb",
       "node_id": "skill_library",
-      "field": "dependencies.agent_loop.rationale",
-      "text": "Skill libraries, workflows & procedural plans uses Observe–plan–act agent loops as a reusable ingredient in its defined operation.",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Autonomous software-engineering agents",
       "source_ids": [
-        "ref_aima",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks. AIMA planning/procedural-action topics support reusable procedures and plans at a textbook level.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Agent loops can retrieve and compose skills during action selection; common strength is defensible."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9feca25276a54df9",
+      "node_id": "skill_library",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Multi-agent systems & organizational intelligence",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "154dcc3557186721",
+      "node_id": "skill_library",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "In this atlas graph, Skill libraries, workflows & procedural plans has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "710db91b73d4be52",
+      "node_id": "skill_library",
+      "field": "dependencies.agent_loop.rationale",
+      "text": "In this atlas graph, Skill libraries, workflows & procedural plans has a `uses` dependency on Observe–plan–act agent loops because Observe–plan–act agent loops is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -138,34 +134,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "136e402e4f1e1e54",
+      "edge_id": "2ca355e83e287546",
       "node_id": "skill_library",
       "dependency_id": "programs_ast_ir",
       "source_ids": [
-        "ref_aima",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Program artifacts are core examples, though AST/IR is broader implementation detail.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "8d5331f15be0dc5d",
+      "edge_id": "668600d77049b334",
       "node_id": "skill_library",
       "dependency_id": "agent_loop",
       "source_ids": [
-        "ref_aima",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Agent loops commonly invoke skill libraries but do not define them.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "skill_library",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

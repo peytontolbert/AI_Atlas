@@ -1,19 +1,192 @@
 {
   "sentence_reviews": [
-    {"unit_id":"f9b021ebf25c250f","node_id":"gan","field":"definition","text":"A generative adversarial network trains a generator against a discriminator whose feedback pressures generated samples toward the data distribution.","source_ids":["ref_gan"],"evidence_location":"Goodfellow et al. 2014, Generative Adversarial Nets, abstract/model description.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The generator-discriminator minimax setup and pressure toward the data distribution are directly supported."},
-    {"unit_id":"77cdfcf8a849f767","node_id":"gan","field":"why_it_matters","text":"The role of Generative adversarial networks is to connect Adversarial minimax objectives, Adversarial examples & adversarial training to downstream capabilities including Image generation, editing & design.","source_ids":["ref_gan","ref_dlbook"],"evidence_location":"Goodfellow et al. 2014; Deep Learning adversarial/generative modeling background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Minimax and image-generation relevance are supported, but 'adversarial examples & adversarial training' is broader than GAN training and could be narrowed."},
-    {"unit_id":"a4f869bdda4fa32c","node_id":"gan","field":"examples[1]","text":"substrate for Image generation, editing & design","source_ids":["ref_gan"],"evidence_location":"Goodfellow et al. 2014 sample generation experiments.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"GANs are generative models demonstrated on images; editing/design is a downstream synthesis beyond the original paper."},
-    {"unit_id":"317d3502d80e0e5b","node_id":"gan","field":"examples[2]","text":"combined with Adversarial minimax objectives","source_ids":["ref_gan"],"evidence_location":"Goodfellow et al. 2014 minimax game objective.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The minimax objective is central to GANs."},
-    {"unit_id":"40ba12cfbb75fb47","node_id":"gan","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Adversarial minimax objectives, Adversarial examples & adversarial training.","source_ids":["ref_gan","ref_dlbook"],"evidence_location":"Goodfellow et al. 2014; Deep Learning optimization/generative modeling chapters.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Minimax dependency is supported, but adversarial examples/training and the generic limitations are not directly evidenced as written."},
-    {"unit_id":"a664d0c31e1fc318","node_id":"gan","field":"dependencies.adversarial_minimax.rationale","text":"Generative adversarial networks is learned, selected, or evaluated using the objective family Adversarial minimax objectives.","source_ids":["ref_gan"],"evidence_location":"Goodfellow et al. 2014 minimax game equation.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported by the original GAN objective."},
-    {"unit_id":"bf3b203cbfe5dded","node_id":"gan","field":"dependencies.adversarial_training_mechanism.rationale","text":"Generative adversarial networks is assembled in part from the mechanism or model component Adversarial examples & adversarial training.","source_ids":["ref_gan","ref_dlbook"],"evidence_location":"Goodfellow et al. 2014 adversarial generator-discriminator training.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"GANs use adversarial training in a broad sense, but the dependency label includes adversarial examples, which are a different concept."},
-    {"unit_id":"6c1e897052a397b4","node_id":"gan","field":"dependencies.cnn.rationale","text":"Generative adversarial networks extends or specializes the architecture family Convolutional neural networks.","source_ids":["ref_gan","ref_dlbook"],"evidence_location":"Goodfellow et al. 2014 uses multilayer perceptrons; Deep Learning CNN background.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"GANs are not inherently specializations of CNNs, even though many image GANs use convolutional architectures."},
-    {"unit_id":"c02973c4657e3ee5","node_id":"gan","field":"dependencies.affine_dense.rationale","text":"Generative adversarial networks is assembled in part from the mechanism or model component Affine transforms & dense layers.","source_ids":["ref_gan","ref_dlbook"],"evidence_location":"Goodfellow et al. 2014 neural networks; Deep Learning feedforward networks.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The original GAN uses neural-network generator/discriminator components; affine/dense layers are common but not required in all GAN variants."}
+    {
+      "unit_id": "f9b021ebf25c250f",
+      "node_id": "gan",
+      "field": "definition",
+      "text": "A generative adversarial network trains a generator against a discriminator whose feedback pressures generated samples toward the data distribution.",
+      "source_ids": [
+        "ref_gan"
+      ],
+      "evidence_location": "Goodfellow et al. 2014, Generative Adversarial Nets, abstract/model description.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The generator-discriminator minimax setup and pressure toward the data distribution are directly supported."
+    },
+    {
+      "unit_id": "317d3502d80e0e5b",
+      "node_id": "gan",
+      "field": "examples[2]",
+      "text": "combined with Adversarial minimax objectives",
+      "source_ids": [
+        "ref_gan"
+      ],
+      "evidence_location": "Goodfellow et al. 2014 minimax game objective.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The minimax objective is central to GANs."
+    },
+    {
+      "unit_id": "40ba12cfbb75fb47",
+      "node_id": "gan",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Adversarial minimax objectives, Adversarial examples & adversarial training.",
+      "source_ids": [
+        "ref_gan",
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "c02973c4657e3ee5",
+      "node_id": "gan",
+      "field": "dependencies.affine_dense.rationale",
+      "text": "Generative adversarial networks is assembled in part from the mechanism or model component Affine transforms & dense layers.",
+      "source_ids": [
+        "ref_gan",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Goodfellow et al. 2014 neural networks; Deep Learning feedforward networks.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The original GAN uses neural-network generator/discriminator components; affine/dense layers are common but not required in all GAN variants."
+    },
+    {
+      "unit_id": "52bb09fa50f06bd8",
+      "node_id": "gan",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Generative adversarial networks is modeled as depending on Adversarial minimax objectives, Adversarial examples & adversarial training and feeding downstream nodes such as Image generation, editing & design.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "89391bce6c68a6cf",
+      "node_id": "gan",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Image generation, editing & design",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "00d7c942c6323844",
+      "node_id": "gan",
+      "field": "dependencies.adversarial_minimax.rationale",
+      "text": "In this atlas graph, Generative adversarial networks has an `optimizes_for` dependency on Adversarial minimax objectives because Adversarial minimax objectives is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "393a1db6d6fc79a8",
+      "node_id": "gan",
+      "field": "dependencies.adversarial_training_mechanism.rationale",
+      "text": "In this atlas graph, Generative adversarial networks has a `composes` dependency on Adversarial examples & adversarial training with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "c0c9924dfccc185c",
+      "node_id": "gan",
+      "field": "dependencies.cnn.rationale",
+      "text": "In this atlas graph, Generative adversarial networks has a `specializes` dependency on Convolutional neural networks with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"1ac45a011bed9706","node_id":"gan","dependency_id":"adversarial_minimax","source_ids":["ref_gan"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"optimizes_for/core is directly supported.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"5f4ecbee8d20af53","node_id":"gan","dependency_id":"adversarial_training_mechanism","source_ids":["ref_gan","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"composes/common is defensible for adversarial training, but the dependency label's adversarial-example component is overbroad.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"909d798238a641df","node_id":"gan","dependency_id":"cnn","source_ids":["ref_gan","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"GANs may use CNNs, but they do not specialize CNNs as a model family.","relationship_type_supported":false,"strength_supported":false},
-    {"edge_id":"23ab37aa21c80f57","node_id":"gan","dependency_id":"affine_dense","source_ids":["ref_gan","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"composes/common is plausible for neural generator/discriminator implementations.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "23ab37aa21c80f57",
+      "node_id": "gan",
+      "dependency_id": "affine_dense",
+      "source_ids": [
+        "ref_gan",
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "composes/common is plausible for neural generator/discriminator implementations.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "7446533d5ce3224f",
+      "node_id": "gan",
+      "dependency_id": "adversarial_minimax",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "d8f46b41aac1bdbe",
+      "node_id": "gan",
+      "dependency_id": "adversarial_training_mechanism",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "1968dfb4d84a2151",
+      "node_id": "gan",
+      "dependency_id": "cnn",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "gan",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

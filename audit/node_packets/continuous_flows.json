@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "An invertible or continuous-time transformation transports samples between distributions.",
-    "why_it_matters": "The role of Continuous normalizing flows & learned vector fields is to connect Flow matching & transport objectives, Differential equations to downstream capabilities including Normalizing, rectified & flow-matching models.",
+    "why_it_matters": "In this atlas graph, Continuous normalizing flows & learned vector fields is modeled as depending on Flow matching & transport objectives, Differential equations and feeding downstream nodes such as Normalizing, rectified & flow-matching models.",
     "examples": [
-      "substrate for Normalizing, rectified & flow-matching models",
+      "atlas downstream link to Normalizing, rectified & flow-matching models",
       "combined with Flow matching & transport objectives"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "flow_matching",
         "type": "uses",
         "strength": "common",
-        "rationale": "Continuous normalizing flows & learned vector fields uses Flow matching & transport objectives as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Continuous normalizing flows & learned vector fields has a `uses` dependency on Flow matching & transport objectives because Flow matching & transport objectives is modeled as a reusable ingredient for the node."
       },
       {
         "id": "differential_equations",
         "type": "uses",
         "strength": "core",
-        "rationale": "Continuous normalizing flows & learned vector fields uses Differential equations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Continuous normalizing flows & learned vector fields has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "differentiable_sampling",
         "type": "composes",
         "strength": "common",
-        "rationale": "Continuous normalizing flows & learned vector fields is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
+        "rationale": "In this atlas graph, Continuous normalizing flows & learned vector fields has a `composes` dependency on Reparameterization & differentiable sampling with `common` strength."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "An invertible or continuous-time transformation transports samples between distributions."
     },
     {
-      "unit_id": "5e4a90ef6ec133bc",
+      "unit_id": "eb99b5cb22d688c4",
       "node_id": "continuous_flows",
       "field": "why_it_matters",
-      "text": "The role of Continuous normalizing flows & learned vector fields is to connect Flow matching & transport objectives, Differential equations to downstream capabilities including Normalizing, rectified & flow-matching models."
+      "text": "In this atlas graph, Continuous normalizing flows & learned vector fields is modeled as depending on Flow matching & transport objectives, Differential equations and feeding downstream nodes such as Normalizing, rectified & flow-matching models."
     },
     {
-      "unit_id": "dfd36f8b463d7533",
+      "unit_id": "650812a31d01a60c",
       "node_id": "continuous_flows",
       "field": "examples[1]",
-      "text": "substrate for Normalizing, rectified & flow-matching models"
+      "text": "atlas downstream link to Normalizing, rectified & flow-matching models"
     },
     {
       "unit_id": "d27db9ab0054c40d",
@@ -82,48 +82,48 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Flow matching & transport objectives, Differential equations."
     },
     {
-      "unit_id": "dbeb79399b594e88",
+      "unit_id": "7484a7ec43fa8fda",
       "node_id": "continuous_flows",
       "field": "dependencies.flow_matching.rationale",
-      "text": "Continuous normalizing flows & learned vector fields uses Flow matching & transport objectives as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Continuous normalizing flows & learned vector fields has a `uses` dependency on Flow matching & transport objectives because Flow matching & transport objectives is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "36935f3d7d922547",
+      "unit_id": "c47df1bd9bd76a61",
       "node_id": "continuous_flows",
       "field": "dependencies.differential_equations.rationale",
-      "text": "Continuous normalizing flows & learned vector fields uses Differential equations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Continuous normalizing flows & learned vector fields has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "29244ef3d2819fc6",
+      "unit_id": "5ef4162d4b89d3b7",
       "node_id": "continuous_flows",
       "field": "dependencies.differentiable_sampling.rationale",
-      "text": "Continuous normalizing flows & learned vector fields is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
+      "text": "In this atlas graph, Continuous normalizing flows & learned vector fields has a `composes` dependency on Reparameterization & differentiable sampling with `common` strength."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "d7ef64a67a18785c",
+      "edge_id": "ff3323d22a6169a4",
       "node_id": "continuous_flows",
       "dependency_id": "flow_matching",
       "type": "uses",
       "strength": "common",
-      "rationale": "Continuous normalizing flows & learned vector fields uses Flow matching & transport objectives as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Continuous normalizing flows & learned vector fields has a `uses` dependency on Flow matching & transport objectives because Flow matching & transport objectives is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "cfed970e26a7f9af",
+      "edge_id": "feec57146eafcb9d",
       "node_id": "continuous_flows",
       "dependency_id": "differential_equations",
       "type": "uses",
       "strength": "core",
-      "rationale": "Continuous normalizing flows & learned vector fields uses Differential equations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Continuous normalizing flows & learned vector fields has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "7f385b7ede286432",
+      "edge_id": "b623101d2ffb1f4e",
       "node_id": "continuous_flows",
       "dependency_id": "differentiable_sampling",
       "type": "composes",
       "strength": "common",
-      "rationale": "Continuous normalizing flows & learned vector fields is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
+      "rationale": "In this atlas graph, Continuous normalizing flows & learned vector fields has a `composes` dependency on Reparameterization & differentiable sampling with `common` strength."
     }
   ],
   "candidate_references": {

@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Long-context memory compresses, summarizes, selects, or hierarchically indexes prior tokens so useful information can survive beyond a model’s active window.",
-    "why_it_matters": "The role of Long-context attention, compression & summarization memory is to connect Sparse, local, linear & recurrent attention, Context windows & working memory to downstream capabilities including Neural search, RAG & question answering, Tutoring, translation & knowledge work.",
+    "why_it_matters": "In this atlas graph, Long-context attention, compression & summarization memory is modeled as depending on Sparse, local, linear & recurrent attention, Context windows & working memory and feeding downstream nodes such as Neural search, RAG & question answering, Tutoring, translation & knowledge work.",
     "examples": [
-      "substrate for Neural search, RAG & question answering",
-      "substrate for Tutoring, translation & knowledge work"
+      "atlas downstream link to Neural search, RAG & question answering",
+      "atlas downstream link to Tutoring, translation & knowledge work"
     ],
     "limitations": [
       "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sparse, local, linear & recurrent attention, Context windows & working memory."
@@ -34,7 +34,7 @@
         "id": "efficient_attention",
         "type": "uses",
         "strength": "core",
-        "rationale": "Long-context attention, compression & summarization memory uses Sparse, local, linear & recurrent attention as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Long-context attention, compression & summarization memory has a `uses` dependency on Sparse, local, linear & recurrent attention because Sparse, local, linear & recurrent attention is modeled as a reusable ingredient for the node."
       },
       {
         "id": "context_working_memory",
@@ -58,22 +58,22 @@
       "text": "Long-context memory compresses, summarizes, selects, or hierarchically indexes prior tokens so useful information can survive beyond a model’s active window."
     },
     {
-      "unit_id": "75fddf0ef3789183",
+      "unit_id": "dc9b543dfa05f246",
       "node_id": "long_context_compression",
       "field": "why_it_matters",
-      "text": "The role of Long-context attention, compression & summarization memory is to connect Sparse, local, linear & recurrent attention, Context windows & working memory to downstream capabilities including Neural search, RAG & question answering, Tutoring, translation & knowledge work."
+      "text": "In this atlas graph, Long-context attention, compression & summarization memory is modeled as depending on Sparse, local, linear & recurrent attention, Context windows & working memory and feeding downstream nodes such as Neural search, RAG & question answering, Tutoring, translation & knowledge work."
     },
     {
-      "unit_id": "656826d30819a590",
+      "unit_id": "a96f4c6cf822cdf4",
       "node_id": "long_context_compression",
       "field": "examples[1]",
-      "text": "substrate for Neural search, RAG & question answering"
+      "text": "atlas downstream link to Neural search, RAG & question answering"
     },
     {
-      "unit_id": "23a0de248d2da841",
+      "unit_id": "a6fdc228d449482f",
       "node_id": "long_context_compression",
       "field": "examples[2]",
-      "text": "substrate for Tutoring, translation & knowledge work"
+      "text": "atlas downstream link to Tutoring, translation & knowledge work"
     },
     {
       "unit_id": "fec41074ed2861c9",
@@ -82,10 +82,10 @@
       "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sparse, local, linear & recurrent attention, Context windows & working memory."
     },
     {
-      "unit_id": "bd6d059d28e1f470",
+      "unit_id": "dbbbf66fb3309356",
       "node_id": "long_context_compression",
       "field": "dependencies.efficient_attention.rationale",
-      "text": "Long-context attention, compression & summarization memory uses Sparse, local, linear & recurrent attention as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Long-context attention, compression & summarization memory has a `uses` dependency on Sparse, local, linear & recurrent attention because Sparse, local, linear & recurrent attention is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "d3f30120921af5bc",
@@ -102,12 +102,12 @@
   ],
   "edge_units": [
     {
-      "edge_id": "efd0220b3de0b5b4",
+      "edge_id": "cb1c73b2131097f2",
       "node_id": "long_context_compression",
       "dependency_id": "efficient_attention",
       "type": "uses",
       "strength": "core",
-      "rationale": "Long-context attention, compression & summarization memory uses Sparse, local, linear & recurrent attention as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Long-context attention, compression & summarization memory has a `uses` dependency on Sparse, local, linear & recurrent attention because Sparse, local, linear & recurrent attention is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "5f75f66552c62b4e",

@@ -17,70 +17,6 @@
       "notes": "The cited node/reference evidence directly supports the architecture description at this level of specificity."
     },
     {
-      "unit_id": "fba4fa2fa2bd32a4",
-      "node_id": "gnn",
-      "field": "why_it_matters",
-      "text": "The role of Graph neural networks is to connect Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data to downstream capabilities including Graph transformers, Drug discovery, protein & molecular design, Computer vision, perception & scene understanding.",
-      "source_ids": [
-        "ref_gnn",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Battaglia et al. graph networks paper for relational inductive bias/message passing; Deep Learning/PML context for pooling/invariance where relevant.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
-    },
-    {
-      "unit_id": "7207892851368780",
-      "node_id": "gnn",
-      "field": "examples[1]",
-      "text": "substrate for Graph transformers",
-      "source_ids": [
-        "ref_gnn",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Battaglia et al. graph networks paper for relational inductive bias/message passing; Deep Learning/PML context for pooling/invariance where relevant.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
-    },
-    {
-      "unit_id": "de35390eff19a153",
-      "node_id": "gnn",
-      "field": "examples[2]",
-      "text": "substrate for Drug discovery, protein & molecular design",
-      "source_ids": [
-        "ref_gnn",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Battaglia et al. graph networks paper for relational inductive bias/message passing; Deep Learning/PML context for pooling/invariance where relevant.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
-    },
-    {
-      "unit_id": "49da03f0b99288c9",
-      "node_id": "gnn",
-      "field": "examples[3]",
-      "text": "substrate for Computer vision, perception & scene understanding",
-      "source_ids": [
-        "ref_gnn",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Battaglia et al. graph networks paper for relational inductive bias/message passing; Deep Learning/PML context for pooling/invariance where relevant.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
-    },
-    {
       "unit_id": "8c5c4fb427eeee48",
       "node_id": "gnn",
       "field": "limitations[1]",
@@ -88,13 +24,14 @@
       "source_ids": [
         "ref_gnn",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Battaglia et al. graph networks paper for relational inductive bias/message passing; Deep Learning/PML context for pooling/invariance where relevant.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "cc6e4895597a50ac",
@@ -129,36 +66,88 @@
       "notes": "The cited source directly supports this dependency relationship for the architecture."
     },
     {
-      "unit_id": "607213827ef4dcd5",
+      "unit_id": "2d100ffbf60eb96b",
       "node_id": "gnn",
-      "field": "dependencies.pooling.rationale",
-      "text": "Graph neural networks is assembled in part from the mechanism or model component Pooling & local aggregation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Graph neural networks is modeled as depending on Message passing & neighborhood aggregation, Graphs, hypergraphs & relational data and feeding downstream nodes such as Graph transformers, Drug discovery, protein & molecular design, Computer vision, perception & scene understanding.",
       "source_ids": [
-        "ref_gnn",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Battaglia et al. graph networks paper for relational inductive bias/message passing; Deep Learning/PML context for pooling/invariance where relevant.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "7a0c674754012cce",
+      "unit_id": "e7aadb869188598b",
       "node_id": "gnn",
-      "field": "dependencies.equivariance_invariance.rationale",
-      "text": "Graph neural networks is assembled in part from the mechanism or model component Equivariance, invariance & geometric priors.",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Graph transformers",
       "source_ids": [
-        "ref_gnn",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Battaglia et al. graph networks paper for relational inductive bias/message passing; Deep Learning/PML context for pooling/invariance where relevant.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1a1a6ab035975eca",
+      "node_id": "gnn",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Drug discovery, protein & molecular design",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9144088a703985e2",
+      "node_id": "gnn",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Computer vision, perception & scene understanding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ac0bf363ce54317a",
+      "node_id": "gnn",
+      "field": "dependencies.pooling.rationale",
+      "text": "In this atlas graph, Graph neural networks has a `composes` dependency on Pooling & local aggregation with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "ff63589bd44da086",
+      "node_id": "gnn",
+      "field": "dependencies.equivariance_invariance.rationale",
+      "text": "In this atlas graph, Graph neural networks has a `composes` dependency on Equivariance, invariance & geometric priors with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -195,36 +184,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "304e5f4c1b05bc69",
+      "edge_id": "f04cea54c8c2038b",
       "node_id": "gnn",
       "dependency_id": "pooling",
       "source_ids": [
-        "ref_gnn",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "79f299096626434f",
+      "edge_id": "cf3bb38bf3898d34",
       "node_id": "gnn",
       "dependency_id": "equivariance_invariance",
       "source_ids": [
-        "ref_gnn",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "gnn",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

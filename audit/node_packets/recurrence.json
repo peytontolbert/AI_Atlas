@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "A state is repeatedly updated as inputs arrive, enabling temporal dependence and iterative computation.",
-    "why_it_matters": "The role of Recurrence & feedback state is to connect Sequences, events & time series, Gating & multiplicative control to downstream capabilities including Differentiable memory read/write, Recurrent neural networks, Energy-based, Hopfield & Boltzmann models.",
+    "why_it_matters": "In this atlas graph, Recurrence & feedback state is modeled as depending on Sequences, events & time series, Gating & multiplicative control and feeding downstream nodes such as Differentiable memory read/write, Recurrent neural networks, Energy-based, Hopfield & Boltzmann models.",
     "examples": [
-      "substrate for Differentiable memory read/write",
-      "substrate for Recurrent neural networks",
-      "substrate for Energy-based, Hopfield & Boltzmann models"
+      "atlas downstream link to Differentiable memory read/write",
+      "atlas downstream link to Recurrent neural networks",
+      "atlas downstream link to Energy-based, Hopfield & Boltzmann models"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Sequences, events & time series, Gating & multiplicative control."
@@ -35,7 +35,7 @@
         "id": "sequences_time",
         "type": "uses",
         "strength": "core",
-        "rationale": "Recurrence & feedback state uses Sequences, events & time series as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Recurrence & feedback state has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
       },
       {
         "id": "gating",
@@ -47,7 +47,7 @@
         "id": "dynamical_control",
         "type": "uses",
         "strength": "common",
-        "rationale": "Recurrence & feedback state uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Recurrence & feedback state has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -59,28 +59,28 @@
       "text": "A state is repeatedly updated as inputs arrive, enabling temporal dependence and iterative computation."
     },
     {
-      "unit_id": "9461e36098dbbef3",
+      "unit_id": "50646ab5a8a3f762",
       "node_id": "recurrence",
       "field": "why_it_matters",
-      "text": "The role of Recurrence & feedback state is to connect Sequences, events & time series, Gating & multiplicative control to downstream capabilities including Differentiable memory read/write, Recurrent neural networks, Energy-based, Hopfield & Boltzmann models."
+      "text": "In this atlas graph, Recurrence & feedback state is modeled as depending on Sequences, events & time series, Gating & multiplicative control and feeding downstream nodes such as Differentiable memory read/write, Recurrent neural networks, Energy-based, Hopfield & Boltzmann models."
     },
     {
-      "unit_id": "aa007239febcb1d3",
+      "unit_id": "aec72e1af706d715",
       "node_id": "recurrence",
       "field": "examples[1]",
-      "text": "substrate for Differentiable memory read/write"
+      "text": "atlas downstream link to Differentiable memory read/write"
     },
     {
-      "unit_id": "6253d01dc315eda6",
+      "unit_id": "ae962dcffa2c39b0",
       "node_id": "recurrence",
       "field": "examples[2]",
-      "text": "substrate for Recurrent neural networks"
+      "text": "atlas downstream link to Recurrent neural networks"
     },
     {
-      "unit_id": "423324af1cbd9a12",
+      "unit_id": "5670845990514965",
       "node_id": "recurrence",
       "field": "examples[3]",
-      "text": "substrate for Energy-based, Hopfield & Boltzmann models"
+      "text": "atlas downstream link to Energy-based, Hopfield & Boltzmann models"
     },
     {
       "unit_id": "6112ec7f7635876d",
@@ -89,10 +89,10 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Sequences, events & time series, Gating & multiplicative control."
     },
     {
-      "unit_id": "4fe5e6bd376456ba",
+      "unit_id": "8e33f55e3b4e58b0",
       "node_id": "recurrence",
       "field": "dependencies.sequences_time.rationale",
-      "text": "Recurrence & feedback state uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Recurrence & feedback state has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "75271917e0d13603",
@@ -101,20 +101,20 @@
       "text": "Recurrence & feedback state is assembled in part from the mechanism or model component Gating & multiplicative control."
     },
     {
-      "unit_id": "3d4b300c462e60be",
+      "unit_id": "50cb265fb3a6b462",
       "node_id": "recurrence",
       "field": "dependencies.dynamical_control.rationale",
-      "text": "Recurrence & feedback state uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Recurrence & feedback state has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "543e6cc649cb2f1d",
+      "edge_id": "7d587cebcd946a2d",
       "node_id": "recurrence",
       "dependency_id": "sequences_time",
       "type": "uses",
       "strength": "core",
-      "rationale": "Recurrence & feedback state uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Recurrence & feedback state has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "da91d0d7dd753fb0",
@@ -125,12 +125,12 @@
       "rationale": "Recurrence & feedback state is assembled in part from the mechanism or model component Gating & multiplicative control."
     },
     {
-      "edge_id": "0b7f0abc920412d2",
+      "edge_id": "547abb9919950102",
       "node_id": "recurrence",
       "dependency_id": "dynamical_control",
       "type": "uses",
       "strength": "common",
-      "rationale": "Recurrence & feedback state uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Recurrence & feedback state has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

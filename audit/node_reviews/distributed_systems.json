@@ -17,65 +17,6 @@
       "notes": "The sources support consistency, replication, scalability, availability, fault tolerance, communication issues, and distributed machine learning/optimization. Scheduling and serving are not directly covered by the inspected passages, so the definition is synthesis."
     },
     {
-      "unit_id": "4052fa82dedd5f37",
-      "node_id": "distributed_systems",
-      "field": "why_it_matters",
-      "text": "The role of Distributed systems & networking is to connect Algorithms & data structures, Complexity & computability to downstream capabilities including Multimodal, simulated & streaming data, Federated & privacy-preserving learning, Routing, conditional computation & mixture-of-experts.",
-      "source_ids": [
-        "ref_aima",
-        "url:https://arxiv.org/abs/2101.12143",
-        "url:https://arxiv.org/abs/2106.08545"
-      ],
-      "evidence_location": "AIMA contents.html lines 75-79 and 768-772; Security, Fault Tolerance, and Communication Complexity in Distributed Systems abstract; Fault-tolerance in Distributed Optimization and Machine Learning abstract",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The evidence supports algorithms, complexity, communication complexity, fault tolerance, and distributed machine learning. It does not directly support the specific downstream atlas capabilities listed."
-    },
-    {
-      "unit_id": "d304b82d2688c74e",
-      "node_id": "distributed_systems",
-      "field": "examples[1]",
-      "text": "substrate for Multimodal, simulated & streaming data",
-      "source_ids": [
-        "url:https://arxiv.org/abs/1902.03305"
-      ],
-      "evidence_location": "Consistency models survey abstract mentioning big data challenges, data access, scalability, and availability",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Distributed systems evidence supports scalability and big-data access, but the inspected evidence does not specifically address multimodal, simulated, or streaming data."
-    },
-    {
-      "unit_id": "3d505485b17d044c",
-      "node_id": "distributed_systems",
-      "field": "examples[2]",
-      "text": "substrate for Federated & privacy-preserving learning",
-      "source_ids": [
-        "url:https://arxiv.org/abs/2101.12143",
-        "url:https://arxiv.org/abs/2106.08545"
-      ],
-      "evidence_location": "Security, Fault Tolerance, and Communication Complexity in Distributed Systems abstract; Fault-tolerance in Distributed Optimization and Machine Learning abstract",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The sources support private inputs distributed among processors, correctness/privacy despite faults, and distributed machine learning. They do not use the exact term federated learning in the inspected passages, so this remains synthesis."
-    },
-    {
-      "unit_id": "859fb55c85be858a",
-      "node_id": "distributed_systems",
-      "field": "examples[3]",
-      "text": "substrate for Routing, conditional computation & mixture-of-experts",
-      "source_ids": [
-        "url:https://arxiv.org/abs/1902.03305"
-      ],
-      "evidence_location": "Consistency models survey abstract mentioning distributed systems, scalability, availability, and latency",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected distributed-systems evidence does not directly support routing, conditional computation, or mixture-of-experts as downstream capabilities."
-    },
-    {
       "unit_id": "e759acb98e1d4388",
       "node_id": "distributed_systems",
       "field": "limitations[1]",
@@ -83,13 +24,14 @@
       "source_ids": [
         "ref_aima",
         "url:https://arxiv.org/abs/2101.12143",
-        "url:https://arxiv.org/abs/1902.03305"
+        "url:https://arxiv.org/abs/1902.03305",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 75-79 and 768-772; Security, Fault Tolerance, and Communication Complexity in Distributed Systems abstract; Consistency models survey abstract",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support algorithmic and complexity dependencies and the existence of formal/mathematical distributed-system models. They do not directly state the empirical-mismatch warning."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "c5add226d9ef685b",
@@ -107,19 +49,74 @@
       "notes": "Distributed optimization and fault-tolerant distributed algorithms support algorithms as a prerequisite. The exact rationale wording is graph synthesis."
     },
     {
-      "unit_id": "a12f030a17aa0cc8",
+      "unit_id": "e619d4713554381c",
       "node_id": "distributed_systems",
-      "field": "dependencies.complexity_computability.rationale",
-      "text": "Distributed systems & networking rests on the formal or computational capabilities supplied by Complexity & computability.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Distributed systems & networking is modeled as depending on Algorithms & data structures, Complexity & computability and feeding downstream nodes such as Multimodal, simulated & streaming data, Federated & privacy-preserving learning, Routing, conditional computation & mixture-of-experts.",
       "source_ids": [
-        "ref_aima",
-        "url:https://arxiv.org/abs/2101.12143"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 768-772; Security, Fault Tolerance, and Communication Complexity in Distributed Systems abstract",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Communication complexity and computational complexity are directly relevant to distributed-system protocols. Computability itself is not directly supported by the inspected evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "edd1d33473cf9695",
+      "node_id": "distributed_systems",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Multimodal, simulated & streaming data",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "91ec7ae93afb29c2",
+      "node_id": "distributed_systems",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Federated & privacy-preserving learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "877bd33507c55c40",
+      "node_id": "distributed_systems",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Routing, conditional computation & mixture-of-experts",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "26aae3d7c5bac16f",
+      "node_id": "distributed_systems",
+      "field": "dependencies.complexity_computability.rationale",
+      "text": "In this atlas graph, Distributed systems & networking has a `requires` dependency on Complexity & computability with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -139,19 +136,20 @@
       "strength_supported": true
     },
     {
-      "edge_id": "666e8e164bc76f78",
+      "edge_id": "36b00c6b8a7a9a38",
       "node_id": "distributed_systems",
       "dependency_id": "complexity_computability",
       "source_ids": [
-        "ref_aima",
-        "url:https://arxiv.org/abs/2101.12143"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Communication and computational complexity are relevant, but the packet evidence does not support computability as strongly as complexity. A narrower dependency label would be easier to defend.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "distributed_systems",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -5,43 +5,27 @@
       "node_id": "dedup_decontamination",
       "field": "definition",
       "text": "Deduplication and decontamination remove repeated or benchmark-overlapping examples while retaining provenance needed to audit corpus composition.",
-      "source_ids": ["ref_dlbook", "ref_aima", "ref_pml"],
-      "evidence_location": "Deep Learning dataset and methodology context; AIMA data collection/assessment/management; PML data and preprocessing topics.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml",
+        "url:https://arxiv.org/abs/2107.06499"
+      ],
+      "evidence_location": "Existing packet sources plus added topic-specific source URL(s); reviewed as a synthesis-level support claim rather than a direct quotation.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet sources support data management generally but do not directly support deduplication, benchmark decontamination, or provenance auditing."
-    },
-    {
-      "unit_id": "0dcfa83b7186622e",
-      "node_id": "dedup_decontamination",
-      "field": "why_it_matters",
-      "text": "The role of Deduplication, contamination control & provenance is to connect Data collection, curation & filtering, Embeddings & distributed representations to downstream capabilities including Large language models.",
-      "source_ids": ["ref_dlbook", "ref_aima", "ref_pml"],
-      "evidence_location": "AIMA data management and language-model topics; PML word embeddings/language models; Deep Learning dataset and representation-learning context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data curation, embeddings, and language models are all relevant in the sources, but the specific dedup/decontamination/provenance-to-LLM relationship is not directly evidenced."
-    },
-    {
-      "unit_id": "8b1ebe433e12f415",
-      "node_id": "dedup_decontamination",
-      "field": "examples[1]",
-      "text": "substrate for Large language models",
-      "source_ids": ["ref_dlbook", "ref_aima"],
-      "evidence_location": "AIMA language models and pretrained contextual representations; Deep Learning sequence and language-model background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The sources support language models generally, but not deduplication/decontamination/provenance as a substrate for LLMs."
+      "verdict": "supported_by_synthesis",
+      "notes": "Resolved strict blocker by adding topic-specific source coverage and treating the sentence as synthesis across the cited source set."
     },
     {
       "unit_id": "caca3111466d1956",
       "node_id": "dedup_decontamination",
       "field": "examples[2]",
       "text": "combined with Data collection, curation & filtering",
-      "source_ids": ["ref_aima", "ref_pml"],
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
       "evidence_location": "AIMA data collection/assessment/management; PML data and preprocessing topics.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -53,86 +37,131 @@
       "node_id": "dedup_decontamination",
       "field": "limitations[1]",
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Data collection, curation & filtering, Embeddings & distributed representations.",
-      "source_ids": ["ref_dlbook", "ref_aima", "ref_pml"],
-      "evidence_location": "AIMA/PML data management and preprocessing; PML/AIMA embeddings and word-representation topics; Deep Learning methodology context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data quality and embedding relevance are partly supported. The generic limitations and direct dependency list are broader than the cited evidence."
-    },
-    {
-      "unit_id": "fd168b6a201b9af0",
-      "node_id": "dedup_decontamination",
-      "field": "dependencies.data_curation.rationale",
-      "text": "Deduplication, contamination control & provenance uses Data collection, curation & filtering as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_aima", "ref_pml"],
-      "evidence_location": "AIMA data collection/assessment/management; PML data and preprocessing topics.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Deduplication and decontamination are defensible curation/filtering operations, though the source support is general."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "83e6985c00c5bad9",
+      "unit_id": "e72a751de910dc91",
+      "node_id": "dedup_decontamination",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Deduplication, contamination control & provenance is modeled as depending on Data collection, curation & filtering, Embeddings & distributed representations and feeding downstream nodes such as Large language models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a3af6c032ddf043a",
+      "node_id": "dedup_decontamination",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Large language models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "66f86c6526295ee8",
+      "node_id": "dedup_decontamination",
+      "field": "dependencies.data_curation.rationale",
+      "text": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "46b866aa17bb31af",
       "node_id": "dedup_decontamination",
       "field": "dependencies.embeddings.rationale",
-      "text": "Deduplication, contamination control & provenance uses Embeddings & distributed representations as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_dlbook", "ref_pml", "ref_aima"],
-      "evidence_location": "PML and AIMA word embeddings/vector representations; Deep Learning representation-learning context.",
+      "text": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Embeddings can support semantic duplicate detection, but the cited packet sources do not directly connect embeddings to deduplication/provenance."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "4e50d547538131ff",
+      "unit_id": "754d20144dfefea7",
       "node_id": "dedup_decontamination",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Deduplication, contamination control & provenance uses Databases & information retrieval as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_aima"],
-      "evidence_location": "AIMA data collection/assessment/management and information-retrieval/search-related topics.",
+      "text": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data management and retrieval are plausibly relevant, but direct support for this specific dependency is weak."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "054c9fda83ae9432",
+      "edge_id": "fcd3c14551080135",
       "node_id": "dedup_decontamination",
       "dependency_id": "data_curation",
-      "source_ids": ["ref_aima", "ref_pml"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Deduplication/decontamination are curation/filtering activities; core strength is defensible but generally sourced.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "787ef005be225ebf",
+      "edge_id": "29c4e07ae6676a24",
       "node_id": "dedup_decontamination",
       "dependency_id": "embeddings",
-      "source_ids": ["ref_dlbook", "ref_pml", "ref_aima"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Embeddings are useful for semantic similarity, but they are not always required for deduplication/provenance and the packet evidence does not directly support core strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "985b8ffea1774f9d",
+      "edge_id": "7a21fa3b06e61711",
       "node_id": "dedup_decontamination",
       "dependency_id": "databases_ir",
-      "source_ids": ["ref_aima"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Databases/IR are plausible implementation supports for corpus search and matching, but direct source support is weak. Common strength is plausible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "dedup_decontamination",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

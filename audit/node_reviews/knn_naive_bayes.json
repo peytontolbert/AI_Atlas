@@ -1,19 +1,196 @@
 {
   "sentence_reviews": [
-    {"unit_id":"ea7d20d4e7e8d203","node_id":"knn_naive_bayes","field":"definition","text":"k-nearest-neighbor methods predict from nearby stored examples, while Naive Bayes applies Bayes’ rule under class-conditional feature assumptions.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA, Ch. 19 nonparametric models including nearest-neighbor models and probabilistic learning; PML nearest neighbors and naive Bayes / Bayesian classifiers topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The definition is standard and supported across the cited textbook topics, though it combines two methods in one sentence."},
-    {"unit_id":"4658e0ef4230cdea","node_id":"knn_naive_bayes","field":"why_it_matters","text":"The role of k-NN & Naive Bayes is to connect Datasets, sampling & splits, Embeddings & distributed representations to downstream capabilities including Recommendation, ranking & personalization, Tabular predictive analytics & decision support.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA nearest-neighbor/nonparametric learning and probabilistic learning; PML data, nearest-neighbor, naive Bayes, and supervised learning topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The data and supervised-learning connections are supported, but embeddings and downstream recommendation/tabular decision-support claims are broad graph synthesis."},
-    {"unit_id":"de604ff07774fbbc","node_id":"knn_naive_bayes","field":"examples[1]","text":"substrate for Recommendation, ranking & personalization","source_ids":["ref_pml"],"evidence_location":"PML nearest-neighbor/supervised learning topics; no direct recommender-system evidence in packet sources.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Nearest-neighbor ideas are plausible in recommendation, but the packet citations do not directly establish the downstream substrate claim."},
-    {"unit_id":"e04fdfb7faa38afb","node_id":"knn_naive_bayes","field":"examples[2]","text":"substrate for Tabular predictive analytics & decision support","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA and PML supervised classification/regression topics, including nearest-neighbor and naive Bayes classifiers.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Both methods are standard supervised classifiers for feature-table data; 'decision support' remains atlas phrasing."},
-    {"unit_id":"bfb6f4447f2fc94e","node_id":"knn_naive_bayes","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Datasets, sampling & splits, Embeddings & distributed representations.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA nearest-neighbor search/nonparametric models and probabilistic learning; PML model selection and classifier topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The cited sources support model families and data dependence, but the limitation wording and embeddings dependency are only partially evidenced."},
-    {"unit_id":"3e327d61f802995d","node_id":"knn_naive_bayes","field":"dependencies.datasets_sampling.rationale","text":"k-NN & Naive Bayes consumes, emits, or organizes information using Datasets, sampling & splits.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA learning from examples and nearest-neighbor methods; PML data and classifier topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Both methods operate over labeled examples/data; sampling/splits are broader evaluation context."},
-    {"unit_id":"aeb571b7fc798b4a","node_id":"knn_naive_bayes","field":"dependencies.embeddings.rationale","text":"k-NN & Naive Bayes consumes, emits, or organizes information using Embeddings & distributed representations.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA nearest-neighbor search and representation topics; PML representation/feature and nearest-neighbor topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"k-NN can operate on embedded representations, but naive Bayes does not require embeddings and the packet sources do not establish this as common for the combined node."},
-    {"unit_id":"5b0f88b388cf6225","node_id":"knn_naive_bayes","field":"dependencies.bayesian_approx_inference.rationale","text":"k-NN & Naive Bayes is learned, selected, or evaluated using the objective family Bayesian & approximate inference.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA probabilistic learning / naive Bayes; PML naive Bayes and Bayesian classification topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Naive Bayes uses Bayes' rule and probabilistic modeling, but k-NN is not Bayesian inference; the combined-node edge is only partially supported."},
-    {"unit_id":"b4fbdfdeace17642","node_id":"knn_naive_bayes","field":"dependencies.supervised_learning.rationale","text":"k-NN & Naive Bayes follows the learning setup expressed by Supervised learning.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA learning from examples and classifier topics; PML supervised classification with kNN/naive Bayes.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Both are standard supervised classification methods."}
+    {
+      "unit_id": "ea7d20d4e7e8d203",
+      "node_id": "knn_naive_bayes",
+      "field": "definition",
+      "text": "k-nearest-neighbor methods predict from nearby stored examples, while Naive Bayes applies Bayes’ rule under class-conditional feature assumptions.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "AIMA, Ch. 19 nonparametric models including nearest-neighbor models and probabilistic learning; PML nearest neighbors and naive Bayes / Bayesian classifiers topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition is standard and supported across the cited textbook topics, though it combines two methods in one sentence."
+    },
+    {
+      "unit_id": "bfb6f4447f2fc94e",
+      "node_id": "knn_naive_bayes",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Datasets, sampling & splits, Embeddings & distributed representations.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "3e327d61f802995d",
+      "node_id": "knn_naive_bayes",
+      "field": "dependencies.datasets_sampling.rationale",
+      "text": "k-NN & Naive Bayes consumes, emits, or organizes information using Datasets, sampling & splits.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "AIMA learning from examples and nearest-neighbor methods; PML data and classifier topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Both methods operate over labeled examples/data; sampling/splits are broader evaluation context."
+    },
+    {
+      "unit_id": "b4fbdfdeace17642",
+      "node_id": "knn_naive_bayes",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "k-NN & Naive Bayes follows the learning setup expressed by Supervised learning.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "AIMA learning from examples and classifier topics; PML supervised classification with kNN/naive Bayes.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Both are standard supervised classification methods."
+    },
+    {
+      "unit_id": "aa9748f40fb1f78f",
+      "node_id": "knn_naive_bayes",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, k-NN & Naive Bayes is modeled as depending on Datasets, sampling & splits, Embeddings & distributed representations and feeding downstream nodes such as Recommendation, ranking & personalization, Tabular predictive analytics & decision support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "88b3d26cfaed6dbf",
+      "node_id": "knn_naive_bayes",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Recommendation, ranking & personalization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "18ce061f227c7f87",
+      "node_id": "knn_naive_bayes",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Tabular predictive analytics & decision support",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "20489819a717043e",
+      "node_id": "knn_naive_bayes",
+      "field": "dependencies.bayesian_approx_inference.rationale",
+      "text": "In this atlas graph, k-NN & Naive Bayes has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2e61a2c5262b09d5",
+      "node_id": "knn_naive_bayes",
+      "field": "dependencies.embeddings.rationale",
+      "text": "In this atlas graph, k-NN & Naive Bayes has a `represents_with` dependency on Embeddings & distributed representations with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"7630008faff54f76","node_id":"knn_naive_bayes","dependency_id":"datasets_sampling","source_ids":["ref_aima","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Both methods depend on example datasets; represents_with/core is defensible for this atlas relation.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"3017e24da255b3df","node_id":"knn_naive_bayes","dependency_id":"embeddings","source_ids":["ref_aima","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Embedding representations can be used with k-NN, but this is not established for naive Bayes or as a common dependency by the packet evidence.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"d664942c26c6ffbc","node_id":"knn_naive_bayes","dependency_id":"bayesian_approx_inference","source_ids":["ref_aima","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The Bayesian connection is direct for naive Bayes but not k-NN; relationship type is partially supported, common strength is weak for the combined node.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"843ca6c1091a24ee","node_id":"knn_naive_bayes","dependency_id":"supervised_learning","source_ids":["ref_aima","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Both methods are standard supervised predictors/classifiers; trained_under/common is supported.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "7630008faff54f76",
+      "node_id": "knn_naive_bayes",
+      "dependency_id": "datasets_sampling",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Both methods depend on example datasets; represents_with/core is defensible for this atlas relation.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "843ca6c1091a24ee",
+      "node_id": "knn_naive_bayes",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Both methods are standard supervised predictors/classifiers; trained_under/common is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "960790fcaa63274e",
+      "node_id": "knn_naive_bayes",
+      "dependency_id": "bayesian_approx_inference",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "4def92fe6d825029",
+      "node_id": "knn_naive_bayes",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "knn_naive_bayes",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

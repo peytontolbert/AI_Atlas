@@ -15,102 +15,19 @@
       "notes": "ReAct directly supports interleaving actions with reasoning and external sources; typed arguments/function schemas are broader structured-tooling wording not explicit in the cited abstract."
     },
     {
-      "unit_id": "feb72c2b48ed1596",
-      "node_id": "tool_use_function_calling",
-      "field": "why_it_matters",
-      "text": "The role of Tool use & function calling is to connect Decoder-only causal transformers, Caches, APIs & tool interfaces to downstream capabilities including ReAct-style reasoning and acting, Observe–plan–act agent loops, Multimodal assistants & vision-language systems.",
-      "source_ids": [
-        "ref_react"
-      ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The ReAct connection to reasoning, acting, and external sources is supported, but decoder-only transformers, caches, and multimodal assistants are graph-level connections not directly established by the cited source."
-    },
-    {
-      "unit_id": "5a9b149689373396",
-      "node_id": "tool_use_function_calling",
-      "field": "examples[1]",
-      "text": "substrate for ReAct-style reasoning and acting",
-      "source_ids": [
-        "ref_react"
-      ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "ReAct is directly about interleaving reasoning traces and actions."
-    },
-    {
-      "unit_id": "6c6a71f19f3ce9d1",
-      "node_id": "tool_use_function_calling",
-      "field": "examples[2]",
-      "text": "substrate for Observe–plan–act agent loops",
-      "source_ids": [
-        "ref_react"
-      ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Observe-plan-act loops are a defensible abstraction of ReAct trajectories, but the exact phrase is not used in the cited source."
-    },
-    {
-      "unit_id": "eb431f927d7cca3a",
-      "node_id": "tool_use_function_calling",
-      "field": "examples[3]",
-      "text": "substrate for Multimodal assistants & vision-language systems",
-      "source_ids": [
-        "ref_react"
-      ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected ReAct source does not establish tool/function calling as a substrate for multimodal assistant systems."
-    },
-    {
       "unit_id": "43530e1b53ebd76d",
       "node_id": "tool_use_function_calling",
       "field": "limitations[1]",
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Caches, APIs & tool interfaces.",
       "source_ids": [
-        "ref_react"
+        "ref_react",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Search/tool use cost and hallucination/error propagation concerns are plausible from ReAct, but the full limitation and listed dependencies are not directly supported."
-    },
-    {
-      "unit_id": "babdecf13786b28f",
-      "node_id": "tool_use_function_calling",
-      "field": "dependencies.decoder_only_transformer.rationale",
-      "text": "Tool use & function calling uses Decoder-only causal transformers as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_react"
-      ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "ReAct uses LLMs, but the cited evidence does not narrow this to decoder-only causal transformers."
-    },
-    {
-      "unit_id": "9be442e1eec19cdb",
-      "node_id": "tool_use_function_calling",
-      "field": "dependencies.cache_tool_interfaces.rationale",
-      "text": "Tool use & function calling uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_react"
-      ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Actions interface with APIs/environments; cache/tool-interface wording is a broader implementation synthesis."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "4451c78399b4a5f5",
@@ -127,49 +44,105 @@
       "notes": "ReAct explicitly describes actions interfacing with external sources such as knowledge bases or environments."
     },
     {
-      "unit_id": "08f53c8a0897af9d",
+      "unit_id": "66a7cf2baf22dc10",
       "node_id": "tool_use_function_calling",
-      "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Tool use & function calling uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Tool use & function calling is modeled as depending on Decoder-only causal transformers, Caches, APIs & tool interfaces and feeding downstream nodes such as ReAct-style reasoning and acting, Observe–plan–act agent loops, Multimodal assistants & vision-language systems.",
       "source_ids": [
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Typed/function-call artifacts can be program-like, but the inspected ReAct evidence does not directly mention programs, ASTs, bytecode, or IR."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e732150cf4c8e254",
+      "node_id": "tool_use_function_calling",
+      "field": "examples[1]",
+      "text": "atlas downstream link to ReAct-style reasoning and acting",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e9c729776133b06f",
+      "node_id": "tool_use_function_calling",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Observe–plan–act agent loops",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f3fc3342a9031cb7",
+      "node_id": "tool_use_function_calling",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Multimodal assistants & vision-language systems",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5d5b7a6e623f9052",
+      "node_id": "tool_use_function_calling",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "In this atlas graph, Tool use & function calling has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "12e0c784f54b0df9",
+      "node_id": "tool_use_function_calling",
+      "field": "dependencies.cache_tool_interfaces.rationale",
+      "text": "In this atlas graph, Tool use & function calling has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "36f8ab55482b144f",
+      "node_id": "tool_use_function_calling",
+      "field": "dependencies.programs_ast_ir.rationale",
+      "text": "In this atlas graph, Tool use & function calling has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
-    {
-      "edge_id": "59819af1dbcf7ad5",
-      "node_id": "tool_use_function_calling",
-      "dependency_id": "decoder_only_transformer",
-      "source_ids": [
-        "ref_react"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "LLMs are supported, but decoder-only/core is narrower and stronger than the inspected evidence.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
-      "edge_id": "51c0a67eda9433ac",
-      "node_id": "tool_use_function_calling",
-      "dependency_id": "cache_tool_interfaces",
-      "source_ids": [
-        "ref_react"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Tool/API interfaces are central to ReAct-style actions; cache wording is broader but the uses/core edge is defensible for this atlas node.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
     {
       "edge_id": "3826eebc0e379b32",
       "node_id": "tool_use_function_calling",
@@ -185,18 +158,46 @@
       "strength_supported": true
     },
     {
-      "edge_id": "6f2c9dc83e185834",
+      "edge_id": "dc3db780e75a3bdf",
+      "node_id": "tool_use_function_calling",
+      "dependency_id": "decoder_only_transformer",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "e7a61a7132e5b1b6",
+      "node_id": "tool_use_function_calling",
+      "dependency_id": "cache_tool_interfaces",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "0ac4d8c8ae927695",
       "node_id": "tool_use_function_calling",
       "dependency_id": "programs_ast_ir",
       "source_ids": [
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Program-like representations are plausible for typed calls, but not directly evidenced.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "tool_use_function_calling",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Stochastic gradient descent estimates gradients from minibatches; momentum and related variants accumulate update direction to reduce noise and accelerate consistent descent.",
-    "why_it_matters": "The role of SGD, momentum & stochastic optimization is to connect Optimization theory, Calculus & automatic differentiation theory to downstream capabilities including Adam, Adafactor & adaptive optimizers.",
+    "why_it_matters": "In this atlas graph, SGD, momentum & stochastic optimization is modeled as depending on Optimization theory, Calculus & automatic differentiation theory and feeding downstream nodes such as Adam, Adafactor & adaptive optimizers.",
     "examples": [
-      "substrate for Adam, Adafactor & adaptive optimizers",
+      "atlas downstream link to Adam, Adafactor & adaptive optimizers",
       "combined with Optimization theory"
     ],
     "limitations": [
@@ -33,19 +33,19 @@
         "id": "optimization",
         "type": "uses",
         "strength": "core",
-        "rationale": "SGD, momentum & stochastic optimization uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "calculus",
         "type": "uses",
         "strength": "core",
-        "rationale": "SGD, momentum & stochastic optimization uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "datasets_sampling",
         "type": "uses",
         "strength": "common",
-        "rationale": "SGD, momentum & stochastic optimization uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,16 +57,16 @@
       "text": "Stochastic gradient descent estimates gradients from minibatches; momentum and related variants accumulate update direction to reduce noise and accelerate consistent descent."
     },
     {
-      "unit_id": "a873a77703a6949e",
+      "unit_id": "6b26bdc486cc2e96",
       "node_id": "sgd_variants",
       "field": "why_it_matters",
-      "text": "The role of SGD, momentum & stochastic optimization is to connect Optimization theory, Calculus & automatic differentiation theory to downstream capabilities including Adam, Adafactor & adaptive optimizers."
+      "text": "In this atlas graph, SGD, momentum & stochastic optimization is modeled as depending on Optimization theory, Calculus & automatic differentiation theory and feeding downstream nodes such as Adam, Adafactor & adaptive optimizers."
     },
     {
-      "unit_id": "f9a700b61fe3c841",
+      "unit_id": "faa8a4c5b0b6bb51",
       "node_id": "sgd_variants",
       "field": "examples[1]",
-      "text": "substrate for Adam, Adafactor & adaptive optimizers"
+      "text": "atlas downstream link to Adam, Adafactor & adaptive optimizers"
     },
     {
       "unit_id": "b5a921fca5a74c1d",
@@ -81,48 +81,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Optimization theory, Calculus & automatic differentiation theory."
     },
     {
-      "unit_id": "e973171a84564383",
+      "unit_id": "bd61063789e07dff",
       "node_id": "sgd_variants",
       "field": "dependencies.optimization.rationale",
-      "text": "SGD, momentum & stochastic optimization uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "e50e3efa697a7868",
+      "unit_id": "a36fecd4ee57bd0e",
       "node_id": "sgd_variants",
       "field": "dependencies.calculus.rationale",
-      "text": "SGD, momentum & stochastic optimization uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "1e62566636699471",
+      "unit_id": "49af288d2ef5cc40",
       "node_id": "sgd_variants",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "SGD, momentum & stochastic optimization uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "1d5ee9ab8745e326",
+      "edge_id": "1be948678ec58541",
       "node_id": "sgd_variants",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "core",
-      "rationale": "SGD, momentum & stochastic optimization uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "ca445bb0ddb5e2e0",
+      "edge_id": "2d5e961d730bcef3",
       "node_id": "sgd_variants",
       "dependency_id": "calculus",
       "type": "uses",
       "strength": "core",
-      "rationale": "SGD, momentum & stochastic optimization uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "fddbe623355d221e",
+      "edge_id": "c9bc3cbe150b17f5",
       "node_id": "sgd_variants",
       "dependency_id": "datasets_sampling",
       "type": "uses",
       "strength": "common",
-      "rationale": "SGD, momentum & stochastic optimization uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

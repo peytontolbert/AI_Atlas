@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Continual and test-time adaptation update a model, memory, statistics, or prompts as distributions and tasks change after the initial training run.",
-    "why_it_matters": "The role of Continual learning & test-time adaptation pipelines is to connect Continual & online learning, In-context & test-time learning to downstream capabilities including Knowledge editing & memory consolidation.",
+    "why_it_matters": "In this atlas graph, Continual learning & test-time adaptation pipelines is modeled as depending on Continual & online learning, In-context & test-time learning and feeding downstream nodes such as Knowledge editing & memory consolidation.",
     "examples": [
-      "substrate for Knowledge editing & memory consolidation",
+      "atlas downstream link to Knowledge editing & memory consolidation",
       "combined with Continual & online learning"
     ],
     "limitations": [
@@ -33,19 +33,19 @@
         "id": "continual_online_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Continual learning & test-time adaptation pipelines uses Continual & online learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Continual learning & test-time adaptation pipelines has a `uses` dependency on Continual & online learning because Continual & online learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "incontext_testtime_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Continual learning & test-time adaptation pipelines uses In-context & test-time learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Continual learning & test-time adaptation pipelines has a `uses` dependency on In-context & test-time learning because In-context & test-time learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "sft_instruction",
         "type": "uses",
         "strength": "common",
-        "rationale": "Continual learning & test-time adaptation pipelines uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Continual learning & test-time adaptation pipelines has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,16 +57,16 @@
       "text": "Continual and test-time adaptation update a model, memory, statistics, or prompts as distributions and tasks change after the initial training run."
     },
     {
-      "unit_id": "d0e5ee536623e30b",
+      "unit_id": "bf75740daeff82df",
       "node_id": "continual_testtime_adaptation",
       "field": "why_it_matters",
-      "text": "The role of Continual learning & test-time adaptation pipelines is to connect Continual & online learning, In-context & test-time learning to downstream capabilities including Knowledge editing & memory consolidation."
+      "text": "In this atlas graph, Continual learning & test-time adaptation pipelines is modeled as depending on Continual & online learning, In-context & test-time learning and feeding downstream nodes such as Knowledge editing & memory consolidation."
     },
     {
-      "unit_id": "aed64109cc4c9df2",
+      "unit_id": "d61cdd4275119200",
       "node_id": "continual_testtime_adaptation",
       "field": "examples[1]",
-      "text": "substrate for Knowledge editing & memory consolidation"
+      "text": "atlas downstream link to Knowledge editing & memory consolidation"
     },
     {
       "unit_id": "2634fcd30b6dbda4",
@@ -81,48 +81,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Continual & online learning, In-context & test-time learning."
     },
     {
-      "unit_id": "847ee8ac58cf5418",
+      "unit_id": "48c12a45c05b6b8e",
       "node_id": "continual_testtime_adaptation",
       "field": "dependencies.continual_online_learning.rationale",
-      "text": "Continual learning & test-time adaptation pipelines uses Continual & online learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Continual learning & test-time adaptation pipelines has a `uses` dependency on Continual & online learning because Continual & online learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "9c388d168e729267",
+      "unit_id": "d7c7891af60d5c91",
       "node_id": "continual_testtime_adaptation",
       "field": "dependencies.incontext_testtime_learning.rationale",
-      "text": "Continual learning & test-time adaptation pipelines uses In-context & test-time learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Continual learning & test-time adaptation pipelines has a `uses` dependency on In-context & test-time learning because In-context & test-time learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "062c01822edacc31",
+      "unit_id": "b56e7d7edf91b1ef",
       "node_id": "continual_testtime_adaptation",
       "field": "dependencies.sft_instruction.rationale",
-      "text": "Continual learning & test-time adaptation pipelines uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Continual learning & test-time adaptation pipelines has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "0d26289b6f0d6f92",
+      "edge_id": "974365bdb7f7e59a",
       "node_id": "continual_testtime_adaptation",
       "dependency_id": "continual_online_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Continual learning & test-time adaptation pipelines uses Continual & online learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Continual learning & test-time adaptation pipelines has a `uses` dependency on Continual & online learning because Continual & online learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "1e84e76c0fb0bb1b",
+      "edge_id": "bae3e32555c3c1fc",
       "node_id": "continual_testtime_adaptation",
       "dependency_id": "incontext_testtime_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Continual learning & test-time adaptation pipelines uses In-context & test-time learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Continual learning & test-time adaptation pipelines has a `uses` dependency on In-context & test-time learning because In-context & test-time learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "b5c6404a23d79586",
+      "edge_id": "0499c2c9a67acfca",
       "node_id": "continual_testtime_adaptation",
       "dependency_id": "sft_instruction",
       "type": "uses",
       "strength": "common",
-      "rationale": "Continual learning & test-time adaptation pipelines uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Continual learning & test-time adaptation pipelines has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

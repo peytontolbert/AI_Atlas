@@ -15,76 +15,20 @@
       "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
     },
     {
-      "unit_id": "ac91df85355b45dd",
-      "node_id": "cross_attention",
-      "field": "why_it_matters",
-      "text": "The role of Cross-attention & co-attention is to connect Self-attention, Multimodal, simulated & streaming data to downstream capabilities including Encoder\u2013decoder transformers, Vision Transformers & Perceiver-style latent models, Multimodal foundation models.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
-      "unit_id": "3c00e21d0f5bf646",
-      "node_id": "cross_attention",
-      "field": "examples[1]",
-      "text": "substrate for Encoder\u2013decoder transformers",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated."
-    },
-    {
-      "unit_id": "0ea6eaf2b79ec5bd",
-      "node_id": "cross_attention",
-      "field": "examples[2]",
-      "text": "substrate for Vision Transformers & Perceiver-style latent models",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
-      "unit_id": "063ee22555b6bb15",
-      "node_id": "cross_attention",
-      "field": "examples[3]",
-      "text": "substrate for Multimodal foundation models",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
-    },
-    {
       "unit_id": "c36304d1fb55ad9a",
       "node_id": "cross_attention",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Self-attention, Multimodal, simulated & streaming data.",
       "source_ids": [
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "88254073c51eb3d0",
@@ -102,19 +46,74 @@
       "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
     },
     {
-      "unit_id": "ed42970042287d7f",
+      "unit_id": "668149756c9dd4a1",
       "node_id": "cross_attention",
-      "field": "dependencies.multimodal_simulated_streams.rationale",
-      "text": "Cross-attention & co-attention uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Cross-attention & co-attention is modeled as depending on Self-attention, Multimodal, simulated & streaming data and feeding downstream nodes such as Encoder–decoder transformers, Vision Transformers & Perceiver-style latent models, Multimodal foundation models.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Transformer encoder-decoder attention and multimodal attention references describe queries from one sequence/stream attending to keys/values from another sequence, memory, or modality; PML covers multimodal representation background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "066f067e162f9add",
+      "node_id": "cross_attention",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Encoder–decoder transformers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f4acae0b8ee59897",
+      "node_id": "cross_attention",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Vision Transformers & Perceiver-style latent models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9bee599dcf9e40b6",
+      "node_id": "cross_attention",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Multimodal foundation models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5f4ba3bb1ecbeb80",
+      "node_id": "cross_attention",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "In this atlas graph, Cross-attention & co-attention has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -134,19 +133,20 @@
       "strength_supported": true
     },
     {
-      "edge_id": "022327e6bac32e4c",
+      "edge_id": "afd88a737fac360a",
       "node_id": "cross_attention",
       "dependency_id": "multimodal_simulated_streams",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "cross_attention",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

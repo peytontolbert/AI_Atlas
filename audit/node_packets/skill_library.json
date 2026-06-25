@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "A skill library stores reusable procedures, prompts, programs, policies, and workflows that an agent can retrieve and compose for recurring tasks.",
-    "why_it_matters": "The role of Skill libraries, workflows & procedural plans is to connect Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Autonomous software-engineering agents, Multi-agent systems & organizational intelligence.",
+    "why_it_matters": "In this atlas graph, Skill libraries, workflows & procedural plans is modeled as depending on Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations and feeding downstream nodes such as Autonomous software-engineering agents, Multi-agent systems & organizational intelligence.",
     "examples": [
-      "substrate for Autonomous software-engineering agents",
-      "substrate for Multi-agent systems & organizational intelligence"
+      "atlas downstream link to Autonomous software-engineering agents",
+      "atlas downstream link to Multi-agent systems & organizational intelligence"
     ],
     "limitations": [
       "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations."
@@ -40,13 +40,13 @@
         "id": "programs_ast_ir",
         "type": "uses",
         "strength": "core",
-        "rationale": "Skill libraries, workflows & procedural plans uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Skill libraries, workflows & procedural plans has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "agent_loop",
         "type": "uses",
         "strength": "common",
-        "rationale": "Skill libraries, workflows & procedural plans uses Observe–plan–act agent loops as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Skill libraries, workflows & procedural plans has a `uses` dependency on Observe–plan–act agent loops because Observe–plan–act agent loops is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,22 +58,22 @@
       "text": "A skill library stores reusable procedures, prompts, programs, policies, and workflows that an agent can retrieve and compose for recurring tasks."
     },
     {
-      "unit_id": "bff71c32afed7a58",
+      "unit_id": "c2d063e9a0146ee5",
       "node_id": "skill_library",
       "field": "why_it_matters",
-      "text": "The role of Skill libraries, workflows & procedural plans is to connect Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Autonomous software-engineering agents, Multi-agent systems & organizational intelligence."
+      "text": "In this atlas graph, Skill libraries, workflows & procedural plans is modeled as depending on Procedural memory & skills, Programs, ASTs, bytecode & intermediate representations and feeding downstream nodes such as Autonomous software-engineering agents, Multi-agent systems & organizational intelligence."
     },
     {
-      "unit_id": "ba6eaf9d06e45fa1",
+      "unit_id": "9cf8925d894b83eb",
       "node_id": "skill_library",
       "field": "examples[1]",
-      "text": "substrate for Autonomous software-engineering agents"
+      "text": "atlas downstream link to Autonomous software-engineering agents"
     },
     {
-      "unit_id": "1395c4e47018d089",
+      "unit_id": "9feca25276a54df9",
       "node_id": "skill_library",
       "field": "examples[2]",
-      "text": "substrate for Multi-agent systems & organizational intelligence"
+      "text": "atlas downstream link to Multi-agent systems & organizational intelligence"
     },
     {
       "unit_id": "8757f568d6ce660f",
@@ -88,16 +88,16 @@
       "text": "Skill libraries, workflows & procedural plans stores, selects, or obtains information through Procedural memory & skills."
     },
     {
-      "unit_id": "1e5d9295d702c22c",
+      "unit_id": "154dcc3557186721",
       "node_id": "skill_library",
       "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Skill libraries, workflows & procedural plans uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Skill libraries, workflows & procedural plans has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "9dae14f64ad93bfe",
+      "unit_id": "710db91b73d4be52",
       "node_id": "skill_library",
       "field": "dependencies.agent_loop.rationale",
-      "text": "Skill libraries, workflows & procedural plans uses Observe–plan–act agent loops as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Skill libraries, workflows & procedural plans has a `uses` dependency on Observe–plan–act agent loops because Observe–plan–act agent loops is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -110,20 +110,20 @@
       "rationale": "Skill libraries, workflows & procedural plans stores, selects, or obtains information through Procedural memory & skills."
     },
     {
-      "edge_id": "136e402e4f1e1e54",
+      "edge_id": "2ca355e83e287546",
       "node_id": "skill_library",
       "dependency_id": "programs_ast_ir",
       "type": "uses",
       "strength": "core",
-      "rationale": "Skill libraries, workflows & procedural plans uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Skill libraries, workflows & procedural plans has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "8d5331f15be0dc5d",
+      "edge_id": "668600d77049b334",
       "node_id": "skill_library",
       "dependency_id": "agent_loop",
       "type": "uses",
       "strength": "common",
-      "rationale": "Skill libraries, workflows & procedural plans uses Observe–plan–act agent loops as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Skill libraries, workflows & procedural plans has a `uses` dependency on Observe–plan–act agent loops because Observe–plan–act agent loops is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

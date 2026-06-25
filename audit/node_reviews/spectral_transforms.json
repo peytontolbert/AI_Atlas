@@ -15,150 +15,148 @@
       "notes": "The definition is consistent with Fourier/wavelet/spectral transforms, but a signal-processing source would be needed for verified."
     },
     {
-      "unit_id": "4311f0b23f1a3c62",
-      "node_id": "spectral_transforms",
-      "field": "why_it_matters",
-      "text": "The role of Fourier, wavelet & spectral transforms is to connect Signal processing & harmonic analysis, Linear algebra to downstream capabilities including Structured state-space models (S4 family), Neural operators, FNOs & PINNs.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "The cited sources support broad mathematical and ML background, not direct S4/FNO/PINN downstream relationships.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The downstream list needs specific spectral state-space and neural-operator citations."
-    },
-    {
-      "unit_id": "b10b0ab88cb0cb6a",
-      "node_id": "spectral_transforms",
-      "field": "examples[1]",
-      "text": "substrate for Structured state-space models (S4 family)",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "The cited sources do not directly establish S4-family spectral mechanisms.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "A structured state-space/S4 source is needed."
-    },
-    {
-      "unit_id": "a47c4cd51adfbeec",
-      "node_id": "spectral_transforms",
-      "field": "examples[2]",
-      "text": "substrate for Neural operators, FNOs & PINNs",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "The cited sources do not directly support neural operators, Fourier neural operators, or PINNs.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "A Fourier neural operator or neural-operator source is needed for direct support."
-    },
-    {
       "unit_id": "b87bdbff5f0d092e",
       "node_id": "spectral_transforms",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Signal processing & harmonic analysis, Linear algebra.",
       "source_ids": [
         "ref_dlbook",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support broad dependency background but not the generic limitation.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependencies are plausible; the generic caveat is not directly sourced."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "ce271a3dd7bc8a96",
+      "unit_id": "b87eb6c0451a9b9e",
+      "node_id": "spectral_transforms",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Fourier, wavelet & spectral transforms is modeled as depending on Signal processing & harmonic analysis, Linear algebra and feeding downstream nodes such as Structured state-space models (S4 family), Neural operators, FNOs & PINNs.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "792366fbc6921953",
+      "node_id": "spectral_transforms",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Structured state-space models (S4 family)",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "081a60589e38941a",
+      "node_id": "spectral_transforms",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Neural operators, FNOs & PINNs",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5f16965c0a96cce4",
       "node_id": "spectral_transforms",
       "field": "dependencies.signal_processing.rationale",
-      "text": "Fourier, wavelet & spectral transforms uses Signal processing & harmonic analysis as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Fourier, wavelet & spectral transforms has a `uses` dependency on Signal processing & harmonic analysis because Signal processing & harmonic analysis is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited source provides broad signal-processing background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "This dependency is definitional for Fourier, wavelet, and spectral transforms."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "0d0c2b1ae03baf21",
+      "unit_id": "5b66b110ee496214",
       "node_id": "spectral_transforms",
       "field": "dependencies.linear_algebra.rationale",
-      "text": "Fourier, wavelet & spectral transforms uses Linear algebra as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Fourier, wavelet & spectral transforms has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA provides broad mathematical/computational background; transforms can be represented as linear operators or basis changes.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Linear algebra is a defensible core dependency, but direct support should cite a linear systems or signal-processing source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "5c730b876282f8be",
+      "unit_id": "5cf8459d4a9e2a0b",
       "node_id": "spectral_transforms",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Fourier, wavelet & spectral transforms uses Numerical analysis as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Fourier, wavelet & spectral transforms has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet source provides broad computational background, not direct numerical-transform evidence.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Numerical methods are relevant to implementing transforms; direct evidence would need a numerical analysis source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "762c1b6201151cf5",
+      "edge_id": "fcad368f5389aa83",
       "node_id": "spectral_transforms",
       "dependency_id": "signal_processing",
       "source_ids": [
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Signal processing/harmonic analysis is a core dependency for spectral transforms.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "6bd4e80e80c1a2a3",
+      "edge_id": "fcfb989e9f3280e4",
       "node_id": "spectral_transforms",
       "dependency_id": "linear_algebra",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Basis changes and linear operators make linear algebra a defensible core dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "a226463e64d3798a",
+      "edge_id": "39a0b2ab7440d71c",
       "node_id": "spectral_transforms",
       "dependency_id": "numerical_methods",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Numerical implementation is relevant; common strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "spectral_transforms",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

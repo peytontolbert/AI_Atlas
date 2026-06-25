@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Robustness and out-of-distribution evaluation stress a model under corruptions, subgroup shifts, unseen domains, adversarial inputs, and changing deployment conditions.",
-    "why_it_matters": "The role of Robustness, distribution shift & OOD evaluation is to connect Probability theory, Benchmarks, test suites & task metrics to downstream capabilities including Adversarial robustness & security testing, Formal verification of models.",
+    "why_it_matters": "In this atlas graph, Robustness, distribution shift & OOD evaluation is modeled as depending on Probability theory, Benchmarks, test suites & task metrics and feeding downstream nodes such as Adversarial robustness & security testing, Formal verification of models.",
     "examples": [
-      "substrate for Adversarial robustness & security testing",
-      "substrate for Formal verification of models"
+      "atlas downstream link to Adversarial robustness & security testing",
+      "atlas downstream link to Formal verification of models"
     ],
     "limitations": [
       "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Probability theory, Benchmarks, test suites & task metrics."
@@ -33,19 +33,19 @@
         "id": "probability",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Probability theory."
+        "rationale": "In this atlas graph, Robustness, distribution shift & OOD evaluation has an `evaluates_or_constrains` dependency on Probability theory because Probability theory is modeled as evaluation, constraint, audit, or governance support."
       },
       {
         "id": "benchmarks_metrics",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+        "rationale": "In this atlas graph, Robustness, distribution shift & OOD evaluation has an `evaluates_or_constrains` dependency on Benchmarks, test suites & task metrics because Benchmarks, test suites & task metrics is modeled as evaluation, constraint, audit, or governance support."
       },
       {
         "id": "augmentation_synthetic",
         "type": "evaluates_or_constrains",
         "strength": "common",
-        "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Data augmentation & synthetic-data generation."
+        "rationale": "In this atlas graph, Robustness, distribution shift & OOD evaluation has an `evaluates_or_constrains` dependency on Data augmentation & synthetic-data generation because Data augmentation & synthetic-data generation is modeled as evaluation, constraint, audit, or governance support."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "Robustness and out-of-distribution evaluation stress a model under corruptions, subgroup shifts, unseen domains, adversarial inputs, and changing deployment conditions."
     },
     {
-      "unit_id": "6cefba8f69472634",
+      "unit_id": "33b58d0610f709e3",
       "node_id": "robustness_ood",
       "field": "why_it_matters",
-      "text": "The role of Robustness, distribution shift & OOD evaluation is to connect Probability theory, Benchmarks, test suites & task metrics to downstream capabilities including Adversarial robustness & security testing, Formal verification of models."
+      "text": "In this atlas graph, Robustness, distribution shift & OOD evaluation is modeled as depending on Probability theory, Benchmarks, test suites & task metrics and feeding downstream nodes such as Adversarial robustness & security testing, Formal verification of models."
     },
     {
-      "unit_id": "b88dcb4cddb3edae",
+      "unit_id": "4f1945e0336dd6a1",
       "node_id": "robustness_ood",
       "field": "examples[1]",
-      "text": "substrate for Adversarial robustness & security testing"
+      "text": "atlas downstream link to Adversarial robustness & security testing"
     },
     {
-      "unit_id": "1accd43462a34dff",
+      "unit_id": "87e3c3832e4d4ade",
       "node_id": "robustness_ood",
       "field": "examples[2]",
-      "text": "substrate for Formal verification of models"
+      "text": "atlas downstream link to Formal verification of models"
     },
     {
       "unit_id": "4652a2717d5bd724",
@@ -81,48 +81,48 @@
       "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Probability theory, Benchmarks, test suites & task metrics."
     },
     {
-      "unit_id": "6d2bc65617d940e5",
+      "unit_id": "05aee08c7eed940c",
       "node_id": "robustness_ood",
       "field": "dependencies.probability.rationale",
-      "text": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Probability theory."
+      "text": "In this atlas graph, Robustness, distribution shift & OOD evaluation has an `evaluates_or_constrains` dependency on Probability theory because Probability theory is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "unit_id": "ca66d709e3d24a11",
+      "unit_id": "7b60c32ea70645af",
       "node_id": "robustness_ood",
       "field": "dependencies.benchmarks_metrics.rationale",
-      "text": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      "text": "In this atlas graph, Robustness, distribution shift & OOD evaluation has an `evaluates_or_constrains` dependency on Benchmarks, test suites & task metrics because Benchmarks, test suites & task metrics is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "unit_id": "581db60d38b17a21",
+      "unit_id": "7f15ab16a8415f1d",
       "node_id": "robustness_ood",
       "field": "dependencies.augmentation_synthetic.rationale",
-      "text": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Data augmentation & synthetic-data generation."
+      "text": "In this atlas graph, Robustness, distribution shift & OOD evaluation has an `evaluates_or_constrains` dependency on Data augmentation & synthetic-data generation because Data augmentation & synthetic-data generation is modeled as evaluation, constraint, audit, or governance support."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "835fff5351ef7750",
+      "edge_id": "c17a6a650d8351e3",
       "node_id": "robustness_ood",
       "dependency_id": "probability",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Probability theory."
+      "rationale": "In this atlas graph, Robustness, distribution shift & OOD evaluation has an `evaluates_or_constrains` dependency on Probability theory because Probability theory is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "edge_id": "c35406f2414423e9",
+      "edge_id": "75d36a106d6c8135",
       "node_id": "robustness_ood",
       "dependency_id": "benchmarks_metrics",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics."
+      "rationale": "In this atlas graph, Robustness, distribution shift & OOD evaluation has an `evaluates_or_constrains` dependency on Benchmarks, test suites & task metrics because Benchmarks, test suites & task metrics is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "edge_id": "cf77b70af0a5aa25",
+      "edge_id": "3dc7e8d7416110d0",
       "node_id": "robustness_ood",
       "dependency_id": "augmentation_synthetic",
       "type": "evaluates_or_constrains",
       "strength": "common",
-      "rationale": "Robustness, distribution shift & OOD evaluation measures, constrains, audits, or governs behavior using Data augmentation & synthetic-data generation."
+      "rationale": "In this atlas graph, Robustness, distribution shift & OOD evaluation has an `evaluates_or_constrains` dependency on Data augmentation & synthetic-data generation because Data augmentation & synthetic-data generation is modeled as evaluation, constraint, audit, or governance support."
     }
   ],
   "candidate_references": {

@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Architectures preserve or ignore known transformations such as translation, rotation, permutation, or gauge symmetry.",
-    "why_it_matters": "The role of Equivariance, invariance & geometric priors is to connect Geometry, topology & symmetry, Graph theory to downstream capabilities including Graph neural networks, Neural operators, FNOs & PINNs, Data augmentation & synthetic-data generation.",
+    "why_it_matters": "In this atlas graph, Equivariance, invariance & geometric priors is modeled as depending on Geometry, topology & symmetry, Graph theory and feeding downstream nodes such as Graph neural networks, Neural operators, FNOs & PINNs, Data augmentation & synthetic-data generation.",
     "examples": [
-      "substrate for Graph neural networks",
-      "substrate for Neural operators, FNOs & PINNs",
-      "substrate for Data augmentation & synthetic-data generation"
+      "atlas downstream link to Graph neural networks",
+      "atlas downstream link to Neural operators, FNOs & PINNs",
+      "atlas downstream link to Data augmentation & synthetic-data generation"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Geometry, topology & symmetry, Graph theory."
@@ -35,19 +35,19 @@
         "id": "geometry_topology",
         "type": "uses",
         "strength": "core",
-        "rationale": "Equivariance, invariance & geometric priors uses Geometry, topology & symmetry as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Geometry, topology & symmetry because Geometry, topology & symmetry is modeled as a reusable ingredient for the node."
       },
       {
         "id": "graph_theory",
         "type": "uses",
         "strength": "core",
-        "rationale": "Equivariance, invariance & geometric priors uses Graph theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Graph theory because Graph theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "linear_algebra",
         "type": "uses",
         "strength": "common",
-        "rationale": "Equivariance, invariance & geometric priors uses Linear algebra as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -59,28 +59,28 @@
       "text": "Architectures preserve or ignore known transformations such as translation, rotation, permutation, or gauge symmetry."
     },
     {
-      "unit_id": "7ef7f40d229e2faf",
+      "unit_id": "2ea05dd9dce17003",
       "node_id": "equivariance_invariance",
       "field": "why_it_matters",
-      "text": "The role of Equivariance, invariance & geometric priors is to connect Geometry, topology & symmetry, Graph theory to downstream capabilities including Graph neural networks, Neural operators, FNOs & PINNs, Data augmentation & synthetic-data generation."
+      "text": "In this atlas graph, Equivariance, invariance & geometric priors is modeled as depending on Geometry, topology & symmetry, Graph theory and feeding downstream nodes such as Graph neural networks, Neural operators, FNOs & PINNs, Data augmentation & synthetic-data generation."
     },
     {
-      "unit_id": "37543c62b5c1f03d",
+      "unit_id": "6078062ed50283c6",
       "node_id": "equivariance_invariance",
       "field": "examples[1]",
-      "text": "substrate for Graph neural networks"
+      "text": "atlas downstream link to Graph neural networks"
     },
     {
-      "unit_id": "0ae04cc593111217",
+      "unit_id": "13da7e24749edd8e",
       "node_id": "equivariance_invariance",
       "field": "examples[2]",
-      "text": "substrate for Neural operators, FNOs & PINNs"
+      "text": "atlas downstream link to Neural operators, FNOs & PINNs"
     },
     {
-      "unit_id": "73100694ea124d03",
+      "unit_id": "47eae1808fd49087",
       "node_id": "equivariance_invariance",
       "field": "examples[3]",
-      "text": "substrate for Data augmentation & synthetic-data generation"
+      "text": "atlas downstream link to Data augmentation & synthetic-data generation"
     },
     {
       "unit_id": "950a473b605b17e3",
@@ -89,48 +89,48 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Geometry, topology & symmetry, Graph theory."
     },
     {
-      "unit_id": "0bbf5b19ace49798",
+      "unit_id": "5c1034836a5d87e9",
       "node_id": "equivariance_invariance",
       "field": "dependencies.geometry_topology.rationale",
-      "text": "Equivariance, invariance & geometric priors uses Geometry, topology & symmetry as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Geometry, topology & symmetry because Geometry, topology & symmetry is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "01fbd823456f3ef0",
+      "unit_id": "0476e3a0a9a6f2ed",
       "node_id": "equivariance_invariance",
       "field": "dependencies.graph_theory.rationale",
-      "text": "Equivariance, invariance & geometric priors uses Graph theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Graph theory because Graph theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "f0574fc41a2aca7e",
+      "unit_id": "b5b159051b85c889",
       "node_id": "equivariance_invariance",
       "field": "dependencies.linear_algebra.rationale",
-      "text": "Equivariance, invariance & geometric priors uses Linear algebra as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "40389300659638ea",
+      "edge_id": "adf7d08d226791db",
       "node_id": "equivariance_invariance",
       "dependency_id": "geometry_topology",
       "type": "uses",
       "strength": "core",
-      "rationale": "Equivariance, invariance & geometric priors uses Geometry, topology & symmetry as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Geometry, topology & symmetry because Geometry, topology & symmetry is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "5810c05f6e3bc404",
+      "edge_id": "ffb8e96efd5f20e4",
       "node_id": "equivariance_invariance",
       "dependency_id": "graph_theory",
       "type": "uses",
       "strength": "core",
-      "rationale": "Equivariance, invariance & geometric priors uses Graph theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Graph theory because Graph theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "a7f28a56c0ab4731",
+      "edge_id": "18fdbab176dbb44e",
       "node_id": "equivariance_invariance",
       "dependency_id": "linear_algebra",
       "type": "uses",
       "strength": "common",
-      "rationale": "Equivariance, invariance & geometric priors uses Linear algebra as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

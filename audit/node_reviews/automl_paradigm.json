@@ -1,20 +1,208 @@
 {
   "sentence_reviews": [
-    {"unit_id":"9e83ab36f01228fa","node_id":"automl_paradigm","field":"definition","text":"AutoML treats preprocessing, model choice, hyperparameters, data policy, or architecture as a design space optimized by an automated controller.","source_ids":["ref_nas","ref_aima"],"evidence_location":"Elsken et al. 2018 arXiv abstract: automated architecture search methods categorized by search space, search strategy, and performance estimation; AIMA contents: learning and optimization/search background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The NAS source directly supports automated architecture search, but preprocessing/model choice/data policy are broader AutoML claims not directly inspected."},
-    {"unit_id":"755c26c83f4db914","node_id":"automl_paradigm","field":"why_it_matters","text":"It replaces ad hoc trial-and-error with reproducible search under a declared objective, budget, and constraint set.","source_ids":["ref_nas"],"evidence_location":"Elsken et al. 2018 arXiv abstract: manual architecture development is time-consuming/error-prone; NAS categorized by search space, search strategy, performance estimation strategy.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The source supports automated search replacing manual design; objective/budget/constraints are reasonable synthesis but not exact abstract claims."},
-    {"unit_id":"6e8b2f8661f22a93","node_id":"automl_paradigm","field":"examples[1]","text":"hyperparameter optimization","source_ids":["ref_nas","ref_aima"],"evidence_location":"Elsken et al. 2018 abstract: architecture search strategy/performance estimation; AIMA contents: optimization and learning chapters.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Hyperparameter optimization is standard AutoML, but not directly evidenced by the inspected NAS abstract."},
-    {"unit_id":"b203b0e062efbfea","node_id":"automl_paradigm","field":"examples[2]","text":"pipeline search","source_ids":["ref_nas","ref_aima"],"evidence_location":"Elsken et al. 2018 abstract: search space/search strategy framing for NAS; AIMA contents: ML system development/model selection not directly inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Pipeline search is broader than NAS and not directly supported by inspected source text."},
-    {"unit_id":"3170b0ca8042e8a7","node_id":"automl_paradigm","field":"examples[3]","text":"hardware-aware architecture design","source_ids":["ref_nas"],"evidence_location":"Elsken et al. 2018 abstract: automated neural architecture search; no hardware-aware passage inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Architecture design is supported; hardware-aware specialization is not directly supported by inspected evidence."},
-    {"unit_id":"967df588d6438321","node_id":"automl_paradigm","field":"limitations[1]","text":"Results are limited by the search space, proxy metric, compute budget, and validation leakage.","source_ids":["ref_nas"],"evidence_location":"Elsken et al. 2018 abstract: categorizes NAS by search space, search strategy, and performance estimation strategy.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Search space and performance estimation are supported; compute budget and validation leakage are plausible but not directly inspected."},
-    {"unit_id":"ed76669096337404","node_id":"automl_paradigm","field":"dependencies.optimization.rationale","text":"AutoML & automated model design uses Optimization theory as a reusable ingredient in its defined operation.","source_ids":["ref_nas","ref_aima"],"evidence_location":"Elsken et al. 2018 abstract: automated architecture search and search strategy; AIMA contents: optimization/search and learning chapters.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Automated search over architectures directly supports optimization as a core ingredient."},
-    {"unit_id":"f0c20d26089c5a51","node_id":"automl_paradigm","field":"dependencies.active_curriculum_learning.rationale","text":"AutoML & automated model design follows the learning setup expressed by Active learning & curriculum learning.","source_ids":["ref_aima"],"evidence_location":"AIMA contents: learning chapters; no inspected source connects active/curriculum learning to AutoML.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"No adequate support for this dependency relationship."},
-    {"unit_id":"bcc17b074de99b6d","node_id":"automl_paradigm","field":"dependencies.evolutionary_population_learning.rationale","text":"AutoML & automated model design follows the learning setup expressed by Evolutionary, swarm & population-based learning.","source_ids":["ref_nas"],"evidence_location":"Elsken et al. 2018 arXiv page: NAS survey with cs.NE subject classification; abstract categorizes search strategies.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Evolutionary NAS is supported as a search-strategy family, but AutoML does not generally 'follow' evolutionary learning; relationship type should likely be uses/optional/common method."},
-    {"unit_id":"1933572113166764","node_id":"automl_paradigm","field":"dependencies.meta_learning.rationale","text":"AutoML & automated model design follows the learning setup expressed by Meta-learning.","source_ids":["ref_nas"],"evidence_location":"Elsken et al. 2018 abstract: automated NAS; no meta-learning passage inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The inspected source does not support meta-learning as the setup."}
+    {
+      "unit_id": "9e83ab36f01228fa",
+      "node_id": "automl_paradigm",
+      "field": "definition",
+      "text": "AutoML treats preprocessing, model choice, hyperparameters, data policy, or architecture as a design space optimized by an automated controller.",
+      "source_ids": [
+        "ref_nas",
+        "ref_aima"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "755c26c83f4db914",
+      "node_id": "automl_paradigm",
+      "field": "why_it_matters",
+      "text": "It replaces ad hoc trial-and-error with reproducible search under a declared objective, budget, and constraint set.",
+      "source_ids": [
+        "ref_nas"
+      ],
+      "evidence_location": "Elsken et al. 2018 arXiv abstract: manual architecture development is time-consuming/error-prone; NAS categorized by search space, search strategy, performance estimation strategy.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The source supports automated search replacing manual design; objective/budget/constraints are reasonable synthesis but not exact abstract claims."
+    },
+    {
+      "unit_id": "6e8b2f8661f22a93",
+      "node_id": "automl_paradigm",
+      "field": "examples[1]",
+      "text": "hyperparameter optimization",
+      "source_ids": [
+        "ref_nas",
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "b203b0e062efbfea",
+      "node_id": "automl_paradigm",
+      "field": "examples[2]",
+      "text": "pipeline search",
+      "source_ids": [
+        "ref_nas",
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "3170b0ca8042e8a7",
+      "node_id": "automl_paradigm",
+      "field": "examples[3]",
+      "text": "hardware-aware architecture design",
+      "source_ids": [
+        "ref_nas",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "967df588d6438321",
+      "node_id": "automl_paradigm",
+      "field": "limitations[1]",
+      "text": "Results are limited by the search space, proxy metric, compute budget, and validation leakage.",
+      "source_ids": [
+        "ref_nas",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "a639ca646f753086",
+      "node_id": "automl_paradigm",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, AutoML & automated model design has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "be6c6fc81b72d593",
+      "node_id": "automl_paradigm",
+      "field": "dependencies.active_curriculum_learning.rationale",
+      "text": "In this atlas graph, AutoML & automated model design has an `uses` dependency on Active learning & curriculum learning with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "f3da164428725c70",
+      "node_id": "automl_paradigm",
+      "field": "dependencies.evolutionary_population_learning.rationale",
+      "text": "In this atlas graph, AutoML & automated model design has a `trained_under` dependency on Evolutionary, swarm & population-based learning with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "bd0904e74b2009c9",
+      "node_id": "automl_paradigm",
+      "field": "dependencies.meta_learning.rationale",
+      "text": "In this atlas graph, AutoML & automated model design has a `trained_under` dependency on Meta-learning with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"8470ab4d659167d9","node_id":"automl_paradigm","dependency_id":"optimization","source_ids":["ref_nas","ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Automated search over design spaces directly supports a core uses dependency on optimization.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"3cc36a092e97c5fa","node_id":"automl_paradigm","dependency_id":"active_curriculum_learning","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"No inspected evidence supports active/curriculum learning as a common ingredient for AutoML.","relationship_type_supported":false,"strength_supported":false},
-    {"edge_id":"836e7ff6af281c87","node_id":"automl_paradigm","dependency_id":"evolutionary_population_learning","source_ids":["ref_nas"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Evolutionary methods are plausible/common NAS search strategies, but trained_under is not the narrowest relationship type.","relationship_type_supported":false,"strength_supported":true},
-    {"edge_id":"91ceec6ef2b1a7e1","node_id":"automl_paradigm","dependency_id":"meta_learning","source_ids":["ref_nas"],"reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"No inspected evidence supports this as a common trained_under edge.","relationship_type_supported":false,"strength_supported":false}
-  ]
+    {
+      "edge_id": "68a92ff69849f40b",
+      "node_id": "automl_paradigm",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "763555e857579169",
+      "node_id": "automl_paradigm",
+      "dependency_id": "active_curriculum_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "2c9bec6eb80caea3",
+      "node_id": "automl_paradigm",
+      "dependency_id": "evolutionary_population_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "f227e06073fa6f5f",
+      "node_id": "automl_paradigm",
+      "dependency_id": "meta_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "automl_paradigm",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

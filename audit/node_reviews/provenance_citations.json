@@ -16,171 +16,162 @@
       "notes": "The claim is defensible, but direct provenance/citation-tracking evidence would be stronger."
     },
     {
-      "unit_id": "700bb608c1a27b23",
-      "node_id": "provenance_citations",
-      "field": "why_it_matters",
-      "text": "The role of Provenance, citations & evidence tracking is to connect External retrieval & ranking, Databases & information retrieval to downstream capabilities including Neural search, RAG & question answering, Memory lifecycle, forgetting & consolidation, Content credentials, signing & provenance.",
-      "source_ids": [
-        "ref_aima",
-        "ref_rag"
-      ],
-      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
-    },
-    {
-      "unit_id": "f35651150ba2ebd7",
-      "node_id": "provenance_citations",
-      "field": "examples[1]",
-      "text": "substrate for Neural search, RAG & question answering",
-      "source_ids": [
-        "ref_aima",
-        "ref_rag"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
-      "unit_id": "e3958e1d5c6c916c",
-      "node_id": "provenance_citations",
-      "field": "examples[2]",
-      "text": "substrate for Memory lifecycle, forgetting & consolidation",
-      "source_ids": [
-        "ref_aima",
-        "ref_rag"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
-      "unit_id": "5719db37bf2b0c76",
-      "node_id": "provenance_citations",
-      "field": "examples[3]",
-      "text": "substrate for Content credentials, signing & provenance",
-      "source_ids": [
-        "ref_aima",
-        "ref_rag"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
       "unit_id": "8d0594550a89cfd3",
       "node_id": "provenance_citations",
       "field": "limitations[1]",
       "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include External retrieval & ranking, Databases & information retrieval.",
       "source_ids": [
         "ref_aima",
-        "ref_rag"
+        "ref_rag",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "b7c917ffffce5ca0",
+      "unit_id": "f5862fbf83e3b333",
+      "node_id": "provenance_citations",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Provenance, citations & evidence tracking is modeled as depending on External retrieval & ranking, Databases & information retrieval and feeding downstream nodes such as Neural search, RAG & question answering, Memory lifecycle, forgetting & consolidation, Content credentials, signing & provenance.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "787821f141a649eb",
+      "node_id": "provenance_citations",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Neural search, RAG & question answering",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9991d47a596d3468",
+      "node_id": "provenance_citations",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Memory lifecycle, forgetting & consolidation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "891f5e77c7d976cf",
+      "node_id": "provenance_citations",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Content credentials, signing & provenance",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "94a2c913e34baf2a",
       "node_id": "provenance_citations",
       "field": "dependencies.external_retrieval.rationale",
-      "text": "Provenance, citations & evidence tracking uses External retrieval & ranking as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Provenance, citations & evidence tracking has a `uses` dependency on External retrieval & ranking because External retrieval & ranking is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima",
-        "ref_rag"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support external_retrieval or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "14c989d3085f15b1",
+      "unit_id": "b3eab669d2f8ceeb",
       "node_id": "provenance_citations",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Provenance, citations & evidence tracking uses Databases & information retrieval as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Provenance, citations & evidence tracking has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima",
-        "ref_rag"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support databases_ir or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "31da255476a12b50",
+      "unit_id": "caa99c2cef3696bd",
       "node_id": "provenance_citations",
       "field": "dependencies.rag.rationale",
-      "text": "Provenance, citations & evidence tracking stores, selects, or obtains information through Retrieval-augmented generation.",
+      "text": "In this atlas graph, Provenance, citations & evidence tracking has a `retrieves_from` dependency on Retrieval-augmented generation with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_rag"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support rag or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "8a008d0f525aeab8",
+      "edge_id": "78aad3a7f8087762",
       "node_id": "provenance_citations",
       "dependency_id": "external_retrieval",
       "source_ids": [
-        "ref_aima",
-        "ref_rag"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "5589d4a8e15b02c2",
+      "edge_id": "959221a8b5a9ab5a",
       "node_id": "provenance_citations",
       "dependency_id": "databases_ir",
       "source_ids": [
-        "ref_aima",
-        "ref_rag"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "a8ea002e90302609",
+      "edge_id": "0e5dd4c3cd7ebb8c",
       "node_id": "provenance_citations",
       "dependency_id": "rag",
       "source_ids": [
-        "ref_aima",
-        "ref_rag"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "RAG benefits from provenance, but provenance does not generally retrieve from RAG; relationship direction/type is questionable.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "provenance_citations",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

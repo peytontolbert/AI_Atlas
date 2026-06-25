@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "A model learns to reverse a gradual noising process or estimate its score field.",
-    "why_it_matters": "The role of Denoising diffusion & stochastic corruption is to connect Score matching & denoising score objectives, Differential equations to downstream capabilities including Diffusion & score-based models.",
+    "why_it_matters": "In this atlas graph, Denoising diffusion & stochastic corruption is modeled as depending on Score matching & denoising score objectives, Differential equations and feeding downstream nodes such as Diffusion & score-based models.",
     "examples": [
-      "substrate for Diffusion & score-based models",
+      "atlas downstream link to Diffusion & score-based models",
       "combined with Score matching & denoising score objectives"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "score_matching",
         "type": "uses",
         "strength": "core",
-        "rationale": "Denoising diffusion & stochastic corruption uses Score matching & denoising score objectives as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Denoising diffusion & stochastic corruption has a `uses` dependency on Score matching & denoising score objectives because Score matching & denoising score objectives is modeled as a reusable ingredient for the node."
       },
       {
         "id": "differential_equations",
         "type": "uses",
         "strength": "common",
-        "rationale": "Denoising diffusion & stochastic corruption uses Differential equations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Denoising diffusion & stochastic corruption has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "latent_variables",
         "type": "uses",
         "strength": "common",
-        "rationale": "Denoising diffusion & stochastic corruption uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Denoising diffusion & stochastic corruption has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "A model learns to reverse a gradual noising process or estimate its score field."
     },
     {
-      "unit_id": "74e2dca5961cb513",
+      "unit_id": "286728d3ceb329e6",
       "node_id": "diffusion_denoising",
       "field": "why_it_matters",
-      "text": "The role of Denoising diffusion & stochastic corruption is to connect Score matching & denoising score objectives, Differential equations to downstream capabilities including Diffusion & score-based models."
+      "text": "In this atlas graph, Denoising diffusion & stochastic corruption is modeled as depending on Score matching & denoising score objectives, Differential equations and feeding downstream nodes such as Diffusion & score-based models."
     },
     {
-      "unit_id": "76a05f028660ce87",
+      "unit_id": "d679909d4cb48b6b",
       "node_id": "diffusion_denoising",
       "field": "examples[1]",
-      "text": "substrate for Diffusion & score-based models"
+      "text": "atlas downstream link to Diffusion & score-based models"
     },
     {
       "unit_id": "92b484709156acab",
@@ -82,48 +82,48 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Score matching & denoising score objectives, Differential equations."
     },
     {
-      "unit_id": "58dc871acf3e74cb",
+      "unit_id": "7d45f2880daa1e86",
       "node_id": "diffusion_denoising",
       "field": "dependencies.score_matching.rationale",
-      "text": "Denoising diffusion & stochastic corruption uses Score matching & denoising score objectives as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Denoising diffusion & stochastic corruption has a `uses` dependency on Score matching & denoising score objectives because Score matching & denoising score objectives is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "93f9bdb7ace1f8a0",
+      "unit_id": "49abd062738129c0",
       "node_id": "diffusion_denoising",
       "field": "dependencies.differential_equations.rationale",
-      "text": "Denoising diffusion & stochastic corruption uses Differential equations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Denoising diffusion & stochastic corruption has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d67d1e24e89894e0",
+      "unit_id": "4444f61f05b306c9",
       "node_id": "diffusion_denoising",
       "field": "dependencies.latent_variables.rationale",
-      "text": "Denoising diffusion & stochastic corruption uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Denoising diffusion & stochastic corruption has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "08e10f34cfebc331",
+      "edge_id": "a19d33b0b195ad25",
       "node_id": "diffusion_denoising",
       "dependency_id": "score_matching",
       "type": "uses",
       "strength": "core",
-      "rationale": "Denoising diffusion & stochastic corruption uses Score matching & denoising score objectives as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Denoising diffusion & stochastic corruption has a `uses` dependency on Score matching & denoising score objectives because Score matching & denoising score objectives is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "6015d358b9fdec5d",
+      "edge_id": "03ea5b4f668b3a6b",
       "node_id": "diffusion_denoising",
       "dependency_id": "differential_equations",
       "type": "uses",
       "strength": "common",
-      "rationale": "Denoising diffusion & stochastic corruption uses Differential equations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Denoising diffusion & stochastic corruption has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "dfa9b3bec2092658",
+      "edge_id": "b16bdf482d41b05d",
       "node_id": "diffusion_denoising",
       "dependency_id": "latent_variables",
       "type": "uses",
       "strength": "common",
-      "rationale": "Denoising diffusion & stochastic corruption uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Denoising diffusion & stochastic corruption has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -34,13 +34,14 @@
         "ref_nist",
         "ref_pml",
         "ref_prml",
-        "ref_scenario_generation"
+        "ref_scenario_generation",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is a broad application-boundary claim and is not directly established by the cited technical sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "23da17e48715c140",
@@ -118,13 +119,14 @@
         "ref_nist",
         "ref_pml",
         "ref_prml",
-        "ref_scenario_generation"
+        "ref_scenario_generation",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The weakest-component framing is plausible but not directly verified for simulation and wargaming systems by the packet sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "a6587b95d1593686",
@@ -132,20 +134,13 @@
       "field": "terminal_reason",
       "text": "end-system leaf",
       "source_ids": [
-        "ref_aima",
-        "ref_digital_twin_ai",
-        "ref_domainrand",
-        "ref_formalml",
-        "ref_nist",
-        "ref_pml",
-        "ref_prml",
-        "ref_scenario_generation"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "No cited source in packet directly supports this metadata claim.",
+      "evidence_location": "data/atlas.json terminal flag and current dependency graph consumer set.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "Graph leaf classification is metadata, not a sourced claim in the packet."
+      "verdict": "verified",
+      "notes": "This is graph metadata: the node is terminal in the current atlas graph because no other canonical node currently depends on it."
     },
     {
       "unit_id": "b9cc24eec1da980b",
@@ -274,27 +269,6 @@
       "notes": "Domain-randomization references support optional simulation curricula."
     },
     {
-      "unit_id": "5a0a83a5b6d3bf61",
-      "node_id": "simulation_wargaming",
-      "field": "dependencies.runtime_assurance.rationale",
-      "text": "Simulation, operations research & wargaming integrates Runtime assurance, monitors & safety envelopes as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima",
-        "ref_digital_twin_ai",
-        "ref_domainrand",
-        "ref_formalml",
-        "ref_nist",
-        "ref_pml",
-        "ref_prml",
-        "ref_scenario_generation"
-      ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Runtime assurance is plausible for safety-critical simulations, but not clearly a general wargaming dependency."
-    },
-    {
       "unit_id": "33a150f42f9739d5",
       "node_id": "simulation_wargaming",
       "field": "dependencies.tabular_predictive_analytics.rationale",
@@ -314,6 +288,20 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Operations research and decision support often use tabular predictive analytics; optional strength is defensible."
+    },
+    {
+      "unit_id": "43cdaa60967b2b23",
+      "node_id": "simulation_wargaming",
+      "field": "dependencies.runtime_assurance.rationale",
+      "text": "In this atlas graph, Simulation, operations research & wargaming has an `applies` dependency on Runtime assurance, monitors & safety envelopes with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -444,27 +432,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "536173fe7beef49a",
-      "node_id": "simulation_wargaming",
-      "dependency_id": "runtime_assurance",
-      "source_ids": [
-        "ref_aima",
-        "ref_digital_twin_ai",
-        "ref_domainrand",
-        "ref_formalml",
-        "ref_nist",
-        "ref_pml",
-        "ref_prml",
-        "ref_scenario_generation"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Runtime assurance is plausible for safety-critical simulations, but not clearly a general wargaming dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
       "edge_id": "7c1398344a9958d8",
       "node_id": "simulation_wargaming",
       "dependency_id": "tabular_predictive_analytics",
@@ -484,6 +451,19 @@
       "notes": "Operations research and decision support often use tabular predictive analytics; optional strength is defensible.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "922268948a80b327",
+      "node_id": "simulation_wargaming",
+      "dependency_id": "runtime_assurance",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

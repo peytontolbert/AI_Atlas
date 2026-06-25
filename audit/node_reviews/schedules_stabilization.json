@@ -5,134 +5,158 @@
       "node_id": "schedules_stabilization",
       "field": "definition",
       "text": "Learning-rate schedules, warmup, clipping, initialization, gradient scaling, and related controls keep optimization inside numerically stable regimes.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 8 optimization strategies, learning rates, initialization, and gradient clipping/exploding-gradient discussion.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Learning rates, initialization, and clipping are supported as optimization/training controls. Warmup and gradient scaling are not directly supported by the 2016 source, and 'numerically stable regimes' is broad."
-    },
-    {
-      "unit_id": "10c896dc9fbf5b84",
-      "node_id": "schedules_stabilization",
-      "field": "why_it_matters",
-      "text": "The role of Learning-rate schedules, warmup & stabilization is to connect Adam, Adafactor & adaptive optimizers, Normalization & standardization to downstream capabilities including Large-scale pretraining.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 8 optimization and Chapter 8.7 batch normalization; Chapter 11 practical methodology.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Optimizer and normalization connections are partially supported. Adafactor, warmup, and large-scale pretraining are not directly supported by the cited textbook."
-    },
-    {
-      "unit_id": "abaa85c3c4c72126",
-      "node_id": "schedules_stabilization",
-      "field": "examples[1]",
-      "text": "substrate for Large-scale pretraining",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 11 practical methodology and Chapter 8 optimization for training deep models.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected source predates modern large-scale pretraining practice and does not directly support this downstream claim."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "437b57819dfd5d1a",
       "node_id": "schedules_stabilization",
       "field": "examples[2]",
       "text": "combined with Adam, Adafactor & adaptive optimizers",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 8.5 adaptive learning rates and broader learning-rate/optimization discussion.",
+      "source_ids": [
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Adam and adaptive learning-rate context are supported; Adafactor and warmup-specific combination are not."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "2c674df4962765a8",
       "node_id": "schedules_stabilization",
       "field": "limitations[1]",
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Adam, Adafactor & adaptive optimizers, Normalization & standardization.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapters 5, 8, and 11 on generalization, optimization, hyperparameters, and practical methodology.",
+      "source_ids": [
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Hyperparameter and optimization sensitivity are supported. Data quality, compute budget, random variation, evaluation contamination, and Adafactor are not directly supported."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "8a87f9a1edcd08c9",
+      "unit_id": "5a5057f2e93a06bc",
+      "node_id": "schedules_stabilization",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Learning-rate schedules, warmup & stabilization is modeled as depending on Adam, Adafactor & adaptive optimizers, Normalization & standardization and feeding downstream nodes such as Large-scale pretraining.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "db6a18247659f79e",
+      "node_id": "schedules_stabilization",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Large-scale pretraining",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a6d06e10fc2f540e",
       "node_id": "schedules_stabilization",
       "field": "dependencies.adaptive_optimizers.rationale",
-      "text": "Learning-rate schedules, warmup & stabilization uses Adam, Adafactor & adaptive optimizers as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 8.5 adaptive learning rates and optimization strategy sections.",
+      "text": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Adam, Adafactor & adaptive optimizers because Adam, Adafactor & adaptive optimizers is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Adaptive learning-rate methods are relevant, but schedules/stabilization do not necessarily use adaptive optimizers, and Adafactor is not sourced."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "bb232185479f1e29",
+      "unit_id": "d13f3b9a179639ea",
       "node_id": "schedules_stabilization",
       "field": "dependencies.normalization.rationale",
-      "text": "Learning-rate schedules, warmup & stabilization uses Normalization & standardization as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 8.7 batch normalization and optimization-stabilization context.",
+      "text": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Normalization & standardization because Normalization & standardization is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Batch normalization is presented as improving optimization/training behavior. The reusable-ingredient phrasing is synthesized."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "ae2bdf25b4dbbd79",
+      "unit_id": "99ec7055a3911219",
       "node_id": "schedules_stabilization",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Learning-rate schedules, warmup & stabilization uses Numerical analysis as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 8 optimization, numerical gradient behavior, and training stability discussion.",
+      "text": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Stability controls for iterative optimization are numerical in nature; the exact dependency wording is synthesized."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "bf795c6e1c9ae6a5",
+      "edge_id": "55fe494329e4dafb",
       "node_id": "schedules_stabilization",
       "dependency_id": "adaptive_optimizers",
-      "source_ids": ["ref_dlbook"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Adaptive learning-rate methods are related, but schedules/warmup/stabilization do not require Adam-like optimizers. Core strength is not well supported.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "30bc2a9d26a31a41",
+      "edge_id": "dc198e81f1b42460",
       "node_id": "schedules_stabilization",
       "dependency_id": "normalization",
-      "source_ids": ["ref_dlbook"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Normalization is a common stabilization technique for training; core strength is plausible but not exclusive.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "0acfe0b72191557d",
+      "edge_id": "ad43142d4a46bacb",
       "node_id": "schedules_stabilization",
       "dependency_id": "numerical_methods",
-      "source_ids": ["ref_dlbook"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Iterative training stability is a numerical optimization issue; common strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "schedules_stabilization",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

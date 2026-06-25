@@ -18,57 +18,6 @@
       "notes": "Definition is defensible but not directly verified as an ML-specific pipeline claim by one source."
     },
     {
-      "unit_id": "f4374104eb34d7b6",
-      "node_id": "data_pipelines",
-      "field": "why_it_matters",
-      "text": "The role of Distributed data pipelines & streaming is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Workflow, cluster & job orchestration, Model registry, versioning & MLOps / LLMOps.",
-      "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
-    },
-    {
-      "unit_id": "412bf9ddddcd341b",
-      "node_id": "data_pipelines",
-      "field": "examples[1]",
-      "text": "substrate for Workflow, cluster & job orchestration",
-      "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
-    },
-    {
-      "unit_id": "c058f5b71fd48974",
-      "node_id": "data_pipelines",
-      "field": "examples[2]",
-      "text": "substrate for Model registry, versioning & MLOps / LLMOps",
-      "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
-    },
-    {
       "unit_id": "986dea8fa2ae026e",
       "node_id": "data_pipelines",
       "field": "limitations[1]",
@@ -77,151 +26,169 @@
         "ref_ddia",
         "ref_aima",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "eb5aaf27b007bb86",
+      "unit_id": "b0b9b1be1b97fd42",
+      "node_id": "data_pipelines",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Distributed data pipelines & streaming is modeled as depending on Distributed systems & networking, Databases & information retrieval and feeding downstream nodes such as Workflow, cluster & job orchestration, Model registry, versioning & MLOps / LLMOps.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "78a2179a844e12ea",
+      "node_id": "data_pipelines",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Workflow, cluster & job orchestration",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "13d815d37a63582f",
+      "node_id": "data_pipelines",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Model registry, versioning & MLOps / LLMOps",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5a0f5eb437da91ea",
       "node_id": "data_pipelines",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Distributed data pipelines & streaming turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "eb7c15ab3d7fa898",
+      "unit_id": "a348dc48e8e511bd",
       "node_id": "data_pipelines",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Distributed data pipelines & streaming turns Databases & information retrieval into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Databases & information retrieval because Databases & information retrieval is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "41f041ab35612a19",
+      "unit_id": "c8ac4da7a912a919",
       "node_id": "data_pipelines",
       "field": "dependencies.data_curation.rationale",
-      "text": "Distributed data pipelines & streaming turns Data collection, curation & filtering into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "345311a4f65f0722",
+      "unit_id": "4c61c5850a802c25",
       "node_id": "data_pipelines",
       "field": "dependencies.multimodal_simulated_streams.rationale",
-      "text": "Distributed data pipelines & streaming turns Multimodal, simulated & streaming data into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "e0c6727466f7ddf0",
+      "edge_id": "e99dc8344d2e1b08",
       "node_id": "data_pipelines",
       "dependency_id": "distributed_systems",
       "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "1de4db8bd20d7139",
+      "edge_id": "49a4cb8a0d47b908",
       "node_id": "data_pipelines",
       "dependency_id": "databases_ir",
       "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "30887d19e3687569",
+      "edge_id": "6f1bdaf18b5415e2",
       "node_id": "data_pipelines",
       "dependency_id": "data_curation",
       "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible but not adequately supported by the cited sources at this wording or strength.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "d6580f977bbd6714",
+      "edge_id": "f7e9e79d60b644ef",
       "node_id": "data_pipelines",
       "dependency_id": "multimodal_simulated_streams",
       "source_ids": [
-        "ref_ddia",
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible but not adequately supported by the cited sources at this wording or strength.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "data_pipelines",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -15,160 +15,161 @@
       "notes": "Approvals/permissions/sandboxes/audit logs are standard safety-control concepts, but no dedicated sandbox or HITL source is in the packet."
     },
     {
-      "unit_id": "f1e69b15487e8af2",
-      "node_id": "human_loop_sandbox",
-      "field": "why_it_matters",
-      "text": "The role of Human-in-the-loop, permissions & sandboxing is to connect Observe–plan–act agent loops, Code execution, interpreters & sandboxes to downstream capabilities including Autonomous software-engineering agents, Autonomous research & AI scientist systems, Simulation, operations research & wargaming.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The role is plausible for agent/code-execution systems, but downstream autonomous research and wargaming are not directly sourced."
-    },
-    {
-      "unit_id": "726a616bf7c58542",
-      "node_id": "human_loop_sandbox",
-      "field": "examples[1]",
-      "text": "substrate for Autonomous software-engineering agents",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Human approval and sandboxing are common controls for software agents, but direct evidence is absent."
-    },
-    {
-      "unit_id": "9689ced59f8aafb8",
-      "node_id": "human_loop_sandbox",
-      "field": "examples[2]",
-      "text": "substrate for Autonomous research & AI scientist systems",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Autonomous research systems require a more specific source."
-    },
-    {
-      "unit_id": "1dd62df39b15b568",
-      "node_id": "human_loop_sandbox",
-      "field": "examples[3]",
-      "text": "substrate for Simulation, operations research & wargaming",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Simulation/wargaming as downstream substrate is not directly evidenced."
-    },
-    {
       "unit_id": "349573a1942f71d2",
       "node_id": "human_loop_sandbox",
       "field": "limitations[1]",
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Observe–plan–act agent loops, Code execution, interpreters & sandboxes.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Generic search/self-evaluation limitation is not specific to HITL/sandbox controls."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "876f16022a9d13f7",
+      "unit_id": "9633729c50f9329d",
+      "node_id": "human_loop_sandbox",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Human-in-the-loop, permissions & sandboxing is modeled as depending on Observe–plan–act agent loops, Code execution, interpreters & sandboxes and feeding downstream nodes such as Autonomous software-engineering agents, Autonomous research & AI scientist systems, Simulation, operations research & wargaming.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f2dbae700a5f2e40",
+      "node_id": "human_loop_sandbox",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Autonomous software-engineering agents",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "7abc2f62ce7ff5ae",
+      "node_id": "human_loop_sandbox",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Autonomous research & AI scientist systems",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "53885e15536892cd",
+      "node_id": "human_loop_sandbox",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Simulation, operations research & wargaming",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "07bc11748c15b5d4",
       "node_id": "human_loop_sandbox",
       "field": "dependencies.agent_loop.rationale",
-      "text": "Human-in-the-loop, permissions & sandboxing uses Observe–plan–act agent loops as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Human-in-the-loop, permissions & sandboxing has a `uses` dependency on Observe–plan–act agent loops because Observe–plan–act agent loops is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Controls bound agent-loop authority; uses/core is plausible."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "f2add401812225ce",
+      "unit_id": "ea2ae40e97e656a9",
       "node_id": "human_loop_sandbox",
       "field": "dependencies.code_execution.rationale",
-      "text": "Human-in-the-loop, permissions & sandboxing uses Code execution, interpreters & sandboxes as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Human-in-the-loop, permissions & sandboxing has a `uses` dependency on Code execution, interpreters & sandboxes because Code execution, interpreters & sandboxes is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Sandboxing directly relates to code execution isolation, though the packet lacks a dedicated source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "c92e4e6254b180fa",
+      "unit_id": "214c77f48ca402a5",
       "node_id": "human_loop_sandbox",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Human-in-the-loop, permissions & sandboxing uses Game theory & decision theory as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Human-in-the-loop, permissions & sandboxing has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA 4th ed. agent and multiagent/planning/search topics; used as textbook support for agent environments, actions, search/planning, and game/multiagent concepts. General code-execution/sandbox concepts from the dependency label; packet lacks a dedicated sandbox/security reference.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Permissions and quotas may involve incentives/risk tradeoffs, but game/decision theory is not clearly a dependency."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "51bbd9249d537cf2",
+      "edge_id": "9e011473193ed3a6",
       "node_id": "human_loop_sandbox",
       "dependency_id": "agent_loop",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "HITL controls are defined around agent authority and actions.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "1d48a7e813168e91",
+      "edge_id": "8c0c331597abbdef",
       "node_id": "human_loop_sandbox",
       "dependency_id": "code_execution",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Sandboxing is core when execution is involved.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "b8178f6825c9ed7a",
+      "edge_id": "47a1a31d77e72024",
       "node_id": "human_loop_sandbox",
       "dependency_id": "game_decision_theory",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Decision theory is relevant to risk/authorization, but common dependency strength is only weakly evidenced.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "human_loop_sandbox",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

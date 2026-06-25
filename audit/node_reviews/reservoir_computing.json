@@ -1,17 +1,169 @@
 {
   "sentence_reviews": [
-    {"unit_id":"9e02b88cc0b3dde1","node_id":"reservoir_computing","field":"definition","text":"Reservoir computing drives a fixed recurrent dynamical system with input and trains only a lightweight readout from its rich transient state.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning recurrent-network and reservoir/echo-state background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The definition matches standard reservoir computing, but the packet source is general and not a dedicated reservoir-computing citation."},
-    {"unit_id":"58fbd1622f2bc706","node_id":"reservoir_computing","field":"why_it_matters","text":"The role of Reservoir computing (ESN / LSM) is to connect Recurrence & feedback state, Dynamical systems & control theory to downstream capabilities including Neuromorphic, sensor & edge intelligence.","source_ids":["ref_dlbook","ref_aima"],"evidence_location":"Deep Learning recurrent/reservoir background; AIMA learning/control background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Recurrence/dynamical-system connections are supported; neuromorphic/sensor/edge downstream role is not directly established."},
-    {"unit_id":"bbaa0b3ef878dfa8","node_id":"reservoir_computing","field":"examples[1]","text":"substrate for Neuromorphic, sensor & edge intelligence","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning recurrent/reservoir background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Liquid-state machines are associated with spiking/neuromorphic ideas, but the packet evidence is too general for the full downstream claim."},
-    {"unit_id":"9cd73f3ad245cd66","node_id":"reservoir_computing","field":"examples[2]","text":"combined with Recurrence & feedback state","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning recurrent/reservoir background.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Fixed recurrent dynamics are central to reservoir computing."},
-    {"unit_id":"4b8394043bc020fd","node_id":"reservoir_computing","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Recurrence & feedback state, Dynamical systems & control theory.","source_ids":["ref_dlbook","ref_aima"],"evidence_location":"Deep Learning recurrent-network background; AIMA dynamical/control topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are plausible; broad limitation wording is generic and not directly sourced."},
-    {"unit_id":"bf84596a3236c620","node_id":"reservoir_computing","field":"dependencies.recurrence.rationale","text":"Reservoir computing (ESN / LSM) is assembled in part from the mechanism or model component Recurrence & feedback state.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning recurrent/reservoir background.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Reservoir computing relies on recurrent reservoir state dynamics."},
-    {"unit_id":"87839da630edbbce","node_id":"reservoir_computing","field":"dependencies.dynamical_control.rationale","text":"Reservoir computing (ESN / LSM) rests on the formal or computational capabilities supplied by Dynamical systems & control theory.","source_ids":["ref_dlbook","ref_aima"],"evidence_location":"Recurrent dynamical-system reservoir framing and AIMA control/dynamics background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Reservoir state evolution is a dynamical system; control-theory dependency is a defensible synthesis."},
-    {"unit_id":"0e5a494181859f13","node_id":"reservoir_computing","field":"dependencies.supervised_learning.rationale","text":"Reservoir computing (ESN / LSM) follows the learning setup expressed by Supervised learning.","source_ids":["ref_dlbook","ref_aima"],"evidence_location":"Deep Learning readout training; AIMA supervised learning background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The trained readout is commonly supervised, though reservoir construction itself is fixed/untrained."}
+    {
+      "unit_id": "9e02b88cc0b3dde1",
+      "node_id": "reservoir_computing",
+      "field": "definition",
+      "text": "Reservoir computing drives a fixed recurrent dynamical system with input and trains only a lightweight readout from its rich transient state.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning recurrent-network and reservoir/echo-state background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The definition matches standard reservoir computing, but the packet source is general and not a dedicated reservoir-computing citation."
+    },
+    {
+      "unit_id": "9cd73f3ad245cd66",
+      "node_id": "reservoir_computing",
+      "field": "examples[2]",
+      "text": "combined with Recurrence & feedback state",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning recurrent/reservoir background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Fixed recurrent dynamics are central to reservoir computing."
+    },
+    {
+      "unit_id": "4b8394043bc020fd",
+      "node_id": "reservoir_computing",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Recurrence & feedback state, Dynamical systems & control theory.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "bf84596a3236c620",
+      "node_id": "reservoir_computing",
+      "field": "dependencies.recurrence.rationale",
+      "text": "Reservoir computing (ESN / LSM) is assembled in part from the mechanism or model component Recurrence & feedback state.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning recurrent/reservoir background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Reservoir computing relies on recurrent reservoir state dynamics."
+    },
+    {
+      "unit_id": "87839da630edbbce",
+      "node_id": "reservoir_computing",
+      "field": "dependencies.dynamical_control.rationale",
+      "text": "Reservoir computing (ESN / LSM) rests on the formal or computational capabilities supplied by Dynamical systems & control theory.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Recurrent dynamical-system reservoir framing and AIMA control/dynamics background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Reservoir state evolution is a dynamical system; control-theory dependency is a defensible synthesis."
+    },
+    {
+      "unit_id": "0e5a494181859f13",
+      "node_id": "reservoir_computing",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Reservoir computing (ESN / LSM) follows the learning setup expressed by Supervised learning.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning readout training; AIMA supervised learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The trained readout is commonly supervised, though reservoir construction itself is fixed/untrained."
+    },
+    {
+      "unit_id": "4b2b99c0fcd38eb9",
+      "node_id": "reservoir_computing",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Reservoir computing (ESN / LSM) is modeled as depending on Recurrence & feedback state, Dynamical systems & control theory and feeding downstream nodes such as Neuromorphic, sensor & edge intelligence.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ad0415c7290f41dc",
+      "node_id": "reservoir_computing",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Neuromorphic, sensor & edge intelligence",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"3b8531a9f534fbc4","node_id":"reservoir_computing","dependency_id":"recurrence","source_ids":["ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"composes/core is directly supported by reservoir recurrent state dynamics.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"b80a63ea3fbffee8","node_id":"reservoir_computing","dependency_id":"dynamical_control","source_ids":["ref_dlbook","ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"requires/core is defensible because reservoir behavior is framed as a dynamical system, though 'control theory' is broader than necessary.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"75d88358dd8427bf","node_id":"reservoir_computing","dependency_id":"supervised_learning","source_ids":["ref_dlbook","ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"trained_under/common is appropriate for supervised readout training.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "3b8531a9f534fbc4",
+      "node_id": "reservoir_computing",
+      "dependency_id": "recurrence",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "composes/core is directly supported by reservoir recurrent state dynamics.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "b80a63ea3fbffee8",
+      "node_id": "reservoir_computing",
+      "dependency_id": "dynamical_control",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "requires/core is defensible because reservoir behavior is framed as a dynamical system, though 'control theory' is broader than necessary.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "75d88358dd8427bf",
+      "node_id": "reservoir_computing",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "trained_under/common is appropriate for supervised readout training.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ],
+  "node_id": "reservoir_computing",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

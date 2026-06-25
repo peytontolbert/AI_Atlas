@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Quantization-aware training and low-precision adaptation expose a model to restricted numeric formats during optimization so deployment error is reduced.",
-    "why_it_matters": "The role of Quantization-aware training & low-precision adaptation is to connect Scalars, vectors, matrices & tensors, Numerical analysis to downstream capabilities including Quantized inference & compressed deployment.",
+    "why_it_matters": "In this atlas graph, Quantization-aware training & low-precision adaptation is modeled as depending on Scalars, vectors, matrices & tensors, Numerical analysis and feeding downstream nodes such as Quantized inference & compressed deployment.",
     "examples": [
-      "substrate for Quantized inference & compressed deployment",
+      "atlas downstream link to Quantized inference & compressed deployment",
       "combined with Scalars, vectors, matrices & tensors"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "tensors",
         "type": "uses",
         "strength": "core",
-        "rationale": "Quantization-aware training & low-precision adaptation uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node."
       },
       {
         "id": "numerical_methods",
         "type": "uses",
         "strength": "core",
-        "rationale": "Quantization-aware training & low-precision adaptation uses Numerical analysis as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "Quantization-aware training & low-precision adaptation uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Quantization-aware training and low-precision adaptation expose a model to restricted numeric formats during optimization so deployment error is reduced."
     },
     {
-      "unit_id": "8bef2fca0c51809e",
+      "unit_id": "2b0b539dea64b071",
       "node_id": "quantization_training",
       "field": "why_it_matters",
-      "text": "The role of Quantization-aware training & low-precision adaptation is to connect Scalars, vectors, matrices & tensors, Numerical analysis to downstream capabilities including Quantized inference & compressed deployment."
+      "text": "In this atlas graph, Quantization-aware training & low-precision adaptation is modeled as depending on Scalars, vectors, matrices & tensors, Numerical analysis and feeding downstream nodes such as Quantized inference & compressed deployment."
     },
     {
-      "unit_id": "674c24b21e81206e",
+      "unit_id": "421d2911d00f5c67",
       "node_id": "quantization_training",
       "field": "examples[1]",
-      "text": "substrate for Quantized inference & compressed deployment"
+      "text": "atlas downstream link to Quantized inference & compressed deployment"
     },
     {
       "unit_id": "8684a2fc773fd541",
@@ -82,48 +82,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Scalars, vectors, matrices & tensors, Numerical analysis."
     },
     {
-      "unit_id": "c60fb3d03c864cbc",
+      "unit_id": "86733f14e5fee517",
       "node_id": "quantization_training",
       "field": "dependencies.tensors.rationale",
-      "text": "Quantization-aware training & low-precision adaptation uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "e37840c50794779b",
+      "unit_id": "10d97536d5fd8c4d",
       "node_id": "quantization_training",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Quantization-aware training & low-precision adaptation uses Numerical analysis as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "e39617ac6e69ec6f",
+      "unit_id": "1de9935e8e864439",
       "node_id": "quantization_training",
       "field": "dependencies.optimization.rationale",
-      "text": "Quantization-aware training & low-precision adaptation uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "4a840e89642a62aa",
+      "edge_id": "b41590d057b23000",
       "node_id": "quantization_training",
       "dependency_id": "tensors",
       "type": "uses",
       "strength": "core",
-      "rationale": "Quantization-aware training & low-precision adaptation uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "33daa07e4783c8a8",
+      "edge_id": "7b63195d44589112",
       "node_id": "quantization_training",
       "dependency_id": "numerical_methods",
       "type": "uses",
       "strength": "core",
-      "rationale": "Quantization-aware training & low-precision adaptation uses Numerical analysis as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "c07ab48b186e3512",
+      "edge_id": "9922b29bc568cb4f",
       "node_id": "quantization_training",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "Quantization-aware training & low-precision adaptation uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

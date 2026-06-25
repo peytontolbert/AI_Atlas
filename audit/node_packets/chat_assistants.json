@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Conversational assistants combine language models, dialogue state, memory, retrieval, tools, policy controls, and user-facing interaction loops.",
-    "why_it_matters": "The role of Conversational assistants & chatbots is to connect Large language models, Context windows & working memory to downstream capabilities including Tutoring, translation & knowledge work.",
+    "why_it_matters": "In this atlas graph, Conversational assistants & chatbots is modeled as depending on Large language models, Context windows & working memory and feeding downstream nodes such as Tutoring, translation & knowledge work.",
     "examples": [
-      "substrate for Tutoring, translation & knowledge work",
+      "atlas downstream link to Tutoring, translation & knowledge work",
       "combined with Large language models"
     ],
     "limitations": [
@@ -94,25 +94,25 @@
         "id": "output_watermarking",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Conversational assistants & chatbots integrates Generation-time watermarking as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Generation-time watermarking with `optional` strength."
       },
       {
         "id": "content_provenance",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Conversational assistants & chatbots integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Content credentials, signing & provenance with `optional` strength."
       },
       {
         "id": "memory_lifecycle",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Conversational assistants & chatbots integrates Memory lifecycle, forgetting & consolidation as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Memory lifecycle, forgetting & consolidation with `optional` strength."
       },
       {
         "id": "memory_augmented_nn",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Conversational assistants & chatbots integrates Memory-augmented neural networks as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Memory-augmented neural networks with `optional` strength."
       }
     ]
   },
@@ -124,16 +124,16 @@
       "text": "Conversational assistants combine language models, dialogue state, memory, retrieval, tools, policy controls, and user-facing interaction loops."
     },
     {
-      "unit_id": "191a116012f0abdb",
+      "unit_id": "6efebd9a76e867e9",
       "node_id": "chat_assistants",
       "field": "why_it_matters",
-      "text": "The role of Conversational assistants & chatbots is to connect Large language models, Context windows & working memory to downstream capabilities including Tutoring, translation & knowledge work."
+      "text": "In this atlas graph, Conversational assistants & chatbots is modeled as depending on Large language models, Context windows & working memory and feeding downstream nodes such as Tutoring, translation & knowledge work."
     },
     {
-      "unit_id": "221819a36c830a0a",
+      "unit_id": "b305e593b934f0d4",
       "node_id": "chat_assistants",
       "field": "examples[1]",
-      "text": "substrate for Tutoring, translation & knowledge work"
+      "text": "atlas downstream link to Tutoring, translation & knowledge work"
     },
     {
       "unit_id": "d3ee431f32955c4e",
@@ -208,28 +208,28 @@
       "text": "Conversational assistants & chatbots integrates Speculative, parallel & assisted decoding as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "0fcd0ab5aa9ea57a",
+      "unit_id": "d3181876ac8ac5d4",
       "node_id": "chat_assistants",
       "field": "dependencies.output_watermarking.rationale",
-      "text": "Conversational assistants & chatbots integrates Generation-time watermarking as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Generation-time watermarking with `optional` strength."
     },
     {
-      "unit_id": "01105a63ba522250",
+      "unit_id": "8253139647d7425b",
       "node_id": "chat_assistants",
       "field": "dependencies.content_provenance.rationale",
-      "text": "Conversational assistants & chatbots integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Content credentials, signing & provenance with `optional` strength."
     },
     {
-      "unit_id": "69ade5dae4beb6e2",
+      "unit_id": "6a86a559e2d678ed",
       "node_id": "chat_assistants",
       "field": "dependencies.memory_lifecycle.rationale",
-      "text": "Conversational assistants & chatbots integrates Memory lifecycle, forgetting & consolidation as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Memory lifecycle, forgetting & consolidation with `optional` strength."
     },
     {
-      "unit_id": "07399354d3405939",
+      "unit_id": "96967dfc27cc1f0d",
       "node_id": "chat_assistants",
       "field": "dependencies.memory_augmented_nn.rationale",
-      "text": "Conversational assistants & chatbots integrates Memory-augmented neural networks as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Memory-augmented neural networks with `optional` strength."
     }
   ],
   "edge_units": [
@@ -314,36 +314,36 @@
       "rationale": "Conversational assistants & chatbots integrates Speculative, parallel & assisted decoding as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "920fedb22d955b55",
+      "edge_id": "4936bfa07af1103f",
       "node_id": "chat_assistants",
       "dependency_id": "output_watermarking",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Conversational assistants & chatbots integrates Generation-time watermarking as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Generation-time watermarking with `optional` strength."
     },
     {
-      "edge_id": "23b6cc2f5f8519be",
+      "edge_id": "0c1f4b61bd0b50a2",
       "node_id": "chat_assistants",
       "dependency_id": "content_provenance",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Conversational assistants & chatbots integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Content credentials, signing & provenance with `optional` strength."
     },
     {
-      "edge_id": "7e4799df079edf4e",
+      "edge_id": "75f1f45597833b6f",
       "node_id": "chat_assistants",
       "dependency_id": "memory_lifecycle",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Conversational assistants & chatbots integrates Memory lifecycle, forgetting & consolidation as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Memory lifecycle, forgetting & consolidation with `optional` strength."
     },
     {
-      "edge_id": "acea2dc469793e85",
+      "edge_id": "49e6cc75a6aca30d",
       "node_id": "chat_assistants",
       "dependency_id": "memory_augmented_nn",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Conversational assistants & chatbots integrates Memory-augmented neural networks as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Conversational assistants & chatbots has an `applies` dependency on Memory-augmented neural networks with `optional` strength."
     }
   ],
   "candidate_references": {

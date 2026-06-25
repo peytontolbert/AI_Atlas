@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Learned vectors place semantically or functionally related entities near one another in a continuous space.",
-    "why_it_matters": "The role of Embeddings & distributed representations is to connect Linear algebra, Information theory to downstream capabilities including Positional, temporal & coordinate encodings, Sparse coding & compositional representations, Contrastive learning.",
+    "why_it_matters": "In this atlas graph, Embeddings & distributed representations is modeled as depending on Linear algebra, Information theory and feeding downstream nodes such as Positional, temporal & coordinate encodings, Sparse coding & compositional representations, Contrastive learning.",
     "examples": [
-      "substrate for Positional, temporal & coordinate encodings",
-      "substrate for Sparse coding & compositional representations",
-      "substrate for Contrastive learning"
+      "atlas downstream link to Positional, temporal & coordinate encodings",
+      "atlas downstream link to Sparse coding & compositional representations",
+      "atlas downstream link to Contrastive learning"
     ],
     "limitations": [
       "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Linear algebra, Information theory."
@@ -40,7 +40,7 @@
         "id": "information_theory",
         "type": "requires",
         "strength": "common",
-        "rationale": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Information theory."
+        "rationale": "In this atlas graph, Embeddings & distributed representations has a `requires` dependency on Information theory with `common` strength."
       },
       {
         "id": "tensors",
@@ -58,28 +58,28 @@
       "text": "Learned vectors place semantically or functionally related entities near one another in a continuous space."
     },
     {
-      "unit_id": "345b7575f6810974",
+      "unit_id": "ecd05199fa64ce19",
       "node_id": "embeddings",
       "field": "why_it_matters",
-      "text": "The role of Embeddings & distributed representations is to connect Linear algebra, Information theory to downstream capabilities including Positional, temporal & coordinate encodings, Sparse coding & compositional representations, Contrastive learning."
+      "text": "In this atlas graph, Embeddings & distributed representations is modeled as depending on Linear algebra, Information theory and feeding downstream nodes such as Positional, temporal & coordinate encodings, Sparse coding & compositional representations, Contrastive learning."
     },
     {
-      "unit_id": "32107005144790da",
+      "unit_id": "28f7dc4c228a1bde",
       "node_id": "embeddings",
       "field": "examples[1]",
-      "text": "substrate for Positional, temporal & coordinate encodings"
+      "text": "atlas downstream link to Positional, temporal & coordinate encodings"
     },
     {
-      "unit_id": "08fcf05775902308",
+      "unit_id": "90d47e9e3795508c",
       "node_id": "embeddings",
       "field": "examples[2]",
-      "text": "substrate for Sparse coding & compositional representations"
+      "text": "atlas downstream link to Sparse coding & compositional representations"
     },
     {
-      "unit_id": "0cf2abe1bb457dff",
+      "unit_id": "880afa4271a92ee9",
       "node_id": "embeddings",
       "field": "examples[3]",
-      "text": "substrate for Contrastive learning"
+      "text": "atlas downstream link to Contrastive learning"
     },
     {
       "unit_id": "7bb81e7edc41364e",
@@ -94,10 +94,10 @@
       "text": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Linear algebra."
     },
     {
-      "unit_id": "6c352c4b2c32ca9c",
+      "unit_id": "99018918f30375eb",
       "node_id": "embeddings",
       "field": "dependencies.information_theory.rationale",
-      "text": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Information theory."
+      "text": "In this atlas graph, Embeddings & distributed representations has a `requires` dependency on Information theory with `common` strength."
     },
     {
       "unit_id": "3e30d9eded7cefbb",
@@ -116,12 +116,12 @@
       "rationale": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Linear algebra."
     },
     {
-      "edge_id": "b369ecf8a7003126",
+      "edge_id": "29a62732b6f10a10",
       "node_id": "embeddings",
       "dependency_id": "information_theory",
       "type": "requires",
       "strength": "common",
-      "rationale": "Embeddings & distributed representations rests on the formal or computational capabilities supplied by Information theory."
+      "rationale": "In this atlas graph, Embeddings & distributed representations has a `requires` dependency on Information theory with `common` strength."
     },
     {
       "edge_id": "c4be6a58e0cc2837",

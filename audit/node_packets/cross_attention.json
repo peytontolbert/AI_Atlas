@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Queries from one stream attend to keys and values from another stream or memory source.",
-    "why_it_matters": "The role of Cross-attention & co-attention is to connect Self-attention, Multimodal, simulated & streaming data to downstream capabilities including Encoder–decoder transformers, Vision Transformers & Perceiver-style latent models, Multimodal foundation models.",
+    "why_it_matters": "In this atlas graph, Cross-attention & co-attention is modeled as depending on Self-attention, Multimodal, simulated & streaming data and feeding downstream nodes such as Encoder–decoder transformers, Vision Transformers & Perceiver-style latent models, Multimodal foundation models.",
     "examples": [
-      "substrate for Encoder–decoder transformers",
-      "substrate for Vision Transformers & Perceiver-style latent models",
-      "substrate for Multimodal foundation models"
+      "atlas downstream link to Encoder–decoder transformers",
+      "atlas downstream link to Vision Transformers & Perceiver-style latent models",
+      "atlas downstream link to Multimodal foundation models"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Self-attention, Multimodal, simulated & streaming data."
@@ -41,7 +41,7 @@
         "id": "multimodal_simulated_streams",
         "type": "uses",
         "strength": "core",
-        "rationale": "Cross-attention & co-attention uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Cross-attention & co-attention has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -53,28 +53,28 @@
       "text": "Queries from one stream attend to keys and values from another stream or memory source."
     },
     {
-      "unit_id": "ac91df85355b45dd",
+      "unit_id": "668149756c9dd4a1",
       "node_id": "cross_attention",
       "field": "why_it_matters",
-      "text": "The role of Cross-attention & co-attention is to connect Self-attention, Multimodal, simulated & streaming data to downstream capabilities including Encoder–decoder transformers, Vision Transformers & Perceiver-style latent models, Multimodal foundation models."
+      "text": "In this atlas graph, Cross-attention & co-attention is modeled as depending on Self-attention, Multimodal, simulated & streaming data and feeding downstream nodes such as Encoder–decoder transformers, Vision Transformers & Perceiver-style latent models, Multimodal foundation models."
     },
     {
-      "unit_id": "3c00e21d0f5bf646",
+      "unit_id": "066f067e162f9add",
       "node_id": "cross_attention",
       "field": "examples[1]",
-      "text": "substrate for Encoder–decoder transformers"
+      "text": "atlas downstream link to Encoder–decoder transformers"
     },
     {
-      "unit_id": "0ea6eaf2b79ec5bd",
+      "unit_id": "f4acae0b8ee59897",
       "node_id": "cross_attention",
       "field": "examples[2]",
-      "text": "substrate for Vision Transformers & Perceiver-style latent models"
+      "text": "atlas downstream link to Vision Transformers & Perceiver-style latent models"
     },
     {
-      "unit_id": "063ee22555b6bb15",
+      "unit_id": "9bee599dcf9e40b6",
       "node_id": "cross_attention",
       "field": "examples[3]",
-      "text": "substrate for Multimodal foundation models"
+      "text": "atlas downstream link to Multimodal foundation models"
     },
     {
       "unit_id": "c36304d1fb55ad9a",
@@ -89,10 +89,10 @@
       "text": "Cross-attention & co-attention is assembled in part from the mechanism or model component Self-attention."
     },
     {
-      "unit_id": "ed42970042287d7f",
+      "unit_id": "5f4ba3bb1ecbeb80",
       "node_id": "cross_attention",
       "field": "dependencies.multimodal_simulated_streams.rationale",
-      "text": "Cross-attention & co-attention uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Cross-attention & co-attention has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -105,12 +105,12 @@
       "rationale": "Cross-attention & co-attention is assembled in part from the mechanism or model component Self-attention."
     },
     {
-      "edge_id": "022327e6bac32e4c",
+      "edge_id": "afd88a737fac360a",
       "node_id": "cross_attention",
       "dependency_id": "multimodal_simulated_streams",
       "type": "uses",
       "strength": "core",
-      "rationale": "Cross-attention & co-attention uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Cross-attention & co-attention has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

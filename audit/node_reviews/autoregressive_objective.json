@@ -1,20 +1,202 @@
 {
   "sentence_reviews": [
-    {"unit_id":"576c102c224e04e9","node_id":"autoregressive_objective","field":"definition","text":"A joint distribution is factorized into a sequence of conditional next-step predictions.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, probability and generative modeling foundation; landing page lines 21-29 and 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"This is the standard chain-rule/autoregressive factorization."},
-    {"unit_id":"e5d85bc9619b2c3b","node_id":"autoregressive_objective","field":"why_it_matters","text":"The role of Autoregressive / next-step prediction is to connect Self-supervised learning, Generative modeling to downstream capabilities including Autoregressive decoding, Recurrent neural networks, Decoder-only causal transformers.","source_ids":["ref_pml","url:https://arxiv.org/abs/1810.04805"],"evidence_location":"PML landing page lines 45-48; BERT abstract lines 37-39 contrasts bidirectional pretraining context with other language representation models.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Autoregressive objectives clearly support generative sequence models; the exact downstream graph list is synthesized."},
-    {"unit_id":"78321bad483a264a","node_id":"autoregressive_objective","field":"examples[1]","text":"substrate for Autoregressive decoding","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, probability/generative ML source lines 21-29 and 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Autoregressive decoding directly samples next steps from autoregressive conditionals."},
-    {"unit_id":"a8214fdb839fa211","node_id":"autoregressive_objective","field":"examples[2]","text":"substrate for Recurrent neural networks","source_ids":["ref_pml"],"evidence_location":"PML landing page lines 45-48 describes modern and traditional ML coverage.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"RNNs can implement autoregressive sequence models, but RNNs do not inherently require this objective."},
-    {"unit_id":"b06f3847433e4dce","node_id":"autoregressive_objective","field":"examples[3]","text":"substrate for Decoder-only causal transformers","source_ids":["ref_pml"],"evidence_location":"PML landing page lines 45-48 describes modern ML coverage; no direct decoder-only transformer evidence was inspected.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Causal decoder language models are commonly trained with next-token objectives, but the inspected source location is indirect."},
-    {"unit_id":"be9814cc6ad11039","node_id":"autoregressive_objective","field":"limitations[1]","text":"A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Self-supervised learning, Generative modeling.","source_ids":["ref_pml"],"evidence_location":"PML landing page lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are plausible; the surrogate-objective caveat is not directly supported by inspected evidence."},
-    {"unit_id":"714b6584b9d363b4","node_id":"autoregressive_objective","field":"dependencies.self_supervised_learning.rationale","text":"Autoregressive / next-step prediction uses Self-supervised learning as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"PML landing page lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Next-step prediction on raw sequences can be self-supervised, but autoregressive modeling can also be supervised or likelihood-based."},
-    {"unit_id":"da670e3c16c41e86","node_id":"autoregressive_objective","field":"dependencies.generative_learning.rationale","text":"Autoregressive / next-step prediction uses Generative modeling as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"PML landing page lines 21-29 and 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The objective defines a generative model over sequences via conditional distributions."},
-    {"unit_id":"e0a531babb08ba00","node_id":"autoregressive_objective","field":"dependencies.sequences_time.rationale","text":"Autoregressive / next-step prediction uses Sequences, events & time series as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"PML landing page lines 45-48 describes broad traditional/modern ML coverage.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Next-step prediction requires ordered sequence structure."},
-    {"unit_id":"2b788fd8506e1807","node_id":"autoregressive_objective","field":"dependencies.probability.rationale","text":"Autoregressive / next-step prediction uses Probability theory as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"PML landing page lines 21-29 and 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The definition is explicitly a factorization of a joint distribution into conditional probabilities."}
+    {
+      "unit_id": "576c102c224e04e9",
+      "node_id": "autoregressive_objective",
+      "field": "definition",
+      "text": "A joint distribution is factorized into a sequence of conditional next-step predictions.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "Probabilistic Machine Learning: An Introduction, probability and generative modeling foundation; landing page lines 21-29 and 45-48.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is the standard chain-rule/autoregressive factorization."
+    },
+    {
+      "unit_id": "be9814cc6ad11039",
+      "node_id": "autoregressive_objective",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Self-supervised learning, Generative modeling.",
+      "source_ids": [
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "34908d4596964c22",
+      "node_id": "autoregressive_objective",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Autoregressive / next-step prediction is modeled as depending on Self-supervised learning, Generative modeling and feeding downstream nodes such as Autoregressive decoding, Recurrent neural networks, Decoder-only causal transformers.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1ccb5adabd1da18c",
+      "node_id": "autoregressive_objective",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Autoregressive decoding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e6475dc02fb4bad8",
+      "node_id": "autoregressive_objective",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Recurrent neural networks",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "71e3481da1a5d620",
+      "node_id": "autoregressive_objective",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Decoder-only causal transformers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "022625c8738a9aa7",
+      "node_id": "autoregressive_objective",
+      "field": "dependencies.self_supervised_learning.rationale",
+      "text": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "dc29f87e1c057717",
+      "node_id": "autoregressive_objective",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f7960be4f043caeb",
+      "node_id": "autoregressive_objective",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f7234b3f84a0113a",
+      "node_id": "autoregressive_objective",
+      "field": "dependencies.probability.rationale",
+      "text": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"b095c554f62dd93f","node_id":"autoregressive_objective","dependency_id":"self_supervised_learning","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Self-supervised data-derived targets are common in language modeling but not inherent to all autoregressive objectives.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"712cb0749faf0b68","node_id":"autoregressive_objective","dependency_id":"generative_learning","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Autoregressive conditionals define a generative distribution over sequences.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"d56addd48de979f3","node_id":"autoregressive_objective","dependency_id":"sequences_time","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Sequential ordering is required for next-step prediction; common strength is defensible because the packet treats it as an added ingredient beyond self-supervision/generation.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"9d57f51cb617fbbc","node_id":"autoregressive_objective","dependency_id":"probability","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Conditional and joint distributions are probability-theoretic objects; common strength may be understated but defensible in the graph's selected core dependencies.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "5b7e4c00fa56fc94",
+      "node_id": "autoregressive_objective",
+      "dependency_id": "self_supervised_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "b818bf658d2b5fd4",
+      "node_id": "autoregressive_objective",
+      "dependency_id": "generative_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "fd8ceb92efb7492a",
+      "node_id": "autoregressive_objective",
+      "dependency_id": "sequences_time",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "78602c743852db87",
+      "node_id": "autoregressive_objective",
+      "dependency_id": "probability",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "autoregressive_objective",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Reusable state, external functions, services, and interfaces extend computation beyond model parameters.",
-    "why_it_matters": "The role of Caches, APIs & tool interfaces is to connect Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including KV cache & recurrent inference state, External databases, APIs & live tools, Code execution, interpreters & sandboxes.",
+    "why_it_matters": "In this atlas graph, Caches, APIs & tool interfaces is modeled as depending on Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations and feeding downstream nodes such as KV cache & recurrent inference state, External databases, APIs & live tools, Code execution, interpreters & sandboxes.",
     "examples": [
-      "substrate for KV cache & recurrent inference state",
-      "substrate for External databases, APIs & live tools",
-      "substrate for Code execution, interpreters & sandboxes"
+      "atlas downstream link to KV cache & recurrent inference state",
+      "atlas downstream link to External databases, APIs & live tools",
+      "atlas downstream link to Code execution, interpreters & sandboxes"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations."
@@ -35,25 +35,25 @@
         "id": "algorithms_data_structures",
         "type": "uses",
         "strength": "core",
-        "rationale": "Caches, APIs & tool interfaces uses Algorithms & data structures as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
       },
       {
         "id": "programs_ast_ir",
         "type": "uses",
         "strength": "core",
-        "rationale": "Caches, APIs & tool interfaces uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "databases_ir",
         "type": "uses",
         "strength": "common",
-        "rationale": "Caches, APIs & tool interfaces uses Databases & information retrieval as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
       },
       {
         "id": "distributed_systems",
         "type": "uses",
         "strength": "common",
-        "rationale": "Caches, APIs & tool interfaces uses Distributed systems & networking as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -65,28 +65,28 @@
       "text": "Reusable state, external functions, services, and interfaces extend computation beyond model parameters."
     },
     {
-      "unit_id": "1ce301a0af9ffb80",
+      "unit_id": "6b4c7fdd3d05ef04",
       "node_id": "cache_tool_interfaces",
       "field": "why_it_matters",
-      "text": "The role of Caches, APIs & tool interfaces is to connect Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including KV cache & recurrent inference state, External databases, APIs & live tools, Code execution, interpreters & sandboxes."
+      "text": "In this atlas graph, Caches, APIs & tool interfaces is modeled as depending on Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations and feeding downstream nodes such as KV cache & recurrent inference state, External databases, APIs & live tools, Code execution, interpreters & sandboxes."
     },
     {
-      "unit_id": "7eae1f1cbe08758c",
+      "unit_id": "397d2ba6f4cfca81",
       "node_id": "cache_tool_interfaces",
       "field": "examples[1]",
-      "text": "substrate for KV cache & recurrent inference state"
+      "text": "atlas downstream link to KV cache & recurrent inference state"
     },
     {
-      "unit_id": "5abe0d2e38b80e3b",
+      "unit_id": "b690ccb1e2d8a2c9",
       "node_id": "cache_tool_interfaces",
       "field": "examples[2]",
-      "text": "substrate for External databases, APIs & live tools"
+      "text": "atlas downstream link to External databases, APIs & live tools"
     },
     {
-      "unit_id": "d148c4925a234579",
+      "unit_id": "fdbc3053744c4cf0",
       "node_id": "cache_tool_interfaces",
       "field": "examples[3]",
-      "text": "substrate for Code execution, interpreters & sandboxes"
+      "text": "atlas downstream link to Code execution, interpreters & sandboxes"
     },
     {
       "unit_id": "4b0177d3199727f4",
@@ -95,62 +95,62 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Algorithms & data structures, Programs, ASTs, bytecode & intermediate representations."
     },
     {
-      "unit_id": "94be5498ff09d082",
+      "unit_id": "f0b5aee22fc34117",
       "node_id": "cache_tool_interfaces",
       "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "Caches, APIs & tool interfaces uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "38874f6334996883",
+      "unit_id": "98a6d82eb8cd2775",
       "node_id": "cache_tool_interfaces",
       "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Caches, APIs & tool interfaces uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "9ac4c542fd2cc809",
+      "unit_id": "6ec46424e0ef1839",
       "node_id": "cache_tool_interfaces",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Caches, APIs & tool interfaces uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "97f66b9f55aea7d5",
+      "unit_id": "9f94c499dbd02748",
       "node_id": "cache_tool_interfaces",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Caches, APIs & tool interfaces uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "39d292a1b92bcff8",
+      "edge_id": "efc01b4dd5ce8960",
       "node_id": "cache_tool_interfaces",
       "dependency_id": "algorithms_data_structures",
       "type": "uses",
       "strength": "core",
-      "rationale": "Caches, APIs & tool interfaces uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "35d841b778dfcc37",
+      "edge_id": "81625cb48588efb7",
       "node_id": "cache_tool_interfaces",
       "dependency_id": "programs_ast_ir",
       "type": "uses",
       "strength": "core",
-      "rationale": "Caches, APIs & tool interfaces uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "378a2f41724bf75a",
+      "edge_id": "6607b33e6c386271",
       "node_id": "cache_tool_interfaces",
       "dependency_id": "databases_ir",
       "type": "uses",
       "strength": "common",
-      "rationale": "Caches, APIs & tool interfaces uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "9ff3712030298734",
+      "edge_id": "5e8080f9c2636326",
       "node_id": "cache_tool_interfaces",
       "dependency_id": "distributed_systems",
       "type": "uses",
       "strength": "common",
-      "rationale": "Caches, APIs & tool interfaces uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Caches, APIs & tool interfaces has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

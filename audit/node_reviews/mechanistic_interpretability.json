@@ -1,21 +1,218 @@
 {
   "sentence_reviews": [
-    {"unit_id":"06603fdd88422fe0","node_id":"mechanistic_interpretability","field":"definition","text":"Mechanistic interpretability studies circuits, features, attention patterns, sparse representations, and algorithmic structure inside trained neural networks.","source_ids":["ref_transformer","ref_dlbook","ref_pml"],"evidence_location":"Transformer, Deep Learning, and PML sources support neural networks, attention, features, representations, and sparse coding foundations; mechanistic framing is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Concept is well supported by dependencies, but packet lacks a dedicated mechanistic-interpretability source."},
-    {"unit_id":"1d0061695aad9a10","node_id":"mechanistic_interpretability","field":"why_it_matters","text":"The role of Mechanistic interpretability & circuit analysis is to connect Feature attribution & interpretability, Ablation, interventions & causal analysis to downstream capabilities including Observability, tracing & evaluation harnesses.","source_ids":["ref_nist","ref_pml","ref_transformer"],"evidence_location":"Sources support interpretability, causal/ablation-style analysis, model components, and evaluation governance; observability linkage is graph-derived.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Defensible graph synthesis, not exact source support."},
-    {"unit_id":"5fd4fcbeda597475","node_id":"mechanistic_interpretability","field":"examples[1]","text":"substrate for Observability, tracing & evaluation harnesses","source_ids":["ref_nist"],"evidence_location":"NIST AI RMF supports monitoring, measurement, and evaluation governance but not this exact downstream relationship.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Plausible, but a tracing/observability source would be needed for direct support."},
-    {"unit_id":"b191f419fca3ec27","node_id":"mechanistic_interpretability","field":"examples[2]","text":"combined with Feature attribution & interpretability","source_ids":["ref_pml"],"evidence_location":"PML supports interpretability and representation analysis foundations.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Combination is plausible and aligned with the taxonomy."},
-    {"unit_id":"d8479d6d4de45767","node_id":"mechanistic_interpretability","field":"limitations[1]","text":"Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Feature attribution & interpretability, Ablation, interventions & causal analysis.","source_ids":["ref_nist","ref_pml"],"evidence_location":"Sources support broad evaluation limits and dependency concepts but not the exact mechanistic-interpretability limitation.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Generic limitation should be narrowed to mechanistic-interpretability coverage/scalability limits."},
-    {"unit_id":"eb0ac963d64fa44b","node_id":"mechanistic_interpretability","field":"dependencies.interpretability.rationale","text":"Mechanistic interpretability & circuit analysis measures, constrains, audits, or governs behavior using Feature attribution & interpretability.","source_ids":["ref_pml"],"evidence_location":"PML supports interpretability and feature/representation analysis as foundations for model analysis.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Core relationship is defensible."},
-    {"unit_id":"42c8095a4f5a294d","node_id":"mechanistic_interpretability","field":"dependencies.causal_ablation.rationale","text":"Mechanistic interpretability & circuit analysis measures, constrains, audits, or governs behavior using Ablation, interventions & causal analysis.","source_ids":["ref_pml","ref_aima"],"evidence_location":"PML/AIMA support causal and intervention reasoning; ablation-style analysis is a common way to test mechanisms.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Core dependency is plausible, though not directly sourced to mechanistic interpretability."},
-    {"unit_id":"f7dca089eebe1dd6","node_id":"mechanistic_interpretability","field":"dependencies.transformer.rationale","text":"Mechanistic interpretability & circuit analysis measures, constrains, audits, or governs behavior using Transformers.","source_ids":["ref_transformer"],"evidence_location":"Attention Is All You Need defines transformer architecture and attention mechanisms that are common targets of circuit/attention-pattern analysis.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Common dependency is well supported for transformer-focused mechanistic work."},
-    {"unit_id":"ff4ab75d8b01a32c","node_id":"mechanistic_interpretability","field":"dependencies.autoencoder.rationale","text":"Mechanistic interpretability & circuit analysis measures, constrains, audits, or governs behavior using Autoencoders.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning covers autoencoders as representation-learning models; sparse/feature methods can use autoencoder-like components.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Plausible for sparse autoencoder methods, but the packet cites only general autoencoder background."},
-    {"unit_id":"24385ebf0128be06","node_id":"mechanistic_interpretability","field":"dependencies.sparse_distributed_codes.rationale","text":"Mechanistic interpretability & circuit analysis measures, constrains, audits, or governs behavior using Sparse coding & compositional representations.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning and PML support sparse coding and distributed/compositional representation concepts.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Common dependency is defensible."}
+    {
+      "unit_id": "06603fdd88422fe0",
+      "node_id": "mechanistic_interpretability",
+      "field": "definition",
+      "text": "Mechanistic interpretability studies circuits, features, attention patterns, sparse representations, and algorithmic structure inside trained neural networks.",
+      "source_ids": [
+        "ref_transformer",
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Transformer, Deep Learning, and PML sources support neural networks, attention, features, representations, and sparse coding foundations; mechanistic framing is synthesized.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Concept is well supported by dependencies, but packet lacks a dedicated mechanistic-interpretability source."
+    },
+    {
+      "unit_id": "b191f419fca3ec27",
+      "node_id": "mechanistic_interpretability",
+      "field": "examples[2]",
+      "text": "combined with Feature attribution & interpretability",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "PML supports interpretability and representation analysis foundations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Combination is plausible and aligned with the taxonomy."
+    },
+    {
+      "unit_id": "d8479d6d4de45767",
+      "node_id": "mechanistic_interpretability",
+      "field": "limitations[1]",
+      "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Feature attribution & interpretability, Ablation, interventions & causal analysis.",
+      "source_ids": [
+        "ref_nist",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "505cc1eb80cf9217",
+      "node_id": "mechanistic_interpretability",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Mechanistic interpretability & circuit analysis is modeled as depending on Feature attribution & interpretability, Ablation, interventions & causal analysis and feeding downstream nodes such as Observability, tracing & evaluation harnesses.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9cb9c4af2167d89d",
+      "node_id": "mechanistic_interpretability",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Observability, tracing & evaluation harnesses",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "fb7003df9f5bd51b",
+      "node_id": "mechanistic_interpretability",
+      "field": "dependencies.interpretability.rationale",
+      "text": "In this atlas graph, Mechanistic interpretability & circuit analysis has an `evaluates_or_constrains` dependency on Feature attribution & interpretability because Feature attribution & interpretability is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "694b0fc0cd7c3d3c",
+      "node_id": "mechanistic_interpretability",
+      "field": "dependencies.causal_ablation.rationale",
+      "text": "In this atlas graph, Mechanistic interpretability & circuit analysis has an `evaluates_or_constrains` dependency on Ablation, interventions & causal analysis because Ablation, interventions & causal analysis is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "441a8f8ac82d34ec",
+      "node_id": "mechanistic_interpretability",
+      "field": "dependencies.transformer.rationale",
+      "text": "In this atlas graph, Mechanistic interpretability & circuit analysis has an `evaluates_or_constrains` dependency on Transformers because Transformers is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f67a02111dfa7186",
+      "node_id": "mechanistic_interpretability",
+      "field": "dependencies.autoencoder.rationale",
+      "text": "In this atlas graph, Mechanistic interpretability & circuit analysis has an `evaluates_or_constrains` dependency on Autoencoders because Autoencoders is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "984d2b2fbbbb3e10",
+      "node_id": "mechanistic_interpretability",
+      "field": "dependencies.sparse_distributed_codes.rationale",
+      "text": "In this atlas graph, Mechanistic interpretability & circuit analysis has an `evaluates_or_constrains` dependency on Sparse coding & compositional representations because Sparse coding & compositional representations is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"61da2bcf4b4b6ad9","node_id":"mechanistic_interpretability","dependency_id":"interpretability","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Interpretability is a core parent concept for mechanistic interpretability.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"bf633d0f04aeb7ab","node_id":"mechanistic_interpretability","dependency_id":"causal_ablation","source_ids":["ref_pml","ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Ablations and interventions are central ways to test proposed mechanisms.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"191f1c9f1e09e8f9","node_id":"mechanistic_interpretability","dependency_id":"transformer","source_ids":["ref_transformer"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Transformers are a common target architecture; common strength is appropriate.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"3dd8dfe142a9ca6b","node_id":"mechanistic_interpretability","dependency_id":"autoencoder","source_ids":["ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Autoencoders are relevant but the cited general source does not establish this edge directly.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"4c3d7d9a5aa1863d","node_id":"mechanistic_interpretability","dependency_id":"sparse_distributed_codes","source_ids":["ref_dlbook","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Sparse/distributed representation concepts are a common mechanistic-interpretability substrate.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "6548b86571000ee4",
+      "node_id": "mechanistic_interpretability",
+      "dependency_id": "interpretability",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "ea8ab5e5641b0216",
+      "node_id": "mechanistic_interpretability",
+      "dependency_id": "causal_ablation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "b2d0f5dcb99b4f00",
+      "node_id": "mechanistic_interpretability",
+      "dependency_id": "transformer",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "92f268052f20d33f",
+      "node_id": "mechanistic_interpretability",
+      "dependency_id": "autoencoder",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "d283749c99d7dc14",
+      "node_id": "mechanistic_interpretability",
+      "dependency_id": "sparse_distributed_codes",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "mechanistic_interpretability",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

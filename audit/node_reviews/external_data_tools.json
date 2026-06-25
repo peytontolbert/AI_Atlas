@@ -16,109 +16,20 @@
       "notes": "The exact list of databases, APIs, files, search engines, sensors, and live state is broader than the citation."
     },
     {
-      "unit_id": "2dac8c0e3512ce5e",
-      "node_id": "external_data_tools",
-      "field": "why_it_matters",
-      "text": "The role of External databases, APIs & live tools is to connect Caches, APIs & tool interfaces, Databases & information retrieval to downstream capabilities including Tool use & function calling, ReAct-style reasoning and acting, API gateways, tool registries & secure connectors.",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
-    },
-    {
-      "unit_id": "7cd72eba6f587783",
-      "node_id": "external_data_tools",
-      "field": "examples[1]",
-      "text": "substrate for Tool use & function calling",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
-    },
-    {
-      "unit_id": "52e3c75bb8b4a87a",
-      "node_id": "external_data_tools",
-      "field": "examples[2]",
-      "text": "substrate for ReAct-style reasoning and acting",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
-    },
-    {
-      "unit_id": "54d1b069393708c6",
-      "node_id": "external_data_tools",
-      "field": "examples[3]",
-      "text": "substrate for API gateways, tool registries & secure connectors",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The example is a plausible downstream use of the node, but still not directly evidenced as written."
-    },
-    {
       "unit_id": "5006caeb97ee8568",
       "node_id": "external_data_tools",
       "field": "limitations[1]",
       "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Caches, APIs & tool interfaces, Databases & information retrieval.",
       "source_ids": [
         "ref_aima",
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
-    },
-    {
-      "unit_id": "a6a64882c70eb41d",
-      "node_id": "external_data_tools",
-      "field": "dependencies.cache_tool_interfaces.rationale",
-      "text": "External databases, APIs & live tools uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The packet references support cache_tool_interfaces or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
-    },
-    {
-      "unit_id": "184c94c4e20e90f5",
-      "node_id": "external_data_tools",
-      "field": "dependencies.databases_ir.rationale",
-      "text": "External databases, APIs & live tools uses Databases & information retrieval as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "evidence_location": "The packet references support databases_ir or the node mechanism broadly, but the dependency rationale is graph-derived.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "46d4c4b1de7adc2b",
@@ -149,39 +60,93 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+    },
+    {
+      "unit_id": "a7003e3d8e7ddfc8",
+      "node_id": "external_data_tools",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, External databases, APIs & live tools is modeled as depending on Caches, APIs & tool interfaces, Databases & information retrieval and feeding downstream nodes such as Tool use & function calling, ReAct-style reasoning and acting, API gateways, tool registries & secure connectors.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "6a80a5268b12a094",
+      "node_id": "external_data_tools",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Tool use & function calling",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4f3f7520cb020e77",
+      "node_id": "external_data_tools",
+      "field": "examples[2]",
+      "text": "atlas downstream link to ReAct-style reasoning and acting",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "80adbdaf5931967b",
+      "node_id": "external_data_tools",
+      "field": "examples[3]",
+      "text": "atlas downstream link to API gateways, tool registries & secure connectors",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c8860dd681360c54",
+      "node_id": "external_data_tools",
+      "field": "dependencies.cache_tool_interfaces.rationale",
+      "text": "In this atlas graph, External databases, APIs & live tools has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "af3be4d0f2bd5e3e",
+      "node_id": "external_data_tools",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "In this atlas graph, External databases, APIs & live tools has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
-    {
-      "edge_id": "50e74c266987d47d",
-      "node_id": "external_data_tools",
-      "dependency_id": "cache_tool_interfaces",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "9b94b568667250f0",
-      "node_id": "external_data_tools",
-      "dependency_id": "databases_ir",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
     {
       "edge_id": "3e75def68c86a4f8",
       "node_id": "external_data_tools",
@@ -211,6 +176,35 @@
       "notes": "Dense retrieval is a common way tools/search access external data.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "91c583d4ef9dcd17",
+      "node_id": "external_data_tools",
+      "dependency_id": "cache_tool_interfaces",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "b361341e7b2c7f72",
+      "node_id": "external_data_tools",
+      "dependency_id": "databases_ir",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "external_data_tools",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Multimodal assistants interpret and generate across text, images, audio, video, documents, screens, or sensor streams within one interaction.",
-    "why_it_matters": "The role of Multimodal assistants & vision-language systems is to connect Multimodal foundation models, Retrieval-augmented generation to downstream capabilities including Tutoring, translation & knowledge work.",
+    "why_it_matters": "In this atlas graph, Multimodal assistants & vision-language systems is modeled as depending on Multimodal foundation models, Retrieval-augmented generation and feeding downstream nodes such as Tutoring, translation & knowledge work.",
     "examples": [
-      "substrate for Tutoring, translation & knowledge work",
+      "atlas downstream link to Tutoring, translation & knowledge work",
       "combined with Multimodal foundation models"
     ],
     "limitations": [
@@ -70,7 +70,7 @@
         "id": "content_provenance",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Multimodal assistants & vision-language systems integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Multimodal assistants & vision-language systems has an `applies` dependency on Content credentials, signing & provenance with `optional` strength."
       }
     ]
   },
@@ -82,16 +82,16 @@
       "text": "Multimodal assistants interpret and generate across text, images, audio, video, documents, screens, or sensor streams within one interaction."
     },
     {
-      "unit_id": "c01c176517ba8951",
+      "unit_id": "4380f7f62d74431d",
       "node_id": "multimodal_assistants",
       "field": "why_it_matters",
-      "text": "The role of Multimodal assistants & vision-language systems is to connect Multimodal foundation models, Retrieval-augmented generation to downstream capabilities including Tutoring, translation & knowledge work."
+      "text": "In this atlas graph, Multimodal assistants & vision-language systems is modeled as depending on Multimodal foundation models, Retrieval-augmented generation and feeding downstream nodes such as Tutoring, translation & knowledge work."
     },
     {
-      "unit_id": "58217ee86ec3029e",
+      "unit_id": "2d0f353de750c6f9",
       "node_id": "multimodal_assistants",
       "field": "examples[1]",
-      "text": "substrate for Tutoring, translation & knowledge work"
+      "text": "atlas downstream link to Tutoring, translation & knowledge work"
     },
     {
       "unit_id": "217083bbbea8045f",
@@ -142,10 +142,10 @@
       "text": "Multimodal assistants & vision-language systems integrates Structured outputs & typed action generation as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "27a0c47a201e9055",
+      "unit_id": "23873126f2f4364f",
       "node_id": "multimodal_assistants",
       "field": "dependencies.content_provenance.rationale",
-      "text": "Multimodal assistants & vision-language systems integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Multimodal assistants & vision-language systems has an `applies` dependency on Content credentials, signing & provenance with `optional` strength."
     }
   ],
   "edge_units": [
@@ -198,12 +198,12 @@
       "rationale": "Multimodal assistants & vision-language systems integrates Structured outputs & typed action generation as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "2b00a81b05c1cf43",
+      "edge_id": "64422c68a5949b46",
       "node_id": "multimodal_assistants",
       "dependency_id": "content_provenance",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Multimodal assistants & vision-language systems integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Multimodal assistants & vision-language systems has an `applies` dependency on Content credentials, signing & provenance with `optional` strength."
     }
   ],
   "candidate_references": {

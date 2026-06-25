@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "A vector database stores embeddings with metadata and supports approximate-nearest-neighbor indexing, filtering, updates, replication, and retrieval at operational scale.",
-    "why_it_matters": "The role of Vector databases & ANN indexes is to connect Dense vector retrieval, Databases & information retrieval to downstream capabilities including Vector-search and retrieval services.",
+    "why_it_matters": "In this atlas graph, Vector databases & ANN indexes is modeled as depending on Dense vector retrieval, Databases & information retrieval and feeding downstream nodes such as Vector-search and retrieval services.",
     "examples": [
-      "substrate for Vector-search and retrieval services",
+      "atlas downstream link to Vector-search and retrieval services",
       "combined with Dense vector retrieval"
     ],
     "limitations": [
@@ -40,13 +40,13 @@
         "id": "databases_ir",
         "type": "uses",
         "strength": "core",
-        "rationale": "Vector databases & ANN indexes uses Databases & information retrieval as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Vector databases & ANN indexes has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
       },
       {
         "id": "distributed_systems",
         "type": "uses",
         "strength": "common",
-        "rationale": "Vector databases & ANN indexes uses Distributed systems & networking as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Vector databases & ANN indexes has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "A vector database stores embeddings with metadata and supports approximate-nearest-neighbor indexing, filtering, updates, replication, and retrieval at operational scale."
     },
     {
-      "unit_id": "ac6f6935a398ffdd",
+      "unit_id": "8806f08d1519f86b",
       "node_id": "vector_database",
       "field": "why_it_matters",
-      "text": "The role of Vector databases & ANN indexes is to connect Dense vector retrieval, Databases & information retrieval to downstream capabilities including Vector-search and retrieval services."
+      "text": "In this atlas graph, Vector databases & ANN indexes is modeled as depending on Dense vector retrieval, Databases & information retrieval and feeding downstream nodes such as Vector-search and retrieval services."
     },
     {
-      "unit_id": "8f66fd66fc596881",
+      "unit_id": "fd559e69f5956c02",
       "node_id": "vector_database",
       "field": "examples[1]",
-      "text": "substrate for Vector-search and retrieval services"
+      "text": "atlas downstream link to Vector-search and retrieval services"
     },
     {
       "unit_id": "524650df09e355f3",
@@ -88,16 +88,16 @@
       "text": "Vector databases & ANN indexes stores, selects, or obtains information through Dense vector retrieval."
     },
     {
-      "unit_id": "84261e74584b57cc",
+      "unit_id": "a3e2a07122b5224d",
       "node_id": "vector_database",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Vector databases & ANN indexes uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Vector databases & ANN indexes has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "a3ac715ac231da54",
+      "unit_id": "72d771188ec5f707",
       "node_id": "vector_database",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Vector databases & ANN indexes uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Vector databases & ANN indexes has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -110,20 +110,20 @@
       "rationale": "Vector databases & ANN indexes stores, selects, or obtains information through Dense vector retrieval."
     },
     {
-      "edge_id": "120947a066fe52ad",
+      "edge_id": "4cd4d1ce5ea7a843",
       "node_id": "vector_database",
       "dependency_id": "databases_ir",
       "type": "uses",
       "strength": "core",
-      "rationale": "Vector databases & ANN indexes uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Vector databases & ANN indexes has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "8edb340ca4fd56d5",
+      "edge_id": "cb0a384f7ea73062",
       "node_id": "vector_database",
       "dependency_id": "distributed_systems",
       "type": "uses",
       "strength": "common",
-      "rationale": "Vector databases & ANN indexes uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Vector databases & ANN indexes has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

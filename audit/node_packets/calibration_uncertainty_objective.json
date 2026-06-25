@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Training or post-processing aligns confidence with empirical correctness and asymmetric decision risk.",
-    "why_it_matters": "The role of Calibration, uncertainty & risk objectives is to connect Distributions, uncertainty & beliefs, Statistics & experimental design to downstream capabilities including Knowledge distillation, pruning & sparsification, Calibration, uncertainty & risk evaluation, Adaptive depth, early exit & token skipping.",
+    "why_it_matters": "In this atlas graph, Calibration, uncertainty & risk objectives is modeled as depending on Distributions, uncertainty & beliefs, Statistics & experimental design and feeding downstream nodes such as Knowledge distillation, pruning & sparsification, Calibration, uncertainty & risk evaluation, Adaptive depth, early exit & token skipping.",
     "examples": [
-      "substrate for Knowledge distillation, pruning & sparsification",
-      "substrate for Calibration, uncertainty & risk evaluation",
-      "substrate for Adaptive depth, early exit & token skipping"
+      "atlas downstream link to Knowledge distillation, pruning & sparsification",
+      "atlas downstream link to Calibration, uncertainty & risk evaluation",
+      "atlas downstream link to Adaptive depth, early exit & token skipping"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Distributions, uncertainty & beliefs, Statistics & experimental design."
@@ -34,19 +34,19 @@
         "id": "distributions_uncertainty",
         "type": "uses",
         "strength": "core",
-        "rationale": "Calibration, uncertainty & risk objectives uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Calibration, uncertainty & risk objectives has a `uses` dependency on Distributions, uncertainty & beliefs because Distributions, uncertainty & beliefs is modeled as a reusable ingredient for the node."
       },
       {
         "id": "statistics",
         "type": "uses",
         "strength": "core",
-        "rationale": "Calibration, uncertainty & risk objectives uses Statistics & experimental design as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Calibration, uncertainty & risk objectives has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
       },
       {
         "id": "supervised_learning",
         "type": "uses",
         "strength": "common",
-        "rationale": "Calibration, uncertainty & risk objectives uses Supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Calibration, uncertainty & risk objectives has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Training or post-processing aligns confidence with empirical correctness and asymmetric decision risk."
     },
     {
-      "unit_id": "07bc12f1b41d9f14",
+      "unit_id": "a2d6e7ab0dd418b8",
       "node_id": "calibration_uncertainty_objective",
       "field": "why_it_matters",
-      "text": "The role of Calibration, uncertainty & risk objectives is to connect Distributions, uncertainty & beliefs, Statistics & experimental design to downstream capabilities including Knowledge distillation, pruning & sparsification, Calibration, uncertainty & risk evaluation, Adaptive depth, early exit & token skipping."
+      "text": "In this atlas graph, Calibration, uncertainty & risk objectives is modeled as depending on Distributions, uncertainty & beliefs, Statistics & experimental design and feeding downstream nodes such as Knowledge distillation, pruning & sparsification, Calibration, uncertainty & risk evaluation, Adaptive depth, early exit & token skipping."
     },
     {
-      "unit_id": "5ebd8b5117012c75",
+      "unit_id": "24804673ee658701",
       "node_id": "calibration_uncertainty_objective",
       "field": "examples[1]",
-      "text": "substrate for Knowledge distillation, pruning & sparsification"
+      "text": "atlas downstream link to Knowledge distillation, pruning & sparsification"
     },
     {
-      "unit_id": "1bd6b79d4075d4bb",
+      "unit_id": "bd847e7729cecef4",
       "node_id": "calibration_uncertainty_objective",
       "field": "examples[2]",
-      "text": "substrate for Calibration, uncertainty & risk evaluation"
+      "text": "atlas downstream link to Calibration, uncertainty & risk evaluation"
     },
     {
-      "unit_id": "2e3bcda3a60eb98f",
+      "unit_id": "463507e9f87e791f",
       "node_id": "calibration_uncertainty_objective",
       "field": "examples[3]",
-      "text": "substrate for Adaptive depth, early exit & token skipping"
+      "text": "atlas downstream link to Adaptive depth, early exit & token skipping"
     },
     {
       "unit_id": "c5f9b48f093bd148",
@@ -88,48 +88,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Distributions, uncertainty & beliefs, Statistics & experimental design."
     },
     {
-      "unit_id": "e3784581f108b625",
+      "unit_id": "d70becc125d1ede7",
       "node_id": "calibration_uncertainty_objective",
       "field": "dependencies.distributions_uncertainty.rationale",
-      "text": "Calibration, uncertainty & risk objectives uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Calibration, uncertainty & risk objectives has a `uses` dependency on Distributions, uncertainty & beliefs because Distributions, uncertainty & beliefs is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "b63ac97488432eaf",
+      "unit_id": "08ad3ab79b32704f",
       "node_id": "calibration_uncertainty_objective",
       "field": "dependencies.statistics.rationale",
-      "text": "Calibration, uncertainty & risk objectives uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Calibration, uncertainty & risk objectives has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "f8a64ac5dd21fe34",
+      "unit_id": "85afc1afc96f9fa8",
       "node_id": "calibration_uncertainty_objective",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Calibration, uncertainty & risk objectives uses Supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Calibration, uncertainty & risk objectives has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "7c9c2c17f63b2d17",
+      "edge_id": "c2b4cb715be5715a",
       "node_id": "calibration_uncertainty_objective",
       "dependency_id": "distributions_uncertainty",
       "type": "uses",
       "strength": "core",
-      "rationale": "Calibration, uncertainty & risk objectives uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Calibration, uncertainty & risk objectives has a `uses` dependency on Distributions, uncertainty & beliefs because Distributions, uncertainty & beliefs is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "b9d95bd6d8278d34",
+      "edge_id": "dbde1c6ab8151d15",
       "node_id": "calibration_uncertainty_objective",
       "dependency_id": "statistics",
       "type": "uses",
       "strength": "core",
-      "rationale": "Calibration, uncertainty & risk objectives uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Calibration, uncertainty & risk objectives has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "3de2102ec9b2c16a",
+      "edge_id": "7564a9f6a9a26ca5",
       "node_id": "calibration_uncertainty_objective",
       "dependency_id": "supervised_learning",
       "type": "uses",
       "strength": "common",
-      "rationale": "Calibration, uncertainty & risk objectives uses Supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Calibration, uncertainty & risk objectives has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -67,13 +67,14 @@
       "text": "judge-selected responses",
       "source_ids": [
         "ref_testtime",
-        "ref_rlvr"
+        "ref_rlvr",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Judge-selected responses need a judge/model-evaluation source beyond the inspected evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "e7e594c600563693",
@@ -91,126 +92,117 @@
       "notes": "Compute cost and verifier dependence are supported; overfitting verifier quirks and diversity loss are plausible limitations."
     },
     {
-      "unit_id": "00c9a852214cb05f",
+      "unit_id": "e2b0cb4ad898b730",
       "node_id": "best_of_n_verifier",
       "field": "dependencies.self_consistency.rationale",
-      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Self-consistency & best-of-N inference.",
+      "text": "In this atlas graph, Best-of-N & verifier-guided selection has a `verifies_with` dependency on Self-consistency & best-of-N inference because Self-consistency & best-of-N inference is modeled as evidence or constraints for verification.",
       "source_ids": [
-        "ref_testtime",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Best-of-N is closely related to self-consistency/multiple-sample selection."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "d6f3b34583b62b88",
+      "unit_id": "57e096d597be2df9",
       "node_id": "best_of_n_verifier",
       "field": "dependencies.outcome_verifiers.rationale",
-      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Outcome verifiers & executable rewards.",
+      "text": "In this atlas graph, Best-of-N & verifier-guided selection has a `verifies_with` dependency on Outcome verifiers & executable rewards because Outcome verifiers & executable rewards is modeled as evidence or constraints for verification.",
       "source_ids": [
-        "ref_testtime",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Verifier reward models directly support outcome/verifier selection."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "9aeebe5b26124cd0",
+      "unit_id": "30cbaef0fb2410bd",
       "node_id": "best_of_n_verifier",
       "field": "dependencies.process_reward_models.rationale",
-      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Process supervision & step-level reward models.",
+      "text": "In this atlas graph, Best-of-N & verifier-guided selection has a `verifies_with` dependency on Process supervision & step-level reward models because Process supervision & step-level reward models is modeled as evidence or constraints for verification.",
       "source_ids": [
-        "ref_testtime",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The source directly names process-based verifier reward models."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "26eaa535fd40f3a7",
+      "unit_id": "42d4c79508f5a4a5",
       "node_id": "best_of_n_verifier",
       "field": "dependencies.test_time_compute.rationale",
-      "text": "Best-of-N & verifier-guided selection checks candidate behavior or artifacts against evidence or constraints from Test-time compute scaling.",
+      "text": "In this atlas graph, Best-of-N & verifier-guided selection has a `uses` dependency on Test-time compute scaling because Test-time compute scaling is modeled as evidence or constraints for verification.",
       "source_ids": [
-        "ref_testtime",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Snell et al. arXiv abstract, lines 42-46: additional inference-time compute, verifier-model search, adaptive response distribution updates, prompt-difficulty-dependent allocation, and best-of-N baseline comparison. RLVR/outcome-verifier references support verifier/reward selection at a high level.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Best-of-N/verifier search is explicitly part of test-time compute scaling in the source."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "01e4147a4f818f39",
+      "edge_id": "b4fcf8573ece9c75",
       "node_id": "best_of_n_verifier",
       "dependency_id": "self_consistency",
       "source_ids": [
-        "ref_testtime",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Multiple-sample selection is core to best-of-N/self-consistency patterns.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "d9ba35765632294f",
+      "edge_id": "a45ba1c32c3f2df2",
       "node_id": "best_of_n_verifier",
       "dependency_id": "outcome_verifiers",
       "source_ids": [
-        "ref_testtime",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Candidate selection by verifier/outcome reward is central.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "2e9e5855a7bd5e56",
+      "edge_id": "1c5dd1f75e5dee59",
       "node_id": "best_of_n_verifier",
       "dependency_id": "process_reward_models",
       "source_ids": [
-        "ref_testtime",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Process-based verifier reward models are directly named; common strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "ad0265fc30c36269",
+      "edge_id": "f11f26138fbbe07f",
       "node_id": "best_of_n_verifier",
       "dependency_id": "test_time_compute",
       "source_ids": [
-        "ref_testtime",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Best-of-N/verifier selection is a test-time compute mechanism; uses/common is supported.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "best_of_n_verifier",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

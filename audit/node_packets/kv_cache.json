@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Intermediate keys, values, or recurrent state are reused across generation steps to avoid recomputation.",
-    "why_it_matters": "The role of KV cache & recurrent inference state is to connect Caches, APIs & tool interfaces, Transformers to downstream capabilities including Paged attention & KV-memory management.",
+    "why_it_matters": "In this atlas graph, KV cache & recurrent inference state is modeled as depending on Caches, APIs & tool interfaces, Transformers and feeding downstream nodes such as Paged attention & KV-memory management.",
     "examples": [
-      "substrate for Paged attention & KV-memory management",
+      "atlas downstream link to Paged attention & KV-memory management",
       "combined with Caches, APIs & tool interfaces"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "cache_tool_interfaces",
         "type": "uses",
         "strength": "core",
-        "rationale": "KV cache & recurrent inference state uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, KV cache & recurrent inference state has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node."
       },
       {
         "id": "transformer",
         "type": "uses",
         "strength": "core",
-        "rationale": "KV cache & recurrent inference state uses Transformers as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, KV cache & recurrent inference state has a `uses` dependency on Transformers because Transformers is modeled as a reusable ingredient for the node."
       },
       {
         "id": "state_space_transition",
         "type": "uses",
         "strength": "common",
-        "rationale": "KV cache & recurrent inference state uses State-space transitions as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, KV cache & recurrent inference state has a `uses` dependency on State-space transitions because State-space transitions is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Intermediate keys, values, or recurrent state are reused across generation steps to avoid recomputation."
     },
     {
-      "unit_id": "fbb69ef74ba83482",
+      "unit_id": "62bc4486565eec54",
       "node_id": "kv_cache",
       "field": "why_it_matters",
-      "text": "The role of KV cache & recurrent inference state is to connect Caches, APIs & tool interfaces, Transformers to downstream capabilities including Paged attention & KV-memory management."
+      "text": "In this atlas graph, KV cache & recurrent inference state is modeled as depending on Caches, APIs & tool interfaces, Transformers and feeding downstream nodes such as Paged attention & KV-memory management."
     },
     {
-      "unit_id": "563da189035662d6",
+      "unit_id": "061056e9fdd19873",
       "node_id": "kv_cache",
       "field": "examples[1]",
-      "text": "substrate for Paged attention & KV-memory management"
+      "text": "atlas downstream link to Paged attention & KV-memory management"
     },
     {
       "unit_id": "d612afb9f8ae256b",
@@ -82,48 +82,48 @@
       "text": "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Caches, APIs & tool interfaces, Transformers."
     },
     {
-      "unit_id": "f43c5e70d8508638",
+      "unit_id": "54f2d5459feb369c",
       "node_id": "kv_cache",
       "field": "dependencies.cache_tool_interfaces.rationale",
-      "text": "KV cache & recurrent inference state uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, KV cache & recurrent inference state has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "4fc9c71d16c86ce4",
+      "unit_id": "05ea165d9f2bf6af",
       "node_id": "kv_cache",
       "field": "dependencies.transformer.rationale",
-      "text": "KV cache & recurrent inference state uses Transformers as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, KV cache & recurrent inference state has a `uses` dependency on Transformers because Transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "513f3fb4762708ce",
+      "unit_id": "038b806879094a85",
       "node_id": "kv_cache",
       "field": "dependencies.state_space_transition.rationale",
-      "text": "KV cache & recurrent inference state uses State-space transitions as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, KV cache & recurrent inference state has a `uses` dependency on State-space transitions because State-space transitions is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "4af6926dba725814",
+      "edge_id": "c6b347f2659c7abc",
       "node_id": "kv_cache",
       "dependency_id": "cache_tool_interfaces",
       "type": "uses",
       "strength": "core",
-      "rationale": "KV cache & recurrent inference state uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, KV cache & recurrent inference state has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "d2f1bfd5715c6c8a",
+      "edge_id": "bc3782e9239f4faf",
       "node_id": "kv_cache",
       "dependency_id": "transformer",
       "type": "uses",
       "strength": "core",
-      "rationale": "KV cache & recurrent inference state uses Transformers as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, KV cache & recurrent inference state has a `uses` dependency on Transformers because Transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "9ee2361e3ebbb3a3",
+      "edge_id": "d5aac0689a52e910",
       "node_id": "kv_cache",
       "dependency_id": "state_space_transition",
       "type": "uses",
       "strength": "common",
-      "rationale": "KV cache & recurrent inference state uses State-space transitions as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, KV cache & recurrent inference state has a `uses` dependency on State-space transitions because State-space transitions is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

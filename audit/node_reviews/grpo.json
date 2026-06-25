@@ -60,13 +60,14 @@
         "ref_grpo",
         "ref_rlhf",
         "ref_rlbook",
-        "ref_rlvr"
+        "ref_rlvr",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Code-generation RL is plausible for verifiable rewards, but not directly evidenced by the GRPO node source."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "ef9ea1f406a9fe1b",
@@ -86,142 +87,117 @@
       "notes": "Group reward variation, sampling, clipping, and reward hacking are plausible limitations from the algorithm design and RLVR setting, but not one exact claim."
     },
     {
-      "unit_id": "53b78b68c28aef1a",
+      "unit_id": "9e0e6102072d3517",
       "node_id": "grpo",
       "field": "dependencies.policy_actor_critic.rationale",
-      "text": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Policy-gradient & actor\u2013critic objectives.",
+      "text": "In this atlas graph, Group Relative Policy Optimization (GRPO) has an `optimizes_for` dependency on Policy-gradient & actor–critic objectives because Policy-gradient & actor–critic objectives is modeled as the objective family for learning, selection, or evaluation.",
       "source_ids": [
-        "ref_grpo",
-        "ref_rlhf",
-        "ref_rlbook",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "GRPO is policy-gradient/PPO-style but specifically avoids a learned critic, so actor-critic wording is only partial."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "d316f9e9972bb395",
+      "unit_id": "fe32e2163a032c86",
       "node_id": "grpo",
       "field": "dependencies.preference_optimization.rationale",
-      "text": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families).",
+      "text": "In this atlas graph, Group Relative Policy Optimization (GRPO) has an `optimizes_for` dependency on Preference optimization (RLHF, DPO families) because Preference optimization (RLHF, DPO families) is modeled as the objective family for learning, selection, or evaluation.",
       "source_ids": [
-        "ref_grpo",
-        "ref_rlhf",
-        "ref_rlbook",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "GRPO is used in RL-style post-training related to preference/RLHF families, though not DPO specifically."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "d4f995b7264b7bd7",
+      "unit_id": "bdf55c54cb385af0",
       "node_id": "grpo",
       "field": "dependencies.outcome_verifiers.rationale",
-      "text": "Group Relative Policy Optimization (GRPO) is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards.",
+      "text": "In this atlas graph, Group Relative Policy Optimization (GRPO) has an `optimizes_for` dependency on Outcome verifiers & executable rewards because Outcome verifiers & executable rewards is modeled as the objective family for learning, selection, or evaluation.",
       "source_ids": [
-        "ref_grpo",
-        "ref_rlhf",
-        "ref_rlbook",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "DeepSeekMath/RLVR support verifiable outcome rewards for reasoning; the exact objective-family wording is synthesized."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "b89cdee84117914c",
+      "unit_id": "afc01e0e22bb69d1",
       "node_id": "grpo",
       "field": "dependencies.sft_instruction.rationale",
-      "text": "Group Relative Policy Optimization (GRPO) uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Group Relative Policy Optimization (GRPO) has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_grpo",
-        "ref_rlhf",
-        "ref_rlbook",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DeepSeekMath introduces GRPO for mathematical reasoning RL and describes estimating advantages from grouped outputs without a learned critic/value model; RLHF/RL references support policy-gradient context.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "DeepSeekMath uses supervised/instruction-tuned starting models before RL, but the edge wording is synthesized."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "545f5bf70fa0e862",
+      "edge_id": "8375d9feab5a948c",
       "node_id": "grpo",
       "dependency_id": "policy_actor_critic",
       "source_ids": [
-        "ref_grpo",
-        "ref_rlhf",
-        "ref_rlbook",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Policy-gradient support is clear; actor-critic as core is weakened because GRPO removes the critic/value model.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "8268ca8e0c12c32e",
+      "edge_id": "fdb0d4f23a1b5837",
       "node_id": "grpo",
       "dependency_id": "preference_optimization",
       "source_ids": [
-        "ref_grpo",
-        "ref_rlhf",
-        "ref_rlbook",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "GRPO fits RLHF/post-training optimization families, though this is a taxonomic synthesis.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "a3456d92d4113ed9",
+      "edge_id": "c5e063651a8fa96a",
       "node_id": "grpo",
       "dependency_id": "outcome_verifiers",
       "source_ids": [
-        "ref_grpo",
-        "ref_rlhf",
-        "ref_rlbook",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "GRPO is commonly paired with verifiable rewards for reasoning; common strength is reasonable.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "e2a8c8736757afd2",
+      "edge_id": "444b2b1dcb7a66e0",
       "node_id": "grpo",
       "dependency_id": "sft_instruction",
       "source_ids": [
-        "ref_grpo",
-        "ref_rlhf",
-        "ref_rlbook",
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "SFT initialization is common in the cited post-training pipeline.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "grpo",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

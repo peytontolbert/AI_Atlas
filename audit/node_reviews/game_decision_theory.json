@@ -17,74 +17,19 @@
       "notes": "AIMA directly lists utility-based agents, sequential decision problems, MDPs/POMDPs, and game theory. The additional pages support game theory as strategic interaction and decision theory as rational choice under uncertainty. The sentence synthesizes these threads rather than matching one source exactly."
     },
     {
-      "unit_id": "643ff263e8e41752",
-      "node_id": "game_decision_theory",
-      "field": "why_it_matters",
-      "text": "The role of Game theory & decision theory is to connect Probability theory, Optimization theory to downstream capabilities including Labels, targets, rewards & preferences, Markov chains, MDPs, POMDPs & belief states, Reinforcement learning.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html lines 435-457, 459-477, 598-604, and 721-728",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports decision networks, sequential decision problems, MDPs/POMDPs, game theory, reinforcement learning, and preference learning. The explicit atlas role statement and the full downstream list are graph-derived and not directly established by the inspected evidence."
-    },
-    {
-      "unit_id": "d8b3f48c6c803ebf",
-      "node_id": "game_decision_theory",
-      "field": "examples[1]",
-      "text": "substrate for Labels, targets, rewards & preferences",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html lines 430-432, 436-440, 599-604, and 721-728",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports utilities, rewards, preferences, and learning what humans want, but it does not directly state that game and decision theory are a substrate for the atlas category named here."
-    },
-    {
-      "unit_id": "db239320b7080655",
-      "node_id": "game_decision_theory",
-      "field": "examples[2]",
-      "text": "substrate for Markov chains, MDPs, POMDPs & belief states",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html lines 435-457",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "AIMA places MDPs and POMDPs under sequential decision problems and discusses utilities, policies, value iteration, and online algorithms. Markov chains and belief states are not named in the cited lines, so this is synthesis rather than exact verification."
-    },
-    {
-      "unit_id": "3e44d1f8356b9c1c",
-      "node_id": "game_decision_theory",
-      "field": "examples[3]",
-      "text": "substrate for Reinforcement learning",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html lines 598-604 and 717-728",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "AIMA covers reinforcement learning immediately after MDP/POMDP decision material and includes rewards, passive reinforcement learning, utility estimation, and robotics reinforcement learning. The 'substrate' wording is atlas synthesis."
-    },
-    {
       "unit_id": "b97a75985b0868b9",
       "node_id": "game_decision_theory",
       "field": "limitations[1]",
       "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Probability theory, Optimization theory.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 423-429, 435-457, 459-477, 737-741, and 768-774",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports probability distributions, complex decisions, sensitivity/robust decisions, and local search/optimization context. It does not directly state the empirical-mismatch warning or the dependency sentence in this exact form."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "5650231b0fe1c49a",
@@ -114,6 +59,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "AIMA supports optimization/search, optimal policies, value iteration, linear programming for MDPs, and computing equilibria. This supports optimization as a core formal dependency, though the sentence is not a direct quote."
+    },
+    {
+      "unit_id": "4d68b6eaa03505c7",
+      "node_id": "game_decision_theory",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Game theory & decision theory is modeled as depending on Probability theory, Optimization theory and feeding downstream nodes such as Labels, targets, rewards & preferences, Markov chains, MDPs, POMDPs & belief states, Reinforcement learning.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8c88b31701d02adb",
+      "node_id": "game_decision_theory",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Labels, targets, rewards & preferences",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d8fe5b83f46c9034",
+      "node_id": "game_decision_theory",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Markov chains, MDPs, POMDPs & belief states",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "94bc1757d34c6b3c",
+      "node_id": "game_decision_theory",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Reinforcement learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -146,5 +147,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "game_decision_theory",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

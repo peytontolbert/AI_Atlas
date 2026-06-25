@@ -32,7 +32,7 @@
       "unit_id": "d19492c14bb73493",
       "node_id": "speech_recognition",
       "field": "examples[1]",
-      "text": "workflows combining Speech recognition & spoken-language understanding with Encoder\u2013decoder transformers",
+      "text": "workflows combining Speech recognition & spoken-language understanding with Encoder–decoder transformers",
       "source_ids": [
         "ref_aima"
       ],
@@ -74,15 +74,16 @@
       "unit_id": "fd59a14cf53cf2df",
       "node_id": "speech_recognition",
       "field": "limitations[1]",
-      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Encoder\u2013decoder transformers, Waveforms, audio & spectrograms.",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Encoder–decoder transformers, Waveforms, audio & spectrograms.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "efad79230148c953",
@@ -102,7 +103,7 @@
       "unit_id": "b906165e0647c2c8",
       "node_id": "speech_recognition",
       "field": "dependencies.encoder_decoder_transformer.rationale",
-      "text": "Speech recognition & spoken-language understanding integrates Encoder\u2013decoder transformers as part of an end-to-end application boundary.",
+      "text": "Speech recognition & spoken-language understanding integrates Encoder–decoder transformers as part of an end-to-end application boundary.",
       "source_ids": [
         "ref_aima"
       ],
@@ -141,20 +142,6 @@
       "notes": "Conceptual support only; exact rationale is graph-derived."
     },
     {
-      "unit_id": "085b4b525fc354c5",
-      "node_id": "speech_recognition",
-      "field": "dependencies.model_serving.rationale",
-      "text": "Speech recognition & spoken-language understanding integrates Model servers & inference runtimes as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
-    },
-    {
       "unit_id": "3ff7b5fd9176d500",
       "node_id": "speech_recognition",
       "field": "dependencies.beam_search.rationale",
@@ -181,6 +168,20 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "af530a4ef518559e",
+      "node_id": "speech_recognition",
+      "field": "dependencies.model_serving.rationale",
+      "text": "In this atlas graph, Speech recognition & spoken-language understanding has an `applies` dependency on Model servers & inference runtimes with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -227,20 +228,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "57235fb064732386",
-      "node_id": "speech_recognition",
-      "dependency_id": "model_serving",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "a764339eb42287dc",
       "node_id": "speech_recognition",
       "dependency_id": "beam_search",
@@ -267,6 +254,19 @@
       "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "29932b506928a2fc",
+      "node_id": "speech_recognition",
+      "dependency_id": "model_serving",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

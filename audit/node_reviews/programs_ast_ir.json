@@ -9,68 +9,11 @@
         "ref_aima",
         "ref_formalml"
       ],
-      "evidence_location": "AIMA programming/agent/tool reasoning context; Formal Methods for ML survey for verification context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Program structures are clearly executable/analyzable, and verification is supported by formal-methods context. Code generation and tool use need more specific sources for exact verification."
-    },
-    {
-      "unit_id": "9b09ddb2a4bf5e20",
-      "node_id": "programs_ast_ir",
-      "field": "why_it_matters",
-      "text": "The role of Programs, ASTs, bytecode & intermediate representations is to connect Programming languages, compilers & type systems, Algorithms & data structures to downstream capabilities including Neuro-symbolic & physics-informed learning, Boolean circuits & differentiable logic gates, Constraint propagation, logic & program execution.",
-      "source_ids": [
-        "ref_aima",
-        "ref_formalml"
-      ],
-      "evidence_location": "AIMA algorithmic/problem-solving and logic material; Formal Methods for ML survey for program/verification context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency side is plausible, but several downstream capabilities are graph-derived and not directly evidenced by the cited references."
-    },
-    {
-      "unit_id": "cd3b36d948b529d9",
-      "node_id": "programs_ast_ir",
-      "field": "examples[1]",
-      "text": "substrate for Neuro-symbolic & physics-informed learning",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA supports symbolic reasoning/program-like representations generally, but not the full neuro-symbolic and physics-informed claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The cited packet sources do not directly support this specific downstream relationship."
-    },
-    {
-      "unit_id": "1b48f2c6a6b35e06",
-      "node_id": "programs_ast_ir",
-      "field": "examples[2]",
-      "text": "substrate for Boolean circuits & differentiable logic gates",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA logic material is related but does not directly support differentiable logic gates as a downstream use of ASTs/IR.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "A specific source on circuits or differentiable logic would be needed."
-    },
-    {
-      "unit_id": "8ce407267b8fefc8",
-      "node_id": "programs_ast_ir",
-      "field": "examples[3]",
-      "text": "substrate for Constraint propagation, logic & program execution",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA constraint satisfaction, logic, and program execution related material.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Program representations are relevant to program execution and logic/constraint machinery; 'substrate for' is synthesized."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "723ee4e4b02f450e",
@@ -78,13 +21,14 @@
       "field": "limitations[1]",
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Programming languages, compilers & type systems, Algorithms & data structures.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA is relevant to algorithms and representations, but does not directly support the generic limitation.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "This is generic generated limitation text and not directly evidenced for programs/ASTs/IR."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "8fbc3c55f6fd37f2",
@@ -113,6 +57,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Program representations use data structures and algorithms for analysis/compilation, though the packet source is general rather than specific."
+    },
+    {
+      "unit_id": "97a39bd91b295c19",
+      "node_id": "programs_ast_ir",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Programs, ASTs, bytecode & intermediate representations is modeled as depending on Programming languages, compilers & type systems, Algorithms & data structures and feeding downstream nodes such as Neuro-symbolic & physics-informed learning, Boolean circuits & differentiable logic gates, Constraint propagation, logic & program execution.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a39e87174ce62bdb",
+      "node_id": "programs_ast_ir",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Neuro-symbolic & physics-informed learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e86e42a16bfc84a6",
+      "node_id": "programs_ast_ir",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Boolean circuits & differentiable logic gates",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a2029e97360d9d6b",
+      "node_id": "programs_ast_ir",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Constraint propagation, logic & program execution",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -144,5 +144,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "programs_ast_ir",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

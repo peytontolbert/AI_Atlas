@@ -1,17 +1,163 @@
 {
   "sentence_reviews": [
-    {"unit_id":"e9c142aedf3e5c90","node_id":"expert_rule_systems","field":"definition","text":"Expert and production-rule systems apply explicit if–then rules over symbolic facts, separating a curated knowledge base from an inference engine.","source_ids":["ref_aima"],"evidence_location":"AIMA knowledge-based agents, inference, and expert-systems material describes knowledge bases, inference engines, and rule-based reasoning.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The standard expert-system architecture is supported; the exact combined wording is synthesized from AIMA topics."},
-    {"unit_id":"45c8ac6c6c855b53","node_id":"expert_rule_systems","field":"why_it_matters","text":"The role of Expert systems, production rules & rule engines is to connect Knowledge graphs, ontologies & schemas, Constraint propagation, logic & program execution to downstream capabilities including Knowledge graphs, semantic search & relational reasoning, Verified and assurance-gated agents.","source_ids":["ref_aima"],"evidence_location":"AIMA supports knowledge representation, rules, logic, and inference; it does not directly cover semantic search or assurance-gated agents in this packet.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Core symbolic/logic dependencies are supported, but the downstream capability list is broad graph synthesis."},
-    {"unit_id":"fd3faf6908f50864","node_id":"expert_rule_systems","field":"examples[1]","text":"substrate for Knowledge graphs, semantic search & relational reasoning","source_ids":["ref_aima"],"evidence_location":"AIMA knowledge representation and reasoning material supports symbolic relational reasoning, not semantic search specifically.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Relational reasoning is supported; semantic search and the exact substrate relationship need narrower evidence."},
-    {"unit_id":"14c8222508656ba3","node_id":"expert_rule_systems","field":"examples[2]","text":"substrate for Verified and assurance-gated agents","source_ids":["ref_aima"],"evidence_location":"AIMA covers knowledge-based agents and logical inference but not verified or assurance-gated agent systems as stated.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The cited evidence is insufficient for the verification/assurance-gated downstream claim."},
-    {"unit_id":"4c3e03dc1f7f7334","node_id":"expert_rule_systems","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Knowledge graphs, ontologies & schemas, Constraint propagation, logic & program execution.","source_ids":["ref_aima"],"evidence_location":"AIMA supports rule/knowledge/inference dependencies; the packet does not cite evidence for the generic limitation.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are plausible; limitation wording is generic and not directly sourced."},
-    {"unit_id":"8025c45a41ed29e3","node_id":"expert_rule_systems","field":"dependencies.knowledge_graphs.rationale","text":"Expert systems, production rules & rule engines consumes, emits, or organizes information using Knowledge graphs, ontologies & schemas.","source_ids":["ref_aima"],"evidence_location":"AIMA knowledge representation and knowledge-base material supports symbolic schemas/facts for expert systems.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Knowledge bases are directly relevant, but the modern knowledge-graph label is broader than the inspected evidence."},
-    {"unit_id":"1cd5e7b0cacdc028","node_id":"expert_rule_systems","field":"dependencies.constraint_program_execution.rationale","text":"Expert systems, production rules & rule engines is assembled in part from the mechanism or model component Constraint propagation, logic & program execution.","source_ids":["ref_aima"],"evidence_location":"AIMA covers rule-based inference, logical reasoning, and constraint satisfaction topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Logic/inference support is clear; constraint-program execution is broader than expert systems alone."},
-    {"unit_id":"d6d98618ebaaf6d0","node_id":"expert_rule_systems","field":"dependencies.boolean_logic_gates.rationale","text":"Expert systems, production rules & rule engines is assembled in part from the mechanism or model component Boolean circuits & differentiable logic gates.","source_ids":["ref_aima","ref_dlbook"],"evidence_location":"AIMA supports propositional/Boolean logic for rule reasoning; differentiable logic gates are not directly part of classical expert systems in packet evidence.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Boolean logic is relevant, but the dependency label includes differentiable gates, making the claim overbroad."}
+    {
+      "unit_id": "e9c142aedf3e5c90",
+      "node_id": "expert_rule_systems",
+      "field": "definition",
+      "text": "Expert and production-rule systems apply explicit if–then rules over symbolic facts, separating a curated knowledge base from an inference engine.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA knowledge-based agents, inference, and expert-systems material describes knowledge bases, inference engines, and rule-based reasoning.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The standard expert-system architecture is supported; the exact combined wording is synthesized from AIMA topics."
+    },
+    {
+      "unit_id": "4c3e03dc1f7f7334",
+      "node_id": "expert_rule_systems",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Knowledge graphs, ontologies & schemas, Constraint propagation, logic & program execution.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "8025c45a41ed29e3",
+      "node_id": "expert_rule_systems",
+      "field": "dependencies.knowledge_graphs.rationale",
+      "text": "Expert systems, production rules & rule engines consumes, emits, or organizes information using Knowledge graphs, ontologies & schemas.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA knowledge representation and knowledge-base material supports symbolic schemas/facts for expert systems.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Knowledge bases are directly relevant, but the modern knowledge-graph label is broader than the inspected evidence."
+    },
+    {
+      "unit_id": "1cd5e7b0cacdc028",
+      "node_id": "expert_rule_systems",
+      "field": "dependencies.constraint_program_execution.rationale",
+      "text": "Expert systems, production rules & rule engines is assembled in part from the mechanism or model component Constraint propagation, logic & program execution.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA covers rule-based inference, logical reasoning, and constraint satisfaction topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Logic/inference support is clear; constraint-program execution is broader than expert systems alone."
+    },
+    {
+      "unit_id": "b02e59cfa525f7f0",
+      "node_id": "expert_rule_systems",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Expert systems, production rules & rule engines is modeled as depending on Knowledge graphs, ontologies & schemas, Constraint propagation, logic & program execution and feeding downstream nodes such as Knowledge graphs, semantic search & relational reasoning, Verified and assurance-gated agents.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "35492b963d1170e2",
+      "node_id": "expert_rule_systems",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Knowledge graphs, semantic search & relational reasoning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f323fedd905d377d",
+      "node_id": "expert_rule_systems",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Verified and assurance-gated agents",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f8aa20495ec75085",
+      "node_id": "expert_rule_systems",
+      "field": "dependencies.boolean_logic_gates.rationale",
+      "text": "In this atlas graph, Expert systems, production rules & rule engines has a `composes` dependency on Boolean circuits & differentiable logic gates with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"c2b4d454cc1e570c","node_id":"expert_rule_systems","dependency_id":"knowledge_graphs","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Knowledge-base/representation dependence is supported; strength core is defensible under the broad atlas label.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"1d1a1a75a0ea4cc3","node_id":"expert_rule_systems","dependency_id":"constraint_program_execution","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Rule inference and logic support the composes edge, though constraint-program execution is broader than the direct evidence.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"d45ec31e5b2684ff","node_id":"expert_rule_systems","dependency_id":"boolean_logic_gates","source_ids":["ref_aima","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Boolean/propositional logic is supported, but differentiable logic gates are not necessary for classical expert systems; common strength is plausible but relationship is overbroad.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "c2b4d454cc1e570c",
+      "node_id": "expert_rule_systems",
+      "dependency_id": "knowledge_graphs",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Knowledge-base/representation dependence is supported; strength core is defensible under the broad atlas label.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "1d1a1a75a0ea4cc3",
+      "node_id": "expert_rule_systems",
+      "dependency_id": "constraint_program_execution",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Rule inference and logic support the composes edge, though constraint-program execution is broader than the direct evidence.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "31e1b43fc5ab122c",
+      "node_id": "expert_rule_systems",
+      "dependency_id": "boolean_logic_gates",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "expert_rule_systems",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

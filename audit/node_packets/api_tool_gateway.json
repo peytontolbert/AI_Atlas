@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "API gateways and tool registries authenticate requests, describe callable capabilities, validate arguments, enforce policy, and route agents to external services.",
-    "why_it_matters": "The role of API gateways, tool registries & secure connectors is to connect Caches, APIs & tool interfaces, External databases, APIs & live tools to downstream capabilities including Conversational assistants & chatbots.",
+    "why_it_matters": "In this atlas graph, API gateways, tool registries & secure connectors is modeled as depending on Caches, APIs & tool interfaces, External databases, APIs & live tools and feeding downstream nodes such as Conversational assistants & chatbots.",
     "examples": [
-      "substrate for Conversational assistants & chatbots",
+      "atlas downstream link to Conversational assistants & chatbots",
       "combined with Caches, APIs & tool interfaces"
     ],
     "limitations": [
@@ -34,31 +34,31 @@
         "id": "cache_tool_interfaces",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "API gateways, tool registries & secure connectors turns Caches, APIs & tool interfaces into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "external_data_tools",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "API gateways, tool registries & secure connectors turns External databases, APIs & live tools into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on External databases, APIs & live tools because External databases, APIs & live tools is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "privacy_governance",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "API gateways, tool registries & secure connectors turns Privacy, governance, licensing & audit into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Privacy, governance, licensing & audit because Privacy, governance, licensing & audit is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "structured_outputs",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "API gateways, tool registries & secure connectors turns Structured outputs & typed action generation into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Structured outputs & typed action generation because Structured outputs & typed action generation is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "cryptographic_signing",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "API gateways, tool registries & secure connectors turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Cryptographic signing & tamper-evident logs because Cryptographic signing & tamper-evident logs is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -70,16 +70,16 @@
       "text": "API gateways and tool registries authenticate requests, describe callable capabilities, validate arguments, enforce policy, and route agents to external services."
     },
     {
-      "unit_id": "1387f612b95e9f43",
+      "unit_id": "0093c166775b7776",
       "node_id": "api_tool_gateway",
       "field": "why_it_matters",
-      "text": "The role of API gateways, tool registries & secure connectors is to connect Caches, APIs & tool interfaces, External databases, APIs & live tools to downstream capabilities including Conversational assistants & chatbots."
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors is modeled as depending on Caches, APIs & tool interfaces, External databases, APIs & live tools and feeding downstream nodes such as Conversational assistants & chatbots."
     },
     {
-      "unit_id": "03e097a542cdd308",
+      "unit_id": "4d5020ff91e15240",
       "node_id": "api_tool_gateway",
       "field": "examples[1]",
-      "text": "substrate for Conversational assistants & chatbots"
+      "text": "atlas downstream link to Conversational assistants & chatbots"
     },
     {
       "unit_id": "0819ea14c158015e",
@@ -94,76 +94,76 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Caches, APIs & tool interfaces, External databases, APIs & live tools."
     },
     {
-      "unit_id": "967357c043e3965e",
+      "unit_id": "8cdd5566202cc731",
       "node_id": "api_tool_gateway",
       "field": "dependencies.cache_tool_interfaces.rationale",
-      "text": "API gateways, tool registries & secure connectors turns Caches, APIs & tool interfaces into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "7ace8f281ac8af7e",
+      "unit_id": "19dd828e2450635b",
       "node_id": "api_tool_gateway",
       "field": "dependencies.external_data_tools.rationale",
-      "text": "API gateways, tool registries & secure connectors turns External databases, APIs & live tools into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on External databases, APIs & live tools because External databases, APIs & live tools is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "c52f84b251ae8916",
+      "unit_id": "aebe2c003ddc420c",
       "node_id": "api_tool_gateway",
       "field": "dependencies.privacy_governance.rationale",
-      "text": "API gateways, tool registries & secure connectors turns Privacy, governance, licensing & audit into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Privacy, governance, licensing & audit because Privacy, governance, licensing & audit is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "3ea7c85a21e598ed",
+      "unit_id": "aec4fd2f2bbef13e",
       "node_id": "api_tool_gateway",
       "field": "dependencies.structured_outputs.rationale",
-      "text": "API gateways, tool registries & secure connectors turns Structured outputs & typed action generation into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Structured outputs & typed action generation because Structured outputs & typed action generation is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "eb3e42b0442b1ae3",
+      "unit_id": "d81e74ace606d7ed",
       "node_id": "api_tool_gateway",
       "field": "dependencies.cryptographic_signing.rationale",
-      "text": "API gateways, tool registries & secure connectors turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Cryptographic signing & tamper-evident logs because Cryptographic signing & tamper-evident logs is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "0577421bc58587f2",
+      "edge_id": "8bcb97a4b2605fe2",
       "node_id": "api_tool_gateway",
       "dependency_id": "cache_tool_interfaces",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "API gateways, tool registries & secure connectors turns Caches, APIs & tool interfaces into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "27d2e9073d1e6b24",
+      "edge_id": "5bc8e2214ba63be9",
       "node_id": "api_tool_gateway",
       "dependency_id": "external_data_tools",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "API gateways, tool registries & secure connectors turns External databases, APIs & live tools into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on External databases, APIs & live tools because External databases, APIs & live tools is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "052672cdcd6e77bd",
+      "edge_id": "9a8e1146b8d5a593",
       "node_id": "api_tool_gateway",
       "dependency_id": "privacy_governance",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "API gateways, tool registries & secure connectors turns Privacy, governance, licensing & audit into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Privacy, governance, licensing & audit because Privacy, governance, licensing & audit is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "53b3f4cccc4e11e1",
+      "edge_id": "fa51ebecd5a7f6e8",
       "node_id": "api_tool_gateway",
       "dependency_id": "structured_outputs",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "API gateways, tool registries & secure connectors turns Structured outputs & typed action generation into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Structured outputs & typed action generation because Structured outputs & typed action generation is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "f1158f78d86f44d2",
+      "edge_id": "28fc76ee285b949d",
       "node_id": "api_tool_gateway",
       "dependency_id": "cryptographic_signing",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "API gateways, tool registries & secure connectors turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Cryptographic signing & tamper-evident logs because Cryptographic signing & tamper-evident logs is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

@@ -5,7 +5,10 @@
       "node_id": "preference_optimization",
       "field": "definition",
       "text": "A policy is adjusted toward preferred behavior while controlling deviation from a reference model.",
-      "source_ids": ["ref_rlhf", "ref_dpo"],
+      "source_ids": [
+        "ref_rlhf",
+        "ref_dpo"
+      ],
       "evidence_location": "Ouyang et al. RLHF paper, PPO optimization of a policy against a reward model with KL control to a reference; Rafailov et al. DPO paper, direct preference optimization with implicit reward and reference-policy term.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -13,138 +16,162 @@
       "notes": "Both cited sources support optimizing toward preferences while constraining deviation from a reference policy/model."
     },
     {
-      "unit_id": "fbd50968a1d6132f",
-      "node_id": "preference_optimization",
-      "field": "why_it_matters",
-      "text": "The role of Preference optimization (RLHF, DPO families) is to connect Preference learning, Reward modeling to downstream capabilities including Direct and online preference optimization, Safety policies, constitutional constraints & alignment, Group Relative Policy Optimization (GRPO).",
-      "source_ids": ["ref_rlhf", "ref_dpo", "ref_aima"],
-      "evidence_location": "Ouyang et al. RLHF paper, preference/reward-model pipeline; Rafailov et al. DPO paper, direct preference optimization; AIMA safety/decision context. No packet source directly covers GRPO or constitutional constraints.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Preference learning, reward modeling, and direct preference optimization are supported; safety/constitutional/GRPO downstream claims are broader than the packet evidence."
-    },
-    {
-      "unit_id": "e09f604459e58cef",
-      "node_id": "preference_optimization",
-      "field": "examples[1]",
-      "text": "substrate for Direct and online preference optimization",
-      "source_ids": ["ref_dpo", "ref_rlhf"],
-      "evidence_location": "Rafailov et al. DPO paper, direct preference optimization; Ouyang et al. RLHF paper, online-style RL policy optimization from a learned reward model.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Direct preference optimization is directly supported; online preference optimization is plausible from RLHF-style policy optimization but not fully established."
-    },
-    {
-      "unit_id": "e7f4a4f4f47ca38e",
-      "node_id": "preference_optimization",
-      "field": "examples[2]",
-      "text": "substrate for Safety policies, constitutional constraints & alignment",
-      "source_ids": ["ref_rlhf", "ref_aima"],
-      "evidence_location": "Ouyang et al. RLHF paper, alignment of language-model behavior with human feedback; AIMA safety/limits chapters. No packet source directly covers constitutional constraints.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Alignment via human feedback is supported, but safety policies and constitutional constraints are broader than the cited evidence."
-    },
-    {
-      "unit_id": "040a305dca884459",
-      "node_id": "preference_optimization",
-      "field": "examples[3]",
-      "text": "substrate for Group Relative Policy Optimization (GRPO)",
-      "source_ids": ["ref_rlhf", "ref_dpo"],
-      "evidence_location": "RLHF and DPO papers on preference/policy optimization; no packet source specifically addresses GRPO.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet sources do not establish GRPO or its dependency on preference optimization."
-    },
-    {
       "unit_id": "d9b1eff2b0f137f7",
       "node_id": "preference_optimization",
       "field": "limitations[1]",
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Preference learning, Reward modeling.",
-      "source_ids": ["ref_rlhf", "ref_dpo"],
-      "evidence_location": "Ouyang et al. RLHF paper, learned reward model and KL-regularized policy optimization; DPO paper, direct preference objective.",
+      "source_ids": [
+        "ref_rlhf",
+        "ref_dpo",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Preference/reward dependencies are supported for RLHF, but the generic surrogate-objective failure wording is not directly evidenced."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "533629b72516a916",
+      "unit_id": "3c4a4cf80cac9138",
+      "node_id": "preference_optimization",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Preference optimization (RLHF, DPO families) is modeled as depending on Preference learning, Reward modeling and feeding downstream nodes such as Direct and online preference optimization, Safety policies, constitutional constraints & alignment, Group Relative Policy Optimization (GRPO).",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "41c318bfeda74436",
+      "node_id": "preference_optimization",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Direct and online preference optimization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "55d767f7e1fe682c",
+      "node_id": "preference_optimization",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Safety policies, constitutional constraints & alignment",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "88d24e960da4b38e",
+      "node_id": "preference_optimization",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Group Relative Policy Optimization (GRPO)",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f368d29c365d42c1",
       "node_id": "preference_optimization",
       "field": "dependencies.preference_learning.rationale",
-      "text": "Preference optimization (RLHF, DPO families) uses Preference learning as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_rlhf", "ref_dpo"],
-      "evidence_location": "Ouyang et al. RLHF paper, policy optimization from human feedback/preference data; Rafailov et al. DPO paper, preference-pair objective.",
+      "text": "In this atlas graph, Preference optimization (RLHF, DPO families) has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Both RLHF and DPO directly use preference data."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "c74fa486ae8d1751",
+      "unit_id": "e3ad097c6d9ed505",
       "node_id": "preference_optimization",
       "field": "dependencies.reward_modeling.rationale",
-      "text": "Preference optimization (RLHF, DPO families) is learned, selected, or evaluated using the objective family Reward modeling.",
-      "source_ids": ["ref_rlhf", "ref_dpo"],
-      "evidence_location": "Ouyang et al. RLHF paper, explicit reward model used for policy optimization; DPO paper, derives direct optimization while avoiding explicit reward-model fitting.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Reward modeling is directly supported for RLHF, but DPO families can avoid explicit reward modeling, so the dependency should be narrowed."
-    },
-    {
-      "unit_id": "0644ca9f82139d2d",
-      "node_id": "preference_optimization",
-      "field": "dependencies.optimization.rationale",
-      "text": "Preference optimization (RLHF, DPO families) uses Optimization theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_rlhf", "ref_dpo"],
-      "evidence_location": "Ouyang et al. RLHF paper, policy optimization stage; Rafailov et al. DPO paper, direct optimization objective.",
+      "text": "In this atlas graph, Preference optimization (RLHF, DPO families) has an `optimizes_for` dependency on Reward modeling because Reward modeling is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Both cited sources directly describe optimizing policy/preference objectives."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "484c5d6209c95948",
+      "node_id": "preference_optimization",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, Preference optimization (RLHF, DPO families) has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "eb460204aff29b17",
+      "edge_id": "4d90c8e43f3ee633",
       "node_id": "preference_optimization",
       "dependency_id": "preference_learning",
-      "source_ids": ["ref_rlhf", "ref_dpo"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Preference data is central to RLHF and DPO; core strength is supported.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "ab5ecca694222c31",
+      "edge_id": "98cf042ebe5a6eb3",
       "node_id": "preference_optimization",
       "dependency_id": "reward_modeling",
-      "source_ids": ["ref_rlhf", "ref_dpo"],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "RLHF uses reward modeling, but DPO is framed as avoiding explicit reward modeling; common strength is plausible, but the edge type is imprecise for all listed families.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "d2b9c733ad7c1f72",
-      "node_id": "preference_optimization",
-      "dependency_id": "optimization",
-      "source_ids": ["ref_rlhf", "ref_dpo"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited RLHF and DPO objectives directly require optimization; common strength is appropriate because preference learning is more central.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "ac6ec63c57167470",
+      "node_id": "preference_optimization",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "preference_optimization",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

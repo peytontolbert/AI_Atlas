@@ -15,9 +15,9 @@
     ],
     "aliases": [],
     "definition": "VQ-VAE maps continuous encoder outputs to entries in a learned discrete codebook, turning images, audio, or other modalities into reusable tokens.",
-    "why_it_matters": "The role of VQ-VAE & learned discrete tokenizers is to connect Autoencoders, Tokens, vocabularies & symbolic units to downstream capabilities including Multimodal foundation models.",
+    "why_it_matters": "In this atlas graph, VQ-VAE & learned discrete tokenizers is modeled as depending on Autoencoders, Tokens, vocabularies & symbolic units and feeding downstream nodes such as Multimodal foundation models.",
     "examples": [
-      "substrate for Multimodal foundation models",
+      "atlas downstream link to Multimodal foundation models",
       "combined with Autoencoders"
     ],
     "limitations": [
@@ -35,25 +35,25 @@
         "id": "autoencoder",
         "type": "specializes",
         "strength": "core",
-        "rationale": "VQ-VAE & learned discrete tokenizers extends or specializes the architecture family Autoencoders."
+        "rationale": "In this atlas graph, VQ-VAE & learned discrete tokenizers has a `specializes` dependency on Autoencoders with `core` strength."
       },
       {
         "id": "tokens_vocab",
         "type": "represents_with",
         "strength": "core",
-        "rationale": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+        "rationale": "In this atlas graph, VQ-VAE & learned discrete tokenizers has a `represents_with` dependency on Tokens, vocabularies & symbolic units with `core` strength."
       },
       {
         "id": "embeddings",
         "type": "represents_with",
         "strength": "common",
-        "rationale": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Embeddings & distributed representations."
+        "rationale": "In this atlas graph, VQ-VAE & learned discrete tokenizers has a `represents_with` dependency on Embeddings & distributed representations with `common` strength."
       },
       {
         "id": "reconstruction_objective",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "VQ-VAE & learned discrete tokenizers is learned, selected, or evaluated using the objective family Reconstruction objectives."
+        "rationale": "In this atlas graph, VQ-VAE & learned discrete tokenizers has an `optimizes_for` dependency on Reconstruction objectives because Reconstruction objectives is modeled as the objective family for learning, selection, or evaluation."
       }
     ]
   },
@@ -65,16 +65,16 @@
       "text": "VQ-VAE maps continuous encoder outputs to entries in a learned discrete codebook, turning images, audio, or other modalities into reusable tokens."
     },
     {
-      "unit_id": "2d9ff5d766086c64",
+      "unit_id": "e3193958decfb860",
       "node_id": "vqvae_tokenizer",
       "field": "why_it_matters",
-      "text": "The role of VQ-VAE & learned discrete tokenizers is to connect Autoencoders, Tokens, vocabularies & symbolic units to downstream capabilities including Multimodal foundation models."
+      "text": "In this atlas graph, VQ-VAE & learned discrete tokenizers is modeled as depending on Autoencoders, Tokens, vocabularies & symbolic units and feeding downstream nodes such as Multimodal foundation models."
     },
     {
-      "unit_id": "2a0dee5c1e66cb05",
+      "unit_id": "3f38f1a06fd8b634",
       "node_id": "vqvae_tokenizer",
       "field": "examples[1]",
-      "text": "substrate for Multimodal foundation models"
+      "text": "atlas downstream link to Multimodal foundation models"
     },
     {
       "unit_id": "a50df3565c6cda2e",
@@ -89,62 +89,62 @@
       "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Autoencoders, Tokens, vocabularies & symbolic units."
     },
     {
-      "unit_id": "491908328f8d38b7",
+      "unit_id": "21b3823aa1854a93",
       "node_id": "vqvae_tokenizer",
       "field": "dependencies.autoencoder.rationale",
-      "text": "VQ-VAE & learned discrete tokenizers extends or specializes the architecture family Autoencoders."
+      "text": "In this atlas graph, VQ-VAE & learned discrete tokenizers has a `specializes` dependency on Autoencoders with `core` strength."
     },
     {
-      "unit_id": "66a1dc178d145a10",
+      "unit_id": "892a542e0dde78e4",
       "node_id": "vqvae_tokenizer",
       "field": "dependencies.tokens_vocab.rationale",
-      "text": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+      "text": "In this atlas graph, VQ-VAE & learned discrete tokenizers has a `represents_with` dependency on Tokens, vocabularies & symbolic units with `core` strength."
     },
     {
-      "unit_id": "9645d853917e4cc2",
+      "unit_id": "3a49b65aca4ce5f0",
       "node_id": "vqvae_tokenizer",
       "field": "dependencies.embeddings.rationale",
-      "text": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Embeddings & distributed representations."
+      "text": "In this atlas graph, VQ-VAE & learned discrete tokenizers has a `represents_with` dependency on Embeddings & distributed representations with `common` strength."
     },
     {
-      "unit_id": "419431ca80341f93",
+      "unit_id": "66befc2fae33ad80",
       "node_id": "vqvae_tokenizer",
       "field": "dependencies.reconstruction_objective.rationale",
-      "text": "VQ-VAE & learned discrete tokenizers is learned, selected, or evaluated using the objective family Reconstruction objectives."
+      "text": "In this atlas graph, VQ-VAE & learned discrete tokenizers has an `optimizes_for` dependency on Reconstruction objectives because Reconstruction objectives is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "ccd5b2564f960aa6",
+      "edge_id": "ae7aef5a4ddc025d",
       "node_id": "vqvae_tokenizer",
       "dependency_id": "autoencoder",
       "type": "specializes",
       "strength": "core",
-      "rationale": "VQ-VAE & learned discrete tokenizers extends or specializes the architecture family Autoencoders."
+      "rationale": "In this atlas graph, VQ-VAE & learned discrete tokenizers has a `specializes` dependency on Autoencoders with `core` strength."
     },
     {
-      "edge_id": "7f91201925e8f386",
+      "edge_id": "1bd25556f9f1b970",
       "node_id": "vqvae_tokenizer",
       "dependency_id": "tokens_vocab",
       "type": "represents_with",
       "strength": "core",
-      "rationale": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Tokens, vocabularies & symbolic units."
+      "rationale": "In this atlas graph, VQ-VAE & learned discrete tokenizers has a `represents_with` dependency on Tokens, vocabularies & symbolic units with `core` strength."
     },
     {
-      "edge_id": "8b75b265d3d895fb",
+      "edge_id": "1cf9e02dee23bdea",
       "node_id": "vqvae_tokenizer",
       "dependency_id": "embeddings",
       "type": "represents_with",
       "strength": "common",
-      "rationale": "VQ-VAE & learned discrete tokenizers consumes, emits, or organizes information using Embeddings & distributed representations."
+      "rationale": "In this atlas graph, VQ-VAE & learned discrete tokenizers has a `represents_with` dependency on Embeddings & distributed representations with `common` strength."
     },
     {
-      "edge_id": "f572394f627f0164",
+      "edge_id": "9315d66e92b5fe3d",
       "node_id": "vqvae_tokenizer",
       "dependency_id": "reconstruction_objective",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "VQ-VAE & learned discrete tokenizers is learned, selected, or evaluated using the objective family Reconstruction objectives."
+      "rationale": "In this atlas graph, VQ-VAE & learned discrete tokenizers has an `optimizes_for` dependency on Reconstruction objectives because Reconstruction objectives is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "candidate_references": {

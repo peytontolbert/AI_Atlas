@@ -17,11 +17,11 @@
       "LoRA"
     ],
     "definition": "Parameter-efficient fine-tuning adapts a frozen or mostly frozen model through small trainable modules; LoRA learns low-rank updates to selected weight matrices.",
-    "why_it_matters": "The role of Parameter-efficient tuning, adapters & LoRA is to connect Supervised fine-tuning & instruction tuning, Linear algebra to downstream capabilities including Large language models, Code models, copilots & repository intelligence, Model merging & weight-space composition.",
+    "why_it_matters": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA is modeled as depending on Supervised fine-tuning & instruction tuning, Linear algebra and feeding downstream nodes such as Large language models, Code models, copilots & repository intelligence, Model merging & weight-space composition.",
     "examples": [
-      "substrate for Large language models",
-      "substrate for Code models, copilots & repository intelligence",
-      "substrate for Model merging & weight-space composition"
+      "atlas downstream link to Large language models",
+      "atlas downstream link to Code models, copilots & repository intelligence",
+      "atlas downstream link to Model merging & weight-space composition"
     ],
     "limitations": [
       "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised fine-tuning & instruction tuning, Linear algebra."
@@ -38,19 +38,19 @@
         "id": "sft_instruction",
         "type": "uses",
         "strength": "core",
-        "rationale": "Parameter-efficient tuning, adapters & LoRA uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "linear_algebra",
         "type": "uses",
         "strength": "core",
-        "rationale": "Parameter-efficient tuning, adapters & LoRA uses Linear algebra as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
       },
       {
         "id": "affine_dense",
         "type": "uses",
         "strength": "common",
-        "rationale": "Parameter-efficient tuning, adapters & LoRA uses Affine transforms & dense layers as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Affine transforms & dense layers because Affine transforms & dense layers is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -62,28 +62,28 @@
       "text": "Parameter-efficient fine-tuning adapts a frozen or mostly frozen model through small trainable modules; LoRA learns low-rank updates to selected weight matrices."
     },
     {
-      "unit_id": "cd4bb3cb58a64bfc",
+      "unit_id": "5983aa04997daf0d",
       "node_id": "peft_lora",
       "field": "why_it_matters",
-      "text": "The role of Parameter-efficient tuning, adapters & LoRA is to connect Supervised fine-tuning & instruction tuning, Linear algebra to downstream capabilities including Large language models, Code models, copilots & repository intelligence, Model merging & weight-space composition."
+      "text": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA is modeled as depending on Supervised fine-tuning & instruction tuning, Linear algebra and feeding downstream nodes such as Large language models, Code models, copilots & repository intelligence, Model merging & weight-space composition."
     },
     {
-      "unit_id": "f97851d334d35bf1",
+      "unit_id": "52947612ee504452",
       "node_id": "peft_lora",
       "field": "examples[1]",
-      "text": "substrate for Large language models"
+      "text": "atlas downstream link to Large language models"
     },
     {
-      "unit_id": "365b98bef87b53ca",
+      "unit_id": "5333e1e4b68e4ebc",
       "node_id": "peft_lora",
       "field": "examples[2]",
-      "text": "substrate for Code models, copilots & repository intelligence"
+      "text": "atlas downstream link to Code models, copilots & repository intelligence"
     },
     {
-      "unit_id": "cc6b480ad0ec9777",
+      "unit_id": "1fd50c0143e7c6b1",
       "node_id": "peft_lora",
       "field": "examples[3]",
-      "text": "substrate for Model merging & weight-space composition"
+      "text": "atlas downstream link to Model merging & weight-space composition"
     },
     {
       "unit_id": "840377b1bb7c888a",
@@ -92,48 +92,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised fine-tuning & instruction tuning, Linear algebra."
     },
     {
-      "unit_id": "3433ea4f822e21b9",
+      "unit_id": "efdf2db27f557c86",
       "node_id": "peft_lora",
       "field": "dependencies.sft_instruction.rationale",
-      "text": "Parameter-efficient tuning, adapters & LoRA uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "38bbfd2c2d91a36d",
+      "unit_id": "89f19154a6aeb1d3",
       "node_id": "peft_lora",
       "field": "dependencies.linear_algebra.rationale",
-      "text": "Parameter-efficient tuning, adapters & LoRA uses Linear algebra as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "1c78fa62582e58ca",
+      "unit_id": "30ad8efd76aef482",
       "node_id": "peft_lora",
       "field": "dependencies.affine_dense.rationale",
-      "text": "Parameter-efficient tuning, adapters & LoRA uses Affine transforms & dense layers as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Affine transforms & dense layers because Affine transforms & dense layers is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "879599709fa156fa",
+      "edge_id": "44f993f69f8f3445",
       "node_id": "peft_lora",
       "dependency_id": "sft_instruction",
       "type": "uses",
       "strength": "core",
-      "rationale": "Parameter-efficient tuning, adapters & LoRA uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "c8082c683cbbf117",
+      "edge_id": "d731bb973778dbfd",
       "node_id": "peft_lora",
       "dependency_id": "linear_algebra",
       "type": "uses",
       "strength": "core",
-      "rationale": "Parameter-efficient tuning, adapters & LoRA uses Linear algebra as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "06e7ddc27eb1034d",
+      "edge_id": "f63701d56f98516c",
       "node_id": "peft_lora",
       "dependency_id": "affine_dense",
       "type": "uses",
       "strength": "common",
-      "rationale": "Parameter-efficient tuning, adapters & LoRA uses Affine transforms & dense layers as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Parameter-efficient tuning, adapters & LoRA has a `uses` dependency on Affine transforms & dense layers because Affine transforms & dense layers is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

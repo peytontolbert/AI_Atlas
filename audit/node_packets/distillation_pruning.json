@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Distillation transfers behavior from a teacher to a smaller student, while pruning removes low-value weights, channels, heads, experts, or activations.",
-    "why_it_matters": "The role of Knowledge distillation, pruning & sparsification is to connect Supervised learning, Calibration, uncertainty & risk objectives to downstream capabilities including Quantized inference & compressed deployment, Edge, on-device & neuromorphic deployment.",
+    "why_it_matters": "In this atlas graph, Knowledge distillation, pruning & sparsification is modeled as depending on Supervised learning, Calibration, uncertainty & risk objectives and feeding downstream nodes such as Quantized inference & compressed deployment, Edge, on-device & neuromorphic deployment.",
     "examples": [
-      "substrate for Quantized inference & compressed deployment",
-      "substrate for Edge, on-device & neuromorphic deployment"
+      "atlas downstream link to Quantized inference & compressed deployment",
+      "atlas downstream link to Edge, on-device & neuromorphic deployment"
     ],
     "limitations": [
       "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised learning, Calibration, uncertainty & risk objectives."
@@ -33,25 +33,25 @@
         "id": "supervised_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Knowledge distillation, pruning & sparsification uses Supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "calibration_uncertainty_objective",
         "type": "optimizes_for",
         "strength": "core",
-        "rationale": "Knowledge distillation, pruning & sparsification is learned, selected, or evaluated using the objective family Calibration, uncertainty & risk objectives."
+        "rationale": "In this atlas graph, Knowledge distillation, pruning & sparsification has an `optimizes_for` dependency on Calibration, uncertainty & risk objectives because Calibration, uncertainty & risk objectives is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "affine_dense",
         "type": "uses",
         "strength": "common",
-        "rationale": "Knowledge distillation, pruning & sparsification uses Affine transforms & dense layers as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Affine transforms & dense layers because Affine transforms & dense layers is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "Knowledge distillation, pruning & sparsification uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -63,22 +63,22 @@
       "text": "Distillation transfers behavior from a teacher to a smaller student, while pruning removes low-value weights, channels, heads, experts, or activations."
     },
     {
-      "unit_id": "9fe69bbacf876a88",
+      "unit_id": "aee07bc9f686c30d",
       "node_id": "distillation_pruning",
       "field": "why_it_matters",
-      "text": "The role of Knowledge distillation, pruning & sparsification is to connect Supervised learning, Calibration, uncertainty & risk objectives to downstream capabilities including Quantized inference & compressed deployment, Edge, on-device & neuromorphic deployment."
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification is modeled as depending on Supervised learning, Calibration, uncertainty & risk objectives and feeding downstream nodes such as Quantized inference & compressed deployment, Edge, on-device & neuromorphic deployment."
     },
     {
-      "unit_id": "f2e9e3bfa6e048ac",
+      "unit_id": "52333bb182158151",
       "node_id": "distillation_pruning",
       "field": "examples[1]",
-      "text": "substrate for Quantized inference & compressed deployment"
+      "text": "atlas downstream link to Quantized inference & compressed deployment"
     },
     {
-      "unit_id": "f677f785e8c33ca6",
+      "unit_id": "68fa2cc6a3676980",
       "node_id": "distillation_pruning",
       "field": "examples[2]",
-      "text": "substrate for Edge, on-device & neuromorphic deployment"
+      "text": "atlas downstream link to Edge, on-device & neuromorphic deployment"
     },
     {
       "unit_id": "d7e57db9395b3f1e",
@@ -87,62 +87,62 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised learning, Calibration, uncertainty & risk objectives."
     },
     {
-      "unit_id": "a3ba1e41dcbd1e52",
+      "unit_id": "8170808f9f20dd05",
       "node_id": "distillation_pruning",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Knowledge distillation, pruning & sparsification uses Supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "9e643754a1a35402",
+      "unit_id": "88308a198923b291",
       "node_id": "distillation_pruning",
       "field": "dependencies.calibration_uncertainty_objective.rationale",
-      "text": "Knowledge distillation, pruning & sparsification is learned, selected, or evaluated using the objective family Calibration, uncertainty & risk objectives."
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification has an `optimizes_for` dependency on Calibration, uncertainty & risk objectives because Calibration, uncertainty & risk objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "4c28d68f517d04de",
+      "unit_id": "efad8babda368bc8",
       "node_id": "distillation_pruning",
       "field": "dependencies.affine_dense.rationale",
-      "text": "Knowledge distillation, pruning & sparsification uses Affine transforms & dense layers as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Affine transforms & dense layers because Affine transforms & dense layers is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "c7be548863bc9c67",
+      "unit_id": "c16aeb0f9173004e",
       "node_id": "distillation_pruning",
       "field": "dependencies.optimization.rationale",
-      "text": "Knowledge distillation, pruning & sparsification uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "e2ceb81fb65a07fb",
+      "edge_id": "0d7835261f60690d",
       "node_id": "distillation_pruning",
       "dependency_id": "supervised_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Knowledge distillation, pruning & sparsification uses Supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "ef6434a3518fa544",
+      "edge_id": "eda9f84e065359c0",
       "node_id": "distillation_pruning",
       "dependency_id": "calibration_uncertainty_objective",
       "type": "optimizes_for",
       "strength": "core",
-      "rationale": "Knowledge distillation, pruning & sparsification is learned, selected, or evaluated using the objective family Calibration, uncertainty & risk objectives."
+      "rationale": "In this atlas graph, Knowledge distillation, pruning & sparsification has an `optimizes_for` dependency on Calibration, uncertainty & risk objectives because Calibration, uncertainty & risk objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "fce0b95c9e1cee85",
+      "edge_id": "c980b9c2344689da",
       "node_id": "distillation_pruning",
       "dependency_id": "affine_dense",
       "type": "uses",
       "strength": "common",
-      "rationale": "Knowledge distillation, pruning & sparsification uses Affine transforms & dense layers as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Affine transforms & dense layers because Affine transforms & dense layers is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "b8b252ed5711dedb",
+      "edge_id": "5a7ea1efacc7f456",
       "node_id": "distillation_pruning",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "Knowledge distillation, pruning & sparsification uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Knowledge distillation, pruning & sparsification has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

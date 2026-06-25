@@ -5,7 +5,10 @@
       "node_id": "score_matching",
       "field": "definition",
       "text": "The model learns gradients of log density, often from noise-corrupted data.",
-      "source_ids": ["ref_pml", "ref_diffusion"],
+      "source_ids": [
+        "ref_pml",
+        "ref_diffusion"
+      ],
       "evidence_location": "Murphy PML, score matching/denoising score material; Ho et al. DDPM paper, denoising diffusion training with noise-corrupted data.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -13,126 +16,148 @@
       "notes": "The gradient-of-log-density and denoising/corruption pieces are supported across sources, but the exact sentence combines them."
     },
     {
-      "unit_id": "785743b9e1636d82",
-      "node_id": "score_matching",
-      "field": "why_it_matters",
-      "text": "The role of Score matching & denoising score objectives is to connect Generative modeling, Probability theory to downstream capabilities including Denoising diffusion & stochastic corruption, Diffusion & score-based models.",
-      "source_ids": ["ref_pml", "ref_diffusion"],
-      "evidence_location": "Murphy PML score/probabilistic modeling material; Ho et al. DDPM abstract and method on diffusion probabilistic models and denoising objectives.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support probability/generative links and diffusion/denoising downstream use; graph-role wording is synthesized."
-    },
-    {
-      "unit_id": "683bafcf81b8d70d",
-      "node_id": "score_matching",
-      "field": "examples[1]",
-      "text": "substrate for Denoising diffusion & stochastic corruption",
-      "source_ids": ["ref_diffusion", "ref_pml"],
-      "evidence_location": "Ho et al. DDPM paper on forward noising and learned denoising reverse process; Murphy PML score/denoising material.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The denoising/noise-corruption objective is directly supported."
-    },
-    {
-      "unit_id": "9482259ea5af91de",
-      "node_id": "score_matching",
-      "field": "examples[2]",
-      "text": "substrate for Diffusion & score-based models",
-      "source_ids": ["ref_diffusion", "ref_pml"],
-      "evidence_location": "Ho et al. DDPM paper on diffusion probabilistic models; Murphy PML score-based generative modeling material.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Diffusion support is direct; the broader score-based model label is supported by synthesis with PML."
-    },
-    {
       "unit_id": "54fd218d18745f47",
       "node_id": "score_matching",
       "field": "limitations[1]",
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Probability theory.",
-      "source_ids": ["ref_pml", "ref_diffusion"],
-      "evidence_location": "Murphy PML score/probabilistic modeling material; Ho et al. DDPM training objective and variational-bound discussion.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependencies are supported, but the generic objective-mismatch limitation is not directly stated in the cited sources."
-    },
-    {
-      "unit_id": "36701623cddefa9a",
-      "node_id": "score_matching",
-      "field": "dependencies.generative_learning.rationale",
-      "text": "Score matching & denoising score objectives uses Generative modeling as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml", "ref_diffusion"],
-      "evidence_location": "Murphy PML score-based generative modeling material; Ho et al. DDPM as a generative diffusion model.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited sources directly place these objectives in generative modeling."
-    },
-    {
-      "unit_id": "76ce9630c25a253a",
-      "node_id": "score_matching",
-      "field": "dependencies.probability.rationale",
-      "text": "Score matching & denoising score objectives uses Probability theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml", "ref_diffusion"],
-      "evidence_location": "Murphy PML on log density scores; Ho et al. DDPM on diffusion probabilistic models.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "Log density gradients and diffusion probabilistic models directly support the probability dependency."
-    },
-    {
-      "unit_id": "e56c3f56aa3ffe7e",
-      "node_id": "score_matching",
-      "field": "dependencies.calculus.rationale",
-      "text": "Score matching & denoising score objectives uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml"],
-      "evidence_location": "Murphy PML score matching material, where the score is the gradient of log density.",
+      "source_ids": [
+        "ref_pml",
+        "ref_diffusion",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Gradients directly imply calculus, but automatic differentiation is not directly evidenced by the packet source."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "115a343da68bba97",
+      "node_id": "score_matching",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Score matching & denoising score objectives is modeled as depending on Generative modeling, Probability theory and feeding downstream nodes such as Denoising diffusion & stochastic corruption, Diffusion & score-based models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c007bc1b9a5c3603",
+      "node_id": "score_matching",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Denoising diffusion & stochastic corruption",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a66ec7fca8c24d11",
+      "node_id": "score_matching",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Diffusion & score-based models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2bb8752d73bb32e0",
+      "node_id": "score_matching",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "dffca3a511550f2d",
+      "node_id": "score_matching",
+      "field": "dependencies.probability.rationale",
+      "text": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2b83e773cbe2efd7",
+      "node_id": "score_matching",
+      "field": "dependencies.calculus.rationale",
+      "text": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "70fca52a498508a3",
+      "edge_id": "73b501cb31d26f82",
       "node_id": "score_matching",
       "dependency_id": "generative_learning",
-      "source_ids": ["ref_pml", "ref_diffusion"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Score/denoising objectives are used for generative diffusion models; core strength is supported.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "80cfa389d0b5bb16",
+      "edge_id": "bf50ce9b90df5f4e",
       "node_id": "score_matching",
       "dependency_id": "probability",
-      "source_ids": ["ref_pml", "ref_diffusion"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Scores are gradients of log densities and DDPMs are probabilistic models; core strength is supported.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "95eb5e009cc204b6",
+      "edge_id": "55fc92f3dba45c85",
       "node_id": "score_matching",
       "dependency_id": "calculus",
-      "source_ids": ["ref_pml"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Gradient-based definition supports a calculus dependency; common strength is appropriate.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "score_matching",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

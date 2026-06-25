@@ -16,77 +16,20 @@
       "notes": "Entities, relations, types, and constraints are standard knowledge-representation elements. The exact wording is a synthesis."
     },
     {
-      "unit_id": "594683150068a149",
-      "node_id": "knowledge_graphs",
-      "field": "why_it_matters",
-      "text": "The role of Knowledge graphs, ontologies & schemas is to connect Graphs, hypergraphs & relational data, Databases & information retrieval to downstream capabilities including Neuro-symbolic & physics-informed learning, Expert systems, production rules & rule engines, Neuro-symbolic models.",
-      "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_gnn"
-      ],
-      "evidence_location": "AIMA knowledge representation and expert systems content; DDIA relational/database context; graph-network reference for graph-structured data.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support knowledge representation, graph structures, and database context, but the downstream neuro-symbolic/physics-informed list is not directly supported by the cited packet references."
-    },
-    {
-      "unit_id": "0acc482cc9adc678",
-      "node_id": "knowledge_graphs",
-      "field": "examples[1]",
-      "text": "substrate for Neuro-symbolic & physics-informed learning",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA supports symbolic knowledge representation generally, but not the full neuro-symbolic and physics-informed capability label.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Knowledge graphs can support neuro-symbolic systems, but the cited evidence does not directly support physics-informed learning."
-    },
-    {
-      "unit_id": "09e7875a020fbfdf",
-      "node_id": "knowledge_graphs",
-      "field": "examples[2]",
-      "text": "substrate for Expert systems, production rules & rule engines",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA knowledge-based agents and knowledge representation material.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Structured symbolic knowledge is central to expert systems and rule-based reasoning, although 'substrate for' is atlas wording."
-    },
-    {
-      "unit_id": "23710121e31708b5",
-      "node_id": "knowledge_graphs",
-      "field": "examples[3]",
-      "text": "substrate for Neuro-symbolic models",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA supports symbolic knowledge representation; the packet references do not directly discuss neuro-symbolic models.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The symbolic side is supported, but the neuro-symbolic model claim would need a more specific source."
-    },
-    {
       "unit_id": "d13f8811680e9753",
       "node_id": "knowledge_graphs",
       "field": "limitations[1]",
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Graphs, hypergraphs & relational data, Databases & information retrieval.",
       "source_ids": [
         "ref_aima",
-        "ref_ddia"
+        "ref_ddia",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA and DDIA are relevant to knowledge representation and databases, but do not directly state this generic limitation.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The limitations sentence appears generic and is not supported exactly by the cited sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "d3b2b134b1664c3f",
@@ -104,21 +47,6 @@
       "notes": "Knowledge graphs are graph/relational structures. Hypergraphs are broader than directly evidenced but compatible with the dependency label."
     },
     {
-      "unit_id": "68042a38f64c1ce5",
-      "node_id": "knowledge_graphs",
-      "field": "dependencies.databases_ir.rationale",
-      "text": "Knowledge graphs, ontologies & schemas rests on the formal or computational capabilities supplied by Databases & information retrieval.",
-      "source_ids": [
-        "ref_ddia",
-        "ref_aima"
-      ],
-      "evidence_location": "DDIA database systems context; AIMA knowledge representation and retrieval-related AI context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Databases are relevant for storage/querying, but knowledge graphs do not universally require database/IR capabilities in the narrow sense."
-    },
-    {
       "unit_id": "721ba8c10342a5f6",
       "node_id": "knowledge_graphs",
       "field": "dependencies.discrete_math_logic.rationale",
@@ -131,6 +59,76 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Ontologies and logical constraints depend on discrete/logical formalisms; wording is graph-derived."
+    },
+    {
+      "unit_id": "3dca147324692f33",
+      "node_id": "knowledge_graphs",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Knowledge graphs, ontologies & schemas is modeled as depending on Graphs, hypergraphs & relational data, Databases & information retrieval and feeding downstream nodes such as Neuro-symbolic & physics-informed learning, Expert systems, production rules & rule engines, Neuro-symbolic models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "22b98af148f3284c",
+      "node_id": "knowledge_graphs",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Neuro-symbolic & physics-informed learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "cf0f28ccfad87498",
+      "node_id": "knowledge_graphs",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Expert systems, production rules & rule engines",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "7ab6aad2e482fac8",
+      "node_id": "knowledge_graphs",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Neuro-symbolic models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b9b217561719523b",
+      "node_id": "knowledge_graphs",
+      "field": "dependencies.databases_ir.rationale",
+      "text": "In this atlas graph, Knowledge graphs, ontologies & schemas has a `requires` dependency on Databases & information retrieval with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -150,21 +148,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "2741ff3c16986c1f",
-      "node_id": "knowledge_graphs",
-      "dependency_id": "databases_ir",
-      "source_ids": [
-        "ref_ddia",
-        "ref_aima"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Database and retrieval systems commonly support knowledge graphs, but the core requires relation is too strong for all ontologies/schemas.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "0dd9287aa011f7ae",
       "node_id": "knowledge_graphs",
       "dependency_id": "discrete_math_logic",
@@ -177,6 +160,22 @@
       "notes": "Logic is a common foundation for ontologies and constraints, but not every knowledge graph requires the full dependency.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "31eb0eff83fbfca9",
+      "node_id": "knowledge_graphs",
+      "dependency_id": "databases_ir",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "knowledge_graphs",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

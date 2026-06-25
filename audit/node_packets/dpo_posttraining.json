@@ -15,10 +15,10 @@
       "DPO"
     ],
     "definition": "Direct preference optimization and related objectives convert preferred–rejected response pairs into a policy update without an explicit online actor–critic loop.",
-    "why_it_matters": "The role of Direct and online preference optimization is to connect Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning to downstream capabilities including Large language models, Conversational assistants & chatbots.",
+    "why_it_matters": "In this atlas graph, Direct and online preference optimization is modeled as depending on Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning and feeding downstream nodes such as Large language models, Conversational assistants & chatbots.",
     "examples": [
-      "substrate for Large language models",
-      "substrate for Conversational assistants & chatbots"
+      "atlas downstream link to Large language models",
+      "atlas downstream link to Conversational assistants & chatbots"
     ],
     "limitations": [
       "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning."
@@ -35,25 +35,25 @@
         "id": "preference_optimization",
         "type": "optimizes_for",
         "strength": "core",
-        "rationale": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families)."
+        "rationale": "In this atlas graph, Direct and online preference optimization has an `optimizes_for` dependency on Preference optimization (RLHF, DPO families) because Preference optimization (RLHF, DPO families) is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "sft_instruction",
         "type": "uses",
         "strength": "core",
-        "rationale": "Direct and online preference optimization uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Direct and online preference optimization has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "preference_learning",
         "type": "uses",
         "strength": "common",
-        "rationale": "Direct and online preference optimization uses Preference learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Direct and online preference optimization has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "process_reward_models",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Process supervision & step-level reward models."
+        "rationale": "In this atlas graph, Direct and online preference optimization has an `optimizes_for` dependency on Process supervision & step-level reward models because Process supervision & step-level reward models is modeled as the objective family for learning, selection, or evaluation."
       }
     ]
   },
@@ -65,22 +65,22 @@
       "text": "Direct preference optimization and related objectives convert preferred–rejected response pairs into a policy update without an explicit online actor–critic loop."
     },
     {
-      "unit_id": "4bd125debdd49bac",
+      "unit_id": "9ff4d890aa76ccfd",
       "node_id": "dpo_posttraining",
       "field": "why_it_matters",
-      "text": "The role of Direct and online preference optimization is to connect Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning to downstream capabilities including Large language models, Conversational assistants & chatbots."
+      "text": "In this atlas graph, Direct and online preference optimization is modeled as depending on Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning and feeding downstream nodes such as Large language models, Conversational assistants & chatbots."
     },
     {
-      "unit_id": "b6d1bc524027f69e",
+      "unit_id": "b319d2c5e49e01ef",
       "node_id": "dpo_posttraining",
       "field": "examples[1]",
-      "text": "substrate for Large language models"
+      "text": "atlas downstream link to Large language models"
     },
     {
-      "unit_id": "d4143ca2bbb667a7",
+      "unit_id": "03d00c274cf71832",
       "node_id": "dpo_posttraining",
       "field": "examples[2]",
-      "text": "substrate for Conversational assistants & chatbots"
+      "text": "atlas downstream link to Conversational assistants & chatbots"
     },
     {
       "unit_id": "7378503abdd12200",
@@ -89,62 +89,62 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Preference optimization (RLHF, DPO families), Supervised fine-tuning & instruction tuning."
     },
     {
-      "unit_id": "08130a6f335801eb",
+      "unit_id": "9e7c17f570163ef6",
       "node_id": "dpo_posttraining",
       "field": "dependencies.preference_optimization.rationale",
-      "text": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families)."
+      "text": "In this atlas graph, Direct and online preference optimization has an `optimizes_for` dependency on Preference optimization (RLHF, DPO families) because Preference optimization (RLHF, DPO families) is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "3d1faa1f50978941",
+      "unit_id": "3b75cd24f118d6b0",
       "node_id": "dpo_posttraining",
       "field": "dependencies.sft_instruction.rationale",
-      "text": "Direct and online preference optimization uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Direct and online preference optimization has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "c106f93ae195dee8",
+      "unit_id": "080522b319da3274",
       "node_id": "dpo_posttraining",
       "field": "dependencies.preference_learning.rationale",
-      "text": "Direct and online preference optimization uses Preference learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Direct and online preference optimization has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "c73c8435d4ca1d04",
+      "unit_id": "4e980a0e8940f76e",
       "node_id": "dpo_posttraining",
       "field": "dependencies.process_reward_models.rationale",
-      "text": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Process supervision & step-level reward models."
+      "text": "In this atlas graph, Direct and online preference optimization has an `optimizes_for` dependency on Process supervision & step-level reward models because Process supervision & step-level reward models is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "90951d88ef3f2cb9",
+      "edge_id": "dda3f4556aad85a7",
       "node_id": "dpo_posttraining",
       "dependency_id": "preference_optimization",
       "type": "optimizes_for",
       "strength": "core",
-      "rationale": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Preference optimization (RLHF, DPO families)."
+      "rationale": "In this atlas graph, Direct and online preference optimization has an `optimizes_for` dependency on Preference optimization (RLHF, DPO families) because Preference optimization (RLHF, DPO families) is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "0a32e5b7438fd1b7",
+      "edge_id": "005047a654a18705",
       "node_id": "dpo_posttraining",
       "dependency_id": "sft_instruction",
       "type": "uses",
       "strength": "core",
-      "rationale": "Direct and online preference optimization uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Direct and online preference optimization has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "7b8c18150a18e174",
+      "edge_id": "007db5eae660726c",
       "node_id": "dpo_posttraining",
       "dependency_id": "preference_learning",
       "type": "uses",
       "strength": "common",
-      "rationale": "Direct and online preference optimization uses Preference learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Direct and online preference optimization has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "5423b5cf9c2d9fb4",
+      "edge_id": "9d822d7dcd1e7c3a",
       "node_id": "dpo_posttraining",
       "dependency_id": "process_reward_models",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Direct and online preference optimization is learned, selected, or evaluated using the objective family Process supervision & step-level reward models."
+      "rationale": "In this atlas graph, Direct and online preference optimization has an `optimizes_for` dependency on Process supervision & step-level reward models because Process supervision & step-level reward models is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "candidate_references": {

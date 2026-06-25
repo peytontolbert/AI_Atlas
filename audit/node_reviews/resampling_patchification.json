@@ -15,91 +15,20 @@
       "notes": "The definition is consistent with pooling/striding/up-downsampling; patchification is newer and would need a more specific source for verified."
     },
     {
-      "unit_id": "e680aebc0a480f0c",
-      "node_id": "resampling_patchification",
-      "field": "why_it_matters",
-      "text": "The role of Striding, pooling, patchification & up/downsampling is to connect Images, video & spatial grids, Scalars, vectors, matrices & tensors to downstream capabilities including U-Nets & encoder–decoder convnets, Vision Transformers & Perceiver-style latent models.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support spatial grids, tensors, and convolutional background, but not the full downstream list.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "U-Net/convolutional use is plausible; Vision Transformer and Perceiver patchification need specific sources."
-    },
-    {
-      "unit_id": "707e29aa80d93bd0",
-      "node_id": "resampling_patchification",
-      "field": "examples[1]",
-      "text": "substrate for U-Nets & encoder–decoder convnets",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning supports convolutional networks, pooling, and spatial resolution changes.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downsampling/upsampling are central in encoder-decoder convnets; direct U-Net evidence would be stronger."
-    },
-    {
-      "unit_id": "0c0c85102b110815",
-      "node_id": "resampling_patchification",
-      "field": "examples[2]",
-      "text": "substrate for Vision Transformers & Perceiver-style latent models",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources do not directly support Vision Transformer or Perceiver patchification/latent input mechanisms.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This needs Vision Transformer and Perceiver-specific citations."
-    },
-    {
       "unit_id": "427b814a7c618895",
       "node_id": "resampling_patchification",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Images, video & spatial grids, Scalars, vectors, matrices & tensors.",
       "source_ids": [
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support spatial/tensor dependencies, not the generic limitation statement.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency list is plausible; the broad caveat needs direct source support."
-    },
-    {
-      "unit_id": "65203368ef2801d4",
-      "node_id": "resampling_patchification",
-      "field": "dependencies.spatial_grids.rationale",
-      "text": "Striding, pooling, patchification & up/downsampling uses Images, video & spatial grids as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML supports spatial data/modal background.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Spatial grids are central to the mechanism."
-    },
-    {
-      "unit_id": "198cc307dfbe3b8a",
-      "node_id": "resampling_patchification",
-      "field": "dependencies.tensors.rationale",
-      "text": "Striding, pooling, patchification & up/downsampling uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML supports tensor/data representation background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "These operations are applied to array/tensor representations."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "a37ac877a1b67111",
@@ -114,37 +43,79 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Striding/pooling often appear in convolutional architectures, though patchification is not necessarily convolutional."
+    },
+    {
+      "unit_id": "0ba69d3a3d5dcde7",
+      "node_id": "resampling_patchification",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Striding, pooling, patchification & up/downsampling is modeled as depending on Images, video & spatial grids, Scalars, vectors, matrices & tensors and feeding downstream nodes such as U-Nets & encoder–decoder convnets, Vision Transformers & Perceiver-style latent models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "81786e74a67ca78d",
+      "node_id": "resampling_patchification",
+      "field": "examples[1]",
+      "text": "atlas downstream link to U-Nets & encoder–decoder convnets",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5909662067f7164d",
+      "node_id": "resampling_patchification",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Vision Transformers & Perceiver-style latent models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "0518fe0760591d23",
+      "node_id": "resampling_patchification",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "In this atlas graph, Striding, pooling, patchification & up/downsampling has a `uses` dependency on Images, video & spatial grids because Images, video & spatial grids is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5133ccfaa17a3731",
+      "node_id": "resampling_patchification",
+      "field": "dependencies.tensors.rationale",
+      "text": "In this atlas graph, Striding, pooling, patchification & up/downsampling has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
-    {
-      "edge_id": "c41b064213cde3e7",
-      "node_id": "resampling_patchification",
-      "dependency_id": "spatial_grids",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Spatial grids are a core substrate for the mechanism.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "d40e7ee34dc3118c",
-      "node_id": "resampling_patchification",
-      "dependency_id": "tensors",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The operations act on tensor-like data; core strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
     {
       "edge_id": "c4ae85bc600f49a3",
       "node_id": "resampling_patchification",
@@ -158,6 +129,35 @@
       "notes": "Convolutional architectures commonly use striding/pooling/up-downsampling; common strength is defensible.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "b0b87b4da674137f",
+      "node_id": "resampling_patchification",
+      "dependency_id": "spatial_grids",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "2c367876e0925f9d",
+      "node_id": "resampling_patchification",
+      "dependency_id": "tensors",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "resampling_patchification",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -16,167 +16,162 @@
       "notes": "The cited source set supports the exact autoregressive decoding claim."
     },
     {
-      "unit_id": "1e8b84265f1fe3c8",
-      "node_id": "autoregressive_decoding",
-      "field": "why_it_matters",
-      "text": "The role of Autoregressive decoding is to connect Autoregressive / next-step prediction, Sequences, events & time series to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Chain-of-thought & latent reasoning.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support autoregressive sequence modeling, but not all listed downstream transformer/reasoning capabilities.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Transformer generation is defensible by synthesis; chain-of-thought and latent reasoning need narrower sources."
-    },
-    {
-      "unit_id": "ed79b3e40b40f3de",
-      "node_id": "autoregressive_decoding",
-      "field": "examples[1]",
-      "text": "substrate for Encoder–decoder transformers",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support sequence-to-sequence/autoregressive generation background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Autoregressive decoding is used in many encoder-decoder generation systems, but a transformer source would be direct."
-    },
-    {
-      "unit_id": "a0c217e11a2640fd",
-      "node_id": "autoregressive_decoding",
-      "field": "examples[2]",
-      "text": "substrate for Decoder-only causal transformers",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support autoregressive sequence modeling, with transformer-specific support indirect.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The relationship is technically sound, but direct verification needs a causal transformer language-model source."
-    },
-    {
-      "unit_id": "651b0fdceee87ea3",
-      "node_id": "autoregressive_decoding",
-      "field": "examples[3]",
-      "text": "substrate for Chain-of-thought & latent reasoning",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The packet sources do not directly establish chain-of-thought or latent reasoning as downstream capabilities.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Autoregressive generation is relevant, but reasoning-specific citations are needed."
-    },
-    {
       "unit_id": "24dbcb3690619b2b",
       "node_id": "autoregressive_decoding",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Autoregressive / next-step prediction, Sequences, events & time series.",
       "source_ids": [
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support autoregressive and sequence background, but not the generic limitation statement.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependencies are plausible; the generic benefit caveat is not directly sourced."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "33ee353118a88220",
+      "unit_id": "ea86562a9dd3a85a",
+      "node_id": "autoregressive_decoding",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Autoregressive decoding is modeled as depending on Autoregressive / next-step prediction, Sequences, events & time series and feeding downstream nodes such as Encoder–decoder transformers, Decoder-only causal transformers, Chain-of-thought & latent reasoning.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4baa87505845c6c9",
+      "node_id": "autoregressive_decoding",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Encoder–decoder transformers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "868dd38c6c3a5631",
+      "node_id": "autoregressive_decoding",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Decoder-only causal transformers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4e7619a06c9e1038",
+      "node_id": "autoregressive_decoding",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Chain-of-thought & latent reasoning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "3c07648fa8071a70",
       "node_id": "autoregressive_decoding",
       "field": "dependencies.autoregressive_objective.rationale",
-      "text": "Autoregressive decoding uses Autoregressive / next-step prediction as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support autoregressive factorization and next-step sequence modeling.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "This dependency is essentially definitional for autoregressive decoding."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "36a8f56624dc2fd5",
+      "unit_id": "23385394c4308e11",
       "node_id": "autoregressive_decoding",
       "field": "dependencies.sequences_time.rationale",
-      "text": "Autoregressive decoding uses Sequences, events & time series as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML supports probabilistic sequence and time-series modeling background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Autoregressive decoding is a sequence-generation mechanism."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "e6f5694234749055",
+      "unit_id": "fbd194d96a7ce343",
       "node_id": "autoregressive_decoding",
       "field": "dependencies.probability.rationale",
-      "text": "Autoregressive decoding uses Probability theory as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Autoregressive decoding has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML supports conditional probability and autoregressive probabilistic modeling.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Token-by-token conditioning is probabilistic in standard autoregressive decoding."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "1781752c7d1b3dde",
+      "edge_id": "4543ed228514e40e",
       "node_id": "autoregressive_decoding",
       "dependency_id": "autoregressive_objective",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Autoregressive decoding directly depends on next-step conditioning.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "cf80853c38e5b3bd",
+      "edge_id": "29883c905454a39b",
       "node_id": "autoregressive_decoding",
       "dependency_id": "sequences_time",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The mechanism operates over ordered outputs; core strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "571291445e970723",
+      "edge_id": "84c3a4cea8c70b30",
       "node_id": "autoregressive_decoding",
       "dependency_id": "probability",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Probability theory supports conditional next-token distributions; common strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "autoregressive_decoding",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

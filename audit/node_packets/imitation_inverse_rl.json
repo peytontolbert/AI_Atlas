@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Behavior is learned from demonstrations, or the reward structure explaining demonstrations is inferred.",
-    "why_it_matters": "The role of Imitation & inverse reinforcement learning is to connect Reinforcement learning, Labels, targets, rewards & preferences to downstream capabilities including Robotics & embodied AI.",
+    "why_it_matters": "In this atlas graph, Imitation & inverse reinforcement learning is modeled as depending on Reinforcement learning, Labels, targets, rewards & preferences and feeding downstream nodes such as Robotics & embodied AI.",
     "examples": [
-      "substrate for Robotics & embodied AI",
+      "atlas downstream link to Robotics & embodied AI",
       "combined with Reinforcement learning"
     ],
     "limitations": [
@@ -40,13 +40,13 @@
         "id": "supervision_signals",
         "type": "uses",
         "strength": "core",
-        "rationale": "Imitation & inverse reinforcement learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Imitation & inverse reinforcement learning has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
       },
       {
         "id": "sequences_time",
         "type": "uses",
         "strength": "common",
-        "rationale": "Imitation & inverse reinforcement learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Imitation & inverse reinforcement learning has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Behavior is learned from demonstrations, or the reward structure explaining demonstrations is inferred."
     },
     {
-      "unit_id": "3e5a5932440324f5",
+      "unit_id": "e9ae298f181418d9",
       "node_id": "imitation_inverse_rl",
       "field": "why_it_matters",
-      "text": "The role of Imitation & inverse reinforcement learning is to connect Reinforcement learning, Labels, targets, rewards & preferences to downstream capabilities including Robotics & embodied AI."
+      "text": "In this atlas graph, Imitation & inverse reinforcement learning is modeled as depending on Reinforcement learning, Labels, targets, rewards & preferences and feeding downstream nodes such as Robotics & embodied AI."
     },
     {
-      "unit_id": "09c52f625f0b812d",
+      "unit_id": "2d43f05bf8252074",
       "node_id": "imitation_inverse_rl",
       "field": "examples[1]",
-      "text": "substrate for Robotics & embodied AI"
+      "text": "atlas downstream link to Robotics & embodied AI"
     },
     {
       "unit_id": "9300db9c08bb21e2",
@@ -88,16 +88,16 @@
       "text": "Imitation & inverse reinforcement learning follows the learning setup expressed by Reinforcement learning."
     },
     {
-      "unit_id": "1449b2ae853ab1ac",
+      "unit_id": "a49514b8c2de0627",
       "node_id": "imitation_inverse_rl",
       "field": "dependencies.supervision_signals.rationale",
-      "text": "Imitation & inverse reinforcement learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Imitation & inverse reinforcement learning has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d8d3b7c4dc430c61",
+      "unit_id": "f21ef1d4074c7cda",
       "node_id": "imitation_inverse_rl",
       "field": "dependencies.sequences_time.rationale",
-      "text": "Imitation & inverse reinforcement learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Imitation & inverse reinforcement learning has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -110,20 +110,20 @@
       "rationale": "Imitation & inverse reinforcement learning follows the learning setup expressed by Reinforcement learning."
     },
     {
-      "edge_id": "68fdfac40f84d1c5",
+      "edge_id": "267d9aaf5f2ad586",
       "node_id": "imitation_inverse_rl",
       "dependency_id": "supervision_signals",
       "type": "uses",
       "strength": "core",
-      "rationale": "Imitation & inverse reinforcement learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Imitation & inverse reinforcement learning has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "d1b7116651f768ff",
+      "edge_id": "0bdb57d7a8e23923",
       "node_id": "imitation_inverse_rl",
       "dependency_id": "sequences_time",
       "type": "uses",
       "strength": "common",
-      "rationale": "Imitation & inverse reinforcement learning uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Imitation & inverse reinforcement learning has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

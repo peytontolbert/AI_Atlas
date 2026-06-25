@@ -35,19 +35,19 @@
         "id": "grammar_constrained_decoding",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Structured-decoding runtimes turns Grammar- and schema-constrained decoding into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Grammar- and schema-constrained decoding because Grammar- and schema-constrained decoding is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "model_serving",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Structured-decoding runtimes turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "compilers_runtimes",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Structured-decoding runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -89,48 +89,48 @@
       "text": "Grammar compilation, tokenizer interaction, and per-request constraints can reduce throughput or complicate batching."
     },
     {
-      "unit_id": "5cec7d1cad9d3511",
+      "unit_id": "237a2e8c83fa905b",
       "node_id": "structured_decoding_runtime",
       "field": "dependencies.grammar_constrained_decoding.rationale",
-      "text": "Structured-decoding runtimes turns Grammar- and schema-constrained decoding into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Grammar- and schema-constrained decoding because Grammar- and schema-constrained decoding is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "5b620a73da988268",
+      "unit_id": "d3d9e84104afc62a",
       "node_id": "structured_decoding_runtime",
       "field": "dependencies.model_serving.rationale",
-      "text": "Structured-decoding runtimes turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "9e16937200c44fac",
+      "unit_id": "39ec79259f1f94e6",
       "node_id": "structured_decoding_runtime",
       "field": "dependencies.compilers_runtimes.rationale",
-      "text": "Structured-decoding runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "ed2290d7560d01f1",
+      "edge_id": "390235a25fda5064",
       "node_id": "structured_decoding_runtime",
       "dependency_id": "grammar_constrained_decoding",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Structured-decoding runtimes turns Grammar- and schema-constrained decoding into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Grammar- and schema-constrained decoding because Grammar- and schema-constrained decoding is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "f21bfb7877c966db",
+      "edge_id": "384f4cf9fece3250",
       "node_id": "structured_decoding_runtime",
       "dependency_id": "model_serving",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Structured-decoding runtimes turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "93c2f2191259ad25",
+      "edge_id": "376b5bb39e376e7e",
       "node_id": "structured_decoding_runtime",
       "dependency_id": "compilers_runtimes",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Structured-decoding runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

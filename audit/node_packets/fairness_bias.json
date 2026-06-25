@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Fairness and subgroup analysis measure performance, treatment, representation, and error disparities across protected or operationally meaningful groups.",
-    "why_it_matters": "The role of Fairness, bias & subgroup analysis is to connect Statistics & experimental design, Causal inference to downstream capabilities including Medical imaging & clinical decision support, Tabular predictive analytics & decision support.",
+    "why_it_matters": "In this atlas graph, Fairness, bias & subgroup analysis is modeled as depending on Statistics & experimental design, Causal inference and feeding downstream nodes such as Medical imaging & clinical decision support, Tabular predictive analytics & decision support.",
     "examples": [
-      "substrate for Medical imaging & clinical decision support",
-      "substrate for Tabular predictive analytics & decision support"
+      "atlas downstream link to Medical imaging & clinical decision support",
+      "atlas downstream link to Tabular predictive analytics & decision support"
     ],
     "limitations": [
       "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Causal inference."
@@ -33,19 +33,19 @@
         "id": "statistics",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Statistics & experimental design."
+        "rationale": "In this atlas graph, Fairness, bias & subgroup analysis has an `evaluates_or_constrains` dependency on Statistics & experimental design because Statistics & experimental design is modeled as evaluation, constraint, audit, or governance support."
       },
       {
         "id": "causal_inference",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Causal inference."
+        "rationale": "In this atlas graph, Fairness, bias & subgroup analysis has an `evaluates_or_constrains` dependency on Causal inference because Causal inference is modeled as evaluation, constraint, audit, or governance support."
       },
       {
         "id": "human_evaluation",
         "type": "evaluates_or_constrains",
         "strength": "common",
-        "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+        "rationale": "In this atlas graph, Fairness, bias & subgroup analysis has an `evaluates_or_constrains` dependency on Human evaluation & preference studies because Human evaluation & preference studies is modeled as evaluation, constraint, audit, or governance support."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "Fairness and subgroup analysis measure performance, treatment, representation, and error disparities across protected or operationally meaningful groups."
     },
     {
-      "unit_id": "df2f54b023d76667",
+      "unit_id": "4c98e9d69e14689a",
       "node_id": "fairness_bias",
       "field": "why_it_matters",
-      "text": "The role of Fairness, bias & subgroup analysis is to connect Statistics & experimental design, Causal inference to downstream capabilities including Medical imaging & clinical decision support, Tabular predictive analytics & decision support."
+      "text": "In this atlas graph, Fairness, bias & subgroup analysis is modeled as depending on Statistics & experimental design, Causal inference and feeding downstream nodes such as Medical imaging & clinical decision support, Tabular predictive analytics & decision support."
     },
     {
-      "unit_id": "3858a33bf4216b5b",
+      "unit_id": "368c61088ec2adfa",
       "node_id": "fairness_bias",
       "field": "examples[1]",
-      "text": "substrate for Medical imaging & clinical decision support"
+      "text": "atlas downstream link to Medical imaging & clinical decision support"
     },
     {
-      "unit_id": "422bed905fc87608",
+      "unit_id": "5047b3b0edf7ea21",
       "node_id": "fairness_bias",
       "field": "examples[2]",
-      "text": "substrate for Tabular predictive analytics & decision support"
+      "text": "atlas downstream link to Tabular predictive analytics & decision support"
     },
     {
       "unit_id": "5399f9bf4249e7de",
@@ -81,48 +81,48 @@
       "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Statistics & experimental design, Causal inference."
     },
     {
-      "unit_id": "31b2ca4abfdfd4cd",
+      "unit_id": "8d269d7cec7a804b",
       "node_id": "fairness_bias",
       "field": "dependencies.statistics.rationale",
-      "text": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Statistics & experimental design."
+      "text": "In this atlas graph, Fairness, bias & subgroup analysis has an `evaluates_or_constrains` dependency on Statistics & experimental design because Statistics & experimental design is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "unit_id": "b474c411c670aae0",
+      "unit_id": "67c3543e8a3ffb7f",
       "node_id": "fairness_bias",
       "field": "dependencies.causal_inference.rationale",
-      "text": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Causal inference."
+      "text": "In this atlas graph, Fairness, bias & subgroup analysis has an `evaluates_or_constrains` dependency on Causal inference because Causal inference is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "unit_id": "0fdcd059a727842b",
+      "unit_id": "3a3786affc01d1ae",
       "node_id": "fairness_bias",
       "field": "dependencies.human_evaluation.rationale",
-      "text": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      "text": "In this atlas graph, Fairness, bias & subgroup analysis has an `evaluates_or_constrains` dependency on Human evaluation & preference studies because Human evaluation & preference studies is modeled as evaluation, constraint, audit, or governance support."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "ab638b419dc2cc2a",
+      "edge_id": "ca9986bfe28b3d42",
       "node_id": "fairness_bias",
       "dependency_id": "statistics",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Statistics & experimental design."
+      "rationale": "In this atlas graph, Fairness, bias & subgroup analysis has an `evaluates_or_constrains` dependency on Statistics & experimental design because Statistics & experimental design is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "edge_id": "320ca7ad307a652d",
+      "edge_id": "170151dbf8938363",
       "node_id": "fairness_bias",
       "dependency_id": "causal_inference",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Causal inference."
+      "rationale": "In this atlas graph, Fairness, bias & subgroup analysis has an `evaluates_or_constrains` dependency on Causal inference because Causal inference is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "edge_id": "8745a9098de28c31",
+      "edge_id": "1f0f498d19a74bbc",
       "node_id": "fairness_bias",
       "dependency_id": "human_evaluation",
       "type": "evaluates_or_constrains",
       "strength": "common",
-      "rationale": "Fairness, bias & subgroup analysis measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      "rationale": "In this atlas graph, Fairness, bias & subgroup analysis has an `evaluates_or_constrains` dependency on Human evaluation & preference studies because Human evaluation & preference studies is modeled as evaluation, constraint, audit, or governance support."
     }
   ],
   "candidate_references": {

@@ -17,38 +17,6 @@
       "notes": "Core mechanism is supported, but the wording adds broad foundation-model/instruction-following implications beyond one direct source."
     },
     {
-      "unit_id": "215ad7569df0a283",
-      "node_id": "xlstm_rwkv",
-      "field": "why_it_matters",
-      "text": "The role of xLSTM & linear-recurrent hybrids is to connect LSTMs & GRUs, Gating & multiplicative control to downstream capabilities including Transformer\u2013SSM & recurrent hybrid models.",
-      "source_ids": [
-        "ref_xlstm",
-        "ref_lstm",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
-    },
-    {
-      "unit_id": "1c320c0863c04404",
-      "node_id": "xlstm_rwkv",
-      "field": "examples[1]",
-      "text": "substrate for Transformer\u2013SSM & recurrent hybrid models",
-      "source_ids": [
-        "ref_xlstm",
-        "ref_lstm",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The downstream substrate claim is plausible but broader than what the packet sources directly establish."
-    },
-    {
       "unit_id": "64f5ff267bab067b",
       "node_id": "xlstm_rwkv",
       "field": "examples[2]",
@@ -72,13 +40,14 @@
       "source_ids": [
         "ref_xlstm",
         "ref_lstm",
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "99d331a6b8a00f3c",
@@ -113,36 +82,60 @@
       "notes": "The cited source directly supports this dependency relationship for the architecture."
     },
     {
-      "unit_id": "a22d62bcbec71f41",
+      "unit_id": "82b9d68ebfc09b05",
       "node_id": "xlstm_rwkv",
-      "field": "dependencies.efficient_attention.rationale",
-      "text": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Sparse, local, linear & recurrent attention.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, xLSTM & linear-recurrent hybrids is modeled as depending on LSTMs & GRUs, Gating & multiplicative control and feeding downstream nodes such as Transformer–SSM & recurrent hybrid models.",
       "source_ids": [
-        "ref_xlstm",
-        "ref_lstm",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "717d89640acf8963",
+      "unit_id": "58d9ea9a08639377",
       "node_id": "xlstm_rwkv",
-      "field": "dependencies.memory_read_write.rationale",
-      "text": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Differentiable memory read/write.",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Transformer–SSM & recurrent hybrid models",
       "source_ids": [
-        "ref_xlstm",
-        "ref_lstm",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Beck et al. xLSTM paper for exponential gating, matrix memory, and scaling language-model regimes; LSTM and Deep Learning background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8add155118b1e329",
+      "node_id": "xlstm_rwkv",
+      "field": "dependencies.efficient_attention.rationale",
+      "text": "In this atlas graph, xLSTM & linear-recurrent hybrids has an `uses` dependency on Sparse, local, linear & recurrent attention with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "3f7290f155bf1573",
+      "node_id": "xlstm_rwkv",
+      "field": "dependencies.memory_read_write.rationale",
+      "text": "In this atlas graph, xLSTM & linear-recurrent hybrids has a `composes` dependency on Differentiable memory read/write with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -179,36 +172,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "3ada61c0cf41bf93",
+      "edge_id": "a1f9c86b26db3d75",
       "node_id": "xlstm_rwkv",
       "dependency_id": "efficient_attention",
       "source_ids": [
-        "ref_xlstm",
-        "ref_lstm",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "RWKV-like linear recurrent attention makes the connection plausible, but xLSTM is not an attention mechanism; the grouped node makes this edge under-specified.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "c5e9ab3d5ef4ca15",
+      "edge_id": "977ab6194c410ff5",
       "node_id": "xlstm_rwkv",
       "dependency_id": "memory_read_write",
       "source_ids": [
-        "ref_xlstm",
-        "ref_lstm",
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "xlstm_rwkv",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

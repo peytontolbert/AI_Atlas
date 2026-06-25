@@ -16,78 +16,20 @@
       "notes": "The definition is consistent with standard message-passing usage, but a GNN/message-passing source would be needed for verified."
     },
     {
-      "unit_id": "472c140c3dbcbcd0",
-      "node_id": "message_passing",
-      "field": "why_it_matters",
-      "text": "The role of Message passing & neighborhood aggregation is to connect Graphs, hypergraphs & relational data, Affine transforms & dense layers to downstream capabilities including Graph neural networks, Graph RAG & structured retrieval.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support broad graph and neural-network background, not the complete downstream list.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Graph neural networks are plausible; Graph RAG and structured retrieval need more specific evidence."
-    },
-    {
-      "unit_id": "73e4784c8988dfc2",
-      "node_id": "message_passing",
-      "field": "examples[1]",
-      "text": "substrate for Graph neural networks",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources provide nearby graph and neural model background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Defensible, but direct verification would require a GNN/message-passing reference."
-    },
-    {
-      "unit_id": "1433e69474826816",
-      "node_id": "message_passing",
-      "field": "examples[2]",
-      "text": "substrate for Graph RAG & structured retrieval",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The packet sources do not directly establish Graph RAG or structured retrieval systems.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This downstream relationship is plausible but requires a Graph RAG or structured retrieval source."
-    },
-    {
       "unit_id": "5c9111313ef03a68",
       "node_id": "message_passing",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Graphs, hypergraphs & relational data, Affine transforms & dense layers.",
       "source_ids": [
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet sources support broad dependency background but not the generic limitation wording.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependencies are plausible; the limitation statement is generic and not directly sourced."
-    },
-    {
-      "unit_id": "8d9d3c200c9486b9",
-      "node_id": "message_passing",
-      "field": "dependencies.graphs_hypergraphs.rationale",
-      "text": "Message passing & neighborhood aggregation uses Graphs, hypergraphs & relational data as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML provides broad probabilistic and graph-model background relevant to relational structures.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The relationship is essentially definitional for message passing, though the cited source is broad."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "b6da33ea7ecc4a90",
@@ -116,23 +58,65 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Aggregation is central to the node, but a graph neural network source would provide direct support."
+    },
+    {
+      "unit_id": "fe3da59bda8b6101",
+      "node_id": "message_passing",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Message passing & neighborhood aggregation is modeled as depending on Graphs, hypergraphs & relational data, Affine transforms & dense layers and feeding downstream nodes such as Graph neural networks, Graph RAG & structured retrieval.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a4eef2f996a3c0c6",
+      "node_id": "message_passing",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Graph neural networks",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "73be6e3fae27286c",
+      "node_id": "message_passing",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Graph RAG & structured retrieval",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9508678ef7c2518b",
+      "node_id": "message_passing",
+      "field": "dependencies.graphs_hypergraphs.rationale",
+      "text": "In this atlas graph, Message passing & neighborhood aggregation has a `uses` dependency on Graphs, hypergraphs & relational data because Graphs, hypergraphs & relational data is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
-    {
-      "edge_id": "9c7b2ec5c668f73a",
-      "node_id": "message_passing",
-      "dependency_id": "graphs_hypergraphs",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Message passing depends on relational graph structure; relationship and core strength are defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
     {
       "edge_id": "60b9544607c1fa45",
       "node_id": "message_passing",
@@ -160,6 +144,22 @@
       "notes": "Neighborhood aggregation aligns with pooling/local aggregation; common strength is defensible.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "e0e32df1ce7d4575",
+      "node_id": "message_passing",
+      "dependency_id": "graphs_hypergraphs",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "message_passing",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

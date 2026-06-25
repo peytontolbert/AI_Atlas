@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Supervised fine-tuning and instruction tuning train models on curated input–response examples so they follow task descriptions and conversational conventions.",
-    "why_it_matters": "The role of Supervised fine-tuning & instruction tuning is to connect Supervised learning, Large-scale pretraining to downstream capabilities including Parameter-efficient tuning, adapters & LoRA, Reward-model training, RLHF & RLAIF, Direct and online preference optimization.",
+    "why_it_matters": "In this atlas graph, Supervised fine-tuning & instruction tuning is modeled as depending on Supervised learning, Large-scale pretraining and feeding downstream nodes such as Parameter-efficient tuning, adapters & LoRA, Reward-model training, RLHF & RLAIF, Direct and online preference optimization.",
     "examples": [
-      "substrate for Parameter-efficient tuning, adapters & LoRA",
-      "substrate for Reward-model training, RLHF & RLAIF",
-      "substrate for Direct and online preference optimization"
+      "atlas downstream link to Parameter-efficient tuning, adapters & LoRA",
+      "atlas downstream link to Reward-model training, RLHF & RLAIF",
+      "atlas downstream link to Direct and online preference optimization"
     ],
     "limitations": [
       "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised learning, Large-scale pretraining."
@@ -34,19 +34,19 @@
         "id": "supervised_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Supervised fine-tuning & instruction tuning uses Supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Supervised fine-tuning & instruction tuning has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "pretraining",
         "type": "uses",
         "strength": "core",
-        "rationale": "Supervised fine-tuning & instruction tuning uses Large-scale pretraining as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Supervised fine-tuning & instruction tuning has a `uses` dependency on Large-scale pretraining because Large-scale pretraining is modeled as a reusable ingredient for the node."
       },
       {
         "id": "supervision_signals",
         "type": "uses",
         "strength": "common",
-        "rationale": "Supervised fine-tuning & instruction tuning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Supervised fine-tuning & instruction tuning has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Supervised fine-tuning and instruction tuning train models on curated input–response examples so they follow task descriptions and conversational conventions."
     },
     {
-      "unit_id": "25a5be47cf366a98",
+      "unit_id": "481de2f271687759",
       "node_id": "sft_instruction",
       "field": "why_it_matters",
-      "text": "The role of Supervised fine-tuning & instruction tuning is to connect Supervised learning, Large-scale pretraining to downstream capabilities including Parameter-efficient tuning, adapters & LoRA, Reward-model training, RLHF & RLAIF, Direct and online preference optimization."
+      "text": "In this atlas graph, Supervised fine-tuning & instruction tuning is modeled as depending on Supervised learning, Large-scale pretraining and feeding downstream nodes such as Parameter-efficient tuning, adapters & LoRA, Reward-model training, RLHF & RLAIF, Direct and online preference optimization."
     },
     {
-      "unit_id": "b61f4ced30a6ce99",
+      "unit_id": "0119a96131b87325",
       "node_id": "sft_instruction",
       "field": "examples[1]",
-      "text": "substrate for Parameter-efficient tuning, adapters & LoRA"
+      "text": "atlas downstream link to Parameter-efficient tuning, adapters & LoRA"
     },
     {
-      "unit_id": "4604cd6c3bb5c97a",
+      "unit_id": "e3e0b7ae4e6b5833",
       "node_id": "sft_instruction",
       "field": "examples[2]",
-      "text": "substrate for Reward-model training, RLHF & RLAIF"
+      "text": "atlas downstream link to Reward-model training, RLHF & RLAIF"
     },
     {
-      "unit_id": "f3b6abf315bbffbb",
+      "unit_id": "d46a4c80485f7865",
       "node_id": "sft_instruction",
       "field": "examples[3]",
-      "text": "substrate for Direct and online preference optimization"
+      "text": "atlas downstream link to Direct and online preference optimization"
     },
     {
       "unit_id": "b5b67fb1d2c8a586",
@@ -88,48 +88,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Supervised learning, Large-scale pretraining."
     },
     {
-      "unit_id": "c269473ae24cdc10",
+      "unit_id": "98320daf5fbc63a9",
       "node_id": "sft_instruction",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Supervised fine-tuning & instruction tuning uses Supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Supervised fine-tuning & instruction tuning has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "68a316892dc3170c",
+      "unit_id": "58df6330b6689777",
       "node_id": "sft_instruction",
       "field": "dependencies.pretraining.rationale",
-      "text": "Supervised fine-tuning & instruction tuning uses Large-scale pretraining as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Supervised fine-tuning & instruction tuning has a `uses` dependency on Large-scale pretraining because Large-scale pretraining is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "6be8d1bd65c4705f",
+      "unit_id": "a590bc9fe38c120a",
       "node_id": "sft_instruction",
       "field": "dependencies.supervision_signals.rationale",
-      "text": "Supervised fine-tuning & instruction tuning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Supervised fine-tuning & instruction tuning has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "4211ff7a069a0577",
+      "edge_id": "de1db0e3663cfd42",
       "node_id": "sft_instruction",
       "dependency_id": "supervised_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Supervised fine-tuning & instruction tuning uses Supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Supervised fine-tuning & instruction tuning has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "ca8046ac41d63c60",
+      "edge_id": "52f5b8be05216a78",
       "node_id": "sft_instruction",
       "dependency_id": "pretraining",
       "type": "uses",
       "strength": "core",
-      "rationale": "Supervised fine-tuning & instruction tuning uses Large-scale pretraining as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Supervised fine-tuning & instruction tuning has a `uses` dependency on Large-scale pretraining because Large-scale pretraining is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "3a878c5ce047a2af",
+      "edge_id": "b2f607e681890fbb",
       "node_id": "sft_instruction",
       "dependency_id": "supervision_signals",
       "type": "uses",
       "strength": "common",
-      "rationale": "Supervised fine-tuning & instruction tuning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Supervised fine-tuning & instruction tuning has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Batching and admission control combine requests, assign accelerator time, enforce priorities, and balance latency, throughput, fairness, and memory pressure.",
-    "why_it_matters": "The role of Batching, admission control & GPU scheduling is to connect Model servers & inference runtimes, Distributed systems & networking to downstream capabilities including Paged attention & KV-memory management, Fault tolerance, security, energy & cost optimization.",
+    "why_it_matters": "In this atlas graph, Batching, admission control & GPU scheduling is modeled as depending on Model servers & inference runtimes, Distributed systems & networking and feeding downstream nodes such as Paged attention & KV-memory management, Fault tolerance, security, energy & cost optimization.",
     "examples": [
-      "substrate for Paged attention & KV-memory management",
-      "substrate for Fault tolerance, security, energy & cost optimization"
+      "atlas downstream link to Paged attention & KV-memory management",
+      "atlas downstream link to Fault tolerance, security, energy & cost optimization"
     ],
     "limitations": [
       "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Distributed systems & networking."
@@ -34,19 +34,19 @@
         "id": "model_serving",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Batching, admission control & GPU scheduling turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Batching, admission control & GPU scheduling has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "distributed_systems",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Batching, admission control & GPU scheduling turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Batching, admission control & GPU scheduling has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "algorithms_data_structures",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Batching, admission control & GPU scheduling turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Batching, admission control & GPU scheduling has an `operationalizes` dependency on Algorithms & data structures because Algorithms & data structures is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -58,22 +58,22 @@
       "text": "Batching and admission control combine requests, assign accelerator time, enforce priorities, and balance latency, throughput, fairness, and memory pressure."
     },
     {
-      "unit_id": "65bd0ff93034332e",
+      "unit_id": "34a49499c00bb938",
       "node_id": "batching_scheduling",
       "field": "why_it_matters",
-      "text": "The role of Batching, admission control & GPU scheduling is to connect Model servers & inference runtimes, Distributed systems & networking to downstream capabilities including Paged attention & KV-memory management, Fault tolerance, security, energy & cost optimization."
+      "text": "In this atlas graph, Batching, admission control & GPU scheduling is modeled as depending on Model servers & inference runtimes, Distributed systems & networking and feeding downstream nodes such as Paged attention & KV-memory management, Fault tolerance, security, energy & cost optimization."
     },
     {
-      "unit_id": "865b21b69e7d3a92",
+      "unit_id": "61848dc14c3c7e98",
       "node_id": "batching_scheduling",
       "field": "examples[1]",
-      "text": "substrate for Paged attention & KV-memory management"
+      "text": "atlas downstream link to Paged attention & KV-memory management"
     },
     {
-      "unit_id": "ea499caf21b0cb01",
+      "unit_id": "b01781623395d850",
       "node_id": "batching_scheduling",
       "field": "examples[2]",
-      "text": "substrate for Fault tolerance, security, energy & cost optimization"
+      "text": "atlas downstream link to Fault tolerance, security, energy & cost optimization"
     },
     {
       "unit_id": "36826e45b15e7241",
@@ -82,48 +82,48 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Model servers & inference runtimes, Distributed systems & networking."
     },
     {
-      "unit_id": "95a5c82621b97b49",
+      "unit_id": "63a8e10c66903129",
       "node_id": "batching_scheduling",
       "field": "dependencies.model_serving.rationale",
-      "text": "Batching, admission control & GPU scheduling turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Batching, admission control & GPU scheduling has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "8ff6b848c58f2b9b",
+      "unit_id": "753ef1473e985a2d",
       "node_id": "batching_scheduling",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Batching, admission control & GPU scheduling turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Batching, admission control & GPU scheduling has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "d888f89dc4cd3472",
+      "unit_id": "a82c0e4d05d7d2b3",
       "node_id": "batching_scheduling",
       "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "Batching, admission control & GPU scheduling turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Batching, admission control & GPU scheduling has an `operationalizes` dependency on Algorithms & data structures because Algorithms & data structures is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "e807594624173351",
+      "edge_id": "7cd0d522a6683cd0",
       "node_id": "batching_scheduling",
       "dependency_id": "model_serving",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Batching, admission control & GPU scheduling turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Batching, admission control & GPU scheduling has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "c4a6c2393f8728d2",
+      "edge_id": "3293d9c4faa24566",
       "node_id": "batching_scheduling",
       "dependency_id": "distributed_systems",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Batching, admission control & GPU scheduling turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Batching, admission control & GPU scheduling has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "67364f8b8b87f274",
+      "edge_id": "c6199e43e7b7a6c6",
       "node_id": "batching_scheduling",
       "dependency_id": "algorithms_data_structures",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Batching, admission control & GPU scheduling turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Batching, admission control & GPU scheduling has an `operationalizes` dependency on Algorithms & data structures because Algorithms & data structures is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

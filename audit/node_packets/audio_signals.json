@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Continuous waveforms and time–frequency representations encode speech, music, acoustics, and sensor streams.",
-    "why_it_matters": "The role of Waveforms, audio & spectrograms is to connect Signal processing & harmonic analysis, Sequences, events & time series to downstream capabilities including Multimodal, simulated & streaming data, Speech recognition & spoken-language understanding, Speech synthesis, voice & music generation.",
+    "why_it_matters": "In this atlas graph, Waveforms, audio & spectrograms is modeled as depending on Signal processing & harmonic analysis, Sequences, events & time series and feeding downstream nodes such as Multimodal, simulated & streaming data, Speech recognition & spoken-language understanding, Speech synthesis, voice & music generation.",
     "examples": [
-      "substrate for Multimodal, simulated & streaming data",
-      "substrate for Speech recognition & spoken-language understanding",
-      "substrate for Speech synthesis, voice & music generation"
+      "atlas downstream link to Multimodal, simulated & streaming data",
+      "atlas downstream link to Speech recognition & spoken-language understanding",
+      "atlas downstream link to Speech synthesis, voice & music generation"
     ],
     "limitations": [
       "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Signal processing & harmonic analysis, Sequences, events & time series."
@@ -34,7 +34,7 @@
         "id": "signal_processing",
         "type": "requires",
         "strength": "core",
-        "rationale": "Waveforms, audio & spectrograms rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis."
+        "rationale": "In this atlas graph, Waveforms, audio & spectrograms has a `requires` dependency on Signal processing & harmonic analysis with `core` strength."
       },
       {
         "id": "sequences_time",
@@ -58,28 +58,28 @@
       "text": "Continuous waveforms and time–frequency representations encode speech, music, acoustics, and sensor streams."
     },
     {
-      "unit_id": "06e3fe3102bea6fd",
+      "unit_id": "d716ba4b67161c80",
       "node_id": "audio_signals",
       "field": "why_it_matters",
-      "text": "The role of Waveforms, audio & spectrograms is to connect Signal processing & harmonic analysis, Sequences, events & time series to downstream capabilities including Multimodal, simulated & streaming data, Speech recognition & spoken-language understanding, Speech synthesis, voice & music generation."
+      "text": "In this atlas graph, Waveforms, audio & spectrograms is modeled as depending on Signal processing & harmonic analysis, Sequences, events & time series and feeding downstream nodes such as Multimodal, simulated & streaming data, Speech recognition & spoken-language understanding, Speech synthesis, voice & music generation."
     },
     {
-      "unit_id": "61a0e98f6cdd2e66",
+      "unit_id": "ef8ccb0f4f07be2f",
       "node_id": "audio_signals",
       "field": "examples[1]",
-      "text": "substrate for Multimodal, simulated & streaming data"
+      "text": "atlas downstream link to Multimodal, simulated & streaming data"
     },
     {
-      "unit_id": "1e7f13610cb1052a",
+      "unit_id": "194e8bd8185a32bb",
       "node_id": "audio_signals",
       "field": "examples[2]",
-      "text": "substrate for Speech recognition & spoken-language understanding"
+      "text": "atlas downstream link to Speech recognition & spoken-language understanding"
     },
     {
-      "unit_id": "872cee71c334ccbf",
+      "unit_id": "c4cbc59d1e228e55",
       "node_id": "audio_signals",
       "field": "examples[3]",
-      "text": "substrate for Speech synthesis, voice & music generation"
+      "text": "atlas downstream link to Speech synthesis, voice & music generation"
     },
     {
       "unit_id": "c44f311d0974de7b",
@@ -88,10 +88,10 @@
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Signal processing & harmonic analysis, Sequences, events & time series."
     },
     {
-      "unit_id": "873f30e32e472896",
+      "unit_id": "8f8f207024870c20",
       "node_id": "audio_signals",
       "field": "dependencies.signal_processing.rationale",
-      "text": "Waveforms, audio & spectrograms rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis."
+      "text": "In this atlas graph, Waveforms, audio & spectrograms has a `requires` dependency on Signal processing & harmonic analysis with `core` strength."
     },
     {
       "unit_id": "998c0459aab03a10",
@@ -108,12 +108,12 @@
   ],
   "edge_units": [
     {
-      "edge_id": "3965819244585290",
+      "edge_id": "2e219f28a23f1721",
       "node_id": "audio_signals",
       "dependency_id": "signal_processing",
       "type": "requires",
       "strength": "core",
-      "rationale": "Waveforms, audio & spectrograms rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis."
+      "rationale": "In this atlas graph, Waveforms, audio & spectrograms has a `requires` dependency on Signal processing & harmonic analysis with `core` strength."
     },
     {
       "edge_id": "262c8aa6d78cc2b0",

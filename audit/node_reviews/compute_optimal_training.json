@@ -9,11 +9,11 @@
         "ref_chinchilla",
         "ref_scaling"
       ],
-      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Chinchilla supports compute-optimal allocation over parameters/tokens/compute, but data quality and hardware are broader than the cited formulation."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "3fd2cd146d3f2c67",
@@ -34,7 +34,7 @@
       "unit_id": "4be75a767fd624c0",
       "node_id": "compute_optimal_training",
       "field": "examples[1]",
-      "text": "Chinchilla-style parameter\u2013token allocation",
+      "text": "Chinchilla-style parameter–token allocation",
       "source_ids": [
         "ref_chinchilla",
         "ref_scaling"
@@ -52,13 +52,14 @@
       "text": "budget-aware data mixtures",
       "source_ids": [
         "ref_chinchilla",
-        "ref_scaling"
+        "ref_scaling",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Budget-aware data mixtures are plausible but not directly supported by the Chinchilla/scaling-law citations."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "4fba26322e0a31f1",
@@ -76,126 +77,117 @@
       "notes": "Scaling-law optima vary with modeling assumptions and objective; some listed factors are synthesized beyond the exact source claims."
     },
     {
-      "unit_id": "30ffc3dec4141b5c",
+      "unit_id": "3b401d0c037bc6cf",
       "node_id": "compute_optimal_training",
       "field": "dependencies.empirical_scaling_laws.rationale",
-      "text": "Compute-optimal scaling & training allocation uses Empirical scaling laws as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Compute-optimal scaling & training allocation has a `uses` dependency on Empirical scaling laws because Empirical scaling laws is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_chinchilla",
-        "ref_scaling"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Compute-optimal allocation is derived from empirical scaling-law fits."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "af1c9b6ee0b0dc75",
+      "unit_id": "28a671ecbc8c1172",
       "node_id": "compute_optimal_training",
       "field": "dependencies.data_curation.rationale",
-      "text": "Compute-optimal scaling & training allocation uses Data collection, curation & filtering as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Compute-optimal scaling & training allocation has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_chinchilla",
-        "ref_scaling"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data quantity is central, but data curation/filtering as a core ingredient is broader than the cited source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "dca62c2f796ce1ea",
+      "unit_id": "25c5282356ff2bef",
       "node_id": "compute_optimal_training",
       "field": "dependencies.pretraining.rationale",
-      "text": "Compute-optimal scaling & training allocation uses Large-scale pretraining as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Compute-optimal scaling & training allocation has a `uses` dependency on Large-scale pretraining because Large-scale pretraining is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_chinchilla",
-        "ref_scaling"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited work addresses large language model pretraining compute allocation."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "1d1a5d020b9674aa",
+      "unit_id": "061cdb4bbd32674f",
       "node_id": "compute_optimal_training",
       "field": "dependencies.distributed_mixed_precision.rationale",
-      "text": "Compute-optimal scaling & training allocation uses Distributed, mixed-precision & memory-efficient training as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Compute-optimal scaling & training allocation has a `uses` dependency on Distributed, mixed-precision & memory-efficient training because Distributed, mixed-precision & memory-efficient training is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_chinchilla",
-        "ref_scaling"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Hoffmann et al. 2022 and Kaplan et al. 2020 study empirical scaling laws and compute allocation among model size, data/tokens, and training compute for language models.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Large runs use distributed systems in practice, but compute-optimal allocation does not inherently use mixed precision as a method ingredient."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "ea5b1a6c6782ef4f",
+      "edge_id": "6c66f2b0ee8cb1dc",
       "node_id": "compute_optimal_training",
       "dependency_id": "empirical_scaling_laws",
       "source_ids": [
-        "ref_chinchilla",
-        "ref_scaling"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Empirical scaling laws are the basis for compute-optimal training allocation.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "0ed75dfd607eaa25",
+      "edge_id": "bae42f07d3f6855c",
       "node_id": "compute_optimal_training",
       "dependency_id": "data_curation",
       "source_ids": [
-        "ref_chinchilla",
-        "ref_scaling"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data budget matters, but curation/filtering is not directly established as core by the cited papers.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "7cf1fcac900c19e6",
+      "edge_id": "0397589c557553fc",
       "node_id": "compute_optimal_training",
       "dependency_id": "pretraining",
       "source_ids": [
-        "ref_chinchilla",
-        "ref_scaling"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The sources concern language-model pretraining; common strength is reasonable.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "38d28ea6f711af58",
+      "edge_id": "23005ac9c694e077",
       "node_id": "compute_optimal_training",
       "dependency_id": "distributed_mixed_precision",
       "source_ids": [
-        "ref_chinchilla",
-        "ref_scaling"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Distributed/mixed precision is an implementation concern, not a directly supported ingredient of the allocation rule.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "compute_optimal_training",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "A Gaussian process places a probability distribution over functions and uses a kernel to couple observations, interpolate predictions, and quantify posterior uncertainty.",
-    "why_it_matters": "The role of Gaussian processes is to connect Kernels & implicit feature maps, Bayesian & approximate inference to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Scientific ML, simulators & digital twins, Weather, climate & geospatial forecasting.",
+    "why_it_matters": "In this atlas graph, Gaussian processes is modeled as depending on Kernels & implicit feature maps, Bayesian & approximate inference and feeding downstream nodes such as Time-series forecasting, anomaly & fraud detection, Scientific ML, simulators & digital twins, Weather, climate & geospatial forecasting.",
     "examples": [
-      "substrate for Time-series forecasting, anomaly & fraud detection",
-      "substrate for Scientific ML, simulators & digital twins",
-      "substrate for Weather, climate & geospatial forecasting"
+      "atlas downstream link to Time-series forecasting, anomaly & fraud detection",
+      "atlas downstream link to Scientific ML, simulators & digital twins",
+      "atlas downstream link to Weather, climate & geospatial forecasting"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Kernels & implicit feature maps, Bayesian & approximate inference."
@@ -40,7 +40,7 @@
         "id": "bayesian_approx_inference",
         "type": "optimizes_for",
         "strength": "core",
-        "rationale": "Gaussian processes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+        "rationale": "In this atlas graph, Gaussian processes has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "distributions_uncertainty",
@@ -58,28 +58,28 @@
       "text": "A Gaussian process places a probability distribution over functions and uses a kernel to couple observations, interpolate predictions, and quantify posterior uncertainty."
     },
     {
-      "unit_id": "571de7faf729507d",
+      "unit_id": "c24a1aff6ea721f9",
       "node_id": "gaussian_processes",
       "field": "why_it_matters",
-      "text": "The role of Gaussian processes is to connect Kernels & implicit feature maps, Bayesian & approximate inference to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Scientific ML, simulators & digital twins, Weather, climate & geospatial forecasting."
+      "text": "In this atlas graph, Gaussian processes is modeled as depending on Kernels & implicit feature maps, Bayesian & approximate inference and feeding downstream nodes such as Time-series forecasting, anomaly & fraud detection, Scientific ML, simulators & digital twins, Weather, climate & geospatial forecasting."
     },
     {
-      "unit_id": "9efda90b55a74adf",
+      "unit_id": "4f40ed5513c99f81",
       "node_id": "gaussian_processes",
       "field": "examples[1]",
-      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+      "text": "atlas downstream link to Time-series forecasting, anomaly & fraud detection"
     },
     {
-      "unit_id": "245b25345f21e465",
+      "unit_id": "06e95431e11a0e3c",
       "node_id": "gaussian_processes",
       "field": "examples[2]",
-      "text": "substrate for Scientific ML, simulators & digital twins"
+      "text": "atlas downstream link to Scientific ML, simulators & digital twins"
     },
     {
-      "unit_id": "c4dcd866fac616be",
+      "unit_id": "938846ad5d8bb8ca",
       "node_id": "gaussian_processes",
       "field": "examples[3]",
-      "text": "substrate for Weather, climate & geospatial forecasting"
+      "text": "atlas downstream link to Weather, climate & geospatial forecasting"
     },
     {
       "unit_id": "9af4ce35c2e2cfeb",
@@ -94,10 +94,10 @@
       "text": "Gaussian processes is assembled in part from the mechanism or model component Kernels & implicit feature maps."
     },
     {
-      "unit_id": "46f1e10d7db9df36",
+      "unit_id": "839bb292b464cb7b",
       "node_id": "gaussian_processes",
       "field": "dependencies.bayesian_approx_inference.rationale",
-      "text": "Gaussian processes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      "text": "In this atlas graph, Gaussian processes has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "unit_id": "dbcd692255368389",
@@ -116,12 +116,12 @@
       "rationale": "Gaussian processes is assembled in part from the mechanism or model component Kernels & implicit feature maps."
     },
     {
-      "edge_id": "42ccc1afa451383d",
+      "edge_id": "a248affc293fb5ca",
       "node_id": "gaussian_processes",
       "dependency_id": "bayesian_approx_inference",
       "type": "optimizes_for",
       "strength": "core",
-      "rationale": "Gaussian processes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      "rationale": "In this atlas graph, Gaussian processes has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "edge_id": "8cf9bdce2febf99b",

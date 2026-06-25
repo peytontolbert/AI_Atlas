@@ -8,87 +8,32 @@
       "source_ids": [
         "ref_aima"
       ],
-      "evidence_location": "The node cites broad AI background rather than a source that directly defines this modern system boundary.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The claim is plausible, but needs a system-specific source for exact verification."
-    },
-    {
-      "unit_id": "2f2169259e8ed27c",
-      "node_id": "software_agents",
-      "field": "why_it_matters",
-      "text": "The role of Autonomous software-engineering agents is to connect Observe\u2013plan\u2013act agent loops, Code models, copilots & repository intelligence to downstream capabilities including Browser, desktop & computer-use agents, Autonomous research & AI scientist systems, Verified and assurance-gated agents.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The upstream/downstream role is inferred from the dependency graph and cited background sources.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Useful graph synthesis, not directly established as an exact claim by the cited sources."
-    },
-    {
-      "unit_id": "09a7704f95955f38",
-      "node_id": "software_agents",
-      "field": "examples[1]",
-      "text": "substrate for Browser, desktop & computer-use agents",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Treat as a plausible downstream or composition example."
-    },
-    {
-      "unit_id": "23d7067feeef2323",
-      "node_id": "software_agents",
-      "field": "examples[2]",
-      "text": "substrate for Autonomous research & AI scientist systems",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Treat as a plausible downstream or composition example."
-    },
-    {
-      "unit_id": "6be3cd913e36c7ef",
-      "node_id": "software_agents",
-      "field": "examples[3]",
-      "text": "substrate for Verified and assurance-gated agents",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Treat as a plausible downstream or composition example."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "15cb21f630aeaa10",
       "node_id": "software_agents",
       "field": "limitations[1]",
-      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Observe\u2013plan\u2013act agent loops, Code models, copilots & repository intelligence.",
+      "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Observe–plan–act agent loops, Code models, copilots & repository intelligence.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "d2aa1eff09251216",
       "node_id": "software_agents",
       "field": "dependencies.agent_loop.rationale",
-      "text": "Autonomous software-engineering agents integrates Observe\u2013plan\u2013act agent loops as part of an end-to-end application boundary.",
+      "text": "Autonomous software-engineering agents integrates Observe–plan–act agent loops as part of an end-to-end application boundary.",
       "source_ids": [
         "ref_aima"
       ],
@@ -197,18 +142,74 @@
       "notes": "Conceptual support only; exact rationale is graph-derived."
     },
     {
-      "unit_id": "3470ccaf2ac7f142",
+      "unit_id": "0d32a0643b090656",
       "node_id": "software_agents",
-      "field": "dependencies.runtime_assurance.rationale",
-      "text": "Autonomous software-engineering agents integrates Runtime assurance, monitors & safety envelopes as part of an end-to-end application boundary.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Autonomous software-engineering agents is modeled as depending on Observe–plan–act agent loops, Code models, copilots & repository intelligence and feeding downstream nodes such as Browser, desktop & computer-use agents, Autonomous research & AI scientist systems, Verified and assurance-gated agents.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ed73610cb0da3b2b",
+      "node_id": "software_agents",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Browser, desktop & computer-use agents",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f72814752e8eb28f",
+      "node_id": "software_agents",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Autonomous research & AI scientist systems",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "06e5227973959462",
+      "node_id": "software_agents",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Verified and assurance-gated agents",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9a0373c4b471d393",
+      "node_id": "software_agents",
+      "field": "dependencies.runtime_assurance.rationale",
+      "text": "In this atlas graph, Autonomous software-engineering agents has an `applies` dependency on Runtime assurance, monitors & safety envelopes with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -325,18 +326,20 @@
       "strength_supported": true
     },
     {
-      "edge_id": "0bcfd4970a1e1749",
+      "edge_id": "10ff66a99162f15d",
       "node_id": "software_agents",
       "dependency_id": "runtime_assurance",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "software_agents",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

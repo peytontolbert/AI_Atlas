@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Parameters are chosen to assign high probability to observed targets or data.",
-    "why_it_matters": "The role of Maximum likelihood & cross-entropy is to connect Probability theory, Information theory to downstream capabilities including Linear models & generalized linear models, Hidden Markov models & CRFs, Matrix factorization & topic models.",
+    "why_it_matters": "In this atlas graph, Maximum likelihood & cross-entropy is modeled as depending on Probability theory, Information theory and feeding downstream nodes such as Linear models & generalized linear models, Hidden Markov models & CRFs, Matrix factorization & topic models.",
     "examples": [
-      "substrate for Linear models & generalized linear models",
-      "substrate for Hidden Markov models & CRFs",
-      "substrate for Matrix factorization & topic models"
+      "atlas downstream link to Linear models & generalized linear models",
+      "atlas downstream link to Hidden Markov models & CRFs",
+      "atlas downstream link to Matrix factorization & topic models"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Probability theory, Information theory."
@@ -34,25 +34,25 @@
         "id": "probability",
         "type": "uses",
         "strength": "core",
-        "rationale": "Maximum likelihood & cross-entropy uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "information_theory",
         "type": "uses",
         "strength": "core",
-        "rationale": "Maximum likelihood & cross-entropy uses Information theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Information theory because Information theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "supervised_learning",
         "type": "uses",
         "strength": "common",
-        "rationale": "Maximum likelihood & cross-entropy uses Supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "generative_learning",
         "type": "uses",
         "strength": "common",
-        "rationale": "Maximum likelihood & cross-entropy uses Generative modeling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -64,28 +64,28 @@
       "text": "Parameters are chosen to assign high probability to observed targets or data."
     },
     {
-      "unit_id": "eb41f8786ea1dc37",
+      "unit_id": "1097c8b839067b04",
       "node_id": "mle_cross_entropy",
       "field": "why_it_matters",
-      "text": "The role of Maximum likelihood & cross-entropy is to connect Probability theory, Information theory to downstream capabilities including Linear models & generalized linear models, Hidden Markov models & CRFs, Matrix factorization & topic models."
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy is modeled as depending on Probability theory, Information theory and feeding downstream nodes such as Linear models & generalized linear models, Hidden Markov models & CRFs, Matrix factorization & topic models."
     },
     {
-      "unit_id": "85464b477ef5acfb",
+      "unit_id": "76553d50aedbc508",
       "node_id": "mle_cross_entropy",
       "field": "examples[1]",
-      "text": "substrate for Linear models & generalized linear models"
+      "text": "atlas downstream link to Linear models & generalized linear models"
     },
     {
-      "unit_id": "eedee764347ea518",
+      "unit_id": "eeaca084631a01f3",
       "node_id": "mle_cross_entropy",
       "field": "examples[2]",
-      "text": "substrate for Hidden Markov models & CRFs"
+      "text": "atlas downstream link to Hidden Markov models & CRFs"
     },
     {
-      "unit_id": "b3a3cfcb48f50ca2",
+      "unit_id": "5eef16a2f3f07dc1",
       "node_id": "mle_cross_entropy",
       "field": "examples[3]",
-      "text": "substrate for Matrix factorization & topic models"
+      "text": "atlas downstream link to Matrix factorization & topic models"
     },
     {
       "unit_id": "b55e139553dd2a4b",
@@ -94,62 +94,62 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Probability theory, Information theory."
     },
     {
-      "unit_id": "1f59a16a571bceed",
+      "unit_id": "33cc561dee700f80",
       "node_id": "mle_cross_entropy",
       "field": "dependencies.probability.rationale",
-      "text": "Maximum likelihood & cross-entropy uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "b05e618d20c87c7d",
+      "unit_id": "4e113e6dcda6aebc",
       "node_id": "mle_cross_entropy",
       "field": "dependencies.information_theory.rationale",
-      "text": "Maximum likelihood & cross-entropy uses Information theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Information theory because Information theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "af68b21584245e5c",
+      "unit_id": "23d9a26279863a31",
       "node_id": "mle_cross_entropy",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Maximum likelihood & cross-entropy uses Supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "66e22f09f089e5f1",
+      "unit_id": "247f51c9a5762a7f",
       "node_id": "mle_cross_entropy",
       "field": "dependencies.generative_learning.rationale",
-      "text": "Maximum likelihood & cross-entropy uses Generative modeling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "3a219a18c5e975a1",
+      "edge_id": "c2f174955a273ff8",
       "node_id": "mle_cross_entropy",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "core",
-      "rationale": "Maximum likelihood & cross-entropy uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "cf418ebd53f64386",
+      "edge_id": "fe8302a0f3f403a5",
       "node_id": "mle_cross_entropy",
       "dependency_id": "information_theory",
       "type": "uses",
       "strength": "core",
-      "rationale": "Maximum likelihood & cross-entropy uses Information theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Information theory because Information theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "64855b65b3614125",
+      "edge_id": "763149149498eecd",
       "node_id": "mle_cross_entropy",
       "dependency_id": "supervised_learning",
       "type": "uses",
       "strength": "common",
-      "rationale": "Maximum likelihood & cross-entropy uses Supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "41d4eb64917e7798",
+      "edge_id": "a2a0dbb0037aa747",
       "node_id": "mle_cross_entropy",
       "dependency_id": "generative_learning",
       "type": "uses",
       "strength": "common",
-      "rationale": "Maximum likelihood & cross-entropy uses Generative modeling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Maximum likelihood & cross-entropy has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

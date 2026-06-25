@@ -5,43 +5,26 @@
       "node_id": "registry_mlops",
       "field": "definition",
       "text": "Model registries and MLOps systems version models, adapters, datasets, evaluations, approvals, lineage, deployment targets, and rollback state.",
-      "source_ids": ["ref_ddia", "ref_nist", "ref_lora", "ref_modelmerge"],
-      "evidence_location": "Sources support data-system versioning/operations, governance, adapters, and merged models separately; no direct MLOps registry source covers the full list.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Add an MLOps/model-registry reference for exact support."
-    },
-    {
-      "unit_id": "8cce3ff1e275922f",
-      "node_id": "registry_mlops",
-      "field": "why_it_matters",
-      "text": "The role of Model registry, versioning & MLOps / LLMOps is to connect Object storage, sharding & checkpoints, Workflow, cluster & job orchestration to downstream capabilities including Large language models.",
-      "source_ids": ["ref_ddia", "ref_nist"],
-      "evidence_location": "Sources support operational systems and governance broadly; downstream LLM linkage is graph-derived.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_nist",
+        "ref_lora",
+        "ref_modelmerge"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Plausible atlas positioning, not direct evidence."
-    },
-    {
-      "unit_id": "a12e0b534059e2ad",
-      "node_id": "registry_mlops",
-      "field": "examples[1]",
-      "text": "substrate for Large language models",
-      "source_ids": ["ref_lora", "ref_modelmerge", "ref_nist"],
-      "evidence_location": "Sources show LLM adaptation/model composition and governance relevance, but not registry as an LLM substrate directly.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Defensible but indirect."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "b311fa60be4b2854",
       "node_id": "registry_mlops",
       "field": "examples[2]",
       "text": "combined with Object storage, sharding & checkpoints",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "ref_ddia"
+      ],
       "evidence_location": "DDIA supports storage and distributed data-system concerns broadly.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -53,182 +36,238 @@
       "node_id": "registry_mlops",
       "field": "limitations[1]",
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Object storage, sharding & checkpoints, Workflow, cluster & job orchestration.",
-      "source_ids": ["ref_ddia", "ref_nist"],
-      "evidence_location": "Sources support operational and governance risks generally; exact failure-mode list is template-derived.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_nist",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Numerical behavior is not specific to registries; dependency list is graph-derived."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "e3d5d526cde85b1b",
+      "unit_id": "622fd66143a8cbbb",
+      "node_id": "registry_mlops",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps is modeled as depending on Object storage, sharding & checkpoints, Workflow, cluster & job orchestration and feeding downstream nodes such as Large language models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "50793a88bd01056c",
+      "node_id": "registry_mlops",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Large language models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "6765879cc7d8269a",
       "node_id": "registry_mlops",
       "field": "dependencies.storage_checkpoints.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_ddia"],
-      "evidence_location": "DDIA supports storage, sharding, and operational data management concepts.",
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core dependency is defensible but not directly stated."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "5a5646dbec624dcc",
+      "unit_id": "b7b16a30017fed95",
       "node_id": "registry_mlops",
       "field": "dependencies.orchestration.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Workflow, cluster & job orchestration into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_ddia"],
-      "evidence_location": "DDIA supports operational distributed systems; workflow/cluster orchestration linkage is indirect.",
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Workflow, cluster & job orchestration because Workflow, cluster & job orchestration is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core dependency is plausible for MLOps systems."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "9387390103b1729c",
+      "unit_id": "89ac2a221ceae313",
       "node_id": "registry_mlops",
       "field": "dependencies.repro_monitoring.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Reproducibility, drift & continuous monitoring into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_nist"],
-      "evidence_location": "NIST supports monitoring, governance, and risk management; registry operationalization is a synthesis.",
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Reproducibility, drift & continuous monitoring because Reproducibility, drift & continuous monitoring is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Common dependency is defensible."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "3f8f5712f30ab50b",
+      "unit_id": "6cd433c48edeb8cc",
       "node_id": "registry_mlops",
       "field": "dependencies.cryptographic_signing.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_c2pa", "ref_nist"],
-      "evidence_location": "C2PA supports signing/provenance; NIST supports governance/audit concerns.",
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Cryptographic signing & tamper-evident logs because Cryptographic signing & tamper-evident logs is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Plausible for artifact lineage and audit."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "5448779926a009bd",
+      "unit_id": "2150619e0735ad63",
       "node_id": "registry_mlops",
       "field": "dependencies.checkpoint_composition.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_lora", "ref_modelmerge", "ref_ddia"],
-      "evidence_location": "Sources support adapters/merged models and data operations separately.",
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Registry support for composed artifacts is plausible but not directly evidenced."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "eeb767337c7b7f14",
+      "unit_id": "c31c3c03bd8ba3f5",
       "node_id": "registry_mlops",
       "field": "dependencies.data_pipelines.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Distributed data pipelines & streaming into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_ddia"],
-      "evidence_location": "DDIA supports data pipelines/streaming broadly; registry linkage is indirect.",
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Distributed data pipelines & streaming because Distributed data pipelines & streaming is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Optional dependency is plausible."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "0b0ed035a6b07633",
+      "unit_id": "ca911f629767785f",
       "node_id": "registry_mlops",
       "field": "dependencies.eval_driven_development.rationale",
-      "text": "Model registry, versioning & MLOps / LLMOps turns Evaluation-driven development & release gates into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_nist"],
-      "evidence_location": "NIST supports evaluation and governance broadly, but not registry-driven release gates directly.",
+      "text": "In this atlas graph, Model registry, versioning & MLOps / LLMOps has an `operationalizes` dependency on Evaluation-driven development & release gates because Evaluation-driven development & release gates is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Optional dependency is plausible but needs a release-management source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "edfda89b2cde9dfa",
+      "edge_id": "3c1a28835dce0dc8",
       "node_id": "registry_mlops",
       "dependency_id": "storage_checkpoints",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Registries naturally depend on stored artifacts and checkpoint metadata.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "1ffa7086e2d7472d",
+      "edge_id": "6972f54cd07cd95b",
       "node_id": "registry_mlops",
       "dependency_id": "orchestration",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "MLOps registries commonly integrate with workflow/deployment orchestration, though the packet evidence is broad.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "c10d9b6ed26fa06a",
+      "edge_id": "32b7f508500f31ba",
       "node_id": "registry_mlops",
       "dependency_id": "repro_monitoring",
-      "source_ids": ["ref_nist"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Lineage and monitoring concerns make this a plausible common dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "c2e270a1a018314f",
+      "edge_id": "df6be339c4568054",
       "node_id": "registry_mlops",
       "dependency_id": "cryptographic_signing",
-      "source_ids": ["ref_c2pa", "ref_nist"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Signing is plausible for artifact integrity and audit trails.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "587490d24a9ade80",
+      "edge_id": "46993f410faaf8ba",
       "node_id": "registry_mlops",
       "dependency_id": "checkpoint_composition",
-      "source_ids": ["ref_lora", "ref_modelmerge", "ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Composed artifacts plausibly need registry/versioning support.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "f285144db9e16550",
+      "edge_id": "adb2b7c0a89c739d",
       "node_id": "registry_mlops",
       "dependency_id": "data_pipelines",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Optional data-pipeline linkage is plausible but indirect.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "d6f8e7ad2e498e57",
+      "edge_id": "de895ac02057848b",
       "node_id": "registry_mlops",
       "dependency_id": "eval_driven_development",
-      "source_ids": ["ref_nist"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Release-gate linkage is plausible but not directly cited.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "registry_mlops",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

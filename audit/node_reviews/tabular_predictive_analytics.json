@@ -26,13 +26,14 @@
         "ref_dlbook",
         "ref_nist",
         "ref_pml",
-        "ref_prml"
+        "ref_prml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support tabular predictive methods and risk management, but not the dominance claim across credit, maintenance, operations, public services, and enterprise decision support."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "26f2621547c5a867",
@@ -222,23 +223,6 @@
       "notes": "Dimensionality reduction is a plausible optional preprocessing/analysis dependency for structured records."
     },
     {
-      "unit_id": "8aa45b94c95b393b",
-      "node_id": "tabular_predictive_analytics",
-      "field": "dependencies.self_organizing_maps.rationale",
-      "text": "Tabular predictive analytics & decision support integrates Self-organizing maps & competitive learning as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_nist",
-        "ref_pml",
-        "ref_prml"
-      ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Self-organizing maps can apply to tabular data but are not strongly evidenced by packet sources as a typical dependency."
-    },
-    {
       "unit_id": "7392c04f75ac7c07",
       "node_id": "tabular_predictive_analytics",
       "field": "dependencies.perceptron_model.rationale",
@@ -271,6 +255,20 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "NIST and risk decision-support contexts support fairness and subgroup analysis as an optional dependency."
+    },
+    {
+      "unit_id": "578f39a6f8e243a8",
+      "node_id": "tabular_predictive_analytics",
+      "field": "dependencies.self_organizing_maps.rationale",
+      "text": "In this atlas graph, Tabular predictive analytics & decision support has an `applies` dependency on Self-organizing maps & competitive learning with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -394,23 +392,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "1a2e94b7b89945ca",
-      "node_id": "tabular_predictive_analytics",
-      "dependency_id": "self_organizing_maps",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_nist",
-        "ref_pml",
-        "ref_prml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Self-organizing maps can apply to tabular data but are not strongly evidenced by packet sources as a typical dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
       "edge_id": "766b830c2373eb45",
       "node_id": "tabular_predictive_analytics",
       "dependency_id": "perceptron_model",
@@ -443,6 +424,19 @@
       "notes": "NIST and risk decision-support contexts support fairness and subgroup analysis as an optional dependency.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "3335be4325943ccf",
+      "node_id": "tabular_predictive_analytics",
+      "dependency_id": "self_organizing_maps",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

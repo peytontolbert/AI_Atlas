@@ -53,7 +53,7 @@
         "id": "quantized_inference",
         "type": "applies",
         "strength": "common",
-        "rationale": "Image generation, editing & design integrates Quantized inference & compressed deployment as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Image generation, editing & design has an `applies` dependency on Quantized inference & compressed deployment with `common` strength."
       },
       {
         "id": "gan",
@@ -65,13 +65,13 @@
         "id": "output_watermarking",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Image generation, editing & design integrates Generation-time watermarking as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Image generation, editing & design has an `applies` dependency on Generation-time watermarking with `optional` strength."
       },
       {
         "id": "content_provenance",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Image generation, editing & design integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Image generation, editing & design has an `applies` dependency on Content credentials, signing & provenance with `optional` strength."
       },
       {
         "id": "model_serving",
@@ -143,10 +143,10 @@
       "text": "Image generation, editing & design integrates U-Nets & encoder–decoder convnets as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "b4ceb3a4f863da6b",
+      "unit_id": "cc9c08ebaeed82df",
       "node_id": "image_generation",
       "field": "dependencies.quantized_inference.rationale",
-      "text": "Image generation, editing & design integrates Quantized inference & compressed deployment as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Image generation, editing & design has an `applies` dependency on Quantized inference & compressed deployment with `common` strength."
     },
     {
       "unit_id": "29b9af98e0251f6e",
@@ -155,16 +155,16 @@
       "text": "Image generation, editing & design integrates Generative adversarial networks as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "de2e398d6ef80e35",
+      "unit_id": "89602f36cb25345c",
       "node_id": "image_generation",
       "field": "dependencies.output_watermarking.rationale",
-      "text": "Image generation, editing & design integrates Generation-time watermarking as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Image generation, editing & design has an `applies` dependency on Generation-time watermarking with `optional` strength."
     },
     {
-      "unit_id": "d3ba4921f7ed634d",
+      "unit_id": "c723f84889e31fb9",
       "node_id": "image_generation",
       "field": "dependencies.content_provenance.rationale",
-      "text": "Image generation, editing & design integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Image generation, editing & design has an `applies` dependency on Content credentials, signing & provenance with `optional` strength."
     },
     {
       "unit_id": "22685c143f8ebf50",
@@ -199,12 +199,12 @@
       "rationale": "Image generation, editing & design integrates U-Nets & encoder–decoder convnets as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "ccee3c19947eaf03",
+      "edge_id": "97d550f31ff19002",
       "node_id": "image_generation",
       "dependency_id": "quantized_inference",
       "type": "applies",
       "strength": "common",
-      "rationale": "Image generation, editing & design integrates Quantized inference & compressed deployment as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Image generation, editing & design has an `applies` dependency on Quantized inference & compressed deployment with `common` strength."
     },
     {
       "edge_id": "eba0919eede28142",
@@ -215,20 +215,20 @@
       "rationale": "Image generation, editing & design integrates Generative adversarial networks as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "29d63e1ae8ba618e",
+      "edge_id": "4f10d96b9288eefe",
       "node_id": "image_generation",
       "dependency_id": "output_watermarking",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Image generation, editing & design integrates Generation-time watermarking as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Image generation, editing & design has an `applies` dependency on Generation-time watermarking with `optional` strength."
     },
     {
-      "edge_id": "5e4991d6baa71254",
+      "edge_id": "010dfbb8452334f4",
       "node_id": "image_generation",
       "dependency_id": "content_provenance",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Image generation, editing & design integrates Content credentials, signing & provenance as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Image generation, editing & design has an `applies` dependency on Content credentials, signing & provenance with `optional` strength."
     },
     {
       "edge_id": "1954c83649019093",

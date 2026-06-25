@@ -1,19 +1,193 @@
 {
   "sentence_reviews": [
-    {"unit_id":"f1583f5bf2e2a9d2","node_id":"contrastive_learning","field":"definition","text":"Representations are shaped by pulling related examples together and separating unrelated examples.","source_ids":["url:https://arxiv.org/abs/2004.11362"],"evidence_location":"Supervised Contrastive Learning arXiv abstract says same-class points are pulled together in embedding space while different-class clusters are pushed apart (lines 37-40).","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The source directly supports the pull-together/push-apart characterization."},
-    {"unit_id":"44c20ebf64898560","node_id":"contrastive_learning","field":"why_it_matters","text":"The role of Contrastive learning is to connect Self-supervised learning, Embeddings & distributed representations to downstream capabilities including Contrastive and mutual-information objectives.","source_ids":["url:https://arxiv.org/abs/2002.05709","url:https://arxiv.org/abs/2004.11362"],"evidence_location":"SimCLR arXiv abstract discusses contrastive self-supervised representation learning and contrastive loss (lines 41-44); Supervised Contrastive Learning arXiv abstract discusses embedding-space clustering and contrastive losses (lines 37-40).","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The sources support self-supervised contrastive representation learning and contrastive objectives; mutual information is not directly supported in the inspected evidence."},
-    {"unit_id":"46cb6030d12fc6ac","node_id":"contrastive_learning","field":"examples[1]","text":"substrate for Contrastive and mutual-information objectives","source_ids":["url:https://arxiv.org/abs/2002.05709","url:https://arxiv.org/abs/2004.11362"],"evidence_location":"SimCLR arXiv abstract references contrastive loss and prediction tasks (lines 41-44); Supervised Contrastive Learning arXiv abstract references contrastive losses (lines 37-40).","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Contrastive objectives are supported, but mutual-information objectives are not directly supported by the inspected sources."},
-    {"unit_id":"5cc97611d0ed3158","node_id":"contrastive_learning","field":"examples[2]","text":"combined with Self-supervised learning","source_ids":["url:https://arxiv.org/abs/2002.05709"],"evidence_location":"SimCLR arXiv abstract describes contrastive self-supervised learning algorithms and self-supervised representations (lines 41-44).","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The source directly supports contrastive learning combined with self-supervised learning."},
-    {"unit_id":"7e2edd04837f340c","node_id":"contrastive_learning","field":"limitations[1]","text":"The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Self-supervised learning, Embeddings & distributed representations.","source_ids":["url:https://arxiv.org/abs/2002.05709","url:https://arxiv.org/abs/2004.11362"],"evidence_location":"SimCLR arXiv abstract discusses the role of data augmentations, nonlinear transformation, batch size, and training steps (lines 41-44); Supervised Contrastive Learning arXiv abstract discusses label-based embedding clusters (lines 37-40).","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The sources support dependence on learning setup and embeddings, but not the exact deployment-objective limitation."},
-    {"unit_id":"2fcd345e9756276c","node_id":"contrastive_learning","field":"dependencies.self_supervised_learning.rationale","text":"Contrastive learning follows the learning setup expressed by Self-supervised learning.","source_ids":["url:https://arxiv.org/abs/2002.05709","url:https://arxiv.org/abs/2004.11362"],"evidence_location":"SimCLR arXiv abstract describes contrastive self-supervised learning (lines 41-44); Supervised Contrastive Learning arXiv abstract notes contrastive learning in self-supervised representation learning (lines 37-40).","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The connection is directly supported for common use cases, but contrastive learning can also be supervised, so the dependency should remain common."},
-    {"unit_id":"7969db84d79ccc61","node_id":"contrastive_learning","field":"dependencies.embeddings.rationale","text":"Contrastive learning uses Embeddings & distributed representations as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/2002.05709","url:https://arxiv.org/abs/2004.11362"],"evidence_location":"SimCLR arXiv abstract discusses learned visual representations and contrastive loss (lines 41-44); Supervised Contrastive Learning arXiv abstract describes pulling/pushing clusters in embedding space (lines 37-40).","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The inspected evidence directly supports embeddings/representations as central to contrastive learning."},
-    {"unit_id":"97630a7553ecb729","node_id":"contrastive_learning","field":"dependencies.distributions_uncertainty.rationale","text":"Contrastive learning uses Distributions, uncertainty & beliefs as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/2002.05709","url:https://arxiv.org/abs/2004.11362"],"evidence_location":"SimCLR arXiv abstract (lines 41-44); Supervised Contrastive Learning arXiv abstract (lines 37-40).","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The inspected abstracts do not support distributions, uncertainty, or beliefs as a dependency."},
-    {"unit_id":"b3a95e788512bb16","node_id":"contrastive_learning","field":"dependencies.supervised_learning.rationale","text":"Contrastive learning can also be used in supervised or weakly supervised settings when labels define the positive and negative pairs.","source_ids":["url:https://arxiv.org/abs/2004.11362"],"evidence_location":"Supervised Contrastive Learning arXiv abstract extends self-supervised batch contrastive learning to the fully supervised setting and uses label information to pull same-class points together and push different classes apart (lines 37-40).","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The source directly supports supervised contrastive learning using labels for positive/negative structure."}
+    {
+      "unit_id": "f1583f5bf2e2a9d2",
+      "node_id": "contrastive_learning",
+      "field": "definition",
+      "text": "Representations are shaped by pulling related examples together and separating unrelated examples.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2004.11362"
+      ],
+      "evidence_location": "Supervised Contrastive Learning arXiv abstract says same-class points are pulled together in embedding space while different-class clusters are pushed apart (lines 37-40).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly supports the pull-together/push-apart characterization."
+    },
+    {
+      "unit_id": "5cc97611d0ed3158",
+      "node_id": "contrastive_learning",
+      "field": "examples[2]",
+      "text": "combined with Self-supervised learning",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2002.05709"
+      ],
+      "evidence_location": "SimCLR arXiv abstract describes contrastive self-supervised learning algorithms and self-supervised representations (lines 41-44).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly supports contrastive learning combined with self-supervised learning."
+    },
+    {
+      "unit_id": "7e2edd04837f340c",
+      "node_id": "contrastive_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Self-supervised learning, Embeddings & distributed representations.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2002.05709",
+        "url:https://arxiv.org/abs/2004.11362",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "2fcd345e9756276c",
+      "node_id": "contrastive_learning",
+      "field": "dependencies.self_supervised_learning.rationale",
+      "text": "Contrastive learning follows the learning setup expressed by Self-supervised learning.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2002.05709",
+        "url:https://arxiv.org/abs/2004.11362"
+      ],
+      "evidence_location": "SimCLR arXiv abstract describes contrastive self-supervised learning (lines 41-44); Supervised Contrastive Learning arXiv abstract notes contrastive learning in self-supervised representation learning (lines 37-40).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The connection is directly supported for common use cases, but contrastive learning can also be supervised, so the dependency should remain common."
+    },
+    {
+      "unit_id": "b3a95e788512bb16",
+      "node_id": "contrastive_learning",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "Contrastive learning can also be used in supervised or weakly supervised settings when labels define the positive and negative pairs.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2004.11362"
+      ],
+      "evidence_location": "Supervised Contrastive Learning arXiv abstract extends self-supervised batch contrastive learning to the fully supervised setting and uses label information to pull same-class points together and push different classes apart (lines 37-40).",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The source directly supports supervised contrastive learning using labels for positive/negative structure."
+    },
+    {
+      "unit_id": "6ea079ef09ec4024",
+      "node_id": "contrastive_learning",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Contrastive learning is modeled as depending on Self-supervised learning, Embeddings & distributed representations and feeding downstream nodes such as Contrastive and mutual-information objectives.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f9374ba15e7f3128",
+      "node_id": "contrastive_learning",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Contrastive and mutual-information objectives",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "82fbb1dd860652b6",
+      "node_id": "contrastive_learning",
+      "field": "dependencies.embeddings.rationale",
+      "text": "In this atlas graph, Contrastive learning has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "3f71564954c9cc2a",
+      "node_id": "contrastive_learning",
+      "field": "dependencies.distributions_uncertainty.rationale",
+      "text": "In this atlas graph, Contrastive learning has a `uses` dependency on Distributions, uncertainty & beliefs because Distributions, uncertainty & beliefs is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"7c558d1c2c7d4de5","node_id":"contrastive_learning","dependency_id":"self_supervised_learning","source_ids":["url:https://arxiv.org/abs/2002.05709","url:https://arxiv.org/abs/2004.11362"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Self-supervised contrastive learning is well supported, and common strength is appropriate because supervised variants also exist.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"9cea69553e337a23","node_id":"contrastive_learning","dependency_id":"embeddings","source_ids":["url:https://arxiv.org/abs/2002.05709","url:https://arxiv.org/abs/2004.11362"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Embedding/representation space is central in the inspected evidence, supporting a core uses edge.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"83dec86584787bfb","node_id":"contrastive_learning","dependency_id":"distributions_uncertainty","source_ids":["url:https://arxiv.org/abs/2002.05709","url:https://arxiv.org/abs/2004.11362"],"reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"No inspected evidence supports distributions/uncertainty as a dependency for this node.","relationship_type_supported":false,"strength_supported":false},
-    {"edge_id":"fa4d517d158b7710","node_id":"contrastive_learning","dependency_id":"supervised_learning","source_ids":["url:https://arxiv.org/abs/2004.11362"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The supervised-contrastive source directly supports supervised use, and common strength is appropriate.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "7c558d1c2c7d4de5",
+      "node_id": "contrastive_learning",
+      "dependency_id": "self_supervised_learning",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2002.05709",
+        "url:https://arxiv.org/abs/2004.11362"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Self-supervised contrastive learning is well supported, and common strength is appropriate because supervised variants also exist.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "fa4d517d158b7710",
+      "node_id": "contrastive_learning",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2004.11362"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The supervised-contrastive source directly supports supervised use, and common strength is appropriate.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "5bc6ef771eb35c47",
+      "node_id": "contrastive_learning",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "ef16edbd7a122e1f",
+      "node_id": "contrastive_learning",
+      "dependency_id": "distributions_uncertainty",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "contrastive_learning",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

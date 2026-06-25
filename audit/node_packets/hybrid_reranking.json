@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Hybrid retrieval fuses lexical and dense candidates, then reranks them with stronger cross-encoders, listwise models, or task-specific scorers.",
-    "why_it_matters": "The role of Hybrid retrieval & reranking is to connect Sparse lexical retrieval, Dense vector retrieval to downstream capabilities including Retrieval-augmented generation, Vector-search and retrieval services, Neural search, RAG & question answering.",
+    "why_it_matters": "In this atlas graph, Hybrid retrieval & reranking is modeled as depending on Sparse lexical retrieval, Dense vector retrieval and feeding downstream nodes such as Retrieval-augmented generation, Vector-search and retrieval services, Neural search, RAG & question answering.",
     "examples": [
-      "substrate for Retrieval-augmented generation",
-      "substrate for Vector-search and retrieval services",
-      "substrate for Neural search, RAG & question answering"
+      "atlas downstream link to Retrieval-augmented generation",
+      "atlas downstream link to Vector-search and retrieval services",
+      "atlas downstream link to Neural search, RAG & question answering"
     ],
     "limitations": [
       "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Sparse lexical retrieval, Dense vector retrieval."
@@ -46,7 +46,7 @@
         "id": "margin_ranking_metric",
         "type": "uses",
         "strength": "common",
-        "rationale": "Hybrid retrieval & reranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Hybrid retrieval & reranking has a `uses` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Hybrid retrieval fuses lexical and dense candidates, then reranks them with stronger cross-encoders, listwise models, or task-specific scorers."
     },
     {
-      "unit_id": "69cb63bd790ee9d0",
+      "unit_id": "988fbbbf685f317f",
       "node_id": "hybrid_reranking",
       "field": "why_it_matters",
-      "text": "The role of Hybrid retrieval & reranking is to connect Sparse lexical retrieval, Dense vector retrieval to downstream capabilities including Retrieval-augmented generation, Vector-search and retrieval services, Neural search, RAG & question answering."
+      "text": "In this atlas graph, Hybrid retrieval & reranking is modeled as depending on Sparse lexical retrieval, Dense vector retrieval and feeding downstream nodes such as Retrieval-augmented generation, Vector-search and retrieval services, Neural search, RAG & question answering."
     },
     {
-      "unit_id": "c77c31aecc11fd6a",
+      "unit_id": "fbeb409e163b6df2",
       "node_id": "hybrid_reranking",
       "field": "examples[1]",
-      "text": "substrate for Retrieval-augmented generation"
+      "text": "atlas downstream link to Retrieval-augmented generation"
     },
     {
-      "unit_id": "f2a9c53ad5b3799e",
+      "unit_id": "01599b7fdde4e9bf",
       "node_id": "hybrid_reranking",
       "field": "examples[2]",
-      "text": "substrate for Vector-search and retrieval services"
+      "text": "atlas downstream link to Vector-search and retrieval services"
     },
     {
-      "unit_id": "142eec24a87a6ce3",
+      "unit_id": "03354d0e0252eb3e",
       "node_id": "hybrid_reranking",
       "field": "examples[3]",
-      "text": "substrate for Neural search, RAG & question answering"
+      "text": "atlas downstream link to Neural search, RAG & question answering"
     },
     {
       "unit_id": "5b18d22424ecef7e",
@@ -100,10 +100,10 @@
       "text": "Hybrid retrieval & reranking stores, selects, or obtains information through Dense vector retrieval."
     },
     {
-      "unit_id": "e6239950c4a59050",
+      "unit_id": "8f9169948914034c",
       "node_id": "hybrid_reranking",
       "field": "dependencies.margin_ranking_metric.rationale",
-      "text": "Hybrid retrieval & reranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Hybrid retrieval & reranking has a `uses` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -124,12 +124,12 @@
       "rationale": "Hybrid retrieval & reranking stores, selects, or obtains information through Dense vector retrieval."
     },
     {
-      "edge_id": "d58e68b055328973",
+      "edge_id": "c806e32bf4ba346b",
       "node_id": "hybrid_reranking",
       "dependency_id": "margin_ranking_metric",
       "type": "uses",
       "strength": "common",
-      "rationale": "Hybrid retrieval & reranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Hybrid retrieval & reranking has a `uses` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

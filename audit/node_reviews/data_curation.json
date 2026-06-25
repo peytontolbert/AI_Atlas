@@ -5,146 +5,175 @@
       "node_id": "data_curation",
       "field": "definition",
       "text": "Data curation collects, filters, balances, labels, documents, and governs examples so the training distribution better matches intended capabilities and risks.",
-      "source_ids": ["ref_dlbook", "ref_pml", "ref_aima"],
-      "evidence_location": "Deep Learning, data/generalization and dataset methodology context; PML data/preprocessing topics; AIMA developing ML systems, data collection/assessment/management.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Collection, filtering/preprocessing, labels, and data management are supported. Documentation/governance, intended capabilities, and risks are broader governance claims not directly evidenced."
-    },
-    {
-      "unit_id": "b4ef9af6a675cf6a",
-      "node_id": "data_curation",
-      "field": "why_it_matters",
-      "text": "The role of Data collection, curation & filtering is to connect Datasets, sampling & splits, Databases & information retrieval to downstream capabilities including Deduplication, contamination control & provenance, Large-scale pretraining, Curricula, data mixtures & sampling schedules.",
-      "source_ids": ["ref_dlbook", "ref_pml", "ref_aima"],
-      "evidence_location": "AIMA developing ML systems data collection/assessment/management; PML data/preprocessing and validation topics; Deep Learning dataset and training methodology context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dataset and data-management dependencies are supported. Deduplication, contamination control, provenance, large-scale pretraining, and data-mixture schedules are not directly supported by the cited packet evidence."
-    },
-    {
-      "unit_id": "4ecde73efb23ff22",
-      "node_id": "data_curation",
-      "field": "examples[1]",
-      "text": "substrate for Deduplication, contamination control & provenance",
-      "source_ids": ["ref_aima", "ref_pml"],
-      "evidence_location": "AIMA data collection/assessment/management; PML data and preprocessing topics.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data management supports the broad connection, but deduplication, contamination control, and provenance are not directly named in the inspected evidence."
-    },
-    {
-      "unit_id": "2516093c7b6de969",
-      "node_id": "data_curation",
-      "field": "examples[2]",
-      "text": "substrate for Large-scale pretraining",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, dataset and training methodology context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The inspected packet source does not directly support large-scale pretraining as a downstream capability of curation."
-    },
-    {
-      "unit_id": "425e2f719d27f1e2",
-      "node_id": "data_curation",
-      "field": "examples[3]",
-      "text": "substrate for Curricula, data mixtures & sampling schedules",
-      "source_ids": ["ref_dlbook", "ref_pml"],
-      "evidence_location": "Deep Learning and PML data, sampling, and training-methodology topics.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data and sampling support the general prerequisite, but curricula and data mixtures/schedules are not directly evidenced."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "5e1767b7eeaad134",
       "node_id": "data_curation",
       "field": "limitations[1]",
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Databases & information retrieval.",
-      "source_ids": ["ref_dlbook", "ref_pml", "ref_aima"],
-      "evidence_location": "PML data/preprocessing and validation topics; AIMA data collection/assessment/management; Deep Learning methodology and hyperparameter context.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data quality and hyperparameters are supported; compute budget, random variation, evaluation contamination, and databases/IR as direct dependencies are only partly supported."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "552378e2141c0565",
+      "unit_id": "5fd942c9b01a3757",
+      "node_id": "data_curation",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Data collection, curation & filtering is modeled as depending on Datasets, sampling & splits, Databases & information retrieval and feeding downstream nodes such as Deduplication, contamination control & provenance, Large-scale pretraining, Curricula, data mixtures & sampling schedules.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "dd449d99a30661e6",
+      "node_id": "data_curation",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Deduplication, contamination control & provenance",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2f47c4490dd6c5eb",
+      "node_id": "data_curation",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Large-scale pretraining",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "96d665deaf0b2417",
+      "node_id": "data_curation",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Curricula, data mixtures & sampling schedules",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "69b495a4f8e7d969",
       "node_id": "data_curation",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "Data collection, curation & filtering uses Datasets, sampling & splits as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml", "ref_aima"],
-      "evidence_location": "PML data, preprocessing, validation, and cross-validation topics; AIMA data collection/assessment/management.",
+      "text": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Curation directly concerns datasets and sampled examples; wording is synthesized."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "221ca9ff5598b962",
+      "unit_id": "11b6078ce8a46a4f",
       "node_id": "data_curation",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Data collection, curation & filtering uses Databases & information retrieval as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_aima"],
-      "evidence_location": "AIMA developing ML systems data collection/assessment/management and information retrieval/search-related topics.",
+      "text": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data management is supported, but databases and information retrieval are not established as core conceptual ingredients for all data curation."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "f5118bcfc2bd8e2a",
+      "unit_id": "5e87010884c645c8",
       "node_id": "data_curation",
       "field": "dependencies.statistics.rationale",
-      "text": "Data collection, curation & filtering uses Statistics & experimental design as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml"],
-      "evidence_location": "PML statistics, data, sampling distributions, validation, and cross-validation topics.",
+      "text": "In this atlas graph, Data collection, curation & filtering has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Sampling, balancing, validation, and dataset assessment make statistics relevant; experimental design is only implicit."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "52af48e98b812f42",
+      "edge_id": "8d9a0c4b76086089",
       "node_id": "data_curation",
       "dependency_id": "datasets_sampling",
-      "source_ids": ["ref_pml", "ref_aima"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Data curation operates over datasets and sampled examples; core strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "e07006bc6d181617",
+      "edge_id": "9228855caacf3fad",
       "node_id": "data_curation",
       "dependency_id": "databases_ir",
-      "source_ids": ["ref_aima"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Data management supports the relation, but databases/IR as a core dependency is stronger than the evidence.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "92dfb31216e56fa6",
+      "edge_id": "24c3913ee479ea01",
       "node_id": "data_curation",
       "dependency_id": "statistics",
-      "source_ids": ["ref_pml"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Dataset assessment, sampling, validation, and balancing make statistics a defensible common dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "data_curation",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -16,156 +16,148 @@
       "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim."
     },
     {
-      "unit_id": "b8dd64ded8a37a34",
-      "node_id": "causal_ablation",
-      "field": "why_it_matters",
-      "text": "The role of Ablation, interventions & causal analysis is to connect Causal inference, Benchmarks, test suites & task metrics to downstream capabilities including Mechanistic interpretability & circuit analysis, Formal verification of models.",
-      "source_ids": [
-        "ref_aima",
-        "ref_nist"
-      ],
-      "evidence_location": "AIMA covers causality, interventions, experiments, and model evaluation topics; NIST AI RMF covers test, evaluation, validation, analysis, and risk measurement for AI systems.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Downstream/substrate phrasing is atlas graph terminology."
-    },
-    {
-      "unit_id": "b72cda93fd99f32e",
-      "node_id": "causal_ablation",
-      "field": "examples[1]",
-      "text": "substrate for Mechanistic interpretability & circuit analysis",
-      "source_ids": [
-        "ref_aima",
-        "ref_nist"
-      ],
-      "evidence_location": "AIMA covers causality, interventions, experiments, and model evaluation topics; NIST AI RMF covers test, evaluation, validation, analysis, and risk measurement for AI systems.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Downstream/substrate phrasing is atlas graph terminology."
-    },
-    {
-      "unit_id": "64a05764df058288",
-      "node_id": "causal_ablation",
-      "field": "examples[2]",
-      "text": "substrate for Formal verification of models",
-      "source_ids": [
-        "ref_aima",
-        "ref_nist"
-      ],
-      "evidence_location": "AIMA covers causality, interventions, experiments, and model evaluation topics; NIST AI RMF covers test, evaluation, validation, analysis, and risk measurement for AI systems.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source. Downstream/substrate phrasing is atlas graph terminology."
-    },
-    {
       "unit_id": "039a7c7cf715c4ee",
       "node_id": "causal_ablation",
       "field": "limitations[1]",
       "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Causal inference, Benchmarks, test suites & task metrics.",
       "source_ids": [
         "ref_aima",
-        "ref_nist"
+        "ref_nist",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA covers causality, interventions, experiments, and model evaluation topics; NIST AI RMF covers test, evaluation, validation, analysis, and risk measurement for AI systems.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited sources support nearby concepts, but the exact breadth, downstream list, or necessity implied by the wording should be narrowed or backed by a more specific source."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "b1c8dc7f9933aedc",
+      "unit_id": "cad566cbe9ce20fa",
+      "node_id": "causal_ablation",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Ablation, interventions & causal analysis is modeled as depending on Causal inference, Benchmarks, test suites & task metrics and feeding downstream nodes such as Mechanistic interpretability & circuit analysis, Formal verification of models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ef79d7b7098fe408",
+      "node_id": "causal_ablation",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Mechanistic interpretability & circuit analysis",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "942103b881f6c0c7",
+      "node_id": "causal_ablation",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Formal verification of models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ce91938d71930a3a",
       "node_id": "causal_ablation",
       "field": "dependencies.causal_inference.rationale",
-      "text": "Ablation, interventions & causal analysis measures, constrains, audits, or governs behavior using Causal inference.",
+      "text": "In this atlas graph, Ablation, interventions & causal analysis has an `evaluates_or_constrains` dependency on Causal inference because Causal inference is modeled as evaluation, constraint, audit, or governance support.",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA covers causality, interventions, experiments, and model evaluation topics; NIST AI RMF covers test, evaluation, validation, analysis, and risk measurement for AI systems.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "38f58a099734e4b2",
+      "unit_id": "76b4190de64f286f",
       "node_id": "causal_ablation",
       "field": "dependencies.benchmarks_metrics.rationale",
-      "text": "Ablation, interventions & causal analysis measures, constrains, audits, or governs behavior using Benchmarks, test suites & task metrics.",
+      "text": "In this atlas graph, Ablation, interventions & causal analysis has an `evaluates_or_constrains` dependency on Benchmarks, test suites & task metrics because Benchmarks, test suites & task metrics is modeled as evaluation, constraint, audit, or governance support.",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA covers causality, interventions, experiments, and model evaluation topics; NIST AI RMF covers test, evaluation, validation, analysis, and risk measurement for AI systems.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "a966c7dfaa4eadd6",
+      "unit_id": "c89ac18f4a7d0cbc",
       "node_id": "causal_ablation",
       "field": "dependencies.statistics.rationale",
-      "text": "Ablation, interventions & causal analysis measures, constrains, audits, or governs behavior using Statistics & experimental design.",
+      "text": "In this atlas graph, Ablation, interventions & causal analysis has an `evaluates_or_constrains` dependency on Statistics & experimental design because Statistics & experimental design is modeled as evaluation, constraint, audit, or governance support.",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA covers causality, interventions, experiments, and model evaluation topics; NIST AI RMF covers test, evaluation, validation, analysis, and risk measurement for AI systems.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "b56cebd69b6a7a89",
+      "edge_id": "39d5c6cc758b4825",
       "node_id": "causal_ablation",
       "dependency_id": "causal_inference",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Relationship type and strength are defensible for the atlas dependency graph.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "84d51732dc400603",
+      "edge_id": "0022b239e00bb2ed",
       "node_id": "causal_ablation",
       "dependency_id": "benchmarks_metrics",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Relationship type and strength are defensible for the atlas dependency graph.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "e95697f4081a0a5c",
+      "edge_id": "d30db0827c96d9ca",
       "node_id": "causal_ablation",
       "dependency_id": "statistics",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support the main technical relationship, but the wording combines atlas taxonomy terms rather than a single quoted source claim. Relationship type and strength are defensible for the atlas dependency graph.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "causal_ablation",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

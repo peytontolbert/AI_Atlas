@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Distributed data pipelines ingest, transform, validate, shuffle, stream, cache, and feed training or inference workloads at sustained throughput.",
-    "why_it_matters": "The role of Distributed data pipelines & streaming is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Workflow, cluster & job orchestration, Model registry, versioning & MLOps / LLMOps.",
+    "why_it_matters": "In this atlas graph, Distributed data pipelines & streaming is modeled as depending on Distributed systems & networking, Databases & information retrieval and feeding downstream nodes such as Workflow, cluster & job orchestration, Model registry, versioning & MLOps / LLMOps.",
     "examples": [
-      "substrate for Workflow, cluster & job orchestration",
-      "substrate for Model registry, versioning & MLOps / LLMOps"
+      "atlas downstream link to Workflow, cluster & job orchestration",
+      "atlas downstream link to Model registry, versioning & MLOps / LLMOps"
     ],
     "limitations": [
       "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Databases & information retrieval."
@@ -33,25 +33,25 @@
         "id": "distributed_systems",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Distributed data pipelines & streaming turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "databases_ir",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Distributed data pipelines & streaming turns Databases & information retrieval into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Databases & information retrieval because Databases & information retrieval is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "data_curation",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Distributed data pipelines & streaming turns Data collection, curation & filtering into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "multimodal_simulated_streams",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Distributed data pipelines & streaming turns Multimodal, simulated & streaming data into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -63,22 +63,22 @@
       "text": "Distributed data pipelines ingest, transform, validate, shuffle, stream, cache, and feed training or inference workloads at sustained throughput."
     },
     {
-      "unit_id": "f4374104eb34d7b6",
+      "unit_id": "b0b9b1be1b97fd42",
       "node_id": "data_pipelines",
       "field": "why_it_matters",
-      "text": "The role of Distributed data pipelines & streaming is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Workflow, cluster & job orchestration, Model registry, versioning & MLOps / LLMOps."
+      "text": "In this atlas graph, Distributed data pipelines & streaming is modeled as depending on Distributed systems & networking, Databases & information retrieval and feeding downstream nodes such as Workflow, cluster & job orchestration, Model registry, versioning & MLOps / LLMOps."
     },
     {
-      "unit_id": "412bf9ddddcd341b",
+      "unit_id": "78a2179a844e12ea",
       "node_id": "data_pipelines",
       "field": "examples[1]",
-      "text": "substrate for Workflow, cluster & job orchestration"
+      "text": "atlas downstream link to Workflow, cluster & job orchestration"
     },
     {
-      "unit_id": "c058f5b71fd48974",
+      "unit_id": "13d815d37a63582f",
       "node_id": "data_pipelines",
       "field": "examples[2]",
-      "text": "substrate for Model registry, versioning & MLOps / LLMOps"
+      "text": "atlas downstream link to Model registry, versioning & MLOps / LLMOps"
     },
     {
       "unit_id": "986dea8fa2ae026e",
@@ -87,62 +87,62 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Databases & information retrieval."
     },
     {
-      "unit_id": "eb5aaf27b007bb86",
+      "unit_id": "5a0f5eb437da91ea",
       "node_id": "data_pipelines",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Distributed data pipelines & streaming turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "eb7c15ab3d7fa898",
+      "unit_id": "a348dc48e8e511bd",
       "node_id": "data_pipelines",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Distributed data pipelines & streaming turns Databases & information retrieval into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Databases & information retrieval because Databases & information retrieval is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "41f041ab35612a19",
+      "unit_id": "c8ac4da7a912a919",
       "node_id": "data_pipelines",
       "field": "dependencies.data_curation.rationale",
-      "text": "Distributed data pipelines & streaming turns Data collection, curation & filtering into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "345311a4f65f0722",
+      "unit_id": "4c61c5850a802c25",
       "node_id": "data_pipelines",
       "field": "dependencies.multimodal_simulated_streams.rationale",
-      "text": "Distributed data pipelines & streaming turns Multimodal, simulated & streaming data into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "e0c6727466f7ddf0",
+      "edge_id": "e99dc8344d2e1b08",
       "node_id": "data_pipelines",
       "dependency_id": "distributed_systems",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Distributed data pipelines & streaming turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "1de4db8bd20d7139",
+      "edge_id": "49a4cb8a0d47b908",
       "node_id": "data_pipelines",
       "dependency_id": "databases_ir",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Distributed data pipelines & streaming turns Databases & information retrieval into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Databases & information retrieval because Databases & information retrieval is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "30887d19e3687569",
+      "edge_id": "6f1bdaf18b5415e2",
       "node_id": "data_pipelines",
       "dependency_id": "data_curation",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Distributed data pipelines & streaming turns Data collection, curation & filtering into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "d6580f977bbd6714",
+      "edge_id": "f7e9e79d60b644ef",
       "node_id": "data_pipelines",
       "dependency_id": "multimodal_simulated_streams",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Distributed data pipelines & streaming turns Multimodal, simulated & streaming data into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Distributed data pipelines & streaming has an `operationalizes` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

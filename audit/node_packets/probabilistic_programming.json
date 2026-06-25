@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Probabilistic programming expresses generative assumptions as executable programs and delegates posterior inference to sampling, variational, or differentiable machinery.",
-    "why_it_matters": "The role of Probabilistic & differentiable programming is to connect Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference to downstream capabilities including Scientific ML, simulators & digital twins, Knowledge graphs, semantic search & relational reasoning.",
+    "why_it_matters": "In this atlas graph, Probabilistic & differentiable programming is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference and feeding downstream nodes such as Scientific ML, simulators & digital twins, Knowledge graphs, semantic search & relational reasoning.",
     "examples": [
-      "substrate for Scientific ML, simulators & digital twins",
-      "substrate for Knowledge graphs, semantic search & relational reasoning"
+      "atlas downstream link to Scientific ML, simulators & digital twins",
+      "atlas downstream link to Knowledge graphs, semantic search & relational reasoning"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference."
@@ -34,13 +34,13 @@
         "id": "programs_ast_ir",
         "type": "represents_with",
         "strength": "core",
-        "rationale": "Probabilistic & differentiable programming consumes, emits, or organizes information using Programs, ASTs, bytecode & intermediate representations."
+        "rationale": "In this atlas graph, Probabilistic & differentiable programming has a `represents_with` dependency on Programs, ASTs, bytecode & intermediate representations with `core` strength."
       },
       {
         "id": "bayesian_approx_inference",
         "type": "uses",
         "strength": "core",
-        "rationale": "Probabilistic & differentiable programming is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+        "rationale": "In this atlas graph, Probabilistic & differentiable programming has an `uses` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "differentiable_sampling",
@@ -52,7 +52,7 @@
         "id": "constraint_program_execution",
         "type": "composes",
         "strength": "common",
-        "rationale": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Constraint propagation, logic & program execution."
+        "rationale": "In this atlas graph, Probabilistic & differentiable programming has a `composes` dependency on Constraint propagation, logic & program execution with `common` strength."
       }
     ]
   },
@@ -64,22 +64,22 @@
       "text": "Probabilistic programming expresses generative assumptions as executable programs and delegates posterior inference to sampling, variational, or differentiable machinery."
     },
     {
-      "unit_id": "98864f9c5d165414",
+      "unit_id": "c94c1171f33a46f5",
       "node_id": "probabilistic_programming",
       "field": "why_it_matters",
-      "text": "The role of Probabilistic & differentiable programming is to connect Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference to downstream capabilities including Scientific ML, simulators & digital twins, Knowledge graphs, semantic search & relational reasoning."
+      "text": "In this atlas graph, Probabilistic & differentiable programming is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference and feeding downstream nodes such as Scientific ML, simulators & digital twins, Knowledge graphs, semantic search & relational reasoning."
     },
     {
-      "unit_id": "42b5e159ffa0b7a8",
+      "unit_id": "ee5b7bce402dc0c2",
       "node_id": "probabilistic_programming",
       "field": "examples[1]",
-      "text": "substrate for Scientific ML, simulators & digital twins"
+      "text": "atlas downstream link to Scientific ML, simulators & digital twins"
     },
     {
-      "unit_id": "67d915c4bd8482a4",
+      "unit_id": "780eb86fa962abe6",
       "node_id": "probabilistic_programming",
       "field": "examples[2]",
-      "text": "substrate for Knowledge graphs, semantic search & relational reasoning"
+      "text": "atlas downstream link to Knowledge graphs, semantic search & relational reasoning"
     },
     {
       "unit_id": "8525916d68c710d3",
@@ -88,16 +88,16 @@
       "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Bayesian & approximate inference."
     },
     {
-      "unit_id": "f3b3ed386406d756",
+      "unit_id": "232fdffc313b2a68",
       "node_id": "probabilistic_programming",
       "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Probabilistic & differentiable programming consumes, emits, or organizes information using Programs, ASTs, bytecode & intermediate representations."
+      "text": "In this atlas graph, Probabilistic & differentiable programming has a `represents_with` dependency on Programs, ASTs, bytecode & intermediate representations with `core` strength."
     },
     {
-      "unit_id": "c1c8d76f76303b95",
+      "unit_id": "076557ad03e222b6",
       "node_id": "probabilistic_programming",
       "field": "dependencies.bayesian_approx_inference.rationale",
-      "text": "Probabilistic & differentiable programming is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      "text": "In this atlas graph, Probabilistic & differentiable programming has an `uses` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "unit_id": "8b8a420a7b8f2c25",
@@ -106,28 +106,28 @@
       "text": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
     },
     {
-      "unit_id": "d71a67ac0ef588f5",
+      "unit_id": "571754f2fb9c622f",
       "node_id": "probabilistic_programming",
       "field": "dependencies.constraint_program_execution.rationale",
-      "text": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Constraint propagation, logic & program execution."
+      "text": "In this atlas graph, Probabilistic & differentiable programming has a `composes` dependency on Constraint propagation, logic & program execution with `common` strength."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "a4480d911bc1ade2",
+      "edge_id": "abcdee48c82ba1aa",
       "node_id": "probabilistic_programming",
       "dependency_id": "programs_ast_ir",
       "type": "represents_with",
       "strength": "core",
-      "rationale": "Probabilistic & differentiable programming consumes, emits, or organizes information using Programs, ASTs, bytecode & intermediate representations."
+      "rationale": "In this atlas graph, Probabilistic & differentiable programming has a `represents_with` dependency on Programs, ASTs, bytecode & intermediate representations with `core` strength."
     },
     {
-      "edge_id": "ec4696da2684ab2a",
+      "edge_id": "4a7b63ce661a13a7",
       "node_id": "probabilistic_programming",
       "dependency_id": "bayesian_approx_inference",
       "type": "uses",
       "strength": "core",
-      "rationale": "Probabilistic & differentiable programming is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      "rationale": "In this atlas graph, Probabilistic & differentiable programming has an `uses` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "edge_id": "e5d70da70fac121c",
@@ -138,12 +138,12 @@
       "rationale": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Reparameterization & differentiable sampling."
     },
     {
-      "edge_id": "780b661cd1738e35",
+      "edge_id": "de0339e020fc4171",
       "node_id": "probabilistic_programming",
       "dependency_id": "constraint_program_execution",
       "type": "composes",
       "strength": "common",
-      "rationale": "Probabilistic & differentiable programming is assembled in part from the mechanism or model component Constraint propagation, logic & program execution."
+      "rationale": "In this atlas graph, Probabilistic & differentiable programming has a `composes` dependency on Constraint propagation, logic & program execution with `common` strength."
     }
   ],
   "candidate_references": {

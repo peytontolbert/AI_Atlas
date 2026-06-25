@@ -16,9 +16,9 @@
       "MPC"
     ],
     "definition": "Model-predictive control repeatedly optimizes a finite-horizon action sequence under a dynamics model, executes the first action, and replans from new observations.",
-    "why_it_matters": "The role of Model-predictive control is to connect Dynamical systems & control theory, Optimization theory to downstream capabilities including Robotics & embodied AI.",
+    "why_it_matters": "In this atlas graph, Model-predictive control is modeled as depending on Dynamical systems & control theory, Optimization theory and feeding downstream nodes such as Robotics & embodied AI.",
     "examples": [
-      "substrate for Robotics & embodied AI",
+      "atlas downstream link to Robotics & embodied AI",
       "combined with Dynamical systems & control theory"
     ],
     "limitations": [
@@ -36,19 +36,19 @@
         "id": "dynamical_control",
         "type": "uses",
         "strength": "core",
-        "rationale": "Model-predictive control uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model-predictive control has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "core",
-        "rationale": "Model-predictive control uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model-predictive control has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "world_model",
         "type": "uses",
         "strength": "common",
-        "rationale": "Model-predictive control uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model-predictive control has a `uses` dependency on Latent world models & predictive dynamics because Latent world models & predictive dynamics is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -60,16 +60,16 @@
       "text": "Model-predictive control repeatedly optimizes a finite-horizon action sequence under a dynamics model, executes the first action, and replans from new observations."
     },
     {
-      "unit_id": "0c61df88b2ceee40",
+      "unit_id": "e745c7998af25572",
       "node_id": "model_predictive_control",
       "field": "why_it_matters",
-      "text": "The role of Model-predictive control is to connect Dynamical systems & control theory, Optimization theory to downstream capabilities including Robotics & embodied AI."
+      "text": "In this atlas graph, Model-predictive control is modeled as depending on Dynamical systems & control theory, Optimization theory and feeding downstream nodes such as Robotics & embodied AI."
     },
     {
-      "unit_id": "1e1e1ed17ff88bd8",
+      "unit_id": "8b524dfd105d4d56",
       "node_id": "model_predictive_control",
       "field": "examples[1]",
-      "text": "substrate for Robotics & embodied AI"
+      "text": "atlas downstream link to Robotics & embodied AI"
     },
     {
       "unit_id": "07afa2a5dda0bff2",
@@ -84,48 +84,48 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Dynamical systems & control theory, Optimization theory."
     },
     {
-      "unit_id": "b8be1889e4a381dc",
+      "unit_id": "c746e52b0b4d78bb",
       "node_id": "model_predictive_control",
       "field": "dependencies.dynamical_control.rationale",
-      "text": "Model-predictive control uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model-predictive control has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "400acd6a69763dfd",
+      "unit_id": "ea300a00764f12ac",
       "node_id": "model_predictive_control",
       "field": "dependencies.optimization.rationale",
-      "text": "Model-predictive control uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model-predictive control has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "c6726ab96fef7e36",
+      "unit_id": "9745ef143e7b4c72",
       "node_id": "model_predictive_control",
       "field": "dependencies.world_model.rationale",
-      "text": "Model-predictive control uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model-predictive control has a `uses` dependency on Latent world models & predictive dynamics because Latent world models & predictive dynamics is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "74fc88a98d5a5893",
+      "edge_id": "9308c035ffde0aac",
       "node_id": "model_predictive_control",
       "dependency_id": "dynamical_control",
       "type": "uses",
       "strength": "core",
-      "rationale": "Model-predictive control uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model-predictive control has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "f3a5fdda9142a1e6",
+      "edge_id": "83ff5428890e96ed",
       "node_id": "model_predictive_control",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "core",
-      "rationale": "Model-predictive control uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model-predictive control has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "e8bc08abdef3ce75",
+      "edge_id": "1bdabb78a161f14c",
       "node_id": "model_predictive_control",
       "dependency_id": "world_model",
       "type": "uses",
       "strength": "common",
-      "rationale": "Model-predictive control uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model-predictive control has a `uses` dependency on Latent world models & predictive dynamics because Latent world models & predictive dynamics is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

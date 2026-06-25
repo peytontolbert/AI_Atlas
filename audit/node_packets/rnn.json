@@ -16,9 +16,9 @@
       "recurrent net"
     ],
     "definition": "A recurrent neural network updates a hidden state for each sequence element, reusing parameters through time to represent order-dependent computation.",
-    "why_it_matters": "The role of Recurrent neural networks is to connect Recurrence & feedback state, Autoregressive / next-step prediction to downstream capabilities including LSTMs & GRUs.",
+    "why_it_matters": "In this atlas graph, Recurrent neural networks is modeled as depending on Recurrence & feedback state, Autoregressive / next-step prediction and feeding downstream nodes such as LSTMs & GRUs.",
     "examples": [
-      "substrate for LSTMs & GRUs",
+      "atlas downstream link to LSTMs & GRUs",
       "combined with Recurrence & feedback state"
     ],
     "limitations": [
@@ -42,13 +42,13 @@
         "id": "autoregressive_objective",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Recurrent neural networks is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+        "rationale": "In this atlas graph, Recurrent neural networks has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "supervised_learning",
         "type": "trained_under",
         "strength": "common",
-        "rationale": "Recurrent neural networks follows the learning setup expressed by Supervised learning."
+        "rationale": "In this atlas graph, Recurrent neural networks has a `trained_under` dependency on Supervised learning with `common` strength."
       }
     ]
   },
@@ -60,16 +60,16 @@
       "text": "A recurrent neural network updates a hidden state for each sequence element, reusing parameters through time to represent order-dependent computation."
     },
     {
-      "unit_id": "84ab4774ec53cb7c",
+      "unit_id": "4eae987efa52485d",
       "node_id": "rnn",
       "field": "why_it_matters",
-      "text": "The role of Recurrent neural networks is to connect Recurrence & feedback state, Autoregressive / next-step prediction to downstream capabilities including LSTMs & GRUs."
+      "text": "In this atlas graph, Recurrent neural networks is modeled as depending on Recurrence & feedback state, Autoregressive / next-step prediction and feeding downstream nodes such as LSTMs & GRUs."
     },
     {
-      "unit_id": "b67a841b7cb94397",
+      "unit_id": "2c8dedeaaec317f8",
       "node_id": "rnn",
       "field": "examples[1]",
-      "text": "substrate for LSTMs & GRUs"
+      "text": "atlas downstream link to LSTMs & GRUs"
     },
     {
       "unit_id": "fe28e4f2df673134",
@@ -90,16 +90,16 @@
       "text": "Recurrent neural networks is assembled in part from the mechanism or model component Recurrence & feedback state."
     },
     {
-      "unit_id": "ab5043eeee6a9018",
+      "unit_id": "8f072a991190e3e2",
       "node_id": "rnn",
       "field": "dependencies.autoregressive_objective.rationale",
-      "text": "Recurrent neural networks is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+      "text": "In this atlas graph, Recurrent neural networks has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "c24ab08904a70cc1",
+      "unit_id": "d2a48748bcee8836",
       "node_id": "rnn",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Recurrent neural networks follows the learning setup expressed by Supervised learning."
+      "text": "In this atlas graph, Recurrent neural networks has a `trained_under` dependency on Supervised learning with `common` strength."
     }
   ],
   "edge_units": [
@@ -112,20 +112,20 @@
       "rationale": "Recurrent neural networks is assembled in part from the mechanism or model component Recurrence & feedback state."
     },
     {
-      "edge_id": "7cd36d21d2ae79e4",
+      "edge_id": "2de648a0e17a0b40",
       "node_id": "rnn",
       "dependency_id": "autoregressive_objective",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Recurrent neural networks is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+      "rationale": "In this atlas graph, Recurrent neural networks has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "48df7e699a19dcb0",
+      "edge_id": "4b8586f602418007",
       "node_id": "rnn",
       "dependency_id": "supervised_learning",
       "type": "trained_under",
       "strength": "common",
-      "rationale": "Recurrent neural networks follows the learning setup expressed by Supervised learning."
+      "rationale": "In this atlas graph, Recurrent neural networks has a `trained_under` dependency on Supervised learning with `common` strength."
     }
   ],
   "candidate_references": {

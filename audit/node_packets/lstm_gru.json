@@ -17,10 +17,10 @@
       "GRU"
     ],
     "definition": "LSTMs and GRUs use learned gates to regulate writing, forgetting, and exposing recurrent state, reducing the vanishing-gradient limitations of basic RNNs.",
-    "why_it_matters": "The role of LSTMs & GRUs is to connect Recurrent neural networks, Gating & multiplicative control to downstream capabilities including xLSTM & linear-recurrent hybrids, Time-series forecasting, anomaly & fraud detection.",
+    "why_it_matters": "In this atlas graph, LSTMs & GRUs is modeled as depending on Recurrent neural networks, Gating & multiplicative control and feeding downstream nodes such as xLSTM & linear-recurrent hybrids, Time-series forecasting, anomaly & fraud detection.",
     "examples": [
-      "substrate for xLSTM & linear-recurrent hybrids",
-      "substrate for Time-series forecasting, anomaly & fraud detection"
+      "atlas downstream link to xLSTM & linear-recurrent hybrids",
+      "atlas downstream link to Time-series forecasting, anomaly & fraud detection"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Recurrent neural networks, Gating & multiplicative control."
@@ -49,7 +49,7 @@
         "id": "memory_read_write",
         "type": "composes",
         "strength": "common",
-        "rationale": "LSTMs & GRUs is assembled in part from the mechanism or model component Differentiable memory read/write."
+        "rationale": "In this atlas graph, LSTMs & GRUs has a `composes` dependency on Differentiable memory read/write with `common` strength."
       }
     ]
   },
@@ -61,22 +61,22 @@
       "text": "LSTMs and GRUs use learned gates to regulate writing, forgetting, and exposing recurrent state, reducing the vanishing-gradient limitations of basic RNNs."
     },
     {
-      "unit_id": "57ee68638aa9fee6",
+      "unit_id": "7f2f6208b8099c6b",
       "node_id": "lstm_gru",
       "field": "why_it_matters",
-      "text": "The role of LSTMs & GRUs is to connect Recurrent neural networks, Gating & multiplicative control to downstream capabilities including xLSTM & linear-recurrent hybrids, Time-series forecasting, anomaly & fraud detection."
+      "text": "In this atlas graph, LSTMs & GRUs is modeled as depending on Recurrent neural networks, Gating & multiplicative control and feeding downstream nodes such as xLSTM & linear-recurrent hybrids, Time-series forecasting, anomaly & fraud detection."
     },
     {
-      "unit_id": "5f2967d8e3336eac",
+      "unit_id": "32c4973a3aa59d01",
       "node_id": "lstm_gru",
       "field": "examples[1]",
-      "text": "substrate for xLSTM & linear-recurrent hybrids"
+      "text": "atlas downstream link to xLSTM & linear-recurrent hybrids"
     },
     {
-      "unit_id": "0863ff366d3dbe18",
+      "unit_id": "dbc797e9fda219fb",
       "node_id": "lstm_gru",
       "field": "examples[2]",
-      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+      "text": "atlas downstream link to Time-series forecasting, anomaly & fraud detection"
     },
     {
       "unit_id": "cc546b533003d5f6",
@@ -97,10 +97,10 @@
       "text": "LSTMs & GRUs is assembled in part from the mechanism or model component Gating & multiplicative control."
     },
     {
-      "unit_id": "de85818118080ab0",
+      "unit_id": "5d27e2dd7a210cec",
       "node_id": "lstm_gru",
       "field": "dependencies.memory_read_write.rationale",
-      "text": "LSTMs & GRUs is assembled in part from the mechanism or model component Differentiable memory read/write."
+      "text": "In this atlas graph, LSTMs & GRUs has a `composes` dependency on Differentiable memory read/write with `common` strength."
     }
   ],
   "edge_units": [
@@ -121,12 +121,12 @@
       "rationale": "LSTMs & GRUs is assembled in part from the mechanism or model component Gating & multiplicative control."
     },
     {
-      "edge_id": "39ec8749557f4576",
+      "edge_id": "4d93967c92f49e98",
       "node_id": "lstm_gru",
       "dependency_id": "memory_read_write",
       "type": "composes",
       "strength": "common",
-      "rationale": "LSTMs & GRUs is assembled in part from the mechanism or model component Differentiable memory read/write."
+      "rationale": "In this atlas graph, LSTMs & GRUs has a `composes` dependency on Differentiable memory read/write with `common` strength."
     }
   ],
   "candidate_references": {

@@ -17,10 +17,10 @@
       "S4"
     ],
     "definition": "Structured state-space models such as S4 parameterize long-memory linear dynamical systems so sequence convolution or recurrence scales to very long contexts.",
-    "why_it_matters": "The role of Structured state-space models (S4 family) is to connect State-space transitions, Fourier, wavelet & spectral transforms to downstream capabilities including Selective state-space models (Mamba family), Time-series forecasting, anomaly & fraud detection.",
+    "why_it_matters": "In this atlas graph, Structured state-space models (S4 family) is modeled as depending on State-space transitions, Fourier, wavelet & spectral transforms and feeding downstream nodes such as Selective state-space models (Mamba family), Time-series forecasting, anomaly & fraud detection.",
     "examples": [
-      "substrate for Selective state-space models (Mamba family)",
-      "substrate for Time-series forecasting, anomaly & fraud detection"
+      "atlas downstream link to Selective state-space models (Mamba family)",
+      "atlas downstream link to Time-series forecasting, anomaly & fraud detection"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include State-space transitions, Fourier, wavelet & spectral transforms."
@@ -49,7 +49,7 @@
         "id": "gating",
         "type": "composes",
         "strength": "common",
-        "rationale": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Gating & multiplicative control."
+        "rationale": "In this atlas graph, Structured state-space models (S4 family) has a `composes` dependency on Gating & multiplicative control with `common` strength."
       },
       {
         "id": "sequences_time",
@@ -67,22 +67,22 @@
       "text": "Structured state-space models such as S4 parameterize long-memory linear dynamical systems so sequence convolution or recurrence scales to very long contexts."
     },
     {
-      "unit_id": "109adb5714e7376e",
+      "unit_id": "d026291b323d810a",
       "node_id": "structured_ssm",
       "field": "why_it_matters",
-      "text": "The role of Structured state-space models (S4 family) is to connect State-space transitions, Fourier, wavelet & spectral transforms to downstream capabilities including Selective state-space models (Mamba family), Time-series forecasting, anomaly & fraud detection."
+      "text": "In this atlas graph, Structured state-space models (S4 family) is modeled as depending on State-space transitions, Fourier, wavelet & spectral transforms and feeding downstream nodes such as Selective state-space models (Mamba family), Time-series forecasting, anomaly & fraud detection."
     },
     {
-      "unit_id": "9fecccb6ef865811",
+      "unit_id": "d6fbf857870f65e6",
       "node_id": "structured_ssm",
       "field": "examples[1]",
-      "text": "substrate for Selective state-space models (Mamba family)"
+      "text": "atlas downstream link to Selective state-space models (Mamba family)"
     },
     {
-      "unit_id": "4bafde36f379ef0d",
+      "unit_id": "55efbc688ec104ed",
       "node_id": "structured_ssm",
       "field": "examples[2]",
-      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+      "text": "atlas downstream link to Time-series forecasting, anomaly & fraud detection"
     },
     {
       "unit_id": "56eebfc85fcd04e3",
@@ -103,10 +103,10 @@
       "text": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Fourier, wavelet & spectral transforms."
     },
     {
-      "unit_id": "8d297d2e36a46b74",
+      "unit_id": "82185f4aff6f58b2",
       "node_id": "structured_ssm",
       "field": "dependencies.gating.rationale",
-      "text": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Gating & multiplicative control."
+      "text": "In this atlas graph, Structured state-space models (S4 family) has a `composes` dependency on Gating & multiplicative control with `common` strength."
     },
     {
       "unit_id": "47b39bbb824a4d63",
@@ -133,12 +133,12 @@
       "rationale": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Fourier, wavelet & spectral transforms."
     },
     {
-      "edge_id": "92bfe6347e5081cd",
+      "edge_id": "bbb7254d36225ff3",
       "node_id": "structured_ssm",
       "dependency_id": "gating",
       "type": "composes",
       "strength": "common",
-      "rationale": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Gating & multiplicative control."
+      "rationale": "In this atlas graph, Structured state-space models (S4 family) has a `composes` dependency on Gating & multiplicative control with `common` strength."
     },
     {
       "edge_id": "85165f2f9206803e",

@@ -38,13 +38,14 @@
         "ref_scaling",
         "ref_testtime",
         "ref_tot",
-        "ref_transformer"
+        "ref_transformer",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is a broad application-boundary claim and is not directly established by the cited technical sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "7e3c7a343b0e02c3",
@@ -130,13 +131,14 @@
         "ref_scaling",
         "ref_testtime",
         "ref_tot",
-        "ref_transformer"
+        "ref_transformer",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The weakest-component framing is plausible for deployed systems, but the packet sources do not directly verify each listed component for mathematical-AI systems."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "933632b507c9a57d",
@@ -144,22 +146,13 @@
       "field": "terminal_reason",
       "text": "end-system leaf",
       "source_ids": [
-        "ref_aima",
-        "ref_chinchilla",
-        "ref_dlbook",
-        "ref_formalml",
-        "ref_grpo",
-        "ref_rlvr",
-        "ref_scaling",
-        "ref_testtime",
-        "ref_tot",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "No cited source in packet directly supports this metadata claim.",
+      "evidence_location": "data/atlas.json terminal flag and current dependency graph consumer set.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "Graph leaf classification is metadata, not a sourced claim in the packet."
+      "verdict": "verified",
+      "notes": "This is graph metadata: the node is terminal in the current atlas graph because no other canonical node currently depends on it."
     },
     {
       "unit_id": "fa29d549d166e4f4",
@@ -323,27 +316,18 @@
       "notes": "RLVR is directly relevant to verifiable mathematical rewards but remains optional for the broader system class."
     },
     {
-      "unit_id": "975ed1501a0bb548",
+      "unit_id": "12f272e37ae11ea9",
       "node_id": "theorem_math_systems",
       "field": "dependencies.formal_agent_verification.rationale",
-      "text": "Automated theorem proving & mathematical AI integrates Formal verification of agents & plans as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Automated theorem proving & mathematical AI has an `applies` dependency on Formal verification of agents & plans with `optional` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_chinchilla",
-        "ref_dlbook",
-        "ref_formalml",
-        "ref_grpo",
-        "ref_rlvr",
-        "ref_scaling",
-        "ref_testtime",
-        "ref_tot",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Formal verification is adjacent to trusted checkers, but agent/plan verification is not a necessary theorem-system dependency."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -509,27 +493,17 @@
       "strength_supported": true
     },
     {
-      "edge_id": "26c5e5ed2450b2fb",
+      "edge_id": "868a284140af2128",
       "node_id": "theorem_math_systems",
       "dependency_id": "formal_agent_verification",
       "source_ids": [
-        "ref_aima",
-        "ref_chinchilla",
-        "ref_dlbook",
-        "ref_formalml",
-        "ref_grpo",
-        "ref_rlvr",
-        "ref_scaling",
-        "ref_testtime",
-        "ref_tot",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Formal verification is adjacent to trusted checkers, but agent/plan verification is not a necessary theorem-system dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

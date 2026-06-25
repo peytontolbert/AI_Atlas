@@ -1,19 +1,202 @@
 {
   "sentence_reviews": [
-    {"unit_id":"ea262cc5c2451fec","node_id":"matrix_factor_topic","field":"definition","text":"Matrix factorization and topic models explain sparse user–item, word–document, or other observations through a smaller set of latent factors.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning linear factor models; PML matrix factorization, recommender, latent-variable, and topic-model topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Latent-factor explanation of sparse matrices/documents is directly consistent with cited topics."},
-    {"unit_id":"717a6e4f3a1fef71","node_id":"matrix_factor_topic","field":"why_it_matters","text":"The role of Matrix factorization & topic models is to connect Linear algebra, Latent variables & hidden state to downstream capabilities including Recommendation, ranking & personalization.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning linear factor models; PML matrix factorization/recommender and topic-model/latent-variable topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Linear algebra, latent factors, and recommender use are supported by the cited topic areas, though the atlas role sentence is synthesized."},
-    {"unit_id":"66c3880114497abb","node_id":"matrix_factor_topic","field":"examples[1]","text":"substrate for Recommendation, ranking & personalization","source_ids":["ref_pml"],"evidence_location":"PML recommender-system and matrix-factorization topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Matrix factorization is a standard recommender-system method; ranking/personalization are broader but defensible."},
-    {"unit_id":"e391fa8de72d5e6b","node_id":"matrix_factor_topic","field":"examples[2]","text":"combined with Linear algebra","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning linear factor models; PML matrix factorization / NMF / topic-model linear algebra context.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Matrix factorization directly uses linear algebra."},
-    {"unit_id":"ec7877e437b73d3b","node_id":"matrix_factor_topic","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Linear algebra, Latent variables & hidden state.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning/PML factor-model, recommender, topic-model, and model-selection context.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are supported; the limitation wording is generic and not directly evidenced."},
-    {"unit_id":"9f9ed8c405b4e714","node_id":"matrix_factor_topic","field":"dependencies.linear_algebra.rationale","text":"Matrix factorization & topic models rests on the formal or computational capabilities supplied by Linear algebra.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning linear factor models; PML matrix factorization and topic-model matrix/vector representations.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Matrix factorization is directly linear algebraic; topic models also use matrices/vectors, though probabilistic latent-variable structure is also central."},
-    {"unit_id":"470629a51481065c","node_id":"matrix_factor_topic","field":"dependencies.latent_variables.rationale","text":"Matrix factorization & topic models consumes, emits, or organizes information using Latent variables & hidden state.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning linear factor models; PML latent-variable topic models and matrix-factorization topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Latent factors/topics are central."},
-    {"unit_id":"d0da90ea44500716","node_id":"matrix_factor_topic","field":"dependencies.unsupervised_learning.rationale","text":"Matrix factorization & topic models follows the learning setup expressed by Unsupervised learning.","source_ids":["ref_dlbook","ref_pml","ref_aima"],"evidence_location":"Deep Learning/PML unsupervised representation/factor model topics; AIMA unsupervised learning context.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Topic models and many factorization methods are unsupervised, though recommender matrix factorization can use observed preferences as supervision-like signals."},
-    {"unit_id":"0aadc48820929863","node_id":"matrix_factor_topic","field":"dependencies.mle_cross_entropy.rationale","text":"Matrix factorization & topic models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy.","source_ids":["ref_pml"],"evidence_location":"PML probabilistic topic models / likelihood objectives and matrix-factorization objective topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Likelihood is supported for probabilistic topic models; many matrix-factorization variants optimize reconstruction/regression losses instead."}
+    {
+      "unit_id": "ea262cc5c2451fec",
+      "node_id": "matrix_factor_topic",
+      "field": "definition",
+      "text": "Matrix factorization and topic models explain sparse user–item, word–document, or other observations through a smaller set of latent factors.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning linear factor models; PML matrix factorization, recommender, latent-variable, and topic-model topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Latent-factor explanation of sparse matrices/documents is directly consistent with cited topics."
+    },
+    {
+      "unit_id": "e391fa8de72d5e6b",
+      "node_id": "matrix_factor_topic",
+      "field": "examples[2]",
+      "text": "combined with Linear algebra",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning linear factor models; PML matrix factorization / NMF / topic-model linear algebra context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Matrix factorization directly uses linear algebra."
+    },
+    {
+      "unit_id": "ec7877e437b73d3b",
+      "node_id": "matrix_factor_topic",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Linear algebra, Latent variables & hidden state.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "9f9ed8c405b4e714",
+      "node_id": "matrix_factor_topic",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "Matrix factorization & topic models rests on the formal or computational capabilities supplied by Linear algebra.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning linear factor models; PML matrix factorization and topic-model matrix/vector representations.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Matrix factorization is directly linear algebraic; topic models also use matrices/vectors, though probabilistic latent-variable structure is also central."
+    },
+    {
+      "unit_id": "470629a51481065c",
+      "node_id": "matrix_factor_topic",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "Matrix factorization & topic models consumes, emits, or organizes information using Latent variables & hidden state.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning linear factor models; PML latent-variable topic models and matrix-factorization topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Latent factors/topics are central."
+    },
+    {
+      "unit_id": "d0da90ea44500716",
+      "node_id": "matrix_factor_topic",
+      "field": "dependencies.unsupervised_learning.rationale",
+      "text": "Matrix factorization & topic models follows the learning setup expressed by Unsupervised learning.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "Deep Learning/PML unsupervised representation/factor model topics; AIMA unsupervised learning context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Topic models and many factorization methods are unsupervised, though recommender matrix factorization can use observed preferences as supervision-like signals."
+    },
+    {
+      "unit_id": "f6a58c2e8c6d2b2c",
+      "node_id": "matrix_factor_topic",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Matrix factorization & topic models is modeled as depending on Linear algebra, Latent variables & hidden state and feeding downstream nodes such as Recommendation, ranking & personalization.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a011b934be54909b",
+      "node_id": "matrix_factor_topic",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Recommendation, ranking & personalization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1ca795648a7f65b1",
+      "node_id": "matrix_factor_topic",
+      "field": "dependencies.mle_cross_entropy.rationale",
+      "text": "In this atlas graph, Matrix factorization & topic models has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"3fc11eeac15c155f","node_id":"matrix_factor_topic","dependency_id":"linear_algebra","source_ids":["ref_dlbook","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Matrix factorization directly requires linear algebra; topic models also use matrix/vector representations. Core is defensible for combined node.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"3227355978d8b143","node_id":"matrix_factor_topic","dependency_id":"latent_variables","source_ids":["ref_dlbook","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Latent factors/topics are central; represents_with/core is supported.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"44c38c387d4a6611","node_id":"matrix_factor_topic","dependency_id":"unsupervised_learning","source_ids":["ref_dlbook","ref_pml","ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Many matrix factorization/topic-model methods are unsupervised; common strength is supported.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"7688bc7e436dd518","node_id":"matrix_factor_topic","dependency_id":"mle_cross_entropy","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Likelihood is central for probabilistic topic models but not all matrix factorization; relationship is partially supported, common strength is uncertain.","relationship_type_supported":true,"strength_supported":false}
-  ]
+    {
+      "edge_id": "3fc11eeac15c155f",
+      "node_id": "matrix_factor_topic",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Matrix factorization directly requires linear algebra; topic models also use matrix/vector representations. Core is defensible for combined node.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "3227355978d8b143",
+      "node_id": "matrix_factor_topic",
+      "dependency_id": "latent_variables",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Latent factors/topics are central; represents_with/core is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "44c38c387d4a6611",
+      "node_id": "matrix_factor_topic",
+      "dependency_id": "unsupervised_learning",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Many matrix factorization/topic-model methods are unsupervised; common strength is supported.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "01069a64a6e79088",
+      "node_id": "matrix_factor_topic",
+      "dependency_id": "mle_cross_entropy",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "matrix_factor_topic",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

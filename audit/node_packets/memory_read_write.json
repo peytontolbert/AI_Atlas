@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Content- or address-based operations store and retrieve structured state inside a differentiable model.",
-    "why_it_matters": "The role of Differentiable memory read/write is to connect Recurrence & feedback state, Embeddings & distributed representations to downstream capabilities including LSTMs & GRUs, xLSTM & linear-recurrent hybrids, Energy-based, Hopfield & Boltzmann models.",
+    "why_it_matters": "In this atlas graph, Differentiable memory read/write is modeled as depending on Recurrence & feedback state, Embeddings & distributed representations and feeding downstream nodes such as LSTMs & GRUs, xLSTM & linear-recurrent hybrids, Energy-based, Hopfield & Boltzmann models.",
     "examples": [
-      "substrate for LSTMs & GRUs",
-      "substrate for xLSTM & linear-recurrent hybrids",
-      "substrate for Energy-based, Hopfield & Boltzmann models"
+      "atlas downstream link to LSTMs & GRUs",
+      "atlas downstream link to xLSTM & linear-recurrent hybrids",
+      "atlas downstream link to Energy-based, Hopfield & Boltzmann models"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Recurrence & feedback state, Embeddings & distributed representations."
@@ -40,13 +40,13 @@
         "id": "embeddings",
         "type": "uses",
         "strength": "core",
-        "rationale": "Differentiable memory read/write uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Differentiable memory read/write has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "algorithms_data_structures",
         "type": "uses",
         "strength": "common",
-        "rationale": "Differentiable memory read/write uses Algorithms & data structures as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Differentiable memory read/write has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Content- or address-based operations store and retrieve structured state inside a differentiable model."
     },
     {
-      "unit_id": "40c4d045bf77143d",
+      "unit_id": "5077b587fd51c95f",
       "node_id": "memory_read_write",
       "field": "why_it_matters",
-      "text": "The role of Differentiable memory read/write is to connect Recurrence & feedback state, Embeddings & distributed representations to downstream capabilities including LSTMs & GRUs, xLSTM & linear-recurrent hybrids, Energy-based, Hopfield & Boltzmann models."
+      "text": "In this atlas graph, Differentiable memory read/write is modeled as depending on Recurrence & feedback state, Embeddings & distributed representations and feeding downstream nodes such as LSTMs & GRUs, xLSTM & linear-recurrent hybrids, Energy-based, Hopfield & Boltzmann models."
     },
     {
-      "unit_id": "33f6628a82603baf",
+      "unit_id": "3be3ec881b8766bd",
       "node_id": "memory_read_write",
       "field": "examples[1]",
-      "text": "substrate for LSTMs & GRUs"
+      "text": "atlas downstream link to LSTMs & GRUs"
     },
     {
-      "unit_id": "094394d1f0d7b9a6",
+      "unit_id": "ebbc57da3eb45186",
       "node_id": "memory_read_write",
       "field": "examples[2]",
-      "text": "substrate for xLSTM & linear-recurrent hybrids"
+      "text": "atlas downstream link to xLSTM & linear-recurrent hybrids"
     },
     {
-      "unit_id": "e4301d5dc3b36618",
+      "unit_id": "1e457dd978f43b53",
       "node_id": "memory_read_write",
       "field": "examples[3]",
-      "text": "substrate for Energy-based, Hopfield & Boltzmann models"
+      "text": "atlas downstream link to Energy-based, Hopfield & Boltzmann models"
     },
     {
       "unit_id": "4f4f465c03cb2533",
@@ -94,16 +94,16 @@
       "text": "Differentiable memory read/write is assembled in part from the mechanism or model component Recurrence & feedback state."
     },
     {
-      "unit_id": "83bc314dcc4d1af0",
+      "unit_id": "b276a03e62cc097e",
       "node_id": "memory_read_write",
       "field": "dependencies.embeddings.rationale",
-      "text": "Differentiable memory read/write uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Differentiable memory read/write has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "f74a99546fb2f99d",
+      "unit_id": "4cd1d23cb34731cf",
       "node_id": "memory_read_write",
       "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "Differentiable memory read/write uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Differentiable memory read/write has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -116,20 +116,20 @@
       "rationale": "Differentiable memory read/write is assembled in part from the mechanism or model component Recurrence & feedback state."
     },
     {
-      "edge_id": "a1d83c11778d40df",
+      "edge_id": "ef2181db7b926044",
       "node_id": "memory_read_write",
       "dependency_id": "embeddings",
       "type": "uses",
       "strength": "core",
-      "rationale": "Differentiable memory read/write uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Differentiable memory read/write has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "dab162e0bb0a515d",
+      "edge_id": "75658a2aab57395e",
       "node_id": "memory_read_write",
       "dependency_id": "algorithms_data_structures",
       "type": "uses",
       "strength": "common",
-      "rationale": "Differentiable memory read/write uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Differentiable memory read/write has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

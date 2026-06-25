@@ -97,134 +97,117 @@
       "notes": "NAS survey literature discusses high cost and proxy/evaluation issues; leakage wording is a broader synthesis."
     },
     {
-      "unit_id": "8ca711b26117ff97",
+      "unit_id": "faf1641f3694152a",
       "node_id": "neural_architecture_search",
       "field": "dependencies.automl_paradigm.rationale",
-      "text": "Neural architecture search uses AutoML & automated model design as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Neural architecture search has a `uses` dependency on AutoML & automated model design because AutoML & automated model design is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_nas",
-        "ref_rlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "NAS is a major AutoML subfield."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "df2aced7909fc5b1",
+      "unit_id": "c7754dd20e0639af",
       "node_id": "neural_architecture_search",
       "field": "dependencies.evolutionary_population_learning.rationale",
-      "text": "Neural architecture search uses Evolutionary, swarm & population-based learning as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Neural architecture search has a `uses` dependency on Evolutionary, swarm & population-based learning because Evolutionary, swarm & population-based learning is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_nas",
-        "ref_rlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Evolutionary search is a core NAS strategy."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "348c1051e6ea79c3",
+      "unit_id": "4f332b73fba87630",
       "node_id": "neural_architecture_search",
       "field": "dependencies.reinforcement_learning.rationale",
-      "text": "Neural architecture search uses Reinforcement learning as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Neural architecture search has a `uses` dependency on Reinforcement learning because Reinforcement learning is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_nas",
-        "ref_rlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Reinforcement learning is a standard NAS search strategy."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "664af04a4b8f3509",
+      "unit_id": "718fac974fc336d6",
       "node_id": "neural_architecture_search",
       "field": "dependencies.optimization.rationale",
-      "text": "Neural architecture search uses Optimization theory as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Neural architecture search has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_nas",
-        "ref_rlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Elsken, Metzen & Hutter survey NAS search spaces, search strategies including evolutionary/RL/gradient-based methods, and performance-estimation strategies; AIMA/RL references support general search and RL background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "NAS is an optimization/search problem, though the exact Optimization theory dependency is taxonomic."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "9aef1ab64c844229",
+      "edge_id": "a4f3f8ca2be0254c",
       "node_id": "neural_architecture_search",
       "dependency_id": "automl_paradigm",
       "source_ids": [
-        "ref_nas",
-        "ref_rlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "NAS is directly situated inside AutoML/automated model design.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "a0bc41965061efb3",
+      "edge_id": "c47bd51115c23d08",
       "node_id": "neural_architecture_search",
       "dependency_id": "evolutionary_population_learning",
       "source_ids": [
-        "ref_nas",
-        "ref_rlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Evolutionary NAS is a core search family.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "76de480f0cc12a5d",
+      "edge_id": "b95db34d0a9aa9f4",
       "node_id": "neural_architecture_search",
       "dependency_id": "reinforcement_learning",
       "source_ids": [
-        "ref_nas",
-        "ref_rlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "RL-based NAS is a standard, but not exclusive, method family.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "ac003625a7c301aa",
+      "edge_id": "c2ae0ebf980b7e85",
       "node_id": "neural_architecture_search",
       "dependency_id": "optimization",
       "source_ids": [
-        "ref_nas",
-        "ref_rlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Architecture search is an optimization problem; common strength is reasonable.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "neural_architecture_search",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

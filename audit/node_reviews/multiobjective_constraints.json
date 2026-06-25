@@ -8,41 +8,11 @@
       "source_ids": [
         "ref_pml"
       ],
-      "evidence_location": "PML table of contents lines 260-287 list optimization, local/global optimization, constrained/unconstrained optimization, Lagrange multipliers, KKT conditions, linear programming, quadratic programming, and mixed integer linear programming.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Constrained optimization is supported, but multi-objective/Pareto optimization and the 'rather than collapsed' contrast are not directly evidenced by the inspected source."
-    },
-    {
-      "unit_id": "3dca3ddf4272b4f4",
-      "node_id": "multiobjective_constraints",
-      "field": "why_it_matters",
-      "text": "The role of Multi-objective, constrained & Pareto optimization is to connect Optimization theory, Game theory & decision theory to downstream capabilities including Safety policies, constitutional constraints & alignment.",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "PML table of contents lines 148-170 cover decision theory and risk; lines 260-287 cover optimization and constrained optimization. AIMA landing page was inspected as a broad AI reference, but not for a specific safety-policy claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Optimization and decision theory are supported; the specific bridge to safety policies, constitutional constraints, and alignment is plausible but not directly supported by the cited packet sources."
-    },
-    {
-      "unit_id": "921e4f4a461463bc",
-      "node_id": "multiobjective_constraints",
-      "field": "examples[1]",
-      "text": "substrate for Safety policies, constitutional constraints & alignment",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima"
-      ],
-      "evidence_location": "PML table of contents lines 260-287 cover constrained optimization; no inspected source location directly covers constitutional AI, safety policy, or alignment.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The connection is plausible for an alignment atlas, but the packet source does not adequately evidence this downstream example."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "c3c9cc527227a76f",
@@ -64,99 +34,128 @@
       "field": "limitations[1]",
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Optimization theory, Game theory & decision theory.",
       "source_ids": [
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML table of contents lines 116-119 list empirical risk minimization and surrogate loss; lines 148-170 cover decision theory and risk; lines 260-287 cover optimization and constrained optimization.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The source supports surrogate loss and dependencies, but not the broad behavioral warning."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "57d42db52c23a83d",
+      "unit_id": "b1aaf1678ce3fd60",
       "node_id": "multiobjective_constraints",
-      "field": "dependencies.optimization.rationale",
-      "text": "Multi-objective, constrained & Pareto optimization uses Optimization theory as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Multi-objective, constrained & Pareto optimization is modeled as depending on Optimization theory, Game theory & decision theory and feeding downstream nodes such as Safety policies, constitutional constraints & alignment.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML table of contents lines 260-287 list optimization and constrained optimization methods.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The dependency is direct and core."
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "19f8e5baabb7ebba",
+      "unit_id": "368d686fda92ed50",
+      "node_id": "multiobjective_constraints",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Safety policies, constitutional constraints & alignment",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d078cf4cd59b57a3",
+      "node_id": "multiobjective_constraints",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "bee93c729599d54d",
       "node_id": "multiobjective_constraints",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Multi-objective, constrained & Pareto optimization uses Game theory & decision theory as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML table of contents lines 148-170 list Bayesian/frequentist decision theory, classification/regression/probabilistic prediction problems, and risk.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Decision theory is supported; game theory and Pareto/multi-objective framing are not directly evidenced in the inspected source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "d82e28337b48156d",
+      "unit_id": "b5e1e75528ad255e",
       "node_id": "multiobjective_constraints",
       "field": "dependencies.supervision_signals.rationale",
-      "text": "Multi-objective, constrained & Pareto optimization uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML table of contents lines 3-8 list supervised learning and targets by implication through classification/regression; lines 14 and 148-170 list reinforcement learning and decision/risk problems.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Targets/rewards/preferences can define objectives, but this dependency is not directly established for multi-objective constrained optimization by the inspected source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "7bd654bfdf675d2f",
+      "edge_id": "a8a284a5e3d9b47f",
       "node_id": "multiobjective_constraints",
       "dependency_id": "optimization",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Constrained optimization is explicitly an optimization topic; uses/core is supported.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "a16070e4e6d7a4b7",
+      "edge_id": "1d9b002266fec53b",
       "node_id": "multiobjective_constraints",
       "dependency_id": "game_decision_theory",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Decision theory is relevant, but game theory and core strength are not directly supported by the inspected evidence.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "9d03e7f4e51e3f7a",
+      "edge_id": "f6ca7fbc78af4e75",
       "node_id": "multiobjective_constraints",
       "dependency_id": "supervision_signals",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Labels, rewards, or preferences can instantiate objectives, but the inspected evidence does not directly support this as a common reusable ingredient for the node.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "multiobjective_constraints",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

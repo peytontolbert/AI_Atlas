@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Learned linear maps mix features and channels and form the backbone of most neural blocks.",
-    "why_it_matters": "The role of Affine transforms & dense layers is to connect Scalars, vectors, matrices & tensors, Linear algebra to downstream capabilities including Nonlinear activations, Residual, skip & highway connections, Gating & multiplicative control.",
+    "why_it_matters": "In this atlas graph, Affine transforms & dense layers is modeled as depending on Scalars, vectors, matrices & tensors, Linear algebra and feeding downstream nodes such as Nonlinear activations, Residual, skip & highway connections, Gating & multiplicative control.",
     "examples": [
-      "substrate for Nonlinear activations",
-      "substrate for Residual, skip & highway connections",
-      "substrate for Gating & multiplicative control"
+      "atlas downstream link to Nonlinear activations",
+      "atlas downstream link to Residual, skip & highway connections",
+      "atlas downstream link to Gating & multiplicative control"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Scalars, vectors, matrices & tensors, Linear algebra."
@@ -34,19 +34,19 @@
         "id": "tensors",
         "type": "uses",
         "strength": "core",
-        "rationale": "Affine transforms & dense layers uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Affine transforms & dense layers has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node."
       },
       {
         "id": "linear_algebra",
         "type": "uses",
         "strength": "core",
-        "rationale": "Affine transforms & dense layers uses Linear algebra as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Affine transforms & dense layers has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "Affine transforms & dense layers uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Affine transforms & dense layers has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Learned linear maps mix features and channels and form the backbone of most neural blocks."
     },
     {
-      "unit_id": "fe2e6861e3bd6674",
+      "unit_id": "cd285d6f7a74bc90",
       "node_id": "affine_dense",
       "field": "why_it_matters",
-      "text": "The role of Affine transforms & dense layers is to connect Scalars, vectors, matrices & tensors, Linear algebra to downstream capabilities including Nonlinear activations, Residual, skip & highway connections, Gating & multiplicative control."
+      "text": "In this atlas graph, Affine transforms & dense layers is modeled as depending on Scalars, vectors, matrices & tensors, Linear algebra and feeding downstream nodes such as Nonlinear activations, Residual, skip & highway connections, Gating & multiplicative control."
     },
     {
-      "unit_id": "f1fbc753a8a9aae1",
+      "unit_id": "a6c8f23665a107ef",
       "node_id": "affine_dense",
       "field": "examples[1]",
-      "text": "substrate for Nonlinear activations"
+      "text": "atlas downstream link to Nonlinear activations"
     },
     {
-      "unit_id": "100838f594d07298",
+      "unit_id": "2b256992caef6ff9",
       "node_id": "affine_dense",
       "field": "examples[2]",
-      "text": "substrate for Residual, skip & highway connections"
+      "text": "atlas downstream link to Residual, skip & highway connections"
     },
     {
-      "unit_id": "b52c5e14cf872bc3",
+      "unit_id": "62092342c281b768",
       "node_id": "affine_dense",
       "field": "examples[3]",
-      "text": "substrate for Gating & multiplicative control"
+      "text": "atlas downstream link to Gating & multiplicative control"
     },
     {
       "unit_id": "3aa3eda12a41d3ce",
@@ -88,48 +88,48 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Scalars, vectors, matrices & tensors, Linear algebra."
     },
     {
-      "unit_id": "36cb1081a103ebd3",
+      "unit_id": "9966e0f0a79a9956",
       "node_id": "affine_dense",
       "field": "dependencies.tensors.rationale",
-      "text": "Affine transforms & dense layers uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Affine transforms & dense layers has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "7c9e98be307f65f0",
+      "unit_id": "43952784d6a8b3d7",
       "node_id": "affine_dense",
       "field": "dependencies.linear_algebra.rationale",
-      "text": "Affine transforms & dense layers uses Linear algebra as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Affine transforms & dense layers has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "4e89bee9631031f9",
+      "unit_id": "647c0722ddc5c43c",
       "node_id": "affine_dense",
       "field": "dependencies.optimization.rationale",
-      "text": "Affine transforms & dense layers uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Affine transforms & dense layers has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "bda47f2c1a72d609",
+      "edge_id": "b6f5d72a904be60f",
       "node_id": "affine_dense",
       "dependency_id": "tensors",
       "type": "uses",
       "strength": "core",
-      "rationale": "Affine transforms & dense layers uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Affine transforms & dense layers has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "63cd5589bb3e5203",
+      "edge_id": "acc4671c3bd0f55d",
       "node_id": "affine_dense",
       "dependency_id": "linear_algebra",
       "type": "uses",
       "strength": "core",
-      "rationale": "Affine transforms & dense layers uses Linear algebra as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Affine transforms & dense layers has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "fa7fa7ea522c7795",
+      "edge_id": "4f8d67e249b30c9b",
       "node_id": "affine_dense",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "Affine transforms & dense layers uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Affine transforms & dense layers has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

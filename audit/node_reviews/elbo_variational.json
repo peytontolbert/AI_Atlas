@@ -1,19 +1,188 @@
 {
   "sentence_reviews": [
-    {"unit_id":"e1b09e3bd27d7c72","node_id":"elbo_variational","field":"definition","text":"A tractable lower bound balances data fit against divergence between approximate and prior distributions.","source_ids":["ref_vae"],"evidence_location":"Auto-Encoding Variational Bayes abstract lines 37-40 describes a variational lower bound estimator, approximate inference model, continuous latent variables, and optimization by stochastic gradient methods.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"This matches the ELBO structure used in variational autoencoders: reconstruction/data-fit term plus divergence regularization."},
-    {"unit_id":"ed55ea5badead412","node_id":"elbo_variational","field":"why_it_matters","text":"The role of ELBO & variational objectives is to connect Generative modeling, Latent variables & hidden state to downstream capabilities including Variational autoencoders.","source_ids":["ref_vae"],"evidence_location":"Auto-Encoding Variational Bayes title line 31 and abstract lines 37-40.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The paper directly addresses directed probabilistic models with latent variables and introduces the VAE variational lower-bound estimator."},
-    {"unit_id":"7619b9ce75471279","node_id":"elbo_variational","field":"examples[1]","text":"substrate for Variational autoencoders","source_ids":["ref_vae"],"evidence_location":"Auto-Encoding Variational Bayes title line 31 and abstract lines 37-40.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The ELBO is the central VAE training objective."},
-    {"unit_id":"d47f345af2ee1db4","node_id":"elbo_variational","field":"examples[2]","text":"combined with Generative modeling","source_ids":["ref_vae"],"evidence_location":"Auto-Encoding Variational Bayes abstract line 37 describes directed probabilistic models and latent variables; lines 38-40 describe variational learning/inference.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"VAEs combine variational inference objectives with generative probabilistic models."},
-    {"unit_id":"93d9d92c9596b606","node_id":"elbo_variational","field":"limitations[1]","text":"A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Latent variables & hidden state.","source_ids":["ref_vae"],"evidence_location":"Auto-Encoding Variational Bayes abstract lines 37-40 supports tractable lower-bound optimization for latent-variable models.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The source supports lower-bound optimization and dependencies, but not the broader surrogate-mismatch warning exactly."},
-    {"unit_id":"d8a1e16a6d1ae0a8","node_id":"elbo_variational","field":"dependencies.generative_learning.rationale","text":"ELBO & variational objectives uses Generative modeling as a reusable ingredient in its defined operation.","source_ids":["ref_vae"],"evidence_location":"Auto-Encoding Variational Bayes abstract line 37 references directed probabilistic models; lines 38-40 describe variational learning.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The ELBO is defined for probabilistic generative models with latent variables."},
-    {"unit_id":"9bb810039561bec0","node_id":"elbo_variational","field":"dependencies.latent_variables.rationale","text":"ELBO & variational objectives uses Latent variables & hidden state as a reusable ingredient in its defined operation.","source_ids":["ref_vae"],"evidence_location":"Auto-Encoding Variational Bayes abstract lines 37-39 explicitly mentions continuous latent variables and approximate posterior inference.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Latent variables are central to the variational lower-bound setup described by the source."},
-    {"unit_id":"5fc3995e2b0ea4d8","node_id":"elbo_variational","field":"dependencies.probability.rationale","text":"ELBO & variational objectives uses Probability theory as a reusable ingredient in its defined operation.","source_ids":["ref_vae","ref_pml"],"evidence_location":"VAE abstract lines 37-40; PML landing page lines 21-29 identifies a probabilistic ML textbook.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"ELBOs are defined with likelihoods, priors, approximate posteriors, and divergences."},
-    {"unit_id":"0a6d7dd215c0161e","node_id":"elbo_variational","field":"dependencies.optimization.rationale","text":"ELBO & variational objectives uses Optimization theory as a reusable ingredient in its defined operation.","source_ids":["ref_vae"],"evidence_location":"Auto-Encoding Variational Bayes abstract lines 38-40 describes optimizing the lower-bound estimator with stochastic gradient methods.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The source directly says the lower-bound estimator can be optimized with stochastic gradient methods."}
+    {
+      "unit_id": "e1b09e3bd27d7c72",
+      "node_id": "elbo_variational",
+      "field": "definition",
+      "text": "A tractable lower bound balances data fit against divergence between approximate and prior distributions.",
+      "source_ids": [
+        "ref_vae"
+      ],
+      "evidence_location": "Auto-Encoding Variational Bayes abstract lines 37-40 describes a variational lower bound estimator, approximate inference model, continuous latent variables, and optimization by stochastic gradient methods.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This matches the ELBO structure used in variational autoencoders: reconstruction/data-fit term plus divergence regularization."
+    },
+    {
+      "unit_id": "d47f345af2ee1db4",
+      "node_id": "elbo_variational",
+      "field": "examples[2]",
+      "text": "combined with Generative modeling",
+      "source_ids": [
+        "ref_vae"
+      ],
+      "evidence_location": "Auto-Encoding Variational Bayes abstract line 37 describes directed probabilistic models and latent variables; lines 38-40 describe variational learning/inference.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "VAEs combine variational inference objectives with generative probabilistic models."
+    },
+    {
+      "unit_id": "93d9d92c9596b606",
+      "node_id": "elbo_variational",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Latent variables & hidden state.",
+      "source_ids": [
+        "ref_vae",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "c707f126a9a8710b",
+      "node_id": "elbo_variational",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, ELBO & variational objectives is modeled as depending on Generative modeling, Latent variables & hidden state and feeding downstream nodes such as Variational autoencoders.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e6c84f03563624b2",
+      "node_id": "elbo_variational",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Variational autoencoders",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "77bc5e4009157aee",
+      "node_id": "elbo_variational",
+      "field": "dependencies.generative_learning.rationale",
+      "text": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9a8a6fcefc1b5848",
+      "node_id": "elbo_variational",
+      "field": "dependencies.latent_variables.rationale",
+      "text": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9dba4e76bca7141f",
+      "node_id": "elbo_variational",
+      "field": "dependencies.probability.rationale",
+      "text": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b6d16b1665e7a246",
+      "node_id": "elbo_variational",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"17e0968aa3dd5d7c","node_id":"elbo_variational","dependency_id":"generative_learning","source_ids":["ref_vae"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"ELBO objectives are used to learn probabilistic generative latent-variable models.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"28477156c316674e","node_id":"elbo_variational","dependency_id":"latent_variables","source_ids":["ref_vae"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Latent variables and approximate posterior inference are directly named in the VAE abstract.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"b1c25419d86020b2","node_id":"elbo_variational","dependency_id":"probability","source_ids":["ref_vae","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Probability theory is necessary for likelihoods, priors, approximate posteriors, and KL divergence; common strength is defensible though arguably core.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"0ec79b4f3bb719c4","node_id":"elbo_variational","dependency_id":"optimization","source_ids":["ref_vae"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The VAE abstract directly supports optimization of the variational lower-bound estimator using stochastic gradients.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "22976de0beab95d0",
+      "node_id": "elbo_variational",
+      "dependency_id": "generative_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "376b359d1d6eff6e",
+      "node_id": "elbo_variational",
+      "dependency_id": "latent_variables",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "bde074b60f075f31",
+      "node_id": "elbo_variational",
+      "dependency_id": "probability",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "a2e330f43972ec0e",
+      "node_id": "elbo_variational",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "elbo_variational",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

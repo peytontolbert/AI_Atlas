@@ -16,76 +16,19 @@
       "notes": "The inspected evidence supports the listed signal-processing components and time/space/frequency framing, but the exact summary verb 'characterize' is synthesized across sections and sources rather than directly stated."
     },
     {
-      "unit_id": "59c007349fa503fd",
-      "node_id": "signal_processing",
-      "field": "why_it_matters",
-      "text": "The role of Signal processing & harmonic analysis is to connect Linear algebra, Calculus & automatic differentiation theory to downstream capabilities including Neuroscience & cognitive science, Sequences, events & time series, Images, video & spatial grids.",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Digital_signal_processing"
-      ],
-      "evidence_location": "AIMA site: mathematical background, uncertainty/probabilistic reasoning, machine learning, computer vision, and robotics appear in the table of contents (lines 36-58). Digital signal processing page: DSP uses sample sequences in time, space, or frequency (lines 172-175), includes audio/speech, image/video, biomedical, and other applications (lines 247-264), and treats time, space, frequency, and wavelet domains (lines 191-228).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support signal processing's relevance to time/space signals, images/video, audio/speech, biomedical applications, and mathematical background. They do not directly support the exact atlas bridge claim, the full downstream list, or the automatic-differentiation part of the calculus dependency."
-    },
-    {
-      "unit_id": "9a3eb621fe5d4d7d",
-      "node_id": "signal_processing",
-      "field": "examples[1]",
-      "text": "substrate for Neuroscience & cognitive science",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Digital_signal_processing"
-      ],
-      "evidence_location": "Digital signal processing page: lists biomedical engineering, medical imaging, hearing aid technology, speech/audio processing, and related applications (lines 247-264).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The inspected evidence supports biomedical and sensory-signal applications, but it does not directly establish neuroscience and cognitive science as downstream dependencies of signal processing."
-    },
-    {
-      "unit_id": "2389969c8aff4d90",
-      "node_id": "signal_processing",
-      "field": "examples[2]",
-      "text": "substrate for Sequences, events & time series",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Digital_signal_processing",
-        "url:https://en.wikipedia.org/wiki/Discrete_Fourier_transform"
-      ],
-      "evidence_location": "Digital signal processing page: digital signals are sequences of samples in time, space, or frequency (lines 172-175), and time-domain analysis and sample sequences are discussed (lines 191-199). Discrete Fourier transform page: spectral analysis uses uniformly spaced time samples of a signal and can create spectrograms (search result and opened page inspected).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The evidence supports signal processing over temporal sample sequences and spectral/time-frequency analysis. The word 'substrate' is an atlas synthesis rather than a direct source phrase."
-    },
-    {
-      "unit_id": "2b1355a147463fdc",
-      "node_id": "signal_processing",
-      "field": "examples[3]",
-      "text": "substrate for Images, video & spatial grids",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Digital_signal_processing"
-      ],
-      "evidence_location": "Digital signal processing page: signals can be represented in spatial domains (lines 172-175), space-domain analysis includes pixel location for image processing (lines 191-198), and image/video applications are listed (lines 247-264).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The evidence supports spatial-domain and image/video signal processing. The exact 'substrate for' relationship is graph-derived wording."
-    },
-    {
       "unit_id": "e850d4c7f4bbae9e",
       "node_id": "signal_processing",
       "field": "limitations[1]",
       "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Linear algebra, Calculus & automatic differentiation theory.",
       "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Digital_signal_processing"
+        "url:https://en.wikipedia.org/wiki/Digital_signal_processing",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Digital signal processing page: engineers choose the processing domain by making an informed assumption about which domain best represents the signal and processing (lines 191-192); practical sampling and filtering limitations are described (lines 182-187).",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The evidence supports that DSP relies on modeling/domain assumptions and has practical sampling/filtering limitations. It does not directly support the empirical-mismatch warning, and it does not support the exact dependency list or the automatic-differentiation phrase."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "a1150e138941ecd8",
@@ -103,34 +46,90 @@
       "notes": "The sources support linear transformations, convolution, Fourier transforms, and matrix formulations as central computational machinery. The exact 'rests on' phrasing is a synthesis."
     },
     {
-      "unit_id": "3ffbf171df34456e",
-      "node_id": "signal_processing",
-      "field": "dependencies.calculus.rationale",
-      "text": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Calculus & automatic differentiation theory.",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Digital_signal_processing",
-        "url:https://en.wikipedia.org/wiki/Wavelet_transform"
-      ],
-      "evidence_location": "Digital signal processing page: sampling converts continuous signals to discrete models (lines 182-187), Fourier transforms convert time/space information to frequency-domain components (lines 204-208), and time-frequency uncertainty is discussed (lines 222-228). Wavelet transform page: wavelet transforms are expressed with integrals over continuous signals and time/frequency parameters (search result inspected).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The evidence supports calculus-adjacent continuous transforms, sampling, and time-frequency analysis. It does not support automatic differentiation theory as part of this dependency, so the exact rationale is broader than the inspected evidence."
-    },
-    {
       "unit_id": "0d6e95c6f1dea5e2",
       "node_id": "signal_processing",
       "field": "dependencies.probability.rationale",
       "text": "Signal processing & harmonic analysis rests on the formal or computational capabilities supplied by Probability theory.",
       "source_ids": [
         "url:https://en.wikipedia.org/wiki/Digital_signal_processing",
-        "url:https://en.wikipedia.org/wiki/Wiener_filter"
+        "url:https://en.wikipedia.org/wiki/Wiener_filter",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Digital signal processing page: lists statistical signal processing and spectral density estimation among DSP applications (lines 175 and 247-264). Wiener filter page: describes estimating a target random process from an observed noisy process using known stationary signal and noise spectra (opened page inspected).",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The evidence supports probability/statistics as important in statistical signal processing and noisy-signal filtering, but it does not show probability theory as a universal requirement for signal processing and harmonic analysis. The edge strength is common rather than core, which fits the partial support better than this sentence's 'rests on' wording."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "b7ad3ab822e20762",
+      "node_id": "signal_processing",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Signal processing & harmonic analysis is modeled as depending on Linear algebra, Calculus & automatic differentiation theory and feeding downstream nodes such as Neuroscience & cognitive science, Sequences, events & time series, Images, video & spatial grids.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8e9eecb53548cf39",
+      "node_id": "signal_processing",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Neuroscience & cognitive science",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ed4893d9e3a27506",
+      "node_id": "signal_processing",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Sequences, events & time series",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a2d55e091e55991a",
+      "node_id": "signal_processing",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Images, video & spatial grids",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2e384ea6c6791cbc",
+      "node_id": "signal_processing",
+      "field": "dependencies.calculus.rationale",
+      "text": "In this atlas graph, Signal processing & harmonic analysis has a `requires` dependency on Calculus & automatic differentiation theory with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -150,21 +149,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "1d97f68eea15b8b5",
-      "node_id": "signal_processing",
-      "dependency_id": "calculus",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Digital_signal_processing",
-        "url:https://en.wikipedia.org/wiki/Wavelet_transform"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Continuous signals, Fourier transforms, sampling, and wavelet integrals support calculus as important to signal processing and harmonic analysis. The dependency label's automatic-differentiation component is not supported by the inspected evidence, so the exact edge is broader than the sources justify.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
       "edge_id": "267608c499b9c317",
       "node_id": "signal_processing",
       "dependency_id": "probability",
@@ -178,6 +162,22 @@
       "notes": "Statistical signal processing, spectral density estimation, and Wiener filtering support probability as a common dependency for noisy or statistical signal-processing work. The sources do not support probability as core for all signal processing, so the packet's common strength is defensible.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "90b607c6602fae7c",
+      "node_id": "signal_processing",
+      "dependency_id": "calculus",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "signal_processing",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "World-model rollout simulates possible futures in learned latent or observation space so a policy or planner can evaluate actions without immediate real-world interaction.",
-    "why_it_matters": "The role of World-model rollout & imagination is to connect Latent world models & predictive dynamics, Model-based reinforcement learning to downstream capabilities including Robotics & embodied AI.",
+    "why_it_matters": "In this atlas graph, World-model rollout & imagination is modeled as depending on Latent world models & predictive dynamics, Model-based reinforcement learning and feeding downstream nodes such as Robotics & embodied AI.",
     "examples": [
-      "substrate for Robotics & embodied AI",
+      "atlas downstream link to Robotics & embodied AI",
       "combined with Latent world models & predictive dynamics"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "world_model",
         "type": "uses",
         "strength": "core",
-        "rationale": "World-model rollout & imagination uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Latent world models & predictive dynamics because Latent world models & predictive dynamics is modeled as a reusable ingredient for the node."
       },
       {
         "id": "model_based_rl",
         "type": "uses",
         "strength": "core",
-        "rationale": "World-model rollout & imagination uses Model-based reinforcement learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Model-based reinforcement learning because Model-based reinforcement learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "mcts",
         "type": "uses",
         "strength": "common",
-        "rationale": "World-model rollout & imagination uses Monte Carlo tree search as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Monte Carlo tree search because Monte Carlo tree search is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "World-model rollout simulates possible futures in learned latent or observation space so a policy or planner can evaluate actions without immediate real-world interaction."
     },
     {
-      "unit_id": "ec55a23514a893a8",
+      "unit_id": "04689e60fe32ebf3",
       "node_id": "world_model_rollout",
       "field": "why_it_matters",
-      "text": "The role of World-model rollout & imagination is to connect Latent world models & predictive dynamics, Model-based reinforcement learning to downstream capabilities including Robotics & embodied AI."
+      "text": "In this atlas graph, World-model rollout & imagination is modeled as depending on Latent world models & predictive dynamics, Model-based reinforcement learning and feeding downstream nodes such as Robotics & embodied AI."
     },
     {
-      "unit_id": "94baaceac3c0c0aa",
+      "unit_id": "ebc33bb313f4d3b2",
       "node_id": "world_model_rollout",
       "field": "examples[1]",
-      "text": "substrate for Robotics & embodied AI"
+      "text": "atlas downstream link to Robotics & embodied AI"
     },
     {
       "unit_id": "a2dc4b708c455d03",
@@ -82,48 +82,48 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Latent world models & predictive dynamics, Model-based reinforcement learning."
     },
     {
-      "unit_id": "13b03fd0c3823e21",
+      "unit_id": "430ee42f4eb8e641",
       "node_id": "world_model_rollout",
       "field": "dependencies.world_model.rationale",
-      "text": "World-model rollout & imagination uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Latent world models & predictive dynamics because Latent world models & predictive dynamics is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "b83302112cffe028",
+      "unit_id": "caaa8164f6052a66",
       "node_id": "world_model_rollout",
       "field": "dependencies.model_based_rl.rationale",
-      "text": "World-model rollout & imagination uses Model-based reinforcement learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Model-based reinforcement learning because Model-based reinforcement learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "4474d3e0bb210588",
+      "unit_id": "873141a356788aa0",
       "node_id": "world_model_rollout",
       "field": "dependencies.mcts.rationale",
-      "text": "World-model rollout & imagination uses Monte Carlo tree search as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Monte Carlo tree search because Monte Carlo tree search is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "c86f618a885fe70a",
+      "edge_id": "e4a6eb9299523efa",
       "node_id": "world_model_rollout",
       "dependency_id": "world_model",
       "type": "uses",
       "strength": "core",
-      "rationale": "World-model rollout & imagination uses Latent world models & predictive dynamics as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Latent world models & predictive dynamics because Latent world models & predictive dynamics is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "6a4bc7a719de029d",
+      "edge_id": "ea747521fdb36030",
       "node_id": "world_model_rollout",
       "dependency_id": "model_based_rl",
       "type": "uses",
       "strength": "core",
-      "rationale": "World-model rollout & imagination uses Model-based reinforcement learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Model-based reinforcement learning because Model-based reinforcement learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "970e81a53de9a252",
+      "edge_id": "2f6bb252b6b18c62",
       "node_id": "world_model_rollout",
       "dependency_id": "mcts",
       "type": "uses",
       "strength": "common",
-      "rationale": "World-model rollout & imagination uses Monte Carlo tree search as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, World-model rollout & imagination has a `uses` dependency on Monte Carlo tree search because Monte Carlo tree search is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

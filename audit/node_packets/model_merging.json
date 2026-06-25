@@ -35,25 +35,25 @@
         "id": "sft_instruction",
         "type": "uses",
         "strength": "core",
-        "rationale": "Model merging & weight-space composition uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "peft_lora",
         "type": "uses",
         "strength": "core",
-        "rationale": "Model merging & weight-space composition uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Parameter-efficient tuning, adapters & LoRA because Parameter-efficient tuning, adapters & LoRA is modeled as a reusable ingredient for the node."
       },
       {
         "id": "linear_algebra",
         "type": "uses",
         "strength": "common",
-        "rationale": "Model merging & weight-space composition uses Linear algebra as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "Model merging & weight-space composition uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -95,62 +95,62 @@
       "text": "Parameter alignment, interference, tokenizer mismatch, and evaluation across merged capabilities remain difficult."
     },
     {
-      "unit_id": "c3366db9c4b81f1a",
+      "unit_id": "e7caee79f78b473f",
       "node_id": "model_merging",
       "field": "dependencies.sft_instruction.rationale",
-      "text": "Model merging & weight-space composition uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "366898dd6dd420fa",
+      "unit_id": "ff11d5987920bfdc",
       "node_id": "model_merging",
       "field": "dependencies.peft_lora.rationale",
-      "text": "Model merging & weight-space composition uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Parameter-efficient tuning, adapters & LoRA because Parameter-efficient tuning, adapters & LoRA is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "edfb0252305a7a14",
+      "unit_id": "1fe88a44de96de36",
       "node_id": "model_merging",
       "field": "dependencies.linear_algebra.rationale",
-      "text": "Model merging & weight-space composition uses Linear algebra as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "db1519e95c4ff0e2",
+      "unit_id": "6e7ddb42a144b5c4",
       "node_id": "model_merging",
       "field": "dependencies.optimization.rationale",
-      "text": "Model merging & weight-space composition uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "93960a630881f92c",
+      "edge_id": "16831fc97beb5683",
       "node_id": "model_merging",
       "dependency_id": "sft_instruction",
       "type": "uses",
       "strength": "core",
-      "rationale": "Model merging & weight-space composition uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "8b44f74632337a27",
+      "edge_id": "939abd08a9d9325d",
       "node_id": "model_merging",
       "dependency_id": "peft_lora",
       "type": "uses",
       "strength": "core",
-      "rationale": "Model merging & weight-space composition uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Parameter-efficient tuning, adapters & LoRA because Parameter-efficient tuning, adapters & LoRA is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "4b0df8e974e3a385",
+      "edge_id": "773219617196d443",
       "node_id": "model_merging",
       "dependency_id": "linear_algebra",
       "type": "uses",
       "strength": "common",
-      "rationale": "Model merging & weight-space composition uses Linear algebra as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "4140fc250f9fcdc5",
+      "edge_id": "b02eff8f7ab872d7",
       "node_id": "model_merging",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "Model merging & weight-space composition uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model merging & weight-space composition has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

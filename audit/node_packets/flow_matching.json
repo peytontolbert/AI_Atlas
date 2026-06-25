@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "A vector field is learned to transport samples from a simple base distribution to data along probability paths.",
-    "why_it_matters": "The role of Flow matching & transport objectives is to connect Generative modeling, Differential equations to downstream capabilities including Continuous normalizing flows & learned vector fields, Normalizing, rectified & flow-matching models.",
+    "why_it_matters": "In this atlas graph, Flow matching & transport objectives is modeled as depending on Generative modeling, Differential equations and feeding downstream nodes such as Continuous normalizing flows & learned vector fields, Normalizing, rectified & flow-matching models.",
     "examples": [
-      "substrate for Continuous normalizing flows & learned vector fields",
-      "substrate for Normalizing, rectified & flow-matching models"
+      "atlas downstream link to Continuous normalizing flows & learned vector fields",
+      "atlas downstream link to Normalizing, rectified & flow-matching models"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Differential equations."
@@ -34,25 +34,25 @@
         "id": "generative_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Flow matching & transport objectives uses Generative modeling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
       },
       {
         "id": "differential_equations",
         "type": "uses",
         "strength": "core",
-        "rationale": "Flow matching & transport objectives uses Differential equations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "probability",
         "type": "uses",
         "strength": "common",
-        "rationale": "Flow matching & transport objectives uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "Flow matching & transport objectives uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -64,22 +64,22 @@
       "text": "A vector field is learned to transport samples from a simple base distribution to data along probability paths."
     },
     {
-      "unit_id": "30bf764b0b1d9e31",
+      "unit_id": "cc07884056c0fd76",
       "node_id": "flow_matching",
       "field": "why_it_matters",
-      "text": "The role of Flow matching & transport objectives is to connect Generative modeling, Differential equations to downstream capabilities including Continuous normalizing flows & learned vector fields, Normalizing, rectified & flow-matching models."
+      "text": "In this atlas graph, Flow matching & transport objectives is modeled as depending on Generative modeling, Differential equations and feeding downstream nodes such as Continuous normalizing flows & learned vector fields, Normalizing, rectified & flow-matching models."
     },
     {
-      "unit_id": "6094e1070c6ef5bc",
+      "unit_id": "b8fda934db20e37f",
       "node_id": "flow_matching",
       "field": "examples[1]",
-      "text": "substrate for Continuous normalizing flows & learned vector fields"
+      "text": "atlas downstream link to Continuous normalizing flows & learned vector fields"
     },
     {
-      "unit_id": "fd94e7d17e178973",
+      "unit_id": "fb47bb286f5f6882",
       "node_id": "flow_matching",
       "field": "examples[2]",
-      "text": "substrate for Normalizing, rectified & flow-matching models"
+      "text": "atlas downstream link to Normalizing, rectified & flow-matching models"
     },
     {
       "unit_id": "340aed169d77b8f1",
@@ -88,62 +88,62 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Differential equations."
     },
     {
-      "unit_id": "984518887e572937",
+      "unit_id": "4f25c1f77f6c1250",
       "node_id": "flow_matching",
       "field": "dependencies.generative_learning.rationale",
-      "text": "Flow matching & transport objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "68814fa9dd786a21",
+      "unit_id": "cee7b851cf99f8bd",
       "node_id": "flow_matching",
       "field": "dependencies.differential_equations.rationale",
-      "text": "Flow matching & transport objectives uses Differential equations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "53909a85cc147fb7",
+      "unit_id": "32a69c1ff64a1c7d",
       "node_id": "flow_matching",
       "field": "dependencies.probability.rationale",
-      "text": "Flow matching & transport objectives uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "00a59a5f2fbcae9e",
+      "unit_id": "6a8a70ee5aa74d8e",
       "node_id": "flow_matching",
       "field": "dependencies.optimization.rationale",
-      "text": "Flow matching & transport objectives uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "542ddd8f1ad38b27",
+      "edge_id": "80f8e5b923da2340",
       "node_id": "flow_matching",
       "dependency_id": "generative_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Flow matching & transport objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "25d17da8bd9ca98e",
+      "edge_id": "97e3f04c7879344d",
       "node_id": "flow_matching",
       "dependency_id": "differential_equations",
       "type": "uses",
       "strength": "core",
-      "rationale": "Flow matching & transport objectives uses Differential equations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Differential equations because Differential equations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "c990d2c11f244c54",
+      "edge_id": "db17eae2712f00e1",
       "node_id": "flow_matching",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "common",
-      "rationale": "Flow matching & transport objectives uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "9eb594f0d40c947c",
+      "edge_id": "562c5f3af09d35f3",
       "node_id": "flow_matching",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "Flow matching & transport objectives uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Flow matching & transport objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Elementwise or gated nonlinearities let stacked layers approximate nonlinear functions.",
-    "why_it_matters": "The role of Nonlinear activations is to connect Calculus & automatic differentiation theory, Affine transforms & dense layers to downstream capabilities including Boolean circuits & differentiable logic gates, Gating & multiplicative control, Perceptrons & single-layer neural classifiers.",
+    "why_it_matters": "In this atlas graph, Nonlinear activations is modeled as depending on Calculus & automatic differentiation theory, Affine transforms & dense layers and feeding downstream nodes such as Boolean circuits & differentiable logic gates, Gating & multiplicative control, Perceptrons & single-layer neural classifiers.",
     "examples": [
-      "substrate for Boolean circuits & differentiable logic gates",
-      "substrate for Gating & multiplicative control",
-      "substrate for Perceptrons & single-layer neural classifiers"
+      "atlas downstream link to Boolean circuits & differentiable logic gates",
+      "atlas downstream link to Gating & multiplicative control",
+      "atlas downstream link to Perceptrons & single-layer neural classifiers"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Calculus & automatic differentiation theory, Affine transforms & dense layers."
@@ -34,7 +34,7 @@
         "id": "calculus",
         "type": "uses",
         "strength": "core",
-        "rationale": "Nonlinear activations uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Nonlinear activations has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "affine_dense",
@@ -52,28 +52,28 @@
       "text": "Elementwise or gated nonlinearities let stacked layers approximate nonlinear functions."
     },
     {
-      "unit_id": "5ceaeb6b9a35b632",
+      "unit_id": "2ea72aef2db5ff39",
       "node_id": "nonlinear_activations",
       "field": "why_it_matters",
-      "text": "The role of Nonlinear activations is to connect Calculus & automatic differentiation theory, Affine transforms & dense layers to downstream capabilities including Boolean circuits & differentiable logic gates, Gating & multiplicative control, Perceptrons & single-layer neural classifiers."
+      "text": "In this atlas graph, Nonlinear activations is modeled as depending on Calculus & automatic differentiation theory, Affine transforms & dense layers and feeding downstream nodes such as Boolean circuits & differentiable logic gates, Gating & multiplicative control, Perceptrons & single-layer neural classifiers."
     },
     {
-      "unit_id": "e9ef8b032a2e4ec9",
+      "unit_id": "5f29e62668a2e839",
       "node_id": "nonlinear_activations",
       "field": "examples[1]",
-      "text": "substrate for Boolean circuits & differentiable logic gates"
+      "text": "atlas downstream link to Boolean circuits & differentiable logic gates"
     },
     {
-      "unit_id": "967e6071d6f9f14c",
+      "unit_id": "450641f9a93af678",
       "node_id": "nonlinear_activations",
       "field": "examples[2]",
-      "text": "substrate for Gating & multiplicative control"
+      "text": "atlas downstream link to Gating & multiplicative control"
     },
     {
-      "unit_id": "9232975b8f57fa91",
+      "unit_id": "097ad5d14989d9e6",
       "node_id": "nonlinear_activations",
       "field": "examples[3]",
-      "text": "substrate for Perceptrons & single-layer neural classifiers"
+      "text": "atlas downstream link to Perceptrons & single-layer neural classifiers"
     },
     {
       "unit_id": "02b05ee136645f43",
@@ -82,10 +82,10 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Calculus & automatic differentiation theory, Affine transforms & dense layers."
     },
     {
-      "unit_id": "5099905726260e15",
+      "unit_id": "7045a73cbf38fd98",
       "node_id": "nonlinear_activations",
       "field": "dependencies.calculus.rationale",
-      "text": "Nonlinear activations uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Nonlinear activations has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "710d8b5464abab9a",
@@ -96,12 +96,12 @@
   ],
   "edge_units": [
     {
-      "edge_id": "1cb432d46c534494",
+      "edge_id": "254b748dedbe180d",
       "node_id": "nonlinear_activations",
       "dependency_id": "calculus",
       "type": "uses",
       "strength": "core",
-      "rationale": "Nonlinear activations uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Nonlinear activations has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "81dbbce399cab62b",

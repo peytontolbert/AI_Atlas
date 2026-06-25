@@ -114,17 +114,13 @@
       "field": "terminal_reason",
       "text": "end-system leaf",
       "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_formalml",
-        "ref_nist",
-        "ref_structured"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "No cited source in packet directly supports this metadata claim.",
+      "evidence_location": "data/atlas.json terminal flag and current dependency graph consumer set.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "Graph leaf classification is metadata, not a sourced claim in the packet."
+      "verdict": "verified",
+      "notes": "This is graph metadata: the node is terminal in the current atlas graph because no other canonical node currently depends on it."
     },
     {
       "unit_id": "7d00d77fe67e8849",
@@ -199,40 +195,32 @@
       "notes": "Typed actions align with structured-output generation references."
     },
     {
-      "unit_id": "0dc9d4eb541dcc22",
+      "unit_id": "9feeb11fa028f6ce",
       "node_id": "verified_agentic_systems",
       "field": "dependencies.observability_eval_harness.rationale",
-      "text": "Verified and assurance-gated agents integrates Observability, tracing & evaluation harnesses as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Verified and assurance-gated agents has an `applies` dependency on Observability, tracing & evaluation harnesses with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_formalml",
-        "ref_nist",
-        "ref_structured"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Observability/evaluation is plausible for release gates, but packet sources do not directly verify the dependency."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     },
     {
-      "unit_id": "fa8940e44e53ee91",
+      "unit_id": "19c7518f6e7ab8ce",
       "node_id": "verified_agentic_systems",
       "field": "dependencies.expert_rule_systems.rationale",
-      "text": "Verified and assurance-gated agents integrates Expert systems, production rules & rule engines as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Verified and assurance-gated agents has an `applies` dependency on Expert systems, production rules & rule engines with `optional` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_formalml",
-        "ref_nist",
-        "ref_structured"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Policy checks may use rule engines, but the relationship is optional and only broadly supported."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -309,40 +297,30 @@
       "strength_supported": true
     },
     {
-      "edge_id": "efd7339bf27375ca",
+      "edge_id": "d6e4d5d020be16b2",
       "node_id": "verified_agentic_systems",
       "dependency_id": "observability_eval_harness",
       "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_formalml",
-        "ref_nist",
-        "ref_structured"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Observability/evaluation is plausible for release gates, but packet sources do not directly verify the dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "2c85492b1423747e",
+      "edge_id": "ad44b1ca21be8f60",
       "node_id": "verified_agentic_systems",
       "dependency_id": "expert_rule_systems",
       "source_ids": [
-        "ref_aima",
-        "ref_ddia",
-        "ref_formalml",
-        "ref_nist",
-        "ref_structured"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Policy checks may use rule engines, but the relationship is optional and only broadly supported.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

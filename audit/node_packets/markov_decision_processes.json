@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Markovian state, transition, action, observation, and belief representations formalize sequential uncertainty and control.",
-    "why_it_matters": "The role of Markov chains, MDPs, POMDPs & belief states is to connect Probability theory, Sequences, events & time series to downstream capabilities including Reinforcement learning.",
+    "why_it_matters": "In this atlas graph, Markov chains, MDPs, POMDPs & belief states is modeled as depending on Probability theory, Sequences, events & time series and feeding downstream nodes such as Reinforcement learning.",
     "examples": [
-      "substrate for Reinforcement learning",
+      "atlas downstream link to Reinforcement learning",
       "combined with Probability theory"
     ],
     "limitations": [
@@ -46,13 +46,13 @@
         "id": "game_decision_theory",
         "type": "requires",
         "strength": "common",
-        "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Game theory & decision theory."
+        "rationale": "In this atlas graph, Markov chains, MDPs, POMDPs & belief states has a `requires` dependency on Game theory & decision theory with `common` strength."
       },
       {
         "id": "dynamical_control",
         "type": "requires",
         "strength": "common",
-        "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+        "rationale": "In this atlas graph, Markov chains, MDPs, POMDPs & belief states has a `requires` dependency on Dynamical systems & control theory with `common` strength."
       }
     ]
   },
@@ -64,16 +64,16 @@
       "text": "Markovian state, transition, action, observation, and belief representations formalize sequential uncertainty and control."
     },
     {
-      "unit_id": "83a19352a44386ca",
+      "unit_id": "61b936abb5d39a91",
       "node_id": "markov_decision_processes",
       "field": "why_it_matters",
-      "text": "The role of Markov chains, MDPs, POMDPs & belief states is to connect Probability theory, Sequences, events & time series to downstream capabilities including Reinforcement learning."
+      "text": "In this atlas graph, Markov chains, MDPs, POMDPs & belief states is modeled as depending on Probability theory, Sequences, events & time series and feeding downstream nodes such as Reinforcement learning."
     },
     {
-      "unit_id": "36b93dfd57e5471b",
+      "unit_id": "dcaa6871c9b9882b",
       "node_id": "markov_decision_processes",
       "field": "examples[1]",
-      "text": "substrate for Reinforcement learning"
+      "text": "atlas downstream link to Reinforcement learning"
     },
     {
       "unit_id": "814f31343b17f636",
@@ -100,16 +100,16 @@
       "text": "Markov chains, MDPs, POMDPs & belief states consumes, emits, or organizes information using Sequences, events & time series."
     },
     {
-      "unit_id": "51f01b665371c1ac",
+      "unit_id": "ca155b9798832e4a",
       "node_id": "markov_decision_processes",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Game theory & decision theory."
+      "text": "In this atlas graph, Markov chains, MDPs, POMDPs & belief states has a `requires` dependency on Game theory & decision theory with `common` strength."
     },
     {
-      "unit_id": "000315767c5956d4",
+      "unit_id": "8539fe3db9c5253a",
       "node_id": "markov_decision_processes",
       "field": "dependencies.dynamical_control.rationale",
-      "text": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+      "text": "In this atlas graph, Markov chains, MDPs, POMDPs & belief states has a `requires` dependency on Dynamical systems & control theory with `common` strength."
     }
   ],
   "edge_units": [
@@ -130,20 +130,20 @@
       "rationale": "Markov chains, MDPs, POMDPs & belief states consumes, emits, or organizes information using Sequences, events & time series."
     },
     {
-      "edge_id": "8b65b2013bf65175",
+      "edge_id": "2822572e4040c4d2",
       "node_id": "markov_decision_processes",
       "dependency_id": "game_decision_theory",
       "type": "requires",
       "strength": "common",
-      "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Game theory & decision theory."
+      "rationale": "In this atlas graph, Markov chains, MDPs, POMDPs & belief states has a `requires` dependency on Game theory & decision theory with `common` strength."
     },
     {
-      "edge_id": "05686853ffb5ca00",
+      "edge_id": "abc9c30c5f1ea76c",
       "node_id": "markov_decision_processes",
       "dependency_id": "dynamical_control",
       "type": "requires",
       "strength": "common",
-      "rationale": "Markov chains, MDPs, POMDPs & belief states rests on the formal or computational capabilities supplied by Dynamical systems & control theory."
+      "rationale": "In this atlas graph, Markov chains, MDPs, POMDPs & belief states has a `requires` dependency on Dynamical systems & control theory with `common` strength."
     }
   ],
   "candidate_references": {

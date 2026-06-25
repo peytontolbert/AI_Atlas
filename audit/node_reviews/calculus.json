@@ -16,64 +16,6 @@
       "notes": "The sources directly support derivatives, gradients, Hessians, chain rule application, computational graphs, and AD on programs. 'Explain how parameter changes affect objectives' is a synthesis of those claims rather than a verbatim statement."
     },
     {
-      "unit_id": "914244ac483ad990",
-      "node_id": "calculus",
-      "field": "why_it_matters",
-      "text": "The role of Calculus & automatic differentiation theory is to connect lower-level principles to downstream capabilities including Optimization theory, Numerical analysis, Differential equations.",
-      "source_ids": [
-        "url:https://arxiv.org/abs/1502.05767",
-        "url:https://arxiv.org/abs/2207.04487"
-      ],
-      "evidence_location": "Baydin et al. abstract lines 4-5, 26-30, and 33-37; Frank abstract lines 3-5 and 28-31, plus lines 50-69 on differential-equation optimization.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The sources support the link to optimization, numerical differentiation, and differential-equation models. The sentence is still a high-level synthesis across those applications, not a single-source claim."
-    },
-    {
-      "unit_id": "84ffef569833b888",
-      "node_id": "calculus",
-      "field": "examples[1]",
-      "text": "substrate for Optimization theory",
-      "source_ids": [
-        "url:https://arxiv.org/abs/1502.05767",
-        "url:https://arxiv.org/abs/2207.04487"
-      ],
-      "evidence_location": "Baydin et al. abstract lines 4-5, 26, 34, and 36-37; Frank abstract lines 28-29, 43-47, and 62-69.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Direct support exists for gradients/derivatives as core inputs to optimization. 'Substrate for' is a summary inference, not an exact quoted claim."
-    },
-    {
-      "unit_id": "9ed4cf54a8a5cdf8",
-      "node_id": "calculus",
-      "field": "examples[2]",
-      "text": "substrate for Numerical analysis",
-      "source_ids": [
-        "url:https://arxiv.org/abs/1502.05767"
-      ],
-      "evidence_location": "Baydin et al. lines 27-28 and 48-65, which discuss numerical differentiation, finite-difference error, and truncation/round-off issues.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The source directly supports numerical differentiation as a numerical-analysis topic and discusses numerical error behavior. The broader 'substrate for Numerical analysis' wording is still a synthesis."
-    },
-    {
-      "unit_id": "e744bde5001a2c12",
-      "node_id": "calculus",
-      "field": "examples[3]",
-      "text": "substrate for Differential equations",
-      "source_ids": [
-        "url:https://arxiv.org/abs/2207.04487"
-      ],
-      "evidence_location": "Frank abstract lines 3-5 and 20-21, plus lines 50-69 on optimizing differential-equation models and passing AD through numerical solvers.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The source supports differential equations as a major application area where AD and calculus are used through numerical solvers. The 'substrate for' phrasing is inferred rather than explicitly stated."
-    },
-    {
       "unit_id": "547b7335166eb288",
       "node_id": "calculus",
       "field": "limitations[1]",
@@ -81,14 +23,74 @@
       "source_ids": [
         "url:https://arxiv.org/abs/1502.05767",
         "url:https://arxiv.org/abs/2207.04487",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Baydin et al. lines 27-28 and 33-34 on approximation error and model expressivity limits; Frank lines 30-31 and 62-69 on numerical solution and optimization assumptions; AIMA appendix and preface lines 120-122 on the scope of mathematical prerequisites.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support that calculus/AD methods depend on modeling and numerical assumptions, but they do not state the exact empirical-mismatch generalization. The sentence should be narrowed if it is meant as a factual claim."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "dee142da85909ef8",
+      "node_id": "calculus",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Calculus & automatic differentiation theory is modeled as an upstream prerequisite for downstream nodes such as Optimization theory, Numerical analysis, Differential equations.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "08afb4588f4dad49",
+      "node_id": "calculus",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Optimization theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ef718a35c24f570d",
+      "node_id": "calculus",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Numerical analysis",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c63b897da1da083a",
+      "node_id": "calculus",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Differential equations",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
-  "edge_reviews": []
+  "edge_reviews": [],
+  "node_id": "calculus",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

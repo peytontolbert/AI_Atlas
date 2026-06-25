@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "An observe–plan–act loop maintains state, selects tools or actions, processes feedback, and iterates until a goal, budget, or safety condition is reached.",
-    "why_it_matters": "The role of Observe–plan–act agent loops is to connect Task decomposition & hierarchical reasoning, Tool use & function calling to downstream capabilities including Reflection, critique, verifier & repair loops, Multi-agent coordination, debate & markets, Skill libraries, workflows & procedural plans.",
+    "why_it_matters": "In this atlas graph, Observe–plan–act agent loops is modeled as depending on Task decomposition & hierarchical reasoning, Tool use & function calling and feeding downstream nodes such as Reflection, critique, verifier & repair loops, Multi-agent coordination, debate & markets, Skill libraries, workflows & procedural plans.",
     "examples": [
-      "substrate for Reflection, critique, verifier & repair loops",
-      "substrate for Multi-agent coordination, debate & markets",
-      "substrate for Skill libraries, workflows & procedural plans"
+      "atlas downstream link to Reflection, critique, verifier & repair loops",
+      "atlas downstream link to Multi-agent coordination, debate & markets",
+      "atlas downstream link to Skill libraries, workflows & procedural plans"
     ],
     "limitations": [
       "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Task decomposition & hierarchical reasoning, Tool use & function calling."
@@ -34,13 +34,13 @@
         "id": "task_decomposition",
         "type": "uses",
         "strength": "core",
-        "rationale": "Observe–plan–act agent loops uses Task decomposition & hierarchical reasoning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on Task decomposition & hierarchical reasoning because Task decomposition & hierarchical reasoning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "tool_use_function_calling",
         "type": "uses",
         "strength": "core",
-        "rationale": "Observe–plan–act agent loops uses Tool use & function calling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on Tool use & function calling because Tool use & function calling is modeled as a reusable ingredient for the node."
       },
       {
         "id": "context_working_memory",
@@ -52,13 +52,13 @@
         "id": "reinforcement_learning",
         "type": "uses",
         "strength": "common",
-        "rationale": "Observe–plan–act agent loops uses Reinforcement learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on Reinforcement learning because Reinforcement learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "react_reason_act",
         "type": "uses",
         "strength": "common",
-        "rationale": "Observe–plan–act agent loops uses ReAct-style reasoning and acting as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on ReAct-style reasoning and acting because ReAct-style reasoning and acting is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -70,28 +70,28 @@
       "text": "An observe–plan–act loop maintains state, selects tools or actions, processes feedback, and iterates until a goal, budget, or safety condition is reached."
     },
     {
-      "unit_id": "c14495d8eed58e61",
+      "unit_id": "4943225f9cc38657",
       "node_id": "agent_loop",
       "field": "why_it_matters",
-      "text": "The role of Observe–plan–act agent loops is to connect Task decomposition & hierarchical reasoning, Tool use & function calling to downstream capabilities including Reflection, critique, verifier & repair loops, Multi-agent coordination, debate & markets, Skill libraries, workflows & procedural plans."
+      "text": "In this atlas graph, Observe–plan–act agent loops is modeled as depending on Task decomposition & hierarchical reasoning, Tool use & function calling and feeding downstream nodes such as Reflection, critique, verifier & repair loops, Multi-agent coordination, debate & markets, Skill libraries, workflows & procedural plans."
     },
     {
-      "unit_id": "3f38fc15d16bc398",
+      "unit_id": "7f4631005c7e846e",
       "node_id": "agent_loop",
       "field": "examples[1]",
-      "text": "substrate for Reflection, critique, verifier & repair loops"
+      "text": "atlas downstream link to Reflection, critique, verifier & repair loops"
     },
     {
-      "unit_id": "806b15b95d290871",
+      "unit_id": "22ecef86ba16072b",
       "node_id": "agent_loop",
       "field": "examples[2]",
-      "text": "substrate for Multi-agent coordination, debate & markets"
+      "text": "atlas downstream link to Multi-agent coordination, debate & markets"
     },
     {
-      "unit_id": "d44ac2041209fb9f",
+      "unit_id": "adccff6c04896680",
       "node_id": "agent_loop",
       "field": "examples[3]",
-      "text": "substrate for Skill libraries, workflows & procedural plans"
+      "text": "atlas downstream link to Skill libraries, workflows & procedural plans"
     },
     {
       "unit_id": "ba566c71d81d9b0a",
@@ -100,16 +100,16 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Task decomposition & hierarchical reasoning, Tool use & function calling."
     },
     {
-      "unit_id": "7cbc1b2742fe5e24",
+      "unit_id": "a47ae375ff015a8c",
       "node_id": "agent_loop",
       "field": "dependencies.task_decomposition.rationale",
-      "text": "Observe–plan–act agent loops uses Task decomposition & hierarchical reasoning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on Task decomposition & hierarchical reasoning because Task decomposition & hierarchical reasoning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "06347c86dc6ed393",
+      "unit_id": "09d470f86a7d1dd4",
       "node_id": "agent_loop",
       "field": "dependencies.tool_use_function_calling.rationale",
-      "text": "Observe–plan–act agent loops uses Tool use & function calling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on Tool use & function calling because Tool use & function calling is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "9f7b90d441b5a24c",
@@ -118,34 +118,34 @@
       "text": "Observe–plan–act agent loops stores, selects, or obtains information through Context windows & working memory."
     },
     {
-      "unit_id": "274d299479b91620",
+      "unit_id": "accb63910e182596",
       "node_id": "agent_loop",
       "field": "dependencies.reinforcement_learning.rationale",
-      "text": "Observe–plan–act agent loops uses Reinforcement learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on Reinforcement learning because Reinforcement learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "64eaf8fb50f3b85b",
+      "unit_id": "55830fe3500f4141",
       "node_id": "agent_loop",
       "field": "dependencies.react_reason_act.rationale",
-      "text": "Observe–plan–act agent loops uses ReAct-style reasoning and acting as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on ReAct-style reasoning and acting because ReAct-style reasoning and acting is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "11de6b0614e041a5",
+      "edge_id": "c6d3c5a0ce73fbc5",
       "node_id": "agent_loop",
       "dependency_id": "task_decomposition",
       "type": "uses",
       "strength": "core",
-      "rationale": "Observe–plan–act agent loops uses Task decomposition & hierarchical reasoning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on Task decomposition & hierarchical reasoning because Task decomposition & hierarchical reasoning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "1e7e559b4fe76410",
+      "edge_id": "ac2c37e3fe273da5",
       "node_id": "agent_loop",
       "dependency_id": "tool_use_function_calling",
       "type": "uses",
       "strength": "core",
-      "rationale": "Observe–plan–act agent loops uses Tool use & function calling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on Tool use & function calling because Tool use & function calling is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "4943c960f3c25f6b",
@@ -156,20 +156,20 @@
       "rationale": "Observe–plan–act agent loops stores, selects, or obtains information through Context windows & working memory."
     },
     {
-      "edge_id": "e4ea445daa1cda54",
+      "edge_id": "63c974641fa40510",
       "node_id": "agent_loop",
       "dependency_id": "reinforcement_learning",
       "type": "uses",
       "strength": "common",
-      "rationale": "Observe–plan–act agent loops uses Reinforcement learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on Reinforcement learning because Reinforcement learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "2c4dbe15513c35e2",
+      "edge_id": "083c9e19aff45fa4",
       "node_id": "agent_loop",
       "dependency_id": "react_reason_act",
       "type": "uses",
       "strength": "common",
-      "rationale": "Observe–plan–act agent loops uses ReAct-style reasoning and acting as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Observe–plan–act agent loops has a `uses` dependency on ReAct-style reasoning and acting because ReAct-style reasoning and acting is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

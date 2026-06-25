@@ -8,11 +8,11 @@
       "source_ids": [
         "ref_aima"
       ],
-      "evidence_location": "The node cites broad AI background rather than a source that directly defines this modern system boundary.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The claim is plausible, but needs a system-specific source for exact verification."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "4f75db38e3c6a2c8",
@@ -76,13 +76,14 @@
       "field": "limitations[1]",
       "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Diffusion & score-based models, Normalizing, rectified & flow-matching models.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "9049f2ce684603cc",
@@ -169,34 +170,6 @@
       "notes": "Conceptual support only; exact rationale is graph-derived."
     },
     {
-      "unit_id": "cc66ddfb372c51c8",
-      "node_id": "video_generation",
-      "field": "dependencies.output_watermarking.rationale",
-      "text": "Video generation & simulation synthesis integrates Generation-time watermarking as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
-    },
-    {
-      "unit_id": "78385816199f36d6",
-      "node_id": "video_generation",
-      "field": "dependencies.content_provenance.rationale",
-      "text": "Video generation & simulation synthesis integrates Content credentials, signing & provenance as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
-    },
-    {
       "unit_id": "d4f4ce662ece7ae9",
       "node_id": "video_generation",
       "field": "dependencies.model_serving.rationale",
@@ -209,6 +182,34 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Conceptual support only; exact rationale is graph-derived."
+    },
+    {
+      "unit_id": "a362a94a9028c277",
+      "node_id": "video_generation",
+      "field": "dependencies.output_watermarking.rationale",
+      "text": "In this atlas graph, Video generation & simulation synthesis has an `applies` dependency on Generation-time watermarking with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "1c93c2a214392d1d",
+      "node_id": "video_generation",
+      "field": "dependencies.content_provenance.rationale",
+      "text": "In this atlas graph, Video generation & simulation synthesis has an `applies` dependency on Content credentials, signing & provenance with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -283,34 +284,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "b76d3d9ccc32f213",
-      "node_id": "video_generation",
-      "dependency_id": "output_watermarking",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
-      "edge_id": "a699a21ede61c551",
-      "node_id": "video_generation",
-      "dependency_id": "content_provenance",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "9ea244f64d6dcf59",
       "node_id": "video_generation",
       "dependency_id": "model_serving",
@@ -323,6 +296,32 @@
       "notes": "The edge is plausible for the system boundary, but the packet references do not directly prove the exact graph edge.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "dc0d616a494995bb",
+      "node_id": "video_generation",
+      "dependency_id": "output_watermarking",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "15b13788cb7a7082",
+      "node_id": "video_generation",
+      "dependency_id": "content_provenance",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

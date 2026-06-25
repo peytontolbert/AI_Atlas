@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Reusable procedures, policies, tools, and routines encode how to perform tasks.",
-    "why_it_matters": "The role of Procedural memory & skills is to connect Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write to downstream capabilities including Skill libraries, workflows & procedural plans.",
+    "why_it_matters": "In this atlas graph, Procedural memory & skills is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write and feeding downstream nodes such as Skill libraries, workflows & procedural plans.",
     "examples": [
-      "substrate for Skill libraries, workflows & procedural plans",
+      "atlas downstream link to Skill libraries, workflows & procedural plans",
       "combined with Programs, ASTs, bytecode & intermediate representations"
     ],
     "limitations": [
@@ -40,13 +40,13 @@
         "id": "memory_read_write",
         "type": "uses",
         "strength": "core",
-        "rationale": "Procedural memory & skills uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Procedural memory & skills has a `uses` dependency on Differentiable memory read/write because Differentiable memory read/write is modeled as a reusable ingredient for the node."
       },
       {
         "id": "continual_online_learning",
         "type": "uses",
         "strength": "common",
-        "rationale": "Procedural memory & skills uses Continual & online learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Procedural memory & skills has a `uses` dependency on Continual & online learning because Continual & online learning is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Reusable procedures, policies, tools, and routines encode how to perform tasks."
     },
     {
-      "unit_id": "df78c142769d6d85",
+      "unit_id": "a02d3110cbe46b9d",
       "node_id": "procedural_memory",
       "field": "why_it_matters",
-      "text": "The role of Procedural memory & skills is to connect Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write to downstream capabilities including Skill libraries, workflows & procedural plans."
+      "text": "In this atlas graph, Procedural memory & skills is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write and feeding downstream nodes such as Skill libraries, workflows & procedural plans."
     },
     {
-      "unit_id": "15077af9b76a1a8b",
+      "unit_id": "9e10c6a7a3212431",
       "node_id": "procedural_memory",
       "field": "examples[1]",
-      "text": "substrate for Skill libraries, workflows & procedural plans"
+      "text": "atlas downstream link to Skill libraries, workflows & procedural plans"
     },
     {
       "unit_id": "86883e939a0fa6ea",
@@ -88,16 +88,16 @@
       "text": "Procedural memory & skills stores, selects, or obtains information through Programs, ASTs, bytecode & intermediate representations."
     },
     {
-      "unit_id": "3b5a023e45867efe",
+      "unit_id": "b8f0bf30667afb86",
       "node_id": "procedural_memory",
       "field": "dependencies.memory_read_write.rationale",
-      "text": "Procedural memory & skills uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Procedural memory & skills has a `uses` dependency on Differentiable memory read/write because Differentiable memory read/write is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "583078386f380af1",
+      "unit_id": "d7e0f50f283c5ce4",
       "node_id": "procedural_memory",
       "field": "dependencies.continual_online_learning.rationale",
-      "text": "Procedural memory & skills uses Continual & online learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Procedural memory & skills has a `uses` dependency on Continual & online learning because Continual & online learning is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -110,20 +110,20 @@
       "rationale": "Procedural memory & skills stores, selects, or obtains information through Programs, ASTs, bytecode & intermediate representations."
     },
     {
-      "edge_id": "f5c6a793367ab8f0",
+      "edge_id": "0a7675ab7b7a599e",
       "node_id": "procedural_memory",
       "dependency_id": "memory_read_write",
       "type": "uses",
       "strength": "core",
-      "rationale": "Procedural memory & skills uses Differentiable memory read/write as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Procedural memory & skills has a `uses` dependency on Differentiable memory read/write because Differentiable memory read/write is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "4578932967d2e204",
+      "edge_id": "a0c6073286daca6a",
       "node_id": "procedural_memory",
       "dependency_id": "continual_online_learning",
       "type": "uses",
       "strength": "common",
-      "rationale": "Procedural memory & skills uses Continual & online learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Procedural memory & skills has a `uses` dependency on Continual & online learning because Continual & online learning is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

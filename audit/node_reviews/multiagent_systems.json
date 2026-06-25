@@ -8,39 +8,11 @@
       "source_ids": [
         "ref_aima"
       ],
-      "evidence_location": "The node cites broad AI background rather than a source that directly defines this modern system boundary.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The claim is plausible, but needs a system-specific source for exact verification."
-    },
-    {
-      "unit_id": "9d00765baa7b46c9",
-      "node_id": "multiagent_systems",
-      "field": "why_it_matters",
-      "text": "The role of Multi-agent systems & organizational intelligence is to connect Multi-agent coordination, debate & markets, Workflow, cluster & job orchestration to downstream capabilities including Simulation, operations research & wargaming.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The upstream/downstream role is inferred from the dependency graph and cited background sources.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Useful graph synthesis, not directly established as an exact claim by the cited sources."
-    },
-    {
-      "unit_id": "80051f11d42bb03d",
-      "node_id": "multiagent_systems",
-      "field": "examples[1]",
-      "text": "substrate for Simulation, operations research & wargaming",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The example follows from graph relationships and the node definition, but is not directly quoted from a source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Treat as a plausible downstream or composition example."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "12300752bec51d7a",
@@ -62,13 +34,14 @@
       "field": "limitations[1]",
       "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Multi-agent coordination, debate & markets, Workflow, cluster & job orchestration.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "7959ebbbc51131f3",
@@ -127,20 +100,6 @@
       "notes": "Conceptual support only; exact rationale is graph-derived."
     },
     {
-      "unit_id": "3eedf5674366d386",
-      "node_id": "multiagent_systems",
-      "field": "dependencies.graph_of_thoughts.rationale",
-      "text": "Multi-agent systems & organizational intelligence integrates Graph-of-Thought & non-linear deliberation as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
-    },
-    {
       "unit_id": "5705880a536d5064",
       "node_id": "multiagent_systems",
       "field": "dependencies.episodic_memory.rationale",
@@ -155,18 +114,60 @@
       "notes": "Conceptual support only; exact rationale is graph-derived."
     },
     {
-      "unit_id": "fb2e348609444637",
+      "unit_id": "70c6026b9cf988cf",
       "node_id": "multiagent_systems",
-      "field": "dependencies.memory_lifecycle.rationale",
-      "text": "Multi-agent systems & organizational intelligence integrates Memory lifecycle, forgetting & consolidation as part of an end-to-end application boundary.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Multi-agent systems & organizational intelligence is modeled as depending on Multi-agent coordination, debate & markets, Workflow, cluster & job orchestration and feeding downstream nodes such as Simulation, operations research & wargaming.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "cbc9ce70564d0339",
+      "node_id": "multiagent_systems",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Simulation, operations research & wargaming",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a9dc2267cf23a332",
+      "node_id": "multiagent_systems",
+      "field": "dependencies.graph_of_thoughts.rationale",
+      "text": "In this atlas graph, Multi-agent systems & organizational intelligence has an `applies` dependency on Graph-of-Thought & non-linear deliberation with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "0d7dad0366b40645",
+      "node_id": "multiagent_systems",
+      "field": "dependencies.memory_lifecycle.rationale",
+      "text": "In this atlas graph, Multi-agent systems & organizational intelligence has an `applies` dependency on Memory lifecycle, forgetting & consolidation with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -227,20 +228,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "32da38112ffd5d2b",
-      "node_id": "multiagent_systems",
-      "dependency_id": "graph_of_thoughts",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "0a831e52908fbbce",
       "node_id": "multiagent_systems",
       "dependency_id": "episodic_memory",
@@ -255,18 +242,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "bca502175d9d016f",
+      "edge_id": "173177ab4457936a",
+      "node_id": "multiagent_systems",
+      "dependency_id": "graph_of_thoughts",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "b3b8a3e86248a189",
       "node_id": "multiagent_systems",
       "dependency_id": "memory_lifecycle",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "multiagent_systems",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

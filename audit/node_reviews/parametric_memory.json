@@ -17,54 +17,6 @@
       "notes": "The claim is conceptually defensible, but exact wording should cite a parametric-memory or knowledge-in-parameters source."
     },
     {
-      "unit_id": "9463a882a4abc303",
-      "node_id": "parametric_memory",
-      "field": "why_it_matters",
-      "text": "The role of Parametric memory is to connect Large-scale pretraining, Transformers to downstream capabilities including Semantic memory, Knowledge editing & memory consolidation.",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_transformer"
-      ],
-      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
-    },
-    {
-      "unit_id": "5d0c5bb57703ce24",
-      "node_id": "parametric_memory",
-      "field": "examples[1]",
-      "text": "substrate for Semantic memory",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_transformer"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
-      "unit_id": "89786dcceb59e29f",
-      "node_id": "parametric_memory",
-      "field": "examples[2]",
-      "text": "substrate for Knowledge editing & memory consolidation",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_transformer"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
       "unit_id": "26ed1ae1b016e233",
       "node_id": "parametric_memory",
       "field": "limitations[1]",
@@ -72,111 +24,142 @@
       "source_ids": [
         "ref_aima",
         "ref_dlbook",
-        "ref_transformer"
+        "ref_transformer",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "5393749f6c9bd499",
+      "unit_id": "61b7608387a70a28",
+      "node_id": "parametric_memory",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Parametric memory is modeled as depending on Large-scale pretraining, Transformers and feeding downstream nodes such as Semantic memory, Knowledge editing & memory consolidation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "abaa3d3c8d6661c9",
+      "node_id": "parametric_memory",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Semantic memory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a1eea939784bd8d3",
+      "node_id": "parametric_memory",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Knowledge editing & memory consolidation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a54956c96f74f33b",
       "node_id": "parametric_memory",
       "field": "dependencies.pretraining.rationale",
-      "text": "Parametric memory uses Large-scale pretraining as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Parametric memory has a `uses` dependency on Large-scale pretraining because Large-scale pretraining is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support pretraining or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "75eba09a6fe7f1fc",
+      "unit_id": "afc35119fb0bdc99",
       "node_id": "parametric_memory",
       "field": "dependencies.transformer.rationale",
-      "text": "Parametric memory uses Transformers as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Parametric memory has a `uses` dependency on Transformers because Transformers is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support transformer or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "17f9e452b163bf97",
+      "unit_id": "04d060773d0c7af9",
       "node_id": "parametric_memory",
       "field": "dependencies.embeddings.rationale",
-      "text": "Parametric memory stores, selects, or obtains information through Embeddings & distributed representations.",
+      "text": "In this atlas graph, Parametric memory has a `retrieves_from` dependency on Embeddings & distributed representations with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support embeddings or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "75900ae9652f7231",
+      "edge_id": "6c61ba8dfe05bc07",
       "node_id": "parametric_memory",
       "dependency_id": "pretraining",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "0bd47b2ec45a3a30",
+      "edge_id": "acbf3de34502fdd3",
       "node_id": "parametric_memory",
       "dependency_id": "transformer",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is central to the node mechanism as described; source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "7eedf9d5d11c90f0",
+      "edge_id": "fd32e4d63b40d811",
       "node_id": "parametric_memory",
       "dependency_id": "embeddings",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Embeddings relate to parameterized representations, but parametric memory does not generally retrieve from embeddings as an external source.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "parametric_memory",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

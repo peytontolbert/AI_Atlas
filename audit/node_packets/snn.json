@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "A spiking neural network communicates with discrete events and evolving membrane states, supporting temporally precise and potentially energy-efficient computation.",
-    "why_it_matters": "The role of Spiking neural networks is to connect Spiking neurons & temporal coding, Recurrence & feedback state to downstream capabilities including Edge, on-device & neuromorphic deployment, Neuromorphic, sensor & edge intelligence.",
+    "why_it_matters": "In this atlas graph, Spiking neural networks is modeled as depending on Spiking neurons & temporal coding, Recurrence & feedback state and feeding downstream nodes such as Edge, on-device & neuromorphic deployment, Neuromorphic, sensor & edge intelligence.",
     "examples": [
-      "substrate for Edge, on-device & neuromorphic deployment",
-      "substrate for Neuromorphic, sensor & edge intelligence"
+      "atlas downstream link to Edge, on-device & neuromorphic deployment",
+      "atlas downstream link to Neuromorphic, sensor & edge intelligence"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Spiking neurons & temporal coding, Recurrence & feedback state."
@@ -40,7 +40,7 @@
         "id": "recurrence",
         "type": "composes",
         "strength": "core",
-        "rationale": "Spiking neural networks is assembled in part from the mechanism or model component Recurrence & feedback state."
+        "rationale": "In this atlas graph, Spiking neural networks has a `composes` dependency on Recurrence & feedback state with `core` strength."
       },
       {
         "id": "dynamical_control",
@@ -58,22 +58,22 @@
       "text": "A spiking neural network communicates with discrete events and evolving membrane states, supporting temporally precise and potentially energy-efficient computation."
     },
     {
-      "unit_id": "b87f42cb77940c06",
+      "unit_id": "12963d244263a7ea",
       "node_id": "snn",
       "field": "why_it_matters",
-      "text": "The role of Spiking neural networks is to connect Spiking neurons & temporal coding, Recurrence & feedback state to downstream capabilities including Edge, on-device & neuromorphic deployment, Neuromorphic, sensor & edge intelligence."
+      "text": "In this atlas graph, Spiking neural networks is modeled as depending on Spiking neurons & temporal coding, Recurrence & feedback state and feeding downstream nodes such as Edge, on-device & neuromorphic deployment, Neuromorphic, sensor & edge intelligence."
     },
     {
-      "unit_id": "be027f8c80df0f16",
+      "unit_id": "b747d64e1d83bd74",
       "node_id": "snn",
       "field": "examples[1]",
-      "text": "substrate for Edge, on-device & neuromorphic deployment"
+      "text": "atlas downstream link to Edge, on-device & neuromorphic deployment"
     },
     {
-      "unit_id": "bdd9961a5c476230",
+      "unit_id": "811434fce566369f",
       "node_id": "snn",
       "field": "examples[2]",
-      "text": "substrate for Neuromorphic, sensor & edge intelligence"
+      "text": "atlas downstream link to Neuromorphic, sensor & edge intelligence"
     },
     {
       "unit_id": "646aea9eb2bd6da3",
@@ -88,10 +88,10 @@
       "text": "Spiking neural networks is assembled in part from the mechanism or model component Spiking neurons & temporal coding."
     },
     {
-      "unit_id": "5f3f792e8f23602d",
+      "unit_id": "083b54e0e31d7691",
       "node_id": "snn",
       "field": "dependencies.recurrence.rationale",
-      "text": "Spiking neural networks is assembled in part from the mechanism or model component Recurrence & feedback state."
+      "text": "In this atlas graph, Spiking neural networks has a `composes` dependency on Recurrence & feedback state with `core` strength."
     },
     {
       "unit_id": "727cb9b358c8e474",
@@ -110,12 +110,12 @@
       "rationale": "Spiking neural networks is assembled in part from the mechanism or model component Spiking neurons & temporal coding."
     },
     {
-      "edge_id": "5bad8b4416bb75cb",
+      "edge_id": "d0c679845ad62329",
       "node_id": "snn",
       "dependency_id": "recurrence",
       "type": "composes",
       "strength": "core",
-      "rationale": "Spiking neural networks is assembled in part from the mechanism or model component Recurrence & feedback state."
+      "rationale": "In this atlas graph, Spiking neural networks has a `composes` dependency on Recurrence & feedback state with `core` strength."
     },
     {
       "edge_id": "0aedc726e1c784f5",

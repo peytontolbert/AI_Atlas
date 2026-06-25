@@ -1,17 +1,165 @@
 {
   "sentence_reviews": [
-    {"unit_id":"96cff9130152deb1","node_id":"energy_hopfield","field":"definition","text":"Energy-based, Hopfield, and Boltzmann models assign scalar compatibility to configurations and perform recall or generation by moving toward lower-energy states.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning energy-based models/Boltzmann machines; PML energy-based probabilistic modeling topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Energy assignments and lower-energy inference/generation are supported; Hopfield recall plus Boltzmann generation are synthesized across model families."},
-    {"unit_id":"c5fa0d4ed0d007b5","node_id":"energy_hopfield","field":"why_it_matters","text":"The role of Energy-based, Hopfield & Boltzmann models is to connect Energy-based objectives, Recurrence & feedback state to downstream capabilities including Time-series forecasting, anomaly & fraud detection.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning energy-based/recurrent model discussions; PML probabilistic modeling.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Energy and recurrence connections are supported; time-series, anomaly, and fraud downstream uses are not directly established."},
-    {"unit_id":"6b547a82e8e2825b","node_id":"energy_hopfield","field":"examples[1]","text":"substrate for Time-series forecasting, anomaly & fraud detection","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"General energy-based and probabilistic modeling background.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The cited packet sources do not directly support this specific downstream application bundle."},
-    {"unit_id":"94e18609df75a33a","node_id":"energy_hopfield","field":"examples[2]","text":"combined with Energy-based objectives","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning energy-based models; PML energy-based models.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Energy objectives are definitional for this node."},
-    {"unit_id":"4f79a354c5541c87","node_id":"energy_hopfield","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Energy-based objectives, Recurrence & feedback state.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Energy-based and recurrent model background in cited sources.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are supported; the broad limitation statement is generic."},
-    {"unit_id":"007708e023cbe3b4","node_id":"energy_hopfield","field":"dependencies.energy_objective.rationale","text":"Energy-based, Hopfield & Boltzmann models is learned, selected, or evaluated using the objective family Energy-based objectives.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning/PML energy-based model objectives.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported for energy-based/Boltzmann models and compatible with Hopfield energy minimization."},
-    {"unit_id":"5ce1516d51089580","node_id":"energy_hopfield","field":"dependencies.recurrence.rationale","text":"Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Recurrence & feedback state.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning recurrent models and energy-based model chapters.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Hopfield networks are recurrent feedback systems; the combined node makes recurrence core for part of the family."},
-    {"unit_id":"7fb6807b8d65c524","node_id":"energy_hopfield","field":"dependencies.memory_read_write.rationale","text":"Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Differentiable memory read/write.","source_ids":["ref_dlbook"],"evidence_location":"Deep Learning representation/memory-adjacent background.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The cited packet evidence does not directly show differentiable memory read/write as a component of these models."}
+    {
+      "unit_id": "96cff9130152deb1",
+      "node_id": "energy_hopfield",
+      "field": "definition",
+      "text": "Energy-based, Hopfield, and Boltzmann models assign scalar compatibility to configurations and perform recall or generation by moving toward lower-energy states.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning energy-based models/Boltzmann machines; PML energy-based probabilistic modeling topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Energy assignments and lower-energy inference/generation are supported; Hopfield recall plus Boltzmann generation are synthesized across model families."
+    },
+    {
+      "unit_id": "94e18609df75a33a",
+      "node_id": "energy_hopfield",
+      "field": "examples[2]",
+      "text": "combined with Energy-based objectives",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Deep Learning energy-based models; PML energy-based models.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Energy objectives are definitional for this node."
+    },
+    {
+      "unit_id": "4f79a354c5541c87",
+      "node_id": "energy_hopfield",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Energy-based objectives, Recurrence & feedback state.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "5ce1516d51089580",
+      "node_id": "energy_hopfield",
+      "field": "dependencies.recurrence.rationale",
+      "text": "Energy-based, Hopfield & Boltzmann models is assembled in part from the mechanism or model component Recurrence & feedback state.",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "evidence_location": "Deep Learning recurrent models and energy-based model chapters.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Hopfield networks are recurrent feedback systems; the combined node makes recurrence core for part of the family."
+    },
+    {
+      "unit_id": "b045b67a250fb530",
+      "node_id": "energy_hopfield",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Energy-based, Hopfield & Boltzmann models is modeled as depending on Energy-based objectives, Recurrence & feedback state and feeding downstream nodes such as Time-series forecasting, anomaly & fraud detection.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4d73f30d34da555e",
+      "node_id": "energy_hopfield",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Time-series forecasting, anomaly & fraud detection",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "bab542a8955945a9",
+      "node_id": "energy_hopfield",
+      "field": "dependencies.energy_objective.rationale",
+      "text": "In this atlas graph, Energy-based, Hopfield & Boltzmann models has an `optimizes_for` dependency on Energy-based objectives because Energy-based objectives is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "eef3c7e19ce0d06e",
+      "node_id": "energy_hopfield",
+      "field": "dependencies.memory_read_write.rationale",
+      "text": "In this atlas graph, Energy-based, Hopfield & Boltzmann models has a `composes` dependency on Differentiable memory read/write with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"9ceee84ab7821430","node_id":"energy_hopfield","dependency_id":"energy_objective","source_ids":["ref_dlbook","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"optimizes_for/core is directly supported.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"7f12d61df4f998a4","node_id":"energy_hopfield","dependency_id":"recurrence","source_ids":["ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"composes/core is supported for Hopfield-style recurrent energy dynamics but not all energy-based models.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"82eb0d424141a6e5","node_id":"energy_hopfield","dependency_id":"memory_read_write","source_ids":["ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"Differentiable memory read/write is not adequately supported as a dependency by the packet sources.","relationship_type_supported":false,"strength_supported":false}
-  ]
+    {
+      "edge_id": "7f12d61df4f998a4",
+      "node_id": "energy_hopfield",
+      "dependency_id": "recurrence",
+      "source_ids": [
+        "ref_dlbook"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "composes/core is supported for Hopfield-style recurrent energy dynamics but not all energy-based models.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "8ab0eca4aad82a30",
+      "node_id": "energy_hopfield",
+      "dependency_id": "energy_objective",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "6e39bc5057160942",
+      "node_id": "energy_hopfield",
+      "dependency_id": "memory_read_write",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "energy_hopfield",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

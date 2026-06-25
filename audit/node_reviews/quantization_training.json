@@ -1,17 +1,164 @@
 {
   "sentence_reviews": [
-    {"unit_id":"44a3bec7c24b3c10","node_id":"quantization_training","field":"definition","text":"Quantization-aware training and low-precision adaptation expose a model to restricted numeric formats during optimization so deployment error is reduced.","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"evidence_location":"Jacob arXiv abstract lines 41-42 proposes a quantization scheme for integer-only inference and co-designs a training procedure to preserve end-to-end model accuracy after quantization.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported for quantization-aware training and deployment accuracy."},
-    {"unit_id":"8bef2fca0c51809e","node_id":"quantization_training","field":"why_it_matters","text":"The role of Quantization-aware training & low-precision adaptation is to connect Scalars, vectors, matrices & tensors, Numerical analysis to downstream capabilities including Quantized inference & compressed deployment.","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"evidence_location":"Jacob arXiv abstract lines 41-42 discusses quantization, integer-only arithmetic, floating-point inference, hardware efficiency, and training to preserve accuracy.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Quantized inference and numeric-format concerns are supported; tensor/numerical-analysis labels are atlas synthesis."},
-    {"unit_id":"674c24b21e81206e","node_id":"quantization_training","field":"examples[1]","text":"substrate for Quantized inference & compressed deployment","source_ids":["url:https://arxiv.org/abs/1712.05877"],"evidence_location":"Jacob arXiv abstract lines 41-42 explicitly targets efficient integer-arithmetic-only inference and preserving accuracy after quantization.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported."},
-    {"unit_id":"8684a2fc773fd541","node_id":"quantization_training","field":"examples[2]","text":"combined with Scalars, vectors, matrices & tensors","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"evidence_location":"Jacob arXiv abstract lines 41-42 discusses quantization and integer/floating-point arithmetic for neural networks; tensors are implicit in neural-network parameters/activations rather than directly named.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Numeric tensor operations are inherent but not explicit in the inspected abstract."},
-    {"unit_id":"bb7a0d4cd0affbe6","node_id":"quantization_training","field":"limitations[1]","text":"Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Scalars, vectors, matrices & tensors, Numerical analysis.","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"evidence_location":"Jacob arXiv abstract lines 41-42 supports numeric quantization, hardware arithmetic, and accuracy preservation; it does not directly support the generic sensitivity/contamination wording.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are supported; generic limitations are not directly evidenced."},
-    {"unit_id":"c60fb3d03c864cbc","node_id":"quantization_training","field":"dependencies.tensors.rationale","text":"Quantization-aware training & low-precision adaptation uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"evidence_location":"Jacob arXiv abstract lines 41-42 concerns neural-network quantization and integer/floating-point arithmetic; neural-network weights/activations are tensor quantities, though not directly named in the abstract.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The tensor dependency is defensible but inferred from neural-network quantization."},
-    {"unit_id":"e37840c50794779b","node_id":"quantization_training","field":"dependencies.numerical_methods.rationale","text":"Quantization-aware training & low-precision adaptation uses Numerical analysis as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"evidence_location":"Jacob arXiv abstract lines 41-42 directly discusses restricted arithmetic formats, integer-only hardware, floating point inference, and preserving accuracy after quantization.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported by numeric-format and accuracy-preservation claims."},
-    {"unit_id":"e39617ac6e69ec6f","node_id":"quantization_training","field":"dependencies.optimization.rationale","text":"Quantization-aware training & low-precision adaptation uses Optimization theory as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"evidence_location":"Jacob arXiv abstract line 42 says the method co-designs a training procedure to preserve model accuracy post quantization.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Training implies optimization, though optimization theory is not directly named."}
+    {
+      "unit_id": "44a3bec7c24b3c10",
+      "node_id": "quantization_training",
+      "field": "definition",
+      "text": "Quantization-aware training and low-precision adaptation expose a model to restricted numeric formats during optimization so deployment error is reduced.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/1712.05877",
+        "ref_pml"
+      ],
+      "evidence_location": "Jacob arXiv abstract lines 41-42 proposes a quantization scheme for integer-only inference and co-designs a training procedure to preserve end-to-end model accuracy after quantization.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported for quantization-aware training and deployment accuracy."
+    },
+    {
+      "unit_id": "8684a2fc773fd541",
+      "node_id": "quantization_training",
+      "field": "examples[2]",
+      "text": "combined with Scalars, vectors, matrices & tensors",
+      "source_ids": [
+        "url:https://arxiv.org/abs/1712.05877",
+        "ref_pml"
+      ],
+      "evidence_location": "Jacob arXiv abstract lines 41-42 discusses quantization and integer/floating-point arithmetic for neural networks; tensors are implicit in neural-network parameters/activations rather than directly named.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Numeric tensor operations are inherent but not explicit in the inspected abstract."
+    },
+    {
+      "unit_id": "bb7a0d4cd0affbe6",
+      "node_id": "quantization_training",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Scalars, vectors, matrices & tensors, Numerical analysis.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/1712.05877",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "2b0b539dea64b071",
+      "node_id": "quantization_training",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Quantization-aware training & low-precision adaptation is modeled as depending on Scalars, vectors, matrices & tensors, Numerical analysis and feeding downstream nodes such as Quantized inference & compressed deployment.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "421d2911d00f5c67",
+      "node_id": "quantization_training",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Quantized inference & compressed deployment",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "86733f14e5fee517",
+      "node_id": "quantization_training",
+      "field": "dependencies.tensors.rationale",
+      "text": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "10d97536d5fd8c4d",
+      "node_id": "quantization_training",
+      "field": "dependencies.numerical_methods.rationale",
+      "text": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1de9935e8e864439",
+      "node_id": "quantization_training",
+      "field": "dependencies.optimization.rationale",
+      "text": "In this atlas graph, Quantization-aware training & low-precision adaptation has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"4a840e89642a62aa","node_id":"quantization_training","dependency_id":"tensors","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Neural-network quantization operates over numeric parameters/activations; core tensor dependency is defensible but not explicitly named.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"33daa07e4783c8a8","node_id":"quantization_training","dependency_id":"numerical_methods","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Integer-only versus floating-point arithmetic and accuracy preservation directly support numerical analysis as core.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"c07ab48b186e3512","node_id":"quantization_training","dependency_id":"optimization","source_ids":["url:https://arxiv.org/abs/1712.05877","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"A co-designed training procedure supports optimization as a common dependency.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "b41590d057b23000",
+      "node_id": "quantization_training",
+      "dependency_id": "tensors",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "7b63195d44589112",
+      "node_id": "quantization_training",
+      "dependency_id": "numerical_methods",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "9922b29bc568cb4f",
+      "node_id": "quantization_training",
+      "dependency_id": "optimization",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "quantization_training",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

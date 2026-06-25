@@ -16,11 +16,11 @@
       "retrieval-augmented generation"
     ],
     "definition": "A generator conditions on retrieved non-parametric evidence so knowledge can be updated and attributed externally.",
-    "why_it_matters": "The role of Retrieval-augmented generation is to connect Dense vector retrieval, Hybrid retrieval & reranking to downstream capabilities including Graph RAG & structured retrieval, Provenance, citations & evidence tracking, Multimodal assistants & vision-language systems.",
+    "why_it_matters": "In this atlas graph, Retrieval-augmented generation is modeled as depending on Dense vector retrieval, Hybrid retrieval & reranking and feeding downstream nodes such as Graph RAG & structured retrieval, Provenance, citations & evidence tracking, Multimodal assistants & vision-language systems.",
     "examples": [
-      "substrate for Graph RAG & structured retrieval",
-      "substrate for Provenance, citations & evidence tracking",
-      "substrate for Multimodal assistants & vision-language systems"
+      "atlas downstream link to Graph RAG & structured retrieval",
+      "atlas downstream link to Provenance, citations & evidence tracking",
+      "atlas downstream link to Multimodal assistants & vision-language systems"
     ],
     "limitations": [
       "Stored or retrieved information can be stale, private, contradictory, inaccessible, or incorrectly ranked at the moment it is needed. Its direct dependencies include Dense vector retrieval, Hybrid retrieval & reranking."
@@ -49,13 +49,13 @@
         "id": "decoder_only_transformer",
         "type": "uses",
         "strength": "common",
-        "rationale": "Retrieval-augmented generation uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Retrieval-augmented generation has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
       },
       {
         "id": "external_retrieval",
         "type": "uses",
         "strength": "common",
-        "rationale": "Retrieval-augmented generation uses External retrieval & ranking as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Retrieval-augmented generation has a `uses` dependency on External retrieval & ranking because External retrieval & ranking is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -67,28 +67,28 @@
       "text": "A generator conditions on retrieved non-parametric evidence so knowledge can be updated and attributed externally."
     },
     {
-      "unit_id": "8944bfa37a4b45cc",
+      "unit_id": "f45f4953e0cdd388",
       "node_id": "rag",
       "field": "why_it_matters",
-      "text": "The role of Retrieval-augmented generation is to connect Dense vector retrieval, Hybrid retrieval & reranking to downstream capabilities including Graph RAG & structured retrieval, Provenance, citations & evidence tracking, Multimodal assistants & vision-language systems."
+      "text": "In this atlas graph, Retrieval-augmented generation is modeled as depending on Dense vector retrieval, Hybrid retrieval & reranking and feeding downstream nodes such as Graph RAG & structured retrieval, Provenance, citations & evidence tracking, Multimodal assistants & vision-language systems."
     },
     {
-      "unit_id": "a752df04e518351a",
+      "unit_id": "642042744cb11e07",
       "node_id": "rag",
       "field": "examples[1]",
-      "text": "substrate for Graph RAG & structured retrieval"
+      "text": "atlas downstream link to Graph RAG & structured retrieval"
     },
     {
-      "unit_id": "fb6bdc16f3f06cb6",
+      "unit_id": "2132e929dbba4252",
       "node_id": "rag",
       "field": "examples[2]",
-      "text": "substrate for Provenance, citations & evidence tracking"
+      "text": "atlas downstream link to Provenance, citations & evidence tracking"
     },
     {
-      "unit_id": "49d669190d4f5bd6",
+      "unit_id": "9de3acf2847067c0",
       "node_id": "rag",
       "field": "examples[3]",
-      "text": "substrate for Multimodal assistants & vision-language systems"
+      "text": "atlas downstream link to Multimodal assistants & vision-language systems"
     },
     {
       "unit_id": "008533c9c2f7de9d",
@@ -109,16 +109,16 @@
       "text": "Retrieval-augmented generation stores, selects, or obtains information through Hybrid retrieval & reranking."
     },
     {
-      "unit_id": "5474584dd4e8a9bf",
+      "unit_id": "9e78f5cc28c8033f",
       "node_id": "rag",
       "field": "dependencies.decoder_only_transformer.rationale",
-      "text": "Retrieval-augmented generation uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Retrieval-augmented generation has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "4c7e4b828beb97c7",
+      "unit_id": "0dfdcfac774ca25c",
       "node_id": "rag",
       "field": "dependencies.external_retrieval.rationale",
-      "text": "Retrieval-augmented generation uses External retrieval & ranking as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Retrieval-augmented generation has a `uses` dependency on External retrieval & ranking because External retrieval & ranking is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -139,20 +139,20 @@
       "rationale": "Retrieval-augmented generation stores, selects, or obtains information through Hybrid retrieval & reranking."
     },
     {
-      "edge_id": "41e651015296d216",
+      "edge_id": "a2b4113604fac5a1",
       "node_id": "rag",
       "dependency_id": "decoder_only_transformer",
       "type": "uses",
       "strength": "common",
-      "rationale": "Retrieval-augmented generation uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Retrieval-augmented generation has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "3a1077a82cc94019",
+      "edge_id": "45ba546bf51aef97",
       "node_id": "rag",
       "dependency_id": "external_retrieval",
       "type": "uses",
       "strength": "common",
-      "rationale": "Retrieval-augmented generation uses External retrieval & ranking as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Retrieval-augmented generation has a `uses` dependency on External retrieval & ranking because External retrieval & ranking is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

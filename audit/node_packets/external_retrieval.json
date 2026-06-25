@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Relevant records, documents, examples, or tools are selected from an external collection.",
-    "why_it_matters": "The role of External retrieval & ranking is to connect Databases & information retrieval, Embeddings & distributed representations to downstream capabilities including Episodic memory, Sparse lexical retrieval, Dense vector retrieval.",
+    "why_it_matters": "In this atlas graph, External retrieval & ranking is modeled as depending on Databases & information retrieval, Embeddings & distributed representations and feeding downstream nodes such as Episodic memory, Sparse lexical retrieval, Dense vector retrieval.",
     "examples": [
-      "substrate for Episodic memory",
-      "substrate for Sparse lexical retrieval",
-      "substrate for Dense vector retrieval"
+      "atlas downstream link to Episodic memory",
+      "atlas downstream link to Sparse lexical retrieval",
+      "atlas downstream link to Dense vector retrieval"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Databases & information retrieval, Embeddings & distributed representations."
@@ -34,25 +34,25 @@
         "id": "databases_ir",
         "type": "uses",
         "strength": "core",
-        "rationale": "External retrieval & ranking uses Databases & information retrieval as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
       },
       {
         "id": "embeddings",
         "type": "uses",
         "strength": "common",
-        "rationale": "External retrieval & ranking uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "datasets_sampling",
         "type": "uses",
         "strength": "common",
-        "rationale": "External retrieval & ranking uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
       },
       {
         "id": "margin_ranking_metric",
         "type": "uses",
         "strength": "common",
-        "rationale": "External retrieval & ranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -64,28 +64,28 @@
       "text": "Relevant records, documents, examples, or tools are selected from an external collection."
     },
     {
-      "unit_id": "2fb1c580d7ed8822",
+      "unit_id": "a1a117aaef72ff29",
       "node_id": "external_retrieval",
       "field": "why_it_matters",
-      "text": "The role of External retrieval & ranking is to connect Databases & information retrieval, Embeddings & distributed representations to downstream capabilities including Episodic memory, Sparse lexical retrieval, Dense vector retrieval."
+      "text": "In this atlas graph, External retrieval & ranking is modeled as depending on Databases & information retrieval, Embeddings & distributed representations and feeding downstream nodes such as Episodic memory, Sparse lexical retrieval, Dense vector retrieval."
     },
     {
-      "unit_id": "722b136dd30cb5b9",
+      "unit_id": "e7259d19e62d865f",
       "node_id": "external_retrieval",
       "field": "examples[1]",
-      "text": "substrate for Episodic memory"
+      "text": "atlas downstream link to Episodic memory"
     },
     {
-      "unit_id": "96c423a33f2e4f4d",
+      "unit_id": "040964c75eb357fa",
       "node_id": "external_retrieval",
       "field": "examples[2]",
-      "text": "substrate for Sparse lexical retrieval"
+      "text": "atlas downstream link to Sparse lexical retrieval"
     },
     {
-      "unit_id": "2d6e62a4207afd9e",
+      "unit_id": "a3fcfb1e584a625b",
       "node_id": "external_retrieval",
       "field": "examples[3]",
-      "text": "substrate for Dense vector retrieval"
+      "text": "atlas downstream link to Dense vector retrieval"
     },
     {
       "unit_id": "d47ddadb4fc0c109",
@@ -94,62 +94,62 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Databases & information retrieval, Embeddings & distributed representations."
     },
     {
-      "unit_id": "13e977c78665824a",
+      "unit_id": "1e435cb7546accf9",
       "node_id": "external_retrieval",
       "field": "dependencies.databases_ir.rationale",
-      "text": "External retrieval & ranking uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d1b56954f00e918e",
+      "unit_id": "42056e03f071ab5d",
       "node_id": "external_retrieval",
       "field": "dependencies.embeddings.rationale",
-      "text": "External retrieval & ranking uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "edbe2d7466b0f772",
+      "unit_id": "204d9c1751931ceb",
       "node_id": "external_retrieval",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "External retrieval & ranking uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "e200526917b6ec81",
+      "unit_id": "7023d1d88b68be7c",
       "node_id": "external_retrieval",
       "field": "dependencies.margin_ranking_metric.rationale",
-      "text": "External retrieval & ranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "e6c3885bdab5025f",
+      "edge_id": "724206526d94369e",
       "node_id": "external_retrieval",
       "dependency_id": "databases_ir",
       "type": "uses",
       "strength": "core",
-      "rationale": "External retrieval & ranking uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "82b3c2b6ce58e443",
+      "edge_id": "e22ad59e6db65c56",
       "node_id": "external_retrieval",
       "dependency_id": "embeddings",
       "type": "uses",
       "strength": "common",
-      "rationale": "External retrieval & ranking uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "3fd10b1f6adb9051",
+      "edge_id": "c54ff6df2ed50c0c",
       "node_id": "external_retrieval",
       "dependency_id": "datasets_sampling",
       "type": "uses",
       "strength": "common",
-      "rationale": "External retrieval & ranking uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "968819bd9c15fd3a",
+      "edge_id": "22e6ac20a3b6731c",
       "node_id": "external_retrieval",
       "dependency_id": "margin_ranking_metric",
       "type": "uses",
       "strength": "common",
-      "rationale": "External retrieval & ranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

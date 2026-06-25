@@ -40,13 +40,14 @@
       "source_ids": [
         "ref_mod",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "36caf6618fa0209e",
@@ -72,13 +73,14 @@
       "source_ids": [
         "ref_mod",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "a36455c5d34d94fa",
@@ -88,13 +90,14 @@
       "source_ids": [
         "ref_mod",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "963ba4efd6eed65f",
@@ -129,36 +132,32 @@
       "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
     },
     {
-      "unit_id": "20b661fd1ba53e38",
-      "node_id": "adaptive_depth_early_exit",
-      "field": "dependencies.residual_connections.rationale",
-      "text": "Adaptive depth, early exit & token skipping is assembled in part from the mechanism or model component Residual, skip & highway connections.",
-      "source_ids": [
-        "ref_mod",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
-    },
-    {
-      "unit_id": "d1c21b522d333244",
+      "unit_id": "b13872d689bedb40",
       "node_id": "adaptive_depth_early_exit",
       "field": "dependencies.calibration_uncertainty_objective.rationale",
-      "text": "Adaptive depth, early exit & token skipping uses Calibration, uncertainty & risk objectives as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Adaptive depth, early exit & token skipping has a `uses` dependency on Calibration, uncertainty & risk objectives because Calibration, uncertainty & risk objectives is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_mod",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Raposo et al. Mixture-of-Depths on dynamic compute allocation in transformers; DL/PML provide gating/residual/calibration background only generally.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f340b2c49de8948a",
+      "node_id": "adaptive_depth_early_exit",
+      "field": "dependencies.residual_connections.rationale",
+      "text": "In this atlas graph, Adaptive depth, early exit & token skipping has a `composes` dependency on Residual, skip & highway connections with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -195,36 +194,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "90c227508d432e4c",
-      "node_id": "adaptive_depth_early_exit",
-      "dependency_id": "residual_connections",
-      "source_ids": [
-        "ref_mod",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "3ab7bac650e852e1",
+      "edge_id": "21bb7e0b3bb8a77f",
       "node_id": "adaptive_depth_early_exit",
       "dependency_id": "calibration_uncertainty_objective",
       "source_ids": [
-        "ref_mod",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "b5ae02f0e89185e5",
+      "node_id": "adaptive_depth_early_exit",
+      "dependency_id": "residual_connections",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "adaptive_depth_early_exit",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

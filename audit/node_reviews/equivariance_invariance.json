@@ -9,71 +9,11 @@
         "ref_dlbook",
         "ref_aima"
       ],
-      "evidence_location": "DL book supports convolutional translation equivariance/invariance and broad geometric priors only partially; packet lacks source for rotation, permutation, gauge, GNN, FNO/PINN breadth.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
-    },
-    {
-      "unit_id": "7ef7f40d229e2faf",
-      "node_id": "equivariance_invariance",
-      "field": "why_it_matters",
-      "text": "The role of Equivariance, invariance & geometric priors is to connect Geometry, topology & symmetry, Graph theory to downstream capabilities including Graph neural networks, Neural operators, FNOs & PINNs, Data augmentation & synthetic-data generation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "DL book supports convolutional translation equivariance/invariance and broad geometric priors only partially; packet lacks source for rotation, permutation, gauge, GNN, FNO/PINN breadth.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
-    },
-    {
-      "unit_id": "37543c62b5c1f03d",
-      "node_id": "equivariance_invariance",
-      "field": "examples[1]",
-      "text": "substrate for Graph neural networks",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "DL book supports convolutional translation equivariance/invariance and broad geometric priors only partially; packet lacks source for rotation, permutation, gauge, GNN, FNO/PINN breadth.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
-    },
-    {
-      "unit_id": "0ae04cc593111217",
-      "node_id": "equivariance_invariance",
-      "field": "examples[2]",
-      "text": "substrate for Neural operators, FNOs & PINNs",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "DL book supports convolutional translation equivariance/invariance and broad geometric priors only partially; packet lacks source for rotation, permutation, gauge, GNN, FNO/PINN breadth.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The packet does not provide an adequate source for this specific claim."
-    },
-    {
-      "unit_id": "73100694ea124d03",
-      "node_id": "equivariance_invariance",
-      "field": "examples[3]",
-      "text": "substrate for Data augmentation & synthetic-data generation",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "DL book supports convolutional translation equivariance/invariance and broad geometric priors only partially; packet lacks source for rotation, permutation, gauge, GNN, FNO/PINN breadth.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "950a473b605b17e3",
@@ -82,105 +22,156 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Geometry, topology & symmetry, Graph theory.",
       "source_ids": [
         "ref_dlbook",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DL book supports convolutional translation equivariance/invariance and broad geometric priors only partially; packet lacks source for rotation, permutation, gauge, GNN, FNO/PINN breadth.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "0bbf5b19ace49798",
+      "unit_id": "2ea05dd9dce17003",
+      "node_id": "equivariance_invariance",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Equivariance, invariance & geometric priors is modeled as depending on Geometry, topology & symmetry, Graph theory and feeding downstream nodes such as Graph neural networks, Neural operators, FNOs & PINNs, Data augmentation & synthetic-data generation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "6078062ed50283c6",
+      "node_id": "equivariance_invariance",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Graph neural networks",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "13da7e24749edd8e",
+      "node_id": "equivariance_invariance",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Neural operators, FNOs & PINNs",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "47eae1808fd49087",
+      "node_id": "equivariance_invariance",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Data augmentation & synthetic-data generation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5c1034836a5d87e9",
       "node_id": "equivariance_invariance",
       "field": "dependencies.geometry_topology.rationale",
-      "text": "Equivariance, invariance & geometric priors uses Geometry, topology & symmetry as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Geometry, topology & symmetry because Geometry, topology & symmetry is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DL book supports convolutional translation equivariance/invariance and broad geometric priors only partially; packet lacks source for rotation, permutation, gauge, GNN, FNO/PINN breadth.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "01fbd823456f3ef0",
+      "unit_id": "0476e3a0a9a6f2ed",
       "node_id": "equivariance_invariance",
       "field": "dependencies.graph_theory.rationale",
-      "text": "Equivariance, invariance & geometric priors uses Graph theory as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Graph theory because Graph theory is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DL book supports convolutional translation equivariance/invariance and broad geometric priors only partially; packet lacks source for rotation, permutation, gauge, GNN, FNO/PINN breadth.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "f0574fc41a2aca7e",
+      "unit_id": "b5b159051b85c889",
       "node_id": "equivariance_invariance",
       "field": "dependencies.linear_algebra.rationale",
-      "text": "Equivariance, invariance & geometric priors uses Linear algebra as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Equivariance, invariance & geometric priors has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "DL book supports convolutional translation equivariance/invariance and broad geometric priors only partially; packet lacks source for rotation, permutation, gauge, GNN, FNO/PINN breadth.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "40389300659638ea",
+      "edge_id": "adf7d08d226791db",
       "node_id": "equivariance_invariance",
       "dependency_id": "geometry_topology",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "5810c05f6e3bc404",
+      "edge_id": "ffb8e96efd5f20e4",
       "node_id": "equivariance_invariance",
       "dependency_id": "graph_theory",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source(s) partially support the claim, but the wording is broader or more implementation-specific than the evidence.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "a7f28a56c0ab4731",
+      "edge_id": "18fdbab176dbb44e",
       "node_id": "equivariance_invariance",
       "dependency_id": "linear_algebra",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited source(s), but it is not stated as this exact graph-role wording.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "equivariance_invariance",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

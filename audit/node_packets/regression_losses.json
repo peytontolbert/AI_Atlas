@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Continuous predictions are trained by penalizing distance from numerical targets.",
-    "why_it_matters": "The role of Regression losses (MSE, MAE, robust) is to connect Supervised learning, Statistics & experimental design to downstream capabilities including Linear models & generalized linear models, Decision trees, random forests & boosted trees.",
+    "why_it_matters": "In this atlas graph, Regression losses (MSE, MAE, robust) is modeled as depending on Supervised learning, Statistics & experimental design and feeding downstream nodes such as Linear models & generalized linear models, Decision trees, random forests & boosted trees.",
     "examples": [
-      "substrate for Linear models & generalized linear models",
-      "substrate for Decision trees, random forests & boosted trees"
+      "atlas downstream link to Linear models & generalized linear models",
+      "atlas downstream link to Decision trees, random forests & boosted trees"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Supervised learning, Statistics & experimental design."
@@ -33,19 +33,19 @@
         "id": "supervised_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Regression losses (MSE, MAE, robust) uses Supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "statistics",
         "type": "uses",
         "strength": "core",
-        "rationale": "Regression losses (MSE, MAE, robust) uses Statistics & experimental design as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
       },
       {
         "id": "calculus",
         "type": "uses",
         "strength": "common",
-        "rationale": "Regression losses (MSE, MAE, robust) uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "Continuous predictions are trained by penalizing distance from numerical targets."
     },
     {
-      "unit_id": "37cfbd68b4da69f7",
+      "unit_id": "c38b4dca270b856a",
       "node_id": "regression_losses",
       "field": "why_it_matters",
-      "text": "The role of Regression losses (MSE, MAE, robust) is to connect Supervised learning, Statistics & experimental design to downstream capabilities including Linear models & generalized linear models, Decision trees, random forests & boosted trees."
+      "text": "In this atlas graph, Regression losses (MSE, MAE, robust) is modeled as depending on Supervised learning, Statistics & experimental design and feeding downstream nodes such as Linear models & generalized linear models, Decision trees, random forests & boosted trees."
     },
     {
-      "unit_id": "ea4014ca56b3e8a9",
+      "unit_id": "bb1fac9fe1b89604",
       "node_id": "regression_losses",
       "field": "examples[1]",
-      "text": "substrate for Linear models & generalized linear models"
+      "text": "atlas downstream link to Linear models & generalized linear models"
     },
     {
-      "unit_id": "4131dfe3e87aa266",
+      "unit_id": "2082bf94aeb548d1",
       "node_id": "regression_losses",
       "field": "examples[2]",
-      "text": "substrate for Decision trees, random forests & boosted trees"
+      "text": "atlas downstream link to Decision trees, random forests & boosted trees"
     },
     {
       "unit_id": "9147f0b02710633f",
@@ -81,48 +81,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Supervised learning, Statistics & experimental design."
     },
     {
-      "unit_id": "f4ba9621a5e68482",
+      "unit_id": "fa197e6cf5279bc7",
       "node_id": "regression_losses",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Regression losses (MSE, MAE, robust) uses Supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "0fb121ef7a981988",
+      "unit_id": "8de606e12289790a",
       "node_id": "regression_losses",
       "field": "dependencies.statistics.rationale",
-      "text": "Regression losses (MSE, MAE, robust) uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "5c3c38fed9856811",
+      "unit_id": "84877d9eed447071",
       "node_id": "regression_losses",
       "field": "dependencies.calculus.rationale",
-      "text": "Regression losses (MSE, MAE, robust) uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "65ba42b5a9be5820",
+      "edge_id": "8241c57637411a90",
       "node_id": "regression_losses",
       "dependency_id": "supervised_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Regression losses (MSE, MAE, robust) uses Supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "b0961eeaf082bd11",
+      "edge_id": "d67b8cc8c8c4822a",
       "node_id": "regression_losses",
       "dependency_id": "statistics",
       "type": "uses",
       "strength": "core",
-      "rationale": "Regression losses (MSE, MAE, robust) uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "18db5ffff3a9ccbc",
+      "edge_id": "4978d984729066a7",
       "node_id": "regression_losses",
       "dependency_id": "calculus",
       "type": "uses",
       "strength": "common",
-      "rationale": "Regression losses (MSE, MAE, robust) uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

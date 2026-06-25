@@ -5,43 +5,24 @@
       "node_id": "fault_energy_ops",
       "field": "definition",
       "text": "Reliability and cost operations manage failures, replication, quotas, capacity, security, energy, carbon, and economic efficiency across AI workloads.",
-      "source_ids": ["ref_ddia", "ref_nist"],
-      "evidence_location": "DDIA supports failures, replication, capacity, and distributed operations; NIST supports security/risk governance. Energy/carbon and AI workload economics are not directly supported.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Add energy/carbon/cost optimization sources for exact coverage."
-    },
-    {
-      "unit_id": "7b9a1b096a7d727d",
-      "node_id": "fault_energy_ops",
-      "field": "why_it_matters",
-      "text": "The role of Fault tolerance, security, energy & cost optimization is to connect Distributed systems & networking, Adversarial robustness & security testing to downstream capabilities including Large language models.",
-      "source_ids": ["ref_ddia", "ref_nist", "ref_aima"],
-      "evidence_location": "Sources support distributed systems and AI security/risk broadly; downstream LLM linkage is graph-derived.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_nist"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Plausible atlas positioning, not direct evidence."
-    },
-    {
-      "unit_id": "18e20df401eec9ae",
-      "node_id": "fault_energy_ops",
-      "field": "examples[1]",
-      "text": "substrate for Large language models",
-      "source_ids": ["ref_ddia", "ref_nist"],
-      "evidence_location": "Operational reliability and risk management are relevant to large AI systems, but the exact LLM substrate claim is not sourced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Defensible but indirect."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "b9146e47d72eda90",
       "node_id": "fault_energy_ops",
       "field": "examples[2]",
       "text": "combined with Distributed systems & networking",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "ref_ddia"
+      ],
       "evidence_location": "DDIA directly supports fault tolerance and distributed systems concepts.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -53,110 +34,157 @@
       "node_id": "fault_energy_ops",
       "field": "limitations[1]",
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Adversarial robustness & security testing.",
-      "source_ids": ["ref_ddia", "ref_nist"],
-      "evidence_location": "Sources support operational and security concerns generally; numerical behavior and dependency list are not directly evidenced.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_nist",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Template wording is broader than available citations."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "ec72d11bd6dfba70",
+      "unit_id": "8d81308450b4ee7e",
+      "node_id": "fault_energy_ops",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization is modeled as depending on Distributed systems & networking, Adversarial robustness & security testing and feeding downstream nodes such as Large language models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "418c9c0fe561d4c3",
+      "node_id": "fault_energy_ops",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Large language models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a8927a7e640eef9a",
       "node_id": "fault_energy_ops",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Fault tolerance, security, energy & cost optimization turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_ddia"],
-      "evidence_location": "DDIA supports fault tolerance, replication, capacity, and distributed operations.",
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core dependency is defensible."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "ca85751df1721926",
+      "unit_id": "da09ef17dfcb47b9",
       "node_id": "fault_energy_ops",
       "field": "dependencies.adversarial_security_eval.rationale",
-      "text": "Fault tolerance, security, energy & cost optimization turns Adversarial robustness & security testing into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_nist"],
-      "evidence_location": "NIST supports AI risk/security management broadly; adversarial testing linkage is indirect.",
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Adversarial robustness & security testing because Adversarial robustness & security testing is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core security relationship is plausible, though exact adversarial-eval dependence needs a direct source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "e4a951a4ece2bab2",
+      "unit_id": "067286d13c4faa20",
       "node_id": "fault_energy_ops",
       "field": "dependencies.batching_scheduling.rationale",
-      "text": "Fault tolerance, security, energy & cost optimization turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_ddia"],
-      "evidence_location": "DDIA supports capacity and operational control broadly but not GPU scheduling.",
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Batching, admission control & GPU scheduling because Batching, admission control & GPU scheduling is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs scheduling/resource-management evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "1953bcf549d9456f",
+      "unit_id": "8e0d9b091b4b4b44",
       "node_id": "fault_energy_ops",
       "field": "dependencies.optimization.rationale",
-      "text": "Fault tolerance, security, energy & cost optimization turns Optimization theory into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_aima"],
-      "evidence_location": "AIMA supports optimization as a general AI concept; the operations linkage is not direct.",
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Optimization theory because Optimization theory is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Common dependency is plausible for cost/energy optimization."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "bd60eb2cbd1f8f11",
+      "edge_id": "0b297bcbec25b3a8",
       "node_id": "fault_energy_ops",
       "dependency_id": "distributed_systems",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Fault tolerance and capacity management are core distributed systems concerns.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "56df77eee35f3663",
+      "edge_id": "79bd53b8c604820d",
       "node_id": "fault_energy_ops",
       "dependency_id": "adversarial_security_eval",
-      "source_ids": ["ref_nist"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Security testing is central to the security part of the node, though adversarial-eval evidence is broad.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "1a68cee3895b768d",
+      "edge_id": "5153d2c8702d78c9",
       "node_id": "fault_energy_ops",
       "dependency_id": "batching_scheduling",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Scheduling relates to cost/capacity operations, but GPU/admission-control support is not directly cited.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "7e453886c512b54e",
+      "edge_id": "e83b0093c91887c0",
       "node_id": "fault_energy_ops",
       "dependency_id": "optimization",
-      "source_ids": ["ref_aima"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Optimization theory is a plausible common dependency for cost and energy optimization.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "fault_energy_ops",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

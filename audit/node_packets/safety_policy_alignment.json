@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Safety and policy alignment shape behavior with written principles, preference data, constraints, classifiers, refusal policies, and escalation rules.",
-    "why_it_matters": "The role of Safety policies, constitutional constraints & alignment is to connect Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization to downstream capabilities including Conversational assistants & chatbots, Browser, desktop & computer-use agents, Autonomous vehicles, drones & navigation.",
+    "why_it_matters": "In this atlas graph, Safety policies, constitutional constraints & alignment is modeled as depending on Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization and feeding downstream nodes such as Conversational assistants & chatbots, Browser, desktop & computer-use agents, Autonomous vehicles, drones & navigation.",
     "examples": [
-      "substrate for Conversational assistants & chatbots",
-      "substrate for Browser, desktop & computer-use agents",
-      "substrate for Autonomous vehicles, drones & navigation"
+      "atlas downstream link to Conversational assistants & chatbots",
+      "atlas downstream link to Browser, desktop & computer-use agents",
+      "atlas downstream link to Autonomous vehicles, drones & navigation"
     ],
     "limitations": [
       "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization."
@@ -34,19 +34,19 @@
         "id": "preference_optimization",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Preference optimization (RLHF, DPO families)."
+        "rationale": "In this atlas graph, Safety policies, constitutional constraints & alignment has an `evaluates_or_constrains` dependency on Preference optimization (RLHF, DPO families) because Preference optimization (RLHF, DPO families) is modeled as evaluation, constraint, audit, or governance support."
       },
       {
         "id": "multiobjective_constraints",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Multi-objective, constrained & Pareto optimization."
+        "rationale": "In this atlas graph, Safety policies, constitutional constraints & alignment has an `evaluates_or_constrains` dependency on Multi-objective, constrained & Pareto optimization because Multi-objective, constrained & Pareto optimization is modeled as evaluation, constraint, audit, or governance support."
       },
       {
         "id": "human_evaluation",
         "type": "evaluates_or_constrains",
         "strength": "common",
-        "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+        "rationale": "In this atlas graph, Safety policies, constitutional constraints & alignment has an `evaluates_or_constrains` dependency on Human evaluation & preference studies because Human evaluation & preference studies is modeled as evaluation, constraint, audit, or governance support."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Safety and policy alignment shape behavior with written principles, preference data, constraints, classifiers, refusal policies, and escalation rules."
     },
     {
-      "unit_id": "414516dc7769a236",
+      "unit_id": "bdbdd6db7de45d70",
       "node_id": "safety_policy_alignment",
       "field": "why_it_matters",
-      "text": "The role of Safety policies, constitutional constraints & alignment is to connect Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization to downstream capabilities including Conversational assistants & chatbots, Browser, desktop & computer-use agents, Autonomous vehicles, drones & navigation."
+      "text": "In this atlas graph, Safety policies, constitutional constraints & alignment is modeled as depending on Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization and feeding downstream nodes such as Conversational assistants & chatbots, Browser, desktop & computer-use agents, Autonomous vehicles, drones & navigation."
     },
     {
-      "unit_id": "3590700a4427a4dc",
+      "unit_id": "5f6bfa41f75f9a6e",
       "node_id": "safety_policy_alignment",
       "field": "examples[1]",
-      "text": "substrate for Conversational assistants & chatbots"
+      "text": "atlas downstream link to Conversational assistants & chatbots"
     },
     {
-      "unit_id": "bccadb5acff66a54",
+      "unit_id": "b441969adaab5bae",
       "node_id": "safety_policy_alignment",
       "field": "examples[2]",
-      "text": "substrate for Browser, desktop & computer-use agents"
+      "text": "atlas downstream link to Browser, desktop & computer-use agents"
     },
     {
-      "unit_id": "c4a400198be82b4a",
+      "unit_id": "41e1e887e0d1c592",
       "node_id": "safety_policy_alignment",
       "field": "examples[3]",
-      "text": "substrate for Autonomous vehicles, drones & navigation"
+      "text": "atlas downstream link to Autonomous vehicles, drones & navigation"
     },
     {
       "unit_id": "d11d165526116f98",
@@ -88,48 +88,48 @@
       "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Preference optimization (RLHF, DPO families), Multi-objective, constrained & Pareto optimization."
     },
     {
-      "unit_id": "13456fab3a7d9e93",
+      "unit_id": "70dda2242004bff6",
       "node_id": "safety_policy_alignment",
       "field": "dependencies.preference_optimization.rationale",
-      "text": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Preference optimization (RLHF, DPO families)."
+      "text": "In this atlas graph, Safety policies, constitutional constraints & alignment has an `evaluates_or_constrains` dependency on Preference optimization (RLHF, DPO families) because Preference optimization (RLHF, DPO families) is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "unit_id": "e0c155604e6333f8",
+      "unit_id": "90870a2ef71c954c",
       "node_id": "safety_policy_alignment",
       "field": "dependencies.multiobjective_constraints.rationale",
-      "text": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Multi-objective, constrained & Pareto optimization."
+      "text": "In this atlas graph, Safety policies, constitutional constraints & alignment has an `evaluates_or_constrains` dependency on Multi-objective, constrained & Pareto optimization because Multi-objective, constrained & Pareto optimization is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "unit_id": "365384e2c929bbd2",
+      "unit_id": "d4e47113393c3338",
       "node_id": "safety_policy_alignment",
       "field": "dependencies.human_evaluation.rationale",
-      "text": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      "text": "In this atlas graph, Safety policies, constitutional constraints & alignment has an `evaluates_or_constrains` dependency on Human evaluation & preference studies because Human evaluation & preference studies is modeled as evaluation, constraint, audit, or governance support."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "5aae7aa3ed15fbf7",
+      "edge_id": "80299bb1c28930ad",
       "node_id": "safety_policy_alignment",
       "dependency_id": "preference_optimization",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Preference optimization (RLHF, DPO families)."
+      "rationale": "In this atlas graph, Safety policies, constitutional constraints & alignment has an `evaluates_or_constrains` dependency on Preference optimization (RLHF, DPO families) because Preference optimization (RLHF, DPO families) is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "edge_id": "79d0c88d5e408199",
+      "edge_id": "9dd80c5c1b7ea77d",
       "node_id": "safety_policy_alignment",
       "dependency_id": "multiobjective_constraints",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Multi-objective, constrained & Pareto optimization."
+      "rationale": "In this atlas graph, Safety policies, constitutional constraints & alignment has an `evaluates_or_constrains` dependency on Multi-objective, constrained & Pareto optimization because Multi-objective, constrained & Pareto optimization is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "edge_id": "145002c72bae591e",
+      "edge_id": "71b0852c51279e7a",
       "node_id": "safety_policy_alignment",
       "dependency_id": "human_evaluation",
       "type": "evaluates_or_constrains",
       "strength": "common",
-      "rationale": "Safety policies, constitutional constraints & alignment measures, constrains, audits, or governs behavior using Human evaluation & preference studies."
+      "rationale": "In this atlas graph, Safety policies, constitutional constraints & alignment has an `evaluates_or_constrains` dependency on Human evaluation & preference studies because Human evaluation & preference studies is modeled as evaluation, constraint, audit, or governance support."
     }
   ],
   "candidate_references": {

@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Residual and densely connected convolutional networks create short information paths across depth, improving gradient flow, optimization, and feature reuse.",
-    "why_it_matters": "The role of ResNets & DenseNets is to connect Convolutional neural networks, Residual, skip & highway connections to downstream capabilities including Medical imaging & clinical decision support, Computer vision, perception & scene understanding.",
+    "why_it_matters": "In this atlas graph, ResNets & DenseNets is modeled as depending on Convolutional neural networks, Residual, skip & highway connections and feeding downstream nodes such as Medical imaging & clinical decision support, Computer vision, perception & scene understanding.",
     "examples": [
-      "substrate for Medical imaging & clinical decision support",
-      "substrate for Computer vision, perception & scene understanding"
+      "atlas downstream link to Medical imaging & clinical decision support",
+      "atlas downstream link to Computer vision, perception & scene understanding"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Convolutional neural networks, Residual, skip & highway connections."
@@ -46,7 +46,7 @@
         "id": "normalization",
         "type": "composes",
         "strength": "common",
-        "rationale": "ResNets & DenseNets is assembled in part from the mechanism or model component Normalization & standardization."
+        "rationale": "In this atlas graph, ResNets & DenseNets has a `composes` dependency on Normalization & standardization with `common` strength."
       }
     ]
   },
@@ -58,22 +58,22 @@
       "text": "Residual and densely connected convolutional networks create short information paths across depth, improving gradient flow, optimization, and feature reuse."
     },
     {
-      "unit_id": "cbf8e8794cf9318d",
+      "unit_id": "59eff2197b842762",
       "node_id": "resnet_densenet",
       "field": "why_it_matters",
-      "text": "The role of ResNets & DenseNets is to connect Convolutional neural networks, Residual, skip & highway connections to downstream capabilities including Medical imaging & clinical decision support, Computer vision, perception & scene understanding."
+      "text": "In this atlas graph, ResNets & DenseNets is modeled as depending on Convolutional neural networks, Residual, skip & highway connections and feeding downstream nodes such as Medical imaging & clinical decision support, Computer vision, perception & scene understanding."
     },
     {
-      "unit_id": "d140f415f8ed31d9",
+      "unit_id": "747d32d9b4405e00",
       "node_id": "resnet_densenet",
       "field": "examples[1]",
-      "text": "substrate for Medical imaging & clinical decision support"
+      "text": "atlas downstream link to Medical imaging & clinical decision support"
     },
     {
-      "unit_id": "dd9fcdc8cf96feb9",
+      "unit_id": "dfe16f898c9f80c8",
       "node_id": "resnet_densenet",
       "field": "examples[2]",
-      "text": "substrate for Computer vision, perception & scene understanding"
+      "text": "atlas downstream link to Computer vision, perception & scene understanding"
     },
     {
       "unit_id": "a5e1621b92ad23fd",
@@ -94,10 +94,10 @@
       "text": "ResNets & DenseNets is assembled in part from the mechanism or model component Residual, skip & highway connections."
     },
     {
-      "unit_id": "5d1a3bf69cae13d4",
+      "unit_id": "9fc423abe9a3d7a6",
       "node_id": "resnet_densenet",
       "field": "dependencies.normalization.rationale",
-      "text": "ResNets & DenseNets is assembled in part from the mechanism or model component Normalization & standardization."
+      "text": "In this atlas graph, ResNets & DenseNets has a `composes` dependency on Normalization & standardization with `common` strength."
     }
   ],
   "edge_units": [
@@ -118,12 +118,12 @@
       "rationale": "ResNets & DenseNets is assembled in part from the mechanism or model component Residual, skip & highway connections."
     },
     {
-      "edge_id": "bef4d0e651aa545e",
+      "edge_id": "7d9fc03dbd5b2f40",
       "node_id": "resnet_densenet",
       "dependency_id": "normalization",
       "type": "composes",
       "strength": "common",
-      "rationale": "ResNets & DenseNets is assembled in part from the mechanism or model component Normalization & standardization."
+      "rationale": "In this atlas graph, ResNets & DenseNets has a `composes` dependency on Normalization & standardization with `common` strength."
     }
   ],
   "candidate_references": {

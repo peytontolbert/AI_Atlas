@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Tool-use systems select a callable capability, generate typed arguments, execute it, observe the result, and incorporate that evidence into subsequent reasoning.",
-    "why_it_matters": "The role of Tool use & function calling is to connect Decoder-only causal transformers, Caches, APIs & tool interfaces to downstream capabilities including ReAct-style reasoning and acting, Observe–plan–act agent loops, Multimodal assistants & vision-language systems.",
+    "why_it_matters": "In this atlas graph, Tool use & function calling is modeled as depending on Decoder-only causal transformers, Caches, APIs & tool interfaces and feeding downstream nodes such as ReAct-style reasoning and acting, Observe–plan–act agent loops, Multimodal assistants & vision-language systems.",
     "examples": [
-      "substrate for ReAct-style reasoning and acting",
-      "substrate for Observe–plan–act agent loops",
-      "substrate for Multimodal assistants & vision-language systems"
+      "atlas downstream link to ReAct-style reasoning and acting",
+      "atlas downstream link to Observe–plan–act agent loops",
+      "atlas downstream link to Multimodal assistants & vision-language systems"
     ],
     "limitations": [
       "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Caches, APIs & tool interfaces."
@@ -35,13 +35,13 @@
         "id": "decoder_only_transformer",
         "type": "uses",
         "strength": "core",
-        "rationale": "Tool use & function calling uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Tool use & function calling has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
       },
       {
         "id": "cache_tool_interfaces",
         "type": "uses",
         "strength": "core",
-        "rationale": "Tool use & function calling uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Tool use & function calling has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node."
       },
       {
         "id": "external_data_tools",
@@ -53,7 +53,7 @@
         "id": "programs_ast_ir",
         "type": "uses",
         "strength": "common",
-        "rationale": "Tool use & function calling uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Tool use & function calling has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -65,28 +65,28 @@
       "text": "Tool-use systems select a callable capability, generate typed arguments, execute it, observe the result, and incorporate that evidence into subsequent reasoning."
     },
     {
-      "unit_id": "feb72c2b48ed1596",
+      "unit_id": "66a7cf2baf22dc10",
       "node_id": "tool_use_function_calling",
       "field": "why_it_matters",
-      "text": "The role of Tool use & function calling is to connect Decoder-only causal transformers, Caches, APIs & tool interfaces to downstream capabilities including ReAct-style reasoning and acting, Observe–plan–act agent loops, Multimodal assistants & vision-language systems."
+      "text": "In this atlas graph, Tool use & function calling is modeled as depending on Decoder-only causal transformers, Caches, APIs & tool interfaces and feeding downstream nodes such as ReAct-style reasoning and acting, Observe–plan–act agent loops, Multimodal assistants & vision-language systems."
     },
     {
-      "unit_id": "5a9b149689373396",
+      "unit_id": "e732150cf4c8e254",
       "node_id": "tool_use_function_calling",
       "field": "examples[1]",
-      "text": "substrate for ReAct-style reasoning and acting"
+      "text": "atlas downstream link to ReAct-style reasoning and acting"
     },
     {
-      "unit_id": "6c6a71f19f3ce9d1",
+      "unit_id": "e9c729776133b06f",
       "node_id": "tool_use_function_calling",
       "field": "examples[2]",
-      "text": "substrate for Observe–plan–act agent loops"
+      "text": "atlas downstream link to Observe–plan–act agent loops"
     },
     {
-      "unit_id": "eb431f927d7cca3a",
+      "unit_id": "f3fc3342a9031cb7",
       "node_id": "tool_use_function_calling",
       "field": "examples[3]",
-      "text": "substrate for Multimodal assistants & vision-language systems"
+      "text": "atlas downstream link to Multimodal assistants & vision-language systems"
     },
     {
       "unit_id": "43530e1b53ebd76d",
@@ -95,16 +95,16 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Caches, APIs & tool interfaces."
     },
     {
-      "unit_id": "babdecf13786b28f",
+      "unit_id": "5d5b7a6e623f9052",
       "node_id": "tool_use_function_calling",
       "field": "dependencies.decoder_only_transformer.rationale",
-      "text": "Tool use & function calling uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Tool use & function calling has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "9be442e1eec19cdb",
+      "unit_id": "12e0c784f54b0df9",
       "node_id": "tool_use_function_calling",
       "field": "dependencies.cache_tool_interfaces.rationale",
-      "text": "Tool use & function calling uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Tool use & function calling has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "4451c78399b4a5f5",
@@ -113,28 +113,28 @@
       "text": "Tool use & function calling stores, selects, or obtains information through External databases, APIs & live tools."
     },
     {
-      "unit_id": "08f53c8a0897af9d",
+      "unit_id": "36f8ab55482b144f",
       "node_id": "tool_use_function_calling",
       "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Tool use & function calling uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Tool use & function calling has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "59819af1dbcf7ad5",
+      "edge_id": "dc3db780e75a3bdf",
       "node_id": "tool_use_function_calling",
       "dependency_id": "decoder_only_transformer",
       "type": "uses",
       "strength": "core",
-      "rationale": "Tool use & function calling uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Tool use & function calling has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "51c0a67eda9433ac",
+      "edge_id": "e7a61a7132e5b1b6",
       "node_id": "tool_use_function_calling",
       "dependency_id": "cache_tool_interfaces",
       "type": "uses",
       "strength": "core",
-      "rationale": "Tool use & function calling uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Tool use & function calling has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "3826eebc0e379b32",
@@ -145,12 +145,12 @@
       "rationale": "Tool use & function calling stores, selects, or obtains information through External databases, APIs & live tools."
     },
     {
-      "edge_id": "6f2c9dc83e185834",
+      "edge_id": "0ac4d8c8ae927695",
       "node_id": "tool_use_function_calling",
       "dependency_id": "programs_ast_ir",
       "type": "uses",
       "strength": "common",
-      "rationale": "Tool use & function calling uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Tool use & function calling has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

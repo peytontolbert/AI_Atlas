@@ -22,69 +22,6 @@
       "notes": "Directly supported for weights and activations; energy is a reasonable hardware-efficiency implication but less directly evidenced."
     },
     {
-      "unit_id": "411ebac6d2169cdc",
-      "node_id": "quantized_inference",
-      "field": "why_it_matters",
-      "text": "The role of Quantized inference & compressed deployment is to connect Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion to downstream capabilities including Edge, on-device & neuromorphic deployment, Image generation, editing & design.",
-      "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
-      ],
-      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
-    },
-    {
-      "unit_id": "30f341e31aed0239",
-      "node_id": "quantized_inference",
-      "field": "examples[1]",
-      "text": "substrate for Edge, on-device & neuromorphic deployment",
-      "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
-    },
-    {
-      "unit_id": "eb687be318713ece",
-      "node_id": "quantized_inference",
-      "field": "examples[2]",
-      "text": "substrate for Image generation, editing & design",
-      "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
-    },
-    {
       "unit_id": "e59399c33bddaff0",
       "node_id": "quantized_inference",
       "field": "limitations[1]",
@@ -97,225 +34,196 @@
         "ref_dlbook",
         "ref_ddia",
         "ref_lora",
-        "ref_modelmerge"
+        "ref_modelmerge",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "188c3078b4ef13fd",
+      "unit_id": "b2e68c8351bf632c",
       "node_id": "quantized_inference",
-      "field": "dependencies.quantization_training.rationale",
-      "text": "Quantized inference & compressed deployment turns Quantization-aware training & low-precision adaptation into a scalable, deployable, observable, or integrity-preserving capability.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Quantized inference & compressed deployment is modeled as depending on Quantization-aware training & low-precision adaptation, Graph compilers, runtimes & operator fusion and feeding downstream nodes such as Edge, on-device & neuromorphic deployment, Image generation, editing & design.",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The node-specific source directly supports this dependency as part of the mechanism.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Direct mechanism dependency is supported; the templated operationalizes wording is still broader than the source wording."
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "a097945834c678d1",
+      "unit_id": "6e1dc32ccbc092db",
+      "node_id": "quantized_inference",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Edge, on-device & neuromorphic deployment",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e098197010883e89",
+      "node_id": "quantized_inference",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Image generation, editing & design",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "20e61c60496bf471",
+      "node_id": "quantized_inference",
+      "field": "dependencies.quantization_training.rationale",
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Quantization-aware training & low-precision adaptation because Quantization-aware training & low-precision adaptation is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f2bb321e677017b5",
       "node_id": "quantized_inference",
       "field": "dependencies.compilers_runtimes.rationale",
-      "text": "Quantized inference & compressed deployment turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "247f997f16376b21",
+      "unit_id": "80315f9999aa7136",
       "node_id": "quantized_inference",
       "field": "dependencies.accelerators.rationale",
-      "text": "Quantized inference & compressed deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "d04b9edd446024f4",
+      "unit_id": "1e920f7a1e3e9472",
       "node_id": "quantized_inference",
       "field": "dependencies.checkpoint_composition.rationale",
-      "text": "Quantized inference & compressed deployment turns Checkpoint, adapter & expert composition into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Checkpoint, adapter & expert composition because Checkpoint, adapter & expert composition is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "fc74e9f1efc2ea3c",
+      "unit_id": "368c102934eb276a",
       "node_id": "quantized_inference",
       "field": "dependencies.distillation_pruning.rationale",
-      "text": "Quantized inference & compressed deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Quantized inference & compressed deployment has an `operationalizes` dependency on Knowledge distillation, pruning & sparsification because Knowledge distillation, pruning & sparsification is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "1eedf8fa3a43f0fd",
+      "edge_id": "d504ed499fced6e4",
       "node_id": "quantized_inference",
       "dependency_id": "quantization_training",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The dependency is directly part of the cited mechanism, though the generic edge type label remains atlas terminology.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "81cfa6e80f96fb10",
+      "edge_id": "8815ccfc638f042a",
       "node_id": "quantized_inference",
       "dependency_id": "compilers_runtimes",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "8b206ed1cf13ddd5",
+      "edge_id": "e155dc284eb30c83",
       "node_id": "quantized_inference",
       "dependency_id": "accelerators",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "ef0dc4ec5105d1fe",
+      "edge_id": "dec2838005fd89a5",
       "node_id": "quantized_inference",
       "dependency_id": "checkpoint_composition",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible but not adequately supported by the cited sources at this wording or strength.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "11c82e9e41d7ef59",
+      "edge_id": "b866602f14a749cb",
       "node_id": "quantized_inference",
       "dependency_id": "distillation_pruning",
       "source_ids": [
-        "ref_gptq",
-        "ref_smoothquant",
-        "ref_cuda_guide",
-        "ref_tpu",
-        "ref_dlbook",
-        "ref_ddia",
-        "ref_lora",
-        "ref_modelmerge"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "quantized_inference",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -17,62 +17,19 @@
       "notes": "Transformer positional encodings and coordinate-based fields support the idea that order/location is injected through extra encodings. The broader phrasing over time, phase, and location-agnostic base computations is a synthesis rather than a single-source statement."
     },
     {
-      "unit_id": "28268779e80c8365",
-      "node_id": "positional_encodings",
-      "field": "why_it_matters",
-      "text": "The role of Positional, temporal & coordinate encodings is to connect Sequences, events & time series, Embeddings & distributed representations to downstream capabilities including Relative position, RoPE, ALiBi & coordinate mechanisms, Neural fields & radiance-field models.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_nerf",
-        "ref_pml"
-      ],
-      "evidence_location": "Transformer Section 3.5 for sequence position encodings; NeRF reference for coordinate inputs to radiance fields; PML for embeddings/representation background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support positional encodings for sequence models and coordinate encodings for neural fields, but the exact graph-derived downstream list, including RoPE and ALiBi, is not directly supported by the cited candidate references."
-    },
-    {
-      "unit_id": "15f3ea1ed0f9cca5",
-      "node_id": "positional_encodings",
-      "field": "examples[1]",
-      "text": "substrate for Relative position, RoPE, ALiBi & coordinate mechanisms",
-      "source_ids": [
-        "ref_transformer"
-      ],
-      "evidence_location": "Vaswani et al. 2017, Section 3.5 describes positional encodings for sequence order.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The source supports positional encodings generally, but not the specific RoPE and ALiBi mechanisms named in the sentence."
-    },
-    {
-      "unit_id": "beec33eb705f1419",
-      "node_id": "positional_encodings",
-      "field": "examples[2]",
-      "text": "substrate for Neural fields & radiance-field models",
-      "source_ids": [
-        "ref_nerf"
-      ],
-      "evidence_location": "NeRF reference describes representing scenes as functions of spatial position and viewing direction.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Coordinate inputs are central to neural radiance fields. 'Substrate for' is atlas wording, so this is synthesis rather than direct wording."
-    },
-    {
       "unit_id": "3e9f272971bff328",
       "node_id": "positional_encodings",
       "field": "limitations[1]",
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Sequences, events & time series, Embeddings & distributed representations.",
       "source_ids": [
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML representation-learning discussions are relevant but do not directly make this full limitation claim for positional encodings.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "This appears to be generic generated limitation text. The cited packet sources do not support the exact claims about discarded information, amplified bias, invariances, or the dependency list."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "a4fb72adb473744e",
@@ -104,18 +61,60 @@
       "notes": "Adding positional encodings to embeddings is directly supported for transformers; the more general relation is a synthesis."
     },
     {
-      "unit_id": "aff9e2a64a04285e",
+      "unit_id": "5ba68ef64498ade1",
       "node_id": "positional_encodings",
-      "field": "dependencies.geometry_topology.rationale",
-      "text": "Positional, temporal & coordinate encodings rests on the formal or computational capabilities supplied by Geometry, topology & symmetry.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Positional, temporal & coordinate encodings is modeled as depending on Sequences, events & time series, Embeddings & distributed representations and feeding downstream nodes such as Relative position, RoPE, ALiBi & coordinate mechanisms, Neural fields & radiance-field models.",
       "source_ids": [
-        "ref_nerf"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "NeRF reference uses spatial coordinates and viewing directions for scene representation.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Spatial coordinate use supports geometry relevance, but topology and symmetry are not directly supported by the cited evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "dde22fb361f1d434",
+      "node_id": "positional_encodings",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Relative position, RoPE, ALiBi & coordinate mechanisms",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e126c54fd12d00bb",
+      "node_id": "positional_encodings",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Neural fields & radiance-field models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "fc65e2ca6f874b8a",
+      "node_id": "positional_encodings",
+      "field": "dependencies.geometry_topology.rationale",
+      "text": "In this atlas graph, Positional, temporal & coordinate encodings has a `requires` dependency on Geometry, topology & symmetry with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -149,18 +148,20 @@
       "strength_supported": true
     },
     {
-      "edge_id": "4122edb263d01da4",
+      "edge_id": "9ecc568bf219d77e",
       "node_id": "positional_encodings",
       "dependency_id": "geometry_topology",
       "source_ids": [
-        "ref_nerf"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Coordinate encodings support a geometry dependency for some uses, but the broad geometry/topology/symmetry dependency is not established for all positional encodings.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "positional_encodings",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

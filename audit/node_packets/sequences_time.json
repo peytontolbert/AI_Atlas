@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Ordered observations represent language, events, trajectories, biological sequences, and temporal processes.",
-    "why_it_matters": "The role of Sequences, events & time series is to connect Discrete mathematics & logic, Signal processing & harmonic analysis to downstream capabilities including Waveforms, audio & spectrograms, Positional, temporal & coordinate encodings, Markov chains, MDPs, POMDPs & belief states.",
+    "why_it_matters": "In this atlas graph, Sequences, events & time series is modeled as depending on Discrete mathematics & logic, Signal processing & harmonic analysis and feeding downstream nodes such as Waveforms, audio & spectrograms, Positional, temporal & coordinate encodings, Markov chains, MDPs, POMDPs & belief states.",
     "examples": [
-      "substrate for Waveforms, audio & spectrograms",
-      "substrate for Positional, temporal & coordinate encodings",
-      "substrate for Markov chains, MDPs, POMDPs & belief states"
+      "atlas downstream link to Waveforms, audio & spectrograms",
+      "atlas downstream link to Positional, temporal & coordinate encodings",
+      "atlas downstream link to Markov chains, MDPs, POMDPs & belief states"
     ],
     "limitations": [
       "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Discrete mathematics & logic, Signal processing & harmonic analysis."
@@ -40,7 +40,7 @@
         "id": "signal_processing",
         "type": "requires",
         "strength": "common",
-        "rationale": "Sequences, events & time series rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis."
+        "rationale": "In this atlas graph, Sequences, events & time series has a `requires` dependency on Signal processing & harmonic analysis with `common` strength."
       },
       {
         "id": "algorithms_data_structures",
@@ -58,28 +58,28 @@
       "text": "Ordered observations represent language, events, trajectories, biological sequences, and temporal processes."
     },
     {
-      "unit_id": "34b23e1de3523087",
+      "unit_id": "720551ff6a893a4e",
       "node_id": "sequences_time",
       "field": "why_it_matters",
-      "text": "The role of Sequences, events & time series is to connect Discrete mathematics & logic, Signal processing & harmonic analysis to downstream capabilities including Waveforms, audio & spectrograms, Positional, temporal & coordinate encodings, Markov chains, MDPs, POMDPs & belief states."
+      "text": "In this atlas graph, Sequences, events & time series is modeled as depending on Discrete mathematics & logic, Signal processing & harmonic analysis and feeding downstream nodes such as Waveforms, audio & spectrograms, Positional, temporal & coordinate encodings, Markov chains, MDPs, POMDPs & belief states."
     },
     {
-      "unit_id": "6d6887b502480982",
+      "unit_id": "7488e6a31ef092a7",
       "node_id": "sequences_time",
       "field": "examples[1]",
-      "text": "substrate for Waveforms, audio & spectrograms"
+      "text": "atlas downstream link to Waveforms, audio & spectrograms"
     },
     {
-      "unit_id": "14cd6ad40a702c3a",
+      "unit_id": "0e9acd7c621e15e4",
       "node_id": "sequences_time",
       "field": "examples[2]",
-      "text": "substrate for Positional, temporal & coordinate encodings"
+      "text": "atlas downstream link to Positional, temporal & coordinate encodings"
     },
     {
-      "unit_id": "0cb88bf07574260f",
+      "unit_id": "73f6428723167583",
       "node_id": "sequences_time",
       "field": "examples[3]",
-      "text": "substrate for Markov chains, MDPs, POMDPs & belief states"
+      "text": "atlas downstream link to Markov chains, MDPs, POMDPs & belief states"
     },
     {
       "unit_id": "ff1f5769620d06c1",
@@ -94,10 +94,10 @@
       "text": "Sequences, events & time series rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
     },
     {
-      "unit_id": "e1b2d0bb05cc8f97",
+      "unit_id": "ca2790eba48afe49",
       "node_id": "sequences_time",
       "field": "dependencies.signal_processing.rationale",
-      "text": "Sequences, events & time series rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis."
+      "text": "In this atlas graph, Sequences, events & time series has a `requires` dependency on Signal processing & harmonic analysis with `common` strength."
     },
     {
       "unit_id": "f2782567eb367f57",
@@ -116,12 +116,12 @@
       "rationale": "Sequences, events & time series rests on the formal or computational capabilities supplied by Discrete mathematics & logic."
     },
     {
-      "edge_id": "48aa1d721fa8a4cd",
+      "edge_id": "9d608d4e54498e76",
       "node_id": "sequences_time",
       "dependency_id": "signal_processing",
       "type": "requires",
       "strength": "common",
-      "rationale": "Sequences, events & time series rests on the formal or computational capabilities supplied by Signal processing & harmonic analysis."
+      "rationale": "In this atlas graph, Sequences, events & time series has a `requires` dependency on Signal processing & harmonic analysis with `common` strength."
     },
     {
       "edge_id": "d6e1fe82e245085f",

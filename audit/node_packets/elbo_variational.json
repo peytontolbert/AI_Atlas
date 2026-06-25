@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "A tractable lower bound balances data fit against divergence between approximate and prior distributions.",
-    "why_it_matters": "The role of ELBO & variational objectives is to connect Generative modeling, Latent variables & hidden state to downstream capabilities including Variational autoencoders.",
+    "why_it_matters": "In this atlas graph, ELBO & variational objectives is modeled as depending on Generative modeling, Latent variables & hidden state and feeding downstream nodes such as Variational autoencoders.",
     "examples": [
-      "substrate for Variational autoencoders",
+      "atlas downstream link to Variational autoencoders",
       "combined with Generative modeling"
     ],
     "limitations": [
@@ -33,25 +33,25 @@
         "id": "generative_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "ELBO & variational objectives uses Generative modeling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
       },
       {
         "id": "latent_variables",
         "type": "uses",
         "strength": "core",
-        "rationale": "ELBO & variational objectives uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
       },
       {
         "id": "probability",
         "type": "uses",
         "strength": "common",
-        "rationale": "ELBO & variational objectives uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "ELBO & variational objectives uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -63,16 +63,16 @@
       "text": "A tractable lower bound balances data fit against divergence between approximate and prior distributions."
     },
     {
-      "unit_id": "ed55ea5badead412",
+      "unit_id": "c707f126a9a8710b",
       "node_id": "elbo_variational",
       "field": "why_it_matters",
-      "text": "The role of ELBO & variational objectives is to connect Generative modeling, Latent variables & hidden state to downstream capabilities including Variational autoencoders."
+      "text": "In this atlas graph, ELBO & variational objectives is modeled as depending on Generative modeling, Latent variables & hidden state and feeding downstream nodes such as Variational autoencoders."
     },
     {
-      "unit_id": "7619b9ce75471279",
+      "unit_id": "e6c84f03563624b2",
       "node_id": "elbo_variational",
       "field": "examples[1]",
-      "text": "substrate for Variational autoencoders"
+      "text": "atlas downstream link to Variational autoencoders"
     },
     {
       "unit_id": "d47f345af2ee1db4",
@@ -87,62 +87,62 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Latent variables & hidden state."
     },
     {
-      "unit_id": "d8a1e16a6d1ae0a8",
+      "unit_id": "77bc5e4009157aee",
       "node_id": "elbo_variational",
       "field": "dependencies.generative_learning.rationale",
-      "text": "ELBO & variational objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "9bb810039561bec0",
+      "unit_id": "9a8a6fcefc1b5848",
       "node_id": "elbo_variational",
       "field": "dependencies.latent_variables.rationale",
-      "text": "ELBO & variational objectives uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "5fc3995e2b0ea4d8",
+      "unit_id": "9dba4e76bca7141f",
       "node_id": "elbo_variational",
       "field": "dependencies.probability.rationale",
-      "text": "ELBO & variational objectives uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "0a6d7dd215c0161e",
+      "unit_id": "b6d16b1665e7a246",
       "node_id": "elbo_variational",
       "field": "dependencies.optimization.rationale",
-      "text": "ELBO & variational objectives uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "17e0968aa3dd5d7c",
+      "edge_id": "22976de0beab95d0",
       "node_id": "elbo_variational",
       "dependency_id": "generative_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "ELBO & variational objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "28477156c316674e",
+      "edge_id": "376b359d1d6eff6e",
       "node_id": "elbo_variational",
       "dependency_id": "latent_variables",
       "type": "uses",
       "strength": "core",
-      "rationale": "ELBO & variational objectives uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "b1c25419d86020b2",
+      "edge_id": "bde074b60f075f31",
       "node_id": "elbo_variational",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "common",
-      "rationale": "ELBO & variational objectives uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "0ec79b4f3bb719c4",
+      "edge_id": "a2e330f43972ec0e",
       "node_id": "elbo_variational",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "ELBO & variational objectives uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, ELBO & variational objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

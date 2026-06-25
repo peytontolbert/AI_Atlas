@@ -17,9 +17,9 @@
       "variational autoencoder"
     ],
     "definition": "A variational autoencoder learns a probabilistic latent space by optimizing reconstruction quality together with a regularized approximate posterior.",
-    "why_it_matters": "The role of Variational autoencoders is to connect Autoencoders, ELBO & variational objectives to downstream capabilities including Drug discovery, protein & molecular design.",
+    "why_it_matters": "In this atlas graph, Variational autoencoders is modeled as depending on Autoencoders, ELBO & variational objectives and feeding downstream nodes such as Drug discovery, protein & molecular design.",
     "examples": [
-      "substrate for Drug discovery, protein & molecular design",
+      "atlas downstream link to Drug discovery, protein & molecular design",
       "combined with Autoencoders"
     ],
     "limitations": [
@@ -43,7 +43,7 @@
         "id": "elbo_variational",
         "type": "optimizes_for",
         "strength": "core",
-        "rationale": "Variational autoencoders is learned, selected, or evaluated using the objective family ELBO & variational objectives."
+        "rationale": "In this atlas graph, Variational autoencoders has an `optimizes_for` dependency on ELBO & variational objectives because ELBO & variational objectives is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "differentiable_sampling",
@@ -61,16 +61,16 @@
       "text": "A variational autoencoder learns a probabilistic latent space by optimizing reconstruction quality together with a regularized approximate posterior."
     },
     {
-      "unit_id": "4ffc3c5151fda14b",
+      "unit_id": "200a5df4cfa560bc",
       "node_id": "vae",
       "field": "why_it_matters",
-      "text": "The role of Variational autoencoders is to connect Autoencoders, ELBO & variational objectives to downstream capabilities including Drug discovery, protein & molecular design."
+      "text": "In this atlas graph, Variational autoencoders is modeled as depending on Autoencoders, ELBO & variational objectives and feeding downstream nodes such as Drug discovery, protein & molecular design."
     },
     {
-      "unit_id": "8ae940cb3b8be3d8",
+      "unit_id": "23e5f17dac2c705f",
       "node_id": "vae",
       "field": "examples[1]",
-      "text": "substrate for Drug discovery, protein & molecular design"
+      "text": "atlas downstream link to Drug discovery, protein & molecular design"
     },
     {
       "unit_id": "4ebb0205a4f1b747",
@@ -91,10 +91,10 @@
       "text": "Variational autoencoders extends or specializes the architecture family Autoencoders."
     },
     {
-      "unit_id": "9b650efd7cc0a867",
+      "unit_id": "211e4337ed8b1eaf",
       "node_id": "vae",
       "field": "dependencies.elbo_variational.rationale",
-      "text": "Variational autoencoders is learned, selected, or evaluated using the objective family ELBO & variational objectives."
+      "text": "In this atlas graph, Variational autoencoders has an `optimizes_for` dependency on ELBO & variational objectives because ELBO & variational objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "unit_id": "79c540ce1c9343cc",
@@ -113,12 +113,12 @@
       "rationale": "Variational autoencoders extends or specializes the architecture family Autoencoders."
     },
     {
-      "edge_id": "c253cc563b6a6443",
+      "edge_id": "c684a081286b37e4",
       "node_id": "vae",
       "dependency_id": "elbo_variational",
       "type": "optimizes_for",
       "strength": "core",
-      "rationale": "Variational autoencoders is learned, selected, or evaluated using the objective family ELBO & variational objectives."
+      "rationale": "In this atlas graph, Variational autoencoders has an `optimizes_for` dependency on ELBO & variational objectives because ELBO & variational objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "edge_id": "9e9c4915d84704fe",

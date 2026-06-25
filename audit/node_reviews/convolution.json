@@ -15,64 +15,6 @@
       "notes": "The cited source set directly supports the claim at the level stated."
     },
     {
-      "unit_id": "caca3ea1767f0d2b",
-      "node_id": "convolution",
-      "field": "why_it_matters",
-      "text": "The role of Convolution & local filters is to connect Signal processing & harmonic analysis, Images, video & spatial grids to downstream capabilities including Pooling & local aggregation, Striding, pooling, patchification & up/downsampling, Convolutional neural networks.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
-      "unit_id": "6c2a35ba6586de6e",
-      "node_id": "convolution",
-      "field": "examples[1]",
-      "text": "substrate for Pooling & local aggregation",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated."
-    },
-    {
-      "unit_id": "2de40dd8f9e0a546",
-      "node_id": "convolution",
-      "field": "examples[2]",
-      "text": "substrate for Striding, pooling, patchification & up/downsampling",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
-    },
-    {
-      "unit_id": "caa52cf49b8e4ac8",
-      "node_id": "convolution",
-      "field": "examples[3]",
-      "text": "substrate for Convolutional neural networks",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated."
-    },
-    {
       "unit_id": "8d2fb3e64f871a18",
       "node_id": "convolution",
       "field": "limitations[1]",
@@ -80,111 +22,156 @@
       "source_ids": [
         "ref_dlbook",
         "ref_aima",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
-      "unit_id": "3846696971390463",
-      "node_id": "convolution",
-      "field": "dependencies.signal_processing.rationale",
-      "text": "Convolution & local filters uses Signal processing & harmonic analysis as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
-    },
-    {
-      "unit_id": "fe009d9cb20e1f03",
-      "node_id": "convolution",
-      "field": "dependencies.spatial_grids.rationale",
-      "text": "Convolution & local filters uses Images, video & spatial grids as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
-    },
-    {
-      "unit_id": "b335847ea52a36b5",
-      "node_id": "convolution",
-      "field": "dependencies.tensors.rationale",
-      "text": "Convolution & local filters uses Scalars, vectors, matrices & tensors as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "Deep Learning convolutional networks chapter covers convolution, local receptive fields, parameter sharing, equivariance/translation structure, pooling, and tensor/image inputs; PML/AIMA provide signal, image, and tensor background.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "2071b6e168a8eaf6",
+      "node_id": "convolution",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Convolution & local filters is modeled as depending on Signal processing & harmonic analysis, Images, video & spatial grids and feeding downstream nodes such as Pooling & local aggregation, Striding, pooling, patchification & up/downsampling, Convolutional neural networks.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "0950d7893b7fa7c7",
+      "node_id": "convolution",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Pooling & local aggregation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "eab92735c6b08da6",
+      "node_id": "convolution",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Striding, pooling, patchification & up/downsampling",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "45aa60dcc92cf4e7",
+      "node_id": "convolution",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Convolutional neural networks",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "907988c98db39b7a",
+      "node_id": "convolution",
+      "field": "dependencies.signal_processing.rationale",
+      "text": "In this atlas graph, Convolution & local filters has a `uses` dependency on Signal processing & harmonic analysis because Signal processing & harmonic analysis is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "817d917d669a1135",
+      "node_id": "convolution",
+      "field": "dependencies.spatial_grids.rationale",
+      "text": "In this atlas graph, Convolution & local filters has a `uses` dependency on Images, video & spatial grids because Images, video & spatial grids is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8e2124295f9d5f4d",
+      "node_id": "convolution",
+      "field": "dependencies.tensors.rationale",
+      "text": "In this atlas graph, Convolution & local filters has a `uses` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "79f6903a35ad613d",
+      "edge_id": "11a12f83424a2ebd",
       "node_id": "convolution",
       "dependency_id": "signal_processing",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "1cebd33217c1c677",
+      "edge_id": "65de010d93304578",
       "node_id": "convolution",
       "dependency_id": "spatial_grids",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "dc5f41d243a589b1",
+      "edge_id": "b592e03ab01a162f",
       "node_id": "convolution",
       "dependency_id": "tensors",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "convolution",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

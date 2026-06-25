@@ -1,19 +1,189 @@
 {
   "sentence_reviews": [
-    {"unit_id":"79da885dcf5e4e8a","node_id":"local_plasticity_learning","field":"definition","text":"Local update rules change connections from pre/post activity, errors, correlation, or spike timing without general end-to-end backpropagation.","source_ids":["url:https://arxiv.org/abs/2209.15536","ref_aima"],"evidence_location":"Khacef et al. 2022 abstract and survey description: spike-based local plasticity, pre/post-synaptic locality principle, online neuromorphic learning; AIMA contents Chapters 19 and 21 for learning/deep learning background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The local pre/post and spike-timing portions are directly supported by the inspected survey abstract. The combined list also includes perceptron-style error updates, so synthesis is safer than verified."},
-    {"unit_id":"59d2df36c62cd41f","node_id":"local_plasticity_learning","field":"why_it_matters","text":"The role of Perceptron, Hebbian, Oja & spike-timing plasticity is to connect Linear algebra, Labels, targets, rewards & preferences to downstream capabilities including Perceptrons & single-layer neural classifiers, Self-organizing maps & competitive learning.","source_ids":["ref_aima","url:https://arxiv.org/abs/2209.15536"],"evidence_location":"AIMA contents: mathematical background, learning from examples, deep learning; Khacef et al. 2022 abstract: local plasticity supports neuromorphic learning.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The ingredients and downstream areas are plausible, but the inspected evidence does not directly establish this full graph-derived role statement."},
-    {"unit_id":"3923a6752cb5830d","node_id":"local_plasticity_learning","field":"examples[1]","text":"substrate for Perceptrons & single-layer neural classifiers","source_ids":["ref_aima"],"evidence_location":"AIMA contents: Chapter 19 Learning from Examples and Chapter 21 Deep Learning; no directly inspected perceptron subsection text.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Perceptron learning is a standard local/error-driven update example, but the inspected source pointer is too broad for direct verification."},
-    {"unit_id":"4ba4da902917b02f","node_id":"local_plasticity_learning","field":"examples[2]","text":"substrate for Self-organizing maps & competitive learning","source_ids":["url:https://arxiv.org/abs/2209.15536","ref_aima"],"evidence_location":"Khacef et al. 2022 abstract discusses local spike-based learning and neuromorphic systems; AIMA contents provides broad learning background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Local plasticity is related to competitive/self-organizing learning, but the inspected evidence does not directly mention self-organizing maps."},
-    {"unit_id":"1cdc4e966a18ec3e","node_id":"local_plasticity_learning","field":"limitations[1]","text":"The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Linear algebra, Labels, targets, rewards & preferences.","source_ids":["ref_aima"],"evidence_location":"AIMA contents: learning chapters and mathematical background; no inspected passage about this specific limitation for local plasticity.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The generic limitation may be reasonable, but the cited evidence does not support the exact sentence or dependency list."},
-    {"unit_id":"56b0edf08ff545bd","node_id":"local_plasticity_learning","field":"dependencies.linear_algebra.rationale","text":"Perceptron, Hebbian, Oja & spike-timing plasticity uses Linear algebra as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA contents: Appendix A Mathematical Background and learning chapters.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Weights/vectors make the dependency defensible, but the inspected evidence is only a broad textbook pointer."},
-    {"unit_id":"a1bf2b33e2b82927","node_id":"local_plasticity_learning","field":"dependencies.supervision_signals.rationale","text":"Perceptron, Hebbian, Oja & spike-timing plasticity uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation.","source_ids":["ref_aima","url:https://arxiv.org/abs/2209.15536"],"evidence_location":"AIMA contents: Learning from Examples; Khacef et al. 2022 abstract emphasizes local spike-based learning, not labels/preferences.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Perceptron error updates use targets, but Hebbian/Oja/STDP can be unsupervised. Wording overgeneralizes across all listed rules."},
-    {"unit_id":"0a9b302590498484","node_id":"local_plasticity_learning","field":"dependencies.neuroscience_cognition.rationale","text":"Perceptron, Hebbian, Oja & spike-timing plasticity uses Neuroscience & cognitive science as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/2209.15536"],"evidence_location":"Khacef et al. 2022 abstract: brain-inspired synaptic plasticity models, biological neural networks, neuromorphic circuits.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The inspected survey directly grounds spike-based local plasticity in biological/brain-inspired synaptic mechanisms."},
-    {"unit_id":"3910e078db89dc78","node_id":"local_plasticity_learning","field":"dependencies.sequences_time.rationale","text":"Perceptron, Hebbian, Oja & spike-timing plasticity uses Sequences, events & time series as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/2209.15536"],"evidence_location":"Khacef et al. 2022 abstract: spike-based learning rules and pre/post-synaptic timing information.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"STDP depends on event timing, but the dependency is not equally core to perceptron, Hebbian, and Oja rules."}
+    {
+      "unit_id": "79da885dcf5e4e8a",
+      "node_id": "local_plasticity_learning",
+      "field": "definition",
+      "text": "Local update rules change connections from pre/post activity, errors, correlation, or spike timing without general end-to-end backpropagation.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/2209.15536",
+        "ref_aima"
+      ],
+      "evidence_location": "Khacef et al. 2022 abstract and survey description: spike-based local plasticity, pre/post-synaptic locality principle, online neuromorphic learning; AIMA contents Chapters 19 and 21 for learning/deep learning background.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The local pre/post and spike-timing portions are directly supported by the inspected survey abstract. The combined list also includes perceptron-style error updates, so synthesis is safer than verified."
+    },
+    {
+      "unit_id": "1cdc4e966a18ec3e",
+      "node_id": "local_plasticity_learning",
+      "field": "limitations[1]",
+      "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Linear algebra, Labels, targets, rewards & preferences.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "2514d87dcf1b1400",
+      "node_id": "local_plasticity_learning",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Perceptron, Hebbian, Oja & spike-timing plasticity is modeled as depending on Linear algebra, Labels, targets, rewards & preferences and feeding downstream nodes such as Perceptrons & single-layer neural classifiers, Self-organizing maps & competitive learning.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2b82bfda509c0ffc",
+      "node_id": "local_plasticity_learning",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Perceptrons & single-layer neural classifiers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "0f3b57ec1d67b2d7",
+      "node_id": "local_plasticity_learning",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Self-organizing maps & competitive learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "9467adce16fe459b",
+      "node_id": "local_plasticity_learning",
+      "field": "dependencies.linear_algebra.rationale",
+      "text": "In this atlas graph, Perceptron, Hebbian, Oja & spike-timing plasticity has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8909c254c40bc645",
+      "node_id": "local_plasticity_learning",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "In this atlas graph, Perceptron, Hebbian, Oja & spike-timing plasticity has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d14d091d0ca305d2",
+      "node_id": "local_plasticity_learning",
+      "field": "dependencies.neuroscience_cognition.rationale",
+      "text": "In this atlas graph, Perceptron, Hebbian, Oja & spike-timing plasticity has a `uses` dependency on Neuroscience & cognitive science because Neuroscience & cognitive science is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "cd603f7d5bec41cf",
+      "node_id": "local_plasticity_learning",
+      "field": "dependencies.sequences_time.rationale",
+      "text": "In this atlas graph, Perceptron, Hebbian, Oja & spike-timing plasticity has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"a1fa32f77ef184fd","node_id":"local_plasticity_learning","dependency_id":"linear_algebra","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Linear algebra is plausible for weight-vector update rules, but only broad textbook evidence was inspected.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"bc926575e48f8563","node_id":"local_plasticity_learning","dependency_id":"supervision_signals","source_ids":["ref_aima","url:https://arxiv.org/abs/2209.15536"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Some listed rules use labels/errors, but Hebbian/Oja/STDP are often unsupervised or locally self-organized; common strength is only partly defensible.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"74e2b0d3268bf7ef","node_id":"local_plasticity_learning","dependency_id":"neuroscience_cognition","source_ids":["url:https://arxiv.org/abs/2209.15536"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Brain-inspired synaptic plasticity and local pre/post information directly support this uses edge as common.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"87074044fab2860f","node_id":"local_plasticity_learning","dependency_id":"sequences_time","source_ids":["url:https://arxiv.org/abs/2209.15536"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Spike timing supports the edge for STDP, but the node label aggregates non-temporal local rules too.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "18bfbde3f6a65639",
+      "node_id": "local_plasticity_learning",
+      "dependency_id": "linear_algebra",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "399d77d6f3ce3e84",
+      "node_id": "local_plasticity_learning",
+      "dependency_id": "supervision_signals",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "ce86814f5047eed0",
+      "node_id": "local_plasticity_learning",
+      "dependency_id": "neuroscience_cognition",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "2b730066ddff78aa",
+      "node_id": "local_plasticity_learning",
+      "dependency_id": "sequences_time",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "local_plasticity_learning",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

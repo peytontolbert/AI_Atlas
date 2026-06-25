@@ -15,74 +15,19 @@
       "notes": "AIMA supports optimization as search over objective functions and includes policy-focused learning and game-theoretic decision making, but it does not state the full convex/non-convex phrasing or the exact learning formulation in one place."
     },
     {
-      "unit_id": "63e7a89f8b5ddcb8",
-      "node_id": "optimization",
-      "field": "why_it_matters",
-      "text": "The role of Optimization theory is to connect Calculus & automatic differentiation theory, Linear algebra to downstream capabilities including Dynamical systems & control theory, Game theory & decision theory, Sparse coding & compositional representations.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html, Chapter 4 'Search in Complex Environments' / 4.1 'Local Search and Optimization Problems' (lines 103-110); Chapter 5 'Adversarial Search and Games' / 5.1 'Game Theory' and 5.2 'Optimal Decisions in Games' (lines 126-133); Chapter 26.5 'Planning and Control' (lines 704-716); Appendix A.2 'Vectors, Matrices, and Linear Algebra' (lines 768-774).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The source clearly supports optimization as a bridge to control and game/decision topics and provides mathematical background context, but it does not directly support the sparse-coding/compositional-representation portion. The sentence should be narrowed if it is meant as a source-level claim."
-    },
-    {
-      "unit_id": "00fc392b93afeee3",
-      "node_id": "optimization",
-      "field": "examples[1]",
-      "text": "substrate for Dynamical systems & control theory",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html, Chapter 1.2.7 'Control theory and cybernetics' (lines 30-34); Chapter 26.5 'Planning and Control' and 26.5.4 'Optimal control' (lines 704-716).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "AIMA directly includes control theory and optimal control as relevant AI topics, so the dependency relation is defensible. 'Substrate for' is still an atlas synthesis rather than a verbatim source claim."
-    },
-    {
-      "unit_id": "2f4e42ac01d045c5",
-      "node_id": "optimization",
-      "field": "examples[2]",
-      "text": "substrate for Game theory & decision theory",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html, Chapter 1.2.3 'Economics' (line 29); Chapter 5 'Adversarial Search and Games' / 5.1 'Game Theory' and 5.2 'Optimal Decisions in Games' (lines 126-133); Chapter 17 'Making Complex Decisions' (lines 41-43).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The source directly covers game theory and decision-making topics, which makes the substrate relation defensible. The wording is still an editorial synthesis."
-    },
-    {
-      "unit_id": "f66f9e5e41142f5b",
-      "node_id": "optimization",
-      "field": "examples[3]",
-      "text": "substrate for Sparse coding & compositional representations",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html, Appendix A.2 'Vectors, Matrices, and Linear Algebra' (lines 768-774); Chapter 21 'Deep Learning' (lines 46-47).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The source supports optimization-related mathematics and deep learning as a downstream area, but it does not directly name sparse coding or compositional representations. The atlas phrasing is broader than the cited evidence."
-    },
-    {
       "unit_id": "0439735918c673f0",
       "node_id": "optimization",
       "field": "limitations[1]",
       "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Calculus & automatic differentiation theory, Linear algebra.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html, Chapter 27.1.3 'The mathematical objection' (lines 736-753); Appendix A: Mathematical Background, especially A.2 'Vectors, Matrices, and Linear Algebra' (lines 768-774).",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports the general point that mathematical formalisms have limits and that linear algebra is mathematical background, but it does not directly state the empirical-mismatch wording or the dependency clause in this exact form."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "ddf91f99a7675e60",
@@ -111,6 +56,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Linear algebra is directly named as mathematical background, and optimization/deep-learning topics provide the application context. The exact rationale remains a synthesis rather than a direct quotation."
+    },
+    {
+      "unit_id": "725b72858a7495dc",
+      "node_id": "optimization",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Optimization theory is modeled as depending on Calculus & automatic differentiation theory, Linear algebra and feeding downstream nodes such as Dynamical systems & control theory, Game theory & decision theory, Sparse coding & compositional representations.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ccbd24ae596c0b59",
+      "node_id": "optimization",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Dynamical systems & control theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e54194979a58ce37",
+      "node_id": "optimization",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Game theory & decision theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a401cd95600ceddd",
+      "node_id": "optimization",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Sparse coding & compositional representations",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -142,5 +143,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "optimization",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

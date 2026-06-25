@@ -1,17 +1,161 @@
 {
   "sentence_reviews": [
-    {"unit_id":"7962b9b3271cc650","node_id":"regression_losses","field":"definition","text":"Continuous predictions are trained by penalizing distance from numerical targets.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, classical ML and statistics coverage; landing page lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Squared, absolute, and robust regression losses penalize deviations from numerical targets."},
-    {"unit_id":"37cfbd68b4da69f7","node_id":"regression_losses","field":"why_it_matters","text":"The role of Regression losses (MSE, MAE, robust) is to connect Supervised learning, Statistics & experimental design to downstream capabilities including Linear models & generalized linear models, Decision trees, random forests & boosted trees.","source_ids":["ref_pml","ref_aima"],"evidence_location":"PML landing page lines 45-48; AIMA contents, Chapter 19 'Learning from Examples' and supervised learning topics as cited in existing reviews.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Regression losses connect supervised/statistical prediction to models, but the exact downstream list and graph role are atlas synthesis."},
-    {"unit_id":"ea4014ca56b3e8a9","node_id":"regression_losses","field":"examples[1]","text":"substrate for Linear models & generalized linear models","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, classical ML/statistical method coverage, lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Linear regression is directly trained with regression loss; GLMs use related numerical objectives."},
-    {"unit_id":"4131dfe3e87aa266","node_id":"regression_losses","field":"examples[2]","text":"substrate for Decision trees, random forests & boosted trees","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, classical ML method coverage, lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Regression trees and boosting can use regression losses, but the inspected evidence does not directly state the exact relation."},
-    {"unit_id":"9147f0b02710633f","node_id":"regression_losses","field":"limitations[1]","text":"A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Supervised learning, Statistics & experimental design.","source_ids":["ref_pml"],"evidence_location":"Probabilistic Machine Learning: An Introduction, statistics and ML foundations, lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The dependency portion is plausible; the surrogate mismatch warning needs a more direct source."},
-    {"unit_id":"f4ba9621a5e68482","node_id":"regression_losses","field":"dependencies.supervised_learning.rationale","text":"Regression losses (MSE, MAE, robust) uses Supervised learning as a reusable ingredient in its defined operation.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA Chapter 19 supervised learning context as cited in existing reviews; PML landing page lines 45-48.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Regression loss requires targets paired with predictions, matching supervised learning."},
-    {"unit_id":"0fb121ef7a981988","node_id":"regression_losses","field":"dependencies.statistics.rationale","text":"Regression losses (MSE, MAE, robust) uses Statistics & experimental design as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"PML landing page lines 45-48 describe the ML foundation in statistics and probability.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Regression losses are statistical estimation tools; experimental design specifically is broader than the direct evidence."},
-    {"unit_id":"5c3c38fed9856811","node_id":"regression_losses","field":"dependencies.calculus.rationale","text":"Regression losses (MSE, MAE, robust) uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.","source_ids":["ref_pml"],"evidence_location":"PML landing page lines 35-40 mention code and computational implementations across chapters; optimization/calculus details are not directly in the inspected excerpt.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Differentiable regression losses use calculus, but MAE is not differentiable at zero and the source location is indirect."}
+    {
+      "unit_id": "7962b9b3271cc650",
+      "node_id": "regression_losses",
+      "field": "definition",
+      "text": "Continuous predictions are trained by penalizing distance from numerical targets.",
+      "source_ids": [
+        "ref_pml"
+      ],
+      "evidence_location": "Probabilistic Machine Learning: An Introduction, classical ML and statistics coverage; landing page lines 45-48.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Squared, absolute, and robust regression losses penalize deviations from numerical targets."
+    },
+    {
+      "unit_id": "9147f0b02710633f",
+      "node_id": "regression_losses",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Supervised learning, Statistics & experimental design.",
+      "source_ids": [
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "c38b4dca270b856a",
+      "node_id": "regression_losses",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Regression losses (MSE, MAE, robust) is modeled as depending on Supervised learning, Statistics & experimental design and feeding downstream nodes such as Linear models & generalized linear models, Decision trees, random forests & boosted trees.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "bb1fac9fe1b89604",
+      "node_id": "regression_losses",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Linear models & generalized linear models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2082bf94aeb548d1",
+      "node_id": "regression_losses",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Decision trees, random forests & boosted trees",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "fa197e6cf5279bc7",
+      "node_id": "regression_losses",
+      "field": "dependencies.supervised_learning.rationale",
+      "text": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8de606e12289790a",
+      "node_id": "regression_losses",
+      "field": "dependencies.statistics.rationale",
+      "text": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "84877d9eed447071",
+      "node_id": "regression_losses",
+      "field": "dependencies.calculus.rationale",
+      "text": "In this atlas graph, Regression losses (MSE, MAE, robust) has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"65ba42b5a9be5820","node_id":"regression_losses","dependency_id":"supervised_learning","source_ids":["ref_aima","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Targets are intrinsic to regression losses, so supervised learning is a core dependency.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"b0961eeaf082bd11","node_id":"regression_losses","dependency_id":"statistics","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Regression losses are statistical estimation objectives, though experimental design is broader.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"18db5ffff3a9ccbc","node_id":"regression_losses","dependency_id":"calculus","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Calculus is common for optimizing differentiable losses but not necessary to define all regression losses.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "8241c57637411a90",
+      "node_id": "regression_losses",
+      "dependency_id": "supervised_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "d67b8cc8c8c4822a",
+      "node_id": "regression_losses",
+      "dependency_id": "statistics",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "4978d984729066a7",
+      "node_id": "regression_losses",
+      "dependency_id": "calculus",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "regression_losses",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

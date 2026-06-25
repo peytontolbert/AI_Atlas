@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Competing learners optimize opposing goals, as in generator–discriminator or adversarial robustness games.",
-    "why_it_matters": "The role of Adversarial minimax objectives is to connect Generative modeling, Game theory & decision theory to downstream capabilities including Adversarial examples & adversarial training, Generative adversarial networks.",
+    "why_it_matters": "In this atlas graph, Adversarial minimax objectives is modeled as depending on Generative modeling, Game theory & decision theory and feeding downstream nodes such as Adversarial examples & adversarial training, Generative adversarial networks.",
     "examples": [
-      "substrate for Adversarial examples & adversarial training",
-      "substrate for Generative adversarial networks"
+      "atlas downstream link to Adversarial examples & adversarial training",
+      "atlas downstream link to Generative adversarial networks"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Game theory & decision theory."
@@ -34,19 +34,19 @@
         "id": "generative_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Adversarial minimax objectives uses Generative modeling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
       },
       {
         "id": "game_decision_theory",
         "type": "uses",
         "strength": "core",
-        "rationale": "Adversarial minimax objectives uses Game theory & decision theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "Adversarial minimax objectives uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,22 +58,22 @@
       "text": "Competing learners optimize opposing goals, as in generator–discriminator or adversarial robustness games."
     },
     {
-      "unit_id": "786c14a0218f363d",
+      "unit_id": "c94ac9b38917aaa4",
       "node_id": "adversarial_minimax",
       "field": "why_it_matters",
-      "text": "The role of Adversarial minimax objectives is to connect Generative modeling, Game theory & decision theory to downstream capabilities including Adversarial examples & adversarial training, Generative adversarial networks."
+      "text": "In this atlas graph, Adversarial minimax objectives is modeled as depending on Generative modeling, Game theory & decision theory and feeding downstream nodes such as Adversarial examples & adversarial training, Generative adversarial networks."
     },
     {
-      "unit_id": "eeb1b7a9f42e3893",
+      "unit_id": "3b772c646918aad5",
       "node_id": "adversarial_minimax",
       "field": "examples[1]",
-      "text": "substrate for Adversarial examples & adversarial training"
+      "text": "atlas downstream link to Adversarial examples & adversarial training"
     },
     {
-      "unit_id": "dfdc55caf6be0509",
+      "unit_id": "78bf8c4f29dfe8e4",
       "node_id": "adversarial_minimax",
       "field": "examples[2]",
-      "text": "substrate for Generative adversarial networks"
+      "text": "atlas downstream link to Generative adversarial networks"
     },
     {
       "unit_id": "7f1cfd9078c0fa36",
@@ -82,48 +82,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Game theory & decision theory."
     },
     {
-      "unit_id": "a2324c9b53ef9eca",
+      "unit_id": "38b5e5161fadb696",
       "node_id": "adversarial_minimax",
       "field": "dependencies.generative_learning.rationale",
-      "text": "Adversarial minimax objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "75cdc7acb950f27c",
+      "unit_id": "930427cb74123dc6",
       "node_id": "adversarial_minimax",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Adversarial minimax objectives uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "37cdc4ad3f882b39",
+      "unit_id": "6b4ad11afcd54a37",
       "node_id": "adversarial_minimax",
       "field": "dependencies.optimization.rationale",
-      "text": "Adversarial minimax objectives uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "dd947c85c2da13bd",
+      "edge_id": "996ec9ddb17ae201",
       "node_id": "adversarial_minimax",
       "dependency_id": "generative_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Adversarial minimax objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "f96f98a9fac106b5",
+      "edge_id": "271ab4c2dbe0b131",
       "node_id": "adversarial_minimax",
       "dependency_id": "game_decision_theory",
       "type": "uses",
       "strength": "core",
-      "rationale": "Adversarial minimax objectives uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "12f1e5db93da9962",
+      "edge_id": "00185a9dae2fe99b",
       "node_id": "adversarial_minimax",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "Adversarial minimax objectives uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Adversarial minimax objectives has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

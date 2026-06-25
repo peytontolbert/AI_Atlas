@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Pretraining learns broad representations or generative behavior from large, diverse corpora before task-specific adaptation or deployment.",
-    "why_it_matters": "The role of Large-scale pretraining is to connect Self-supervised learning, Maximum likelihood & cross-entropy to downstream capabilities including Supervised fine-tuning & instruction tuning, Parametric memory, Large language models.",
+    "why_it_matters": "In this atlas graph, Large-scale pretraining is modeled as depending on Self-supervised learning, Maximum likelihood & cross-entropy and feeding downstream nodes such as Supervised fine-tuning & instruction tuning, Parametric memory, Large language models.",
     "examples": [
-      "substrate for Supervised fine-tuning & instruction tuning",
-      "substrate for Parametric memory",
-      "substrate for Large language models"
+      "atlas downstream link to Supervised fine-tuning & instruction tuning",
+      "atlas downstream link to Parametric memory",
+      "atlas downstream link to Large language models"
     ],
     "limitations": [
       "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Self-supervised learning, Maximum likelihood & cross-entropy."
@@ -34,49 +34,49 @@
         "id": "self_supervised_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Large-scale pretraining uses Self-supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "mle_cross_entropy",
         "type": "optimizes_for",
         "strength": "core",
-        "rationale": "Large-scale pretraining is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+        "rationale": "In this atlas graph, Large-scale pretraining has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "autoregressive_objective",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Large-scale pretraining is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+        "rationale": "In this atlas graph, Large-scale pretraining has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "masked_prediction",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Large-scale pretraining is learned, selected, or evaluated using the objective family Masked prediction objectives."
+        "rationale": "In this atlas graph, Large-scale pretraining has an `optimizes_for` dependency on Masked prediction objectives because Masked prediction objectives is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "data_curation",
         "type": "uses",
         "strength": "common",
-        "rationale": "Large-scale pretraining uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node."
       },
       {
         "id": "empirical_scaling_laws",
         "type": "uses",
         "strength": "optional",
-        "rationale": "Large-scale pretraining uses Empirical scaling laws as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Empirical scaling laws because Empirical scaling laws is modeled as a reusable ingredient for the node."
       },
       {
         "id": "schedules_stabilization",
         "type": "uses",
         "strength": "optional",
-        "rationale": "Large-scale pretraining uses Learning-rate schedules, warmup & stabilization as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Learning-rate schedules, warmup & stabilization because Learning-rate schedules, warmup & stabilization is modeled as a reusable ingredient for the node."
       },
       {
         "id": "regularization",
         "type": "uses",
         "strength": "optional",
-        "rationale": "Large-scale pretraining uses Regularization, dropout & weight decay as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Regularization, dropout & weight decay because Regularization, dropout & weight decay is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -88,28 +88,28 @@
       "text": "Pretraining learns broad representations or generative behavior from large, diverse corpora before task-specific adaptation or deployment."
     },
     {
-      "unit_id": "a8ad73541fbd6702",
+      "unit_id": "7d129cf1aea48b6c",
       "node_id": "pretraining",
       "field": "why_it_matters",
-      "text": "The role of Large-scale pretraining is to connect Self-supervised learning, Maximum likelihood & cross-entropy to downstream capabilities including Supervised fine-tuning & instruction tuning, Parametric memory, Large language models."
+      "text": "In this atlas graph, Large-scale pretraining is modeled as depending on Self-supervised learning, Maximum likelihood & cross-entropy and feeding downstream nodes such as Supervised fine-tuning & instruction tuning, Parametric memory, Large language models."
     },
     {
-      "unit_id": "42c85d2672b07f70",
+      "unit_id": "030042ce3a10a215",
       "node_id": "pretraining",
       "field": "examples[1]",
-      "text": "substrate for Supervised fine-tuning & instruction tuning"
+      "text": "atlas downstream link to Supervised fine-tuning & instruction tuning"
     },
     {
-      "unit_id": "0de5b4eb10ae301f",
+      "unit_id": "3c87f643c04fe620",
       "node_id": "pretraining",
       "field": "examples[2]",
-      "text": "substrate for Parametric memory"
+      "text": "atlas downstream link to Parametric memory"
     },
     {
-      "unit_id": "ad450e93e8aeb88f",
+      "unit_id": "c4d789f8be086b9e",
       "node_id": "pretraining",
       "field": "examples[3]",
-      "text": "substrate for Large language models"
+      "text": "atlas downstream link to Large language models"
     },
     {
       "unit_id": "f684bc3f0550d154",
@@ -118,118 +118,118 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Self-supervised learning, Maximum likelihood & cross-entropy."
     },
     {
-      "unit_id": "70cc901f82d8c250",
+      "unit_id": "cfa9351bdfdc2e85",
       "node_id": "pretraining",
       "field": "dependencies.self_supervised_learning.rationale",
-      "text": "Large-scale pretraining uses Self-supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d7d8480e563ed45c",
+      "unit_id": "82a61840e6f799af",
       "node_id": "pretraining",
       "field": "dependencies.mle_cross_entropy.rationale",
-      "text": "Large-scale pretraining is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+      "text": "In this atlas graph, Large-scale pretraining has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "62615a21f48f3faf",
+      "unit_id": "84ad3b4460af9043",
       "node_id": "pretraining",
       "field": "dependencies.autoregressive_objective.rationale",
-      "text": "Large-scale pretraining is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+      "text": "In this atlas graph, Large-scale pretraining has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "aeae519ad821138c",
+      "unit_id": "eeeb4f7b635ae5c2",
       "node_id": "pretraining",
       "field": "dependencies.masked_prediction.rationale",
-      "text": "Large-scale pretraining is learned, selected, or evaluated using the objective family Masked prediction objectives."
+      "text": "In this atlas graph, Large-scale pretraining has an `optimizes_for` dependency on Masked prediction objectives because Masked prediction objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "03262531c6cf6df3",
+      "unit_id": "69ce0366737d0f91",
       "node_id": "pretraining",
       "field": "dependencies.data_curation.rationale",
-      "text": "Large-scale pretraining uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "f426dfb11efb29d9",
+      "unit_id": "510dbd2100adcd02",
       "node_id": "pretraining",
       "field": "dependencies.empirical_scaling_laws.rationale",
-      "text": "Large-scale pretraining uses Empirical scaling laws as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Empirical scaling laws because Empirical scaling laws is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "f248f7a82099f8d4",
+      "unit_id": "a4f9dbaa60f03c04",
       "node_id": "pretraining",
       "field": "dependencies.schedules_stabilization.rationale",
-      "text": "Large-scale pretraining uses Learning-rate schedules, warmup & stabilization as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Learning-rate schedules, warmup & stabilization because Learning-rate schedules, warmup & stabilization is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "31b738b869a6f1d4",
+      "unit_id": "1e05a592f6ed871d",
       "node_id": "pretraining",
       "field": "dependencies.regularization.rationale",
-      "text": "Large-scale pretraining uses Regularization, dropout & weight decay as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Regularization, dropout & weight decay because Regularization, dropout & weight decay is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "10af39e3d3e13d80",
+      "edge_id": "e8bb9d3a5e555eb5",
       "node_id": "pretraining",
       "dependency_id": "self_supervised_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Large-scale pretraining uses Self-supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "641661b8e18130be",
+      "edge_id": "bed0912918d47eeb",
       "node_id": "pretraining",
       "dependency_id": "mle_cross_entropy",
       "type": "optimizes_for",
       "strength": "core",
-      "rationale": "Large-scale pretraining is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+      "rationale": "In this atlas graph, Large-scale pretraining has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "aeb95fb2d9f69a7a",
+      "edge_id": "3ba73cc6c2057130",
       "node_id": "pretraining",
       "dependency_id": "autoregressive_objective",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Large-scale pretraining is learned, selected, or evaluated using the objective family Autoregressive / next-step prediction."
+      "rationale": "In this atlas graph, Large-scale pretraining has an `optimizes_for` dependency on Autoregressive / next-step prediction because Autoregressive / next-step prediction is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "c3e71d737cc49006",
+      "edge_id": "70b55e7d06cd4194",
       "node_id": "pretraining",
       "dependency_id": "masked_prediction",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Large-scale pretraining is learned, selected, or evaluated using the objective family Masked prediction objectives."
+      "rationale": "In this atlas graph, Large-scale pretraining has an `optimizes_for` dependency on Masked prediction objectives because Masked prediction objectives is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "c6c4e0026d08fcef",
+      "edge_id": "7dfd00e5604526cd",
       "node_id": "pretraining",
       "dependency_id": "data_curation",
       "type": "uses",
       "strength": "common",
-      "rationale": "Large-scale pretraining uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "4be6193ac758d3a5",
+      "edge_id": "9043bfe504eb55ab",
       "node_id": "pretraining",
       "dependency_id": "empirical_scaling_laws",
       "type": "uses",
       "strength": "optional",
-      "rationale": "Large-scale pretraining uses Empirical scaling laws as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Empirical scaling laws because Empirical scaling laws is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "afd309b78e9864b0",
+      "edge_id": "9029219fb393bbb8",
       "node_id": "pretraining",
       "dependency_id": "schedules_stabilization",
       "type": "uses",
       "strength": "optional",
-      "rationale": "Large-scale pretraining uses Learning-rate schedules, warmup & stabilization as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Learning-rate schedules, warmup & stabilization because Learning-rate schedules, warmup & stabilization is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "53ca9d260a16e0e8",
+      "edge_id": "b055fc3962467a0a",
       "node_id": "pretraining",
       "dependency_id": "regularization",
       "type": "uses",
       "strength": "optional",
-      "rationale": "Large-scale pretraining uses Regularization, dropout & weight decay as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Large-scale pretraining has a `uses` dependency on Regularization, dropout & weight decay because Regularization, dropout & weight decay is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

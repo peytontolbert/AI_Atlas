@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Explicit rules, solvers, interpreters, and executable programs enforce structure or perform exact computation.",
-    "why_it_matters": "The role of Constraint propagation, logic & program execution is to connect Discrete mathematics & logic, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Expert systems, production rules & rule engines, Neuro-symbolic models, Probabilistic & differentiable programming.",
+    "why_it_matters": "In this atlas graph, Constraint propagation, logic & program execution is modeled as depending on Discrete mathematics & logic, Programs, ASTs, bytecode & intermediate representations and feeding downstream nodes such as Expert systems, production rules & rule engines, Neuro-symbolic models, Probabilistic & differentiable programming.",
     "examples": [
-      "substrate for Expert systems, production rules & rule engines",
-      "substrate for Neuro-symbolic models",
-      "substrate for Probabilistic & differentiable programming"
+      "atlas downstream link to Expert systems, production rules & rule engines",
+      "atlas downstream link to Neuro-symbolic models",
+      "atlas downstream link to Probabilistic & differentiable programming"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Discrete mathematics & logic, Programs, ASTs, bytecode & intermediate representations."
@@ -35,19 +35,19 @@
         "id": "discrete_math_logic",
         "type": "uses",
         "strength": "core",
-        "rationale": "Constraint propagation, logic & program execution uses Discrete mathematics & logic as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Constraint propagation, logic & program execution has a `uses` dependency on Discrete mathematics & logic because Discrete mathematics & logic is modeled as a reusable ingredient for the node."
       },
       {
         "id": "programs_ast_ir",
         "type": "uses",
         "strength": "core",
-        "rationale": "Constraint propagation, logic & program execution uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Constraint propagation, logic & program execution has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "algorithms_data_structures",
         "type": "uses",
         "strength": "common",
-        "rationale": "Constraint propagation, logic & program execution uses Algorithms & data structures as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Constraint propagation, logic & program execution has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -59,28 +59,28 @@
       "text": "Explicit rules, solvers, interpreters, and executable programs enforce structure or perform exact computation."
     },
     {
-      "unit_id": "f172766d2cdf3533",
+      "unit_id": "bf10a888f85ca151",
       "node_id": "constraint_program_execution",
       "field": "why_it_matters",
-      "text": "The role of Constraint propagation, logic & program execution is to connect Discrete mathematics & logic, Programs, ASTs, bytecode & intermediate representations to downstream capabilities including Expert systems, production rules & rule engines, Neuro-symbolic models, Probabilistic & differentiable programming."
+      "text": "In this atlas graph, Constraint propagation, logic & program execution is modeled as depending on Discrete mathematics & logic, Programs, ASTs, bytecode & intermediate representations and feeding downstream nodes such as Expert systems, production rules & rule engines, Neuro-symbolic models, Probabilistic & differentiable programming."
     },
     {
-      "unit_id": "f9cd80e74e09bc07",
+      "unit_id": "232ee04cc31c50be",
       "node_id": "constraint_program_execution",
       "field": "examples[1]",
-      "text": "substrate for Expert systems, production rules & rule engines"
+      "text": "atlas downstream link to Expert systems, production rules & rule engines"
     },
     {
-      "unit_id": "f8948d0995cca6f5",
+      "unit_id": "f27fd2f6fe3e23fe",
       "node_id": "constraint_program_execution",
       "field": "examples[2]",
-      "text": "substrate for Neuro-symbolic models"
+      "text": "atlas downstream link to Neuro-symbolic models"
     },
     {
-      "unit_id": "99380305b7734696",
+      "unit_id": "dc8f8aeaa49bdc11",
       "node_id": "constraint_program_execution",
       "field": "examples[3]",
-      "text": "substrate for Probabilistic & differentiable programming"
+      "text": "atlas downstream link to Probabilistic & differentiable programming"
     },
     {
       "unit_id": "92da8e3a690157b7",
@@ -89,48 +89,48 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Discrete mathematics & logic, Programs, ASTs, bytecode & intermediate representations."
     },
     {
-      "unit_id": "6594bb6540a9124e",
+      "unit_id": "590c506e672a6285",
       "node_id": "constraint_program_execution",
       "field": "dependencies.discrete_math_logic.rationale",
-      "text": "Constraint propagation, logic & program execution uses Discrete mathematics & logic as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Constraint propagation, logic & program execution has a `uses` dependency on Discrete mathematics & logic because Discrete mathematics & logic is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "6ef283d25e993d2b",
+      "unit_id": "30b6d3e22a91b04f",
       "node_id": "constraint_program_execution",
       "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Constraint propagation, logic & program execution uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Constraint propagation, logic & program execution has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d1ae525625184246",
+      "unit_id": "d541230309da0f0e",
       "node_id": "constraint_program_execution",
       "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "Constraint propagation, logic & program execution uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Constraint propagation, logic & program execution has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "8f982f2f8d2d87f0",
+      "edge_id": "2352c0587404dd90",
       "node_id": "constraint_program_execution",
       "dependency_id": "discrete_math_logic",
       "type": "uses",
       "strength": "core",
-      "rationale": "Constraint propagation, logic & program execution uses Discrete mathematics & logic as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Constraint propagation, logic & program execution has a `uses` dependency on Discrete mathematics & logic because Discrete mathematics & logic is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "eb9abea8f726b09b",
+      "edge_id": "b5bb94fbf9a81ded",
       "node_id": "constraint_program_execution",
       "dependency_id": "programs_ast_ir",
       "type": "uses",
       "strength": "core",
-      "rationale": "Constraint propagation, logic & program execution uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Constraint propagation, logic & program execution has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "58fd1f7e0b33f84b",
+      "edge_id": "05211253d31cc3ba",
       "node_id": "constraint_program_execution",
       "dependency_id": "algorithms_data_structures",
       "type": "uses",
       "strength": "common",
-      "rationale": "Constraint propagation, logic & program execution uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Constraint propagation, logic & program execution has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

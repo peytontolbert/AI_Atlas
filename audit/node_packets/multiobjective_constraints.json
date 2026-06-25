@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Multiple competing goals and hard constraints are optimized jointly rather than collapsed into one unconstrained score.",
-    "why_it_matters": "The role of Multi-objective, constrained & Pareto optimization is to connect Optimization theory, Game theory & decision theory to downstream capabilities including Safety policies, constitutional constraints & alignment.",
+    "why_it_matters": "In this atlas graph, Multi-objective, constrained & Pareto optimization is modeled as depending on Optimization theory, Game theory & decision theory and feeding downstream nodes such as Safety policies, constitutional constraints & alignment.",
     "examples": [
-      "substrate for Safety policies, constitutional constraints & alignment",
+      "atlas downstream link to Safety policies, constitutional constraints & alignment",
       "combined with Optimization theory"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "optimization",
         "type": "uses",
         "strength": "core",
-        "rationale": "Multi-objective, constrained & Pareto optimization uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "game_decision_theory",
         "type": "uses",
         "strength": "core",
-        "rationale": "Multi-objective, constrained & Pareto optimization uses Game theory & decision theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "supervision_signals",
         "type": "uses",
         "strength": "common",
-        "rationale": "Multi-objective, constrained & Pareto optimization uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Multiple competing goals and hard constraints are optimized jointly rather than collapsed into one unconstrained score."
     },
     {
-      "unit_id": "3dca3ddf4272b4f4",
+      "unit_id": "b1aaf1678ce3fd60",
       "node_id": "multiobjective_constraints",
       "field": "why_it_matters",
-      "text": "The role of Multi-objective, constrained & Pareto optimization is to connect Optimization theory, Game theory & decision theory to downstream capabilities including Safety policies, constitutional constraints & alignment."
+      "text": "In this atlas graph, Multi-objective, constrained & Pareto optimization is modeled as depending on Optimization theory, Game theory & decision theory and feeding downstream nodes such as Safety policies, constitutional constraints & alignment."
     },
     {
-      "unit_id": "921e4f4a461463bc",
+      "unit_id": "368d686fda92ed50",
       "node_id": "multiobjective_constraints",
       "field": "examples[1]",
-      "text": "substrate for Safety policies, constitutional constraints & alignment"
+      "text": "atlas downstream link to Safety policies, constitutional constraints & alignment"
     },
     {
       "unit_id": "c3c9cc527227a76f",
@@ -82,48 +82,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Optimization theory, Game theory & decision theory."
     },
     {
-      "unit_id": "57d42db52c23a83d",
+      "unit_id": "d078cf4cd59b57a3",
       "node_id": "multiobjective_constraints",
       "field": "dependencies.optimization.rationale",
-      "text": "Multi-objective, constrained & Pareto optimization uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "19f8e5baabb7ebba",
+      "unit_id": "bee93c729599d54d",
       "node_id": "multiobjective_constraints",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Multi-objective, constrained & Pareto optimization uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d82e28337b48156d",
+      "unit_id": "b5e1e75528ad255e",
       "node_id": "multiobjective_constraints",
       "field": "dependencies.supervision_signals.rationale",
-      "text": "Multi-objective, constrained & Pareto optimization uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "7bd654bfdf675d2f",
+      "edge_id": "a8a284a5e3d9b47f",
       "node_id": "multiobjective_constraints",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "core",
-      "rationale": "Multi-objective, constrained & Pareto optimization uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "a16070e4e6d7a4b7",
+      "edge_id": "1d9b002266fec53b",
       "node_id": "multiobjective_constraints",
       "dependency_id": "game_decision_theory",
       "type": "uses",
       "strength": "core",
-      "rationale": "Multi-objective, constrained & Pareto optimization uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "9d03e7f4e51e3f7a",
+      "edge_id": "f6ca7fbc78af4e75",
       "node_id": "multiobjective_constraints",
       "dependency_id": "supervision_signals",
       "type": "uses",
       "strength": "common",
-      "rationale": "Multi-objective, constrained & Pareto optimization uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Multi-objective, constrained & Pareto optimization has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

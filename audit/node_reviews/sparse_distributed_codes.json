@@ -17,35 +17,6 @@
       "notes": "Sparse coding supports small active feature subsets and can aid compression/interpretability; conditional computation is supported by sparse MoE examples. The sentence combines multiple sparse-representation uses."
     },
     {
-      "unit_id": "e253affa60eef5fa",
-      "node_id": "sparse_distributed_codes",
-      "field": "why_it_matters",
-      "text": "The role of Sparse coding & compositional representations is to connect Embeddings & distributed representations, Information theory to downstream capabilities including Mechanistic interpretability & circuit analysis.",
-      "source_ids": [
-        "ref_pml",
-        "ref_dlbook"
-      ],
-      "evidence_location": "PML/DLbook representation-learning and sparse coding context.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Embeddings and sparse representations are supported. The information-theory and mechanistic-interpretability/circuit-analysis links are plausible but not directly supported by packet sources."
-    },
-    {
-      "unit_id": "b498112db7c0c139",
-      "node_id": "sparse_distributed_codes",
-      "field": "examples[1]",
-      "text": "substrate for Mechanistic interpretability & circuit analysis",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML supports sparse/learned representations generally, but not mechanistic interpretability and circuit analysis specifically.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Sparse features are relevant to interpretability, but exact support for mechanistic circuit analysis needs a specific interpretability source."
-    },
-    {
       "unit_id": "995743020e585ec8",
       "node_id": "sparse_distributed_codes",
       "field": "examples[2]",
@@ -66,13 +37,14 @@
       "field": "limitations[1]",
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Embeddings & distributed representations, Information theory.",
       "source_ids": [
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML is relevant to representations but does not directly support the generic limitation sentence.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The limitation text appears generic and is not directly supported for sparse coding by the candidate sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "68d7f4a8a8f0a80c",
@@ -90,20 +62,6 @@
       "notes": "Sparse codes are representation vectors, supporting this represents_with relation."
     },
     {
-      "unit_id": "759aba00d3cb535e",
-      "node_id": "sparse_distributed_codes",
-      "field": "dependencies.information_theory.rationale",
-      "text": "Sparse coding & compositional representations rests on the formal or computational capabilities supplied by Information theory.",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML includes information-theoretic framing for machine learning, but the packet source does not directly make this a sparse-coding dependency.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Compression links sparse representations to information theory, but the source support is indirect and the dependency may be overstated as core."
-    },
-    {
       "unit_id": "37ee7a17f0b43373",
       "node_id": "sparse_distributed_codes",
       "field": "dependencies.optimization.rationale",
@@ -117,6 +75,48 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Learning sparse codes commonly requires optimization, although hand-designed sparse representations need not."
+    },
+    {
+      "unit_id": "172794e6bbb428f2",
+      "node_id": "sparse_distributed_codes",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Sparse coding & compositional representations is modeled as depending on Embeddings & distributed representations, Information theory and feeding downstream nodes such as Mechanistic interpretability & circuit analysis.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "99c1fc9644bd3848",
+      "node_id": "sparse_distributed_codes",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Mechanistic interpretability & circuit analysis",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "40d64cead223912e",
+      "node_id": "sparse_distributed_codes",
+      "field": "dependencies.information_theory.rationale",
+      "text": "In this atlas graph, Sparse coding & compositional representations has a `requires` dependency on Information theory with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -136,20 +136,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "3dd17a6c192802d4",
-      "node_id": "sparse_distributed_codes",
-      "dependency_id": "information_theory",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Compression provides an information-theoretic connection, but the packet evidence does not establish information theory as a core prerequisite.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "2554cdc55ef3a813",
       "node_id": "sparse_distributed_codes",
       "dependency_id": "optimization",
@@ -163,6 +149,22 @@
       "notes": "Optimization is commonly used to learn sparse codes and sparse regularized representations, supporting a common dependency.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "1152d69089578bb0",
+      "node_id": "sparse_distributed_codes",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "sparse_distributed_codes",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

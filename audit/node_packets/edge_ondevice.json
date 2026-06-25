@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Edge and on-device deployment runs models near sensors or users under strict power, memory, latency, connectivity, privacy, and thermal constraints.",
-    "why_it_matters": "The role of Edge, on-device & neuromorphic deployment is to connect Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators to downstream capabilities including Robotics & embodied AI, Neuromorphic, sensor & edge intelligence.",
+    "why_it_matters": "In this atlas graph, Edge, on-device & neuromorphic deployment is modeled as depending on Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators and feeding downstream nodes such as Robotics & embodied AI, Neuromorphic, sensor & edge intelligence.",
     "examples": [
-      "substrate for Robotics & embodied AI",
-      "substrate for Neuromorphic, sensor & edge intelligence"
+      "atlas downstream link to Robotics & embodied AI",
+      "atlas downstream link to Neuromorphic, sensor & edge intelligence"
     ],
     "limitations": [
       "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators."
@@ -34,37 +34,37 @@
         "id": "quantized_inference",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Edge, on-device & neuromorphic deployment turns Quantized inference & compressed deployment into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Quantized inference & compressed deployment because Quantized inference & compressed deployment is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "accelerators",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Edge, on-device & neuromorphic deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "snn",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Edge, on-device & neuromorphic deployment turns Spiking neural networks into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Spiking neural networks because Spiking neural networks is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "formal_model_verification",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Edge, on-device & neuromorphic deployment turns Formal verification of models into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Formal verification of models because Formal verification of models is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "runtime_assurance",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Edge, on-device & neuromorphic deployment turns Runtime assurance, monitors & safety envelopes into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Runtime assurance, monitors & safety envelopes because Runtime assurance, monitors & safety envelopes is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "distillation_pruning",
         "type": "operationalizes",
         "strength": "optional",
-        "rationale": "Edge, on-device & neuromorphic deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Knowledge distillation, pruning & sparsification because Knowledge distillation, pruning & sparsification is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -76,22 +76,22 @@
       "text": "Edge and on-device deployment runs models near sensors or users under strict power, memory, latency, connectivity, privacy, and thermal constraints."
     },
     {
-      "unit_id": "e7033f448a2c800e",
+      "unit_id": "0015efc6a7233aa9",
       "node_id": "edge_ondevice",
       "field": "why_it_matters",
-      "text": "The role of Edge, on-device & neuromorphic deployment is to connect Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators to downstream capabilities including Robotics & embodied AI, Neuromorphic, sensor & edge intelligence."
+      "text": "In this atlas graph, Edge, on-device & neuromorphic deployment is modeled as depending on Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators and feeding downstream nodes such as Robotics & embodied AI, Neuromorphic, sensor & edge intelligence."
     },
     {
-      "unit_id": "7f56328929aa5d9a",
+      "unit_id": "d46dcdbe0db474f9",
       "node_id": "edge_ondevice",
       "field": "examples[1]",
-      "text": "substrate for Robotics & embodied AI"
+      "text": "atlas downstream link to Robotics & embodied AI"
     },
     {
-      "unit_id": "e2e00d449bfcb009",
+      "unit_id": "f3189b1765b652eb",
       "node_id": "edge_ondevice",
       "field": "examples[2]",
-      "text": "substrate for Neuromorphic, sensor & edge intelligence"
+      "text": "atlas downstream link to Neuromorphic, sensor & edge intelligence"
     },
     {
       "unit_id": "33351fefcbdaa73f",
@@ -100,90 +100,90 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Quantized inference & compressed deployment, GPUs, TPUs & AI accelerators."
     },
     {
-      "unit_id": "1893fd344562957b",
+      "unit_id": "2a7bd48de188eca4",
       "node_id": "edge_ondevice",
       "field": "dependencies.quantized_inference.rationale",
-      "text": "Edge, on-device & neuromorphic deployment turns Quantized inference & compressed deployment into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Quantized inference & compressed deployment because Quantized inference & compressed deployment is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "35de10d4de40a1f1",
+      "unit_id": "e98270e305d605e9",
       "node_id": "edge_ondevice",
       "field": "dependencies.accelerators.rationale",
-      "text": "Edge, on-device & neuromorphic deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "7b005b0ca668b255",
+      "unit_id": "9433b05d37d56bb9",
       "node_id": "edge_ondevice",
       "field": "dependencies.snn.rationale",
-      "text": "Edge, on-device & neuromorphic deployment turns Spiking neural networks into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Spiking neural networks because Spiking neural networks is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "44d40d763bb41563",
+      "unit_id": "161d27f734b8ad89",
       "node_id": "edge_ondevice",
       "field": "dependencies.formal_model_verification.rationale",
-      "text": "Edge, on-device & neuromorphic deployment turns Formal verification of models into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Formal verification of models because Formal verification of models is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "1895731cd2496541",
+      "unit_id": "b5160fd89d3832ae",
       "node_id": "edge_ondevice",
       "field": "dependencies.runtime_assurance.rationale",
-      "text": "Edge, on-device & neuromorphic deployment turns Runtime assurance, monitors & safety envelopes into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Runtime assurance, monitors & safety envelopes because Runtime assurance, monitors & safety envelopes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "23b41041590a5420",
+      "unit_id": "43c47dd286f36816",
       "node_id": "edge_ondevice",
       "field": "dependencies.distillation_pruning.rationale",
-      "text": "Edge, on-device & neuromorphic deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Knowledge distillation, pruning & sparsification because Knowledge distillation, pruning & sparsification is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "7569b25c652ad59e",
+      "edge_id": "eeb850067a175917",
       "node_id": "edge_ondevice",
       "dependency_id": "quantized_inference",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Edge, on-device & neuromorphic deployment turns Quantized inference & compressed deployment into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Quantized inference & compressed deployment because Quantized inference & compressed deployment is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "dc68e434b85d6f35",
+      "edge_id": "b896f21212aaf2c1",
       "node_id": "edge_ondevice",
       "dependency_id": "accelerators",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Edge, on-device & neuromorphic deployment turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "ecda67631574bb71",
+      "edge_id": "2f1ff746ec385595",
       "node_id": "edge_ondevice",
       "dependency_id": "snn",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Edge, on-device & neuromorphic deployment turns Spiking neural networks into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Spiking neural networks because Spiking neural networks is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "4961c63409e1c838",
+      "edge_id": "d8dbc17072f67d08",
       "node_id": "edge_ondevice",
       "dependency_id": "formal_model_verification",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Edge, on-device & neuromorphic deployment turns Formal verification of models into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Formal verification of models because Formal verification of models is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "05a04b13dbd18dfa",
+      "edge_id": "72c4a957dca1a68b",
       "node_id": "edge_ondevice",
       "dependency_id": "runtime_assurance",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Edge, on-device & neuromorphic deployment turns Runtime assurance, monitors & safety envelopes into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Runtime assurance, monitors & safety envelopes because Runtime assurance, monitors & safety envelopes is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "b844c0076e26a1bb",
+      "edge_id": "30eee6d52bc89d4f",
       "node_id": "edge_ondevice",
       "dependency_id": "distillation_pruning",
       "type": "operationalizes",
       "strength": "optional",
-      "rationale": "Edge, on-device & neuromorphic deployment turns Knowledge distillation, pruning & sparsification into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Edge, on-device & neuromorphic deployment has an `operationalizes` dependency on Knowledge distillation, pruning & sparsification because Knowledge distillation, pruning & sparsification is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

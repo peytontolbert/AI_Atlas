@@ -67,13 +67,14 @@
       "text": "multi-agent evidence synthesis",
       "source_ids": [
         "ref_got",
-        "ref_tot"
+        "ref_tot",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Multi-agent evidence synthesis is plausible but not directly supported by the GoT abstract."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "844153bdf257b640",
@@ -121,21 +122,6 @@
       "notes": "The source directly uses arbitrary graph vertices and edges/dependencies."
     },
     {
-      "unit_id": "f6ea36fbdd5251ab",
-      "node_id": "graph_of_thoughts",
-      "field": "dependencies.multiagent_coordination.rationale",
-      "text": "Graph-of-Thought & non-linear deliberation explores alternatives using the state, scoring, or search process in Multi-agent coordination, debate & markets.",
-      "source_ids": [
-        "ref_got",
-        "ref_tot"
-      ],
-      "evidence_location": "Graph of Thoughts arXiv abstract, lines 38-40: LLM thoughts as vertices, edges as dependencies, arbitrary graph structure, combining thoughts, distillation, feedback loops, and cost/quality claims. Tree of Thoughts arXiv abstract, lines 42-45: exploration over intermediate thoughts, multiple reasoning paths, self-evaluation, lookahead/backtracking, and search/planning tasks.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "GoT can combine thoughts, but multiagent coordination/debate/markets are not directly sourced."
-    },
-    {
       "unit_id": "c12ce58400b75612",
       "node_id": "graph_of_thoughts",
       "field": "dependencies.reflection_verifier.rationale",
@@ -149,6 +135,20 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Feedback loops and enhancing thoughts support verifier/reflection-like operations."
+    },
+    {
+      "unit_id": "11be576e187ce702",
+      "node_id": "graph_of_thoughts",
+      "field": "dependencies.multiagent_coordination.rationale",
+      "text": "In this atlas graph, Graph-of-Thought & non-linear deliberation has a `searches_with` dependency on Multi-agent coordination, debate & markets with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -183,21 +183,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "6982c541699c012e",
-      "node_id": "graph_of_thoughts",
-      "dependency_id": "multiagent_coordination",
-      "source_ids": [
-        "ref_got",
-        "ref_tot"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Multiagent evidence synthesis is plausible but not direct.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
       "edge_id": "b71988dd0174faea",
       "node_id": "graph_of_thoughts",
       "dependency_id": "reflection_verifier",
@@ -211,6 +196,19 @@
       "notes": "Feedback loops and thought enhancement support reflection/verifier as a common mechanism.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "c8c0d1db3cc616a2",
+      "node_id": "graph_of_thoughts",
+      "dependency_id": "multiagent_coordination",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

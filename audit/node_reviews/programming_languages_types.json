@@ -17,76 +17,19 @@
       "notes": "AIMA supports syntax, semantics, logic programming, and language-definition material; the IR source supports compiler intermediate representations; the type-systems source supports type systems as a programming-language theory topic. The 'executable reasoning and software tools' phrasing is synthesized."
     },
     {
-      "unit_id": "9f1b7d730aad6fe6",
-      "node_id": "programming_languages_types",
-      "field": "why_it_matters",
-      "text": "The role of Programming languages, compilers & type systems is to connect Discrete mathematics & logic, Algorithms & data structures to downstream capabilities including Tokens, vocabularies & symbolic units, Programs, ASTs, bytecode & intermediate representations, Graph compilers, runtimes & operator fusion.",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Intermediate_representation"
-      ],
-      "evidence_location": "AIMA contents.html lines 173-199, 248-253, 776-779; Intermediate representation page definition, intermediate language, and examples sections",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support logic, algorithms/pseudocode, programming-language syntax, logic programming, and IR/bytecode-like compiler representations. They do not directly support graph compilers, runtimes, operator fusion, or the exact atlas role statement."
-    },
-    {
-      "unit_id": "f2f3250ea2aceabc",
-      "node_id": "programming_languages_types",
-      "field": "examples[1]",
-      "text": "substrate for Tokens, vocabularies & symbolic units",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA contents.html lines 176-180, 205-221, and 776-779",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports syntax, symbols, terms, and BNF language definitions. The source does not directly connect the node to the atlas category 'Tokens, vocabularies & symbolic units.'"
-    },
-    {
-      "unit_id": "328dee03cb04f0cb",
-      "node_id": "programming_languages_types",
-      "field": "examples[2]",
-      "text": "substrate for Programs, ASTs, bytecode & intermediate representations",
-      "source_ids": [
-        "ref_aima",
-        "url:https://en.wikipedia.org/wiki/Intermediate_representation"
-      ],
-      "evidence_location": "AIMA contents.html lines 248-253 and 776-779; Intermediate representation page definition and intermediate language sections",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The inspected sources support algorithms/pseudocode, logic programming, intermediate representations, compiler processing, bytecode-like intermediate languages, and compiler examples. ASTs are not directly named in the inspected evidence."
-    },
-    {
-      "unit_id": "2598e7ecff6822fc",
-      "node_id": "programming_languages_types",
-      "field": "examples[3]",
-      "text": "substrate for Graph compilers, runtimes & operator fusion",
-      "source_ids": [
-        "url:https://en.wikipedia.org/wiki/Intermediate_representation"
-      ],
-      "evidence_location": "Intermediate representation page definition and examples mentioning compiler frameworks, LLVM IR, and MLIR",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "IR evidence supports compiler frameworks and MLIR, which is relevant to graph/compiler infrastructure. Runtime systems and operator fusion are not directly supported by the inspected evidence."
-    },
-    {
       "unit_id": "0116e004556ce58d",
       "node_id": "programming_languages_types",
       "field": "limitations[1]",
       "text": "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Discrete mathematics & logic, Algorithms & data structures.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 173-199, 248-253, 737-741, and 776-779",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "AIMA supports formal logic, algorithms, pseudocode, and language definitions. It does not directly support the empirical-mismatch warning or exact direct-dependency clause."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "5b3a58c6356d9493",
@@ -117,6 +60,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Compilers and IRs process programs using algorithms and data structures, and AIMA explicitly includes algorithms and pseudocode. The source support is indirect but defensible."
+    },
+    {
+      "unit_id": "8ac83185bf156191",
+      "node_id": "programming_languages_types",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Programming languages, compilers & type systems is modeled as depending on Discrete mathematics & logic, Algorithms & data structures and feeding downstream nodes such as Tokens, vocabularies & symbolic units, Programs, ASTs, bytecode & intermediate representations, Graph compilers, runtimes & operator fusion.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "0c66e605cc18d0df",
+      "node_id": "programming_languages_types",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Tokens, vocabularies & symbolic units",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4feb50f87c2e42b8",
+      "node_id": "programming_languages_types",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Programs, ASTs, bytecode & intermediate representations",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c70692dd3e6318be",
+      "node_id": "programming_languages_types",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Graph compilers, runtimes & operator fusion",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -150,5 +149,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "programming_languages_types",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

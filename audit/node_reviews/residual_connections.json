@@ -15,76 +15,20 @@
       "notes": "The cited source set directly supports the claim at the level stated."
     },
     {
-      "unit_id": "ffebeb85eea9d853",
-      "node_id": "residual_connections",
-      "field": "why_it_matters",
-      "text": "The role of Residual, skip & highway connections is to connect Affine transforms & dense layers, Algorithms & data structures to downstream capabilities including Multilayer perceptrons, ResNets & DenseNets, U-Nets & encoder\u2013decoder convnets.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
-      "unit_id": "a3891f6302e767bb",
-      "node_id": "residual_connections",
-      "field": "examples[1]",
-      "text": "substrate for Multilayer perceptrons",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
-      "unit_id": "c58be26b9cd9e11e",
-      "node_id": "residual_connections",
-      "field": "examples[2]",
-      "text": "substrate for ResNets & DenseNets",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated."
-    },
-    {
-      "unit_id": "ec4e917b379afd7a",
-      "node_id": "residual_connections",
-      "field": "examples[3]",
-      "text": "substrate for U-Nets & encoder\u2013decoder convnets",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
-    },
-    {
       "unit_id": "5083ba1fea9d0deb",
       "node_id": "residual_connections",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Affine transforms & dense layers, Algorithms & data structures.",
       "source_ids": [
         "ref_dlbook",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "69bf7b77ffc81c08",
@@ -102,19 +46,74 @@
       "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
     },
     {
-      "unit_id": "e3e736a1bfc6f853",
+      "unit_id": "2d420f960d1cd5a5",
       "node_id": "residual_connections",
-      "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "Residual, skip & highway connections uses Algorithms & data structures as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Residual, skip & highway connections is modeled as depending on Affine transforms & dense layers, Algorithms & data structures and feeding downstream nodes such as Multilayer perceptrons, ResNets & DenseNets, U-Nets & encoder–decoder convnets.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning and residual-network context describe skip/residual pathways that pass information/gradients through deep compositions; algorithm/data-structure dependency is graph-level rather than directly sourced.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "26bd90eb3fdb6ada",
+      "node_id": "residual_connections",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Multilayer perceptrons",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8e0002a5db83ee06",
+      "node_id": "residual_connections",
+      "field": "examples[2]",
+      "text": "atlas downstream link to ResNets & DenseNets",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b856d94496e7eb02",
+      "node_id": "residual_connections",
+      "field": "examples[3]",
+      "text": "atlas downstream link to U-Nets & encoder–decoder convnets",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f54996b914b4eacb",
+      "node_id": "residual_connections",
+      "field": "dependencies.algorithms_data_structures.rationale",
+      "text": "In this atlas graph, Residual, skip & highway connections has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -134,19 +133,20 @@
       "strength_supported": true
     },
     {
-      "edge_id": "dd60a33cb3e8bec0",
+      "edge_id": "8a2a3c177d5b7dfd",
       "node_id": "residual_connections",
       "dependency_id": "algorithms_data_structures",
       "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology. Relationship direction is reviewed under the atlas convention from node to prerequisite.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "residual_connections",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

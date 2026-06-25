@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Bayesian networks, Markov random fields, and factor graphs factorize a joint distribution into local relationships that support modular probabilistic inference.",
-    "why_it_matters": "The role of Bayesian networks, MRFs & factor graphs is to connect Graph theory, Bayesian & approximate inference to downstream capabilities including Knowledge graphs, semantic search & relational reasoning.",
+    "why_it_matters": "In this atlas graph, Bayesian networks, MRFs & factor graphs is modeled as depending on Graph theory, Bayesian & approximate inference and feeding downstream nodes such as Knowledge graphs, semantic search & relational reasoning.",
     "examples": [
-      "substrate for Knowledge graphs, semantic search & relational reasoning",
+      "atlas downstream link to Knowledge graphs, semantic search & relational reasoning",
       "combined with Graph theory"
     ],
     "limitations": [
@@ -40,13 +40,13 @@
         "id": "bayesian_approx_inference",
         "type": "optimizes_for",
         "strength": "core",
-        "rationale": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+        "rationale": "In this atlas graph, Bayesian networks, MRFs & factor graphs has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "mcmc_em_message_passing",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+        "rationale": "In this atlas graph, Bayesian networks, MRFs & factor graphs has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Bayesian networks, Markov random fields, and factor graphs factorize a joint distribution into local relationships that support modular probabilistic inference."
     },
     {
-      "unit_id": "8d30080c39feb994",
+      "unit_id": "c3f1a19116cd68ba",
       "node_id": "bayesian_factor_graphs",
       "field": "why_it_matters",
-      "text": "The role of Bayesian networks, MRFs & factor graphs is to connect Graph theory, Bayesian & approximate inference to downstream capabilities including Knowledge graphs, semantic search & relational reasoning."
+      "text": "In this atlas graph, Bayesian networks, MRFs & factor graphs is modeled as depending on Graph theory, Bayesian & approximate inference and feeding downstream nodes such as Knowledge graphs, semantic search & relational reasoning."
     },
     {
-      "unit_id": "351bdb0f505e7dcb",
+      "unit_id": "69d170782ec9aeb3",
       "node_id": "bayesian_factor_graphs",
       "field": "examples[1]",
-      "text": "substrate for Knowledge graphs, semantic search & relational reasoning"
+      "text": "atlas downstream link to Knowledge graphs, semantic search & relational reasoning"
     },
     {
       "unit_id": "5451c18425047c2b",
@@ -88,16 +88,16 @@
       "text": "Bayesian networks, MRFs & factor graphs rests on the formal or computational capabilities supplied by Graph theory."
     },
     {
-      "unit_id": "7145c8a5560f9a0d",
+      "unit_id": "2cd424a89bf9ef96",
       "node_id": "bayesian_factor_graphs",
       "field": "dependencies.bayesian_approx_inference.rationale",
-      "text": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      "text": "In this atlas graph, Bayesian networks, MRFs & factor graphs has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "415b79abb8255c61",
+      "unit_id": "7884ec98c0fb5b4d",
       "node_id": "bayesian_factor_graphs",
       "field": "dependencies.mcmc_em_message_passing.rationale",
-      "text": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+      "text": "In this atlas graph, Bayesian networks, MRFs & factor graphs has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "edge_units": [
@@ -110,20 +110,20 @@
       "rationale": "Bayesian networks, MRFs & factor graphs rests on the formal or computational capabilities supplied by Graph theory."
     },
     {
-      "edge_id": "69b47b68d7062196",
+      "edge_id": "2a3d27c7328f39a2",
       "node_id": "bayesian_factor_graphs",
       "dependency_id": "bayesian_approx_inference",
       "type": "optimizes_for",
       "strength": "core",
-      "rationale": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      "rationale": "In this atlas graph, Bayesian networks, MRFs & factor graphs has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "6049d7763b68d928",
+      "edge_id": "015d151c325bab84",
       "node_id": "bayesian_factor_graphs",
       "dependency_id": "mcmc_em_message_passing",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Bayesian networks, MRFs & factor graphs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+      "rationale": "In this atlas graph, Bayesian networks, MRFs & factor graphs has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "candidate_references": {

@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Model servers expose trained models through batching, scheduling, caching, versioning, routing, and runtime-specific execution interfaces.",
-    "why_it_matters": "The role of Model servers & inference runtimes is to connect Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints to downstream capabilities including Batching, admission control & GPU scheduling, Speculative, parallel & assisted decoding, Tensor, pipeline, sequence & expert parallel inference.",
+    "why_it_matters": "In this atlas graph, Model servers & inference runtimes is modeled as depending on Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints and feeding downstream nodes such as Batching, admission control & GPU scheduling, Speculative, parallel & assisted decoding, Tensor, pipeline, sequence & expert parallel inference.",
     "examples": [
-      "substrate for Batching, admission control & GPU scheduling",
-      "substrate for Speculative, parallel & assisted decoding",
-      "substrate for Tensor, pipeline, sequence & expert parallel inference"
+      "atlas downstream link to Batching, admission control & GPU scheduling",
+      "atlas downstream link to Speculative, parallel & assisted decoding",
+      "atlas downstream link to Tensor, pipeline, sequence & expert parallel inference"
     ],
     "limitations": [
       "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints."
@@ -34,19 +34,19 @@
         "id": "compilers_runtimes",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Model servers & inference runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "storage_checkpoints",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Model servers & inference runtimes turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "transformer",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Model servers & inference runtimes turns Transformers into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Transformers because Transformers is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Model servers expose trained models through batching, scheduling, caching, versioning, routing, and runtime-specific execution interfaces."
     },
     {
-      "unit_id": "9883a88d19bea8fa",
+      "unit_id": "1276c45cfc2457cb",
       "node_id": "model_serving",
       "field": "why_it_matters",
-      "text": "The role of Model servers & inference runtimes is to connect Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints to downstream capabilities including Batching, admission control & GPU scheduling, Speculative, parallel & assisted decoding, Tensor, pipeline, sequence & expert parallel inference."
+      "text": "In this atlas graph, Model servers & inference runtimes is modeled as depending on Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints and feeding downstream nodes such as Batching, admission control & GPU scheduling, Speculative, parallel & assisted decoding, Tensor, pipeline, sequence & expert parallel inference."
     },
     {
-      "unit_id": "b8f3ad8b116b67ce",
+      "unit_id": "b52a4ec4bdf99bcd",
       "node_id": "model_serving",
       "field": "examples[1]",
-      "text": "substrate for Batching, admission control & GPU scheduling"
+      "text": "atlas downstream link to Batching, admission control & GPU scheduling"
     },
     {
-      "unit_id": "d0e38307c243c9a0",
+      "unit_id": "26c8d506c0183cd4",
       "node_id": "model_serving",
       "field": "examples[2]",
-      "text": "substrate for Speculative, parallel & assisted decoding"
+      "text": "atlas downstream link to Speculative, parallel & assisted decoding"
     },
     {
-      "unit_id": "deb5abcf318b0609",
+      "unit_id": "e9ba69a252413f78",
       "node_id": "model_serving",
       "field": "examples[3]",
-      "text": "substrate for Tensor, pipeline, sequence & expert parallel inference"
+      "text": "atlas downstream link to Tensor, pipeline, sequence & expert parallel inference"
     },
     {
       "unit_id": "5303391be7d79411",
@@ -88,48 +88,48 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints."
     },
     {
-      "unit_id": "bd3604d8f0832512",
+      "unit_id": "913dd0f5794d30b5",
       "node_id": "model_serving",
       "field": "dependencies.compilers_runtimes.rationale",
-      "text": "Model servers & inference runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "592f762431d88d5c",
+      "unit_id": "432be7014cf02e04",
       "node_id": "model_serving",
       "field": "dependencies.storage_checkpoints.rationale",
-      "text": "Model servers & inference runtimes turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "75982d1720e3c446",
+      "unit_id": "1b5d526b4837885e",
       "node_id": "model_serving",
       "field": "dependencies.transformer.rationale",
-      "text": "Model servers & inference runtimes turns Transformers into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Transformers because Transformers is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "be12143b35a3615a",
+      "edge_id": "3f58c5d2733e07eb",
       "node_id": "model_serving",
       "dependency_id": "compilers_runtimes",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Model servers & inference runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "2b7b522ca861381f",
+      "edge_id": "f6b1044c749f2ba5",
       "node_id": "model_serving",
       "dependency_id": "storage_checkpoints",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Model servers & inference runtimes turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "a701d35193b213ee",
+      "edge_id": "668fe39a5dcfdb72",
       "node_id": "model_serving",
       "dependency_id": "transformer",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Model servers & inference runtimes turns Transformers into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Transformers because Transformers is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

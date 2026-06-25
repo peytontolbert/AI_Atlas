@@ -16,195 +16,189 @@
       "notes": "The cited source set directly supports retrieval as selecting relevant information from a collection."
     },
     {
-      "unit_id": "2fb1c580d7ed8822",
-      "node_id": "external_retrieval",
-      "field": "why_it_matters",
-      "text": "The role of External retrieval & ranking is to connect Databases & information retrieval, Embeddings & distributed representations to downstream capabilities including Episodic memory, Sparse lexical retrieval, Dense vector retrieval.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima",
-        "ref_pml"
-      ],
-      "evidence_location": "The packet sources support IR, representation, and ranking background, but not the entire downstream atlas list.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Sparse and dense retrieval are defensible; episodic memory as downstream capability needs a more specific source."
-    },
-    {
-      "unit_id": "722b136dd30cb5b9",
-      "node_id": "external_retrieval",
-      "field": "examples[1]",
-      "text": "substrate for Episodic memory",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_aima"
-      ],
-      "evidence_location": "The cited sources provide broad memory/retrieval background but not this exact AI memory-system relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This needs a source on episodic memory systems or retrieval-augmented memory."
-    },
-    {
-      "unit_id": "96c423a33f2e4f4d",
-      "node_id": "external_retrieval",
-      "field": "examples[2]",
-      "text": "substrate for Sparse lexical retrieval",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "AIMA supports broad information retrieval and ranking concepts.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Sparse lexical retrieval is a direct kind of external retrieval, but a dedicated IR reference would be stronger."
-    },
-    {
-      "unit_id": "2d6e62a4207afd9e",
-      "node_id": "external_retrieval",
-      "field": "examples[3]",
-      "text": "substrate for Dense vector retrieval",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support distributed representations and probabilistic/representation learning background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Dense vector retrieval relies on embeddings plus retrieval, but direct evidence would require a dense retrieval source."
-    },
-    {
       "unit_id": "d47ddadb4fc0c109",
       "node_id": "external_retrieval",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Databases & information retrieval, Embeddings & distributed representations.",
       "source_ids": [
         "ref_dlbook",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support dependency background, but not the generic limitation statement.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependencies are plausible; the limitation needs direct retrieval-system evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "13e977c78665824a",
+      "unit_id": "a1a117aaef72ff29",
+      "node_id": "external_retrieval",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, External retrieval & ranking is modeled as depending on Databases & information retrieval, Embeddings & distributed representations and feeding downstream nodes such as Episodic memory, Sparse lexical retrieval, Dense vector retrieval.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e7259d19e62d865f",
+      "node_id": "external_retrieval",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Episodic memory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "040964c75eb357fa",
+      "node_id": "external_retrieval",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Sparse lexical retrieval",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a3fcfb1e584a625b",
+      "node_id": "external_retrieval",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Dense vector retrieval",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "1e435cb7546accf9",
       "node_id": "external_retrieval",
       "field": "dependencies.databases_ir.rationale",
-      "text": "External retrieval & ranking uses Databases & information retrieval as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA supports information retrieval and search over external information sources.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "This is essentially definitional, but the packet source is broad."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "d1b56954f00e918e",
+      "unit_id": "42056e03f071ab5d",
       "node_id": "external_retrieval",
       "field": "dependencies.embeddings.rationale",
-      "text": "External retrieval & ranking uses Embeddings & distributed representations as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support learned representations and embeddings.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Embeddings are common for dense retrieval and ranking, but not required for all external retrieval."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "edbe2d7466b0f772",
+      "unit_id": "204d9c1751931ceb",
       "node_id": "external_retrieval",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "External retrieval & ranking uses Datasets, sampling & splits as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML supports dataset and sampling background, not direct retrieval/ranking operation.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "External collections can be datasets, but sampling/splits are not clearly part of retrieval's defined operation."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "e200526917b6ec81",
+      "unit_id": "7023d1d88b68be7c",
       "node_id": "external_retrieval",
       "field": "dependencies.margin_ranking_metric.rationale",
-      "text": "External retrieval & ranking uses Margin, ranking & metric objectives as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, External retrieval & ranking has a `uses` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML provides broad objective and metric-learning background relevant to ranking.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Ranking/metric objectives are common in learned retrieval, but not universal across all external retrieval."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "e6c3885bdab5025f",
+      "edge_id": "724206526d94369e",
       "node_id": "external_retrieval",
       "dependency_id": "databases_ir",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "External retrieval directly uses information retrieval concepts; core strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "82b3c2b6ce58e443",
+      "edge_id": "e22ad59e6db65c56",
       "node_id": "external_retrieval",
       "dependency_id": "embeddings",
       "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Embeddings are common for dense retrieval; common strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "3fd10b1f6adb9051",
+      "edge_id": "c54ff6df2ed50c0c",
       "node_id": "external_retrieval",
       "dependency_id": "datasets_sampling",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "External collections may be datasets, but sampling/splits are not clearly a mechanism dependency.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "968819bd9c15fd3a",
+      "edge_id": "22e6ac20a3b6731c",
       "node_id": "external_retrieval",
       "dependency_id": "margin_ranking_metric",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Ranking and metric objectives are common for learned retrieval and ranking systems.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "external_retrieval",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

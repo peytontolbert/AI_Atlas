@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Learning-rate schedules, warmup, clipping, initialization, gradient scaling, and related controls keep optimization inside numerically stable regimes.",
-    "why_it_matters": "The role of Learning-rate schedules, warmup & stabilization is to connect Adam, Adafactor & adaptive optimizers, Normalization & standardization to downstream capabilities including Large-scale pretraining.",
+    "why_it_matters": "In this atlas graph, Learning-rate schedules, warmup & stabilization is modeled as depending on Adam, Adafactor & adaptive optimizers, Normalization & standardization and feeding downstream nodes such as Large-scale pretraining.",
     "examples": [
-      "substrate for Large-scale pretraining",
+      "atlas downstream link to Large-scale pretraining",
       "combined with Adam, Adafactor & adaptive optimizers"
     ],
     "limitations": [
@@ -33,19 +33,19 @@
         "id": "adaptive_optimizers",
         "type": "uses",
         "strength": "core",
-        "rationale": "Learning-rate schedules, warmup & stabilization uses Adam, Adafactor & adaptive optimizers as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Adam, Adafactor & adaptive optimizers because Adam, Adafactor & adaptive optimizers is modeled as a reusable ingredient for the node."
       },
       {
         "id": "normalization",
         "type": "uses",
         "strength": "core",
-        "rationale": "Learning-rate schedules, warmup & stabilization uses Normalization & standardization as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Normalization & standardization because Normalization & standardization is modeled as a reusable ingredient for the node."
       },
       {
         "id": "numerical_methods",
         "type": "uses",
         "strength": "common",
-        "rationale": "Learning-rate schedules, warmup & stabilization uses Numerical analysis as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,16 +57,16 @@
       "text": "Learning-rate schedules, warmup, clipping, initialization, gradient scaling, and related controls keep optimization inside numerically stable regimes."
     },
     {
-      "unit_id": "10c896dc9fbf5b84",
+      "unit_id": "5a5057f2e93a06bc",
       "node_id": "schedules_stabilization",
       "field": "why_it_matters",
-      "text": "The role of Learning-rate schedules, warmup & stabilization is to connect Adam, Adafactor & adaptive optimizers, Normalization & standardization to downstream capabilities including Large-scale pretraining."
+      "text": "In this atlas graph, Learning-rate schedules, warmup & stabilization is modeled as depending on Adam, Adafactor & adaptive optimizers, Normalization & standardization and feeding downstream nodes such as Large-scale pretraining."
     },
     {
-      "unit_id": "abaa85c3c4c72126",
+      "unit_id": "db6a18247659f79e",
       "node_id": "schedules_stabilization",
       "field": "examples[1]",
-      "text": "substrate for Large-scale pretraining"
+      "text": "atlas downstream link to Large-scale pretraining"
     },
     {
       "unit_id": "437b57819dfd5d1a",
@@ -81,48 +81,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Adam, Adafactor & adaptive optimizers, Normalization & standardization."
     },
     {
-      "unit_id": "8a87f9a1edcd08c9",
+      "unit_id": "a6d06e10fc2f540e",
       "node_id": "schedules_stabilization",
       "field": "dependencies.adaptive_optimizers.rationale",
-      "text": "Learning-rate schedules, warmup & stabilization uses Adam, Adafactor & adaptive optimizers as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Adam, Adafactor & adaptive optimizers because Adam, Adafactor & adaptive optimizers is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "bb232185479f1e29",
+      "unit_id": "d13f3b9a179639ea",
       "node_id": "schedules_stabilization",
       "field": "dependencies.normalization.rationale",
-      "text": "Learning-rate schedules, warmup & stabilization uses Normalization & standardization as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Normalization & standardization because Normalization & standardization is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "ae2bdf25b4dbbd79",
+      "unit_id": "99ec7055a3911219",
       "node_id": "schedules_stabilization",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Learning-rate schedules, warmup & stabilization uses Numerical analysis as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "bf795c6e1c9ae6a5",
+      "edge_id": "55fe494329e4dafb",
       "node_id": "schedules_stabilization",
       "dependency_id": "adaptive_optimizers",
       "type": "uses",
       "strength": "core",
-      "rationale": "Learning-rate schedules, warmup & stabilization uses Adam, Adafactor & adaptive optimizers as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Adam, Adafactor & adaptive optimizers because Adam, Adafactor & adaptive optimizers is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "30bc2a9d26a31a41",
+      "edge_id": "dc198e81f1b42460",
       "node_id": "schedules_stabilization",
       "dependency_id": "normalization",
       "type": "uses",
       "strength": "core",
-      "rationale": "Learning-rate schedules, warmup & stabilization uses Normalization & standardization as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Normalization & standardization because Normalization & standardization is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "0acfe0b72191557d",
+      "edge_id": "ad43142d4a46bacb",
       "node_id": "schedules_stabilization",
       "dependency_id": "numerical_methods",
       "type": "uses",
       "strength": "common",
-      "rationale": "Learning-rate schedules, warmup & stabilization uses Numerical analysis as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Learning-rate schedules, warmup & stabilization has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

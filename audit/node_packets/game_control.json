@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Game-playing and control agents select actions in simulated or real environments through search, reinforcement learning, learned dynamics, or opponent modeling.",
-    "why_it_matters": "The role of Game-playing, control & simulation agents is to connect Model-based reinforcement learning, Monte Carlo tree search to downstream capabilities including Simulation, operations research & wargaming.",
+    "why_it_matters": "In this atlas graph, Game-playing, control & simulation agents is modeled as depending on Model-based reinforcement learning, Monte Carlo tree search and feeding downstream nodes such as Simulation, operations research & wargaming.",
     "examples": [
-      "substrate for Simulation, operations research & wargaming",
+      "atlas downstream link to Simulation, operations research & wargaming",
       "combined with Model-based reinforcement learning"
     ],
     "limitations": [
@@ -46,25 +46,25 @@
         "id": "world_model",
         "type": "applies",
         "strength": "common",
-        "rationale": "Game-playing, control & simulation agents integrates Latent world models & predictive dynamics as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Latent world models & predictive dynamics with `common` strength."
       },
       {
         "id": "multiagent_coordination",
         "type": "applies",
         "strength": "common",
-        "rationale": "Game-playing, control & simulation agents integrates Multi-agent coordination, debate & markets as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Multi-agent coordination, debate & markets with `common` strength."
       },
       {
         "id": "tree_of_thoughts",
         "type": "applies",
         "strength": "common",
-        "rationale": "Game-playing, control & simulation agents integrates Tree-of-Thought & branch-and-evaluate reasoning as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Tree-of-Thought & branch-and-evaluate reasoning with `common` strength."
       },
       {
         "id": "test_time_compute",
         "type": "applies",
         "strength": "optional",
-        "rationale": "Game-playing, control & simulation agents integrates Test-time compute scaling as part of an end-to-end application boundary."
+        "rationale": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Test-time compute scaling with `optional` strength."
       }
     ]
   },
@@ -76,16 +76,16 @@
       "text": "Game-playing and control agents select actions in simulated or real environments through search, reinforcement learning, learned dynamics, or opponent modeling."
     },
     {
-      "unit_id": "a8b0ee304f8bf6de",
+      "unit_id": "140c141a7e6e773f",
       "node_id": "game_control",
       "field": "why_it_matters",
-      "text": "The role of Game-playing, control & simulation agents is to connect Model-based reinforcement learning, Monte Carlo tree search to downstream capabilities including Simulation, operations research & wargaming."
+      "text": "In this atlas graph, Game-playing, control & simulation agents is modeled as depending on Model-based reinforcement learning, Monte Carlo tree search and feeding downstream nodes such as Simulation, operations research & wargaming."
     },
     {
-      "unit_id": "b2c5dab1463f1da7",
+      "unit_id": "27be862aeb818587",
       "node_id": "game_control",
       "field": "examples[1]",
-      "text": "substrate for Simulation, operations research & wargaming"
+      "text": "atlas downstream link to Simulation, operations research & wargaming"
     },
     {
       "unit_id": "c2a2191168f27565",
@@ -112,28 +112,28 @@
       "text": "Game-playing, control & simulation agents integrates Monte Carlo tree search as part of an end-to-end application boundary."
     },
     {
-      "unit_id": "c5f29ad0df1bc415",
+      "unit_id": "abfd852d006cd435",
       "node_id": "game_control",
       "field": "dependencies.world_model.rationale",
-      "text": "Game-playing, control & simulation agents integrates Latent world models & predictive dynamics as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Latent world models & predictive dynamics with `common` strength."
     },
     {
-      "unit_id": "783f0326cc4de301",
+      "unit_id": "c2d65806e28ebf78",
       "node_id": "game_control",
       "field": "dependencies.multiagent_coordination.rationale",
-      "text": "Game-playing, control & simulation agents integrates Multi-agent coordination, debate & markets as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Multi-agent coordination, debate & markets with `common` strength."
     },
     {
-      "unit_id": "8493939d06a4ee56",
+      "unit_id": "7d4cb283b136407b",
       "node_id": "game_control",
       "field": "dependencies.tree_of_thoughts.rationale",
-      "text": "Game-playing, control & simulation agents integrates Tree-of-Thought & branch-and-evaluate reasoning as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Tree-of-Thought & branch-and-evaluate reasoning with `common` strength."
     },
     {
-      "unit_id": "ae1a782266b0d290",
+      "unit_id": "69b905e56faf0c2c",
       "node_id": "game_control",
       "field": "dependencies.test_time_compute.rationale",
-      "text": "Game-playing, control & simulation agents integrates Test-time compute scaling as part of an end-to-end application boundary."
+      "text": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Test-time compute scaling with `optional` strength."
     }
   ],
   "edge_units": [
@@ -154,36 +154,36 @@
       "rationale": "Game-playing, control & simulation agents integrates Monte Carlo tree search as part of an end-to-end application boundary."
     },
     {
-      "edge_id": "4a64c8144290caa2",
+      "edge_id": "56c372763e60b4b8",
       "node_id": "game_control",
       "dependency_id": "world_model",
       "type": "applies",
       "strength": "common",
-      "rationale": "Game-playing, control & simulation agents integrates Latent world models & predictive dynamics as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Latent world models & predictive dynamics with `common` strength."
     },
     {
-      "edge_id": "281e3433cf8bb96a",
+      "edge_id": "0986aa7185844d39",
       "node_id": "game_control",
       "dependency_id": "multiagent_coordination",
       "type": "applies",
       "strength": "common",
-      "rationale": "Game-playing, control & simulation agents integrates Multi-agent coordination, debate & markets as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Multi-agent coordination, debate & markets with `common` strength."
     },
     {
-      "edge_id": "f8bc06b32e84853d",
+      "edge_id": "537c90702b4a269a",
       "node_id": "game_control",
       "dependency_id": "tree_of_thoughts",
       "type": "applies",
       "strength": "common",
-      "rationale": "Game-playing, control & simulation agents integrates Tree-of-Thought & branch-and-evaluate reasoning as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Tree-of-Thought & branch-and-evaluate reasoning with `common` strength."
     },
     {
-      "edge_id": "51df0cb37bf14ea5",
+      "edge_id": "dcaddb1127c9a589",
       "node_id": "game_control",
       "dependency_id": "test_time_compute",
       "type": "applies",
       "strength": "optional",
-      "rationale": "Game-playing, control & simulation agents integrates Test-time compute scaling as part of an end-to-end application boundary."
+      "rationale": "In this atlas graph, Game-playing, control & simulation agents has an `applies` dependency on Test-time compute scaling with `optional` strength."
     }
   ],
   "candidate_references": {

@@ -1,23 +1,245 @@
 {
   "sentence_reviews": [
-    {"unit_id":"48459615b36a47bd","node_id":"reward_rlhf","field":"definition","text":"Reward-model-based RLHF fits a preference predictor and optimizes a policy against it, usually with a divergence penalty limiting drift from a reference model.","source_ids":["ref_rlhf","ref_dpo"],"evidence_location":"Ouyang arXiv abstract lines 38-40 describes collecting output rankings and further fine-tuning a supervised model using RLHF; DPO arXiv abstract lines 42-44 describes RLHF first fitting a reward model reflecting human preferences and then using RL while avoiding drift from the original model.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The definition is directly supported by the RLHF and DPO abstracts."},
-    {"unit_id":"409f4ac21f0ae3e5","node_id":"reward_rlhf","field":"why_it_matters","text":"The role of Reward-model training, RLHF & RLAIF is to connect Reward modeling, Policy-gradient & actor–critic objectives to downstream capabilities including Conversational assistants & chatbots.","source_ids":["ref_rlhf","ref_dpo","ref_rlbook"],"evidence_location":"Ouyang lines 37-40 supports language models following user intent via supervised fine-tuning and RLHF; DPO lines 42-45 supports reward modeling and RLHF policy optimization. Conversational assistants and RLAIF are not directly named in these abstracts.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Reward modeling and policy optimization are supported; chat assistant downstream role is inferred from instruction-following/user-intent setting."},
-    {"unit_id":"3cdf2e3140762126","node_id":"reward_rlhf","field":"examples[1]","text":"substrate for Conversational assistants & chatbots","source_ids":["ref_rlhf"],"evidence_location":"Ouyang arXiv abstract lines 37-40 discusses aligning language models with user intent over prompts and desired model behavior, but does not explicitly use the phrase chatbot.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The chat-assistant connection is highly plausible but not exact in the inspected abstract."},
-    {"unit_id":"a15c3efc92ba71a6","node_id":"reward_rlhf","field":"examples[2]","text":"combined with Reward modeling","source_ids":["ref_rlhf","ref_dpo"],"evidence_location":"DPO arXiv abstract lines 42-44 describes RLHF first fitting a reward model reflecting human preferences; Ouyang lines 38-40 describes ranking outputs and RLHF.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported."},
-    {"unit_id":"c06f05d27c9a0a18","node_id":"reward_rlhf","field":"limitations[1]","text":"Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Reward modeling, Policy-gradient & actor–critic objectives.","source_ids":["ref_rlhf","ref_dpo"],"evidence_location":"DPO arXiv abstract line 44 calls RLHF complex and often unstable, with reward-model fitting and RL fine-tuning; it does not directly support every generic sensitivity clause.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Instability and dependencies are supported; data quality/randomness/contamination clauses need more specific sources."},
-    {"unit_id":"bcdd5e5b2e8ca7bf","node_id":"reward_rlhf","field":"dependencies.reward_modeling.rationale","text":"Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Reward modeling.","source_ids":["ref_rlhf","ref_dpo"],"evidence_location":"DPO arXiv abstract lines 42-44 describes RLHF fitting a reward model reflecting human preferences; Ouyang lines 38-40 describes rankings used to further fine-tune via RLHF.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Reward modeling is central to reward-model-based RLHF."},
-    {"unit_id":"169a08c9a25986b4","node_id":"reward_rlhf","field":"dependencies.policy_actor_critic.rationale","text":"Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Policy-gradient & actor–critic objectives.","source_ids":["ref_rlhf","ref_dpo","ref_rlbook"],"evidence_location":"DPO arXiv abstract lines 43-45 contrasts DPO with RLHF that fine-tunes the LM using reinforcement learning to maximize reward; Ouyang lines 38-40 says RLHF further fine-tunes the supervised model.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"RL policy optimization is directly supported; actor-critic specifically is not named in the inspected abstracts."},
-    {"unit_id":"79e6af8ed9ed082c","node_id":"reward_rlhf","field":"dependencies.sft_instruction.rationale","text":"Reward-model training, RLHF & RLAIF uses Supervised fine-tuning & instruction tuning as a reusable ingredient in its defined operation.","source_ids":["ref_rlhf"],"evidence_location":"Ouyang arXiv abstract line 38 describes fine-tuning GPT-3 using supervised learning before collecting rankings and applying RLHF.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported for the InstructGPT/RLHF pipeline."},
-    {"unit_id":"a4f128f7f83c55cf","node_id":"reward_rlhf","field":"dependencies.preference_learning.rationale","text":"Reward-model training, RLHF & RLAIF uses Preference learning as a reusable ingredient in its defined operation.","source_ids":["ref_rlhf","ref_dpo"],"evidence_location":"Ouyang lines 38-40 uses rankings of model outputs; DPO lines 42-44 describes human labels of relative quality and reward models reflecting preferences.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported."},
-    {"unit_id":"eea40a0510796ea8","node_id":"reward_rlhf","field":"dependencies.process_reward_models.rationale","text":"Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Process supervision & step-level reward models.","source_ids":["ref_rlhf","ref_rlvr","url:https://arxiv.org/abs/2408.03314"],"evidence_location":"Ouyang supports reward-model RLHF generally; Snell arXiv abstract lines 44-45 discusses searching against process-based verifier reward models at test time; no inspected source establishes process reward models as common for RLHF/RLAIF broadly.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Process reward models are related but not directly a common dependency for reward-model RLHF as stated."},
-    {"unit_id":"1a3e1d27a395b2a0","node_id":"reward_rlhf","field":"dependencies.outcome_verifiers.rationale","text":"Reward-model training, RLHF & RLAIF is learned, selected, or evaluated using the objective family Outcome verifiers & executable rewards.","source_ids":["ref_rlvr"],"evidence_location":"RLVR arXiv abstract lines 41-44 discusses verifiable rewards for LLM reasoning, answer correctness, and reasoning quality; it does not directly cover standard reward-model RLHF/RLAIF.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Outcome verifiers are relevant to verifiable-reward RL but optional and not direct evidence for reward-model RLHF."}
+    {
+      "unit_id": "48459615b36a47bd",
+      "node_id": "reward_rlhf",
+      "field": "definition",
+      "text": "Reward-model-based RLHF fits a preference predictor and optimizes a policy against it, usually with a divergence penalty limiting drift from a reference model.",
+      "source_ids": [
+        "ref_rlhf",
+        "ref_dpo"
+      ],
+      "evidence_location": "Ouyang arXiv abstract lines 38-40 describes collecting output rankings and further fine-tuning a supervised model using RLHF; DPO arXiv abstract lines 42-44 describes RLHF first fitting a reward model reflecting human preferences and then using RL while avoiding drift from the original model.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The definition is directly supported by the RLHF and DPO abstracts."
+    },
+    {
+      "unit_id": "a15c3efc92ba71a6",
+      "node_id": "reward_rlhf",
+      "field": "examples[2]",
+      "text": "combined with Reward modeling",
+      "source_ids": [
+        "ref_rlhf",
+        "ref_dpo"
+      ],
+      "evidence_location": "DPO arXiv abstract lines 42-44 describes RLHF first fitting a reward model reflecting human preferences; Ouyang lines 38-40 describes ranking outputs and RLHF.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported."
+    },
+    {
+      "unit_id": "c06f05d27c9a0a18",
+      "node_id": "reward_rlhf",
+      "field": "limitations[1]",
+      "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Reward modeling, Policy-gradient & actor–critic objectives.",
+      "source_ids": [
+        "ref_rlhf",
+        "ref_dpo",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "e7fc2c283032bd5f",
+      "node_id": "reward_rlhf",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Reward-model training, RLHF & RLAIF is modeled as depending on Reward modeling, Policy-gradient & actor–critic objectives and feeding downstream nodes such as Conversational assistants & chatbots.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ddfe40ca54ae378c",
+      "node_id": "reward_rlhf",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Conversational assistants & chatbots",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "6a4ccc8a53b22581",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.reward_modeling.rationale",
+      "text": "In this atlas graph, Reward-model training, RLHF & RLAIF has an `optimizes_for` dependency on Reward modeling because Reward modeling is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "027d4dc8b6f3c94c",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.policy_actor_critic.rationale",
+      "text": "In this atlas graph, Reward-model training, RLHF & RLAIF has an `optimizes_for` dependency on Policy-gradient & actor–critic objectives because Policy-gradient & actor–critic objectives is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c3fc777b8193df57",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.sft_instruction.rationale",
+      "text": "In this atlas graph, Reward-model training, RLHF & RLAIF has a `uses` dependency on Supervised fine-tuning & instruction tuning because Supervised fine-tuning & instruction tuning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "cb8ebead7585a495",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.preference_learning.rationale",
+      "text": "In this atlas graph, Reward-model training, RLHF & RLAIF has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a5d3cdb16fee8bfc",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.process_reward_models.rationale",
+      "text": "In this atlas graph, Reward-model training, RLHF & RLAIF has an `optimizes_for` dependency on Process supervision & step-level reward models because Process supervision & step-level reward models is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "822bc485c0ad5154",
+      "node_id": "reward_rlhf",
+      "field": "dependencies.outcome_verifiers.rationale",
+      "text": "In this atlas graph, Reward-model training, RLHF & RLAIF has an `optimizes_for` dependency on Outcome verifiers & executable rewards because Outcome verifiers & executable rewards is modeled as the objective family for learning, selection, or evaluation.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"2b3ca73638b8cff2","node_id":"reward_rlhf","dependency_id":"reward_modeling","source_ids":["ref_rlhf","ref_dpo"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"RLHF reward model fitting is directly supported; core strength is correct.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"0eeed6f11d54a916","node_id":"reward_rlhf","dependency_id":"policy_actor_critic","source_ids":["ref_rlhf","ref_dpo","ref_rlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"RL policy optimization is supported, but actor-critic is a narrower implementation detail not directly named; core strength for policy-gradient/RL objective family is defensible.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"efb4ad4ec2e42c29","node_id":"reward_rlhf","dependency_id":"sft_instruction","source_ids":["ref_rlhf"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Supervised fine-tuning precedes RLHF in the inspected InstructGPT pipeline; common strength is supported.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"c9605c63e2cd79ca","node_id":"reward_rlhf","dependency_id":"preference_learning","source_ids":["ref_rlhf","ref_dpo"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Rankings/relative-quality labels directly support preference learning as a common ingredient.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"fc53f9e859cf94d2","node_id":"reward_rlhf","dependency_id":"process_reward_models","source_ids":["ref_rlhf","url:https://arxiv.org/abs/2408.03314"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Process reward models are related to verifier-guided search/test-time compute, but the inspected evidence does not support them as a common RLHF dependency.","relationship_type_supported":true,"strength_supported":false},
-    {"edge_id":"daaa4320ca329d50","node_id":"reward_rlhf","dependency_id":"outcome_verifiers","source_ids":["ref_rlvr"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Verifiable rewards support optional related RL training, but not reward-model RLHF specifically.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "148e1dc93dc05a4e",
+      "node_id": "reward_rlhf",
+      "dependency_id": "reward_modeling",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "c5f9b460e37032ff",
+      "node_id": "reward_rlhf",
+      "dependency_id": "policy_actor_critic",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "3ac4042914fd0401",
+      "node_id": "reward_rlhf",
+      "dependency_id": "sft_instruction",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "0b1c7320089264d7",
+      "node_id": "reward_rlhf",
+      "dependency_id": "preference_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "a7b7cab5a759fac4",
+      "node_id": "reward_rlhf",
+      "dependency_id": "process_reward_models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "bad1b6bd76dd6455",
+      "node_id": "reward_rlhf",
+      "dependency_id": "outcome_verifiers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "reward_rlhf",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

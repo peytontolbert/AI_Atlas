@@ -52,13 +52,14 @@
       "text": "typed workflow plans",
       "source_ids": [
         "ref_structured",
-        "ref_react"
+        "ref_react",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice. ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Typed workflow plans are plausible structured outputs but not directly evidenced."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "390ac452055b9457",
@@ -67,13 +68,14 @@
       "text": "database query objects",
       "source_ids": [
         "ref_structured",
-        "ref_react"
+        "ref_react",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice. ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Database query objects are plausible but not directly evidenced by the inspected sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "631118886665fd66",
@@ -91,126 +93,117 @@
       "notes": "The structured-output source distinguishes constraint compliance from quality, supporting that valid structure can still be wrong or low-quality; unsafe/unauthorized wording is broader but aligned."
     },
     {
-      "unit_id": "9486a25247dcbe9b",
+      "unit_id": "8661c89fdde77e1e",
       "node_id": "structured_outputs",
       "field": "dependencies.grammar_constrained_decoding.rationale",
-      "text": "Structured outputs & typed action generation uses Grammar- and schema-constrained decoding as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Structured outputs & typed action generation has a `uses` dependency on Grammar- and schema-constrained decoding because Grammar- and schema-constrained decoding is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_structured",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice. ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Constrained decoding is directly described as dominant for enforcing structured outputs."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "7d00261f42eae2ba",
+      "unit_id": "42e9bb5b6f8a0c0d",
       "node_id": "structured_outputs",
       "field": "dependencies.structured_output_validation.rationale",
-      "text": "Structured outputs & typed action generation uses Structured-output parsing, validation & repair as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Structured outputs & typed action generation has a `uses` dependency on Structured-output parsing, validation & repair because Structured-output parsing, validation & repair is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_structured",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice. ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The source evaluates constraint-compliant structured outputs against schemas."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "8dbc0996716ac3e2",
+      "unit_id": "bca9540bf310517c",
       "node_id": "structured_outputs",
       "field": "dependencies.tool_use_function_calling.rationale",
-      "text": "Structured outputs & typed action generation uses Tool use & function calling as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Structured outputs & typed action generation has a `uses` dependency on Tool use & function calling because Tool use & function calling is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_structured",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice. ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "ReAct actions and structured generation together support typed tool/action generation."
-    },
-    {
-      "unit_id": "5e03e906b44b3bb6",
-      "node_id": "structured_outputs",
-      "field": "dependencies.schemas_grammars_constraints.rationale",
-      "text": "Structured outputs & typed action generation uses Schemas, grammars & formal output languages as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_structured",
-        "ref_react"
-      ],
-      "evidence_location": "JSONSchemaBench arXiv abstract, lines 38-41: structured outputs, constrained decoding, JSON Schema, constraint compliance, efficiency/coverage/quality evaluation, and limitations in practice. ReAct arXiv abstract, lines 42-46: interleaved reasoning traces and task-specific actions, plan updating, external sources/environments, Wikipedia API and interactive decision-making tasks.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "JSON Schema constraints are directly central."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "610b0398dd2aa992",
+      "node_id": "structured_outputs",
+      "field": "dependencies.schemas_grammars_constraints.rationale",
+      "text": "In this atlas graph, Structured outputs & typed action generation has a `uses` dependency on Schemas, grammars & formal output languages because Schemas, grammars & formal output languages is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "d313608c952197fd",
+      "edge_id": "10c8ecffc4831ab1",
       "node_id": "structured_outputs",
       "dependency_id": "grammar_constrained_decoding",
       "source_ids": [
-        "ref_structured",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Constrained decoding is directly central to structured output generation.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "b26f6df18640997d",
+      "edge_id": "c09311d55d1df74b",
       "node_id": "structured_outputs",
       "dependency_id": "structured_output_validation",
       "source_ids": [
-        "ref_structured",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Schema compliance/evaluation is core to structured outputs.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "f93124f6359427f2",
+      "edge_id": "72e8c76214967aef",
       "node_id": "structured_outputs",
       "dependency_id": "tool_use_function_calling",
       "source_ids": [
-        "ref_structured",
-        "ref_react"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Typed tool calls are a common structured-output use case.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "e1592bad37caa8f8",
-      "node_id": "structured_outputs",
-      "dependency_id": "schemas_grammars_constraints",
-      "source_ids": [
-        "ref_structured",
-        "ref_react"
-      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Schemas/constraints directly underpin structured outputs.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "574980164670363b",
+      "node_id": "structured_outputs",
+      "dependency_id": "schemas_grammars_constraints",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "structured_outputs",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

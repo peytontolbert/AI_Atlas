@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Distributed and mixed-precision training partition data, parameters, optimizer state, or experts across devices while using reduced numeric precision to save memory and time.",
-    "why_it_matters": "The role of Distributed, mixed-precision & memory-efficient training is to connect Distributed systems & networking, Numerical analysis to downstream capabilities including Checkpointing, recovery & experiment state, Large language models, Scientific ML, simulators & digital twins.",
+    "why_it_matters": "In this atlas graph, Distributed, mixed-precision & memory-efficient training is modeled as depending on Distributed systems & networking, Numerical analysis and feeding downstream nodes such as Checkpointing, recovery & experiment state, Large language models, Scientific ML, simulators & digital twins.",
     "examples": [
-      "substrate for Checkpointing, recovery & experiment state",
-      "substrate for Large language models",
-      "substrate for Scientific ML, simulators & digital twins"
+      "atlas downstream link to Checkpointing, recovery & experiment state",
+      "atlas downstream link to Large language models",
+      "atlas downstream link to Scientific ML, simulators & digital twins"
     ],
     "limitations": [
       "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Numerical analysis."
@@ -35,25 +35,25 @@
         "id": "distributed_systems",
         "type": "uses",
         "strength": "core",
-        "rationale": "Distributed, mixed-precision & memory-efficient training uses Distributed systems & networking as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
       },
       {
         "id": "numerical_methods",
         "type": "uses",
         "strength": "core",
-        "rationale": "Distributed, mixed-precision & memory-efficient training uses Numerical analysis as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
       },
       {
         "id": "autodiff_backprop",
         "type": "uses",
         "strength": "common",
-        "rationale": "Distributed, mixed-precision & memory-efficient training uses Automatic differentiation & backpropagation as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Automatic differentiation & backpropagation because Automatic differentiation & backpropagation is modeled as a reusable ingredient for the node."
       },
       {
         "id": "moe_model",
         "type": "adapts",
         "strength": "common",
-        "rationale": "Distributed, mixed-precision & memory-efficient training changes, compresses, or combines parameters belonging to Mixture-of-experts models."
+        "rationale": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has an `adapts` dependency on Mixture-of-experts models with `common` strength."
       }
     ]
   },
@@ -65,28 +65,28 @@
       "text": "Distributed and mixed-precision training partition data, parameters, optimizer state, or experts across devices while using reduced numeric precision to save memory and time."
     },
     {
-      "unit_id": "327d0c77dbb74247",
+      "unit_id": "5938b3dbf256f86b",
       "node_id": "distributed_mixed_precision",
       "field": "why_it_matters",
-      "text": "The role of Distributed, mixed-precision & memory-efficient training is to connect Distributed systems & networking, Numerical analysis to downstream capabilities including Checkpointing, recovery & experiment state, Large language models, Scientific ML, simulators & digital twins."
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training is modeled as depending on Distributed systems & networking, Numerical analysis and feeding downstream nodes such as Checkpointing, recovery & experiment state, Large language models, Scientific ML, simulators & digital twins."
     },
     {
-      "unit_id": "9d2b3d5dd7539d7d",
+      "unit_id": "a5b189d817f1bac4",
       "node_id": "distributed_mixed_precision",
       "field": "examples[1]",
-      "text": "substrate for Checkpointing, recovery & experiment state"
+      "text": "atlas downstream link to Checkpointing, recovery & experiment state"
     },
     {
-      "unit_id": "4f5b8feb97e65a01",
+      "unit_id": "c8066940db8b9d8c",
       "node_id": "distributed_mixed_precision",
       "field": "examples[2]",
-      "text": "substrate for Large language models"
+      "text": "atlas downstream link to Large language models"
     },
     {
-      "unit_id": "c9ad9963675367d7",
+      "unit_id": "edb83929ae197ed2",
       "node_id": "distributed_mixed_precision",
       "field": "examples[3]",
-      "text": "substrate for Scientific ML, simulators & digital twins"
+      "text": "atlas downstream link to Scientific ML, simulators & digital twins"
     },
     {
       "unit_id": "cf31a42b16591974",
@@ -95,62 +95,62 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Distributed systems & networking, Numerical analysis."
     },
     {
-      "unit_id": "48683a7f1b1eb065",
+      "unit_id": "c7a8cf7b0ad54d80",
       "node_id": "distributed_mixed_precision",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Distributed, mixed-precision & memory-efficient training uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "7619123f2f281a09",
+      "unit_id": "b5fde5868f43d849",
       "node_id": "distributed_mixed_precision",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Distributed, mixed-precision & memory-efficient training uses Numerical analysis as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "eaf347fa867e385c",
+      "unit_id": "b00fae95c449f560",
       "node_id": "distributed_mixed_precision",
       "field": "dependencies.autodiff_backprop.rationale",
-      "text": "Distributed, mixed-precision & memory-efficient training uses Automatic differentiation & backpropagation as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Automatic differentiation & backpropagation because Automatic differentiation & backpropagation is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "db8b03643b9a2d6a",
+      "unit_id": "0496094d47d1e9f9",
       "node_id": "distributed_mixed_precision",
       "field": "dependencies.moe_model.rationale",
-      "text": "Distributed, mixed-precision & memory-efficient training changes, compresses, or combines parameters belonging to Mixture-of-experts models."
+      "text": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has an `adapts` dependency on Mixture-of-experts models with `common` strength."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "f7ad83fcef7a8752",
+      "edge_id": "d3333cda4ff548b6",
       "node_id": "distributed_mixed_precision",
       "dependency_id": "distributed_systems",
       "type": "uses",
       "strength": "core",
-      "rationale": "Distributed, mixed-precision & memory-efficient training uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "588f5c7c5be384f9",
+      "edge_id": "6ea3d1149c37b9cb",
       "node_id": "distributed_mixed_precision",
       "dependency_id": "numerical_methods",
       "type": "uses",
       "strength": "core",
-      "rationale": "Distributed, mixed-precision & memory-efficient training uses Numerical analysis as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "9bd5fccc56376d72",
+      "edge_id": "ce402246c64a3465",
       "node_id": "distributed_mixed_precision",
       "dependency_id": "autodiff_backprop",
       "type": "uses",
       "strength": "common",
-      "rationale": "Distributed, mixed-precision & memory-efficient training uses Automatic differentiation & backpropagation as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has a `uses` dependency on Automatic differentiation & backpropagation because Automatic differentiation & backpropagation is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "4f27c5d839184019",
+      "edge_id": "632c8d65e680710c",
       "node_id": "distributed_mixed_precision",
       "dependency_id": "moe_model",
       "type": "adapts",
       "strength": "common",
-      "rationale": "Distributed, mixed-precision & memory-efficient training changes, compresses, or combines parameters belonging to Mixture-of-experts models."
+      "rationale": "In this atlas graph, Distributed, mixed-precision & memory-efficient training has an `adapts` dependency on Mixture-of-experts models with `common` strength."
     }
   ],
   "candidate_references": {

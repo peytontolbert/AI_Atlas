@@ -36,25 +36,25 @@
         "id": "model_merging",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Checkpoint, adapter & expert composition turns Model merging & weight-space composition into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Model merging & weight-space composition because Model merging & weight-space composition is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "routing_moe",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Checkpoint, adapter & expert composition turns Routing, conditional computation & mixture-of-experts into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Routing, conditional computation & mixture-of-experts because Routing, conditional computation & mixture-of-experts is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "storage_checkpoints",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Checkpoint, adapter & expert composition turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "task_arithmetic",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Checkpoint, adapter & expert composition turns Task vectors & parameter arithmetic into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Task vectors & parameter arithmetic because Task vectors & parameter arithmetic is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -96,62 +96,62 @@
       "text": "Version skew, preprocessing differences, licenses, and memory duplication can break nominal compatibility."
     },
     {
-      "unit_id": "f1e8d833185b1bf8",
+      "unit_id": "99c52862ddcbd6aa",
       "node_id": "checkpoint_composition",
       "field": "dependencies.model_merging.rationale",
-      "text": "Checkpoint, adapter & expert composition turns Model merging & weight-space composition into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Model merging & weight-space composition because Model merging & weight-space composition is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "19dc53beb08225a2",
+      "unit_id": "bee3467327a3fda9",
       "node_id": "checkpoint_composition",
       "field": "dependencies.routing_moe.rationale",
-      "text": "Checkpoint, adapter & expert composition turns Routing, conditional computation & mixture-of-experts into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Routing, conditional computation & mixture-of-experts because Routing, conditional computation & mixture-of-experts is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "a60fc4d0fd4856cf",
+      "unit_id": "601d359555d211d5",
       "node_id": "checkpoint_composition",
       "field": "dependencies.storage_checkpoints.rationale",
-      "text": "Checkpoint, adapter & expert composition turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "be38c5296fd40b2f",
+      "unit_id": "bbe79847881a0398",
       "node_id": "checkpoint_composition",
       "field": "dependencies.task_arithmetic.rationale",
-      "text": "Checkpoint, adapter & expert composition turns Task vectors & parameter arithmetic into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Task vectors & parameter arithmetic because Task vectors & parameter arithmetic is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "bc8337665946424b",
+      "edge_id": "da28d77b32860125",
       "node_id": "checkpoint_composition",
       "dependency_id": "model_merging",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Checkpoint, adapter & expert composition turns Model merging & weight-space composition into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Model merging & weight-space composition because Model merging & weight-space composition is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "8850415e9dc7d5be",
+      "edge_id": "d09109ac281e87b0",
       "node_id": "checkpoint_composition",
       "dependency_id": "routing_moe",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Checkpoint, adapter & expert composition turns Routing, conditional computation & mixture-of-experts into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Routing, conditional computation & mixture-of-experts because Routing, conditional computation & mixture-of-experts is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "83566af4ce89af66",
+      "edge_id": "083117aea8705a75",
       "node_id": "checkpoint_composition",
       "dependency_id": "storage_checkpoints",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Checkpoint, adapter & expert composition turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "9d455ae692d0167e",
+      "edge_id": "73e2f1b9c8eba873",
       "node_id": "checkpoint_composition",
       "dependency_id": "task_arithmetic",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Checkpoint, adapter & expert composition turns Task vectors & parameter arithmetic into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Checkpoint, adapter & expert composition has an `operationalizes` dependency on Task vectors & parameter arithmetic because Task vectors & parameter arithmetic is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

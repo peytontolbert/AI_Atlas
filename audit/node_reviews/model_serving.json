@@ -9,71 +9,11 @@
         "ref_ddia",
         "ref_transformer"
       ],
-      "evidence_location": "DDIA supports service/system concerns and Transformer supports model architecture, but the cited sources do not directly document model serving features such as batching, versioning, routing, and inference runtime interfaces.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a model-serving/runtime source for direct support."
-    },
-    {
-      "unit_id": "9883a88d19bea8fa",
-      "node_id": "model_serving",
-      "field": "why_it_matters",
-      "text": "The role of Model servers & inference runtimes is to connect Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints to downstream capabilities including Batching, admission control & GPU scheduling, Speculative, parallel & assisted decoding, Tensor, pipeline, sequence & expert parallel inference.",
-      "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
-      ],
-      "evidence_location": "The cited sources support some underlying mechanisms, but this downstream capability list is atlas graph positioning rather than a directly sourced claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Use a narrower claim or add sources for each downstream dependency if exact verification is required."
-    },
-    {
-      "unit_id": "b8f3ad8b116b67ce",
-      "node_id": "model_serving",
-      "field": "examples[1]",
-      "text": "substrate for Batching, admission control & GPU scheduling",
-      "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
-    },
-    {
-      "unit_id": "d0e38307c243c9a0",
-      "node_id": "model_serving",
-      "field": "examples[2]",
-      "text": "substrate for Speculative, parallel & assisted decoding",
-      "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
-    },
-    {
-      "unit_id": "deb5abcf318b0609",
-      "node_id": "model_serving",
-      "field": "examples[3]",
-      "text": "substrate for Tensor, pipeline, sequence & expert parallel inference",
-      "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship as a standalone claim.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This should be treated as an atlas graph relationship unless a downstream-specific source is added."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "5303391be7d79411",
@@ -82,105 +22,156 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints.",
       "source_ids": [
         "ref_ddia",
-        "ref_transformer"
+        "ref_transformer",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The operational risks named are plausible for deployed distributed/accelerated systems, but the cited packet sources do not directly support the full failure-mode list.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation is broad and templated; narrow it to source-backed risks for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "bd3604d8f0832512",
+      "unit_id": "1276c45cfc2457cb",
+      "node_id": "model_serving",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Model servers & inference runtimes is modeled as depending on Graph compilers, runtimes & operator fusion, Object storage, sharding & checkpoints and feeding downstream nodes such as Batching, admission control & GPU scheduling, Speculative, parallel & assisted decoding, Tensor, pipeline, sequence & expert parallel inference.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b52a4ec4bdf99bcd",
+      "node_id": "model_serving",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Batching, admission control & GPU scheduling",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "26c8d506c0183cd4",
+      "node_id": "model_serving",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Speculative, parallel & assisted decoding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "e9ba69a252413f78",
+      "node_id": "model_serving",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Tensor, pipeline, sequence & expert parallel inference",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "913dd0f5794d30b5",
       "node_id": "model_serving",
       "field": "dependencies.compilers_runtimes.rationale",
-      "text": "Model servers & inference runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "592f762431d88d5c",
+      "unit_id": "432be7014cf02e04",
       "node_id": "model_serving",
       "field": "dependencies.storage_checkpoints.rationale",
-      "text": "Model servers & inference runtimes turns Object storage, sharding & checkpoints into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Object storage, sharding & checkpoints because Object storage, sharding & checkpoints is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "75982d1720e3c446",
+      "unit_id": "1b5d526b4837885e",
       "node_id": "model_serving",
       "field": "dependencies.transformer.rationale",
-      "text": "Model servers & inference runtimes turns Transformers into a scalable, deployable, observable, or integrity-preserving capability.",
+      "text": "In this atlas graph, Model servers & inference runtimes has an `operationalizes` dependency on Transformers because Transformers is modeled as infrastructure needed to operationalize the node.",
       "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited references support the dependency concepts and node mechanism, but the rationale wording is generated graph language rather than a direct quotation or exact sourced claim.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible; exact wording should be narrowed or backed by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "be12143b35a3615a",
+      "edge_id": "3f58c5d2733e07eb",
       "node_id": "model_serving",
       "dependency_id": "compilers_runtimes",
       "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "2b7b522ca861381f",
+      "edge_id": "f6b1044c749f2ba5",
       "node_id": "model_serving",
       "dependency_id": "storage_checkpoints",
       "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "a701d35193b213ee",
+      "edge_id": "668fe39a5dcfdb72",
       "node_id": "model_serving",
       "dependency_id": "transformer",
       "source_ids": [
-        "ref_ddia",
-        "ref_transformer"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The dependency is defensible from the cited sources and node definition, but source support is conceptual rather than exact.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "model_serving",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Curriculum and mixture schedules control which examples, domains, difficulties, or modalities are sampled at each phase of training.",
-    "why_it_matters": "The role of Curricula, data mixtures & sampling schedules is to connect Active learning & curriculum learning, Data collection, curation & filtering to downstream capabilities including Domain randomization & simulation curricula.",
+    "why_it_matters": "In this atlas graph, Curricula, data mixtures & sampling schedules is modeled as depending on Active learning & curriculum learning, Data collection, curation & filtering and feeding downstream nodes such as Domain randomization & simulation curricula.",
     "examples": [
-      "substrate for Domain randomization & simulation curricula",
+      "atlas downstream link to Domain randomization & simulation curricula",
       "combined with Active learning & curriculum learning"
     ],
     "limitations": [
@@ -33,25 +33,25 @@
         "id": "active_curriculum_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Curricula, data mixtures & sampling schedules uses Active learning & curriculum learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Active learning & curriculum learning because Active learning & curriculum learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "data_curation",
         "type": "uses",
         "strength": "core",
-        "rationale": "Curricula, data mixtures & sampling schedules uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node."
       },
       {
         "id": "datasets_sampling",
         "type": "uses",
         "strength": "common",
-        "rationale": "Curricula, data mixtures & sampling schedules uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
       },
       {
         "id": "compute_optimal_training",
         "type": "uses",
         "strength": "common",
-        "rationale": "Curricula, data mixtures & sampling schedules uses Compute-optimal scaling & training allocation as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Compute-optimal scaling & training allocation because Compute-optimal scaling & training allocation is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -63,16 +63,16 @@
       "text": "Curriculum and mixture schedules control which examples, domains, difficulties, or modalities are sampled at each phase of training."
     },
     {
-      "unit_id": "e699cda7f4999394",
+      "unit_id": "cec4f77752e65ab3",
       "node_id": "curriculum_data_mixtures",
       "field": "why_it_matters",
-      "text": "The role of Curricula, data mixtures & sampling schedules is to connect Active learning & curriculum learning, Data collection, curation & filtering to downstream capabilities including Domain randomization & simulation curricula."
+      "text": "In this atlas graph, Curricula, data mixtures & sampling schedules is modeled as depending on Active learning & curriculum learning, Data collection, curation & filtering and feeding downstream nodes such as Domain randomization & simulation curricula."
     },
     {
-      "unit_id": "ca8ce55f94eeccf7",
+      "unit_id": "1b37fcbdc859e4a7",
       "node_id": "curriculum_data_mixtures",
       "field": "examples[1]",
-      "text": "substrate for Domain randomization & simulation curricula"
+      "text": "atlas downstream link to Domain randomization & simulation curricula"
     },
     {
       "unit_id": "bfd98823bcf8a4ca",
@@ -87,62 +87,62 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Active learning & curriculum learning, Data collection, curation & filtering."
     },
     {
-      "unit_id": "aaf27523fa69cfd5",
+      "unit_id": "5aca73838b9e13bc",
       "node_id": "curriculum_data_mixtures",
       "field": "dependencies.active_curriculum_learning.rationale",
-      "text": "Curricula, data mixtures & sampling schedules uses Active learning & curriculum learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Active learning & curriculum learning because Active learning & curriculum learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "0e1c278cf6d6d723",
+      "unit_id": "3b633c4a0757fb60",
       "node_id": "curriculum_data_mixtures",
       "field": "dependencies.data_curation.rationale",
-      "text": "Curricula, data mixtures & sampling schedules uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "8150aa02ca5be415",
+      "unit_id": "b49a38b9537877f9",
       "node_id": "curriculum_data_mixtures",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "Curricula, data mixtures & sampling schedules uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "1801fe3423af9169",
+      "unit_id": "86882456304894d6",
       "node_id": "curriculum_data_mixtures",
       "field": "dependencies.compute_optimal_training.rationale",
-      "text": "Curricula, data mixtures & sampling schedules uses Compute-optimal scaling & training allocation as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Compute-optimal scaling & training allocation because Compute-optimal scaling & training allocation is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "5cfa42c8bc2292a4",
+      "edge_id": "917b1ef7728ca944",
       "node_id": "curriculum_data_mixtures",
       "dependency_id": "active_curriculum_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Curricula, data mixtures & sampling schedules uses Active learning & curriculum learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Active learning & curriculum learning because Active learning & curriculum learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "b75cbafcd0f18838",
+      "edge_id": "b8a649d568c782ff",
       "node_id": "curriculum_data_mixtures",
       "dependency_id": "data_curation",
       "type": "uses",
       "strength": "core",
-      "rationale": "Curricula, data mixtures & sampling schedules uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "5c6667497c255788",
+      "edge_id": "40b8f3ec839804ae",
       "node_id": "curriculum_data_mixtures",
       "dependency_id": "datasets_sampling",
       "type": "uses",
       "strength": "common",
-      "rationale": "Curricula, data mixtures & sampling schedules uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "f7a7593d9f92d176",
+      "edge_id": "879cfd510f4aa1cd",
       "node_id": "curriculum_data_mixtures",
       "dependency_id": "compute_optimal_training",
       "type": "uses",
       "strength": "common",
-      "rationale": "Curricula, data mixtures & sampling schedules uses Compute-optimal scaling & training allocation as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Curricula, data mixtures & sampling schedules has a `uses` dependency on Compute-optimal scaling & training allocation because Compute-optimal scaling & training allocation is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -13,9 +13,9 @@
     ],
     "aliases": [],
     "definition": "Predicted value is matched to reward plus discounted future value; it operationally connects Reinforcement learning and Dynamical systems & control theory.",
-    "why_it_matters": "The role of Bellman, temporal-difference & value objectives is to connect Reinforcement learning, Dynamical systems & control theory to downstream capabilities including Policy-gradient & actor–critic objectives.",
+    "why_it_matters": "In this atlas graph, Bellman, temporal-difference & value objectives is modeled as depending on Reinforcement learning, Dynamical systems & control theory and feeding downstream nodes such as Policy-gradient & actor–critic objectives.",
     "examples": [
-      "substrate for Policy-gradient & actor–critic objectives",
+      "atlas downstream link to Policy-gradient & actor–critic objectives",
       "combined with Reinforcement learning"
     ],
     "limitations": [
@@ -33,19 +33,19 @@
         "id": "reinforcement_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Bellman, temporal-difference & value objectives uses Reinforcement learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Bellman, temporal-difference & value objectives has a `uses` dependency on Reinforcement learning because Reinforcement learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "dynamical_control",
         "type": "uses",
         "strength": "core",
-        "rationale": "Bellman, temporal-difference & value objectives uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Bellman, temporal-difference & value objectives has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "game_decision_theory",
         "type": "uses",
         "strength": "common",
-        "rationale": "Bellman, temporal-difference & value objectives uses Game theory & decision theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Bellman, temporal-difference & value objectives has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,16 +57,16 @@
       "text": "Predicted value is matched to reward plus discounted future value; it operationally connects Reinforcement learning and Dynamical systems & control theory."
     },
     {
-      "unit_id": "04dea614683299d4",
+      "unit_id": "5a5f85a8fe02b8fe",
       "node_id": "bellman_td",
       "field": "why_it_matters",
-      "text": "The role of Bellman, temporal-difference & value objectives is to connect Reinforcement learning, Dynamical systems & control theory to downstream capabilities including Policy-gradient & actor–critic objectives."
+      "text": "In this atlas graph, Bellman, temporal-difference & value objectives is modeled as depending on Reinforcement learning, Dynamical systems & control theory and feeding downstream nodes such as Policy-gradient & actor–critic objectives."
     },
     {
-      "unit_id": "226edadb3afd80b6",
+      "unit_id": "f606e85c0d09738a",
       "node_id": "bellman_td",
       "field": "examples[1]",
-      "text": "substrate for Policy-gradient & actor–critic objectives"
+      "text": "atlas downstream link to Policy-gradient & actor–critic objectives"
     },
     {
       "unit_id": "9f7336870528c52f",
@@ -81,48 +81,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Reinforcement learning, Dynamical systems & control theory."
     },
     {
-      "unit_id": "47f5abcd04e1e5e8",
+      "unit_id": "5fef14e90ce3e6f9",
       "node_id": "bellman_td",
       "field": "dependencies.reinforcement_learning.rationale",
-      "text": "Bellman, temporal-difference & value objectives uses Reinforcement learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Bellman, temporal-difference & value objectives has a `uses` dependency on Reinforcement learning because Reinforcement learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "5a346c7f3e04b708",
+      "unit_id": "7ecda410fd31bcc3",
       "node_id": "bellman_td",
       "field": "dependencies.dynamical_control.rationale",
-      "text": "Bellman, temporal-difference & value objectives uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Bellman, temporal-difference & value objectives has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "a1dbded9179e548b",
+      "unit_id": "71ad0c0e37e65d68",
       "node_id": "bellman_td",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Bellman, temporal-difference & value objectives uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Bellman, temporal-difference & value objectives has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "334e2ed4a0638b08",
+      "edge_id": "877f4d36b270249d",
       "node_id": "bellman_td",
       "dependency_id": "reinforcement_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Bellman, temporal-difference & value objectives uses Reinforcement learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Bellman, temporal-difference & value objectives has a `uses` dependency on Reinforcement learning because Reinforcement learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "422765fa015a6c29",
+      "edge_id": "cd8d6628f9866939",
       "node_id": "bellman_td",
       "dependency_id": "dynamical_control",
       "type": "uses",
       "strength": "core",
-      "rationale": "Bellman, temporal-difference & value objectives uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Bellman, temporal-difference & value objectives has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "4cf06f1197fa3830",
+      "edge_id": "7aab4e89ebe6db1b",
       "node_id": "bellman_td",
       "dependency_id": "game_decision_theory",
       "type": "uses",
       "strength": "common",
-      "rationale": "Bellman, temporal-difference & value objectives uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Bellman, temporal-difference & value objectives has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

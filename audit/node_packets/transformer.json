@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Attention-centric residual networks process sequences with parallel content-based interaction.",
-    "why_it_matters": "The role of Transformers is to connect Self-attention, Relative position, RoPE, ALiBi & coordinate mechanisms to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Vision Transformers & Perceiver-style latent models.",
+    "why_it_matters": "In this atlas graph, Transformers is modeled as depending on Self-attention, Relative position, RoPE, ALiBi & coordinate mechanisms and feeding downstream nodes such as Encoder–decoder transformers, Decoder-only causal transformers, Vision Transformers & Perceiver-style latent models.",
     "examples": [
-      "substrate for Encoder–decoder transformers",
-      "substrate for Decoder-only causal transformers",
-      "substrate for Vision Transformers & Perceiver-style latent models"
+      "atlas downstream link to Encoder–decoder transformers",
+      "atlas downstream link to Decoder-only causal transformers",
+      "atlas downstream link to Vision Transformers & Perceiver-style latent models"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Self-attention, Relative position, RoPE, ALiBi & coordinate mechanisms."
@@ -41,7 +41,7 @@
         "id": "positional_mechanisms",
         "type": "composes",
         "strength": "core",
-        "rationale": "Transformers is assembled in part from the mechanism or model component Relative position, RoPE, ALiBi & coordinate mechanisms."
+        "rationale": "In this atlas graph, Transformers has a `composes` dependency on Relative position, RoPE, ALiBi & coordinate mechanisms with `core` strength."
       },
       {
         "id": "residual_connections",
@@ -71,28 +71,28 @@
       "text": "Attention-centric residual networks process sequences with parallel content-based interaction."
     },
     {
-      "unit_id": "b195b3fb3af07ebf",
+      "unit_id": "5815417544287cad",
       "node_id": "transformer",
       "field": "why_it_matters",
-      "text": "The role of Transformers is to connect Self-attention, Relative position, RoPE, ALiBi & coordinate mechanisms to downstream capabilities including Encoder–decoder transformers, Decoder-only causal transformers, Vision Transformers & Perceiver-style latent models."
+      "text": "In this atlas graph, Transformers is modeled as depending on Self-attention, Relative position, RoPE, ALiBi & coordinate mechanisms and feeding downstream nodes such as Encoder–decoder transformers, Decoder-only causal transformers, Vision Transformers & Perceiver-style latent models."
     },
     {
-      "unit_id": "c2fa490249d9d0d6",
+      "unit_id": "b3096d91c7ec629b",
       "node_id": "transformer",
       "field": "examples[1]",
-      "text": "substrate for Encoder–decoder transformers"
+      "text": "atlas downstream link to Encoder–decoder transformers"
     },
     {
-      "unit_id": "e816db0f7c411bc0",
+      "unit_id": "931caed8137b4c9f",
       "node_id": "transformer",
       "field": "examples[2]",
-      "text": "substrate for Decoder-only causal transformers"
+      "text": "atlas downstream link to Decoder-only causal transformers"
     },
     {
-      "unit_id": "cc44c77dfeaa9a0c",
+      "unit_id": "48c1c5c8d810cd87",
       "node_id": "transformer",
       "field": "examples[3]",
-      "text": "substrate for Vision Transformers & Perceiver-style latent models"
+      "text": "atlas downstream link to Vision Transformers & Perceiver-style latent models"
     },
     {
       "unit_id": "4f70a0f1fefcead8",
@@ -107,10 +107,10 @@
       "text": "Transformers is assembled in part from the mechanism or model component Self-attention."
     },
     {
-      "unit_id": "135d6e8daa8dee98",
+      "unit_id": "55a683b9c5a33474",
       "node_id": "transformer",
       "field": "dependencies.positional_mechanisms.rationale",
-      "text": "Transformers is assembled in part from the mechanism or model component Relative position, RoPE, ALiBi & coordinate mechanisms."
+      "text": "In this atlas graph, Transformers has a `composes` dependency on Relative position, RoPE, ALiBi & coordinate mechanisms with `core` strength."
     },
     {
       "unit_id": "67f1c89948d7ac3d",
@@ -141,12 +141,12 @@
       "rationale": "Transformers is assembled in part from the mechanism or model component Self-attention."
     },
     {
-      "edge_id": "eee19274c5c484a3",
+      "edge_id": "94dee051d0f805b9",
       "node_id": "transformer",
       "dependency_id": "positional_mechanisms",
       "type": "composes",
       "strength": "core",
-      "rationale": "Transformers is assembled in part from the mechanism or model component Relative position, RoPE, ALiBi & coordinate mechanisms."
+      "rationale": "In this atlas graph, Transformers has a `composes` dependency on Relative position, RoPE, ALiBi & coordinate mechanisms with `core` strength."
     },
     {
       "edge_id": "8a09c6550778cb65",

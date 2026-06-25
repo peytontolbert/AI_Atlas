@@ -121,34 +121,32 @@
       "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
     },
     {
-      "unit_id": "427617c66fd3dcc1",
+      "unit_id": "ebc2a258e9ccffff",
       "node_id": "memory_lifecycle",
       "field": "dependencies.knowledge_editing.rationale",
-      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Knowledge editing & memory consolidation.",
+      "text": "In this atlas graph, Memory lifecycle, forgetting & consolidation has a `retrieves_from` dependency on Knowledge editing & memory consolidation with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support knowledge_editing or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     },
     {
-      "unit_id": "8746bd87297100a6",
+      "unit_id": "2701447b601f6b60",
       "node_id": "memory_lifecycle",
       "field": "dependencies.provenance_citations.rationale",
-      "text": "Memory lifecycle, forgetting & consolidation stores, selects, or obtains information through Provenance, citations & evidence tracking.",
+      "text": "In this atlas graph, Memory lifecycle, forgetting & consolidation has a `retrieves_from` dependency on Provenance, citations & evidence tracking with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support provenance_citations or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -183,34 +181,30 @@
       "strength_supported": true
     },
     {
-      "edge_id": "3b407ba7f8b82653",
+      "edge_id": "2638842dfd648538",
       "node_id": "memory_lifecycle",
       "dependency_id": "knowledge_editing",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Knowledge editing can implement memory lifecycle changes, but \u201cretrieves_from\u201d is not the right relationship type.",
-      "relationship_type_supported": false,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "0fd3a7273a7b0958",
+      "edge_id": "3eb60f29a0065861",
       "node_id": "memory_lifecycle",
       "dependency_id": "provenance_citations",
       "source_ids": [
-        "ref_aima",
-        "ref_nist"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Provenance supports lifecycle decisions; \u201cretrieves_from\u201d is not ideal relationship wording.",
-      "relationship_type_supported": false,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

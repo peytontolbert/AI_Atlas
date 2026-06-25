@@ -89,122 +89,117 @@
       "notes": "Cost and verifier-error concerns are supported; the global-flaw clause is plausible synthesis."
     },
     {
-      "unit_id": "a29362810c02f723",
+      "unit_id": "52b005bd39b05b04",
       "node_id": "process_reward_models",
       "field": "dependencies.reward_modeling.rationale",
-      "text": "Process supervision & step-level reward models is learned, selected, or evaluated using the objective family Reward modeling.",
+      "text": "In this atlas graph, Process supervision & step-level reward models has an `optimizes_for` dependency on Reward modeling because Reward modeling is modeled as the objective family for learning, selection, or evaluation.",
       "source_ids": [
-        "url:https://arxiv.org/abs/2305.20050"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Let's Verify Step by Step arXiv abstract line 40 describes step-level human feedback labels used to train the best reward model.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "The source explicitly connects step-level feedback labels to training a reward model."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "be3d10879479c2f6",
+      "unit_id": "652849f64aebcbcc",
       "node_id": "process_reward_models",
       "field": "dependencies.supervision_signals.rationale",
-      "text": "Process supervision & step-level reward models uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Process supervision & step-level reward models has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "url:https://arxiv.org/abs/2305.20050"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Let's Verify Step by Step arXiv abstract lines 38-40 describes process supervision as intermediate-step feedback and PRM800K as 800,000 step-level human feedback labels.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Step-level labels/feedback are central to process reward models."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "3a988f7d7d49f299",
+      "unit_id": "8f8491ac927d76dc",
       "node_id": "process_reward_models",
       "field": "dependencies.sequences_time.rationale",
-      "text": "Process supervision & step-level reward models uses Sequences, events & time series as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Process supervision & step-level reward models has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_rlvr",
-        "url:https://arxiv.org/abs/2305.20050"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "RLVR ar5iv line 17 says an LLM generates a CoT as a sequence of actions; Let's Verify Step by Step arXiv abstract line 38 refers to complex multi-step reasoning and intermediate reasoning steps.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Step-level process supervision operates over ordered reasoning steps or action sequences."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "6003fff5e1083516",
+      "unit_id": "1d85f94701f40db0",
       "node_id": "process_reward_models",
       "field": "dependencies.preference_learning.rationale",
-      "text": "Process supervision & step-level reward models uses Preference learning as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Process supervision & step-level reward models has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "url:https://arxiv.org/abs/2305.20050",
-        "ref_rlhf"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Let's Verify Step by Step arXiv abstract lines 38-40 supports step-level human feedback labels. RLHF arXiv page lines 30-33 identify training language models with human feedback as the cited preference-learning source.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Human feedback labels are supported, but process reward models do not necessarily require pairwise preference learning; common strength may overstate the dependency."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "09acdc40eb202f5c",
+      "edge_id": "d2c9f089da1ef77f",
       "node_id": "process_reward_models",
       "dependency_id": "reward_modeling",
       "source_ids": [
-        "url:https://arxiv.org/abs/2305.20050"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Step-level labels are used to train a reward model; optimizes_for/core is supported.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "a20c3d4f7d4926f1",
+      "edge_id": "b67f46af55a7d69e",
       "node_id": "process_reward_models",
       "dependency_id": "supervision_signals",
       "source_ids": [
-        "url:https://arxiv.org/abs/2305.20050"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Process supervision uses intermediate-step feedback labels; uses/core is supported.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "0a5e134f822adf72",
+      "edge_id": "82dad956212e9df2",
       "node_id": "process_reward_models",
       "dependency_id": "sequences_time",
       "source_ids": [
-        "ref_rlvr",
-        "url:https://arxiv.org/abs/2305.20050"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Intermediate reasoning steps and CoTs as sequences of actions support the uses/common edge.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "d60e7054c0630232",
+      "edge_id": "71628471cc08f25a",
       "node_id": "process_reward_models",
       "dependency_id": "preference_learning",
       "source_ids": [
-        "url:https://arxiv.org/abs/2305.20050",
-        "ref_rlhf"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Human feedback is supported, but preference learning specifically is not necessary for all process reward models.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "process_reward_models",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

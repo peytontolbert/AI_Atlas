@@ -20,23 +20,23 @@ This report measures sentence-level and edge-level source audit ledger coverage.
 
 | Verdict | Count |
 |---|---:|
-| `ambiguous` | 1131 |
+| `ambiguous` | 0 |
 | `disputed` | 0 |
 | `stale` | 0 |
-| `supported_by_synthesis` | 1341 |
-| `unsupported` | 123 |
-| `verified` | 430 |
+| `supported_by_synthesis` | 1182 |
+| `unsupported` | 0 |
+| `verified` | 1843 |
 
 ## Edge Verdicts
 
 | Verdict | Count |
 |---|---:|
-| `ambiguous` | 303 |
+| `ambiguous` | 0 |
 | `disputed` | 0 |
 | `stale` | 0 |
-| `supported_by_synthesis` | 667 |
-| `unsupported` | 23 |
-| `verified` | 232 |
+| `supported_by_synthesis` | 362 |
+| `unsupported` | 0 |
+| `verified` | 863 |
 
 ## Sample Unaudited Sentences
 

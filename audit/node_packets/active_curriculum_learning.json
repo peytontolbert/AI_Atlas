@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "The learner chooses informative data or follows an ordered progression from easier to harder experience.",
-    "why_it_matters": "The role of Active learning & curriculum learning is to connect Supervised learning, Datasets, sampling & splits to downstream capabilities including Curricula, data mixtures & sampling schedules, AutoML & automated model design.",
+    "why_it_matters": "In this atlas graph, Active learning & curriculum learning is modeled as depending on Supervised learning, Datasets, sampling & splits and feeding downstream nodes such as Curricula, data mixtures & sampling schedules, AutoML & automated model design.",
     "examples": [
-      "substrate for Curricula, data mixtures & sampling schedules",
-      "substrate for AutoML & automated model design"
+      "atlas downstream link to Curricula, data mixtures & sampling schedules",
+      "atlas downstream link to AutoML & automated model design"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Datasets, sampling & splits."
@@ -39,13 +39,13 @@
         "id": "datasets_sampling",
         "type": "uses",
         "strength": "core",
-        "rationale": "Active learning & curriculum learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Active learning & curriculum learning has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
       },
       {
         "id": "optimization",
         "type": "uses",
         "strength": "common",
-        "rationale": "Active learning & curriculum learning uses Optimization theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Active learning & curriculum learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "The learner chooses informative data or follows an ordered progression from easier to harder experience."
     },
     {
-      "unit_id": "e253bfea46886e10",
+      "unit_id": "c91b1f8a60da9b6b",
       "node_id": "active_curriculum_learning",
       "field": "why_it_matters",
-      "text": "The role of Active learning & curriculum learning is to connect Supervised learning, Datasets, sampling & splits to downstream capabilities including Curricula, data mixtures & sampling schedules, AutoML & automated model design."
+      "text": "In this atlas graph, Active learning & curriculum learning is modeled as depending on Supervised learning, Datasets, sampling & splits and feeding downstream nodes such as Curricula, data mixtures & sampling schedules, AutoML & automated model design."
     },
     {
-      "unit_id": "eba34cab3ea4d503",
+      "unit_id": "96fa4f25fdfadc90",
       "node_id": "active_curriculum_learning",
       "field": "examples[1]",
-      "text": "substrate for Curricula, data mixtures & sampling schedules"
+      "text": "atlas downstream link to Curricula, data mixtures & sampling schedules"
     },
     {
-      "unit_id": "2616b3da403ce159",
+      "unit_id": "1909f06d8fa89e70",
       "node_id": "active_curriculum_learning",
       "field": "examples[2]",
-      "text": "substrate for AutoML & automated model design"
+      "text": "atlas downstream link to AutoML & automated model design"
     },
     {
       "unit_id": "7542a195aaf7df9a",
@@ -87,16 +87,16 @@
       "text": "Active learning & curriculum learning follows the learning setup expressed by Supervised learning."
     },
     {
-      "unit_id": "e5c5d7d37a104fd2",
+      "unit_id": "f6e7df02dd2ff7c8",
       "node_id": "active_curriculum_learning",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "Active learning & curriculum learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Active learning & curriculum learning has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "289513399a222660",
+      "unit_id": "d71355954f37a0b5",
       "node_id": "active_curriculum_learning",
       "field": "dependencies.optimization.rationale",
-      "text": "Active learning & curriculum learning uses Optimization theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Active learning & curriculum learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -109,20 +109,20 @@
       "rationale": "Active learning & curriculum learning follows the learning setup expressed by Supervised learning."
     },
     {
-      "edge_id": "30fbc11b4ed17071",
+      "edge_id": "65d762414c4a1617",
       "node_id": "active_curriculum_learning",
       "dependency_id": "datasets_sampling",
       "type": "uses",
       "strength": "core",
-      "rationale": "Active learning & curriculum learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Active learning & curriculum learning has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "1f94b19f551cd9b2",
+      "edge_id": "df9c1db6bd84a32c",
       "node_id": "active_curriculum_learning",
       "dependency_id": "optimization",
       "type": "uses",
       "strength": "common",
-      "rationale": "Active learning & curriculum learning uses Optimization theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Active learning & curriculum learning has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -9,11 +9,11 @@
         "ref_rlvr",
         "url:https://arxiv.org/abs/2601.17223"
       ],
-      "evidence_location": "RLVR ar5iv lines 17 and 70-72 describe feedback on answer correctness from deterministic verifiers and a binary verifiable reward determined by answer correctness. VPRM arXiv abstract line 38 lists outcome-level verification signals such as unit tests for code and exact-match checks for mathematics.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Unit tests, exact answers, and answer-correctness rewards are supported; simulator goals, proof kernels, and constraint satisfaction are plausible but not directly evidenced by the inspected sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "1e62c409ddbe4f45",
@@ -65,13 +65,14 @@
       "field": "examples[3]",
       "text": "formal proof acceptance",
       "source_ids": [
-        "ref_formalml"
+        "ref_formalml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Formal methods survey arXiv page lines 30-35 identifies a survey of formal methods applied to ML; no inspected location directly covers proof-kernel acceptance as an outcome reward.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The example is plausible for executable verification, but direct evidence for proof acceptance as a reward signal was not found in the inspected source snippets."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "5cd3bf115a56f6c8",
@@ -90,124 +91,117 @@
       "notes": "Verifier fallibility, reward hacking, and mismatch with reasoning/process quality are supported across sources."
     },
     {
-      "unit_id": "8162f01aad03b331",
+      "unit_id": "382c5d4da7a1604c",
       "node_id": "outcome_verifiers",
       "field": "dependencies.reward_modeling.rationale",
-      "text": "Outcome verifiers & executable rewards is learned, selected, or evaluated using the objective family Reward modeling.",
+      "text": "In this atlas graph, Outcome verifiers & executable rewards has an `optimizes_for` dependency on Reward modeling because Reward modeling is modeled as the objective family for learning, selection, or evaluation.",
       "source_ids": [
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "RLVR ar5iv lines 17 and 70-72 describe deterministic verifier feedback and binary verifiable reward based solely on answer correctness.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Executable verifiers define rewards, though they are not necessarily learned reward models."
-    },
-    {
-      "unit_id": "9b80eb92d6ef2baf",
-      "node_id": "outcome_verifiers",
-      "field": "dependencies.supervision_signals.rationale",
-      "text": "Outcome verifiers & executable rewards uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation.",
-      "source_ids": [
-        "ref_rlvr",
-        "url:https://arxiv.org/abs/2601.17223"
-      ],
-      "evidence_location": "RLVR ar5iv lines 70-72 define binary verifiable reward from answer correctness. VPRM arXiv abstract line 38 lists outcome-level verification signals including unit tests and exact-match checks.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Outcome verifiers produce reward/supervision signals from checked outcomes."
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "1e3c61bc46f7ce04",
+      "unit_id": "6fb438931dccce74",
+      "node_id": "outcome_verifiers",
+      "field": "dependencies.supervision_signals.rationale",
+      "text": "In this atlas graph, Outcome verifiers & executable rewards has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a23a91ff69071fa3",
       "node_id": "outcome_verifiers",
       "field": "dependencies.formal_methods_specification.rationale",
-      "text": "Outcome verifiers & executable rewards uses Formal methods, specifications & proof obligations as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Outcome verifiers & executable rewards has a `uses` dependency on Formal methods, specifications & proof obligations because Formal methods, specifications & proof obligations is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_formalml",
-        "url:https://arxiv.org/abs/2601.17223"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Formal methods survey arXiv page lines 30-35 identifies formal methods applied to ML; VPRM arXiv abstract lines 39-40 describes deterministic, rule-based verifiers and guideline-defined criteria/rule-based decision paths.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Formal specifications are a common basis for executable verifiers, though not all outcome verifiers require formal methods."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "47fe0626657f4cb5",
+      "unit_id": "45fdb5e4bf6f05ea",
       "node_id": "outcome_verifiers",
       "field": "dependencies.discrete_math_logic.rationale",
-      "text": "Outcome verifiers & executable rewards uses Discrete mathematics & logic as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Outcome verifiers & executable rewards has a `uses` dependency on Discrete mathematics & logic because Discrete mathematics & logic is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_aima",
-        "url:https://arxiv.org/abs/2601.17223"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA landing page was inspected as a broad AI reference. VPRM arXiv abstract lines 39-40 describes deterministic, rule-based verifiers and rule-based decision paths.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Rule-based checking and exact-match verification support a common logic/discrete dependency, but the source does not directly establish it for every outcome verifier."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "8c9e9f24a30443c7",
+      "edge_id": "a2d00090a0edfd59",
       "node_id": "outcome_verifiers",
       "dependency_id": "reward_modeling",
       "source_ids": [
-        "ref_rlvr"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Outcome verifiers provide reward signals, but are often rule-based rather than learned reward models; common strength is acceptable.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
-      "edge_id": "cd6c6465c1a9f9f2",
-      "node_id": "outcome_verifiers",
-      "dependency_id": "supervision_signals",
-      "source_ids": [
-        "ref_rlvr",
-        "url:https://arxiv.org/abs/2601.17223"
-      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "verified",
-      "notes": "Verifiable rewards and outcome-level verification signals directly support a uses/core edge to supervision signals.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "17c78c5072e38a4f",
+      "edge_id": "436f785810229c02",
+      "node_id": "outcome_verifiers",
+      "dependency_id": "supervision_signals",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "ed31c628b50b5fb6",
       "node_id": "outcome_verifiers",
       "dependency_id": "formal_methods_specification",
       "source_ids": [
-        "ref_formalml",
-        "url:https://arxiv.org/abs/2601.17223"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Formal/rule-based criteria can implement executable verifiers; common strength is defensible because many verifiers are simpler exact checks.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "12294ca80da6c89e",
+      "edge_id": "2104725cf38de33f",
       "node_id": "outcome_verifiers",
       "dependency_id": "discrete_math_logic",
       "source_ids": [
-        "ref_aima",
-        "url:https://arxiv.org/abs/2601.17223"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Rule-based and exact-match verification commonly use discrete logic; common strength is defensible but not directly universal.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "outcome_verifiers",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

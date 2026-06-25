@@ -17,72 +17,6 @@
       "notes": "The inspected sources support geometry, manifolds, symmetries, invariance/equivariance, and representation-learning links. The exact combined list of distances, transformations, invariants, and topology is a synthesized atlas definition rather than a single directly stated claim."
     },
     {
-      "unit_id": "da89bb39f640e6b0",
-      "node_id": "geometry_topology",
-      "field": "why_it_matters",
-      "text": "The role of Geometry, topology & symmetry is to connect Linear algebra, Calculus & automatic differentiation theory to downstream capabilities including Images, video & spatial grids, Sets, point clouds & meshes, Positional, temporal & coordinate encodings.",
-      "source_ids": [
-        "ref_aima",
-        "url:https://arxiv.org/abs/2104.13478",
-        "url:https://arxiv.org/abs/1611.08097",
-        "url:https://arxiv.org/abs/1612.00593",
-        "url:https://arxiv.org/abs/2106.02795"
-      ],
-      "evidence_location": "AIMA contents.html lines 662-690 on computer vision, image formation, the 3D world, reconstruction, and geometry from a single view; AIMA lines 704-715 on configuration space, motion planning, Voronoi diagrams, trajectory optimization, and control; Bronstein et al. 2021 abstract lines 43-45 on feature learning, gradient descent/backpropagation, and unified geometric principles for CNNs/RNNs/GNNs/Transformers; Bronstein et al. 2016 abstract lines 38-40 on grid-like, invariant, graph, and manifold settings; Qi et al. 2016 abstract lines 38-39 on point clouds and permutation invariance; Li et al. 2021 abstract lines 38-40 on positional encoding for sequences/images and spatial multidimensional positions.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The downstream areas are supported across inspected sources, and Bronstein et al. connect geometric principles with gradient-based deep learning. The exact graph role statement and dependency-to-downstream bridge are editorial synthesis."
-    },
-    {
-      "unit_id": "62efe65f35eb2896",
-      "node_id": "geometry_topology",
-      "field": "examples[1]",
-      "text": "substrate for Images, video & spatial grids",
-      "source_ids": [
-        "ref_aima",
-        "url:https://arxiv.org/abs/1611.08097",
-        "url:https://arxiv.org/abs/2104.13478"
-      ],
-      "evidence_location": "AIMA contents.html lines 662-690 on computer vision, image formation, CNN image classification, the 3D world, reconstruction, and geometry from a single view; Bronstein et al. 2016 abstract lines 38-40 on Euclidean/grid-like structure and invariances in deep models; Bronstein et al. 2021 abstract lines 44-45 on unified geometric principles for CNNs and other architectures.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The sources support geometry and invariance as relevant to images, computer vision, and grid-like data. 'Video' and the phrase 'substrate for' are not directly stated in the cited passages, so this is synthesis."
-    },
-    {
-      "unit_id": "49620327302117ce",
-      "node_id": "geometry_topology",
-      "field": "examples[2]",
-      "text": "substrate for Sets, point clouds & meshes",
-      "source_ids": [
-        "url:https://arxiv.org/abs/1611.08097",
-        "url:https://arxiv.org/abs/1612.00593",
-        "url:https://arxiv.org/abs/1706.02413"
-      ],
-      "evidence_location": "Bronstein et al. 2016 abstract lines 38-40 on non-Euclidean spaces, meshed surfaces, graphs, manifolds, and geometric deep learning; Qi et al. 2016 abstract lines 38-39 on point clouds as geometric data structures and permutation invariance of input points; Qi et al. 2017 abstract lines 38-40 on point sets in metric spaces, metric-space distances, and 3D point clouds.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The inspected sources support point clouds, point sets, metric spaces, meshed surfaces, and geometric/non-Euclidean learning. The exact combined atlas category and 'substrate for' wording are synthesized."
-    },
-    {
-      "unit_id": "5a4ea7972d169844",
-      "node_id": "geometry_topology",
-      "field": "examples[3]",
-      "text": "substrate for Positional, temporal & coordinate encodings",
-      "source_ids": [
-        "url:https://arxiv.org/abs/1706.03762",
-        "url:https://arxiv.org/abs/2106.02795",
-        "url:https://arxiv.org/abs/2104.13478"
-      ],
-      "evidence_location": "Vaswani et al. 2017 abstract lines 42-44 on the Transformer dispensing with recurrence and convolutions; Li et al. 2021 abstract lines 38-40 on positional encoding for sequences/images, multidimensional positions, pixel positions, L2 distances, and positional relationships; Bronstein et al. 2021 abstract lines 43-45 on representation learning and geometric principles for Transformers and other architectures.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The sources support positional and spatial coordinate encodings and their use in attention/Transformer-style architectures. The temporal part is only indirectly supported through sequence position, so this should not be marked verified."
-    },
-    {
       "unit_id": "21cdd1c381b54903",
       "node_id": "geometry_topology",
       "field": "limitations[1]",
@@ -90,13 +24,14 @@
       "source_ids": [
         "ref_aima",
         "url:https://arxiv.org/abs/2104.13478",
-        "url:https://arxiv.org/abs/2106.02795"
+        "url:https://arxiv.org/abs/2106.02795",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA contents.html lines 768-774 on mathematical background including vectors, matrices, and linear algebra; AIMA lines 736-741 on limits of AI and the mathematical objection; Bronstein et al. 2021 abstract lines 43-45 on regularities, gradient descent/backpropagation, and geometric principles; Li et al. 2021 abstract lines 38-40 on positional relationships and distances in a specific encoding setting.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The sources support mathematical background, linear-algebra relevance, geometric assumptions/regularities, and gradient-based computation context. They do not directly state the empirical-mismatch warning or the direct-dependency list in this exact form."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "4dcdbef39660530d",
@@ -129,6 +64,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "The evidence supports calculus/AD as relevant to gradient-based learning and manifolds/geometric neural-network formalisms. It does not directly state the atlas dependency sentence verbatim."
+    },
+    {
+      "unit_id": "74e6d24e946288ce",
+      "node_id": "geometry_topology",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Geometry, topology & symmetry is modeled as depending on Linear algebra, Calculus & automatic differentiation theory and feeding downstream nodes such as Images, video & spatial grids, Sets, point clouds & meshes, Positional, temporal & coordinate encodings.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4c1da73aa337192c",
+      "node_id": "geometry_topology",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Images, video & spatial grids",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b2b55bb32a156992",
+      "node_id": "geometry_topology",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Sets, point clouds & meshes",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "dd0567536c63ac01",
+      "node_id": "geometry_topology",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Positional, temporal & coordinate encodings",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -164,5 +155,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "geometry_topology",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

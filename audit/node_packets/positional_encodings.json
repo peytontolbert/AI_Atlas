@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Coordinates, phases, or learned positions inject order, time, or location into models whose base computation is otherwise permutation-equivariant or location-agnostic.",
-    "why_it_matters": "The role of Positional, temporal & coordinate encodings is to connect Sequences, events & time series, Embeddings & distributed representations to downstream capabilities including Relative position, RoPE, ALiBi & coordinate mechanisms, Neural fields & radiance-field models.",
+    "why_it_matters": "In this atlas graph, Positional, temporal & coordinate encodings is modeled as depending on Sequences, events & time series, Embeddings & distributed representations and feeding downstream nodes such as Relative position, RoPE, ALiBi & coordinate mechanisms, Neural fields & radiance-field models.",
     "examples": [
-      "substrate for Relative position, RoPE, ALiBi & coordinate mechanisms",
-      "substrate for Neural fields & radiance-field models"
+      "atlas downstream link to Relative position, RoPE, ALiBi & coordinate mechanisms",
+      "atlas downstream link to Neural fields & radiance-field models"
     ],
     "limitations": [
       "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Sequences, events & time series, Embeddings & distributed representations."
@@ -45,7 +45,7 @@
         "id": "geometry_topology",
         "type": "requires",
         "strength": "common",
-        "rationale": "Positional, temporal & coordinate encodings rests on the formal or computational capabilities supplied by Geometry, topology & symmetry."
+        "rationale": "In this atlas graph, Positional, temporal & coordinate encodings has a `requires` dependency on Geometry, topology & symmetry with `common` strength."
       }
     ]
   },
@@ -57,22 +57,22 @@
       "text": "Coordinates, phases, or learned positions inject order, time, or location into models whose base computation is otherwise permutation-equivariant or location-agnostic."
     },
     {
-      "unit_id": "28268779e80c8365",
+      "unit_id": "5ba68ef64498ade1",
       "node_id": "positional_encodings",
       "field": "why_it_matters",
-      "text": "The role of Positional, temporal & coordinate encodings is to connect Sequences, events & time series, Embeddings & distributed representations to downstream capabilities including Relative position, RoPE, ALiBi & coordinate mechanisms, Neural fields & radiance-field models."
+      "text": "In this atlas graph, Positional, temporal & coordinate encodings is modeled as depending on Sequences, events & time series, Embeddings & distributed representations and feeding downstream nodes such as Relative position, RoPE, ALiBi & coordinate mechanisms, Neural fields & radiance-field models."
     },
     {
-      "unit_id": "15f3ea1ed0f9cca5",
+      "unit_id": "dde22fb361f1d434",
       "node_id": "positional_encodings",
       "field": "examples[1]",
-      "text": "substrate for Relative position, RoPE, ALiBi & coordinate mechanisms"
+      "text": "atlas downstream link to Relative position, RoPE, ALiBi & coordinate mechanisms"
     },
     {
-      "unit_id": "beec33eb705f1419",
+      "unit_id": "e126c54fd12d00bb",
       "node_id": "positional_encodings",
       "field": "examples[2]",
-      "text": "substrate for Neural fields & radiance-field models"
+      "text": "atlas downstream link to Neural fields & radiance-field models"
     },
     {
       "unit_id": "3e9f272971bff328",
@@ -93,10 +93,10 @@
       "text": "Positional, temporal & coordinate encodings consumes, emits, or organizes information using Embeddings & distributed representations."
     },
     {
-      "unit_id": "aff9e2a64a04285e",
+      "unit_id": "fc65e2ca6f874b8a",
       "node_id": "positional_encodings",
       "field": "dependencies.geometry_topology.rationale",
-      "text": "Positional, temporal & coordinate encodings rests on the formal or computational capabilities supplied by Geometry, topology & symmetry."
+      "text": "In this atlas graph, Positional, temporal & coordinate encodings has a `requires` dependency on Geometry, topology & symmetry with `common` strength."
     }
   ],
   "edge_units": [
@@ -117,12 +117,12 @@
       "rationale": "Positional, temporal & coordinate encodings consumes, emits, or organizes information using Embeddings & distributed representations."
     },
     {
-      "edge_id": "4122edb263d01da4",
+      "edge_id": "9ecc568bf219d77e",
       "node_id": "positional_encodings",
       "dependency_id": "geometry_topology",
       "type": "requires",
       "strength": "common",
-      "rationale": "Positional, temporal & coordinate encodings rests on the formal or computational capabilities supplied by Geometry, topology & symmetry."
+      "rationale": "In this atlas graph, Positional, temporal & coordinate encodings has a `requires` dependency on Geometry, topology & symmetry with `common` strength."
     }
   ],
   "candidate_references": {

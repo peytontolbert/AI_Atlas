@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "Hidden Markov models generate sequences through latent Markov state, whereas conditional random fields directly model structured output distributions conditioned on observations.",
-    "why_it_matters": "The role of Hidden Markov models & CRFs is to connect Sequences, events & time series, Latent variables & hidden state to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Document intelligence & information extraction.",
+    "why_it_matters": "In this atlas graph, Hidden Markov models & CRFs is modeled as depending on Sequences, events & time series, Latent variables & hidden state and feeding downstream nodes such as Time-series forecasting, anomaly & fraud detection, Document intelligence & information extraction.",
     "examples": [
-      "substrate for Time-series forecasting, anomaly & fraud detection",
-      "substrate for Document intelligence & information extraction"
+      "atlas downstream link to Time-series forecasting, anomaly & fraud detection",
+      "atlas downstream link to Document intelligence & information extraction"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Sequences, events & time series, Latent variables & hidden state."
@@ -40,19 +40,19 @@
         "id": "latent_variables",
         "type": "represents_with",
         "strength": "core",
-        "rationale": "Hidden Markov models & CRFs consumes, emits, or organizes information using Latent variables & hidden state."
+        "rationale": "In this atlas graph, Hidden Markov models & CRFs has a `represents_with` dependency on Latent variables & hidden state with `core` strength."
       },
       {
         "id": "mcmc_em_message_passing",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Hidden Markov models & CRFs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+        "rationale": "In this atlas graph, Hidden Markov models & CRFs has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "mle_cross_entropy",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Hidden Markov models & CRFs is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+        "rationale": "In this atlas graph, Hidden Markov models & CRFs has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation."
       }
     ]
   },
@@ -64,22 +64,22 @@
       "text": "Hidden Markov models generate sequences through latent Markov state, whereas conditional random fields directly model structured output distributions conditioned on observations."
     },
     {
-      "unit_id": "121f3c4ddedb7e4c",
+      "unit_id": "0063321b6caf2dca",
       "node_id": "hmm_crf",
       "field": "why_it_matters",
-      "text": "The role of Hidden Markov models & CRFs is to connect Sequences, events & time series, Latent variables & hidden state to downstream capabilities including Time-series forecasting, anomaly & fraud detection, Document intelligence & information extraction."
+      "text": "In this atlas graph, Hidden Markov models & CRFs is modeled as depending on Sequences, events & time series, Latent variables & hidden state and feeding downstream nodes such as Time-series forecasting, anomaly & fraud detection, Document intelligence & information extraction."
     },
     {
-      "unit_id": "59451fefc7120184",
+      "unit_id": "3ef873bc96fea4a3",
       "node_id": "hmm_crf",
       "field": "examples[1]",
-      "text": "substrate for Time-series forecasting, anomaly & fraud detection"
+      "text": "atlas downstream link to Time-series forecasting, anomaly & fraud detection"
     },
     {
-      "unit_id": "c3b4603ee00c603e",
+      "unit_id": "9c905d59c3319c74",
       "node_id": "hmm_crf",
       "field": "examples[2]",
-      "text": "substrate for Document intelligence & information extraction"
+      "text": "atlas downstream link to Document intelligence & information extraction"
     },
     {
       "unit_id": "18bfbdbe1914cf54",
@@ -94,22 +94,22 @@
       "text": "Hidden Markov models & CRFs consumes, emits, or organizes information using Sequences, events & time series."
     },
     {
-      "unit_id": "c7627df52fa16dbc",
+      "unit_id": "f8b3c8798a728818",
       "node_id": "hmm_crf",
       "field": "dependencies.latent_variables.rationale",
-      "text": "Hidden Markov models & CRFs consumes, emits, or organizes information using Latent variables & hidden state."
+      "text": "In this atlas graph, Hidden Markov models & CRFs has a `represents_with` dependency on Latent variables & hidden state with `core` strength."
     },
     {
-      "unit_id": "38a88a315017d090",
+      "unit_id": "3bace612b71cece8",
       "node_id": "hmm_crf",
       "field": "dependencies.mcmc_em_message_passing.rationale",
-      "text": "Hidden Markov models & CRFs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+      "text": "In this atlas graph, Hidden Markov models & CRFs has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "unit_id": "d6721e8c8f901a58",
+      "unit_id": "e8c486adad045a85",
       "node_id": "hmm_crf",
       "field": "dependencies.mle_cross_entropy.rationale",
-      "text": "Hidden Markov models & CRFs is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+      "text": "In this atlas graph, Hidden Markov models & CRFs has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "edge_units": [
@@ -122,28 +122,28 @@
       "rationale": "Hidden Markov models & CRFs consumes, emits, or organizes information using Sequences, events & time series."
     },
     {
-      "edge_id": "727d7aacd92d6206",
+      "edge_id": "298d30acaffb5b28",
       "node_id": "hmm_crf",
       "dependency_id": "latent_variables",
       "type": "represents_with",
       "strength": "core",
-      "rationale": "Hidden Markov models & CRFs consumes, emits, or organizes information using Latent variables & hidden state."
+      "rationale": "In this atlas graph, Hidden Markov models & CRFs has a `represents_with` dependency on Latent variables & hidden state with `core` strength."
     },
     {
-      "edge_id": "2b854fbf3fe28b37",
+      "edge_id": "74d1e56f8740feae",
       "node_id": "hmm_crf",
       "dependency_id": "mcmc_em_message_passing",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Hidden Markov models & CRFs is learned, selected, or evaluated using the objective family MCMC, EM & probabilistic message passing."
+      "rationale": "In this atlas graph, Hidden Markov models & CRFs has an `optimizes_for` dependency on MCMC, EM & probabilistic message passing because MCMC, EM & probabilistic message passing is modeled as the objective family for learning, selection, or evaluation."
     },
     {
-      "edge_id": "109f6ee24ec02568",
+      "edge_id": "980ac1e9ef38ae34",
       "node_id": "hmm_crf",
       "dependency_id": "mle_cross_entropy",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Hidden Markov models & CRFs is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+      "rationale": "In this atlas graph, Hidden Markov models & CRFs has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "candidate_references": {

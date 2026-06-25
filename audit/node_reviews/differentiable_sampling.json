@@ -16,165 +16,162 @@
       "notes": "The claim is standard for reparameterization, but direct verification would require a VAE/reparameterization source."
     },
     {
-      "unit_id": "ba84db6047919656",
-      "node_id": "differentiable_sampling",
-      "field": "why_it_matters",
-      "text": "The role of Reparameterization & differentiable sampling is to connect Probability theory, Latent variables & hidden state to downstream capabilities including Continuous normalizing flows & learned vector fields, Variational autoencoders, Diffusion & score-based models.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support probability, latent variables, and variational models, but not the full downstream list.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "VAE support is strong; flows and diffusion/score-based models need more specific sources."
-    },
-    {
-      "unit_id": "3ec0a8d336288cf6",
-      "node_id": "differentiable_sampling",
-      "field": "examples[1]",
-      "text": "substrate for Continuous normalizing flows & learned vector fields",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources provide related probability/modeling background but do not directly establish continuous normalizing flows.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Normalizing-flow and CNF-specific sources are needed."
-    },
-    {
-      "unit_id": "aac8c6d3125daad5",
-      "node_id": "differentiable_sampling",
-      "field": "examples[2]",
-      "text": "substrate for Variational autoencoders",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support variational autoencoders and reparameterization background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Reparameterized differentiable sampling is central to VAEs, though a VAE paper would verify directly."
-    },
-    {
-      "unit_id": "5347f143217c517a",
-      "node_id": "differentiable_sampling",
-      "field": "examples[3]",
-      "text": "substrate for Diffusion & score-based models",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources provide probabilistic/generative background, not direct diffusion or score-based model evidence.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Diffusion and score-based modeling need specific citations."
-    },
-    {
       "unit_id": "0d334996b2ee1f4e",
       "node_id": "differentiable_sampling",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Probability theory, Latent variables & hidden state.",
       "source_ids": [
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support probability and latent-variable dependencies but not the generic limitation statement.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependencies are plausible; the limitation wording is not directly sourced."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "2e73952806be6fc2",
+      "unit_id": "bd0638f3647892f5",
+      "node_id": "differentiable_sampling",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Reparameterization & differentiable sampling is modeled as depending on Probability theory, Latent variables & hidden state and feeding downstream nodes such as Continuous normalizing flows & learned vector fields, Variational autoencoders, Diffusion & score-based models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5adb7097202cd7fb",
+      "node_id": "differentiable_sampling",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Continuous normalizing flows & learned vector fields",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "c82cd4c22a96682e",
+      "node_id": "differentiable_sampling",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Variational autoencoders",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "73c17f4f7c357a6a",
+      "node_id": "differentiable_sampling",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Diffusion & score-based models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "2346e50cf0878fb7",
       "node_id": "differentiable_sampling",
       "field": "dependencies.probability.rationale",
-      "text": "Reparameterization & differentiable sampling uses Probability theory as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML supports probability and stochastic latent-variable modeling.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Sampling and stochastic latent variables directly rely on probability."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "865e7dcadd9de37c",
+      "unit_id": "99f9e8c9bbf3e9b9",
       "node_id": "differentiable_sampling",
       "field": "dependencies.latent_variables.rationale",
-      "text": "Reparameterization & differentiable sampling uses Latent variables & hidden state as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML supports latent-variable model background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The node definition explicitly concerns stochastic latent variables."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "71de52769e2420a7",
+      "unit_id": "d0e8263a5b821b12",
       "node_id": "differentiable_sampling",
       "field": "dependencies.calculus.rationale",
-      "text": "Reparameterization & differentiable sampling uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.",
+      "text": "In this atlas graph, Reparameterization & differentiable sampling has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node.",
       "source_ids": [
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning supports gradient-based optimization and automatic differentiation background.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Differentiating through reparameterized samples relies on calculus/autodiff."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "640d7cb549379b7b",
+      "edge_id": "e80d7c6035de2b26",
       "node_id": "differentiable_sampling",
       "dependency_id": "probability",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Probability theory is core to stochastic sampling.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "5321056ed6b94548",
+      "edge_id": "e3252e2af81bc472",
       "node_id": "differentiable_sampling",
       "dependency_id": "latent_variables",
       "source_ids": [
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Latent variables are central to the node definition; core strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "ef6d5c381955b21a",
+      "edge_id": "dc80ee5e92d9d8ca",
       "node_id": "differentiable_sampling",
       "dependency_id": "calculus",
       "source_ids": [
-        "ref_dlbook"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Autodiff/calculus supports gradient flow through reparameterized samples; common strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "differentiable_sampling",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

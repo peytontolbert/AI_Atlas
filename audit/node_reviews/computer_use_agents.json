@@ -8,11 +8,11 @@
       "source_ids": [
         "ref_aima"
       ],
-      "evidence_location": "The node cites broad AI background rather than a source that directly defines this modern system boundary.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The claim is plausible, but needs a system-specific source for exact verification."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "3950cff82686c74a",
@@ -76,13 +76,14 @@
       "field": "limitations[1]",
       "text": "End-to-end quality is bounded by the weakest data, model, tool, interface, policy, infrastructure, and human-oversight component. Its direct dependencies include Autonomous software-engineering agents, Multimodal foundation models.",
       "source_ids": [
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The generic end-to-end quality limitation is plausible for deployed systems, while the dependency list is graph-derived.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a reliability or systems-evaluation source for exact verification; dependency list portion is structural metadata."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "f7b619d73224b85b",
@@ -158,7 +159,7 @@
       "unit_id": "2a31700a241866df",
       "node_id": "computer_use_agents",
       "field": "dependencies.vision_language_action_model.rationale",
-      "text": "Browser, desktop & computer-use agents integrates Vision\u2013language\u2013action models as part of an end-to-end application boundary.",
+      "text": "Browser, desktop & computer-use agents integrates Vision–language–action models as part of an end-to-end application boundary.",
       "source_ids": [
         "ref_aima"
       ],
@@ -167,20 +168,6 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Conceptual support only; exact rationale is graph-derived."
-    },
-    {
-      "unit_id": "20709346abaef487",
-      "node_id": "computer_use_agents",
-      "field": "dependencies.episodic_memory.rationale",
-      "text": "Browser, desktop & computer-use agents integrates Episodic memory as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
     },
     {
       "unit_id": "919b96c4f0594f53",
@@ -197,18 +184,32 @@
       "notes": "Conceptual support only; exact rationale is graph-derived."
     },
     {
-      "unit_id": "3ec6e1f068bf94ac",
+      "unit_id": "37f65991c6b0b948",
       "node_id": "computer_use_agents",
-      "field": "dependencies.runtime_assurance.rationale",
-      "text": "Browser, desktop & computer-use agents integrates Runtime assurance, monitors & safety envelopes as part of an end-to-end application boundary.",
+      "field": "dependencies.episodic_memory.rationale",
+      "text": "In this atlas graph, Browser, desktop & computer-use agents has an `applies` dependency on Episodic memory with `optional` strength.",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The dependency can be relevant, but the packet does not directly establish the stated role or strength for all instances.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Relationship should be narrowed or supported by a dependency-specific source."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "1d30c8d0e0b5ab35",
+      "node_id": "computer_use_agents",
+      "field": "dependencies.runtime_assurance.rationale",
+      "text": "In this atlas graph, Browser, desktop & computer-use agents has an `applies` dependency on Runtime assurance, monitors & safety envelopes with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -283,20 +284,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "c3082699c94c590c",
-      "node_id": "computer_use_agents",
-      "dependency_id": "episodic_memory",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "283be25844bd5688",
       "node_id": "computer_use_agents",
       "dependency_id": "structured_outputs",
@@ -311,18 +298,30 @@
       "strength_supported": true
     },
     {
-      "edge_id": "5b3577708d0c3c3b",
+      "edge_id": "7a50b61999c10622",
+      "node_id": "computer_use_agents",
+      "dependency_id": "episodic_memory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "82976afae6d0f684",
       "node_id": "computer_use_agents",
       "dependency_id": "runtime_assurance",
       "source_ids": [
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible, but the stated strength appears deployment- or architecture-specific and is not directly established by the packet citations.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

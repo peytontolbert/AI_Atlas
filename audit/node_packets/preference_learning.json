@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Pairwise rankings or comparative judgments teach which outputs or behaviors are preferred.",
-    "why_it_matters": "The role of Preference learning is to connect Supervised learning, Labels, targets, rewards & preferences to downstream capabilities including Margin, ranking & metric objectives, Reward modeling, Preference optimization (RLHF, DPO families).",
+    "why_it_matters": "In this atlas graph, Preference learning is modeled as depending on Supervised learning, Labels, targets, rewards & preferences and feeding downstream nodes such as Margin, ranking & metric objectives, Reward modeling, Preference optimization (RLHF, DPO families).",
     "examples": [
-      "substrate for Margin, ranking & metric objectives",
-      "substrate for Reward modeling",
-      "substrate for Preference optimization (RLHF, DPO families)"
+      "atlas downstream link to Margin, ranking & metric objectives",
+      "atlas downstream link to Reward modeling",
+      "atlas downstream link to Preference optimization (RLHF, DPO families)"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Supervised learning, Labels, targets, rewards & preferences."
@@ -42,13 +42,13 @@
         "id": "supervision_signals",
         "type": "uses",
         "strength": "core",
-        "rationale": "Preference learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Preference learning has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
       },
       {
         "id": "game_decision_theory",
         "type": "uses",
         "strength": "common",
-        "rationale": "Preference learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Preference learning has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -60,28 +60,28 @@
       "text": "Pairwise rankings or comparative judgments teach which outputs or behaviors are preferred."
     },
     {
-      "unit_id": "5177db46ab26d0c3",
+      "unit_id": "02e997291adc7765",
       "node_id": "preference_learning",
       "field": "why_it_matters",
-      "text": "The role of Preference learning is to connect Supervised learning, Labels, targets, rewards & preferences to downstream capabilities including Margin, ranking & metric objectives, Reward modeling, Preference optimization (RLHF, DPO families)."
+      "text": "In this atlas graph, Preference learning is modeled as depending on Supervised learning, Labels, targets, rewards & preferences and feeding downstream nodes such as Margin, ranking & metric objectives, Reward modeling, Preference optimization (RLHF, DPO families)."
     },
     {
-      "unit_id": "2f74980002b2bb00",
+      "unit_id": "4eb82655a45ea0d9",
       "node_id": "preference_learning",
       "field": "examples[1]",
-      "text": "substrate for Margin, ranking & metric objectives"
+      "text": "atlas downstream link to Margin, ranking & metric objectives"
     },
     {
-      "unit_id": "66b5f3349984bae2",
+      "unit_id": "f6257ba69d3b43e1",
       "node_id": "preference_learning",
       "field": "examples[2]",
-      "text": "substrate for Reward modeling"
+      "text": "atlas downstream link to Reward modeling"
     },
     {
-      "unit_id": "863a9b41f10e0a5b",
+      "unit_id": "5ccdb8190158efde",
       "node_id": "preference_learning",
       "field": "examples[3]",
-      "text": "substrate for Preference optimization (RLHF, DPO families)"
+      "text": "atlas downstream link to Preference optimization (RLHF, DPO families)"
     },
     {
       "unit_id": "d126c6aebbf8d3f8",
@@ -96,16 +96,16 @@
       "text": "Preference learning follows the learning setup expressed by Supervised learning."
     },
     {
-      "unit_id": "cc8c7d09810b1483",
+      "unit_id": "2ebc36423a5065ad",
       "node_id": "preference_learning",
       "field": "dependencies.supervision_signals.rationale",
-      "text": "Preference learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Preference learning has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "9b8e2099483f2f55",
+      "unit_id": "374dfc622b60fd0a",
       "node_id": "preference_learning",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Preference learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Preference learning has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -118,20 +118,20 @@
       "rationale": "Preference learning follows the learning setup expressed by Supervised learning."
     },
     {
-      "edge_id": "de2debd0fe64f7ab",
+      "edge_id": "348343c01ca328a5",
       "node_id": "preference_learning",
       "dependency_id": "supervision_signals",
       "type": "uses",
       "strength": "core",
-      "rationale": "Preference learning uses Labels, targets, rewards & preferences as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Preference learning has a `uses` dependency on Labels, targets, rewards & preferences because Labels, targets, rewards & preferences is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "eaa05e896db3046f",
+      "edge_id": "18ce0a1bdafef6a0",
       "node_id": "preference_learning",
       "dependency_id": "game_decision_theory",
       "type": "uses",
       "strength": "common",
-      "rationale": "Preference learning uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Preference learning has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

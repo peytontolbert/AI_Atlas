@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Matrix factorization and topic models explain sparse user–item, word–document, or other observations through a smaller set of latent factors.",
-    "why_it_matters": "The role of Matrix factorization & topic models is to connect Linear algebra, Latent variables & hidden state to downstream capabilities including Recommendation, ranking & personalization.",
+    "why_it_matters": "In this atlas graph, Matrix factorization & topic models is modeled as depending on Linear algebra, Latent variables & hidden state and feeding downstream nodes such as Recommendation, ranking & personalization.",
     "examples": [
-      "substrate for Recommendation, ranking & personalization",
+      "atlas downstream link to Recommendation, ranking & personalization",
       "combined with Linear algebra"
     ],
     "limitations": [
@@ -52,7 +52,7 @@
         "id": "mle_cross_entropy",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Matrix factorization & topic models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+        "rationale": "In this atlas graph, Matrix factorization & topic models has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation."
       }
     ]
   },
@@ -64,16 +64,16 @@
       "text": "Matrix factorization and topic models explain sparse user–item, word–document, or other observations through a smaller set of latent factors."
     },
     {
-      "unit_id": "717a6e4f3a1fef71",
+      "unit_id": "f6a58c2e8c6d2b2c",
       "node_id": "matrix_factor_topic",
       "field": "why_it_matters",
-      "text": "The role of Matrix factorization & topic models is to connect Linear algebra, Latent variables & hidden state to downstream capabilities including Recommendation, ranking & personalization."
+      "text": "In this atlas graph, Matrix factorization & topic models is modeled as depending on Linear algebra, Latent variables & hidden state and feeding downstream nodes such as Recommendation, ranking & personalization."
     },
     {
-      "unit_id": "66c3880114497abb",
+      "unit_id": "a011b934be54909b",
       "node_id": "matrix_factor_topic",
       "field": "examples[1]",
-      "text": "substrate for Recommendation, ranking & personalization"
+      "text": "atlas downstream link to Recommendation, ranking & personalization"
     },
     {
       "unit_id": "e391fa8de72d5e6b",
@@ -106,10 +106,10 @@
       "text": "Matrix factorization & topic models follows the learning setup expressed by Unsupervised learning."
     },
     {
-      "unit_id": "0aadc48820929863",
+      "unit_id": "1ca795648a7f65b1",
       "node_id": "matrix_factor_topic",
       "field": "dependencies.mle_cross_entropy.rationale",
-      "text": "Matrix factorization & topic models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+      "text": "In this atlas graph, Matrix factorization & topic models has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "edge_units": [
@@ -138,12 +138,12 @@
       "rationale": "Matrix factorization & topic models follows the learning setup expressed by Unsupervised learning."
     },
     {
-      "edge_id": "7688bc7e436dd518",
+      "edge_id": "01069a64a6e79088",
       "node_id": "matrix_factor_topic",
       "dependency_id": "mle_cross_entropy",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Matrix factorization & topic models is learned, selected, or evaluated using the objective family Maximum likelihood & cross-entropy."
+      "rationale": "In this atlas graph, Matrix factorization & topic models has an `optimizes_for` dependency on Maximum likelihood & cross-entropy because Maximum likelihood & cross-entropy is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "candidate_references": {

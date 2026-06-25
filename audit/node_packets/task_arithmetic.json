@@ -35,19 +35,19 @@
         "id": "model_merging",
         "type": "uses",
         "strength": "core",
-        "rationale": "Task vectors & parameter arithmetic uses Model merging & weight-space composition as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Task vectors & parameter arithmetic has a `uses` dependency on Model merging & weight-space composition because Model merging & weight-space composition is modeled as a reusable ingredient for the node."
       },
       {
         "id": "peft_lora",
         "type": "uses",
         "strength": "core",
-        "rationale": "Task vectors & parameter arithmetic uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Task vectors & parameter arithmetic has a `uses` dependency on Parameter-efficient tuning, adapters & LoRA because Parameter-efficient tuning, adapters & LoRA is modeled as a reusable ingredient for the node."
       },
       {
         "id": "linear_algebra",
         "type": "uses",
         "strength": "common",
-        "rationale": "Task vectors & parameter arithmetic uses Linear algebra as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Task vectors & parameter arithmetic has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -89,48 +89,48 @@
       "text": "Weight-space directions are not perfectly linear or independent, so composition can produce destructive interference."
     },
     {
-      "unit_id": "c4eed9e2dd06453a",
+      "unit_id": "4bc064515ada71a4",
       "node_id": "task_arithmetic",
       "field": "dependencies.model_merging.rationale",
-      "text": "Task vectors & parameter arithmetic uses Model merging & weight-space composition as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Task vectors & parameter arithmetic has a `uses` dependency on Model merging & weight-space composition because Model merging & weight-space composition is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "7ab0cdcd72f4a922",
+      "unit_id": "09be33de3be3f0d5",
       "node_id": "task_arithmetic",
       "field": "dependencies.peft_lora.rationale",
-      "text": "Task vectors & parameter arithmetic uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Task vectors & parameter arithmetic has a `uses` dependency on Parameter-efficient tuning, adapters & LoRA because Parameter-efficient tuning, adapters & LoRA is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "dcf1f9ee1eec4ca1",
+      "unit_id": "4a84d4b8e4f54111",
       "node_id": "task_arithmetic",
       "field": "dependencies.linear_algebra.rationale",
-      "text": "Task vectors & parameter arithmetic uses Linear algebra as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Task vectors & parameter arithmetic has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "ed632c3e1e1a7b30",
+      "edge_id": "c2506ab16380ee3a",
       "node_id": "task_arithmetic",
       "dependency_id": "model_merging",
       "type": "uses",
       "strength": "core",
-      "rationale": "Task vectors & parameter arithmetic uses Model merging & weight-space composition as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Task vectors & parameter arithmetic has a `uses` dependency on Model merging & weight-space composition because Model merging & weight-space composition is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "d43666050a7c2ffc",
+      "edge_id": "a2701183a4a2d46e",
       "node_id": "task_arithmetic",
       "dependency_id": "peft_lora",
       "type": "uses",
       "strength": "core",
-      "rationale": "Task vectors & parameter arithmetic uses Parameter-efficient tuning, adapters & LoRA as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Task vectors & parameter arithmetic has a `uses` dependency on Parameter-efficient tuning, adapters & LoRA because Parameter-efficient tuning, adapters & LoRA is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "7ee098a3f6789196",
+      "edge_id": "8b9a2886551e69a5",
       "node_id": "task_arithmetic",
       "dependency_id": "linear_algebra",
       "type": "uses",
       "strength": "common",
-      "rationale": "Task vectors & parameter arithmetic uses Linear algebra as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Task vectors & parameter arithmetic has a `uses` dependency on Linear algebra because Linear algebra is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

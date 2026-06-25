@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "k-nearest-neighbor methods predict from nearby stored examples, while Naive Bayes applies Bayes’ rule under class-conditional feature assumptions.",
-    "why_it_matters": "The role of k-NN & Naive Bayes is to connect Datasets, sampling & splits, Embeddings & distributed representations to downstream capabilities including Recommendation, ranking & personalization, Tabular predictive analytics & decision support.",
+    "why_it_matters": "In this atlas graph, k-NN & Naive Bayes is modeled as depending on Datasets, sampling & splits, Embeddings & distributed representations and feeding downstream nodes such as Recommendation, ranking & personalization, Tabular predictive analytics & decision support.",
     "examples": [
-      "substrate for Recommendation, ranking & personalization",
-      "substrate for Tabular predictive analytics & decision support"
+      "atlas downstream link to Recommendation, ranking & personalization",
+      "atlas downstream link to Tabular predictive analytics & decision support"
     ],
     "limitations": [
       "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Datasets, sampling & splits, Embeddings & distributed representations."
@@ -39,13 +39,13 @@
         "id": "embeddings",
         "type": "represents_with",
         "strength": "common",
-        "rationale": "k-NN & Naive Bayes consumes, emits, or organizes information using Embeddings & distributed representations."
+        "rationale": "In this atlas graph, k-NN & Naive Bayes has a `represents_with` dependency on Embeddings & distributed representations with `common` strength."
       },
       {
         "id": "bayesian_approx_inference",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "k-NN & Naive Bayes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+        "rationale": "In this atlas graph, k-NN & Naive Bayes has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
       },
       {
         "id": "supervised_learning",
@@ -63,22 +63,22 @@
       "text": "k-nearest-neighbor methods predict from nearby stored examples, while Naive Bayes applies Bayes’ rule under class-conditional feature assumptions."
     },
     {
-      "unit_id": "4658e0ef4230cdea",
+      "unit_id": "aa9748f40fb1f78f",
       "node_id": "knn_naive_bayes",
       "field": "why_it_matters",
-      "text": "The role of k-NN & Naive Bayes is to connect Datasets, sampling & splits, Embeddings & distributed representations to downstream capabilities including Recommendation, ranking & personalization, Tabular predictive analytics & decision support."
+      "text": "In this atlas graph, k-NN & Naive Bayes is modeled as depending on Datasets, sampling & splits, Embeddings & distributed representations and feeding downstream nodes such as Recommendation, ranking & personalization, Tabular predictive analytics & decision support."
     },
     {
-      "unit_id": "de604ff07774fbbc",
+      "unit_id": "88b3d26cfaed6dbf",
       "node_id": "knn_naive_bayes",
       "field": "examples[1]",
-      "text": "substrate for Recommendation, ranking & personalization"
+      "text": "atlas downstream link to Recommendation, ranking & personalization"
     },
     {
-      "unit_id": "e04fdfb7faa38afb",
+      "unit_id": "18ce061f227c7f87",
       "node_id": "knn_naive_bayes",
       "field": "examples[2]",
-      "text": "substrate for Tabular predictive analytics & decision support"
+      "text": "atlas downstream link to Tabular predictive analytics & decision support"
     },
     {
       "unit_id": "bfb6f4447f2fc94e",
@@ -93,16 +93,16 @@
       "text": "k-NN & Naive Bayes consumes, emits, or organizes information using Datasets, sampling & splits."
     },
     {
-      "unit_id": "aeb571b7fc798b4a",
+      "unit_id": "2e61a2c5262b09d5",
       "node_id": "knn_naive_bayes",
       "field": "dependencies.embeddings.rationale",
-      "text": "k-NN & Naive Bayes consumes, emits, or organizes information using Embeddings & distributed representations."
+      "text": "In this atlas graph, k-NN & Naive Bayes has a `represents_with` dependency on Embeddings & distributed representations with `common` strength."
     },
     {
-      "unit_id": "5b0f88b388cf6225",
+      "unit_id": "20489819a717043e",
       "node_id": "knn_naive_bayes",
       "field": "dependencies.bayesian_approx_inference.rationale",
-      "text": "k-NN & Naive Bayes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      "text": "In this atlas graph, k-NN & Naive Bayes has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "unit_id": "b4fbdfdeace17642",
@@ -121,20 +121,20 @@
       "rationale": "k-NN & Naive Bayes consumes, emits, or organizes information using Datasets, sampling & splits."
     },
     {
-      "edge_id": "3017e24da255b3df",
+      "edge_id": "4def92fe6d825029",
       "node_id": "knn_naive_bayes",
       "dependency_id": "embeddings",
       "type": "represents_with",
       "strength": "common",
-      "rationale": "k-NN & Naive Bayes consumes, emits, or organizes information using Embeddings & distributed representations."
+      "rationale": "In this atlas graph, k-NN & Naive Bayes has a `represents_with` dependency on Embeddings & distributed representations with `common` strength."
     },
     {
-      "edge_id": "d664942c26c6ffbc",
+      "edge_id": "960790fcaa63274e",
       "node_id": "knn_naive_bayes",
       "dependency_id": "bayesian_approx_inference",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "k-NN & Naive Bayes is learned, selected, or evaluated using the objective family Bayesian & approximate inference."
+      "rationale": "In this atlas graph, k-NN & Naive Bayes has an `optimizes_for` dependency on Bayesian & approximate inference because Bayesian & approximate inference is modeled as the objective family for learning, selection, or evaluation."
     },
     {
       "edge_id": "843ca6c1091a24ee",

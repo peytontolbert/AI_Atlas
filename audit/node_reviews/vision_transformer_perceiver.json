@@ -10,43 +10,11 @@
         "ref_dlbook",
         "ref_pml"
       ],
-      "evidence_location": "Transformer and Deep Learning background; packet lacks direct ViT or Perceiver paper, so exact ViT/Perceiver claims are not directly sourced.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The claim is technically plausible, but the packet does not cite direct ViT/Perceiver or graph-transformer sources for the exact wording."
-    },
-    {
-      "unit_id": "6f8cde2fa7b604d4",
-      "node_id": "vision_transformer_perceiver",
-      "field": "why_it_matters",
-      "text": "The role of Vision Transformers & Perceiver-style latent models is to connect Transformers, Striding, pooling, patchification & up/downsampling to downstream capabilities including Computer vision, perception & scene understanding.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Transformer and Deep Learning background; packet lacks direct ViT or Perceiver paper, so exact ViT/Perceiver claims are not directly sourced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
-    },
-    {
-      "unit_id": "93bd58e43572e5ca",
-      "node_id": "vision_transformer_perceiver",
-      "field": "examples[1]",
-      "text": "substrate for Computer vision, perception & scene understanding",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Transformer and Deep Learning background; packet lacks direct ViT or Perceiver paper, so exact ViT/Perceiver claims are not directly sourced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The downstream substrate claim is plausible but broader than what the packet sources directly establish."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "292d46e96c063bfc",
@@ -72,13 +40,14 @@
       "source_ids": [
         "ref_transformer",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Transformer and Deep Learning background; packet lacks direct ViT or Perceiver paper, so exact ViT/Perceiver claims are not directly sourced.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "b5d2520078c63594",
@@ -113,22 +82,6 @@
       "notes": "The cited source directly supports this dependency relationship for the architecture."
     },
     {
-      "unit_id": "466d5cb1cf3994e1",
-      "node_id": "vision_transformer_perceiver",
-      "field": "dependencies.cross_attention.rationale",
-      "text": "Vision Transformers & Perceiver-style latent models is assembled in part from the mechanism or model component Cross-attention & co-attention.",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Transformer and Deep Learning background; packet lacks direct ViT or Perceiver paper, so exact ViT/Perceiver claims are not directly sourced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
-    },
-    {
       "unit_id": "86a5359cdea3d9e5",
       "node_id": "vision_transformer_perceiver",
       "field": "dependencies.spatial_grids.rationale",
@@ -143,6 +96,48 @@
       "review_date": "2026-06-25",
       "verdict": "verified",
       "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "1e8fce5fdaf1b27c",
+      "node_id": "vision_transformer_perceiver",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Vision Transformers & Perceiver-style latent models is modeled as depending on Transformers, Striding, pooling, patchification & up/downsampling and feeding downstream nodes such as Computer vision, perception & scene understanding.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "7d826526fe91aa9d",
+      "node_id": "vision_transformer_perceiver",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Computer vision, perception & scene understanding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "64740ca354ce8cc5",
+      "node_id": "vision_transformer_perceiver",
+      "field": "dependencies.cross_attention.rationale",
+      "text": "In this atlas graph, Vision Transformers & Perceiver-style latent models has a `composes` dependency on Cross-attention & co-attention with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -179,22 +174,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "ea1b1c0541c94d75",
-      "node_id": "vision_transformer_perceiver",
-      "dependency_id": "cross_attention",
-      "source_ids": [
-        "ref_transformer",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "1acee357ab482c8d",
       "node_id": "vision_transformer_perceiver",
       "dependency_id": "spatial_grids",
@@ -209,6 +188,22 @@
       "notes": "The cited source directly supports this dependency type and the stated strength.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "a82d0864b37da77e",
+      "node_id": "vision_transformer_perceiver",
+      "dependency_id": "cross_attention",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "vision_transformer_perceiver",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

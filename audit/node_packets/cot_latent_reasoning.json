@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Intermediate computation is expanded in tokens, hidden states, or recurrent steps before committing to an answer.",
-    "why_it_matters": "The role of Chain-of-thought & latent reasoning is to connect Decoder-only causal transformers, Autoregressive decoding to downstream capabilities including Self-consistency & best-of-N inference, Task decomposition & hierarchical reasoning, ReAct-style reasoning and acting.",
+    "why_it_matters": "In this atlas graph, Chain-of-thought & latent reasoning is modeled as depending on Decoder-only causal transformers, Autoregressive decoding and feeding downstream nodes such as Self-consistency & best-of-N inference, Task decomposition & hierarchical reasoning, ReAct-style reasoning and acting.",
     "examples": [
-      "substrate for Self-consistency & best-of-N inference",
-      "substrate for Task decomposition & hierarchical reasoning",
-      "substrate for ReAct-style reasoning and acting"
+      "atlas downstream link to Self-consistency & best-of-N inference",
+      "atlas downstream link to Task decomposition & hierarchical reasoning",
+      "atlas downstream link to ReAct-style reasoning and acting"
     ],
     "limitations": [
       "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Autoregressive decoding."
@@ -34,19 +34,19 @@
         "id": "decoder_only_transformer",
         "type": "uses",
         "strength": "core",
-        "rationale": "Chain-of-thought & latent reasoning uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
       },
       {
         "id": "autoregressive_decoding",
         "type": "uses",
         "strength": "core",
-        "rationale": "Chain-of-thought & latent reasoning uses Autoregressive decoding as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on Autoregressive decoding because Autoregressive decoding is modeled as a reusable ingredient for the node."
       },
       {
         "id": "incontext_testtime_learning",
         "type": "uses",
         "strength": "common",
-        "rationale": "Chain-of-thought & latent reasoning uses In-context & test-time learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on In-context & test-time learning because In-context & test-time learning is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Intermediate computation is expanded in tokens, hidden states, or recurrent steps before committing to an answer."
     },
     {
-      "unit_id": "87ff2127387a7449",
+      "unit_id": "5f5c6ef960c2373e",
       "node_id": "cot_latent_reasoning",
       "field": "why_it_matters",
-      "text": "The role of Chain-of-thought & latent reasoning is to connect Decoder-only causal transformers, Autoregressive decoding to downstream capabilities including Self-consistency & best-of-N inference, Task decomposition & hierarchical reasoning, ReAct-style reasoning and acting."
+      "text": "In this atlas graph, Chain-of-thought & latent reasoning is modeled as depending on Decoder-only causal transformers, Autoregressive decoding and feeding downstream nodes such as Self-consistency & best-of-N inference, Task decomposition & hierarchical reasoning, ReAct-style reasoning and acting."
     },
     {
-      "unit_id": "2601e1f8e19265ab",
+      "unit_id": "44c9691df76d1fda",
       "node_id": "cot_latent_reasoning",
       "field": "examples[1]",
-      "text": "substrate for Self-consistency & best-of-N inference"
+      "text": "atlas downstream link to Self-consistency & best-of-N inference"
     },
     {
-      "unit_id": "91928063d425655d",
+      "unit_id": "45c6b8d0f2737697",
       "node_id": "cot_latent_reasoning",
       "field": "examples[2]",
-      "text": "substrate for Task decomposition & hierarchical reasoning"
+      "text": "atlas downstream link to Task decomposition & hierarchical reasoning"
     },
     {
-      "unit_id": "6a91e72b93ef85ac",
+      "unit_id": "f0503935784b1f25",
       "node_id": "cot_latent_reasoning",
       "field": "examples[3]",
-      "text": "substrate for ReAct-style reasoning and acting"
+      "text": "atlas downstream link to ReAct-style reasoning and acting"
     },
     {
       "unit_id": "6f7dfdb92bf337fe",
@@ -88,48 +88,48 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Autoregressive decoding."
     },
     {
-      "unit_id": "995717054c8e9720",
+      "unit_id": "f0e234ba75850b59",
       "node_id": "cot_latent_reasoning",
       "field": "dependencies.decoder_only_transformer.rationale",
-      "text": "Chain-of-thought & latent reasoning uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "00bb9f7cbeea16a1",
+      "unit_id": "eb31f5d1874642ee",
       "node_id": "cot_latent_reasoning",
       "field": "dependencies.autoregressive_decoding.rationale",
-      "text": "Chain-of-thought & latent reasoning uses Autoregressive decoding as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on Autoregressive decoding because Autoregressive decoding is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "ef8b1c99fc843c95",
+      "unit_id": "12e947295a27a11c",
       "node_id": "cot_latent_reasoning",
       "field": "dependencies.incontext_testtime_learning.rationale",
-      "text": "Chain-of-thought & latent reasoning uses In-context & test-time learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on In-context & test-time learning because In-context & test-time learning is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "2d0c35f042074eee",
+      "edge_id": "0c1ca9d19053ffc7",
       "node_id": "cot_latent_reasoning",
       "dependency_id": "decoder_only_transformer",
       "type": "uses",
       "strength": "core",
-      "rationale": "Chain-of-thought & latent reasoning uses Decoder-only causal transformers as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "e72d0e0dad7a30a6",
+      "edge_id": "0823633edd4c0362",
       "node_id": "cot_latent_reasoning",
       "dependency_id": "autoregressive_decoding",
       "type": "uses",
       "strength": "core",
-      "rationale": "Chain-of-thought & latent reasoning uses Autoregressive decoding as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on Autoregressive decoding because Autoregressive decoding is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "16e6193ec00dc1ee",
+      "edge_id": "6db41227523fa49a",
       "node_id": "cot_latent_reasoning",
       "dependency_id": "incontext_testtime_learning",
       "type": "uses",
       "strength": "common",
-      "rationale": "Chain-of-thought & latent reasoning uses In-context & test-time learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on In-context & test-time learning because In-context & test-time learning is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Candidate outputs or action trajectories are explored, scored, and selected beyond a single greedy pass.",
-    "why_it_matters": "The role of Search, sampling & decoding procedures is to connect Algorithms & data structures, Game theory & decision theory to downstream capabilities including Self-consistency & best-of-N inference, Beam search & constrained decoding, Test-time compute scaling.",
+    "why_it_matters": "In this atlas graph, Search, sampling & decoding procedures is modeled as depending on Algorithms & data structures, Game theory & decision theory and feeding downstream nodes such as Self-consistency & best-of-N inference, Beam search & constrained decoding, Test-time compute scaling.",
     "examples": [
-      "substrate for Self-consistency & best-of-N inference",
-      "substrate for Beam search & constrained decoding",
-      "substrate for Test-time compute scaling"
+      "atlas downstream link to Self-consistency & best-of-N inference",
+      "atlas downstream link to Beam search & constrained decoding",
+      "atlas downstream link to Test-time compute scaling"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Algorithms & data structures, Game theory & decision theory."
@@ -35,19 +35,19 @@
         "id": "algorithms_data_structures",
         "type": "uses",
         "strength": "core",
-        "rationale": "Search, sampling & decoding procedures uses Algorithms & data structures as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Search, sampling & decoding procedures has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
       },
       {
         "id": "game_decision_theory",
         "type": "uses",
         "strength": "core",
-        "rationale": "Search, sampling & decoding procedures uses Game theory & decision theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Search, sampling & decoding procedures has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "probability",
         "type": "uses",
         "strength": "common",
-        "rationale": "Search, sampling & decoding procedures uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Search, sampling & decoding procedures has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -59,28 +59,28 @@
       "text": "Candidate outputs or action trajectories are explored, scored, and selected beyond a single greedy pass."
     },
     {
-      "unit_id": "1acab0342155bf10",
+      "unit_id": "f2227de766a01fec",
       "node_id": "search_sampling_decoding",
       "field": "why_it_matters",
-      "text": "The role of Search, sampling & decoding procedures is to connect Algorithms & data structures, Game theory & decision theory to downstream capabilities including Self-consistency & best-of-N inference, Beam search & constrained decoding, Test-time compute scaling."
+      "text": "In this atlas graph, Search, sampling & decoding procedures is modeled as depending on Algorithms & data structures, Game theory & decision theory and feeding downstream nodes such as Self-consistency & best-of-N inference, Beam search & constrained decoding, Test-time compute scaling."
     },
     {
-      "unit_id": "8e268008d775730a",
+      "unit_id": "a5b05b713a1b967c",
       "node_id": "search_sampling_decoding",
       "field": "examples[1]",
-      "text": "substrate for Self-consistency & best-of-N inference"
+      "text": "atlas downstream link to Self-consistency & best-of-N inference"
     },
     {
-      "unit_id": "8d8aae8851732816",
+      "unit_id": "ea042cfa72061550",
       "node_id": "search_sampling_decoding",
       "field": "examples[2]",
-      "text": "substrate for Beam search & constrained decoding"
+      "text": "atlas downstream link to Beam search & constrained decoding"
     },
     {
-      "unit_id": "353daba7d3ec7813",
+      "unit_id": "daf3f3ad0b0f262e",
       "node_id": "search_sampling_decoding",
       "field": "examples[3]",
-      "text": "substrate for Test-time compute scaling"
+      "text": "atlas downstream link to Test-time compute scaling"
     },
     {
       "unit_id": "c038aa786450d2c8",
@@ -89,48 +89,48 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Algorithms & data structures, Game theory & decision theory."
     },
     {
-      "unit_id": "4b4be1a8f85df0d6",
+      "unit_id": "4f52e7698934961d",
       "node_id": "search_sampling_decoding",
       "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "Search, sampling & decoding procedures uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Search, sampling & decoding procedures has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "4fa492784a52724d",
+      "unit_id": "ef9a53b3f815c2ec",
       "node_id": "search_sampling_decoding",
       "field": "dependencies.game_decision_theory.rationale",
-      "text": "Search, sampling & decoding procedures uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Search, sampling & decoding procedures has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "a7be4b1755fac659",
+      "unit_id": "69dfe945d81d0870",
       "node_id": "search_sampling_decoding",
       "field": "dependencies.probability.rationale",
-      "text": "Search, sampling & decoding procedures uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Search, sampling & decoding procedures has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "5737ff03f9fee4ab",
+      "edge_id": "956a007faee87281",
       "node_id": "search_sampling_decoding",
       "dependency_id": "algorithms_data_structures",
       "type": "uses",
       "strength": "core",
-      "rationale": "Search, sampling & decoding procedures uses Algorithms & data structures as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Search, sampling & decoding procedures has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "60cd2a99c20b89c2",
+      "edge_id": "dd52191d65bc344f",
       "node_id": "search_sampling_decoding",
       "dependency_id": "game_decision_theory",
       "type": "uses",
       "strength": "core",
-      "rationale": "Search, sampling & decoding procedures uses Game theory & decision theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Search, sampling & decoding procedures has a `uses` dependency on Game theory & decision theory because Game theory & decision theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "0921daa04620678f",
+      "edge_id": "7cc2dcfa95ba6afb",
       "node_id": "search_sampling_decoding",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "common",
-      "rationale": "Search, sampling & decoding procedures uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Search, sampling & decoding procedures has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

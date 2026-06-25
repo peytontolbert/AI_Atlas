@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Structure is discovered without task labels through density, clustering, reconstruction, or factorization.",
-    "why_it_matters": "The role of Unsupervised learning is to connect Datasets, sampling & splits, Latent variables & hidden state to downstream capabilities including Semi-supervised & weak supervision, Self-supervised learning, Causal representation learning.",
+    "why_it_matters": "In this atlas graph, Unsupervised learning is modeled as depending on Datasets, sampling & splits, Latent variables & hidden state and feeding downstream nodes such as Semi-supervised & weak supervision, Self-supervised learning, Causal representation learning.",
     "examples": [
-      "substrate for Semi-supervised & weak supervision",
-      "substrate for Self-supervised learning",
-      "substrate for Causal representation learning"
+      "atlas downstream link to Semi-supervised & weak supervision",
+      "atlas downstream link to Self-supervised learning",
+      "atlas downstream link to Causal representation learning"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Datasets, sampling & splits, Latent variables & hidden state."
@@ -34,19 +34,19 @@
         "id": "datasets_sampling",
         "type": "uses",
         "strength": "core",
-        "rationale": "Unsupervised learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Unsupervised learning has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
       },
       {
         "id": "latent_variables",
         "type": "uses",
         "strength": "core",
-        "rationale": "Unsupervised learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Unsupervised learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
       },
       {
         "id": "probability",
         "type": "uses",
         "strength": "common",
-        "rationale": "Unsupervised learning uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Unsupervised learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Structure is discovered without task labels through density, clustering, reconstruction, or factorization."
     },
     {
-      "unit_id": "cb84379ef70bb1ef",
+      "unit_id": "725c0771873539ef",
       "node_id": "unsupervised_learning",
       "field": "why_it_matters",
-      "text": "The role of Unsupervised learning is to connect Datasets, sampling & splits, Latent variables & hidden state to downstream capabilities including Semi-supervised & weak supervision, Self-supervised learning, Causal representation learning."
+      "text": "In this atlas graph, Unsupervised learning is modeled as depending on Datasets, sampling & splits, Latent variables & hidden state and feeding downstream nodes such as Semi-supervised & weak supervision, Self-supervised learning, Causal representation learning."
     },
     {
-      "unit_id": "605a1b5441196bcd",
+      "unit_id": "b9d1950b3ecc969c",
       "node_id": "unsupervised_learning",
       "field": "examples[1]",
-      "text": "substrate for Semi-supervised & weak supervision"
+      "text": "atlas downstream link to Semi-supervised & weak supervision"
     },
     {
-      "unit_id": "ae83f3b34ac8747a",
+      "unit_id": "687e566c732b07f2",
       "node_id": "unsupervised_learning",
       "field": "examples[2]",
-      "text": "substrate for Self-supervised learning"
+      "text": "atlas downstream link to Self-supervised learning"
     },
     {
-      "unit_id": "ce19559927c283eb",
+      "unit_id": "6335d360a5a5624f",
       "node_id": "unsupervised_learning",
       "field": "examples[3]",
-      "text": "substrate for Causal representation learning"
+      "text": "atlas downstream link to Causal representation learning"
     },
     {
       "unit_id": "14d9feeebacadf35",
@@ -88,48 +88,48 @@
       "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Datasets, sampling & splits, Latent variables & hidden state."
     },
     {
-      "unit_id": "c7397719da680198",
+      "unit_id": "232a9e3c25a57e36",
       "node_id": "unsupervised_learning",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "Unsupervised learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Unsupervised learning has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "26e0578ae8c268e2",
+      "unit_id": "0a354688a3b7a10c",
       "node_id": "unsupervised_learning",
       "field": "dependencies.latent_variables.rationale",
-      "text": "Unsupervised learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Unsupervised learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "6af00532dbbc81df",
+      "unit_id": "68e65e551e0f27d3",
       "node_id": "unsupervised_learning",
       "field": "dependencies.probability.rationale",
-      "text": "Unsupervised learning uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Unsupervised learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "7dce41df4c6fa023",
+      "edge_id": "86aaed5d53506aef",
       "node_id": "unsupervised_learning",
       "dependency_id": "datasets_sampling",
       "type": "uses",
       "strength": "core",
-      "rationale": "Unsupervised learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Unsupervised learning has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "7961897b33b5631a",
+      "edge_id": "6bbd846982a9c44f",
       "node_id": "unsupervised_learning",
       "dependency_id": "latent_variables",
       "type": "uses",
       "strength": "core",
-      "rationale": "Unsupervised learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Unsupervised learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "7eb6640ff6a98414",
+      "edge_id": "4077da711cf49d9d",
       "node_id": "unsupervised_learning",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "common",
-      "rationale": "Unsupervised learning uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Unsupervised learning has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

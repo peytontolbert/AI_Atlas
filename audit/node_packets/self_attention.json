@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Each position forms content-dependent weighted combinations of other positions in the same sequence.",
-    "why_it_matters": "The role of Self-attention is to connect Embeddings & distributed representations, Sequences, events & time series to downstream capabilities including Cross-attention & co-attention, Sparse, local, linear & recurrent attention, Relative position, RoPE, ALiBi & coordinate mechanisms.",
+    "why_it_matters": "In this atlas graph, Self-attention is modeled as depending on Embeddings & distributed representations, Sequences, events & time series and feeding downstream nodes such as Cross-attention & co-attention, Sparse, local, linear & recurrent attention, Relative position, RoPE, ALiBi & coordinate mechanisms.",
     "examples": [
-      "substrate for Cross-attention & co-attention",
-      "substrate for Sparse, local, linear & recurrent attention",
-      "substrate for Relative position, RoPE, ALiBi & coordinate mechanisms"
+      "atlas downstream link to Cross-attention & co-attention",
+      "atlas downstream link to Sparse, local, linear & recurrent attention",
+      "atlas downstream link to Relative position, RoPE, ALiBi & coordinate mechanisms"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Embeddings & distributed representations, Sequences, events & time series."
@@ -34,13 +34,13 @@
         "id": "embeddings",
         "type": "uses",
         "strength": "core",
-        "rationale": "Self-attention uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Self-attention has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "sequences_time",
         "type": "uses",
         "strength": "core",
-        "rationale": "Self-attention uses Sequences, events & time series as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Self-attention has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
       },
       {
         "id": "affine_dense",
@@ -52,7 +52,7 @@
         "id": "probability",
         "type": "uses",
         "strength": "common",
-        "rationale": "Self-attention uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Self-attention has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -64,28 +64,28 @@
       "text": "Each position forms content-dependent weighted combinations of other positions in the same sequence."
     },
     {
-      "unit_id": "bcb0473f2d922c8e",
+      "unit_id": "fe3720ee48593b76",
       "node_id": "self_attention",
       "field": "why_it_matters",
-      "text": "The role of Self-attention is to connect Embeddings & distributed representations, Sequences, events & time series to downstream capabilities including Cross-attention & co-attention, Sparse, local, linear & recurrent attention, Relative position, RoPE, ALiBi & coordinate mechanisms."
+      "text": "In this atlas graph, Self-attention is modeled as depending on Embeddings & distributed representations, Sequences, events & time series and feeding downstream nodes such as Cross-attention & co-attention, Sparse, local, linear & recurrent attention, Relative position, RoPE, ALiBi & coordinate mechanisms."
     },
     {
-      "unit_id": "ac89c7f6c61ca99a",
+      "unit_id": "e117d1b9c275e846",
       "node_id": "self_attention",
       "field": "examples[1]",
-      "text": "substrate for Cross-attention & co-attention"
+      "text": "atlas downstream link to Cross-attention & co-attention"
     },
     {
-      "unit_id": "edfd08e42bc21fd9",
+      "unit_id": "a9cc35ed745aba38",
       "node_id": "self_attention",
       "field": "examples[2]",
-      "text": "substrate for Sparse, local, linear & recurrent attention"
+      "text": "atlas downstream link to Sparse, local, linear & recurrent attention"
     },
     {
-      "unit_id": "07b6517b01747488",
+      "unit_id": "440f72eff46aa824",
       "node_id": "self_attention",
       "field": "examples[3]",
-      "text": "substrate for Relative position, RoPE, ALiBi & coordinate mechanisms"
+      "text": "atlas downstream link to Relative position, RoPE, ALiBi & coordinate mechanisms"
     },
     {
       "unit_id": "4d17ee812233ccf1",
@@ -94,16 +94,16 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Embeddings & distributed representations, Sequences, events & time series."
     },
     {
-      "unit_id": "2c9b07e6a06027d1",
+      "unit_id": "658c6fdfbc7ee137",
       "node_id": "self_attention",
       "field": "dependencies.embeddings.rationale",
-      "text": "Self-attention uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Self-attention has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "c9d94cc0a899f27d",
+      "unit_id": "4aa36a48010de599",
       "node_id": "self_attention",
       "field": "dependencies.sequences_time.rationale",
-      "text": "Self-attention uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Self-attention has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "a2eefb6e1f77f0bc",
@@ -112,28 +112,28 @@
       "text": "Self-attention is assembled in part from the mechanism or model component Affine transforms & dense layers."
     },
     {
-      "unit_id": "f76b1413a6cf800c",
+      "unit_id": "b459a479367484fa",
       "node_id": "self_attention",
       "field": "dependencies.probability.rationale",
-      "text": "Self-attention uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Self-attention has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "b53a3cc303ee6aa3",
+      "edge_id": "0cc6d880f60d8e2d",
       "node_id": "self_attention",
       "dependency_id": "embeddings",
       "type": "uses",
       "strength": "core",
-      "rationale": "Self-attention uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Self-attention has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "23393d9d3f247444",
+      "edge_id": "bf90f0cc2cdc7c98",
       "node_id": "self_attention",
       "dependency_id": "sequences_time",
       "type": "uses",
       "strength": "core",
-      "rationale": "Self-attention uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Self-attention has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "814c3e9c2b525136",
@@ -144,12 +144,12 @@
       "rationale": "Self-attention is assembled in part from the mechanism or model component Affine transforms & dense layers."
     },
     {
-      "edge_id": "9f9d8c726788f01e",
+      "edge_id": "be56cbe0199f2de3",
       "node_id": "self_attention",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "common",
-      "rationale": "Self-attention uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Self-attention has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

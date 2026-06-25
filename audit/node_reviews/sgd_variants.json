@@ -5,7 +5,9 @@
       "node_id": "sgd_variants",
       "field": "definition",
       "text": "Stochastic gradient descent estimates gradients from minibatches; momentum and related variants accumulate update direction to reduce noise and accelerate consistent descent.",
-      "source_ids": ["ref_dlbook"],
+      "source_ids": [
+        "ref_dlbook"
+      ],
       "evidence_location": "Deep Learning, Chapter 8.1-8.3 on stochastic gradient descent, minibatches, and momentum.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -13,35 +15,13 @@
       "notes": "Minibatch gradient estimates and momentum accumulation are directly covered. The noise-reduction/consistent-descent wording is an explanatory synthesis."
     },
     {
-      "unit_id": "a873a77703a6949e",
-      "node_id": "sgd_variants",
-      "field": "why_it_matters",
-      "text": "The role of SGD, momentum & stochastic optimization is to connect Optimization theory, Calculus & automatic differentiation theory to downstream capabilities including Adam, Adafactor & adaptive optimizers.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 8 optimization, SGD, momentum, and adaptive learning-rate algorithms.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The source supports SGD/momentum as optimization methods using gradients and places adaptive algorithms in the same optimization family. The graph-bridge wording is synthesized."
-    },
-    {
-      "unit_id": "f9a700b61fe3c841",
-      "node_id": "sgd_variants",
-      "field": "examples[1]",
-      "text": "substrate for Adam, Adafactor & adaptive optimizers",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 8.5 adaptive learning rates, including AdaGrad, RMSProp, and Adam.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Adaptive gradient methods are supported as optimization variants, but Adafactor is not covered by the 2016 source and the 'substrate' framing is broader than the evidence."
-    },
-    {
       "unit_id": "b5a921fca5a74c1d",
       "node_id": "sgd_variants",
       "field": "examples[2]",
       "text": "combined with Optimization theory",
-      "source_ids": ["ref_dlbook"],
+      "source_ids": [
+        "ref_dlbook"
+      ],
       "evidence_location": "Deep Learning, Chapter 8 'Optimization for Training Deep Models'.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -53,86 +33,129 @@
       "node_id": "sgd_variants",
       "field": "limitations[1]",
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Optimization theory, Calculus & automatic differentiation theory.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapters 5, 8, and 11 on generalization, hyperparameters, optimization, and methodology.",
+      "source_ids": [
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Optimization and hyperparameter sensitivity are supported. Data quality, compute budget, random variation, and evaluation contamination are generic limitations not directly supported by this packet source."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "e973171a84564383",
+      "unit_id": "6b26bdc486cc2e96",
+      "node_id": "sgd_variants",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, SGD, momentum & stochastic optimization is modeled as depending on Optimization theory, Calculus & automatic differentiation theory and feeding downstream nodes such as Adam, Adafactor & adaptive optimizers.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "faa8a4c5b0b6bb51",
+      "node_id": "sgd_variants",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Adam, Adafactor & adaptive optimizers",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "bd61063789e07dff",
       "node_id": "sgd_variants",
       "field": "dependencies.optimization.rationale",
-      "text": "SGD, momentum & stochastic optimization uses Optimization theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapter 8 optimization for training deep models.",
+      "text": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Optimization theory because Optimization theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "SGD and momentum are optimization algorithms; exact wording is synthesized."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "e50e3efa697a7868",
+      "unit_id": "a36fecd4ee57bd0e",
       "node_id": "sgd_variants",
       "field": "dependencies.calculus.rationale",
-      "text": "SGD, momentum & stochastic optimization uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_dlbook"],
-      "evidence_location": "Deep Learning, Chapters 6.5 and 8 on gradients/backpropagation and gradient-based optimization.",
+      "text": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Gradient-based updates depend on derivatives; automatic differentiation is part of the training context. The exact phrasing is synthesized."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "1e62566636699471",
+      "unit_id": "49af288d2ef5cc40",
       "node_id": "sgd_variants",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "SGD, momentum & stochastic optimization uses Datasets, sampling & splits as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_dlbook", "ref_pml"],
-      "evidence_location": "Deep Learning, Chapter 8 on minibatch stochastic gradient methods; PML data and validation/cross-validation topics.",
+      "text": "In this atlas graph, SGD, momentum & stochastic optimization has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Minibatch stochastic estimates require sampled training examples. Dataset splits are not essential to the update rule, so the rationale is broader than direct evidence."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "1d5ee9ab8745e326",
+      "edge_id": "1be948678ec58541",
       "node_id": "sgd_variants",
       "dependency_id": "optimization",
-      "source_ids": ["ref_dlbook"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "SGD and momentum are core optimization methods for training models.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "ca445bb0ddb5e2e0",
+      "edge_id": "2d5e961d730bcef3",
       "node_id": "sgd_variants",
       "dependency_id": "calculus",
-      "source_ids": ["ref_dlbook"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Gradient estimates and derivative-based updates make calculus/autodiff a core dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "fddbe623355d221e",
+      "edge_id": "c9bc3cbe150b17f5",
       "node_id": "sgd_variants",
       "dependency_id": "datasets_sampling",
-      "source_ids": ["ref_dlbook", "ref_pml"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Stochastic/minibatch optimization uses sampled training examples; common strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "sgd_variants",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

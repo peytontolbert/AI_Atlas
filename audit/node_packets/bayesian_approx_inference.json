@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Posterior beliefs over hidden variables or parameters are estimated exactly or approximately.",
-    "why_it_matters": "The role of Bayesian & approximate inference is to connect Probability theory, Statistics & experimental design to downstream capabilities including MCMC, EM & probabilistic message passing, k-NN & Naive Bayes, Gaussian processes.",
+    "why_it_matters": "In this atlas graph, Bayesian & approximate inference is modeled as depending on Probability theory, Statistics & experimental design and feeding downstream nodes such as MCMC, EM & probabilistic message passing, k-NN & Naive Bayes, Gaussian processes.",
     "examples": [
-      "substrate for MCMC, EM & probabilistic message passing",
-      "substrate for k-NN & Naive Bayes",
-      "substrate for Gaussian processes"
+      "atlas downstream link to MCMC, EM & probabilistic message passing",
+      "atlas downstream link to k-NN & Naive Bayes",
+      "atlas downstream link to Gaussian processes"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Probability theory, Statistics & experimental design."
@@ -34,25 +34,25 @@
         "id": "probability",
         "type": "uses",
         "strength": "core",
-        "rationale": "Bayesian & approximate inference uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "statistics",
         "type": "uses",
         "strength": "core",
-        "rationale": "Bayesian & approximate inference uses Statistics & experimental design as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
       },
       {
         "id": "latent_variables",
         "type": "uses",
         "strength": "common",
-        "rationale": "Bayesian & approximate inference uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
       },
       {
         "id": "numerical_methods",
         "type": "uses",
         "strength": "common",
-        "rationale": "Bayesian & approximate inference uses Numerical analysis as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -64,28 +64,28 @@
       "text": "Posterior beliefs over hidden variables or parameters are estimated exactly or approximately."
     },
     {
-      "unit_id": "7e58a94a8268704c",
+      "unit_id": "e1ce8f40a719b87a",
       "node_id": "bayesian_approx_inference",
       "field": "why_it_matters",
-      "text": "The role of Bayesian & approximate inference is to connect Probability theory, Statistics & experimental design to downstream capabilities including MCMC, EM & probabilistic message passing, k-NN & Naive Bayes, Gaussian processes."
+      "text": "In this atlas graph, Bayesian & approximate inference is modeled as depending on Probability theory, Statistics & experimental design and feeding downstream nodes such as MCMC, EM & probabilistic message passing, k-NN & Naive Bayes, Gaussian processes."
     },
     {
-      "unit_id": "d23eaa16cfa99ae6",
+      "unit_id": "8d57f86d825a75ee",
       "node_id": "bayesian_approx_inference",
       "field": "examples[1]",
-      "text": "substrate for MCMC, EM & probabilistic message passing"
+      "text": "atlas downstream link to MCMC, EM & probabilistic message passing"
     },
     {
-      "unit_id": "7c4bad90e221254a",
+      "unit_id": "4fee66eaef988a62",
       "node_id": "bayesian_approx_inference",
       "field": "examples[2]",
-      "text": "substrate for k-NN & Naive Bayes"
+      "text": "atlas downstream link to k-NN & Naive Bayes"
     },
     {
-      "unit_id": "f42588f1d33d24fa",
+      "unit_id": "9b96bdc50cdbb83d",
       "node_id": "bayesian_approx_inference",
       "field": "examples[3]",
-      "text": "substrate for Gaussian processes"
+      "text": "atlas downstream link to Gaussian processes"
     },
     {
       "unit_id": "2306c09e5da61882",
@@ -94,62 +94,62 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Probability theory, Statistics & experimental design."
     },
     {
-      "unit_id": "a89ffdab7ac1f691",
+      "unit_id": "3b1541b4d1ca9bba",
       "node_id": "bayesian_approx_inference",
       "field": "dependencies.probability.rationale",
-      "text": "Bayesian & approximate inference uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "0eb64daa574c08db",
+      "unit_id": "5a61910db2ded826",
       "node_id": "bayesian_approx_inference",
       "field": "dependencies.statistics.rationale",
-      "text": "Bayesian & approximate inference uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "ea1e1b85135d9071",
+      "unit_id": "d57f035926a43613",
       "node_id": "bayesian_approx_inference",
       "field": "dependencies.latent_variables.rationale",
-      "text": "Bayesian & approximate inference uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "4af2daad55c5a61f",
+      "unit_id": "2b0e0b9cd9f34a68",
       "node_id": "bayesian_approx_inference",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Bayesian & approximate inference uses Numerical analysis as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "c8c3ffe3548d4e38",
+      "edge_id": "a8e65b013a00d4ab",
       "node_id": "bayesian_approx_inference",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "core",
-      "rationale": "Bayesian & approximate inference uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "633e48112dbda552",
+      "edge_id": "0ee0057371f4ac25",
       "node_id": "bayesian_approx_inference",
       "dependency_id": "statistics",
       "type": "uses",
       "strength": "core",
-      "rationale": "Bayesian & approximate inference uses Statistics & experimental design as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Statistics & experimental design because Statistics & experimental design is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "bc831f29a38b78b6",
+      "edge_id": "3a6447293bcd8bda",
       "node_id": "bayesian_approx_inference",
       "dependency_id": "latent_variables",
       "type": "uses",
       "strength": "common",
-      "rationale": "Bayesian & approximate inference uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "7a307feeae3fdbf1",
+      "edge_id": "eca4425f0dbff351",
       "node_id": "bayesian_approx_inference",
       "dependency_id": "numerical_methods",
       "type": "uses",
       "strength": "common",
-      "rationale": "Bayesian & approximate inference uses Numerical analysis as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Bayesian & approximate inference has a `uses` dependency on Numerical analysis because Numerical analysis is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

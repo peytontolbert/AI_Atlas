@@ -1,17 +1,162 @@
 {
   "sentence_reviews": [
-    {"unit_id":"02065964ce03981e","node_id":"contrastive_objective","field":"definition","text":"Paired views or examples define similarity signals that shape a representation space.","source_ids":["url:https://arxiv.org/abs/1807.03748","url:https://arxiv.org/abs/2103.00020"],"evidence_location":"CPC abstract lines 42-44; CLIP abstract lines 42-43.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Both CPC and CLIP use paired or contrasting examples to learn representations through similarity/contrast signals."},
-    {"unit_id":"5ae9db5e9f94a0b9","node_id":"contrastive_objective","field":"why_it_matters","text":"The role of Contrastive and mutual-information objectives is to connect Contrastive learning, Information theory to downstream capabilities including Multimodal foundation models, Dense vector retrieval.","source_ids":["url:https://arxiv.org/abs/1807.03748","url:https://arxiv.org/abs/2103.00020"],"evidence_location":"CPC abstract lines 42-44; CLIP abstract lines 42-44.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Sources support contrastive representation learning and multimodal image-text pretraining; dense retrieval is inferred from representation similarity."},
-    {"unit_id":"a5ab81887b8ea463","node_id":"contrastive_objective","field":"examples[1]","text":"substrate for Multimodal foundation models","source_ids":["url:https://arxiv.org/abs/2103.00020"],"evidence_location":"CLIP abstract lines 42-44 describes pretraining on 400M image-text pairs and transfer to downstream tasks.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"CLIP is direct evidence for contrastive pretraining of a multimodal foundation-style model."},
-    {"unit_id":"91cccc6fa61904f7","node_id":"contrastive_objective","field":"examples[2]","text":"substrate for Dense vector retrieval","source_ids":["url:https://arxiv.org/abs/2103.00020"],"evidence_location":"CLIP abstract lines 42-43 describes predicting which caption goes with which image and learned representations.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Dense retrieval follows from learned vector similarity, but the abstract does not directly name dense retrieval."},
-    {"unit_id":"16eee6986421fea8","node_id":"contrastive_objective","field":"limitations[1]","text":"A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Contrastive learning, Information theory.","source_ids":["url:https://arxiv.org/abs/1807.03748"],"evidence_location":"CPC abstract lines 42-44 describes a probabilistic contrastive loss and tractability via negative sampling.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The source supports tractable contrastive loss and representation learning; it does not directly state the surrogate-objective failure mode."},
-    {"unit_id":"61680cfecd98680d","node_id":"contrastive_objective","field":"dependencies.contrastive_learning.rationale","text":"Contrastive and mutual-information objectives uses Contrastive learning as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/1807.03748"],"evidence_location":"CPC abstract lines 42-44.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Contrastive objectives are the objective form used in contrastive learning."},
-    {"unit_id":"88ea5f04c5a2e98e","node_id":"contrastive_objective","field":"dependencies.information_theory.rationale","text":"Contrastive and mutual-information objectives uses Information theory as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/1807.03748"],"evidence_location":"CPC abstract lines 42-44 describes capturing information useful for predicting future samples; title and framing relate CPC to representation learning, with mutual-information objective connection in the paper.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Mutual information is information-theoretic, but the inspected abstract only indirectly supports the dependency."},
-    {"unit_id":"e0e041e0b7e39e43","node_id":"contrastive_objective","field":"dependencies.embeddings.rationale","text":"Contrastive and mutual-information objectives uses Embeddings & distributed representations as a reusable ingredient in its defined operation.","source_ids":["url:https://arxiv.org/abs/1807.03748","url:https://arxiv.org/abs/2103.00020"],"evidence_location":"CPC abstract lines 42-44; CLIP abstract lines 42-43.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The objectives shape latent or vector representation spaces."}
+    {
+      "unit_id": "02065964ce03981e",
+      "node_id": "contrastive_objective",
+      "field": "definition",
+      "text": "Paired views or examples define similarity signals that shape a representation space.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/1807.03748",
+        "url:https://arxiv.org/abs/2103.00020"
+      ],
+      "evidence_location": "CPC abstract lines 42-44; CLIP abstract lines 42-43.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Both CPC and CLIP use paired or contrasting examples to learn representations through similarity/contrast signals."
+    },
+    {
+      "unit_id": "16eee6986421fea8",
+      "node_id": "contrastive_objective",
+      "field": "limitations[1]",
+      "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Contrastive learning, Information theory.",
+      "source_ids": [
+        "url:https://arxiv.org/abs/1807.03748",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "151c4be3a029a606",
+      "node_id": "contrastive_objective",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Contrastive and mutual-information objectives is modeled as depending on Contrastive learning, Information theory and feeding downstream nodes such as Multimodal foundation models, Dense vector retrieval.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ec882ac715ca14b7",
+      "node_id": "contrastive_objective",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Multimodal foundation models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ca994aad278a2bff",
+      "node_id": "contrastive_objective",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Dense vector retrieval",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5f6ec6339b0e456e",
+      "node_id": "contrastive_objective",
+      "field": "dependencies.contrastive_learning.rationale",
+      "text": "In this atlas graph, Contrastive and mutual-information objectives has a `uses` dependency on Contrastive learning because Contrastive learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d5fa977511947e28",
+      "node_id": "contrastive_objective",
+      "field": "dependencies.information_theory.rationale",
+      "text": "In this atlas graph, Contrastive and mutual-information objectives has a `uses` dependency on Information theory because Information theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "471123d287c025cd",
+      "node_id": "contrastive_objective",
+      "field": "dependencies.embeddings.rationale",
+      "text": "In this atlas graph, Contrastive and mutual-information objectives has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"8f38b97c2e88a31f","node_id":"contrastive_objective","dependency_id":"contrastive_learning","source_ids":["url:https://arxiv.org/abs/1807.03748"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Contrastive learning is intrinsic to contrastive objectives.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"572ee12903eb3c16","node_id":"contrastive_objective","dependency_id":"information_theory","source_ids":["url:https://arxiv.org/abs/1807.03748"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Mutual-information variants depend on information theory; contrastive objectives more broadly need not be explicitly information-theoretic.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"fb50ead5c90723f7","node_id":"contrastive_objective","dependency_id":"embeddings","source_ids":["url:https://arxiv.org/abs/1807.03748","url:https://arxiv.org/abs/2103.00020"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Representation spaces are directly central to CPC and CLIP-style contrastive objectives.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "d77405d054c7b2b9",
+      "node_id": "contrastive_objective",
+      "dependency_id": "contrastive_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "058e89fb201cded3",
+      "node_id": "contrastive_objective",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "2bd8db3c2c992cb1",
+      "node_id": "contrastive_objective",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "contrastive_objective",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

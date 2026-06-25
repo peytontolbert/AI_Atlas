@@ -5,7 +5,11 @@
       "node_id": "api_tool_gateway",
       "field": "definition",
       "text": "API gateways and tool registries authenticate requests, describe callable capabilities, validate arguments, enforce policy, and route agents to external services.",
-      "source_ids": ["ref_ddia", "ref_structured", "ref_nist"],
+      "source_ids": [
+        "ref_ddia",
+        "ref_structured",
+        "ref_nist"
+      ],
       "evidence_location": "DDIA supports service/data-system routing and operations broadly; structured-output and NIST references support argument schemas and governance, but not this exact gateway/tool-registry definition.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -13,35 +17,13 @@
       "notes": "Definition is defensible from multiple sources, but a direct API gateway or agent tool-use source would be better."
     },
     {
-      "unit_id": "1387f612b95e9f43",
-      "node_id": "api_tool_gateway",
-      "field": "why_it_matters",
-      "text": "The role of API gateways, tool registries & secure connectors is to connect Caches, APIs & tool interfaces, External databases, APIs & live tools to downstream capabilities including Conversational assistants & chatbots.",
-      "source_ids": ["ref_ddia", "ref_aima"],
-      "evidence_location": "Sources support external systems/tools broadly; downstream chatbot linkage is graph-derived.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Plausible atlas positioning, not directly sourced."
-    },
-    {
-      "unit_id": "03e097a542cdd308",
-      "node_id": "api_tool_gateway",
-      "field": "examples[1]",
-      "text": "substrate for Conversational assistants & chatbots",
-      "source_ids": ["ref_aima", "ref_structured"],
-      "evidence_location": "Tool/action schema sources are relevant to assistants, but the exact substrate claim is not directly supported.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a direct agent tool-use or assistant connector citation."
-    },
-    {
       "unit_id": "0819ea14c158015e",
       "node_id": "api_tool_gateway",
       "field": "examples[2]",
       "text": "combined with Caches, APIs & tool interfaces",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "ref_ddia"
+      ],
       "evidence_location": "DDIA supports caches and service interfaces generally, but not AI tool gateways specifically.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -53,134 +35,184 @@
       "node_id": "api_tool_gateway",
       "field": "limitations[1]",
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Caches, APIs & tool interfaces, External databases, APIs & live tools.",
-      "source_ids": ["ref_ddia", "ref_nist"],
-      "evidence_location": "DDIA and NIST support operational and security concerns generally; numerical behavior is not specific to gateways.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_nist",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Generic limitation template is only partially applicable."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "967357c043e3965e",
+      "unit_id": "0093c166775b7776",
+      "node_id": "api_tool_gateway",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors is modeled as depending on Caches, APIs & tool interfaces, External databases, APIs & live tools and feeding downstream nodes such as Conversational assistants & chatbots.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4d5020ff91e15240",
+      "node_id": "api_tool_gateway",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Conversational assistants & chatbots",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8cdd5566202cc731",
       "node_id": "api_tool_gateway",
       "field": "dependencies.cache_tool_interfaces.rationale",
-      "text": "API gateways, tool registries & secure connectors turns Caches, APIs & tool interfaces into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_ddia"],
-      "evidence_location": "DDIA supports caches and service interfaces as operational infrastructure.",
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core dependency is defensible; exact wording is templated."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "7ace8f281ac8af7e",
+      "unit_id": "19dd828e2450635b",
       "node_id": "api_tool_gateway",
       "field": "dependencies.external_data_tools.rationale",
-      "text": "API gateways, tool registries & secure connectors turns External databases, APIs & live tools into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_ddia", "ref_aima"],
-      "evidence_location": "Sources support databases/APIs and external tools conceptually.",
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on External databases, APIs & live tools because External databases, APIs & live tools is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core relationship is plausible for connector infrastructure."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "c52f84b251ae8916",
+      "unit_id": "aebe2c003ddc420c",
       "node_id": "api_tool_gateway",
       "field": "dependencies.privacy_governance.rationale",
-      "text": "API gateways, tool registries & secure connectors turns Privacy, governance, licensing & audit into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_nist"],
-      "evidence_location": "NIST supports governance and risk controls; gateway operationalization is indirect.",
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Privacy, governance, licensing & audit because Privacy, governance, licensing & audit is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Common dependency is defensible but not directly verified."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "3ea7c85a21e598ed",
+      "unit_id": "aec4fd2f2bbef13e",
       "node_id": "api_tool_gateway",
       "field": "dependencies.structured_outputs.rationale",
-      "text": "API gateways, tool registries & secure connectors turns Structured outputs & typed action generation into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_structured"],
-      "evidence_location": "Structured-output survey supports schemas and typed generation; gateway serving integration is a synthesis.",
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Structured outputs & typed action generation because Structured outputs & typed action generation is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Common dependency is plausible for typed tool calls."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "eb3e42b0442b1ae3",
+      "unit_id": "d81e74ace606d7ed",
       "node_id": "api_tool_gateway",
       "field": "dependencies.cryptographic_signing.rationale",
-      "text": "API gateways, tool registries & secure connectors turns Cryptographic signing & tamper-evident logs into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_c2pa", "ref_ddia"],
-      "evidence_location": "C2PA supports signatures/provenance; DDIA supports service operations, but gateway linkage is indirect.",
+      "text": "In this atlas graph, API gateways, tool registries & secure connectors has an `operationalizes` dependency on Cryptographic signing & tamper-evident logs because Cryptographic signing & tamper-evident logs is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Common dependency is plausible for integrity-preserving connectors."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "0577421bc58587f2",
+      "edge_id": "8bcb97a4b2605fe2",
       "node_id": "api_tool_gateway",
       "dependency_id": "cache_tool_interfaces",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Gateway behavior naturally builds on API/tool interface infrastructure.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "27d2e9073d1e6b24",
+      "edge_id": "5bc8e2214ba63be9",
       "node_id": "api_tool_gateway",
       "dependency_id": "external_data_tools",
-      "source_ids": ["ref_ddia", "ref_aima"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Routing to external APIs and live tools is central to the node.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "052672cdcd6e77bd",
+      "edge_id": "9a8e1146b8d5a593",
       "node_id": "api_tool_gateway",
       "dependency_id": "privacy_governance",
-      "source_ids": ["ref_nist"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Policy enforcement and audit make governance a plausible common dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "53b3f4cccc4e11e1",
+      "edge_id": "fa51ebecd5a7f6e8",
       "node_id": "api_tool_gateway",
       "dependency_id": "structured_outputs",
-      "source_ids": ["ref_structured"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Typed action generation is relevant to tool registries and argument validation.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "f1158f78d86f44d2",
+      "edge_id": "28fc76ee285b949d",
       "node_id": "api_tool_gateway",
       "dependency_id": "cryptographic_signing",
-      "source_ids": ["ref_c2pa", "ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Signing and tamper-evident logging are plausible integrity mechanisms for secure connectors.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "api_tool_gateway",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -5,43 +5,25 @@
       "node_id": "vector_retrieval_service",
       "field": "definition",
       "text": "A vector-retrieval service operationalizes embedding generation, indexing, metadata filtering, approximate search, reranking, freshness, and access control.",
-      "source_ids": ["ref_ddia", "ref_ann"],
-      "evidence_location": "ANN source supports approximate indexing/search; DDIA supports operational service concerns, but metadata filtering, reranking, freshness, and access control are not all directly evidenced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a vector-search service or RAG infrastructure source for the full definition."
-    },
-    {
-      "unit_id": "6f8b7a1c5bd8ad91",
-      "node_id": "vector_retrieval_service",
-      "field": "why_it_matters",
-      "text": "The role of Vector-search and retrieval services is to connect Vector databases & ANN indexes, Hybrid retrieval & reranking to downstream capabilities including Neural search, RAG & question answering.",
-      "source_ids": ["ref_ddia", "ref_ann", "ref_aima"],
-      "evidence_location": "Sources support ANN and information systems broadly; downstream RAG/QA linkage is graph-derived.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_ann"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Plausible atlas positioning, not direct evidence."
-    },
-    {
-      "unit_id": "7cedf395a9711663",
-      "node_id": "vector_retrieval_service",
-      "field": "examples[1]",
-      "text": "substrate for Neural search, RAG & question answering",
-      "source_ids": ["ref_ann", "ref_aima"],
-      "evidence_location": "ANN and AI references support retrieval concepts; RAG and QA substrate claim is not directly sourced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Defensible but should add a RAG/neural search source."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "17ce6d9d7cb95ddd",
       "node_id": "vector_retrieval_service",
       "field": "examples[2]",
       "text": "combined with Vector databases & ANN indexes",
-      "source_ids": ["ref_ann", "ref_ddia"],
+      "source_ids": [
+        "ref_ann",
+        "ref_ddia"
+      ],
       "evidence_location": "ANN indexes and operational data systems support the combination concept.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -53,86 +35,130 @@
       "node_id": "vector_retrieval_service",
       "field": "limitations[1]",
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Vector databases & ANN indexes, Hybrid retrieval & reranking.",
-      "source_ids": ["ref_ddia", "ref_ann"],
-      "evidence_location": "DDIA supports operational failure concerns generally; exact limitation list and dependency sentence are template/graph-derived.",
+      "source_ids": [
+        "ref_ddia",
+        "ref_ann",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Numerical behavior and retrieval-quality failure modes need more specific evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "90ba88d1e4d8259f",
+      "unit_id": "7bfd4e05d0515931",
+      "node_id": "vector_retrieval_service",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Vector-search and retrieval services is modeled as depending on Vector databases & ANN indexes, Hybrid retrieval & reranking and feeding downstream nodes such as Neural search, RAG & question answering.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "faf679f261542e05",
+      "node_id": "vector_retrieval_service",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Neural search, RAG & question answering",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "93477ca4b77f9934",
       "node_id": "vector_retrieval_service",
       "field": "dependencies.vector_database.rationale",
-      "text": "Vector-search and retrieval services turns Vector databases & ANN indexes into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_ann", "ref_ddia"],
-      "evidence_location": "ANN and data-system sources support the conceptual relationship.",
+      "text": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Vector databases & ANN indexes because Vector databases & ANN indexes is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core dependency is defensible; exact rationale is templated."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "a69f41526528da3d",
+      "unit_id": "e866a9238ee86f9a",
       "node_id": "vector_retrieval_service",
       "field": "dependencies.hybrid_reranking.rationale",
-      "text": "Vector-search and retrieval services turns Hybrid retrieval & reranking into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_aima", "ref_ann"],
-      "evidence_location": "Sources support retrieval/search concepts, but not hybrid reranking service operationalization directly.",
+      "text": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Hybrid retrieval & reranking because Hybrid retrieval & reranking is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core relationship is plausible but needs a hybrid retrieval/reranking citation."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "085c85df963b22f1",
+      "unit_id": "b812a31dd65f600e",
       "node_id": "vector_retrieval_service",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Vector-search and retrieval services turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_ddia"],
-      "evidence_location": "DDIA supports distributed operational concerns for services, but vector retrieval linkage is indirect.",
+      "text": "In this atlas graph, Vector-search and retrieval services has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Common dependency is plausible for production retrieval services."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "796c849b628b6b3b",
+      "edge_id": "ff5dda746f34b6ed",
       "node_id": "vector_retrieval_service",
       "dependency_id": "vector_database",
-      "source_ids": ["ref_ann", "ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Vector databases/ANN indexes are central to a vector retrieval service.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "598314059814cb2e",
+      "edge_id": "5f3eaeaee374c355",
       "node_id": "vector_retrieval_service",
       "dependency_id": "hybrid_reranking",
-      "source_ids": ["ref_aima", "ref_ann"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Reranking is a common retrieval-service stage, but direct citation is missing.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "9e2889329da04fb0",
+      "edge_id": "b1f11b8dcdd360fb",
       "node_id": "vector_retrieval_service",
       "dependency_id": "distributed_systems",
-      "source_ids": ["ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Distributed systems are a plausible common dependency for operational retrieval services.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "vector_retrieval_service",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

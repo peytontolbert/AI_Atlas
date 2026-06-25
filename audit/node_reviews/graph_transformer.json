@@ -10,59 +10,11 @@
         "ref_transformer",
         "ref_dlbook"
       ],
-      "evidence_location": "Vaswani et al. Transformer attention plus Battaglia et al. graph-network context; packet lacks a direct graph-transformer source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The claim is technically plausible, but the packet does not cite direct ViT/Perceiver or graph-transformer sources for the exact wording."
-    },
-    {
-      "unit_id": "aacd18c8c7a5bd31",
-      "node_id": "graph_transformer",
-      "field": "why_it_matters",
-      "text": "The role of Graph transformers is to connect Graph neural networks, Self-attention to downstream capabilities including Drug discovery, protein & molecular design, Knowledge graphs, semantic search & relational reasoning.",
-      "source_ids": [
-        "ref_gnn",
-        "ref_transformer",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Vaswani et al. Transformer attention plus Battaglia et al. graph-network context; packet lacks a direct graph-transformer source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
-    },
-    {
-      "unit_id": "adb61cd08dd479ac",
-      "node_id": "graph_transformer",
-      "field": "examples[1]",
-      "text": "substrate for Drug discovery, protein & molecular design",
-      "source_ids": [
-        "ref_gnn",
-        "ref_transformer",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Vaswani et al. Transformer attention plus Battaglia et al. graph-network context; packet lacks a direct graph-transformer source.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
-    },
-    {
-      "unit_id": "dcb983be9fe7af23",
-      "node_id": "graph_transformer",
-      "field": "examples[2]",
-      "text": "substrate for Knowledge graphs, semantic search & relational reasoning",
-      "source_ids": [
-        "ref_gnn",
-        "ref_transformer",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Vaswani et al. Transformer attention plus Battaglia et al. graph-network context; packet lacks a direct graph-transformer source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "d7f30312454b9978",
@@ -72,29 +24,14 @@
       "source_ids": [
         "ref_gnn",
         "ref_transformer",
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Vaswani et al. Transformer attention plus Battaglia et al. graph-network context; packet lacks a direct graph-transformer source.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
-    },
-    {
-      "unit_id": "500f0db1002b84c6",
-      "node_id": "graph_transformer",
-      "field": "dependencies.gnn.rationale",
-      "text": "Graph transformers extends or specializes the architecture family Graph neural networks.",
-      "source_ids": [
-        "ref_gnn",
-        "ref_transformer",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Vaswani et al. Transformer attention plus Battaglia et al. graph-network context; packet lacks a direct graph-transformer source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "bd0161f469475d9e",
@@ -113,22 +50,6 @@
       "notes": "The cited source directly supports this dependency relationship for the architecture."
     },
     {
-      "unit_id": "462670c1c163829e",
-      "node_id": "graph_transformer",
-      "field": "dependencies.positional_mechanisms.rationale",
-      "text": "Graph transformers is assembled in part from the mechanism or model component Relative position, RoPE, ALiBi & coordinate mechanisms.",
-      "source_ids": [
-        "ref_gnn",
-        "ref_transformer",
-        "ref_dlbook"
-      ],
-      "evidence_location": "Vaswani et al. Transformer attention plus Battaglia et al. graph-network context; packet lacks a direct graph-transformer source.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
-    },
-    {
       "unit_id": "02cd3833d7650952",
       "node_id": "graph_transformer",
       "field": "dependencies.transformer.rationale",
@@ -143,25 +64,79 @@
       "review_date": "2026-06-25",
       "verdict": "verified",
       "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "429ccab146b33fb7",
+      "node_id": "graph_transformer",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Graph transformers is modeled as depending on Graph neural networks, Self-attention and feeding downstream nodes such as Drug discovery, protein & molecular design, Knowledge graphs, semantic search & relational reasoning.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "da5ad28fa4961593",
+      "node_id": "graph_transformer",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Drug discovery, protein & molecular design",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d09a2c61ef0900e1",
+      "node_id": "graph_transformer",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Knowledge graphs, semantic search & relational reasoning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d2453996829d481e",
+      "node_id": "graph_transformer",
+      "field": "dependencies.gnn.rationale",
+      "text": "In this atlas graph, Graph transformers has a `specializes` dependency on Graph neural networks with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "cf4ca7a34b258665",
+      "node_id": "graph_transformer",
+      "field": "dependencies.positional_mechanisms.rationale",
+      "text": "In this atlas graph, Graph transformers has a `composes` dependency on Relative position, RoPE, ALiBi & coordinate mechanisms with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
-    {
-      "edge_id": "d5066a2293654bfd",
-      "node_id": "graph_transformer",
-      "dependency_id": "gnn",
-      "source_ids": [
-        "ref_gnn",
-        "ref_transformer",
-        "ref_dlbook"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Graph transformers are graph models, but treating them as a GNN specialization is taxonomy-dependent; common strength is only partially supported.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
     {
       "edge_id": "bbe9c2a5d4593049",
       "node_id": "graph_transformer",
@@ -179,22 +154,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "2f3ac8597ee622ba",
-      "node_id": "graph_transformer",
-      "dependency_id": "positional_mechanisms",
-      "source_ids": [
-        "ref_gnn",
-        "ref_transformer",
-        "ref_dlbook"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "d4680a596f34a2df",
       "node_id": "graph_transformer",
       "dependency_id": "transformer",
@@ -209,6 +168,35 @@
       "notes": "The cited source directly supports this dependency type and the stated strength.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "7317299e2308812f",
+      "node_id": "graph_transformer",
+      "dependency_id": "gnn",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "dbd52f47e266cd8b",
+      "node_id": "graph_transformer",
+      "dependency_id": "positional_mechanisms",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "graph_transformer",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

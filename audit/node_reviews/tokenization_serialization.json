@@ -5,43 +5,26 @@
       "node_id": "tokenization_serialization",
       "field": "definition",
       "text": "Tokenization and serialization convert language, code, images, audio, actions, or records into packed sequences that model runtimes can consume.",
-      "source_ids": ["ref_dlbook", "ref_pml", "ref_aima"],
-      "evidence_location": "PML preprocessing discrete/text data, word embeddings, language models, and vector quantization; AIMA language models, lexicon/grammar, word representations, and languages/algorithms; Deep Learning sequence/model input background.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Text/language tokenization and discrete inputs are supported. Code, audio, actions, records, packing, and model runtimes are broader than the inspected packet evidence."
-    },
-    {
-      "unit_id": "e50a1fc3b6e45942",
-      "node_id": "tokenization_serialization",
-      "field": "why_it_matters",
-      "text": "The role of Tokenization, serialization & packing is to connect Tokens, vocabularies & symbolic units, Information theory to downstream capabilities including Large language models.",
-      "source_ids": ["ref_pml", "ref_aima"],
-      "evidence_location": "PML information theory, preprocessing discrete/text data, word embeddings, and language models; AIMA language models, word representations, and masked/pretrained language-model topics.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml",
+        "ref_aima"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
-      "notes": "Tokens/vocabularies, information-theoretic language-model quantities, and language-model downstream relevance are supported; exact graph-role wording is synthesized."
-    },
-    {
-      "unit_id": "4c163138eb49ee85",
-      "node_id": "tokenization_serialization",
-      "field": "examples[1]",
-      "text": "substrate for Large language models",
-      "source_ids": ["ref_pml", "ref_aima"],
-      "evidence_location": "PML language models and word embeddings; AIMA language models, word representations, pretrained contextual representations, and masked language models.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Token-like language representations are supported as foundational to language models. The source does not specifically use the modern LLM phrase."
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "a62afb885f349a1b",
       "node_id": "tokenization_serialization",
       "field": "examples[2]",
       "text": "combined with Tokens, vocabularies & symbolic units",
-      "source_ids": ["ref_pml", "ref_aima"],
+      "source_ids": [
+        "ref_pml",
+        "ref_aima"
+      ],
       "evidence_location": "PML preprocessing discrete/text data and word embeddings; AIMA lexicon/grammar, word representations, and language models.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -53,86 +36,131 @@
       "node_id": "tokenization_serialization",
       "field": "limitations[1]",
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Tokens, vocabularies & symbolic units, Information theory.",
-      "source_ids": ["ref_pml", "ref_aima", "ref_dlbook"],
-      "evidence_location": "PML information theory and discrete/text preprocessing; AIMA language-model and word-representation topics; Deep Learning methodology/hyperparameter context.",
+      "source_ids": [
+        "ref_pml",
+        "ref_aima",
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Token/information-theory dependencies and some hyperparameter context are supported. The generic limitations are not directly evidenced for tokenization/serialization."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "85a9bcaa97cab29c",
+      "unit_id": "e3b527746384b81d",
+      "node_id": "tokenization_serialization",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Tokenization, serialization & packing is modeled as depending on Tokens, vocabularies & symbolic units, Information theory and feeding downstream nodes such as Large language models.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "ed9e78a46270cc39",
+      "node_id": "tokenization_serialization",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Large language models",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "830a2ce2648a834a",
       "node_id": "tokenization_serialization",
       "field": "dependencies.tokens_vocab.rationale",
-      "text": "Tokenization, serialization & packing uses Tokens, vocabularies & symbolic units as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml", "ref_aima"],
-      "evidence_location": "PML preprocessing discrete/text data and word embeddings; AIMA lexicon/grammar, word representations, and language models.",
+      "text": "In this atlas graph, Tokenization, serialization & packing has a `uses` dependency on Tokens, vocabularies & symbolic units because Tokens, vocabularies & symbolic units is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "This dependency is directly aligned with tokenization and vocabularies, though the exact rationale phrasing is synthesized."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "99e774d402ea33d7",
+      "unit_id": "ecc0d82c67fe5aae",
       "node_id": "tokenization_serialization",
       "field": "dependencies.information_theory.rationale",
-      "text": "Tokenization, serialization & packing uses Information theory as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_pml"],
-      "evidence_location": "PML information theory chapter, including entropy, cross entropy, KL divergence, mutual information, and perplexity, plus language-model topics.",
+      "text": "In this atlas graph, Tokenization, serialization & packing has a `uses` dependency on Information theory because Information theory is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Information-theoretic quantities support vocabulary/language-model evaluation and compression-like framing; the dependency is synthesized rather than directly stated."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "f08134235890c6a7",
+      "unit_id": "1e96f6de3a873717",
       "node_id": "tokenization_serialization",
       "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "Tokenization, serialization & packing uses Algorithms & data structures as a reusable ingredient in its defined operation.",
-      "source_ids": ["ref_aima"],
-      "evidence_location": "AIMA Appendix B languages and algorithms, plus language-model and grammar/lexicon topics.",
+      "text": "In this atlas graph, Tokenization, serialization & packing has a `uses` dependency on Algorithms & data structures because Algorithms & data structures is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Algorithms and formal languages are relevant to tokenization/serialization, but the cited evidence does not directly establish the dependency."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "a59f2ddce870db61",
+      "edge_id": "3bdf7f6b83f5f481",
       "node_id": "tokenization_serialization",
       "dependency_id": "tokens_vocab",
-      "source_ids": ["ref_pml", "ref_aima"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Tokenization depends directly on token/vocabulary concepts; core strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "498e6d55d715b815",
+      "edge_id": "d7e25899097690fd",
       "node_id": "tokenization_serialization",
       "dependency_id": "information_theory",
-      "source_ids": ["ref_pml"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Information theory is relevant to coding, vocabulary efficiency, and language-model quantities, but core strength is a synthesis.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "c72b3ca8cd939ac9",
+      "edge_id": "1291f3a74dbd6481",
       "node_id": "tokenization_serialization",
       "dependency_id": "algorithms_data_structures",
-      "source_ids": ["ref_aima"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Algorithms and data structures are implementation-relevant, but the inspected evidence does not directly support this as a conceptual dependency. Common strength is plausible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "tokenization_serialization",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

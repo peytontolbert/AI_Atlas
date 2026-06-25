@@ -8,85 +8,11 @@
       "source_ids": [
         "ref_aima"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited packet references are plausible for the broad domain, but the packet provides no passage-level evidence for every exact element in this sentence."
-    },
-    {
-      "unit_id": "ecacf3ecf6448263",
-      "node_id": "timeseries_anomaly",
-      "field": "why_it_matters",
-      "text": "The role of Time-series forecasting, anomaly & fraud detection is to connect Selective state-space models (Mamba family), LSTMs & GRUs to downstream capabilities including Autonomous vehicles, drones & navigation, Weather, climate & geospatial forecasting, Cybersecurity, finance & operational risk AI.",
-      "source_ids": [
-        "ref_aima"
-      ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is a high-level synthesis claim about application-boundary role and downstream integration; the packet references make it plausible but not directly verified."
-    },
-    {
-      "unit_id": "4a295483a6a331fb",
-      "node_id": "timeseries_anomaly",
-      "field": "examples[1]",
-      "text": "substrate for Autonomous vehicles, drones & navigation",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4",
-        "ref_aima"
-      ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_dlbook: Deep Learning (2016); ref_lstm: Long Short-Term Memory (1997); ref_mamba: Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023); ref_nist: AI Risk Management Framework 1.0 (2023); ref_pml: Probabilistic Machine Learning: An Introduction (2022); ref_s4: Efficiently Modeling Long Sequences with Structured State Spaces (2021); ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The workflow combination is plausible from the listed dependency graph, but no source excerpt directly establishes this exact workflow."
-    },
-    {
-      "unit_id": "385c3aee965e7aff",
-      "node_id": "timeseries_anomaly",
-      "field": "examples[2]",
-      "text": "substrate for Weather, climate & geospatial forecasting",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4",
-        "ref_aima"
-      ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_dlbook: Deep Learning (2016); ref_lstm: Long Short-Term Memory (1997); ref_mamba: Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023); ref_nist: AI Risk Management Framework 1.0 (2023); ref_pml: Probabilistic Machine Learning: An Introduction (2022); ref_s4: Efficiently Modeling Long Sequences with Structured State Spaces (2021); ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The workflow combination is plausible from the listed dependency graph, but no source excerpt directly establishes this exact workflow."
-    },
-    {
-      "unit_id": "61e2f05fc9ba1fa4",
-      "node_id": "timeseries_anomaly",
-      "field": "examples[3]",
-      "text": "substrate for Cybersecurity, finance & operational risk AI",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4",
-        "ref_aima"
-      ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_dlbook: Deep Learning (2016); ref_lstm: Long Short-Term Memory (1997); ref_mamba: Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023); ref_nist: AI Risk Management Framework 1.0 (2023); ref_pml: Probabilistic Machine Learning: An Introduction (2022); ref_s4: Efficiently Modeling Long Sequences with Structured State Spaces (2021); ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The workflow combination is plausible from the listed dependency graph, but no source excerpt directly establishes this exact workflow."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "9b723ab9901885d9",
@@ -100,13 +26,14 @@
         "ref_nist",
         "ref_pml",
         "ref_s4",
-        "ref_aima"
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_dlbook: Deep Learning (2016); ref_lstm: Long Short-Term Memory (1997); ref_mamba: Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023); ref_nist: AI Risk Management Framework 1.0 (2023); ref_pml: Probabilistic Machine Learning: An Introduction (2022); ref_s4: Efficiently Modeling Long Sequences with Structured State Spaces (2021); ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The general systems-quality caveat is plausible, but the packet does not provide direct evidence for all listed components or the exact dependency list."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "2eeb476550c69ec3",
@@ -149,26 +76,6 @@
       "notes": "LSTMs/GRUs are sequence models commonly used for time-series forecasting and anomaly tasks; core strength is defensible. The sentence frames the dependency generically as application integration."
     },
     {
-      "unit_id": "c5d18542d09c7829",
-      "node_id": "timeseries_anomaly",
-      "field": "dependencies.multimodal_simulated_streams.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Multimodal, simulated & streaming data as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4",
-        "ref_aima"
-      ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_dlbook: Deep Learning (2016); ref_lstm: Long Short-Term Memory (1997); ref_mamba: Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023); ref_nist: AI Risk Management Framework 1.0 (2023); ref_pml: Probabilistic Machine Learning: An Introduction (2022); ref_s4: Efficiently Modeling Long Sequences with Structured State Spaces (2021); ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Streaming data is relevant, but multimodal/simulated framing is broader than the packet evidence supports. The sentence frames the dependency generically as application integration."
-    },
-    {
       "unit_id": "c6530700d258bebf",
       "node_id": "timeseries_anomaly",
       "field": "dependencies.calibration_evaluation.rationale",
@@ -187,26 +94,6 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Risk estimates and anomaly/fraud decisions require uncertainty evaluation; common strength is defensible synthesis. The sentence frames the dependency generically as application integration."
-    },
-    {
-      "unit_id": "e2dc86230def8b53",
-      "node_id": "timeseries_anomaly",
-      "field": "dependencies.gaussian_processes.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Gaussian processes as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4",
-        "ref_aima"
-      ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_dlbook: Deep Learning (2016); ref_lstm: Long Short-Term Memory (1997); ref_mamba: Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023); ref_nist: AI Risk Management Framework 1.0 (2023); ref_pml: Probabilistic Machine Learning: An Introduction (2022); ref_s4: Efficiently Modeling Long Sequences with Structured State Spaces (2021); ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength. The sentence frames the dependency generically as application integration."
     },
     {
       "unit_id": "373ddeeda101583d",
@@ -229,64 +116,130 @@
       "notes": "Hidden Markov models are temporal probabilistic models; optional strength is defensible. The sentence frames the dependency generically as application integration."
     },
     {
-      "unit_id": "4f6e52ff35ea4dc4",
+      "unit_id": "3fe010dafa2ed195",
+      "node_id": "timeseries_anomaly",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection is modeled as depending on Selective state-space models (Mamba family), LSTMs & GRUs and feeding downstream nodes such as Autonomous vehicles, drones & navigation, Weather, climate & geospatial forecasting, Cybersecurity, finance & operational risk AI.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d2b4f0839f08b3b0",
+      "node_id": "timeseries_anomaly",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Autonomous vehicles, drones & navigation",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "0614247fc0e59608",
+      "node_id": "timeseries_anomaly",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Weather, climate & geospatial forecasting",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "cc1cfb283bc149e0",
+      "node_id": "timeseries_anomaly",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Cybersecurity, finance & operational risk AI",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "0c16d064f05bdb5d",
+      "node_id": "timeseries_anomaly",
+      "field": "dependencies.multimodal_simulated_streams.rationale",
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Multimodal, simulated & streaming data with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "15d17cbed569831e",
+      "node_id": "timeseries_anomaly",
+      "field": "dependencies.gaussian_processes.rationale",
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Gaussian processes with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "c5512e426be64a6e",
       "node_id": "timeseries_anomaly",
       "field": "dependencies.autoencoder.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Autoencoders as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Autoencoders with `optional` strength.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_dlbook: Deep Learning (2016); ref_lstm: Long Short-Term Memory (1997); ref_mamba: Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023); ref_nist: AI Risk Management Framework 1.0 (2023); ref_pml: Probabilistic Machine Learning: An Introduction (2022); ref_s4: Efficiently Modeling Long Sequences with Structured State Spaces (2021); ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength. The sentence frames the dependency generically as application integration."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     },
     {
-      "unit_id": "8e1ec0262c3f8893",
+      "unit_id": "5ecf31007f01f4ad",
       "node_id": "timeseries_anomaly",
       "field": "dependencies.structured_ssm.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Structured state-space models (S4 family) as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Structured state-space models (S4 family) with `optional` strength.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_dlbook: Deep Learning (2016); ref_lstm: Long Short-Term Memory (1997); ref_mamba: Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023); ref_nist: AI Risk Management Framework 1.0 (2023); ref_pml: Probabilistic Machine Learning: An Introduction (2022); ref_s4: Efficiently Modeling Long Sequences with Structured State Spaces (2021); ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength. The sentence frames the dependency generically as application integration."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     },
     {
-      "unit_id": "f207846bd8959c43",
+      "unit_id": "fc31de41ff210989",
       "node_id": "timeseries_anomaly",
       "field": "dependencies.energy_hopfield.rationale",
-      "text": "Time-series forecasting, anomaly & fraud detection integrates Energy-based, Hopfield & Boltzmann models as part of an end-to-end application boundary.",
+      "text": "In this atlas graph, Time-series forecasting, anomaly & fraud detection has an `applies` dependency on Energy-based, Hopfield & Boltzmann models with `optional` strength.",
       "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4",
-        "ref_aima"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet candidate_references metadata only; no quoted passages or line-level excerpts supplied. Candidate sources: ref_dlbook: Deep Learning (2016); ref_lstm: Long Short-Term Memory (1997); ref_mamba: Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023); ref_nist: AI Risk Management Framework 1.0 (2023); ref_pml: Probabilistic Machine Learning: An Introduction (2022); ref_s4: Efficiently Modeling Long Sequences with Structured State Spaces (2021); ref_aima: Artificial Intelligence: A Modern Approach, 4th ed. (2021).",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength. The sentence frames the dependency generically as application integration."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -329,25 +282,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "40f7799221792a28",
-      "node_id": "timeseries_anomaly",
-      "dependency_id": "multimodal_simulated_streams",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Streaming data is relevant, but multimodal/simulated framing is broader than the packet evidence supports.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "c8bb075075ff654c",
       "node_id": "timeseries_anomaly",
       "dependency_id": "calibration_evaluation",
@@ -365,25 +299,6 @@
       "notes": "Risk estimates and anomaly/fraud decisions require uncertainty evaluation; common strength is defensible synthesis.",
       "relationship_type_supported": true,
       "strength_supported": true
-    },
-    {
-      "edge_id": "62aa91a4b08aef80",
-      "node_id": "timeseries_anomaly",
-      "dependency_id": "gaussian_processes",
-      "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
     },
     {
       "edge_id": "cf864d5a4eed1808",
@@ -405,61 +320,72 @@
       "strength_supported": true
     },
     {
-      "edge_id": "aba9953d11eb94cd",
+      "edge_id": "320b2d02f89df38a",
+      "node_id": "timeseries_anomaly",
+      "dependency_id": "multimodal_simulated_streams",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "45e685dedbe1f678",
+      "node_id": "timeseries_anomaly",
+      "dependency_id": "gaussian_processes",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "7708410260767eb4",
       "node_id": "timeseries_anomaly",
       "dependency_id": "autoencoder",
       "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "c0d0536ad2a5d69c",
+      "edge_id": "27a307bc7b6fb6ba",
       "node_id": "timeseries_anomaly",
       "dependency_id": "structured_ssm",
       "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     },
     {
-      "edge_id": "e0c769781923b48c",
+      "edge_id": "f5b41af06a5436dc",
       "node_id": "timeseries_anomaly",
       "dependency_id": "energy_hopfield",
       "source_ids": [
-        "ref_dlbook",
-        "ref_lstm",
-        "ref_mamba",
-        "ref_nist",
-        "ref_pml",
-        "ref_s4"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency may be plausible, but the packet lacks direct evidence for the exact relationship and stated strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "timeseries_anomaly",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

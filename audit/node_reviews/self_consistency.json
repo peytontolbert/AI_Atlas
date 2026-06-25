@@ -1,1 +1,177 @@
-{"sentence_reviews":[{"unit_id":"3572864131c514fd","node_id":"self_consistency","field":"definition","text":"Self-consistency samples multiple reasoning trajectories and aggregates their answers, using diversity to reduce dependence on one brittle chain.","source_ids":["ref_aima","ref_dlbook"],"evidence_location":"AIMA search/uncertainty and DL ensemble/sampling background; no dedicated self-consistency paper is cited in the packet.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The definition matches the known method, but the provided sources only indirectly support it."},{"unit_id":"76d50a2c49531a7d","node_id":"self_consistency","field":"why_it_matters","text":"The role of Self-consistency & best-of-N inference is to connect Chain-of-thought & latent reasoning, Recursive partitioning & ensembling to downstream capabilities including Reflection, critique, verifier & repair loops, Test-time compute scaling, Best-of-N & verifier-guided selection.","source_ids":["ref_aima","ref_dlbook"],"evidence_location":"AIMA search/decision background and DL ensembling background; downstream LLM inference claims are synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The graph role is plausible, but the packet lacks direct sources for self-consistency, reflection loops, or best-of-N verifier selection."},{"unit_id":"52b0622b9cfc5ab6","node_id":"self_consistency","field":"examples[1]","text":"substrate for Reflection, critique, verifier & repair loops","source_ids":["ref_aima"],"evidence_location":"AIMA agent/search background; reflection-loop claim is not directly cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Multiple candidate reasoning paths can feed verifier loops, but this is not directly established by the cited packet sources."},{"unit_id":"68641283d531d760","node_id":"self_consistency","field":"examples[2]","text":"substrate for Test-time compute scaling","source_ids":["ref_aima","ref_dlbook"],"evidence_location":"AIMA search cost and DL sampling/ensembling background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Sampling multiple trajectories is a test-time compute pattern, though the packet lacks the specific test-time scaling source."},{"unit_id":"c6bb973fdd7bf692","node_id":"self_consistency","field":"examples[3]","text":"substrate for Best-of-N & verifier-guided selection","source_ids":["ref_aima","ref_dlbook"],"evidence_location":"Search/selection and ensemble/sampling background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Best-of-N selection is a natural extension of multiple sampled candidates, but the exact capability is not directly cited."},{"unit_id":"e78e92a757e5eebd","node_id":"self_consistency","field":"limitations[1]","text":"Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Recursive partitioning & ensembling.","source_ids":["ref_aima","ref_dlbook"],"evidence_location":"AIMA search cost/error background and DL ensemble/sampling material.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Higher compute from repeated samples is supported, but confident-error and weak-verifier language is not directly sourced."},{"unit_id":"4a4be7936b5f9593","node_id":"self_consistency","field":"dependencies.cot_latent_reasoning.rationale","text":"Self-consistency & best-of-N inference uses Chain-of-thought & latent reasoning as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"Reasoning/search background; no dedicated self-consistency source is cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Self-consistency over reasoning trajectories depends on generated reasoning chains, but the citation is indirect."},{"unit_id":"191fe0453dcfff8f","node_id":"self_consistency","field":"dependencies.recursive_partition_ensemble.rationale","text":"Self-consistency & best-of-N inference uses Recursive partitioning & ensembling as a reusable ingredient in its defined operation.","source_ids":["ref_dlbook"],"evidence_location":"DL ensembling background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Aggregation resembles ensembling, but recursive partitioning is not clearly required by the method."},{"unit_id":"84fd0483fffbbd4e","node_id":"self_consistency","field":"dependencies.search_sampling_decoding.rationale","text":"Self-consistency & best-of-N inference uses Search, sampling & decoding procedures as a reusable ingredient in its defined operation.","source_ids":["ref_aima","ref_dlbook"],"evidence_location":"Search, sampling, and model-output selection background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Multiple samples and answer aggregation support this dependency, although not as an exact source statement."}],"edge_reviews":[{"edge_id":"841ffa3c167bdfdf","node_id":"self_consistency","dependency_id":"cot_latent_reasoning","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The dependency is central to self-consistency over reasoning traces, but packet evidence is indirect.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"14db8e3428fff14e","node_id":"self_consistency","dependency_id":"recursive_partition_ensemble","source_ids":["ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Aggregation has ensemble-like support; recursive partitioning is not clearly a core dependency.","relationship_type_supported":true,"strength_supported":false},{"edge_id":"35b1a03afe1025b3","node_id":"self_consistency","dependency_id":"search_sampling_decoding","source_ids":["ref_aima","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Sampling and selecting among candidates is a common ingredient for this node.","relationship_type_supported":true,"strength_supported":true}]}
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "3572864131c514fd",
+      "node_id": "self_consistency",
+      "field": "definition",
+      "text": "Self-consistency samples multiple reasoning trajectories and aggregates their answers, using diversity to reduce dependence on one brittle chain.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "e78e92a757e5eebd",
+      "node_id": "self_consistency",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Chain-of-thought & latent reasoning, Recursive partitioning & ensembling.",
+      "source_ids": [
+        "ref_aima",
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "56d25bd459772568",
+      "node_id": "self_consistency",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Self-consistency & best-of-N inference is modeled as depending on Chain-of-thought & latent reasoning, Recursive partitioning & ensembling and feeding downstream nodes such as Reflection, critique, verifier & repair loops, Test-time compute scaling, Best-of-N & verifier-guided selection.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "92210bc96aa0aa35",
+      "node_id": "self_consistency",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Reflection, critique, verifier & repair loops",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "083018100bd43ba2",
+      "node_id": "self_consistency",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Test-time compute scaling",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a4a5d0be97f08298",
+      "node_id": "self_consistency",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Best-of-N & verifier-guided selection",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "dbcf15fc8ff0f0cf",
+      "node_id": "self_consistency",
+      "field": "dependencies.cot_latent_reasoning.rationale",
+      "text": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Chain-of-thought & latent reasoning because Chain-of-thought & latent reasoning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "33c3f079d30b142c",
+      "node_id": "self_consistency",
+      "field": "dependencies.recursive_partition_ensemble.rationale",
+      "text": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Recursive partitioning & ensembling because Recursive partitioning & ensembling is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4e7b934ee851bcd5",
+      "node_id": "self_consistency",
+      "field": "dependencies.search_sampling_decoding.rationale",
+      "text": "In this atlas graph, Self-consistency & best-of-N inference has a `uses` dependency on Search, sampling & decoding procedures because Search, sampling & decoding procedures is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "c6addafcfe7150db",
+      "node_id": "self_consistency",
+      "dependency_id": "cot_latent_reasoning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "a87d144091d48bcf",
+      "node_id": "self_consistency",
+      "dependency_id": "recursive_partition_ensemble",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "ce1361f48e7eb496",
+      "node_id": "self_consistency",
+      "dependency_id": "search_sampling_decoding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "self_consistency",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
+}

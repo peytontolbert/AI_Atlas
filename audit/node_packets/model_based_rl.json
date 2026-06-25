@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "The agent learns or uses a predictive environment model to evaluate and plan future actions.",
-    "why_it_matters": "The role of Model-based reinforcement learning is to connect Reinforcement learning, Latent variables & hidden state to downstream capabilities including Latent world models & predictive dynamics, World-model rollout & imagination, Game-playing, control & simulation agents.",
+    "why_it_matters": "In this atlas graph, Model-based reinforcement learning is modeled as depending on Reinforcement learning, Latent variables & hidden state and feeding downstream nodes such as Latent world models & predictive dynamics, World-model rollout & imagination, Game-playing, control & simulation agents.",
     "examples": [
-      "substrate for Latent world models & predictive dynamics",
-      "substrate for World-model rollout & imagination",
-      "substrate for Game-playing, control & simulation agents"
+      "atlas downstream link to Latent world models & predictive dynamics",
+      "atlas downstream link to World-model rollout & imagination",
+      "atlas downstream link to Game-playing, control & simulation agents"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Reinforcement learning, Latent variables & hidden state."
@@ -41,19 +41,19 @@
         "id": "latent_variables",
         "type": "uses",
         "strength": "core",
-        "rationale": "Model-based reinforcement learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model-based reinforcement learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
       },
       {
         "id": "multimodal_simulated_streams",
         "type": "uses",
         "strength": "common",
-        "rationale": "Model-based reinforcement learning uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model-based reinforcement learning has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node."
       },
       {
         "id": "dynamical_control",
         "type": "uses",
         "strength": "common",
-        "rationale": "Model-based reinforcement learning uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Model-based reinforcement learning has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -65,28 +65,28 @@
       "text": "The agent learns or uses a predictive environment model to evaluate and plan future actions."
     },
     {
-      "unit_id": "9f25959275ff8683",
+      "unit_id": "943136b053e33548",
       "node_id": "model_based_rl",
       "field": "why_it_matters",
-      "text": "The role of Model-based reinforcement learning is to connect Reinforcement learning, Latent variables & hidden state to downstream capabilities including Latent world models & predictive dynamics, World-model rollout & imagination, Game-playing, control & simulation agents."
+      "text": "In this atlas graph, Model-based reinforcement learning is modeled as depending on Reinforcement learning, Latent variables & hidden state and feeding downstream nodes such as Latent world models & predictive dynamics, World-model rollout & imagination, Game-playing, control & simulation agents."
     },
     {
-      "unit_id": "fde90a260a8a16cb",
+      "unit_id": "3bb75c5718ba2ad7",
       "node_id": "model_based_rl",
       "field": "examples[1]",
-      "text": "substrate for Latent world models & predictive dynamics"
+      "text": "atlas downstream link to Latent world models & predictive dynamics"
     },
     {
-      "unit_id": "915b33c90df887b1",
+      "unit_id": "8ba9739719e45b03",
       "node_id": "model_based_rl",
       "field": "examples[2]",
-      "text": "substrate for World-model rollout & imagination"
+      "text": "atlas downstream link to World-model rollout & imagination"
     },
     {
-      "unit_id": "d88dcf37bdc597be",
+      "unit_id": "7675efb7539dc6a7",
       "node_id": "model_based_rl",
       "field": "examples[3]",
-      "text": "substrate for Game-playing, control & simulation agents"
+      "text": "atlas downstream link to Game-playing, control & simulation agents"
     },
     {
       "unit_id": "2552083041636609",
@@ -101,22 +101,22 @@
       "text": "Model-based reinforcement learning follows the learning setup expressed by Reinforcement learning."
     },
     {
-      "unit_id": "23bf79610d6db162",
+      "unit_id": "c8f3e4d4a136d110",
       "node_id": "model_based_rl",
       "field": "dependencies.latent_variables.rationale",
-      "text": "Model-based reinforcement learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model-based reinforcement learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "c57ebd75a8e4c296",
+      "unit_id": "77e4af31e0f97b3f",
       "node_id": "model_based_rl",
       "field": "dependencies.multimodal_simulated_streams.rationale",
-      "text": "Model-based reinforcement learning uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model-based reinforcement learning has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "98e37a1dcd8b756c",
+      "unit_id": "84f9617bacd7d913",
       "node_id": "model_based_rl",
       "field": "dependencies.dynamical_control.rationale",
-      "text": "Model-based reinforcement learning uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Model-based reinforcement learning has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
@@ -129,28 +129,28 @@
       "rationale": "Model-based reinforcement learning follows the learning setup expressed by Reinforcement learning."
     },
     {
-      "edge_id": "d08c9e02cc114c0a",
+      "edge_id": "ec0155ce12027dc4",
       "node_id": "model_based_rl",
       "dependency_id": "latent_variables",
       "type": "uses",
       "strength": "core",
-      "rationale": "Model-based reinforcement learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model-based reinforcement learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "0b0508797b7768a9",
+      "edge_id": "57e8709d98a97441",
       "node_id": "model_based_rl",
       "dependency_id": "multimodal_simulated_streams",
       "type": "uses",
       "strength": "common",
-      "rationale": "Model-based reinforcement learning uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model-based reinforcement learning has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "f9909d851c50f52a",
+      "edge_id": "5263fb13cede8548",
       "node_id": "model_based_rl",
       "dependency_id": "dynamical_control",
       "type": "uses",
       "strength": "common",
-      "rationale": "Model-based reinforcement learning uses Dynamical systems & control theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Model-based reinforcement learning has a `uses` dependency on Dynamical systems & control theory because Dynamical systems & control theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

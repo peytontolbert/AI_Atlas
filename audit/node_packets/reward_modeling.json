@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Human or synthetic comparisons are converted into a learned scalar estimate of desirability.",
-    "why_it_matters": "The role of Reward modeling is to connect Preference learning, Supervised learning to downstream capabilities including Preference optimization (RLHF, DPO families), Reward-model training, RLHF & RLAIF, Reflection, critique, verifier & repair loops.",
+    "why_it_matters": "In this atlas graph, Reward modeling is modeled as depending on Preference learning, Supervised learning and feeding downstream nodes such as Preference optimization (RLHF, DPO families), Reward-model training, RLHF & RLAIF, Reflection, critique, verifier & repair loops.",
     "examples": [
-      "substrate for Preference optimization (RLHF, DPO families)",
-      "substrate for Reward-model training, RLHF & RLAIF",
-      "substrate for Reflection, critique, verifier & repair loops"
+      "atlas downstream link to Preference optimization (RLHF, DPO families)",
+      "atlas downstream link to Reward-model training, RLHF & RLAIF",
+      "atlas downstream link to Reflection, critique, verifier & repair loops"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Preference learning, Supervised learning."
@@ -34,19 +34,19 @@
         "id": "preference_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Reward modeling uses Preference learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Reward modeling has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "supervised_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Reward modeling uses Supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Reward modeling has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "margin_ranking_metric",
         "type": "optimizes_for",
         "strength": "common",
-        "rationale": "Reward modeling is learned, selected, or evaluated using the objective family Margin, ranking & metric objectives."
+        "rationale": "In this atlas graph, Reward modeling has an `optimizes_for` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as the objective family for learning, selection, or evaluation."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Human or synthetic comparisons are converted into a learned scalar estimate of desirability."
     },
     {
-      "unit_id": "acdf920194b6f079",
+      "unit_id": "09b327592140687b",
       "node_id": "reward_modeling",
       "field": "why_it_matters",
-      "text": "The role of Reward modeling is to connect Preference learning, Supervised learning to downstream capabilities including Preference optimization (RLHF, DPO families), Reward-model training, RLHF & RLAIF, Reflection, critique, verifier & repair loops."
+      "text": "In this atlas graph, Reward modeling is modeled as depending on Preference learning, Supervised learning and feeding downstream nodes such as Preference optimization (RLHF, DPO families), Reward-model training, RLHF & RLAIF, Reflection, critique, verifier & repair loops."
     },
     {
-      "unit_id": "4235ec7d24b2bfb4",
+      "unit_id": "26267641c181d276",
       "node_id": "reward_modeling",
       "field": "examples[1]",
-      "text": "substrate for Preference optimization (RLHF, DPO families)"
+      "text": "atlas downstream link to Preference optimization (RLHF, DPO families)"
     },
     {
-      "unit_id": "3d9dc3273bcd6ae0",
+      "unit_id": "cf987e580e49bb73",
       "node_id": "reward_modeling",
       "field": "examples[2]",
-      "text": "substrate for Reward-model training, RLHF & RLAIF"
+      "text": "atlas downstream link to Reward-model training, RLHF & RLAIF"
     },
     {
-      "unit_id": "c74be77bb4be517b",
+      "unit_id": "85df208a6a54fdc4",
       "node_id": "reward_modeling",
       "field": "examples[3]",
-      "text": "substrate for Reflection, critique, verifier & repair loops"
+      "text": "atlas downstream link to Reflection, critique, verifier & repair loops"
     },
     {
       "unit_id": "a853e7e7d36a3c0b",
@@ -88,48 +88,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Preference learning, Supervised learning."
     },
     {
-      "unit_id": "4dff15ff5cf3bfa4",
+      "unit_id": "1be1af79f69fa397",
       "node_id": "reward_modeling",
       "field": "dependencies.preference_learning.rationale",
-      "text": "Reward modeling uses Preference learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Reward modeling has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "76f461d7d91ddf44",
+      "unit_id": "8da71e733a75ba5d",
       "node_id": "reward_modeling",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Reward modeling uses Supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Reward modeling has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "486fc4bdf4bcf144",
+      "unit_id": "81d4598972dd731a",
       "node_id": "reward_modeling",
       "field": "dependencies.margin_ranking_metric.rationale",
-      "text": "Reward modeling is learned, selected, or evaluated using the objective family Margin, ranking & metric objectives."
+      "text": "In this atlas graph, Reward modeling has an `optimizes_for` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "b88ab7935851f2d7",
+      "edge_id": "7c6f9c00af5e8897",
       "node_id": "reward_modeling",
       "dependency_id": "preference_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Reward modeling uses Preference learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Reward modeling has a `uses` dependency on Preference learning because Preference learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "ea427a0cc4a35519",
+      "edge_id": "dd29bb376e679fb8",
       "node_id": "reward_modeling",
       "dependency_id": "supervised_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Reward modeling uses Supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Reward modeling has a `uses` dependency on Supervised learning because Supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "fbee5e62460ad28f",
+      "edge_id": "1bc5117e8a9a31fd",
       "node_id": "reward_modeling",
       "dependency_id": "margin_ranking_metric",
       "type": "optimizes_for",
       "strength": "common",
-      "rationale": "Reward modeling is learned, selected, or evaluated using the objective family Margin, ranking & metric objectives."
+      "rationale": "In this atlas graph, Reward modeling has an `optimizes_for` dependency on Margin, ranking & metric objectives because Margin, ranking & metric objectives is modeled as the objective family for learning, selection, or evaluation."
     }
   ],
   "candidate_references": {

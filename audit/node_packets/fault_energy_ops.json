@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Reliability and cost operations manage failures, replication, quotas, capacity, security, energy, carbon, and economic efficiency across AI workloads.",
-    "why_it_matters": "The role of Fault tolerance, security, energy & cost optimization is to connect Distributed systems & networking, Adversarial robustness & security testing to downstream capabilities including Large language models.",
+    "why_it_matters": "In this atlas graph, Fault tolerance, security, energy & cost optimization is modeled as depending on Distributed systems & networking, Adversarial robustness & security testing and feeding downstream nodes such as Large language models.",
     "examples": [
-      "substrate for Large language models",
+      "atlas downstream link to Large language models",
       "combined with Distributed systems & networking"
     ],
     "limitations": [
@@ -34,25 +34,25 @@
         "id": "distributed_systems",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Fault tolerance, security, energy & cost optimization turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "adversarial_security_eval",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Fault tolerance, security, energy & cost optimization turns Adversarial robustness & security testing into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Adversarial robustness & security testing because Adversarial robustness & security testing is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "batching_scheduling",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Fault tolerance, security, energy & cost optimization turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Batching, admission control & GPU scheduling because Batching, admission control & GPU scheduling is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "optimization",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Fault tolerance, security, energy & cost optimization turns Optimization theory into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Optimization theory because Optimization theory is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -64,16 +64,16 @@
       "text": "Reliability and cost operations manage failures, replication, quotas, capacity, security, energy, carbon, and economic efficiency across AI workloads."
     },
     {
-      "unit_id": "7b9a1b096a7d727d",
+      "unit_id": "8d81308450b4ee7e",
       "node_id": "fault_energy_ops",
       "field": "why_it_matters",
-      "text": "The role of Fault tolerance, security, energy & cost optimization is to connect Distributed systems & networking, Adversarial robustness & security testing to downstream capabilities including Large language models."
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization is modeled as depending on Distributed systems & networking, Adversarial robustness & security testing and feeding downstream nodes such as Large language models."
     },
     {
-      "unit_id": "18e20df401eec9ae",
+      "unit_id": "418c9c0fe561d4c3",
       "node_id": "fault_energy_ops",
       "field": "examples[1]",
-      "text": "substrate for Large language models"
+      "text": "atlas downstream link to Large language models"
     },
     {
       "unit_id": "b9146e47d72eda90",
@@ -88,62 +88,62 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Adversarial robustness & security testing."
     },
     {
-      "unit_id": "ec72d11bd6dfba70",
+      "unit_id": "a8927a7e640eef9a",
       "node_id": "fault_energy_ops",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Fault tolerance, security, energy & cost optimization turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "ca85751df1721926",
+      "unit_id": "da09ef17dfcb47b9",
       "node_id": "fault_energy_ops",
       "field": "dependencies.adversarial_security_eval.rationale",
-      "text": "Fault tolerance, security, energy & cost optimization turns Adversarial robustness & security testing into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Adversarial robustness & security testing because Adversarial robustness & security testing is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "e4a951a4ece2bab2",
+      "unit_id": "067286d13c4faa20",
       "node_id": "fault_energy_ops",
       "field": "dependencies.batching_scheduling.rationale",
-      "text": "Fault tolerance, security, energy & cost optimization turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Batching, admission control & GPU scheduling because Batching, admission control & GPU scheduling is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "1953bcf549d9456f",
+      "unit_id": "8e0d9b091b4b4b44",
       "node_id": "fault_energy_ops",
       "field": "dependencies.optimization.rationale",
-      "text": "Fault tolerance, security, energy & cost optimization turns Optimization theory into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Optimization theory because Optimization theory is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "bd60eb2cbd1f8f11",
+      "edge_id": "0b297bcbec25b3a8",
       "node_id": "fault_energy_ops",
       "dependency_id": "distributed_systems",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Fault tolerance, security, energy & cost optimization turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "56df77eee35f3663",
+      "edge_id": "79bd53b8c604820d",
       "node_id": "fault_energy_ops",
       "dependency_id": "adversarial_security_eval",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Fault tolerance, security, energy & cost optimization turns Adversarial robustness & security testing into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Adversarial robustness & security testing because Adversarial robustness & security testing is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "1a68cee3895b768d",
+      "edge_id": "5153d2c8702d78c9",
       "node_id": "fault_energy_ops",
       "dependency_id": "batching_scheduling",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Fault tolerance, security, energy & cost optimization turns Batching, admission control & GPU scheduling into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Batching, admission control & GPU scheduling because Batching, admission control & GPU scheduling is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "7e453886c512b54e",
+      "edge_id": "e83b0093c91887c0",
       "node_id": "fault_energy_ops",
       "dependency_id": "optimization",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Fault tolerance, security, energy & cost optimization turns Optimization theory into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Fault tolerance, security, energy & cost optimization has an `operationalizes` dependency on Optimization theory because Optimization theory is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

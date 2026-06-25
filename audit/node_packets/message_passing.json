@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Entities iteratively exchange and aggregate information along relational edges.",
-    "why_it_matters": "The role of Message passing & neighborhood aggregation is to connect Graphs, hypergraphs & relational data, Affine transforms & dense layers to downstream capabilities including Graph neural networks, Graph RAG & structured retrieval.",
+    "why_it_matters": "In this atlas graph, Message passing & neighborhood aggregation is modeled as depending on Graphs, hypergraphs & relational data, Affine transforms & dense layers and feeding downstream nodes such as Graph neural networks, Graph RAG & structured retrieval.",
     "examples": [
-      "substrate for Graph neural networks",
-      "substrate for Graph RAG & structured retrieval"
+      "atlas downstream link to Graph neural networks",
+      "atlas downstream link to Graph RAG & structured retrieval"
     ],
     "limitations": [
       "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Graphs, hypergraphs & relational data, Affine transforms & dense layers."
@@ -33,7 +33,7 @@
         "id": "graphs_hypergraphs",
         "type": "uses",
         "strength": "core",
-        "rationale": "Message passing & neighborhood aggregation uses Graphs, hypergraphs & relational data as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Message passing & neighborhood aggregation has a `uses` dependency on Graphs, hypergraphs & relational data because Graphs, hypergraphs & relational data is modeled as a reusable ingredient for the node."
       },
       {
         "id": "affine_dense",
@@ -57,22 +57,22 @@
       "text": "Entities iteratively exchange and aggregate information along relational edges."
     },
     {
-      "unit_id": "472c140c3dbcbcd0",
+      "unit_id": "fe3da59bda8b6101",
       "node_id": "message_passing",
       "field": "why_it_matters",
-      "text": "The role of Message passing & neighborhood aggregation is to connect Graphs, hypergraphs & relational data, Affine transforms & dense layers to downstream capabilities including Graph neural networks, Graph RAG & structured retrieval."
+      "text": "In this atlas graph, Message passing & neighborhood aggregation is modeled as depending on Graphs, hypergraphs & relational data, Affine transforms & dense layers and feeding downstream nodes such as Graph neural networks, Graph RAG & structured retrieval."
     },
     {
-      "unit_id": "73e4784c8988dfc2",
+      "unit_id": "a4eef2f996a3c0c6",
       "node_id": "message_passing",
       "field": "examples[1]",
-      "text": "substrate for Graph neural networks"
+      "text": "atlas downstream link to Graph neural networks"
     },
     {
-      "unit_id": "1433e69474826816",
+      "unit_id": "73be6e3fae27286c",
       "node_id": "message_passing",
       "field": "examples[2]",
-      "text": "substrate for Graph RAG & structured retrieval"
+      "text": "atlas downstream link to Graph RAG & structured retrieval"
     },
     {
       "unit_id": "5c9111313ef03a68",
@@ -81,10 +81,10 @@
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Graphs, hypergraphs & relational data, Affine transforms & dense layers."
     },
     {
-      "unit_id": "8d9d3c200c9486b9",
+      "unit_id": "9508678ef7c2518b",
       "node_id": "message_passing",
       "field": "dependencies.graphs_hypergraphs.rationale",
-      "text": "Message passing & neighborhood aggregation uses Graphs, hypergraphs & relational data as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Message passing & neighborhood aggregation has a `uses` dependency on Graphs, hypergraphs & relational data because Graphs, hypergraphs & relational data is modeled as a reusable ingredient for the node."
     },
     {
       "unit_id": "b6da33ea7ecc4a90",
@@ -101,12 +101,12 @@
   ],
   "edge_units": [
     {
-      "edge_id": "9c7b2ec5c668f73a",
+      "edge_id": "e0e32df1ce7d4575",
       "node_id": "message_passing",
       "dependency_id": "graphs_hypergraphs",
       "type": "uses",
       "strength": "core",
-      "rationale": "Message passing & neighborhood aggregation uses Graphs, hypergraphs & relational data as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Message passing & neighborhood aggregation has a `uses` dependency on Graphs, hypergraphs & relational data because Graphs, hypergraphs & relational data is modeled as a reusable ingredient for the node."
     },
     {
       "edge_id": "60b9544607c1fa45",

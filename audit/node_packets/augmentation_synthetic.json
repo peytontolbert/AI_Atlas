@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Data augmentation and synthetic-data generation expand training variation through transformations, simulation, model generation, or controlled perturbation.",
-    "why_it_matters": "The role of Data augmentation & synthetic-data generation is to connect Datasets, sampling & splits, Multimodal, simulated & streaming data to downstream capabilities including Robustness, distribution shift & OOD evaluation, Reinforcement learning with verifiable rewards (RLVR), Domain randomization & simulation curricula.",
+    "why_it_matters": "In this atlas graph, Data augmentation & synthetic-data generation is modeled as depending on Datasets, sampling & splits, Multimodal, simulated & streaming data and feeding downstream nodes such as Robustness, distribution shift & OOD evaluation, Reinforcement learning with verifiable rewards (RLVR), Domain randomization & simulation curricula.",
     "examples": [
-      "substrate for Robustness, distribution shift & OOD evaluation",
-      "substrate for Reinforcement learning with verifiable rewards (RLVR)",
-      "substrate for Domain randomization & simulation curricula"
+      "atlas downstream link to Robustness, distribution shift & OOD evaluation",
+      "atlas downstream link to Reinforcement learning with verifiable rewards (RLVR)",
+      "atlas downstream link to Domain randomization & simulation curricula"
     ],
     "limitations": [
       "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Multimodal, simulated & streaming data."
@@ -34,25 +34,25 @@
         "id": "datasets_sampling",
         "type": "uses",
         "strength": "core",
-        "rationale": "Data augmentation & synthetic-data generation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
       },
       {
         "id": "multimodal_simulated_streams",
         "type": "uses",
         "strength": "core",
-        "rationale": "Data augmentation & synthetic-data generation uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node."
       },
       {
         "id": "equivariance_invariance",
         "type": "uses",
         "strength": "common",
-        "rationale": "Data augmentation & synthetic-data generation uses Equivariance, invariance & geometric priors as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Equivariance, invariance & geometric priors because Equivariance, invariance & geometric priors is modeled as a reusable ingredient for the node."
       },
       {
         "id": "generative_learning",
         "type": "uses",
         "strength": "common",
-        "rationale": "Data augmentation & synthetic-data generation uses Generative modeling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -64,28 +64,28 @@
       "text": "Data augmentation and synthetic-data generation expand training variation through transformations, simulation, model generation, or controlled perturbation."
     },
     {
-      "unit_id": "8b5b58c59f1e08c7",
+      "unit_id": "abe8fd82ac79125e",
       "node_id": "augmentation_synthetic",
       "field": "why_it_matters",
-      "text": "The role of Data augmentation & synthetic-data generation is to connect Datasets, sampling & splits, Multimodal, simulated & streaming data to downstream capabilities including Robustness, distribution shift & OOD evaluation, Reinforcement learning with verifiable rewards (RLVR), Domain randomization & simulation curricula."
+      "text": "In this atlas graph, Data augmentation & synthetic-data generation is modeled as depending on Datasets, sampling & splits, Multimodal, simulated & streaming data and feeding downstream nodes such as Robustness, distribution shift & OOD evaluation, Reinforcement learning with verifiable rewards (RLVR), Domain randomization & simulation curricula."
     },
     {
-      "unit_id": "bba13528230631f8",
+      "unit_id": "d2ccce8358d0d665",
       "node_id": "augmentation_synthetic",
       "field": "examples[1]",
-      "text": "substrate for Robustness, distribution shift & OOD evaluation"
+      "text": "atlas downstream link to Robustness, distribution shift & OOD evaluation"
     },
     {
-      "unit_id": "c0409b5ef31673d3",
+      "unit_id": "592e3785f9dd9e90",
       "node_id": "augmentation_synthetic",
       "field": "examples[2]",
-      "text": "substrate for Reinforcement learning with verifiable rewards (RLVR)"
+      "text": "atlas downstream link to Reinforcement learning with verifiable rewards (RLVR)"
     },
     {
-      "unit_id": "b7613393a05a775d",
+      "unit_id": "402683419571c9e7",
       "node_id": "augmentation_synthetic",
       "field": "examples[3]",
-      "text": "substrate for Domain randomization & simulation curricula"
+      "text": "atlas downstream link to Domain randomization & simulation curricula"
     },
     {
       "unit_id": "6936918f0ffe0391",
@@ -94,62 +94,62 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Datasets, sampling & splits, Multimodal, simulated & streaming data."
     },
     {
-      "unit_id": "7baa3c381face3f3",
+      "unit_id": "2488b91159d2db45",
       "node_id": "augmentation_synthetic",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "Data augmentation & synthetic-data generation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "3923c90b9eb98b7f",
+      "unit_id": "bfa2f68437b47100",
       "node_id": "augmentation_synthetic",
       "field": "dependencies.multimodal_simulated_streams.rationale",
-      "text": "Data augmentation & synthetic-data generation uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "3f3291da223f1ccc",
+      "unit_id": "a6cbe52dc75a42e0",
       "node_id": "augmentation_synthetic",
       "field": "dependencies.equivariance_invariance.rationale",
-      "text": "Data augmentation & synthetic-data generation uses Equivariance, invariance & geometric priors as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Equivariance, invariance & geometric priors because Equivariance, invariance & geometric priors is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "6e6514ffde5304ea",
+      "unit_id": "357299f117dea8cb",
       "node_id": "augmentation_synthetic",
       "field": "dependencies.generative_learning.rationale",
-      "text": "Data augmentation & synthetic-data generation uses Generative modeling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "a9a04e8af7721781",
+      "edge_id": "b361dcb797bfe4fd",
       "node_id": "augmentation_synthetic",
       "dependency_id": "datasets_sampling",
       "type": "uses",
       "strength": "core",
-      "rationale": "Data augmentation & synthetic-data generation uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "875a34f5a4f93785",
+      "edge_id": "2afd74fd5caeb88e",
       "node_id": "augmentation_synthetic",
       "dependency_id": "multimodal_simulated_streams",
       "type": "uses",
       "strength": "core",
-      "rationale": "Data augmentation & synthetic-data generation uses Multimodal, simulated & streaming data as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Multimodal, simulated & streaming data because Multimodal, simulated & streaming data is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "284e15641582ae24",
+      "edge_id": "a58d57327e5b1483",
       "node_id": "augmentation_synthetic",
       "dependency_id": "equivariance_invariance",
       "type": "uses",
       "strength": "common",
-      "rationale": "Data augmentation & synthetic-data generation uses Equivariance, invariance & geometric priors as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Equivariance, invariance & geometric priors because Equivariance, invariance & geometric priors is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "174fa1fcf4134606",
+      "edge_id": "6ab1131106c159bc",
       "node_id": "augmentation_synthetic",
       "dependency_id": "generative_learning",
       "type": "uses",
       "strength": "common",
-      "rationale": "Data augmentation & synthetic-data generation uses Generative modeling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Data augmentation & synthetic-data generation has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

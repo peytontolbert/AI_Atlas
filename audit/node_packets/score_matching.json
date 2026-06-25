@@ -14,10 +14,10 @@
     ],
     "aliases": [],
     "definition": "The model learns gradients of log density, often from noise-corrupted data.",
-    "why_it_matters": "The role of Score matching & denoising score objectives is to connect Generative modeling, Probability theory to downstream capabilities including Denoising diffusion & stochastic corruption, Diffusion & score-based models.",
+    "why_it_matters": "In this atlas graph, Score matching & denoising score objectives is modeled as depending on Generative modeling, Probability theory and feeding downstream nodes such as Denoising diffusion & stochastic corruption, Diffusion & score-based models.",
     "examples": [
-      "substrate for Denoising diffusion & stochastic corruption",
-      "substrate for Diffusion & score-based models"
+      "atlas downstream link to Denoising diffusion & stochastic corruption",
+      "atlas downstream link to Diffusion & score-based models"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Probability theory."
@@ -34,19 +34,19 @@
         "id": "generative_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Score matching & denoising score objectives uses Generative modeling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
       },
       {
         "id": "probability",
         "type": "uses",
         "strength": "core",
-        "rationale": "Score matching & denoising score objectives uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       },
       {
         "id": "calculus",
         "type": "uses",
         "strength": "common",
-        "rationale": "Score matching & denoising score objectives uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,22 +58,22 @@
       "text": "The model learns gradients of log density, often from noise-corrupted data."
     },
     {
-      "unit_id": "785743b9e1636d82",
+      "unit_id": "115a343da68bba97",
       "node_id": "score_matching",
       "field": "why_it_matters",
-      "text": "The role of Score matching & denoising score objectives is to connect Generative modeling, Probability theory to downstream capabilities including Denoising diffusion & stochastic corruption, Diffusion & score-based models."
+      "text": "In this atlas graph, Score matching & denoising score objectives is modeled as depending on Generative modeling, Probability theory and feeding downstream nodes such as Denoising diffusion & stochastic corruption, Diffusion & score-based models."
     },
     {
-      "unit_id": "683bafcf81b8d70d",
+      "unit_id": "c007bc1b9a5c3603",
       "node_id": "score_matching",
       "field": "examples[1]",
-      "text": "substrate for Denoising diffusion & stochastic corruption"
+      "text": "atlas downstream link to Denoising diffusion & stochastic corruption"
     },
     {
-      "unit_id": "9482259ea5af91de",
+      "unit_id": "a66ec7fca8c24d11",
       "node_id": "score_matching",
       "field": "examples[2]",
-      "text": "substrate for Diffusion & score-based models"
+      "text": "atlas downstream link to Diffusion & score-based models"
     },
     {
       "unit_id": "54fd218d18745f47",
@@ -82,48 +82,48 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Generative modeling, Probability theory."
     },
     {
-      "unit_id": "36701623cddefa9a",
+      "unit_id": "2bb8752d73bb32e0",
       "node_id": "score_matching",
       "field": "dependencies.generative_learning.rationale",
-      "text": "Score matching & denoising score objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "76ce9630c25a253a",
+      "unit_id": "dffca3a511550f2d",
       "node_id": "score_matching",
       "field": "dependencies.probability.rationale",
-      "text": "Score matching & denoising score objectives uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "e56c3f56aa3ffe7e",
+      "unit_id": "2b83e773cbe2efd7",
       "node_id": "score_matching",
       "field": "dependencies.calculus.rationale",
-      "text": "Score matching & denoising score objectives uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "70fca52a498508a3",
+      "edge_id": "73b501cb31d26f82",
       "node_id": "score_matching",
       "dependency_id": "generative_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Score matching & denoising score objectives uses Generative modeling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "80cfa389d0b5bb16",
+      "edge_id": "bf50ce9b90df5f4e",
       "node_id": "score_matching",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "core",
-      "rationale": "Score matching & denoising score objectives uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "95eb5e009cc204b6",
+      "edge_id": "55fc92f3dba45c85",
       "node_id": "score_matching",
       "dependency_id": "calculus",
       "type": "uses",
       "strength": "common",
-      "rationale": "Score matching & denoising score objectives uses Calculus & automatic differentiation theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Score matching & denoising score objectives has a `uses` dependency on Calculus & automatic differentiation theory because Calculus & automatic differentiation theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Code-execution environments parse and run generated programs inside interpreters, containers, virtual machines, or restricted sandboxes with observable results.",
-    "why_it_matters": "The role of Code execution, interpreters & sandboxes is to connect Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces to downstream capabilities including Reflection, critique, verifier & repair loops, Human-in-the-loop, permissions & sandboxing, Code models, copilots & repository intelligence.",
+    "why_it_matters": "In this atlas graph, Code execution, interpreters & sandboxes is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces and feeding downstream nodes such as Reflection, critique, verifier & repair loops, Human-in-the-loop, permissions & sandboxing, Code models, copilots & repository intelligence.",
     "examples": [
-      "substrate for Reflection, critique, verifier & repair loops",
-      "substrate for Human-in-the-loop, permissions & sandboxing",
-      "substrate for Code models, copilots & repository intelligence"
+      "atlas downstream link to Reflection, critique, verifier & repair loops",
+      "atlas downstream link to Human-in-the-loop, permissions & sandboxing",
+      "atlas downstream link to Code models, copilots & repository intelligence"
     ],
     "limitations": [
       "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces."
@@ -35,19 +35,19 @@
         "id": "programs_ast_ir",
         "type": "uses",
         "strength": "core",
-        "rationale": "Code execution, interpreters & sandboxes uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "cache_tool_interfaces",
         "type": "uses",
         "strength": "core",
-        "rationale": "Code execution, interpreters & sandboxes uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node."
       },
       {
         "id": "constraint_program_execution",
         "type": "uses",
         "strength": "common",
-        "rationale": "Code execution, interpreters & sandboxes uses Constraint propagation, logic & program execution as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Constraint propagation, logic & program execution because Constraint propagation, logic & program execution is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -59,28 +59,28 @@
       "text": "Code-execution environments parse and run generated programs inside interpreters, containers, virtual machines, or restricted sandboxes with observable results."
     },
     {
-      "unit_id": "007d1f1b2e92d569",
+      "unit_id": "574e126e2d65ed9e",
       "node_id": "code_execution",
       "field": "why_it_matters",
-      "text": "The role of Code execution, interpreters & sandboxes is to connect Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces to downstream capabilities including Reflection, critique, verifier & repair loops, Human-in-the-loop, permissions & sandboxing, Code models, copilots & repository intelligence."
+      "text": "In this atlas graph, Code execution, interpreters & sandboxes is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces and feeding downstream nodes such as Reflection, critique, verifier & repair loops, Human-in-the-loop, permissions & sandboxing, Code models, copilots & repository intelligence."
     },
     {
-      "unit_id": "35fe544c23da6ed2",
+      "unit_id": "0d4c8e0dee36f958",
       "node_id": "code_execution",
       "field": "examples[1]",
-      "text": "substrate for Reflection, critique, verifier & repair loops"
+      "text": "atlas downstream link to Reflection, critique, verifier & repair loops"
     },
     {
-      "unit_id": "1f7d08d91ef7b659",
+      "unit_id": "59b925dcf3b21389",
       "node_id": "code_execution",
       "field": "examples[2]",
-      "text": "substrate for Human-in-the-loop, permissions & sandboxing"
+      "text": "atlas downstream link to Human-in-the-loop, permissions & sandboxing"
     },
     {
-      "unit_id": "978c9701a207d5c0",
+      "unit_id": "8d4911df8ad44db8",
       "node_id": "code_execution",
       "field": "examples[3]",
-      "text": "substrate for Code models, copilots & repository intelligence"
+      "text": "atlas downstream link to Code models, copilots & repository intelligence"
     },
     {
       "unit_id": "6a76a619ddbb935c",
@@ -89,48 +89,48 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Programs, ASTs, bytecode & intermediate representations, Caches, APIs & tool interfaces."
     },
     {
-      "unit_id": "17500e5e25ffaf09",
+      "unit_id": "5782123fde1a0133",
       "node_id": "code_execution",
       "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Code execution, interpreters & sandboxes uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "8fb192015b27e852",
+      "unit_id": "20ef5a63803d6dbe",
       "node_id": "code_execution",
       "field": "dependencies.cache_tool_interfaces.rationale",
-      "text": "Code execution, interpreters & sandboxes uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "94401ef28d1237ab",
+      "unit_id": "5e3e313bc0944292",
       "node_id": "code_execution",
       "field": "dependencies.constraint_program_execution.rationale",
-      "text": "Code execution, interpreters & sandboxes uses Constraint propagation, logic & program execution as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Constraint propagation, logic & program execution because Constraint propagation, logic & program execution is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "c686d408ce0f25ee",
+      "edge_id": "8c2c73fbc57bab1b",
       "node_id": "code_execution",
       "dependency_id": "programs_ast_ir",
       "type": "uses",
       "strength": "core",
-      "rationale": "Code execution, interpreters & sandboxes uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "758e6ce8c248d98c",
+      "edge_id": "8cf3a33b901caede",
       "node_id": "code_execution",
       "dependency_id": "cache_tool_interfaces",
       "type": "uses",
       "strength": "core",
-      "rationale": "Code execution, interpreters & sandboxes uses Caches, APIs & tool interfaces as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "b45c9d8f9fda4fbb",
+      "edge_id": "9f5feed6968a786e",
       "node_id": "code_execution",
       "dependency_id": "constraint_program_execution",
       "type": "uses",
       "strength": "common",
-      "rationale": "Code execution, interpreters & sandboxes uses Constraint propagation, logic & program execution as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Code execution, interpreters & sandboxes has a `uses` dependency on Constraint propagation, logic & program execution because Constraint propagation, logic & program execution is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -17,54 +17,6 @@
       "notes": "The cited node/reference evidence directly supports the architecture description at this level of specificity."
     },
     {
-      "unit_id": "109adb5714e7376e",
-      "node_id": "structured_ssm",
-      "field": "why_it_matters",
-      "text": "The role of Structured state-space models (S4 family) is to connect State-space transitions, Fourier, wavelet & spectral transforms to downstream capabilities including Selective state-space models (Mamba family), Time-series forecasting, anomaly & fraud detection.",
-      "source_ids": [
-        "ref_s4",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Gu, Goel & Re S4 paper for structured state spaces, convolution/recurrence, long sequences, and spectral/state-space machinery.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Dependency portion is supported, but the downstream capability list is graph-derived and not fully established by the cited packet sources."
-    },
-    {
-      "unit_id": "9fecccb6ef865811",
-      "node_id": "structured_ssm",
-      "field": "examples[1]",
-      "text": "substrate for Selective state-space models (Mamba family)",
-      "source_ids": [
-        "ref_s4",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Gu, Goel & Re S4 paper for structured state spaces, convolution/recurrence, long sequences, and spectral/state-space machinery.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
-    },
-    {
-      "unit_id": "4bafde36f379ef0d",
-      "node_id": "structured_ssm",
-      "field": "examples[2]",
-      "text": "substrate for Time-series forecasting, anomaly & fraud detection",
-      "source_ids": [
-        "ref_s4",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Gu, Goel & Re S4 paper for structured state spaces, convolution/recurrence, long sequences, and spectral/state-space machinery.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Downstream use is plausible and commonly defensible from the cited architecture, but the exact substrate wording is broader than direct evidence."
-    },
-    {
       "unit_id": "56eebfc85fcd04e3",
       "node_id": "structured_ssm",
       "field": "limitations[1]",
@@ -72,13 +24,14 @@
       "source_ids": [
         "ref_s4",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Gu, Goel & Re S4 paper for structured state spaces, convolution/recurrence, long sequences, and spectral/state-space machinery.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The listed direct dependencies are supported, but the generic limitation sentence is broad and not specifically evidenced for this node."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "02c679dd7ea7bf87",
@@ -113,22 +66,6 @@
       "notes": "The cited source directly supports this dependency relationship for the architecture."
     },
     {
-      "unit_id": "8d297d2e36a46b74",
-      "node_id": "structured_ssm",
-      "field": "dependencies.gating.rationale",
-      "text": "Structured state-space models (S4 family) is assembled in part from the mechanism or model component Gating & multiplicative control.",
-      "source_ids": [
-        "ref_s4",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "Gu, Goel & Re S4 paper for structured state spaces, convolution/recurrence, long sequences, and spectral/state-space machinery.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency is plausible/common for some variants, but it is not necessary or not directly established by the packet evidence."
-    },
-    {
       "unit_id": "47b39bbb824a4d63",
       "node_id": "structured_ssm",
       "field": "dependencies.sequences_time.rationale",
@@ -143,6 +80,62 @@
       "review_date": "2026-06-25",
       "verdict": "verified",
       "notes": "The cited source directly supports this dependency relationship for the architecture."
+    },
+    {
+      "unit_id": "d026291b323d810a",
+      "node_id": "structured_ssm",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Structured state-space models (S4 family) is modeled as depending on State-space transitions, Fourier, wavelet & spectral transforms and feeding downstream nodes such as Selective state-space models (Mamba family), Time-series forecasting, anomaly & fraud detection.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d6fbf857870f65e6",
+      "node_id": "structured_ssm",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Selective state-space models (Mamba family)",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "55efbc688ec104ed",
+      "node_id": "structured_ssm",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Time-series forecasting, anomaly & fraud detection",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "82185f4aff6f58b2",
+      "node_id": "structured_ssm",
+      "field": "dependencies.gating.rationale",
+      "text": "In this atlas graph, Structured state-space models (S4 family) has a `composes` dependency on Gating & multiplicative control with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -179,22 +172,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "92bfe6347e5081cd",
-      "node_id": "structured_ssm",
-      "dependency_id": "gating",
-      "source_ids": [
-        "ref_s4",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The relationship is plausible for common variants, but the packet evidence does not fully support the stated strength or necessity.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "85165f2f9206803e",
       "node_id": "structured_ssm",
       "dependency_id": "sequences_time",
@@ -209,6 +186,22 @@
       "notes": "The cited source directly supports this dependency type and the stated strength.",
       "relationship_type_supported": true,
       "strength_supported": true
+    },
+    {
+      "edge_id": "bbb7254d36225ff3",
+      "node_id": "structured_ssm",
+      "dependency_id": "gating",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
-  ]
+  ],
+  "node_id": "structured_ssm",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Theorem provers derive conclusions from axioms and inference rules, producing proofs or proof obligations that a trusted kernel can check.",
-    "why_it_matters": "The role of Theorem proving & symbolic deduction is to connect Constraint satisfaction, SAT & SMT solving, Neuro-symbolic models to downstream capabilities including Automated theorem proving & mathematical AI.",
+    "why_it_matters": "In this atlas graph, Theorem proving & symbolic deduction is modeled as depending on Constraint satisfaction, SAT & SMT solving, Neuro-symbolic models and feeding downstream nodes such as Automated theorem proving & mathematical AI.",
     "examples": [
-      "substrate for Automated theorem proving & mathematical AI",
+      "atlas downstream link to Automated theorem proving & mathematical AI",
       "combined with Constraint satisfaction, SAT & SMT solving"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "constraint_sat_smt",
         "type": "uses",
         "strength": "core",
-        "rationale": "Theorem proving & symbolic deduction uses Constraint satisfaction, SAT & SMT solving as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Theorem proving & symbolic deduction has a `uses` dependency on Constraint satisfaction, SAT & SMT solving because Constraint satisfaction, SAT & SMT solving is modeled as a reusable ingredient for the node."
       },
       {
         "id": "neurosymbolic_system_model",
         "type": "uses",
         "strength": "core",
-        "rationale": "Theorem proving & symbolic deduction uses Neuro-symbolic models as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Theorem proving & symbolic deduction has a `uses` dependency on Neuro-symbolic models because Neuro-symbolic models is modeled as a reusable ingredient for the node."
       },
       {
         "id": "programs_ast_ir",
         "type": "uses",
         "strength": "common",
-        "rationale": "Theorem proving & symbolic deduction uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Theorem proving & symbolic deduction has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Theorem provers derive conclusions from axioms and inference rules, producing proofs or proof obligations that a trusted kernel can check."
     },
     {
-      "unit_id": "2c7ba394e66759b4",
+      "unit_id": "46654f790b7a6413",
       "node_id": "theorem_symbolic",
       "field": "why_it_matters",
-      "text": "The role of Theorem proving & symbolic deduction is to connect Constraint satisfaction, SAT & SMT solving, Neuro-symbolic models to downstream capabilities including Automated theorem proving & mathematical AI."
+      "text": "In this atlas graph, Theorem proving & symbolic deduction is modeled as depending on Constraint satisfaction, SAT & SMT solving, Neuro-symbolic models and feeding downstream nodes such as Automated theorem proving & mathematical AI."
     },
     {
-      "unit_id": "d4867748f75cfc82",
+      "unit_id": "5b4ef9843b36c9c1",
       "node_id": "theorem_symbolic",
       "field": "examples[1]",
-      "text": "substrate for Automated theorem proving & mathematical AI"
+      "text": "atlas downstream link to Automated theorem proving & mathematical AI"
     },
     {
       "unit_id": "c98345c63490bd60",
@@ -82,48 +82,48 @@
       "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Constraint satisfaction, SAT & SMT solving, Neuro-symbolic models."
     },
     {
-      "unit_id": "62a8e266479777bf",
+      "unit_id": "b0904c413dac7225",
       "node_id": "theorem_symbolic",
       "field": "dependencies.constraint_sat_smt.rationale",
-      "text": "Theorem proving & symbolic deduction uses Constraint satisfaction, SAT & SMT solving as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Theorem proving & symbolic deduction has a `uses` dependency on Constraint satisfaction, SAT & SMT solving because Constraint satisfaction, SAT & SMT solving is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "36f528ce69919eb2",
+      "unit_id": "5ddc2941b03c84f7",
       "node_id": "theorem_symbolic",
       "field": "dependencies.neurosymbolic_system_model.rationale",
-      "text": "Theorem proving & symbolic deduction uses Neuro-symbolic models as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Theorem proving & symbolic deduction has a `uses` dependency on Neuro-symbolic models because Neuro-symbolic models is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "826fa06fe3eccb9d",
+      "unit_id": "760d59808cfaad00",
       "node_id": "theorem_symbolic",
       "field": "dependencies.programs_ast_ir.rationale",
-      "text": "Theorem proving & symbolic deduction uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Theorem proving & symbolic deduction has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "53d1e741507c861c",
+      "edge_id": "8055fe6ae3259568",
       "node_id": "theorem_symbolic",
       "dependency_id": "constraint_sat_smt",
       "type": "uses",
       "strength": "core",
-      "rationale": "Theorem proving & symbolic deduction uses Constraint satisfaction, SAT & SMT solving as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Theorem proving & symbolic deduction has a `uses` dependency on Constraint satisfaction, SAT & SMT solving because Constraint satisfaction, SAT & SMT solving is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "fe467289ef9b1125",
+      "edge_id": "1fc967b6a25e3a05",
       "node_id": "theorem_symbolic",
       "dependency_id": "neurosymbolic_system_model",
       "type": "uses",
       "strength": "core",
-      "rationale": "Theorem proving & symbolic deduction uses Neuro-symbolic models as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Theorem proving & symbolic deduction has a `uses` dependency on Neuro-symbolic models because Neuro-symbolic models is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "38601f0b757e393f",
+      "edge_id": "975ee92b4ec0182d",
       "node_id": "theorem_symbolic",
       "dependency_id": "programs_ast_ir",
       "type": "uses",
       "strength": "common",
-      "rationale": "Theorem proving & symbolic deduction uses Programs, ASTs, bytecode & intermediate representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Theorem proving & symbolic deduction has a `uses` dependency on Programs, ASTs, bytecode & intermediate representations because Programs, ASTs, bytecode & intermediate representations is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

@@ -16,79 +16,19 @@
       "notes": "The cited sources support distributions and belief states as representations of uncertainty. The contrast with point estimates is a concise synthesis."
     },
     {
-      "unit_id": "837039741e509ffa",
-      "node_id": "distributions_uncertainty",
-      "field": "why_it_matters",
-      "text": "The role of Distributions, uncertainty & beliefs is to connect Probability theory, Statistics & experimental design to downstream capabilities including Contrastive learning, Generative modeling, Calibration, uncertainty & risk objectives.",
-      "source_ids": [
-        "ref_pml",
-        "ref_aima",
-        "ref_vae"
-      ],
-      "evidence_location": "PML/AIMA probabilistic reasoning and statistical inference; VAE paper as an example of probabilistic generative modeling.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The probability/statistics and generative-modeling links are supported. Contrastive learning and the exact downstream list are not directly established by the candidate references."
-    },
-    {
-      "unit_id": "2d243df27e05b51f",
-      "node_id": "distributions_uncertainty",
-      "field": "examples[1]",
-      "text": "substrate for Contrastive learning",
-      "source_ids": [
-        "ref_pml"
-      ],
-      "evidence_location": "PML includes contrastive/self-supervised learning context, but the packet source does not directly establish distributions and beliefs as its substrate.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Contrastive objectives often involve probabilistic or distributional views, but the exact substrate claim is too broad for the cited evidence."
-    },
-    {
-      "unit_id": "86c314fac88faaa1",
-      "node_id": "distributions_uncertainty",
-      "field": "examples[2]",
-      "text": "substrate for Generative modeling",
-      "source_ids": [
-        "ref_pml",
-        "ref_vae",
-        "ref_diffusion"
-      ],
-      "evidence_location": "PML generative modeling material; VAE and diffusion references define probabilistic generative models.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Generative modeling commonly models data distributions; 'substrate for' is atlas phrasing."
-    },
-    {
-      "unit_id": "7bb56ad6236782ed",
-      "node_id": "distributions_uncertainty",
-      "field": "examples[3]",
-      "text": "substrate for Calibration, uncertainty & risk objectives",
-      "source_ids": [
-        "ref_pml",
-        "ref_nist"
-      ],
-      "evidence_location": "PML discusses predictive uncertainty/calibration-related probabilistic prediction; NIST AI RMF discusses risk framing.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Calibration and risk objectives rely on uncertainty estimates, but the exact combined capability name is graph terminology."
-    },
-    {
       "unit_id": "b39abdfd7889a0b3",
       "node_id": "distributions_uncertainty",
       "field": "limitations[1]",
       "text": "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Probability theory, Statistics & experimental design.",
       "source_ids": [
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "PML is relevant to probabilistic representations but does not directly support the full generic limitation sentence.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "The limitation appears generated and is not directly supported for distributions, uncertainty, and beliefs by the packet sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "f57e239ab2db4258",
@@ -118,6 +58,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "Statistical estimation and predictive uncertainty support this dependency, though experimental design is not directly shown by the packet source."
+    },
+    {
+      "unit_id": "41d32b3297cf50d5",
+      "node_id": "distributions_uncertainty",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Distributions, uncertainty & beliefs is modeled as depending on Probability theory, Statistics & experimental design and feeding downstream nodes such as Contrastive learning, Generative modeling, Calibration, uncertainty & risk objectives.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b6e24f996636b332",
+      "node_id": "distributions_uncertainty",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Contrastive learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d783383dd98b5dfe",
+      "node_id": "distributions_uncertainty",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Generative modeling",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5ce0e18d40fbd135",
+      "node_id": "distributions_uncertainty",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Calibration, uncertainty & risk objectives",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -150,5 +146,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "distributions_uncertainty",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

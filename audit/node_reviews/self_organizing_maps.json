@@ -1,19 +1,194 @@
 {
   "sentence_reviews": [
-    {"unit_id":"98971fbc490fbc7e","node_id":"self_organizing_maps","field":"definition","text":"A self-organizing map uses competitive learning to place prototype vectors on a low-dimensional lattice that approximately preserves neighborhood relationships.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning/PML unsupervised representation and prototype/clustering background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The definition is standard for SOMs, but the packet lacks a dedicated Kohonen/SOM source, so direct support is limited."},
-    {"unit_id":"7db4a69857b67938","node_id":"self_organizing_maps","field":"why_it_matters","text":"The role of Self-organizing maps & competitive learning is to connect Unsupervised learning, Embeddings & distributed representations to downstream capabilities including Tabular predictive analytics & decision support.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA/PML unsupervised learning and representation topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Unsupervised and representation connections are supported; tabular decision-support downstream role is not directly established."},
-    {"unit_id":"3dbbf93004d71999","node_id":"self_organizing_maps","field":"examples[1]","text":"substrate for Tabular predictive analytics & decision support","source_ids":["ref_pml"],"evidence_location":"PML general tabular/unsupervised modeling background.","reviewer":"codex","review_date":"2026-06-25","verdict":"unsupported","notes":"The packet sources do not directly support SOMs as a substrate for this downstream application."},
-    {"unit_id":"53d939a4dd439df0","node_id":"self_organizing_maps","field":"examples[2]","text":"combined with Unsupervised learning","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA/PML unsupervised learning topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"SOMs are normally unsupervised/competitive learning methods; direct SOM-specific citation is absent."},
-    {"unit_id":"a7568b298f5114ab","node_id":"self_organizing_maps","field":"limitations[1]","text":"Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Unsupervised learning, Embeddings & distributed representations.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA/PML unsupervised learning and representation background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Dependencies are plausible; broad limitation wording is generic and not directly sourced."},
-    {"unit_id":"69fc55e40e12f5aa","node_id":"self_organizing_maps","field":"dependencies.unsupervised_learning.rationale","text":"Self-organizing maps & competitive learning follows the learning setup expressed by Unsupervised learning.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA/PML unsupervised learning topics.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"SOM/competitive learning is normally unsupervised; exact SOM evidence is not in the packet source set."},
-    {"unit_id":"917e10d919761583","node_id":"self_organizing_maps","field":"dependencies.embeddings.rationale","text":"Self-organizing maps & competitive learning consumes, emits, or organizes information using Embeddings & distributed representations.","source_ids":["ref_dlbook","ref_pml"],"evidence_location":"Deep Learning/PML representation-learning background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Prototype vectors are representations, but 'embeddings & distributed representations' is broader than directly supported."},
-    {"unit_id":"bd2aedaaf0775ea8","node_id":"self_organizing_maps","field":"dependencies.local_plasticity_learning.rationale","text":"Self-organizing maps & competitive learning follows the learning setup expressed by Perceptron, Hebbian, Oja & spike-timing plasticity.","source_ids":["ref_aima","ref_pml"],"evidence_location":"AIMA/PML neural learning background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Competitive learning has local-update flavor, but the cited sources do not directly connect SOMs to the full local plasticity label."},
-    {"unit_id":"0f6cb5d76f0f3cc3","node_id":"self_organizing_maps","field":"dependencies.geometry_topology.rationale","text":"Self-organizing maps & competitive learning rests on the formal or computational capabilities supplied by Geometry, topology & symmetry.","source_ids":["ref_pml"],"evidence_location":"PML geometry/topology-adjacent representation background.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Neighborhood preservation/topographic maps make geometry/topology plausible, but direct evidence is weak."}
+    {
+      "unit_id": "98971fbc490fbc7e",
+      "node_id": "self_organizing_maps",
+      "field": "definition",
+      "text": "A self-organizing map uses competitive learning to place prototype vectors on a low-dimensional lattice that approximately preserves neighborhood relationships.",
+      "source_ids": [
+        "ref_dlbook",
+        "ref_pml"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "53d939a4dd439df0",
+      "node_id": "self_organizing_maps",
+      "field": "examples[2]",
+      "text": "combined with Unsupervised learning",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "AIMA/PML unsupervised learning topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "SOMs are normally unsupervised/competitive learning methods; direct SOM-specific citation is absent."
+    },
+    {
+      "unit_id": "a7568b298f5114ab",
+      "node_id": "self_organizing_maps",
+      "field": "limitations[1]",
+      "text": "Its inductive bias, data demand, optimization behavior, and compute profile can make it unsuitable outside the regimes where it was validated. Its direct dependencies include Unsupervised learning, Embeddings & distributed representations.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "69fc55e40e12f5aa",
+      "node_id": "self_organizing_maps",
+      "field": "dependencies.unsupervised_learning.rationale",
+      "text": "Self-organizing maps & competitive learning follows the learning setup expressed by Unsupervised learning.",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "evidence_location": "AIMA/PML unsupervised learning topics.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "SOM/competitive learning is normally unsupervised; exact SOM evidence is not in the packet source set."
+    },
+    {
+      "unit_id": "0e78080625d814ce",
+      "node_id": "self_organizing_maps",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Self-organizing maps & competitive learning is modeled as depending on Unsupervised learning, Embeddings & distributed representations and feeding downstream nodes such as Tabular predictive analytics & decision support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "3b317783e7a81ebc",
+      "node_id": "self_organizing_maps",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Tabular predictive analytics & decision support",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "4f80f9db4d025ba7",
+      "node_id": "self_organizing_maps",
+      "field": "dependencies.embeddings.rationale",
+      "text": "In this atlas graph, Self-organizing maps & competitive learning has a `represents_with` dependency on Embeddings & distributed representations with `core` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "34e55d69609f2fc9",
+      "node_id": "self_organizing_maps",
+      "field": "dependencies.local_plasticity_learning.rationale",
+      "text": "In this atlas graph, Self-organizing maps & competitive learning has a `trained_under` dependency on Perceptron, Hebbian, Oja & spike-timing plasticity with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "c44216bdba7d7c8a",
+      "node_id": "self_organizing_maps",
+      "field": "dependencies.geometry_topology.rationale",
+      "text": "In this atlas graph, Self-organizing maps & competitive learning has a `requires` dependency on Geometry, topology & symmetry with `common` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"80a4cad4185bcd07","node_id":"self_organizing_maps","dependency_id":"unsupervised_learning","source_ids":["ref_aima","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"trained_under/core is appropriate for SOM/competitive learning.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"84f0452553825707","node_id":"self_organizing_maps","dependency_id":"embeddings","source_ids":["ref_dlbook","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"represents_with/core is plausible via prototype vectors/topographic representation, but direct packet support is limited.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"b6c25dd8b17038d9","node_id":"self_organizing_maps","dependency_id":"local_plasticity_learning","source_ids":["ref_aima","ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"trained_under/common is plausible for local competitive updates, but the dependency label is broader than the evidence.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"03e76a0051d3cc04","node_id":"self_organizing_maps","dependency_id":"geometry_topology","source_ids":["ref_pml"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"requires/common is plausible from neighborhood-preserving maps, but direct support is weak.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "80a4cad4185bcd07",
+      "node_id": "self_organizing_maps",
+      "dependency_id": "unsupervised_learning",
+      "source_ids": [
+        "ref_aima",
+        "ref_pml"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "trained_under/core is appropriate for SOM/competitive learning.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "0abf5aec0e9f1693",
+      "node_id": "self_organizing_maps",
+      "dependency_id": "embeddings",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "98cc80ab84509cd8",
+      "node_id": "self_organizing_maps",
+      "dependency_id": "local_plasticity_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "82784e2cf223b38a",
+      "node_id": "self_organizing_maps",
+      "dependency_id": "geometry_topology",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    }
+  ],
+  "node_id": "self_organizing_maps",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

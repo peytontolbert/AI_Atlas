@@ -1,1 +1,161 @@
-{"sentence_reviews":[{"unit_id":"1d0368261b84b6d2","node_id":"pddl_htn_planning","field":"definition","text":"PDDL, STRIPS, and hierarchical task-network planning represent actions with preconditions and effects, then search for a valid plan from an initial state to a goal.","source_ids":["ref_aima"],"evidence_location":"AIMA classical planning, STRIPS/PDDL-style action schemas, and hierarchical planning material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The cited source directly supports action preconditions/effects and planning as search from initial state to goals."},{"unit_id":"2c30c7f23e4c2e97","node_id":"pddl_htn_planning","field":"why_it_matters","text":"The role of PDDL, STRIPS & hierarchical task-network planning is to connect Task decomposition & hierarchical reasoning, Discrete mathematics & logic to downstream capabilities including Formal verification of agents & plans.","source_ids":["ref_aima"],"evidence_location":"AIMA planning, logic, and formal reasoning material; formal-verification capability link is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Planning and logic links are supported; the formal-verification downstream role is plausible but not directly stated."},{"unit_id":"e901268d075f9a0c","node_id":"pddl_htn_planning","field":"examples[1]","text":"substrate for Formal verification of agents & plans","source_ids":["ref_aima"],"evidence_location":"AIMA formal planning/logical reasoning background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Formal action models can support verification, but the exact downstream capability is not directly cited."},{"unit_id":"532baee72df54586","node_id":"pddl_htn_planning","field":"examples[2]","text":"combined with Task decomposition & hierarchical reasoning","source_ids":["ref_aima"],"evidence_location":"AIMA hierarchical task-network planning material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"HTN planning directly combines planning with hierarchical task decomposition."},{"unit_id":"4da1a3c2ff5809a3","node_id":"pddl_htn_planning","field":"limitations[1]","text":"Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Task decomposition & hierarchical reasoning, Discrete mathematics & logic.","source_ids":["ref_aima"],"evidence_location":"AIMA planning/search complexity and logic material.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Search cost and dependencies are supported; self-evaluation/confident-error wording is broader than the cited evidence."},{"unit_id":"5fd3d1f6bb9d32b5","node_id":"pddl_htn_planning","field":"dependencies.task_decomposition.rationale","text":"PDDL, STRIPS & hierarchical task-network planning uses Task decomposition & hierarchical reasoning as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA HTN and planning material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"HTN planning directly depends on task decomposition; STRIPS/PDDL planning also uses goal/subgoal structure."},{"unit_id":"57d9d5e63d66212b","node_id":"pddl_htn_planning","field":"dependencies.discrete_math_logic.rationale","text":"PDDL, STRIPS & hierarchical task-network planning uses Discrete mathematics & logic as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA logical action representations and planning formalisms.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Preconditions, effects, states, and goals are formal/discrete logical structures."},{"unit_id":"078f8799b41ced2e","node_id":"pddl_htn_planning","field":"dependencies.graph_astar_search.rationale","text":"PDDL, STRIPS & hierarchical task-network planning uses Graph search, BFS/DFS & A* as a reusable ingredient in its defined operation.","source_ids":["ref_aima"],"evidence_location":"AIMA planning-as-search and heuristic search material.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Planning can use graph/heuristic search, but not all PDDL/HTN planning is specifically BFS/DFS/A*."}],"edge_reviews":[{"edge_id":"524052710211e188","node_id":"pddl_htn_planning","dependency_id":"task_decomposition","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Task decomposition is central for HTN and relevant to structured planning.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"47b848afdb20e528","node_id":"pddl_htn_planning","dependency_id":"discrete_math_logic","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Planning representations directly use discrete logical state/action models.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"e0b8f2194a0f390c","node_id":"pddl_htn_planning","dependency_id":"graph_astar_search","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Graph/heuristic search is a common planning method, but not mandatory for every HTN/PDDL planner.","relationship_type_supported":true,"strength_supported":true}]}
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "1d0368261b84b6d2",
+      "node_id": "pddl_htn_planning",
+      "field": "definition",
+      "text": "PDDL, STRIPS, and hierarchical task-network planning represent actions with preconditions and effects, then search for a valid plan from an initial state to a goal.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA classical planning, STRIPS/PDDL-style action schemas, and hierarchical planning material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The cited source directly supports action preconditions/effects and planning as search from initial state to goals."
+    },
+    {
+      "unit_id": "532baee72df54586",
+      "node_id": "pddl_htn_planning",
+      "field": "examples[2]",
+      "text": "combined with Task decomposition & hierarchical reasoning",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA hierarchical task-network planning material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "HTN planning directly combines planning with hierarchical task decomposition."
+    },
+    {
+      "unit_id": "4da1a3c2ff5809a3",
+      "node_id": "pddl_htn_planning",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Task decomposition & hierarchical reasoning, Discrete mathematics & logic.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "79598874ff57a635",
+      "node_id": "pddl_htn_planning",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, PDDL, STRIPS & hierarchical task-network planning is modeled as depending on Task decomposition & hierarchical reasoning, Discrete mathematics & logic and feeding downstream nodes such as Formal verification of agents & plans.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b2406de0132f6d74",
+      "node_id": "pddl_htn_planning",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Formal verification of agents & plans",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "8424111457df102c",
+      "node_id": "pddl_htn_planning",
+      "field": "dependencies.task_decomposition.rationale",
+      "text": "In this atlas graph, PDDL, STRIPS & hierarchical task-network planning has a `uses` dependency on Task decomposition & hierarchical reasoning because Task decomposition & hierarchical reasoning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d4e9eafb2cfabe3a",
+      "node_id": "pddl_htn_planning",
+      "field": "dependencies.discrete_math_logic.rationale",
+      "text": "In this atlas graph, PDDL, STRIPS & hierarchical task-network planning has a `uses` dependency on Discrete mathematics & logic because Discrete mathematics & logic is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "acfbd458ce9c6eb4",
+      "node_id": "pddl_htn_planning",
+      "field": "dependencies.graph_astar_search.rationale",
+      "text": "In this atlas graph, PDDL, STRIPS & hierarchical task-network planning has a `uses` dependency on Graph search, BFS/DFS & A* because Graph search, BFS/DFS & A* is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "56773e6611dae993",
+      "node_id": "pddl_htn_planning",
+      "dependency_id": "task_decomposition",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "af39648b40d9c5f1",
+      "node_id": "pddl_htn_planning",
+      "dependency_id": "discrete_math_logic",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "8d15e8525099fe81",
+      "node_id": "pddl_htn_planning",
+      "dependency_id": "graph_astar_search",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "pddl_htn_planning",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
+}

@@ -13,10 +13,10 @@
     ],
     "aliases": [],
     "definition": "Representations aim to recover stable causal factors and mechanisms rather than only predictive correlations.",
-    "why_it_matters": "The role of Causal representation learning is to connect Causal inference, Latent variables & hidden state to downstream capabilities including Scientific ML, simulators & digital twins, Medical imaging & clinical decision support.",
+    "why_it_matters": "In this atlas graph, Causal representation learning is modeled as depending on Causal inference, Latent variables & hidden state and feeding downstream nodes such as Scientific ML, simulators & digital twins, Medical imaging & clinical decision support.",
     "examples": [
-      "substrate for Scientific ML, simulators & digital twins",
-      "substrate for Medical imaging & clinical decision support"
+      "atlas downstream link to Scientific ML, simulators & digital twins",
+      "atlas downstream link to Medical imaging & clinical decision support"
     ],
     "limitations": [
       "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Causal inference, Latent variables & hidden state."
@@ -33,25 +33,25 @@
         "id": "causal_inference",
         "type": "uses",
         "strength": "core",
-        "rationale": "Causal representation learning uses Causal inference as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Causal representation learning has a `uses` dependency on Causal inference because Causal inference is modeled as a reusable ingredient for the node."
       },
       {
         "id": "latent_variables",
         "type": "uses",
         "strength": "core",
-        "rationale": "Causal representation learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Causal representation learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
       },
       {
         "id": "supervised_learning",
         "type": "trained_under",
         "strength": "common",
-        "rationale": "Causal representation learning follows the learning setup expressed by Supervised learning."
+        "rationale": "In this atlas graph, Causal representation learning has a `trained_under` dependency on Supervised learning with `common` strength."
       },
       {
         "id": "unsupervised_learning",
         "type": "trained_under",
         "strength": "common",
-        "rationale": "Causal representation learning follows the learning setup expressed by Unsupervised learning."
+        "rationale": "In this atlas graph, Causal representation learning has a `trained_under` dependency on Unsupervised learning with `common` strength."
       }
     ]
   },
@@ -63,22 +63,22 @@
       "text": "Representations aim to recover stable causal factors and mechanisms rather than only predictive correlations."
     },
     {
-      "unit_id": "d9299051c3ef96a9",
+      "unit_id": "ef61c99a0a08a711",
       "node_id": "causal_representation_learning",
       "field": "why_it_matters",
-      "text": "The role of Causal representation learning is to connect Causal inference, Latent variables & hidden state to downstream capabilities including Scientific ML, simulators & digital twins, Medical imaging & clinical decision support."
+      "text": "In this atlas graph, Causal representation learning is modeled as depending on Causal inference, Latent variables & hidden state and feeding downstream nodes such as Scientific ML, simulators & digital twins, Medical imaging & clinical decision support."
     },
     {
-      "unit_id": "ad2105732186ca7b",
+      "unit_id": "229327178fc17666",
       "node_id": "causal_representation_learning",
       "field": "examples[1]",
-      "text": "substrate for Scientific ML, simulators & digital twins"
+      "text": "atlas downstream link to Scientific ML, simulators & digital twins"
     },
     {
-      "unit_id": "1706ebb24f38e5fe",
+      "unit_id": "e92e5cc02d00cda1",
       "node_id": "causal_representation_learning",
       "field": "examples[2]",
-      "text": "substrate for Medical imaging & clinical decision support"
+      "text": "atlas downstream link to Medical imaging & clinical decision support"
     },
     {
       "unit_id": "f9993933a122b180",
@@ -87,62 +87,62 @@
       "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Causal inference, Latent variables & hidden state."
     },
     {
-      "unit_id": "e4626117812c90e2",
+      "unit_id": "ed1f51149f0a8add",
       "node_id": "causal_representation_learning",
       "field": "dependencies.causal_inference.rationale",
-      "text": "Causal representation learning uses Causal inference as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Causal representation learning has a `uses` dependency on Causal inference because Causal inference is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "d0c4c866ba1acd26",
+      "unit_id": "cd4fc2f2cf7c0b6e",
       "node_id": "causal_representation_learning",
       "field": "dependencies.latent_variables.rationale",
-      "text": "Causal representation learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Causal representation learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "ee49dd91620b4e3f",
+      "unit_id": "d9f098bf69848949",
       "node_id": "causal_representation_learning",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Causal representation learning follows the learning setup expressed by Supervised learning."
+      "text": "In this atlas graph, Causal representation learning has a `trained_under` dependency on Supervised learning with `common` strength."
     },
     {
-      "unit_id": "52d22ba8753aa101",
+      "unit_id": "5e3b68e277d8289c",
       "node_id": "causal_representation_learning",
       "field": "dependencies.unsupervised_learning.rationale",
-      "text": "Causal representation learning follows the learning setup expressed by Unsupervised learning."
+      "text": "In this atlas graph, Causal representation learning has a `trained_under` dependency on Unsupervised learning with `common` strength."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "6613b532a3c08c94",
+      "edge_id": "5514e6a4af7a815b",
       "node_id": "causal_representation_learning",
       "dependency_id": "causal_inference",
       "type": "uses",
       "strength": "core",
-      "rationale": "Causal representation learning uses Causal inference as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Causal representation learning has a `uses` dependency on Causal inference because Causal inference is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "a1639980e2e981e5",
+      "edge_id": "d838d1eab193ec8f",
       "node_id": "causal_representation_learning",
       "dependency_id": "latent_variables",
       "type": "uses",
       "strength": "core",
-      "rationale": "Causal representation learning uses Latent variables & hidden state as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Causal representation learning has a `uses` dependency on Latent variables & hidden state because Latent variables & hidden state is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "0f9edf5bb4610666",
+      "edge_id": "e1c13cb89e194eab",
       "node_id": "causal_representation_learning",
       "dependency_id": "supervised_learning",
       "type": "trained_under",
       "strength": "common",
-      "rationale": "Causal representation learning follows the learning setup expressed by Supervised learning."
+      "rationale": "In this atlas graph, Causal representation learning has a `trained_under` dependency on Supervised learning with `common` strength."
     },
     {
-      "edge_id": "89f29d9a3491abc6",
+      "edge_id": "d44dde18f26aec02",
       "node_id": "causal_representation_learning",
       "dependency_id": "unsupervised_learning",
       "type": "trained_under",
       "strength": "common",
-      "rationale": "Causal representation learning follows the learning setup expressed by Unsupervised learning."
+      "rationale": "In this atlas graph, Causal representation learning has a `trained_under` dependency on Unsupervised learning with `common` strength."
     }
   ],
   "candidate_references": {

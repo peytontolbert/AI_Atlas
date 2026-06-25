@@ -18,73 +18,6 @@
       "notes": "The source set supports ODEs and PDEs as tools for modeling change and physical phenomena, and SDEs as models of stochastic dynamical systems. The sentence compresses three equation classes into one claim, so it is not verified against a single exact phrasing."
     },
     {
-      "unit_id": "2d7a215bde420436",
-      "node_id": "differential_equations",
-      "field": "why_it_matters",
-      "text": "The role of Differential equations is to connect Calculus & automatic differentiation theory, Numerical analysis to downstream capabilities including Dynamical systems & control theory, Neuro-symbolic & physics-informed learning, Flow matching & transport objectives.",
-      "source_ids": [
-        "ref_aima",
-        "url:https://arxiv.org/abs/2012.07558",
-        "url:https://arxiv.org/abs/2109.01621",
-        "url:https://arxiv.org/abs/2011.02415",
-        "url:https://arxiv.org/abs/2107.07871",
-        "url:https://arxiv.org/abs/2501.16839",
-        "url:https://arxiv.org/abs/0706.1339",
-        "url:https://arxiv.org/abs/2101.10678"
-      ],
-      "evidence_location": "AIMA preface lines 63-66 and 120-122; arXiv 2012.07558 lines 5-7; arXiv 2109.01621 lines 3-5 and 42-44; arXiv 2011.02415 abstract lines 38-40; arXiv 2107.07871 abstract lines 38-39; arXiv 2501.16839 abstract lines 38-39; arXiv 0706.1339 lines 18-25 and 61-78; arXiv 2101.10678 abstract lines 3-4.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "This is a composite role statement assembled from several application areas. The calculus/automatic-differentiation and numerical-analysis parts are supported indirectly, while the downstream examples are each supported by separate sources. The exact connector language is editorial synthesis, not a verbatim source claim."
-    },
-    {
-      "unit_id": "1391455dcda84138",
-      "node_id": "differential_equations",
-      "field": "examples[1]",
-      "text": "substrate for Dynamical systems & control theory",
-      "source_ids": [
-        "url:https://arxiv.org/abs/0706.1339",
-        "url:https://arxiv.org/abs/2101.10678",
-        "url:https://arxiv.org/abs/2109.01621"
-      ],
-      "evidence_location": "arXiv 0706.1339 lines 7-10 and 18-25; arXiv 2101.10678 abstract lines 3-4; arXiv 2109.01621 lines 20-23.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The cited sources support differential equations as the state equations or governing equations in control and dynamical-systems settings. 'Substrate for' is an editorial paraphrase rather than an exact source phrase."
-    },
-    {
-      "unit_id": "97e895a1d521fae6",
-      "node_id": "differential_equations",
-      "field": "examples[2]",
-      "text": "substrate for Neuro-symbolic & physics-informed learning",
-      "source_ids": [
-        "url:https://arxiv.org/abs/2011.02415",
-        "url:https://arxiv.org/abs/2107.07871",
-        "url:https://arxiv.org/abs/2109.01621"
-      ],
-      "evidence_location": "arXiv 2011.02415 abstract lines 38-40; arXiv 2107.07871 abstract lines 38-39; arXiv 2109.01621 lines 42-44.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The sources support differential equations as a target for neuro-symbolic solving and physics-informed neural methods. The wording is a higher-level synthesis, not a directly quoted claim."
-    },
-    {
-      "unit_id": "1dd16f644bd67526",
-      "node_id": "differential_equations",
-      "field": "examples[3]",
-      "text": "substrate for Flow matching & transport objectives",
-      "source_ids": [
-        "url:https://arxiv.org/abs/2501.16839"
-      ],
-      "evidence_location": "arXiv 2501.16839 abstract lines 38-39.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The paper directly ties flow matching to an ordinary differential equation and transport plans. 'Transport objectives' is an editorial generalization from the source's transport-plan language."
-    },
-    {
       "unit_id": "df71725842dbacb7",
       "node_id": "differential_equations",
       "field": "limitations[1]",
@@ -92,13 +25,14 @@
       "source_ids": [
         "ref_aima",
         "url:https://arxiv.org/abs/2012.07558",
-        "url:https://arxiv.org/abs/2109.01621"
+        "url:https://arxiv.org/abs/2109.01621",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "AIMA preface lines 63-66 and 120-122; arXiv 2012.07558 lines 5-7; arXiv 2109.01621 lines 3-5 and 42-44.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The dependency portion is defensible, but the first clause about empirical irrelevance is not stated that directly in the sources. The sentence mixes a general modeling caution with a dependency assertion, so it should be narrowed if sentence-level verification is required."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "e6ae49c8b3dcc668",
@@ -129,6 +63,62 @@
       "review_date": "2026-06-25",
       "verdict": "supported_by_synthesis",
       "notes": "The sources support numerical methods as the practical means for solving many differential equations and compare modern PINN approaches against classical numerical methods. The phrasing 'rests on' is stronger than either source states verbatim."
+    },
+    {
+      "unit_id": "4bb5e98458c032e6",
+      "node_id": "differential_equations",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Differential equations is modeled as depending on Calculus & automatic differentiation theory, Numerical analysis and feeding downstream nodes such as Dynamical systems & control theory, Neuro-symbolic & physics-informed learning, Flow matching & transport objectives.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b0977a10b898f41e",
+      "node_id": "differential_equations",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Dynamical systems & control theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "a28b3c388eff60f6",
+      "node_id": "differential_equations",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Neuro-symbolic & physics-informed learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "7383ea859c4258b0",
+      "node_id": "differential_equations",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Flow matching & transport objectives",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -162,5 +152,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "differential_equations",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

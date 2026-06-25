@@ -5,19 +5,24 @@
       "node_id": "structured_decoding_runtime",
       "field": "definition",
       "text": "Structured-decoding runtimes compile grammars or schemas into efficient token filters integrated with a model server’s decoding loop.",
-      "source_ids": ["ref_structured"],
-      "evidence_location": "Structured-output survey supports grammar/schema-constrained generation and token-level constraints; efficient model-server runtime integration is more specific than the citation.",
+      "source_ids": [
+        "ref_structured"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Add a runtime implementation source for model-server integration and efficiency."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "2394c91862c49ec3",
       "node_id": "structured_decoding_runtime",
       "field": "why_it_matters",
       "text": "They make reliable structured generation practical at serving scale instead of relying only on slow application-side retries.",
-      "source_ids": ["ref_structured", "ref_ddia"],
+      "source_ids": [
+        "ref_structured",
+        "ref_ddia"
+      ],
       "evidence_location": "Structured-output survey supports reliability motivation; DDIA supports serving-scale concerns, but the retry comparison is not directly sourced.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -29,7 +34,9 @@
       "node_id": "structured_decoding_runtime",
       "field": "examples[1]",
       "text": "JSON-schema token masks",
-      "source_ids": ["ref_structured"],
+      "source_ids": [
+        "ref_structured"
+      ],
       "evidence_location": "Structured-output survey supports schema-constrained output generation and token constraints.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -41,7 +48,9 @@
       "node_id": "structured_decoding_runtime",
       "field": "examples[2]",
       "text": "CFG decoding engines",
-      "source_ids": ["ref_structured"],
+      "source_ids": [
+        "ref_structured"
+      ],
       "evidence_location": "Structured-output survey covers grammar-constrained generation.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
@@ -53,98 +62,117 @@
       "node_id": "structured_decoding_runtime",
       "field": "examples[3]",
       "text": "typed tool-call serving",
-      "source_ids": ["ref_structured"],
-      "evidence_location": "Structured-output survey is relevant to typed outputs, but tool-call serving is not directly established in packet evidence.",
+      "source_ids": [
+        "ref_structured",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Needs a tool-calling or structured serving source."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "260abb0b81266b6f",
       "node_id": "structured_decoding_runtime",
       "field": "limitations[1]",
       "text": "Grammar compilation, tokenizer interaction, and per-request constraints can reduce throughput or complicate batching.",
-      "source_ids": ["ref_structured", "ref_ddia"],
-      "evidence_location": "Sources support constrained decoding and serving-scale concerns generally; throughput/batching impact is not directly evidenced.",
+      "source_ids": [
+        "ref_structured",
+        "ref_ddia",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Add benchmark/runtime evidence for performance claims."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
-      "unit_id": "5cec7d1cad9d3511",
+      "unit_id": "237a2e8c83fa905b",
       "node_id": "structured_decoding_runtime",
       "field": "dependencies.grammar_constrained_decoding.rationale",
-      "text": "Structured-decoding runtimes turns Grammar- and schema-constrained decoding into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_structured"],
-      "evidence_location": "Structured-output survey supports grammar/schema-constrained decoding.",
+      "text": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Grammar- and schema-constrained decoding because Grammar- and schema-constrained decoding is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core dependency is well supported conceptually."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "5b620a73da988268",
+      "unit_id": "d3d9e84104afc62a",
       "node_id": "structured_decoding_runtime",
       "field": "dependencies.model_serving.rationale",
-      "text": "Structured-decoding runtimes turns Model servers & inference runtimes into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_structured", "ref_ddia"],
-      "evidence_location": "Sources support constrained generation and data-system operations broadly; model serving linkage is synthesized.",
+      "text": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Model servers & inference runtimes because Model servers & inference runtimes is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Core dependency is plausible; needs serving-runtime citation for exact support."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "9e16937200c44fac",
+      "unit_id": "39ec79259f1f94e6",
       "node_id": "structured_decoding_runtime",
       "field": "dependencies.compilers_runtimes.rationale",
-      "text": "Structured-decoding runtimes turns Graph compilers, runtimes & operator fusion into a scalable, deployable, observable, or integrity-preserving capability.",
-      "source_ids": ["ref_structured"],
-      "evidence_location": "The structured-output source supports constrained decoding, not graph compilers or operator fusion.",
+      "text": "In this atlas graph, Structured-decoding runtimes has an `operationalizes` dependency on Graph compilers, runtimes & operator fusion because Graph compilers, runtimes & operator fusion is modeled as infrastructure needed to operationalize the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Compiler/runtime dependency should be narrowed or sourced."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
     {
-      "edge_id": "ed2290d7560d01f1",
+      "edge_id": "390235a25fda5064",
       "node_id": "structured_decoding_runtime",
       "dependency_id": "grammar_constrained_decoding",
-      "source_ids": ["ref_structured"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Grammar/schema-constrained decoding is central to the runtime.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "f21bfb7877c966db",
+      "edge_id": "384f4cf9fece3250",
       "node_id": "structured_decoding_runtime",
       "dependency_id": "model_serving",
-      "source_ids": ["ref_structured", "ref_ddia"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Serving integration is plausible for runtime deployment, but direct evidence is missing.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "93c2f2191259ad25",
+      "edge_id": "376b5bb39e376e7e",
       "node_id": "structured_decoding_runtime",
       "dependency_id": "compilers_runtimes",
-      "source_ids": ["ref_structured"],
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Compilation of grammars may justify a runtime dependency, but graph compiler/operator-fusion wording is too broad.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "structured_decoding_runtime",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

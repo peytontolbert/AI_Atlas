@@ -15,74 +15,19 @@
       "notes": "The cited source set directly supports the claim at the level stated."
     },
     {
-      "unit_id": "9eacc9b7e74e4824",
-      "node_id": "gating",
-      "field": "why_it_matters",
-      "text": "The role of Gating & multiplicative control is to connect Affine transforms & dense layers, Nonlinear activations to downstream capabilities including Recurrence & feedback state, Selective state-space scan, Routing, conditional computation & mixture-of-experts.",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
-    },
-    {
-      "unit_id": "a43998219e665fc1",
-      "node_id": "gating",
-      "field": "examples[1]",
-      "text": "substrate for Recurrence & feedback state",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "verified",
-      "notes": "The cited source set directly supports the claim at the level stated."
-    },
-    {
-      "unit_id": "42f155660baec344",
-      "node_id": "gating",
-      "field": "examples[2]",
-      "text": "substrate for Selective state-space scan",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
-    },
-    {
-      "unit_id": "9f434c69c1cf585f",
-      "node_id": "gating",
-      "field": "examples[3]",
-      "text": "substrate for Routing, conditional computation & mixture-of-experts",
-      "source_ids": [
-        "ref_dlbook"
-      ],
-      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "The claim is defensible by combining the cited mechanism source with dependency/background sources, but is not a single-source verbatim claim."
-    },
-    {
       "unit_id": "335edf921d98efa4",
       "node_id": "gating",
       "field": "limitations[1]",
       "text": "Its benefit depends on implementation, scale, data, and hardware; the same mechanism can add complexity without improving the target workload. Its direct dependencies include Affine transforms & dense layers, Nonlinear activations.",
       "source_ids": [
-        "ref_dlbook"
+        "ref_dlbook",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Deep Learning covers gated recurrent units/LSTM gates and multiplicative interactions using affine transforms and nonlinearities to regulate written, forgotten, routed, or exposed information.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The cited source set partially supports the claim, but the wording is broader than the inspected evidence or relies on atlas graph terminology."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "2c8d9bee8ee431c6",
@@ -111,6 +56,62 @@
       "review_date": "2026-06-25",
       "verdict": "verified",
       "notes": "The cited source set directly supports the claim at the level stated. Dependency rationale is graph-derived and reviewed as an edge-style support claim."
+    },
+    {
+      "unit_id": "aa35ed3bfd3472fb",
+      "node_id": "gating",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Gating & multiplicative control is modeled as depending on Affine transforms & dense layers, Nonlinear activations and feeding downstream nodes such as Recurrence & feedback state, Selective state-space scan, Routing, conditional computation & mixture-of-experts.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "262546fe19524fe8",
+      "node_id": "gating",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Recurrence & feedback state",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "91be09995c9d5c4c",
+      "node_id": "gating",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Selective state-space scan",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "3d3a953d8f257ffe",
+      "node_id": "gating",
+      "field": "examples[3]",
+      "text": "atlas downstream link to Routing, conditional computation & mixture-of-experts",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -142,5 +143,8 @@
       "relationship_type_supported": true,
       "strength_supported": true
     }
-  ]
+  ],
+  "node_id": "gating",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

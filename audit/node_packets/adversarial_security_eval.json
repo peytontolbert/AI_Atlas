@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Adversarial security evaluation probes evasion, extraction, prompt injection, tool abuse, data poisoning, privacy leakage, and supply-chain compromise.",
-    "why_it_matters": "The role of Adversarial robustness & security testing is to connect Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation to downstream capabilities including Red teaming, abuse testing & threat modeling, Fault tolerance, security, energy & cost optimization, Cybersecurity, finance & operational risk AI.",
+    "why_it_matters": "In this atlas graph, Adversarial robustness & security testing is modeled as depending on Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation and feeding downstream nodes such as Red teaming, abuse testing & threat modeling, Fault tolerance, security, energy & cost optimization, Cybersecurity, finance & operational risk AI.",
     "examples": [
-      "substrate for Red teaming, abuse testing & threat modeling",
-      "substrate for Fault tolerance, security, energy & cost optimization",
-      "substrate for Cybersecurity, finance & operational risk AI"
+      "atlas downstream link to Red teaming, abuse testing & threat modeling",
+      "atlas downstream link to Fault tolerance, security, energy & cost optimization",
+      "atlas downstream link to Cybersecurity, finance & operational risk AI"
     ],
     "limitations": [
       "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation."
@@ -34,19 +34,19 @@
         "id": "adversarial_training_mechanism",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Adversarial examples & adversarial training."
+        "rationale": "In this atlas graph, Adversarial robustness & security testing has an `evaluates_or_constrains` dependency on Adversarial examples & adversarial training because Adversarial examples & adversarial training is modeled as evaluation, constraint, audit, or governance support."
       },
       {
         "id": "robustness_ood",
         "type": "evaluates_or_constrains",
         "strength": "core",
-        "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Robustness, distribution shift & OOD evaluation."
+        "rationale": "In this atlas graph, Adversarial robustness & security testing has an `evaluates_or_constrains` dependency on Robustness, distribution shift & OOD evaluation because Robustness, distribution shift & OOD evaluation is modeled as evaluation, constraint, audit, or governance support."
       },
       {
         "id": "cache_tool_interfaces",
         "type": "evaluates_or_constrains",
         "strength": "common",
-        "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Caches, APIs & tool interfaces."
+        "rationale": "In this atlas graph, Adversarial robustness & security testing has an `evaluates_or_constrains` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as evaluation, constraint, audit, or governance support."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Adversarial security evaluation probes evasion, extraction, prompt injection, tool abuse, data poisoning, privacy leakage, and supply-chain compromise."
     },
     {
-      "unit_id": "4175bbdc6a7774ac",
+      "unit_id": "64d0a2d2fd69cf46",
       "node_id": "adversarial_security_eval",
       "field": "why_it_matters",
-      "text": "The role of Adversarial robustness & security testing is to connect Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation to downstream capabilities including Red teaming, abuse testing & threat modeling, Fault tolerance, security, energy & cost optimization, Cybersecurity, finance & operational risk AI."
+      "text": "In this atlas graph, Adversarial robustness & security testing is modeled as depending on Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation and feeding downstream nodes such as Red teaming, abuse testing & threat modeling, Fault tolerance, security, energy & cost optimization, Cybersecurity, finance & operational risk AI."
     },
     {
-      "unit_id": "c445c2160969e4a6",
+      "unit_id": "7ecf50b1f909f3b2",
       "node_id": "adversarial_security_eval",
       "field": "examples[1]",
-      "text": "substrate for Red teaming, abuse testing & threat modeling"
+      "text": "atlas downstream link to Red teaming, abuse testing & threat modeling"
     },
     {
-      "unit_id": "f23fa4e4fdbadf16",
+      "unit_id": "986ba030e23bfdef",
       "node_id": "adversarial_security_eval",
       "field": "examples[2]",
-      "text": "substrate for Fault tolerance, security, energy & cost optimization"
+      "text": "atlas downstream link to Fault tolerance, security, energy & cost optimization"
     },
     {
-      "unit_id": "95b5c4aaa4077bf3",
+      "unit_id": "533f5ec5a464534e",
       "node_id": "adversarial_security_eval",
       "field": "examples[3]",
-      "text": "substrate for Cybersecurity, finance & operational risk AI"
+      "text": "atlas downstream link to Cybersecurity, finance & operational risk AI"
     },
     {
       "unit_id": "7a74e1b0d61f00ad",
@@ -88,48 +88,48 @@
       "text": "Coverage is necessarily incomplete: measured proxies, policies, and test suites cannot enumerate every deployment context or adversary. Its direct dependencies include Adversarial examples & adversarial training, Robustness, distribution shift & OOD evaluation."
     },
     {
-      "unit_id": "6bcca0df3e6eb04d",
+      "unit_id": "02eca5fab516869e",
       "node_id": "adversarial_security_eval",
       "field": "dependencies.adversarial_training_mechanism.rationale",
-      "text": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Adversarial examples & adversarial training."
+      "text": "In this atlas graph, Adversarial robustness & security testing has an `evaluates_or_constrains` dependency on Adversarial examples & adversarial training because Adversarial examples & adversarial training is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "unit_id": "f2abdce804ba0863",
+      "unit_id": "fe2ec8f58b9bb798",
       "node_id": "adversarial_security_eval",
       "field": "dependencies.robustness_ood.rationale",
-      "text": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Robustness, distribution shift & OOD evaluation."
+      "text": "In this atlas graph, Adversarial robustness & security testing has an `evaluates_or_constrains` dependency on Robustness, distribution shift & OOD evaluation because Robustness, distribution shift & OOD evaluation is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "unit_id": "e86ec9f7c15d65bf",
+      "unit_id": "dd255675e852aacd",
       "node_id": "adversarial_security_eval",
       "field": "dependencies.cache_tool_interfaces.rationale",
-      "text": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Caches, APIs & tool interfaces."
+      "text": "In this atlas graph, Adversarial robustness & security testing has an `evaluates_or_constrains` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as evaluation, constraint, audit, or governance support."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "659a15c3d9298f69",
+      "edge_id": "885af4819cb762ba",
       "node_id": "adversarial_security_eval",
       "dependency_id": "adversarial_training_mechanism",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Adversarial examples & adversarial training."
+      "rationale": "In this atlas graph, Adversarial robustness & security testing has an `evaluates_or_constrains` dependency on Adversarial examples & adversarial training because Adversarial examples & adversarial training is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "edge_id": "c6eaa76d3cf1373b",
+      "edge_id": "cb94ea3dd5231f58",
       "node_id": "adversarial_security_eval",
       "dependency_id": "robustness_ood",
       "type": "evaluates_or_constrains",
       "strength": "core",
-      "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Robustness, distribution shift & OOD evaluation."
+      "rationale": "In this atlas graph, Adversarial robustness & security testing has an `evaluates_or_constrains` dependency on Robustness, distribution shift & OOD evaluation because Robustness, distribution shift & OOD evaluation is modeled as evaluation, constraint, audit, or governance support."
     },
     {
-      "edge_id": "9fa106121677d017",
+      "edge_id": "511910eb798c25e0",
       "node_id": "adversarial_security_eval",
       "dependency_id": "cache_tool_interfaces",
       "type": "evaluates_or_constrains",
       "strength": "common",
-      "rationale": "Adversarial robustness & security testing measures, constrains, audits, or governs behavior using Caches, APIs & tool interfaces."
+      "rationale": "In this atlas graph, Adversarial robustness & security testing has an `evaluates_or_constrains` dependency on Caches, APIs & tool interfaces because Caches, APIs & tool interfaces is modeled as evaluation, constraint, audit, or governance support."
     }
   ],
   "candidate_references": {

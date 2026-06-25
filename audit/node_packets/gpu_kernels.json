@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "CUDA, ROCm, Triton, and custom kernels map tensor operations onto accelerator threads, memory tiles, vector units, and communication primitives.",
-    "why_it_matters": "The role of CUDA, ROCm, Triton & custom kernels is to connect GPUs, TPUs & AI accelerators, Algorithms & data structures to downstream capabilities including Graph compilers, runtimes & operator fusion.",
+    "why_it_matters": "In this atlas graph, CUDA, ROCm, Triton & custom kernels is modeled as depending on GPUs, TPUs & AI accelerators, Algorithms & data structures and feeding downstream nodes such as Graph compilers, runtimes & operator fusion.",
     "examples": [
-      "substrate for Graph compilers, runtimes & operator fusion",
+      "atlas downstream link to Graph compilers, runtimes & operator fusion",
       "combined with GPUs, TPUs & AI accelerators"
     ],
     "limitations": [
@@ -35,19 +35,19 @@
         "id": "accelerators",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "CUDA, ROCm, Triton & custom kernels turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "algorithms_data_structures",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "CUDA, ROCm, Triton & custom kernels turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on Algorithms & data structures because Algorithms & data structures is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "tensors",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "CUDA, ROCm, Triton & custom kernels turns Scalars, vectors, matrices & tensors into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -59,16 +59,16 @@
       "text": "CUDA, ROCm, Triton, and custom kernels map tensor operations onto accelerator threads, memory tiles, vector units, and communication primitives."
     },
     {
-      "unit_id": "0464f34dc107f7e1",
+      "unit_id": "d0b7ab21356645b1",
       "node_id": "gpu_kernels",
       "field": "why_it_matters",
-      "text": "The role of CUDA, ROCm, Triton & custom kernels is to connect GPUs, TPUs & AI accelerators, Algorithms & data structures to downstream capabilities including Graph compilers, runtimes & operator fusion."
+      "text": "In this atlas graph, CUDA, ROCm, Triton & custom kernels is modeled as depending on GPUs, TPUs & AI accelerators, Algorithms & data structures and feeding downstream nodes such as Graph compilers, runtimes & operator fusion."
     },
     {
-      "unit_id": "a64f7d3b3f20e320",
+      "unit_id": "30da09ddc0feedf3",
       "node_id": "gpu_kernels",
       "field": "examples[1]",
-      "text": "substrate for Graph compilers, runtimes & operator fusion"
+      "text": "atlas downstream link to Graph compilers, runtimes & operator fusion"
     },
     {
       "unit_id": "6c3a9189976de0b2",
@@ -83,48 +83,48 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include GPUs, TPUs & AI accelerators, Algorithms & data structures."
     },
     {
-      "unit_id": "39d2bbde675d9fc2",
+      "unit_id": "93e249afb74742ec",
       "node_id": "gpu_kernels",
       "field": "dependencies.accelerators.rationale",
-      "text": "CUDA, ROCm, Triton & custom kernels turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "84a1f8096caa3209",
+      "unit_id": "2cc02067c655cb17",
       "node_id": "gpu_kernels",
       "field": "dependencies.algorithms_data_structures.rationale",
-      "text": "CUDA, ROCm, Triton & custom kernels turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on Algorithms & data structures because Algorithms & data structures is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "7f5186b8f875fddf",
+      "unit_id": "1324f7809ebb474e",
       "node_id": "gpu_kernels",
       "field": "dependencies.tensors.rationale",
-      "text": "CUDA, ROCm, Triton & custom kernels turns Scalars, vectors, matrices & tensors into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "15442d1bb8263db6",
+      "edge_id": "a0695d05c8cb66a4",
       "node_id": "gpu_kernels",
       "dependency_id": "accelerators",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "CUDA, ROCm, Triton & custom kernels turns GPUs, TPUs & AI accelerators into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on GPUs, TPUs & AI accelerators because GPUs, TPUs & AI accelerators is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "7a6b023fbd5cf7e7",
+      "edge_id": "af99b179ca2369e9",
       "node_id": "gpu_kernels",
       "dependency_id": "algorithms_data_structures",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "CUDA, ROCm, Triton & custom kernels turns Algorithms & data structures into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on Algorithms & data structures because Algorithms & data structures is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "71bd8243bd18f7f2",
+      "edge_id": "b2d4baca2fd6d366",
       "node_id": "gpu_kernels",
       "dependency_id": "tensors",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "CUDA, ROCm, Triton & custom kernels turns Scalars, vectors, matrices & tensors into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, CUDA, ROCm, Triton & custom kernels has an `operationalizes` dependency on Scalars, vectors, matrices & tensors because Scalars, vectors, matrices & tensors is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

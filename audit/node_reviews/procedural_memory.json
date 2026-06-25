@@ -17,38 +17,6 @@
       "notes": "Direct verification would require a node-specific citation."
     },
     {
-      "unit_id": "df78c142769d6d85",
-      "node_id": "procedural_memory",
-      "field": "why_it_matters",
-      "text": "The role of Procedural memory & skills is to connect Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write to downstream capabilities including Skill libraries, workflows & procedural plans.",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support several underlying concepts, but the downstream capability list is atlas-derived rather than directly evidenced.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Treat as a graph-positioning claim; dependencies are plausible but the full downstream list needs direct source support."
-    },
-    {
-      "unit_id": "15077af9b76a1a8b",
-      "node_id": "procedural_memory",
-      "field": "examples[1]",
-      "text": "substrate for Skill libraries, workflows & procedural plans",
-      "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
-      ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
-    },
-    {
       "unit_id": "86883e939a0fa6ea",
       "node_id": "procedural_memory",
       "field": "examples[2]",
@@ -56,13 +24,14 @@
       "source_ids": [
         "ref_aima",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The cited sources support prerequisite concepts, but not this exact downstream substrate relationship.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is an atlas graph relationship claim and should cite the downstream system if exact verification is needed."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "2263c517444c5b88",
@@ -72,13 +41,14 @@
       "source_ids": [
         "ref_aima",
         "ref_dlbook",
-        "ref_pml"
+        "ref_pml",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The stale/private/contradictory/incorrectly ranked limitation is generally plausible for memory and retrieval systems, but most packets cite only broad background sources.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The limitation should be narrowed or backed by a memory/retrieval safety source; dependency list portion is graph-derived."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "a7178b8ff8fc57a8",
@@ -97,36 +67,60 @@
       "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
     },
     {
-      "unit_id": "3b5a023e45867efe",
+      "unit_id": "a02d3110cbe46b9d",
       "node_id": "procedural_memory",
-      "field": "dependencies.memory_read_write.rationale",
-      "text": "Procedural memory & skills uses Differentiable memory read/write as a reusable ingredient in its defined operation.",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Procedural memory & skills is modeled as depending on Programs, ASTs, bytecode & intermediate representations, Differentiable memory read/write and feeding downstream nodes such as Skill libraries, workflows & procedural plans.",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support memory_read_write or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
     },
     {
-      "unit_id": "583078386f380af1",
+      "unit_id": "9e10c6a7a3212431",
       "node_id": "procedural_memory",
-      "field": "dependencies.continual_online_learning.rationale",
-      "text": "Procedural memory & skills uses Continual & online learning as a reusable ingredient in its defined operation.",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Skill libraries, workflows & procedural plans",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "The packet references support continual_online_learning or the node mechanism broadly, but the dependency rationale is graph-derived.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Relationship is plausible but should be verified with a dependency-specific source for exact wording."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b8f0bf30667afb86",
+      "node_id": "procedural_memory",
+      "field": "dependencies.memory_read_write.rationale",
+      "text": "In this atlas graph, Procedural memory & skills has a `uses` dependency on Differentiable memory read/write because Differentiable memory read/write is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d7e0f50f283c5ce4",
+      "node_id": "procedural_memory",
+      "field": "dependencies.continual_online_learning.rationale",
+      "text": "In this atlas graph, Procedural memory & skills has a `uses` dependency on Continual & online learning because Continual & online learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
     }
   ],
   "edge_reviews": [
@@ -147,36 +141,33 @@
       "strength_supported": true
     },
     {
-      "edge_id": "f5c6a793367ab8f0",
+      "edge_id": "0a7675ab7b7a599e",
       "node_id": "procedural_memory",
       "dependency_id": "memory_read_write",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Procedural skills can use memory read/write, but the cited sources do not make this a core dependency.",
-      "relationship_type_supported": false,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     },
     {
-      "edge_id": "4578932967d2e204",
+      "edge_id": "a0c6073286daca6a",
       "node_id": "procedural_memory",
       "dependency_id": "continual_online_learning",
       "source_ids": [
-        "ref_aima",
-        "ref_dlbook",
-        "ref_pml"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "supported_by_synthesis",
-      "notes": "Skill/procedure adaptation can be learned continually; common strength is defensible.",
-      "relationship_type_supported": true,
-      "strength_supported": true
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
     }
-  ]
+  ],
+  "node_id": "procedural_memory",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

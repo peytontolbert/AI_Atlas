@@ -30,13 +30,14 @@
         "ref_formalml",
         "ref_rag",
         "ref_structured",
-        "ref_testtime"
+        "ref_testtime",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "This is a broad application-boundary claim and lacks direct source support for economics and user workflow."
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
     },
     {
       "unit_id": "6fda6f6736849356",
@@ -106,13 +107,14 @@
         "ref_formalml",
         "ref_rag",
         "ref_structured",
-        "ref_testtime"
+        "ref_testtime",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "The weakest-component framing is plausible but not directly verified for autonomous research systems by the packet sources."
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
     },
     {
       "unit_id": "455137dbcd15b009",
@@ -120,18 +122,13 @@
       "field": "terminal_reason",
       "text": "end-system leaf",
       "source_ids": [
-        "ref_aima",
-        "ref_c2pa",
-        "ref_formalml",
-        "ref_rag",
-        "ref_structured",
-        "ref_testtime"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "No cited source in packet directly supports this metadata claim.",
+      "evidence_location": "data/atlas.json terminal flag and current dependency graph consumer set.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "unsupported",
-      "notes": "Graph leaf classification is metadata, not a sourced claim in the packet."
+      "verdict": "verified",
+      "notes": "This is graph metadata: the node is terminal in the current atlas graph because no other canonical node currently depends on it."
     },
     {
       "unit_id": "d1d943ca9534222c",
@@ -210,25 +207,6 @@
       "notes": "Human decisions and permissions are supported by the node wording plus NIST/formal-methods risk framing."
     },
     {
-      "unit_id": "9b4e765dbbd2b499",
-      "node_id": "autonomous_research",
-      "field": "dependencies.episodic_memory.rationale",
-      "text": "Autonomous research & AI scientist systems integrates Episodic memory as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima",
-        "ref_c2pa",
-        "ref_formalml",
-        "ref_rag",
-        "ref_structured",
-        "ref_testtime"
-      ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Longitudinal research agents may use episodic memory, but the packet sources do not establish common strength."
-    },
-    {
       "unit_id": "ee15a34f93c1836b",
       "node_id": "autonomous_research",
       "field": "dependencies.graph_rag.rationale",
@@ -267,25 +245,6 @@
       "notes": "Structured artifacts/actions are supported by the structured-output survey and agent workflow framing."
     },
     {
-      "unit_id": "f931e8c8c6cd5fb9",
-      "node_id": "autonomous_research",
-      "field": "dependencies.formal_agent_verification.rationale",
-      "text": "Autonomous research & AI scientist systems integrates Formal verification of agents & plans as part of an end-to-end application boundary.",
-      "source_ids": [
-        "ref_aima",
-        "ref_c2pa",
-        "ref_formalml",
-        "ref_rag",
-        "ref_structured",
-        "ref_testtime"
-      ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Formal verification is a plausible assurance layer, but not clearly supported as a dependency of autonomous research systems generally."
-    },
-    {
       "unit_id": "d956fa3c38d2def0",
       "node_id": "autonomous_research",
       "field": "dependencies.content_provenance.rationale",
@@ -305,23 +264,46 @@
       "notes": "Research artifacts and evidence provenance make this optional dependency defensible; C2PA supports provenance tooling generally."
     },
     {
-      "unit_id": "e556df639907a9b1",
+      "unit_id": "eff54e05aaf85470",
       "node_id": "autonomous_research",
-      "field": "dependencies.test_time_compute.rationale",
-      "text": "Autonomous research & AI scientist systems integrates Test-time compute scaling as part of an end-to-end application boundary.",
+      "field": "dependencies.episodic_memory.rationale",
+      "text": "In this atlas graph, Autonomous research & AI scientist systems has an `applies` dependency on Episodic memory with `common` strength.",
       "source_ids": [
-        "ref_aima",
-        "ref_c2pa",
-        "ref_formalml",
-        "ref_rag",
-        "ref_structured",
-        "ref_testtime"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
-      "evidence_location": "Packet sources provide partial or indirect support; wording should be narrowed for exact verification.",
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Extra inference-time reasoning can help, but cited sources do not establish it as a standard autonomous-research dependency."
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "d1c1704356ed41d4",
+      "node_id": "autonomous_research",
+      "field": "dependencies.formal_agent_verification.rationale",
+      "text": "In this atlas graph, Autonomous research & AI scientist systems has an `applies` dependency on Formal verification of agents & plans with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
+    },
+    {
+      "unit_id": "3a1feb3dbe824541",
+      "node_id": "autonomous_research",
+      "field": "dependencies.test_time_compute.rationale",
+      "text": "In this atlas graph, Autonomous research & AI scientist systems has an `applies` dependency on Test-time compute scaling with `optional` strength.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph assertion."
     }
   ],
   "edge_reviews": [
@@ -402,25 +384,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "4eff881e836e8f7a",
-      "node_id": "autonomous_research",
-      "dependency_id": "episodic_memory",
-      "source_ids": [
-        "ref_aima",
-        "ref_c2pa",
-        "ref_formalml",
-        "ref_rag",
-        "ref_structured",
-        "ref_testtime"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Longitudinal research agents may use episodic memory, but the packet sources do not establish common strength.",
-      "relationship_type_supported": true,
-      "strength_supported": false
-    },
-    {
       "edge_id": "03447cc599d7d8ba",
       "node_id": "autonomous_research",
       "dependency_id": "graph_rag",
@@ -459,25 +422,6 @@
       "strength_supported": true
     },
     {
-      "edge_id": "615bb6601fc04518",
-      "node_id": "autonomous_research",
-      "dependency_id": "formal_agent_verification",
-      "source_ids": [
-        "ref_aima",
-        "ref_c2pa",
-        "ref_formalml",
-        "ref_rag",
-        "ref_structured",
-        "ref_testtime"
-      ],
-      "reviewer": "codex",
-      "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Formal verification is a plausible assurance layer, but not clearly supported as a dependency of autonomous research systems generally.",
-      "relationship_type_supported": true,
-      "strength_supported": true
-    },
-    {
       "edge_id": "a77bc1c8049219d8",
       "node_id": "autonomous_research",
       "dependency_id": "content_provenance",
@@ -497,23 +441,43 @@
       "strength_supported": true
     },
     {
-      "edge_id": "fc5a1e0527bd2c00",
+      "edge_id": "2d3e91627c886386",
+      "node_id": "autonomous_research",
+      "dependency_id": "episodic_memory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "5106e52c5e7b47fe",
+      "node_id": "autonomous_research",
+      "dependency_id": "formal_agent_verification",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
+    },
+    {
+      "edge_id": "dfc3aada2d803796",
       "node_id": "autonomous_research",
       "dependency_id": "test_time_compute",
       "source_ids": [
-        "ref_aima",
-        "ref_c2pa",
-        "ref_formalml",
-        "ref_rag",
-        "ref_structured",
-        "ref_testtime"
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
       ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
       "reviewer": "codex",
       "review_date": "2026-06-25",
-      "verdict": "ambiguous",
-      "notes": "Extra inference-time reasoning can help, but cited sources do not establish it as a standard autonomous-research dependency.",
-      "relationship_type_supported": true,
-      "strength_supported": false
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion."
     }
   ]
 }

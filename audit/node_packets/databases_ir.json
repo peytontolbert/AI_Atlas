@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "Storage, indexing, ranking, query processing, and transactions make external knowledge accessible at scale.",
-    "why_it_matters": "The role of Databases & information retrieval is to connect Algorithms & data structures, Statistics & experimental design to downstream capabilities including Datasets, sampling & splits, Knowledge graphs, ontologies & schemas, External retrieval & ranking.",
+    "why_it_matters": "In this atlas graph, Databases & information retrieval is modeled as depending on Algorithms & data structures, Statistics & experimental design and feeding downstream nodes such as Datasets, sampling & splits, Knowledge graphs, ontologies & schemas, External retrieval & ranking.",
     "examples": [
-      "substrate for Datasets, sampling & splits",
-      "substrate for Knowledge graphs, ontologies & schemas",
-      "substrate for External retrieval & ranking"
+      "atlas downstream link to Datasets, sampling & splits",
+      "atlas downstream link to Knowledge graphs, ontologies & schemas",
+      "atlas downstream link to External retrieval & ranking"
     ],
     "limitations": [
       "Its abstractions require explicit assumptions; a mathematically valid result can still be irrelevant to a mismatched empirical setting. Its direct dependencies include Algorithms & data structures, Statistics & experimental design."
@@ -41,7 +41,7 @@
         "id": "statistics",
         "type": "requires",
         "strength": "common",
-        "rationale": "Databases & information retrieval rests on the formal or computational capabilities supplied by Statistics & experimental design."
+        "rationale": "In this atlas graph, Databases & information retrieval has a `requires` dependency on Statistics & experimental design with `common` strength."
       }
     ]
   },
@@ -53,28 +53,28 @@
       "text": "Storage, indexing, ranking, query processing, and transactions make external knowledge accessible at scale."
     },
     {
-      "unit_id": "eefcfe6d637772d2",
+      "unit_id": "20c8776613fb8116",
       "node_id": "databases_ir",
       "field": "why_it_matters",
-      "text": "The role of Databases & information retrieval is to connect Algorithms & data structures, Statistics & experimental design to downstream capabilities including Datasets, sampling & splits, Knowledge graphs, ontologies & schemas, External retrieval & ranking."
+      "text": "In this atlas graph, Databases & information retrieval is modeled as depending on Algorithms & data structures, Statistics & experimental design and feeding downstream nodes such as Datasets, sampling & splits, Knowledge graphs, ontologies & schemas, External retrieval & ranking."
     },
     {
-      "unit_id": "4e72f4edb217043a",
+      "unit_id": "20a9c99921fc623c",
       "node_id": "databases_ir",
       "field": "examples[1]",
-      "text": "substrate for Datasets, sampling & splits"
+      "text": "atlas downstream link to Datasets, sampling & splits"
     },
     {
-      "unit_id": "fe6008bbc3d592fa",
+      "unit_id": "7de44d849f8e2af2",
       "node_id": "databases_ir",
       "field": "examples[2]",
-      "text": "substrate for Knowledge graphs, ontologies & schemas"
+      "text": "atlas downstream link to Knowledge graphs, ontologies & schemas"
     },
     {
-      "unit_id": "d4da9521c7293b30",
+      "unit_id": "dec6c37c8e6a963b",
       "node_id": "databases_ir",
       "field": "examples[3]",
-      "text": "substrate for External retrieval & ranking"
+      "text": "atlas downstream link to External retrieval & ranking"
     },
     {
       "unit_id": "14e8e0486c0006a5",
@@ -89,10 +89,10 @@
       "text": "Databases & information retrieval rests on the formal or computational capabilities supplied by Algorithms & data structures."
     },
     {
-      "unit_id": "8aac4cbd92814180",
+      "unit_id": "847001b162dc4dc6",
       "node_id": "databases_ir",
       "field": "dependencies.statistics.rationale",
-      "text": "Databases & information retrieval rests on the formal or computational capabilities supplied by Statistics & experimental design."
+      "text": "In this atlas graph, Databases & information retrieval has a `requires` dependency on Statistics & experimental design with `common` strength."
     }
   ],
   "edge_units": [
@@ -105,12 +105,12 @@
       "rationale": "Databases & information retrieval rests on the formal or computational capabilities supplied by Algorithms & data structures."
     },
     {
-      "edge_id": "78b2bfe264f7e641",
+      "edge_id": "0276bcff06dfc10b",
       "node_id": "databases_ir",
       "dependency_id": "statistics",
       "type": "requires",
       "strength": "common",
-      "rationale": "Databases & information retrieval rests on the formal or computational capabilities supplied by Statistics & experimental design."
+      "rationale": "In this atlas graph, Databases & information retrieval has a `requires` dependency on Statistics & experimental design with `common` strength."
     }
   ],
   "candidate_references": {

@@ -35,19 +35,19 @@
         "id": "schemas_grammars_constraints",
         "type": "verifies_with",
         "strength": "core",
-        "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Schemas, grammars & formal output languages."
+        "rationale": "In this atlas graph, Structured-output parsing, validation & repair has a `verifies_with` dependency on Schemas, grammars & formal output languages because Schemas, grammars & formal output languages is modeled as evidence or constraints for verification."
       },
       {
         "id": "code_execution",
         "type": "verifies_with",
         "strength": "core",
-        "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+        "rationale": "In this atlas graph, Structured-output parsing, validation & repair has a `verifies_with` dependency on Code execution, interpreters & sandboxes because Code execution, interpreters & sandboxes is modeled as evidence or constraints for verification."
       },
       {
         "id": "reflection_verifier",
         "type": "verifies_with",
         "strength": "common",
-        "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Reflection, critique, verifier & repair loops."
+        "rationale": "In this atlas graph, Structured-output parsing, validation & repair has a `verifies_with` dependency on Reflection, critique, verifier & repair loops because Reflection, critique, verifier & repair loops is modeled as evidence or constraints for verification."
       }
     ]
   },
@@ -89,48 +89,48 @@
       "text": "Repair loops can mask systematic model errors and still require explicit semantic, authorization, and side-effect checks."
     },
     {
-      "unit_id": "b46a1b63a759a342",
+      "unit_id": "9e8b7a4711393136",
       "node_id": "structured_output_validation",
       "field": "dependencies.schemas_grammars_constraints.rationale",
-      "text": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Schemas, grammars & formal output languages."
+      "text": "In this atlas graph, Structured-output parsing, validation & repair has a `verifies_with` dependency on Schemas, grammars & formal output languages because Schemas, grammars & formal output languages is modeled as evidence or constraints for verification."
     },
     {
-      "unit_id": "9b09a31a19dfb789",
+      "unit_id": "a73c9c8b886a1664",
       "node_id": "structured_output_validation",
       "field": "dependencies.code_execution.rationale",
-      "text": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+      "text": "In this atlas graph, Structured-output parsing, validation & repair has a `verifies_with` dependency on Code execution, interpreters & sandboxes because Code execution, interpreters & sandboxes is modeled as evidence or constraints for verification."
     },
     {
-      "unit_id": "1abd50f38c3691fb",
+      "unit_id": "405df853f91a9a57",
       "node_id": "structured_output_validation",
       "field": "dependencies.reflection_verifier.rationale",
-      "text": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Reflection, critique, verifier & repair loops."
+      "text": "In this atlas graph, Structured-output parsing, validation & repair has a `verifies_with` dependency on Reflection, critique, verifier & repair loops because Reflection, critique, verifier & repair loops is modeled as evidence or constraints for verification."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "d2d8e63c821996b2",
+      "edge_id": "5c390f2a7daaf5d3",
       "node_id": "structured_output_validation",
       "dependency_id": "schemas_grammars_constraints",
       "type": "verifies_with",
       "strength": "core",
-      "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Schemas, grammars & formal output languages."
+      "rationale": "In this atlas graph, Structured-output parsing, validation & repair has a `verifies_with` dependency on Schemas, grammars & formal output languages because Schemas, grammars & formal output languages is modeled as evidence or constraints for verification."
     },
     {
-      "edge_id": "8db74679a8bbec0e",
+      "edge_id": "0c7e0edcb81fc0b5",
       "node_id": "structured_output_validation",
       "dependency_id": "code_execution",
       "type": "verifies_with",
       "strength": "core",
-      "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Code execution, interpreters & sandboxes."
+      "rationale": "In this atlas graph, Structured-output parsing, validation & repair has a `verifies_with` dependency on Code execution, interpreters & sandboxes because Code execution, interpreters & sandboxes is modeled as evidence or constraints for verification."
     },
     {
-      "edge_id": "79f529e2183dae6b",
+      "edge_id": "f28ddca41f7abb79",
       "node_id": "structured_output_validation",
       "dependency_id": "reflection_verifier",
       "type": "verifies_with",
       "strength": "common",
-      "rationale": "Structured-output parsing, validation & repair checks candidate behavior or artifacts against evidence or constraints from Reflection, critique, verifier & repair loops."
+      "rationale": "In this atlas graph, Structured-output parsing, validation & repair has a `verifies_with` dependency on Reflection, critique, verifier & repair loops because Reflection, critique, verifier & repair loops is modeled as evidence or constraints for verification."
     }
   ],
   "candidate_references": {

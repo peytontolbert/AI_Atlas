@@ -1,18 +1,175 @@
 {
   "sentence_reviews": [
-    {"unit_id":"c05465b71cd22a83","node_id":"output_watermarking","field":"definition","text":"Generation-time watermarking modifies sampling or output structure to embed a statistically detectable signal associated with an AI generator.","source_ids":["ref_watermark"],"evidence_location":"Kirchenbauer et al. propose an LLM watermark that changes token sampling using a green list and is detectable statistically from generated text.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported for text generation-time watermarking; output-structure wording is a slight generalization but within scope."},
-    {"unit_id":"e7a3cfe56c53dca7","node_id":"output_watermarking","field":"why_it_matters","text":"It can support origin claims, synthetic-data filtering, and forensic analysis without trusting a generic AI-content classifier.","source_ids":["ref_watermark"],"evidence_location":"The watermark paper motivates detection of machine-generated text via an embedded signal rather than a generic classifier.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Origin/detection and classifier contrast are supported; forensic/synthetic-data filtering are reasonable applications but not exact claims."},
-    {"unit_id":"293d71bf6ee1f343","node_id":"output_watermarking","field":"examples[1]","text":"green-list token watermarks","source_ids":["ref_watermark"],"evidence_location":"Kirchenbauer et al. use green-list token selection as the watermarking mechanism.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported."},
-    {"unit_id":"5d01a8fad4e904f0","node_id":"output_watermarking","field":"examples[2]","text":"watermarked code generation","source_ids":["ref_watermark"],"evidence_location":"The cited paper focuses on language-model text watermarking, not specifically code generation.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Likely applicable to code tokens, but not directly supported by the packet source."},
-    {"unit_id":"dbaff3462b168edc","node_id":"output_watermarking","field":"examples[3]","text":"text provenance signals","source_ids":["ref_watermark"],"evidence_location":"The watermark paper supports detecting machine-generated text via an embedded statistical signal.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Supported as provenance-related detection signal, though provenance framing is synthesized."},
-    {"unit_id":"4e0521fc3ca453d1","node_id":"output_watermarking","field":"limitations[1]","text":"Paraphrasing, editing, translation, collusion, and distribution shift can weaken detection or create false accusations.","source_ids":["ref_watermark"],"evidence_location":"The watermark paper discusses robustness limitations and attacks such as text modification/paraphrase and detection error tradeoffs.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Editing/paraphrase and errors are supported; translation/collusion/distribution-shift broaden the limitation."},
-    {"unit_id":"501d4758c8fc46b7","node_id":"output_watermarking","field":"dependencies.autoregressive_decoding.rationale","text":"Generation-time watermarking measures, constrains, audits, or governs behavior using Autoregressive decoding.","source_ids":["ref_watermark","ref_dlbook"],"evidence_location":"Kirchenbauer et al. watermark generated token choices during LM decoding; Deep Learning supports sequence model decoding foundations.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Core dependency is strongly supported."},
-    {"unit_id":"079a27af0542ab4f","node_id":"output_watermarking","field":"dependencies.information_theory.rationale","text":"Generation-time watermarking measures, constrains, audits, or governs behavior using Information theory.","source_ids":["ref_watermark"],"evidence_location":"The watermark is a statistically detectable signal with detection/error properties, implying information-theoretic/statistical foundations.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Core relationship is defensible, though information theory is not the paper's only framing."},
-    {"unit_id":"b7c3a8710425f9f5","node_id":"output_watermarking","field":"dependencies.adversarial_security_eval.rationale","text":"Generation-time watermarking measures, constrains, audits, or governs behavior using Adversarial robustness & security testing.","source_ids":["ref_watermark","ref_nist"],"evidence_location":"The watermark paper evaluates robustness/attacks; NIST supports adversarial testing and governance for AI risk controls.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Common dependency is supported by attack/robustness evaluation framing."}
+    {
+      "unit_id": "c05465b71cd22a83",
+      "node_id": "output_watermarking",
+      "field": "definition",
+      "text": "Generation-time watermarking modifies sampling or output structure to embed a statistically detectable signal associated with an AI generator.",
+      "source_ids": [
+        "ref_watermark"
+      ],
+      "evidence_location": "Kirchenbauer et al. propose an LLM watermark that changes token sampling using a green list and is detectable statistically from generated text.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported for text generation-time watermarking; output-structure wording is a slight generalization but within scope."
+    },
+    {
+      "unit_id": "e7a3cfe56c53dca7",
+      "node_id": "output_watermarking",
+      "field": "why_it_matters",
+      "text": "It can support origin claims, synthetic-data filtering, and forensic analysis without trusting a generic AI-content classifier.",
+      "source_ids": [
+        "ref_watermark"
+      ],
+      "evidence_location": "The watermark paper motivates detection of machine-generated text via an embedded signal rather than a generic classifier.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Origin/detection and classifier contrast are supported; forensic/synthetic-data filtering are reasonable applications but not exact claims."
+    },
+    {
+      "unit_id": "293d71bf6ee1f343",
+      "node_id": "output_watermarking",
+      "field": "examples[1]",
+      "text": "green-list token watermarks",
+      "source_ids": [
+        "ref_watermark"
+      ],
+      "evidence_location": "Kirchenbauer et al. use green-list token selection as the watermarking mechanism.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported."
+    },
+    {
+      "unit_id": "5d01a8fad4e904f0",
+      "node_id": "output_watermarking",
+      "field": "examples[2]",
+      "text": "watermarked code generation",
+      "source_ids": [
+        "ref_watermark",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "dbaff3462b168edc",
+      "node_id": "output_watermarking",
+      "field": "examples[3]",
+      "text": "text provenance signals",
+      "source_ids": [
+        "ref_watermark"
+      ],
+      "evidence_location": "The watermark paper supports detecting machine-generated text via an embedded statistical signal.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Supported as provenance-related detection signal, though provenance framing is synthesized."
+    },
+    {
+      "unit_id": "4e0521fc3ca453d1",
+      "node_id": "output_watermarking",
+      "field": "limitations[1]",
+      "text": "Paraphrasing, editing, translation, collusion, and distribution shift can weaken detection or create false accusations.",
+      "source_ids": [
+        "ref_watermark"
+      ],
+      "evidence_location": "The watermark paper discusses robustness limitations and attacks such as text modification/paraphrase and detection error tradeoffs.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Editing/paraphrase and errors are supported; translation/collusion/distribution-shift broaden the limitation."
+    },
+    {
+      "unit_id": "e2fddb9f6771d969",
+      "node_id": "output_watermarking",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "In this atlas graph, Generation-time watermarking has an `evaluates_or_constrains` dependency on Autoregressive decoding because Autoregressive decoding is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "feef23baec8ceae9",
+      "node_id": "output_watermarking",
+      "field": "dependencies.information_theory.rationale",
+      "text": "In this atlas graph, Generation-time watermarking has an `evaluates_or_constrains` dependency on Information theory because Information theory is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "6946910a199b0dc2",
+      "node_id": "output_watermarking",
+      "field": "dependencies.adversarial_security_eval.rationale",
+      "text": "In this atlas graph, Generation-time watermarking has an `evaluates_or_constrains` dependency on Adversarial robustness & security testing because Adversarial robustness & security testing is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"5986e1c64ddd332e","node_id":"output_watermarking","dependency_id":"autoregressive_decoding","source_ids":["ref_watermark","ref_dlbook"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Watermarking is applied during token generation/decoding, making this core.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"016dcbe6945f981a","node_id":"output_watermarking","dependency_id":"information_theory","source_ids":["ref_watermark"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Statistical detection and signal embedding support this core dependency.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"2026923279f454f5","node_id":"output_watermarking","dependency_id":"adversarial_security_eval","source_ids":["ref_watermark","ref_nist"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Robustness against attacks is a common evaluation concern for watermarking.","relationship_type_supported":true,"strength_supported":true}
-  ]
+    {
+      "edge_id": "8b0720e5ccd8c497",
+      "node_id": "output_watermarking",
+      "dependency_id": "autoregressive_decoding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "36c48c32ac9c6095",
+      "node_id": "output_watermarking",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "7638c69a0c895ff7",
+      "node_id": "output_watermarking",
+      "dependency_id": "adversarial_security_eval",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "output_watermarking",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

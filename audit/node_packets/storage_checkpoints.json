@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Object stores, distributed filesystems, shards, and checkpoint formats persist datasets, weights, optimizer state, embeddings, traces, and artifacts.",
-    "why_it_matters": "The role of Object storage, sharding & checkpoints is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Workflow, cluster & job orchestration, Model servers & inference runtimes, Model registry, versioning & MLOps / LLMOps.",
+    "why_it_matters": "In this atlas graph, Object storage, sharding & checkpoints is modeled as depending on Distributed systems & networking, Databases & information retrieval and feeding downstream nodes such as Workflow, cluster & job orchestration, Model servers & inference runtimes, Model registry, versioning & MLOps / LLMOps.",
     "examples": [
-      "substrate for Workflow, cluster & job orchestration",
-      "substrate for Model servers & inference runtimes",
-      "substrate for Model registry, versioning & MLOps / LLMOps"
+      "atlas downstream link to Workflow, cluster & job orchestration",
+      "atlas downstream link to Model servers & inference runtimes",
+      "atlas downstream link to Model registry, versioning & MLOps / LLMOps"
     ],
     "limitations": [
       "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Databases & information retrieval."
@@ -34,19 +34,19 @@
         "id": "distributed_systems",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Object storage, sharding & checkpoints turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Object storage, sharding & checkpoints has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "databases_ir",
         "type": "operationalizes",
         "strength": "core",
-        "rationale": "Object storage, sharding & checkpoints turns Databases & information retrieval into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Object storage, sharding & checkpoints has an `operationalizes` dependency on Databases & information retrieval because Databases & information retrieval is modeled as infrastructure needed to operationalize the node."
       },
       {
         "id": "checkpoint_recovery",
         "type": "operationalizes",
         "strength": "common",
-        "rationale": "Object storage, sharding & checkpoints turns Checkpointing, recovery & experiment state into a scalable, deployable, observable, or integrity-preserving capability."
+        "rationale": "In this atlas graph, Object storage, sharding & checkpoints has an `operationalizes` dependency on Checkpointing, recovery & experiment state because Checkpointing, recovery & experiment state is modeled as infrastructure needed to operationalize the node."
       }
     ]
   },
@@ -58,28 +58,28 @@
       "text": "Object stores, distributed filesystems, shards, and checkpoint formats persist datasets, weights, optimizer state, embeddings, traces, and artifacts."
     },
     {
-      "unit_id": "d7001341188400f3",
+      "unit_id": "4a34fea2c82cbd3f",
       "node_id": "storage_checkpoints",
       "field": "why_it_matters",
-      "text": "The role of Object storage, sharding & checkpoints is to connect Distributed systems & networking, Databases & information retrieval to downstream capabilities including Workflow, cluster & job orchestration, Model servers & inference runtimes, Model registry, versioning & MLOps / LLMOps."
+      "text": "In this atlas graph, Object storage, sharding & checkpoints is modeled as depending on Distributed systems & networking, Databases & information retrieval and feeding downstream nodes such as Workflow, cluster & job orchestration, Model servers & inference runtimes, Model registry, versioning & MLOps / LLMOps."
     },
     {
-      "unit_id": "c40d5b90a139981d",
+      "unit_id": "e99095d3cc45f6cc",
       "node_id": "storage_checkpoints",
       "field": "examples[1]",
-      "text": "substrate for Workflow, cluster & job orchestration"
+      "text": "atlas downstream link to Workflow, cluster & job orchestration"
     },
     {
-      "unit_id": "a2c55715b1aac2fc",
+      "unit_id": "7fc24f2351342df0",
       "node_id": "storage_checkpoints",
       "field": "examples[2]",
-      "text": "substrate for Model servers & inference runtimes"
+      "text": "atlas downstream link to Model servers & inference runtimes"
     },
     {
-      "unit_id": "77c7802fb574d798",
+      "unit_id": "e03e8ca47e7f15f2",
       "node_id": "storage_checkpoints",
       "field": "examples[3]",
-      "text": "substrate for Model registry, versioning & MLOps / LLMOps"
+      "text": "atlas downstream link to Model registry, versioning & MLOps / LLMOps"
     },
     {
       "unit_id": "7eb0822396345995",
@@ -88,48 +88,48 @@
       "text": "Operational gains introduce new failure modes in concurrency, versioning, security, numerical behavior, observability, and cost. Its direct dependencies include Distributed systems & networking, Databases & information retrieval."
     },
     {
-      "unit_id": "68685389aad9b55c",
+      "unit_id": "abf2173696b56413",
       "node_id": "storage_checkpoints",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Object storage, sharding & checkpoints turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Object storage, sharding & checkpoints has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "c8d39dd177835e18",
+      "unit_id": "eb8e474724e2dec2",
       "node_id": "storage_checkpoints",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Object storage, sharding & checkpoints turns Databases & information retrieval into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Object storage, sharding & checkpoints has an `operationalizes` dependency on Databases & information retrieval because Databases & information retrieval is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "unit_id": "314cdaae3154ef8e",
+      "unit_id": "60b4a3b9660949b0",
       "node_id": "storage_checkpoints",
       "field": "dependencies.checkpoint_recovery.rationale",
-      "text": "Object storage, sharding & checkpoints turns Checkpointing, recovery & experiment state into a scalable, deployable, observable, or integrity-preserving capability."
+      "text": "In this atlas graph, Object storage, sharding & checkpoints has an `operationalizes` dependency on Checkpointing, recovery & experiment state because Checkpointing, recovery & experiment state is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "9d97d7f1cf946c23",
+      "edge_id": "b85d294f7def3604",
       "node_id": "storage_checkpoints",
       "dependency_id": "distributed_systems",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Object storage, sharding & checkpoints turns Distributed systems & networking into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Object storage, sharding & checkpoints has an `operationalizes` dependency on Distributed systems & networking because Distributed systems & networking is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "d861c86c884ed826",
+      "edge_id": "d7fa3c6629bc021e",
       "node_id": "storage_checkpoints",
       "dependency_id": "databases_ir",
       "type": "operationalizes",
       "strength": "core",
-      "rationale": "Object storage, sharding & checkpoints turns Databases & information retrieval into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Object storage, sharding & checkpoints has an `operationalizes` dependency on Databases & information retrieval because Databases & information retrieval is modeled as infrastructure needed to operationalize the node."
     },
     {
-      "edge_id": "6b03088f9e63793e",
+      "edge_id": "cda367dcbf6867dd",
       "node_id": "storage_checkpoints",
       "dependency_id": "checkpoint_recovery",
       "type": "operationalizes",
       "strength": "common",
-      "rationale": "Object storage, sharding & checkpoints turns Checkpointing, recovery & experiment state into a scalable, deployable, observable, or integrity-preserving capability."
+      "rationale": "In this atlas graph, Object storage, sharding & checkpoints has an `operationalizes` dependency on Checkpointing, recovery & experiment state because Checkpointing, recovery & experiment state is modeled as infrastructure needed to operationalize the node."
     }
   ],
   "candidate_references": {

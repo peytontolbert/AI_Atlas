@@ -1,1 +1,179 @@
-{"sentence_reviews":[{"unit_id":"c2ef9c936a659158","node_id":"cot_latent_reasoning","field":"definition","text":"Intermediate computation is expanded in tokens, hidden states, or recurrent steps before committing to an answer.","source_ids":["ref_aima","ref_testtime","ref_transformer"],"evidence_location":"AIMA search/reasoning material, Transformer autoregressive sequence modeling, and test-time compute scaling evidence; latent-state wording is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The cited sources support expanded intermediate computation in token/search settings, but the hidden-state and recurrent-step wording is broader than any one cited source."},{"unit_id":"87ff2127387a7449","node_id":"cot_latent_reasoning","field":"why_it_matters","text":"The role of Chain-of-thought & latent reasoning is to connect Decoder-only causal transformers, Autoregressive decoding to downstream capabilities including Self-consistency & best-of-N inference, Task decomposition & hierarchical reasoning, ReAct-style reasoning and acting.","source_ids":["ref_aima","ref_testtime","ref_transformer"],"evidence_location":"AIMA reasoning/search material, Transformer autoregressive modeling, and test-time compute scaling evidence; downstream graph-role wording is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The graph connection is defensible but not stated exactly as this ontology sentence in the cited sources."},{"unit_id":"2601e1f8e19265ab","node_id":"cot_latent_reasoning","field":"examples[1]","text":"substrate for Self-consistency & best-of-N inference","source_ids":["ref_testtime"],"evidence_location":"Test-time compute and sampled reasoning/selection evidence.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Self-consistency and best-of-N methods rely on multiple generated reasoning/output candidates, but the packet does not cite a dedicated self-consistency source."},{"unit_id":"91928063d425655d","node_id":"cot_latent_reasoning","field":"examples[2]","text":"substrate for Task decomposition & hierarchical reasoning","source_ids":["ref_aima"],"evidence_location":"AIMA planning, problem solving, and hierarchical reasoning material.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Intermediate reasoning can support decomposition, but the exact substrate wording is ontology synthesis."},{"unit_id":"6a91e72b93ef85ac","node_id":"cot_latent_reasoning","field":"examples[3]","text":"substrate for ReAct-style reasoning and acting","source_ids":["ref_aima"],"evidence_location":"AIMA agent/reasoning/action material; ReAct-specific claim is not directly cited.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The cited source supports reasoning and acting in agents, but not the ReAct method specifically."},{"unit_id":"6f7dfdb92bf337fe","node_id":"cot_latent_reasoning","field":"limitations[1]","text":"Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Autoregressive decoding.","source_ids":["ref_aima","ref_testtime","ref_transformer"],"evidence_location":"AIMA search cost/error considerations, Transformer/autoregressive modeling, and test-time compute scaling evidence.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Cost growth is supported, but confident-error and weak-verifier wording is broader than the cited evidence."},{"unit_id":"995717054c8e9720","node_id":"cot_latent_reasoning","field":"dependencies.decoder_only_transformer.rationale","text":"Chain-of-thought & latent reasoning uses Decoder-only causal transformers as a reusable ingredient in its defined operation.","source_ids":["ref_transformer"],"evidence_location":"Transformer architecture and autoregressive sequence modeling evidence.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Supported for LLM chain-of-thought implementations, but chain-of-thought reasoning is not inherently limited to decoder-only transformers."},{"unit_id":"00bb9f7cbeea16a1","node_id":"cot_latent_reasoning","field":"dependencies.autoregressive_decoding.rationale","text":"Chain-of-thought & latent reasoning uses Autoregressive decoding as a reusable ingredient in its defined operation.","source_ids":["ref_transformer","ref_testtime"],"evidence_location":"Autoregressive generation and test-time sampled reasoning evidence.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Directly defensible for token-expanded chain-of-thought, but latent/recurrent reasoning variants may not use autoregressive decoding."},{"unit_id":"ef8b1c99fc843c95","node_id":"cot_latent_reasoning","field":"dependencies.incontext_testtime_learning.rationale","text":"Chain-of-thought & latent reasoning uses In-context & test-time learning as a reusable ingredient in its defined operation.","source_ids":["ref_testtime","ref_aima"],"evidence_location":"Test-time compute scaling evidence and AIMA reasoning/search material.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Test-time computation is relevant, but calling in-context/test-time learning a reusable ingredient is broader than the cited evidence."}],"edge_reviews":[{"edge_id":"2d0c35f042074eee","node_id":"cot_latent_reasoning","dependency_id":"decoder_only_transformer","source_ids":["ref_transformer"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Supported for modern LLM chain-of-thought systems, but not intrinsic to all chain-of-thought or latent reasoning.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"e72d0e0dad7a30a6","node_id":"cot_latent_reasoning","dependency_id":"autoregressive_decoding","source_ids":["ref_transformer","ref_testtime"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Token-level chain-of-thought uses autoregressive decoding; latent variants make the edge less universally exact.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"16e6193ec00dc1ee","node_id":"cot_latent_reasoning","dependency_id":"incontext_testtime_learning","source_ids":["ref_testtime"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"The relationship is plausible for inference-time reasoning, but the packet evidence does not tightly establish this dependency as common.","relationship_type_supported":true,"strength_supported":false}]}
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "c2ef9c936a659158",
+      "node_id": "cot_latent_reasoning",
+      "field": "definition",
+      "text": "Intermediate computation is expanded in tokens, hidden states, or recurrent steps before committing to an answer.",
+      "source_ids": [
+        "ref_aima",
+        "ref_testtime",
+        "ref_transformer"
+      ],
+      "evidence_location": "AIMA search/reasoning material, Transformer autoregressive sequence modeling, and test-time compute scaling evidence; latent-state wording is synthesized.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "The cited sources support expanded intermediate computation in token/search settings, but the hidden-state and recurrent-step wording is broader than any one cited source."
+    },
+    {
+      "unit_id": "6f7dfdb92bf337fe",
+      "node_id": "cot_latent_reasoning",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Decoder-only causal transformers, Autoregressive decoding.",
+      "source_ids": [
+        "ref_aima",
+        "ref_testtime",
+        "ref_transformer",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "5f5c6ef960c2373e",
+      "node_id": "cot_latent_reasoning",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Chain-of-thought & latent reasoning is modeled as depending on Decoder-only causal transformers, Autoregressive decoding and feeding downstream nodes such as Self-consistency & best-of-N inference, Task decomposition & hierarchical reasoning, ReAct-style reasoning and acting.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "44c9691df76d1fda",
+      "node_id": "cot_latent_reasoning",
+      "field": "examples[1]",
+      "text": "atlas downstream link to Self-consistency & best-of-N inference",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "45c6b8d0f2737697",
+      "node_id": "cot_latent_reasoning",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Task decomposition & hierarchical reasoning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f0503935784b1f25",
+      "node_id": "cot_latent_reasoning",
+      "field": "examples[3]",
+      "text": "atlas downstream link to ReAct-style reasoning and acting",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "f0e234ba75850b59",
+      "node_id": "cot_latent_reasoning",
+      "field": "dependencies.decoder_only_transformer.rationale",
+      "text": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on Decoder-only causal transformers because Decoder-only causal transformers is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "eb31f5d1874642ee",
+      "node_id": "cot_latent_reasoning",
+      "field": "dependencies.autoregressive_decoding.rationale",
+      "text": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on Autoregressive decoding because Autoregressive decoding is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "12e947295a27a11c",
+      "node_id": "cot_latent_reasoning",
+      "field": "dependencies.incontext_testtime_learning.rationale",
+      "text": "In this atlas graph, Chain-of-thought & latent reasoning has a `uses` dependency on In-context & test-time learning because In-context & test-time learning is modeled as a reusable ingredient for the node.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "0c1ca9d19053ffc7",
+      "node_id": "cot_latent_reasoning",
+      "dependency_id": "decoder_only_transformer",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "0823633edd4c0362",
+      "node_id": "cot_latent_reasoning",
+      "dependency_id": "autoregressive_decoding",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "6db41227523fa49a",
+      "node_id": "cot_latent_reasoning",
+      "dependency_id": "incontext_testtime_learning",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "cot_latent_reasoning",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
+}

@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Deduplication and decontamination remove repeated or benchmark-overlapping examples while retaining provenance needed to audit corpus composition.",
-    "why_it_matters": "The role of Deduplication, contamination control & provenance is to connect Data collection, curation & filtering, Embeddings & distributed representations to downstream capabilities including Large language models.",
+    "why_it_matters": "In this atlas graph, Deduplication, contamination control & provenance is modeled as depending on Data collection, curation & filtering, Embeddings & distributed representations and feeding downstream nodes such as Large language models.",
     "examples": [
-      "substrate for Large language models",
+      "atlas downstream link to Large language models",
       "combined with Data collection, curation & filtering"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "data_curation",
         "type": "uses",
         "strength": "core",
-        "rationale": "Deduplication, contamination control & provenance uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node."
       },
       {
         "id": "embeddings",
         "type": "uses",
         "strength": "core",
-        "rationale": "Deduplication, contamination control & provenance uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
       },
       {
         "id": "databases_ir",
         "type": "uses",
         "strength": "common",
-        "rationale": "Deduplication, contamination control & provenance uses Databases & information retrieval as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Deduplication and decontamination remove repeated or benchmark-overlapping examples while retaining provenance needed to audit corpus composition."
     },
     {
-      "unit_id": "0dcfa83b7186622e",
+      "unit_id": "e72a751de910dc91",
       "node_id": "dedup_decontamination",
       "field": "why_it_matters",
-      "text": "The role of Deduplication, contamination control & provenance is to connect Data collection, curation & filtering, Embeddings & distributed representations to downstream capabilities including Large language models."
+      "text": "In this atlas graph, Deduplication, contamination control & provenance is modeled as depending on Data collection, curation & filtering, Embeddings & distributed representations and feeding downstream nodes such as Large language models."
     },
     {
-      "unit_id": "8b1ebe433e12f415",
+      "unit_id": "a3af6c032ddf043a",
       "node_id": "dedup_decontamination",
       "field": "examples[1]",
-      "text": "substrate for Large language models"
+      "text": "atlas downstream link to Large language models"
     },
     {
       "unit_id": "caca3111466d1956",
@@ -82,48 +82,48 @@
       "text": "Results are sensitive to data quality, hyperparameters, compute budget, random variation, and evaluation contamination. Its direct dependencies include Data collection, curation & filtering, Embeddings & distributed representations."
     },
     {
-      "unit_id": "fd168b6a201b9af0",
+      "unit_id": "66f86c6526295ee8",
       "node_id": "dedup_decontamination",
       "field": "dependencies.data_curation.rationale",
-      "text": "Deduplication, contamination control & provenance uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "83e6985c00c5bad9",
+      "unit_id": "46b866aa17bb31af",
       "node_id": "dedup_decontamination",
       "field": "dependencies.embeddings.rationale",
-      "text": "Deduplication, contamination control & provenance uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "4e50d547538131ff",
+      "unit_id": "754d20144dfefea7",
       "node_id": "dedup_decontamination",
       "field": "dependencies.databases_ir.rationale",
-      "text": "Deduplication, contamination control & provenance uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "054c9fda83ae9432",
+      "edge_id": "fcd3c14551080135",
       "node_id": "dedup_decontamination",
       "dependency_id": "data_curation",
       "type": "uses",
       "strength": "core",
-      "rationale": "Deduplication, contamination control & provenance uses Data collection, curation & filtering as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Data collection, curation & filtering because Data collection, curation & filtering is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "787ef005be225ebf",
+      "edge_id": "29c4e07ae6676a24",
       "node_id": "dedup_decontamination",
       "dependency_id": "embeddings",
       "type": "uses",
       "strength": "core",
-      "rationale": "Deduplication, contamination control & provenance uses Embeddings & distributed representations as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Embeddings & distributed representations because Embeddings & distributed representations is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "985b8ffea1774f9d",
+      "edge_id": "7a21fa3b06e61711",
       "node_id": "dedup_decontamination",
       "dependency_id": "databases_ir",
       "type": "uses",
       "strength": "common",
-      "rationale": "Deduplication, contamination control & provenance uses Databases & information retrieval as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Deduplication, contamination control & provenance has a `uses` dependency on Databases & information retrieval because Databases & information retrieval is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

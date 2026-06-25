@@ -13,11 +13,11 @@
     ],
     "aliases": [],
     "definition": "Typed multidimensional arrays are the common carrier for parameters, activations, observations, and gradients.",
-    "why_it_matters": "The role of Scalars, vectors, matrices & tensors is to connect Linear algebra, Numerical analysis to downstream capabilities including Images, video & spatial grids, Waveforms, audio & spectrograms, Graphs, hypergraphs & relational data.",
+    "why_it_matters": "In this atlas graph, Scalars, vectors, matrices & tensors is modeled as depending on Linear algebra, Numerical analysis and feeding downstream nodes such as Images, video & spatial grids, Waveforms, audio & spectrograms, Graphs, hypergraphs & relational data.",
     "examples": [
-      "substrate for Images, video & spatial grids",
-      "substrate for Waveforms, audio & spectrograms",
-      "substrate for Graphs, hypergraphs & relational data"
+      "atlas downstream link to Images, video & spatial grids",
+      "atlas downstream link to Waveforms, audio & spectrograms",
+      "atlas downstream link to Graphs, hypergraphs & relational data"
     ],
     "limitations": [
       "Encoding choices can discard information, amplify bias, or make important invariances difficult to learn. Its direct dependencies include Linear algebra, Numerical analysis."
@@ -40,7 +40,7 @@
         "id": "numerical_methods",
         "type": "requires",
         "strength": "core",
-        "rationale": "Scalars, vectors, matrices & tensors rests on the formal or computational capabilities supplied by Numerical analysis."
+        "rationale": "In this atlas graph, Scalars, vectors, matrices & tensors has a `requires` dependency on Numerical analysis with `core` strength."
       }
     ]
   },
@@ -52,28 +52,28 @@
       "text": "Typed multidimensional arrays are the common carrier for parameters, activations, observations, and gradients."
     },
     {
-      "unit_id": "fbd39bc5c66e7aff",
+      "unit_id": "701801662ac64be7",
       "node_id": "tensors",
       "field": "why_it_matters",
-      "text": "The role of Scalars, vectors, matrices & tensors is to connect Linear algebra, Numerical analysis to downstream capabilities including Images, video & spatial grids, Waveforms, audio & spectrograms, Graphs, hypergraphs & relational data."
+      "text": "In this atlas graph, Scalars, vectors, matrices & tensors is modeled as depending on Linear algebra, Numerical analysis and feeding downstream nodes such as Images, video & spatial grids, Waveforms, audio & spectrograms, Graphs, hypergraphs & relational data."
     },
     {
-      "unit_id": "13a56e89db42623a",
+      "unit_id": "674045921cf55dde",
       "node_id": "tensors",
       "field": "examples[1]",
-      "text": "substrate for Images, video & spatial grids"
+      "text": "atlas downstream link to Images, video & spatial grids"
     },
     {
-      "unit_id": "a0b289ad46a9000e",
+      "unit_id": "ba55723a1d324e39",
       "node_id": "tensors",
       "field": "examples[2]",
-      "text": "substrate for Waveforms, audio & spectrograms"
+      "text": "atlas downstream link to Waveforms, audio & spectrograms"
     },
     {
-      "unit_id": "967353d142e1efa8",
+      "unit_id": "dc00878d47c10666",
       "node_id": "tensors",
       "field": "examples[3]",
-      "text": "substrate for Graphs, hypergraphs & relational data"
+      "text": "atlas downstream link to Graphs, hypergraphs & relational data"
     },
     {
       "unit_id": "c10c90baca54a207",
@@ -88,10 +88,10 @@
       "text": "Scalars, vectors, matrices & tensors rests on the formal or computational capabilities supplied by Linear algebra."
     },
     {
-      "unit_id": "1c52b915f10911d8",
+      "unit_id": "59857973f7ca367f",
       "node_id": "tensors",
       "field": "dependencies.numerical_methods.rationale",
-      "text": "Scalars, vectors, matrices & tensors rests on the formal or computational capabilities supplied by Numerical analysis."
+      "text": "In this atlas graph, Scalars, vectors, matrices & tensors has a `requires` dependency on Numerical analysis with `core` strength."
     }
   ],
   "edge_units": [
@@ -104,12 +104,12 @@
       "rationale": "Scalars, vectors, matrices & tensors rests on the formal or computational capabilities supplied by Linear algebra."
     },
     {
-      "edge_id": "ecd0acec055ca877",
+      "edge_id": "3987c5d36937523d",
       "node_id": "tensors",
       "dependency_id": "numerical_methods",
       "type": "requires",
       "strength": "core",
-      "rationale": "Scalars, vectors, matrices & tensors rests on the formal or computational capabilities supplied by Numerical analysis."
+      "rationale": "In this atlas graph, Scalars, vectors, matrices & tensors has a `requires` dependency on Numerical analysis with `core` strength."
     }
   ],
   "candidate_references": {

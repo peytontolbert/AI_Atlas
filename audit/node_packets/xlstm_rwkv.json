@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Modern gated recurrent architectures scale matrix or exponential memory and linear-time recurrence toward foundation-model regimes.",
-    "why_it_matters": "The role of xLSTM & linear-recurrent hybrids is to connect LSTMs & GRUs, Gating & multiplicative control to downstream capabilities including Transformer–SSM & recurrent hybrid models.",
+    "why_it_matters": "In this atlas graph, xLSTM & linear-recurrent hybrids is modeled as depending on LSTMs & GRUs, Gating & multiplicative control and feeding downstream nodes such as Transformer–SSM & recurrent hybrid models.",
     "examples": [
-      "substrate for Transformer–SSM & recurrent hybrid models",
+      "atlas downstream link to Transformer–SSM & recurrent hybrid models",
       "combined with LSTMs & GRUs"
     ],
     "limitations": [
@@ -46,13 +46,13 @@
         "id": "efficient_attention",
         "type": "uses",
         "strength": "common",
-        "rationale": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Sparse, local, linear & recurrent attention."
+        "rationale": "In this atlas graph, xLSTM & linear-recurrent hybrids has an `uses` dependency on Sparse, local, linear & recurrent attention with `common` strength."
       },
       {
         "id": "memory_read_write",
         "type": "composes",
         "strength": "common",
-        "rationale": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Differentiable memory read/write."
+        "rationale": "In this atlas graph, xLSTM & linear-recurrent hybrids has a `composes` dependency on Differentiable memory read/write with `common` strength."
       }
     ]
   },
@@ -64,16 +64,16 @@
       "text": "Modern gated recurrent architectures scale matrix or exponential memory and linear-time recurrence toward foundation-model regimes."
     },
     {
-      "unit_id": "215ad7569df0a283",
+      "unit_id": "82b9d68ebfc09b05",
       "node_id": "xlstm_rwkv",
       "field": "why_it_matters",
-      "text": "The role of xLSTM & linear-recurrent hybrids is to connect LSTMs & GRUs, Gating & multiplicative control to downstream capabilities including Transformer–SSM & recurrent hybrid models."
+      "text": "In this atlas graph, xLSTM & linear-recurrent hybrids is modeled as depending on LSTMs & GRUs, Gating & multiplicative control and feeding downstream nodes such as Transformer–SSM & recurrent hybrid models."
     },
     {
-      "unit_id": "1c320c0863c04404",
+      "unit_id": "58d9ea9a08639377",
       "node_id": "xlstm_rwkv",
       "field": "examples[1]",
-      "text": "substrate for Transformer–SSM & recurrent hybrid models"
+      "text": "atlas downstream link to Transformer–SSM & recurrent hybrid models"
     },
     {
       "unit_id": "64f5ff267bab067b",
@@ -100,16 +100,16 @@
       "text": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Gating & multiplicative control."
     },
     {
-      "unit_id": "a22d62bcbec71f41",
+      "unit_id": "8add155118b1e329",
       "node_id": "xlstm_rwkv",
       "field": "dependencies.efficient_attention.rationale",
-      "text": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Sparse, local, linear & recurrent attention."
+      "text": "In this atlas graph, xLSTM & linear-recurrent hybrids has an `uses` dependency on Sparse, local, linear & recurrent attention with `common` strength."
     },
     {
-      "unit_id": "717d89640acf8963",
+      "unit_id": "3f7290f155bf1573",
       "node_id": "xlstm_rwkv",
       "field": "dependencies.memory_read_write.rationale",
-      "text": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Differentiable memory read/write."
+      "text": "In this atlas graph, xLSTM & linear-recurrent hybrids has a `composes` dependency on Differentiable memory read/write with `common` strength."
     }
   ],
   "edge_units": [
@@ -130,20 +130,20 @@
       "rationale": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Gating & multiplicative control."
     },
     {
-      "edge_id": "3ada61c0cf41bf93",
+      "edge_id": "a1f9c86b26db3d75",
       "node_id": "xlstm_rwkv",
       "dependency_id": "efficient_attention",
       "type": "uses",
       "strength": "common",
-      "rationale": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Sparse, local, linear & recurrent attention."
+      "rationale": "In this atlas graph, xLSTM & linear-recurrent hybrids has an `uses` dependency on Sparse, local, linear & recurrent attention with `common` strength."
     },
     {
-      "edge_id": "c5e9ab3d5ef4ca15",
+      "edge_id": "977ab6194c410ff5",
       "node_id": "xlstm_rwkv",
       "dependency_id": "memory_read_write",
       "type": "composes",
       "strength": "common",
-      "rationale": "xLSTM & linear-recurrent hybrids is assembled in part from the mechanism or model component Differentiable memory read/write."
+      "rationale": "In this atlas graph, xLSTM & linear-recurrent hybrids has a `composes` dependency on Differentiable memory read/write with `common` strength."
     }
   ],
   "candidate_references": {

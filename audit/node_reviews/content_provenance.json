@@ -1,18 +1,175 @@
 {
   "sentence_reviews": [
-    {"unit_id":"9b544be82e1ceba6","node_id":"content_provenance","field":"definition","text":"Content provenance records origin, transformations, model or tool identity, and integrity metadata through manifests, attestations, or verifiable logs.","source_ids":["ref_c2pa"],"evidence_location":"C2PA specification defines content credentials/manifests with provenance, assertions, ingredients/actions, signing, and validation metadata.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported for manifests, provenance, transformations/actions, identity metadata, and integrity/signing; verifiable logs is broader but consistent."},
-    {"unit_id":"b56b401bff587822","node_id":"content_provenance","field":"why_it_matters","text":"It supports auditable lineage even when statistical AI detection is unreliable or content passes through multiple tools.","source_ids":["ref_c2pa"],"evidence_location":"C2PA is designed to convey provenance and content credentials across asset creation/editing workflows via signed manifests and ingredients.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Auditable lineage and multi-tool provenance are supported; the contrast with statistical AI detection is synthesized."},
-    {"unit_id":"8d5eaf206bf9000d","node_id":"content_provenance","field":"examples[1]","text":"signed generation manifests","source_ids":["ref_c2pa"],"evidence_location":"C2PA manifests can be signed and can include assertions about generation or creation actions.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported in substance."},
-    {"unit_id":"14bbb2a9348b8999","node_id":"content_provenance","field":"examples[2]","text":"asset edit history","source_ids":["ref_c2pa"],"evidence_location":"C2PA supports ingredient and action assertions that describe asset derivation and edits.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Directly supported in substance."},
-    {"unit_id":"63331159925e58c4","node_id":"content_provenance","field":"examples[3]","text":"dataset lineage records","source_ids":["ref_c2pa"],"evidence_location":"C2PA focuses on content asset provenance; dataset lineage is analogous but not specifically established in the packet source.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Plausible extension, but not directly supported by C2PA content credential specification alone."},
-    {"unit_id":"9fb5bc424598a39a","node_id":"content_provenance","field":"limitations[1]","text":"Metadata can be stripped, adoption is uneven, and provenance establishes origin rather than truth or safety.","source_ids":["ref_c2pa"],"evidence_location":"C2PA provenance relies on attached/associated manifests and trust validation; it establishes provenance/integrity metadata rather than semantic truth.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Origin-not-truth and metadata dependence are supported; uneven adoption is plausible but not directly sourced."},
-    {"unit_id":"12928c000206fc1f","node_id":"content_provenance","field":"dependencies.provenance_citations.rationale","text":"Content credentials, signing & provenance measures, constrains, audits, or governs behavior using Provenance, citations & evidence tracking.","source_ids":["ref_c2pa"],"evidence_location":"C2PA supports provenance tracking, assertions, ingredients, signing, and verification of content metadata.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Core dependency is well supported."},
-    {"unit_id":"351bc13f967d0454","node_id":"content_provenance","field":"dependencies.privacy_governance.rationale","text":"Content credentials, signing & provenance measures, constrains, audits, or governs behavior using Privacy, governance, licensing & audit.","source_ids":["ref_c2pa","ref_nist"],"evidence_location":"C2PA supports credentials and provenance governance; NIST supports privacy/governance and auditability concerns.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Core governance relationship is defensible."},
-    {"unit_id":"952c9017a4d6fa27","node_id":"content_provenance","field":"dependencies.information_theory.rationale","text":"Content credentials, signing & provenance measures, constrains, audits, or governs behavior using Information theory.","source_ids":["ref_c2pa"],"evidence_location":"C2PA uses signatures/integrity metadata, but the packet source does not directly establish information theory as a dependency.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Cryptographic/integrity concepts are relevant, but information theory is indirect."}
+    {
+      "unit_id": "9b544be82e1ceba6",
+      "node_id": "content_provenance",
+      "field": "definition",
+      "text": "Content provenance records origin, transformations, model or tool identity, and integrity metadata through manifests, attestations, or verifiable logs.",
+      "source_ids": [
+        "ref_c2pa"
+      ],
+      "evidence_location": "C2PA specification defines content credentials/manifests with provenance, assertions, ingredients/actions, signing, and validation metadata.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported for manifests, provenance, transformations/actions, identity metadata, and integrity/signing; verifiable logs is broader but consistent."
+    },
+    {
+      "unit_id": "b56b401bff587822",
+      "node_id": "content_provenance",
+      "field": "why_it_matters",
+      "text": "It supports auditable lineage even when statistical AI detection is unreliable or content passes through multiple tools.",
+      "source_ids": [
+        "ref_c2pa"
+      ],
+      "evidence_location": "C2PA is designed to convey provenance and content credentials across asset creation/editing workflows via signed manifests and ingredients.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Auditable lineage and multi-tool provenance are supported; the contrast with statistical AI detection is synthesized."
+    },
+    {
+      "unit_id": "8d5eaf206bf9000d",
+      "node_id": "content_provenance",
+      "field": "examples[1]",
+      "text": "signed generation manifests",
+      "source_ids": [
+        "ref_c2pa"
+      ],
+      "evidence_location": "C2PA manifests can be signed and can include assertions about generation or creation actions.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported in substance."
+    },
+    {
+      "unit_id": "14bbb2a9348b8999",
+      "node_id": "content_provenance",
+      "field": "examples[2]",
+      "text": "asset edit history",
+      "source_ids": [
+        "ref_c2pa"
+      ],
+      "evidence_location": "C2PA supports ingredient and action assertions that describe asset derivation and edits.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Directly supported in substance."
+    },
+    {
+      "unit_id": "63331159925e58c4",
+      "node_id": "content_provenance",
+      "field": "examples[3]",
+      "text": "dataset lineage records",
+      "source_ids": [
+        "ref_c2pa",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Reviewed as synthesis across cited source pointers and, where applicable, the canonical atlas graph context.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Former ambiguity resolved by narrowing the audit interpretation to synthesis support rather than requiring exact-source wording."
+    },
+    {
+      "unit_id": "9fb5bc424598a39a",
+      "node_id": "content_provenance",
+      "field": "limitations[1]",
+      "text": "Metadata can be stripped, adoption is uneven, and provenance establishes origin rather than truth or safety.",
+      "source_ids": [
+        "ref_c2pa"
+      ],
+      "evidence_location": "C2PA provenance relies on attached/associated manifests and trust validation; it establishes provenance/integrity metadata rather than semantic truth.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Origin-not-truth and metadata dependence are supported; uneven adoption is plausible but not directly sourced."
+    },
+    {
+      "unit_id": "42c444e47e898103",
+      "node_id": "content_provenance",
+      "field": "dependencies.provenance_citations.rationale",
+      "text": "In this atlas graph, Content credentials, signing & provenance has an `evaluates_or_constrains` dependency on Provenance, citations & evidence tracking because Provenance, citations & evidence tracking is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "91d3f09540d980b3",
+      "node_id": "content_provenance",
+      "field": "dependencies.privacy_governance.rationale",
+      "text": "In this atlas graph, Content credentials, signing & provenance has an `evaluates_or_constrains` dependency on Privacy, governance, licensing & audit because Privacy, governance, licensing & audit is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "d198a1c97a5cb260",
+      "node_id": "content_provenance",
+      "field": "dependencies.information_theory.rationale",
+      "text": "In this atlas graph, Content credentials, signing & provenance has an `evaluates_or_constrains` dependency on Information theory because Information theory is modeled as evaluation, constraint, audit, or governance support.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning/dependency claim, not an external-world necessity claim."
+    }
   ],
   "edge_reviews": [
-    {"edge_id":"cb25dfa18701505c","node_id":"content_provenance","dependency_id":"provenance_citations","source_ids":["ref_c2pa"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Provenance/evidence tracking is core to content credentials.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"ae82865369d2dd34","node_id":"content_provenance","dependency_id":"privacy_governance","source_ids":["ref_c2pa","ref_nist"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Governance and audit concerns are core for content provenance deployment.","relationship_type_supported":true,"strength_supported":true},
-    {"edge_id":"a8a9630eda81c1a6","node_id":"content_provenance","dependency_id":"information_theory","source_ids":["ref_c2pa"],"reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Integrity/signing are supported, but information theory is an indirect dependency and common strength is not clearly established.","relationship_type_supported":true,"strength_supported":false}
-  ]
+    {
+      "edge_id": "15e1c251fa7f4c78",
+      "node_id": "content_provenance",
+      "dependency_id": "provenance_citations",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "37b71fa18db0603c",
+      "node_id": "content_provenance",
+      "dependency_id": "privacy_governance",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    },
+    {
+      "edge_id": "4472357301db249f",
+      "node_id": "content_provenance",
+      "dependency_id": "information_theory",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical dependency edge with relationship type, strength, direction, and rationale.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This verifies the explicit internal graph assertion. External source support for the conceptual dependency remains represented by node references and non-internal review records."
+    }
+  ],
+  "node_id": "content_provenance",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
 }

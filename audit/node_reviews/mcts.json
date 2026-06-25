@@ -1,1 +1,164 @@
-{"sentence_reviews":[{"unit_id":"b221359a55661dee","node_id":"mcts","field":"definition","text":"Monte Carlo tree search alternates selection, expansion, simulation, and backup to allocate search effort toward promising actions under uncertainty.","source_ids":["ref_aima"],"evidence_location":"AIMA Monte Carlo tree search/game-search material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"The phases and purpose match the standard MCTS description."},{"unit_id":"a96c4d6b06c55101","node_id":"mcts","field":"why_it_matters","text":"The role of Monte Carlo tree search is to connect Graph search, BFS/DFS & A*, Probability theory to downstream capabilities including World-model rollout & imagination, Game-playing, control & simulation agents.","source_ids":["ref_aima"],"evidence_location":"AIMA search/game-search and probabilistic simulation material; downstream graph-role wording is synthesized.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"The role is defensible, but the exact ontology sentence is not directly stated."},{"unit_id":"97dc045585e6a757","node_id":"mcts","field":"examples[1]","text":"substrate for World-model rollout & imagination","source_ids":["ref_aima"],"evidence_location":"AIMA simulation/search background.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"MCTS uses simulated rollouts and can operate with models, but world-model imagination is not directly cited."},{"unit_id":"00feda9986db6aa9","node_id":"mcts","field":"examples[2]","text":"substrate for Game-playing, control & simulation agents","source_ids":["ref_aima"],"evidence_location":"AIMA game-search/MCTS material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"MCTS is directly presented in the context of game-playing search."},{"unit_id":"b78a6c6a07fe28ca","node_id":"mcts","field":"limitations[1]","text":"Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Graph search, BFS/DFS & A*, Probability theory.","source_ids":["ref_aima"],"evidence_location":"AIMA search complexity and probabilistic simulation/game-search material.","reviewer":"codex","review_date":"2026-06-25","verdict":"ambiguous","notes":"Search cost and simulation dependence are supported; confident-error/verifier wording is broader than the source."},{"unit_id":"2f8973b6d1725526","node_id":"mcts","field":"dependencies.graph_astar_search.rationale","text":"Monte Carlo tree search explores alternatives using the state, scoring, or search process in Graph search, BFS/DFS & A*.","source_ids":["ref_aima"],"evidence_location":"AIMA tree/graph search and MCTS material.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"MCTS is a tree-search method, but the dependency label includes BFS/DFS/A*, which are not required by MCTS."},{"unit_id":"48ae470f5074c564","node_id":"mcts","field":"dependencies.probability.rationale","text":"Monte Carlo tree search explores alternatives using the state, scoring, or search process in Probability theory.","source_ids":["ref_aima"],"evidence_location":"AIMA Monte Carlo simulation/search under uncertainty material.","reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Monte Carlo rollouts and value estimates directly use probabilistic sampling/statistical estimation."},{"unit_id":"75762161d6ca0a22","node_id":"mcts","field":"dependencies.game_decision_theory.rationale","text":"Monte Carlo tree search explores alternatives using the state, scoring, or search process in Game theory & decision theory.","source_ids":["ref_aima"],"evidence_location":"AIMA game-search and decision-making material.","reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"MCTS is strongly supported for game search; decision-theory framing is synthesized."}],"edge_reviews":[{"edge_id":"4ed06fa266dddcdf","node_id":"mcts","dependency_id":"graph_astar_search","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Tree/graph search is central, but BFS/DFS/A* are neighboring search methods rather than direct ingredients.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"7dfefae15f16e6cf","node_id":"mcts","dependency_id":"probability","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"verified","notes":"Monte Carlo simulation and backup estimates directly support the relationship and core strength.","relationship_type_supported":true,"strength_supported":true},{"edge_id":"6a8303df76469391","node_id":"mcts","dependency_id":"game_decision_theory","source_ids":["ref_aima"],"reviewer":"codex","review_date":"2026-06-25","verdict":"supported_by_synthesis","notes":"Game-search evidence supports the common dependency; decision-theory breadth is synthesized.","relationship_type_supported":true,"strength_supported":true}]}
+{
+  "sentence_reviews": [
+    {
+      "unit_id": "b221359a55661dee",
+      "node_id": "mcts",
+      "field": "definition",
+      "text": "Monte Carlo tree search alternates selection, expansion, simulation, and backup to allocate search effort toward promising actions under uncertainty.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA Monte Carlo tree search/game-search material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "The phases and purpose match the standard MCTS description."
+    },
+    {
+      "unit_id": "b78a6c6a07fe28ca",
+      "node_id": "mcts",
+      "field": "limitations[1]",
+      "text": "Search and self-evaluation can multiply cost while preserving confident errors when states, tools, or verifiers are weak. Its direct dependencies include Graph search, BFS/DFS & A*, Probability theory.",
+      "source_ids": [
+        "ref_aima",
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "Synthesized from cited node sources plus the atlas dependency context in data/atlas.json.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Limitation is reviewed as a broad synthesis/tradeoff statement for the family-level node, not as a direct quotation from one source."
+    },
+    {
+      "unit_id": "2f8973b6d1725526",
+      "node_id": "mcts",
+      "field": "dependencies.graph_astar_search.rationale",
+      "text": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Graph search, BFS/DFS & A*.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA tree/graph search and MCTS material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "MCTS is a tree-search method, but the dependency label includes BFS/DFS/A*, which are not required by MCTS."
+    },
+    {
+      "unit_id": "48ae470f5074c564",
+      "node_id": "mcts",
+      "field": "dependencies.probability.rationale",
+      "text": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Probability theory.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA Monte Carlo simulation/search under uncertainty material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Monte Carlo rollouts and value estimates directly use probabilistic sampling/statistical estimation."
+    },
+    {
+      "unit_id": "75762161d6ca0a22",
+      "node_id": "mcts",
+      "field": "dependencies.game_decision_theory.rationale",
+      "text": "Monte Carlo tree search explores alternatives using the state, scoring, or search process in Game theory & decision theory.",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "evidence_location": "AIMA game-search and decision-making material.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "MCTS is strongly supported for game search; decision-theory framing is synthesized."
+    },
+    {
+      "unit_id": "15c524e745dea3f2",
+      "node_id": "mcts",
+      "field": "why_it_matters",
+      "text": "In this atlas graph, Monte Carlo tree search is modeled as depending on Graph search, BFS/DFS & A*, Probability theory and feeding downstream nodes such as World-model rollout & imagination, Game-playing, control & simulation agents.",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "b15a741530b7a705",
+      "node_id": "mcts",
+      "field": "examples[1]",
+      "text": "atlas downstream link to World-model rollout & imagination",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    },
+    {
+      "unit_id": "5b5267c859a9c994",
+      "node_id": "mcts",
+      "field": "examples[2]",
+      "text": "atlas downstream link to Game-playing, control & simulation agents",
+      "source_ids": [
+        "url:https://github.com/peytontolbert/AI_Atlas/blob/main/data/atlas.json"
+      ],
+      "evidence_location": "data/atlas.json canonical node and dependency graph; generated from node dependencies and downstream consumers.",
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "This is an explicit internal atlas-graph positioning claim, not an external-world necessity claim."
+    }
+  ],
+  "edge_reviews": [
+    {
+      "edge_id": "4ed06fa266dddcdf",
+      "node_id": "mcts",
+      "dependency_id": "graph_astar_search",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Tree/graph search is central, but BFS/DFS/A* are neighboring search methods rather than direct ingredients.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "7dfefae15f16e6cf",
+      "node_id": "mcts",
+      "dependency_id": "probability",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "verified",
+      "notes": "Monte Carlo simulation and backup estimates directly support the relationship and core strength.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    },
+    {
+      "edge_id": "6a8303df76469391",
+      "node_id": "mcts",
+      "dependency_id": "game_decision_theory",
+      "source_ids": [
+        "ref_aima"
+      ],
+      "reviewer": "codex",
+      "review_date": "2026-06-25",
+      "verdict": "supported_by_synthesis",
+      "notes": "Game-search evidence supports the common dependency; decision-theory breadth is synthesized.",
+      "relationship_type_supported": true,
+      "strength_supported": true
+    }
+  ],
+  "node_id": "mcts",
+  "reviewer": "codex",
+  "review_date": "2026-06-25"
+}

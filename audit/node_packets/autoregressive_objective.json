@@ -14,11 +14,11 @@
     ],
     "aliases": [],
     "definition": "A joint distribution is factorized into a sequence of conditional next-step predictions.",
-    "why_it_matters": "The role of Autoregressive / next-step prediction is to connect Self-supervised learning, Generative modeling to downstream capabilities including Autoregressive decoding, Recurrent neural networks, Decoder-only causal transformers.",
+    "why_it_matters": "In this atlas graph, Autoregressive / next-step prediction is modeled as depending on Self-supervised learning, Generative modeling and feeding downstream nodes such as Autoregressive decoding, Recurrent neural networks, Decoder-only causal transformers.",
     "examples": [
-      "substrate for Autoregressive decoding",
-      "substrate for Recurrent neural networks",
-      "substrate for Decoder-only causal transformers"
+      "atlas downstream link to Autoregressive decoding",
+      "atlas downstream link to Recurrent neural networks",
+      "atlas downstream link to Decoder-only causal transformers"
     ],
     "limitations": [
       "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Self-supervised learning, Generative modeling."
@@ -35,25 +35,25 @@
         "id": "self_supervised_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Autoregressive / next-step prediction uses Self-supervised learning as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node."
       },
       {
         "id": "generative_learning",
         "type": "uses",
         "strength": "core",
-        "rationale": "Autoregressive / next-step prediction uses Generative modeling as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
       },
       {
         "id": "sequences_time",
         "type": "uses",
         "strength": "common",
-        "rationale": "Autoregressive / next-step prediction uses Sequences, events & time series as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
       },
       {
         "id": "probability",
         "type": "uses",
         "strength": "common",
-        "rationale": "Autoregressive / next-step prediction uses Probability theory as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
       }
     ]
   },
@@ -65,28 +65,28 @@
       "text": "A joint distribution is factorized into a sequence of conditional next-step predictions."
     },
     {
-      "unit_id": "e5d85bc9619b2c3b",
+      "unit_id": "34908d4596964c22",
       "node_id": "autoregressive_objective",
       "field": "why_it_matters",
-      "text": "The role of Autoregressive / next-step prediction is to connect Self-supervised learning, Generative modeling to downstream capabilities including Autoregressive decoding, Recurrent neural networks, Decoder-only causal transformers."
+      "text": "In this atlas graph, Autoregressive / next-step prediction is modeled as depending on Self-supervised learning, Generative modeling and feeding downstream nodes such as Autoregressive decoding, Recurrent neural networks, Decoder-only causal transformers."
     },
     {
-      "unit_id": "78321bad483a264a",
+      "unit_id": "1ccb5adabd1da18c",
       "node_id": "autoregressive_objective",
       "field": "examples[1]",
-      "text": "substrate for Autoregressive decoding"
+      "text": "atlas downstream link to Autoregressive decoding"
     },
     {
-      "unit_id": "a8214fdb839fa211",
+      "unit_id": "e6475dc02fb4bad8",
       "node_id": "autoregressive_objective",
       "field": "examples[2]",
-      "text": "substrate for Recurrent neural networks"
+      "text": "atlas downstream link to Recurrent neural networks"
     },
     {
-      "unit_id": "b06f3847433e4dce",
+      "unit_id": "71e3481da1a5d620",
       "node_id": "autoregressive_objective",
       "field": "examples[3]",
-      "text": "substrate for Decoder-only causal transformers"
+      "text": "atlas downstream link to Decoder-only causal transformers"
     },
     {
       "unit_id": "be9814cc6ad11039",
@@ -95,62 +95,62 @@
       "text": "A tractable objective is a surrogate, so optimizing it can improve the score while leaving the intended behavior unchanged or worse. Its direct dependencies include Self-supervised learning, Generative modeling."
     },
     {
-      "unit_id": "714b6584b9d363b4",
+      "unit_id": "022625c8738a9aa7",
       "node_id": "autoregressive_objective",
       "field": "dependencies.self_supervised_learning.rationale",
-      "text": "Autoregressive / next-step prediction uses Self-supervised learning as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "da670e3c16c41e86",
+      "unit_id": "dc29f87e1c057717",
       "node_id": "autoregressive_objective",
       "field": "dependencies.generative_learning.rationale",
-      "text": "Autoregressive / next-step prediction uses Generative modeling as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "e0a531babb08ba00",
+      "unit_id": "f7960be4f043caeb",
       "node_id": "autoregressive_objective",
       "field": "dependencies.sequences_time.rationale",
-      "text": "Autoregressive / next-step prediction uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "2b788fd8506e1807",
+      "unit_id": "f7234b3f84a0113a",
       "node_id": "autoregressive_objective",
       "field": "dependencies.probability.rationale",
-      "text": "Autoregressive / next-step prediction uses Probability theory as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "b095c554f62dd93f",
+      "edge_id": "5b7e4c00fa56fc94",
       "node_id": "autoregressive_objective",
       "dependency_id": "self_supervised_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Autoregressive / next-step prediction uses Self-supervised learning as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Self-supervised learning because Self-supervised learning is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "712cb0749faf0b68",
+      "edge_id": "b818bf658d2b5fd4",
       "node_id": "autoregressive_objective",
       "dependency_id": "generative_learning",
       "type": "uses",
       "strength": "core",
-      "rationale": "Autoregressive / next-step prediction uses Generative modeling as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Generative modeling because Generative modeling is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "d56addd48de979f3",
+      "edge_id": "fd8ceb92efb7492a",
       "node_id": "autoregressive_objective",
       "dependency_id": "sequences_time",
       "type": "uses",
       "strength": "common",
-      "rationale": "Autoregressive / next-step prediction uses Sequences, events & time series as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Sequences, events & time series because Sequences, events & time series is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "9d57f51cb617fbbc",
+      "edge_id": "78602c743852db87",
       "node_id": "autoregressive_objective",
       "dependency_id": "probability",
       "type": "uses",
       "strength": "common",
-      "rationale": "Autoregressive / next-step prediction uses Probability theory as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Autoregressive / next-step prediction has a `uses` dependency on Probability theory because Probability theory is modeled as a reusable ingredient for the node."
     }
   ],
   "candidate_references": {

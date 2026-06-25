@@ -14,9 +14,9 @@
     ],
     "aliases": [],
     "definition": "Training is coordinated across separated data holders while limiting raw-data movement or information leakage.",
-    "why_it_matters": "The role of Federated & privacy-preserving learning is to connect Distributed systems & networking, Datasets, sampling & splits to downstream capabilities including Privacy, governance, licensing & audit.",
+    "why_it_matters": "In this atlas graph, Federated & privacy-preserving learning is modeled as depending on Distributed systems & networking, Datasets, sampling & splits and feeding downstream nodes such as Privacy, governance, licensing & audit.",
     "examples": [
-      "substrate for Privacy, governance, licensing & audit",
+      "atlas downstream link to Privacy, governance, licensing & audit",
       "combined with Distributed systems & networking"
     ],
     "limitations": [
@@ -34,19 +34,19 @@
         "id": "distributed_systems",
         "type": "uses",
         "strength": "core",
-        "rationale": "Federated & privacy-preserving learning uses Distributed systems & networking as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Federated & privacy-preserving learning has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
       },
       {
         "id": "datasets_sampling",
         "type": "uses",
         "strength": "core",
-        "rationale": "Federated & privacy-preserving learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+        "rationale": "In this atlas graph, Federated & privacy-preserving learning has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
       },
       {
         "id": "supervised_learning",
         "type": "trained_under",
         "strength": "common",
-        "rationale": "Federated & privacy-preserving learning follows the learning setup expressed by Supervised learning."
+        "rationale": "In this atlas graph, Federated & privacy-preserving learning has a `trained_under` dependency on Supervised learning with `common` strength."
       }
     ]
   },
@@ -58,16 +58,16 @@
       "text": "Training is coordinated across separated data holders while limiting raw-data movement or information leakage."
     },
     {
-      "unit_id": "3e710f7863da5e74",
+      "unit_id": "d5aa23161325240a",
       "node_id": "federated_private_learning",
       "field": "why_it_matters",
-      "text": "The role of Federated & privacy-preserving learning is to connect Distributed systems & networking, Datasets, sampling & splits to downstream capabilities including Privacy, governance, licensing & audit."
+      "text": "In this atlas graph, Federated & privacy-preserving learning is modeled as depending on Distributed systems & networking, Datasets, sampling & splits and feeding downstream nodes such as Privacy, governance, licensing & audit."
     },
     {
-      "unit_id": "30f91d0efe4790f2",
+      "unit_id": "8ce2a46d6c6672b3",
       "node_id": "federated_private_learning",
       "field": "examples[1]",
-      "text": "substrate for Privacy, governance, licensing & audit"
+      "text": "atlas downstream link to Privacy, governance, licensing & audit"
     },
     {
       "unit_id": "645b3abe1d57ff27",
@@ -82,48 +82,48 @@
       "text": "The chosen learning signal and interaction pattern may not match the deployment objective or data-generating process. Its direct dependencies include Distributed systems & networking, Datasets, sampling & splits."
     },
     {
-      "unit_id": "7e42494332520676",
+      "unit_id": "91cf49e824cdd904",
       "node_id": "federated_private_learning",
       "field": "dependencies.distributed_systems.rationale",
-      "text": "Federated & privacy-preserving learning uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Federated & privacy-preserving learning has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "3112a405d8bcc80b",
+      "unit_id": "49782ef7cf20b840",
       "node_id": "federated_private_learning",
       "field": "dependencies.datasets_sampling.rationale",
-      "text": "Federated & privacy-preserving learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "text": "In this atlas graph, Federated & privacy-preserving learning has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "unit_id": "815a06613dee9938",
+      "unit_id": "a78976e3bd5b18fb",
       "node_id": "federated_private_learning",
       "field": "dependencies.supervised_learning.rationale",
-      "text": "Federated & privacy-preserving learning follows the learning setup expressed by Supervised learning."
+      "text": "In this atlas graph, Federated & privacy-preserving learning has a `trained_under` dependency on Supervised learning with `common` strength."
     }
   ],
   "edge_units": [
     {
-      "edge_id": "ade6eb4b59f70095",
+      "edge_id": "662c73daaf77cd16",
       "node_id": "federated_private_learning",
       "dependency_id": "distributed_systems",
       "type": "uses",
       "strength": "core",
-      "rationale": "Federated & privacy-preserving learning uses Distributed systems & networking as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Federated & privacy-preserving learning has a `uses` dependency on Distributed systems & networking because Distributed systems & networking is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "decf29cd690ef5bd",
+      "edge_id": "e5e2c1fa81f61342",
       "node_id": "federated_private_learning",
       "dependency_id": "datasets_sampling",
       "type": "uses",
       "strength": "core",
-      "rationale": "Federated & privacy-preserving learning uses Datasets, sampling & splits as a reusable ingredient in its defined operation."
+      "rationale": "In this atlas graph, Federated & privacy-preserving learning has a `uses` dependency on Datasets, sampling & splits because Datasets, sampling & splits is modeled as a reusable ingredient for the node."
     },
     {
-      "edge_id": "36416921ad9ac40a",
+      "edge_id": "5b8a0aa4c24cbe6b",
       "node_id": "federated_private_learning",
       "dependency_id": "supervised_learning",
       "type": "trained_under",
       "strength": "common",
-      "rationale": "Federated & privacy-preserving learning follows the learning setup expressed by Supervised learning."
+      "rationale": "In this atlas graph, Federated & privacy-preserving learning has a `trained_under` dependency on Supervised learning with `common` strength."
     }
   ],
   "candidate_references": {
